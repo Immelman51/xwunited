@@ -6125,6 +6125,17 @@ const upgrades = [
                         slot: 'Calculator'
                     }
                 ]
+            },
+            {
+                name: "Proton Torpedoes",
+                id: 135,
+                slot: "Torpedo",
+                points: 10,
+                faction: "",
+                effect: "4 dés #Farc# portée 2-3, Attaque #TL#: Dépensez 1 #ch#. Changez 1 résultat #hit# en un résultat #crit#.",
+                charge: 2,
+                attack: 4,
+                range: [2,3],
             }
     
     ]   
