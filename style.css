@@ -1,0 +1,149 @@
+body {
+    background-color: rgb(52, 43, 63);
+}
+
+header {
+    display: table;
+    width: 100%;
+    background-color: black;
+    color:aliceblue ; 
+   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    max-width: 750px;
+}
+
+.descriptleader {
+    display: grid ;
+    grid-template-columns: 30px 1fr 30px 1fr;
+    grid-template-rows: 30px 30px;
+    gap: 2px;
+    background-color: black;
+    justify-content: center;
+    align-content: center;
+    color:antiquewhite;
+    max-width: 750px;
+    justify-content: center;
+    align-content: center;
+      
+}
+
+.seven {
+    grid-column-start: 3;
+    grid-column-end: 5;
+
+}
+.eight {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    max-height: 25%;
+    justify-content: center;
+    align-content: center;
+    font-size: clamp(11px, 2vw, 26px);
+
+}
+
+.tit {
+    justify-items:right;
+    align-items: center;
+    font-size: small;
+}
+
+.descriptionleader {
+   
+   justify-items: center;
+   align-items: center;
+   
+}
+.descriptleader img {
+    height: 100%;
+    object-fit: cover;
+    
+
+    
+}
+/* ##################"BODY ##############################*/
+
+.ship {
+    background-color: black;
+    padding: 5px;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 2px;
+    max-width: 750px;
+    justify-content: center;
+    align-content: center;
+     
+}
+
+.shipmenu {
+    grid-column: span 2;
+    justify-content: center;
+    align-content: center;
+      
+}
+
+.count {
+        justify-self: center;
+}
+.cost {
+    color: aliceblue;
+}
+
+.loadout {
+    color: rgb(76, 173, 101)
+}
+
+.slot {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 750px; 
+    justify-content: center;
+    align-content: center;
+    }
+
+
+
+
+#menu_leader {
+    
+    text-align: center;
+    
+}
+#menu_faction {
+    
+    text-align: center;
+    
+}
+
+select {
+    overflow: auto;
+}
+
+
+
+.descriptionUpg {
+    padding:5px;
+    min-height: 50px;
+    background-color: black;
+    color:antiquewhite;
+    position: sticky;
+    bottom:0;
+    display: grid;
+    grid-template-columns: 1fr 30px;
+    max-width: 750px;
+}
+.total {
+    font-size: x-large;
+    color:aliceblue;
+    align-self: center;
+}
+
+.printing_option {
+    padding:20px;
+    background-color: azure;
+    max-width: 750px;
+
+}

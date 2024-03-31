@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"xw-United"</title>
+    <link rel="stylesheet" href="style.css">
+   
+   
+</head>
+
+<body>
+<header>
+    <form method="get" action="">  
+    <select name="menu_leader" id="menu_leader"></select>  
+    <select name="menu_faction" id="menu_faction"></select>  
+    </form>  
+</header> 
+
+    <div class="descriptleader">
+        <div class="box one"><img id="faction1logo" src="img/mini.jpg" alt="" /></div><div class="box two faction1 tit"></div>
+        <div class="box three"><img id="faction2logo" src="img/mini.jpg" alt="" /></div><div class="box four faction2 tit"></div>      
+        <div class="box five"><img id="faction3logo" src="img/mini.jpg" alt="" /></div><div class="box six faction3 tit"></div>
+        <div class="box seven squadvalue"></div>
+        <div class="description box eight">Description leader</div>
+    </div>
+    
+    <form method="get" action="" id="squad">
+    <p>
+        <div id ="ship0" class="ship"><select id="menu_ship_0" class="shipmenu"><option selected="selected">Select Ship</option> </select>
+        <select id="menu_pilot_0" class="shipmenu pilotmenu"><option selected="selected">Select Pilot</option> </select>
+        <div id="shipcost0" class="count cost"></div>
+        <div id="shiploadout0" class="count loadout"></div>
+        </div>
+        <div id="shipslots0" class="slot menu"></div>
+    </p>
+    
+
+</form>
+<p>
+        <button id="addshipbutton" class="bouton" type="button">Add ship</button>
+        
+    
+</p>
+    
+    <p>
+    <div class="descriptionUpg">
+        <div class="description" id="descript_upg"></div><div class="count total" id="totalcost"></div>
+    </div>
+    </p>
+
+    <footer class="printing_option">Option d'impression</footer>
+    
+    
+    <script src="scriptleader.js"> </script>
+    <script src="scriptship.js"></script>
+    
+</body>
+</html>
