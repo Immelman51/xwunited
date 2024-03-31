@@ -233,7 +233,7 @@ if (factionvalue === "<Select Faction>") {
 
 var listeleader= ["<Select Leader>"];
 for (let i = 0; i < leaders.length; i++) {
-if (leaders[i][leaderfaction].includes(factionvalue)) {
+if (leaders[i]["leaderfaction"].includes(factionvalue)) {
 listeleader.push(leaders[i][leadername]) ;
 }
 }
