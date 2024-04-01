@@ -6326,7 +6326,7 @@ function displayslots(y) { //crée les menus de slot et contient l'écoute des "
     }  
     for (j= 0 ; j<ships[pilots[y]["shipId"]]["slots"].length ; j++) { //on ajoute aussi les slots liés au chassis que l'on va chercher grace au shipId
         slotmenu = document.createElement('select');
-        slotmenu.setAttribute('id', 'slot'+y+"_"+j+index+1);
+        slotmenu.setAttribute('id', 'slot'+y+"_"+(j+index+1));
         slotmenu.setAttribute('class', 'slotElement'+' '+ships[pilots[y]["shipId"]]["slots"][j] );
         shipslot.appendChild(slotmenu);
         slotmenu.addEventListener("input", function(event) {//cette faction décrit le calcul des mises à jour des points pour le loadout et le cout du pilote
