@@ -6565,7 +6565,7 @@ function upgradeListGet(y) { //va chercher les options pour populate les menus d
         typeOfUpg = upg_menu.classList[1]; //on récupère le type d'upgrade grace à class list qui met sous forme de tableau les class
         upgpilotlist.push(typeOfUpg);
     }
-    for (j=0 ; i<upgrades_number[y] ; j++) { //on va maintenant remplir les menus
+    for (j=0 ; j<(upgrades_number[y]-1) ; j++) { //on va maintenant remplir les menus
         let slotlist = [];
         upg_menu = document.getElementById("slot"+y+"_"+j);
         slotlist.push("<"+upgpilotlist[j]+">");
