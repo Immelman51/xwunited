@@ -100,7 +100,7 @@ const ships =
                 [ 2, 2, 2, 2, 2, 0, 0, 0, 3, 3],
                 [ 0, 0, 2, 0, 0, 3, 0, 0, 0, 0]
             ],
-            slots: [Torpedo, Astromech, Modification]
+            slots: ["Torpedo", "Astromech", "Modification"]
         },
         {    
             
@@ -125,7 +125,7 @@ const ships =
                 [ 3, 2, 2, 2, 3, 0],
                 [ 0, 0, 3, 0, 0, 3]
             ],
-            slots: [Torpedo, Turret, Payload, Astromech, Modification]
+            slots: ["Torpedo", "Turret", "Payload", "Astromech", "Modification"]
         },
         {
         
@@ -152,7 +152,7 @@ const ships =
                 [ 0, 0, 1, 0, 0, 0, 0, 0],
                 [ 0, 0, 1, 0, 0, 3, 0, 0]
             ],
-            slots: [Missile, Modification]
+            slots: ["Missile", "Modification"]
         },
         {
         
@@ -178,7 +178,7 @@ const ships =
                 [ 0, 0, 2, 0, 0, 3, 0, 0]
             ],
             base: "Large",
-            slots: [Missile, Crew, Crew, Modification]
+            slots: ["Missile", "Crew", "Crew", "Modification"]
         },
         {
         
@@ -203,7 +203,7 @@ const ships =
                 [ 0, 0, 2, 0, 0, 3],
                 [ 0, 0, 2, 0, 0, 0]
             ],
-            slots: [Modification]
+            slots: ["Modification"]
         },
         {
     
@@ -230,7 +230,7 @@ const ships =
                 [ 0, 0, 2, 0, 0, 3, 0, 0, 0, 0],
                 [ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0]
             ],
-            slots: [Tech, Missile, Sensor, Modification]
+            slots: ["Tech", "Missile", "Sensor", "Modification"]
         },
         {
         
@@ -257,7 +257,7 @@ const ships =
                 [ 0, 0, 1, 0, 0, 3, 0, 0],
                 [ 0, 0, 2, 0, 0, 0, 0, 0]
             ],
-            slots: [Modification]
+            slots: ["Modification"]
         },
         {
         
@@ -283,7 +283,7 @@ const ships =
                 [ 0, 2, 1, 2, 0, 0, 0, 0, 3, 3],
                 [ 0, 0, 2, 0, 0, 3, 0, 0, 0, 0]
             ],
-            slots: [Crew, Torpedo, Payload, Modification]
+            slots: ["Crew", "Torpedo", "Payload", "Modification"]
         },
         {
         
@@ -310,7 +310,7 @@ const ships =
                 [ 3, 2, 1, 2, 3],
                 [ 0, 0, 2, 0, 0]
             ],
-            slots: [Crew, Payload, Turret, Illicit, Modification, Modification, Calculator]
+            slots: ["Crew", "Payload", "Turret", "Illicit", "Modification", "Modification", "Calculator"]
         },
         {
         
@@ -335,7 +335,7 @@ const ships =
                 [ 0, 3, 2, 3, 0]
             ],
             base: "Large",
-            slots: [Sensor, Crew, Gunner, Cannon, Modification, Modification]
+            slots: ["Sensor", "Crew", "Gunner", "Cannon", "Modification", "Modification"]
 
         },
         {
@@ -361,7 +361,7 @@ const ships =
                 [ 0, 3, 1, 3, 0, 0, 0, 0, 0, 0],
                 [ 0, 0, 3, 0, 0, 0, 0, 0, 0, 0]
             ],
-            slots: [Sensor, Cannon, Cannon, Torpedo, Gunner, Payload,Modification]
+            slots: ["Sensor", "Cannon", "Cannon", "Torpedo", "Gunner", "Payload","Modification"]
         },
         {
             
@@ -389,7 +389,7 @@ const ships =
                 [ 0, 0, 2, 0, 0, 0],
                 [ 0, 0, 0, 0, 0, 3]
             ],
-            slots: [Torpedo, Missile, Payload, Gunner, Modification]
+            slots: ["Torpedo", "Missile", "Payload", "Gunner", "Modification"]
         },
         {
       
@@ -413,7 +413,7 @@ const ships =
                 [ 2, 2, 1, 2, 2, 3],
                 [ 0, 0, 2, 0, 0, 3]
             ],
-            slots: [Missile, Illicit]
+            slots: ["Missile", "Illicit"]
         },
         {
     
@@ -521,7 +521,7 @@ const ships =
                 [ 2, 2, 2, 2, 2, 0],
                 [ 0, 0, 2, 0, 0, 3]
             ],
-            slots: [Crew, Gunner, Cannon, Turret, Illicit, Modification]
+            slots: ["Crew", "Gunner", "Cannon", "Turret", "Illicit", "Modification"]
         },
         {
        
@@ -600,7 +600,7 @@ const ships =
                 [ 0, 0, 2, 0, 0, 0 ],
                 [ 0, 0, 2, 0, 0, 3 ]
             ],
-            slots: [Modification, Weapon_Hardpoint]
+            slots: ["Modification", Weapon_Hardpoint]
         },
         {
     
@@ -626,7 +626,7 @@ const ships =
                 [ 0, 1, 1, 1, 0, 0, 3, 3 ],
                 [ 0, 0, 2, 0, 0, 3, 0, 0 ]
             ],
-            slots: [Sensor, Cannon, Cannon, Modification]
+            slots: ["Sensor", "Cannon", "Cannon", "Modification"]
         },
         {
     
@@ -650,7 +650,7 @@ const ships =
                 [ 2, 2, 1, 2, 2, 0 ],
                 [ 0, 0, 2, 0, 0, 0 ]
             ],
-            slots: [Crew, Crew, Gunner, Illicit, Cannon, Modification]
+            slots: ["Crew", "Crew", "Gunner", "Illicit", "Cannon", "Modification"]
         },
         {
     
@@ -674,7 +674,7 @@ const ships =
                 [ 0, 2, 1, 2, 0, 0, 0, 0, 0, 0 ],
                 [ 0, 0, 2, 0, 0, 3, 0, 0, 0, 0 ]
             ],
-            slots: [Missile, Illicit, Modification]
+            slots: ["Missile", "Illicit", "Modification"]
         },
         {
   
@@ -829,7 +829,7 @@ const ships =
                 [ 0, 3, 2, 3, 0, 0 ],
                 [ 0, 0, 3, 0, 0, 3 ]
             ],
-            slots: [Sensor, Crew, Illicit, Modification, Calculator]
+            slots: ["Sensor", "Crew", "Illicit", "Modification", "Calculator"]
         },
         {
     
@@ -855,7 +855,7 @@ const ships =
                 [ 0, 1, 1, 2, 0, 0, 3, 0 ],
                 [ 0, 0, 2, 0, 0, 3, 0, 0 ]
             ],
-            slots: [Torpedo, Crew, Gunner, Illicit, Modification]
+            slots: ["Torpedo", "Crew", "Gunner", "Illicit", "Modification"]
         },
         {
  
@@ -880,7 +880,7 @@ const ships =
                 [ 3, 2, 2, 2, 3, 0 ],
                 [ 0, 0, 3, 0, 0, 3 ]
             ],
-            slots: [Crew, Gunner, Astromech, Modification]
+            slots: ["Crew", "Gunner", "Astromech", "Modification"]
         },
         {
    
@@ -909,7 +909,7 @@ const ships =
                 [ 0, 0, 2, 0, 0, 3, 0, 0, 0, 0 ],
                 [ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0 ]
             ],
-            slots: [Torpedo, Modification, Modification]
+            slots: ["Torpedo", "Modification", "Modification"]
         },
         {
     
@@ -984,7 +984,7 @@ const ships =
                 [ 0, 2, 2, 2, 0 ],
                 [ 0, 0, 2, 0, 0 ]
             ],
-            slots: [Sensor, Crew, Crew, Modification]
+            slots: ["Sensor", "Crew", "Crew", "Modification"]
         },
         {
            
@@ -1056,7 +1056,7 @@ const ships =
                 [ 3, 2, 2, 2, 3, 0, 0, 0, 3, 3 ],
                 [ 0, 0, 3, 0, 0, 0, 0, 0, 0, 0 ]
             ],
-            slots: [Turret, Crew, Gunner, Payload, Payload, Modification]
+            slots: ["Turret", "Crew", "Gunner", "Payload", "Payload", "Modification"]
         },
         {
   
@@ -1204,7 +1204,7 @@ const ships =
                 [ 3, 2, 1, 2, 3, 0, 0, 0 ],
                 [ 0, 2, 2, 2, 0, 3, 0, 0 ]
             ],
-            slots: [Crew, Illicit]
+            slots: ["Crew", "Illicit"]
         },
         {
   
@@ -1606,7 +1606,7 @@ const ships =
                 [ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0],
                 [ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0]
             ],
-            slots: [Torpedo, Astromech, Illicit, Sensor]
+            slots: ["Torpedo", "Astromech", "Illicit", "Sensor"]
         },
         {
 
@@ -1890,7 +1890,7 @@ const ships =
                 [ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0 ],
                 [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
             ],
-            slots: [Cannon, Cannon, Modification, Calculator]
+            slots: ["Cannon", "Cannon", "Modification", "Calculator"]
         },
         {
      
@@ -2103,7 +2103,7 @@ const ships =
                 [ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0 ],
                 [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
             ],
-            slots: [Crew, Gunner, Payload, Modification]
+            slots: ["Crew", "Gunner", "Payload", "Modification"]
         },
         {
     
@@ -2130,7 +2130,7 @@ const ships =
                 [ 0, 0, 1, 0, 0, 0, 0, 0, 0, 0 ],
                 [ 0, 0, 0, 0, 0, 3, 0, 0, 0, 0 ]
             ],
-            slots: [Crew, Tech, Illicit, Illicit, Modification, Modification]
+            slots: ["Crew", "Tech", "Illicit", "Illicit", "Modification", "Modification"]
         },
         {
   
@@ -2183,7 +2183,7 @@ const ships =
                 [ 0, 0, 1, 0, 0, 0, 0, 0, 0, 0 ],
                 [ 0, 0, 2, 0, 0, 3, 0, 0, 0, 0 ]
             ],
-            slots: [Cannon, Cannon, Illicit, Illicit, Modification]
+            slots: ["Cannon", "Cannon", "Illicit", "Illicit", "Modification"]
         },
         {
 
@@ -2389,11 +2389,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             loadout: 10,
             ability: "Les vaisseaux alliés peuvent verrouiller des objets à portée 0–3 de n’importe quel vaisseau allié.",
             slots: [
-                "Talent",
-                "Sensor",
-                "Crew",
-                "Crew",
-                "Modification"
+                "Talent"
+                
             ]
         },
         {
@@ -4506,7 +4503,7 @@ const upgrades = [
                 effect: "Lorsque vous défendez contre une attaque à portée 3 ou contre une attaque de #tur#, vous pouvez améliorer un dé de défense.",
                 restrictions: ["slots", "Modification"],
                 faction: "",
-                validation_func: '(ship, upgrade_obj) -> upgrade_obj.occupiesAnUpgradeSlot "Modification"; also_occupies_upgrades: [ "Modification" ] '       
+                validation_func: '(ship, upgrade_obj) -> upgrade_obj.occupiesAnUpgradeSlot ""Modification""; also_occupies_upgrades: [ ""Modification"" ] '       
             },
     {
                 name: "Lone Wolf",
@@ -4751,8 +4748,8 @@ const upgrades = [
                 ],
                 faction: ""
                 /*validation_func: (ship, upgrade_obj) ->
-                    upgrade_obj.occupiesAnUpgradeSlot "Missile"
-                also_occupies_upgrades: [ "Missile" ]*/
+                    upgrade_obj.occupiesAnUpgradeSlot ""Missile""
+                also_occupies_upgrades: [ ""Missile"" ]*/
             },
     {
                 name: "XX-23 S-Thread Tracers",
@@ -4836,8 +4833,8 @@ const upgrades = [
                 ],
                 faction: ""
                 /*validation_func: (ship, upgrade_obj) ->
-                    upgrade_obj.occupiesAnUpgradeSlot "Payload"
-                also_occupies_upgrades: [ "Payload" ]*/
+                    upgrade_obj.occupiesAnUpgradeSlot ""Payload""
+                also_occupies_upgrades: [ ""Payload"" ]*/
             },
      {
                 name: "Conner Nets",
@@ -5749,19 +5746,19 @@ const upgrades = [
                 Loadout_value: 5,
                 effect: "Retire en emplacement #crew#. Ajoute #sensor# et #astromech#. Ajoute 5 points de Loadout et augmente le coût du vaisseau de 1",
                 unequips_upgrades: [
-                    'Crew'
+                    '"Crew"'
                 ],
                 also_occupies_upgrades: [
-                    'Crew'
+                    '"Crew"'
                 ],
                 confersAddons: [
                     {
                         //type: exportObj.Upgrade,
-                        slot: 'Sensor'
+                        slot: '"Sensor"'
                     },
                     {
                         //type: exportObj.Upgrade,
-                        slot: 'Astromech'
+                        slot: '"Astromech"'
                     }
                 ]
             },
@@ -5799,11 +5796,11 @@ const upgrades = [
                 confersAddons: [
                     {
                         //type: exportObj.Upgrade,
-                        slot: 'Modification'
+                        slot: '"Modification"'
                     },
                     {
                         //type: exportObj.Upgrade,
-                        slot: 'Illicit'
+                        slot: '"Illicit"'
                     }
                 ]
             },
@@ -5828,7 +5825,7 @@ const upgrades = [
                 effect: "Retire en emplacement #missile# et la capacité 'Vaisseau-Mère'. Ajoute #sensor# et #calculator#. Ajoute 5 points de Loadout et augmente le coût du vaisseau de 1",
 
                 unequips_upgrades: [
-                    'Missile'
+                    '"Missile"'
                 ],
                 lose_chassis: [
                     'Docking Ship'
@@ -5838,11 +5835,11 @@ const upgrades = [
                 confersAddons: [
                     {
                         //type: exportObj.Upgrade,
-                        slot: 'Sensor'
+                        slot: '"Sensor"'
                     },
                     {
                         //type: exportObj.Upgrade,
-                        slot: 'Calculator'
+                        slot: '"Calculator"'
                     }
                 ]
             },
@@ -5870,7 +5867,7 @@ const upgrades = [
                 effect: "Retire en emplacement #missile# et la capacité 'Vaisseau-Mère'. Ajoute #sensor# et #calculator#. Ajoute 5 points de Loadout et augmente le coût du vaisseau de 1",
 
                 unequips_upgrades: [
-                    'Missile'
+                    '"Missile"'
                 ],
                 lose_chassis: [
                     'Docking Ship'
@@ -5880,11 +5877,11 @@ const upgrades = [
                 confersAddons: [
                     {
                         //type: exportObj.Upgrade,
-                        slot: 'Sensor'
+                        slot: '"Sensor"'
                     },
                     {
                         //type: exportObj.Upgrade,
-                        slot: 'Calculator'
+                        slot: '"Calculator"'
                     }
                 ] 
             },
@@ -5898,10 +5895,9 @@ const upgrades = [
                 ship: "YV-666 Light Freighter",
                 ship_cost: 1,
                 Loadout_value: 5,
-                effect: "Retire en emplacement #missile# et la capacité 'Vaisseau-Mère'. Ajoute #sensor# et #calculator#. Ajoute 5 points de Loadout et augmente le coût du vaisseau de 1",
-
+                effect: "Retire en emplacement",
                 unequips_upgrades: [
-                    'Missile'
+                    '"Missile"'
                 ],
                 lose_chassis: [
                     'Docking Ship'
@@ -5911,11 +5907,11 @@ const upgrades = [
                 confersAddons: [
                     {
                         //type: exportObj.Upgrade,
-                        slot: 'Sensor'
+                        slot: '"Sensor"'
                     },
                     {
                         //type: exportObj.Upgrade,
-                        slot: 'Calculator'
+                        slot: '"Calculator"'
                     }
                 ]   
             },
@@ -5929,10 +5925,10 @@ const upgrades = [
                 ship: "Firespray-class Patrol Craft",
                 ship_cost: 1,
                 Loadout_value: 5,
-                effect: "Retire en emplacement #missile# et la capacité 'Vaisseau-Mère'. Ajoute #sensor# et #calculator#. Ajoute 5 points de Loadout et augmente le coût du vaisseau de 1",
+                effect: "culseau de 1",
 
                 unequips_upgrades: [
-                    'Missile'
+                    '"Missile"'
                 ],
                 lose_chassis: [
                     'Docking Ship'
@@ -5942,11 +5938,11 @@ const upgrades = [
                 confersAddons: [
                     {
                         //type: exportObj.Upgrade,
-                        slot: 'Sensor'
+                        slot: '"Sensor"'
                     },
                     {
                         //type: exportObj.Upgrade,
-                        slot: 'Calculator'
+                        slot: '"Calculator"'
                     }
                 ]   
             },
@@ -5960,10 +5956,10 @@ const upgrades = [
                 ship: "Firespray-class Patrol Craft",
                 ship_cost: 1,
                 Loadout_value: 5,
-                effect: "Retire en emplacement #missile# et la capacité 'Vaisseau-Mère'. Ajoute #sensor# et #calculator#. Ajoute 5 points de Loadout et augmente le coût du vaisseau de 1",
+                effect: "adout et augmente le coût du vaisseau de 1",
 
                 unequips_upgrades: [
-                    'Missile'
+                    '"Missile"'
                 ],
                 lose_chassis: [
                     'Docking Ship'
@@ -5973,11 +5969,11 @@ const upgrades = [
                 confersAddons: [
                     {
                         //type: exportObj.Upgrade,
-                        slot: 'Sensor'
+                        slot: '"Sensor"'
                     },
                     {
                         //type: exportObj.Upgrade,
-                        slot: 'Calculator'
+                        slot: '"Calculator"'
                     }
                 ]   
             },
@@ -5991,10 +5987,10 @@ const upgrades = [
                 ship: "YT-2400 Light Freighter",
                 ship_cost: 1,
                 Loadout_value: 5,
-                effect: "Retire en emplacement #missile# et la capacité 'Vaisseau-Mère'. Ajoute #sensor# et #calculator#. Ajoute 5 points de Loadout et augmente le coût du vaisseau de 1",
+                effect: "points de Loadout et augmente le coût du vaisseau de 1",
 
                 unequips_upgrades: [
-                    'Missile'
+                    '"Missile"'
                 ],
                 lose_chassis: [
                     'Docking Ship'
@@ -6004,11 +6000,11 @@ const upgrades = [
                 confersAddons: [
                     {
                         //type: exportObj.Upgrade,
-                        slot: 'Sensor'
+                        slot: '"Sensor"'
                     },
                     {
                         //type: exportObj.Upgrade,
-                        slot: 'Calculator'
+                        slot: '"Calculator"'
                     }
                 ]   
             },
@@ -6022,10 +6018,10 @@ const upgrades = [
                 ship: "G-1A Starfighter",
                 ship_cost: 1,
                 Loadout_value: 5,
-                effect: "Retire en emplacement #missile# et la capacité 'Vaisseau-Mère'. Ajoute #sensor# et #calculator#. Ajoute 5 points de Loadout et augmente le coût du vaisseau de 1",
+                effect: "oute 5 points de Loadout et augmente le coût du vaisseau de 1",
 
                 unequips_upgrades: [
-                    'Missile'
+                    '"Missile"'
                 ],
                 lose_chassis: [
                     'Docking Ship'
@@ -6035,11 +6031,11 @@ const upgrades = [
                 confersAddons: [
                     {
                         //type: exportObj.Upgrade,
-                        slot: 'Sensor'
+                        slot: '"Sensor"'
                     },
                     {
                         //type: exportObj.Upgrade,
-                        slot: 'Calculator'
+                        slot: '"Calculator"'
                     }
                 ]   
             },
@@ -6053,10 +6049,10 @@ const upgrades = [
                 ship: "JumpMaster 5000",
                 ship_cost: 1,
                 Loadout_value: 5,
-                effect: "Retire en emplacement #missile# et la capacité 'Vaisseau-Mère'. Ajoute #sensor# et #calculator#. Ajoute 5 points de Loadout et augmente le coût du vaisseau de 1",
+                effect: " Ajoute 5 points de Loadout et augmente le coût du vaisseau de 1",
 
                 unequips_upgrades: [
-                    'Missile'
+                    '"Missile"'
                 ],
                 lose_chassis: [
                     'Docking Ship'
@@ -6066,11 +6062,11 @@ const upgrades = [
                 confersAddons: [
                     {
                         //type: exportObj.Upgrade,
-                        slot: 'Sensor'
+                        slot: '"Sensor"'
                     },
                     {
                         //type: exportObj.Upgrade,
-                        slot: 'Calculator'
+                        slot: '"Calculator"'
                     }
                 ]      
             },
@@ -6084,10 +6080,10 @@ const upgrades = [
                 ship: "Aggressor Assault Fighter",
                 ship_cost: 1,
                 Loadout_value: 5,
-                effect: "Retire en emplacement #missile# et la capacité 'Vaisseau-Mère'. Ajoute #sensor# et #calculator#. Ajoute 5 points de Loadout et augmente le coût du vaisseau de 1",
+                effect: "Ajoute 5 points de Loadout et augmente le coût du vaisseau de 1",
 
                 unequips_upgrades: [
-                    'Missile'
+                    '"Missile"'
                 ],
                 lose_chassis: [
                     'Docking Ship'
@@ -6097,11 +6093,11 @@ const upgrades = [
                 confersAddons: [
                     {
                         //type: exportObj.Upgrade,
-                        slot: 'Sensor'
+                        slot: '"Sensor"'
                     },
                     {
                         //type: exportObj.Upgrade,
-                        slot: 'Calculator'
+                        slot: '"Calculator"'
                     }
                 ]      
             },
@@ -6115,10 +6111,10 @@ const upgrades = [
                 ship: "Naboo Royal N-1 Starfighter",
                 ship_cost: 1,
                 Loadout_value: 5,
-                effect: "Retire en emplacement #missile# et la capacité 'Vaisseau-Mère'. Ajoute #sensor# et #calculator#. Ajoute 5 points de Loadout et augmente le coût du vaisseau de 1",
+                effect: "e 5 points de Loadout et augmente le coût du vaisseau de 1",
 
                 unequips_upgrades: [
-                    'Missile'
+                    '"Missile"'
                 ],
                 lose_chassis: [
                     'Docking Ship'
@@ -6128,11 +6124,11 @@ const upgrades = [
                 confersAddons: [
                     {
                         //type: exportObj.Upgrade,
-                        slot: 'Sensor'
+                        slot: '"Sensor"'
                     },
                     {
                         //type: exportObj.Upgrade,
-                        slot: 'Calculator'
+                        slot: '"Calculator"'
                     }
                 ]      
             },
@@ -6146,10 +6142,10 @@ const upgrades = [
                 ship: "ST-70 Assault Ship",
                 ship_cost: 1,
                 Loadout_value: 5,
-                effect: "Retire en emplacement #missile# et la capacité 'Vaisseau-Mère'. Ajoute #sensor# et #calculator#. Ajoute 5 points de Loadout et augmente le coût du vaisseau de 1",
+                effect: "te 5 points de Loadout et augmente le coût du vaisseau de 1",
 
                 unequips_upgrades: [
-                    'Missile'
+                    '"Missile"'
                 ],
                 lose_chassis: [
                     'Docking Ship'
@@ -6159,11 +6155,11 @@ const upgrades = [
                 confersAddons: [
                     {
                         //type: exportObj.Upgrade,
-                        slot: 'Sensor'
+                        slot: '"Sensor"'
                     },
                     {
                         //type: exportObj.Upgrade,
-                        slot: 'Calculator'
+                        slot: '"Calculator"'
                     }
                 ]       
             },
@@ -6177,10 +6173,10 @@ const upgrades = [
                 ship: "HWK-290 Light Freighter",
                 ship_cost: 1,
                 Loadout_value: 5,
-                effect: "Retire en emplacement #missile# et la capacité 'Vaisseau-Mère'. Ajoute #sensor# et #calculator#. Ajoute 5 points de Loadout et augmente le coût du vaisseau de 1",
+                effect: "ute 5 points de Loadout et augmente le coût du vaisseau de 1",
 
                 unequips_upgrades: [
-                    'Missile'
+                    '"Missile"'
                 ],
                 lose_chassis: [
                     'Docking Ship'
@@ -6190,11 +6186,11 @@ const upgrades = [
                 confersAddons: [
                     {
                         //type: exportObj.Upgrade,
-                        slot: 'Sensor'
+                        slot: '"Sensor"'
                     },
                     {
                         //type: exportObj.Upgrade,
-                        slot: 'Calculator'
+                        slot: '"Calculator"'
                     }
                 ]       
             }
@@ -6308,7 +6304,7 @@ function dataGetFromPilot(y) { //On prend le pilote et on recopie l'objet pilote
             }
     }
 }
-function displayslots(y) { //crée les menus de slot et contient l'écoute des modification des slots
+function displayslots(y) { //crée les menus de slot et contient l'écoute des "modification" des slots
      // Get the parent element
     shipslot = document.getElementById('shipslots'+y);
      // Clear any existing child elements
@@ -6352,7 +6348,7 @@ function updateUpgradeCount(y) {//cette faction décrit le calcul des mises à j
         let startIndex = slotString.indexOf("(") + 1; // Find the index of '(' and add 1 to skip '('
         let endIndex = slotString.indexOf(")"); // Find the index of ')'
         let extractedString = slotString.substring(startIndex, endIndex); // Extract the substring between '(' and ')'
-        let upgValue = parseInt(extractedString) || 0; //transforme la chaine en entier, et si elle est vide elle renvoir 0 (utile pour toutes les string type <crew> qui ne contiennent pas de parenthèses)
+        let upgValue = parseInt(extractedString) || 0; //transforme la chaine en entier, et si elle est vide elle renvoir 0 (utile pour toutes les string type <"crew"> qui ne contiennent pas de parenthèses)
         newLoadoutValue = newLoadoutValue - upgValue;
     }
     loadoutcount.textContent = newLoadoutValue;
@@ -6430,7 +6426,7 @@ for (i=0 ; i<pilot_list[y]["slots"].length;i++) {
     for (k=0 ; k<upgrades.length ; k++) {
         if ((pilot_list[y]["slots"][i]===upgrades[k]["slot"]) && ((upgrades[k]["faction"]==="")||(upgrades[k]["faction"].includes(factionno1))||(upgrades[k]["faction"].includes(factionno2))||(upgrades[k]["faction"].includes(factionno3)))) {
             if (typeof upgrades[k]["restrictions"] !== 'undefined') { //on va tester si il y a une restriction sur l'upgrade
-                if (pilot_list[y][upgrades[k]["restrictions"][0]].includes(upgrades[k]["restrictions"][1])) { //dur à lire ! exemple, si dans l'attribut "restrictions" on a ["slot","Modification"], on va regarder si le pilote sélectionné a bien Modification dans son attribut slot. Autre exemple : avec [keyword, TIE]
+                if (pilot_list[y][upgrades[k]["restrictions"][0]].includes(upgrades[k]["restrictions"][1])) { //dur à lire ! exemple, si dans l'attribut "restrictions" on a ["slot",""Modification""], on va regarder si le pilote sélectionné a bien "Modification" dans son attribut slot. Autre exemple : avec [keyword, TIE]
                     slotlist.push(upgrades[k]["name"] + ' (' + upgrades[k]["points"] + ')' ); //on ajoute dans le menu slotlist le nom de l'upgrade suivi de son cout entre parenthèses
                 }  
             } else {
