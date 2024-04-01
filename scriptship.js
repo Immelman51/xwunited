@@ -6572,6 +6572,7 @@ function upgradeListGet(y) { //va chercher les options pour populate les menus d
             for (k=0 ; k<upgrades.length ; k++) {
                 if ((typeOfUpg===upgrades[k]["slot"]) && ((upgrades[k]["faction"]==="")||(upgrades[k]["faction"].includes(factionno1))||(upgrades[k]["faction"].includes(factionno2))||(upgrades[k]["faction"].includes(factionno3)))) {
                     if (upgrades[k]["restrictions"][0] !== 'undefined') {
+                        console.log(ships[pilot_list[y]["shipId"]][upgrades[k]["restrictions"][0]]);
                         if ((upgpilotlist.includes(upgrades[k]["restrictions"][1]))||(ships[pilot_list[y]["shipId"]][upgrades[k]["restrictions"][0]].includes(upgrades[k]["restrictions"][1])) ) {
                             slotlist.push(upgrades[k]["name"]+' (' + upgrades[k]["points"] + ')' );
                         }
