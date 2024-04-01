@@ -6458,12 +6458,12 @@ function displayslots(y) { //crée les menus de slot et contient l'écoute des "
 
     })    
     index = i;  
-    index2 = i;     // pour ne pas perdre cette valeur car après on va incrémenter index
+   
     }  
     for (j= 0 ; j<ships[pilots[y]["shipId"]]["slots"].length ; j++) { //on ajoute aussi les slots liés au chassis que l'on va chercher grace au shipId
         upgrades_Type[y].push(ships[pilots[y]["shipId"]]["slots"][j]);
         slotmenu = document.createElement('select');
-        slotmenu.setAttribute('id', 'slot'+y+"_"+(j+index2+1));
+        slotmenu.setAttribute('id', 'slot'+y+"_"+(j+index+1));
         slotmenu.setAttribute('class', 'slotElement'+' '+ships[pilots[y]["shipId"]]["slots"][j] );
         shipslot.appendChild(slotmenu);
         slotmenu.addEventListener("input", function(event) {//cette faction décrit le calcul des mises à jour des points pour le loadout et le cout du pilote
@@ -6482,7 +6482,7 @@ function updateUpgradeCount(y) {//cette faction décrit le calcul des mises à j
     let newLoadoutValue = pilot_list[y]["loadout"];
     costcount = document.getElementById("shipcost"+y);
     loadoutcount= document.getElementById("shiploadout"+y);
-    for (k=0; k<pilot_list[y]["slots"].length ; k++) {
+    for (k=0; k<upgrades_Type[y].length ; k++) {
         let slotMenu = document.getElementById('slot'+y+"_"+k);
         let slotString = slotMenu.value;
         let startIndex = slotString.indexOf("(") + 1; // Find the index of '(' and add 1 to skip '('
