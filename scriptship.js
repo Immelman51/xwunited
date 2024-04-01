@@ -6464,7 +6464,7 @@ function displayslots(y) { //crée les menus de slot et contient l'écoute des "
         upgrades_Type[y].push(ships[pilot_list[y]["shipId"]]["slots"][j]);
         slotmenu = document.createElement('select');
         slotmenu.setAttribute('id', 'slot'+y+"_"+(j+index+1));
-        slotmenu.setAttribute('class', 'slotElement'+' '+ships[pilots[y]["shipId"]]["slots"][j] );
+        slotmenu.setAttribute('class', 'slotElement'+' '+ships[pilot_list[y]["shipId"]]["slots"][j] );
         shipslot.appendChild(slotmenu);
         slotmenu.addEventListener("input", function(event) {//cette faction décrit le calcul des mises à jour des points pour le loadout et le cout du pilote
             updateUpgradeCount(y);
