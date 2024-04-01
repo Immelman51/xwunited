@@ -6460,7 +6460,7 @@ function displayslots(y) { //crée les menus de slot et contient l'écoute des "
     index = i;  
    
     }  
-    for (j= 0 ; j<ships[pilots[y]["shipId"]]["slots"].length ; j++) { //on ajoute aussi les slots liés au chassis que l'on va chercher grace au shipId
+    for (j= 0 ; j<ships[pilot_list[y]["shipId"]]["slots"].length ; j++) { //on ajoute aussi les slots liés au chassis que l'on va chercher grace au shipId
         upgrades_Type[y].push(ships[pilot_list[y]["shipId"]]["slots"][j]);
         slotmenu = document.createElement('select');
         slotmenu.setAttribute('id', 'slot'+y+"_"+(j+index+1));
