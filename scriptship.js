@@ -5189,7 +5189,7 @@ const upgrades = [
                 points: 3,
                 effect: "Donne l'action #BO# blanche",
                 restrictions: 
-                    ["actions", "R-Boost",]
+                    ["actions", "R-Boost"]
                 ,
                 faction: ""
                 /*modifier_func: (stats) ->
@@ -6559,33 +6559,9 @@ function updateTotalCost() {
 
 
 function upgradeListGet(y) { //va chercher les options pour populate les menus de slots crées avec displaylots()
-    let upgpilotlist = [];
-    for (i=0 ; i<upgrades_number[y] ; i++) { //on va d'abord récupérer la liste de toutes les upgrades : upgpilotlist
-        upg_menu = document.getElementById("slot"+y+"_"+i);
-        typeOfUpg = upg_menu.classList[1]; //on récupère le type d'upgrade grace à class list qui met sous forme de tableau les class
-        upgpilotlist.push(typeOfUpg);
-    }
-    for (j=0 ; j<(upgrades_number[y]-1) ; j++) { //on va maintenant remplir les menus
-        let slotlist = [];
-        upg_menu = document.getElementById("slot"+y+"_"+j);
-        slotlist.push("<"+upgpilotlist[j]+">");
-            for (k=0 ; k<upgrades.length ; k++) {
-                if ((typeOfUpg===upgrades[k]["slot"]) && ((upgrades[k]["faction"]==="")||(upgrades[k]["faction"].includes(factionno1))||(upgrades[k]["faction"].includes(factionno2))||(upgrades[k]["faction"].includes(factionno3)))) {
-                    if (upgrades[k]["restrictions"][0] !== 'undefined') {
-                        console.log(upgrades[k]["name"]+ships[pilot_list[y]["shipId"]][upgrades[k]["restrictions"][0]]);
-                        if ((upgpilotlist.includes(upgrades[k]["restrictions"][1]))||(ships[pilot_list[y]["shipId"]][upgrades[k]["restrictions"][0]].includes(upgrades[k]["restrictions"][1])) ) {
-                            slotlist.push(upgrades[k]["name"]+' (' + upgrades[k]["points"] + ')' );
-                        }
-                    }else{
-                        slotlist.push(upgrades[k]["name"]+' (' + upgrades[k]["points"] + ')' );   
-                    }
-                }
-        }
-        populateMenu('slot'+y+'_'+i,slotlist); 
-    }
+  
 
-
-    /*for (i=0 ; i<pilot_list[y]["slots"].length;i++) {
+    for (i=0 ; i<pilot_list[y]["slots"].length;i++) {
     let slotlist =[];
     slotlist.push("<"+pilot_list[y]["slots"][i]+">");
     for (k=0 ; k<upgrades.length ; k++) {
@@ -6600,7 +6576,7 @@ function upgradeListGet(y) { //va chercher les options pour populate les menus d
     }
     }      
     populateMenu('slot'+y+'_'+i,slotlist);
-}*/
+}
 }
 
 function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'active via le bouton Addship
