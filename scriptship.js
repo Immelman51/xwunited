@@ -6311,22 +6311,23 @@ function displayslots(y) { //crée les menus de slot et contient l'écoute des "
      shipslot.innerHTML = '';
       // Create and append new select elements
       let index = 0;
-    for (index = 0 ; index<pilot_list[y]["slots"].length; index++)  {
+    for (i = 0 ; i<pilot_list[y]["slots"].length; i++)  {
     slotmenu = document.createElement('select');
     slotmenu.setAttribute('id', 'slot'+y+"_"+index);
-    slotmenu.setAttribute('class', 'slotElement'+' '+pilot_list[y]["slots"][index]);
+    slotmenu.setAttribute('class', 'slotElement'+' '+pilot_list[y]["slots"][i]);
     shipslot.appendChild(slotmenu);
     slotmenu.addEventListener("input", function(event) {//cette faction décrit le calcul des mises à jour des points pour le loadout et le cout du pilote
             updateUpgradeCount(y);
             updateTotalCost();
             displayDescriptionUpgrade(event);
 
-    })          
+    })    
+    index = i;      
     }  
-    for (index2 = 0 ; index2<ships[pilots[y]["shipId"]]["slots"].length ; index2++) { //on ajoute aussi les slots liés au chassis que l'on va chercher grace au shipId
+    for (j= 0 ; j<ships[pilots[y]["shipId"]]["slots"].length ; j++) { //on ajoute aussi les slots liés au chassis que l'on va chercher grace au shipId
         slotmenu = document.createElement('select');
-        slotmenu.setAttribute('id', 'slot'+y+"_"+index2+index+1);
-        slotmenu.setAttribute('class', 'slotElement'+' '+ships[pilots[y]["shipId"]]["slots"][index2] );
+        slotmenu.setAttribute('id', 'slot'+y+"_"+j+index+1);
+        slotmenu.setAttribute('class', 'slotElement'+' '+ships[pilots[y]["shipId"]]["slots"][j] );
         shipslot.appendChild(slotmenu);
         slotmenu.addEventListener("input", function(event) {//cette faction décrit le calcul des mises à jour des points pour le loadout et le cout du pilote
             updateUpgradeCount(y);
