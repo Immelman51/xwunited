@@ -6427,7 +6427,7 @@ for (i=0 ; i<pilot_list[y]["slots"].length;i++) {
     for (k=0 ; k<upgrades.length ; k++) {
         if ((pilot_list[y]["slots"][i]===upgrades[k]["slot"]) && ((upgrades[k]["faction"]==="")||(upgrades[k]["faction"].includes(factionno1))||(upgrades[k]["faction"].includes(factionno2))||(upgrades[k]["faction"].includes(factionno3)))) {
             if (typeof upgrades[k]["restrictions"] !== 'undefined') { //on va tester si il y a une restriction sur l'upgrade
-                if (pilot_list[y][upgrades[k]["restrictions"]["0"]].includes(upgrades[k]["restrictions"]["1"])) { //dur à lire ! exemple, si dans l'attribut "restrictions" on a ["slot",""Modification""], on va regarder si le pilote sélectionné a bien "Modification" dans son attribut slot. Autre exemple : avec [keyword, TIE]
+                if (pilot_list[y][upgrades[k]["restrictions"][0]].includes(upgrades[k]["restrictions"][1])) { //dur à lire ! exemple, si dans l'attribut "restrictions" on a ["slot",""Modification""], on va regarder si le pilote sélectionné a bien "Modification" dans son attribut slot. Autre exemple : avec [keyword, TIE]
                     slotlist.push(upgrades[k]["name"] + ' (' + upgrades[k]["points"] + ')' ); //on ajoute dans le menu slotlist le nom de l'upgrade suivi de son cout entre parenthèses
                 }  
             } else {
