@@ -600,7 +600,7 @@ const ships =
                 [ 0, 0, 2, 0, 0, 0 ],
                 [ 0, 0, 2, 0, 0, 3 ]
             ],
-            slots: ["Modification", Weapon_Hardpoint]
+            slots: ["Modification", "Weapon_Hardpoint"]
         },
         {
     
