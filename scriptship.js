@@ -100,7 +100,8 @@ const ships =
                 [ 2, 2, 2, 2, 2, 0, 0, 0, 3, 3],
                 [ 0, 0, 2, 0, 0, 3, 0, 0, 0, 0]
             ],
-            slots: ["Torpedo", "Astromech", "Modification"]
+            slots: ["Torpedo", "Astromech", "Modification"],
+            base: "Small"
         },
         {    
             
@@ -125,6 +126,7 @@ const ships =
                 [ 3, 2, 2, 2, 3, 0],
                 [ 0, 0, 3, 0, 0, 3]
             ],
+            base: "Small",
             slots: ["Torpedo", "Turret", "Payload", "Astromech", "Modification"]
         },
         {
@@ -152,6 +154,7 @@ const ships =
                 [ 0, 0, 1, 0, 0, 0, 0, 0],
                 [ 0, 0, 1, 0, 0, 3, 0, 0]
             ],
+            base: "Small",
             slots: ["Missile", "Modification"]
         },
         {
@@ -203,6 +206,7 @@ const ships =
                 [ 0, 0, 2, 0, 0, 3],
                 [ 0, 0, 2, 0, 0, 0]
             ],
+            base: "Small",
             slots: ["Modification"]
         },
         {
@@ -230,6 +234,7 @@ const ships =
                 [ 0, 0, 2, 0, 0, 3, 0, 0, 0, 0],
                 [ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0]
             ],
+            base: "Small",
             slots: ["Tech", "Missile", "Sensor", "Modification"]
         },
         {
@@ -249,6 +254,7 @@ const ships =
                 "Boost",
                 "Evade"
             ],
+            base: "Small",
             maneuvers: [
                 [ 0, 0, 0, 0, 0, 0, 0, 0],
                 [ 2, 0, 0, 0, 2, 0, 0, 0],
@@ -310,6 +316,7 @@ const ships =
                 [ 3, 2, 1, 2, 3],
                 [ 0, 0, 2, 0, 0]
             ],
+            base: "Small",
             slots: ["Crew", "Payload", "Turret", "Illicit", "Modification", "Modification", "Calculator"]
         },
         {
@@ -361,6 +368,7 @@ const ships =
                 [ 0, 3, 1, 3, 0, 0, 0, 0, 0, 0],
                 [ 0, 0, 3, 0, 0, 0, 0, 0, 0, 0]
             ],
+            base: "Small",
             slots: ["Sensor", "Cannon", "Cannon", "Torpedo", "Gunner", "Payload","Modification"]
         },
         {
@@ -369,6 +377,7 @@ const ships =
             factions: [ "Imperial_Academy" ],
             id: 11,
             attack: 2,
+            base: "Small",
             agility: 2,
             hull: 6,
             shields: 0,
@@ -398,6 +407,7 @@ const ships =
             factions: [ "Partisans", "Bounty_Hunters_Guild", "Black_Sun", "Pirates_and_Smugglers"  ],
             id: 12,
             attack: 2,
+            base: "Small",
             agility: 2,
             hull: 2,
             shields: 2,
@@ -425,6 +435,7 @@ const ships =
             agility: 3,
             hull: 3,
             shields: 4,
+            base: "Small",
             keyword: ["TIE"],
             chassis: "Full Throttle",
             actions: [
@@ -454,6 +465,7 @@ const ships =
             agility: 3,
             hull: 3,
             shields: 3,
+            base: "Small",
             actions: [
                 "Focus",
                 "Evade",
@@ -481,6 +493,7 @@ const ships =
             agility: 2,
             hull: 3,
             shields: 2,
+            base: "Small",
             keyword: ["TIE"],
             chassis: "Stygium Array",
             actions: [
@@ -567,6 +580,7 @@ const ships =
                 "Boost",
                 "R-> Focus"
             ],
+            base: "Small",
             maneuvers: [
                 [ 0, 0, 0, 0, 0, 0, 0, 0],
                 [ 2, 1, 1, 1, 2, 0, 0, 0],
@@ -600,6 +614,7 @@ const ships =
                 [ 0, 0, 2, 0, 0, 0 ],
                 [ 0, 0, 2, 0, 0, 3 ]
             ],
+            base: "Small",
             slots: ["Modification", "Weapon_Hardpoint"]
         },
         {
@@ -674,6 +689,7 @@ const ships =
                 [ 0, 2, 1, 2, 0, 0, 0, 0, 0, 0 ],
                 [ 0, 0, 2, 0, 0, 3, 0, 0, 0, 0 ]
             ],
+            base: "Small",
             slots: ["Missile", "Illicit", "Modification"]
         },
         {
@@ -770,6 +786,7 @@ const ships =
                 "Barrel Roll",
                 "R-> Evade",
             ],
+            base: "Small",
             maneuvers: [
                 [ 0, 0, 0, 0, 0, 0 ],
                 [ 3, 1, 1, 1, 3, 0 ],
@@ -797,6 +814,7 @@ const ships =
                 "Boost",
                 "R-> Focus"
             ],
+            base: "Small",
             maneuvers: [
                 [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
                 [ 1, 1, 0, 1, 1, 0, 0, 0, 0, 0 ],
@@ -909,6 +927,7 @@ const ships =
                 [ 0, 0, 2, 0, 0, 3, 0, 0, 0, 0 ],
                 [ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0 ]
             ],
+            base: "Small",
             slots: ["Torpedo", "Modification", "Modification"]
         },
         {
@@ -953,6 +972,7 @@ const ships =
                 "R-Evade",
                 "Barrel Roll",
             ],
+            base: "Small",
             maneuvers: [
                 [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
                 [ 2, 2, 2, 2, 2, 0, 0, 0, 0, 0, 3, 0, 3 ],
@@ -996,6 +1016,7 @@ const ships =
             agility: 2,
             hull: 4,
             shields: 0,
+            base: "Small",
             keyword: ["TIE"],
             chassis: "Adaptive Ailerons",
             actions: [
@@ -1020,6 +1041,7 @@ const ships =
             agility: 1,
             hull: 6,
             shields: 2,
+            base: "Small",
             actions: [
                 "Focus",
                 "R-Barrel Roll",
@@ -1067,6 +1089,7 @@ const ships =
             attack: 2,
             agility: 2,
             hull: 4,
+            base: "Small",
             keyword: ["TIE"],
             shields: 1,
             actions: [
@@ -1093,6 +1116,7 @@ const ships =
             agility: 2,
             hull: 4,
             shields: 3,
+            base: "Small",
             chassis: "???",
             actions: [
                 "Focus",
@@ -1143,6 +1167,7 @@ const ships =
             agility: 2,
             hull: 4,
             shields: 1,
+            base: "Small",
             chassis: "Comms Shuttle",
             actions: [
                 "Focus",
@@ -1193,6 +1218,7 @@ const ships =
             hull: 2,
             shields: 2,
             chassis: "Co-Pilot",
+            base: "Small",
             actions: [
                 "Focus",
                 "Barrel Roll",
@@ -1216,6 +1242,7 @@ const ships =
             agility: 2,
             hull: 4,
             shields: 3,
+            base: "Small",
             chassis: "Integrated S-Foils",
             actions: [
                 "Focus",
@@ -1240,6 +1267,7 @@ const ships =
             agility: 3,
             hull: 2,
             shields: 2,
+            base: "Small",
             chassis: "Refined Gyrostabilizers",
             actions: [
                 "Focus",
@@ -1268,6 +1296,7 @@ const ships =
             hull: 3,
             keyword: ["TIE"],
             shields: 1,
+            base: "Small",
             actions: [
                 "Focus",
                 "Evade",
@@ -1293,6 +1322,7 @@ const ships =
             agility: 3,
             hull: 4,
             shields: 2,
+            base: "Small",
             keyword: ["TIE"],
             chassis: "Autothrusters",
             actions: [
@@ -1320,6 +1350,7 @@ const ships =
             agility: 2,
             hull: 3,
             shields: 3,
+            base: "Small",
             keyword: ["TIE"],
             chassis: "Heavy Weapon Turret",
             actions: [
@@ -1406,6 +1437,7 @@ const ships =
             agility: 3,
             hull: 3,
             shields: 0,
+            base: "Small",
             chassis: "Notched Stabilizers",
             keyword: ["TIE"],
             actions: [
@@ -1432,6 +1464,7 @@ const ships =
             agility: 2,
             hull: 5,
             shields: 0,
+            base: "Small",
             actions: [
                 "Focus",
                 "Evade",
@@ -1457,6 +1490,7 @@ const ships =
             agility: 3,
             hull: 3,
             shields: 1,
+            base: "Small",
             chassis: "Fine-Tuned Controls",
             actions: [
                 "Focus",
@@ -1487,6 +1521,7 @@ const ships =
             agility: 2,
             hull: 3,
             shields: 3,
+            base: "Small",
             chassis: "Fine-Tuned Controls",
             actions: [
                 "Focus",
@@ -1538,6 +1573,7 @@ const ships =
             agility: 2,
             hull: 3,
             shields: 0,
+            base: "Small",
             chassis: "Grappling Struts",
             actions: [
                 "Calculate",
@@ -1564,6 +1600,7 @@ const ships =
             agility: 2,
             hull: 3,
             shields: 2,
+            base: "Small",
             actions: [
                 "Focus",
                 "Lock",
@@ -1592,6 +1629,7 @@ const ships =
             hull: 3,
             shields: 2,
             chassis: "Full Throttle",
+            base: "Small",
             actions: [
                 "Focus",
                 "Lock",
@@ -1617,6 +1655,7 @@ const ships =
             agility: 2,
             hull: 5,
             shields: 0,
+            base: "Small",
             chassis: "Landing Struts",
             actions: [
                 "Calculate",
@@ -1643,6 +1682,7 @@ const ships =
             agility: 2,
             hull: 3,
             shields: 1,
+            base: "Small",
             chassis: "Co-Pilot",
             actions: [
                 "Focus",
@@ -1668,6 +1708,7 @@ const ships =
             agility: 1,
             hull: 5,
             shields: 3,
+            base: "Small",
             chassis: "Docking Ship",
             actions: [
                 "Focus",
@@ -1693,6 +1734,7 @@ const ships =
             agility: 3,
             hull: 4,
             shields: 0,
+            base: "Small",
             chassis: "Pinpoint Tractor Array",
             actions: [
                 "Focus",
@@ -1717,6 +1759,7 @@ const ships =
             agility: 1,
             hull: 5,
             shields: 3,
+            base: "Small",
             chassis: "Plated Hull",
             actions: [
                 "Focus",
@@ -1742,6 +1785,7 @@ const ships =
             agility: 2,
             hull: 6,
             shields: 0,
+            base: "Small",
             chassis: "Explosion with Wings",
             actions: [
                 "Focus",
@@ -1767,6 +1811,7 @@ const ships =
             agility: 3,
             hull: 2,
             shields: 2,
+            base: "Small",
             keyword: ["TIE"],
             chassis: "Fine-Tuned Thrusters",
             actions: [
@@ -1819,6 +1864,7 @@ const ships =
             agility: 1,
             hull: 5,
             shields: 3,
+            base: "Small",
             chassis: "Repulsorlift Stabilizers",
             actions: [
                 "Calculate",
@@ -1901,6 +1947,7 @@ const ships =
             agility: 3,
             hull: 3,
             shields: 0,
+            base: "Small",
             chassis: "Networked Calculations",
             actions: [
                 "Calculate",
@@ -1931,6 +1978,7 @@ const ships =
             hull: 2,
             shields: 2,
             keyword: ["TIE"],
+            base: "Small",
             chassis: "Twin Ion Engines",
             actions: [
                 "Focus",
@@ -1958,6 +2006,7 @@ const ships =
             agility: 3,
             hull: 3,
             shields: 0,
+            base: "Small",
             chassis: "Intuitive Controls",
             actions: [
                 "Focus",
@@ -1983,6 +2032,7 @@ const ships =
             agility: 1,
             hull: 1,
             shields: 2,
+            base: "Small",
             actions: [
             ],
             maneuvers: [
@@ -1998,6 +2048,7 @@ const ships =
             agility: 1,
             hull: 4,
             shields: 3,
+            base: "Small",
             chassis: "Intuitive Interface",
             actions: [
                 "Focus",
@@ -2026,6 +2077,7 @@ const ships =
             hull: 3,
             shields: 2,
             keyword: ["TIE"],
+            base: "Small",
             chassis: "Heavy Weapon Turret",
             actions: [
                 "Focus",
@@ -2055,6 +2107,7 @@ const ships =
             agility: 2,
             hull: 4,
             shields: 2,
+            base: "Small",
             keyword: ["TIE"],
             chassis: "Pursuit Thrusters",
             actions: [
@@ -2139,6 +2192,7 @@ const ships =
             id: 77,
             attack: 2,
             agility: 2,
+            base: "Small",
             hull: 2,
             shields: 2,
             chassis: "Versatile Frame",
@@ -2162,6 +2216,7 @@ const ships =
             id: 78,
             attack: 2,
             agility: 2,
+            base: "Small",
             hull: 5,
             shields: 2,
             chassis: "Dead to Rights",
@@ -2194,6 +2249,7 @@ const ships =
             sattack: 2,
             srange: [1,2],
             agility: 2,
+            base: "Small",
             hull: 2,
             shields: 0,
             chassis: "Boarding, Multiple Targets",
@@ -4448,6 +4504,7 @@ const upgrades = [
                 slot: "Astromech",
                 points: 6,
                 charge: 2,
+                restrictions: [],
                 effect: "Après avoir révélé votre cadran, vous pouvez dépenser 1 #ch# et gagner 1 marqueur de désarmement pour récupérer 1 bouclier.",
                 faction: ""
             },
@@ -4456,6 +4513,7 @@ const upgrades = [
                 id: 1,
                 slot: "Astromech",
                 points: 3,
+                restrictions: [],
                 effect: "Vous pouvez maintenir jusqu’à 2 cibles verrouillées. Chaque verrouillage doit être sur un objet différent. Après avoir effectué une action #TL# , vous pouvez verrouiller une cible.",
                 faction: ""
             },
@@ -4464,6 +4522,7 @@ const upgrades = [
                 id: 2,
                 slot: "Astromech",
                 points: 2,
+                restrictions: [],
                 effect: "Réduisez la difficulté de vos manoeuvres de vitesse 1 et 2",
                 faction: ""
                 
@@ -4474,6 +4533,7 @@ const upgrades = [
                 slot: "Astromech",
                 points: 4,
                 charge: 2,
+                restrictions: [],
                 effect: "Action : dépensez 1 #ch# pour réparer 1 carte de dégât face cachée.<br>Action : réparez 1 carte de dégât Vaisseau face visible.",
                 faction: ""
             },
@@ -4482,6 +4542,7 @@ const upgrades = [
                 id: 4,
                 slot: "Astromech",
                 points: 2,
+                restrictions: [],
                 effect: "Après avoir effectué une action #RT# ou #RD#, si vous êtes dans l'arc de tir d'un vaisseau ennemi, vous pouvez effectuer une action #CA# rouge.",
                 faction: ""
             },
@@ -4492,6 +4553,7 @@ const upgrades = [
                 slot: "Talent",
                 points: 3,
                 charge: 1,
+                restrictions: [],
                 effect: "Tant que vous effectuez une attaque principale, si le défenseur est dans votre #bulls#, avant l’étape « Neutraliser les résultats », vous pouvez dépenser 1 #ch# pour annuler 1 résultat #hit#.",
                 faction: ""
             },
@@ -4512,6 +4574,7 @@ const upgrades = [
                 points: 3,
                 recurring: 1,
                 charge: 1,
+                restrictions: [],
                 effect: "Tant que vous défendez ou que vous effectuez une attaque, s’il n’y a aucun autre vaisseau allié à portée 0–2, vous pouvez dépenser 1 #ch# pour relancer 1 de vos dés.",
                 faction: ""
             },
@@ -4520,6 +4583,7 @@ const upgrades = [
                 id: 8,
                 slot: "Talent",
                 points: 2,
+                restrictions: [],
                 effect: "Tant qu’un vaisseau ennemi à portée 0 défend, il lance un dé de défense en moins.",
                 faction: ""
             },
@@ -4528,6 +4592,7 @@ const upgrades = [
                 id: 9,
                 slot: "Talent",
                 points: 1,
+                restrictions: [],
                 effect: "Tant que vous effectuez une attaque, si le défenseur est dans votre #bulls#, vous pouvez changer 1 résultat #hit# en un résultat #crit#.",
                 faction: ""
             },
@@ -4536,6 +4601,7 @@ const upgrades = [
                 id: 10,
                 slot: "Talent",
                 points: 8,
+                restrictions: [],
                 effect: "Tant que vous effectuez une attaque #Farc#, si vous n’êtes pas dans l’arc de tir du défenseur, il lance 1 dé de défense en moins.",
                 faction: ""
             },
@@ -4544,6 +4610,7 @@ const upgrades = [
                 id: 11,
                 slot: "Talent",
                 points: 3,
+                restrictions: [],
                 effect: "Tant que vous effectuez une attaque principale, si le défenseur est dans votre #bulls#, vous pouvez relancer 1 dé d’attaque.",
                 faction: ""
             },
@@ -4553,6 +4620,7 @@ const upgrades = [
                 slot: "Talent",
                 points: 5,
                 unique: true,
+                restrictions: [],
                 effect: "Tant que vous coordonnez, le vaisseau que vous avez choisi peut effectuer une action seulement si celle-ci est également dans votre barre d’action.<br>Ajoute l'action (CO)",
                 faction: "",
                 modifier_func: '(stats) -> stats.actions.push "R-Coordinate" if "R-Coordinate" not in stats.actions'
@@ -4562,6 +4630,7 @@ const upgrades = [
                 id: 13,
                 slot: "Talent",
                 points: 2,
+                restrictions: [],
                 effect: "Au début de la phase d’engagement, vous pouvez choisir 1 vaisseau allié à portée 1. Dans ce cas, considérez que son initiative est égale à la vôtre jusqu’à la fin du round.",
                 faction: ""
             },
@@ -4570,6 +4639,7 @@ const upgrades = [
                 id: 14,
                 slot: "Talent",
                 points: 3,
+                restrictions: [],
                 effect: "Tant que vous effectuez une attaque qui est gênée par un obstacle, lancez 1 dé d’attaque supplémentaire.",
                 faction: ""
             },
@@ -4580,6 +4650,7 @@ const upgrades = [
                 points: 6,
                 attack: 2,
                 range: [2],
+                restrictions: [],
                 rangebonus: true,
                 effect: "Après qu’un vaisseau ennemi a exécuté une manœuvre, vous pouvez effectuer cette attaque contre lui en tant qu’attaque bonus.<br>Attaque : vos dés ne peuvent pas être modifiés.",
                 faction: ""
@@ -4590,7 +4661,7 @@ const upgrades = [
                 slot: "Crew",
                 points: 3,
                 effect: "Ajoute l'action #CO# blanche",
-                restrictions: ["Action", "R-Coordinate"],
+                restrictions: ["actions", "R-Coordinate"],
                 faction: "",
                 modifier_func: '(stats) -> stats.actions.push "Coordinate" if "Coordinate" not in stats.actions',
             },
@@ -4599,6 +4670,7 @@ const upgrades = [
                 id: 17,
                 slot: "Crew",
                 points: 8,
+                restrictions: [],
                 effect: "Après avoir effectué une action #FS#, gagnez 1 marqueur de concentration.",
                 faction: ""
             },
@@ -4607,6 +4679,7 @@ const upgrades = [
                 id: 18,
                 slot: "Crew",
                 points: 2,
+                restrictions: [],
                 effect: "À la fin du round, vous pouvez lancer 1 dé d’attaque pour réparer 1 carte de dégât face visible. Puis, sur un résultat #hit#, exposez 1 carte de dégât.",
                 faction: ""
             },
@@ -4616,6 +4689,7 @@ const upgrades = [
                 slot: "Crew",
                 points: 4,
                 charge: 1,
+                restrictions: [],
                 effect: "Action : récupérez 1 #ch#.<br>Action : dépensez 1 #ch# pour récupérer 1 bouclier.",
                 faction: ""
             },
@@ -4624,6 +4698,7 @@ const upgrades = [
                 id: 20,
                 slot: "Crew",
                 points: 2,
+                restrictions: [],
                 effect: "Tant que vous défendez et avant que les dés d’attaque ne soient lancés, vous pouvez dépenser un marqueur de verrouillage que vous avez sur l’attaquant pour lancer 1 dé d’attaque. Dans ce cas, l’attaquant gagne 1 marqueur de brouillage. Puis, sur un résultat #hit# ou #crit#, gagnez 1 marqueur de brouillage.",
                 faction: ""
             },
@@ -4632,6 +4707,7 @@ const upgrades = [
                 id: 21,
                 slot: "Gunner",
                 points: 1,
+                restrictions: [],
                 effect: "Pendant la phase de dénouement, vous pouvez faire pivoter votre indicateur #tur#",
                 faction: ""
             },
@@ -4640,6 +4716,7 @@ const upgrades = [
                 id: 22,
                 slot: "Gunner",
                 points: 6,
+                restrictions: [],
                 effect: "Après avoir effectué une attaque de #tur#, retirez un marqueur de concentration, de calcul, ou d’évasion du défenseur.",
                 faction: ""
             },
@@ -4648,6 +4725,7 @@ const upgrades = [
                 id: 23,
                 slot: "Gunner",
                 points: 2,
+                restrictions: [],
                 effect: "Si vous devez larguer ou lancer un engin, vous pouvez utiliser un gabarit de même direction mais avec une vitesse supérieure ou inférieure de 1.",
                 faction: ""
             },
@@ -4656,6 +4734,7 @@ const upgrades = [
                 id: 24,
                 slot: "Gunner",
                 points: 5,
+                restrictions: [],
                 effect: "Après avoir effectué une attaque, vous pouvez effectuer une attaque bonus #tur# ou #can#, avec une #tur# ou un #can# que vous n’avez pas encore utilisé.",
                 faction: ""
               },
@@ -4664,6 +4743,7 @@ const upgrades = [
                 id: 25,
                 points: 6,
                 slot: "Gunner",
+                restrictions: [],
                 effect: "Après avoir effectué une attaque, vous pouvez dépenser un marqueur vert ou recevoir un marqueur de stress pour verrouiller le défenseur.",
                 faction: ""
             },
@@ -4672,6 +4752,7 @@ const upgrades = [
                 id: 26,
                 slot: "Tech",
                 points: 2,
+                restrictions: [],
                 effect: "Tant que vous effectuez une attaque, vous devez choisir un défenseur à la plus courte portée d’attaque valide.<br>Après avoir effectué une attaque qui a raté, placez 1 marqueur de calcul sur cette carte.<br>Avant de vous engager, vous pouvez retirer 1 marqueur de calcul de cette carte pour gagner le marqueur correspondant",
                 faction: ""
             },
@@ -4680,6 +4761,7 @@ const upgrades = [
                 id: 27,
                 slot: "Tech",
                 points: 5,
+                restrictions: [],
                 effect: "Tant que vous exécutez entièrement une manœuvre rouge, avant l’étape « Vérifier la difficulté », vous pouvez effectuer 1 action.",
                 faction: ""
             },
@@ -4688,6 +4770,7 @@ const upgrades = [
                 id: 28,
                 slot: "Tech",
                 points: 5,
+                restrictions: [],
                 effect: "Tant que vous effectuez une attaque, vous pouvez dépenser 1 marqueur de concentration pour changer 1 de vos résultats vierges en un résultat #hit#.",
                 faction: ""
             },
@@ -4697,6 +4780,7 @@ const upgrades = [
                 id: 29,
                 slot: "Tech",
                 points: 2,
+                restrictions: [],
                 effect: "Tant qu’un vaisseau allié à portée 1–3 effectue une attaque contre une cible que vous avez verrouillée, ce vaisseau allié ignore le prérequis d’attaque #TL#.",
                 faction: ""
     
@@ -4709,6 +4793,7 @@ const upgrades = [
                 attack: 3,
                 range: [2,3],
                 charge: 3,
+                restrictions: [],
                 effect: "Attaque (#TL#) portée 2-3 #Farc# 3 dés : dépensez 1 #ch#. Si cette attaque touche, dépensez 1 résultat #hit# ou #crit# pour faire subir 1 dégât #hit# au défenseur. Tous les résultats #hit#/#crit# restants infligent des marqueurs ioniques au lieu des dégâts.",
                 faction: ""
             },
@@ -4720,6 +4805,7 @@ const upgrades = [
                 attack: 4,
                 range: [2,3],
                 charge: 2,
+                restrictions: [],
                 effect: "Attaque (#TL#) Portée 2-3 #Farc# 4 dés: dépensez 1 #ch#. Après que vous avez déclaré le défenseur, il peut choisir de subir 1 dégât #hit#. Dans ce cas, sautez les étapes « Dés d’attaque » et « Dés de défense » et considérez que l’attaque a touché.",
                 faction: ""
             },
@@ -4731,6 +4817,7 @@ const upgrades = [
                 attack: 3,
                 range: [1,2],
                 charge: 2,
+                restrictions: [],
                 effect: "Attaque (#TL#) Portée 1-2 #Farc# 3 dés. Après avoir résolu l’attaque, vous pouvez choisir un autre vaisseau à portée 0-1 du défenseur. Lancez 3 dés d’attaque : assignez autant de marqueurs de contrainte que de résultats #eye#, puis le vaisseau ciblé doit se défendre en considérant les autres résultats comme un jet d’attaque.",
                 faction: ""
             },
@@ -4744,7 +4831,7 @@ const upgrades = [
                 charge: 5,
                 effect: "Attaque (#FS#) Portée 2-3 #Farc# 3 dés: Dépensez 1 #ch#. Si le défenseur est dans votre #bulls#, vous pouvez dépenser 1 ou plusieurs ch pour relancer autant de dés d’attaque.",
                 restrictions: [
-                    ["Slot", "Missile"]
+                    ["slots", '"Missile","Missile"']
                 ],
                 faction: ""
                 /*validation_func: (ship, upgrade_obj) ->
@@ -4760,6 +4847,7 @@ const upgrades = [
                 max_per_squad: 2,
                 charge: 2,
                 points: 3,
+                restrictions: [],
                 effect: "Attaque (#CA#, #FS# ou #TL#) Portée 1-3 #Farc# 3dés: dépensez 1 #ch#. Si cette attaque touche, chaque vaisseau allié à portée 1–3 du défenseur peut verrouiller le défenseur. Puis annulez tous les résultats des dés.",
                 faction: ""
             },
@@ -4771,6 +4859,7 @@ const upgrades = [
                 range: [1,3],
                 charge: 1,
                 points: 5,
+                restrictions: [],
                 effect: "Attaque (#FS#) Portée 1-2 #Farc# 3 dés. Si l’attaque touche, annulez tous les dés. Puis le défenseur reçoit une carte de dégât face cachée et marqueur de Rayon Tracteur.",
                 faction: ""
             },
@@ -4782,6 +4871,7 @@ const upgrades = [
                 attack: 3,
                 range: [2,3],
                 charge: 2,
+                restrictions: [],
                 effect: "Attaque (#TL#) 3dés #Farc# portée 2-3: dépensez 1 Ch. Lors de l’étape « Neutraliser les résultats », les résultats #crit# sont annulés avant les résultats #hit#. Après que cette attaque a touché, le défenseur perd 1 bouclier.",
                 faction: ""
             },
@@ -4793,6 +4883,7 @@ const upgrades = [
                 attack: 5,
                 range: [1],
                 charge: 1,
+                restrictions: [],
                 effect: "Attaque (#TL#) : Portée 1 #Farc# 4 dés: dépensez 1 #ch#. ATTAQUE PRECISE.",
                 faction: ""
             },
@@ -4804,6 +4895,7 @@ const upgrades = [
                 attack: 3,
                 range: [2,3],
                 charge: 3,
+                restrictions: [],
                 effect: "Attaque (lock) : Portée 2-3 #Farc# 3 dés. dépensez 1 #ch#. Après que cette attaque a touché, chaque vaisseau à portée 0–1 du défenseur expose 1 de ses cartes de dégât.",
                 faction: ""
             },
@@ -4817,6 +4909,7 @@ const upgrades = [
                 attackbull: 5,
                 range: [1,2],
                 charge: 1,
+                restrictions: [],
                 effect: "Attaque (#TL#) Portée 1-2 #bulls# 5 dés: dépensez 1 Ch.",
                 faction: ""
             },
@@ -4829,7 +4922,7 @@ const upgrades = [
                 effect: "Pendant la phase de système, vous pouvez dépenser 1 #ch# pour larguer une sous-munition avec le gabarit 1#straight#. Au début de la phase d’activation, vous pouvez dépenser 1 bouclier pour récupérer 2 #ch#.",
                 //applies_condition: 'Bomblet'.canonicalize(),
                 restrictions: [
-                    ["Slot", "Payload"]
+                    ["slots", '"Payload","Payload"']
                 ],
                 faction: ""
                 /*validation_func: (ship, upgrade_obj) ->
@@ -4842,6 +4935,7 @@ const upgrades = [
                 slot: "Payload",
                 points: 3,
                 charge: 1,
+                restrictions: [],
                 effect: "Pendant la phase de système, vous pouvez dépenser 1#ch# pour larguer un filet Conner en utilisant le gabarit 1#straight#.<br>La #ch# de cette carte ne peut pas être récupérée.",
                 faction: ""
                 //applies_condition: 'Conner Net'.canonicalize()
@@ -4852,6 +4946,7 @@ const upgrades = [
                 slot: "Payload",
                 points: 4,
                 charge: 2,
+                restrictions: [],
                 effect: "Pendant la phase de système, vous pouvez dépenser 1 #ch# pour larguer une bombe à protons en utilisant le gabarit 1#straight#.",
                 faction: ""
                 //applies_condition: 'Proton Bomb'.canonicalize()
@@ -4862,6 +4957,7 @@ const upgrades = [
                 slot: "Payload",
                 points: 6,
                 charge: 2,
+                restrictions: [],
                 effect: "Pendant la phase de système, vous pouvez dépenser 1 #ch# pour larguer une mine de proximité en utilisant le gabarit 1#straight#.<br>Les #ch# de cette carte ne peuvent pas être récupérées.",
                 faction: ""
                 //applies_condition: 'Proximity Mine'.canonicalize()
@@ -4872,6 +4968,7 @@ const upgrades = [
                 slot: "Payload",
                 points: 2,
                 charge: 2,
+                restrictions: [],
                 effect: "Pendant la phase de système, vous pouvez dépenser 1 #ch# pour larguer une charge sismique en utilisant le gabarit 1#straight#.",
                 faction: ""
                 //applies_condition: 'Seismic Charge'.canonicalize()
@@ -4882,6 +4979,7 @@ const upgrades = [
                 slot: "Payload",
                 points: 3,
                 charge: 2,
+                restrictions: [],
                 effect: "Pendant la phase de système, vous pouvez dépenser 1 #ch# pour larguer une charge sismique en utilisant le gabarit 1#straight#.",
                 faction: ""
                 //applies_condition: 'Ion Bomb'.canonicalize()
@@ -4893,6 +4991,7 @@ const upgrades = [
                 points: 1,
                 attack: 3,
                 range: [1-2],
+                restrictions: [],
                 effect: "Portée 1-2 #Farc# 3 dés Attaque : si cette attaque touche, tous les résultats #hit#/#crit# infligent des marqueurs de brouillage au lieu des dégâts.",
                 faction: ""
             },
@@ -4903,6 +5002,7 @@ const upgrades = [
                 points: 4,
                 attack: 3,
                 range: [1-3],
+                restrictions: [],
                 effect: "Portée 1-3 #Farc# 3 dés, Attaque : si cette attaque touche, tous les résultats #hit#/#crit# infligent des marqueurs de rayon tracteur au lieu des dégâts.",
                 faction: ""
             },
@@ -4913,6 +5013,7 @@ const upgrades = [
                 points: 5,
                 attack: 3,
                 range: [1,3],
+                restrictions: [],
                 effect: "Portée 1-3 #Farc# 3 dés Attaque : si cette attaque touche, dépensez 1 résultat #hit# ou #crit# pour faire subir 1 dégât au défenseur. Tous les résultats #hit#/#crit# restants infligent des marqueurs ioniques au lieu des dégâts.",
                 faction: ""
             },
@@ -4923,6 +5024,7 @@ const upgrades = [
                 points: 4,
                 attackbull: 4,
                 range: [2,3],
+                restrictions: [],
                 effect: "Portée 2-3 #Farc# 4 dés. Si le défenseur n’est pas dans le #bulls#, alors l’attaque devient IMPRECISE.",
                 faction: ""
             },
@@ -4934,9 +5036,9 @@ const upgrades = [
                 attack: 3,
                 range: [2,3],
                 effect: "Portée 2-3 #Farc# 3 dés Attaque : si vous êtes calculateur, vous pouvez améliorer 1 dé d’attaque",
-                restrictions: [
-                    ["Slot", "Canon"]
-                ],
+                restrictions: 
+                    ["Slot", '"Cannon","Cannon"']
+                ,
                 faction: ""
                 /*validation_func: (ship, upgrade_obj) ->
                     upgrade_obj.occupiesAnUpgradeSlot "Canon"
@@ -4949,6 +5051,7 @@ const upgrades = [
                 points: 5,
                 attackt: 3,
                 range: [1,2],
+                restrictions: [],
                 effect: "Portée 1-2 #Farc# 3 dés Attaque : si cette attaque touche, dépensez 1 résultat #hit# ou #crit# pour faire subir 1 dégât #hit# au défenseur. Tous les résultats #hit#/#crit# restants infligent des marqueurs ioniques au lieu des dégâts.",
                 faction: ""
                 /*modifier_func: (stats) ->
@@ -4961,6 +5064,7 @@ const upgrades = [
                 points: 2,
                 attackt: 2,
                 range: [1,2],
+                restrictions: [],
                 effect: "Portée 1-2 #tur# 2 dés, Attaque",
                 faction: ""
                 /*modifier_func: (stats) ->
@@ -4973,6 +5077,7 @@ const upgrades = [
                 points: 4,
                 attackt: 2,
                 range: [0,1],
+                restrictions: [],
                 effect: "Portée 0-1 #tur# 2 dés. ATTAQUE PRECISE",
                 faction: ""
             },
@@ -4983,6 +5088,7 @@ const upgrades = [
                 points: 4,
                 attackt: 3,
                 range: [2,3],
+                restrictions: [],
                 effect: "Portée 2-3 #tur# 3 dés Attaque : attaque IMPRECISE<br>puis Attaque: attaque IMPRECISE.",
                 faction: ""
                 /*modifier_func: (stats) ->
@@ -4993,6 +5099,7 @@ const upgrades = [
                 id: 55,
                 slot: "Turret",
                 points: 3,
+                restrictions: ["slots","Cannon"],
                 effect: "Choisissez une amélioration #can# équipée et placez un marqueur canon rotatif dessus. La restriction #Farc# de votre #can# devient #tur#. Vous pouvez tourner l’arc de votre #can# avec l’action #RT#.",
                 faction: ""
                 /*modifier_func: (stats) ->
@@ -5005,6 +5112,7 @@ const upgrades = [
                 points: 4,
                 unique: true,
                 charge: 2,
+                restrictions: [],
                 effect: "Action : Dépensez 1 #ch# pour effectuer une action #CK#.<br>Au début de la phase de préparation, lancez 1 dé d’attaque. Sur un résultat #eye#, désoccultez-vous ou défaussez votre marqueur d’occultation.",
                 restrictions: [
                     ["Base", "Small", "Medium"]
@@ -5017,6 +5125,7 @@ const upgrades = [
                 slot: "Illicit",
                 points: 3,
                 charge: 1,
+                restrictions: [],
                 effect: "Avant votre activation, vous pouvez dépenser 1 #ch#. Dans ce cas, jusqu’à la fin du round, vous pouvez effectuer des actions et exécuter des manœuvres rouges, même si vous êtes stressé.",
                 faction: ""
             },
@@ -5025,6 +5134,7 @@ const upgrades = [
                 id: 58,
                 slot: "Illicit",
                 points: 2,
+                restrictions: [],
                 effect: "Après que vous avez été détruit, chaque autre vaisseau à portée 0–1 subit 1 dégât #hit#.",
                 faction: ""
             },
@@ -5033,6 +5143,7 @@ const upgrades = [
                 id: 59,
                 slot: "Illicit",
                 points: 5,
+                restrictions: [],
                 effect: "ACTION : dépensez 1 #ch#. Vous pouvez effectuer une action #MASL#. Vous pouvez effectuer cette action même après avoir partiellement effectué une manoeuvre ou sous l’effet du stress. Puis exposez 1 carte de dégât ou prenez 1 dégât critique.",
                 faction: ""
                 
@@ -5043,6 +5154,7 @@ const upgrades = [
                 points: 3,
                 charge: 1,
                 slot: "Illicit",
+                restrictions: [],
                 effect: "Après avoir verrouillé un objet ou qu'un objet vous a verrouillé, si vous avez 1 #ch# active, perdez 1 #ch# et brouillez cet objet, en ignorant les restrictions de portée.",
                 faction: ""
             },
@@ -5053,9 +5165,9 @@ const upgrades = [
                 points: 4,
                 charge: 2,
                 effect: "Avant de subir des dégâts à cause d’un obstacle ou de l’explosion d’une bombe alliée, vous pouvez dépenser 1 #ch#. Dans ce cas, prévenez 1 dégât.",
-                restrictions: [
-                    ["Base", "Medium", "Large"]
-                ],
+                restrictions: 
+                    ["base", "Medium", "Large"]
+                ,
                 faction: ""
             },
     {
@@ -5065,9 +5177,9 @@ const upgrades = [
                 points: 6,
                 charge: 2,
                 effect: "Après avoir entièrement exécuté une manœuvre à vitesse 3–5, vous pouvez dépenser 1 #ch# pour effectuer une action #BO#, même tant que vous êtes stressé.",
-                restrictions: [
-                    ["Base", "Small"]
-                ],
+                restrictions: 
+                    ["base", "Small"]
+                ,
                 faction: ""
             },
     {
@@ -5076,9 +5188,9 @@ const upgrades = [
                 slot: "Modification",
                 points: 3,
                 effect: "Donne l'action #BO# blanche",
-                restrictions: [
-                    ["Action", "R-Boost",]
-                ],
+                restrictions: 
+                    ["actions", "R-Boost",]
+                ,
                 faction: ""
                 /*modifier_func: (stats) ->
                     stats.actions.push 'Boost' if 'Boost' not in stats.actions*/
@@ -5088,6 +5200,7 @@ const upgrades = [
                 id: 64,
                 slot: "Modification",
                 points: 1,
+                restrictions: [],
                 effect: "Tant que vous effectuez une attaque #mi# ou #to#, après avoir lancé les dés d’attaque, vous pouvez annuler tous les résultats des dés pour récupérer 1 #ch# que vous avez dépensée comme coût pour l’attaque.",
                 faction: ""
             },
@@ -5097,9 +5210,9 @@ const upgrades = [
                 slot: "Modification",
                 points: 2,
                 effect: "Tant que vous gênez l’attaque d’un vaisseau ennemi, le défenseur lance 1 dé de défense supplémentaire.",
-                restrictions: [
-                    ["Base", "Medium", "Large"]
-                ],
+                restrictions: 
+                    ["base", "Medium", "Large"]
+                ,
                 faction: ""
             },
     {
@@ -5108,6 +5221,7 @@ const upgrades = [
                 slot: "Modification",
                 points: 6,
                 effect: "+1 Coque",
+                restrictions: [],
                 faction: ""
                 /*modifier_func: (stats) ->
                     stats.hull += 1*/
@@ -5118,6 +5232,7 @@ const upgrades = [
                 slot: "Modification",
                 points: 7,
                 effect: "+1 Bouclier",
+                restrictions: [],
                 faction: ""
                 /*modifier_func: (stats) ->
                     stats.shields += 1*/
@@ -5128,6 +5243,7 @@ const upgrades = [
                 slot: "Modification",
                 points: 6,
                 charge: 1,
+                restrictions: [],
                 effect: "Tant que vous défendez, si votre #ch# est active, lancez 1 dé de défense supplémentaire. Après avoir subi des dégâts, perdez 1#ch#.",
                 faction: ""
             },
@@ -5136,6 +5252,7 @@ const upgrades = [
                 id: 68,
                 slot: "Modification",
                 points: 1,
+                restrictions: [],
                 effect: "Après avoir largué, lancé ou placé une bombe ou une mine, vous pouvez placer dessus 1 marqueur d’amorce.",
                 faction: ""
             },
@@ -5144,6 +5261,7 @@ const upgrades = [
                 id: 69,
                 slot: "Modification",
                 points: 2,
+                restrictions: [],
                 effect: "Donne accès l'action #TL#",
                 faction: ""
                 /*modifier_func: (stats) ->
@@ -5154,6 +5272,7 @@ const upgrades = [
                 id: 70,
                 slot: "Sensor",
                 points: 8,
+                restrictions: [],
                 effect: "Après avoir révélé votre cadran, vous pouvez effectuer 1 action. Dans ce cas, vous ne pouvez pas effectuer d’autre action pendant votre activation.",
                 faction: ""
             },
@@ -5163,6 +5282,7 @@ const upgrades = [
                 slot: "Sensor",
                 points: 5,
                 charge: 2,
+                restrictions: [],
                 effect: "Tant que vous accélérez ou que vous effectuez un tonneau, vous pouvez vous déplacer à travers ou chevaucher les obstacles. Après vous être déplacé à travers ou avoir chevauché un obstacle, vous pouvez dépenser 1 #ch# pour ignorer ses effets jusqu’à la fin du round.",
                 faction: ""
             },
@@ -5171,6 +5291,7 @@ const upgrades = [
                 id: 72,
                 slot: "Sensor",
                 points: 2,
+                restrictions: [],
                 effect: "Tant que vous effectuez une attaque, si vous avez un verrouillage sur le défenseur, vous pouvez relancer 1 dé d’attaque. Dans ce cas, vous ne pouvez pas dépenser votre marqueur de verrouillage pendant cette attaque.",
                 faction: ""
             },
@@ -5179,6 +5300,7 @@ const upgrades = [
                 id: 73,
                 slot: "Sensor",
                 points: 5,
+                restrictions: [],
                 effect: "Vous pouvez verrouiller des cibles au-delà de la portée 3. Lorsque vous verrouillez une cible à portée 2 ou moins, recevez 1 marqueur d’épuisement.",
                 faction: ""
             },
@@ -5187,6 +5309,7 @@ const upgrades = [
                 id: 74,
                 slot: "Sensor",
                 points: 8,
+                restrictions: [],
                 effect: "Augmentez les portées de l’action brouillage de 1. Lorsque vous défendez, vous pouvez dépenser 1 #ch# pour dégrader 1 dé d’attaque.",
                 faction: ""
             },
@@ -5195,6 +5318,7 @@ const upgrades = [
                 id: 75,
                 slot: "Force",
                 points: 2,
+                restrictions: [],
                 effect: "Au début de la phase d’engagement, s’il y a un vaisseau ennemi dans votre #Farc#, vous pouvez gagner 1 marqueur d’épuisement pour récupérer 1 #fo#.",
                 faction: ""           
                 
@@ -5204,6 +5328,7 @@ const upgrades = [
                 id: 76,
                 slot: "Force",
                 points: 9,
+                restrictions: [],
                 effect: "Après avoir révélé votre cadran, vous pouvez dépenser 1 #fo# pour effectuer une action #BR# ou #BO#. Puis, si vous avez effectué une action qui n’est pas sur votre barre d’action, recevez 2 marqueurs de contrainte. Dans ce cas, vous ne pouvez pas effectuer une autre action pendant votre activation.",
                 restrictions: [
                     ["Base", "Small"]
@@ -5215,6 +5340,7 @@ const upgrades = [
                 id: 77,
                 slot: "Force",
                 points: 2,
+                restrictions: [],
                 effect: "Tant que vous défendez, si vous n’êtes pas dans le #bulls# de l’attaquant, vous pouvez dépenser 1 #fo# pour changer 2 de vos résultats #eye# en résultats #evd#.",
                 faction: ""
             },
@@ -5223,6 +5349,7 @@ const upgrades = [
                 id: 78,
                 slot: "Force",
                 points: 5,
+                restrictions: [],
                 effect: "Pendant la phase de système, vous pouvez choisir 1 vaisseau à portée 0–1 et regarder son cadran. Si vous dépensez 1 #fo#, vous pouvez choisir un vaisseau à portée 0–3 à la place.",
                 faction: ""
             },
@@ -5231,6 +5358,7 @@ const upgrades = [
                 id: 79,
                 slot: "Force",
                 points: 1,
+                restrictions: [],
                 effect: "Tant que vous effectuez une attaque spéciale, vous pouvez dépenser 1 #fo# pour ignorer le prérequis #TL# ou #FS#.",
                 faction: ""
             },
@@ -5239,6 +5367,7 @@ const upgrades = [
                 id: 80,
                 slot: "Calculator",
                 points: 3,
+                restrictions: [],
                 effect: "Après avoir effectué une attaque principale, vous pouvez effectuer une attaque bonus d’arme secondaire. Lors de cette attaque, vous ne pouvez pas ajouter ou modifier des dés d’attaque.",
                 faction: ""
             },
@@ -5247,6 +5376,7 @@ const upgrades = [
                 id: 81,
                 slot: "Calculator",
                 points: 2,
+                restrictions: [],
                 effect: "Lorsque vous défendez ou attaquez, vous pouvez dépenser 1 marqueur de calcul d’un vaisseau allié à portée 0-2 pour changer 1 résultat #eye# en résultat #evd# ou #hit#.",
                 faction: ""
             },
@@ -5256,6 +5386,7 @@ const upgrades = [
                 slot: "Calculator",
                 points: 4,
                 unique: true,
+                restrictions: [],
                 effect: "Mise en place : vous pouvez considérer votre initiative comme étant 0 ou 7. A la fin de la phase de mise en place, tous les vaisseaux alliés à portée 0-2 de vous gagne 1 marqueur de calcul. Ces marqueurs de calcul ne sont pas nettoyés en phase de fin.",
                 faction: ""
             },
@@ -5265,6 +5396,7 @@ const upgrades = [
                 slot: "Calculator",
                 points: 3,
                 unique: true,
+                restrictions: [],
                 effect: "Mise en place : vous commencez en réserve. Vous pouvez dépenser entre 0 et 2 charges.<br>Au début de la phase de planification, s’il n’y a plus de charge sur cette carte, retournez là face cachée, puis placez votre vaisseau intégralement à portée 1 d’un bord de l’aire de jeu.",
                 faction: ""
             },
@@ -5273,6 +5405,7 @@ const upgrades = [
                 id: 84,
                 slot: "Calculator",
                 points: 5,
+                restrictions: [],
                 effect: "Vous pouvez coordonner jusqu’à la portée 3. Lorsque vous coordonnez un vaisseau, recevez 1 marqueur de calcul.",
                 faction: ""
             },
