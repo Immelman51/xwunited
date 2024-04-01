@@ -6560,7 +6560,7 @@ function updateTotalCost() {
 
 function upgradeListGet(y) { //va chercher les options pour populate les menus de slots crées avec displaylots()
   
-    
+  let index = 0;  
     for (i=0 ; i<pilot_list[y]["slots"].length;i++) {
         let slotlist =[];
         slotlist.push("<"+pilot_list[y]["slots"][i]+">");
@@ -6571,8 +6571,19 @@ function upgradeListGet(y) { //va chercher les options pour populate les menus d
         }
     }
     populateMenu('slot'+y+'_'+i,slotlist);
+    index++;
     }      
-    
+    for (i=0 ; i<ships[pilot_list[y]["shipId"]]["slots"].length;i++) {
+        let slotlist =[];
+        slotlist.push("<"+ships[pilot_list[y]["shipId"]]["slots"][i]+">");
+        for (k=0 ; k<upgrades.length ; k++) {
+            if ((ships[pilot_list[y]["shipId"]]["slots"][i]===upgrades[k]["slot"]) && ((upgrades[k]["faction"]==="")||(upgrades[k]["faction"].includes(factionno1))||(upgrades[k]["faction"].includes(factionno2))||(upgrades[k]["faction"].includes(factionno3)))) {
+            
+            slotlist.push(upgrades[k]["name"] + ' (' + upgrades[k]["points"] + ')' ); //on ajoute dans le menu slotlist le nom de l'upgrade suivi de son cout entre parenthèses      
+        }
+    }
+    populateMenu('slot'+y+'_'+(index+i+1),slotlist); 
+}
 }
 
 
