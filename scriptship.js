@@ -6562,16 +6562,16 @@ function upgradeListGet(y) { //va chercher les options pour populate les menus d
   
     let slotlist =[];
     for (i=0 ; i<pilot_list[y]["slots"].length;i++) {
-    
-    slotlist.push("<"+pilot_list[y]["slots"][i]+">");
-    for (k=0 ; k<upgrades.length ; k++) {
-        if ((pilot_list[y]["slots"][i]===upgrades[k]["slot"]) && ((upgrades[k]["faction"]==="")||(upgrades[k]["faction"].includes(factionno1))||(upgrades[k]["faction"].includes(factionno2))||(upgrades[k]["faction"].includes(factionno3)))) {
+        slotlist.push("<"+pilot_list[y]["slots"][i]+">");
+        for (k=0 ; k<upgrades.length ; k++) {
+            if ((pilot_list[y]["slots"][i]===upgrades[k]["slot"]) && ((upgrades[k]["faction"]==="")||(upgrades[k]["faction"].includes(factionno1))||(upgrades[k]["faction"].includes(factionno2))||(upgrades[k]["faction"].includes(factionno3)))) {
             
             slotlist.push(upgrades[k]["name"] + ' (' + upgrades[k]["points"] + ')' ); //on ajoute dans le menu slotlist le nom de l'upgrade suivi de son cout entre parenthèses      
         }
     }
-    }      
     populateMenu('slot'+y+'_'+i,slotlist);
+    }      
+    
 }
 
 
