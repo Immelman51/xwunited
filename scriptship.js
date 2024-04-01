@@ -6471,7 +6471,7 @@ function displayslots(y) { //crée les menus de slot et contient l'écoute des "
         })
         index++;
     }  
-    upgrades_number[y] = index; // on note le nombre d'upgrades total pour pouvoir avoir le nombre d'itérations de la boucle for de upgradeListGet().
+    upgrades_number[y] = index+1; // on note le nombre d'upgrades total pour pouvoir avoir le nombre d'itérations de la boucle for de upgradeListGet().
    
     // ICI RAJOUTER LE CODE POUR INCLURE LES TITLE AUTOMATIQUEMENT ET QU'ILS CHANGENT LES SLOTS
     //
