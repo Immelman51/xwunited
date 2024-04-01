@@ -6210,7 +6210,7 @@ const upgrades = [
 
  let pilot_selected_list = ["","","","","","","",""]; // Dans ce tableau, on va stocker la valeur sélectée de chaque menu_pilot
  let pilot_list = [{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0}]; //Dans ce tableau, on stocker les objets pilotes
- 
+ let upgrades_number = [0,0,0,0,0,0,0,0]
  let overCostTab = [0,0,0,0,0,0,0,0]; //Cette variable va stocker les augmentations des couts des pilotes dûs aux emports d'upgrade supérieurs au loadout de base
  
  function populateMenu(menuId, options) {//fonction qui permet de remplir un menu avec un tableau d'options
@@ -6313,7 +6313,7 @@ function displayslots(y) { //crée les menus de slot et contient l'écoute des "
       let index = 0;
     for (i = 0 ; i<pilot_list[y]["slots"].length; i++)  {
     slotmenu = document.createElement('select');
-    slotmenu.setAttribute('id', 'slot'+y+"_"+index);
+    slotmenu.setAttribute('id', 'slot'+y+"_"+i);
     slotmenu.setAttribute('class', 'slotElement'+' '+pilot_list[y]["slots"][i]);
     shipslot.appendChild(slotmenu);
     slotmenu.addEventListener("input", function(event) {//cette faction décrit le calcul des mises à jour des points pour le loadout et le cout du pilote
@@ -6334,7 +6334,10 @@ function displayslots(y) { //crée les menus de slot et contient l'écoute des "
             updateTotalCost();
             displayDescriptionUpgrade(event);
         })
+        index++;
     }  
+    upgrades_number[y] = index; // on note le nombre d'upgrades total pour pouvoir avoir le nombre d'itérations de la boucle for de upgradeListGet().
+   
     // ICI RAJOUTER LE CODE POUR INCLURE LES TITLE AUTOMATIQUEMENT ET QU'ILS CHANGENT LES SLOTS
     //
     // 
@@ -6421,7 +6424,13 @@ function updateTotalCost() {
 
 
 function upgradeListGet(y) { //va chercher les options pour populate les menus de slots crées avec displaylots()
-for (i=0 ; i<pilot_list[y]["slots"].length;i++) {
+    for (i=0 ; i<upgrades_number[y] ; i++) {
+        let slotlist = [];
+        upg_menu = document.querySelector
+    }
+
+
+    /*for (i=0 ; i<pilot_list[y]["slots"].length;i++) {
     let slotlist =[];
     slotlist.push("<"+pilot_list[y]["slots"][i]+">");
     for (k=0 ; k<upgrades.length ; k++) {
@@ -6436,7 +6445,7 @@ for (i=0 ; i<pilot_list[y]["slots"].length;i++) {
     }
     }      
     populateMenu('slot'+y+'_'+i,slotlist);
-}
+}*/
 }
 
 function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'active via le bouton Addship
