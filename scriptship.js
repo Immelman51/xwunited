@@ -6326,6 +6326,15 @@ const upgrades = [
                         slot: '"Calculator"'
                     }
                 ]       
+            },
+            {
+                name: "Trajectory Simulator",
+                id: 147, 
+                slot: "Tech",
+                points: 4,
+                faction: "",
+                restrictions: [],
+                effect: "Pendant la phase de système, si vous êtes censé larguer ou lancer une bombe, vous pouvez la lancer en utilisant le gabarit 5#straight# à la place."
             }
 
     
