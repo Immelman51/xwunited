@@ -6444,7 +6444,8 @@ function displayslots(y) { //crée les menus de slot et contient l'écoute des "
      shipslot.innerHTML = '';
       // Create and append new select elements
       let index = 0;
-    for (i = 0 ; i<pilot_list[y]["slots"].length; i++)  {
+    upgrades_Type[y] = [];    
+      for (i = 0 ; i<pilot_list[y]["slots"].length; i++)  {
         upgrades_Type[y].push(pilot_list[y]["slots"][i]);
     slotmenu = document.createElement('select');
     slotmenu.setAttribute('id', 'slot'+y+"_"+i);
