@@ -6323,7 +6323,7 @@ function displayslots(y) { //crée les menus de slot et contient l'écoute des "
 
     })    
     index = i;  
-    index2 = i;    
+    index2 = i;     // pour ne pas perdre cette valeur car après on va incrémenter index
     }  
     for (j= 0 ; j<ships[pilots[y]["shipId"]]["slots"].length ; j++) { //on ajoute aussi les slots liés au chassis que l'on va chercher grace au shipId
     
@@ -6426,9 +6426,28 @@ function updateTotalCost() {
 
 
 function upgradeListGet(y) { //va chercher les options pour populate les menus de slots crées avec displaylots()
-    for (i=0 ; i<upgrades_number[y] ; i++) {
+    let upgpilotlist = [];
+    for (i=0 ; i<upgrades_number[y] ; i++) { //on va d'abord récupérer la liste de toutes les upgrades : upgpilotlist
+        upg_menu = document.getElementById("slot"+y+"_"+i);
+        typeOfUpg = upg_menu.classList[1]; //on récupère le type d'upgrade grace à class list qui met sous forme de tableau les class
+        upgpilotlist.push(typeOfUpg);
+    }
+    for (i=0 ; i<upgrades_number[y] ; i++) { //on va maintenant remplir les menus
         let slotlist = [];
-        upg_menu = document.querySelector
+        upg_menu = document.getElementById("slot"+y+"_"+i);
+        slotlist.push("<"+upgpilotlist[i]+">");
+            for (k=0 ; k<upgrades.length ; k++) {
+                if ((typeOfUpg===upgrades[k]["slot"]) && ((upgrades[k]["faction"]==="")||(upgrades[k]["faction"].includes(factionno1))||(upgrades[k]["faction"].includes(factionno2))||(upgrades[k]["faction"].includes(factionno3)))) {
+                    if (upgrades[k]["restrictions"] !== 'undefined') {
+                        if ((upgpilotlist.includes(upgrades[k]["restrictions"][1]))||(ships[pilot_list[y]["shipId"]][upgrades[k]["restrictions"][0]].includes(upgrades[k]["restrictions"][1])) ) {
+                            slotlist.push(upgrades[k]["name"]+' (' + upgrades[k]["points"] + ')' );
+                        }
+                    }else{
+                        slotlist.push(upgrades[k]["name"]+' (' + upgrades[k]["points"] + ')' );   
+                    }
+                }
+        }
+        populateMenu('slot'+y+'_'+i,slotlist); 
     }
 
 
