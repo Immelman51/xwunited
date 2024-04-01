@@ -6343,7 +6343,7 @@ const upgrades = [
 
  let pilot_selected_list = ["","","","","","","",""]; // Dans ce tableau, on va stocker la valeur sélectée de chaque menu_pilot
  let pilot_list = [{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0}]; //Dans ce tableau, on stocker les objets pilotes
- let upgrades_number = [0,0,0,0,0,0,0,0]
+ let upgrades_Type = [[],[],[],[],[],[],[],[]];
  let overCostTab = [0,0,0,0,0,0,0,0]; //Cette variable va stocker les augmentations des couts des pilotes dûs aux emports d'upgrade supérieurs au loadout de base
  
  function populateMenu(menuId, options) {//fonction qui permet de remplir un menu avec un tableau d'options
@@ -6445,6 +6445,7 @@ function displayslots(y) { //crée les menus de slot et contient l'écoute des "
       // Create and append new select elements
       let index = 0;
     for (i = 0 ; i<pilot_list[y]["slots"].length; i++)  {
+        upgrades_Type[y].push(pilot_list[y]["slots"][i]);
     slotmenu = document.createElement('select');
     slotmenu.setAttribute('id', 'slot'+y+"_"+i);
     slotmenu.setAttribute('class', 'slotElement'+' '+pilot_list[y]["slots"][i]);
@@ -6459,7 +6460,7 @@ function displayslots(y) { //crée les menus de slot et contient l'écoute des "
     index2 = i;     // pour ne pas perdre cette valeur car après on va incrémenter index
     }  
     for (j= 0 ; j<ships[pilots[y]["shipId"]]["slots"].length ; j++) { //on ajoute aussi les slots liés au chassis que l'on va chercher grace au shipId
-    
+        upgrades_Type[y].push(ships[pilots[y]["shipId"]]["slots"][j]);
         slotmenu = document.createElement('select');
         slotmenu.setAttribute('id', 'slot'+y+"_"+(j+index2+1));
         slotmenu.setAttribute('class', 'slotElement'+' '+ships[pilots[y]["shipId"]]["slots"][j] );
@@ -6469,9 +6470,8 @@ function displayslots(y) { //crée les menus de slot et contient l'écoute des "
             updateTotalCost();
             displayDescriptionUpgrade(event);
         })
-        index++;
+       
     }  
-    upgrades_number[y] = index+1; // on note le nombre d'upgrades total pour pouvoir avoir le nombre d'itérations de la boucle for de upgradeListGet().
    
     // ICI RAJOUTER LE CODE POUR INCLURE LES TITLE AUTOMATIQUEMENT ET QU'ILS CHANGENT LES SLOTS
     //
