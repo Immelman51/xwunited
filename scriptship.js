@@ -4733,15 +4733,7 @@ const upgrades = [
                 points: 2,
                 effect: "Réduisez la difficulté de vos manoeuvres de vitesse 1 et 2",
                 faction: ""
-                /*modifier_func: (stats) ->
-                    if stats.maneuvers[1]?
-                        for turn in [0 ... stats.maneuvers[1].length]
-                            if turn > 4
-                                continue
-                            if stats.maneuvers[1][turn] > 1
-                                stats.maneuvers[1][turn]--
-                            if stats.maneuvers[2][,turn] > 1
-                                stats.maneuvers[2][turn]--*/
+                
              },
             {
                 name: "R5 Astromech",
@@ -4777,7 +4769,7 @@ const upgrades = [
                 points: 5,
                 effect: "Lorsque vous défendez contre une attaque à portée 3 ou contre une attaque de #tur#, vous pouvez améliorer un dé de défense.",
                 restrictions: [
-                    ["Slot", "Modification"]
+                    ["slot", "Modification"]
                 ],
                 faction: ""
                 /*validation_func: (ship, upgrade_obj) ->
@@ -6261,6 +6253,7 @@ function displayslots(y) { //crée les menus de slot et contient l'écoute des m
             updateUpgradeCount(y);
             updateTotalCost();
             displayDescriptionUpgrade(event);
+
     }) 
                
     }  
@@ -6352,10 +6345,13 @@ for (i=0 ; i<pilot_list[y]["slots"].length;i++) {
     slotlist.push("<"+pilot_list[y]["slots"][i]+">");
     for (k=0 ; k<upgrades.length ; k++) {
         if ((pilot_list[y]["slots"][i]===upgrades[k]["slot"]) && ((upgrades[k]["faction"]==="")||(upgrades[k]["faction"].includes(factionno1))||(upgrades[k]["faction"].includes(factionno2))||(upgrades[k]["faction"].includes(factionno3)))) {
-            slotlist.push(upgrades[k]["name"] + ' (' + upgrades[k]["points"] + ')' ); //on ajoute dans le menu slotlist le nom de l'upgrade suivi de son cout entre parenthèses
-            
+            if ((typeof upgrades[k]["restrictions"] !== 'undefined') && (pilot_list[y][upgrades[k]["restrictions"][0]].includes(upgrades[k]["restrictions"][1]))) { //on va tester si il y a une restriction sur l'upgrade
+                //dur à lire ! exemple, si dans l'attribut "restrictions" on a ["slot","Modification"], on va regarder si le pilote sélectionné a bien Modification dans son attribut slot. Autre exemple : avec [keyword, TIE]
+                    slotlist.push(upgrades[k]["name"] + ' (' + upgrades[k]["points"] + ')' ); //on ajoute dans le menu slotlist le nom de l'upgrade suivi de son cout entre parenthèses 
+            } else {
+            slotlist.push(upgrades[k]["name"] + ' (' + upgrades[k]["points"] + ')' ); //on ajoute dans le menu slotlist le nom de l'upgrade suivi de son cout entre parenthèses      
         }
-
+    }
     }      
     populateMenu('slot'+y+'_'+i,slotlist);
 }
@@ -6421,6 +6417,7 @@ function displayDescriptionUpgrade(event){ //permet d'afficher l'effet de l'amé
     for (k=0; k<upgrades.length; k++){
         if (event.target.value.slice(0, -4) === upgrades[k]["name"]) { //il faut pas oublier de virer les (x) dans les menus
             description_upg_pil_Field.textContent = upgrades[k]["effect"];
+                  
             return
         }
 }
