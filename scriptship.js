@@ -6582,7 +6582,7 @@ function upgradeListGet(y) { //va chercher les options pour populate les menus d
             slotlist.push(upgrades[k]["name"] + ' (' + upgrades[k]["points"] + ')' ); //on ajoute dans le menu slotlist le nom de l'upgrade suivi de son cout entre parenthèses      
         }
     }
-    populateMenu('slot'+y+'_'+(index+i+1),slotlist); 
+    populateMenu('slot'+y+'_'+(index+i),slotlist); 
 }
 }
 
