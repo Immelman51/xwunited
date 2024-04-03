@@ -151,4 +151,5 @@ select {
 }
 .printing_option a {
     padding: 3px;
+    width : 25%; 
 }
