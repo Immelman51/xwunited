@@ -9,6 +9,7 @@ header {
 header div{
     min-width: 75px;
     max-width: 100px;
+    padding-bottom: 3px;
 }
 
 h1 {
