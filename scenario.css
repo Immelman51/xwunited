@@ -2,8 +2,11 @@ header {
     display: flex;
     position: sticky;
     top:0;
-    padding: 2px;
+    padding: 3px;
+    flex-wrap: wrap;
+    background-color: aliceblue;
 }
+
 h1 {
     color: brown;
 }
