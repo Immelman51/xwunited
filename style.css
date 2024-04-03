@@ -145,5 +145,6 @@ select {
     padding:20px;
     background-color: azure;
     max-width: 750px;
+    display: flex;
 
 }
