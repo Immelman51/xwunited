@@ -4,7 +4,7 @@ header {
     top:0;
     padding: 3px;
     flex-wrap: wrap;
-    background-color: aliceblue;
+    
 }
 header div{
     min-width: 75px;
