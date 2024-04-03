@@ -49,11 +49,57 @@
 </p>
 <p>
     <div class="title">Modifier des dés</div>
+    <div class="txt">Un dé d'attaque peut être modifié de plusieurs façons différentes : ajouter un résultat, changer un résultat de dé, relancer un dé, dépenser un résultat de dé.<br>
+    Il n'est pas possible de relancer plus d'une fois un dé.<br>
+    Annuler/retirer/ajouter des dés n'est pas considéré comme une modification de dé.<br>
+    </div>
     <div class="subtitle">Améliorer un dé</div>
     <div class="txt">Lorsqu'une capacité vous demande d'améliorer un dé d'attaque, vous pouvez modifier le résultat de ce dé:<br>•un résultat vierge devient un résultat #eye#<br>•un résultat #eye# devient un résultat #hit#<br>•un résultat #hit# devient un résultat #crit#<br>Lorsqu'une capacité vous demande d'améliorer un dé de défense, vous pouvez modifier le résultat de ce dé:<br>•un résultat vierge devient un résultat #eye#<br>•un résultat #eye# devient un résultat #evd#<br></div>
     <div class="subtitle">Dégrader un dé</div>
     <div class="txt">Lorsqu'une capacité vous demande de dégrader un dé d'attaque, vous devez modifier le résultat de ce dé:<br>•un résultat vierge est annulé<br>•un résultat #eye# devient un résultat vierge<br>•un résultat #hit# devient un résultat #eye#<br>•Un résultat #crit# devient un résultat #hit#<br>Lorsqu'une capacité vous demande de dégrader un dé de défense, vous devez modifier le résultat de ce dé:<br>•un résultat vierge est annulé<br>•un résultat #eye# devient un résultat vierge<br>•un résultat #evd# devient un résultat #eye#</div>
 </p>
-    
+<p>
+    <div class="title">Tournois</div>
+    <div class="subtitle">Points de Tournoi</div>
+    <div class="txt">Lors d'un tournoi, les joueurs vont gagner des points de tournoi à l'issue de leurs matchs.<br>
+    Une victoire rapporte 2 points de tournoi.<br>
+    Sous conditions particulières dépendant du scénario, il est possible de gagner des points de tournoi. Pour chaque scénario, le perdant a l'opportunité de gagner 1 point de tournoi si la condition "Bonus de Combativité" est remplie.<br>
+    Le gagnant a l'opportunité de gagner 1 point de tournoi suplémentaire si la condition "bonus de domination" est remplie.</div>
+</p>
+<p>
+    <div class="title">Obstacles</div>
+    <div class="txt">Lorsque le gabarit ou le socle d'un vaisseau touche un obstacle, le vaisseau va subir des effets négatifs décrits ci-dessous.<br>
+    Tant qu'un vaisseau se trouve sur un obstacle, il ne peut pas effecter d'attaque (sauf effet contraire d'une carte)<br>
+    Si un vaisseau s'arrête sur un obstacle, il passe l'étape "effectuer une action" lors de la phase d'activation. Si le vaisseau ne fait que traverser l'obstacle et que la position finale du vaisseau est en dehors de l'obstacle, il subit alors normalement les effets de l'obstacle, mais il ne passe pas l'étape "effectuer une action".<br>
+    Avant qu'un vaisseau ne bouge, s'il est à portée 0 d'un obstacle, il ne subit pas les effet de l'obstacle sur lequel il se trouve lors de son déplacement.<br>
+    If an obstacle is placed such that one or more ships overlap it, those ship resolve any effects of overlapping it.<br>
+    </div>
+    <div class="subtitle">Astéroïdes</div>
+    <div class="txt">Le vaisseau subit un dégat #hit#. Lancez 1 dé d'attaque: sur un résultat #hit# ou #crit#, le vaisseau subit un dégat #hit# additionnel.</div>
+    <div class="subtitle">Nuage de Débris</div>
+    <div class="txt">Le vaisseau reçoit un stress. Lancez 1 dé d'attaque. Sur un résultat #hit#, le vaisseau subit un #hit#. Sur un résultat #crit#, le vaisseau subit un #crit#.</div>
+    <div class="subtitle">Nuage de Gaz</div>
+    <div class="txt">Le vaisseau retire tous les marqueurs "acquisition de cible" qu'il possède (bleus ou rouges), et reçoit un jeton contrainte.<br>
+    Lancez 1 dé d'attaque. Sur un résultat #hit#, le vaisseau reçoit un jeton ionique. Sur un résultat #crit#, le vaisseau reçoit 3 jetons ioniques<br>
+    Tant qu'un vaisseau est à portée 0 d'un nuage de gaz, il ne peut pas être ciblé pour acquisition, et ne pas acquisitionner de vaisseau.</div>
+</p>
+<p>
+    <div class="title">Phases et Déroulement d'un tour</div>
+    <div class="subtitle">Phase de début</div>
+    <div class="txt">Etape de vérification des hautes initiatives</div>
+    <div class="subtitle">Phase de Planification</div>
+    <div class="subtitle">Phase Système</div>
+    <div class="txt">Le premier joueur déclenche d'abord tous ses effets qui se déclenchent en phase système (ex: largage d'engin, désoccultation...), puis c'est ensuite au tour du deuxième joueur.</div>
+    <div class="subtitle">Phase d'Activation</div>
+    <div class="txt">Les vaisseaux s'activent de la plus faible initiative à la plus haute initiative. En cas d'initiatives identiques, le premier joueur active d'abord ses vaisseaux, puis l'autre joueur les active.<br>
+    1. Etape "révéler la roue de maneuvre<br>
+    2. Etape "excecuter une manoeuvre<br>
+    3. Etape "effectuer une action"<br><br>
+    Si un vaisseau stressé devrait effectuer une manoeuvre rouge, il effectue une manoeuvre blanche 2 #straight# à la place.<br>
+    Si un vaisseau sans #force# active devrait effectuer une manoeuvre violette, il effectue sa manoeuvre et reçoit un stress.
+    </div>
+    <div class="subtitle">Phase d'Engagement</div>
+    <div class="subtitle">Phase de fin</div>
+</p>    
 </body>
 </html>
