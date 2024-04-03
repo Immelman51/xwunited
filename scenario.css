@@ -7,7 +7,7 @@ header {
     background-color: aliceblue;
 }
 header div{
-    min-width: 65px;
+    width: 65px;
 }
 
 h1 {
