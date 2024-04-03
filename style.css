@@ -146,6 +146,9 @@ select {
     background-color: azure;
     max-width: 750px;
     display: flex;
-    padding: 2px
+    
 
+}
+.printing_option a {
+    padding: 3px;
 }
