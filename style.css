@@ -146,5 +146,6 @@ select {
     background-color: azure;
     max-width: 750px;
     display: flex;
+    padding: 2px
 
 }
