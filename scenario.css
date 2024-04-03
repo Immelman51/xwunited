@@ -6,6 +6,9 @@ header {
     flex-wrap: wrap;
     background-color: aliceblue;
 }
+header div{
+    min-width: 65px;
+}
 
 h1 {
     color: brown;
