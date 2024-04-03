@@ -15,6 +15,7 @@ header div{
 h1 {
     color: brown;
 }
-.bonus h2 {
+h2 {
     color:blue;
+    font-size: medium;
 }
