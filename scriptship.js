@@ -6327,14 +6327,7 @@ function removeElementsByClass() {//permet de supprimer tous les éléments qui 
             shipquantity = -1;
             costpilots = [0,0,0,0,0,0,0,0];
 }       
-/*
-function populateShip0() {//fonction qu'on déclenche sur le premier pilote. On pourrait s'en passer en ne créant pas de vaisseau par défaut
-    select_ship_list();
-    populateMenu("menu_ship_0",ship_available);
-    select_pilot_list("0");
-    removeElementsByClass();
-}
-*/ 
+
 function select_pilot_list(x) {//permet de remplir la liste des pilotes disponibles correspondant au vaisseau sélectionné
     factionnameget();
     let pilot_available = ["Select Pilot"];
@@ -6612,25 +6605,15 @@ function displayDescriptionUpgrade(event){ //permet d'afficher l'effet de l'amé
 }
 
 
-/*
-//On écoute les changements sur selection leader pour "populate" le menu ship0
+
+//On écoute les changements sur selection leader pour "populate" préparer réinitialiser les valeurs
 leaderselect = document.getElementById("menu_leader");
-leaderselect.addEventListener("input", populateShip0); 
-*/
-//on écoute les changements sur sélection du premier vaisseau et pilote. On aurait pu ne pas faire une exception du premier vaisseau, mais j'ai la flemme
-/*
-shipselect0 = document.getElementById("menu_ship_0");
-shipselect0.addEventListener("input",function() {
-    select_pilot_list("0");
-});
-pilotselect0 = document.getElementById("menu_pilot_0");
-pilotselect0.addEventListener("input",function() {
-   dataGetFromPilot("0");
-   displayslots("0");
-   upgradeListGet("0");
-   displayDescriptionPilot("0")
-});
- */  
+leaderselect.addEventListener("input", function() {
+    removeElementsByClass()
+    select_ship_list();
+    document.getElementById("descript_upg").innerHTML="";
+}); 
+
 
 
 
