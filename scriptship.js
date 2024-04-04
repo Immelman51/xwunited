@@ -1,4 +1,4 @@
-let shipquantity = 0; //compteur qui ne sert pas à compter mais à numéroter les id des menus
+let shipquantity = -1; //compteur qui ne sert pas à compter mais à numéroter les id des menus
  let ship_available = [];
  let ship_selected_list = ["","","","","","","",""]; // Dans ce tableau, on va stocker la valeur sélectée de chaque menu_ship
  let pilot_id_available =[];
@@ -6324,15 +6324,17 @@ function removeElementsByClass() {//permet de supprimer tous les éléments qui 
             elementsArray.forEach(element => {
                 element.parentNode.removeChild(element);
             });
-            shipquantity = 0;
+            shipquantity = -1;
             costpilots = [0,0,0,0,0,0,0,0];
 }       
+/*
 function populateShip0() {//fonction qu'on déclenche sur le premier pilote. On pourrait s'en passer en ne créant pas de vaisseau par défaut
     select_ship_list();
     populateMenu("menu_ship_0",ship_available);
     select_pilot_list("0");
     removeElementsByClass();
-} 
+}
+*/ 
 function select_pilot_list(x) {//permet de remplir la liste des pilotes disponibles correspondant au vaisseau sélectionné
     factionnameget();
     let pilot_available = ["Select Pilot"];
@@ -6616,6 +6618,7 @@ leaderselect = document.getElementById("menu_leader");
 leaderselect.addEventListener("input", populateShip0); 
 
 //on écoute les changements sur sélection du premier vaisseau et pilote. On aurait pu ne pas faire une exception du premier vaisseau, mais j'ai la flemme
+/*
 shipselect0 = document.getElementById("menu_ship_0");
 shipselect0.addEventListener("input",function() {
     select_pilot_list("0");
@@ -6627,7 +6630,7 @@ pilotselect0.addEventListener("input",function() {
    upgradeListGet("0");
    displayDescriptionPilot("0")
 });
-   
+ */  
 
 
 
