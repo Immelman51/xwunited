@@ -6376,7 +6376,7 @@ function displayslots(y) { //crée les menus de slot et contient l'écoute des "
       // Create and append new select elements
       let index = 0;
     upgrades_Type[y] = [];    
-      try{ 
+      try{  //permet de supprimer les risques d'erreur lorsqu'il n'y a pas de slots pour le pilote (undefined)
         if  (typeof pilot_list[y]["slots"][0] === 'undefined') {
             console.log("no display slots");
         }else{
