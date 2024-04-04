@@ -6612,11 +6612,11 @@ function displayDescriptionUpgrade(event){ //permet d'afficher l'effet de l'amé
 }
 
 
-
+/*
 //On écoute les changements sur selection leader pour "populate" le menu ship0
 leaderselect = document.getElementById("menu_leader");
 leaderselect.addEventListener("input", populateShip0); 
-
+*/
 //on écoute les changements sur sélection du premier vaisseau et pilote. On aurait pu ne pas faire une exception du premier vaisseau, mais j'ai la flemme
 /*
 shipselect0 = document.getElementById("menu_ship_0");
