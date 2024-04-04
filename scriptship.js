@@ -349,7 +349,7 @@ const ships =
             agility: 1,
             hull: 6,
             shields: 4,
-            chassis: "Tail Canon",
+            chassis: "Tail Cannon",
             actions: [
                 "Focus",
                 "Coordinate",
@@ -1940,7 +1940,7 @@ const ships =
             shields: 0,
             base: "Medium",
             keyword: ["TIE"],
-            chassis: "Rotating Canons",
+            chassis: "Rotating Cannons",
             actions: [
                 "Focus",
                 "Reinforce",
@@ -4947,7 +4947,7 @@ const upgrades = [
      {
                 name: "Jamming Beam",
                 id: 46,
-                slot: "Canon",
+                slot: "Cannon",
                 points: 1,
                 attack: 3,
                 range: [1-2],
@@ -4957,7 +4957,7 @@ const upgrades = [
      {
                 name: "Tractor Beam",
                 id: 47,
-                slot: "Canon",
+                slot: "Cannon",
                 points: 4,
                 attack: 3,
                 range: [1-3],
@@ -4965,9 +4965,9 @@ const upgrades = [
                 faction: ""
             },
     {
-                name: "Ion Canon",
+                name: "Ion Cannon",
                 id: 48,
-                slot: "Canon",
+                slot: "Cannon",
                 points: 5,
                 attack: 3,
                 range: [1,3],
@@ -4975,9 +4975,9 @@ const upgrades = [
                 faction: ""
             },
     {
-                name: "Heavy Laser Canon",
+                name: "Heavy Laser Cannon",
                 id: 49,
-                slot: "Canon",
+                slot: "Cannon",
                 points: 4,
                 attackbull: 4,
                 range: [2,3],
@@ -4985,9 +4985,9 @@ const upgrades = [
                 faction: ""
             },
             {
-                name: "Synced Laser Canons",
+                name: "Synced Laser Cannons",
                 id: 50,
-                slot: "Canon",
+                slot: "Cannon",
                 points: 7,
                 attack: 3,
                 range: [2,3],
@@ -4999,7 +4999,7 @@ const upgrades = [
                 also_occupies_upgrades: [ "Canon" ]*/
             },
     {
-                name: "Ion Canon Turret",
+                name: "Ion Cannon Turret",
                 id: 51,
                 slot: "Turret",
                 points: 5,
@@ -5045,7 +5045,7 @@ const upgrades = [
                     stats.actions.push 'Rotate Arc' if 'Rotate Arc' not in stats.actions*/
             },
              {
-                name: "Canon Turret Support",
+                name: "Cannon Turret Support",
                 id: 55,
                 slot: "Turret",
                 points: 3,
@@ -6490,8 +6490,6 @@ function updateTotalCost() {
     totalcount.textContent = totalcostvalue; 
 }
 
-
-
 function upgradeListGet(y) { //va chercher les options pour populate les menus de slots crées avec displaylots()
   
   let index = 0; 
@@ -6536,7 +6534,6 @@ try { //Si on ne met pas ça, le fait d'avoir une valeur non définie fait plant
     
 }
 }
-
 
 function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'active via le bouton Addship
     shipquantity++;
