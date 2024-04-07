@@ -6798,6 +6798,7 @@ switch (list) {
         break;
     default : 
         console.log("there's an error in the list name");
+}
 console.log(varlist);
         for (i=0; i<varlist.length; i++) {
     if ((varlist[i]===target1)||(varlist[i]===target2)) {
@@ -6810,7 +6811,7 @@ if (testR>=nbr){
 }
 
 }
-}
+
 
 function checkUpgRestriction(y){ //populate les menus slots avec les bonnes upgrades
     
