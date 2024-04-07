@@ -6824,7 +6824,8 @@ function checkUpgRestriction(y){ //populate les menus slots avec les bonnes upgr
             }else{
                 let restrict = false;
                 testRestriction(upgrades_Objects[y][i][j]['restrictions']);
-                console.log(restrict+", "+upgrades_Objects[y][i][j]["name"]);
+                console.log(restrict);
+                console.log(upgrades_Objects[y][i][j]['name']);
                 if (restrict===true) {
                 slotmenucontent.push(upgrades_Objects[y][i][j]['name']+" ("+upgrades_Objects[y][i][j]['points']+")"); 
                 }
