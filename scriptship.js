@@ -4874,7 +4874,7 @@ const upgrades = [
                 charge: 5,
                 effect: "Attaque (#FS#) Portée 2-3 #Farc# 3 dés: Dépensez 1 #ch#. Si le défenseur est dans votre #bulls#, vous pouvez dépenser 1 ou plusieurs ch pour relancer autant de dés d’attaque.",
                 restrictions: [2,"upgrade", "Missile",""],
-                faction: ""
+                faction: "",
                 validation_func: true /*(ship, upgrade_obj) ->
                     upgrade_obj.occupiesAnUpgradeSlot ""Missile""
                 also_occupies_upgrades: [ ""Missile"" ]*/
@@ -4971,7 +4971,7 @@ const upgrades = [
                 effect: "Pendant la phase de système, vous pouvez dépenser 1 #ch# pour larguer une sous-munition avec le gabarit 1#straight#. Au début de la phase d’activation, vous pouvez dépenser 1 bouclier pour récupérer 2 #ch#.",
                 //applies_condition: 'Bomblet'.canonicalize(),
                 restrictions: [2,"upgrade", "Payload",""],
-                faction: ""
+                faction: "",
                 validation_func: true/*(ship, upgrade_obj) ->
                     upgrade_obj.occupiesAnUpgradeSlot ""Payload""
                 also_occupies_upgrades: [ ""Payload"" ]*/
@@ -5095,7 +5095,7 @@ const upgrades = [
                 range: [2,3],
                 effect: "Portée 2-3 #Farc# 3 dés Attaque : si vous êtes calculateur, vous pouvez améliorer 1 dé d’attaque",
                 restrictions: [2,"upgrade", "Cannon",""],
-                faction: ""
+                faction: "",
                 validation_func: true /*(ship, upgrade_obj) ->
                     upgrade_obj.occupiesAnUpgradeSlot "Canon"
                 also_occupies_upgrades: [ "Canon" ]*/
@@ -6050,7 +6050,7 @@ const upgrades = [
                 effect: "Retire en emplacement #crew#. Ajoute #sensor# et #astromech#. Ajoute 5 points de Loadout et augmente le coût du vaisseau de 1",
                 restrictions: [1,"title", "Havoc",""],
                 unequips_upgrades: [
-                    '"Crew"'=
+                    '"Crew"'
                 ],
                 also_occupies_upgrades: [
                     '"Crew"'
@@ -6520,7 +6520,7 @@ const upgrades = [
                 ship: "HWK-290 Light Freighter",
                 ship_cost: 1,
                 Loadout_value: 5,
-                restrictions: [1,("title", "Moldy Crow",""],
+                restrictions: [1,"title", "Moldy Crow",""],
                 effect: "ute 5 points de Loadout et augmente le coût du vaisseau de 1",
 
                 unequips_upgrades: [
