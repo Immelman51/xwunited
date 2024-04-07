@@ -6787,12 +6787,12 @@ switch (list) {
         varlist = upgrades_Type[y];
         break;
     case 'base':
-        varlist = ships[pilot_list[y][shipId]]['base'];
+        varlist = ships[pilot_list[y]['shipId']]['base'];
         break;
     case 'keyword' :
-        varlist =  ships[pilot_list[y][shipId]]['keyword']; 
+        varlist =  ships[pilot_list[y]['shipId']]['keyword']; 
     case 'action' :
-        varlist = ships[pilot_list[y][shipId]]['actions'];
+        varlist = ships[pilot_list[y]['shipId']]['actions'];
     default : 
         console.log("there's an error in the list name");
 for (i=0; i<varlist.length; i++) {
