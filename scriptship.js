@@ -6814,7 +6814,7 @@ function checkUpgRestriction(y){ //populate les menus slots avec les bonnes upgr
     
     for (i=0; i<upgrades_Objects[y].length;i++) {
         let slotmenucontent = [];
-        slotmenucontent.push("<"+upgrades_Type[y][i]['slot']+">");
+        slotmenucontent.push("<"+upgrades_Type[y][i][0]['slot']+">");
         for (j=0; j<upgrades_Objects[y][i].length; j++){
             
             if (upgrades_Objects[y][i][j]['available']===true){
@@ -6885,7 +6885,7 @@ function  add_slots (targetSlots){ //A utiliser si une upgrade rajoute des slots
 
 
 
-function upgradeListGet(y) { //va chercher les options pour populate les menus de slots crées avec displaylots()
+function upgradeListGet(y) { //va chercher les options pour populate les menus de slots crées avec displaylots(), et remplit la var upgrades_Objects
   
   let index = 0; 
   
