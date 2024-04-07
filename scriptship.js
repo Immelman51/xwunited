@@ -123,7 +123,7 @@ const ships =
                 [ 0, 0, 2, 0, 0, 3, 0, 0, 0, 0]
             ],
             slots: ["Torpedo", "Astromech", "Modification"],
-            base: "Small"
+            base: ["Small"]
         },
         {    
             
@@ -148,7 +148,7 @@ const ships =
                 [ 3, 2, 2, 2, 3, 0],
                 [ 0, 0, 3, 0, 0, 3]
             ],
-            base: "Small",
+            base: ["Small"],
             slots: ["Torpedo", "Turret", "Payload", "Astromech", "Modification"]
         },
         {
@@ -176,7 +176,7 @@ const ships =
                 [ 0, 0, 1, 0, 0, 0, 0, 0],
                 [ 0, 0, 1, 0, 0, 3, 0, 0]
             ],
-            base: "Small",
+            base: ["Small"],
             slots: ["Missile", "Modification"]
         },
         {
@@ -202,7 +202,7 @@ const ships =
                 [ 2, 2, 1, 2, 2, 0, 3, 3],
                 [ 0, 0, 2, 0, 0, 3, 0, 0]
             ],
-            base: "Large",
+            base: ["Large"],
             slots: ["Missile", "Crew", "Crew", "Modification"]
         },
         {
@@ -228,7 +228,7 @@ const ships =
                 [ 0, 0, 2, 0, 0, 3],
                 [ 0, 0, 2, 0, 0, 0]
             ],
-            base: "Small",
+            base: ["Small"],
             slots: ["Modification"]
         },
         {
@@ -256,7 +256,7 @@ const ships =
                 [ 0, 0, 2, 0, 0, 3, 0, 0, 0, 0],
                 [ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0]
             ],
-            base: "Small",
+            base: ["Small"],
             slots: ["Tech", "Missile", "Sensor", "Modification"]
         },
         {
@@ -276,7 +276,7 @@ const ships =
                 "Boost",
                 "Evade"
             ],
-            base: "Small",
+            base: ["Small"],
             maneuvers: [
                 [ 0, 0, 0, 0, 0, 0, 0, 0],
                 [ 2, 0, 0, 0, 2, 0, 0, 0],
@@ -297,7 +297,7 @@ const ships =
             agility: 2,
             hull: 6,
             shields: 4,
-            base: "Medium",
+            base: ["Medium"],
             actions: [
                 "Focus",
                 "Lock",
@@ -338,7 +338,7 @@ const ships =
                 [ 3, 2, 1, 2, 3],
                 [ 0, 0, 2, 0, 0]
             ],
-            base: "Small",
+            base: ["Small"],
             slots: ["Crew", "Payload", "Turret", "Illicit", "Modification", "Modification", "Calculator"]
         },
         {
@@ -363,7 +363,7 @@ const ships =
                 [ 3, 2, 1, 2, 3],
                 [ 0, 3, 2, 3, 0]
             ],
-            base: "Large",
+            base: ["Large"],
             slots: ["Sensor", "Crew", "Gunner", "Cannon", "Modification", "Modification"]
 
         },
@@ -390,7 +390,7 @@ const ships =
                 [ 0, 3, 1, 3, 0, 0, 0, 0, 0, 0],
                 [ 0, 0, 3, 0, 0, 0, 0, 0, 0, 0]
             ],
-            base: "Small",
+            base: ["Small"],
             slots: ["Sensor", "Cannon", "Cannon", "Torpedo", "Gunner", "Payload", "Modification"]
         },
         {
@@ -399,7 +399,7 @@ const ships =
             factions: [ "Imperial_Academy" ],
             id: 11,
             attack: 2,
-            base: "Small",
+            base: ["Small"],
             agility: 2,
             hull: 6,
             shields: 0,
@@ -429,7 +429,7 @@ const ships =
             factions: [ "Partisans", "Bounty_Hunters_Guild", "Black_Sun", "Pirates_and_Smugglers"  ],
             id: 12,
             attack: 2,
-            base: "Small",
+            base: ["Small"],
             agility: 2,
             hull: 2,
             shields: 2,
@@ -457,7 +457,7 @@ const ships =
             agility: 3,
             hull: 3,
             shields: 4,
-            base: "Small",
+            base: ["Small"],
             keyword: ["TIE"],
             chassis: "Full Throttle",
             actions: [
@@ -487,7 +487,7 @@ const ships =
             agility: 3,
             hull: 3,
             shields: 3,
-            base: "Small",
+            base: ["Small"],
             actions: [
                 "Focus",
                 "Evade",
@@ -515,7 +515,7 @@ const ships =
             agility: 2,
             hull: 3,
             shields: 2,
-            base: "Small",
+            base: ["Small"],
             keyword: ["TIE"],
             chassis: "Stygium Array",
             actions: [
@@ -548,7 +548,7 @@ const ships =
                 "R-Barrel Roll",
                 "Rotate Arc"
             ],
-            base: "Large",
+            base: ["Large"],
             maneuvers: [
                 [ 0, 0, 0, 0, 0, 0],
                 [ 2, 1, 1, 1, 2, 0],
@@ -574,7 +574,7 @@ const ships =
                 "Rotate Arc",
                 "R-Coordinate"
             ],
-            base: "Large",
+            base: ["Large"],
             maneuvers: [
                 [ 0, 0, 0, 0, 0, 0],
                 [ 3, 1, 1, 1, 3, 0],
@@ -602,7 +602,7 @@ const ships =
                 "Boost",
                 "R-> Focus"
             ],
-            base: "Small",
+            base: ["Small"],
             maneuvers: [
                 [ 0, 0, 0, 0, 0, 0, 0, 0],
                 [ 2, 1, 1, 1, 2, 0, 0, 0],
@@ -636,7 +636,7 @@ const ships =
                 [ 0, 0, 2, 0, 0, 0 ],
                 [ 0, 0, 2, 0, 0, 3 ]
             ],
-            base: "Small",
+            base: ["Small"],
             slots: ["Modification", "Weapon_Hardpoint"]
         },
         {
@@ -655,7 +655,7 @@ const ships =
                 "Lock",
                 "Boost",
             ],
-            base: "Medium",
+            base: ["Medium"],
             maneuvers: [
                 [ 0, 0, 0, 0, 0, 0, 0, 0 ],
                 [ 2, 1, 1, 1, 2, 0, 0, 0 ],
@@ -674,7 +674,7 @@ const ships =
             agility: 1,
             hull: 9,
             shields: 3,
-            base: "Large",
+            base: ["Large"],
             actions: [
                 "Focus",
                 "Reinforce",
@@ -711,7 +711,7 @@ const ships =
                 [ 0, 2, 1, 2, 0, 0, 0, 0, 0, 0 ],
                 [ 0, 0, 2, 0, 0, 3, 0, 0, 0, 0 ]
             ],
-            base: "Small",
+            base: ["Small"],
             slots: ["Missile", "Illicit", "Modification"]
         },
         {
@@ -723,7 +723,7 @@ const ships =
             agility: 1,
             hull: 6,
             shields: 3,
-            base: "Medium",
+            base: ["Medium"],
             actions: [
                 "Focus",
                 "Lock",
@@ -749,7 +749,7 @@ const ships =
             hull: 6,
             shields: 3,
             keyword: ["TIE"],
-            base: "Medium",
+            base: ["Medium"],
             actions: [
                 "Focus",
                 "Lock",
@@ -776,7 +776,7 @@ const ships =
             agility: 0,
             hull: 10,
             shields: 4,
-            base: "Large",
+            base: ["Large"],
             chassis: "???",
             actions: [
                 "Focus",
@@ -808,7 +808,7 @@ const ships =
                 "Barrel Roll",
                 "R-> Evade",
             ],
-            base: "Small",
+            base: ["Small"],
             maneuvers: [
                 [ 0, 0, 0, 0, 0, 0 ],
                 [ 3, 1, 1, 1, 3, 0 ],
@@ -836,7 +836,7 @@ const ships =
                 "Boost",
                 "R-> Focus"
             ],
-            base: "Small",
+            base: ["Small"],
             maneuvers: [
                 [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
                 [ 1, 1, 0, 1, 1, 0, 0, 0, 0, 0 ],
@@ -856,7 +856,7 @@ const ships =
             agility: 1,
             hull: 5,
             shields: 4,
-            base: "Medium",
+            base: ["Medium"],
             actions: [
                 "Focus",
                 "Lock",
@@ -876,7 +876,7 @@ const ships =
             name: "JumpMaster 5000",
             factions: ["Bounty_Hunters_Guild"],
             id: 29,
-            base: "Large",
+            base: ["Large"],
             attackt: 2,
             agility: 2,
             hull: 6,
@@ -907,7 +907,7 @@ const ships =
             agility: 1,
             hull: 6,
             shields: 3,
-            base: "Medium",
+            base: ["Medium"],
             actions: [
                 "Focus",
                 "Lock",
@@ -949,7 +949,7 @@ const ships =
                 [ 0, 0, 2, 0, 0, 3, 0, 0, 0, 0 ],
                 [ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0 ]
             ],
-            base: "Small",
+            base: ["Small"],
             slots: ["Torpedo", "Modification", "Modification"]
         },
         {
@@ -957,7 +957,7 @@ const ships =
             name: "Lancer-Class Pursuit Craft",
             factions: ["Black_Sun", "Crime_Syndicates"],
             id: 32,
-            base: "Large",
+            base: ["Large"],
             attack: 3,
             attackt: 2,
             agility: 2,
@@ -994,7 +994,7 @@ const ships =
                 "R-Evade",
                 "Barrel Roll",
             ],
-            base: "Small",
+            base: ["Small"],
             maneuvers: [
                 [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
                 [ 2, 2, 2, 2, 2, 0, 0, 0, 0, 0, 3, 0, 3 ],
@@ -1008,7 +1008,7 @@ const ships =
             name: "UT-60D U-wing",
             factions: ["Rebel_Alliance", "Partisans"],
             id: 34,
-            base: "Medium",
+            base: ["Medium"],
             attack: 3,
             agility: 2,
             hull: 5,
@@ -1038,7 +1038,7 @@ const ships =
             agility: 2,
             hull: 4,
             shields: 0,
-            base: "Small",
+            base: ["Small"],
             keyword: ["TIE"],
             chassis: "Adaptive Ailerons",
             actions: [
@@ -1063,7 +1063,7 @@ const ships =
             agility: 1,
             hull: 6,
             shields: 2,
-            base: "Small",
+            base: ["Small"],
             actions: [
                 "Focus",
                 "R-Barrel Roll",
@@ -1087,7 +1087,7 @@ const ships =
             agility: 1,
             hull: 6,
             shields: 4,
-            base: "Medium",
+            base: ["Medium"],
             actions: [
                 "Focus",
                 "Lock",
@@ -1111,7 +1111,7 @@ const ships =
             attack: 2,
             agility: 2,
             hull: 4,
-            base: "Small",
+            base: ["Small"],
             keyword: ["TIE"],
             shields: 1,
             actions: [
@@ -1138,7 +1138,7 @@ const ships =
             agility: 2,
             hull: 4,
             shields: 3,
-            base: "Small",
+            base: ["Small"],
             chassis: "???",
             actions: [
                 "Focus",
@@ -1163,7 +1163,7 @@ const ships =
             agility: 1,
             hull: 7,
             shields: 2,
-            base: "Medium",
+            base: ["Medium"],
             chassis: "Dead to Rights",
             actions: [
                 "Focus",
@@ -1189,7 +1189,7 @@ const ships =
             agility: 2,
             hull: 4,
             shields: 1,
-            base: "Small",
+            base: ["Small"],
             chassis: "Comms Shuttle",
             actions: [
                 "Focus",
@@ -1213,7 +1213,7 @@ const ships =
             agility: 1,
             hull: 6,
             shields: 2,
-            base: "Medium",
+            base: ["Medium"],
             keyword: ["TIE"],
             chassis: "Controlled Ailerons",
             actions: [
@@ -1240,7 +1240,7 @@ const ships =
             hull: 2,
             shields: 2,
             chassis: "Co-Pilot",
-            base: "Small",
+            base: ["Small"],
             actions: [
                 "Focus",
                 "Barrel Roll",
@@ -1264,7 +1264,7 @@ const ships =
             agility: 2,
             hull: 4,
             shields: 3,
-            base: "Small",
+            base: ["Small"],
             chassis: "Integrated S-Foils",
             actions: [
                 "Focus",
@@ -1289,7 +1289,7 @@ const ships =
             agility: 3,
             hull: 2,
             shields: 2,
-            base: "Small",
+            base: ["Small"],
             chassis: "Refined Gyrostabilizers",
             actions: [
                 "Focus",
@@ -1318,7 +1318,7 @@ const ships =
             hull: 3,
             keyword: ["TIE"],
             shields: 1,
-            base: "Small",
+            base: ["Small"],
             actions: [
                 "Focus",
                 "Evade",
@@ -1344,7 +1344,7 @@ const ships =
             agility: 3,
             hull: 4,
             shields: 2,
-            base: "Small",
+            base: ["Small"],
             keyword: ["TIE"],
             chassis: "Autothrusters",
             actions: [
@@ -1372,7 +1372,7 @@ const ships =
             agility: 2,
             hull: 3,
             shields: 3,
-            base: "Small",
+            base: ["Small"],
             keyword: ["TIE"],
             chassis: "Heavy Weapon Turret",
             actions: [
@@ -1420,7 +1420,7 @@ const ships =
                 [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
                 [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
             ],
-            base: "Large"
+            base: ["Large"]
         },
         {
     
@@ -1447,7 +1447,7 @@ const ships =
                 [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
                 [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
             ],
-            base: "Large"
+            base: ["Large"]
         },
         {
       
@@ -1459,7 +1459,7 @@ const ships =
             agility: 3,
             hull: 3,
             shields: 0,
-            base: "Small",
+            base: ["Small"],
             chassis: "Notched Stabilizers",
             keyword: ["TIE"],
             actions: [
@@ -1486,7 +1486,7 @@ const ships =
             agility: 2,
             hull: 5,
             shields: 0,
-            base: "Small",
+            base: ["Small"],
             actions: [
                 "Focus",
                 "Evade",
@@ -1512,7 +1512,7 @@ const ships =
             agility: 3,
             hull: 3,
             shields: 1,
-            base: "Small",
+            base: ["Small"],
             chassis: "Fine-Tuned Controls",
             actions: [
                 "Focus",
@@ -1543,7 +1543,7 @@ const ships =
             agility: 2,
             hull: 3,
             shields: 3,
-            base: "Small",
+            base: ["Small"],
             chassis: "Fine-Tuned Controls",
             actions: [
                 "Focus",
@@ -1569,7 +1569,7 @@ const ships =
             attack: 3,
             agility: 1,
             hull: 6,
-            base: "Large",
+            base: ["Large"],
             shields: 4,
             actions: [
                 "Focus",
@@ -1595,7 +1595,7 @@ const ships =
             agility: 2,
             hull: 3,
             shields: 0,
-            base: "Small",
+            base: ["Small"],
             chassis: "Grappling Struts",
             actions: [
                 "Calculate",
@@ -1622,7 +1622,7 @@ const ships =
             agility: 2,
             hull: 3,
             shields: 2,
-            base: "Small",
+            base: ["Small"],
             actions: [
                 "Focus",
                 "Lock",
@@ -1651,7 +1651,7 @@ const ships =
             hull: 3,
             shields: 2,
             chassis: "Full Throttle",
-            base: "Small",
+            base: ["Small"],
             actions: [
                 "Focus",
                 "Lock",
@@ -1677,7 +1677,7 @@ const ships =
             agility: 2,
             hull: 5,
             shields: 0,
-            base: "Small",
+            base: ["Small"],
             chassis: "Landing Struts",
             actions: [
                 "Calculate",
@@ -1704,7 +1704,7 @@ const ships =
             agility: 2,
             hull: 3,
             shields: 1,
-            base: "Small",
+            base: ["Small"],
             chassis: "Co-Pilot",
             actions: [
                 "Focus",
@@ -1730,7 +1730,7 @@ const ships =
             agility: 1,
             hull: 5,
             shields: 3,
-            base: "Small",
+            base: ["Small"],
             chassis: "Docking Ship",
             actions: [
                 "Focus",
@@ -1756,7 +1756,7 @@ const ships =
             agility: 3,
             hull: 4,
             shields: 0,
-            base: "Small",
+            base: ["Small"],
             chassis: "Pinpoint Tractor Array",
             actions: [
                 "Focus",
@@ -1781,7 +1781,7 @@ const ships =
             agility: 1,
             hull: 5,
             shields: 3,
-            base: "Small",
+            base: ["Small"],
             chassis: "Plated Hull",
             actions: [
                 "Focus",
@@ -1807,7 +1807,7 @@ const ships =
             agility: 2,
             hull: 6,
             shields: 0,
-            base: "Small",
+            base: ["Small"],
             chassis: "Explosion with Wings",
             actions: [
                 "Focus",
@@ -1833,7 +1833,7 @@ const ships =
             agility: 3,
             hull: 2,
             shields: 2,
-            base: "Small",
+            base: ["Small"],
             keyword: ["TIE"],
             chassis: "Fine-Tuned Thrusters",
             actions: [
@@ -1861,7 +1861,7 @@ const ships =
             agility: 2,
             hull: 5,
             shields: 2,
-            base: "Medium",
+            base: ["Medium"],
             actions: [
                 "Focus",
                 "R-Lock",
@@ -1886,7 +1886,7 @@ const ships =
             agility: 1,
             hull: 5,
             shields: 3,
-            base: "Small",
+            base: ["Small"],
             chassis: "Repulsorlift Stabilizers",
             actions: [
                 "Calculate",
@@ -1912,7 +1912,7 @@ const ships =
             agility: 1,
             hull: 8,
             shields: 2,
-            base: "Medium",
+            base: ["Medium"],
             chassis: "Fire Convergence",
             actions: [
                 "Focus",
@@ -1939,7 +1939,7 @@ const ships =
             agility: 1,
             hull: 8,
             shields: 0,
-            base: "Medium",
+            base: ["Medium"],
             keyword: ["TIE"],
             chassis: "Rotating Cannons",
             actions: [
@@ -1969,7 +1969,7 @@ const ships =
             agility: 3,
             hull: 3,
             shields: 0,
-            base: "Small",
+            base: ["Small"],
             chassis: "Networked Calculations",
             actions: [
                 "Calculate",
@@ -2000,7 +2000,7 @@ const ships =
             hull: 2,
             shields: 2,
             keyword: ["TIE"],
-            base: "Small",
+            base: ["Small"],
             chassis: "Twin Ion Engines",
             actions: [
                 "Focus",
@@ -2028,7 +2028,7 @@ const ships =
             agility: 3,
             hull: 3,
             shields: 0,
-            base: "Small",
+            base: ["Small"],
             chassis: "Intuitive Controls",
             actions: [
                 "Focus",
@@ -2054,7 +2054,7 @@ const ships =
             agility: 1,
             hull: 1,
             shields: 2,
-            base: "Small",
+            base: ["Small"],
             actions: [
             ],
             maneuvers: [
@@ -2070,7 +2070,7 @@ const ships =
             agility: 1,
             hull: 4,
             shields: 3,
-            base: "Small",
+            base: ["Small"],
             chassis: "Intuitive Interface",
             actions: [
                 "Focus",
@@ -2099,7 +2099,7 @@ const ships =
             hull: 3,
             shields: 2,
             keyword: ["TIE"],
-            base: "Small",
+            base: ["Small"],
             chassis: "Heavy Weapon Turret",
             actions: [
                 "Focus",
@@ -2129,7 +2129,7 @@ const ships =
             agility: 2,
             hull: 4,
             shields: 2,
-            base: "Small",
+            base: ["Small"],
             keyword: ["TIE"],
             chassis: "Pursuit Thrusters",
             actions: [
@@ -2161,7 +2161,7 @@ const ships =
             agility: 2,
             hull: 9,
             shields: 2,
-            base: "Large",
+            base: ["Large"],
             chassis: "Troop Bay , Swivel Wing" ,
             actions: [
                 "Focus",
@@ -2189,7 +2189,7 @@ const ships =
             agility: 2,
             hull: 7,
             shields: 2,
-            base: "Medium",
+            base: ["Medium"],
             chassis: "Hidden Devices",
             actions: [
                 "Focus",
@@ -2214,7 +2214,7 @@ const ships =
             id: 79,
             attack: 2,
             agility: 2,
-            base: "Small",
+            base: ["Small"],
             hull: 2,
             shields: 2,
             chassis: "Versatile Frame",
@@ -2238,7 +2238,7 @@ const ships =
             id: 80,
             attack: 2,
             agility: 2,
-            base: "Small",
+            base: ["Small"],
             hull: 5,
             shields: 2,
             chassis: "Dead to Rights",
@@ -2271,7 +2271,7 @@ const ships =
             sattack: 2,
             srange: [1,2],
             agility: 2,
-            base: "Small",
+            base: ["Small"],
             hull: 2,
             shields: 0,
             chassis: "Boarding, Multiple Targets",
@@ -6772,6 +6772,113 @@ function updateTotalCost() {
     totalcount.textContent = totalcostvalue; 
 }
 
+function testRestriction (tableRestrictions){//va vérifier si les restrictions sont true, et renvoie la valeur restrict=true si c'est bon
+    let testR = 0;
+let restrict = false;
+let varlist = [];
+let nbr = tableRestrictions[0];
+let list = tableRestrictions[1];
+let target1 = tableRestrictions[2];
+let target2 = tableRestrictions[3];
+switch (list) {
+    case 'title':
+        varlist = pilot_list[y]["title"];
+        break;
+    case 'upgrade':
+        varlist = upgrades_Type[y];
+        break;
+    case 'base':
+        varlist = ships[pilot_list[y][shipId]]['base'];
+        break;
+    case 'keyword' :
+        varlist =  ships[pilot_list[y][shipId]]['keyword']; 
+    case 'action' :
+        varlist = ships[pilot_list[y][shipId]]['actions'];
+    default : 
+        console.log("there's an error in the list name");
+for (i=0; i<varlist.length; i++) {
+    if ((varlist[i]===target1)||(varlist[i]===target2)) {
+        testR++;
+    }
+    }
+if (testR>=nbr){
+    restrict = true;
+    return [restrict];
+}
+
+}
+}
+
+function checkUpgRestriction(y){ //populate les menus slots avec les bonnes upgrades
+    
+    for (i=0; i<upgrades_Objects[y].length;i++) {
+        let slotmenucontent = [];
+        for (j=0; j<upgrades_Objects[y][i].length; j++){
+            if (upgrades_Objects[y][i][j]['available']===true){
+                slotmenucontent.push(upgrades_Objects[y][i][j]['name']+" ("+upgrades_Objects[y][i][j]['points']+")");
+            }else{
+                testRestriction(upgrades_Objects[y][i][j]['restrictions']);
+                if (restrict===true) {
+                slotmenucontent.push(upgrades_Objects[y][i][j]['name']+" ("+upgrades_Objects[y][i][j]['points']+")"); 
+                }
+            }
+            populateMenu('slot'+y+'_'+i,slotmenucontent);
+        }
+    }
+   
+
+    }
+
+
+
+function also_Occupies(nameofUpgrade, targetSlot){ //A utiliser lorsqu'une upgrade utilise un slot de plus
+    for (i=0; i<upgradesSelected[y].length;i++){
+      if(upgradesSelected[y][i]==='<'+targetSlot+'>'){
+        let field = document.getElementById("slot"+y+"_"+i);
+        field.textContent = nameofUpgrade;
+        field.setAttribute("disabled","");
+        return
+
+      }  
+    }
+}
+
+function removes_slots (targetSlots){ //A utiliser si une upgrade retire des slots
+    for(i=0; i<targetSlots.length;i++){
+        let fields = document.querySelector["."+targetSlots[i]];
+        fields.textContent = "Indisponible";
+        fields.setAttribute("disabled","");
+    }
+}
+function  add_slots (targetSlots){ //A utiliser si une upgrade rajoute des slots
+    let nbrSlots = upgrades_Type[y].length;
+    for(i=0; i<targetSlots.length; i++){
+        shipslot = document.getElementById('shipslots'+y);
+        slotmenu = document.createElement('select');
+        slotmenu.setAttribute('id', 'slot'+y+"_"+(nbrSlots+i));
+        slotmenu.setAttribute('class', 'slotElement'+' '+targetSlots[i]);
+        shipslot.appendChild(slotmenu);
+        //Il faut créer la liste des upgrades pour populate les nouveaux menus
+        let upgObjList = [];
+        for (k=0 ; k<upgrades.length ; k++) {
+            if ((targetSlots[i]===upgrades[k]["slot"]) && ((upgrades[k]["faction"]==="")||(upgrades[k]["faction"].includes(factionno1))||(upgrades[k]["faction"].includes(factionno2))||(upgrades[k]["faction"].includes(factionno3)))) {
+                upgObjList.push(upgrades[k]); //on va prendre tous les objets et les mettre dedans
+            }
+        upgrades_Objects[y].push(upgObjList);
+        populateMenu(slotmenu,upgObjList);
+
+        slotmenu.addEventListener("input", function(event) {//cette faction décrit le calcul des mises à jour des points pour le loadout et le cout du pilote
+            updateUpgradeCount(y);
+            updateTotalCost();
+            displayDescriptionUpgrade(event);
+    })
+   
+}
+}
+}
+
+
+
 function upgradeListGet(y) { //va chercher les options pour populate les menus de slots crées avec displaylots()
   
   let index = 0; 
@@ -6815,12 +6922,13 @@ try { //Si on ne met pas ça, le fait d'avoir une valeur non définie fait plant
             
  //slotlist.push(upgrades[k]["name"] + ' (' + upgrades[k]["points"] + ')' ); //on ajoute dans le menu slotlist le nom de l'upgrade suivi de son cout entre parenthèses      
             
-            upgObjList.push(upgrades[k]); //on va prendre tous les objets et les mettre dedans        }
+            upgObjList.push(upgrades[k]); //on va prendre tous les objets et les mettre dedans
     }
    
      upgrades_Objects[y].push(upgObjList); //Ainsi, ce tableau aura cette structure : [['pilote1' [Objets talent][objets torpille][objets modifications]]['pilote2' [objets talent][objets modification]]....] 
     //populateMenu('slot'+y+'_'+(index+i),slotlist); 
     
+}
 }
 }
 
