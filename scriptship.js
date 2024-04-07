@@ -6814,7 +6814,7 @@ function checkUpgRestriction(y){ //populate les menus slots avec les bonnes upgr
     
     for (i=0; i<upgrades_Objects[y].length;i++) {
         let slotmenucontent = [];
-        slotmenucontent.push("<"+upgrades_Type[y][i][0]['slot']+">");
+        slotmenucontent.push("<"+upgrades_Type[y][i]['slot']+">");
         for (j=0; j<upgrades_Objects[y][i].length; j++){
             
             if (upgrades_Objects[y][i][j]['available']===true){
