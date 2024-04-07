@@ -6779,6 +6779,7 @@ let nbr = tableRestrictions[0];
 let list = tableRestrictions[1];
 let target1 = tableRestrictions[2];
 let target2 = tableRestrictions[3];
+console.log(tableRestrictions);
 switch (list) {
     case 'title':
         varlist = pilot_list[y]["title"];
@@ -6797,7 +6798,8 @@ switch (list) {
         break;
     default : 
         console.log("there's an error in the list name");
-for (i=0; i<varlist.length; i++) {
+console.log(varlist);
+        for (i=0; i<varlist.length; i++) {
     if ((varlist[i]===target1)||(varlist[i]===target2)) {
         testR++;
     }
