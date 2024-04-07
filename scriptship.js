@@ -6908,20 +6908,21 @@ try { //Si on ne met pas ça, le fait d'avoir une valeur non définie fait plant
         }
             
         }
-        console.log(i, upgObjList);
+        
         upgrades_Objects[y].push(upgObjList); //Ainsi, ce tableau aura cette structure : [['pilote1' [Objets talent][objets torpille][objets modifications]]['pilote2' [objets talent][objets modification]]....] 
         //populateMenu('slot'+y+'_'+i,slotlist);
         index++;
+        console.log(i, upgrades_Objects);
     }
 
     }
 } catch (error) {
         console.log("no slots"+index)
     } 
-    upgObjList = [];   
+      
   console.log('entre 2 boucles'+index)  
   for (i=0 ; i<ships[pilot_list[y]["shipId"]]["slots"].length;i++) {
-        
+    upgObjList = [];   
     //let slotlist =[];
       //  slotlist.push("<"+ships[pilot_list[y]["shipId"]]["slots"][i]+">");
         for (k=0 ; k<upgrades.length ; k++) {
