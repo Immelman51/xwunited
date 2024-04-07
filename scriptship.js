@@ -6908,6 +6908,7 @@ try { //Si on ne met pas ça, le fait d'avoir une valeur non définie fait plant
         }
             
         }
+       
           upgrades_Objects[y].push(upgObjList); //Ainsi, ce tableau aura cette structure : [['pilote1' [Objets talent][objets torpille][objets modifications]]['pilote2' [objets talent][objets modification]]....] 
         //populateMenu('slot'+y+'_'+i,slotlist);
         index++;
@@ -6931,10 +6932,11 @@ try { //Si on ne met pas ça, le fait d'avoir une valeur non définie fait plant
             upgObjList.push(upgrades[k]); //on va prendre tous les objets et les mettre dedans
     }
    
-     upgrades_Objects[y].push(upgObjList); //Ainsi, ce tableau aura cette structure : [['pilote1' [Objets talent][objets torpille][objets modifications]]['pilote2' [objets talent][objets modification]]....] 
-    //populateMenu('slot'+y+'_'+(index+i),slotlist); 
     
 }
+upgrades_Objects[y].push(upgObjList); //Ainsi, ce tableau aura cette structure : [['pilote1' [Objets talent][objets torpille][objets modifications]]['pilote2' [objets talent][objets modification]]....] 
+//populateMenu('slot'+y+'_'+(index+i),slotlist); 
+
 }
 }
 
