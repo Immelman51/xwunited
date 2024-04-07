@@ -6813,7 +6813,7 @@ if (testR>=nbr){
 
 
 function checkUpgRestriction(y){ //populate les menus slots avec les bonnes upgrades
-    
+    let restrict = false;
     for (i=0; i<upgrades_Objects[y].length;i++) {
         let slotmenucontent = [];
         slotmenucontent.push("<"+upgrades_Type[y][i]+">");
@@ -6823,7 +6823,7 @@ function checkUpgRestriction(y){ //populate les menus slots avec les bonnes upgr
             if (upgrades_Objects[y][i][j]['available']===true){
                 slotmenucontent.push(upgrades_Objects[y][i][j]['name']+" ("+upgrades_Objects[y][i][j]['points']+")");
             }else{
-                let restrict = false;
+                restrict = false;
                 testRestriction(upgrades_Objects[y][i][j]['restrictions']);
                 console.log(restrict);
                 if (restrict===true) {
