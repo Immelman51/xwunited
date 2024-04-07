@@ -6791,8 +6791,10 @@ switch (list) {
         break;
     case 'keyword' :
         varlist =  ships[pilot_list[y]['shipId']]['keyword']; 
+        break;
     case 'action' :
         varlist = ships[pilot_list[y]['shipId']]['actions'];
+        break;
     default : 
         console.log("there's an error in the list name");
 for (i=0; i<varlist.length; i++) {
