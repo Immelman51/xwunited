@@ -9,8 +9,9 @@ let shipquantity = -1; //compteur qui ne sert pas à compter mais à numéroter 
 
  let pilot_selected_list = ["","","","","","","",""]; // Dans ce tableau, on va stocker la valeur sélectée de chaque menu_pilot
  let pilot_list = [{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0}]; //Dans ce tableau, on stocker les objets pilotes
- let upgrades_Type = [[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]]];
- let upgradesSelected = [[[]],[[]],[[]],[[]],[[]],[[]],[[]],[[]]];
+ let upgrades_Type = [[],[],[],[],[],[],[],[]]; //va contenir tous les slots pour chaque pilote
+ let upgrades_Objects= [[],[],[],[],[],[],[],[]]; // va contenir la liste des contenus des menus slots mais sous forme d'objet
+ let upgradesSelected = [[],[],[],[],[],[],[],[]]; //va contenir les upgrades sélectionnées
  let overCostTab = [0,0,0,0,0,0,0,0]; //Cette variable va stocker les augmentations des couts des pilotes dûs aux emports d'upgrade supérieurs au loadout de base
  let y= 0;
 
@@ -390,7 +391,7 @@ const ships =
                 [ 0, 0, 3, 0, 0, 0, 0, 0, 0, 0]
             ],
             base: "Small",
-            slots: ["Sensor", "Cannon", "Cannon", "Torpedo", "Gunner", "Payload","Modification"]
+            slots: ["Sensor", "Cannon", "Cannon", "Torpedo", "Gunner", "Payload", "Modification"]
         },
         {
             
@@ -2531,7 +2532,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             slots: [
                 "Talent",
                 "Talent",
-                "title"          
+                "Title"          
             ]
         },
         {
@@ -2565,7 +2566,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             ability: "Au début de la phase d’engagement, vous pouvez transférer 1 de vos marqueurs de concentration à un vaisseau allié situé dans votre arc de tir.",
             slots: [
                 "Talent",
-               "title"
+               "Title"
                 
             ]
         },
@@ -2583,7 +2584,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             ability: "Au début de la phase d’engagement, vous pouvez transférer un marqueur de stress de votre vaisseau vers un vaisseau allié dans votre arc de tir. Lorsque vous retirez un marqueur de stress de votre vaisseau, vous pouvez effectuer une action.",
             slots: [
                 "Talent",
-                "title"
+                "Title"
             ]
         },
         {
@@ -3338,7 +3339,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             slots: [
                 "Force",
                 "Talent",
-                "title"
+                "Title"
                             ]
         },
         {
@@ -3356,7 +3357,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             slots: [
                 "Talent",
                 "Talent",
-                "title"
+                "Title"
             
             ]
         },
@@ -3375,7 +3376,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             slots: [
                 
                 "Talent",
-               "title"]
+               "Title"]
         },
         {
             name: "Paz Vizsla",
@@ -3391,7 +3392,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             ability: "Lorsque vous attaquez vous pouvez dépenser 1#ch# sur l’une de vos cartes #ill#  pour lancer 1 dé d’attaque supplémentaire.",
             slots: [
                 "Talent",
-                "title",
+                "Title",
             ]
         },
         {
@@ -3409,7 +3410,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             slots: [
                 "Talent",
                 "Talent",
-                "title"
+                "Title"
             ]
         },
         {
@@ -3427,7 +3428,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             ability: "Lorsqu’un vaisseau à portée 0-2 subit des dégâts, vous pouvez récupérer 1#fo#",
             slots: [
                 "Force",
-                "title"
+                "Title"
             ]
         },
         {
@@ -3459,7 +3460,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             keyword: ["Droid"],
             ability: "Lorsqu’une attaque contre vous échoue, gagnez 1 marqueur de calcul.",
             slots: [
-                "title"
+                "Title"
 
             ]
         },
@@ -3609,7 +3610,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             slots: [
                 "Talent",
                 "Talent",
-                "title"
+                "Title"
             ]            
         },
         {
@@ -3627,7 +3628,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             ability: "Après avoir défendu ou attaqué, si vous avez dépensé un marqueur de calcul, recevez un marqueur de calcul.",
             slots: [
                 "Talent",
-                "title"
+                "Title"
             ]
         },
         {
@@ -4365,9 +4366,6 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             loadout: 0,
             ability: "Ne peut être joué que si un YV666 avec le titre Hound’s Tooth est dans votre escadron. Quand le Hound’s Tooth est détruit, vous devez vous déployer. Vous pouvez copier :<br>- Le texte de sa capacité de pilote<br>-  Le texte de l’une de ses améliorations #crew# ",
             slots: [
-            ],
-            restrictions: [
-                ["title", "Hound's Tooth"]
             ],
             restriction_func: ""/*(ship) -> builder = ship.builder
                 for t, things of builder.uniques_in_use
@@ -6784,16 +6782,21 @@ try { //Si on ne met pas ça, le fait d'avoir une valeur non définie fait plant
         }
         else{
         for (i=0 ; i<pilot_list[y]["slots"].length;i++) {
-        let slotlist =[];
-        slotlist.push("<"+pilot_list[y]["slots"][i]+">");
+         //let slotlist =[];
+        let upgObjList = [];
+        //slotlist.push("<"+pilot_list[y]["slots"][i]+">");
         for (k=0 ; k<upgrades.length ; k++) {
             if ((pilot_list[y]["slots"][i]===upgrades[k]["slot"]) && ((upgrades[k]["faction"]==="")||(upgrades[k]["faction"].includes(factionno1))||(upgrades[k]["faction"].includes(factionno2))||(upgrades[k]["faction"].includes(factionno3)))) {
             
-            slotlist.push(upgrades[k]["name"] + ' (' + upgrades[k]["points"] + ')' ); //on ajoute dans le menu slotlist le nom de l'upgrade suivi de son cout entre parenthèses      
-            }
+              //slotlist.push(upgrades[k]["name"] + ' (' + upgrades[k]["points"] + ')' ); //on ajoute dans le menu slotlist le nom de l'upgrade suivi de son cout entre parenthèses      
+        
+        upgObjList.push(upgrades[k]); //on va prendre tous les objets et les mettre dedans
+              
+        }
             
         }
-        populateMenu('slot'+y+'_'+i,slotlist);
+          upgrades_Objects[y].push(upgObjList); //Ainsi, ce tableau aura cette structure : [['pilote1' [Objets talent][objets torpille][objets modifications]]['pilote2' [objets talent][objets modification]]....] 
+        //populateMenu('slot'+y+'_'+i,slotlist);
         index++;
     }
 
@@ -6810,11 +6813,13 @@ try { //Si on ne met pas ça, le fait d'avoir une valeur non définie fait plant
         for (k=0 ; k<upgrades.length ; k++) {
             if ((ships[pilot_list[y]["shipId"]]["slots"][i]===upgrades[k]["slot"]) && ((upgrades[k]["faction"]==="")||(upgrades[k]["faction"].includes(factionno1))||(upgrades[k]["faction"].includes(factionno2))||(upgrades[k]["faction"].includes(factionno3)))) {
             
-            slotlist.push(upgrades[k]["name"] + ' (' + upgrades[k]["points"] + ')' ); //on ajoute dans le menu slotlist le nom de l'upgrade suivi de son cout entre parenthèses      
-        }
+ //slotlist.push(upgrades[k]["name"] + ' (' + upgrades[k]["points"] + ')' ); //on ajoute dans le menu slotlist le nom de l'upgrade suivi de son cout entre parenthèses      
+            
+            upgObjList.push(upgrades[k]); //on va prendre tous les objets et les mettre dedans        }
     }
    
-    populateMenu('slot'+y+'_'+(index+i),slotlist); 
+     upgrades_Objects[y].push(upgObjList); //Ainsi, ce tableau aura cette structure : [['pilote1' [Objets talent][objets torpille][objets modifications]]['pilote2' [objets talent][objets modification]]....] 
+    //populateMenu('slot'+y+'_'+(index+i),slotlist); 
     
 }
 }
@@ -6861,6 +6866,7 @@ function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'acti
         dataGetFromPilot(numero);
         displayslots(numero)  ;
         upgradeListGet(numero);
+        checkUpgRestriction(numero);
         displayDescriptionPilot(numero);
     });  
    
@@ -6893,6 +6899,10 @@ leaderselect.addEventListener("input", function() {
     removeElementsByClass()
     select_ship_list();
     document.getElementById("descript_upg").innerHTML="";
+   upgrades_Objects= [[],[],[],[],[],[],[],[]];
+    overCostTab = [0,0,0,0,0,0,0,0]
+    upgradesSelected = [[],[],[],[],[],[],[],[]]
+    upgrades_Type = [[],[],[],[],[],[],[],[]]
 }); 
 
 
