@@ -6774,7 +6774,6 @@ function updateTotalCost() {
 
 function testRestriction (tableRestrictions){//va vérifier si les restrictions sont true, et renvoie la valeur restrict=true si c'est bon
     let testR = 0;
-let restrict = false;
 let varlist = [];
 let nbr = tableRestrictions[0];
 let list = tableRestrictions[1];
@@ -6817,6 +6816,7 @@ function checkUpgRestriction(y){ //populate les menus slots avec les bonnes upgr
             if (upgrades_Objects[y][i][j]['available']===true){
                 slotmenucontent.push(upgrades_Objects[y][i][j]['name']+" ("+upgrades_Objects[y][i][j]['points']+")");
             }else{
+                let restrict = false;
                 testRestriction(upgrades_Objects[y][i][j]['restrictions']);
                 if (restrict===true) {
                 slotmenucontent.push(upgrades_Objects[y][i][j]['name']+" ("+upgrades_Objects[y][i][j]['points']+")"); 
