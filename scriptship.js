@@ -6911,12 +6911,12 @@ try { //Si on ne met pas ça, le fait d'avoir une valeur non définie fait plant
 } catch (error) {
         console.log("no slots"+index)
     } 
-     
+    upgObjList = [];   
   console.log('entre 2 boucles'+index)  
   for (i=0 ; i<ships[pilot_list[y]["shipId"]]["slots"].length;i++) {
         
-    let slotlist =[];
-        slotlist.push("<"+ships[pilot_list[y]["shipId"]]["slots"][i]+">");
+    //let slotlist =[];
+      //  slotlist.push("<"+ships[pilot_list[y]["shipId"]]["slots"][i]+">");
         for (k=0 ; k<upgrades.length ; k++) {
             if ((ships[pilot_list[y]["shipId"]]["slots"][i]===upgrades[k]["slot"]) && ((upgrades[k]["faction"]==="")||(upgrades[k]["faction"].includes(factionno1))||(upgrades[k]["faction"].includes(factionno2))||(upgrades[k]["faction"].includes(factionno3)))) {
             
