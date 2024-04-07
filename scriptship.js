@@ -6895,26 +6895,15 @@ try { //Si on ne met pas ça, le fait d'avoir une valeur non définie fait plant
         }
         else{
         for (i=0 ; i<pilot_list[y]["slots"].length;i++) {
-         //let slotlist =[];
         let upgObjList = [];
-        //slotlist.push("<"+pilot_list[y]["slots"][i]+">");
         for (k=0 ; k<upgrades.length ; k++) {
             if ((pilot_list[y]["slots"][i]===upgrades[k]["slot"]) && ((upgrades[k]["faction"]==="")||(upgrades[k]["faction"].includes(factionno1))||(upgrades[k]["faction"].includes(factionno2))||(upgrades[k]["faction"].includes(factionno3)))) {
-            
-              //slotlist.push(upgrades[k]["name"] + ' (' + upgrades[k]["points"] + ')' ); //on ajoute dans le menu slotlist le nom de l'upgrade suivi de son cout entre parenthèses      
-        
-        upgObjList.push(upgrades[k]); //on va prendre tous les objets et les mettre dedans
-              
-        }
-            
-        }
-        
+                     upgObjList.push(upgrades[k]); //on va prendre tous les objets et les mettre dedans
+              }
+            }
         upgrades_Objects[y].push(upgObjList); //Ainsi, ce tableau aura cette structure : [['pilote1' [Objets talent][objets torpille][objets modifications]]['pilote2' [objets talent][objets modification]]....] 
-        //populateMenu('slot'+y+'_'+i,slotlist);
         index++;
-        console.log(i, upgrades_Objects);
     }
-
     }
 } catch (error) {
         console.log("no slots"+index)
@@ -6923,21 +6912,14 @@ try { //Si on ne met pas ça, le fait d'avoir une valeur non définie fait plant
   console.log('entre 2 boucles'+index)  
   for (i=0 ; i<ships[pilot_list[y]["shipId"]]["slots"].length;i++) {
     upgObjList = [];   
-    //let slotlist =[];
-      //  slotlist.push("<"+ships[pilot_list[y]["shipId"]]["slots"][i]+">");
+    
         for (k=0 ; k<upgrades.length ; k++) {
             if ((ships[pilot_list[y]["shipId"]]["slots"][i]===upgrades[k]["slot"]) && ((upgrades[k]["faction"]==="")||(upgrades[k]["faction"].includes(factionno1))||(upgrades[k]["faction"].includes(factionno2))||(upgrades[k]["faction"].includes(factionno3)))) {
-            
- //slotlist.push(upgrades[k]["name"] + ' (' + upgrades[k]["points"] + ')' ); //on ajoute dans le menu slotlist le nom de l'upgrade suivi de son cout entre parenthèses      
-            
+                      
             upgObjList.push(upgrades[k]); //on va prendre tous les objets et les mettre dedans
-    }
-   
-    
+    }   
 }
 upgrades_Objects[y].push(upgObjList); //Ainsi, ce tableau aura cette structure : [['pilote1' [Objets talent][objets torpille][objets modifications]]['pilote2' [objets talent][objets modification]]....] 
-//populateMenu('slot'+y+'_'+(index+i),slotlist); 
-
 }
 }
 
