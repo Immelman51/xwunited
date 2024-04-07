@@ -6908,8 +6908,8 @@ try { //Si on ne met pas ça, le fait d'avoir une valeur non définie fait plant
         }
             
         }
-       
-          upgrades_Objects[y].push(upgObjList); //Ainsi, ce tableau aura cette structure : [['pilote1' [Objets talent][objets torpille][objets modifications]]['pilote2' [objets talent][objets modification]]....] 
+        console.log(i, upgObjList);
+        upgrades_Objects[y].push(upgObjList); //Ainsi, ce tableau aura cette structure : [['pilote1' [Objets talent][objets torpille][objets modifications]]['pilote2' [objets talent][objets modification]]....] 
         //populateMenu('slot'+y+'_'+i,slotlist);
         index++;
     }
