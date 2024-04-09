@@ -345,7 +345,7 @@ const ships =
                 [ 0, 0, 2, 0, 0]
             ],
             base: ["Small"],
-            slots: ["Crew", "Payload", "Turret", "Illicit", "Calculator"]
+            slots: ["Crew", "Payload", "Turret", "Modification","Calculator"]
         },
         {
         
@@ -703,7 +703,7 @@ const ships =
                 [ 2, 2, 1, 2, 2, 0 ],
                 [ 0, 0, 2, 0, 0, 0 ]
             ],
-            slots: ["Crew", "Crew", "Gunner", "Illicit", "Cannon", "Modification"]
+            slots: ["Crew", "Crew", "Illicit", "Illicit", "Modification"]
         },
         {
     
@@ -1711,7 +1711,7 @@ const ships =
                 [ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0],
                 [ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0]
             ],
-            slots: ["Torpedo", "Astromech", "Illicit", "Sensor"]
+            slots: ["Torpedo", "Astromech", "Sensor"]
         },
         {
 
@@ -2590,7 +2590,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 5,
             points: 7,
             loadout: 15,
-            title: "Moldy Crow",
+            title: ["Moldy Crow"],
             ability: "Tant qu’un vaisseau allié situé dans votre arc de tir effectue une attaque principale, si vous n’êtes pas stressé, vous pouvez gagner 1 marqueur de stress. Dans ce cas, ce vaisseau peut lancer 1 dé d’attaque supplémentaire.",
             slots: [
                 "Talent",
@@ -2625,7 +2625,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 3,
             points: 6,
             loadout: 15,
-            title: "Moldy Crow",
+            title: ["Moldy Crow"],
             ability: "Au début de la phase d’engagement, vous pouvez transférer 1 de vos marqueurs de concentration à un vaisseau allié situé dans votre arc de tir.",
             slots: [
                 "Talent",
@@ -2643,7 +2643,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 3,
             points: 8,
             loadout: 15,
-            title: "Moldy Crow",
+            title: ["Moldy Crow"],
             ability: "Au début de la phase d’engagement, vous pouvez transférer un marqueur de stress de votre vaisseau vers un vaisseau allié dans votre arc de tir. Lorsque vous retirez un marqueur de stress de votre vaisseau, vous pouvez effectuer une action.",
             slots: [
                 "Talent",
@@ -3396,7 +3396,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             loadout: 15,
             unique: true,
             force: 3,
-            title: "Nightbrother",
+            title: ["Nightbrother"],
             ability: "Lorsque vous effectuez une action #CO# , vous pouvez dépenser 1#fo# . Dans ce cas, considérez l’action comme blanche et vous pouvez coordonner 1 vaisseau allié supplémentaire ; chaque vaisseau allié que vous avez coordonné ainsi gagne 1 marqueur de contrainte.",
             funtion: "disponible uniquement si leader Maul",
             slots: [
@@ -3414,7 +3414,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 5,
             points: 9,
             loadout: 15,
-            title: "Razor Crest",
+            title: ["Razor Crest"],
             unique: true,
             ability: "Lorsque vous défendez ou effectuez une attaque, si vous êtes dans le  #Farc#  à portée 1-2 de 2 vaisseaux ennemis ou plus, vous pouvez changer 1 de vos résultats vierges en résultat #eye#.",
             slots: [
@@ -3434,7 +3434,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             points: 8,
             loadout: 10,
             unique: true,
-            title: "Razor Crest",
+            title: ["Razor Crest"],
             ability: "MISE EN PLACE : L’amélioration  #mod# que vous équipez est gratuite. Si elle possède 1 ou plusieurs charges, ajoutez en une supplémentaire.",
             slots: [
                 
@@ -3451,7 +3451,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             points: 7,
             loadout: 15,
             unique: true,
-            title: "Razor Crest",
+            title: ["Razor Crest"],
             ability: "Lorsque vous attaquez vous pouvez dépenser 1#ch# sur l’une de vos cartes #ill#  pour lancer 1 dé d’attaque supplémentaire.",
             slots: [
                 "Talent",
@@ -3468,7 +3468,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             points: 6,
             loadout: 15,
             unique: true,
-            title: "Din Djarin's N1",
+            title: ["Din Djarin's N1"],
             ability: "Lorsque vous défendez ou effectuez une attaque, si vous êtes dans le  #Farc#  à portée 1-2 de 2 vaisseaux ennemis ou plus, vous pouvez changer 1 de vos résultats vierges en résultat #eye#.",
             slots: [
                 "Talent",
@@ -3487,7 +3487,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             points: 5,
             loadout: 15,
             unique: true,
-            title: "Din Djarin's N1",
+            title: ["Din Djarin's N1"],
             ability: "Lorsqu’un vaisseau à portée 0-2 subit des dégâts, vous pouvez récupérer 1#fo#",
             slots: [
                 "Force",
@@ -3519,7 +3519,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             points: 4,
             loadout: 15,
             unique: true,
-            title: "Din Djarin's N1",
+            title: ["Din Djarin's N1"],
             keyword: ["Droid"],
             ability: "Lorsqu’une attaque contre vous échoue, gagnez 1 marqueur de calcul.",
             slots: [
@@ -3668,7 +3668,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 5,
             points: 10,
             loadout: 15,
-            title: "Outrider",
+            title: ["Outrider"],
             ability: "Lorsque vous vous déplacez, ignorez les obstacles",
             slots: [
                 "Talent",
@@ -3686,7 +3686,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 3,
             points: 8,
             loadout: 15,
-            title: "Outrider",
+            title: ["Outrider"],
             keyword: ["Droid"],
             ability: "Après avoir défendu ou attaqué, si vous avez dépensé un marqueur de calcul, recevez un marqueur de calcul.",
             slots: [
@@ -3712,6 +3712,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             unique: true,
             faction: "Pirates_and_Smugglers",
             ship: "YT-1300 Light Freighter",
+            title: ["Millenium Falcon"],
             shipId: 3,
             skill: 6,
             points: 9,
@@ -3730,6 +3731,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             unique: true,
             faction: "Pirates_and_Smugglers",
             ship: "YT-1300 Light Freighter",
+            title: ["Millenium Falcon"],
             shipId: 3,
             skill: 5,
             points: 8,
@@ -3747,6 +3749,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             unique: true,
             faction: "Pirates_and_Smugglers",
             ship: "YT-1300 Light Freighter",
+            title: ["Millenium Falcon"],
             shipId: 3,
             skill: 4,
             charge: 1,
@@ -3877,7 +3880,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 1,
             points: 12,
             loadout: 15,
-            title: "Slave 1",
+            title: ["Slave 1"],
             ability: "ACTION : Choisissez 2 vaisseaux non énormes à portée 0-3 de vous qui ne sont pas alliés l’un l’autre. Chaque vaisseau peut effectuer une action qui se trouve sur votre barre d’action, même stressé, dans l’ordre de votre choix. Puis gagner 1 marqueur de calcul.",
             slots: [
                 "Talent",
@@ -3895,7 +3898,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 4,
             points: 12,
             loadout: 15,
-            title: "Andrasta",
+            title: ["Andrasta"],
             ability: "Si vous devez larguer un engin en utilisant un gabarit 1#straight#, vous pouvez utiliser à la place un gabarit 3#Lturn# ou 3#straight# ou 3#Rturn#",
             slots: [
                 "Talent",
@@ -3997,6 +4000,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             unique: true,
             faction: "Pirates_and_Smugglers",
             ship: "Scurrg H-6 Bomber",
+            title: ["Havoc"],
             shipId: 37,
             skill: 5,
             charge: 1,
@@ -4030,6 +4034,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             id: 105,
             faction: "Pirates_and_Smugglers",
             ship: "Scurrg H-6 Bomber",
+            title: ["Havoc"],
             shipId: 37,
             skill: 2,
             points: 5,
@@ -4044,6 +4049,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             unique: true,
             faction: "Pirates_and_Smugglers",
             ship: "Scurrg H-6 Bomber",
+            title: ["Havoc"],
             shipId: 37,
             skill: 1,
             charge: 1,
@@ -4144,7 +4150,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 4,
             points: 11,
             loadout: 10,
-            title: "IG-2000",
+            title: ["IG-2000"],
             keyword: ["Droid"],
             ability: "Au début de la phase d’engagement, vous pouvez choisir 1 vaisseau allié à portée 1–3 avec #CA# dans sa barre d’action. Dans ce cas, transférez-lui 1 de vos marqueurs de calcul.",
             slots: [
@@ -4162,7 +4168,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             shipId: 20,
             skill: 4,
             points: 11,
-            title: "IG-2000",
+            title: ["IG-2000"],
             loadout: 10,
             keyword: ["Droid"],
             ability: "Après avoir effectué une attaque ratée, vous pouvez effectuer une attaque bonus #can#",
@@ -4180,7 +4186,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             shipId: 20,
             skill: 4,
             points: 11,
-            title: "IG-2000",
+            title: ["IG-2000"],
             loadout: 10,
             keyword: ["Droid"],
             ability: "Après avoir effectué une action #BO# , vous pouvez effectuer une action #EV# .",
@@ -4200,7 +4206,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 4,
             points: 10,
             loadout: 10,
-            title: "IG-2000",
+            title: ["IG-2000"],
             keyword: ["Droid"],
             ability: "Tant que vous exécutez une manœuvre Boucle de Segnor #Sleft# ou #Sright# ), vous pouvez utiliser un autre gabarit de même vitesse mais de même direction à la place.",
             slots: [
@@ -4219,7 +4225,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             points: 8,
             loadout: 15,
             unique: true,
-            title: "Razor Crest",
+            title: ["Razor Crest"],
             ability: "Tant que vous défendez ou effectuez une attaque si vous êtes dans le #Farc# à portée 1-2 d'au moins 2 vaisseaux ennemis, vous pouvez changer 1 de vos résultats vierges en un résultat #eye#.",
             slots: [
                 "Talent",
@@ -4237,7 +4243,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             points: 7,
             loadout: 15,
             unique: true,
-            title: "Razor Crest",
+            title: ["Razor Crest"],
             keyword: ["Droid"],
             
             ability: "Après avoir entièrement exécuté une manœuvre avancée, vous pouvez effectuer une action #CA# ou #BR#, même si vous êtes stressé. Dans ce cas, gagnez 1 marqueur de contrainte.", 
@@ -4257,7 +4263,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             points: 8,
             loadout: 15,
             keyword: ["Droid"] ,
-            title: "Mist Hunter",
+            title: ["Mist Hunter"],
             ability: "Après avoir entièrement exécuté une manœuvre rouge, gagnez 1 marqueur de calcul. Au début de la phase de dénouement, vous pouvez choisir un vaisseau à portée 0–1. Dans ce cas, transférez 1 de vos marqueurs de stress à ce vaisseau.",
             slots: [
                 "Talent",
@@ -4270,6 +4276,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             unique: true,
             faction: "Bounty_Hunters_Guild",
             ship: "G-1A Starfighter",
+            title: ["Mist Hunter"],
             shipId: 28,
             skill: 3,
             points: 8,
@@ -4292,7 +4299,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             recurring: 1,
             points: 9,
             loadout: 15,
-            title: "Punishing One",
+            title: ["Punishing One"],
             ability: "Après avoir défendu, si l’attaquant est dans votre #Farc#, vous pouvez dépenser 1 #ch# pour effectuer une attaque bonus contre cet attaquant.",
             slots: [
                 "Talent",
@@ -4328,7 +4335,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 3,
             points: 7,
             loadout: 15,
-            title: "Punishing One",
+            title: ["Punishing One"],
             ability: "Au début de la phase d’engagement, vous pouvez choisir un vaisseau allié à portée 0–2. Dans ce cas, transférez à ce vaisseau tous vos marqueurs verts.",
             slots: [
                 "Talent",
@@ -4410,7 +4417,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 4,
             points: 10,
             loadout: 15,
-            title: "Hound's Tooth",
+            title: ["Hound's Tooth"],
             ability: "Tant que vous effectuez une attaque principale, après l’étape « Neutraliser les résultats », vous pouvez dépenser 1 résultat #crit# pour ajouter 2 résultats #hit# .",
             slots: [
                 "Talent",
@@ -4471,7 +4478,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             recurring: 1,
             points: 7,
             loadout: 15,
-            title: "Xanadu Blood",
+            title: ["Xanadu Blood"],
             ability: "Après avoir effectué une attaque qui a touché, vous pouvez dépenser 2 #ch# pour transférer 1 de vos marqueurs rouges non-verrouillage ou orange au défenseur.",
             slots: [
                 "Talent",
@@ -4519,7 +4526,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 5,
             points: 14,
             loadout: 15,
-            title: "Slave 1",
+            title: ["Slave 1"],
             ability: "Tant que vous défendez ou effectuez une attaque, vous pouvez relancer 1 de vos dés pour chaque vaisseau ennemi à portée 0–1.",
             slots: [
                 "Talent",
@@ -4538,7 +4545,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             force: 1,
             points: 13,
             loadout: 15,
-            title: "Slave 1",
+            title: ["Slave 1"],
             ability: "Avant de vous engager, vous pouvez dépenser 1 #fo# pour choisir 2 vaisseaux ennemis à portée 0-1. Transférez n'importe quel nombre de marqueurs orange et rouges entre ces 2 vaisseaux.",
             slots: [
                 "Talent",
@@ -4636,13 +4643,15 @@ const upgrades = [
                 name: "Elusive",
                 id: 6,
                 available: false,
-                modify: false,
+                modify: true,
                 slot: "Talent",
                 points: 5,
                 effect: "Lorsque vous défendez contre une attaque à portée 3 ou contre une attaque de #tur#, vous pouvez améliorer un dé de défense.",
                 restrictions: [1,"upgrade","Modification",""],
                 faction: "",
-                validation_func: true//'(ship, upgrade_obj) -> upgrade_obj.occupiesAnUpgradeSlot ""Modification""; also_occupies_upgrades: [ ""Modification"" ] '       
+                modifier_func: [
+                    [also_Occupies,"Modification"]
+                ]       
             },
     {
                 name: "Lone Wolf",
@@ -4706,7 +4715,9 @@ const upgrades = [
                 unique: true,
                 effect: "Tant que vous coordonnez, le vaisseau que vous avez choisi peut effectuer une action seulement si celle-ci est également dans votre barre d’action.<br>Ajoute l'action (CO)",
                 faction: "",
-                modifier_func: '(stats) -> stats.actions.push "R-Coordinate" if "R-Coordinate" not in stats.actions'
+                modifier_func: [
+                    [add_action,"R-Coordinate"]
+                ]
             },
      {
                 name: "Swarm Tactics",
@@ -4751,7 +4762,9 @@ const upgrades = [
                 effect: "Ajoute l'action #CO# blanche",
                 restrictions: [1,"action", "R-Coordinate",""],
                 faction: "",
-                modifier_func: '(stats) -> stats.actions.push "Coordinate" if "Coordinate" not in stats.actions',
+                modifier_func: [
+                    [add_action,"Coordinate"]
+                ]
             },
      {
                 name: "Perceptive Copilot",
@@ -5151,7 +5164,7 @@ const upgrades = [
                 name: "Synced Laser Cannons",
                 id: 50,
                 available: false,
-                modify: false,
+                modify: true,
                 slot: "Cannon",
                 points: 7,
                 attack: 3,
@@ -5159,9 +5172,9 @@ const upgrades = [
                 effect: "Portée 2-3 #Farc# 3 dés Attaque : si vous êtes calculateur, vous pouvez améliorer 1 dé d’attaque",
                 restrictions: [2,"upgrade", "Cannon",""],
                 faction: "",
-                validation_func: true /*(ship, upgrade_obj) ->
-                    upgrade_obj.occupiesAnUpgradeSlot "Canon"
-                also_occupies_upgrades: [ "Canon" ]*/
+                modifier_func_func: [
+                    [also_Occupies,"Cannon"]
+                ]
             },
     {
                 name: "Ion Cannon Turret",
@@ -5173,9 +5186,11 @@ const upgrades = [
                 attackt: 3,
                 range: [1,2],
                 effect: "Portée 1-2 #Farc# 3 dés Attaque : si cette attaque touche, dépensez 1 résultat #hit# ou #crit# pour faire subir 1 dégât #hit# au défenseur. Tous les résultats #hit#/#crit# restants infligent des marqueurs ioniques au lieu des dégâts.",
-                faction: ""
-                /*modifier_func: (stats) ->
-                    stats.actions.push 'Rotate Arc' if 'Rotate Arc' not in stats.actions*/
+                faction: "",
+                modifier_func: [
+                    [add_action,"Rotate Arc"]
+                ]
+                   
             },
      {
                 name: "Dorsal Turret",
@@ -5187,9 +5202,10 @@ const upgrades = [
                 attackt: 2,
                 range: [1,2],
                 effect: "Portée 1-2 #tur# 2 dés, Attaque",
-                faction: ""
-                /*modifier_func: (stats) ->
-                    stats.actions.push 'Rotate Arc' if 'Rotate Arc' not in stats.actions*/
+                faction: "",
+                modifier_func: [
+                    [add_action,"Rotate Arc"]
+                ]
             },
      {
                 name: "Autoblasters",
@@ -5201,7 +5217,10 @@ const upgrades = [
                 attackt: 2,
                 range: [0,1],
                 effect: "Portée 0-1 #tur# 2 dés. ATTAQUE PRECISE",
-                faction: ""
+                faction: "",
+                modifier_func: [
+                    [add_action,"Rotate Arc"]
+                ]
             },
             {
                 name: "Twin Laser Turret",
@@ -5213,9 +5232,10 @@ const upgrades = [
                 attackt: 3,
                 range: [2,3],
                 effect: "Portée 2-3 #tur# 3 dés Attaque : attaque IMPRECISE<br>puis Attaque: attaque IMPRECISE.",
-                faction: ""
-                /*modifier_func: (stats) ->
-                    stats.actions.push 'Rotate Arc' if 'Rotate Arc' not in stats.actions*/
+                faction: "",
+                modifier_func: [
+                    [add_action,"Rotate Arc"]
+                ]
             },
              {
                 name: "Cannon Turret Support",
@@ -5224,11 +5244,11 @@ const upgrades = [
                 modify: true,
                 slot: "Turret",
                 points: 3,
-                //restrictions: [1, 1, ships[pilot_list[y]["shipId"]], "slots","Cannon"],
                 effect: "Choisissez une amélioration #can# équipée et placez un marqueur canon rotatif dessus. La restriction #Farc# de votre #can# devient #tur#. Vous pouvez tourner l’arc de votre #can# avec l’action #RT#.",
-                faction: ""
-                /*modifier_func: (stats) ->
-                    stats.actions.push 'Rotate Arc' if 'Rotate Arc' not in stats.actions*/
+                faction: "",
+                modifier_func: [
+                    [add_action,"Rotate Arc"]
+                ]
             },
              {
                 name: "Cloaking Device",
@@ -5323,9 +5343,10 @@ const upgrades = [
                 restrictions: 
                     [1,"action", "R-Boost",""]
                 ,
-                faction: ""
-                /*modifier_func: (stats) ->
-                    stats.actions.push 'Boost' if 'Boost' not in stats.actions*/
+                faction: "",
+                modifier_func: [
+                    [add_action,"Boost"]
+                ]
             },
             {
                 name: "Munitions Failsafe",
@@ -5356,9 +5377,10 @@ const upgrades = [
                 slot: "Modification",
                 points: 6,
                 effect: "+1 Coque",
-                faction: ""
-                /*modifier_func: (stats) ->
-                    stats.hull += 1*/
+                faction: "",
+                modifier_func: [
+                    [change_stat,["Hull",1]]
+                ]
             },
     {
                 name: "Shield Upgrade",
@@ -5368,9 +5390,10 @@ const upgrades = [
                 slot: "Modification",
                 points: 7,
                 effect: "+1 Bouclier",
-                faction: ""
-                /*modifier_func: (stats) ->
-                    stats.shields += 1*/
+                faction: "",
+                modifier_func: [
+                    [change_stat,["Shield",1]]
+                ]
             },
             {
                 name: "Stealth Device",
@@ -5401,9 +5424,10 @@ const upgrades = [
                 slot: "Modification",
                 points: 2,
                 effect: "Donne accès l'action #TL#",
-                faction: ""
-                /*modifier_func: (stats) ->
-                    stats.actions.push 'Lock' if 'Lock' not in stats.actions*/
+                faction: "",
+                modifier_func: [
+                    [add_action,"Target Lock"]
+                ]
             },
     {
                 name: "Advanced Sensors",
@@ -5591,14 +5615,15 @@ const upgrades = [
                 name: "C-3PO",
                 id: 87,
                 available: true,
-                modify: false,
+                modify: true,
                 slot: "Crew",
                 points: 7,
                 unique: true,
                 effect: "Avant de lancer les dés de défense, vous pouvez dépenser 1 marqueur de calcul pour dire à voix haute un nombre supérieur ou égal à 1. Dans ce cas et si vous obtenez exactement cette quantité de résultats #evd# sur votre lancer, ajoutez 1 résultat #evd#.",
-                faction: ["Rebel_Alliance","New_Republic","Resistance"]
-                /*modifier_func: (stats) ->
-                    stats.actions.push 'Calculate' if 'Calculate' not in stats.actions*/
+                faction: ["Rebel_Alliance","New_Republic","Resistance"],
+                modifier_func: [
+                    [add_action,"Calculate"]
+                ]
             },
              {
                 name: "Cassian Andor",
@@ -5657,8 +5682,9 @@ const upgrades = [
                 unique: true,
                 effect: "Tant que vous effectuez une attaque qui n’est pas une attaque #Farc#, vous pouvez dépenser 1 #fo#. Si vous le faites, lancez 1 dé d’attaque supplémentaire.",
                 faction: ["Rebel_Alliance"],
-                /*modifier_func: (stats) ->
-                    stats.force += 1*/
+                modifier_func: [
+                    [change_stat,["Force",1]]
+                ]
             },
     {
                 name: "Selfless",
@@ -5680,9 +5706,10 @@ const upgrades = [
                 effect: "Pendant la phase de système, vous pouvez choisir un vaisseau allié à portée 0–3. Ce vaisseau gagne 1 marqueur de calcul et 1 marqueur de stress.<br>Ajoute l’action #CA# et #JM#",
                 unique: true,
                 points: 7,
-                /*modifier_func: (stats) ->
-                    stats.actions.push 'Calculate'
-                    stats.actions.push 'Jam'*/
+                modifier_func: [
+                    [add_action,"Calculate"],
+                    [add_action,"Jam"]
+                ]
             }
             ,
     
@@ -5699,8 +5726,9 @@ const upgrades = [
                 unique: true,
                 effect: "Au début de la phase d’engagement, vous pouvez choisir 1 vaisseau dans votre arc de tir à portée 0–2 et dépenser 1 #fo#. Dans ce cas, ce vaisseau subit 1 dégât #hit# sauf s’il choisit de retirer 1 marqueur vert.",
                 faction: ["Imperial_Academy"],
-                /*modifier_func: (stats) ->
-                    stats.force += 1*/
+                modifier_func: [
+                    [change_stat,["Force",1]]
+                ]
             },
     {
                 name: "Grand Moff Tarkin",
@@ -5827,8 +5855,9 @@ const upgrades = [
                 unique: true,
                 effect: "Vous avez la capacité de pilote de chaque autre vaisseau allié qui possède la capacité IG-2000.<br>Après avoir effectué une action #CA#, gagnez 1 marqueur de calcul.",
                 faction: ["Bounty_Hunters_Guild"],
-                /*modifier_func: (stats) ->
-                    stats.actions.push 'Calculate' if 'Calculate' not in stats.actions*/
+                modifier_func: [
+                    [add_action,"Calculate"]
+                ]
     
             },
             {
@@ -5890,7 +5919,9 @@ const upgrades = [
                 max_per_squad: 3,
                 effect: "Mise en Place : avant de placer les forces, choisissez un adversaire ; il assigne l'état 'Désigné pour Mourir' à 1 de ses vaisseaux. Il doit l'assigner à un vaisseau limité, si possible.<br>Vous ignorez les restrictions de portée lorsque vous verrouillez le vaisseau qui a l'état Désigné pour Mourir.",
                 faction: ["Bounty_Hunters_Guild"],
-                /*applies_condition: '''Marked for Elimination'''.canonicalize()*/
+                modifier_func: [
+                    [add_condition,"Marked for Elimination"]
+                ]
             },
             {
                 name: "Notorious",
@@ -5985,8 +6016,9 @@ const upgrades = [
                 faction: ["Mandalorian_Clans"],
                 effect: "ACTION : Déployez un Super Commando qui est arrimé avec vous.<br>ACTION : Choisissez un Super Commando à portée 0-3. Il peut alors accélérer, même partiellement.",
                 unique: true,
-                /*modifier_func: (stats) ->
-                    stats.actions.push 'Coordinate' if 'Coordinate' not in stats.actions*/
+                modifier_func: [
+                    [add_action,"Coordinate"]
+                ]
             },
     {
                 name: "Ursa Wren",
@@ -6094,7 +6126,6 @@ const upgrades = [
                 charge: 1,
                 effect: "Action : dépensez 1 #ch#. Larguez 1 cargaison égarée en utilisant le gabarit 1#straight#.",
                 faction: ["Pirates_and_Smugglers","Hutt_Cartel","Crime_Syndicates"],
-                //applies_condition: '''Loose Cargo'''.canonicalize()
                 restrictions: [1,"base", "Medium", "Large"]
                 
             },
@@ -6108,26 +6139,16 @@ const upgrades = [
                 unique: true,
                 faction: ["Pirates_and_Smugglers"],
                 ship: "Scurrg H-6 Bomber",
-                ship_cost: 1,
-                Loadout_value: 5,
                 effect: "Retire en emplacement #crew#. Ajoute #sensor# et #astromech#. Ajoute 5 points de Loadout et augmente le coût du vaisseau de 1",
                 restrictions: [1,"title", "Havoc",""],
-                unequips_upgrades: [
-                    '"Crew"'
-                ],
-                also_occupies_upgrades: [
-                    '"Crew"'
-                ],
-                confersAddons: [
-                    {
-                        //type: exportObj.Upgrade,
-                        slot: '"Sensor"'
-                    },
-                    {
-                        //type: exportObj.Upgrade,
-                        slot: '"Astromech"'
-                    }
+                modifier_func: [
+                    [also_Occupies,"Crew"],
+                    [add_slots,"Sensor"],
+                    [add_slots,"Astromech"],
+                    [change_stat, ["loadout",5]],
+                    [change_stat,["points",1]]
                 ]
+                
             },
     {
                 name: "Lando Calrissian",
@@ -6164,16 +6185,11 @@ const upgrades = [
                 faction: ["Pirates_and_Smugglers"],
                 effect: "Gagnez 1 autre emplacement #mod# et un emplacement #ill#",
                 restrictions: [1,"base", "Medium", "Large"],
-                confersAddons: [
-                    {
-                        //type: exportObj.Upgrade,
-                        slot: '"Modification"'
-                    },
-                    {
-                        //type: exportObj.Upgrade,
-                        slot: '"Illicit"'
-                    }
+                modifier_func: [
+                    [add_slots,"Illicit"],
+                    [add_slots,"Modification"]
                 ]
+                
             },
             {
                 name: "Cunning",
@@ -6195,29 +6211,18 @@ const upgrades = [
                 unique: true,
                 faction: ["Pirates_and_Smugglers"],
                 ship: "YT-1300 Light Freighter",
-                ship_cost: 1,
-                Loadout_value: 5,
                 restrictions: [1, "title", "Millenium Falcon",""],
                 effect: "Retire en emplacement #missile# et la capacité 'Vaisseau-Mère'. Ajoute #sensor# et #calculator#. Ajoute 5 points de Loadout et augmente le coût du vaisseau de 1",
-
-                unequips_upgrades: [
-                    '"Missile"'
-                ],
-                lose_chassis: [
-                    'Docking Ship'
-                ],
-                 /*modifier_func: (attackt) ->
-                    attackt=3,*/
-                confersAddons: [
-                    {
-                        //type: exportObj.Upgrade,
-                        slot: '"Sensor"'
-                    },
-                    {
-                        //type: exportObj.Upgrade,
-                        slot: '"Calculator"'
-                    }
+                modifier_func: [
+                    [also_Occupies,"Missile"],
+                    [lose_chassis,"Docking Ship"],
+                    [add_slots, "Sensor"],
+                    [add_slots, "Calculator"],
+                    [change_stat, ["attackt",1]],
+                    [change_stat, ["loadout",5]],
+                    [change_stat,["points",1]]
                 ]
+               
             },
             {
                 name: "Proton Torpedoes",
@@ -6242,29 +6247,14 @@ const upgrades = [
                 unique: true,
                 faction: "",
                 ship: "Rogue-class Starfighter",
-                ship_cost: 1,
-                Loadout_value: 5,
                 restrictions: [1,"title", "Xanadu Blood",""],
                 effect: "Retire en emplacement #missile# et la capacité 'Vaisseau-Mère'. Ajoute #sensor# et #calculator#. Ajoute 5 points de Loadout et augmente le coût du vaisseau de 1",
-
-                unequips_upgrades: [
-                    '"Missile"'
-                ],
-                lose_chassis: [
-                    'Docking Ship'
-                ],
-                 /*modifier_func: (attackt) ->
-                    attackt=3,*/
-                confersAddons: [
-                    {
-                        //type: exportObj.Upgrade,
-                        slot: '"Sensor"'
-                    },
-                    {
-                        //type: exportObj.Upgrade,
-                        slot: '"Calculator"'
-                    }
-                ] 
+                modifier_func: [
+                    [add_slots,"Payload"],
+                    [add_slots,"Crew"],
+             
+                ]
+                
             },
             {
                 name: "Hound's Tooth",
@@ -6276,28 +6266,14 @@ const upgrades = [
                 unique: true,
                 faction: "",
                 ship: "YV-666 Light Freighter",
-                ship_cost: 1,
-                Loadout_value: 5,
                 restrictions: [1,"title", "Hound's Tooth",""],
                 effect: "Retire en emplacement",
-                unequips_upgrades: [
-                    '"Missile"'
-                ],
-                lose_chassis: [
-                    'Docking Ship'
-                ],
-                 /*modifier_func: (attackt) ->
-                    attackt=3,*/
-                confersAddons: [
-                    {
-                        //type: exportObj.Upgrade,
-                        slot: '"Sensor"'
-                    },
-                    {
-                        //type: exportObj.Upgrade,
-                        slot: '"Calculator"'
-                    }
-                ]   
+                modifier_func: [
+                    [add_slots,"Gunner"],
+                    [add_slots,"Cannon"],
+                    [also_Occupies,"Illicit"],
+                 
+                ]
             },
             {
                 name: "Slave 1",
@@ -6309,29 +6285,15 @@ const upgrades = [
                 unique: true,
                 faction: "",
                 ship: "Firespray-class Patrol Craft",
-                ship_cost: 1,
-                Loadout_value: 5,
                 restrictions: [1,"title", "Slave 1",""],
                 effect: "culseau de 1",
-
-                unequips_upgrades: [
-                    '"Missile"'
-                ],
-                lose_chassis: [
-                    'Docking Ship'
-                ],
-                 /*modifier_func: (attackt) ->
-                    attackt=3,*/
-                confersAddons: [
-                    {
-                        //type: exportObj.Upgrade,
-                        slot: '"Sensor"'
-                    },
-                    {
-                        //type: exportObj.Upgrade,
-                        slot: '"Calculator"'
-                    }
-                ]   
+                modifier_func: [
+                    [add_slots,"Gunner"],
+                    [add_slots,"Cannon"],
+                    [add_slots,"Illicit"],
+                   
+                ]
+                
             },
             {
                 name: "Andrasta",
@@ -6343,29 +6305,15 @@ const upgrades = [
                 unique: true,
                 faction: "",
                 ship: "Firespray-class Patrol Craft",
-                ship_cost: 1,
-                Loadout_value: 5,
                 restrictions: [1,"title", "Andrasta",""],
                 effect: "adout et augmente le coût du vaisseau de 1",
-
-                unequips_upgrades: [
-                    '"Missile"'
-                ],
-                lose_chassis: [
-                    'Docking Ship'
-                ],
-                 /*modifier_func: (attackt) ->
-                    attackt=3,*/
-                confersAddons: [
-                    {
-                        //type: exportObj.Upgrade,
-                        slot: '"Sensor"'
-                    },
-                    {
-                        //type: exportObj.Upgrade,
-                        slot: '"Calculator"'
-                    }
-                ]   
+                modifier_func: [
+                    [add_slots,"Payload"],
+                    [add_slots,"Payload"],
+                    [add_slots,"Illicit"],
+                  
+                ]
+                
             },
             {
                 name: "Outrider",
@@ -6381,59 +6329,28 @@ const upgrades = [
                 Loadout_value: 5,
                 restrictions: [1,"title", "Outrider",""],
                 effect: "points de Loadout et augmente le coût du vaisseau de 1",
-
-                unequips_upgrades: [
-                    '"Missile"'
-                ],
-                lose_chassis: [
-                    'Docking Ship'
-                ],
-                 /*modifier_func: (attackt) ->
-                    attackt=3,*/
-                confersAddons: [
-                    {
-                        //type: exportObj.Upgrade,
-                        slot: '"Sensor"'
-                    },
-                    {
-                        //type: exportObj.Upgrade,
-                        slot: '"Calculator"'
-                    }
-                ]   
+                modifier_func: [
+                    [add_slots,"Gunner"],
+                    [add_slots,"Cannon"],
+                    
+                ]
             },
             {
                 name: "Mist Hunter",
                 id: 141,
                 available: false,
-                modify: true,
+                modify: false,
                 slot: "Title",
                 points: 0,
                 unique: true,
                 faction: "",
                 ship: "G-1A Starfighter",
-                ship_cost: 1,
-                Loadout_value: 5,
                 restrictions: [1,"title", "Mist Hunter",""],
                 effect: "oute 5 points de Loadout et augmente le coût du vaisseau de 1",
-
-                unequips_upgrades: [
-                    '"Missile"'
-                ],
-                lose_chassis: [
-                    'Docking Ship'
-                ],
-                 /*modifier_func: (attackt) ->
-                    attackt=3,*/
-                confersAddons: [
-                    {
-                        //type: exportObj.Upgrade,
-                        slot: '"Sensor"'
-                    },
-                    {
-                        //type: exportObj.Upgrade,
-                        slot: '"Calculator"'
-                    }
-                ]   
+                /*modifier_func: [
+                    [change_stat,["points",1]],
+                    [change_stat,["loadout",5]]
+                ]*/
             },
             {
                 name: "Punishing One",
@@ -6449,25 +6366,12 @@ const upgrades = [
                 Loadout_value: 5,
                 restrictions: [1,"title", "Punishing One",""],
                 effect: " Ajoute 5 points de Loadout et augmente le coût du vaisseau de 1",
-
-                unequips_upgrades: [
-                    '"Missile"'
-                ],
-                lose_chassis: [
-                    'Docking Ship'
-                ],
-                 /*modifier_func: (attackt) ->
-                    attackt=3,*/
-                confersAddons: [
-                    {
-                        //type: exportObj.Upgrade,
-                        slot: '"Sensor"'
-                    },
-                    {
-                        //type: exportObj.Upgrade,
-                        slot: '"Calculator"'
-                    }
-                ]      
+                modifier_func: [
+                    [add_slots,"Astromech"],
+                    [add_slots,"Cannon"],
+                    [also_Occupies,"Crew"],
+                   
+                ]
             },
             {
                 name: "IG-2000",
@@ -6476,32 +6380,18 @@ const upgrades = [
                 modify: true,
                 slot: "Title",
                 points: 0,
-                unique: true,
+                unique: false,
                 faction: "",
                 ship: "Aggressor Assault Fighter",
                 ship_cost: 1,
                 Loadout_value: 5,
                 restrictions: [1,"title", "IG-2000",""],
                 effect: "Ajoute 5 points de Loadout et augmente le coût du vaisseau de 1",
-
-                unequips_upgrades: [
-                    '"Missile"'
-                ],
-                lose_chassis: [
-                    'Docking Ship'
-                ],
-                 /*modifier_func: (attackt) ->
-                    attackt=3,*/
-                confersAddons: [
-                    {
-                        //type: exportObj.Upgrade,
-                        slot: '"Sensor"'
-                    },
-                    {
-                        //type: exportObj.Upgrade,
-                        slot: '"Calculator"'
-                    }
-                ]      
+                modifier_func: [
+                    [add_slots,"Calculator"],
+                    [also_Occupies,"Modification"],
+                    
+                ]
             },
             {
                 name: "Din Djarin's N1",
@@ -6513,36 +6403,23 @@ const upgrades = [
                 unique: true,
                 faction: "",
                 ship: "Naboo Royal N-1 Starfighter",
-                ship_cost: 1,
-                Loadout_value: 5,
                 restrictions: [1,"title", "Din Djarin's N1",""],
                 effect: "e 5 points de Loadout et augmente le coût du vaisseau de 1",
-
-                unequips_upgrades: [
-                    '"Missile"'
-                ],
-                lose_chassis: [
-                    'Docking Ship'
-                ],
-                 /*modifier_func: (attackt) ->
-                    attackt=3,*/
-                confersAddons: [
-                    {
-                        //type: exportObj.Upgrade,
-                        slot: '"Sensor"'
-                    },
-                    {
-                        //type: exportObj.Upgrade,
-                        slot: '"Calculator"'
-                    }
-                ]      
+                modifier_func: [
+                    [add_slots,"Crew"],
+                    [add_slots,"Tech"],
+                    [add_slots,"Illicit"],
+                    [also_Occupies,"Astromech"],
+                    [also_Occupies,"Torpedo"],
+                 
+                ]
             },
             {
                 name: "Razor Crest",
                 id: 145,
                 slot: "Title",
                 available: false,
-                modify: true,
+                modify: false,
                 points: 0,
                 unique: true,
                 faction: "",
@@ -6551,25 +6428,10 @@ const upgrades = [
                 Loadout_value: 5,
                 restrictions: [1,"title", "Razor Crest",""],
                 effect: "te 5 points de Loadout et augmente le coût du vaisseau de 1",
-
-                unequips_upgrades: [
-                    '"Missile"'
-                ],
-                lose_chassis: [
-                    'Docking Ship'
-                ],
-                 /*modifier_func: (attackt) ->
-                    attackt=3,*/
-                confersAddons: [
-                    {
-                        //type: exportObj.Upgrade,
-                        slot: '"Sensor"'
-                    },
-                    {
-                        //type: exportObj.Upgrade,
-                        slot: '"Calculator"'
-                    }
-                ]       
+                /*modifier_func: [
+                    [change_stat,["points",1]],
+                    [change_stat,["loadout",5]]
+                ]*/
             },
             {
                 name: "Moldy Crow",
@@ -6581,29 +6443,13 @@ const upgrades = [
                 unique: true,
                 faction: "",
                 ship: "HWK-290 Light Freighter",
-                ship_cost: 1,
-                Loadout_value: 5,
                 restrictions: [1,"title", "Moldy Crow",""],
                 effect: "ute 5 points de Loadout et augmente le coût du vaisseau de 1",
-
-                unequips_upgrades: [
-                    '"Missile"'
-                ],
-                lose_chassis: [
-                    'Docking Ship'
-                ],
-                 /*modifier_func: (attackt) ->
-                    attackt=3,*/
-                confersAddons: [
-                    {
-                        //type: exportObj.Upgrade,
-                        slot: '"Sensor"'
-                    },
-                    {
-                        //type: exportObj.Upgrade,
-                        slot: '"Calculator"'
-                    }
-                ]       
+                modifier_func: [
+                    [add_slots,"Illicit"],
+                    [add_slots,"Cannon"],
+                    [also_Occupies, "Modification"],
+                ]
             },
             {
                 name: "Trajectory Simulator",
@@ -6926,13 +6772,7 @@ function also_Occupies(nameofUpgrade, targetSlot){ //A utiliser lorsqu'une upgra
     }
 }
 
-function removes_slots (targetSlots){ //A utiliser si une upgrade retire des slots
-    for(i=0; i<targetSlots.length;i++){
-        let fields = document.querySelector["."+targetSlots[i]];
-        fields.textContent = "Indisponible";
-        fields.setAttribute("disabled","");
-    }
-}
+
 function checkUpgradeValidation(e) { //va checker s'il existe une fonction modify liée à l'upgrade
     let field = e.target.id; // "sloty_i"
     let pilnbr = field.substring(4, 5);
@@ -6976,8 +6816,15 @@ function  add_slots (targetSlots){ //A utiliser si une upgrade rajoute des slots
 }
 }
 
+function add_action (act){
 
+}
+function add_condition(con){
 
+}
+function change_stat(table){
+
+}
 function upgradeListGet(y) { //va chercher les options pour populate les menus de slots crées avec displaylots(), et remplit la var upgrades_Objects
   
   let index = 0; 
