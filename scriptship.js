@@ -14,7 +14,7 @@ let shipquantity = -1; //compteur qui ne sert pas à compter mais à numéroter 
  let upgradesSelected = [[],[],[],[],[],[],[],[]]; //va contenir les upgrades sélectionnées
  let overCostTab = [0,0,0,0,0,0,0,0]; //Cette variable va stocker les augmentations des couts des pilotes dûs aux emports d'upgrade supérieurs au loadout de base
  let y= 0;
-
+let restrict = false;
 
 
 
@@ -345,7 +345,7 @@ const ships =
                 [ 0, 0, 2, 0, 0]
             ],
             base: ["Small"],
-            slots: ["Crew", "Payload", "Turret", "Illicit", "Modification", "Modification", "Calculator"]
+            slots: ["Crew", "Payload", "Turret", "Illicit", "Calculator"]
         },
         {
         
@@ -6670,7 +6670,14 @@ function removeElementsByClass() {//permet de supprimer tous les éléments qui 
                 element.parentNode.removeChild(element);
             });
             shipquantity = -1;
-            costpilots = [0,0,0,0,0,0,0,0];
+            
+            overCostTab = [0,0,0,0,0,0,0,0];
+            totalcostvalue = 0;
+            y= 0;
+            upgrades_Type = [[],[],[],[],[],[],[],[]];
+            upgrades_Objects= [[],[],[],[],[],[],[],[]];
+            upgradesSelected = [[],[],[],[],[],[],[],[]];
+            pilot_list = [{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0}];
 }       
 
 function select_pilot_list(x) {//permet de remplir la liste des pilotes disponibles correspondant au vaisseau sélectionné
@@ -6835,14 +6842,14 @@ function updateTotalCost() {
     totalcount.textContent = totalcostvalue; 
 }
 
-function testRestriction (tableRestrictions){//va vérifier si les restrictions sont true, et renvoie la valeur restrict=true si c'est bon
+function testRestriction (y,tableRestrictions){//va vérifier si les restrictions sont true, et renvoie la valeur restrict=true si c'est bon
     let testR = 0;
 let varlist = [];
 let nbr = tableRestrictions[0];
 let list = tableRestrictions[1];
 let target1 = tableRestrictions[2];
 let target2 = tableRestrictions[3];
-console.log(tableRestrictions);
+console.log(tableRestrictions+"-"+nbr+"-"+list);
 switch (list) {
     case 'title':
         varlist = pilot_list[y]["title"];
@@ -6864,12 +6871,16 @@ switch (list) {
 }
 console.log(varlist);
         for (i=0; i<varlist.length; i++) {
+            console.log(varlist[i]+"-"+target1+"-"+target2)
     if ((varlist[i]===target1)||(varlist[i]===target2)) {
         testR++;
     }
     }
+    console.log(testR);
 if (testR>=nbr){
     restrict = true;
+}else{
+    restrict = false;
 }
 
 }
@@ -6886,8 +6897,8 @@ function checkUpgRestriction(y){ //populate les menus slots avec les bonnes upgr
             if (upgrades_Objects[y][i][j]['available']===true){
                 slotmenucontent.push(upgrades_Objects[y][i][j]['name']+" ("+upgrades_Objects[y][i][j]['points']+")");
             }else{
-                let restrict = false;
-                testRestriction(upgrades_Objects[y][i][j]['restrictions']);
+                
+                testRestriction(y,upgrades_Objects[y][i][j]['restrictions']);
                 console.log(restrict);
                 if (restrict===true) {
                 slotmenucontent.push(upgrades_Objects[y][i][j]['name']+" ("+upgrades_Objects[y][i][j]['points']+")"); 
@@ -6922,6 +6933,21 @@ function removes_slots (targetSlots){ //A utiliser si une upgrade retire des slo
         fields.setAttribute("disabled","");
     }
 }
+function checkUpgradeValidation(e) { //va checker s'il existe une fonction modify liée à l'upgrade
+    let field = e.target.id; // "sloty_i"
+    let pilnbr = field.substring(4, 5);
+    let upgnbr = field.substring(6, 7);
+    let slotlist = upgrades_Objects[pilnbr][upgnbr];
+    for (k=0; k<slotlist.length;k++) {
+        if (e.target.value.slice(0, -4)===slotlist[k]['name']) {
+            if (slotlist[k]['modify']===true) {
+                eval(slotlist[k]['validation_func'])
+            }
+        }
+    }
+
+}
+
 function  add_slots (targetSlots){ //A utiliser si une upgrade rajoute des slots
     let nbrSlots = upgrades_Type[y].length;
     for(i=0; i<targetSlots.length; i++){
@@ -6943,6 +6969,7 @@ function  add_slots (targetSlots){ //A utiliser si une upgrade rajoute des slots
             updateUpgradeCount(y);
             updateTotalCost();
             displayDescriptionUpgrade(event);
+            checkUpgradeValidation(event);
     })
    
 }
@@ -6954,6 +6981,7 @@ function  add_slots (targetSlots){ //A utiliser si une upgrade rajoute des slots
 function upgradeListGet(y) { //va chercher les options pour populate les menus de slots crées avec displaylots(), et remplit la var upgrades_Objects
   
   let index = 0; 
+  upgrades_Objects[y] = [];
   
 try { //Si on ne met pas ça, le fait d'avoir une valeur non définie fait planter la fonction
     if  (typeof pilot_list[y]["slots"][0] === 'undefined') { //la valeur 0 a été mise dans tous endroits où il n'y avait pas de slot (exemple: les pilotes génériques)
