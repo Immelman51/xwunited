@@ -2337,7 +2337,7 @@ const ships =
             keyword: [],
             hull: 2,
             shields: 0,
-            chassis: "Boarding, Multiple Targets",
+            chassis: "Boarding",
             actions: [
                 "Focus",
                 "Evade",
@@ -4437,18 +4437,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             ability: "Ne peut être joué que si un YV666 avec le titre Hound’s Tooth est dans votre escadron. Quand le Hound’s Tooth est détruit, vous devez vous déployer. Vous pouvez copier :<br>- Le texte de sa capacité de pilote<br>-  Le texte de l’une de ses améliorations #crew# ",
             slots: [
             ],
-            restriction_func: ""/*(ship) -> builder = ship.builder
-                for t, things of builder.uniques_in_use
-                    if t != 'Slot'
-                        if 'houndstooth' in (thing.canonical_name.getXWSBaseName() for thing in things)
-                            for shiplist in ship.builder.ships
-                                for upgrade in shiplist.upgrades
-                                    if upgrade.data? and ship.pilot?
-                                        if upgrade.data.name == "Hound's Tooth"
-                                            ship.pilot.skill = shiplist.pilot.skill
-                                            break
-                            return true 
-                false*/
+            
+            
 
         },
 {
@@ -4596,7 +4586,8 @@ const upgrades = [
                 faction: ""
             },
             {
-                name: "R4 Astromech",
+                name:"Astromech R4",
+                name_eng: "R4 Astromech",
                 id: 2,
                 available: true,
                 modify: false,
@@ -4607,7 +4598,8 @@ const upgrades = [
                 
              },
             {
-                name: "R5 Astromech",
+                name:"Astromech R5",
+                name_eng: "R5 Astromech",
                 id: 3,
                 available: true,
                 modify: false,
@@ -4618,7 +4610,8 @@ const upgrades = [
                 faction: ""
             },
             {
-                name: "Watchful Astromech",
+                name: "Astromech Vigilant",
+                name_eng: "Watchful Astromech",
                 id: 4,
                 available: true,
                 modify: false,
@@ -4629,7 +4622,8 @@ const upgrades = [
             },
             
      {
-                name: "Crack Shot",
+                name: "Tireur Hors-Pair",
+                name_eng: "Crack Shot",
                 id: 5,
                 available: true,
                 modify: false,
@@ -4640,7 +4634,8 @@ const upgrades = [
                 faction: ""
             },
     {
-                name: "Elusive",
+                name: "Insaisissable",
+                name_eng: "Elusive",
                 id: 6,
                 available: false,
                 modify: true,
@@ -4654,7 +4649,8 @@ const upgrades = [
                 ]       
             },
     {
-                name: "Lone Wolf",
+                name: "Loup Solitaire",
+                name_eng: "Lone Wolf",
                 id: 7,
                 available: true,
                 modify: false,
@@ -4667,6 +4663,7 @@ const upgrades = [
             },
             {
                 name: "Intimidation",
+                name_eng: "Intimidation",
                 id: 8,
                 available: true,
                 modify: false,
@@ -4676,7 +4673,8 @@ const upgrades = [
                 faction: ""
             },
      {
-                name: "Marksmanship",
+                name:"Adresse au Tir",
+                name_eng: "Marksmanship",
                 id: 9,
                 available: true,
                 modify: false,
@@ -4686,7 +4684,8 @@ const upgrades = [
                 faction: ""
             },
     {
-                name: "Outmaneuver",
+                name: "Manoeuvre Improbable",
+                name_eng: "Outmaneuver",
                 id: 10,
                 available: true,
                 modify: false,
@@ -4696,7 +4695,8 @@ const upgrades = [
                 faction: ""
             },
      {
-                name: "Predator",
+                name: "Prédateur",
+                name_eng: "Predator",
                 id: 11,
                 available: true,
                 modify: false,
@@ -4706,7 +4706,8 @@ const upgrades = [
                 faction: ""
             },
      {
-                name: "Squad Leader",
+                name: "Chef d'Escouade",
+                name_eng: "Squad Leader",
                 id: 12,
                 available: true,
                 modify: true,
@@ -4720,7 +4721,8 @@ const upgrades = [
                 ]
             },
      {
-                name: "Swarm Tactics",
+                name: "Tactique de Nuée",
+                name_eng: "Swarm Tactics",
                 id: 13,
                 available: true,
                 modify: false,
@@ -4730,7 +4732,8 @@ const upgrades = [
                 faction: ""
             },
     {
-                name: "Trick Shot",
+                name: "Tir Habile",
+                name_eng: "Trick Shot",
                 id: 14,
                 available: true,
                 modify: false,
@@ -4740,7 +4743,8 @@ const upgrades = [
                 faction: ""
             },
      {
-                name: "Snap Shot",
+                name:"Tir Instantané",
+                name_eng: "Snap Shot",
                 id: 15,
                 available: true,
                 modify: false,
@@ -4753,7 +4757,8 @@ const upgrades = [
                 faction: ""
             },
     {
-                name: "Tactical Officer",
+                name: "Officier Tactique",
+                name_eng: "Tactical Officer",
                 id: 16,
                 available: false,
                 modify: true,
@@ -4767,7 +4772,8 @@ const upgrades = [
                 ]
             },
      {
-                name: "Perceptive Copilot",
+                name: "Copilote Perspicace",
+                name_eng: "Perceptive Copilot",
                 id: 17,
                 available: true,
                 modify: false,
@@ -4777,7 +4783,8 @@ const upgrades = [
                 faction: ""
             },
     {
-                name: "Novice Technician",
+                name: "Apprenti Technicien",
+                name_eng: "Novice Technician",
                 id: 18,
                 available: true,
                 modify: false,
@@ -4787,7 +4794,8 @@ const upgrades = [
                 faction: ""
             },
     {
-                name: 'GNK "Gonk" Droid',
+                name: "Droïde 'Gonk' GNK",
+                name_eng: 'GNK "Gonk" Droid',
                 id: 19,
                 available: true,
                 modify: false,
@@ -4798,7 +4806,8 @@ const upgrades = [
                 faction: ""
             },
     {
-                name: "Freelance Slicer",
+                name: "Slicer Freelance",
+                name_eng: "Freelance Slicer",
                 id: 20,
                 available: true,
                 modify: false,
@@ -4808,7 +4817,8 @@ const upgrades = [
                 faction: ""
             },
      {
-                name: "Agile Gunner",
+                name: "Cannonier Adroit",
+                name_eng: "Agile Gunner",
                 id: 21,
                 available: true,
                 modify: false,
@@ -4818,7 +4828,8 @@ const upgrades = [
                 faction: ""
             },
      {
-                name: "Hotshot Gunner",
+                name: "Artilleur Hors-Pair",
+                name_eng: "Hotshot Gunner",
                 id: 22,
                 available: true,
                 modify: false,
@@ -4828,7 +4839,9 @@ const upgrades = [
                 faction: ""
             },
      {
-                name: "Skilled Bombardier",
+                
+                name: "Bombardier Compétent",
+                name_eng: "Skilled Bombardier",
                 id: 23,
                 available: true,
                 modify: false,
@@ -4838,7 +4851,8 @@ const upgrades = [
                 faction: ""
             },
      {
-                name: "Veteran Gunner",
+                name: "Artilleur Vétéran",
+                name_eng: "Veteran Gunner",
                 id: 24,
                 available: true,
                 modify: false,
@@ -4848,7 +4862,8 @@ const upgrades = [
                 faction: ""
               },
       {
-                name: "Weapons Systems Officer",
+                name: "Officier des Systèmes d'Armement",
+                name_eng: "Weapons Systems Officer",
                 id: 25,
                 available: true,
                 modify: false,
@@ -4858,7 +4873,8 @@ const upgrades = [
                 faction: ""
             },
     {
-                name: "Automated Target Priority",
+                name: "Ciblage Prioritaire Automatisé",
+                name_eng: "Automated Target Priority",
                 id: 26,
                 available: true,
                 modify: false,
@@ -4868,7 +4884,8 @@ const upgrades = [
                 faction: ""
             },
      {
-                name: "Pattern Analyzer",
+                name: "Analyseur de Modèles",
+                name_eng: "Pattern Analyzer",
                 id: 27,
                 available: true,
                 modify: false,
@@ -4878,7 +4895,8 @@ const upgrades = [
                 faction: ""
             },
      {
-                name: "Advanced Optics",
+                name: "Optiques Avancées",
+                name_eng: "Advanced Optics",
                 id: 28,
                 available: true,
                 modify: false,
@@ -4889,7 +4907,8 @@ const upgrades = [
             },
      
      {
-                name: "Targeting Synchronizer",
+                name: "Synchroniseur Télémétrique",
+                name_eng: "Targeting Synchronizer",
                 id: 29,
                 available: true,
                 modify: false,
@@ -4900,7 +4919,8 @@ const upgrades = [
     
             },
      {
-                name: "Ion Missiles",
+                name: "Missiles Ioniques",
+                name_eng: "Ion Missiles",
                 id: 30,
                 available: true,
                 modify: false,
@@ -4913,7 +4933,8 @@ const upgrades = [
                 faction: ""
             },
     {
-                name: "Homing Missiles",
+                name: "Missiles à Tête Chercheuse",
+                name_eng: "Homing Missiles",
                 id: 31,
                 available: true,
                 modify: false,
@@ -4926,7 +4947,8 @@ const upgrades = [
                 faction: ""
             },
     {
-                name: "Cluster Missiles",
+                name: "Missiles Groupés",
+                name_eng: "Cluster Missiles",
                 id: 32,
                 available: true,
                 modify: false,
@@ -4939,7 +4961,8 @@ const upgrades = [
                 faction: ""
             },
     {
-                name: "Barrage Rockets",
+                name: "Roquettes de Barrage",
+                name_eng: "Barrage Rockets",
                 id: 33,
                 available: false,
                 modify: false,
@@ -4956,7 +4979,8 @@ const upgrades = [
                 also_occupies_upgrades: [ ""Missile"" ]*/
             },
     {
-                name: "XX-23 S-Thread Tracers",
+                name: "Traceurs XX-23 S",
+                name_eng: "XX-23 S-Thread Tracers",
                 id: 34,
                 available: true,
                 modify: false,
@@ -4970,7 +4994,8 @@ const upgrades = [
                 faction: ""
             },
             {
-                name: "Harpoon Missiles",
+                name: "Missile Harpon",
+                name_eng: "Harpoon Missile",
                 id: 35,
                 available: true,
                 modify: false,
@@ -4983,7 +5008,8 @@ const upgrades = [
                 faction: ""
             },
     {
-                name: "Plasma Torpedoes",
+                name: "Torpilles à Plasma",
+                name_eng: "Plasma Torpedoes",
                 id: 36,
                 available: true,
                 modify: false,
@@ -4996,7 +5022,8 @@ const upgrades = [
                 faction: ""
             },
      {
-                name: "Adv. Proton Torpedoes",
+                name: "Torpille à Proton Avancée",
+                name_eng: "Adv. Proton Torpedo",
                 id: 37,
                 available: true,
                 modify: false,
@@ -5009,7 +5036,8 @@ const upgrades = [
                 faction: ""
             },
              {
-                name: "Concussion Torpedoes",
+                name: "Torpilles à Concussion",
+                name_eng: "Concussion Torpedoes",
                 id: 38,
                 available: true,
                 modify: false,
@@ -5024,7 +5052,8 @@ const upgrades = [
             
            
             {
-                name: "Proton Rockets",
+                name: "Roquette à Proton",
+                name_eng: "Proton Rocket",
                 id: 39,
                 available: true,
                 modify: false,
@@ -5037,7 +5066,8 @@ const upgrades = [
                 faction: ""
             },
             {
-                name: "Bomblet Generator",
+                name: "Générateur de Sous-Munitions",
+                name_eng: "Bomblet Generator",
                 id: 40,
                 available: false,
                 modify: false,
@@ -5053,7 +5083,8 @@ const upgrades = [
                 also_occupies_upgrades: [ ""Payload"" ]*/
             },
      {
-                name: "Conner Nets",
+                name: "Filet Conner",
+                name_eng: "Conner Nets",
                 id: 41,
                 available: true,
                 modify: false,
@@ -5065,7 +5096,8 @@ const upgrades = [
                 //applies_condition: 'Conner Net'.canonicalize()
             },
      {
-                name: "Proton Bombs",
+                name: "Bombes à Proton",
+                name_eng: "Proton Bombs",
                 id: 42,
                 available: true,
                 modify: false,
@@ -5077,7 +5109,8 @@ const upgrades = [
                 //applies_condition: 'Proton Bomb'.canonicalize()
             },
      {
-                name: "Proximity Mines",
+                name: "Mines de Proximité",
+                name_eng: "Proximity Mines",
                 id: 43,
                 available: true,
                 modify: false,
@@ -5089,7 +5122,8 @@ const upgrades = [
                 //applies_condition: 'Proximity Mine'.canonicalize()
             },
     {
-                name: "Seismic Charges",
+                name: "Charges Sismiques",
+                name_eng: "Seismic Charges",
                 id: 44,
                 available: true,
                 modify: false,
@@ -5101,7 +5135,8 @@ const upgrades = [
                 //applies_condition: 'Seismic Charge'.canonicalize()
             },
     {
-                name: "Ion Bombs",
+                name: "Bombes Ioniques",
+                name_eng: "Ion Bombs",
                 id: 45,
                 available: true,
                 modify: false,
@@ -5113,7 +5148,8 @@ const upgrades = [
                 //applies_condition: 'Ion Bomb'.canonicalize()
             },
      {
-                name: "Jamming Beam",
+                name: 'Rayon de Brouillage',
+                name_eng: "Jamming Beam",
                 id: 46,
                 available: true,
                 modify: false,
@@ -5125,7 +5161,8 @@ const upgrades = [
                 faction: ""
             },
      {
-                name: "Tractor Beam",
+                name: "Rayon Tracteur",
+                name_eng: "Tractor Beam",
                 id: 47,
                 available: true,
                 modify: false,
@@ -5137,7 +5174,8 @@ const upgrades = [
                 faction: ""
             },
     {
-                name: "Ion Cannon",
+                name: "Canon Ionique",
+                name_eng: "Ion Cannon",
                 id: 48,
                 available: true,
                 modify: false,
@@ -5149,7 +5187,8 @@ const upgrades = [
                 faction: ""
             },
     {
-                name: "Heavy Laser Cannon",
+                name: "Canon Laser Lourd",
+                name_eng: "Heavy Laser Cannon",
                 id: 49,
                 available: true,
                 modify: false,
@@ -5161,7 +5200,8 @@ const upgrades = [
                 faction: ""
             },
             {
-                name: "Synced Laser Cannons",
+                name: "Canons Laser Jumelés",
+                name_eng: "Synced Laser Cannons",
                 id: 50,
                 available: false,
                 modify: true,
@@ -5177,7 +5217,8 @@ const upgrades = [
                 ]
             },
     {
-                name: "Ion Cannon Turret",
+                name: "Tourelle à Canon Ionique",
+                name_eng: "Ion Cannon Turret",
                 id: 51,
                 available: true,
                 modify: true,
@@ -5193,7 +5234,8 @@ const upgrades = [
                    
             },
      {
-                name: "Dorsal Turret",
+                name: "Tourelle Dorsale",
+                name_eng: "Dorsal Turret",
                 id: 52,
                 available: true,
                 modify: true,
@@ -5209,6 +5251,7 @@ const upgrades = [
             },
      {
                 name: "Autoblasters",
+                name_eng: "Autoblasters",
                 id: 53,
                 available: true,
                 modify: true,
@@ -5223,7 +5266,8 @@ const upgrades = [
                 ]
             },
             {
-                name: "Twin Laser Turret",
+                name: "Tourelle Laser Jumelé",
+                name_eng: "Twin Laser Turrets",
                 id: 54,
                 available: true,
                 modify: true,
@@ -5238,7 +5282,8 @@ const upgrades = [
                 ]
             },
              {
-                name: "Cannon Turret Support",
+                name : "Support pour Canon Rotatif",
+                name_eng: "Cannon Turret Support",
                 id: 55,
                 available: true,
                 modify: true,
@@ -5251,7 +5296,8 @@ const upgrades = [
                 ]
             },
              {
-                name: "Cloaking Device",
+                name: "Appareil d'Occultation",
+                name_eng: "Cloaking Device",
                 id: 56,
                 available: false,
                 modify: false,
@@ -5264,7 +5310,8 @@ const upgrades = [
                 faction: ""
             },
             {
-                name: "Contraband Cybernetics",
+                name: "Cybernétiques de Contrebande",
+                name_eng: "Contraband Cybernetics",
                 id: 57,
                 available: true,
                 modify: false,
@@ -5275,7 +5322,8 @@ const upgrades = [
                 faction: ""
             },
             {
-                name: "Deadman's Switch",
+                name: "Salve Automatique",
+                name_eng: "Deadman's Switch",
                 id: 58,
                 available: true,
                 modify: false,
@@ -5285,7 +5333,8 @@ const upgrades = [
                 faction: ""
             },
      {
-                name: "Coaxium Hyperfuel",
+                name: "Hypercarburant Coaxium",
+                name_eng: "Coaxium Hyperfuel",
                 id: 59,
                 available: true,
                 modify: false,
@@ -5296,7 +5345,8 @@ const upgrades = [
                 
             },
      {
-                name: "False Transponder Codes",
+                name: "Codes Transpondeur Falsifiés",
+                name_eng: "False Transponder Codes",
                 id: 60,
                 available: true,
                 modify: false,
@@ -5307,7 +5357,8 @@ const upgrades = [
                 faction: ""
             },
              {
-                name: "Ablative Plating",
+                name: "Blindage Ablatif", 
+                name_eng: "Ablative Plating",
                 id: 61,
                 available: false,
                 modify: false,
@@ -5320,7 +5371,8 @@ const upgrades = [
                 faction: ""
             },
     {
-                name: "Afterburners",
+                name: "Postcombustion",
+                name_eng: "Afterburners",
                 id: 62,
                 available: false,
                 modify: false,
@@ -5333,7 +5385,8 @@ const upgrades = [
                 faction: ""
             },
     {
-                name: "Engine Upgrade",
+                name: "Moteur Amélioré",
+                name_eng: "Engine Upgrade",
                 id: 63,
                 available: false,
                 modify: true,
@@ -5349,7 +5402,8 @@ const upgrades = [
                 ]
             },
             {
-                name: "Munitions Failsafe",
+                name: "Munitions à Sûreté Intégrée",
+                name_eng: "Munitions Failsafe",
                 modify: false,
                 id: 64,
                 available: true,
@@ -5359,7 +5413,8 @@ const upgrades = [
                 faction: ""
             },
     {
-                name: "Tactical Scrambler",
+                name: "Brouilleur Tactique",
+                name_eng: "Tactical Scrambler",
                 id: 65,
                 available: false,
                 modify: false,
@@ -5370,7 +5425,8 @@ const upgrades = [
                 faction: ""
             },
     {
-                name: "Hull Upgrade",
+                name: "Coque Améliorée",
+                name_eng: "Hull Upgrade",
                 id: 65,
                 available: true,
                 modify: true,
@@ -5383,7 +5439,8 @@ const upgrades = [
                 ]
             },
     {
-                name: "Shield Upgrade",
+                name: "Bouclier Amélioré",
+                name_eng: "Shield Upgrade",
                 id: 66,
                 available: true,
                 modify: true,
@@ -5396,7 +5453,8 @@ const upgrades = [
                 ]
             },
             {
-                name: "Stealth Device",
+                name: "Système d'Occultation",
+                name_eng: "Stealth Device",
                 id: 67,
                 available: true,
                 modify: false,
@@ -5407,7 +5465,8 @@ const upgrades = [
                 faction: ""
             },
      {
-                name: "Delayed Fuses",
+                name: "Détonateur à Retardement",
+                name_eng: "Delayed Fuses",
                 id: 68,
                 available: true,
                 modify: false,
@@ -5417,7 +5476,8 @@ const upgrades = [
                 faction: ""
             },
     {
-                name: "Targeting Computer",
+                name: "Ordinateur de Visée",
+                name_eng: "Targeting Computer",
                 id: 69,
                 available: true,
                 modify: true,
@@ -5430,7 +5490,8 @@ const upgrades = [
                 ]
             },
     {
-                name: "Advanced Sensors",
+                name: "Senseurs Avancés",
+                name_eng: "Advanced Sensors",
                 id: 70,
                 available: true,
                 modify: false,
@@ -5440,7 +5501,8 @@ const upgrades = [
                 faction: ""
             },
             {
-                name: "Collision Detector",
+                name: "Détecteur Anticollision",
+                name_eng: "Collision Detector",
                 id: 71,
                 available: true,
                 modify: false,
@@ -5451,7 +5513,8 @@ const upgrades = [
                 faction: ""
             },
             {
-                name: "Fire-Control System",
+                name: "Système de Controle de Tir",
+                name_eng: "Fire-Control System",
                 id: 72,
                 available: true,
                 modify: false,
@@ -5461,7 +5524,8 @@ const upgrades = [
                 faction: ""
             },
              {
-                name: "Long Range Scanner",
+                name: "Scanner Longue Portée",
+                name_eng: "Long Range Scanner",
                 id: 73,
                 available: true,
                 modify: false,
@@ -5471,7 +5535,8 @@ const upgrades = [
                 faction: ""
             },
              {
-                name: "Sensor Jammer",
+                name: "Brouilleur de Senseur",
+                name_eng: "Sensor Jammer",
                 id: 74,
                 available: true,
                 modify: false,
@@ -5482,6 +5547,7 @@ const upgrades = [
             },
     {
                 name: "Patience",
+                name_eng: "Patience",
                 id: 75,
                 available: true,
                 modify: false,
@@ -5492,7 +5558,8 @@ const upgrades = [
                 
             },
      {
-                name: "Precognitive Reflexes",
+                name: "Réflexes Prémonitoires",
+                name_eng: "Precognitive Reflexes",
                 id: 76,
                 available: false,
                 modify: false,
@@ -5503,7 +5570,8 @@ const upgrades = [
                 faction: ""
             },
     {
-                name: "Brilliant Evasion",
+                name: "As de la Manoeuvre",
+                name_eng: "Brilliant Evasion",
                 id: 77,
                 available: true,
                 modify: false,
@@ -5513,7 +5581,8 @@ const upgrades = [
                 faction: ""
             },
     {
-                name: "Sense",
+                name: "Sens",
+                name_eng: "Sense",
                 id: 78,
                 available: true,
                 modify: false,
@@ -5523,7 +5592,8 @@ const upgrades = [
                 faction: ""
             },
     {
-                name: "Instinctive Aim",
+                name: "Visée Instinctive",
+                name_eng: "Instinctive Aim",
                 id: 79,
                 available: true,
                 modify: false,
@@ -5533,7 +5603,8 @@ const upgrades = [
                 faction: ""
             },
             {
-                name: "Automatic Gunning System",
+                name: "Système de Tir Automatique",
+                name_eng: "Automatic Gunning System",
                 id: 80,
                 available: true,
                 modify: false,
@@ -5543,7 +5614,8 @@ const upgrades = [
                 faction: ""
             },
              {
-                name: "Advanced Networked Calculations",
+                name: "Calculs en Réseau Avancés",
+                name_eng: "Advanced Networked Calculations",
                 id: 81,
                 available: true,
                 modify: false,
@@ -5553,7 +5625,8 @@ const upgrades = [
                 faction: ""
             },
              {
-                name: "Hyperspace Tacking Data",
+                name: "Données de Pistage Hyperspatial",
+                name_eng: "Hyperspace Tracking Data",
                 id: 82,
                 available: true,
                 modify: false,
@@ -5564,7 +5637,8 @@ const upgrades = [
                 faction: ""
             },
              {
-                name: "Advanced Flight Computer",
+                name: "Ordinateur de Vol Avancé",
+                name_eng: "Advanced Flight Computer",
                 id: 83,
                 available: true,
                 modify: false,
@@ -5575,7 +5649,8 @@ const upgrades = [
                 faction: ""
             },
              {
-                name: "Encrypter",
+                name: "Crypteur de Données",
+                name_eng: "Encrypter",
                 id: 84,
                 available: true,
                 modify: false,
@@ -5589,6 +5664,7 @@ const upgrades = [
     
             {
                 name: "R2-D2",
+                name_eng: "R2-D2",
                 id: 85,
                 available: true,
                 modify: false,
@@ -5601,6 +5677,7 @@ const upgrades = [
             },
              {
                 name: "R5-D8",
+                name_eng: "R5-D8",
                 id: 86,
                 available: true,
                 modify: false,
@@ -5613,6 +5690,7 @@ const upgrades = [
             },
              {
                 name: "C-3PO",
+                name_eng: "C-3PO",
                 id: 87,
                 available: true,
                 modify: true,
@@ -5627,6 +5705,7 @@ const upgrades = [
             },
              {
                 name: "Cassian Andor",
+                name_eng: "Cassian Andor",
                 id: 88,
                 available: true,
                 modify: false,
@@ -5638,6 +5717,7 @@ const upgrades = [
             },
             {
                 name: "Leia Organa",
+                name_eng: "Leia Organa",
                 id: 89,
                 available: true,
                 modify: false,
@@ -5650,7 +5730,8 @@ const upgrades = [
                 recurring: 1
             },
             {
-                name: "R2-D2 -Crew-",
+                name: "R2-D2 -Equipage-",
+                name_eng: "R2-D2 -Crew-",
                 id: 90,
                 available: true,
                 modify: false,
@@ -5662,6 +5743,7 @@ const upgrades = [
             },
             {
                 name: "Bistan",
+                name_eng: "Bistan",
                 id: 91,
                 available: true,
                 modify: false,
@@ -5673,6 +5755,7 @@ const upgrades = [
             },
     {
                 name: "Luke Skywalker",
+                name_eng: "Luke Skywalker",
                 id: 92,
                 available: true,
                 modify: true,
@@ -5687,7 +5770,8 @@ const upgrades = [
                 ]
             },
     {
-                name: "Selfless",
+                name: "Altruisme",
+                name_eng: "Selfless",
                 id: 93,
                 available: true,
                 modify: false,
@@ -5698,6 +5782,7 @@ const upgrades = [
             },
      {
                 name: "K-2SO",
+                name_eng: "K-2SO",
                 id: 94,
                 available: true,
                 modify: true,
@@ -5716,7 +5801,8 @@ const upgrades = [
     //########################################################IMPERIAL ACADEMY
     
             {
-                name: "Darth Vader",
+                name: "Dark Vador",
+                name_eng: "Darth Vader",
                 id: 95,
                 available: true,
                 modify: false,
@@ -5732,6 +5818,7 @@ const upgrades = [
             },
     {
                 name: "Grand Moff Tarkin",
+                name_eng: "Grand Moff Tarkin",
                 id: 96,
                 available: true,
                 modify: false,
@@ -5744,7 +5831,8 @@ const upgrades = [
                 recurring: 1
             },
      {
-                name: "Ruthless",
+                name: "Impitoyable",
+                name_eng: "Ruthless",
                 id: 97,
                 available: true,
                 modify: false,
@@ -5754,7 +5842,8 @@ const upgrades = [
                 faction: ["Imperial_Academy"]
             },
     {
-                name: "Precision Ion Engines",
+                name: "Moteurs Ioniques de Précision",
+                name_eng: "Precision Ion Engines",
                 id: 98,
                 available: false,
                 modify: false,
@@ -5766,7 +5855,8 @@ const upgrades = [
                 restrictions: [1,"keyword", "TIE"]
             },
             {
-                name: "Twin Ion Engine Mk2",
+                name: "Moteur Ionique Jumelé Mk2",
+                name_eng: "Twin Ion Engine Mk2",
                 id: 99,
                 available: false,
                 modify: false,
@@ -5777,7 +5867,8 @@ const upgrades = [
                 faction: ""
             },
             {
-                name: "Lightweight Frame",
+                name: "Chassis Allégé",
+                name_eng: "Lightweight Frame",
                 id: 100,
                 available: false,
                 modify: false,
@@ -5789,6 +5880,7 @@ const upgrades = [
             },
      {
                 name: "Migs Mayfeld",
+                name_eng: "Migs Mayfeld",
                 id: 101,
                 available: true,
                 modify: false,
@@ -5799,7 +5891,8 @@ const upgrades = [
                 faction: ["Pirates_and_Smugglers","Imperial_Academy"]
             },
             {
-                name: "Imperial Gunner",
+                name: "Artilleur Impérial",
+                nam_eng: "Imperial Gunner",
                 id: 102,
                 available: true,
                 modify: false,
@@ -5814,6 +5907,7 @@ const upgrades = [
     
             {
                 name: "Boba Fett",
+                name_eng: "Boba Fett",
                 id: 103,
                 available: true,
                 modify: false,
@@ -5825,6 +5919,7 @@ const upgrades = [
             },
              {
                 name: "Cad Bane",
+                name_eng: "Cad Bane",
                 id: 104,
                 available: true,
                 modify: false,
@@ -5836,6 +5931,7 @@ const upgrades = [
             },
             {
                 name: "4-LOM",
+                name_eng: "4-LOM",
                 id: 105,
                 available: true,
                 modify: false,
@@ -5847,6 +5943,7 @@ const upgrades = [
             },
             {
                 name: "IG-88D",
+                name_eng: "IG-88D",
                 id: 106,
                 available: true,
                 modify: true,
@@ -5862,6 +5959,7 @@ const upgrades = [
             },
             {
                 name: "Zuckuss",
+                name_eng: "Zuckuss",
                 id: 107,
                 available: true,
                 modify: false,
@@ -5873,6 +5971,7 @@ const upgrades = [
             },
      {
                 name: "Bossk",
+                name_eng: "Bossk",
                 id: 108,
                 available: true,
                 modify: false,
@@ -5884,6 +5983,7 @@ const upgrades = [
             },
      {
                 name: "Dengar",
+                name_eng: "Dengar",
                 id: 109,
                 available: true,
                 modify: false,
@@ -5898,6 +5998,7 @@ const upgrades = [
             },
      {
                 name: "Greedo",
+                name_eng: "Greedo",
                 id: 110,
                 available: true,
                 modify: false,
@@ -5910,7 +6011,8 @@ const upgrades = [
                 recurring: 1
             },
      {
-                name: "Tracking Fob",
+                name: "Capteur de Positionnement",
+                name_eng: "Tracking Fob",
                 id: 111,
                 available: true,
                 modify: true,
@@ -5924,7 +6026,8 @@ const upgrades = [
                 ]
             },
             {
-                name: "Notorious",
+                name: "Célèbre",
+                name_eng: "Notorious",
                 id: 112,
                 available: true,
                 modify: false,
@@ -5936,7 +6039,8 @@ const upgrades = [
                 slot: "Talent"
             },
     {
-                name: "Hotshot Tail Blaster",
+                name: "Super Blaster de Poupe",
+                name_eng: "Hotshot Tail Blaster",
                 id: 113,
                 available: false,
                 modify: false,
@@ -5953,7 +6057,8 @@ const upgrades = [
     
     //###################################################MANDALORIAN_CLANS
              {
-                name: "Fearless",
+                name: "Intrépide",
+                name_eng: "Fearless",
                 id: 114,
                 available: true,
                 modify: false,
@@ -5964,6 +6069,7 @@ const upgrades = [
             },
      {
                 name: "Bo-Katan Kryze",
+                name_eng: "Bo-Katan Kryze",
                 id: 115,
                 available: true,
                 modify: false,
@@ -5975,6 +6081,7 @@ const upgrades = [
             },
      {
                 name: "Fenn Rau",
+                name_eng: "Fenn Rau",
                 id: 116,
                 available: true,
                 modify: false,
@@ -5986,6 +6093,7 @@ const upgrades = [
             },
     {
                 name: "Gar Saxon",
+                name_eng: "Gar Saxon",
                 id: 117,
                 available: true,
                 modify: false,
@@ -5997,6 +6105,7 @@ const upgrades = [
             },
             {
                 name: "Korkie Kryze",
+                name_eng: "Korkie Kryze",
                 id: 118,
                 available: true,
                 modify: false,
@@ -6008,6 +6117,7 @@ const upgrades = [
             },
      {
                 name: "Pre Vizsla",
+                name_eng: "Pre Vizsla",
                 id: 119,
                 available: true,
                 modify: true,
@@ -6022,6 +6132,7 @@ const upgrades = [
             },
     {
                 name: "Ursa Wren",
+                name_eng: "Ursa Wren",
                 id: 120,
                 available: true,
                 modify: false,
@@ -6033,6 +6144,7 @@ const upgrades = [
             },
     {
                 name: "Tiber Saxon",
+                name_eng: "Tiber Saxon",
                 id: 121,
                 available: true,
                 modify: false,
@@ -6045,7 +6157,8 @@ const upgrades = [
                 unique: true
             },
      {
-                name: "Beskar Reinforced Plating",
+                name: "Blindage Renforcé en Beskar",
+                name_eng: "Beskar Reinforced Plating",
                 id: 122,
                 available: true,
                 modify: false,
@@ -6057,7 +6170,8 @@ const upgrades = [
                 
             },
             {
-                name: "Mandalorian Optics",
+                name: "Optiques Mandaloriennes",
+                name_eng: "Mandalorian Optics",
                 id: 123,
                 available: true,
                 modify: false,
@@ -6072,6 +6186,7 @@ const upgrades = [
     //###########################################################PIRATES_AND_Smugglers
             {
                 name: "Chewbacca",
+                name_eng: "Chewbacca",
                 id: 124,
                 available: true,
                 modify: false,
@@ -6085,6 +6200,7 @@ const upgrades = [
             },
     {
                 name: "Cikatro Vizago",
+                name_eng: "Cikatro Vizago",
                 id: 125,
                 available: true,
                 modify: false,
@@ -6096,6 +6212,7 @@ const upgrades = [
             },
     {
                 name: "L3-37",
+                name_eng: "L3-37",
                 id: 126,
                 available: true,
                 modify: false,
@@ -6107,6 +6224,7 @@ const upgrades = [
             },
      {
                 name: "Han Solo",
+                name_eng: "Han Solo",
                 id: 127,
                 available: true,
                 modify: false,
@@ -6117,7 +6235,8 @@ const upgrades = [
                 faction: ["Pirates_and_Smugglers"],
             },
       {
-                name: "Rigged Cargo Chute",
+                name: "Largage de Cargaison",
+                name_eng: "Rigged Cargo Chute",
                 id: 128,
                 available: false,
                 modify: false,
@@ -6131,6 +6250,7 @@ const upgrades = [
             },
     {
                 name: "Havoc",
+                name_eng: "Havoc",
                 id: 129,
                 available: false,
                 modify: true,
@@ -6152,6 +6272,7 @@ const upgrades = [
             },
     {
                 name: "Lando Calrissian",
+                name_eng: "Lando Calrissian",
                 id: 130,
                 available: true,
                 modify: false,
@@ -6163,6 +6284,7 @@ const upgrades = [
             },
      {
                 name: "Hondo Ohnaka",
+                name_eng: "Hondo Ohnaka",
                 id: 131,
                 available: true,
                 modify: false,
@@ -6176,7 +6298,8 @@ const upgrades = [
             //##Migs Mayfeld id 101
     
     {
-                name: "Smuggling Compartment",
+                name: "Compartiment de Contrebande",
+                name_eng: "Smuggling Compartment",
                 id: 132,
                 available: false,
                 modify: true,
@@ -6192,7 +6315,8 @@ const upgrades = [
                 
             },
             {
-                name: "Cunning",
+                name: "Roublard",
+                name_eng: "Cunning",
                 id: 133,
                 available: true,
                 modify: false,
@@ -6203,6 +6327,7 @@ const upgrades = [
             },
             {
                 name: "Millenium Falcon",
+                name_eng: "Millenium Falcon",
                 id: 134,
                 available: false,
                 modify: true,
@@ -6225,7 +6350,8 @@ const upgrades = [
                
             },
             {
-                name: "Proton Torpedoes",
+                name: "Torpilles à Proton",
+                name_eng: "Proton Torpedoes",
                 id: 135,
                 available: true,
                 modify: false,
@@ -6239,6 +6365,7 @@ const upgrades = [
             },
             {
                 name: "Xanadu Blood",
+                name_eng: "Xanadu Blood",
                 id: 136,
                 available: false,
                 modify: true,
@@ -6258,6 +6385,7 @@ const upgrades = [
             },
             {
                 name: "Hound's Tooth",
+                name_eng: "Hound's Tooth",
                 id: 137,
                 available: false,
                 modify: true,
@@ -6277,6 +6405,7 @@ const upgrades = [
             },
             {
                 name: "Slave 1",
+                name_eng: "Slave 1",
                 id: 138,
                 available: false,
                 modify: true,
@@ -6297,6 +6426,7 @@ const upgrades = [
             },
             {
                 name: "Andrasta",
+                name_eng: "Andrasta",
                 id: 139,
                 available: false,
                 modify: true,
@@ -6317,6 +6447,7 @@ const upgrades = [
             },
             {
                 name: "Outrider",
+                name_eng: "Outrider",
                 id: 140,
                 available: false,
                 modify: true,
@@ -6337,6 +6468,7 @@ const upgrades = [
             },
             {
                 name: "Mist Hunter",
+                name_eng: "Mist Hunter",
                 id: 141,
                 available: false,
                 modify: false,
@@ -6354,6 +6486,7 @@ const upgrades = [
             },
             {
                 name: "Punishing One",
+                name_eng: "Punishing One",
                 id: 142,
                 available: false,
                 modify: true,
@@ -6375,6 +6508,7 @@ const upgrades = [
             },
             {
                 name: "IG-2000",
+                name_eng: "IG-2000",
                 id: 143,
                 available: false,
                 modify: true,
@@ -6394,7 +6528,8 @@ const upgrades = [
                 ]
             },
             {
-                name: "Din Djarin's N1",
+                name: "N1 de Din Djarin",
+                name_eng: "Din Djarin's N1",
                 id: 144,
                 available: false,
                 modify: true,
@@ -6416,6 +6551,7 @@ const upgrades = [
             },
             {
                 name: "Razor Crest",
+                name_eng: "Razor Crest",
                 id: 145,
                 slot: "Title",
                 available: false,
@@ -6435,6 +6571,7 @@ const upgrades = [
             },
             {
                 name: "Moldy Crow",
+                name_eng: "Moldy Crow",
                 id: 146,
                 slot: "Title",
                 available: false,
@@ -6452,7 +6589,8 @@ const upgrades = [
                 ]
             },
             {
-                name: "Trajectory Simulator",
+                name: "Simulateur de Trajectoire",
+                name_eng: "Trajectory Simulator",
                 id: 147,
                 available: true, 
                 modify: false,
