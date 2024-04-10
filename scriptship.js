@@ -4645,7 +4645,7 @@ const upgrades = [
                 restrictions: [1,"upgrade","Modification",""],
                 faction: "",
                 modifier_func: [
-                    [also_Occupies,"Modification"]
+                    also_Occupies("Modification")
                 ]       
             },
     {
@@ -4717,7 +4717,7 @@ const upgrades = [
                 effect: "Tant que vous coordonnez, le vaisseau que vous avez choisi peut effectuer une action seulement si celle-ci est également dans votre barre d’action.<br>Ajoute l'action (CO)",
                 faction: "",
                 modifier_func: [
-                    [add_action,"R-Coordinate"]
+                    add_action("R-Coordinate")
                 ]
             },
      {
@@ -4768,7 +4768,7 @@ const upgrades = [
                 restrictions: [1,"action", "R-Coordinate",""],
                 faction: "",
                 modifier_func: [
-                    [add_action,"Coordinate"]
+                    add_action("Coordinate")
                 ]
             },
      {
@@ -4974,9 +4974,9 @@ const upgrades = [
                 effect: "Attaque (#FS#) Portée 2-3 #Farc# 3 dés: Dépensez 1 #ch#. Si le défenseur est dans votre #bulls#, vous pouvez dépenser 1 ou plusieurs ch pour relancer autant de dés d’attaque.",
                 restrictions: [2,"upgrade", "Missile",""],
                 faction: "",
-                validation_func: true /*(ship, upgrade_obj) ->
-                    upgrade_obj.occupiesAnUpgradeSlot ""Missile""
-                also_occupies_upgrades: [ ""Missile"" ]*/
+                modifier_func: [
+                    also_occupies("Missile")
+                ]
             },
     {
                 name: "Traceurs XX-23 S",
@@ -5078,9 +5078,9 @@ const upgrades = [
                 //applies_condition: 'Bomblet'.canonicalize(),
                 restrictions: [2,"upgrade", "Payload",""],
                 faction: "",
-                validation_func: true/*(ship, upgrade_obj) ->
-                    upgrade_obj.occupiesAnUpgradeSlot ""Payload""
-                also_occupies_upgrades: [ ""Payload"" ]*/
+                modifier_func: [
+                    also_occupies("Payload")
+                ]
             },
      {
                 name: "Filet Conner",
@@ -5213,7 +5213,7 @@ const upgrades = [
                 restrictions: [2,"upgrade", "Cannon",""],
                 faction: "",
                 modifier_func_func: [
-                    [also_Occupies,"Cannon"]
+                    also_Occupies("Cannon")
                 ]
             },
     {
@@ -5229,7 +5229,7 @@ const upgrades = [
                 effect: "Portée 1-2 #Farc# 3 dés Attaque : si cette attaque touche, dépensez 1 résultat #hit# ou #crit# pour faire subir 1 dégât #hit# au défenseur. Tous les résultats #hit#/#crit# restants infligent des marqueurs ioniques au lieu des dégâts.",
                 faction: "",
                 modifier_func: [
-                    [add_action,"Rotate Arc"]
+                    add_action("Rotate Arc")
                 ]
                    
             },
@@ -5246,7 +5246,7 @@ const upgrades = [
                 effect: "Portée 1-2 #tur# 2 dés, Attaque",
                 faction: "",
                 modifier_func: [
-                    [add_action,"Rotate Arc"]
+                    add_action("Rotate Arc")
                 ]
             },
      {
@@ -5262,7 +5262,7 @@ const upgrades = [
                 effect: "Portée 0-1 #tur# 2 dés. ATTAQUE PRECISE",
                 faction: "",
                 modifier_func: [
-                    [add_action,"Rotate Arc"]
+                    add_action("Rotate Arc")
                 ]
             },
             {
@@ -5278,7 +5278,7 @@ const upgrades = [
                 effect: "Portée 2-3 #tur# 3 dés Attaque : attaque IMPRECISE<br>puis Attaque: attaque IMPRECISE.",
                 faction: "",
                 modifier_func: [
-                    [add_action,"Rotate Arc"]
+                    add_action("Rotate Arc")
                 ]
             },
              {
@@ -5292,7 +5292,7 @@ const upgrades = [
                 effect: "Choisissez une amélioration #can# équipée et placez un marqueur canon rotatif dessus. La restriction #Farc# de votre #can# devient #tur#. Vous pouvez tourner l’arc de votre #can# avec l’action #RT#.",
                 faction: "",
                 modifier_func: [
-                    [add_action,"Rotate Arc"]
+                    add_action("Rotate Arc")
                 ]
             },
              {
@@ -5398,7 +5398,7 @@ const upgrades = [
                 ,
                 faction: "",
                 modifier_func: [
-                    [add_action,"Boost"]
+                    add_action("Boost")
                 ]
             },
             {
@@ -5435,7 +5435,7 @@ const upgrades = [
                 effect: "+1 Coque",
                 faction: "",
                 modifier_func: [
-                    [change_stat,["Hull",1]]
+                    change_stat("Hull",1)
                 ]
             },
     {
@@ -5449,7 +5449,7 @@ const upgrades = [
                 effect: "+1 Bouclier",
                 faction: "",
                 modifier_func: [
-                    [change_stat,["Shield",1]]
+                    change_stat("Shield",1)
                 ]
             },
             {
@@ -5486,7 +5486,7 @@ const upgrades = [
                 effect: "Donne accès l'action #TL#",
                 faction: "",
                 modifier_func: [
-                    [add_action,"Target Lock"]
+                    add_action("Target Lock")
                 ]
             },
     {
@@ -5700,7 +5700,7 @@ const upgrades = [
                 effect: "Avant de lancer les dés de défense, vous pouvez dépenser 1 marqueur de calcul pour dire à voix haute un nombre supérieur ou égal à 1. Dans ce cas et si vous obtenez exactement cette quantité de résultats #evd# sur votre lancer, ajoutez 1 résultat #evd#.",
                 faction: ["Rebel_Alliance","New_Republic","Resistance"],
                 modifier_func: [
-                    [add_action,"Calculate"]
+                    add_action("Calculate")
                 ]
             },
              {
@@ -5766,7 +5766,7 @@ const upgrades = [
                 effect: "Tant que vous effectuez une attaque qui n’est pas une attaque #Farc#, vous pouvez dépenser 1 #fo#. Si vous le faites, lancez 1 dé d’attaque supplémentaire.",
                 faction: ["Rebel_Alliance"],
                 modifier_func: [
-                    [change_stat,["Force",1]]
+                    change_stat("Force",1)
                 ]
             },
     {
@@ -5792,8 +5792,8 @@ const upgrades = [
                 unique: true,
                 points: 7,
                 modifier_func: [
-                    [add_action,"Calculate"],
-                    [add_action,"Jam"]
+                    add_action("Calculate"),
+                    add_action("Jam")
                 ]
             }
             ,
@@ -5813,7 +5813,7 @@ const upgrades = [
                 effect: "Au début de la phase d’engagement, vous pouvez choisir 1 vaisseau dans votre arc de tir à portée 0–2 et dépenser 1 #fo#. Dans ce cas, ce vaisseau subit 1 dégât #hit# sauf s’il choisit de retirer 1 marqueur vert.",
                 faction: ["Imperial_Academy"],
                 modifier_func: [
-                    [change_stat,["Force",1]]
+                    change_stat("Force",1)
                 ]
             },
     {
@@ -5953,7 +5953,7 @@ const upgrades = [
                 effect: "Vous avez la capacité de pilote de chaque autre vaisseau allié qui possède la capacité IG-2000.<br>Après avoir effectué une action #CA#, gagnez 1 marqueur de calcul.",
                 faction: ["Bounty_Hunters_Guild"],
                 modifier_func: [
-                    [add_action,"Calculate"]
+                    add_action("Calculate")
                 ]
     
             },
@@ -6022,7 +6022,7 @@ const upgrades = [
                 effect: "Mise en Place : avant de placer les forces, choisissez un adversaire ; il assigne l'état 'Désigné pour Mourir' à 1 de ses vaisseaux. Il doit l'assigner à un vaisseau limité, si possible.<br>Vous ignorez les restrictions de portée lorsque vous verrouillez le vaisseau qui a l'état Désigné pour Mourir.",
                 faction: ["Bounty_Hunters_Guild"],
                 modifier_func: [
-                    [add_condition,"Marked for Elimination"]
+                    add_condition("Marked for Elimination")
                 ]
             },
             {
@@ -6127,7 +6127,7 @@ const upgrades = [
                 effect: "ACTION : Déployez un Super Commando qui est arrimé avec vous.<br>ACTION : Choisissez un Super Commando à portée 0-3. Il peut alors accélérer, même partiellement.",
                 unique: true,
                 modifier_func: [
-                    [add_action,"Coordinate"]
+                    add_action("Coordinate")
                 ]
             },
     {
@@ -6262,11 +6262,11 @@ const upgrades = [
                 effect: "Retire en emplacement #crew#. Ajoute #sensor# et #astromech#. Ajoute 5 points de Loadout et augmente le coût du vaisseau de 1",
                 restrictions: [1,"title", "Havoc",""],
                 modifier_func: [
-                    [also_Occupies,"Crew"],
-                    [add_slots,"Sensor"],
-                    [add_slots,"Astromech"],
-                    [change_stat, ["loadout",5]],
-                    [change_stat,["points",1]]
+                    also_Occupies("Crew"),
+                    add_slots("Sensor"),
+                    add_slots("Astromech"),
+                    change_stat("loadout",5),
+                    change_stat("points",1)
                 ]
                 
             },
@@ -6309,8 +6309,8 @@ const upgrades = [
                 effect: "Gagnez 1 autre emplacement #mod# et un emplacement #ill#",
                 restrictions: [1,"base", "Medium", "Large"],
                 modifier_func: [
-                    [add_slots,"Illicit"],
-                    [add_slots,"Modification"]
+                    add_slots("Illicit"),
+                    add_slots("Modification")
                 ]
                 
             },
@@ -6339,13 +6339,13 @@ const upgrades = [
                 restrictions: [1, "title", "Millenium Falcon",""],
                 effect: "Retire en emplacement #missile# et la capacité 'Vaisseau-Mère'. Ajoute #sensor# et #calculator#. Ajoute 5 points de Loadout et augmente le coût du vaisseau de 1",
                 modifier_func: [
-                    [also_Occupies,"Missile"],
-                    [lose_chassis,"Docking Ship"],
-                    [add_slots, "Sensor"],
-                    [add_slots, "Calculator"],
-                    [change_stat, ["attackt",1]],
-                    [change_stat, ["loadout",5]],
-                    [change_stat,["points",1]]
+                    also_Occupies("Missile"),
+                    lose_chassis("Docking Ship"),
+                    add_slots("Sensor"),
+                    add_slots("Calculator"),
+                    change_stat("attackt",1),
+                    change_stat("loadout",5),
+                    change_stat("points",1)
                 ]
                
             },
@@ -6377,8 +6377,8 @@ const upgrades = [
                 restrictions: [1,"title", "Xanadu Blood",""],
                 effect: "Retire en emplacement #missile# et la capacité 'Vaisseau-Mère'. Ajoute #sensor# et #calculator#. Ajoute 5 points de Loadout et augmente le coût du vaisseau de 1",
                 modifier_func: [
-                    [add_slots,"Payload"],
-                    [add_slots,"Crew"],
+                    add_slots("Payload"),
+                    add_slots("Crew"),
              
                 ]
                 
@@ -6397,9 +6397,9 @@ const upgrades = [
                 restrictions: [1,"title", "Hound's Tooth",""],
                 effect: "Retire en emplacement",
                 modifier_func: [
-                    [add_slots,"Gunner"],
-                    [add_slots,"Cannon"],
-                    [also_Occupies,"Illicit"],
+                    add_slots("Gunner"),
+                    add_slots("Cannon"),
+                    also_Occupies("Illicit"),
                  
                 ]
             },
@@ -6417,9 +6417,9 @@ const upgrades = [
                 restrictions: [1,"title", "Slave 1",""],
                 effect: "culseau de 1",
                 modifier_func: [
-                    [add_slots,"Gunner"],
-                    [add_slots,"Cannon"],
-                    [add_slots,"Illicit"],
+                    add_slots("Gunner"),
+                    add_slots("Cannon"),
+                    add_slots("Illicit"),
                    
                 ]
                 
@@ -6438,9 +6438,9 @@ const upgrades = [
                 restrictions: [1,"title", "Andrasta",""],
                 effect: "adout et augmente le coût du vaisseau de 1",
                 modifier_func: [
-                    [add_slots,"Payload"],
-                    [add_slots,"Payload"],
-                    [add_slots,"Illicit"],
+                    add_slots("Payload"),
+                    add_slots("Payload"),
+                    add_slots("Illicit")
                   
                 ]
                 
@@ -6461,8 +6461,8 @@ const upgrades = [
                 restrictions: [1,"title", "Outrider",""],
                 effect: "points de Loadout et augmente le coût du vaisseau de 1",
                 modifier_func: [
-                    [add_slots,"Gunner"],
-                    [add_slots,"Cannon"],
+                    add_slots("Gunner"),
+                    add_slots("Cannon"),
                     
                 ]
             },
@@ -6500,9 +6500,9 @@ const upgrades = [
                 restrictions: [1,"title", "Punishing One",""],
                 effect: " Ajoute 5 points de Loadout et augmente le coût du vaisseau de 1",
                 modifier_func: [
-                    [add_slots,"Astromech"],
-                    [add_slots,"Cannon"],
-                    [also_Occupies,"Crew"],
+                    add_slots("Astromech"),
+                    add_slots("Cannon"),
+                    also_Occupies("Crew"),
                    
                 ]
             },
@@ -6522,8 +6522,8 @@ const upgrades = [
                 restrictions: [1,"title", "IG-2000",""],
                 effect: "Ajoute 5 points de Loadout et augmente le coût du vaisseau de 1",
                 modifier_func: [
-                    [add_slots,"Calculator"],
-                    [also_Occupies,"Modification"],
+                    add_slots("Calculator"),
+                    also_Occupies("Modification"),
                     
                 ]
             },
@@ -6541,11 +6541,11 @@ const upgrades = [
                 restrictions: [1,"title", "Din Djarin's N1",""],
                 effect: "e 5 points de Loadout et augmente le coût du vaisseau de 1",
                 modifier_func: [
-                    [add_slots,"Crew"],
-                    [add_slots,"Tech"],
-                    [add_slots,"Illicit"],
-                    [also_Occupies,"Astromech"],
-                    [also_Occupies,"Torpedo"],
+                    add_slots("Crew"),
+                    add_slots("Tech"),
+                    add_slots("Illicit"),
+                    also_Occupies("Astromech"),
+                    also_Occupies("Torpedo"),
                  
                 ]
             },
@@ -6560,8 +6560,6 @@ const upgrades = [
                 unique: true,
                 faction: "",
                 ship: "ST-70 Assault Ship",
-                ship_cost: 1,
-                Loadout_value: 5,
                 restrictions: [1,"title", "Razor Crest",""],
                 effect: "te 5 points de Loadout et augmente le coût du vaisseau de 1",
                 /*modifier_func: [
@@ -6583,9 +6581,9 @@ const upgrades = [
                 restrictions: [1,"title", "Moldy Crow",""],
                 effect: "ute 5 points de Loadout et augmente le coût du vaisseau de 1",
                 modifier_func: [
-                    [add_slots,"Illicit"],
-                    [add_slots,"Cannon"],
-                    [also_Occupies, "Modification"],
+                    add_slots("Illicit"),
+                    add_slots("Cannon"),
+                    also_Occupies("Modification"),
                 ]
             },
             {
@@ -6833,7 +6831,7 @@ let nbr = tableRestrictions[0];
 let list = tableRestrictions[1];
 let target1 = tableRestrictions[2];
 let target2 = tableRestrictions[3];
-console.log(tableRestrictions+"-"+nbr+"-"+list);
+
 switch (list) {
     case 'title':
         varlist = pilot_list[y]["title"];
@@ -6851,16 +6849,16 @@ switch (list) {
         varlist = ships[pilot_list[y]['shipId']]['actions'];
         break;
     default : 
-        console.log("there's an error in the list name");
+        
 }
-console.log(varlist);
+
         for (i=0; i<varlist.length; i++) {
-            console.log(varlist[i]+"-"+target1+"-"+target2)
+            
     if ((varlist[i]===target1)||(varlist[i]===target2)) {
         testR++;
     }
     }
-    console.log(testR);
+    
 if (testR>=nbr){
     restrict = true;
 }else{
@@ -6877,13 +6875,13 @@ function checkUpgRestriction(y){ //populate les menus slots avec les bonnes upgr
         slotmenucontent.push("<"+upgrades_Type[y][i]+">");
         
         for (let j=0; j<upgrades_Objects[y][i].length; j++){
-            console.log(y+" "+i+" "+j);
+            
             if (upgrades_Objects[y][i][j]['available']===true){
                 slotmenucontent.push(upgrades_Objects[y][i][j]['name']+" ("+upgrades_Objects[y][i][j]['points']+")");
             }else{
                 
                 testRestriction(y,upgrades_Objects[y][i][j]['restrictions']);
-                console.log(restrict);
+                
                 if (restrict===true) {
                 slotmenucontent.push(upgrades_Objects[y][i][j]['name']+" ("+upgrades_Objects[y][i][j]['points']+")"); 
                 }
@@ -6898,11 +6896,11 @@ function checkUpgRestriction(y){ //populate les menus slots avec les bonnes upgr
 
 
 
-function also_Occupies(nameofUpgrade, targetSlot){ //A utiliser lorsqu'une upgrade utilise un slot de plus
+function also_Occupies(targetSlot){ //A utiliser lorsqu'une upgrade utilise un slot de plus
     for (i=0; i<upgradesSelected[y].length;i++){
       if(upgradesSelected[y][i]==='<'+targetSlot+'>'){
         let field = document.getElementById("slot"+y+"_"+i);
-        field.textContent = nameofUpgrade;
+        field.textContent = "######";
         field.setAttribute("disabled","");
         return
 
@@ -6961,6 +6959,9 @@ function add_condition(con){
 
 }
 function change_stat(table){
+
+}
+function lose_chassis(){
 
 }
 function upgradeListGet(y) { //va chercher les options pour populate les menus de slots crées avec displaylots(), et remplit la var upgrades_Objects
