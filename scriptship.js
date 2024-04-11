@@ -4717,7 +4717,7 @@ const upgrades = [
                 effect: "Tant que vous coordonnez, le vaisseau que vous avez choisi peut effectuer une action seulement si celle-ci est également dans votre barre d’action.<br>Ajoute l'action (CO)",
                 faction: "",
                 modifier_func: [
-                    add_action("R-Coordinate")
+                    () => add_action("R-Coordinate")
                 ]
             },
      {
@@ -4768,7 +4768,7 @@ const upgrades = [
                 restrictions: [1,"action", "R-Coordinate",""],
                 faction: "",
                 modifier_func: [
-                    add_action("Coordinate")
+                    () => add_action("Coordinate")
                 ]
             },
      {
@@ -5229,7 +5229,7 @@ const upgrades = [
                 effect: "Portée 1-2 #Farc# 3 dés Attaque : si cette attaque touche, dépensez 1 résultat #hit# ou #crit# pour faire subir 1 dégât #hit# au défenseur. Tous les résultats #hit#/#crit# restants infligent des marqueurs ioniques au lieu des dégâts.",
                 faction: "",
                 modifier_func: [
-                    add_action("Rotate Arc")
+                    () => add_action("Rotate Arc")
                 ]
                    
             },
@@ -5246,7 +5246,7 @@ const upgrades = [
                 effect: "Portée 1-2 #tur# 2 dés, Attaque",
                 faction: "",
                 modifier_func: [
-                    add_action("Rotate Arc")
+                    () => add_action("Rotate Arc")
                 ]
             },
      {
@@ -5262,7 +5262,7 @@ const upgrades = [
                 effect: "Portée 0-1 #tur# 2 dés. ATTAQUE PRECISE",
                 faction: "",
                 modifier_func: [
-                    add_action("Rotate Arc")
+                    () => add_action("Rotate Arc")
                 ]
             },
             {
@@ -5278,7 +5278,7 @@ const upgrades = [
                 effect: "Portée 2-3 #tur# 3 dés Attaque : attaque IMPRECISE<br>puis Attaque: attaque IMPRECISE.",
                 faction: "",
                 modifier_func: [
-                    add_action("Rotate Arc")
+                    () => add_action("Rotate Arc")
                 ]
             },
              {
@@ -5292,7 +5292,7 @@ const upgrades = [
                 effect: "Choisissez une amélioration #can# équipée et placez un marqueur canon rotatif dessus. La restriction #Farc# de votre #can# devient #tur#. Vous pouvez tourner l’arc de votre #can# avec l’action #RT#.",
                 faction: "",
                 modifier_func: [
-                    add_action("Rotate Arc")
+                    () => add_action("Rotate Arc")
                 ]
             },
              {
@@ -5398,7 +5398,7 @@ const upgrades = [
                 ,
                 faction: "",
                 modifier_func: [
-                    add_action("Boost")
+                    () => add_action("Boost")
                 ]
             },
             {
@@ -5486,7 +5486,7 @@ const upgrades = [
                 effect: "Donne accès l'action #TL#",
                 faction: "",
                 modifier_func: [
-                    add_action("Target Lock")
+                    () => add_action("Target Lock")
                 ]
             },
     {
@@ -5700,7 +5700,7 @@ const upgrades = [
                 effect: "Avant de lancer les dés de défense, vous pouvez dépenser 1 marqueur de calcul pour dire à voix haute un nombre supérieur ou égal à 1. Dans ce cas et si vous obtenez exactement cette quantité de résultats #evd# sur votre lancer, ajoutez 1 résultat #evd#.",
                 faction: ["Rebel_Alliance","New_Republic","Resistance"],
                 modifier_func: [
-                    add_action("Calculate")
+                    () => add_action("Calculate")
                 ]
             },
              {
@@ -5792,8 +5792,8 @@ const upgrades = [
                 unique: true,
                 points: 7,
                 modifier_func: [
-                    add_action("Calculate"),
-                    add_action("Jam")
+                    () => add_action("Calculate"),
+                    () => add_action("Jam")
                 ]
             }
             ,
@@ -6720,6 +6720,7 @@ function displayslots(y) { //crée les menus de slot et contient l'écoute des "
             updateUpgradeCount(y);
             updateTotalCost();
             displayDescriptionUpgrade(event);
+            fillUpgradesSelected(y)
 
             })    
         index++;  
@@ -6739,11 +6740,19 @@ function displayslots(y) { //crée les menus de slot et contient l'écoute des "
             updateUpgradeCount(y);
             updateTotalCost();
             displayDescriptionUpgrade(event);
+            fillUpgradesSelected(y)
         })
        
     }  
    
     
+}
+function fillUpgradesSelected(y){
+    upgradesSelected[y] = [];
+    for (let i=0; i<upgrades_Type[y].length ; i++){
+        slotM = document.getElementById("slot"+y+"_"+i);
+        upgradesSelected[y].push(slotM.value)
+    }
 }
 
 function updateUpgradeCount(y) {//cette faction décrit le calcul des mises à jour des points pour le loadout et le cout du pilote
@@ -6890,6 +6899,7 @@ function checkUpgRestriction(y){ //populate les menus slots avec les bonnes upgr
             
         }
         populateMenu('slot'+y+'_'+i,slotmenucontent);
+        fillUpgradesSelected(y)
     }
    
 
@@ -6898,10 +6908,13 @@ function checkUpgRestriction(y){ //populate les menus slots avec les bonnes upgr
 
 
 function also_Occupies(targetSlot){ //A utiliser lorsqu'une upgrade utilise un slot de plus
-    for (i=0; i<upgradesSelected[y].length;i++){
+   
+    for (let i=0; i<upgradesSelected[y].length;i++){
+       
       if(upgradesSelected[y][i]==='<'+targetSlot+'>'){
         let field = document.getElementById("slot"+y+"_"+i);
-        field.textContent = "######";
+        
+        field.textContent = "##";
         field.setAttribute("disabled","");
         return
 
@@ -6911,17 +6924,16 @@ function also_Occupies(targetSlot){ //A utiliser lorsqu'une upgrade utilise un s
 
 
 function checkUpgradeValidation(e) { //va checker s'il existe une fonction modify liée à l'upgrade, et va lancer les modifs éventuelles type add_slots ou change_stat
-    console.log('checkrestriction');
+    
     let field = e.target.id; // "sloty_i"
     let pilnbr = field.substring(4, 5);
     let upgnbr = field.substring(6, 7);
     let slotlist = upgrades_Objects[pilnbr][upgnbr];
-    for (k=0; k<slotlist.length;k++) {
+    for (let k=0; k<slotlist.length;k++) {
         if (e.target.value.slice(0, -4)===slotlist[k]['name']) {
             if (slotlist[k]['modify']===true) {
-               console.log('modifier_func');
-                for (m=0; m<slotlist[k]['modifier_func'].length ; m++){
-                slotlist[k]['modifier_func'][m] //va executer chaque fonction qui se trouve dans modifier_func
+                for (let m=0; m<slotlist[k]['modifier_func'].length ; m++){
+                    slotlist[k]['modifier_func'][m](); //va executer chaque fonction qui se trouve dans modifier_func
                }
             }
         }
@@ -6930,33 +6942,56 @@ function checkUpgradeValidation(e) { //va checker s'il existe une fonction modif
 }
 
 
-function  add_slots (targetSlots){ //A utiliser si une upgrade rajoute des slots
+function  add_slots (targetSlot){ //A utiliser si une upgrade rajoute des slots
     let nbrSlots = upgrades_Type[y].length;
-    for(i=0; i<targetSlots.length; i++){
-        shipslot = document.getElementById('shipslots'+y);
-        slotmenu = document.createElement('select');
-        slotmenu.setAttribute('id', 'slot'+y+"_"+(nbrSlots+i));
-        slotmenu.setAttribute('class', 'slotElement'+' '+targetSlots[i]);
-        shipslot.appendChild(slotmenu);
+    shipslot = document.getElementById('shipslots'+y);
+    slotmenu = document.createElement('select');
+    slotmenu.setAttribute('id', 'slot'+y+"_"+nbrSlots);
+    slotmenu.setAttribute('class', 'slotElement'+' '+targetSlot);
+    shipslot.appendChild(slotmenu);
         //Il faut créer la liste des upgrades pour populate les nouveaux menus
-        let upgObjList = [];
-        for (k=0 ; k<upgrades.length ; k++) {
-            if ((targetSlots[i]===upgrades[k]["slot"]) && ((upgrades[k]["faction"]==="")||(upgrades[k]["faction"].includes(factionno1))||(upgrades[k]["faction"].includes(factionno2))||(upgrades[k]["faction"].includes(factionno3)))) {
+    let upgObjList = [];
+    
+        for (let k=0 ; k<upgrades.length ; k++) {
+            if ((targetSlot===upgrades[k]["slot"]) && ((upgrades[k]["faction"]==="")||(upgrades[k]["faction"].includes(factionno1))||(upgrades[k]["faction"].includes(factionno2))||(upgrades[k]["faction"].includes(factionno3)))) {
                 upgObjList.push(upgrades[k]); //on va prendre tous les objets et les mettre dedans
-            }
+                  }
+        }
+        
         upgrades_Objects[y].push(upgObjList);
-        populateMenu(slotmenu,upgObjList);
+        upgrades_Type[y].push(targetSlot);
+        let slotmenucontent = ['<'+targetSlot+'>'];
+//on reprend une partie du code checkUpgRestriction(). On n'appelle pas la fonction car le slotmenu est réinitialisé entièrement, ce qui fait perdre toutes les upgrades sélectionnées
+for (let j=0; j<upgrades_Objects[y][nbrSlots].length; j++){
+            
+    if (upgrades_Objects[y][nbrSlots][j]['available']===true){
+        slotmenucontent.push(upgrades_Objects[y][nbrSlots][j]['name']+" ("+upgrades_Objects[y][nbrSlots][j]['points']+")");
+    }else{
+        
+        testRestriction(y,upgrades_Objects[y][nbrSlots][j]['restrictions']);
+        
+        if (restrict===true) {
+        slotmenucontent.push(upgrades_Objects[y][nbrSlots][j]['name']+" ("+upgrades_Objects[y][nbrSlots][j]['points']+")"); 
+        }
+    }
+    
+}
+populateMenu('slot'+y+'_'+nbrSlots,slotmenucontent);
+
+//fin de la recopie du code
+
 
         slotmenu.addEventListener("input", function(event) {//cette faction décrit le calcul des mises à jour des points pour le loadout et le cout du pilote
             updateUpgradeCount(y);
             updateTotalCost();
             displayDescriptionUpgrade(event);
             checkUpgradeValidation(event);
+            fillUpgradesSelected(y)
     })
    
 }
-}
-}
+
+
 
 function add_action (act){
 
@@ -6980,9 +7015,9 @@ try { //Si on ne met pas ça, le fait d'avoir une valeur non définie fait plant
         console.log('no slots')
         }
         else{
-        for (i=0 ; i<pilot_list[y]["slots"].length;i++) {
+        for (let i=0 ; i<pilot_list[y]["slots"].length;i++) {
         let upgObjList = [];
-        for (k=0 ; k<upgrades.length ; k++) {
+        for (let k=0 ; k<upgrades.length ; k++) {
             if ((pilot_list[y]["slots"][i]===upgrades[k]["slot"]) && ((upgrades[k]["faction"]==="")||(upgrades[k]["faction"].includes(factionno1))||(upgrades[k]["faction"].includes(factionno2))||(upgrades[k]["faction"].includes(factionno3)))) {
                      upgObjList.push(upgrades[k]); //on va prendre tous les objets et les mettre dedans
               }
@@ -6996,10 +7031,10 @@ try { //Si on ne met pas ça, le fait d'avoir une valeur non définie fait plant
     } 
       
   console.log('entre 2 boucles'+index)  
-  for (i=0 ; i<ships[pilot_list[y]["shipId"]]["slots"].length;i++) {
+  for (let i=0 ; i<ships[pilot_list[y]["shipId"]]["slots"].length;i++) {
     upgObjList = [];   
     
-        for (k=0 ; k<upgrades.length ; k++) {
+        for (let k=0 ; k<upgrades.length ; k++) {
             if ((ships[pilot_list[y]["shipId"]]["slots"][i]===upgrades[k]["slot"]) && ((upgrades[k]["faction"]==="")||(upgrades[k]["faction"].includes(factionno1))||(upgrades[k]["faction"].includes(factionno2))||(upgrades[k]["faction"].includes(factionno3)))) {
                       
             upgObjList.push(upgrades[k]); //on va prendre tous les objets et les mettre dedans
