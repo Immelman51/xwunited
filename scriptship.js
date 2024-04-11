@@ -17,7 +17,7 @@ let shipquantity = -1; //compteur qui ne sert pas à compter mais à numéroter 
 let restrict = false;
 
 
-
+//description des chassis
 
 
 const chassis = [
