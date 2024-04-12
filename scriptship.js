@@ -13,7 +13,7 @@ let shipquantity = -1; //compteur qui ne sert pas à compter mais à numéroter 
  let upgrades_Objects= [[],[],[],[],[],[],[],[]]; // va contenir la liste des contenus des menus slots mais sous forme d'objet
  let upgradesSelected = [[],[],[],[],[],[],[],[]]; //va contenir les upgrades sélectionnées
  let overCostTab = [0,0,0,0,0,0,0,0]; //Cette variable va stocker les augmentations des couts des pilotes dûs aux emports d'upgrade supérieurs au loadout de base
- let y= 0;
+ let y= "0";
 let restrict = false;
 
 
@@ -6772,17 +6772,17 @@ function select_pilot_list(x) {//permet de remplir la liste des pilotes disponib
   
   
 }
-function dataGetFromPilot(y) { //On prend le pilote et on recopie l'objet pilote dans pilot_list, et on va incrémenter le totalcost
-    pilot_selected_list[y] = document.getElementById("menu_pilot_"+y).value;
-    costcount = document.getElementById("shipcost"+y);
-    loadoutcount= document.getElementById("shiploadout"+y);
+function dataGetFromPilot(yy) { //On prend le pilote et on recopie l'objet pilote dans pilot_list, et on va incrémenter le totalcost
+    pilot_selected_list[yy] = document.getElementById("menu_pilot_"+yy).value;
+    costcount = document.getElementById("shipcost"+yy);
+    loadoutcount= document.getElementById("shiploadout"+yy);
     totalcount= document.getElementById("totalcost");
     totalcostvalue = 0; //remise à 0 sinon il s'incrémente à chaque saisie de pilote
     for (i=0; i<pilots.length; i++) {
-        let endIndex = pilot_selected_list[y].indexOf(" ("); // Find the index of " (" 
-        let nomPilote = pilot_selected_list[y].substring(0, endIndex); //On retire les parenthèses avec le cout pour pouvoir faire une comparaison stricte dans la ligne d'après
+        let endIndex = pilot_selected_list[yy].indexOf(" ("); // Find the index of " (" 
+        let nomPilote = pilot_selected_list[yy].substring(0, endIndex); //On retire les parenthèses avec le cout pour pouvoir faire une comparaison stricte dans la ligne d'après
         if (nomPilote===pilots[i]["name"]) {
-            pilot_list[y] = pilots[i];
+            pilot_list[yy] = pilots[i];
             costcount.textContent = pilots[i]["points"];
             loadoutcount.textContent = pilots[i]["loadout"];
             for (j=0; j<8 ;j++) {
@@ -6793,25 +6793,26 @@ function dataGetFromPilot(y) { //On prend le pilote et on recopie l'objet pilote
             }
     }
 }
-function displayslots(y) { //crée les menus de slot et contient l'écoute des "modification" des slots
+function displayslots(yy) { //crée les menus de slot et contient l'écoute des "modification" des slots
      // Get the parent element
-    shipslot = document.getElementById('shipslots'+y);
+    shipslot = document.getElementById('shipslots'+yy);
      // Clear any existing child elements
      shipslot.innerHTML = '';
       // Create and append new select elements
       let index = 0;
-    upgrades_Type[y] = [];    
+    upgrades_Type[yy] = [];    
       try{  //permet de supprimer les risques d'erreur lorsqu'il n'y a pas de slots pour le pilote (undefined)
-        if  (typeof pilot_list[y]["slots"][0] === 'undefined') {
+        if  (typeof pilot_list[yy]["slots"][0] === 'undefined') {
             console.log("no display slots");
         }else{
-        for (i = 0 ; i<pilot_list[y]["slots"].length; i++)  {
-        upgrades_Type[y].push(pilot_list[y]["slots"][i]);
+        for (i = 0 ; i<pilot_list[yy]["slots"].length; i++)  {
+        upgrades_Type[yy].push(pilot_list[yy]["slots"][i]);
     slotmenu = document.createElement('select');
-    slotmenu.setAttribute('id', 'slot'+y+"_"+i);
-    slotmenu.setAttribute('class', 'slotElement'+' '+pilot_list[y]["slots"][i]);
+    slotmenu.setAttribute('id', 'slot'+yy+"_"+i);
+    slotmenu.setAttribute('class', 'slotElement'+' '+pilot_list[yy]["slots"][i]);
     shipslot.appendChild(slotmenu);
     slotmenu.addEventListener("input", function(event) {//cette faction décrit le calcul des mises à jour des points pour le loadout et le cout du pilote
+            y = event.target.id.slice(4,5);
             checkUpgradeValidation(event)
             updateUpgradeCount(y);
             updateTotalCost();
@@ -6826,13 +6827,14 @@ function displayslots(y) { //crée les menus de slot et contient l'écoute des "
         console.log("no display slots");
     } 
    
-    for (j= 0 ; j<ships[pilot_list[y]["shipId"]]["slots"].length ; j++) { //on ajoute aussi les slots liés au chassis que l'on va chercher grace au shipId
-        upgrades_Type[y].push(ships[pilot_list[y]["shipId"]]["slots"][j]);
+    for (j= 0 ; j<ships[pilot_list[yy]["shipId"]]["slots"].length ; j++) { //on ajoute aussi les slots liés au chassis que l'on va chercher grace au shipId
+        upgrades_Type[yy].push(ships[pilot_list[yy]["shipId"]]["slots"][j]);
         slotmenu = document.createElement('select');
-        slotmenu.setAttribute('id', 'slot'+y+"_"+(j+index));
-        slotmenu.setAttribute('class', 'slotElement'+' '+ships[pilot_list[y]["shipId"]]["slots"][j] );
+        slotmenu.setAttribute('id', 'slot'+yy+"_"+(j+index));
+        slotmenu.setAttribute('class', 'slotElement'+' '+ships[pilot_list[yy]["shipId"]]["slots"][j] );
         shipslot.appendChild(slotmenu);
         slotmenu.addEventListener("input", function(event) {//cette faction décrit le calcul des mises à jour des points pour le loadout et le cout du pilote
+            y = event.target.id.slice(4,5);   
             updateUpgradeCount(y);
             updateTotalCost();
             displayDescriptionUpgrade(event);
@@ -6843,20 +6845,20 @@ function displayslots(y) { //crée les menus de slot et contient l'écoute des "
    
     
 }
-function fillUpgradesSelected(y){
-    upgradesSelected[y] = [];
+function fillUpgradesSelected(yy){
+    upgradesSelected[yy] = [];
     for (let i=0; i<upgrades_Type[y].length ; i++){
-        slotM = document.getElementById("slot"+y+"_"+i);
-        upgradesSelected[y].push(slotM.value)
+        slotM = document.getElementById("slot"+yy+"_"+i);
+        upgradesSelected[yy].push(slotM.value)
     }
 }
 
-function updateUpgradeCount(y) {//cette faction décrit le calcul des mises à jour des points pour le loadout et le cout du pilote
-    let newLoadoutValue = pilot_list[y]["loadout"];
-    costcount = document.getElementById("shipcost"+y);
-    loadoutcount= document.getElementById("shiploadout"+y);
+function updateUpgradeCount(yy) {//cette faction décrit le calcul des mises à jour des points pour le loadout et le cout du pilote
+    let newLoadoutValue = pilot_list[yy]["loadout"];
+    costcount = document.getElementById("shipcost"+yy);
+    loadoutcount= document.getElementById("shiploadout"+yy);
     for (k=0; k<upgrades_Type[y].length ; k++) {
-        let slotMenu = document.getElementById('slot'+y+"_"+k);
+        let slotMenu = document.getElementById('slot'+yy+"_"+k);
         let slotString = slotMenu.value;
         let startIndex = slotString.indexOf("(") + 1; // Find the index of '(' and add 1 to skip '('
         let endIndex = slotString.indexOf(")"); // Find the index of ')'
@@ -6866,56 +6868,56 @@ function updateUpgradeCount(y) {//cette faction décrit le calcul des mises à j
     }
     loadoutcount.textContent = newLoadoutValue;
     if ((newLoadoutValue<0) && (newLoadoutValue>-6) ) {
-        overCostTab[y]=1;
-        costcount.textContent = pilot_list[y]["points"] + '+' + overCostTab[y]; //Si le loadout value est entre -1 et -5 compris, le cost du pilote augmente de 1
+        overCostTab[yy]=1;
+        costcount.textContent = pilot_list[yy]["points"] + '+' + overCostTab[yy]; //Si le loadout value est entre -1 et -5 compris, le cost du pilote augmente de 1
         
         return;
     }
     if ((newLoadoutValue<-5) && (newLoadoutValue>-11) ) {
         overCostTab[y]=2;
-        costcount.textContent = pilot_list[y]["points"] + '+' + overCostTab[y] ; //Si le loadout value est entre -6 et -9 compris, le cost du pilote augmente de 2
+        costcount.textContent = pilot_list[yy]["points"] + '+' + overCostTab[yy] ; //Si le loadout value est entre -6 et -9 compris, le cost du pilote augmente de 2
         
         return;
     }
     if ((newLoadoutValue<-10) && (newLoadoutValue>-16) ) {
         overCostTab[y]=3;
-        costcount.textContent = pilot_list[y]["points"] + '+' + overCostTab[y] ; //Si le loadout value est entre -10 et -15 compris, le cost du pilote augmente de 3
+        costcount.textContent = pilot_list[yy]["points"] + '+' + overCostTab[yy] ; //Si le loadout value est entre -10 et -15 compris, le cost du pilote augmente de 3
         
         return;
     }
     if ((newLoadoutValue<-15) && (newLoadoutValue>-21) ) {
         overCostTab[y]=4;
-        costcount.textContent = pilot_list[y]["points"] + '+' + overCostTab[y]; //Si le loadout value est entre -16 et -20 compris, le cost du pilote augmente de 4
+        costcount.textContent = pilot_list[yy]["points"] + '+' + overCostTab[yy]; //Si le loadout value est entre -16 et -20 compris, le cost du pilote augmente de 4
         
         return;
     }
     if ((newLoadoutValue<-20) && (newLoadoutValue>-26) ) {
         overCostTab[y]=5;
-        costcount.textContent = pilot_list[y]["points"] + '+' + overCostTab[y] ; //Si le loadout value est entre -21 et -25 compris, le cost du pilote augmente de 5
+        costcount.textContent = pilot_list[yy]["points"] + '+' + overCostTab[yy] ; //Si le loadout value est entre -21 et -25 compris, le cost du pilote augmente de 5
         
         return;
     }
     if ((newLoadoutValue<-25) && (newLoadoutValue>-31) ) {
         overCostTab[y]=6;
-        costcount.textContent = pilot_list[y]["points"] + '+' + overCostTab[y] ; 
+        costcount.textContent = pilot_list[yy]["points"] + '+' + overCostTab[yy] ; 
         
         return;
      }
     if ((newLoadoutValue<-30) && (newLoadoutValue>-36) ) {
         overCostTab[y]=7;
-        costcount.textContent = pilot_list[y]["points"] + '+' + overCostTab[y] ; 
+        costcount.textContent = pilot_list[yy]["points"] + '+' + overCostTab[yy] ; 
         
         return;
     }
     if ((newLoadoutValue<-35) && (newLoadoutValue>-41) ) {
         overCostTab[y]=8;
-        costcount.textContent = pilot_list[y]["points"] + '+' + overCostTab[y] ; 
+        costcount.textContent = pilot_list[yy]["points"] + '+' + overCostTab[yy] ; 
         
         return;
     }
     if ((newLoadoutValue<-40) && (newLoadoutValue>-46) ) {
         overCostTab[y]=9;
-        costcount.textContent = pilot_list[y]["points"] + '+' + overCostTab[y];
+        costcount.textContent = pilot_list[yy]["points"] + '+' + overCostTab[yy];
         
         return; 
     }
@@ -6930,7 +6932,7 @@ function updateTotalCost() {
     totalcount.textContent = totalcostvalue; 
 }
 
-function testRestriction (y,tableRestrictions){//va vérifier si les restrictions sont true, et renvoie la valeur restrict=true si c'est bon
+function testRestriction (yy,tableRestrictions){//va vérifier si les restrictions sont true, et renvoie la valeur restrict=true si c'est bon
     let testR = 0;
 let varlist = [];
 let nbr = tableRestrictions[0];
@@ -6940,19 +6942,19 @@ let target2 = tableRestrictions[3];
 
 switch (list) {
     case 'title':
-        varlist = pilot_list[y]["title"];
+        varlist = pilot_list[yy]["title"];
         break;
     case 'upgrade':
-        varlist = upgrades_Type[y];
+        varlist = upgrades_Type[yy];
         break;
     case 'base':
-        varlist = ships[pilot_list[y]['shipId']]['base'];
+        varlist = ships[pilot_list[yy]['shipId']]['base'];
         break;
     case 'keyword' :
-        varlist =  ships[pilot_list[y]['shipId']]['keyword']; 
+        varlist =  ships[pilot_list[yy]['shipId']]['keyword']; 
         break;
     case 'action' :
-        varlist = ships[pilot_list[y]['shipId']]['actions'];
+        varlist = ships[pilot_list[yy]['shipId']]['actions'];
         break;
     default : 
         
@@ -6974,28 +6976,28 @@ if (testR>=nbr){
 }
 
 
-function checkUpgRestriction(y){ //populate les menus slots avec les bonnes upgrades
+function checkUpgRestriction(yy){ //populate les menus slots avec les bonnes upgrades
    
-    for (let i=0; i<upgrades_Objects[y].length;i++) {
+    for (let i=0; i<upgrades_Objects[yy].length;i++) {
         let slotmenucontent = [];
-        slotmenucontent.push("<"+upgrades_Type[y][i]+">");
+        slotmenucontent.push("<"+upgrades_Type[yy][i]+">");
         
-        for (let j=0; j<upgrades_Objects[y][i].length; j++){
+        for (let j=0; j<upgrades_Objects[yy][i].length; j++){
             
-            if (upgrades_Objects[y][i][j]['available']===true){
-                slotmenucontent.push(upgrades_Objects[y][i][j]['name']+" ("+upgrades_Objects[y][i][j]['points']+")");
+            if (upgrades_Objects[yy][i][j]['available']===true){
+                slotmenucontent.push(upgrades_Objects[yy][i][j]['name']+" ("+upgrades_Objects[yy][i][j]['points']+")");
             }else{
                 
-                testRestriction(y,upgrades_Objects[y][i][j]['restrictions']);
+                testRestriction(yy,upgrades_Objects[yy][i][j]['restrictions']);
                 
                 if (restrict===true) {
-                slotmenucontent.push(upgrades_Objects[y][i][j]['name']+" ("+upgrades_Objects[y][i][j]['points']+")"); 
+                slotmenucontent.push(upgrades_Objects[yy][i][j]['name']+" ("+upgrades_Objects[yy][i][j]['points']+")"); 
                 }
             }
             
         }
-        populateMenu('slot'+y+'_'+i,slotmenucontent);
-        fillUpgradesSelected(y)
+        populateMenu('slot'+yy+'_'+i,slotmenucontent);
+        fillUpgradesSelected(yy)
     }
    
 
@@ -7003,12 +7005,12 @@ function checkUpgRestriction(y){ //populate les menus slots avec les bonnes upgr
 
 
 
-function also_Occupies(targetSlot){ //A utiliser lorsqu'une upgrade utilise un slot de plus
+function also_Occupies(yy, targetSlot){ //A utiliser lorsqu'une upgrade utilise un slot de plus
    
-    for (let i=0; i<upgradesSelected[y].length;i++){
+    for (let i=0; i<upgradesSelected[yy].length;i++){
        
       if(upgradesSelected[y][i]==='<'+targetSlot+'>'){
-        let field = document.getElementById("slot"+y+"_"+i);
+        let field = document.getElementById("slot"+yy+"_"+i);
         
         field.textContent = "##";
         field.setAttribute("disabled","");
@@ -7021,7 +7023,7 @@ function also_Occupies(targetSlot){ //A utiliser lorsqu'une upgrade utilise un s
 
 function checkUpgradeValidation(e) { //va checker s'il existe une fonction modify liée à l'upgrade, et va lancer les modifs éventuelles type add_slots ou change_stat
     
-    let field = e.target.id; // "sloty_i"
+    let field = e.target.id; // "slotyy_i"
     let pilnbr = field.substring(4, 5);
     let upgnbr = field.substring(6, 7);
     let slotlist = upgrades_Objects[pilnbr][upgnbr];
@@ -7038,11 +7040,11 @@ function checkUpgradeValidation(e) { //va checker s'il existe une fonction modif
 }
 
 
-function  add_slots (targetSlot){ //A utiliser si une upgrade rajoute des slots
-    let nbrSlots = upgrades_Type[y].length;
-    shipslot = document.getElementById('shipslots'+y);
+function  add_slots (yy, targetSlot){ //A utiliser si une upgrade rajoute des slots
+    let nbrSlots = upgrades_Type[yy].length;
+    shipslot = document.getElementById('shipslots'+yy);
     slotmenu = document.createElement('select');
-    slotmenu.setAttribute('id', 'slot'+y+"_"+nbrSlots);
+    slotmenu.setAttribute('id', 'slot'+yy+"_"+nbrSlots);
     slotmenu.setAttribute('class', 'slotElement'+' '+targetSlot);
     shipslot.appendChild(slotmenu);
         //Il faut créer la liste des upgrades pour populate les nouveaux menus
@@ -7054,30 +7056,31 @@ function  add_slots (targetSlot){ //A utiliser si une upgrade rajoute des slots
                   }
         }
         
-        upgrades_Objects[y].push(upgObjList);
-        upgrades_Type[y].push(targetSlot);
+        upgrades_Objects[yy].push(upgObjList);
+        upgrades_Type[yy].push(targetSlot);
         let slotmenucontent = ['<'+targetSlot+'>'];
 //on reprend une partie du code checkUpgRestriction(). On n'appelle pas la fonction car le slotmenu est réinitialisé entièrement, ce qui fait perdre toutes les upgrades sélectionnées
-for (let j=0; j<upgrades_Objects[y][nbrSlots].length; j++){
+for (let j=0; j<upgrades_Objects[yy][nbrSlots].length; j++){
             
-    if (upgrades_Objects[y][nbrSlots][j]['available']===true){
-        slotmenucontent.push(upgrades_Objects[y][nbrSlots][j]['name']+" ("+upgrades_Objects[y][nbrSlots][j]['points']+")");
+    if (upgrades_Objects[yy][nbrSlots][j]['available']===true){
+        slotmenucontent.push(upgrades_Objects[y][nbrSlots][j]['name'] + " ("+upgrades_Objects[yy][nbrSlots][j]['points'] + ")");
     }else{
         
-        testRestriction(y,upgrades_Objects[y][nbrSlots][j]['restrictions']);
+        testRestriction(y,upgrades_Objects[yy][nbrSlots][j]['restrictions']);
         
         if (restrict===true) {
-        slotmenucontent.push(upgrades_Objects[y][nbrSlots][j]['name']+" ("+upgrades_Objects[y][nbrSlots][j]['points']+")"); 
+        slotmenucontent.push(upgrades_Objects[yy][nbrSlots][j]['name'] + " ("+upgrades_Objects[yy][nbrSlots][j]['points'] + ")"); 
         }
     }
     
 }
-populateMenu('slot'+y+'_'+nbrSlots,slotmenucontent);
+populateMenu('slot'+yy+'_'+nbrSlots,slotmenucontent);
 
 //fin de la recopie du code
 
 
         slotmenu.addEventListener("input", function(event) {//cette faction décrit le calcul des mises à jour des points pour le loadout et le cout du pilote
+            y= event.target.id.slice(4,5);
             updateUpgradeCount(y);
             updateTotalCost();
             displayDescriptionUpgrade(event);
@@ -7087,7 +7090,12 @@ populateMenu('slot'+y+'_'+nbrSlots,slotmenucontent);
    
 }
 
+function auto_equip(slot){
 
+}
+function weapon_Harpoint(){
+
+}
 
 function add_action (act){
 
@@ -7101,24 +7109,24 @@ function change_stat(table){
 function lose_chassis(){
 
 }
-function upgradeListGet(y) { //va chercher les options pour populate les menus de slots crées avec displaylots(), et remplit la var upgrades_Objects
+function upgradeListGet(yy) { //va chercher les options pour populate les menus de slots crées avec displaylots(), et remplit la var upgrades_Objects
   
   let index = 0; 
-  upgrades_Objects[y] = [];
+  upgrades_Objects[yy] = [];
   
 try { //Si on ne met pas ça, le fait d'avoir une valeur non définie fait planter la fonction
-    if  (typeof pilot_list[y]["slots"][0] === 'undefined') { //la valeur 0 a été mise dans tous endroits où il n'y avait pas de slot (exemple: les pilotes génériques)
+    if  (typeof pilot_list[yy]["slots"][0] === 'undefined') { //la valeur 0 a été mise dans tous endroits où il n'y avait pas de slot (exemple: les pilotes génériques)
         console.log('no slots')
         }
         else{
-        for (let i=0 ; i<pilot_list[y]["slots"].length;i++) {
+        for (let i=0 ; i<pilot_list[yy]["slots"].length;i++) {
         let upgObjList = [];
         for (let k=0 ; k<upgrades.length ; k++) {
-            if ((pilot_list[y]["slots"][i]===upgrades[k]["slot"]) && ((upgrades[k]["faction"]==="")||(upgrades[k]["faction"].includes(factionno1))||(upgrades[k]["faction"].includes(factionno2))||(upgrades[k]["faction"].includes(factionno3)))) {
+            if ((pilot_list[yy]["slots"][i]===upgrades[k]["slot"]) && ((upgrades[k]["faction"]==="")||(upgrades[k]["faction"].includes(factionno1))||(upgrades[k]["faction"].includes(factionno2))||(upgrades[k]["faction"].includes(factionno3)))) {
                      upgObjList.push(upgrades[k]); //on va prendre tous les objets et les mettre dedans
               }
             }
-        upgrades_Objects[y].push(upgObjList); //Ainsi, ce tableau aura cette structure : [['pilote1' [Objets talent][objets torpille][objets modifications]]['pilote2' [objets talent][objets modification]]....] 
+        upgrades_Objects[yy].push(upgObjList); //Ainsi, ce tableau aura cette structure : [['pilote1' [Objets talent][objets torpille][objets modifications]]['pilote2' [objets talent][objets modification]]....] 
         index++;
     }
     }
@@ -7127,16 +7135,16 @@ try { //Si on ne met pas ça, le fait d'avoir une valeur non définie fait plant
     } 
       
   console.log('entre 2 boucles'+index)  
-  for (let i=0 ; i<ships[pilot_list[y]["shipId"]]["slots"].length;i++) {
+  for (let i=0 ; i<ships[pilot_list[yy]["shipId"]]["slots"].length;i++) {
     upgObjList = [];   
     
         for (let k=0 ; k<upgrades.length ; k++) {
-            if ((ships[pilot_list[y]["shipId"]]["slots"][i]===upgrades[k]["slot"]) && ((upgrades[k]["faction"]==="")||(upgrades[k]["faction"].includes(factionno1))||(upgrades[k]["faction"].includes(factionno2))||(upgrades[k]["faction"].includes(factionno3)))) {
+            if ((ships[pilot_list[yy]["shipId"]]["slots"][i]===upgrades[k]["slot"]) && ((upgrades[k]["faction"]==="")||(upgrades[k]["faction"].includes(factionno1))||(upgrades[k]["faction"].includes(factionno2))||(upgrades[k]["faction"].includes(factionno3)))) {
                       
             upgObjList.push(upgrades[k]); //on va prendre tous les objets et les mettre dedans
     }   
 }
-upgrades_Objects[y].push(upgObjList); //Ainsi, ce tableau aura cette structure : [['pilote1' [Objets talent][objets torpille][objets modifications]]['pilote2' [objets talent][objets modification]]....] 
+upgrades_Objects[yy].push(upgObjList); //Ainsi, ce tableau aura cette structure : [[[Objets talent pil 1][objets torpille pil 1][objets modifications pil 1]][[objets talent pil 2][objets modification pil 2]]....] 
 }
 }
 
@@ -7176,9 +7184,11 @@ function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'acti
     populateMenu("menu_ship_"+numero, ship_available);
     //ajout de l'écoute d'un input sur le nouveau menu newship
     newship.addEventListener('input', function() {
-        select_pilot_list(numero);
+       y = e.target.id.slice(10,11); 
+       select_pilot_list(numero);
     }) ;
-    newpilot.addEventListener('input', function() {
+    newpilot.addEventListener('input', function(e) {
+        y = e.target.id.slice(11,12); //y = numéro du pilote modifié
         dataGetFromPilot(numero);
         displayslots(numero)  ;
         upgradeListGet(numero);
