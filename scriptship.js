@@ -7183,12 +7183,12 @@ function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'acti
     
     populateMenu("menu_ship_"+numero, ship_available);
     //ajout de l'écoute d'un input sur le nouveau menu newship
-    newship.addEventListener('input', function() {
-       y = e.target.id.slice(10,11); 
+    newship.addEventListener('input', function(event) {
+       y = event.target.id.slice(10,11); 
        select_pilot_list(numero);
     }) ;
-    newpilot.addEventListener('input', function(e) {
-        y = e.target.id.slice(11,12); //y = numéro du pilote modifié
+    newpilot.addEventListener('input', function(event) {
+        y = event.target.id.slice(11,12); //y = numéro du pilote modifié
         dataGetFromPilot(numero);
         displayslots(numero)  ;
         upgradeListGet(numero);
