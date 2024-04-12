@@ -651,7 +651,7 @@ const ships =
                 [ 0, 0, 2, 0, 0, 3 ]
             ],
             base: ["Small"],
-            slots: ["Modification", "Weapon_Hardpoint"]
+            slots: ["Modification", "Cannon", "Torpedo", "Missile"]
         },
         {
     
@@ -2596,7 +2596,10 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Talent",
                 "Talent",
                 "Title"          
-            ]
+            ],
+            modifier_func: [
+            	[() => auto_equip(["title"])]
+                    ]
         },
         {
             name: "Roark Garnet",
@@ -2631,7 +2634,10 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Talent",
                "Title"
                 
-            ]
+            ],
+            modifier_func: [
+            	[() => auto_equip(["title"])]
+                    ]
         },
         {
             name: "Palob Godalhi",
@@ -2648,7 +2654,10 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             slots: [
                 "Talent",
                 "Title"
-            ]
+            ],
+            modifier_func: [
+            	[() => auto_equip(["title"])]
+                    ]
         },
         {
             name: "Jake Farrell",
@@ -3403,7 +3412,10 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Force",
                 "Talent",
                 "Title"
-                            ]
+                ],
+            modifier_func: [
+            	[() => auto_equip(["title"])]
+                    ]
         },
         {
             name: "Din Djarin",
@@ -3422,7 +3434,10 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Talent",
                 "Title"
             
-            ]
+            ],
+            modifier_func: [
+            	[() => auto_equip(["title"])]
+                    ]
         },
         {
             name: "The Armorer",
@@ -3439,7 +3454,10 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             slots: [
                 
                 "Talent",
-               "Title"]
+               "Title"],
+            modifier_func: [
+            	[() => auto_equip(["title"])]
+                    ]
         },
         {
             name: "Paz Vizsla",
@@ -3474,7 +3492,10 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Talent",
                 "Talent",
                 "Title"
-            ]
+            ],
+            modifier_func: [
+            	[() => auto_equip(["title"])]
+                    ]
         },
         {
             name: "Grogu",
@@ -3492,7 +3513,10 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             slots: [
                 "Force",
                 "Title"
-            ]
+            ],
+            modifier_func: [
+            	[() => auto_equip(["title"])]
+                    ]
         },
         {
             name: "Sabine Wren",
@@ -3525,7 +3549,10 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             slots: [
                 "Title"
 
-            ]
+            ],
+            modifier_func: [
+            	[() => auto_equip(["title"])]
+                    ]
         },
         {
             name: "Bardan Jusik",
@@ -3674,7 +3701,10 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Talent",
                 "Talent",
                 "Title"
-            ]            
+            ],
+            modifier_func: [
+            	[() => auto_equip(["title"])]
+                    ]            
         },
         {
             name: '"Leebo"',
@@ -3692,7 +3722,10 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             slots: [
                 "Talent",
                 "Title"
-            ]
+            ],
+            modifier_func: [
+            	[() => auto_equip(["title"])]
+                    ]
         },
         {
             name: "Wild Space Fringer",
@@ -3886,7 +3919,10 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Talent",
                 "Talent",
                 "Title"
-            ]
+            ],
+            modifier_func: [
+            	[() => auto_equip(["title"])]
+                    ]
         },
 {
             name: "Emon Azzameen",
@@ -3903,7 +3939,10 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             slots: [
                 "Talent",
                 "Title"
-            ]
+            ],
+            modifier_func: [
+            	[() => auto_equip(["title"])]
+                    ]
         },
          {
             name: "Sana Starros",
@@ -3936,7 +3975,10 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             slots: [
                 "Talent",
                 "Talent"               
-            ]
+            ],
+            modifier_func: [
+            	[() => weapon_Hardpoint()]
+                    ]
         },
 {
             name: "Laetin A'shera",
@@ -3951,7 +3993,10 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             ability: "Après avoir défendu ou attaqué, si l’attaque a échoué, gagnez 1 marqueur d’évasion.",
             slots: [
                 "Talent"                
-            ]
+            ],
+            modifier_func: [
+            	[() => weapon_Hardpoint()]
+                    ]
         },
  {
             name: "Tansarii Point Veteran",
@@ -3962,7 +4007,10 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 3,
             points: 5,
             loadout: 5,
-            slots: []
+            slots: [],
+            modifier_func: [
+            	[() => weapon_Hardpoint()]
+                    ]
         },
  {
             name: "Inaldra",
@@ -3977,7 +4025,10 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             ability: "Lorsque vous attaquez ou défendez, vous pouvez subir 1 #hit# pour relancer autant de dés que souhaité.",
             slots: [
                 "Talent"                
-            ]
+            ],
+            modifier_func: [
+            	[() => weapon_Hardpoint()]
+                    ]
         },
         {
             name: "Aleas Rans'ery",
@@ -3992,7 +4043,10 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             ability: "Lorsque vous défendez, si l’attaque est à portée 3 ou obstruée, lancez un dé supplémentaire.",
             slots: [
                 "Talent"                
-            ]
+            ],
+            modifier_func: [
+            	[() => weapon_Hardpoint()]
+                    ]
         },
         {
             name: "Captain Nym",
@@ -4157,7 +4211,10 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Talent",
                 "Title"
                 
-            ]
+            ],
+            modifier_func: [
+            	[() => auto_equip(["title"])]
+                    ]
         },
         {
             name: "IG-88B",
@@ -4175,7 +4232,10 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             slots: [
                 "Talent",
                 "Title"               
-            ]
+            ],
+            modifier_func: [
+            	[() => auto_equip(["title"])]
+                    ]
         },
         {
             name: "IG-88C",
@@ -4194,7 +4254,10 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Talent",
                 "Title"
                 
-            ]
+            ],
+            modifier_func: [
+            	[() => auto_equip(["title"])]
+                    ]
         },
         {
             name: "IG-88D",
@@ -4213,7 +4276,10 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Talent",
                 "Title"
                 
-            ]
+            ],
+            modifier_func: [
+            	[() => auto_equip(["title"])]
+                    ]
         },
         {
             name: "The Mandalorian",
@@ -4231,7 +4297,10 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Talent",
                 "Talent",
                 "Title"
-            ]
+            ],
+            modifier_func: [
+            	[() => auto_equip(["title"])]
+                    ]
         },
         {
             name: "Q9-0",
@@ -4250,7 +4319,10 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             slots: [
                 "Talent",
                 "Title"
-            ]
+            ],
+            modifier_func: [
+            	[() => auto_equip(["title"])]
+                    ]
         },
         {
             name: "4-LOM",
@@ -4268,7 +4340,10 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             slots: [
                 "Talent",
                 "Title"
-            ]
+            ],
+            modifier_func: [
+            	[() => auto_equip(["title"])]
+                    ]
         },
 {
             name: "Zuckuss",
@@ -4285,7 +4360,10 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             slots: [
                 "Talent",
                 "Title"
-            ]
+            ],
+            modifier_func: [
+            	[() => auto_equip(["title"])]
+                    ]
         },
         {
             name: "Dengar",
@@ -4306,7 +4384,10 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Talent",
                 "Talent",
                 "Title"
-            ]
+            ],
+            modifier_func: [
+            	[() => auto_equip(["title"])]
+                    ]
         },
         {
             name: "Tel Trevura",
@@ -4340,7 +4421,10 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             slots: [
                 "Talent",
                 "Title"
-            ]
+            ],
+            modifier_func: [
+            	[() => auto_equip(["title"])]
+                    ]
         },
         {
             name: "Beilert Valance",
@@ -4422,7 +4506,10 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             slots: [
                 "Talent",
                 "Title"
-            ]
+            ],
+            modifier_func: [
+            	[() => auto_equip(["title"])]
+                    ]
         },
 {
             name: "Nashtah Pup",
@@ -4474,7 +4561,10 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Talent",
                 "Talent",
                 "Title"
-            ]
+            ],
+            modifier_func: [
+            	[() => auto_equip(["title"])]
+                    ]
         },
 {
             name: "Nom Lumb",
@@ -4522,7 +4612,10 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Talent",
                 "Talent",
                 "Title"
-            ]
+            ],
+            modifier_func: [
+            	[() => auto_equip(["title"])]
+                    ]
         },
          {
             name: "Aurra Sing",
@@ -4541,7 +4634,10 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Talent",
                 "Talent",
                 "Title"
-            ]
+            ],
+            modifier_func: [
+            	[() => auto_equip(["title"])]
+                    ]
         },
          {
             name: "Captain Jostero -Firespray-",
@@ -6501,7 +6597,7 @@ const upgrades = [
                 effect: " Ajoute 5 points de Loadout et augmente le coût du vaisseau de 1",
                 modifier_func: [
                     () => add_slots("Astromech"),
-                    () => add_slots("Cannon"),
+                    () => change_stat("attackt",1),
                     () => also_Occupies("Crew"),
                    
                 ]
