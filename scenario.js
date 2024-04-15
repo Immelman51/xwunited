@@ -158,8 +158,10 @@ document.getElementById('assault_dombon').innerHTML = translations.assault_dombo
 }
 
 // Event listener for dropdown menu change
-document.getElementById('languageSelect').addEventListener('change', updadeContent);
+document.getElementById('language').addEventListener('change', updadeContent);
 
+//Initialisation
+updateContent();
 
 
 
