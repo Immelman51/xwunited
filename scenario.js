@@ -1,9 +1,11 @@
 const skirmish_title_ENG = "<h1>The Skirmish</h1>";
+const skirmish_title_FRA = "<h1>L'Escarmouche</h1>;
 const skirmish_setup_ENG = "<h2>Setup</h2>In the center of playmat (Range 4,5 of each border), place a small ship token without its base. It represents an automatic Turret. Each player may take control of the turret by performing a Scenario Action at range 0-1 of it.<br> SCENARIO ACTION: if you are at range 0-1 of the central turret, you gain control of it (place a token). You can rotate it 90° or 180° (if you already control it you can rotate it).<br>It attacks like a ship at Initiative 0 : 3 attack dice range 1-3 Special Attack. The defender may also cancel #eye# results with #evd# results (#crit# results can be canceled before #eye# results). If he doesn't, he receives 1 deplete token per each remaining #eye# results.";
-
+const skirmish_setup_FRA = "<h2>Setup</h2>Au centre du tapis de jeu (Portée 4,5 de chaque bord), placez un carton de petit vaisseau sans sa base. Il représente une tourelle automatique. Chaque joueur peut en prendre le controle en effectuant une action de Scénario à portée 0-1 d'elle.<br>ACTION SCENARIO : si vous êtes à portée 0-1 de la tourelle centrale, vous pouvez en prendre le controle (placez un marqueur). Vous pouvez la tourner de 90° ou 180° (possible mais si vous la controlez déjà).<br> Elle attaque comme un vaisseau à initiative 0 : 3 dés d'attaque, portée 1-3 Attaque Spéciale. Le défenseur peut également annuler les résultats #eye# avec des résultats #evd# (les résultats #crit# peuvent être annulés avant les résultats #eye#). Le défenseur reçoit 1 jeton d'épuisement pour chaque résultat #eye# non annulés.";
 const skirmish_obj_ENG = "<h2>Objective</h2>Destroy your opponent ships. When you destroy half a ship, you gain scenario points equal to half the value of the ship (rounded up). The game ends at the end of the clock, or if a player has no more ships on the battlefield.";
+const skirmish_obj_FRA = "<h2>Objectif</h2>Détruisez les vaisseaux adverses. Lorsque vous détruisez la moitié d'un vaisseau, vous gagnez autant de points de scénario que sa moitié de valeure arrondie au supérieure. La partie se termine à la fin du temps, ou lorsqu'un joueur n'a plus de vaisseau.";
 const skirmish_strbon_ENG = "<h2>Struggle Bonus</h2>The Loser gains a Tournament Point if he has at least 1 remaining ship on the battlefield, and the difference between the winner and the losers's scenario points is 5 Points or less.";
-
+const skirmish_strbon_FRA = "<h2>
 const skirmish_dombon_ENG = "<h2>Domination Bonus</h2>The winner gains a Tournament point if he scored 30 Points or more and the losers has won less than 15 scenario points";
 
 
