@@ -15,77 +15,42 @@
       <div><select id="language"><option selected>FRA</option><option>ENG</option></select></div 
     </header>
 <p>
-<div id="chance_engagement"><h1>Chance Engagement</h1>
-   <div class="description"><h2>Setup</h2>In the center of playmat (Range 4,5 of each border), place a small ship token without its base. It represents an automatic Turret. Each player may take control of the turret by performing a Scenario Action at range 0-1 of it.<br> SCENARIO ACTION: if you are at range 0-1 of the central turret, you gain control of it (place a token). You can rotate it 90° or 180° (if you already control it you can rotate it).<br>It attacks like a ship at Initiative 0 : 3 attack dice range 1-3 Special Attack. The defender may also cancel #eye# results with #evd# results (#crit# results can be canceled before #eye# results). If he doesn't, he receives 1 deplete token per each remaining #eye# results.
-</div>
-<div class="objective"><h2>Objective</h2>Destroy your opponent ships. When you destroy half a ship, you gain scenario points equal to half the value of the ship (rounded up). The game ends at the end of the clock, or if a player has no more ships on the battlefield.</div>
-<div class="bonus struggle"><h2>Struggle Bonus</h2>The Loser gains a Tournament Point if he has at least 1 remaining ship on the battlefield, and the difference between the winner and the losers's scenario points is 5 Points or less.
-</div>
-<div class="bonus domination"><h2>Domination Bonus</h2>The winner gains a Tournament point if he scored 30 Points or more and the losers has won less than 15 scenario points
-</div>
+<div id="skirmish"><div class='title' id='skirmish_title'></div>
+<div class="content" id='skirmish_description'></div>
+<div class="content" id='skirmish_obj'></div>
+<div class="content" id='skirmish_strbon'></div>
+<div class="content" id='skirmish_dombon'></div>
 </div>
 </p>
 <p>
-<div id="Dead_or_Alive"><h1>Dead or Alive</h1>
-<div class="description"><h2>Setup</h2>In addition to its ships, starting player places a bounty ship token (small ship token) at initiative 7 in the middle of the battlefield.<br>Its stats are (HULL 12 Agility 2). It shoots EVERY ship within range 3 at initiative 7 : roll 3 attack dice : ships at range 3 defend first. Then upgrade 1 attack dice (eye first, else hit, else blank). Ships at range 2 defend. Then upgrade again a die (eye first, else hit, else blank). Ships at range 1 defend.<br> Each player may bring any dials to control the Bounty Ship. During planning phase, Starting player chooses 1 of the dials brought by both players, then he picks randomly a maneuver. Then the other player randomizes also the maneuver. The Bounty Ship cannot stress. If there's a doubt on the maneuver indicated on the dial, the starting player chooses 1 of 2 possible maneuvers.
-</div>
-<div class="objective"><h2>Objective</h2>When the bounty ship is destroyed, each player gains as many scenario points as the number of damage cards he has inflicted him.<br>SCENARIO ACTION : CAPTURE : (At range 0-1 of the bounty ship) Place 1 Capture Token on the Bounty ship. When a player has 3 more Capture Token than his opponnent, he is "captured" by this player who wins 10 scenario points. <br>When you destroy an enemy ship, if the bounty ship has been destroyed or captured, you score as many scenario points as the value of the destroyed ship ; if the opponent bounty ship is still on the board, you score only half value.</div>
-<div class="bonus struggle"><h2>Struggle Bonus</h2>the Loser gains a Tournament Point if he has at least 1 remaining ship on the battlefield, and the difference between the winner and the losers's scenario points is 5 Points or less.
-</div>
-<div class="bonus domination"><h2>Domination Bonus</h2>Your Bounty ship has not been destroyed and you have destroyed the opponent's bounty ship
+<div id="hunt"><div class='title' id='hunt_title'></div>
+<div class="content" id='hunt_description'></div>
+<div class="content" id='hunt_obj'></div>
+<div class="content" id='hunt_strbon'></div>
+<div class="content" id='hunt_dombon'></div>
+</p>
+<p>
+<div id="escort"><div class='title' id='escort_title'></div>
+<div class="content" id='escort_description'></div>
+<div class="content" id='escort_obj'></div>
+<div class="content" id='escort_strbon'></div>
+<div class="content" id='escort_dombon'></div>
 </div>
 </p>
 <p>
-<div id="escort_mission"><h1>Escort Mission</h1>
-<div class="description"><h2>Setup</h2>Each player controls a small ship token (or a senator shuttle) (HULL 8 Agility 2). They place it in their starting zone at initiative 7. Then each player place a crate. <br>Any ship can do an Escort Action : at range 0/1 of the token ship. The ship Token gains a focus token. When the ship token is being hit, you can transfer 1 damage to a ship which has done an escort action. When a regular ship is destroyed, the opponent gains scenario points equal to the half value of the ship.<br>
-Maneuvers available for the ship token : Straight : 1, 2, 3, 4 : Bank : 1, 2, 3 ; Turn : 2. No K Turn.
-</div>
-<div class="objective"><h2>Objective</h2>The ship token must fly at range 0/1  of the allied crate and do a salvage action. Then he must fly out of the playing area to flee. If a ship token succeeds fleeing with the crate, the player gains 15 points. If the opponent destroys the opponents' token ship, he gains 5 points.
-</div>
-<div class="bonus struggle"><h2>Struggle Bonus</h2>The Loser gains a Tournament Point if he has at least 1 remaining ship on the battlefield, and the difference between the winner and the losers's scenario points is 5 Points or less.
-</div>
-<div class="bonus domination"><h2>Domination Bonus</h2>You have destroyed tho opponent's ship token and your ship token has fled the battlefield with the crate
-</div>
+<div id="salvage"><div class='title' id='salvage_title'></div>
+<div class="content" id='salvage_description'></div>
+<div class="content" id='salvage_obj'></div>  
+<div class="content" id='salvage_strbon'></div>
+<div class="content" id='salvage_dombon'></div>
 </div>
 </p>
 <p>
-<div id="salvage_mission"><h1>Salvage Mission</h1>
-<div class="description"><h2>Setup</h2>At the start of the Place Obstacles step of Setup, place one
-    supply cache in the center of the play area (centered at range 4.5 of all board edges).
-    Then, starting with the first player, players take turns placing the remaining 2 supply
-    caches at range 3 of the center supply cache marker and beyond range 2 of each other
-    supply cache. The supply cache placed by each player must be placed at range 2–4
-    of their board edge. The Obstacles cannot be placed overlapping any supply cache.<br>
-    Scenario Action: [Tow]<br>
-Tow: When a ship performs a tow action, choose a supply cache at range 0–1. Remove the chosen supply cache from the play area and place it on the
-ship’s card. A ship can have only one supply cache on its card. Then, place one of your player markers next to the ship’s miniature to show that it is
-towing a supply cache. If there is no supply cache in range, the action fails. After a ship performs a tow action, it removes any cloak tokens it has.<br>
-Before revealing the dial of a ship carrying a cache, its owner may jettison its cache by placing the cache marker within range 1 of the ship. 
-While a ship is towing a supply cache, if it performs a #BR# or #BO# or #CK# or #SLAM# action, it gains a deplete token and a strain token.   
-</div>
-<div class="objective"><h2>Objective</h2>At the start of the End Phase, earn 1 scenario point for each supply cache on a friendly ship’s card.except that only half points are scored when ships are destroyed. The game ends at the end of the clock or when a player has no more ships on the battlefield.
-</div>  
-<div class="bonus struggle"><h2>Struggle Bonus</h2>The Loser gains a Tournament Point if he has at least 1 remaining ship on the battlefield, and the difference between the winner and the losers's scenario points is 5 Points or less.
-</div>
-<div class="bonus domination"><h2>Domination Bonus</h2>The winner gains a Tournament point if he scored 30 Points or more and the losers has won less than 20 scenario points
-</div>
-</div>
-</p>
-<p>
-<div id="assault_defense"><h1>Assault and Defense</h1>
-<div class="description"><h2>Setup</h2>Assymetrical scenario. The Attack player and the defense player are chosen randomly. The defense player place all 4 satellites wherever he wants, but they must not overlap with obstacles, and they have to be beyond range 3 of each other.<br>
-The attack player must destroy 4 Satellites (3Hull 1Agility).<br>
-During System Phase, the defense player may relocate 1 of the satellites.
-To relocate, 1 satellite uses a speed 3 template. Then all satellites may perform a jam action (Range 0-1 except)
-</div>
-<div class="objective"><h2>Objective</h2>When a Satellite is destroyed, he gains 5 scenario points and the defense player loses 2 scenario points. The attack player scores half value for any enemy ship destroyed.<br>The defense player scores full value for any enemy ship destroyed.<br>The game ends at the end of the clock, or if a player has no more ships on the board. 
-</div>
-<div class="bonus struggle"><h2>Struggle Bonus</h2>The Loser gains a Tournament Point if he has at least 1 remaining ship on the battlefield, and the difference between the winner and the losers's scenario points is 5 Points or less.
-</div>
-<div class="bonus domination"><h2>Domination Bonus</h2>The winner gains a Tournament point if :<br>
-- ATTACK : All objectives have been destroyed and DEFENSE player has less than 10 scenario points<br>
-- DEFENSE : All enemy ships have been destroyed and ATTACK player has less than 15 scenario points
-</div>
+<div id="assault"><div class='title' id='assault_title'></div>
+<div class="content" id='assault_description'></div>
+<div class="content" id='assault_obj'></div>
+<div class="content" id='assault_strbon'></div>
+<div class="content" id='assault_dombon'></div>
 </div>
 </p>
 </body>
