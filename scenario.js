@@ -129,7 +129,7 @@ document.getElementById('escort_title').innerHTML = translations.escort_title[la
 
 document.getElementById('escort_description').innerHTML = translations.escort_description[language];
 
-document.getElementById('escort_obj').innerHTML = translations.escort.obj[language];
+document.getElementById('escort_obj').innerHTML = translations.escort_obj[language];
 
 document.getElementById('escort_strbon').innerHTML = translations.escort_strbon[language];
 
