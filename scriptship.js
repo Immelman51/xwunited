@@ -350,7 +350,7 @@ const ships =
         {
         
             name: "Lambda-class T-4a Shuttle",
-            factions: [ "Imperial_Academy", "ISB" ],
+            factions: [ "Imperial_Academy", "ISB", "Colossus" ],
             id: 9,
             attack: 3,
             agility: 1,
@@ -1960,7 +1960,7 @@ const ships =
         {
 
             name: "LAAT/i Gunship",
-            factions: ["Jedi_Order"],
+            factions: ["Galactic_Senate","Partisans"],
             id: 68,
             agility: 1,
             hull: 8,
@@ -2106,7 +2106,7 @@ const ships =
     
             name: "Syliure-class Hyperspace Ring",
             id: 73,
-            factions: ["Jedi_Order"],
+            factions: ["J"],
             agility: 1,
             hull: 1,
             shields: 2,
@@ -2212,7 +2212,7 @@ const ships =
     
     
             name: "Gauntlet Fighter",
-            factions: ["Mandalorian_Clans"],
+            factions: ["Mandalorian_Clans","Phoenix_Cell"],
             id: 77,
             attack: 3,
             attackb: 2,
@@ -2270,7 +2270,7 @@ const ships =
         {
   
             name: "Clone Z-95 Headhunter",
-            factions: [ "Galactic_Senate" ],
+            factions: [ "Jedi_Order" ],
             id: 79,
             attack: 2,
             agility: 2,
@@ -2350,7 +2350,487 @@ const ships =
                 [ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
             ],
             slots: []
-        }
+        },
+        {
+        	name: "T6 Shuttle",
+            factions: [ "Partisans", "Jedi_Order", "New_Republic" ],
+            id: 82,
+            attack: 2,
+            attackb: 2,
+            agility: 3,
+            base: ["Large"],
+            keyword: [],
+            hull: 6,
+            shields: 2,
+            chassis: "Boarding",
+            actions: [
+                "Focus",
+                "Evade",
+                "R-Coordinate"
+            ],
+            maneuvers: [
+                [ 0, 0, 0, 0, 0, 0,0,0],
+                [ 2, 1, 1, 1, 2, 0,0,0],
+                [ 2, 2, 1, 2, 2, 0,0,0],
+                [ 0, 2, 1, 2, 0, 0,3,3],
+                [ 0, 0, 2, 0, 0, 0,0,0]
+            ],
+            slots: ["Crew","Gunner","Modification","Astromech","Calculator"]
+        },
+        {
+        	name: "Supa Starfighter",
+            factions: [ "Crime_Syndicates", "Black_Sun"],
+            id: 83,
+            attack: 3,
+            agility: 1,
+            base: ["Medium"],
+            keyword: [],
+            hull: 7,
+            shields: 1,
+            chassis: "Plated Hull",
+            actions: [
+                "Focus",
+                "Lock",
+                "R-> Reload",
+                "Reinforce"
+            ],
+            maneuvers: [
+                [ 0, 0, 0, 0, 0, 0,0,0],
+                [ 0, 2, 1, 2, 0, 0,0,0],
+                [ 2, 2, 1, 2, 2, 0,0,0],
+                [ 0, 2, 1, 2, 0, 0,0,0],
+                [ 0, 0, 3, 0, 0, 3,0,0]
+            ],
+            slots: ["Torpedo","Modification","Modification"]
+        },
+        {
+        	name: "Crimson Starfighter",
+            factions: [ "Crime_Syndicates" ],
+            id: 84,
+            attack: 2,
+            agility: 2,
+            base: ["Small"],
+            keyword: ["Crimson_Dawn"],
+            hull: 2,
+            shields: 1,
+            chassis: "Hit & Run",
+            actions: [
+                "Focus",
+                "R-> Cloak",
+                "Cloak",
+                "Evade",
+                "Barrel Roll",
+                "R-> Evade",
+                "Boost",
+                "R-> Evade"
+            ],
+            maneuvers: [
+                [ 0, 0, 0, 0, 0, 0,0,0],
+                [ 2, 2, 0, 2, 2, 0,0,0],
+                [ 2, 1, 1, 1, 2, 0,0,0],
+                [ 1, 1, 1, 1, 1, 0,3,3],
+                [ 0, 0, 1, 0, 0, 0,0,0],
+                [ 0, 0, 1, 0, 0, 3,0,0]
+            ],
+            slots: ["Illicit","Modification"]
+        },
+        {
+        	name: "Sarissa-Class Gunship",
+            factions: [ "Crime_Syndicates" ],
+            id: 85,
+            attack: 3,
+            agility: 1,
+            base: ["Medium"],
+            keyword: ["Pyke_Syndicate"],
+            hull: 5,
+            shields: 2,
+            chassis: "Tractor Restrictor",
+            actions: [
+                "Focus",
+                "R-> Cloak",
+                "Cloak",
+                "Evade",
+                "Barrel Roll",
+                "R-> Evade",
+                "Boost",
+                "R-> Evade"
+            ],
+            maneuvers: [
+                [ 0, 0, 3, 0, 0, 0,0,0],
+                [ 0, 1, 1, 1, 0, 0,0,0],
+                [ 2, 1, 1, 1, 2, 0,0,0],
+                [ 3, 2, 1, 2, 3, 3,3,3],
+                [ 0, 0, 2, 0, 0, 0,0,0],
+                [ 0, 0, 0, 0, 0, 0,0,0]
+            ],
+            slots: ["Gunner","Missile","Cannon","Modification","Sensor"]
+        },
+        {
+        	name: "Rihkxyrk Attack Ship",
+            factions: [ "Black_Sun" ],
+            id: 86,
+            agility: 0,
+            base: ["Medium"],
+            keyword: [],
+            hull: 9,
+            shields: 3,
+            chassis: "Advanced Bomber",
+            actions: [
+                "Focus",
+                "Lock",
+                "Reload",
+                "R-Boost"
+            ],
+            maneuvers: [
+                [ 0, 0, 3, 0, 0, 0,0,0],
+                [ 0, 2, 1, 2, 0, 0,0,0],
+                [ 3, 2, 1, 2, 3, 3,0,0],
+                [ 3, 2, 1, 2, 3, 0,0,0]
+
+            ],
+            slots: ["Tech","Missile","Torpedo","Payload","Payload"]
+        },
+        {
+        	name: "Blue Ace",
+            factions: [ "Colossus" ],
+            id: 87,
+            attack: 2,
+            agility: 3,
+            base: ["Small"],
+            keyword: [],
+            hull: 4,
+            shields: 0,
+            chassis: ["Full Throttle","Overdrive Thrusters"],
+            actions: [
+                "Focus",
+                "R-> Cloak",
+                "Cloak",
+                "Evade",
+                "Barrel Roll",
+                "R-> Evade",
+                "Boost",
+                "R-> Evade"
+            ],
+            maneuvers: [
+                [ 0, 0, 0, 0, 0, 0,0,0],
+                [ 2, 2, 0, 2, 2, 0,0,0],
+                [ 2, 1, 1, 1, 2, 0,0,0],
+                [ 1, 1, 1, 1, 1, 0,3,3],
+                [ 0, 0, 1, 0, 0, 0,0,0],
+                [ 0, 0, 1, 0, 0, 3,0,0]
+            ],
+            slots: ["Astromech","Modification"]
+        },
+        {
+        	name: "Red Ace",
+            factions: [ "Colossus" ],
+            id: 88,
+            attack: 2,
+            agility: 3,
+            base: ["Small"],
+            keyword: [],
+            hull: 5,
+            shields: 0,
+            chassis: ["Calibrated Laser Targeting","Fine-Tuned Thrusters"],
+            actions: [
+                "Focus",
+                "R-> Cloak",
+                "Cloak",
+                "Evade",
+                "Barrel Roll",
+                "R-> Evade",
+                "Boost",
+                "R-> Evade"
+            ],
+            maneuvers: [
+                [ 0, 0, 0, 0, 0, 0,0,0],
+                [ 2, 2, 0, 2, 2, 0,0,0],
+                [ 2, 1, 1, 1, 2, 0,0,0],
+                [ 1, 1, 1, 1, 1, 0,3,3],
+                [ 0, 0, 1, 0, 0, 0,0,0],
+                [ 0, 0, 1, 0, 0, 3,0,0]
+            ],
+            slots: ["Astromech","Calculator"]
+        },
+        {
+        	name: "Yellow Ace",
+            factions: [ "Colossus" ],
+            id: 89,
+            attack: 1,
+            attackt: 1,
+            agility: 2,
+            base: ["Small"],
+            keyword: [],
+            hull: 5,
+            shields: 0,
+            chassis: ["Microthrusters","Pinpoint Tractor Array"],
+            actions: [
+                "Focus",
+                "R-> Cloak",
+                "Cloak",
+                "Evade",
+                "Barrel Roll",
+                "R-> Evade",
+                "Boost",
+                "R-> Evade"
+            ],
+            maneuvers: [
+                [ 0, 0, 0, 0, 0, 0,0,0],
+                [ 2, 2, 0, 2, 2, 0,0,0],
+                [ 2, 1, 1, 1, 2, 0,0,0],
+                [ 1, 1, 1, 1, 1, 0,3,3],
+                [ 0, 0, 1, 0, 0, 0,0,0],
+                [ 0, 0, 1, 0, 0, 3,0,0]
+            ],
+            slots: ["Astromech","Sensor"]
+        },
+        {
+        	name: "Green Ace",
+            factions: [ "Colossus" ],
+            id: 90,
+            attack: 2,
+            agility: 3,
+            base: ["Small"],
+            keyword: [],
+            hull: 4,
+            shields: 0,
+            chassis: ["Autothrusters","Intuitive Interface"],
+            actions: [
+                "Focus",
+                "R-> Cloak",
+                "Cloak",
+                "Evade",
+                "Barrel Roll",
+                "R-> Evade",
+                "Boost",
+                "R-> Evade"
+            ],
+            maneuvers: [
+                [ 0, 0, 0, 0, 0, 0,0,0],
+                [ 2, 2, 0, 2, 2, 0,0,0],
+                [ 2, 1, 1, 1, 2, 0,0,0],
+                [ 1, 1, 1, 1, 1, 0,3,3],
+                [ 0, 0, 1, 0, 0, 0,0,0],
+                [ 0, 0, 1, 0, 0, 3,0,0]
+            ],
+            slots: ["Astromech","Illicit"]
+        },
+        {
+        	name: "Black Ace",
+            factions: [ "Colossus" ],
+            id: 91,
+            attack: 3,
+            agility: 2,
+            base: ["Small"],
+            keyword: [],
+            hull: 4,
+            shields: 0,
+            chassis: ["Controlled Ailerons","Pursuit Thrusters"],
+            actions: [
+                "Focus",
+                "R-> Cloak",
+                "Cloak",
+                "Evade",
+                "Barrel Roll",
+                "R-> Evade",
+                "Boost",
+                "R-> Evade"
+            ],
+            maneuvers: [
+                [ 0, 0, 0, 0, 0, 0,0,0],
+                [ 2, 2, 0, 2, 2, 0,0,0],
+                [ 2, 1, 1, 1, 2, 0,0,0],
+                [ 1, 1, 1, 1, 1, 0,3,3],
+                [ 0, 0, 1, 0, 0, 0,0,0],
+                [ 0, 0, 1, 0, 0, 3,0,0]
+            ],
+            slots: ["Astromech","Tech"]
+        },
+        {
+        	name: "Fanblade Starfighter",
+            factions: [ "Agents_of_Chaos" ],
+            id: 92,
+            attackbull: 3,
+            agility: 3,
+            base: ["Small"],
+            keyword: [],
+            hull: 2,
+            shields: 2,
+            chassis: ["Turbo Thrusters","Folding Wings"],
+            actions: [
+                "Focus",
+                "R-> Cloak",
+                "Cloak",
+                "Evade",
+                "Barrel Roll",
+                "R-> Evade",
+                "Boost",
+                "R-> Evade"
+            ],
+            maneuvers: [
+                [ 0, 0, 0, 0, 0, 0,0,0],
+                [ 2, 2, 0, 2, 2, 0,0,0],
+                [ 2, 1, 1, 1, 2, 0,0,0],
+                [ 1, 1, 1, 1, 1, 0,3,3],
+                [ 0, 0, 1, 0, 0, 0,0,0],
+                [ 0, 0, 1, 0, 0, 3,0,0]
+            ],
+            slots: ["Modification"]
+        },
+        {
+        	name: "Tie Echelon",
+            factions: [ "First_Order" ],
+            id: 93,
+            attack: 3,
+            agility: 2,
+            base: ["Medium"],
+            keyword: ["TIE"],
+            hull: 5,
+            shields: 1,
+            chassis: [],
+            actions: [
+                "Focus",
+                "R-> Barrel Roll",
+                "Lock",
+                "R-> Boost"
+            ],
+            maneuvers: [
+                [ 0, 0, 0, 0, 0, 0,0,0],
+                [ 2, 2, 0, 2, 2, 0,0,0],
+                [ 2, 1, 1, 1, 2, 0,0,0],
+                [ 1, 1, 1, 1, 1, 0,3,3],
+                [ 0, 0, 1, 0, 0, 0,0,0],
+                [ 0, 0, 1, 0, 0, 3,0,0]
+            ],
+            slots: ["Crew","Gunner","Tech","Turret","Sensor"]
+        },
+        {
+        	name: "Oubliette Class Transport",
+            factions: [ "Shadow_Specialists" ],
+            id: 94,
+            attack: 3,
+            agility: 2,
+            base: ["Large"],
+            keyword: [],
+            hull: 7,
+            shields: 3,
+            chassis: ["Night Buzzard"],
+            actions: [
+                "Focus",
+                "R-> Cloak",
+                "Cloak",
+                "Evade",
+                "Barrel Roll",
+                "R-> Evade",
+                "Boost",
+                "R-> Evade"
+            ],
+            maneuvers: [
+                [ 0, 0, 0, 0, 0, 0,0,0],
+                [ 2, 2, 0, 2, 2, 0,0,0],
+                [ 2, 1, 1, 1, 2, 0,0,0],
+                [ 1, 1, 1, 1, 1, 0,3,3],
+                [ 0, 0, 1, 0, 0, 0,0,0],
+                [ 0, 0, 1, 0, 0, 3,0,0]
+            ],
+            slots: ["Crew","Gunner","Turret","Cannon","Modification]
+        },
+        {
+        	name: "Omicron Shuttle",
+            factions: [ "Imperial_Remnants","Galactic_Senate" ],
+            id: 95,
+            attack: 2,
+            agility: 1,
+            base: ["Large"],
+            keyword: [],
+            hull: 6,
+            shields: 5,
+            chassis: ["Tail Laser Turret"],
+            actions: [
+                "Focus",
+                "R-> Cloak",
+                "Cloak",
+                "Evade",
+                "Barrel Roll",
+                "R-> Evade",
+                "Boost",
+                "R-> Evade"
+            ],
+            maneuvers: [
+                [ 0, 0, 0, 0, 0, 0,0,0],
+                [ 2, 2, 0, 2, 2, 0,0,0],
+                [ 2, 1, 1, 1, 2, 0,0,0],
+                [ 1, 1, 1, 1, 1, 0,3,3],
+                [ 0, 0, 1, 0, 0, 0,0,0],
+                [ 0, 0, 1, 0, 0, 3,0,0]
+            ],
+            slots: ["Crew","Crew","Gunner","Payload","Turret","Modification","Calculator"]
+        },
+        {
+        	name: "RP82 Fiend Fighter",
+            factions: [ "Imperial_Remanants" ],
+            id: 96,
+            attack: 2,
+            attackbull: 3,
+            agility: 3,
+            base: ["Small"],
+            keyword: [],
+            hull: 3,
+            shields: 1,
+            chassis: ["Overdrive Thrusters"],
+            actions: [
+                "Focus",
+                "R-> Cloak",
+                "Cloak",
+                "Evade",
+                "Barrel Roll",
+                "R-> Evade",
+                "Boost",
+                "R-> Evade"
+            ],
+            maneuvers: [
+                [ 0, 0, 0, 0, 0, 0,0,0],
+                [ 2, 2, 0, 2, 2, 0,0,0],
+                [ 2, 1, 1, 1, 2, 0,0,0],
+                [ 1, 1, 1, 1, 1, 0,3,3],
+                [ 0, 0, 1, 0, 0, 0,0,0],
+                [ 0, 0, 1, 0, 0, 3,0,0]
+            ],
+            slots: ["Tech"]
+        },
+        {
+        	name: "Laat/Le Patrol Gunship",
+            factions: [ "Imperial_Remnants" ],
+            id: 97,
+            attackt: 2,
+            agility: 2,
+            base: ["Medium"],
+            keyword: [],
+            hull: 6,
+            shields: 2,
+            chassis: ["Troop Bay"],
+            actions: [
+                "Focus",
+                "R-> Cloak",
+                "Cloak",
+                "Evade",
+                "Barrel Roll",
+                "R-> Evade",
+                "Boost",
+                "R-> Evade"
+            ],
+            maneuvers: [
+                [ 0, 0, 0, 0, 0, 0,0,0],
+                [ 2, 2, 0, 2, 2, 0,0,0],
+                [ 2, 1, 1, 1, 2, 0,0,0],
+                [ 1, 1, 1, 1, 1, 0,3,3],
+                [ 0, 0, 1, 0, 0, 0,0,0],
+                [ 0, 0, 1, 0, 0, 3,0,0]
+            ],
+            slots: ["Crew","Gunner","Gunner","Missile","Turret","Modification"]
+        },
+        
+        
     ];
       
 const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes car elles sont utilisées pour les cout dans les menus pilote
