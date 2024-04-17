@@ -115,7 +115,7 @@ const ships =
                 "Lock",
                 "Barrel Roll"
             ],
-            chassis: "Servomotor S-Foils",
+            chassis: ["Servomotor S-Foils"],
             maneuvers: [
                 [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
                 [ 0, 1, 1, 1, 0, 0, 0, 0, 0, 0],
@@ -163,7 +163,7 @@ const ships =
             keyword: [],
             hull: 2,
             shields: 2,
-            chassis: "Vectored Thrusters",
+            chassis: ["Vectored Thrusters"],
             actions: [
                 "Focus",
                 "Evade",
@@ -192,7 +192,7 @@ const ships =
             agility: 1,
             hull: 8,
             shields: 5,
-            chassis: "Docking Ship",
+            chassis: ["Docking Ship"],
             actions: [
                 "Focus",
                 "Lock",
@@ -245,7 +245,7 @@ const ships =
             hull: 3,
             shields: 2,
             keyword: ["TIE"],
-            chassis: "Advanced Targeting Computer",
+            chassis: ["Advanced Targeting Computer"],
             actions: [
                 "Focus",
                 "R-> Barrel Roll",
@@ -273,7 +273,7 @@ const ships =
             hull: 3,
             shields: 0,
             keyword: ["TIE"],
-            chassis: "Autothrusters",
+            chassis: ["Autothrusters"],
             actions: [
                 "Focus",
                 "Barrel Roll",
@@ -357,7 +357,7 @@ const ships =
             hull: 6,
             shields: 4,
             keyword: [],
-            chassis: "Tail Cannon",
+            chassis: ["Tail Cannon"],
             actions: [
                 "Focus",
                 "Coordinate",
@@ -384,7 +384,7 @@ const ships =
             hull: 4,
             shields: 4,
             keyword: [],
-            chassis: "Stabilized S-Foils",
+            chassis: ["Stabilized S-Foils"],
             actions: [
                 "Focus",
                 "R-> Barrel Roll",
@@ -412,7 +412,7 @@ const ships =
             hull: 6,
             shields: 0,
             keyword: ["TIE"],
-            chassis: "Nimble Bomber",
+            chassis: ["Nimble Bomber"],
             actions: [
                 "Focus",
                 "Lock",
@@ -468,7 +468,7 @@ const ships =
             shields: 4,
             base: ["Small"],
             keyword: ["TIE"],
-            chassis: "Full Throttle",
+            chassis: ["Full Throttle"],
             actions: [
                 "Focus",
                 "Evade",
@@ -527,7 +527,7 @@ const ships =
             shields: 2,
             base: ["Small"],
             keyword: ["TIE"],
-            chassis: "Stygium Array",
+            chassis: ["Stygium Array"],
             actions: [
                 "Focus",
                 "Evade",
@@ -551,7 +551,7 @@ const ships =
             agility: 2,
             hull: 6,
             shields: 4,
-            chassis: "Sensor Blackout",
+            chassis: ["Sensor Blackout"],
             keyword: [],
             actions: [
                 "Focus",
@@ -605,7 +605,7 @@ const ships =
             agility: 3,
             hull: 4,
             shields: 1,
-            chassis: "Microthrusters",
+            chassis: ["Microthrusters"],
             keyword: [],
             actions: [
                 "Focus",
@@ -634,7 +634,7 @@ const ships =
             agility: 3,
             hull: 3,
             shields: 1,
-            chassis: "Weapon Hardpoint",
+            chassis: ["Weapon Hardpoint"],
             keyword: [],
             actions: [
                 "Focus",
@@ -796,7 +796,7 @@ const ships =
             shields: 4,
             base: ["Large"],
             keyword: [],
-            chassis: "???",
+            chassis: ["Ghost"],
             actions: [
                 "Focus",
                 "Lock",
@@ -820,7 +820,7 @@ const ships =
             agility: 2,
             hull: 3,
             shields: 1,
-            chassis: "Locked and Loaded",
+            chassis: ["Locked and Loaded"],
             keyword: [],
             actions: [
                 "Focus",
@@ -955,7 +955,7 @@ const ships =
             agility: 3,
             hull: 4,
             shields: 0,
-            chassis: "Concordia Faceoff",
+            chassis: ["Concordia Faceoff"],
             keyword: [],
             actions: [
                 "Focus",
@@ -1013,7 +1013,7 @@ const ships =
             agility: 2,
             hull: 5,
             shields: 0,
-            chassis: "Spacetug Tractor Array",
+            chassis: ["Spacetug Tractor Array"],
             keyword: [],
             actions: [
                 "Focus",
@@ -1039,7 +1039,7 @@ const ships =
             agility: 2,
             hull: 5,
             shields: 3,
-            chassis: "Pivot Wing",
+            chassis: ["Pivot Wing"],
             keyword: [],
             actions: [
                 "Focus",
@@ -1067,7 +1067,7 @@ const ships =
             shields: 0,
             base: ["Small"],
             keyword: ["TIE"],
-            chassis: "Adaptive Ailerons",
+            chassis: ["Adaptive Ailerons"],
             actions: [
                 "Focus",
                 "Evade",
@@ -1194,7 +1194,7 @@ const ships =
             hull: 7,
             shields: 2,
             base: ["Medium"],
-            chassis: "Dead to Rights",
+            chassis: ["Dead to Rights"],
             keyword: [],
             actions: [
                 "Focus",
@@ -1221,7 +1221,7 @@ const ships =
             hull: 4,
             shields: 1,
             base: ["Small"],
-            chassis: "Comms Shuttle",
+            chassis: ["Comms Shuttle"],
             keyword: [],
             actions: [
                 "Focus",
@@ -1247,8 +1247,8 @@ const ships =
             shields: 2,
             base: ["Medium"],
             keyword: ["TIE"],
-            chassis: "Controlled Ailerons",
-            keyword: [],
+            chassis: ["Controlled Ailerons"],
+            keyword: ['TIE'],
             actions: [
                 "Focus",
                 "Evade",
@@ -1272,7 +1272,7 @@ const ships =
             agility: 2,
             hull: 2,
             shields: 2,
-            chassis: "Co-Pilot",
+            chassis: ["Co-Pilot"],
             base: ["Small"],
             keyword: [],
             actions: [
@@ -1300,7 +1300,7 @@ const ships =
             shields: 3,
             base: ["Small"],
             keyword: [],
-            chassis: "Integrated S-Foils",
+            chassis: ["Integrated S-Foils"],
             actions: [
                 "Focus",
                 "Lock",
@@ -1326,7 +1326,7 @@ const ships =
             shields: 2,
             base: ["Small"],
             keyword: [],
-            chassis: "Refined Gyrostabilizers",
+            chassis: ["Refined Gyrostabilizers"],
             actions: [
                 "Focus",
                 "Evade",
@@ -1382,7 +1382,7 @@ const ships =
             shields: 2,
             base: ["Small"],
             keyword: ["TIE"],
-            chassis: "Autothrusters",
+            chassis: ["Autothrusters"],
             actions: [
                 "Focus",
                 "Boost",
@@ -1410,7 +1410,7 @@ const ships =
             shields: 3,
             base: ["Small"],
             keyword: ["TIE"],
-            chassis: "Heavy Weapon Turret",
+            chassis: ["Heavy Weapon Turret"],
             actions: [
                 "Focus",
                 "> Rotate Arc",
@@ -1498,7 +1498,7 @@ const ships =
             hull: 3,
             shields: 0,
             base: ["Small"],
-            chassis: "Notched Stabilizers",
+            chassis: ["Notched Stabilizers"],
             keyword: ["TIE"],
             actions: [
                 "Focus",
@@ -1553,7 +1553,7 @@ const ships =
             shields: 1,
             base: ["Small"],
             keyword: ["Hyperspace Ring"],
-            chassis: "Fine-Tuned Controls",
+            chassis: ["Fine-Tuned Controls"],
             actions: [
                 "Focus",
                 "F-Evade",
@@ -1585,7 +1585,7 @@ const ships =
             shields: 3,
             base: ["Small"],
             keyword: ["Hyperspace Ring"],
-            chassis: "Fine-Tuned Controls",
+            chassis: ["Fine-Tuned Controls"],
             actions: [
                 "Focus",
                 "F-Evade",
@@ -1611,12 +1611,14 @@ const ships =
             agility: 1,
             hull: 6,
             base: ["Large"],
-            keyword: [],
+            keyword: ["Scimitar"], //power of the former Scimitar Title
             shields: 4,
             actions: [
                 "Focus",
                 "Lock",
-                "R-Barrel Roll"
+                "R-Barrel Roll",
+                "R-Cloak",
+                "R-Jam"
             ],
             maneuvers: [
                 [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
@@ -1639,7 +1641,7 @@ const ships =
             shields: 0,
             base: ["Small"],
             keyword: [],
-            chassis: "Grappling Struts",
+            chassis: ["Grappling Struts"],
             actions: [
                 "Calculate",
                 "Lock",
@@ -1694,7 +1696,7 @@ const ships =
             agility: 2,
             hull: 3,
             shields: 2,
-            chassis: "Full Throttle",
+            chassis: ["Full Throttle"],
             base: ["Small"],
             keyword: [],
             actions: [
@@ -1724,7 +1726,7 @@ const ships =
             shields: 0,
             base: ["Small"],
             keyword: [],
-            chassis: "Landing Struts",
+            chassis: ["Landing Struts"],
             actions: [
                 "Calculate",
                 "Lock",
@@ -1752,7 +1754,7 @@ const ships =
             shields: 1,
             base: ["Small"],
             keyword: [],
-            chassis: "Co-Pilot",
+            chassis: ["Co-Pilot"],
             actions: [
                 "Focus",
                 "R-Lock",
@@ -1779,7 +1781,7 @@ const ships =
             shields: 3,
             base: ["Small"],
             keyword: [],
-            chassis: "Docking Ship",
+            chassis: ["Docking Ship"],
             actions: [
                 "Focus",
                 "Lock",
@@ -1806,7 +1808,7 @@ const ships =
             shields: 0,
             base: ["Small"],
             keyword: [],
-            chassis: "Pinpoint Tractor Array",
+            chassis: ["Pinpoint Tractor Array"],
             actions: [
                 "Focus",
                 "Evade"
@@ -1832,7 +1834,7 @@ const ships =
             shields: 3,
             base: ["Small"],
             keyword: [],
-            chassis: "Plated Hull",
+            chassis: ["Plated Hull"],
             actions: [
                 "Focus",
                 "Lock",
@@ -1859,7 +1861,7 @@ const ships =
             shields: 0,
             base: ["Small"],
             keyword: [],
-            chassis: "Explosion with Wings",
+            chassis: ["Explosion with Wings"],
             actions: [
                 "Focus",
                 "Evade",
@@ -1886,7 +1888,7 @@ const ships =
             shields: 2,
             base: ["Small"],
             keyword: ["TIE"],
-            chassis: "Fine-Tuned Thrusters",
+            chassis: ["Fine-Tuned Thrusters"],
             actions: [
                 "Focus",
                 "Evade",
@@ -1940,7 +1942,7 @@ const ships =
             shields: 3,
             base: ["Small"],
             keyword: [],
-            chassis: "Repulsorlift Stabilizers",
+            chassis: ["Repulsorlift Stabilizers"],
             actions: [
                 "Calculate",
                 "Lock",
@@ -1962,12 +1964,13 @@ const ships =
             name: "LAAT/i Gunship",
             factions: ["Galactic_Senate","Partisans"],
             id: 68,
+            attackt: 1,
             agility: 1,
             hull: 8,
             shields: 2,
             base: ["Medium"],
             keyword: [],
-            chassis: "Fire Convergence",
+            chassis: ["Fire Convergence"],
             actions: [
                 "Focus",
                 "Lock",
@@ -1995,7 +1998,7 @@ const ships =
             shields: 0,
             base: ["Medium"],
             keyword: ["TIE"],
-            chassis: "Rotating Cannons",
+            chassis: ["Rotating Cannons"],
             actions: [
                 "Focus",
                 "Reinforce",
@@ -2025,7 +2028,7 @@ const ships =
             shields: 0,
             base: ["Small"],
             keyword: [],
-            chassis: "Networked Calculations",
+            chassis: ["Networked Calculations"],
             actions: [
                 "Calculate",
                 "Evade",
@@ -2056,7 +2059,7 @@ const ships =
             shields: 2,
             keyword: ["TIE", "Hyperspace Ring"],
             base: ["Small"],
-            chassis: "Twin Ion Engines",
+            chassis: ["Twin Ion Engines"],
             actions: [
                 "Focus",
                 "Lock",
@@ -2085,7 +2088,7 @@ const ships =
             shields: 0,
             base: ["Small"],
             keyword: ["Hyperspace Ring"],
-            chassis: "Intuitive Controls",
+            chassis: ["Intuitive Controls"],
             actions: [
                 "Focus",
                 "Evade",
@@ -2129,7 +2132,7 @@ const ships =
             shields: 3,
             base: ["Small"],
             keyword: [],
-            chassis: "Intuitive Interface",
+            chassis: ["Intuitive Interface"],
             actions: [
                 "Focus",
                 "R-Lock",
@@ -2158,7 +2161,7 @@ const ships =
             shields: 2,
             keyword: ["TIE"],
             base: ["Small"],
-            chassis: "Heavy Weapon Turret",
+            chassis: ["Heavy Weapon Turret"],
             actions: [
                 "Focus",
                 "> Rotate Arc",
@@ -2189,7 +2192,7 @@ const ships =
             shields: 2,
             base: ["Small"],
             keyword: ["TIE"],
-            chassis: "Pursuit Thrusters",
+            chassis: ["Pursuit Thrusters"],
             actions: [
                 "Focus",
                 "Lock",
@@ -2221,7 +2224,7 @@ const ships =
             shields: 2,
             base: ["Large"],
             keyword: [],
-            chassis: "Troop Bay , Swivel Wing" ,
+            chassis: ["Troop Bay , Swivel Wing"] ,
             actions: [
                 "Focus",
                 "R-Reinforce",
@@ -2250,7 +2253,7 @@ const ships =
             shields: 2,
             base: ["Medium"],
             keyword: [],
-            chassis: "Hidden Devices",
+            chassis: ["Hidden Devices"],
             actions: [
                 "Focus",
                 "Evade",
@@ -2278,7 +2281,7 @@ const ships =
             keyword: [],
             hull: 2,
             shields: 2,
-            chassis: "Versatile Frame",
+            chassis: ["Versatile Frame"],
             actions: [
                 "Focus",
                 "Lock",
@@ -2303,7 +2306,7 @@ const ships =
             keyword: [],
             hull: 5,
             shields: 2,
-            chassis: "Dead to Rights",
+            chassis: ["Dead to Rights"],
             actions: [
                 "Focus",
                 "R-> Boost",
@@ -2337,7 +2340,7 @@ const ships =
             keyword: [],
             hull: 2,
             shields: 0,
-            chassis: "Boarding",
+            chassis: ["Boarding","Multiple Targets"],
             actions: [
                 "Focus",
                 "Evade",
@@ -2362,7 +2365,6 @@ const ships =
             keyword: [],
             hull: 6,
             shields: 2,
-            chassis: "Boarding",
             actions: [
                 "Focus",
                 "Evade",
@@ -2387,7 +2389,7 @@ const ships =
             keyword: [],
             hull: 7,
             shields: 1,
-            chassis: "Plated Hull",
+            chassis: ["Plated Hull"],
             actions: [
                 "Focus",
                 "Lock",
@@ -2413,7 +2415,7 @@ const ships =
             keyword: ["Crimson_Dawn"],
             hull: 2,
             shields: 1,
-            chassis: "Hit & Run",
+            chassis: ["Hit & Run"],
             actions: [
                 "Focus",
                 "R-> Cloak",
@@ -2444,7 +2446,7 @@ const ships =
             keyword: ["Pyke_Syndicate"],
             hull: 5,
             shields: 2,
-            chassis: "Tractor Restrictor",
+            chassis: ["Tractor Constrictor"],
             actions: [
                 "Focus",
                 "R-> Cloak",
@@ -2474,7 +2476,7 @@ const ships =
             keyword: [],
             hull: 9,
             shields: 3,
-            chassis: "Advanced Bomber",
+            chassis: ["Advanced Bomber"],
             actions: [
                 "Focus",
                 "Lock",
@@ -2828,7 +2830,7 @@ const ships =
                 [ 0, 0, 1, 0, 0, 3,0,0]
             ],
             slots: ["Crew","Gunner","Gunner","Missile","Turret","Modification"]
-        },
+        }
         
         
     ];
