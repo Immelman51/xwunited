@@ -2738,7 +2738,7 @@ const ships =
                 [ 0, 0, 1, 0, 0, 0,0,0],
                 [ 0, 0, 1, 0, 0, 3,0,0]
             ],
-            slots: ["Crew","Gunner","Turret","Cannon","Modification]
+            slots: ["Crew","Gunner","Turret","Cannon","Modification"]
         },
         {
         	name: "Omicron Shuttle",
@@ -5660,7 +5660,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             ship: "Belbullab-22 Starfighter",
             shipId: 57,
             skill: 4,
-            points: ,
+            points: 8,
             title: "Soulless One",
             loadout: 15,
             ability: "Lorsque vous effectuez une attaque principale, si vous n'êtes pas dans l'arc de tir du défenseur, vous pouvez relancer jusqu'à 2 dés d'attaque.",
@@ -5679,7 +5679,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             ship: "Belbullab-22 Starfighter",
             shipId: 57,
             skill: 2,
-            points: ,
+            points: 6,
             loadout: 10,
             ability: "Lorsqu'un vaisseau allié à portée 0-3 effectue une attaque principale, si le défenseur est dans son #bulls#, avant l'étape 'Neutraliser les résultats', le vaisseau allié peut dépenser 1 jeton calcul pour annuler un résultat #evd#.",
             ability_ENG: "While a friendly ship at range 0-3 performs a primary attack, if the defender is in its #bulls#, before the Neutralize Results step, the friendly ship may spend 1 calculate token to cancel 1 #evd# result.",
@@ -5695,7 +5695,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             ship: "Belbullab-22 Starfighter",
             shipId: 57,
             skill: 3,
-            points: ,
+            points: 6,
             loadout: 10,
             ability: "Lorsque vous effectuez une attaque principale, vous pouvez relancer 1 dé pour chaque vaisseau allié calculateur à portée 1 du défenseur.",
             ability_ENG: "While you perform a primary attack or defend, you may reroll 1 die for each calculating friendly ship at range 1 of the defender.",
@@ -5711,7 +5711,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             ship: "Belbullab-22 Starfighter",
             shipId: 57,
             skill: 3,
-            points: ,
+            points: 7,
             loadout: 10,
             ability: "Lorsqu'un vaisseau à portée 0-3 effectue une attaque principale, s'il n'est pas dans l'arc de tir du défenseur et qu'il est calculateur, il peut relancer 1 dé d'attaque.",
             ability_ENG: "While a friendly ship at range 0-3 performs a primary attack, if it is not in the defender's firing arc and if it is calculating, it may reroll 1 attack die.",
@@ -5720,31 +5720,47 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Talent"                
             ]
         },
+        {
+            name: "Feethan Ottraw Autopilot",
+            id: 167,
+            unique: false,
+            faction: "C.I.S",
+            ship: "Belbullab-22 Starfighter",
+            shipId: 57,
+            skill: 1,
+            points: 5,
+            keyword: ["Droid"],
+            loadout: 0,
+            slots: [                
+            ]
+        },
+  		
   		{
             name: "AP5 #CIS#",
-            id: 167,
+            id: 168,
             unique: true,
             faction: "C.I.S",
             ship: "Sheathipede-Class Shuttle",
             shipId: 45,
             skill: 1,
-            points: ,
+            points: 7,
             loadout: 10,
             ability: "Lorsque vous coordonnez, is vous choisissez un vaisseau avec exactement 1 jeton stress, il peut effectuer une action.",
             ability_ENG: "While you coordinate, if you chose a ship with exactly 1 stress token, it can perform actions.",
+            keyword: ["Droid"],
             slots: [
                 "Talent"                
             ]
         },
 		{
             name: "Rune Haako",
-            id: 168,
+            id: 169,
             unique: true,
             faction: "C.I.S",
             ship: "Sheathipede-Class Shuttle",
             shipId: 45,
             skill: 3,
-            points: ,
+            points: 7,
             loadout: 10,
             ability: "Lorsque vous effectuez une attaque #Barc#, avant l'étape 'Neutralisez les résultats', vous pouvez recevoir un jeton stress pour annuler 1 résultat #evd#.",
             ability_ENG: "While you perform a #Barc# attack, before the Neutralize results step, you may receive a stress token to cancel 1 #evd# result.",
@@ -5754,21 +5770,284 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "Nute Gunray",
-            id: 169,
+            id: 170,
             unique: true,
             faction: "C.I.S",
             ship: "Sheathipede-Class Shuttle",
             shipId: 45,
             skill: 2,
-            points: ,
+            points: 7,
             loadout: 10,
-            ability: "Lorsque vous êtes détruit, vous devez déployer la navette de secours de Nute Gunray depuis votre vaisseau (Coque 2 Agilité 2). Pendant la phase Système, 
+            ability: "Lorsque vous êtes détruit, vous devez déployer la navette de secours de Nute Gunray depuis votre vaisseau (Coque 2 Agilité 2). Pendant la phase Système, déplacez vous vers l'avant avec un gabarit de vitesse 1, ou le gabarit 2 #straight#. Vous pouvez être placé sous un vaisseau si vous les chevauchez. Lorsque vous défendez, vous pouvez modifier vos résultats #eye# en #evd#. Si vous deviez fuir du tapis de jeu, votre adversaire perd 2 points de Scénario.", 
             ability_ENG: "When you would be destroyed, you must deploy Nute Gunray's escape pod from your ship (2 Hull 3 agility). During System phase, you move forward with any 1 speed template, or the 2 straight template. You may be placed under any ship if you overlap them. When you defend, you may change your #eye# results into #evd# results. If you would flee from the Battlefield, your opponent lose 2 Scenario points.",
             slots: [
                 "Talent"                
             ]
         },
+		{
+            name: "Riff Tamson",
+            id: 171,
+            unique: true,
+            faction: "C.I.S",
+            ship: "Sheathipede-Class Shuttle",
+            shipId: 45,
+            skill: 2,
+            points: 7,
+            loadout: 10,
+            ability: "Les améliorations que vous équipez perdent la restriction 'Solitary'.",
+            ability_ENG: "The upgrades you equip lose the 'Solitary' restriction.",
+            slots: [
+                "Talent"                
+            ]
+        },
+    	{
+            name: "Tactical Droid Autopilot",
+            id: 172,
+            unique: false,
+            faction: "C.I.S",
+            ship: "Sheathipede-Class Shuttle",
+            shipId: 45,
+            skill: 1,
+            points: 6,
+            loadout: 6,
+            keyword: ["Droid"],
+            slots: [                
+            ]
+        },
   
+        {
+            name: "Onderon Oppressor",
+            id: 173,
+            max_per_squad: 3,
+            faction: "C.I.S",
+            ship: "HMP Droid Gunship",
+            shipId: 67,
+            skill: 3,
+            points: 7,
+            loadout: 10,
+            ability: "Après avoir effectué un tonneau ou un dérapage, si vous êtes stressé, recevez un jeton calcul.",
+            ability_ENG: "After you barrel roll or sideslip, if you are stressed, gain 1 calculate token.",
+            keyword: ["Droid"],
+            slots: [
+                "Talent"                
+            ]
+        },
+		{
+            name: "Geonosian Prototype",
+            id: 174,
+            max_per_squad: 2,
+            faction: "C.I.S",
+            ship: "HMP Droid Gunship",
+            shipId: 67,
+            skill: 2,
+            points: 7,
+            loadout: 10,
+            ability: "F	ace A : Lorsque vous vous engagez, s'il y a un vaisseau avec un jeton tracté dans votre arc de tir, recevez 1 jeton calcul.<br>Face B : Après avoir dérapé, si vous vous êtes déplacé à travers un vaisseau, il gagne un jeton tracté.",
+            ability_ENG: "Face A : When you engage, if there is a ship with a tractor token in your firing arc, gain 1 calculate token.<br>Face B : After you sideslip, if you moved through a ship, it gains 1 tractor token.",
+            keyword: ["Droid"],
+            slots: [
+                "Talent"                
+            ]
+        },
+  		{
+            name: "DGS-286",
+            id: 175,
+            unique: true,
+            faction: "C.I.S",
+            ship: "HMP Droid Gunship",
+            shipId: 67,
+            skill: 3,
+            points: 7,
+            loadout: 10,
+            ability: "Avant de vous engager, vous pouvez choisir un autre vaisseau allié à portée 0-1. Transférez un 1 jeton calcul de ce vaisseau vers vous.",
+            ability_ENG: "Before you engage, you may choose another friendly ship at range 0-1. That ship transfers 1 calculate token to you.",
+            keyword: ["Droid"],
+            slots: [
+                "Talent"                
+            ]
+        },
+    	{
+            name: "DGS-047",
+            id: 176,
+            unique: true,
+            faction: "C.I.S",
+            ship: "HMP Droid Gunship",
+            shipId: 67,
+            skill: 1,
+            points: 7,
+            loadout: 10,
+            ability: "Après avoir attaqué, si le défenseur se trouve dans votre #Farc#, vous pouvez acquisitionner ce vaisseau. Puis, si le défenseur est dans votre #bulls#, il reçoit un jeton contrainte.",
+            ability_ENG: "After you perform an attack, if the defender is in your #Farc# , you may acquire a lock on it. Then, if the defender is in your #bulls#, it gains 1 strain token.",
+            keyword: ["Droid"],
+            slots: [
+                "Talent"                
+            ]
+        },
+        {
+            name: "Separatist Predator",
+            id: 177,
+            unique: false,
+            faction: "C.I.S",
+            ship: "HMP Droid Gunship",
+            shipId: 67,
+            skill: 1,
+            points: 6,
+            loadout: 0,
+            keyword: ["Droid"],
+            slots: [                
+            ]
+        },
+     
+        {
+            name: "Phlac Arphocc Prototype",
+            id: 178,
+            max_per_squad: 2,
+            faction: "C.I.S",
+            ship: "Droid Tri-fighter",
+            shipId: 70,
+            skill: 5,
+            points: 8,
+            loadout: 10,
+            ability: "Face A : Pendant la phase Système, vous pouvez regarder le cadran d'un vaisseau que vous avez acquisitionné.<br>Face B : Au début de la phase d'Engagement, s'il y a un vaisseau dans votre #bulls#, recevez 1 jeton calcul.",
+            ability_ENG: "Face A : During System Phase, you may look at the dial of a ship you have a lock on.<br>Face B : At the beginning of engagement phase, if there's an enemy ship in your #bulls#, gain 1 calculate token.",
+            keyword: ["Droid"],
+            slots: [
+                "Talent"                
+            ]
+        },
+		{
+            name: "Fearsome Predator",
+            id: 179,
+            max_per_squad: 3,
+            faction: "C.I.S",
+            ship: "Droid Tri-fighter",
+            shipId: 70,
+            skill: 3,
+            points: 7,
+            loadout: 10,
+            ability: "Mise en place: Après avoir placé les forces, assignez la condition 'Proie Apeurée' à un vaisseau ennemi.",
+            ability_ENG: "Setup: After placing forces, assign the 'Fearful Prey' condition to 1 enemy ship.",
+            keyword: ["Droid"],
+            slots: [
+                "Talent"                
+            ]
+        },
+  		{
+            name: "Colicoid Interceptor",
+            id: 180,
+            unique: false,
+            faction: "C.I.S",
+            ship: "Droid Tri-fighter",
+            shipId: 70,
+            skill: 1,
+            points: 6,
+            loadout: 5,
+            keyword: ["Droid"],
+            slots: [                
+            ]
+        },
+  		
+        {
+            name: "Bombardment Drone",
+            id: 181,
+            max_per_squad: 3,
+            faction: "C.I.S",
+            ship: "Hyena-class Droid Bomber",
+            shipId: 59,
+            skill: 3,
+            points: 6,
+            loadout: 10,
+            keyword: ["Droid"],
+            ability: "Si vous deviez larguer un engin, vous pouvez le lancer à la place en utilisant le même gabarit.",
+            ability_ENG: "If you would drop a device, you may launch that device instead, using the same template.",
+            slots: [
+                "Talent"                
+            ]
+        },
+    	{
+            name: "Baktoid Prototype",
+            id: 182,
+            max_per_squad: 2,
+            faction: "C.I.S",
+            ship: "Hyena-class Droid Bomber",
+            shipId: 59,
+            skill: 1,
+            points: 6,
+            loadout: 10,
+            keyword: ["Droid"],
+            ability: "Face A : Au début de la phase d'Engagement, vous pouvez dépenser 1 jeton calcul pour effectuer une action #CD#. Vous ne pouvez pas coordonner les vaisseaux qui n'ont pas la compétence 'Calculs en Réseau'.<br>Lorsque vous attaquez à portée 1, vous devez lancer 1 dé supplémentaire. Après que l'attaque touche, subissez 1 dégat #crit#.",
+            ability_ENG: "Face A : At the start of the Engagement Phase, you may spend 1 calculate token to perform a #CD# action. You cannot coordinate ships that do not have the Networked Calculations ship ability.<br>Face B : While you perform an attack at range 1, you must roll 1 additional die. After the attack hits, suffer 1 #crit# damage.",
+            slots: [
+                "Talent"                
+            ]
+        },
+      	{
+            name: "Techno Union Bomber",
+            id: 183,
+            unique: false,
+            faction: "C.I.S",
+            ship: "Hyena-class Droid Bomber",
+            shipId: 59,
+            skill: 1,
+            points: 5,
+            loadout: 2,
+            keyword: ["Droid"],
+            slots: [
+                            
+            ]
+        },
+       	{
+            name: "Trade Federation Drone",
+            id: 184,
+            unique: false,
+            faction: "C.I.S",
+            ship: "Vulture-class Droid Fighter",
+            shipId: 56,
+            skill: 1,
+            points: 3,
+            loadout: 0,
+            keyword: ["Droid"],
+            slots: [
+                            
+            ]
+        },
+        {
+            name: "Haor Chall Prototype",
+            id: 185,
+            max_per_squad: 2,
+            faction: "C.I.S",
+            ship: "Vulture-class Droid Fighter",
+            shipId: 56,
+            skill: 1,
+        	keyword: ["Droid"],
+            points: 4,
+            loadout: 10,
+            ability: "Face A : Après qu'un vaisseau ennemi dans votre #bulls# à portée 0-2 déclare un autre vaisseau allié comme cible, vous pouvez effectuer une action #CA# ou #TL#.<br>Face B : Après qu'un vaisseau ennemi se déplace, s'il se retrouve dans votre #bulls#, vous pouvez effectuer une attaque bonus principale.",
+            ability_ENG: "Face A : After an enemy ship in your #bulls# at range 0-2 declares another friendly ship as the defender, you may perform a #CA# or #TL# action.<br>Face B : After an enemy ship moves, if it is in your #bulls#, you may perform a bonus primary attack.",
+            slots: [
+                            
+            ]
+        },
+        {
+            name: "Precise Hunter",
+            id: 186,
+            max_per_squad: 3,
+            faction: "C.I.S",
+            ship: "Vulture-class Droid Fighter",
+            shipId: 56,
+            skill: 3,
+            points: 4,
+            keyword: ["Droid"],
+            loadout: 10,
+            ability: "Lorsque vous attaquez, si le défenseur est dans votre #bulls#, vous pouvez relancer 1 résultat vierge.",
+            ability_ENG: "While you perform an attack, if the defender is in your #bulls#, you may reroll 1 blank result.",
+            slots: [
+                "Talent"            
+            ]
+        },
+        
+         
+    
         
         
         
