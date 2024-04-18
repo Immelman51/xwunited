@@ -808,7 +808,8 @@ const ships =
                 [ 2, 1, 1, 1, 2, 0 ],
                 [ 3, 2, 2, 2, 3, 0 ],
                 [ 0, 0, 2, 0, 0, 3 ]
-            ]
+            ],
+            slots: ["Crew","Crew","Gunner","Torpedo","Turret","Modification","Sensor"]
         },
         {
      
@@ -835,7 +836,8 @@ const ships =
                 [ 2, 2, 1, 2, 2, 0 ],
                 [ 3, 2, 2, 2, 3, 0 ],
                 [ 0, 0, 2, 0, 0, 3 ]
-            ]
+            ],
+            slots: ["Crew","Turret","Modification"]
         },
         {
   
@@ -1233,7 +1235,8 @@ const ships =
                 [ 2, 1, 1, 1, 2, 0, 0, 0, 0, 0, 0, 0, 0],
                 [ 3, 2, 1, 2, 3, 3, 0, 0, 0, 0, 0, 0, 0],
                 [ 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-            ]
+            ],
+            slots: ["Crew","Modification","Astromech","Calculator"]
         },
         {
     
@@ -5135,7 +5138,172 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             slots: [
                 "Talent"                
             ]
-        }
+        },
+///////////////////PHOENIX CELL /////////////////////
+{
+            name: "Hera Syndulla -Ghost-",
+            id: 136,
+            unique: true,
+            faction: "Phoenix_Cell",
+            ship: "VCX-100 Light Freighter",
+            shipId: 25,
+            skill: 6,
+            points: ,
+            loadout: 15,
+            ability: "Après avoir révélé une manoeuvre rouge ou bleue, vous pouvez modifier votre cadran pour une autre manoeuvre de même difficulté.",
+            ability_ENG: "After you reveal a red or blue maneuver, you may set your dial to another maneuver of the same difficulty.",
+            slots: [
+                "Talent",
+                "Talent",
+                "Talent",
+                "Title"                
+            ]
+        },
+        {
+            name: "Kanan Jarrus -Ghost-",
+            id: 137,
+            unique: true,
+            faction: "Phoenix_Cell",
+            ship: "VCX-100 Light Freighter",
+            shipId: 25,
+            skill: 3,
+            points: ,
+            loadout: 15,
+            ability: "Lorsqu'un vaisseau allié dans votre arc de tir défend, vous pouvez dépenser 1 #fo#". Dans ce cas, l'attaquant lance 1 dé d'attaque en moins.",
+            ability_ENG: "While a friendly ship in your firing arc defends, you may spend 1 force. If you do, the attacker rolls 1 fewer attack die.",
+            slots: [
+                "Talent",
+                "Force",
+                "Title"                
+            ]
+        },
+        {
+            name: "Chopper -Ghost-",
+            id: 138,
+            unique: true,
+            faction: "Phoenix_Cell",
+            ship: "VCX-100 Light Freighter",
+            shipId: 25,
+            skill: 2,
+            points: ,
+            loadout: 15,
+            ability: "Au début de la phase d'engagement, chaque vaisseau ennemi à portée 0 reçoit 2 jetons brouillage.",
+            ability_ENG: "At the start of the Engagement Phase, each enemy ship at range 0 gains 2 jam tokens.",
+            slots: [
+                "Talent",
+                "Title"                
+            ]
+        },
+        {
+            name: "Alexsandr Kallus -Ghost-",
+            id: 139,
+            unique: true,
+            faction: "Phoenix_Cell",
+            ship: "VCX-100 Light Freighter",
+            shipId: 25,
+            skill: 4,
+            points: ,
+            loadout: 15,
+            ability: "Lorsque vous défendez, si l'attaquant a modifié au moins 1 dé d'attaque, vous pouvez lancer 1 dé de défense supplémentaire.",
+            ability_ENG: "While you defend, if the attacker modified any attack dice, you may roll 1 additional defense die.", 
+            slots: [
+                "Talent",
+                "Talent",
+                "Title"                
+            ]
+        },
+        {
+            name: "Hera Syndulla -Attack Shuttle-",
+            id: 140,
+            unique: true,
+            faction: "Phoenix_Cell",
+            ship: "Attack Shuttle",
+            shipId: 26,
+            skill: 6,
+            points: ,
+            loadout: 15,
+            ability: "Après avoir révélé une manoeuvre rouge ou bleue, vous pouvez modifier votre cadran pour une autre manoeuvre de même difficulté.",
+            ability_ENG: "After you reveal a red or blue maneuver, you may set your dial to another maneuver of the same difficulty.",
+            slots: [
+                "Talent",
+                "Talent",
+                "Talent",
+                "Title"                
+            ]
+        },
+        {
+            name: "Sabine Wren -Attack Shuttle-",
+            id: 141,
+            unique: true,
+            faction: "Phoenix_Cell",
+            ship: "Attack Shuttle",
+            shipId: 26,
+            skill: 3,
+            points: ,
+            loadout: 15,
+            ability: "Avant de vous activer, vous pouvez effectuer une action de #BR# ou #BO#.",
+            ability_ENG: "Before you activate, you may perform a #BR# or #BO# action.",
+            slots: [
+                "Talent",
+                "Talent",
+                "Title"                
+            ]
+        },
+        {
+            name: "Kanan Jarrus -Attack Shuttle-",
+            id: 142,
+            unique: true,
+            faction: "Phoenix_Cell",
+            ship: "Attack Shuttle",
+            shipId: 26,
+            skill: 3,
+            points: ,
+            loadout: 15,
+            ability: "Lorsqu'un vaisseau allié dans votre arc de tir défend, vous pouvez dépenser 1 #fo#". Dans ce cas, l'attaquant lance 1 dé d'attaque en moins.",
+            ability_ENG: "While a friendly ship in your firing arc defends, you may spend 1 force. If you do, the attacker rolls 1 fewer attack die.",
+            slots: [
+                "Talent",
+                "Force",
+                "Title"                
+            ]
+        },
+        {
+            name: "Zeb Orellios -Attack Shuttle-",
+            id: 143,
+            unique: true,
+            faction: "Phoenix_Cell",
+            ship: "Attack Shuttle",
+            shipId: 26,
+            skill: 2,
+            points: ,
+            loadout: 15,
+            ability: "Lorsque vous défendez, les résultat #crit# sont neutralisés avant les résultats #hit#.",
+            ability_ENG: "While you defend, #crit# results are neutralized before #hit# results.",
+            slots: [
+                "Talent",
+                "Title"                
+            ]
+        },
+        {
+            name: "AP5 -Sheathepede-",
+            id: 144,
+            unique: true,
+            faction: "Phoenix_Cell",
+            ship: "Sheathepede",
+            shipId: 26,
+            skill: 1,
+            points: ,
+            loadout: 15,
+            ability: "
+            ability_ENG: "
+            slots: [
+                "Talent",
+                "Title"                
+            ]
+        },
+        
+        
+
     ];
  
 const upgrades = [
