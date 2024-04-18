@@ -5141,14 +5141,15 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
 ///////////////////PHOENIX CELL /////////////////////
 {
-            name: "Hera Syndulla -Ghost-",
+            name: "Hera Syndulla #Ghost#",
             id: 136,
             unique: true,
             faction: "Phoenix_Cell",
             ship: "VCX-100 Light Freighter",
             shipId: 25,
             skill: 6,
-            points: ,
+            title: "Ghost",
+            points: 12,
             loadout: 15,
             ability: "Après avoir révélé une manoeuvre rouge ou bleue, vous pouvez modifier votre cadran pour une autre manoeuvre de même difficulté.",
             ability_ENG: "After you reveal a red or blue maneuver, you may set your dial to another maneuver of the same difficulty.",
@@ -5160,16 +5161,19 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             ]
         },
         {
-            name: "Kanan Jarrus -Ghost-",
+            name: "Kanan Jarrus #Ghost#",
             id: 137,
             unique: true,
             faction: "Phoenix_Cell",
             ship: "VCX-100 Light Freighter",
             shipId: 25,
             skill: 3,
-            points: ,
+            force: 2,
+            recurring: true,
+            title: "Ghost",
+            points: 12,
             loadout: 15,
-            ability: "Lorsqu'un vaisseau allié dans votre arc de tir défend, vous pouvez dépenser 1 #fo#". Dans ce cas, l'attaquant lance 1 dé d'attaque en moins.",
+            ability: "Lorsqu'un vaisseau allié dans votre arc de tir défend, vous pouvez dépenser 1 #fo#. Dans ce cas, l'attaquant lance 1 dé d'attaque en moins.",
             ability_ENG: "While a friendly ship in your firing arc defends, you may spend 1 force. If you do, the attacker rolls 1 fewer attack die.",
             slots: [
                 "Talent",
@@ -5178,14 +5182,15 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             ]
         },
         {
-            name: "Chopper -Ghost-",
+            name: "Chopper #Ghost#",
             id: 138,
             unique: true,
             faction: "Phoenix_Cell",
             ship: "VCX-100 Light Freighter",
             shipId: 25,
             skill: 2,
-            points: ,
+            title: "Ghost",
+            points: 10,
             loadout: 15,
             ability: "Au début de la phase d'engagement, chaque vaisseau ennemi à portée 0 reçoit 2 jetons brouillage.",
             ability_ENG: "At the start of the Engagement Phase, each enemy ship at range 0 gains 2 jam tokens.",
@@ -5195,14 +5200,15 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             ]
         },
         {
-            name: "Alexsandr Kallus -Ghost-",
+            name: "Alexsandr Kallus #Ghost#",
             id: 139,
             unique: true,
             faction: "Phoenix_Cell",
             ship: "VCX-100 Light Freighter",
             shipId: 25,
             skill: 4,
-            points: ,
+            title: "Ghost",
+            points: 10,
             loadout: 15,
             ability: "Lorsque vous défendez, si l'attaquant a modifié au moins 1 dé d'attaque, vous pouvez lancer 1 dé de défense supplémentaire.",
             ability_ENG: "While you defend, if the attacker modified any attack dice, you may roll 1 additional defense die.", 
@@ -5213,14 +5219,15 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             ]
         },
         {
-            name: "Hera Syndulla -Attack Shuttle-",
+            name: "Hera Syndulla #Attack Shuttle#",
             id: 140,
             unique: true,
             faction: "Phoenix_Cell",
             ship: "Attack Shuttle",
             shipId: 26,
             skill: 6,
-            points: ,
+            title: "Phantom 1",
+            points: 6,
             loadout: 15,
             ability: "Après avoir révélé une manoeuvre rouge ou bleue, vous pouvez modifier votre cadran pour une autre manoeuvre de même difficulté.",
             ability_ENG: "After you reveal a red or blue maneuver, you may set your dial to another maneuver of the same difficulty.",
@@ -5232,14 +5239,15 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             ]
         },
         {
-            name: "Sabine Wren -Attack Shuttle-",
+            name: "Sabine Wren #Attack Shuttle#",
             id: 141,
             unique: true,
             faction: "Phoenix_Cell",
             ship: "Attack Shuttle",
             shipId: 26,
             skill: 3,
-            points: ,
+            title: "Phantom 1",
+            points: 6,
             loadout: 15,
             ability: "Avant de vous activer, vous pouvez effectuer une action de #BR# ou #BO#.",
             ability_ENG: "Before you activate, you may perform a #BR# or #BO# action.",
@@ -5250,17 +5258,20 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             ]
         },
         {
-            name: "Kanan Jarrus -Attack Shuttle-",
+            name: "Kanan Jarrus #Attack Shuttle#",
             id: 142,
             unique: true,
             faction: "Phoenix_Cell",
             ship: "Attack Shuttle",
             shipId: 26,
             skill: 3,
-            points: ,
+            force: 2,
+            recurring: true,
+            title: "Phantom 1",
+            points: 6,
             loadout: 15,
-            ability: "Lorsqu'un vaisseau allié dans votre arc de tir défend, vous pouvez dépenser 1 #fo#". Dans ce cas, l'attaquant lance 1 dé d'attaque en moins.",
-            ability_ENG: "While a friendly ship in your firing arc defends, you may spend 1 force. If you do, the attacker rolls 1 fewer attack die.",
+            ability: "Lorsqu'un vaisseau allié dans votre arc de tir défend, vous pouvez dépenser 1 #fo#. Dans ce cas, l'attaquant lance 1 dé d'attaque en moins.",
+            ability_ENG: "While a friendly ship in your firing arc defends, you may spend 1 #fo#. If you do, the attacker rolls 1 fewer attack die.",
             slots: [
                 "Talent",
                 "Force",
@@ -5268,14 +5279,15 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             ]
         },
         {
-            name: "Zeb Orellios -Attack Shuttle-",
+            name: "Zeb Orellios #Attack Shuttle#",
             id: 143,
             unique: true,
             faction: "Phoenix_Cell",
             ship: "Attack Shuttle",
             shipId: 26,
             skill: 2,
-            points: ,
+            title: "Phantom 1",
+            points: 5,
             loadout: 15,
             ability: "Lorsque vous défendez, les résultat #crit# sont neutralisés avant les résultats #hit#.",
             ability_ENG: "While you defend, #crit# results are neutralized before #hit# results.",
@@ -5285,22 +5297,479 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             ]
         },
         {
-            name: "AP5 -Sheathepede-",
+            name: "AP5 #PHX#",
             id: 144,
             unique: true,
             faction: "Phoenix_Cell",
-            ship: "Sheathepede",
-            shipId: 26,
+            ship: "Sheathipede-Class Shuttle",
+            shipId: 45,
             skill: 1,
-            points: ,
+            title: "Phantom 2",
+            points: 5,
             loadout: 15,
-            ability: "
-            ability_ENG: "
+            ability: "Lorsque vous coordonnez, si vous choisissez un vaisseau avec exactement 1 jeton stress, il peut effectuer des actions.", 
+            ability_ENG: "While you coordinate, if you chose a ship with exactly 1 stress token, it can perform actions.",
             slots: [
                 "Talent",
                 "Title"                
             ]
         },
+        {
+            name: "Alexsandr Kallus #Sheathepede#",
+            id: 145,
+            unique: true,
+            faction: "Phoenix_Cell",
+            ship: "Sheathipede-Class Shuttle",
+            shipId: 45,
+            skill: 4,
+            title: "Phantom 2",
+            points: 6,
+            loadout: 15,
+            ability: "Lorsque vous défendez, si l'attaquant a modifié au moins 1 dé d'attaque, vous pouvez lancer 1 dé de défense supplémentaire.",
+            ability_ENG: "While you defend, if the attacker modified any attack dice, you may roll 1 additional defense die.", 
+            slots: [
+                "Talent",
+                "Talent",
+                "Title"                
+            ]
+        },
+        
+        {
+            name: "Ahsoka Tano #Sheathepede#",
+            id: 146,
+            unique: true,
+            faction: "Phoenix_Cell",
+            ship: "Sheathipede-Class Shuttle",
+            shipId: 45,
+            skill: 5,
+            force: 3,
+            recurring: true, 
+            title: "Phantom 2",
+            points: 6,
+            loadout: 15,
+            ability: "Après avoir entièrement effectué une manoeuvre, vous pouvez choisir un vaisseau allié à portée 1-2 et dépenser 2 #fo#. Ce vaisseau peut effectuer une action, même stressé.",
+            ability_ENG: "After you fully execute a maneuver, you may choose a friendly ship at range 1-2 and spend 2 #fo# . That ship may perform an action, even while stressed.",
+            slots: [
+                "Talent",
+                "Force",
+                "Title"                
+            ]
+        },
+        {
+            name: "Captain Rex #Sheathepede#",
+            id: 147,
+            unique: true,
+            faction: "Phoenix_Cell",
+            ship: "Sheathipede-Class Shuttle",
+            shipId: 45,
+            skill: 2,
+            points: 5,
+            title: "Phantom 2",
+            loadout: 15,
+            ability: "Après avoir attaqué, assignez la condition 'Tir de Suppression' au défenseur.",
+            ability_ENG: "After you perform an attack, assign the Suppressive Fire condition to the defender.",
+            slots: [
+                "Talent",
+                "Talent",
+                "Title"                
+            ]
+        },
+        {
+            name: "Sabine Wren #TIE#",
+            id: 148,
+            unique: true,
+            faction: "Phoenix_Cell",
+            ship: "TIE/ln Fighter",
+            shipId: 4,
+            skill: 3,
+            points: 4,
+            title: "Sabine's Masterpiece",
+            loadout: 15,
+            ability: "Avant de vous activer, vous pouvez effectuer une action #BR# ou #BO#.", 
+            ability_ENG: "Before you activate, you may perform a #BR# or #BO# action.",
+            slots: [
+                "Talent",
+                "Talent",
+                "Title"                
+            ]
+        },
+        {
+            name: "Ezra Bridger #TIE#",
+            id: 149,
+            unique: true,
+            faction: "Phoenix_Cell",
+            ship: "TIE/ln Fighter",
+            shipId: 4,
+            skill: 3,
+            force: 1,
+            recurring: true, 
+            points: 4,
+            title: "Sabine's Masterpiece",
+            loadout: 15,
+            ability: "Lorsque vous défendez ou attaquez, si vous êtes stressé, vous pouvez dépenser 1 #fo# pour modifier jusqu'à 2 de vos résultats #eye# en #hit# ou #evd#.",
+            ability_ENG: "While you defend or perform an attack, if you are stressed, you may spend 1 #fo# to change up to 2 of your #eye# results to #hit# or #evd# results.",
+            slots: [
+                "Talent",
+                "Force",
+                "Title"                
+            ]
+        },
+        {
+            name: "Captain Rex #TIE#",
+            id: 150,
+            unique: true,
+            faction: "Phoenix_Cell",
+            ship: "TIE/ln Fighter",
+            shipId: 2,
+            skill: 2,
+            points: 3,
+            title: "Sabine's Masterpiece",
+            loadout: 15,
+            ability: "Après avoir attaqué, assignez la condition 'Tir de Suppression' au défenseur.",
+            ability_ENG: "After you perform an attack, assign the Suppressive Fire condition to the defender.",
+            slots: [
+                "Talent",
+                "Talent",
+                "Title"                
+            ]
+        },
+        {
+            name: "Zeb Orellios #TIE#",
+            id: 151,
+            unique: true,
+            faction: "Phoenix_Cell",
+            ship: "TIE/ln Fighter",
+            shipId: 2,
+            skill: 2,
+            points: 3,
+            title: "Sabine's Masterpiece",
+            loadout: 15,
+            ability: "Lorsque vous défendez, les résultats #crit# sont neutralisés avant les #hit#.",
+            ability_ENG: "While you defend, #crit# results are neutralized before #hit# results.",
+            slots: [
+                "Talent",
+                "Title"                
+            ]
+        },
+        {
+            name: "Ezra Bridger #Gauntlet#",
+            id: 152,
+            unique: true,
+            faction: "Phoenix_Cell",
+            ship: "Gauntlet Fighter",
+            shipId: 77,
+            skill: 3,
+            points: 11,
+            force: 1,
+            recurring: true, 
+            title: "Nightbrother",
+            loadout: 15,
+            ability: "Lorsque vous défendez ou attaquez, si vous êtes stressé, vous pouvez dépenser 1 #fo# pour modifier jusqu'à 2 de vos résultats #eye# en #hit# ou #evd#.",
+            ability_ENG: "While you defend or perform an attack, if you are stressed, you may spend 1 #fo# to change up to 2 of your #eye# results to #hit# or #evd# results.",
+            slots: [
+                "Talent",
+                "Force",
+                "Title"                
+            ]
+        },
+        {
+            name: "Chopper #Gauntlet#",
+            id: 153,
+            unique: true,
+            faction: "Phoenix_Cell",
+            ship: "Gauntlet Fighter",
+            shipId: 77,
+            skill: 3,
+            points: 10,
+            title: "Nightbrother",
+            loadout: 15,
+            ability: "Au début de la phase d'engagement, chaque vaisseau ennemi à portée 0 reçoit 2 jeton brouillage.", 
+            ability_ENG: "At the start of the Engagement Phase, each enemy ship at range 0 gains 2 jam tokens.",
+            slots: [
+                "Talent",
+                "Title"                
+            ]
+        },
+        {
+            name: "Mart Mattin",
+            id: 154,
+            unique: true,
+            faction: "Phoenix_Cell",
+            ship: "YT-2400 Light Freighter",
+            shipId: 16,
+            skill: 2,
+            points: 9,
+            title: "Sato's Hammer",
+            loadout: 15,
+            ability: "Au début de la phase d'engagement, vous pouvez effectuer une action rouge #BR#.",
+            ability_ENG: "At the start of engagement phase, you may perform a Red #BR# action.",
+            slots: [
+                "Talent",
+                "Title"                
+            ]
+        },
+        {
+            name: "Gooti Terez",
+            id: 155,
+            unique: true,
+            faction: "Phoenix_Cell",
+            ship: "YT-2400 Light Freighter",
+            shipId: 16,
+            skill: 1,
+            points: 8,
+            title: "Sato's Hammer",
+            loadout: 15,
+            ability: "Après avoir défendu contre une attaque portée 1, l'attaquant reçoit 1 jeton de contrainte.",
+            ability_ENG: "After you defend against a Range 1 attack, the attacker gains 1 strain token.",
+            slots: [
+                "Talent",
+                "Title"                
+            ]
+        },
+        {
+            name: "Lohgarra",
+            id: 156,
+            unique: true,
+            faction: "Phoenix_Cell",
+            ship: "YT-2400 Light Freighter",
+            shipId: 16,
+            skill: 5,
+            points: 9,
+            title: "Mighty Oak Apocalypse",
+            loadout: 15,
+            ability: "Tant que vous êtes stressé, ignorez Sensor Blackout.", 
+            ability_ENG: "While you are stressed, you ignore the Sensor Blackout ability.",
+            slots: [
+                "Talent",
+                "Talent",
+                "Title"                
+            ]
+        },
+        {
+            name: "Thane Kyrell",
+            id: 157,
+            unique: true,
+            faction: "Phoenix_Cell",
+            ship: "YT-2400 Light Freighter",
+            shipId: 16,
+            skill: 4,
+            points: 8,
+            title: "Mighty Oak Apocalypse",
+            loadout: 15,
+            ability: "Lorsque vous attaquez, vous pouvez dépenser 1 résultat #eye#, #crit# ou #hit# pour regarder les cartes de dégat face cachée du défenseur, en choisir 1, et l'exposer.",
+            ability_ENG: "While you perform an attack, you may spend 1 #eye#, #crit#, or #hit# result to look at the defender's facedown damage cards, choose 1, and expose it.",
+            slots: [
+                "Talent",
+                "Talent",
+                "Title"                
+            ]
+        },
+        {
+            name: "Ahsoka Tano #A-Wing#",
+            id: 158,
+            unique: true,
+            faction: "Phoenix_Cell",
+            ship: "RZ-1 A-wing",
+            shipId: 2,
+            skill: 5,
+            force: 3,
+            recurring: true,
+            points: 8,
+            loadout: 10,
+            ability: "Après avoir entièrement effectué une manoeuvre, vous pouvez choisir un vaisseau allié à portée 1-2 et dépenser 2 #fo#. Ce vaisseau peut effectuer une action, même stressé.",
+            ability_ENG: "After you fully execute a maneuver, you may choose a friendly ship at range 1-2 and spend 2 #fo# . That ship may perform an action, even while stressed.",
+            slots: [
+                "Talent",
+                "Talent",
+                "Force",              
+            ]
+        },
+        {
+            name: "Lieutenant Dicer",
+            id: 159,
+            unique: true,
+            faction: "Phoenix_Cell",
+            ship: "RZ-1 A-wing",
+            shipId: 2,
+            skill: 4,
+            points: 6,
+            loadout: 10,
+            ability: "Tant que vous défendez ou attaquez, si l'attaque est à portée 1 et que vous êtes dans le #Farc# de l'ennemi, vous pouvez changer un de vos résultats #eye# en #hit# ou #evd#.",
+            ability_ENG: "While you defend or perform an attack, if the attack range is 1 and you are in the enemy's (Farc), you may change 1 of your #eye# results to an #hit# or #evd# result.",
+            slots: [
+                "Talent",
+                "Talent"
+            ]
+        },
+        {
+            name: "Fenn Rau #A-Wing#",
+            id: 160,
+            unique: true,
+            faction: "Phoenix_Cell",
+            ship: "RZ-1 A-wing",
+            shipId: 2,
+            skill: 6,
+            points: 8,
+            loadout: 10,
+            ability: "Avant qu'un vaisseau allié à portée 1-2 ne s'engage, si un vaisseau ennemi se trouve dans son #Farc# à portée 1, ce vaisseau allié peut retirer 1 jeton rouge.",
+            ability_ENG: "Before a friendly ship at range 1-2 engages, if there is an enemy ship in its #Farc# at range 1, that friendly ship may remove 1 red token.",
+            slots: [
+                "Talent",
+                "Talent",
+                "Talent"
+            ]
+        },
+        {
+            name: "Derek Klivian",
+            id: 161,
+            unique: true,
+            faction: "Phoenix_Cell",
+            ship: "RZ-1 A-wing",
+            shipId: 2,
+            skill: 3,
+            points: 6,
+            loadout: 10,
+            ability: "Après avoir gagné un marqueur d'acquisition ou après en avoir dépensé 1, vous pouvez vous retirer 1 jeton rouge.",
+            ability_ENG: "After you acquire or spend a lock, you may remove 1 red token from yourself.",
+            slots: [
+                "Talent",
+                "Talent"               
+            ]
+        },
+        {
+            name: "Phoenix Squadron Pilot",
+            id: 162,
+            unique: false,
+            faction: "Phoenix_Cell",
+            ship: "RZ-1 A-wing",
+            shipId: 2,
+            skill: 1,
+            points: 5,
+            loadout: 10,
+            slots: [
+                "Talent"
+            ]
+        },
+        
+//////////////////////C.I.S /////////////
+		{
+            name: "General Grievous",
+            id: 163,
+            unique: true,
+            faction: "C.I.S",
+            ship: "Belbullab-22 Starfighter",
+            shipId: 57,
+            skill: 4,
+            points: ,
+            title: "Soulless One",
+            loadout: 15,
+            ability: "Lorsque vous effectuez une attaque principale, si vous n'êtes pas dans l'arc de tir du défenseur, vous pouvez relancer jusqu'à 2 dés d'attaque.",
+            ability_ENG: "While you perform a primary attack, if you are not in the defender's firing arc, you may reroll up to 2 attack dice.",
+            slots: [
+                "Talent",
+                "Talent",
+                "Title"                
+            ]
+        },
+        {
+            name: "Captain Sear",
+            id: 164,
+            unique: true,
+            faction: "C.I.S",
+            ship: "Belbullab-22 Starfighter",
+            shipId: 57,
+            skill: 2,
+            points: ,
+            loadout: 10,
+            ability: "Lorsqu'un vaisseau allié à portée 0-3 effectue une attaque principale, si le défenseur est dans son #bulls#, avant l'étape 'Neutraliser les résultats', le vaisseau allié peut dépenser 1 jeton calcul pour annuler un résultat #evd#.",
+            ability_ENG: "While a friendly ship at range 0-3 performs a primary attack, if the defender is in its #bulls#, before the Neutralize Results step, the friendly ship may spend 1 calculate token to cancel 1 #evd# result.",
+            slots: [
+                "Talent"               
+            ]
+        },
+		{
+            name: "Wat Tambor",
+            id: 165,
+            unique: true,
+            faction: "C.I.S",
+            ship: "Belbullab-22 Starfighter",
+            shipId: 57,
+            skill: 3,
+            points: ,
+            loadout: 10,
+            ability: "Lorsque vous effectuez une attaque principale, vous pouvez relancer 1 dé pour chaque vaisseau allié calculateur à portée 1 du défenseur.",
+            ability_ENG: "While you perform a primary attack or defend, you may reroll 1 die for each calculating friendly ship at range 1 of the defender.",
+            slots: [
+                "Talent"                
+            ]
+        },
+  		{
+            name: "General Kleeve",
+            id: 166,
+            unique: true,
+            faction: "C.I.S",
+            ship: "Belbullab-22 Starfighter",
+            shipId: 57,
+            skill: 3,
+            points: ,
+            loadout: 10,
+            ability: "Lorsqu'un vaisseau à portée 0-3 effectue une attaque principale, s'il n'est pas dans l'arc de tir du défenseur et qu'il est calculateur, il peut relancer 1 dé d'attaque.",
+            ability_ENG: "While a friendly ship at range 0-3 performs a primary attack, if it is not in the defender's firing arc and if it is calculating, it may reroll 1 attack die.",
+            slots: [
+                "Talent",
+                "Talent"                
+            ]
+        },
+  		{
+            name: "AP5 #CIS#",
+            id: 167,
+            unique: true,
+            faction: "C.I.S",
+            ship: "Sheathipede-Class Shuttle",
+            shipId: 45,
+            skill: 1,
+            points: ,
+            loadout: 10,
+            ability: "Lorsque vous coordonnez, is vous choisissez un vaisseau avec exactement 1 jeton stress, il peut effectuer une action.",
+            ability_ENG: "While you coordinate, if you chose a ship with exactly 1 stress token, it can perform actions.",
+            slots: [
+                "Talent"                
+            ]
+        },
+		{
+            name: "Rune Haako",
+            id: 168,
+            unique: true,
+            faction: "C.I.S",
+            ship: "Sheathipede-Class Shuttle",
+            shipId: 45,
+            skill: 3,
+            points: ,
+            loadout: 10,
+            ability: "Lorsque vous effectuez une attaque #Barc#, avant l'étape 'Neutralisez les résultats', vous pouvez recevoir un jeton stress pour annuler 1 résultat #evd#.",
+            ability_ENG: "While you perform a #Barc# attack, before the Neutralize results step, you may receive a stress token to cancel 1 #evd# result.",
+            slots: [
+                "Talent"                
+            ]
+        },
+        {
+            name: "Nute Gunray",
+            id: 169,
+            unique: true,
+            faction: "C.I.S",
+            ship: "Sheathipede-Class Shuttle",
+            shipId: 45,
+            skill: 2,
+            points: ,
+            loadout: 10,
+            ability: "Lorsque vous êtes détruit, vous devez déployer la navette de secours de Nute Gunray depuis votre vaisseau (Coque 2 Agilité 2). Pendant la phase Système, 
+            ability_ENG: "When you would be destroyed, you must deploy Nute Gunray's escape pod from your ship (2 Hull 3 agility). During System phase, you move forward with any 1 speed template, or the 2 straight template. You may be placed under any ship if you overlap them. When you defend, you may change your #eye# results into #evd# results. If you would flee from the Battlefield, your opponent lose 2 Scenario points.",
+            slots: [
+                "Talent"                
+            ]
+        },
+  
+        
         
         
 
