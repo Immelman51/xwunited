@@ -6057,14 +6057,633 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             ship: "TIE/fo Fighter",
             shipId: 46,
             skill: 3,
-            points: 4,
+            points: 5,
             loadout: 10,
-            ability: "Lorsque vous attaquez, si le défenseur est dans votre #bulls#, vous pouvez relancer 1 résultat vierge.",
-            ability_ENG: "While you perform an attack, if the defender is in your #bulls#, you may reroll 1 blank result.",
+            ability: "",
+            ability_ENG: "",
             slots: [
                 "Talent"            
             ]
         },
+		{
+            name: "Jace Rucklin",
+            id: 188,
+            unique: true,
+            faction: "First_Order",
+            ship: "TIE/fo Fighter",
+            shipId: 46,
+            skill: 3,
+            points: 5,
+            loadout: 10,
+            ability: "",
+            ability_ENG: "",
+            slots: [
+                "Talent"            
+            ]
+        },
+        {
+            name: "Lieutenant Galek",
+            id: 189,
+            unique: true,
+            faction: "First_Order",
+            ship: "TIE/fo Fighter",
+            shipId: 46,
+            skill: 3,
+            points: 5,
+            loadout: 10,
+            ability: "",
+            ability_ENG: "",
+            slots: [
+                "Talent"            
+            ]
+        },
+        {
+            name: "'Muse'",
+            id: 190,
+            unique: true,
+            faction: "First_Order",
+            ship: "TIE/fo Fighter",
+            shipId: 46,
+            skill: 3,
+            points: 5,
+            loadout: 10,
+            ability: "",
+            ability_ENG: "",
+            slots: [
+                "Talent"            
+            ]
+        },
+        {
+            name: "Epsilon Squadron Cadet",
+            id: 191,
+            unique: false,
+            faction: "First_Order",
+            ship: "TIE/fo Fighter",
+            shipId: 46,
+            skill: 1,
+            points: 4,
+            loadout: 0,
+            slots: [            
+            ]
+        },
+		{
+            name: "Captain Phasma",
+            id: 192,
+            unique: true,
+            faction: "First_Order",
+            ship: "TIE/sf Fighter",
+            shipId: 48,
+            skill: 4,
+            points: 7,
+            loadout: 10,
+            ability: "",
+            ability_ENG: "",
+            slots: [
+                "Talent"            
+            ]
+        },
+		{
+            name: "'Backdraft'",
+            id: 193,
+            unique: true,
+            faction: "First_Order",
+            ship: "TIE/sf Fighter",
+            shipId: 48,
+            skill: 4,
+            points: 7,
+            loadout: 10,
+            ability: "",
+            ability_ENG: "",
+            slots: [
+                "Talent"            
+            ]
+        },
+        {
+            name: "'Quickdraw'",
+            id: 194,
+            unique: true,
+            faction: "First_Order",
+            ship: "TIE/sf Fighter",
+            shipId: 48,
+            skill: 6,
+            points: 8,
+            loadout: 10,
+            ability: "",
+            ability_ENG: "",
+            slots: [
+                "Talent",
+                "Talent",
+                "Talent"            
+            ]
+        },
+        {
+            name: "Lieutenant LeHuse",
+            id: 195,
+            unique: true,
+            faction: "First_Order",
+            ship: "TIE/sf Fighter",
+            shipId: 48,
+            skill: 5,
+            points: 7,
+            loadout: 10,
+            ability: "",
+            ability_ENG: "",
+            slots: [
+                "Talent"            
+            ]
+        },
+        {
+            name: "Zeta Squadron Survivor",
+            id: 196,
+            unique: false,
+            faction: "First_Order",
+            ship: "TIE/sf Fighter",
+            shipId: 48,
+            skill: 3,
+            points: 4,
+            loadout: 10,
+            slots: [            
+            ]
+        },
+        {
+            name: "'Breach'",
+            id: 197,
+            unique: true,
+            faction: "First_Order",
+            ship: "TIE/se Bomber",
+            shipId: 76,
+            skill: 3,
+            points: 6,
+            loadout: 10,
+            ability: "",
+            ability_ENG: "",
+            slots: [
+                "Talent"            
+            ]
+        },
+        {
+            name: "Jul Jerjerrod",
+            id: 198,
+            unique: true,
+            faction: "First_Order",
+            ship: "TIE/se Bomber",
+            shipId: 76,
+            skill: 3,
+            points: 6,
+            loadout: 10,
+            ability: "",
+            ability_ENG: "",
+            slots: [
+                "Talent"            
+            ]
+        },
+        {
+            name: "'Dread'",
+            id: 199,
+            unique: true,
+            faction: "First_Order",
+            ship: "TIE/se Bomber",
+            shipId: 76,
+            skill: 3,
+            points: 6,
+            loadout: 10,
+            ability: "",
+            ability_ENG: "",
+            slots: [
+                "Talent"            
+            ]
+        },
+        {
+            name: "'Grudge'",
+            id: 200,
+            unique: true,
+            faction: "First_Order",
+            ship: "TIE/se Bomber",
+            shipId: 76,
+            skill: 3,
+            points: 7,
+            loadout: 10,
+            ability: "",
+            ability_ENG: "",
+            slots: [
+                "Talent"            
+            ]
+        },
+        {
+            name: "Captain Cardinal",
+            id: 201,
+            unique: true,
+            faction: "First_Order",
+            ship: "Upsilon-Class Command Shuttle",
+            shipId: 49,
+            skill: 3,
+            points: 9,
+            loadout: 10,
+            ability: "",
+            ability_ENG: "",
+            slots: [
+                "Talent"            
+            ]
+        },
+         {
+            name: "Lieutenant Tavson",
+            id: 202,
+            unique: true,
+            faction: "First_Order",
+            ship: "Upsilon-Class Command Shuttle",
+            shipId: 49,
+            skill: 3,
+            points: 10,
+            loadout: 10,
+            ability: "",
+            ability_ENG: "",
+            slots: [
+                "Talent"            
+            ]
+        },
+        {
+            name: "Lieutenant Dormitz",
+            id: 203,
+            unique: true,
+            faction: "First_Order",
+            ship: "Upsilon-Class Command Shuttle",
+            shipId: 49,
+            skill: 3,
+            points: 9,
+            loadout: 10,
+            ability: "",
+            ability_ENG: "",
+            slots: [
+                "Talent"            
+            ]
+        },
+        {
+            name: "Major Stridan",
+            id: 204,
+            unique: true,
+            faction: "First_Order",
+            ship: "Upsilon-Class Command Shuttle",
+            shipId: 49,
+            skill: 3,
+            points: 9,
+            loadout: 10,
+            ability: "",
+            ability_ENG: "",
+            slots: [
+                "Talent"            
+            ]
+        },
+		{
+            name: "'Blackout'",
+            id: 205,
+            unique: true,
+            faction: "First_Order",
+            ship: "TIE/vn Silencer",
+            shipId: 47,
+            skill: 3,
+            points: 4,
+            loadout: 10,
+            ability: "",
+            ability_ENG: "",
+            slots: [
+                "Talent"            
+            ]
+        },
+        {
+            name: "'Recoil'",
+            id: 206,
+            unique: true,
+            faction: "First_Order",
+            ship: "TIE/vn Silencer",
+            shipId: 47,
+            skill: 3,
+            points: 4,
+            loadout: 10,
+            ability: "",
+            ability_ENG: "",
+            slots: [
+                "Talent"            
+            ]
+        },
+        {
+            name: "'Rush'",
+            id: 207,
+            unique: true,
+            faction: "First_Order",
+            ship: "TIE/vn Silencer",
+            shipId: 47,
+            skill: 3,
+            points: 4,
+            loadout: 10,
+            ability: "",
+            ability_ENG: "",
+            slots: [
+                "Talent"            
+            ]
+        },
+        {
+            name: "Kylo Ren #Silencer#",
+            id: 208,
+            unique: true,
+            faction: "First_Order",
+            ship: "TIE/vn Silencer",
+            shipId: 47,
+            skill: 3,
+            points: 4,
+            loadout: 10,
+            ability: "",
+            ability_ENG: "",
+            slots: [
+                "Talent"            
+            ]
+        },
+        {
+            name: "Sienar-Jamus Engineer",
+            id: 209,
+            unique: false,
+            faction: "First_Order",
+            ship: "TIE/vn Silencer",
+            shipId: 47,
+            skill: 1,
+            points: 4,
+            loadout: 10,
+            slots: [            
+            ]
+        },
+        {
+            name: "First Lieutenant Agnon",
+            id: 210,
+            unique: true,
+            faction: "First_Order",
+            ship: "TIE Echelon",
+            shipId: 93,
+            skill: 3,
+            points: 10,
+            loadout: 10,
+            ability: "",
+            ability_ENG: "",
+            slots: [
+                "Talent"            
+            ]
+        },
+        {
+            name: "Lieutenant Shakel",
+            id: 211,
+            unique: true,
+            faction: "First_Order",
+            ship: "TIE Echelon",
+            shipId: 93,
+            skill: 3,
+            points: 9,
+            loadout: 10,
+            ability: "",
+            ability_ENG: "",
+            slots: [
+                "Talent"            
+            ]
+        },
+        {
+            name: "Officer Anjay",
+            id: 212,
+            unique: true,
+            faction: "First_Order",
+            ship: "TIE Echelon",
+            shipId: 93,
+            skill: 3,
+            points: 9,
+            loadout: 10,
+            ability: "",
+            ability_ENG: "",
+            slots: [
+                "Talent"            
+            ]
+        },
+        {
+            name: "Red Fury Officer",
+            id: 213,
+            unique: false,
+            faction: "First_Order",
+            ship: "TIE Echelon",
+            shipId: 93,
+            skill: 2,
+            points: 8,
+            loadout: 4,
+            slots: [            
+            ]
+        },
+///////////////////////////////////RESISTANCE/////////////////
+//////////////////////////////////////////////////////////////
+		{
+            name: "Poe Dameron",
+            id: 214,
+            unique: true,
+            faction: "Resistance",
+            ship: "T-70 X-Wing",
+            shipId: 44,
+            skill: 6,
+            points: 9,
+            loadout: 15,
+            title: "Black One",
+            ability: "",
+            ability_ENG: "",
+            slots: [
+                "Talent",
+                "Talent",
+                "Talent",
+                "Title"            
+            ]
+        },
+        {
+            name: "Temmin Wexley",
+            id: 215,
+            unique: true,
+            faction: "Resistance",
+            ship: "T-70 X-Wing",
+            shipId: 44,
+            skill: 4,
+            points: 7,
+            loadout: 10,
+            ability: "",
+            ability_ENG: "",
+            slots: [
+                "Talent",
+                "Talent",            
+            ]
+        },
+        {
+            name: "Jess Pava",
+            id: 216,
+            unique: true,
+            faction: "Resistance",
+            ship: "T-70 X-Wing",
+            shipId: 44,
+            skill: 3,
+            points: 7,
+            loadout: 10,
+            ability: "",
+            ability_ENG: "",
+            slots: [
+                "Talent"            
+            ]
+        },
+        {
+            name: "Ello Asty",
+            id: 217,
+            unique: true,
+            faction: "Resistance",
+            ship: "T-70 X-Wing",
+            shipId: 44,
+            skill: 5,
+            points: 8,
+            loadout: 10,
+            ability: "",
+            ability_ENG: "",
+            slots: [
+                "Talent",
+                "Talent",            
+            ]
+        },
+        {
+            name: "Paige Tico",
+            id: 218,
+            unique: true,
+            faction: "Resistance",
+            ship: "Starfortress MG100",
+            shipId: 44,
+            skill: 5,
+            points: 9,
+            loadout: 10,
+            ability: "",
+            ability_ENG: "",
+            slots: [
+                "Talent",
+                "Talent",            
+            ]
+        },
+        {
+            name: "Finch Dallow",
+            id: 219,
+            unique: true,
+            faction: "Resistance",
+            ship: "Starfortress MG100",
+            shipId: 44,
+            skill: 4,
+            points: 9,
+            loadout: 10,
+            ability: "",
+            ability_ENG: "",
+            slots: [
+                "Talent"            
+            ]
+        },
+        {
+            name: "Ben Teene",
+            id: 220,
+            unique: true,
+            faction: "Resistance",
+            ship: "Starfortress MG100",
+            shipId: 44,
+            skill: 3,
+            points: 9,
+            loadout: 10,
+            ability: "",
+            ability_ENG: "",
+            slots: [
+                "Talent"            
+            ]
+        },
+        {
+            name: "Edon Kappehl",
+            id: 221,
+            unique: true,
+            faction: "Resistance",
+            ship: "Starfortress MG100",
+            shipId: 44,
+            skill: 3,
+            points: 9,
+            loadout: 10,
+            ability: "",
+            ability_ENG: "",
+            slots: [
+                "Talent"            
+            ]
+        },
+        {
+            name: "L'ulo L'ampar",
+            id: 222,
+            unique: true,
+            faction: "Resistance",
+            ship: "RZ-2 A-Wing",
+            shipId: 44,
+            skill: 5,
+            points: 7,
+            loadout: 10,
+            ability: "",
+            ability_ENG: "",
+            slots: [
+                "Talent",
+                "Talent",
+                "Talent",            
+            ]
+        },
+        {
+            name: "Tallissan Lintra",
+            id: 223,
+            unique: true,
+            faction: "Resistance",
+            ship: "RZ-2 A-Wing",
+            shipId: 44,
+            skill: 5,
+            points: 6,
+            loadout: 10,
+            ability: "",
+            ability_ENG: "",
+            slots: [
+                "Talent",
+                "Talent",            
+            ]
+        },
+        {
+            name: "Zizi Tlo",
+            id: 224,
+            unique: true,
+            faction: "Resistance",
+            ship: "RZ-2 A-Wing",
+            shipId: 44,
+            skill: 5,
+            points: 7,
+            loadout: 10,
+            ability: "",
+            ability_ENG: "",
+            slots: [
+                "Talent",
+                "Talent"            
+            ]
+        },
+        {
+            name: "Seftin Vanik",
+            id: 225,
+            unique: true,
+            faction: "Resistance",
+            ship: "RZ-2 A-Wing",
+            shipId: 44,
+            skill: 5,
+            points: 6,
+            loadout: 10,
+            ability: "",
+            ability_ENG: "",
+            slots: [
+                "Talent",
+                "Talent"            
+            ]
+        },
+
+
+
+
+
+
+
 
          
     
