@@ -6045,7 +6045,27 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Talent"            
             ]
         },
-        
+
+///////////////////////////First Order /////////////////////////
+/////////////////////////////////////////////////////////////////
+
+        {
+            name: "Lin Gaava",
+            id: 187,
+            unique: true,
+            faction: "First_Order",
+            ship: "TIE/fo Fighter",
+            shipId: 46,
+            skill: 3,
+            points: 4,
+            loadout: 10,
+            ability: "Lorsque vous attaquez, si le défenseur est dans votre #bulls#, vous pouvez relancer 1 résultat vierge.",
+            ability_ENG: "While you perform an attack, if the defender is in your #bulls#, you may reroll 1 blank result.",
+            slots: [
+                "Talent"            
+            ]
+        },
+
          
     
         
