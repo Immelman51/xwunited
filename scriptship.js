@@ -6677,8 +6677,440 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Talent"            
             ]
         },
+        {
+            name: "Han Solo #Res#",
+            id: 226,
+            unique: true,
+            faction: "Resistance",
+            ship: "YT-1300 Light Freighter",
+            shipId: 44,
+            skill: 6,
+            points: 9,
+            loadout: 15,
+            title: "Millenium Falcon",
+            ability: "",
+            ability_ENG: "",
+            slots: [
+                "Talent",
+                "Talent",
+                "Talent",
+                "Title"            
+            ],
+            modifier_func: [
+                [() => auto_equip("Title")]
+                ]
+        },
+        {
+            name: "Rey",
+            id: 227,
+            unique: true,
+            faction: "Resistance",
+            ship: "YT-1300 Light Freighter",
+            shipId: 44,
+            skill: 5,
+            points: 10,
+            loadout: 15,
+            title: "Millenium Falcon",
+            ability: "",
+            ability_ENG: "",
+            slots: [
+                "Talent",
+                "Force",
+                "Title"            
+            ],
+            modifier_func: [
+                [() => auto_equip("Title")]
+                ]            
+        },
+        {
+            name: "Chewbacca #Res#",
+            id: 228,
+            unique: true,
+            faction: "Resistance",
+            ship: "YT-1300 Light Freighter",
+            shipId: 44,
+            skill: 4,
+            points: 8,
+            loadout: 15,
+            ability: "",
+            ability_ENG: "",
+        	title: "Millenium Falcon",
+            slots: [
+                "Talent",
+                "Title"            
+            ],
+            modifier_func: [
+                [() => auto_equip("Title")]
+                ]            
+        },
+        {
+            name: "Lando Calrissian #Res#",
+            id: 229,
+            unique: true,
+            faction: "Resistance",
+            ship: "YT-1300 Light Freighter",
+            shipId: 44,
+            skill: 5,
+            points: 10,
+            loadout: 15,
+            ability: "",
+            ability_ENG: "",
+            title: "Millenium Falcon",
+            slots: [
+                "Talent",
+                "Talent",
+                "Title"            
+            ],
+            modifier_func: [
+                [() => auto_equip("Title")]
+                ]            
+        },
+        {
+            name: "Cova Nell",
+            id: 230,
+            unique: true,
+            faction: "Resistance",
+            ship: "Resistance Transport",
+            shipId: 44,
+            skill: 4,
+            points: 7,
+            loadout: 10,
+            ability: "",
+            ability_ENG: "",
+            slots: [
+                "Talent",
+                "Talent",            
+            ]
+        },
+        {
+            name: "Nodin Chavdri",
+            id: 231,
+            unique: true,
+            faction: "Resistance",
+            ship: "Resistance Transport",
+            shipId: 44,
+            skill: 2,
+            points: 6,
+            loadout: 10,
+            ability: "",
+            ability_ENG: "",
+            slots: [
+                "Talent"            
+            ]
+        },
+        {
+            name: "Pammich Nerro Goode",
+            id: 232,
+            unique: true,
+            faction: "Resistance",
+            ship: "Resistance Transport",
+            shipId: 44,
+            skill: 3,
+            points: 5,
+            loadout: 10,
+            ability: "",
+            ability_ENG: "",
+            slots: [
+                "Talent"            
+            ]
+        },
+        {
+            name: "Taka Jamoreesa",
+            id: 233,
+            unique: true,
+            faction: "Resistance",
+            ship: "Resistance Transport",
+            shipId: 44,
+            skill: 2,
+            points: 6,
+            loadout: 10,
+            ability: "",
+            ability_ENG: "",
+            slots: [
+                "Talent"            
+            ]
+        },
+        {
+            name: "Finn",
+            id: 234,
+            unique: true,
+            faction: "Resistance",
+            ship: "Resistance Transport Pod",
+            shipId: 44,
+            skill: 3,
+            points: 3,
+            loadout: 5,
+            ability: "",
+            ability_ENG: "",
+            slots: [
+                "Talent",
+                "Talent",            
+            ]
+        },
+        {
+            name: "Rose Tico",
+            id: 235,
+            unique: true,
+            faction: "Resistance",
+            ship: "Resistance Transport Pod",
+            shipId: 44,
+            skill: 3,
+            points: 3,
+            loadout: 5,
+            ability: "",
+            ability_ENG: "",
+            slots: [
+                "Talent",
+                "Talent",            
+            ]
+        },
+        {
+            name: "BB8",
+            id: 236,
+            unique: true,
+            faction: "Resistance",
+            ship: "Resistance Transport Pod",
+            shipId: 44,
+            skill: 1,
+            points: 2,
+            loadout: 5,
+            ability: "",
+            ability_ENG: "",
+            slots: [
+            ]
+        },
+        {
+            name: "Vi Moradi",
+            id: 237,
+            unique: true,
+            faction: "Resistance",
+            ship: "Resistance Transport Pod",
+            shipId: 44,
+            skill: 1,
+            points: 2,
+            loadout: 5,
+            ability: "",
+            ability_ENG: "",
+            slots: [
+                "Talent"            
+            ]
+        },
+        {
+            name: "Zori Bliss",
+            id: 238,
+            unique: true,
+            faction: "Resistance",
+            ship: "Y-Wing NTL-2",
+            shipId: 44,
+            skill: 5,
+            points: 8,
+            loadout: 10,
+            ability: "",
+            ability_ENG: "",
+            slots: [
+                "Talent",
+                "Talent"            
+            ]
+        },
+        {
+            name: "Aftab Ackbar",
+            id: 239,
+            unique: true,
+            faction: "Resistance",
+            ship: "Y-Wing NTL-2",
+            shipId: 44,
+            skill: 2,
+            points: 7,
+            loadout: 10,
+            ability: "",
+            ability_ENG: "",
+            slots: [
+                "Talent"            
+            ]
+        },
+        {
+            name: "Lega Fossang",
+            id: 240,
+            unique: true,
+            faction: "Resistance",
+            ship: "Y-Wing NTL-2",
+            shipId: 44,
+            skill: 3,
+            points: 7,
+            loadout: 10,
+            ability: "",
+            ability_ENG: "",
+            slots: [
+                "Talent",
+                "Talent"            
+            ]
+        },
+        {
+            name: "Tesa Nasz",
+            id: 241,
+            unique: true,
+            faction: "Resistance",
+            ship: "Y-Wing NTL-2",
+            shipId: 44,
+            skill: 4,
+            points: 7,
+            loadout: 10,
+            ability: "",
+            ability_ENG: "",
+            slots: [
+                "Talent"            
+            ]
+        },
+        {
+            name: "Kijimi Spice Runner",
+            id: 242,
+            unique: false,
+            faction: "Resistance",
+            ship: "Y-Wing NTL-2",
+            shipId: 44,
+            skill: 2,
+            points: 6,
+            loadout: 3,
+            slots: [            
+            ]
+        },
 
-
+////////////////////////////Imperial Elite Forces/////////////
+//////////////////////////////////////////////////////////////
+		{
+            name: "Vice Admiral Chiraneau",
+            id: 243,
+            unique: true,
+            faction: "Imperial_Elite_Forces",
+            ship: "VT-49 Decimator",
+            shipId: 44,
+            skill: 5,
+            points: 12,
+            loadout: 10,
+            ability: "",
+            ability_ENG: "",
+            slots: [
+                "Talent",
+                "Talent"            
+            ]
+        },
+        {
+            name: "Captain Oicunn",
+            id: 244,
+            unique: true,
+            faction: "Imperial_Elite_Forces",
+            ship: "VT-49 Decimator",
+            shipId: 44,
+            skill: ,
+            points: 11,
+            loadout: 10,
+            ability: "",
+            ability_ENG: "",
+            slots: [
+                "Talent"            
+            ]
+        },
+        {
+            name: "Morna Kee",
+            id: 245,
+            unique: true,
+            faction: "Imperial_Elite_Forces",
+            ship: "VT-49 Decimator",
+            shipId: 44,
+            skill: ,
+            points: 11,
+            loadout: 10,
+            ability: "",
+            ability_ENG: "",
+            slots: [
+                "Talent"            
+            ]
+        },
+        {
+            name: "Iden Versio",
+            id: 246,
+            unique: true,
+            faction: "Imperial_Elite_Forces",
+            ship: "Tie/ln Fighter",
+            shipId: 44,
+            skill: 4,
+            points: 5,
+            loadout: 10,
+            ability: "",
+            ability_ENG: "",
+            slots: [
+                "Talent",
+                "Talent"            
+            ]
+        },
+        {
+            name: "Gideon Hask",
+            id: 247,
+            unique: true,
+            faction: "Imperial_Elite_Forces",
+            ship: "Tie/ln Fighter",
+            shipId: 44,
+            skill: 4,
+            points: 4,
+            loadout: 10,
+            ability: "",
+            ability_ENG: "",
+            slots: [
+                "Talent",
+                "Talent"            
+            ]
+        },
+        {
+            name: "Del Meeko",
+            id: 248,
+            unique: true,
+            faction: "Imperial_Elite_Forces",
+            ship: "Tie/ln Fighter",
+            shipId: 44,
+            skill: 4,
+            points: 4,
+            loadout: 10,
+            ability: "",
+            ability_ENG: "",
+            slots: [
+                "Talent",
+                "Talent"            
+            ]
+        },
+        {
+            name: "Seyn Marana",
+            id: 249,
+            unique: true,
+            faction: "Imperial_Elite_Forces",
+            ship: "Tie/ln Fighter",
+            shipId: 44,
+            skill: 4,
+            points: 4,
+            loadout: 10,
+            ability: "",
+            ability_ENG: "",
+            slots: [
+                "Talent",
+                "Talent"            
+            ]
+        },
+        {
+            name: "Soontir Fel",
+            id: 246,
+            unique: true,
+            faction: "Imperial_Elite_Forces",
+            ship: "Tie/ln Fighter",
+            shipId: 44,
+            skill: 4,
+            points: 5,
+            loadout: 10,
+            ability: "",
+            ability_ENG: "",
+            slots: [
+                "Talent",
+                "Talent"            
+            ]
+        },		
 
 
 
