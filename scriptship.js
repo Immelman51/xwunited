@@ -6983,7 +6983,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             unique: true,
             faction: "Imperial_Elite_Forces",
             ship: "VT-49 Decimator",
-            shipId: 44,
+            shipId: 17,
             skill: 5,
             points: 12,
             loadout: 10,
@@ -7000,7 +7000,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             unique: true,
             faction: "Imperial_Elite_Forces",
             ship: "VT-49 Decimator",
-            shipId: 44,
+            shipId: 17,
             skill: ,
             points: 11,
             loadout: 10,
@@ -7016,7 +7016,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             unique: true,
             faction: "Imperial_Elite_Forces",
             ship: "VT-49 Decimator",
-            shipId: 44,
+            shipId: 17,
             skill: ,
             points: 11,
             loadout: 10,
@@ -7032,7 +7032,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             unique: true,
             faction: "Imperial_Elite_Forces",
             ship: "Tie/ln Fighter",
-            shipId: 44,
+            shipId: 4,
             skill: 4,
             points: 5,
             loadout: 10,
@@ -7049,7 +7049,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             unique: true,
             faction: "Imperial_Elite_Forces",
             ship: "Tie/ln Fighter",
-            shipId: 44,
+            shipId: 4,
             skill: 4,
             points: 4,
             loadout: 10,
@@ -7066,7 +7066,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             unique: true,
             faction: "Imperial_Elite_Forces",
             ship: "Tie/ln Fighter",
-            shipId: 44,
+            shipId: 4,
             skill: 4,
             points: 4,
             loadout: 10,
@@ -7083,7 +7083,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             unique: true,
             faction: "Imperial_Elite_Forces",
             ship: "Tie/ln Fighter",
-            shipId: 44,
+            shipId: 4,
             skill: 4,
             points: 4,
             loadout: 10,
@@ -7096,11 +7096,244 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "Soontir Fel",
-            id: 246,
+            id: 250,
             unique: true,
             faction: "Imperial_Elite_Forces",
-            ship: "Tie/ln Fighter",
-            shipId: 44,
+            ship: "TIE/in Interceptor",
+            shipId: 6,
+            skill: 6,
+            points: 9,
+            loadout: 10,
+            ability: "",
+            ability_ENG: "",
+            slots: [
+                "Talent",
+                "Talent",
+                "Talent"            
+            ]
+        },
+        {
+            name: "Ciena Ree",
+            id: 251,
+            unique: true,
+            faction: "Imperial_Elite_Forces",
+            ship: "TIE/in Interceptor",
+            shipId: 6,
+            skill: 6,
+            points: 8,
+            loadout: 10,
+            ability: "",
+            ability_ENG: "",
+            slots: [
+                "Talent",
+                "Talent",
+                "Talent"            
+            ]
+        },
+        {
+            name: "Second Sister",
+            id: 252,
+            unique: true,
+            faction: "Imperial_Elite_Forces",
+            ship: "TIE/in Interceptor",
+            shipId: 6,
+            skill: 4,
+            points: 8,
+            loadout: 10,
+            ability: "",
+            ability_ENG: "",
+            slots: [
+                "Talent",
+                "Force"            
+            ]
+        },
+        {
+            name: "Turr Phenir",
+            id: 253,
+            unique: true,
+            faction: "Imperial_Elite_Forces",
+            ship: "TIE/in Interceptor",
+            shipId: 6,
+            skill: 4,
+            points: 7,
+            loadout: 10,
+            ability: "",
+            ability_ENG: "",
+            slots: [
+                "Talent",
+                "Talent"            
+            ]
+        },
+        {
+            name: "Saber Squadron Ace",
+            id: 254,
+            unique: false,
+            faction: "Imperial_Elite_Forces",
+            ship: "TIE/in Interceptor",
+            shipId: 6,
+            skill: 4,
+            points: 6,
+            loadout: 0,
+            ability: "",
+            ability_ENG: "",
+            slots: [
+                "Talent",
+                "Talent"            
+            ]
+        },
+        {
+            name: "'Deathrain'",
+            id: 255,
+            unique: true,
+            faction: "Imperial_Elite_Forces",
+            ship: "TIE/ca Punisher",
+            shipId: 24,
+            skill: 4,
+            points: 8,
+            loadout: 10,
+            ability: "",
+            ability_ENG: "",
+            slots: [
+                "Talent"            
+            ]
+        },
+        {
+            name: "'Redline'",
+            id: 256,
+            unique: true,
+            faction: "Imperial_Elite_Forces",
+            ship: "TIE/ca Punisher",
+            shipId: 24,
+            skill: 5,
+            points: 8,
+            loadout: 10,
+            ability: "",
+            ability_ENG: "",
+            slots: [
+                "Talent"            
+            ]
+        },
+        {
+            name: "Rexler Brath",
+            id: 257,
+            unique: true,
+            faction: "Imperial_Elite_Forces",
+            ship: "TIE/d Defender",
+            shipId: 13,
+            skill: 5,
+            points: 12,
+            loadout: 10,
+            ability: "",
+            ability_ENG: "",
+            slots: [
+                "Talent",
+                "Talent"            
+            ]
+        },
+        {
+            name: "Colonel Vessery",
+            id: 258,
+            unique: true,
+            faction: "Imperial_Elite_Forces",
+            ship: "TIE/d Defender",
+            shipId: 13,
+            skill: 4,
+            points: 11,
+            loadout: 10,
+            ability: "",
+            ability_ENG: "",
+            slots: [
+                "Talent"            
+            ]
+        },		
+        {
+            name: "Countess Ryad",
+            id: 259,
+            unique: true,
+            faction: "Imperial_Elite_Forces",
+            ship: "TIE/d Defender",
+            shipId: 13,
+            skill: 4,
+            points: 11,
+            loadout: 10,
+            ability: "",
+            ability_ENG: "",
+            slots: [
+                "Talent"            
+            ]
+        },
+        {
+            name: "Captain Dobbs",
+            id: 260,
+            unique: true,
+            faction: "Imperial_Elite_Forces",
+            ship: "TIE/d Defender",
+            shipId: 13,
+            skill: 5,
+            points: 11,
+            loadout: 10,
+            ability: "",
+            ability_ENG: "",
+            slots: [
+                "Talent"            
+            ]
+        },
+        {
+            name: "Grand Inquisitor",
+            id: 261,
+            unique: true,
+            faction: "Imperial_Elite_Forces",
+            ship: "TIE Advanced v1",
+            shipId: 27,
+            skill: 5,
+            points: 7,
+            loadout: 10,
+            ability: "",
+            ability_ENG: "",
+            slots: [
+                "Talent",
+                "Force"            
+            ]
+        },
+        {
+            name: "Fifth Brother",
+            id: 262,
+            unique: true,
+            faction: "Imperial_Elite_Forces",
+            ship: "TIE Advanced v1",
+            shipId: 27,
+            skill: 4,
+            points: 6,
+            loadout: 10,
+            ability: "",
+            ability_ENG: "",
+            slots: [
+                "Force"            
+            ]
+        },
+        {
+            name: "Seventh Sister",
+            id: 263,
+            unique: true,
+            faction: "Imperial_Elite_Forces",
+            ship: "TIE Advanced v1",
+            shipId: 27,
+            skill: 4,
+            points: 6,
+            loadout: 10,
+            ability: "",
+            ability_ENG: "",
+            slots: [
+                "Force"            
+            ]
+        },
+        {
+            name: "Valen Rudor",
+            id: 264,
+            unique: true,
+            faction: "Imperial_Elite_Forces",
+            ship: "TIE Advanced v1",
+            shipId: 27,
             skill: 4,
             points: 5,
             loadout: 10,
@@ -7110,7 +7343,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Talent",
                 "Talent"            
             ]
-        },		
+        },
 
 
 
