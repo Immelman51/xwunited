@@ -6059,8 +6059,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 3,
             points: 5,
             loadout: 10,
-            ability: "",
-            ability_ENG: "",
+            ability: "Mise en Place : Après avoir placé les forces, assignez la condition 'Primed for Speed' à vous même et 2 autres vaisseaux TIE/fo ou TIE/fs alliés qui n'ont pas d'amélioration #mod# équipée.",
+            ability_ENG: "Setup: After placing forces, assign the Primed for Speed condition to yourself and up to 2 other friendly TIE/fo or TIE/sf Fighters that have no equipped #mod# upgrades.",
             slots: [
                 "Talent"            
             ]
@@ -6075,8 +6075,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 3,
             points: 5,
             loadout: 10,
-            ability: "",
-            ability_ENG: "",
+            ability: "Lorsqu'un autre vaisseau allié attaque, si vous êtes à portée 0-1 du défenseur, vous pouvez subir 1 dégat #hit# pour changer 1 des résultats de l'attaquant en #crit#.",
+            ability_ENG: "While another friendly ship performs an attack, if you are at range 0-1 of the defender, you may suffer 1 #hit# damage to change 1 of the attacker's results to a #crit# result.",
             slots: [
                 "Talent"            
             ]
@@ -6091,8 +6091,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 3,
             points: 5,
             loadout: 10,
-            ability: "",
-            ability_ENG: "",
+            ability: "Après qu'un autre vaisseau allié à portée 0-2 a été détruit, vous pouvez effectuer une action #CD#", même stressé. Lorsque vous coordonnez, le vaisseau que vous choississez peut effectuer uniquement une action qui se trouve aussi sur votre barre d'action.",
+            ability_ENG: "After another friendly ship at range 0-2 is destroyed, you may perform a #CD# action, even while stressed. While you coordinate, the ship you choose can perform an action only if that action is also on your action bar.",
             slots: [
                 "Talent"            
             ]
@@ -6107,8 +6107,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 3,
             points: 5,
             loadout: 10,
-            ability: "",
-            ability_ENG: "",
+            ability: "Au début de la phase d'engagement, vous pouvez choisir un vaisseau allié à portée 0-1. Dans ce cas, ce vaisseau retire 1 jeton stress",
+            ability_ENG: "At the start of the Engagement Phase, you may choose a friendly ship at range 0-1. If you do, that ship removes 1 stress token.",
             slots: [
                 "Talent"            
             ]
@@ -6136,8 +6136,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 4,
             points: 7,
             loadout: 10,
-            ability: "",
-            ability_ENG: "",
+            ability: "Lorsque vous défendez, après l'étape 'Neutralisez les résultats', un autre vaisseau à portée 0-1 doit subir un dégat #hit#/#crit# pour annuler un résultat correspondant",
+            ability_ENG: "While you defend, after the Neutralize Results step, another friendly ship at range 0-1 must suffer 1 #hit#/#crit# damage to cancel 1 matching result.",
             slots: [
                 "Talent"            
             ]
@@ -6152,8 +6152,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 4,
             points: 7,
             loadout: 10,
-            ability: "",
-            ability_ENG: "",
+            ability: "Lorsque vous effectuez une attaque principale #tur#, si le défenseur est dans votre #Barc#", lancez 1 dé supplémentaire.",
+            ability_ENG: "While you perform a  #tur# primary attack, if the defender is in your #Barc#, roll 1 additional die.",
             slots: [
                 "Talent"            
             ]
@@ -6167,9 +6167,11 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             shipId: 48,
             skill: 6,
             points: 8,
+            charge: 1,
+            reccurring: true,
             loadout: 10,
-            ability: "",
-            ability_ENG: "",
+            ability: "Après que vous avez perdu un boulcier, vous pouvez dépenser 1 #ch#. Dans ce cas, vous pouvez effectuer une attaque principale bonus.",
+            ability_ENG: "After you lose a shield, you may spend 1 charge. If you do, you may perform a bonus primary attack.",
             slots: [
                 "Talent",
                 "Talent",
@@ -6186,8 +6188,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 5,
             points: 7,
             loadout: 10,
-            ability: "",
-            ability_ENG: "",
+            ability: "Lorsqu'un vaisseau allié dans votre arc de tir perd son dernier bouclier, il peut vérouiller l'attaquant.",
+            ability_ENG: "When a friendly ship in your firing arc loses its last shield, it may acquire a lock against its attacker.",
             slots: [
                 "Talent"            
             ]
@@ -6215,8 +6217,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 3,
             points: 6,
             loadout: 10,
-            ability: "",
-            ability_ENG: "",
+            ability: "Après avoir entièremement effectué une manoeuvre ou effectuéune action, si vous vous êtes déplacé à travers un vaisseau ennemi, vous pouvez vérouiller le vaisseau,",",
+            ability_ENG: "After you fully execute a maneuver or perform a  action, if you moved through an enemy ship, you may acquire a lock on that ship.",
             slots: [
                 "Talent"            
             ]
