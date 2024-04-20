@@ -6170,7 +6170,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             charge: 1,
             reccurring: true,
             loadout: 10,
-            ability: "Après que vous avez perdu un boulcier, vous pouvez dépenser 1 #ch#. Dans ce cas, vous pouvez effectuer une attaque principale bonus.",
+            ability: "Après que vous avez perdu un bouclier, vous pouvez dépenser 1 #ch#. Dans ce cas, vous pouvez effectuer une attaque principale bonus.",
             ability_ENG: "After you lose a shield, you may spend 1 charge. If you do, you may perform a bonus primary attack.",
             slots: [
                 "Talent",
@@ -6217,8 +6217,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 3,
             points: 6,
             loadout: 10,
-            ability: "Après avoir entièremement effectué une manoeuvre ou effectuéune action, si vous vous êtes déplacé à travers un vaisseau ennemi, vous pouvez vérouiller le vaisseau,",",
-            ability_ENG: "After you fully execute a maneuver or perform a  action, if you moved through an enemy ship, you may acquire a lock on that ship.",
+            ability: "Après avoir entièremement effectué une manoeuvre ou effectué une action, si vous vous êtes déplacé à travers un vaisseau ennemi, vous pouvez vérouiller le vaisseau,",",
+            ability_ENG: "After you fully execute a maneuver or perform a action, if you moved through an enemy ship, you may acquire a lock on that ship.",
             slots: [
                 "Talent"            
             ]
@@ -6233,8 +6233,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 3,
             points: 6,
             loadout: 10,
-            ability: "",
-            ability_ENG: "",
+            ability: "Après avoir effectué une action #BO#, vous pouvez retirer 1 jeton rouge ou orange.",
+            ability_ENG: "After you perform a #BO# action, you may remove 1 red or orange token.",
             slots: [
                 "Talent"            
             ]
@@ -6249,8 +6249,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 3,
             points: 6,
             loadout: 10,
-            ability: "",
-            ability_ENG: "",
+            ability: "Après avoir rechargé, chaque vaisseau ennemi dans votre #Farc# à portée 1-2 reçoit un jeton épuisement, et s'ils sont dans votre #bulls#, ils gagnent 1 jeton épuisement supplémentaire.",
+            ability_ENG: "After you reload, each enemy ship in your #Farc# at range 1-2 gains 1 deplete token, and they are in your #bulls#, they gain 1 additional deplete token",
             slots: [
                 "Talent"            
             ]
@@ -6265,8 +6265,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 3,
             points: 7,
             loadout: 10,
-            ability: "",
-            ability_ENG: "",
+            ability: "Lorsqu'une bombe ou mine alliée à portée 0-2 explose, chaque fois que des dés d'attaque sont lancés pour leur effet, vous pouvez relancer 1 de ces dés.",
+            ability_ENG: "While a friendly bomb or mine at range 0-2 detonates, each time attack dice are rolled to resolve its effect, you may reroll up to 1 of those dice.",
             slots: [
                 "Talent"            
             ]
@@ -6279,10 +6279,11 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             ship: "Upsilon-Class Command Shuttle",
             shipId: 49,
             skill: 3,
+            charge 2,
             points: 9,
             loadout: 10,
-            ability: "",
-            ability_ENG: "",
+            ability: "Lorsqu'un vaisseau allié à portée 1-2 avec une initiative inférieure à la votre défend ou attaque, si vous avez au moins 1 #ch# active, ce vaisseau peut relancer 1 résultat #eye#. Après qu'un vaisseau ennemi à portée 0-3 est détruit, perdez 1 #ch#",
+            ability_ENG: "While a friendly ship at range 1-2 with lower initiative than you defends or performs an attack, if you have at least 1 active #ch#, that ship may reroll 1 #eye# result. After an enemy ship at range 0-3 is destroyed, lose 1 #ch#.",
             slots: [
                 "Talent"            
             ]
@@ -6296,9 +6297,11 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             shipId: 49,
             skill: 3,
             points: 10,
+            charge: 1,
+            recurring: true,
             loadout: 10,
-            ability: "",
-            ability_ENG: "",
+            ability: "Après avoir subi des dégats, vous pouvez dépenser 1 #ch# pour effectuer une action.",
+            ability_ENG: "After you suffer damage, you may spend 1  to perform an action.",
             slots: [
                 "Talent"            
             ]
@@ -6313,8 +6316,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 3,
             points: 9,
             loadout: 10,
-            ability: "",
-            ability_ENG: "",
+            ability: "Mise en place : Après vous être déployé, les autres petits vaisseaux peuvent être placés n'importe où dans l'aire de jeu à portée 0-2 de vous.",
+            ability_ENG: "Setup: After you are placed, other friendly small ships can be placed anywhere in the play area at range 0-2 of you.",
             slots: [
                 "Talent"            
             ]
@@ -6329,8 +6332,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 3,
             points: 9,
             loadout: 10,
-            ability: "",
-            ability_ENG: "",
+            ability: "Lorsque vous coordonnez ou résolvez l'effet de l'une de vos améliorations, vous pouvez traiter vos vaisseaux alliés à portée 2-3 comme étant à portée 0 ou 1.",
+            ability_ENG: "While you coordinate or resolve the effect of one of your upgrades, you may treat friendly ships at range 2-3 as being at range 0 or range 1.",
             slots: [
                 "Talent"            
             ]
@@ -6345,8 +6348,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 3,
             points: 4,
             loadout: 10,
-            ability: "",
-            ability_ENG: "",
+            ability: "Lorsque vous attaquez, si l'attaque est obstruée par un obstacle, le défenseur lance 2 dés de défense en moins.",
+            ability_ENG: "While you perform an attack, if the attack is obstructed by an obstacle, the defender rolls 2 fewer defense dice.",
             slots: [
                 "Talent"            
             ]
@@ -6361,8 +6364,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 3,
             points: 4,
             loadout: 10,
-            ability: "",
-            ability_ENG: "",
+            ability: "Tant que vous êtes stressé, vous pouvez considérer les vaisseaux ennemis dans votre #Farc# comme étant dans votre #bulls#",
+            ability_ENG: "While you are stressed, you may treat enemy ships in your #Farc# as being in your #bulls#.",
             slots: [
                 "Talent"            
             ]
@@ -6377,8 +6380,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 3,
             points: 4,
             loadout: 10,
-            ability: "",
-            ability_ENG: "",
+            ability: "Tant que vous êtes endommagé, considérez votre initiative étant à 6.",
+            ability_ENG: "While you are damaged, treat your initiative as 6.",
             slots: [
                 "Talent"            
             ]
@@ -6393,8 +6396,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 3,
             points: 4,
             loadout: 10,
-            ability: "",
-            ability_ENG: "",
+            ability: "Avant qu'un vaisseau ennemi dans votre #bulls# ne reçoive une carte de dégat face cachée, vous pouvez dépenser 1 #fo#. Dans ce cas, cette carte de dégat est reçue face révélée à la place.",
+            ability_ENG: "Before an enemy ship in your #bulls# is dealt a facedown damage card, you may spend 1 #fo#. If you do, that damage card is dealt face up instead.",
             slots: [
                 "Talent"            
             ]
@@ -6422,8 +6425,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 3,
             points: 10,
             loadout: 10,
-            ability: "",
-            ability_ENG: "",
+            ability: "Lorsqu'un vaisseau allié à portée 0-3 avec 1 seul point de coque attaque ou défend, il peut relancer 1 dé.",
+            ability_ENG: "When a friendly ship at range 0-3 with only 1 hull left attacks or defends, it can reroll 1 die.",
             slots: [
                 "Talent"            
             ]
@@ -6438,8 +6441,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 3,
             points: 9,
             loadout: 10,
-            ability: "",
-            ability_ENG: "",
+            ability: "Tant que vous avez 2 cartes de dégat, vous lancez 1 dé supplémentaire lorsque vous attaquez ou défendez.",
+            ability_ENG: "When you have 2 damage card, you roll 1 additional die  while you defend or attack.",
             slots: [
                 "Talent"            
             ]
@@ -6453,9 +6456,11 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             shipId: 93,
             skill: 3,
             points: 9,
+            charge: 2,
+            recurring: true,
             loadout: 10,
-            ability: "",
-            ability_ENG: "",
+            ability: "Lorsque vous subissez des dégats, vous pouvez dépenser 1 #ch# pour coordonner un vaisseau. Ce vaisseau reçoit 1 jeton stress ou contrainte.",
+            ability_ENG: "When you suffer damage, you may spend 1 #ch# to coordinate a ship. It gains 1 stress or strain token.",
             slots: [
                 "Talent"            
             ]
