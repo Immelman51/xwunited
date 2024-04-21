@@ -9460,6 +9460,7 @@ const upgrades = [
                 id: 149,
                 available: true, 
                 modify: false,
+                unique: true,
                 slot: "Crew",
                 points: 3,
                 faction: ["Phoenix_Cell"],
@@ -9472,6 +9473,7 @@ const upgrades = [
                 id: 150,
                 available: true, 
                 modify: false,
+                unique: true,
                 slot: "Astromech",
                 charge: 2,
                 points: 3,
@@ -9479,19 +9481,7 @@ const upgrades = [
                 effect: "Mise en place : Equipez cette carte face normale. Après que vous exécutez entièrement une manoeuvre, vous pouvez dépenser 1 #ch# pour effectuer une action rouge, même stressé.<br>(Erratique): Après avoir entièrement exécuté une manoeuvre, vous devez choisir un vaisseau à portée 0-1. Il gagne 1 jeton brouillage.",
                 effect_ENG: "Setup: Equip this side faceup. After you fully execute a maneuver, you may spend 1 #ch# to perform a red action, even while stressed.<br>(Erratic): After you fully execute a maneuver, you must choose a ship at range 0-1. It gains 1 jam token."
             },
-            {
-                name: "C1-10P",
-                name_eng: "C1-10P",
-                id: 150,
-                available: true, 
-                modify: false,
-                slot: "Astromech",
-                charge: 2,
-                points: 8,
-                faction: ["Phoenix_Cell","Galactic_Senate","Jedi_Order"],
-                effect: "Mise en place : Equipez cette carte face normale. Après que vous exécutez entièrement une manoeuvre, vous pouvez dépenser 1 #ch# pour effectuer une action rouge, même stressé.<br>(Erratique): Après avoir entièrement exécuté une manoeuvre, vous devez choisir un vaisseau à portée 0-1. Il gagne 1 jeton brouillage.",
-                effect_ENG: "Setup: Equip this side faceup. After you fully execute a maneuver, you may spend 1 #ch# to perform a red action, even while stressed.<br>(Erratic): After you fully execute a maneuver, you must choose a ship at range 0-1. It gains 1 jam token."
-            },
+           
     /////Fenn rau Mandalorian clans////////
     		{
                 name: "Ezra Bridger",
@@ -9499,6 +9489,7 @@ const upgrades = [
                 id: 151,
                 available: true, 
                 modify: false,
+                unique: true,
                 slot: "Gunner",
                 force: 1,
                 points: 10,
@@ -9512,6 +9503,7 @@ const upgrades = [
                 id: 152,
                 available: true, 
                 modify: false,
+                unique: true,
                 slot: "Crew",
                 force: 1,
                 points: 10,
@@ -9519,6 +9511,207 @@ const upgrades = [
                 effect: "Après qu'un vaisseau allié à portée 0-2 exécute entièrement une manoeuvre blanche, vous pouvez dépenser 1 #fo# pour retirer 1 jeton stress de ce vaisseau.",
                 effect_ENG: "After a friendly ship at range 0-2 fully executes a white maneuver, you may spend 1 #fo# to remove 1 stress token from that ship."
             },
+            {
+                name: "Hera Syndulla",
+                name_eng: "Hera Syndulla",
+                id: 153,
+                available: true, 
+                unique: true,
+                modify: false,
+                slot: "Crew",
+                points: 4,
+                faction: ["Phoenix_Cell","New_Republic"],
+                effect: "Vous pouvez exécuter des manoeuvres rouges même stressé. Après avoir entièrement exécuté une manoeuvre rouge, si vous avez 3 jetons stress ou plus, retirez 1 jeton stress et subissez 1 dégat.",
+                effect_ENG: "You can execute red maneuvers even while stressed. After you fully execute a red maneuver, if you have 3 or more stress tokens, remove 1 stress token and suffer 1 damage."
+            },
+            {
+                name: "Zeb Orellios",
+                name_eng: "Zeb Orellios",
+                id: 154,
+                available: true, 
+                unique: true,
+                modify: false,
+                slot: "Crew",
+                points: 1,
+                faction: ["Phoenix_Cell"],
+                effect: "Vous pouvez attaquer à portée 0. Les vaisseaux ennemis peuvent effectuer des attaques #Farc# à portée 0 contre vous.",
+                effect_ENG: "You may perform attacks at range 0. Enemy ships may perform #Farc# attacks at range 0 against you."
+            },
+            {
+                name: "Sabine Wren",
+                name_eng: "Sabine Wren",
+                id: 155,
+                unique: true,
+                available: true, 
+                modify: false,
+                slot: "Gunner",
+                points: 5,
+                faction: ["Phoenix_Cell","New_Republic"],
+                effect: "Lorsque vous effectuez une attaque #tur#, si l'attaque touche, chaque vaisseau allié à portée 0-2 du défenseur retire 1 jeton rouge.",
+                effect_ENG: "When you perform a #tur# attack, if the attack hits, each ally ships at range 0-2 of the defender loses 1 red Token."
+            },
+/////////////////////////CIS////////////////////////////
+//////////////////////////////////////////////////////
+            {
+                name: "Imprévisible",
+                name_eng: "Sneaky",
+                id: 156,
+                available: true, 
+                modify: false,
+                slot: "Talent",
+                points: ?,
+                faction: ["C.I.S"],
+                effect: "",
+                effect_ENG: ""
+            },
+            {
+                name: "Nute Gunray",
+                name_eng: "Nute Gunray",
+                id: 157,
+                available: true, 
+                modify: false,
+                unique: true,
+                slot: "Crew",
+                points: ?,
+                faction: ["C.I.S"],
+                effect: "",
+                effect_ENG: ""
+            },
+            {
+                name: "Poggle le Bref",
+                name_eng: "Poggle the Lesser",
+                id: 158,
+                available: true, 
+                modify: false,
+                unique: true,
+                slot: "Crew",
+                points: ?,
+                faction: ["Agents_of_Chaos"],
+                effect: "",
+                effect_ENG: ""
+            },
+            {
+                name: "Missile Discorde",
+                name_eng: "Discord Missile",
+                id: 159,
+                max_per_squad: 3,
+                available: true, 
+                modify: false,
+                slot: "Missile",
+                points: 3,
+                faction: ["C.I.S","Agents_of_Chaos"],
+                effect: "",
+                effect_ENG: ""
+            },
+            {
+                name: "Droïde Sonde DRK1",
+                name_eng: "DRK1 Probe Droid",
+                id: 160,
+                available: true, 
+                modify: false,
+                slot: "Missile",
+                points: 2,
+                faction: ["C.I.S","Agents_of_Chaos"],
+                effect: "",
+                effect_ENG: ""
+            },
+            {
+                name: "Cellule Energétique",
+                name_eng: "Energy Cell Charge",
+                id: 161,
+                available: true, 
+                modify: false,
+                slot: "Missile",
+                points: 4,
+                faction: ["C.I.S"],
+                effect: "",
+                effect_ENG: ""
+            },
+            {
+                name: "Calculs Indépendants",
+                name_eng: "Independant Calculation",
+                id: 162,
+                available: true, 
+                modify: false,
+                slot: "Modification",
+                points: 2,
+                faction: ["C.I.S"],
+                effect: "",
+                effect_ENG: ""
+            },
+            {
+                name: "Kalani",
+                name_eng: "Kalani",
+                id: 163,
+                available: true, 
+                modify: true,
+                slot: "Crew",
+                points: 5,
+                faction: ["C.I.S"],
+                effect: "",
+                effect_ENG: "",
+                modifier_func: [
+                [also_Occupies("Calculator")]
+                ]
+            },
+            {
+                name: "Kraken",
+                name_eng: "Kraken",
+                id: 164,
+                available: true, 
+                modify: true,
+                slot: "Crew",
+                points: 10,
+                faction: ["C.I.S"],
+                effect: "",
+                effect_ENG: "",
+                modifier_func: [
+                [also_Occupies("Calculator")]
+                ]
+            },
+            {
+                name: "AUT-0",
+                name_eng: "AUT-0",
+                id: 165,
+                available: true, 
+                modify: true,
+                slot: "Crew",
+                points: 5,
+                faction: ["C.I.S"],
+                effect: "",
+                effect_ENG: "",
+                modifier_func: [
+                [also_Occupies("Calculator")]
+                ]
+            },
+            {
+                name: "Linwodo",
+                name_eng: "Linwodo",
+                id: 166,
+                available: true, 
+                modify: true,
+                slot: "Crew",
+                points: 5,
+                faction: ["C.I.S"],
+                effect: "",
+                effect_ENG: "",
+                modifier_func: [
+                [also_Occupies("Calculator")]
+                ]
+            },
+            {
+                name: "Wat Tambor",
+                name_eng: "Wat Tambor",
+                id: 167,
+                available: true, 
+                modify: false,
+                slot: "Crew",
+                points: 5,
+                faction: ["C.I.S"],
+                effect: "",
+                effect_ENG: "",
+            },
+
     ]   
     
     
