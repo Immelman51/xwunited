@@ -8930,7 +8930,8 @@ const upgrades = [
                 points: 5,
                 slot: "Crew",
                 unique: true,
-                effect: "", 
+                effect: "Avant qu'un vaisseau allié à portée 0-2 ne s'engage, si sa maneouvre révélée est au moins de vitesse 1 et qu'il y a un vaisseau ennemi dans son #Farc# à portée 1, ce vaisseau allié peut retirer 1 jeton rouge non acquisition.",
+                effect_ENG: "Before a friendly ship at range 0-2 engages, if its revealed maneuver is 1 speed or higher and there is an enemy ship in its (Farc) at range 1, that friendly ship may remove 1 non-lock red token.", 
                 faction: ["Mandalorian_Clans","Phoenix_Cell"]
             },
     {
@@ -9438,9 +9439,86 @@ const upgrades = [
                 points: 4,
                 faction: "",
                 effect: "Pendant la phase de système, si vous êtes censé larguer ou lancer une bombe, vous pouvez la lancer en utilisant le gabarit 5#straight# à la place."
-            }
-
-    
+            },
+//////////////////Phoenix Cell/////////////////////////
+////////////////////////////////////////////////
+			{
+                name: "Courageux",
+                name_eng: "Brave",
+                id: 148,
+                available: true, 
+                modify: false,
+                slot: "Talent",
+                points: 2,
+                faction: ["Phoenix_Cell"],
+                effect: "Quand vous défendez à portée, vous pouvez relancer un dé de défense, ou vous pouvez retourner la carte pour relancer plus de dés de défense.",
+                effect_ENG: "While defending at range 1, you can reroll a defense die, or you can flip the card to reroll more defense dice."
+            },
+            {
+                name: "Chopper",
+                name_eng: "Chopper",
+                id: 149,
+                available: true, 
+                modify: false,
+                slot: "Crew",
+                points: 3,
+                faction: ["Phoenix_Cell"],
+                effect: "Action : Vous pouvez utiliser 1 #ch# pour récupérer un bouclier.<br>Action : Dépenser un bouclier pour récupérer 1 #ch#.",
+                effect_ENG: "Action : You can use a charge to recover a shield.<br>Action : Spend a Shield to recover a charge."
+            },
+   			{
+                name: "C1-10P",
+                name_eng: "C1-10P",
+                id: 150,
+                available: true, 
+                modify: false,
+                slot: "Astromech",
+                charge: 2,
+                points: 3,
+                faction: ["Phoenix_Cell","Galactic_Senate","Jedi_Order"],
+                effect: "Mise en place : Equipez cette carte face normale. Après que vous exécutez entièrement une manoeuvre, vous pouvez dépenser 1 #ch# pour effectuer une action rouge, même stressé.<br>(Erratique): Après avoir entièrement exécuté une manoeuvre, vous devez choisir un vaisseau à portée 0-1. Il gagne 1 jeton brouillage.",
+                effect_ENG: "Setup: Equip this side faceup. After you fully execute a maneuver, you may spend 1 #ch# to perform a red action, even while stressed.<br>(Erratic): After you fully execute a maneuver, you must choose a ship at range 0-1. It gains 1 jam token."
+            },
+            {
+                name: "C1-10P",
+                name_eng: "C1-10P",
+                id: 150,
+                available: true, 
+                modify: false,
+                slot: "Astromech",
+                charge: 2,
+                points: 8,
+                faction: ["Phoenix_Cell","Galactic_Senate","Jedi_Order"],
+                effect: "Mise en place : Equipez cette carte face normale. Après que vous exécutez entièrement une manoeuvre, vous pouvez dépenser 1 #ch# pour effectuer une action rouge, même stressé.<br>(Erratique): Après avoir entièrement exécuté une manoeuvre, vous devez choisir un vaisseau à portée 0-1. Il gagne 1 jeton brouillage.",
+                effect_ENG: "Setup: Equip this side faceup. After you fully execute a maneuver, you may spend 1 #ch# to perform a red action, even while stressed.<br>(Erratic): After you fully execute a maneuver, you must choose a ship at range 0-1. It gains 1 jam token."
+            },
+    /////Fenn rau Mandalorian clans////////
+    		{
+                name: "Ezra Bridger",
+                name_eng: "Ezra Bridger",
+                id: 151,
+                available: true, 
+                modify: false,
+                slot: "Gunner",
+                force: 1,
+                points: 10,
+                faction: ["Phoenix_Cell"],
+                effect: "Après avoir attaqué, vous pouvez dépenser 1 #fo#. Dans ce cas, vous pouvez effectuer une attaque bonus PRECISE de tourelle.",
+                effect_ENG: "After you perform an attack, you can spend 1 Force. If you do, you can perform a SHARPENED bonus Turret attack." 
+            },
+            {
+                name: "Kanan Jarrus",
+                name_eng: "Kanan Jarrus",
+                id: 152,
+                available: true, 
+                modify: false,
+                slot: "Crew",
+                force: 1,
+                points: 10,
+                faction: ["Phoenix_Cell"],
+                effect: "Après qu'un vaisseau allié à portée 0-2 exécute entièrement une manoeuvre blanche, vous pouvez dépenser 1 #fo# pour retirer 1 jeton stress de ce vaisseau.",
+                effect_ENG: "After a friendly ship at range 0-2 fully executes a white maneuver, you may spend 1 #fo# to remove 1 stress token from that ship."
+            },
     ]   
     
     
