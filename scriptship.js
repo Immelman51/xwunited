@@ -6489,10 +6489,12 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             shipId: 44,
             skill: 6,
             points: 9,
+            charge: 1,
+            recurring: true,
             loadout: 15,
             title: "Black One",
-            ability: "",
-            ability_ENG: "",
+            ability: "Après avoir effectué une action, vous pouve dépenser 1 #ch# pour effectuer une action blanche, en la considérant comme rouge.",
+            ability_ENG: "After you perform an action, you may spend 1 charge to perform a white action, treating it as red.",
             slots: [
                 "Talent",
                 "Talent",
@@ -6510,8 +6512,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 4,
             points: 7,
             loadout: 10,
-            ability: "",
-            ability_ENG: "",
+            ability: "Après avoir exécuté entièrement une manoeuvre de vitesse 2-4, vous pouvez effectuer une action #BO#.",
+            ability_ENG: "After you fully execute a speed 2-4 maneuver, you may perform a #BO# action.",
             slots: [
                 "Talent",
                 "Talent",            
@@ -6526,9 +6528,11 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             shipId: 44,
             skill: 3,
             points: 7,
+            charge: 1,
+            recurring: true,
             loadout: 10,
-            ability: "",
-            ability_ENG: "",
+            ability: "Lorsque vous défendez ou attaquez, vous pouvez depenser 1 #ch# pour relancer jusqu'à 1 de vos dés pour chaque autre vaisseau allié à portée 0-1.",
+            ability_ENG: "While you defend or perform an attack, you may spend 1 charge to reroll up to 1 of your dice for each other friendly ship at range 0-1.",
             slots: [
                 "Talent"            
             ]
@@ -6543,8 +6547,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 5,
             points: 8,
             loadout: 10,
-            ability: "",
-            ability_ENG: "",
+            ability: "Après avoir révélé une manoeuvre rouge #Ltal# ou #Rtal#, si vous avez 2 jetons stress ou moins, considérez cette manoeuvre comme blanche.",
+            ability_ENG: "After you reveal a red #Ltal# or #Rtal# maneuver, if you have 2 or fewer stress tokens, treat that maneuver as white.",
             slots: [
                 "Talent",
                 "Talent",            
@@ -6559,33 +6563,18 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             shipId: 44,
             skill: 5,
             points: 9,
+            charge: 2,
             loadout: 10,
-            ability: "",
-            ability_ENG: "",
+            ability: "Après avoir largué ou lancé un engin, vous pouvez dépensez 1 #ch# pour larguer ou lancer un engin supplémentaire",
+            ability_ENG: "After you drop or launch a device, you may spend 1 charge to drop or launch an additional device.",
             slots: [
                 "Talent",
                 "Talent",            
             ]
         },
         {
-            name: "Finch Dallow",
-            id: 219,
-            unique: true,
-            faction: "Resistance",
-            ship: "Starfortress MG100",
-            shipId: 44,
-            skill: 4,
-            points: 9,
-            loadout: 10,
-            ability: "",
-            ability_ENG: "",
-            slots: [
-                "Talent"            
-            ]
-        },
-        {
             name: "Ben Teene",
-            id: 220,
+            id: 219,
             unique: true,
             faction: "Resistance",
             ship: "Starfortress MG100",
@@ -6593,8 +6582,24 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 3,
             points: 9,
             loadout: 10,
-            ability: "",
-            ability_ENG: "",
+            ability: "Après avoir attaqué, si le défenseur est dans votre #tur#, assignez la condition 'Rattled' au défenseur.",
+            ability_ENG: "After you perform an attack, if the defender is in your #tur# , assign the 'Rattled' condition to the defender.",
+            slots: [
+                "Talent"            
+            ]
+        },
+        {
+            name: "Finch Dallow",
+            id: 220,
+            unique: true,
+            faction: "Resistance",
+            ship: "Starfortress MG100",
+            shipId: 44,
+            skill: 4,
+            points: 9,
+            loadout: 10,
+            ability: "Avant que vous ne larguiez une bombe, vous pouvez la placer sur l'aire de jeu touchant votre socle à la place",
+            ability_ENG: "Before you would drop a bomb, you may place it in the play area touching you instead.",
             slots: [
                 "Talent"            
             ]
@@ -6609,8 +6614,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 3,
             points: 9,
             loadout: 10,
-            ability: "",
-            ability_ENG: "",
+            ability: "Après avoir entièrement effectué une manoeuvre bleu ou blanche, si vous n'avez pas largué ou lancé d'engin ce tour, vous pouvez larguer un engin",
+            ability_ENG: "After you fully execute a blue or white maneuver, if you have not dropped or launched a device this round, you may drop 1 device.",
             slots: [
                 "Talent"            
             ]
@@ -6625,8 +6630,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 5,
             points: 7,
             loadout: 10,
-            ability: "",
-            ability_ENG: "",
+            ability: "Lorsque vous défendez ou effectuez une attaque principale, si vous êtes stressé, vous DEVEZ lancer 1 dé de défense en moins ou 1 dé d'attaque en plus.",
+            ability_ENG: "While you defend or perform a primary attack, if you are stressed, you must roll 1 fewer defense die or 1 additional attack die.",
             slots: [
                 "Talent",
                 "Talent",
@@ -6641,10 +6646,12 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             ship: "RZ-2 A-Wing",
             shipId: 44,
             skill: 5,
+            charge: 1,
+            recurring: true,
             points: 6,
             loadout: 10,
-            ability: "",
-            ability_ENG: "",
+            ability: "Lorsqu'un vaisseau ennemi dans votre #bulls# attaque, vous pouvez dépenser 1 #ch#. Dans ce cas, le défenseur lance 1 dé de défense supplémentaire",
+            ability_ENG: "While an enemy ship in your #bulls# performs an attack, you may spend 1 charge. If you do, the defender rolls 1 additional die.",
             slots: [
                 "Talent",
                 "Talent",            
@@ -6659,9 +6666,11 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             shipId: 44,
             skill: 5,
             points: 7,
+            charge: 1,
+            recurring: true,
             loadout: 10,
-            ability: "",
-            ability_ENG: "",
+            ability: "Après avoir défendu ou attaqué, vous pouvez dépenser 1 #ch# pour gagner un jeton concentration ou évasion.",
+            ability_ENG: "After you defend or perform an attack, you may spend 1 #ch# to gain 1 focus or evade token.",
             slots: [
                 "Talent",
                 "Talent"            
@@ -6677,8 +6686,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 5,
             points: 6,
             loadout: 10,
-            ability: "",
-            ability_ENG: "",
+            ability: "Après avoir effectué une action #BO#, vous pouvez transférer 1 de vos jetons à un autre vaisseau allié à portée 1.",
+            ability_ENG: "After you perform a #BO# action, you may transfer 1 token to a friendly ship at range 1.",
             slots: [
                 "Talent",
                 "Talent"            
@@ -6695,8 +6704,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             points: 9,
             loadout: 15,
             title: "Millenium Falcon",
-            ability: "",
-            ability_ENG: "",
+            ability: "Mise en place : Vous pouvez vous placer n'importe où sur l'aire de jeu, au delà de la portée 3 des vaisseaux ennemis.",
+            ability_ENG: "Setup: You can be placed anywhere in the play area beyond range 3 of enemy ships.",
             slots: [
                 "Talent",
                 "Talent",
@@ -6718,8 +6727,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             points: 10,
             loadout: 15,
             title: "Millenium Falcon",
-            ability: "",
-            ability_ENG: "",
+            ability: "Lorsque vous défendez ou attaquez, si le vaisseau ennemi est dans votre #Farc#, vous pouvez dépenser 1 #fo# pour modifier l'un de vos résultats vierge en #evd# ou #hit#.",
+            ability_ENG: "While you defend or perform an attack, if the enemy ship is in your #Farc# , you may spend 1 force to change 1 of your blank results to an #evd# or #hit# result.",
             slots: [
                 "Talent",
                 "Force",
@@ -6739,8 +6748,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 4,
             points: 8,
             loadout: 15,
-            ability: "",
-            ability_ENG: "",
+            ability: "Après qu'un vaisseau allié à portée 0-3 est détruit, avant que le vaisseau ne soit retiré, vous pouvez effectuer une action. Puis, vous pouvez effectuer une attaque bonus.",
+            ability_ENG: "After a friendly ship at range 0-3 is destroyed, before that ship is removed, you may perform an action. Then you may perform a bonus attack.",
         	title: "Millenium Falcon",
             slots: [
                 "Talent",
@@ -6760,8 +6769,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 5,
             points: 10,
             loadout: 15,
-            ability: "",
-            ability_ENG: "",
+            ability: "Après avoir exécuté entièrement une manoeuvre rouge ou effectué une action rouge, vous pouvez dépenser n'importe quel nombre de #ch# pour choisir autant de vaisseaux alliés à portée 0-2. Ces vaisseaux peuvent effectuer une action, même stressés.",
+            ability_ENG: "After you fully execute a red maneuver or perform a red action, you may spend any number of Charge to choose that many friendly ships at range 0-2. The chosen ships may perform an action, even while stressed. ",
             title: "Millenium Falcon",
             slots: [
                 "Talent",
@@ -6782,8 +6791,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 4,
             points: 7,
             loadout: 10,
-            ability: "",
-            ability_ENG: "",
+            ability: "Lorsque vous défendez ou effectuez une attaque principale, si votre manoeuvre révélée est rouge, lancez 1 dé supplémentaire.",
+            ability_ENG: "While you defend or perform a primary attack, if your revealed maneuver is red, roll 1 additional die.",
             slots: [
                 "Talent",
                 "Talent",            
@@ -6799,8 +6808,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 2,
             points: 6,
             loadout: 10,
-            ability: "",
-            ability_ENG: "",
+            ability: "Après avoir coordonné ou avoir été coordonné, si vous avez 2 jeteons stress ou moins, vous pouvez effectuer 1 action de votre barre d'action en la considérant comme rouge, même stressé.",
+            ability_ENG: "After you coordinate or are coordinated, if you have 2 or fewer stress tokens, you may perform 1 action on your action bar as a red action, even if you are stressed.",
             slots: [
                 "Talent"            
             ]
@@ -6815,8 +6824,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 3,
             points: 5,
             loadout: 10,
-            ability: "",
-            ability_ENG: "",
+            ability: "Lorsque vous avez 2 jetons stress ou moins, vous pouvez effectuer des manoeuvre rouges même stressé.",
+            ability_ENG: "While you have 2 or fewer stress tokens, you may execute red maneuvers even while stressed.",
             slots: [
                 "Talent"            
             ]
@@ -6831,8 +6840,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 2,
             points: 6,
             loadout: 10,
-            ability: "",
-            ability_ENG: "",
+            ability: "Après avoir brouillé, vous devez assigner 1 jeton brouillage à un autre vaisseau à portée 0-1 du vaisseau brouillé, si possible.",
+            ability_ENG: "After you jam, you must assign 1 jam token to another ship at range 0-1 of the jammed ship, if able.",
             slots: [
                 "Talent"            
             ]
@@ -6847,8 +6856,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 3,
             points: 3,
             loadout: 5,
-            ability: "",
-            ability_ENG: "",
+            ability: "Lorsque vous défendez ou attaquez, vous pouvez ajouter un résultat vierge, ou vous pouvez gagner 1 jeton contrainte pour ajouter un résultat #eye# à la place.",
+            ability_ENG: "While you defend or perform an attack, you may add 1 blank result, or you may gain 1 strain token to add 1 #eye# result instead.",
             slots: [
                 "Talent",
                 "Talent",            
@@ -6864,8 +6873,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 3,
             points: 3,
             loadout: 5,
-            ability: "",
-            ability_ENG: "",
+            ability: "Lorsque vous défendez ou attaquez, vous pouvez relancer jusqu'à 1 de vos résultats pour chaque autre vaisseau allié dans l'arc de tir",
+            ability_ENG: "While you defend or perform an attack, you may reroll up to 1 of your results for each other friendly ship in the attack arc.",
             slots: [
                 "Talent",
                 "Talent",            
@@ -6881,8 +6890,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 1,
             points: 2,
             loadout: 5,
-            ability: "",
-            ability_ENG: "",
+            ability: "Pendant la phase système, vous pouvez effectuer une action rouge #BR# ou #BO#.",
+            ability_ENG: "During the System Phase, you may perform a red #BR# or #BO# action.",
             slots: [
             ]
         },
@@ -6896,8 +6905,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 1,
             points: 2,
             loadout: 5,
-            ability: "",
-            ability_ENG: "",
+            ability: "Mise en place : Après avoir placé les forces, assignez la condition 'Information Compromettante' à un vaisseau ennemi.",
+            ability_ENG: "Setup: After placing forces, assign the Compromising Intel condition to 1 enemy ship.",
             slots: [
                 "Talent"            
             ]
@@ -6911,9 +6920,11 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             shipId: 44,
             skill: 5,
             points: 8,
+            charge: 1,
+            recurring : true,
             loadout: 10,
-            ability: "",
-            ability_ENG: "",
+            ability: "Après qu'un vaisseau à portée 1 effectue une action pendant son étape 'Effectuer une action', si cette action est aussi sur votre barre d'action, vous pouvez dépenser 1 #ch# pour effectuer cette action, en la considérant comme rouge.",
+            ability_ENG: "After a ship at range 1 performs an action during its Perform Action step, if that action is on your action bar, you may spend 1 charge to perform that action, treating it as red.",
             slots: [
                 "Talent",
                 "Talent"            
@@ -6929,8 +6940,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 2,
             points: 7,
             loadout: 10,
-            ability: "",
-            ability_ENG: "",
+            ability: "Après avoir executé une manoeuvre basique rouge ou effectué une action rouge, si vous avez exactement 1 jeton stress, vous pouvez gagner 1 jeton contrainte pour retirer ce jeton stress.",
+            ability_ENG: "After you execute a red basic maneuver or perform a red action, if you have exactly 1 stress token, you may gain 1 strain token to remove that stress token.",
             slots: [
                 "Talent"            
             ]
@@ -6945,8 +6956,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 3,
             points: 7,
             loadout: 10,
-            ability: "",
-            ability_ENG: "",
+            ability: "Après avoir effectué une attaque principale ou une attaque #tur#, vous pouvez relancer 1 dé d'attaque pour chaque engin allié ou vaisseau allié calculateur dans l'arc d'attaque.",
+            ability_ENG: "While you perform a primary or  (tur) attack, you may reroll 1 attack die for each friendly device or calculating friendly ship in the attack arc.",
             slots: [
                 "Talent",
                 "Talent"            
@@ -6954,7 +6965,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "Tesa Nasz",
-            id: 241,
+            id: 241,.
             unique: true,
             faction: "Resistance",
             ship: "Y-Wing NTL-2",
@@ -6962,14 +6973,15 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 4,
             points: 7,
             loadout: 10,
-            ability: "",
-            ability_ENG: "",
+            ability: "Lorsqu'un vaisseau allié à portée 0-2 attaque, si le défenseur a un vaisseau allié (à vous) dans son #Larc# ET son #Rarc#, l'attaquant peut relancer 1 dé d'attaque.",
+            ability_ENG: "While a friendly ship at range 0-2 performs an attack, if the defender has a ship friendly to the attacker in its #Larc# AND #Rarc#, the attacker may reroll 1 attack die.",
             slots: [
                 "Talent"            
             ]
         },
         {
-            name: "Kijimi Spice Runner",
+            name: "Trafiquant d'Epice Kimiji",
+            name_ENG: "Kimiji Spice Runner",
             id: 242,
             unique: false,
             faction: "Resistance",
