@@ -23,71 +23,87 @@ let restrict = false;
 const chassis = [
     {
         name: "Docking Ship",
+        id: 0,
         effect1: "<em><strong>Vaisseau-Mère :</strong></em> MISE EN PLACE: vous <mark>DEVEZ</mark> avoir un vaisseau arrimé avec vous avec la capacité <em>Co-Pilot</em>. Considérez les boucliers de votre vaisseau arrimé comme les vôtres.",
     },
     {
         name: "Copilot",
+        id: 1,
         effect1: "<em><strong>Copilote :</strong></em> Tant que vous êtes arrimé, votre Vaisseau-Mère considère aussi votre capacité de pilote comme étant le sien."
     },
     {
         name: "Sensor Blindspot",
+        id: 2,
         effect1: "<em><strong>Angle-Mort des Senseurs :</strong></em> Tant que vous effectuez une attaque principale à portée 0-1, lancez 1 dé d'attaque en moins. Tant que vous défendez à portée 1, lancez 1 dé de défense en moins"
 
     },
     {
         name: "Servomotor S-Foils",
+        id: 3,
         effect1: "<em><strong>Servomoteurs S-Foils :</strong></em> Avant de vous activez, vous pouvez retourner cette carte",
         effect2: ""
     },
     {
         name: "",
+        id: 4,
         effect1: "<em><strong>Aile Pivot (Baissée):</strong></em> ",
         effect2: "<em><strong>Aile Pivot (Relevée):</strong></em> "
     },
     {
         name: "Vectored Thrusters",
+        id: 5,
         effect1: "<em><strong>Propulseurs Vectorisés :</strong></em> "
     },
     {
         name: "Stabilized S-Foils",
+        id: 6,
         effect1: "<em><strong>S-Foils Stabilisés :</strong></em> ",
         effect2: "<em><strong>S-Foils Stabilisés :</strong></em> "
     },
     {
         name: "Advanced Targetting Computer",
+        id: 7,
         effect1: "<em><strong>Ordinateur de Visée Avancé:</strong></em> Tant que vous effectuez une attaque principale contre un défenseur que vous avez vérouillé, lancez 1 dé d'attaque supplémentaire et changez 1 résultat #hit# en un résultat #crit#"
     },
     {
         name: "Nimble Bomber",
+        id: 8,
         effect1: "<em><strong>Bombardier Agile :</strong></em> Si vous devez utiliser un gabarit #straight# pour larguer un engin, vous pouvez utiliser un gabarit #Lbank# ou #Rbank# de même vitesse à la place."
     },
     {
        name: "Swivel Wing",
-       effect1: "<em><strong>Aile Basculante (Baissée):</strong></em> Après avoir executé une manoeuvre [0#stop#], vous pouvez pivoter votre vaisseau de 90° ou 180°. Dans ce cas vous <strong>devez</strong> retourner cette carte.",
+    id: 9,   
+    effect1: "<em><strong>Aile Basculante (Baissée):</strong></em> Après avoir executé une manoeuvre [0#stop#], vous pouvez pivoter votre vaisseau de 90° ou 180°. Dans ce cas vous <strong>devez</strong> retourner cette carte.",
        effect2: "<em><strong>Aile Basculante (Relevée):</strong></em> Tant que vous défendez, lancez 1 dé de défense en moins. Après avoir entièrement executé une manoeuvre non-stationnaire [0#stop#], vous pouvez retourner cette carte." 
     },
     {
         name: "Autothrusters",
+        id: 10,
         effect1: "<em><strong>Autopropulseurs :</strong></em> Après avoir effectué une action, vous pouvez effectuer une action #BR# rouge ou #BO# rouge."
     },
     {
         name: "Full Throttle",
+        id: 11,
         effect1: "<em><strong>Plein Gaz :</strong></em> Après avoir entièrement executé une manoeuvre à vitesse 3-5, vous pouvez gagner un jeton évasion."
     },
     {
         name: "Controlled Ailerons",
+        id 12,
         effect1: "<em><strong>Ailerons Contrôlables :</strong></em> Avant de révéler votre cadran, si vous n'êtes pas stressé, vous pouvez accélérer."
     },
     {
         name: "Rotating Cannons",
+        id: 13,
         effect1: "<em><strong>Canons Rotatifs :</strong></em> Vous pouvez pivoter votre indicateur #tur# uniquement, vers votre #Farc# ou #Barc#. Vous <strong>devez</strong> considérer le prérequis #Farc# de cos améliorations #can# équipées comme étant #tur#."
     },
     {
         name: "Adaptative Ailerons",
+        id: 14,
         effect1: "<em><strong>Ailerons Adaptables :</strong></em> Avant de révéler votre cadran, si vous n'êtes pas stressé, vous <strong>devez</strong> accélérer."
     },
     {
         name: "Rigged Energy Cells",
+        id: 15,
         effect1: "<em><strong>Cellules Énergétiques Bidouillées :</strong></em> Pendant la phase de système, si vous n’êtes pas arrimé, perdez 1 #ch# . À la fin de la phase d’activation, vous êtes détruit si vous avez 0 #ch#. Avant de retirer votre figurine, chaque vaisseau à porté 0–1 subit 1 dégât #crit#"
     },
 
@@ -193,6 +209,7 @@ const ships =
             hull: 8,
             shields: 5,
             chassis: ["Docking Ship"],
+            chassisid: 0,
             actions: [
                 "Focus",
                 "Lock",
@@ -6997,7 +7014,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
 ////////////////////////////Imperial Elite Forces/////////////
 //////////////////////////////////////////////////////////////
 		{
-            name: "Vice Admiral Chiraneau",
+            name: "Rear Admiral Chiraneau",
             id: 243,
             unique: true,
             faction: "Imperial_Elite_Forces",
@@ -7006,8 +7023,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 5,
             points: 12,
             loadout: 10,
-            ability: "",
-            ability_ENG: "",
+            ability: "Lorsque vous attaquez, si vous êtes renforcés et que le défenseur est dans le #F180# ou #B180# correspondant à votre jeton renforcefment, vous pouvez changez un de vos résultats #eye# en résultat #crit#.",
+            ability_ENG: "While you perform an attack, if you are reinforced and the defender is in the #F180# or #B180# matching your reinforce token, you may change 1 of your #eye# results to a #crit# result.",
             slots: [
                 "Talent",
                 "Talent"            
@@ -7023,8 +7040,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: ,
             points: 11,
             loadout: 10,
-            ability: "",
-            ability_ENG: "",
+            ability: "Vous pouvez attaquer à portée 0. Considérez vos attaques à portée 0 comme des attaques à portée 1."",
+            ability_ENG: "You may attack at range 0. While you perform an attack at attack range 0, treat it as an attack at attack range 1.",
             slots: [
                 "Talent"            
             ]
@@ -7037,10 +7054,12 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             ship: "VT-49 Decimator",
             shipId: 17,
             skill: ,
+            charge: 1,
+            recurring: true,
             points: 11,
             loadout: 10,
-            ability: "",
-            ability_ENG: "",
+            ability: "Pendant la phase de fin, vous pouvez retourner votre jeton renforcement de l'autre côté. Lorsque vous recevez un jeton épuisement, vous pouvez dépenser 1 #ch# pour le retirer.",
+            ability_ENG: "During the End Phase, you may flip your reinforce token to the other full arc. When you receive a deplete token, you may spend 1 charge to remove it.",
             slots: [
                 "Talent"            
             ]
@@ -7053,10 +7072,12 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             ship: "Tie/ln Fighter",
             shipId: 4,
             skill: 4,
+            charge: 2,
+            recurring: true,
             points: 5,
             loadout: 10,
-            ability: "",
-            ability_ENG: "",
+            ability: "Lorsqu'un TIE allié à portée 0-1 devrait subir des dégats, vous pouvez dépenser 2 #ch#. Dans ce cas, prévenez 1 dégat.",
+            ability_ENG: "Before a friendly TIE at range 0-1 would suffer damage, you may spend 2 #ch#. If you do, prevent 1 damage",
             slots: [
                 "Talent",
                 "Talent"            
@@ -7072,8 +7093,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 4,
             points: 4,
             loadout: 10,
-            ability: "",
-            ability_ENG: "",
+            ability: "Lorsque vous attaquez un vaisseau endommagé, lancez 1 dé d'attaque supplémentaire.",
+            ability_ENG: "While you perform an attack against a damaged defender, roll 1 additional attack die.",
             slots: [
                 "Talent",
                 "Talent"            
@@ -7089,8 +7110,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 4,
             points: 4,
             loadout: 10,
-            ability: "",
-            ability_ENG: "",
+            ability: "Lorsqu'un vaissdeau allié à portée 0-2 défend contre un vaisseau endommagé, le défenseur peut relancer 1 dé de défense.",
+            ability_ENG: "While a friendly ship at range 0-2 defends against a damaged attacker, the defender may reroll 1 defense die.",
             slots: [
                 "Talent",
                 "Talent"            
@@ -7106,8 +7127,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 4,
             points: 4,
             loadout: 10,
-            ability: "",
-            ability_ENG: "",
+            ability: "Lorsque vous attaquez, vous pouvez dépenser 1 résultat #crit#. Dans ce cas, distribuez 1 carte de dégat face cachée au défenseur, puis annulez les résultats restants.",
+            ability_ENG: "While you perform an attack, you may spend 1 #crit# result. If you do, deal 1 facedown damage card to the defender, then cancel your remaining results.",
             slots: [
                 "Talent",
                 "Talent"            
@@ -7123,8 +7144,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 6,
             points: 9,
             loadout: 10,
-            ability: "",
-            ability_ENG: "",
+            ability: "Au début de la phase d'engagement, s'il y a un vaisseau ennemi dans votre #bulls#, recevez un jeton concentration.",
+            ability_ENG: "At the start of the Engagement Phase, if there is an enemy ship in your #bulls#, gain 1 focus token.",
             slots: [
                 "Talent",
                 "Talent",
@@ -7141,8 +7162,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 6,
             points: 8,
             loadout: 10,
-            ability: "",
-            ability_ENG: "",
+            ability: "Après avoir attaqué, si le défenseur a été détruit, recevez un jeton stress.<br>Après qu'un vaisseau allié à portée 0-3 a été détruit, retirez 1 jeton stress et effectuez une action",
+            ability_ENG: "After you perform an attack, if the defender was destroyed, gain 1 stress token.<br>After a friendly ship at range 0-3 is destroyed, remove 1 stress token and perform an action.",
             slots: [
                 "Talent",
                 "Talent",
@@ -7157,10 +7178,11 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             ship: "TIE/in Interceptor",
             shipId: 6,
             skill: 4,
+            force: 2,
             points: 8,
             loadout: 10,
-            ability: "",
-            ability_ENG: "",
+            ability: "Lorsque vous attaquez, après l'étape 'Neutralisez les Résultats', si l'attaque touche, vous pouvez dépenser 2 #fo#. Dans ce cas, modifiez tous vos résultats #hit# en #crit#.",
+            ability_ENG: "While you perform an attack, after the Neutralize Results step, if the attack hits, you may spend 2 #fo#. If you do, change all of your #hit# results to #crit# results.",
             slots: [
                 "Talent",
                 "Force"            
@@ -7176,8 +7198,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 4,
             points: 7,
             loadout: 10,
-            ability: "",
-            ability_ENG: "",
+            ability: "Après avoir attaqué, vous pouvez effectuer une action #BR# ou #BO#, même stressé.",
+            ability_ENG: "After you perform an attack, you may perform a #BR# or #BO# action, even if you are stressed.",
             slots: [
                 "Talent",
                 "Talent"            
@@ -7210,8 +7232,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 4,
             points: 8,
             loadout: 10,
-            ability: "",
-            ability_ENG: "",
+            ability: "Après avoir largué ou lancé un engin, vous pouvez effectuer une action.",
+            ability_ENG: "After you drop or launch a device, you may perform an action.",
             slots: [
                 "Talent"            
             ]
@@ -7226,8 +7248,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 5,
             points: 8,
             loadout: 10,
-            ability: "",
-            ability_ENG: "",
+            ability: "Vous pouvez maintenir jusqu'à 2 verrouillages.<br>Après avoir effectué une action, vous pouvez verrouiller une cible.",
+            ability_ENG: "You can maintain up to 2 locks.<br>After you perform an action, you may acquire a lock.",
             slots: [
                 "Talent"            
             ]
@@ -7242,8 +7264,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 5,
             points: 12,
             loadout: 10,
-            ability: "",
-            ability_ENG: "",
+            ability: "Après avoir effectué une attaque qui touche, si vous êtes évasif, exposez 1 des cartes de dégat du défenseur.",
+            ability_ENG: "After you perform an attack that hits, if you are evading, expose 1 of the defender's damage cards.",
             slots: [
                 "Talent",
                 "Talent"            
@@ -7259,8 +7281,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 4,
             points: 11,
             loadout: 10,
-            ability: "",
-            ability_ENG: "",
+            ability: "Lorsque vous attaquez un vaisseau verrouillé, après avoir lancé les dés d'attaque, vous pouvez verrouiller le défenseur.",
+            ability_ENG: "While you perform an attack against a locked ship, after you roll attack dice, you may acquire a lock on the defender.",
             slots: [
                 "Talent"            
             ]
@@ -7275,8 +7297,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 4,
             points: 11,
             loadout: 10,
-            ability: "",
-            ability_ENG: "",
+            ability: "Quand vous devriez exécuter une manoeuvre #straight#, vous pouvez augementer sa difficulté. Dans ce cas, exécutez une manoeuvre #Kturn# de même vitesse à la place.",
+            ability_ENG: "While you would execute a #straight# maneuver, you may increase the difficulty of the maneuver. If you do, execute it as a #Kturn# maneuver instead.",
             slots: [
                 "Talent"            
             ]
@@ -7291,8 +7313,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 5,
             points: 11,
             loadout: 10,
-            ability: "",
-            ability_ENG: "",
+            ability: "Lorsqu'un autre vaisseau à portée 0-1 défend, avant l'étape 'Neutralisez les Résultats', si vous êtes dans l'arc de tir et que vous n'êtes pas ionisé, vous pouvez gagnez 1 jeton ion pour annuler 1 résultat #hit#.",
+            ability_ENG: "While another friendly ship at range 0-1 defends, before the Neutralize Results step, if you are in the attack arc and are not ionized, you may gain 1 ion token to cancel 1 #hit# result.",
             slots: [
                 "Talent"            
             ]
@@ -7305,10 +7327,11 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             ship: "TIE Advanced v1",
             shipId: 27,
             skill: 5,
+            force: 3,
             points: 7,
             loadout: 10,
-            ability: "",
-            ability_ENG: "",
+            ability: "Lorsque vous défendez à portée 1, vous pouvez dépenser 1 #fo# pour annuler le bonus de portée.<br>Lorsque vous attaquez à portée 2-3, vous pouvez dépenser 1 #fo# pour appliquer le bonus de portée 1.",
+            ability_ENG: "While you defend at attack range 1, you may spend 1 force to prevent the range 1 bonus.<br>While you perform an attack against a defender at attack range 2-3, you may spend 1 force to apply the range 1 bonus.",
             slots: [
                 "Talent",
                 "Force"            
@@ -7323,9 +7346,10 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             shipId: 27,
             skill: 4,
             points: 6,
+            force: 2,
             loadout: 10,
-            ability: "",
-            ability_ENG: "",
+            ability: "Lorsque vous attaquez, après l'étape 'Neutralisez les Résultats', si l'attaque touche, vous pouvez dépenser 2 #fo# pour ajouter 1 résultat #crit#.",
+            ability_ENG: "While you perform an attack, after the Neutralize Results step, if the attack hits, you may spend 2 #fo# to add 1 #crit# result.",
             slots: [
                 "Force"            
             ]
@@ -7339,9 +7363,10 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             shipId: 27,
             skill: 4,
             points: 6,
+            force: 2,
             loadout: 10,
-            ability: "",
-            ability_ENG: "",
+            ability: "Lorsque vous effectuez une attaque principale, avant l'étape 'Neutralisez les Résultats', vous pouvez dépenser 2 #fo# pour annuler 1 résultat #evd#.",
+            ability_ENG: "While you perform a primary attack, before the Neutralize Results step, you may spend 2 #fo# to cancel 1 #evd# result.",
             slots: [
                 "Force"            
             ]
@@ -7356,8 +7381,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 4,
             points: 5,
             loadout: 10,
-            ability: "",
-            ability_ENG: "",
+            ability: "Après qu'un vaisseau allié à portée 0-1 a défendu (après que les éventuels dégats ont été distribués), vous pouvez effectuer une action.",
+            ability_ENG: "After a friendly ship at range 0-1 defends (after damage is resolved, if any), you may perform an action.",
             slots: [
                 "Talent",
                 "Talent"            
