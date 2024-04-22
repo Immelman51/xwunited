@@ -9656,8 +9656,8 @@ const upgrades = [
                 effect: "Après qu’un vaisseau ennemi a exécuté une manœuvre, s’il est dans le d’un vaisseau allié à portée 0–3, vous pouvez dépenser 1 . Dans ce cas, ce vaisseau allié verrouille ce vaisseau ennemi, puis gagne 1 marqueur de stress.",
                 effect_ENG: "",
                 modifier_func: [
-                [also_Occupies("Calculator")],
-                [add_action("Calculate")]
+                () => also_Occupies("Calculator"),
+                () => add_action("Calculate")
                 ]
             },
             {
@@ -9672,8 +9672,8 @@ const upgrades = [
                 effect: "Pendant la phase de dénouement, vous pouvez choisir jusqu’à 3 vaisseaux alliés à portée 0-3. Dans ce cas, chacun de ces vaisseaux ne retire pas 1 marqueur de calcul.",
                 effect_ENG: "",
                 modifier_func: [
-                [also_Occupies("Calculator")],
-                [add_action("Calculate")]
+                () => also_Occupies("Calculator"),
+                () => add_action("Calculate")
                 ]
             },
             {
@@ -9688,8 +9688,8 @@ const upgrades = [
                 effect: "Avant de vous engager, vous pouvez transférer un jeton calcul à un vaisseau calculateur à portée 0-3. Dans ce cas, ce vaisseau effectue une attaque bonus. Vous gagnez 1 jeton désarmé.",
                 effect_ENG: "",
                 modifier_func: [
-                [also_Occupies("Calculator")],
-                [add_action("Calculate")]
+                () => also_Occupies("Calculator"),
+                () => add_action("Calculate")
                 ]
             },
             {
@@ -9704,8 +9704,8 @@ const upgrades = [
                 effect: "Vous gagnez la capacité 'Calculs en Réseau'. Vous pouvez équiper des améliorations qui nécessite le mot clé 'Droïde'. Après qu'un vaisseau allié à portée 0-3 avec #CA# dans sa barre d'action a été détruit, chaque vaisseau allié à portée 0-3 avec #CA# dans sa barre d'action gagne 1 marqueur de calcul.",",
                 effect_ENG: "",
                 modifier_func: [
-                [also_Occupies("Calculator")],
-                [add_action("Calculate")]
+                () => also_Occupies("Calculator"),
+                () => add_action("Calculate")
                 ]
             },
             {
@@ -9720,7 +9720,193 @@ const upgrades = [
                 effect: "Tant que vous défendez, après l’étape « Neutraliser les résultats », s’il y a au moins 2 résultats #hit#/#crit#, vous pouvez dépenser 1 #ch# pour annuler 1 résultat #hit# ou #crit#.<br>Après qu’un vaisseau allié a été détruit, récupérez 1 #ch#.",
                 effect_ENG: "",
             },
-
+//////////////////////////RESISTANCE////////////////////////
+//////////////////////////////////////////////////
+			{
+                name: "Héroïque",
+                name_eng: "Heroic",
+                id: 168,
+                available: true, 
+                modify: false,
+                slot: "Talent",
+                points: 2,
+                faction: ["Resistance"],
+                effect: "",
+                effect_ENG: "",
+            },
+            {
+                name: "Kaydel Connix",
+                name_eng: "Kaydel Connix",
+                id: 169,
+                available: true, 
+                modify: false,
+                slot: "Crew",
+                points: 5,
+                faction: ["Resistance"],
+                effect: "",
+                effect_ENG: "After you reveal your dial, you may set your dial to a basic maneuver of the next higher speed. While you execute that maneuver, increase its difficulty.",
+            },
+            {
+                name: "Rose Tico",
+                name_eng: "Rose Tico",
+                id: 170,
+                available: true, 
+                modify: false,
+                slot: "Crew",
+                points: 9,
+                faction: ["Resistance"],
+                effect: "",
+                effect_ENG: "While you defend or perform an attack, you may spend 1 of your results to acquire a lock on the enemy ship."
+            },
+            {
+                name: "Peinture Ferrosphère",
+                name_eng: "Ferrosphere Paint",
+                id: 171,
+                available: true, 
+                modify: false,
+                slot: "Tech",
+                points: 2,
+                faction: ["Resistance"],
+                effect: "",
+                effect_ENG: "After an enemy ship locks you, if you are not in that ship's #bulls#, that ship gains 1 stress token unless it chooses to break its lock."
+            },
+            {
+                name: "Finn",
+                name_eng: "Finn",
+                id: 172,
+                available: true, 
+                modify: false,
+                slot: "Gunner",
+                points: 7,
+                faction: ["Resistance"],
+                effect: "",
+                effect_ENG: "While you defend or perform a primary attack, if the enemy ship is in your #Farc#, you may add 1 blank result to your roll (this die can be rerolled or otherwise modified)"
+            },
+            {
+                name: "Rey",
+                name_eng: "Rey",
+                id: 173,
+                available: true, 
+                modify: false,
+                slot: "Gunner",
+                points: 11,
+                faction: ["Resistance"],
+                effect: "",
+                effect_ENG: "While you defend or perform an attack, if the enemy ship is in your #tur#, you may spend 1 #fo# to change 1 of your blank results to a #hit# or #evd# result."
+            },
+            {
+                name: "M9-G8",
+                name_eng: "M9-G8",
+                id: 174,
+                available: true, 
+                modify: false,
+                slot: "Astromech",
+                points: 4,
+                faction: ["Resistance"],
+                effect: "",
+                effect_ENG: "While a ship you are locking performs an attack, you may choose 1 attack die. If you do, the attacker rerolls that die."
+            },
+            {
+                name: "Astromech BB",
+                name_eng: "BB Astromech",
+                id: 175,
+                available: true, 
+                modify: false,
+                slot: "Astromech",
+                points: 2,
+                faction: ["Resistance"],
+                effect: "",
+                effect_ENG: ""
+            },
+            {
+                name: "BB-8",
+                name_eng: "BB-8",
+                id: 176,
+                available: true, 
+                modify: false,
+                slot: "Astromech",
+                points: 6,
+                faction: ["Resistance"],
+                effect: "",
+                effect_ENG: ""
+            },
+            {
+                name: "R6-D8",
+                name_eng: "R6-D8",
+                id: 177,
+                available: true, 
+                modify: false,
+                slot: "Astromech",
+                points: 4,
+                faction: ["Resistance"],
+                effect: "",
+                effect_ENG: ""
+            },
+            {
+                name: "R5-X3",
+                name_eng: "R5-X3",
+                id: 178,
+                available: true, 
+                modify: false,
+                slot: "Astromech",
+                points: 4,
+                faction: ["Resistance"],
+                effect: "",
+                effect_ENG: ""
+            },
+/////////////////////////First Order//////////////
+///////////////////////////////////////////////////
+			{
+                name: "Fanatique",
+                name_eng: "Fanatical",
+                id: 179,
+                available: true, 
+                modify: false,
+                slot: "Talent",
+                points: 1,
+                faction: ["First_Order"],
+                effect: "",
+                effect_ENG: "While you perform a primary attack, if you are not shielded, you may change 1 #eye# result to a #hit# result."
+            },
+            {
+                name: "Général Hux",
+                name_eng: "General Hux",
+                id: 180,
+                available: true, 
+                modify: false,
+                slot: "Crew",
+                points: 3,
+                faction: ["First_Order"],
+                effect: "",
+                effect_ENG: "While you perform a white #CD# action, you may treat it as red. If you do, you may coordinate up to 2 additional ships of the same ship type, and each ship you coordinate must perform the same action, treating that action as red."
+            },
+            {
+                name: "DT-798",
+                name_eng: "DT-798",
+                id: 181,
+                available: true, 
+                modify: false,
+                slot: "Gunner",
+                points: 3,
+                faction: ["First_Order"],
+                effect: "",
+                effect_ENG: "At the start of the Engagement Phase, you may choose a friendly ship in your firing arc. If you do, that ship gains 1 strain token.<br>While you perform an attack, you may reroll up to 1 die for each ship in the attack arc with 1 or more non-lock red or orange tokens.", 
+            },
+            {
+                name: "Technicien en Munition du Premier Ordre",
+                name_eng: "First Order Ordnance Tech",
+                id: 182,
+                available: true, 
+                modify: false,
+                slot: "Gunner",
+                points: 2,
+                faction: ["First_Order"],
+                effect: "ajoute #RL# -> #TL#",
+                effect_ENG: "Adds #RL# -> #TL#",
+                modifier_func: [
+                () => add_action("Reload R-> Lock")
+                ]
+            },   
     ]   
     
     
