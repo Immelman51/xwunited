@@ -9601,8 +9601,8 @@ const upgrades = [
                 slot: "Missile",
                 points: 3,
                 faction: ["C.I.S","Agents_of_Chaos"],
-                effect: "",
-                effect_ENG: ""
+                effect: "Au début de la phase d’engagement, vous pouvez dépenser 1 marqueur de calcul et 1 #ch# pour lancer 1 nuée de droïdes buzz en utilisant le gabarit 3 #Lbank#, #straight# ou #Rbank#.<br>La #ch# de cette carte ne peut pas être récupérée",
+                effect_ENG: "
             },
             {
                 name: "Droïde Sonde DRK1",
@@ -9613,19 +9613,20 @@ const upgrades = [
                 slot: "Missile",
                 points: 2,
                 faction: ["C.I.S","Agents_of_Chaos"],
-                effect: "",
+                effect: "Pendant la phase de dénouement, vous pouvez dépenser 1 #ch# pour larguer ou lancer 1 droïde sonde DRK-1 en utilisant un gabarit de vitesse 3. Les #ch# de cette carte ne peuvent pas être récupérées.",
                 effect_ENG: ""
             },
             {
-                name: "Cellule Energétique",
+                name: "Obus Energétiques",
                 name_eng: "Energy Cell Charge",
                 id: 161,
                 available: true, 
                 modify: false,
                 slot: "Missile",
+                charge: 1,
                 points: 4,
                 faction: ["C.I.S"],
-                effect: "",
+                effect: "Attaque #CA# portée 2-3, 3 dés : dépensez 1 #ch#. Tant que vous effectuez cette attaque, vous pouvez dépenser 1 marqueur de calcul pour changer 1 résultat #eye# en un résultat #crit#.<br>Action : rechargez cette carte.",
                 effect_ENG: ""
             },
             {
@@ -9637,8 +9638,11 @@ const upgrades = [
                 slot: "Modification",
                 points: 2,
                 faction: ["C.I.S"],
-                effect: "",
-                effect_ENG: ""
+                effect: "Remplacez votre capacité de vaisseau Calculs en Réseau par la suivante : Calculs Indépendants : tant que vous effectuez une action blanche , vous pouvez la considérer comme rouge pour gagner 1 marqueur de calcul supplémentaire. Les autres vaisseaux ne peuvent pas dépenser vos marqueurs de calcul en utilisant la capacité de vaisseau Calculs en Réseau.",
+                effect_ENG: "",
+                restrictions: [
+                    ["keyword","Droid"]
+                ]
             },
             {
                 name: "Kalani",
@@ -9649,10 +9653,11 @@ const upgrades = [
                 slot: "Crew",
                 points: 5,
                 faction: ["C.I.S"],
-                effect: "",
+                effect: "Après qu’un vaisseau ennemi a exécuté une manœuvre, s’il est dans le d’un vaisseau allié à portée 0–3, vous pouvez dépenser 1 . Dans ce cas, ce vaisseau allié verrouille ce vaisseau ennemi, puis gagne 1 marqueur de stress.",
                 effect_ENG: "",
                 modifier_func: [
-                [also_Occupies("Calculator")]
+                [also_Occupies("Calculator")],
+                [add_action("Calculate")]
                 ]
             },
             {
@@ -9664,10 +9669,11 @@ const upgrades = [
                 slot: "Crew",
                 points: 10,
                 faction: ["C.I.S"],
-                effect: "",
+                effect: "Pendant la phase de dénouement, vous pouvez choisir jusqu’à 3 vaisseaux alliés à portée 0-3. Dans ce cas, chacun de ces vaisseaux ne retire pas 1 marqueur de calcul.",
                 effect_ENG: "",
                 modifier_func: [
-                [also_Occupies("Calculator")]
+                [also_Occupies("Calculator")],
+                [add_action("Calculate")]
                 ]
             },
             {
@@ -9677,12 +9683,13 @@ const upgrades = [
                 available: true, 
                 modify: true,
                 slot: "Crew",
-                points: 5,
+                points: 3,
                 faction: ["C.I.S"],
-                effect: "",
+                effect: "Avant de vous engager, vous pouvez transférer un jeton calcul à un vaisseau calculateur à portée 0-3. Dans ce cas, ce vaisseau effectue une attaque bonus. Vous gagnez 1 jeton désarmé.",
                 effect_ENG: "",
                 modifier_func: [
-                [also_Occupies("Calculator")]
+                [also_Occupies("Calculator")],
+                [add_action("Calculate")]
                 ]
             },
             {
@@ -9694,22 +9701,23 @@ const upgrades = [
                 slot: "Crew",
                 points: 5,
                 faction: ["C.I.S"],
-                effect: "",
+                effect: "Vous gagnez la capacité 'Calculs en Réseau'. Vous pouvez équiper des améliorations qui nécessite le mot clé 'Droïde'. Après qu'un vaisseau allié à portée 0-3 avec #CA# dans sa barre d'action a été détruit, chaque vaisseau allié à portée 0-3 avec #CA# dans sa barre d'action gagne 1 marqueur de calcul.",",
                 effect_ENG: "",
                 modifier_func: [
-                [also_Occupies("Calculator")]
+                [also_Occupies("Calculator")],
+                [add_action("Calculate")]
                 ]
             },
             {
-                name: "Wat Tambor",
-                name_eng: "Wat Tambor",
+                name: "Général Grievous",
+                name_eng: "General Grievous",
                 id: 167,
                 available: true, 
                 modify: false,
                 slot: "Crew",
                 points: 5,
                 faction: ["C.I.S"],
-                effect: "",
+                effect: "Tant que vous défendez, après l’étape « Neutraliser les résultats », s’il y a au moins 2 résultats #hit#/#crit#, vous pouvez dépenser 1 #ch# pour annuler 1 résultat #hit# ou #crit#.<br>Après qu’un vaisseau allié a été détruit, récupérez 1 #ch#.",
                 effect_ENG: "",
             },
 
