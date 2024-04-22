@@ -9553,16 +9553,17 @@ const upgrades = [
 /////////////////////////CIS////////////////////////////
 //////////////////////////////////////////////////////
             {
-                name: "Imprévisible",
-                name_eng: "Sneaky",
+                name: "Infatigable",
+                name_eng: "Relentless",
                 id: 156,
-                available: true, 
+                available: false, 
                 modify: false,
                 slot: "Talent",
                 points: ?,
                 faction: ["C.I.S"],
-                effect: "",
-                effect_ENG: ""
+                effect: "Lorsque vous recevez 1 jeton rouge (non-Acquisition), vous pouvez le placer sur cette carte à la place pour l'ignorer (1 max par carte). Lorsque vous exécutez une manoeuvre bleue, vous ne pouvez retirer qu'un seul marqueur rouge. Vous pouvez retirer, le marqueur présent sur la carte.",
+                effect_ENG: "When you would receive 1 red token (non Lock), you may place it on this card instead to ignore it (1 max per card). When you execute a blue maneuver, you may remove only one red token. You may remove the red token on this card.",
+                restrictions: ['keyword','Droid']
             },
             {
                 name: "Nute Gunray",
@@ -9572,10 +9573,10 @@ const upgrades = [
                 modify: false,
                 unique: true,
                 slot: "Crew",
-                points: ?,
+                points: 5,
                 faction: ["C.I.S"],
-                effect: "",
-                effect_ENG: ""
+                effect: "A la fin de la partie, si votre vaisseau est toujours en jeu, gagnez 2 points de scénario.",
+                effect_ENG: "At the end of the game, if your ship is still in the play area, win 2 scenario points."
             },
             {
                 name: "Poggle le Bref",
