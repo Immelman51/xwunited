@@ -2758,7 +2758,7 @@ const ships =
             slots: ["Crew","Gunner","Turret","Cannon","Modification"]
         },
         {
-        	name: "Omicron Shuttle",
+        	name: "Omicron Class Shuttle",
             factions: [ "Imperial_Remnants","Galactic_Senate" ],
             id: 95,
             attack: 2,
@@ -2789,7 +2789,7 @@ const ships =
             slots: ["Crew","Crew","Gunner","Payload","Turret","Modification","Calculator"]
         },
         {
-        	name: "RP82 Fiend Fighter",
+        	name: "RP82 Fighter",
             factions: [ "Imperial_Remanants" ],
             id: 96,
             attack: 2,
@@ -3100,7 +3100,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"          
             ],
             modifier_func: [
-            	[() => auto_equip(["title"])]
+            	() => auto_equip("title")
                     ]
         },
         {
@@ -3138,7 +3138,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 
             ],
             modifier_func: [
-            	[() => auto_equip(["title"])]
+            	() => auto_equip("title")
                     ]
         },
         {
@@ -3158,7 +3158,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"
             ],
             modifier_func: [
-            	[() => auto_equip(["title"])]
+            	() => auto_equip("title")
                     ]
         },
         {
@@ -3916,7 +3916,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"
                 ],
             modifier_func: [
-            	[() => auto_equip(["title"])]
+            	() => auto_equip("title")
                     ]
         },
         {
@@ -3938,7 +3938,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             
             ],
             modifier_func: [
-            	[() => auto_equip(["title"])]
+            	() => auto_equip("title")
                     ]
         },
         {
@@ -3954,11 +3954,11 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             title: ["Razor Crest"],
             ability: "MISE EN PLACE : L’amélioration  #mod# que vous équipez est gratuite. Si elle possède 1 ou plusieurs charges, ajoutez en une supplémentaire.",
             slots: [
-                
-                "Talent",
-               "Title"],
+        		"Talent",
+               "Title"
+            ],
             modifier_func: [
-            	[() => auto_equip(["title"])]
+            	() => auto_equip("title")
                     ]
         },
         {
@@ -3976,7 +3976,10 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             slots: [
                 "Talent",
                 "Title",
-            ]
+            ],
+            modifier_func: [
+            	() => auto_equip("title")
+                    ]
         },
         {
             name: "Din Djarin",
@@ -3996,7 +3999,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"
             ],
             modifier_func: [
-            	[() => auto_equip(["title"])]
+            	() => auto_equip("title")
                     ]
         },
         {
@@ -4017,7 +4020,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"
             ],
             modifier_func: [
-            	[() => auto_equip(["title"])]
+            	() => auto_equip("title")
                     ]
         },
         {
@@ -4053,7 +4056,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
 
             ],
             modifier_func: [
-            	[() => auto_equip(["title"])]
+            	() => auto_equip("title")
                     ]
         },
         {
@@ -4205,7 +4208,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"
             ],
             modifier_func: [
-            	[() => auto_equip(["title"])]
+            	() => auto_equip("title")
                     ]            
         },
         {
@@ -4226,7 +4229,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"
             ],
             modifier_func: [
-            	[() => auto_equip(["title"])]
+            	() => auto_equip("title")
                     ]
         },
         {
@@ -4327,7 +4330,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             slots: []
         },
         {
-            name: "Lando Calrissian -Escape Craft-",
+            name: "Lando Calrissian #Escape Craft#",
             id: 90,
             unique: true,
             faction: "Pirates_and_Smugglers",
@@ -4358,7 +4361,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             ]
         },
         {
-            name: "L3-37 -Escape Craft-",
+            name: "L3-37 #Escape Craft#",
             id: 92,
             unique: true,
             faction: "Pirates_and_Smugglers",
@@ -4423,7 +4426,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"
             ],
             modifier_func: [
-            	[() => auto_equip(["title"])]
+            	() => auto_equip("title")
                     ]
         },
 {
@@ -4443,7 +4446,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"
             ],
             modifier_func: [
-            	[() => auto_equip(["title"])]
+            	() => auto_equip("title")
                     ]
         },
          {
@@ -4479,7 +4482,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Talent"               
             ],
             modifier_func: [
-            	[() => weapon_Hardpoint()]
+            	() => weapon_Hardpoint()
                     ]
         },
 {
@@ -4497,7 +4500,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Talent"                
             ],
             modifier_func: [
-            	[() => weapon_Hardpoint()]
+            	() => weapon_Hardpoint()
                     ]
         },
  {
@@ -4511,7 +4514,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             loadout: 5,
             slots: [],
             modifier_func: [
-            	[() => weapon_Hardpoint()]
+            	() => weapon_Hardpoint()
                     ]
         },
  {
@@ -4529,7 +4532,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Talent"                
             ],
             modifier_func: [
-            	[() => weapon_Hardpoint()]
+            	() => weapon_Hardpoint()
                     ]
         },
         {
@@ -4547,7 +4550,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Talent"                
             ],
             modifier_func: [
-            	[() => weapon_Hardpoint()]
+            	() => weapon_Hardpoint()
                     ]
         },
         {
@@ -4660,7 +4663,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             slots: [ 0 ]
         },
         {
-            name: "Kanan Jarrus -HWK-290-",
+            name: "Kanan Jarrus #HWK290#",
             id: 110,
             unique: true,
             faction: "Pirates_and_Smugglers",
@@ -4715,7 +4718,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 
             ],
             modifier_func: [
-            	[() => auto_equip(["title"])]
+            	() => auto_equip("title")
                     ]
         },
         {
@@ -4736,7 +4739,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"               
             ],
             modifier_func: [
-            	[() => auto_equip(["title"])]
+            	() => auto_equip("title")
                     ]
         },
         {
@@ -4758,7 +4761,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 
             ],
             modifier_func: [
-            	[() => auto_equip(["title"])]
+            	() => auto_equip("title")
                     ]
         },
         {
@@ -4780,7 +4783,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 
             ],
             modifier_func: [
-            	[() => auto_equip(["title"])]
+            	() => auto_equip("title")
                     ]
         },
         {
@@ -4801,7 +4804,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"
             ],
             modifier_func: [
-            	[() => auto_equip(["title"])]
+            	() => auto_equip("title")
                     ]
         },
         {
@@ -4823,7 +4826,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"
             ],
             modifier_func: [
-            	[() => auto_equip(["title"])]
+            	() => auto_equip("title")
                     ]
         },
         {
@@ -4844,7 +4847,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"
             ],
             modifier_func: [
-            	[() => auto_equip(["title"])]
+            	() => auto_equip("title")
                     ]
         },
 {
@@ -4864,7 +4867,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"
             ],
             modifier_func: [
-            	[() => auto_equip(["title"])]
+            	() => auto_equip("title")
                     ]
         },
         {
@@ -4888,7 +4891,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"
             ],
             modifier_func: [
-            	[() => auto_equip(["title"])]
+            	() => auto_equip("title")
                     ]
         },
         {
@@ -4925,7 +4928,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"
             ],
             modifier_func: [
-            	[() => auto_equip(["title"])]
+            	() => auto_equip("title")
                     ]
         },
         {
@@ -5010,7 +5013,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"
             ],
             modifier_func: [
-            	[() => auto_equip(["title"])]
+            	() => auto_equip("title")
                     ]
         },
 {
@@ -5031,7 +5034,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
 
         },
 {
-            name: "Bossk -Z-95-",
+            name: "Bossk #Z95#",
             id: 129,
             faction: "Bounty_Hunters_Guild",
             unique: true,
@@ -5046,7 +5049,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             ]
         },
         {
-            name: "Cad Bane -Scum-",
+            name: "Cad Bane #Scum#",
             id: 130,
             unique: true,
             faction: "Bounty_Hunters_Guild",
@@ -5065,7 +5068,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"
             ],
             modifier_func: [
-            	[() => auto_equip(["title"])]
+            	() => auto_equip("title")
                     ]
         },
 {
@@ -5116,7 +5119,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"
             ],
             modifier_func: [
-            	[() => auto_equip(["title"])]
+            	() => auto_equip("title")
                     ]
         },
          {
@@ -5138,11 +5141,11 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"
             ],
             modifier_func: [
-            	[() => auto_equip(["title"])]
+            	() => auto_equip("title")
                     ]
         },
          {
-            name: "Captain Jostero -Firespray-",
+            name: "Captain Jostero #Firespray#",
             id: 135,
             unique: true,
             faction: "Bounty_Hunters_Guild",
@@ -5175,7 +5178,10 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Talent",
                 "Talent",
                 "Title"                
-            ]
+            ],
+            modifier_func: [
+            	() => auto_equip("title")
+                    ]
         },
         {
             name: "Kanan Jarrus #Ghost#",
@@ -5196,7 +5202,10 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Talent",
                 "Force",
                 "Title"                
-            ]
+            ],
+            modifier_func: [
+            	() => auto_equip("title")
+                    ]
         },
         {
             name: "Chopper #Ghost#",
@@ -5214,7 +5223,10 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             slots: [
                 "Talent",
                 "Title"                
-            ]
+            ],
+            modifier_func: [
+            	() => auto_equip("title")
+                    ]
         },
         {
             name: "Alexsandr Kallus #Ghost#",
@@ -5233,7 +5245,10 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Talent",
                 "Talent",
                 "Title"                
-            ]
+            ],
+            modifier_func: [
+            	() => auto_equip("title")
+                    ]
         },
         {
             name: "Hera Syndulla #Attack Shuttle#",
@@ -5253,7 +5268,10 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Talent",
                 "Talent",
                 "Title"                
-            ]
+            ],
+            modifier_func: [
+            	() => auto_equip("title")
+                    ]
         },
         {
             name: "Sabine Wren #Attack Shuttle#",
@@ -5272,7 +5290,10 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Talent",
                 "Talent",
                 "Title"                
-            ]
+            ],
+            modifier_func: [
+            	() => auto_equip("title")
+                    ]
         },
         {
             name: "Kanan Jarrus #Attack Shuttle#",
@@ -5293,7 +5314,10 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Talent",
                 "Force",
                 "Title"                
-            ]
+            ],
+            modifier_func: [
+            	() => auto_equip("title")
+                    ]
         },
         {
             name: "Zeb Orellios #Attack Shuttle#",
@@ -5311,7 +5335,10 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             slots: [
                 "Talent",
                 "Title"                
-            ]
+            ],
+            modifier_func: [
+            	() => auto_equip("title")
+                    ]
         },
         {
             name: "AP5 #PHX#",
@@ -5329,7 +5356,10 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             slots: [
                 "Talent",
                 "Title"                
-            ]
+            ],
+            modifier_func: [
+            	() => auto_equip("title")
+                    ]
         },
         {
             name: "Alexsandr Kallus #Sheathepede#",
@@ -5348,7 +5378,10 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Talent",
                 "Talent",
                 "Title"                
-            ]
+            ],
+            modifier_func: [
+            	() => auto_equip("title")
+                    ]
         },
         
         {
@@ -5370,7 +5403,10 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Talent",
                 "Force",
                 "Title"                
-            ]
+            ],
+            modifier_func: [
+            	() => auto_equip("title")
+                    ]
         },
         {
             name: "Captain Rex #Sheathepede#",
@@ -5389,7 +5425,10 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Talent",
                 "Talent",
                 "Title"                
-            ]
+            ],
+            modifier_func: [
+            	() => auto_equip("title")
+                    ]
         },
         {
             name: "Sabine Wren #TIE#",
@@ -5408,7 +5447,10 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Talent",
                 "Talent",
                 "Title"                
-            ]
+            ],
+            modifier_func: [
+            	() => auto_equip("title")
+                    ]
         },
         {
             name: "Ezra Bridger #TIE#",
@@ -5429,7 +5471,10 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Talent",
                 "Force",
                 "Title"                
-            ]
+            ],
+            modifier_func: [
+            	() => auto_equip("title")
+                    ]
         },
         {
             name: "Captain Rex #TIE#",
@@ -5448,7 +5493,10 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Talent",
                 "Talent",
                 "Title"                
-            ]
+            ],
+            modifier_func: [
+            	() => auto_equip("title")
+                    ]
         },
         {
             name: "Zeb Orellios #TIE#",
@@ -5466,7 +5514,10 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             slots: [
                 "Talent",
                 "Title"                
-            ]
+            ],
+            modifier_func: [
+            	() => auto_equip("title")
+                    ]
         },
         {
             name: "Ezra Bridger #Gauntlet#",
@@ -5487,7 +5538,10 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Talent",
                 "Force",
                 "Title"                
-            ]
+            ],
+            modifier_func: [
+            	() => auto_equip("title")
+                    ]
         },
         {
             name: "Chopper #Gauntlet#",
@@ -5505,7 +5559,10 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             slots: [
                 "Talent",
                 "Title"                
-            ]
+            ],
+            modifier_func: [
+            	() => auto_equip("title")
+                    ]
         },
         {
             name: "Mart Mattin",
@@ -5523,7 +5580,10 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             slots: [
                 "Talent",
                 "Title"                
-            ]
+            ],
+            modifier_func: [
+            	() => auto_equip("title")
+                    ]
         },
         {
             name: "Gooti Terez",
@@ -5541,7 +5601,10 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             slots: [
                 "Talent",
                 "Title"                
-            ]
+            ],
+            modifier_func: [
+            	() => auto_equip("title")
+                    ]
         },
         {
             name: "Lohgarra",
@@ -5560,7 +5623,10 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Talent",
                 "Talent",
                 "Title"                
-            ]
+            ],
+            modifier_func: [
+            	() => auto_equip("title")
+                    ]
         },
         {
             name: "Thane Kyrell",
@@ -5579,7 +5645,10 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Talent",
                 "Talent",
                 "Title"                
-            ]
+            ],
+            modifier_func: [
+            	() => auto_equip("title")
+                    ]
         },
         {
             name: "Ahsoka Tano #A-Wing#",
@@ -5686,7 +5755,10 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Talent",
                 "Talent",
                 "Title"                
-            ]
+            ],
+            modifier_func: [
+            	() => auto_equip("title")
+                    ]
         },
         {
             name: "Captain Sear",
@@ -6730,8 +6802,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"            
             ],
             modifier_func: [
-                [() => auto_equip("Title")]
-                ]
+            	() => auto_equip("title")
+                    ]
         },
         {
             name: "Rey",
@@ -6752,8 +6824,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"            
             ],
             modifier_func: [
-                [() => auto_equip("Title")]
-                ]            
+            	() => auto_equip("title")
+                    ]            
         },
         {
             name: "Chewbacca #Res#",
@@ -6773,8 +6845,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"            
             ],
             modifier_func: [
-                [() => auto_equip("Title")]
-                ]            
+            	() => auto_equip("title")
+                    ]            
         },
         {
             name: "Lando Calrissian #Res#",
@@ -6795,8 +6867,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"            
             ],
             modifier_func: [
-                [() => auto_equip("Title")]
-                ]            
+            	() => auto_equip("title")
+                    ]            
         },
         {
             name: "Cova Nell",
@@ -10538,6 +10610,10 @@ function change_stat(table){
 function lose_chassis(){
 
 }
+function add_chassis(chas){
+    
+    }
+    
 function upgradeListGet(yy) { //va chercher les options pour populate les menus de slots crées avec displaylots(), et remplit la var upgrades_Objects
   
   let index = 0; 
