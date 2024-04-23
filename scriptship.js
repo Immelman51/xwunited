@@ -9906,7 +9906,179 @@ const upgrades = [
                 modifier_func: [
                 () => add_action("Reload R-> Lock")
                 ]
-            },   
+            },
+            {
+                name: "Artilleur des Forces Spéciales",
+                name_eng: "Special Forces Gunner",
+                id: 183,
+                available: false, 
+                modify: false,
+                slot: "Gunner",
+                points: 2,
+                faction: ["First_Order"],
+                effect: "ajoute #RL# -> #TL#",
+                effect_ENG: "While you perform a primary (FArc) attack, if your (tur) is in your (FArc) , you may roll 1 additional attack die.<br>After you perform a primary Front Arc attack, if your Turret Arc is in your Rear Arc, you may perform a bonus primary Turret Arc attack. ",
+                restrictions: [
+                ["ship","TIE/sf Fighter"]
+                ]
+            }, 
+            {
+                name: "Kylo Ren",
+                name_eng: "Kylo Ren",
+                id: 184,
+                available: true, 
+                modify: false,
+                slot: "Crew",
+                force: 1,
+                points: 8,
+                faction: ["First_Order"],
+                effect: "",
+                effect_ENG: "Action: Choose 1 enemy ship at range 1-3. If you do, spend 1 #fo# to assign the I'll Show You The Dark Side condition to the ship."
+                
+            },
+            {
+                name: "Cellules Energétiques au Deuterium",
+                name_eng: "Deuterium Power Cells",
+                id: 185,
+                available: true, 
+                modify: true,
+                slot: "Tech",
+                charge: 2,
+                points: 6,
+                faction: ["First_Order","Shadow_Specialists"],
+                effect: "",
+                effect_ENG: "During the System Phase, you may spend 1 #ch# and gain 1 disarm token to recover 1 shield.<br>Before you would gain 1 non-lock token, if you are not stressed, you may spend 1 #ch# to gain 1 stress token instead.",
+                modifier_func: [
+                () => also_Occupies('Modification')
+                ]
+                
+            },
+            {
+                name: "Codes Biohexacrypt",
+                name_eng: "Biohexacrypt Codes",
+                id: 186,
+                available: true, 
+                modify: false,
+                slot: "Calculator",
+                points: 1,
+                faction: ["First_Order","Shadow_Specialists"],
+                effect: "",
+                effect_ENG: "While you coordinate or jam, if you have a lock on a ship, you may choose that ship, ignoring range restrictions."
+        
+            },
+            {
+                name: "Capitaine Phasma",
+                name_eng: "Captain Phasma",
+                id: 187,
+                available: true, 
+                modify: false,
+                slot: "Crew",
+                points: 4,
+                faction: ["First_Order"],
+                effect: "",
+                effect_ENG: "At the end of the Engagement Phase, each enemy ship at range 0-1 that is not stressed gains 1 stress token."
+        
+            },
+            {
+                name: "Officier de Pont Thanison",
+                name_eng: "Petty Officer Thanison",
+                id: 188,
+                available: true, 
+                modify: false,
+                slot: "Crew",
+                points: 2,
+                faction: ["First_Order"],
+                effect: "",
+                effect_ENG: "During the Activation or Engagement Phase, after an enemy ship in your (FArc)  at range 0-1 gains a red or orange token, if you are not stressed, you may gain 1 stress token. If you do, that ship gains 1 additional token of the type that it gained."
+        
+            },
+ //////////////////////////Imperial Elite Forces////////////
+//////////////////////////////////////////////////////
+            {
+                name: "Efficace",
+                name_eng: "Efficient",
+                id: 189,
+                available: true, 
+                modify: false,
+                slot: "Talent",
+                points: 2,
+                faction: ["Imperial_Elite_Forces"],
+                effect: "",
+                effect_ENG: "When you destroy an enemy ship, remove an orange or red token from yourself, then perform an action."
+        
+            },
+            {
+                name: "Rukh",
+                name_eng: "Rukh",
+                id: 190,
+                available: true, 
+                modify: false,
+                slot: "Crew",
+                points: 6,
+                faction: ["Imperial_Elite_Forces"],
+                effect: "",
+                effect_ENG: "SETUP : assign the "prey" condition to a ship. At the end of activation phase, if you are at range 0-1 of the ship with the prey condition, it gains 1 deplete and 1 strain token. When the ship is destroyed, you MUST assign the prey condition to a ship beyond range 3 of you. If there's none, assign it to a ship at range 3. Continue this operation by reducing the range until there's a suitable target."
+        
+            },
+            {
+                name: "Grand Inquisiteur",
+                name_eng: "Grand Inquisitor",
+                id: 191,
+                available: true, 
+                modify: false,
+                slot: "Crew",
+                points: 12,
+                faction: ["Imperial_Elite_Forces"],
+                effect: "",
+                effect_ENG: ""
+        
+            },
+            {
+                name: "Ciena Ree",
+                name_eng: "Ciena Ree",
+                id: 192,
+                available: true, 
+                modify: false,
+                slot: "Crew",
+                points: 4,
+                faction: ["Imperial_Elite_Forces"],
+                effect: "",
+                effect_ENG: "After you perform an attack, you can acquire a lock on the target"
+        
+            },
+            {
+                name: "Septième Soeur",
+                name_eng: "Seventh Sister",
+                id: 193,
+                available: true, 
+                modify: false,
+                slot: "Crew",
+                force: 1,
+                points: 8,
+                faction: ["Imperial_Elite_Forces"],
+                effect: "",
+                effect_ENG: ""
+        
+            },
+            {
+                name: "Cinquième Frère",
+                name_eng: "Fifth Brother",
+                id: 194,
+                available: true, 
+                modify: false,
+                slot: "Gunner",
+                points: 10,
+                force: 1,
+                faction: ["Imperial_Elite_Forces"],
+                effect: "",
+                effect_ENG: ""
+        
+            },
+            //////twin ion engine mk2////////
+///////////////// Precision Ion Engine/////////
+///////////Lightweight Frame/////////////
+////////////Imperial Gunner///////////////
+              
     ]   
     
     
