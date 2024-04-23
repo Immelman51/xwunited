@@ -8572,8 +8572,8 @@ const upgrades = [
                 recurring: 1
             },
             {
-                name: "R2-D2 -Equipage-",
-                name_eng: "R2-D2 -Crew-",
+                name: "R2-D2 #Crew#",
+                name_eng: "R2-D2 #Crew#",
                 id: 90,
                 available: true,
                 modify: false,
@@ -8694,7 +8694,7 @@ const upgrades = [
                 effect: "Avant d’exécuter une manœuvre de Virage Koiogran à vitesse 1–3, vous pouvez dépenser 1 #ch# pour exécuter cette manœuvre en tant que #Sleft# ou #Sright# de même vitesse à la place, et vice-versa.",
                 charge: 2,
                 faction: "",
-                restrictions: [1,"keyword", "TIE"]
+                restrictions: [1,"keyword", "TIE",""]
             },
             {
                 name: "Moteur Ionique Jumelé Mk2",
@@ -8705,7 +8705,7 @@ const upgrades = [
                 slot: "Modification",
                 points: 2,
                 effect: "Après avoir effectué une manœuvre rouge, vous pouvez dépenser 1 #ch# pour effectuer un tonneau.",
-                restrictions: [1,"keyword", "TIE"],
+                restrictions: [1,"keyword", "TIE",""],
                 faction: ""
             },
             {
@@ -8717,7 +8717,7 @@ const upgrades = [
                 slot: "Modification",
                 points: 3,
                 effect: "Lorsqu’un adversaire vous attaque, il peut modifier un résultat #hit# en #crit# . Si vous deviez lancer 2 dés de défense ou moins, vous pouvez lancer 1 dé de défense supplémentaire.",
-                restrictions: [1,"keyword", "TIE"],
+                restrictions: [1,"keyword", "TIE",""],
                 faction: ""
             },
      {
@@ -8795,7 +8795,7 @@ const upgrades = [
                 effect: "Vous avez la capacité de pilote de chaque autre vaisseau allié qui possède la capacité IG-2000.<br>Après avoir effectué une action #CA#, gagnez 1 marqueur de calcul.",
                 faction: ["Bounty_Hunters_Guild"],
                 modifier_func: [
-                    add_action("Calculate")
+                    () => add_action("Calculate")
                 ]
     
             },
@@ -8864,7 +8864,7 @@ const upgrades = [
                 effect: "Mise en Place : avant de placer les forces, choisissez un adversaire ; il assigne l'état 'Désigné pour Mourir' à 1 de ses vaisseaux. Il doit l'assigner à un vaisseau limité, si possible.<br>Vous ignorez les restrictions de portée lorsque vous verrouillez le vaisseau qui a l'état Désigné pour Mourir.",
                 faction: ["Bounty_Hunters_Guild"],
                 modifier_func: [
-                    add_condition("Marked for Elimination")
+                   () => add_condition("Marked for Elimination")
                 ]
             },
             {
@@ -9218,7 +9218,7 @@ const upgrades = [
                 faction: "",
                 ship: "Rogue-class Starfighter",
                 restrictions: [1,"title", "Xanadu Blood",""],
-                effect: "Retire en emplacement #missile# et la capacité 'Vaisseau-Mère'. Ajoute #sensor# et #calculator#. Ajoute 5 points de Loadout et augmente le coût du vaisseau de 1",
+                effect: "",
                 modifier_func: [
                     () => add_slots("Payload"),
                     () => add_slots("Crew"),
@@ -9238,7 +9238,7 @@ const upgrades = [
                 faction: "",
                 ship: "YV-666 Light Freighter",
                 restrictions: [1,"title", "Hound's Tooth",""],
-                effect: "Retire en emplacement",
+                effect: "",
                 modifier_func: [
                     () => add_slots("Gunner"),
                     () => add_slots("Cannon"),
@@ -9258,7 +9258,7 @@ const upgrades = [
                 faction: "",
                 ship: "Firespray-class Patrol Craft",
                 restrictions: [1,"title", "Slave 1",""],
-                effect: "culseau de 1",
+                effect: "",
                 modifier_func: [
                     () => add_slots("Gunner"),
                     () => add_slots("Cannon"),
@@ -9279,7 +9279,7 @@ const upgrades = [
                 faction: "",
                 ship: "Firespray-class Patrol Craft",
                 restrictions: [1,"title", "Andrasta",""],
-                effect: "adout et augmente le coût du vaisseau de 1",
+                effect: "",
                 modifier_func: [
                     () => add_slots("Payload"),
                     () => add_slots("Payload"),
@@ -9299,10 +9299,9 @@ const upgrades = [
                 unique: true,
                 faction: "",
                 ship: "YT-2400 Light Freighter",
-                ship_cost: 1,
-                Loadout_value: 5,
+                
                 restrictions: [1,"title", "Outrider",""],
-                effect: "points de Loadout et augmente le coût du vaisseau de 1",
+                effect: "",
                 modifier_func: [
                     () => add_slots("Gunner"),
                     () => add_slots("Cannon"),
@@ -9321,7 +9320,7 @@ const upgrades = [
                 faction: "",
                 ship: "G-1A Starfighter",
                 restrictions: [1,"title", "Mist Hunter",""],
-                effect: "oute 5 points de Loadout et augmente le coût du vaisseau de 1",
+                effect: "",
                 /*modifier_func: [
                     [() => change_stat,["points",1]],
                     [() => change_stat,["loadout",5]]
@@ -9338,10 +9337,9 @@ const upgrades = [
                 unique: true,
                 faction: "",
                 ship: "JumpMaster 5000",
-                ship_cost: 1,
-                Loadout_value: 5,
+               
                 restrictions: [1,"title", "Punishing One",""],
-                effect: " Ajoute 5 points de Loadout et augmente le coût du vaisseau de 1",
+                effect: "",
                 modifier_func: [
                     () => add_slots("Astromech"),
                     () => change_stat("attackt",1),
@@ -9360,10 +9358,8 @@ const upgrades = [
                 unique: false,
                 faction: "",
                 ship: "Aggressor Assault Fighter",
-                ship_cost: 1,
-                Loadout_value: 5,
                 restrictions: [1,"title", "IG-2000",""],
-                effect: "Ajoute 5 points de Loadout et augmente le coût du vaisseau de 1",
+                effect: "",
                 modifier_func: [
                     () => add_slots("Calculator"),
                     () => also_Occupies("Modification"),
@@ -9382,7 +9378,7 @@ const upgrades = [
                 faction: "",
                 ship: "Naboo Royal N-1 Starfighter",
                 restrictions: [1,"title", "Din Djarin's N1",""],
-                effect: "e 5 points de Loadout et augmente le coût du vaisseau de 1",
+                effect: "",
                 modifier_func: [
                     () => add_slots("Crew"),
                     () => add_slots("Tech"),
@@ -9404,7 +9400,7 @@ const upgrades = [
                 faction: "",
                 ship: "ST-70 Assault Ship",
                 restrictions: [1,"title", "Razor Crest",""],
-                effect: "te 5 points de Loadout et augmente le coût du vaisseau de 1",
+                effect: "",
                 /*modifier_func: [
                     [() => change_stat,["points",1]],
                     [() => change_stat,["loadout",5]]
@@ -9422,7 +9418,7 @@ const upgrades = [
                 faction: "",
                 ship: "HWK-290 Light Freighter",
                 restrictions: [1,"title", "Moldy Crow",""],
-                effect: "ute 5 points de Loadout et augmente le coût du vaisseau de 1",
+                effect: "",
                 modifier_func: [
                     () => add_slots("Illicit"),
                     () => add_slots("Cannon"),
@@ -9494,6 +9490,9 @@ const upgrades = [
                 force: 1,
                 points: 10,
                 faction: ["Phoenix_Cell"],
+                modifier_func: [
+                    () => change_stat("Force",1)
+                ],
                 effect: "Après avoir attaqué, vous pouvez dépenser 1 #fo#. Dans ce cas, vous pouvez effectuer une attaque bonus PRECISE de tourelle.",
                 effect_ENG: "After you perform an attack, you can spend 1 Force. If you do, you can perform a SHARPENED bonus Turret attack." 
             },
@@ -9508,6 +9507,9 @@ const upgrades = [
                 force: 1,
                 points: 10,
                 faction: ["Phoenix_Cell"],
+                modifier_func: [
+                    () => change_stat("Force",1)
+                ],
                 effect: "Après qu'un vaisseau allié à portée 0-2 exécute entièrement une manoeuvre blanche, vous pouvez dépenser 1 #fo# pour retirer 1 jeton stress de ce vaisseau.",
                 effect_ENG: "After a friendly ship at range 0-2 fully executes a white maneuver, you may spend 1 #fo# to remove 1 stress token from that ship."
             },
@@ -9611,6 +9613,7 @@ const upgrades = [
                 available: true, 
                 modify: false,
                 slot: "Missile",
+                max_per_squad: 2,
                 points: 2,
                 faction: ["C.I.S","Agents_of_Chaos"],
                 effect: "Pendant la phase de dénouement, vous pouvez dépenser 1 #ch# pour larguer ou lancer 1 droïde sonde DRK-1 en utilisant un gabarit de vitesse 3. Les #ch# de cette carte ne peuvent pas être récupérées.",
@@ -9640,9 +9643,7 @@ const upgrades = [
                 faction: ["C.I.S"],
                 effect: "Remplacez votre capacité de vaisseau Calculs en Réseau par la suivante : Calculs Indépendants : tant que vous effectuez une action blanche , vous pouvez la considérer comme rouge pour gagner 1 marqueur de calcul supplémentaire. Les autres vaisseaux ne peuvent pas dépenser vos marqueurs de calcul en utilisant la capacité de vaisseau Calculs en Réseau.",
                 effect_ENG: "",
-                restrictions: [
-                    ["keyword","Droid"]
-                ]
+                restrictions: [1,"chassis","Networked Calculations",""]
             },
             {
                 name: "Kalani",
@@ -9651,6 +9652,7 @@ const upgrades = [
                 available: true, 
                 modify: true,
                 slot: "Crew",
+                unique: true,
                 points: 5,
                 faction: ["C.I.S"],
                 effect: "Après qu’un vaisseau ennemi a exécuté une manœuvre, s’il est dans le d’un vaisseau allié à portée 0–3, vous pouvez dépenser 1 . Dans ce cas, ce vaisseau allié verrouille ce vaisseau ennemi, puis gagne 1 marqueur de stress.",
@@ -9668,6 +9670,7 @@ const upgrades = [
                 modify: true,
                 slot: "Crew",
                 points: 10,
+                unique: true,
                 faction: ["C.I.S"],
                 effect: "Pendant la phase de dénouement, vous pouvez choisir jusqu’à 3 vaisseaux alliés à portée 0-3. Dans ce cas, chacun de ces vaisseaux ne retire pas 1 marqueur de calcul.",
                 effect_ENG: "",
@@ -9683,6 +9686,7 @@ const upgrades = [
                 available: true, 
                 modify: true,
                 slot: "Crew",
+                unique: true,
                 points: 3,
                 faction: ["C.I.S"],
                 effect: "Avant de vous engager, vous pouvez transférer un jeton calcul à un vaisseau calculateur à portée 0-3. Dans ce cas, ce vaisseau effectue une attaque bonus. Vous gagnez 1 jeton désarmé.",
@@ -9699,13 +9703,15 @@ const upgrades = [
                 available: true, 
                 modify: true,
                 slot: "Crew",
+                unique: true,
                 points: 5,
                 faction: ["C.I.S"],
-                effect: "Vous gagnez la capacité 'Calculs en Réseau'. Vous pouvez équiper des améliorations qui nécessite le mot clé 'Droïde'. Après qu'un vaisseau allié à portée 0-3 avec #CA# dans sa barre d'action a été détruit, chaque vaisseau allié à portée 0-3 avec #CA# dans sa barre d'action gagne 1 marqueur de calcul.",",
-                effect_ENG: "",
+                effect: "Vous gagnez la capacité 'Calculs en Réseau'. Après qu'un vaisseau allié à portée 0-3 avec #CA# dans sa barre d'action a été détruit, chaque vaisseau allié à portée 0-3 avec #CA# dans sa barre d'action gagne 1 marqueur de calcul.",
+                effect_ENG: "You gain the 'Networked Calculation' ship ability. After a friendly ship at range 0-3 with #CA# in its action bar has been destroyed, each friendly ship at range 0-3 with #CA# in its action bar receives 1 calculate token.",
                 modifier_func: [
                 () => also_Occupies("Calculator"),
-                () => add_action("Calculate")
+                () => add_action("Calculate"),
+                () => add_chassis("Networked Calculations")
                 ]
             },
             {
@@ -9713,6 +9719,7 @@ const upgrades = [
                 name_eng: "General Grievous",
                 id: 167,
                 available: true, 
+                unique: true,
                 modify: false,
                 slot: "Crew",
                 points: 5,
@@ -9731,31 +9738,33 @@ const upgrades = [
                 slot: "Talent",
                 points: 2,
                 faction: ["Resistance"],
-                effect: "",
-                effect_ENG: "",
+                effect: "Tant que vous défendez ou effectuez une attaque, si vous n'avez que des résultats vierges et au moins 2 résultats, vous pouvez relancer n'importe quel nombre de vos dés.",
+                effect_ENG: "When you defend or perform an attack, if all of your results are blank and there are at least 2 results, you may reroll any number of your dice.",
             },
             {
                 name: "Kaydel Connix",
                 name_eng: "Kaydel Connix",
                 id: 169,
                 available: true, 
+                unique: true,
                 modify: false,
                 slot: "Crew",
                 points: 5,
                 faction: ["Resistance"],
-                effect: "",
+                effect: "Après avoir révélé votre cadran, vous pouvez régler votre cadran sur une manoeuvre basique de vitesse +1. Lorsque vous exécutez cette manoeuvre, augmentez sa difficulté.",
                 effect_ENG: "After you reveal your dial, you may set your dial to a basic maneuver of the next higher speed. While you execute that maneuver, increase its difficulty.",
             },
             {
                 name: "Rose Tico",
                 name_eng: "Rose Tico",
                 id: 170,
+                unique: true,
                 available: true, 
                 modify: false,
                 slot: "Crew",
                 points: 9,
                 faction: ["Resistance"],
-                effect: "",
+                effect: "Lorsque vous défendez ou attaquez, vous pouvez dépenser 1 de vos résultats pour verrouiller l'adversaire.",
                 effect_ENG: "While you defend or perform an attack, you may spend 1 of your results to acquire a lock on the enemy ship."
             },
             {
@@ -9767,7 +9776,7 @@ const upgrades = [
                 slot: "Tech",
                 points: 2,
                 faction: ["Resistance"],
-                effect: "",
+                effect: "Après qu'un ennemi vous a verrouillé, si vous n'êtes pas dans le #bulls# de ce vaisseau, alors il choisit de gagner un jeton stress ou de retirer son verrouillage.",
                 effect_ENG: "After an enemy ship locks you, if you are not in that ship's #bulls#, that ship gains 1 stress token unless it chooses to break its lock."
             },
             {
@@ -9775,11 +9784,12 @@ const upgrades = [
                 name_eng: "Finn",
                 id: 172,
                 available: true, 
+                unique: true,
                 modify: false,
                 slot: "Gunner",
                 points: 7,
                 faction: ["Resistance"],
-                effect: "",
+                effect: "Lorsque vous attaquez ou effectuez une attaque principale, si le vaisseau ennemi est dans votre #Farc#, vous pouvez ajouter 1 résultat vierge (ce dé peut être relancé ou modifié)",
                 effect_ENG: "While you defend or perform a primary attack, if the enemy ship is in your #Farc#, you may add 1 blank result to your roll (this die can be rerolled or otherwise modified)"
             },
             {
@@ -9788,10 +9798,15 @@ const upgrades = [
                 id: 173,
                 available: true, 
                 modify: false,
+                unique: true,
                 slot: "Gunner",
+                force: 1,
                 points: 11,
                 faction: ["Resistance"],
-                effect: "",
+                modifier_func: [
+                    () => change_stat("Force",1)
+                ]
+                effect: "Lorsque vous défendez ou attaquez, si le vaisseau ennemi est dans votre #tur#, vous pouvez dépenser 1 #fo# pour modifier l'un de vos résultats vierges en #hit# ou #evd#.",
                 effect_ENG: "While you defend or perform an attack, if the enemy ship is in your #tur#, you may spend 1 #fo# to change 1 of your blank results to a #hit# or #evd# result."
             },
             {
@@ -9801,9 +9816,10 @@ const upgrades = [
                 available: true, 
                 modify: false,
                 slot: "Astromech",
+                unique: true,
                 points: 4,
                 faction: ["Resistance"],
-                effect: "",
+                effect: "Lorsqu'un vaisseau que vous avez verrouillé attaque, vous pouvez choisir 1 dé d'attaque. Dans ce cas, l'attaquant relance ce dé.",
                 effect_ENG: "While a ship you are locking performs an attack, you may choose 1 attack die. If you do, the attacker rerolls that die."
             },
             {
@@ -9813,34 +9829,38 @@ const upgrades = [
                 available: true, 
                 modify: false,
                 slot: "Astromech",
+                charge: 2,
                 points: 2,
                 faction: ["Resistance"],
-                effect: "",
-                effect_ENG: ""
+                effect: "Pendant la phase de système, vous pouvez dépenser 1 #ch# pour effectuer une action #BR#.",
+                effect_ENG: "During System Phase, you may spend 1 #ch# to perform a #BR# action."
             },
             {
                 name: "BB-8",
                 name_eng: "BB-8",
                 id: 176,
                 available: true, 
+                unique: true,
                 modify: false,
                 slot: "Astromech",
+                charge: 2,
                 points: 6,
                 faction: ["Resistance"],
-                effect: "",
-                effect_ENG: ""
+                effect: "Avant d'excuter une manoeuvre, vous pouvez dépenser 1 #ch# pour effectuer une action #BR# ou #BO#",
+                effect_ENG: "Before executing a maneuver, you may spend 1 #ch# to perform a #BR# or #BO# action"
             },
             {
                 name: "R6-D8",
                 name_eng: "R6-D8",
                 id: 177,
                 available: true, 
+                unique: true,
                 modify: false,
                 slot: "Astromech",
                 points: 4,
                 faction: ["Resistance"],
-                effect: "",
-                effect_ENG: ""
+                effect: "Tant que vous effectuez une attaque, vous pouvez relancer un nombre de dés d’attaque inférieur ou égal au nombre de vaisseaux alliés à portée 0–3 qui ont le défenseur dans leur #bulls#.",
+                effect_ENG: "While you perform an attack, you may reroll as many attack dice as the number of friendly ships which has the defender in their #bulls# at range 0-3."
             },
             {
                 name: "R5-X3",
@@ -9848,11 +9868,13 @@ const upgrades = [
                 id: 178,
                 available: true, 
                 modify: false,
+                unique: true,
                 slot: "Astromech",
+                charge: 2,
                 points: 4,
                 faction: ["Resistance"],
-                effect: "",
-                effect_ENG: ""
+                effect: "Avant votre activation ou avant de vous engager, vous pouvez dépenser 1 #ch# pour ignorer les obstacles jusqu’à la fin de cette phase.",
+                effect_ENG: "Before you activate or engage, you may spend 1 #ch# to ignore obstacles until the end of this phase."
             },
 /////////////////////////First Order//////////////
 ///////////////////////////////////////////////////
@@ -9865,7 +9887,7 @@ const upgrades = [
                 slot: "Talent",
                 points: 1,
                 faction: ["First_Order"],
-                effect: "",
+                effect: "Lorsque vous effectuez une attaque principale, si vous n'êtes pas protégé, vous pouvez modifier 1 résultat #eye# en #hit#",
                 effect_ENG: "While you perform a primary attack, if you are not shielded, you may change 1 #eye# result to a #hit# result."
             },
             {
@@ -9874,10 +9896,11 @@ const upgrades = [
                 id: 180,
                 available: true, 
                 modify: false,
+                unique: true,
                 slot: "Crew",
                 points: 3,
                 faction: ["First_Order"],
-                effect: "",
+                effect: "Lorsque vous effectuez une action blanche #CD#, vous pouvez la traiter comme rouge. Dans ce cas, vous pouvez coordonner jusqu'à 2 vaisseaux supplémentaires du même type, et chaque vaisseau coordonné doit effectuer la même action en la considérant comme rouge.",
                 effect_ENG: "While you perform a white #CD# action, you may treat it as red. If you do, you may coordinate up to 2 additional ships of the same ship type, and each ship you coordinate must perform the same action, treating that action as red."
             },
             {
@@ -9886,10 +9909,11 @@ const upgrades = [
                 id: 181,
                 available: true, 
                 modify: false,
+                unique: true,
                 slot: "Gunner",
                 points: 3,
                 faction: ["First_Order"],
-                effect: "",
+                effect: "Au début de la phase d'engagement, vous pouvez choisir un vaisseau allié dans votre arc de tir. Dans ce cas, ce vaisseau gagne 1 jeton contrainte.<br>Lorsque vous attaquez, vous pouvez relancer jusqu'à 1 dé pour chaque vaisseau dans votre arc de tir avec 1 ou plusieurs jeton rouge ou orange (non lock).",
                 effect_ENG: "At the start of the Engagement Phase, you may choose a friendly ship in your firing arc. If you do, that ship gains 1 strain token.<br>While you perform an attack, you may reroll up to 1 die for each ship in the attack arc with 1 or more non-lock red or orange tokens.", 
             },
             {
@@ -9916,23 +9940,26 @@ const upgrades = [
                 slot: "Gunner",
                 points: 2,
                 faction: ["First_Order"],
-                effect: "ajoute #RL# -> #TL#",
-                effect_ENG: "While you perform a primary (FArc) attack, if your (tur) is in your (FArc) , you may roll 1 additional attack die.<br>After you perform a primary Front Arc attack, if your Turret Arc is in your Rear Arc, you may perform a bonus primary Turret Arc attack. ",
-                restrictions: [
-                ["ship","TIE/sf Fighter"]
-                ]
+                effect: "Lorsque vous effectuez une attaque principale #Farc#, si votre #tur# est dans votre #Farc#, vous pouvez relancez 1 dé d'attaque supplémentaire.<br>Après avoir effectué une attaque principale #Farc#, si votre #tur# est dans votre #Barc#, vous pouvez effectuer une attaque bonus principale #tur#",
+                effect_ENG: "While you perform a primary #Farc# attack, if your #tur# is in your #Farc# , you may roll 1 additional attack die.<br>After you perform a primary #Farc# attack, if your #tur# is in your #Barc#, you may perform a bonus primary #tur# attack. ",
+                restrictions: [1,"ship","TIE/sf Fighter",""]
+            
             }, 
             {
                 name: "Kylo Ren",
                 name_eng: "Kylo Ren",
                 id: 184,
                 available: true, 
-                modify: false,
+                modify: true,
+                unique: true,
                 slot: "Crew",
                 force: 1,
                 points: 8,
                 faction: ["First_Order"],
-                effect: "",
+                modifier_func: [
+                    () => change_stat("Force",1)
+                ],
+                effect: "Action: Choisissez 1 vaisseau ennemi à portée 1-3. Dans ce cas, dépensez 1 #fo# pour assigner la condition 'Je vais te montrer le côté obscur' à ce vaisseau",
                 effect_ENG: "Action: Choose 1 enemy ship at range 1-3. If you do, spend 1 #fo# to assign the I'll Show You The Dark Side condition to the ship."
                 
             },
@@ -9946,7 +9973,7 @@ const upgrades = [
                 charge: 2,
                 points: 6,
                 faction: ["First_Order","Shadow_Specialists"],
-                effect: "",
+                effect: "Pendant la phase système, vous pouvez dépenser 1 #ch# et gagner 1 jeton désarmé pour récupérer 1 bouclier.<br>Lorsque vous devriez recevoir 1 jeton non lock, si vous n'êtes pas stressé, vous pouvez dépenser 1 #ch# pour gagner 1 jeton stress à la place.",
                 effect_ENG: "During the System Phase, you may spend 1 #ch# and gain 1 disarm token to recover 1 shield.<br>Before you would gain 1 non-lock token, if you are not stressed, you may spend 1 #ch# to gain 1 stress token instead.",
                 modifier_func: [
                 () => also_Occupies('Modification')
@@ -9962,7 +9989,7 @@ const upgrades = [
                 slot: "Calculator",
                 points: 1,
                 faction: ["First_Order","Shadow_Specialists"],
-                effect: "",
+                effect: "Lorsque vous coordonnez ou brouillez, si vous avez un verrouillage sur un vaisseau, vous pouvez choisir ce vaisseau en ignorant les restrictions de portée.",
                 effect_ENG: "While you coordinate or jam, if you have a lock on a ship, you may choose that ship, ignoring range restrictions."
         
             },
@@ -9972,10 +9999,11 @@ const upgrades = [
                 id: 187,
                 available: true, 
                 modify: false,
+                unique: true,
                 slot: "Crew",
                 points: 4,
                 faction: ["First_Order"],
-                effect: "",
+                effect: "A la fin de la phase d'engagement, chaque vaisseau ennemi à portée 0-1 qui n'est pas stressé reçoit un jeton stress",
                 effect_ENG: "At the end of the Engagement Phase, each enemy ship at range 0-1 that is not stressed gains 1 stress token."
         
             },
@@ -9985,11 +10013,12 @@ const upgrades = [
                 id: 188,
                 available: true, 
                 modify: false,
+                unique: true,
                 slot: "Crew",
                 points: 2,
                 faction: ["First_Order"],
-                effect: "",
-                effect_ENG: "During the Activation or Engagement Phase, after an enemy ship in your (FArc)  at range 0-1 gains a red or orange token, if you are not stressed, you may gain 1 stress token. If you do, that ship gains 1 additional token of the type that it gained."
+                effect: "Pendant la phase d'activation ou d'engagement, après qu'un vaisseau ennemi dans votre #Farc# à portée 0-1 reçoit 1 jeton rouge ou orange, si vous n'êtes pas stressé, vous pouvez recevoir 1 jeton stress. Dans ce cas, ce vaisseau reçoit 1 jeton supplémentaire du même type.",
+                effect_ENG: "During the Activation or Engagement Phase, after an enemy ship in your #Farc# at range 0-1 gains a red or orange token, if you are not stressed, you may gain 1 stress token. If you do, that ship gains 1 additional token of the type that it gained."
         
             },
  //////////////////////////Imperial Elite Forces////////////
@@ -10003,8 +10032,8 @@ const upgrades = [
                 slot: "Talent",
                 points: 2,
                 faction: ["Imperial_Elite_Forces"],
-                effect: "",
-                effect_ENG: "When you destroy an enemy ship, remove an orange or red token from yourself, then perform an action."
+                effect: "Lorsque vous détruisez un vaisseau ennemi après l'avoir attaqué, vous pouvez retirer un jeton orange ou rouge, puis vous pouvez effectuer une action.",
+                effect_ENG: "When you destroy an enemy ship, you may remove an orange or red token from yourself, then perform an action."
         
             },
             {
@@ -10012,11 +10041,12 @@ const upgrades = [
                 name_eng: "Rukh",
                 id: 190,
                 available: true, 
+                unique: true,
                 modify: false,
                 slot: "Crew",
                 points: 6,
                 faction: ["Imperial_Elite_Forces"],
-                effect: "",
+                effect: "Mise en place : Assignez la condition 'Proie' à un vaisseau. A la fin de la phase d'activation, si vous êtes à portée 0-1 du vaisseau avec la condition 'Proie', il gagne 1 jeton épuisement et 1 jeton contrainte. Lorsque ce vaisseau est détruit, vous devez assigner la condition 'Proie' à un vaisseau au delà de la portée 3 de vous. S'il n'y en a pas, assignez la à un vaisseau à portée 3. Répétez cette opération en réduisant la portée jusqu'à trouver une cible potentielle.",
                 effect_ENG: "SETUP : assign the "prey" condition to a ship. At the end of activation phase, if you are at range 0-1 of the ship with the prey condition, it gains 1 deplete and 1 strain token. When the ship is destroyed, you MUST assign the prey condition to a ship beyond range 3 of you. If there's none, assign it to a ship at range 3. Continue this operation by reducing the range until there's a suitable target."
         
             },
@@ -10025,25 +10055,32 @@ const upgrades = [
                 name_eng: "Grand Inquisitor",
                 id: 191,
                 available: true, 
-                modify: false,
+                modify: true,
+                unique: true,
                 slot: "Crew",
+                force: 1,
                 points: 12,
                 faction: ["Imperial_Elite_Forces"],
-                effect: "",
-                effect_ENG: ""
+                modifier_func: [
+                    () => change_stat("Force",1)
+                ],
+                effect: "Après qu'un vaisseau ennemi à portée 0-2 a révélé son cadran, vous pouvez dépenser 1 #fo# pour effectuer 1 action blanche de votre barre d'action, en considérant cette action comme rouge.",
+                effect_ENG: "After an enemy ship at range 0-2 revealed its dial, you may spend 1 #fo# to perform a white action of your action bar, considering it as red."
+
         
             },
             {
                 name: "Ciena Ree",
                 name_eng: "Ciena Ree",
                 id: 192,
+                unique: true,
                 available: true, 
                 modify: false,
                 slot: "Crew",
                 points: 4,
                 faction: ["Imperial_Elite_Forces"],
-                effect: "",
-                effect_ENG: "After you perform an attack, you can acquire a lock on the target"
+                effect: "Après avoir attaqué, vous pouvez derrouiller le défenseur",
+                effect_ENG: "After you perform an attack, you can acquire a lock on the defender"
         
             },
             {
@@ -10051,13 +10088,17 @@ const upgrades = [
                 name_eng: "Seventh Sister",
                 id: 193,
                 available: true, 
-                modify: false,
+                unique: true,
+                modify: true,
                 slot: "Crew",
                 force: 1,
                 points: 8,
                 faction: ["Imperial_Elite_Forces"],
-                effect: "",
-                effect_ENG: ""
+                modifier_func: [
+                    () => change_stat("Force",1)
+                ],
+                effect: "Si un vaisseau ennemi à portée 0-1 est censé gagner un marqueur de stress, vous pouvez dépenser 1 #fo# pour qu'il gagne 1 jeton brouillage ou tracté à la place.",
+                effect_ENG: "When an enemy ship at range 0-1 would receive a stress token, you may spend 1 #fo# so that it receives 1 jam or tractored token instead."
         
             },
             {
@@ -10065,13 +10106,17 @@ const upgrades = [
                 name_eng: "Fifth Brother",
                 id: 194,
                 available: true, 
-                modify: false,
+                unique: true,
+                modify: true,
                 slot: "Gunner",
-                points: 10,
+                points: 9,
                 force: 1,
                 faction: ["Imperial_Elite_Forces"],
-                effect: "",
-                effect_ENG: ""
+                modifier_func: [
+                    () => change_stat("Force",1)
+                ],
+                effect: "Tant que vous effectuez une attaque, vous pouvez dépenser 1 #fo# pour changer 1 de vos résultats #eye# en #crit#.",
+                effect_ENG: "When you perform an attack, you may spend 1 #fo# to change 1 #eye# result into 1 #crit## result."
         
             },
             //////twin ion engine mk2////////
