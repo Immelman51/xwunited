@@ -44,7 +44,7 @@ const chassis = [
         effect2: ""
     },
     {
-        name: "",
+        name: "Pivot Wing",
         id: 4,
         effect1: "<em><strong>Aile Pivot (Baissée):</strong></em> ",
         effect2: "<em><strong>Aile Pivot (Relevée):</strong></em> "
@@ -2860,9 +2860,9 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
 //################################################################""REBEL_ALLIANCE    
         
         {
-            name: "Red Squadron Veteran",
+            name: "Vétéran de l'Escadron Rouge",
+            name_ENG: "Red Squadron Veteran",
             id: 0,
-            
             faction: "Rebel_Alliance",
             ship: "T-65 X-wing",
             shipId: 0,
@@ -2873,6 +2873,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "Luke Skywalker",
+            name_ENG: "Luke Skywalker",
             id: 1,
             unique: true,
             faction: "Rebel_Alliance",
@@ -2883,6 +2884,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             loadout: 10,
             force: 2,
             ability: "Après être devenu le défenseur (avant que les dés ne soient lancés), vous pouvez récupérer 1 #fo# .",
+            ability_ENG: "After being a defender
             slots: [
                 "Talent",
                 "Force"               
@@ -2891,6 +2893,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         
         {
             name: "Wedge Antilles",
+            name_ENG: "Wedge Antilles",
             id: 2,
             unique: true,
             faction: "Rebel_Alliance",
@@ -2909,6 +2912,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
        
         {
             name: "Biggs Darklighter",
+            name_ENG: "Biggs Darklighter",
             id: 3,
             unique: true,
             faction: "Rebel_Alliance",
@@ -2924,6 +2928,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "Wes Janson",
+            name_ENG: "Wes Janson",
             id: 4,
             unique: true,
             faction: "Rebel_Alliance",
@@ -2943,6 +2948,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
 {
             name: "Norra Wexley",
+            name_ENG: "Norra Wexley",
             id: 5,
             unique: true,
             faction: "Rebel_Alliance",
@@ -2960,6 +2966,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
 {
             name: "Horton Salm",
+            name_ENG: "Horton Salm",
             id: 6,
             unique: true,
             faction: "Rebel_Alliance",
@@ -2977,6 +2984,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: '"Dutch" Vander',
+            name_ENG: '"Dutch" Vander',
             id: 7,
             unique: true,
             faction: "Rebel_Alliance",
@@ -2993,6 +3001,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "Evaan Verlaine",
+            name_ENG: "Evaan Verlaine",
             id: 8,
             unique: true,
             faction: "Rebel_Alliance",
@@ -3008,7 +3017,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             ]
         },
         {
-            name: "Gold Squadron Veteran",
+            name: "Vétéran de l'Escadron Or",
+            name_ENG: "Gold Squadron Veteran",
             id: 9,
             faction: "Rebel_Alliance",
             ship: "BTL-A4 Y-wing",
@@ -3020,6 +3030,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
 {
             name: "Bodhi Rook",
+            name_ENG: "Bodhi Rook",
             id: 10,
             unique: true,
             faction: "Rebel_Alliance",
@@ -3036,6 +3047,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "Cassian Andor",
+            name_ENG: "Cassian Andor",
             id: 11,
             unique: true,
             faction: "Rebel_Alliance",
@@ -3053,6 +3065,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "Heff Tobber",
+            name_ENG: "Heff Tobber",
             id: 12,
             unique: true,
             faction: "Rebel_Alliance",
@@ -3233,7 +3246,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             ]
         },
         {
-            name: "Green Squadron Pilot",
+            name: "Pilote de l'Escadron Vert",
+            name_ENG: "Green Squadron Pilot",
             id: 22,
             faction: "Rebel_Alliance",
             ship: "RZ-1 A-wing",
@@ -3309,7 +3323,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                
         },
  {
-            name: "Blue Squadron Pilot",
+            name: "Pilote de l'Escadron Bleu",
+            name_ENG: "Blue Squadron Pilot",
             id: 27,
             faction: "Rebel_Alliance",
             ship: "A/SF-01 B-wing",
@@ -3354,7 +3369,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
 //############################################################# IMPERIAL_Academy
 
        {
-            name: "Captain Kagi",
+            name: "Capitaine Kagi",
+            name_ENG: "Captain Kagi",
             id: 30,
             unique: true,
             faction: "Imperial_Academy",
@@ -3398,7 +3414,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 ]
         }, 
         {
-            name: "Darth Vader",
+            name: "Dark Vador",
+            name_ENG: "Darth Vader",
             id: 33,
             unique: true,
             faction: "Imperial_Academy",
@@ -3462,7 +3479,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             ]
         },
         {
-            name: "Alpha Squadron Pilot",
+            name: "Pilote de l'Escadron Alpha",
+            name_ENG: "Alpha Squadron Pilot",
             id: 37,
             faction: "Imperial_Academy",
             ship: "TIE/in Interceptor",
@@ -3542,7 +3560,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             ]
         },
          {
-            name: "Captain Jonus",
+            name: "Capitaine Jonus",
+            name_ENG: "Captain Jonus",
             id: 42,
             unique: true,
             faction: "Imperial_Academy",
@@ -3603,7 +3622,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             ]
         },
         {
-            name: "Scimitar Squadron Pilot",
+            name: "Pilote de l'Escadron Cimeterre",
+            name_ENG: "Scimitar Squadron Pilot",
             id: 46,
             faction: "Imperial_Academy",
             ship: "TIE/sa Bomber",
@@ -3675,7 +3695,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             ]
         },
 {
-            name: "Academy Pilot",
+            name: "Pilote de l'Académie",
+            name_ENG: "Academy Pilot",
             id: 51,
             faction: "Imperial_Academy",
             ship: "TIE/ln Fighter",
@@ -3686,7 +3707,9 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             slots: []
         },
 {
-            name: "Carida Academy Cadet",
+            
+            name: "Cadet de l'Académie Carida",
+            name_ENG: "Carida Academy Cadet",
             id: 52,
             faction: "Imperial_Academy",
             skill: 1,
@@ -3728,7 +3751,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             ]
         },
  {
-            name: "Flight Leader Ubbel",
+            name: "Leader d'Escadron Ubbel",
+            name_ENG: "Flight Leader Ubbel",
             id: 55,
             unique: true,
             faction: "Imperial_Academy",
@@ -3798,7 +3822,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         
         {
-            name: "Skull Squadron Pilot",
+            name: "Pilote de l'Escadron Skull",
+            name_ENG: "Skull Squadron Pilot",
             id: 59,
             faction: "Mandalorian_Clans",
             ship: "Fang Fighter",
@@ -3885,7 +3910,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Talent"]                
         },
         {
-            name: "Nite Owl Liberator",
+            name: "Libérateur Nite Owl",
+            name_ENG: "Nite Owl Liberator",
             id: 65,
             faction: "Mandalorian_Clans",
             ship: "Gauntlet Fighter",
@@ -3942,7 +3968,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                     ]
         },
         {
-            name: "The Armorer",
+            name: "L'Armurière",
+            name_ENG: "The Armorer",
             id: 68,
             faction: "Mandalorian_Clans",
             ship: "ST-70 Assault Ship",
@@ -4233,7 +4260,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                     ]
         },
         {
-            name: "Wild Space Fringer",
+            name: "Frontalier de l'Espace Sauvage",
+            name_ENG: "Wild Space Fringer",
             id: 84,
             faction: "Pirates_and_Smugglers",
             ship: "YT-2400 Light Freighter",
@@ -4319,7 +4347,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             ]
         },
         {
-            name: "Freighter Captain",
+            name: "Capitaine de Cargo",
+            name_ENG: "Freighter Captain",
             id: 89,
             faction: "Pirates_and_Smugglers",
             ship: "YT-1300 Light Freighter",
@@ -4346,7 +4375,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             ]
         },
         {
-            name: "Outer Rim Pioneer",
+            name: "Pionnier de la Bordure Extérieure",
+            name_ENG: "Outer Rim Pioneer",
             id: 91,
             unique: true,
             faction: "Pirates_and_Smugglers",
@@ -4377,7 +4407,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             ]
         },
         {
-            name: "Autopilot Drone",
+            name: "Drone Autopiloté",
+            name_ENG: "Autopilot Drone",
             id: 93,
             unique: true,
             faction: "Pirates_and_Smugglers",
@@ -4504,7 +4535,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                     ]
         },
  {
-            name: "Tansarii Point Veteran",
+            name: "Vétéran de Tansarii Point",
+            name_ENG: "Tansarii Point Veteran",
             id: 100,
             faction: "Pirates_and_Smugglers",
             ship: "M3-A Interceptor",
@@ -4554,7 +4586,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                     ]
         },
         {
-            name: "Captain Nym",
+            name: "Capitaine Nym",
+            name_ENG: "Captain Nym",
             id: 103,
             unique: true,
             faction: "Pirates_and_Smugglers",
@@ -4589,7 +4622,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                   ]
         },
         {
-            name: "Lok Revenant",
+            name: "Revenant de Lok",
+            name_ENG: "Lok Revenant",
             id: 105,
             faction: "Pirates_and_Smugglers",
             ship: "Scurrg H-6 Bomber",
@@ -4652,7 +4686,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             ]
         },
 {
-            name: "Binayre Pirate",
+            name: "Pirate Binayre",
+            name_ENG: "Binayre Pirate",
             id: 109,
             faction: "Pirates_and_Smugglers",
             ship: "Z-95-AF4 Headhunter",
@@ -4787,7 +4822,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                     ]
         },
         {
-            name: "The Mandalorian",
+            name: "Le Mandalorien",
+            name_ENG: "The Mandalorian",
             id: 116,
             faction: "Bounty_Hunters_Guild",
             ship: "ST-70 Assault Ship",
@@ -4982,7 +5018,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             ]
         },
  {
-            name: "Captain Jostero",
+            name: "Capitaine Jostero",
+            name_ENG: "Captain Jostero",
             id: 126,
             unique: true,
             faction: "Bounty_Hunters_Guild",
@@ -5145,7 +5182,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                     ]
         },
          {
-            name: "Captain Jostero #Firespray#",
+            name: Capitaine Jostero #Firespray#",
+            name_ENG: "Captain Jostero #Firespray#",
             id: 135,
             unique: true,
             faction: "Bounty_Hunters_Guild",
@@ -5409,7 +5447,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                     ]
         },
         {
-            name: "Captain Rex #Sheathepede#",
+            name: "Capitaine Rex #Sheathepede#",
+            name_ENG: "Captain Rex #Sheathepede#",
             id: 147,
             unique: true,
             faction: "Phoenix_Cell",
@@ -5477,7 +5516,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                     ]
         },
         {
-            name: "Captain Rex #TIE#",
+            name: "Capitaine Rex #TIE#",
+            name_ENG: "Captain Rex #TIE#",
             id: 150,
             unique: true,
             faction: "Phoenix_Cell",
@@ -5723,7 +5763,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             ]
         },
         {
-            name: "Phoenix Squadron Pilot",
+            name: "Pilote de l'Escadron Phoenix",
+            name_ENG: "Phoenix Squadron Pilot",
             id: 162,
             unique: false,
             faction: "Phoenix_Cell",
@@ -5761,7 +5802,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                     ]
         },
         {
-            name: "Captain Sear",
+            name: "Capitaine Sear",
+            name_ENG: "Captain Sear",
             id: 164,
             unique: true,
             faction: "C.I.S",
@@ -5810,7 +5852,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             ]
         },
         {
-            name: "Feethan Ottraw Autopilot",
+            name: "Autopilote Feethan Ottraw",
+            name_ENG: "Feethan Ottraw Autopilot",
             id: 167,
             unique: false,
             faction: "C.I.S",
@@ -5890,7 +5933,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             ]
         },
     	{
-            name: "Tactical Droid Autopilot",
+            name: "Autopilote de Droïde Tactique",
+            name_ENG: "Tactical Droid Autopilot",
             id: 172,
             unique: false,
             faction: "C.I.S",
@@ -5905,7 +5949,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
   
         {
-            name: "Onderon Oppressor",
+            name: "Oppresseur d'Onderon",
+            name_ENG: "Onderon Oppressor",
             id: 173,
             max_per_squad: 3,
             faction: "C.I.S",
@@ -5922,7 +5967,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             ]
         },
 		{
-            name: "Geonosian Prototype",
+            name: "Prototype Géonosien",
+            name_ENG: "Geonosian Prototype",
             id: 174,
             max_per_squad: 2,
             faction: "C.I.S",
@@ -5973,7 +6019,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             ]
         },
         {
-            name: "Separatist Predator",
+            name: "Prédateur Séparatiste",
+            name_ENG: "Separatist Predator",
             id: 177,
             unique: false,
             faction: "C.I.S",
@@ -5988,7 +6035,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
      
         {
-            name: "Phlac Arphocc Prototype",
+            name: "Prototype Phlac Arphocc",
+            name_ENG: "Phlac Arphocc Prototype",
             id: 178,
             max_per_squad: 2,
             faction: "C.I.S",
@@ -6005,7 +6053,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             ]
         },
 		{
-            name: "Fearsome Predator",
+            name: "Prédateur Effrayant",
+            name_ENG: "Fearsome Predator",
             id: 179,
             max_per_squad: 3,
             faction: "C.I.S",
@@ -6022,7 +6071,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             ]
         },
   		{
-            name: "Colicoid Interceptor",
+            name: "Intercepteur Colicoïde",
+            name_ENG: "Colicoid Interceptor",
             id: 180,
             unique: false,
             faction: "C.I.S",
@@ -6037,7 +6087,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
   		
         {
-            name: "Bombardment Drone",
+            name: "Drone de Bombardement",
+            name_ENG: "Bombardment Drone",
             id: 181,
             max_per_squad: 3,
             faction: "C.I.S",
@@ -6054,7 +6105,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             ]
         },
     	{
-            name: "Baktoid Prototype",
+            name: "Prototype Baktoïd",
+            name_ENG: "Baktoid Prototype",
             id: 182,
             max_per_squad: 2,
             faction: "C.I.S",
@@ -6071,7 +6123,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             ]
         },
       	{
-            name: "Techno Union Bomber",
+            name: "Bombardier du Techno Syndicat",
+            name_ENG: "Techno Union Bomber",
             id: 183,
             unique: false,
             faction: "C.I.S",
@@ -6086,7 +6139,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             ]
         },
        	{
-            name: "Trade Federation Drone",
+            name: "Drone de la Fédération du Commerce",
+            name_ENG: "Trade Federation Drone",
             id: 184,
             unique: false,
             faction: "C.I.S",
@@ -6101,7 +6155,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             ]
         },
         {
-            name: "Haor Chall Prototype",
+            name: "Prototype Haor Chall",
+            name_ENG: "Haor Chall Prototype",
             id: 185,
             max_per_squad: 2,
             faction: "C.I.S",
@@ -6118,7 +6173,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             ]
         },
         {
-            name: "Precise Hunter",
+            name: "Chasseur Précis",
+            name_ENG: "Precise Hunter",
             id: 186,
             max_per_squad: 3,
             faction: "C.I.S",
@@ -6203,7 +6259,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             ]
         },
         {
-            name: "Epsilon Squadron Cadet",
+            name: "Cadet de l'Escadron Epsilon",
+            name_ENG: "Epsilon Squadron Cadet",
             id: 191,
             unique: false,
             faction: "First_Order",
@@ -6216,7 +6273,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             ]
         },
 		{
-            name: "Captain Phasma",
+            name: "Capitaine Phasma",
+            name_ENG: "Captain Phasma",
             id: 192,
             unique: true,
             faction: "First_Order",
@@ -6284,7 +6342,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             ]
         },
         {
-            name: "Zeta Squadron Survivor",
+            name: "Survivant de l'Escadron Zeta",
+            name_ENG: "Zeta Squadron Survivor",
             id: 196,
             unique: false,
             faction: "First_Order",
@@ -6361,7 +6420,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             ]
         },
         {
-            name: "Captain Cardinal",
+            name: "Capitaine Cardinal",
+            name_ENG: "Captain Cardinal",
             id: 201,
             unique: true,
             faction: "First_Order",
@@ -6492,7 +6552,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             ]
         },
         {
-            name: "Sienar-Jamus Engineer",
+            name: "Ingénieur Sienar-Jamus",
+            name_ENG: "Sienar-Jamus Engineer",
             id: 209,
             unique: false,
             faction: "First_Order",
@@ -6505,7 +6566,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             ]
         },
         {
-            name: "First Lieutenant Agnon",
+            name: "Premier Lieutenant Agnon",
+            name_ENG: "First Lieutenant Agnon",
             id: 210,
             unique: true,
             faction: "First_Order",
@@ -6537,7 +6599,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             ]
         },
         {
-            name: "Officer Anjay",
+            name: "Officier Anjay",
+            name_ENG: "Officer Anjay",
             id: 212,
             unique: true,
             faction: "First_Order",
@@ -6555,7 +6618,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             ]
         },
         {
-            name: "Red Fury Officer",
+            name: "Officier de la Fureur Rouge",
+            name_ENG: "Red Fury Officer",
             id: 213,
             unique: false,
             faction: "First_Order",
@@ -6970,7 +7034,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             ]
         },
         {
-            name: "BB8",
+            name: "BB-8",
             id: 236,
             unique: true,
             faction: "Resistance",
@@ -7103,7 +7167,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             ]
         },
         {
-            name: "Captain Oicunn",
+            name: "Capitaine Oicunn",
+            name_ENG: "Captain Oicunn",
             id: 244,
             unique: true,
             faction: "Imperial_Elite_Forces",
@@ -7243,7 +7308,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             ]
         },
         {
-            name: "Second Sister",
+            name: "Deuxième Soeur",
+            name_ENG: "Second Sister",
             id: 252,
             unique: true,
             faction: "Imperial_Elite_Forces",
@@ -7278,7 +7344,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             ]
         },
         {
-            name: "Saber Squadron Ace",
+            name: "As de l'Escadron Sabre",
+            name_ENG: "Saber Squadron Ace",
             id: 254,
             unique: false,
             faction: "Imperial_Elite_Forces",
@@ -7360,7 +7427,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             ]
         },		
         {
-            name: "Countess Ryad",
+            name: "Comtesse Ryad",
+            name_ENG: "Countess Ryad",
             id: 259,
             unique: true,
             faction: "Imperial_Elite_Forces",
@@ -7376,7 +7444,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             ]
         },
         {
-            name: "Captain Dobbs",
+            name: "Capitaine Dobbs",
+            name_ENG: "Captain Dobbs",
             id: 260,
             unique: true,
             faction: "Imperial_Elite_Forces",
@@ -7392,7 +7461,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             ]
         },
         {
-            name: "Grand Inquisitor",
+            name: "Grand Inquisiteur",
+            name_ENG: "Grand Inquisitor",
             id: 261,
             unique: true,
             faction: "Imperial_Elite_Forces",
@@ -7410,7 +7480,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             ]
         },
         {
-            name: "Fifth Brother",
+            name: "Cinquième Frère",
+            name_ENG: "Fifth Brother",
             id: 262,
             unique: true,
             faction: "Imperial_Elite_Forces",
@@ -7427,7 +7498,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             ]
         },
         {
-            name: "Seventh Sister",
+            name: "Septième Soeur",
+            name_ENG: "Seventh Sister",
             id: 263,
             unique: true,
             faction: "Imperial_Elite_Forces",
