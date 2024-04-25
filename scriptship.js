@@ -3390,6 +3390,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "Garven Dreis",
+            name_ENG: "Garven Dreis",
             id: 29,
             unique: true,
             faction: "Rebel_Alliance",
@@ -3399,6 +3400,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             points: 8,
             loadout: 10,
             ability: "Après avoir dépensé un marqueur de concentration, vous pouvez choisir 1 vaisseau allié à portée 1–3. Ce vaisseau allié gagne 1 marqueur de concentration.",
+            ability_ENG: "After you spend a focus token, you may choose 1 friendly ship at range 1-3. This friendly ship receives 1 focus token.",
             slots: [
                 "Talent"                
             ]
@@ -3418,12 +3420,14 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             points: 8,
             loadout: 10,
             ability: "Au début de la phase d’engagement, vous pouvez choisir 1 ou plusieurs vaisseaux alliés à portée 0–3. Dans ce cas, transférez tous les marqueurs de verrouillage ennemis des vaisseaux choisis vers vous.", 
+            ability: "At the beginning of Engagement Phase, you may choose 1 or several friendly ships at range 0-3. If you do, transfer all enemy lock tokens from the chosen ships to you.",
             slots: [                
                 "Talent"                
             ]
         },
         {
             name: "Lieutenant Sai",
+            name_ENG: "Lieutenant Sai",
             id: 31,
             unique: true,
             faction: "Imperial_Academy",
@@ -3433,11 +3437,13 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             points: 7,
             loadout: 10,
             ability: "Après avoir effectué une action #CO#, si le vaisseau que vous avez choisi effectue une action de votre barre d’action, vous pouvez effectuer cette action.",
+            ability_ENG: "After you perform a #CO# action, if the ship you chose performs an action that is on your action bar, you may perform that action.",
             slots: [
                     ]
         },
         {
             name: "Colonel Jendon",
+            name_ENG: "Colonel Jendon",
             id: 32,
             unique: true,
             faction: "Imperial_Academy",
@@ -3448,6 +3454,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             points: 7,
             loadout: 10,
             ability: "Au début de la phase d’activation, vous pouvez dépenser 1 #ch#. Dans ce cas, lorsqu’un vaisseau allié verrouille une cible à ce round, il doit le faire au-delà de la portée 3 à la place de la portée 0–3.",
+            ability_ENG: "At the beginning of Activation Phase, you may spend 1 #ch#. If you do, when a friendly ship locks a target this round, he must do it beyond range 3 instead of range 0-3.",
             slots: [
                 ]
         }, 
@@ -3464,6 +3471,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             loadout: 10,
             force: 3,
             ability: "Tant que vous effectuez une attaque, vous pouvez dépenser 1 #fo# pour changer 1 résultat vierge en un résultat #hit#.",
+            ability_ENG: "While you perform an attack, you may spend 1 #fo# to change 1 blank result into a #hit# result.",
             slots: [
                 "Force",
                 "Force",
@@ -3472,6 +3480,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "Maarek Stele",
+            name_ENG: "Maarek Stele",
             id: 34,
             unique: true,
             faction: "Imperial_Academy",
@@ -3481,12 +3490,14 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             points: 8,
             loadout: 10,
             ability: "Tant que vous effectuez une attaque, si une carte de dégât devrait être attribuée face visible au défenseur, piochez 3 cartes de dégât à la place, choisissez-en 1, et défaussez les autres.",
+            ability: "When you perform an attack, if a damage card would be dealt face up to the defender, draw 3 damage card instead, choose 1, and discard the others.",
             slots: [
                 "Talent"               
             ]
         },
         {
             name: "Zertik Strom",
+            name_ENG: "Zertik Strom",
             id: 35,
             unique: true,
             faction: "Imperial_Academy",
@@ -3496,12 +3507,14 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             points: 7,
             loadout: 10,
             ability: "Pendant la phase de dénouement, vous pouvez dépenser un marqueur de verrouillage que vous avez sur un vaisseau ennemi pour exposer 1 carte de dégât de ce dernier.",
+            ability: "During End Phase, you may spend a lock token you have on an enemy ship to expose 1 of its damage card.",  
             slots: [
                 "Talent",
             ]
         },
         {
             name: "Juno Eclipse",
+            name_ENG: "Juno Eclipse",
             id: 36,
             unique: true,
             faction: "Imperial_Academy",
@@ -3511,6 +3524,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             points: 8,
             loadout: 10,
             ability: "Tant que vous exécutez une manœuvre, vous pouvez exécuter une manœuvre de même direction et de même difficulté mais avec une vitesse supérieure ou inférieure de 1 à la place.",
+            ability_ENG: "While you execute a maneuver, you may execute a maneuver of the same direction and same difficulty but with a speed greater or lower by 1 instead.",
             slots: [
                 "Talent"
         
@@ -3532,6 +3546,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "Lieutenant Lorrir",
+            name_ENG: "Lieutenant Lorrir",
             id: 38,
             unique: true,
             faction: "Imperial_Academy",
@@ -3541,6 +3556,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             points: 6,
             loadout: 10,
             ability: "Tant que vous effectuez un tonneau, vous devez utiliser le gabarit #Lbank# ou #Rbank# à la place du gabarit #straight#.",
+            ability_ENG: "While you perform a barell roll, you must use the template #Lbank# or #Rbank# instead of the #straight# template.",
             slots: [
                 "Talent"
 
@@ -3548,6 +3564,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
  {
             name: "Nash Windrider",
+            name_ENG: "Nash Windrider",
             id: 39,
             unique: true,
             faction: "Imperial_Academy",
@@ -3559,12 +3576,14 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             points: 6,
             loadout: 10,
             ability: "Pendant la phase d’engagement, après qu’un petit vaisseau allié à portée 0–3 a été détruit, s’il ne s’était pas déjà engagé à cette phase, vous pouvez dépenser 1 #ch#. Dans ce cas, il s’engage à l’initiative actuelle.",
+            ability_ENG: "During Engagement Phase, after a small friendly ship at range 0-3 is destroyed, if he hasn't engaged yet during this phase, you may spend 1 #ch#. If you do, he engages with the current initiative.",
             slots: [
                 "Talent"
             ]
         },
 {
             name: "Vult Skerris",
+            name_ENG: "Vult Skerris",
             id: 40,
             unique: true,
             faction: "Imperial_Academy",
@@ -3576,6 +3595,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             points: 8,
             loadout: 10,
             ability: "Tant que vous défendez ou effectuez une attaque, et s’il y a un vaisseau allié à portée 1 du vaisseau ennemi attaquant ou défendant, vous pouvez dépenser 1 #ch#. Dans ce cas, vous pouvez dépenser 1 marqueur vert appartenant à ce vaisseau allié.",
+            ability_ENG: "While you defend or perform an attack, and if there's a friendly ship at range 1 of the enemy ship attacking or defending, you may spend 1 #ch#. If you do, you may spend 1 green token owned by this friendly ship.",
             slots: [
                 "Talent",
                 "Talent"
@@ -3583,6 +3603,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
  {
             name: "Commandant Goran",
+            name_ENG: "Commandant Goran",
             id: 41,
             unique: true,
             faction: "Imperial_Academy",
@@ -3592,6 +3613,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             points: 7,
             loadout: 10,
             ability: "Au début de la Phase d'Engagement, choisissez un vaisseau allié à portée 0–3 avec une initiative plus faible que la vôtre. Le vaisseau choisi gagne 1 marqueur d'évasion et retire 1 marqueur rouge non-stress.",
+            ability_ENG: "At the beginning of Engagement Phase, choose a friendly ship at range 0-3 with a lower initiative than you. The chose ship receives 1 evade token and removes 1 non-stress red token.",
             slots: [
                 "Talent",
                 "Talent"
