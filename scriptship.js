@@ -2884,7 +2884,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             loadout: 10,
             force: 2,
             ability: "Après être devenu le défenseur (avant que les dés ne soient lancés), vous pouvez récupérer 1 #fo# .",
-            ability_ENG: "After being a defender
+            ability_ENG: "After being a defender (before dice are rolled), you may recover 1 #fo#.",
             slots: [
                 "Talent",
                 "Force"               
@@ -2903,6 +2903,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             points: 8,
             loadout: 10,
             ability: "Tant que vous effectuez une attaque, le défenseur lance 1 dé de défense en moins.",
+            ability_ENG: "While you perform an attack, the defender rolls 1 less attack die.",
             slots: [
                 "Talent",
                 "Talent",
@@ -2922,6 +2923,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             points: 7,
             loadout: 10,
             ability: "Tant qu’un autre vaisseau allié à portée 0–1 défend, avant l’étape « Neutraliser les résultats », si vous êtes dans l’arc de l’attaque, vous pouvez subir 1 dégât #hit# ou #crit# pour annuler 1 dégât correspondant.",
+            ability_ENG: "While another friendly ship at range 0-1 defends, before the Neutralize results step, if you are in the attack arc, you may suffer 1 #hit# or #crit# damage to cancel 1 equivalent damage.",
             slots: [
                 "Talent"
             ]
@@ -2940,6 +2942,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             points: 5,
             loadout: 15,
             ability: "Après avoir effectué une attaque, vous pouvez dépenser 1 #ch# pour assigner au défenseur 1 marqueur de brouillage. Après avoir défendu, vous pouvez dépenser 1 #ch# pour assigner à l'attaquant 1 marqueur de brouillage.",
+            ability_ENG: "After performing an attack, you may spend 1 #ch# to assign 1 jam token to the defender. After defending, you may spend 1 #ch# to assign 1 jam token to the defender.",
             slots: [
                 "Talent",
                 "Talent"
@@ -2958,6 +2961,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             points: 7,
             loadout: 10,
             ability: "Tant que vous défendez, si un vaisseau ennemi est à portée 0–1, ajoutez 1 résultat #evd# à vos résultats de dés.",
+            ability_ENG: "While defending, if an anemy ship is at range 0-1, add 1 #evd# result to your dice results.",
             slots: [
                 "Talent",
                 "Talent"
@@ -2976,6 +2980,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             points: 6,
             loadout: 10,
             ability: "Tant que vous effectuez une attaque, vous pouvez relancer 1 dé d’attaque pour chaque autre vaisseau allié à portée 0–1 du défenseur.",
+            ability_ENG: "While you perform an attack, you may reroll 1 attack dice for each other friendly ship at range 0-1 of the defender.", 
             slots: [
                 "Talent",
                 "Talent"
@@ -2994,6 +2999,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             points: 7,
             loadout: 10,
             ability: "Après avoir effectué l’action #TL#, vous pouvez choisir 1 vaisseau allié à portée 1–3. Ce vaisseau allié peut verrouiller l’objet que vous avez verrouillé, en ignorant les restrictions de portée",
+            ability_ENG: "After performing a #TL# action, you may choose 1 friendly ship at range 1-3. This friendly ship may lock the object you have locked, ignoring range restrictions.",
             slots: [
                 "Talent",
             
@@ -3011,6 +3017,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             points: 6,
             loadout: 10,
             ability: "Au début de la phase d’engagement, vous pouvez dépenser 1 marqueur de concentration pour choisir un vaisseau allié à portée 0–1. Dans ce cas, ce vaisseau allié lance 1 dé de défense supplémentaire tant qu’il défend, jusqu’à la fin du round.",
+            ability_ENG: "At the beginning of Engagement Phase, you may spend 1 focus token to choose a friendly ship at range 0-1. If you do, this friendly ship rolls 1 additional defense die while defending until then end of the round.",
             slots: [
                 "Talent",
                 
@@ -3040,6 +3047,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             points: 7,
             loadout: 10,
             ability: "Les vaisseaux alliés peuvent verrouiller des objets à portée 0–3 de n’importe quel vaisseau allié.",
+            ability_ENG: "Friendly ships may lock objects at range 0-3 of any friendly ship.",
             slots: [
                 "Talent"
                 
@@ -3057,6 +3065,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             points: 8,
             loadout: 10,
             ability: "Au début de la phase d’activation, vous pouvez choisir 1 vaisseau allié à portée 1–3. Dans ce cas, ce vaisseau allié retire 1 marqueur de stress.",
+            ability_ENG: "At the beginning of Activation Phase, you may choose 1 friendly ship at range 1-3. If you do, this friendly ship removes 1 stress token.",
             slots: [
                 "Talent",
                 "Talent"
@@ -3075,6 +3084,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             points: 7,
             loadout: 10,
             ability: "Après qu’un vaisseau ennemi a exécuté une manœuvre, s’il est à portée 0, vous pouvez effectuer une action.",
+            ability_ENG: "After an enemy ship executes a maneuver, if it is at range 0, you may perform an action.",
             slots: [
                 "Talent"
             ]
@@ -3082,6 +3092,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
 {
             name: "K-2SO",
+            name_ENG: "K-2SO",
             id: 13,
             faction: "Rebel_Alliance",
             unique: true,
@@ -3091,12 +3102,14 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             points: 7,
             loadout: 10,
             ability: "Après avoir gagné un marqueur de stress, gagnez 1 marqueur de calcul.",
+            ability_ENG: "After you receive a stress token, receive 1 calculate token.",
             slots: [
 
             ]
         },
         {
             name: "Jan Ors",
+            name_ENG: "Jan Ors",
             id: 14,
             unique: true,
             faction: "Rebel_Alliance",
@@ -3107,6 +3120,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             loadout: 15,
             title: ["Moldy Crow"],
             ability: "Tant qu’un vaisseau allié situé dans votre arc de tir effectue une attaque principale, si vous n’êtes pas stressé, vous pouvez gagner 1 marqueur de stress. Dans ce cas, ce vaisseau peut lancer 1 dé d’attaque supplémentaire.",
+            ability: "While a friendly ship in your firing arc performs a primary attack, if you are not stressed, you may receive 1 stress token. If you do, this ship may roll 1 additional attack die.",
             slots: [
                 "Talent",
                 "Talent",
@@ -3118,6 +3132,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "Roark Garnet",
+            name_ENG: "Roark Garnet",
             id: 15,
             unique: true,
             faction: "Rebel_Alliance",
@@ -3127,6 +3142,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             points: 6,
             loadout: 10,
             ability: "Au début de la phase d’engagement, vous pouvez choisir 1 vaisseau situé dans votre arc de tir. Dans ce cas, pendant cette phase, il s’engage à l’initiative 7 au lieu de le faire à sa valeur d’initiative standard.",
+            ability_ENG: "At the beginning of Engagement phase, you may choose 1 ship in your firing arc. If you do, during this phase, it engages at initiative 7 instead engaging at its original initiative.",
             slots: [
                 "Talent",
                 "Talent"
@@ -3135,6 +3151,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "Kyle Katarn",
+            name_ENG: "Kyle Katarn", 
             id: 16,
             unique: true,
             faction: "Rebel_Alliance",
@@ -3145,6 +3162,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             loadout: 15,
             title: ["Moldy Crow"],
             ability: "Au début de la phase d’engagement, vous pouvez transférer 1 de vos marqueurs de concentration à un vaisseau allié situé dans votre arc de tir.",
+            ability_ENG: "At the beginning of Engagement Phase, you may transfer 1 of your focus tokens to a friendly ship in your firing arc.",
             slots: [
                 "Talent",
                "Title"
@@ -3156,6 +3174,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "Palob Godalhi",
+            name_ENG: "Palob Godalhi",
             id: 17,
             unique: true,
             faction: "Rebel_Alliance",
@@ -3166,6 +3185,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             loadout: 15,
             title: ["Moldy Crow"],
             ability: "Au début de la phase d’engagement, vous pouvez transférer un marqueur de stress de votre vaisseau vers un vaisseau allié dans votre arc de tir. Lorsque vous retirez un marqueur de stress de votre vaisseau, vous pouvez effectuer une action.",
+            ability: "At the beginning of Engagement Phase, you may transfer 1 stress token from you to a friendly ship in your firing arc. When you remove a stress token from you, you may perform an action.",
             slots: [
                 "Talent",
                 "Title"
@@ -3176,6 +3196,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "Jake Farrell",
+            name_ENG: "Jake Farell",
             id: 18,
             unique: true,
             faction: "Rebel_Alliance",
@@ -3185,6 +3206,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             points: 7,
             loadout: 10,
             ability: "Après avoir effectué une action #BR# ou #BO#, vous pouvez choisir un vaisseau allié à portée 0–1. Ce vaisseau peut effectuer une action #FS# .",
+            ability_ENG: 'After performing a #BR# or #BO# action, you may choose a friendly ship at range 0-1. This ship may perform a #FS# action.",
             slots: [
                 "Talent",
                 "Talent"
@@ -3193,6 +3215,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "Arvel Crynyd",
+            name_ENG: "Arvel Crynyd",
             id: 19,
             unique: true,
             faction: "Rebel_Alliance",
@@ -3202,6 +3225,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             points: 6,
             loadout: 10,
             ability: "Vous pouvez effectuer des attaques principales à portée 0. Si vous deviez échouer une action #BO# qui vous amènerait à chevaucher un autre vaisseau, résolvez-la comme si vous exécutiez partiellement une manœuvre à la place.",
+            ability_ENG: "You may perform primary attacks at range 0. If you would fail a #BO# action because you would overlap an other ship, perform it as you would execute partially a maneuver instead.",
             slots: [
                 "Talent",
                 "Talent"
@@ -3210,6 +3234,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
  {
             name: "Tycho Celchu",
+            name_ENG: "Tycho Celchu",
             id: 20,
             unique: true,
             faction: "Rebel_Alliance",
@@ -3219,6 +3244,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             points: 7,
             loadout: 10,
             ability: "Tant que vous avez 2 marqueurs de stress ou moins, vous pouvez exécuter des actions, même si vous êtes stressé.",
+            ability_ENG: "While you have 2 stress tokens or less, you may perform actions, even while stressed.",
             slots: [
                 "Talent",
                 "Talent",
@@ -3229,6 +3255,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "Gemmer Sojan",
+            name_ENG: "Gemmer Sojan",
             id: 21,
             unique: true,
             faction: "Rebel_Alliance",
@@ -3238,6 +3265,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             points: 6,
             loadout: 10,
             ability: "Tant que vous êtes à portée 1 d’un vaisseau ennemi, augmentez votre agilité de 1.",
+            ability_ENG: "While you are at range 1 of an enemy ship, increase your agility by 1.",
             slots: [
                 "Talent",
                 "Talent"
@@ -3262,6 +3290,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "Braylen Stramm",
+            name_ENG: "Braylen Stramm",
             id: 23,
             unique: true,
             faction: "Rebel_Alliance",
@@ -3271,12 +3300,14 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             points: 8,
             loadout: 10,
             ability: "Tant que vous défendez ou effectuez une attaque, si vous êtes stressé, vous pouvez relancer jusqu’à 2 de vos dés.",
+            ability_ENG: "While you defend or perform an attack, if you are stressed, you may reroll up to 2 of your dice.", 
             slots: [
                 "Talent"
             ]
         },
         {
             name: "Ten Numb",
+            name_ENG: "Ten Numb",
             id: 24,
             unique: true,
             faction: "Rebel_Alliance",
@@ -3286,6 +3317,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             points: 8,
             loadout: 10,
             ability: "Tant que vous défendez ou effectuez une attaque, vous pouvez dépenser 1 marqueur de stress pour changer tous vos résultats #eye# en résultats #hit# ou #evd# .",
+            ability_ENG: "While you defend or perform an attack, you may spend 1 stress token to change all your #eye# results into #hit# or #evd# results.",
             slots: [
                 "Talent",
                 "Talent"
@@ -3293,6 +3325,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
 {
             name: "Netrem Pollard",
+            name_ENG: "Netrem Pollard", 
             id: 25,
             unique: true,
             faction: "Rebel_Alliance",
@@ -3302,12 +3335,14 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             points: 8,
             loadout: 10,
             ability: "Après avoir effectué un tonneau, vous pouvez choisir 1 vaisseau allié qui n’est pas stressé à portée 0–1. Ce vaisseau gagne 1 marqueur de stress, puis vous pouvez pivoter à 180°.",
+            ability_ENG: "After you perform a barell roll, you may choose 1 friendly ship with no stress at range 0-1. This ship receives 1 stress token, then you may rotate at 180°.",
             slots: [
                 "Talent"            
             ]
         },
 {
             name: "Gina Moonsong",
+            name_ENG: "Gina Moonsong",
             id: 26,
             faction: "Rebel_Alliance",
             unique: true,
@@ -3317,6 +3352,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             points: 8,
             loadout: 10,
             ability: "Au début de la phase d’engagement, vous devez transférer 1 de vos marqueurs de stress à un autre vaisseau allié à portée 0–2.", 
+            ability_ENG: "At the beginning of Engagement phase, you must transfer 1 of your stress tokens to another friendly ship at range 0-2.",
             slots: [
                 "Talent",
                 "Talent"]
@@ -3336,6 +3372,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "Shara Bey",
+            name_ENG: "Shara Bey",
             id: 28,
             unique: true,
             faction: "Rebel_Alliance",
@@ -3345,6 +3382,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             points: 7,
             loadout: 10,
             ability: "Tant que vous défendez ou effectuez une attaque principale, vous pouvez dépenser 1 marqueur de verrouillage que vous avez sur le vaisseau ennemi pour ajouter 1 résultat #eye# aux résultats de vos dés.",
+            ability_ENG: "While you defend or perform a primary attack, you may spend 1 lock token you have on the defender to add 1 #eye# result to your dice.",
             slots: [
                 "Talent",
                 "Talent"                
