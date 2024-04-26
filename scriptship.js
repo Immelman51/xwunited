@@ -4201,6 +4201,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "Bardan Jusik",
+            name_ENG: "Bardan Jusik",
             id: 74,
             unique: true,
             faction: "Mandalorian_Clans",
@@ -4209,13 +4210,15 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 4,
             points: 12,
             loadout: 10,
-            ability: "Après avoir effectué une attaque #can#, vous pouvez dépenser le marqueur bleu d’un vaisseau allié à portée 0-1 pour effectuer une attaque principale bonus.",
+            ability: "Après avoir effectué une attaque #can#, vous pouvez dépenser le marqueur bleu d’un vaisseau allié à portée 0-1 de vous pour effectuer une attaque principale bonus.",
+            ability_ENG: "After you perform a #can# attack, you may spend a blue token from a friendly ship at range 0-1 of you to perform a bonus primary attack.",
             slots: [
                 "Talent"                               
             ]
         },
         {
             name: "Spar",
+            name_ENG: "Spar",
             id: 75,
             unique: true,
             faction: "Mandalorian_Clans",
@@ -4224,6 +4227,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 3,
             points: 12,
             loadout: 10,
+            ability_ENG: "While you perform a #can# attack, you may reroll an attack die.",
             ability: "Lorsque vous effectuez une attaque #can# , vous pouvez relancer un dé d’attaque.",
             slots: [
                 "Talent"
@@ -4233,6 +4237,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
 
         {
             name: "Fenn Shysa",
+            name_ENG: "Fenn Shysa",
             id: 76,
             unique: true,
             faction: "Mandalorian_Clans",
@@ -4242,6 +4247,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             points: 13,
             loadout: 10,
             ability: "Après avoir effectué une manœuvre (même partiellement), vous pouvez recevoir un marqueur de contrainte. Dans ce cas, vous pouvez effectuer une action #BR# et passer votre phase « effectuer une action ».",
+            ability_ENG: "After you execute a maneuver (even partially), you may receive a strain token. If you do, youmay perform a #BR# action and skip your 'Perform an action' step.",
             slots: [
                 "Talent",
                 "Talent"               
@@ -4249,15 +4255,19 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "Tobi Dala",
+            name_ENG: "Tobi Dala",
             id: 77,
             unique: true,
             faction: "Mandalorian_Clans",
             ship: "Aggressor Assault Fighter",
             shipId: 20,
             skill: 2,
+            charge: 1,
+            recurring: true,
             points: 12,
             loadout: 10,
             ability: "Après avoir défendu contre un vaisseau dans votre #Farc# , vous pouvez dépenser 1 #ch#. Dans ce cas, vous pouvez verrouiller l’attaquant et effectuer une attaque bonus de #can# contre lui.",
+            ability_ENG: "After you defend against a ship in your #Farc#, you may spend 1 #ch#. If you do, you may lock the attacker and perform a bonus #can# attack against him.",
             slots: [
                 "Talent"          
                 
@@ -4265,6 +4275,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "Rook Rast",
+            name_ENG: "Rook Rast",
             id: 78,
             unique: true,
             faction: "Mandalorian_Clans",
@@ -4274,6 +4285,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             points: 2,
             loadout: 0,
             ability: "Lorsque vous attaquez un vaisseau stressé, lancez 1 dé supplémentaire.",
+            ability_ENG: "While you attack a stressed ship, roll 1 additional attack die.",
             slots: [
                 "Talent",
                 "Talent"
@@ -4281,6 +4293,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "Tristan Wren",
+            name_ENG: "Tristan Wren",
             id: 79,
             unique: true,
             faction: "Mandalorian_Clans",
@@ -4289,7 +4302,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 1,
             points: 2,
             loadout: 0,
-            ability: "Lorsqu’un vaisseau allié à portée 1-3 attaque un vaisseau à portée 0, ce vaisseau peut modifier jusqu’à 2 de ses résultats #hit# en résultats #crit# .",
+            ability: "Lorsqu’un vaisseau allié à portée 0-3 attaque un vaisseau à portée 0, ce vaisseau peut modifier jusqu’à 2 de ses résultats #hit# en résultats #crit# .",
+            ability_ENG: "While a friendly ship at range 0-3 attacks a ship at range 0, this ship may modify up to 2 of your #hit# results into #crit# results.",
             slots: [
                 "Talent"
                 
@@ -4297,6 +4311,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "Axe Woves",
+            name_ENG: "Axe Woves",
             id: 80,
             unique: true,
             faction: "Mandalorian_Clans",
@@ -4306,6 +4321,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             points: 2,
             loadout: 0,
             ability: "Au début de la phase d’engagement, chaque autre vaisseau à portée 0 gagne un marqueur de stress.",
+            ability_ENG: "At the beginning of Engagement Phase, each other ships at range 0 receives a stress token.",
             slots: [
                 "Talent"
                 
@@ -4313,15 +4329,19 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "Gar Saxon",
+            name_ENG: "Gar Saxon",
             id: 81,
             unique: true,
             faction: "Mandalorian_Clans",
             ship: "Commando Team",
             shipId: 81,
             skill: 4,
+            charge: 1,
+            recurring: true,
             points: 3,
             loadout: 5,
             ability: "Lorsqu’un vaisseau allié à portée 0-2 effectue une attaque principale, si l’attaquant est dans le #Farc# du défenseur, vous pouvez dépenser 1 #ch#. Dans ce cas, l’attaquant lance 1 dé d’attaque supplémentaire.",
+            ability_ENG: "While a friendly ship at range 0-2 performs a primary attack, if the attacker is in the #Farc# of the defender, you may spend 1 #ch#. If you do, the attacker roll 1 additional attack die.",
             slots: [
                 "Talent",
                 "Talent"
