@@ -3631,12 +3631,14 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             points: 7,
             loadout: 10,
             ability: "Tant qu’un vaisseau allié à portée 0–1 effectue une attaque spéciale, il peut relancer jusqu’à 2 dés d’attaque.",
+            ability_ENG: "While a friendly ship at range 0-1 performs a special attack, it can reroll up to 2 attack dice.",
             slots: [
                 "Talent"
             ]
         },
         {
             name: "Major Rhymer",
+            name_ENG: "Major Rhymer",
             id: 43,
             unique: true,
             faction: "Imperial_Academy",
@@ -3646,12 +3648,14 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             points: 6,
             loadout: 10,
             ability: "Tant que vous effectuez une attaque spéciale, vous pouvez augmenter ou réduire de 1 le prérequis de portée, dans une limite de 0–3.",
+            ability_ENG: "While performing a special attack, you may increase or decrease the range restriction by 1, within a limit of 0-3.",
             slots: [
                 "Talent"
             ]
         },
         {
             name: "Tomax Bren",
+            name_ENG: "Tomax Bren",
             id: 44,
             unique: true,
             faction: "Imperial_Academy",
@@ -3660,7 +3664,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 5,
             points: 6,
             loadout: 10,
-            ability: "Après avoir effectué une action de rechargement, vous pouvez récupérer 1 charge d’une de vos cartes améliorations.",
+            ability: "Après avoir effectué une action #RD#, vous pouvez récupérer 1 #ch# d’une de vos cartes améliorations.",
+            ability_ENG: "After you perform a #RD# action, you may recover 1 #ch# from 1 of you upgrade cards.",
             slots: [
                 "Talent",
                 "Talent"
@@ -3668,15 +3673,19 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: '"Deathfire"',
+            name_ENG: '"Deathfire"',
             id: 45,
             unique: true,
             faction: "Imperial_Academy",
             ship: "TIE/sa Bomber",
             shipId: 11,
             skill: 2,
+            charge: 2,
+            recurring: true, 
             points: 6,
             loadout: 10,
             ability: "Après avoir entièrement exécuté une manœuvre à vitesse 3-5, si vous n'avez pas largué ou lancé d'engin à ce round, vous pouvez dépenser 2#ch# pour larguer ou lancer une bombe en utilisant le gabarit 3#straight#.",
+            ability_ENG: "After you execute a speed 3-5 maneuver, if you haven't dropped or launched any device this round, you may spend 2 #ch# to drop or launch a bomb using the 3 #straight# template.",
             slots: [
                 "Talent"
             ]
@@ -3695,6 +3704,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: '"Howlrunner"',
+            name_ENG: '"Howlrunner"',
             id: 47,
             unique: true,
             faction: "Imperial_Academy",
@@ -3704,6 +3714,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             points: 5,
             loadout: 10,
             ability: "Tant qu’un vaisseau allié à portée 0–1 effectue une attaque principale, il peut relancer 1 dé d’attaque.",
+            ability_ENG: "While a friendly ship at range 0-1 performs a primary attack, it can reroll 1 attack die.",
             slots: [
                 "Talent",
                 "Talent"
@@ -3711,6 +3722,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
 {
             name: '"Mauler" Mithel',
+            name_ENG: '"Mauler" Mithel',
             id: 48,
             unique: true,
             faction: "Imperial_Academy",
@@ -3720,12 +3732,14 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             points: 4,
             loadout: 10,
             ability: "Tant que vous effectuez une attaque principale, si un allié Dark Vador ou 'Backstabber' est dans votre arc #Larc# ou #Rarc# à portée 0-1, lancez 1 dé d'attaque supplémentaire.",
+            ability_ENG: "While you perform a primary attack, if a friendly Darth Vader or 'Backstabber' is in your #Larc# or #Rarc# at range 0-1, roll 1 additional 1 attack die.",
             slots: [
                 "Talent"
             ]
         },
  {
             name: '"Backstabber"',
+            name_ENG: '"Backstabber"',
             unique: true,
             id: 49,
             faction: "Imperial_Academy",
@@ -3735,12 +3749,14 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             points: 4,
             loadout: 10,
             ability: "Tant que vous effectuez une attaque principale, si un allié Dark Vador ou 'Mauler' Mithel est dans votre arc #Larc# ou #Rarc# à portée 0-1, lancez 1 dé d'attaque supplémentaire.",
+            ability_ENG: "While you perform a primary attack, if a friendly Darth Vader or 'Mauler' Mithel is in your #Larc# or #Rarc# at range 0-1, roll 1 additional 1 attack die.",
             upgrades: [
                 "Talent"
             ]
         },
  {
             name: '"Dark Curse"'  ,          
+            name_ENG: 'Dark Curse"', 
             unique: true,
             id: 50,
             faction: "Imperial_Academy",
@@ -3750,6 +3766,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             points: 4,
             loadout: 10,
             ability: "Tant que vous défendez, les dés de l’attaquant ne peuvent pas être modifiés.",
+            ability_ENG: "While you defend, the attacker's dice cannot be modified.",
             upgrades: [
                 "Talent"
             ]
@@ -3782,6 +3799,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         
         {
             name: "Lyttan Dree",
+            name_ENG: "Lyttan Dree", 
             id: 53,
             faction: "Imperial_Academy",
             skill: 3,
@@ -3791,12 +3809,14 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             points: 6,
             loadout: 10,
             ability: "Tant qu’un vaisseau allié à portée 0–2 effectue une attaque, si vous êtes dans le #Larc# ou #Rarc# du défenseur, l’attaquant peut relancer 1 dé d’attaque.",
+            ability_ENG: "While a friendly ship at range 0-2 performs an attack, if you are in the #Larc# or #Rarc# of the defender, the attacker may reroll 1 attack die.", 
             slots: [
                 "Talent"
             ]
         },
         {
             name: '"Rampage"',
+            name_ENG: '"Rampage"',
             id: 54,
             faction: "Imperial_Academy",
             skill: 4,
@@ -3806,6 +3826,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             points: 6,
             loadout: 10,
             ability: "Après avoir exécuté une manœuvre à vitesse 3–4, vous pouvez choisir un vaisseau situé dans votre #tur# à portée 0–1. Dans ce cas, ce vaisseau gagne 1 marqueur de contrainte, ou 2 marqueurs de contrainte si vous êtes endommagé.",
+            ability_ENG: "After you execute a speed 3-4 maneuver, you may choose a ship in your #tur# at range 0-1. If you do, this ship receives 1 strain token, or 2 strain tokens if you are damaged.", 
             slots: [
                 "Talent"
             ]
@@ -3822,6 +3843,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             points: 6,
             loadout: 10,
             ability: "Après qu'un vaisseau allié à portée 0-2 a défendu, si une carte de dégât lui a été attribuée, vous pouvez effectuer une attaque bonus contre l'attaquant.",
+            ability_ENG: "After a friendly ship at range 0-2 defends, if a damage card was dealt to him, you may perform a bonus attack against the attacker.", 
             slots: [
                 "Talent",
                 "Talent"
@@ -3834,6 +3856,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
 
  {
             name: "Fenn Rau",
+            name_ENG: "Fenn Rau",
             id: 56,
             unique: true,
             faction: "Mandalorian_Clans",
@@ -3843,6 +3866,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             points: 10,
             loadout: 10,
             ability: "Lorsque vous attaquez ou défendez, si l’attaque est à portée 1, vous pouvez lancer 1 dé supplémentaire.",
+            ability_ENG: "While you attack or defend, if the attack is at range 1, you may roll 1 additional die.", 
             slots: [
                 "Talent",
                 "Talent",
@@ -3851,6 +3875,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "Old Teroch",
+            name_ENG: "Old Teroch",
             id: 57,
             unique: true,
             faction: "Mandalorian_Clans",
@@ -3859,7 +3884,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 5,
             points: 9,
             loadout: 10,
-            ability: "Au début de la phase d’engagement, vous pouvez choisir 1 vaisseau ennemi à portée 1. Dans ce cas, et si vous êtes dans son #Farc# , il retire tous ses marqueurs verts. .",
+            ability: "Au début de la phase d’engagement, vous pouvez choisir 1 vaisseau ennemi à portée 1. Dans ce cas, et si vous êtes dans son #Farc# , il retire tous ses marqueurs verts.",
+            ability_ENG: "At the start of Engagement Phase, you may choose 1 enemy ship at range 1. If you do, and if you are in its #Farc#, it removes all its green tokens.",
             slots: [
                 "Talent",
                 "Talent"
@@ -3867,6 +3893,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "Kad Solus",
+            name_ENG: "Kad Solus",
             id: 58,
             unique: true,
             faction: "Mandalorian_Clans",
@@ -3876,6 +3903,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             points: 8,
             loadout: 10,
             ability: "Après avoir entièrement effectué une manœuvre rouge, gagnez 2 marqueurs de concentration.",
+            ability_ENG: "After you fully execute a red maneuver, receive 2 focus tokens.", 
             slots: [
                 "Talent"
             ]
@@ -3895,6 +3923,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "Tor Phun",
+            name_ENG: "Tor Phun",
             id: 60,
             unique: true,
             faction: "Mandalorian_Clans",
@@ -3904,12 +3933,14 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             points: 8,
             loadout: 10,
             ability: "Après avoir effectué une attaque, si le défenseur a été détruit, vous pouvez effectuer une action, même stressé. Puis vous pouvez recevoir 2 marqueurs de stress pour effectuer une attaque bonus.",
+            ability_ENG: "After you perform an attack, if the defender is destroyed, you may perform a action, even stressed. Then you may receive 2 stress tokens to perform a bonus attack.", 
             slots: [
                 "Talent"
             ]
         },
         {
             name: "Pre Vizsla",
+            name_ENG: "Pre Vizsla",
             id: 61,
             faction: "Mandalorian_Clans",
             ship: "Gauntlet Fighter",
@@ -3921,12 +3952,14 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             recurring: 1,
             unique: true,
             ability: "Tant que vous effectuez une attaque, si l’initiative du défenseur est égale ou plus grande que la vôtre, vous pouvez dépenser 2#ch# pour lancer 1 dé supplémentaire.",
+            ability_ENG: "While you perform an attack, if the defender's initiative is equal or greater than yours, you may spend 2 #ch# to roll 1 additional attack die.", 
             slots: [
                 "Talent"
             ]
         },
         {
             name: "Bo-Katan Kryze",
+            name_ENG: "Bo-Katan Kryze", 
             id: 62,
             faction: "Mandalorian_Clans",
             ship: "Gauntlet Fighter",
@@ -3935,13 +3968,15 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             points: 11,
             loadout: 10,
             unique: true,
-            ability: "Après avoir entièrement exécuté une manœuvre, vous pouvez gagner 1 marqueur d’épuisement pour choisir un objet dans votre #Farc# à portée 1-2. Dans ce cas, un autre vaisseau allié peut effectuer une action  #TL# pour verrouiller cet objet.",
+            ability: "Après avoir entièrement exécuté une manœuvre, vous pouvez gagner 1 marqueur d’épuisement pour choisir un objet dans votre #Farc# à portée 1-2. Dans ce cas, un autre vaisseau allié peut effectuer une action #TL# pour verrouiller cet objet.",
+            ability_ENG: "After you fully execute a maneuver, you may receive 1 deplete token to choose an object in your #Farc# at range 1-2. If you do, another friendly ship may perform a #TL# action to lock this object.", 
             slots: [
                 "Talent"
             ]
         },
         {
             name: "Tiber Saxon",
+            name_ENG: "Tiber Saxon",
             id: 63,
             faction: "Mandalorian_Clans",
             ship: "Gauntlet Fighter",
@@ -3951,12 +3986,14 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             loadout: 10,
             unique: true,
             ability: "Après avoir effectué une attaque qui a touché, si le défenseur n’a pas de carte de dégât face visible, il gagne un marquer de contrainte.",
+            ability_ENG: "After you perform an attack that hits, if the defender has no damage card face up, it receives a strain token.", 
             slots: [
                 "Talent"               
             ]
         },
         {
             name: "Ursa Wren",
+            name_ENG: "Ursa Wren", 
             id: 64,
             faction: "Mandalorian_Clans",
             ship: "Gauntlet Fighter",
@@ -3966,6 +4003,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             loadout: 10,
             unique: true,
             ability: "Lorsque vous recevez un marqueur rouge, vous pouvez dépenser un marqueur bleu pour le retirer.",
+            ability_ENG: "When you receive a red token, you may spend a blue token to remove it.", 
             slots: [
                 "Talent"]                
         },
@@ -3984,9 +4022,10 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "Maul",
+            name_ENG: "Maul", 
             id: 66,
-            faction: "Mandalorian_Clans",
-            ship: "Gauntlet Fighter",
+            faction: "Shadow Collective", //Customiser le leader Maul             
+			ship: "Gauntlet Fighter",
             shipId: 77,
             skill: 5,
             points: 12,
@@ -3995,7 +4034,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             force: 3,
             title: ["Nightbrother"],
             ability: "Lorsque vous effectuez une action #CO# , vous pouvez dépenser 1#fo# . Dans ce cas, considérez l’action comme blanche et vous pouvez coordonner 1 vaisseau allié supplémentaire ; chaque vaisseau allié que vous avez coordonné ainsi gagne 1 marqueur de contrainte.",
-            funtion: "disponible uniquement si leader Maul",
+            ability_ENG: "While you perform a #CO# action, you may spend 1#fo#. If you do, consider it as a white action, and you may coordinate 1 additional friendly ship; each friendly ship you have coordinated this way receives 1 strain token.", 
             slots: [
                 "Force",
                 "Talent",
@@ -4007,6 +4046,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "Din Djarin",
+            name_ENG: "Din Djarin", 
             id: 67,
             faction: "Mandalorian_Clans",
             ship: "ST-70 Assault Ship",
@@ -4017,6 +4057,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             title: ["Razor Crest"],
             unique: true,
             ability: "Lorsque vous défendez ou effectuez une attaque, si vous êtes dans le  #Farc#  à portée 1-2 de 2 vaisseaux ennemis ou plus, vous pouvez changer 1 de vos résultats vierges en résultat #eye#.",
+            ability_ENG: "While you defend or perform an attack, if you are in the #Farc# at range 1-2 of 2 enemy ships or more, you may change 1 of your blank results into a #eye# result.",
             slots: [
                 "Talent",
                 "Talent",
@@ -4040,16 +4081,19 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             unique: true,
             title: ["Razor Crest"],
             ability: "MISE EN PLACE : L’amélioration  #mod# que vous équipez est gratuite. Si elle possède 1 ou plusieurs charges, ajoutez en une supplémentaire.",
+            ability_ENG: "SETUP : the #mod# upgrade you equip is free. If it has 1 or more charges, add 1 additional #ch#.", 
             slots: [
         		"Talent",
                "Title"
             ],
             modifier_func: [
-            	() => auto_equip("title")
+            	() => auto_equip("title"),
+                () => free_upg("Modification")
                     ]
         },
         {
             name: "Paz Vizsla",
+            name_ENG: "Paz Vizsla",
             id: 69,
             faction: "Mandalorian_Clans",
             ship: "ST-70 Assault Ship",
@@ -4060,6 +4104,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             unique: true,
             title: ["Razor Crest"],
             ability: "Lorsque vous attaquez vous pouvez dépenser 1#ch# sur l’une de vos cartes #ill#  pour lancer 1 dé d’attaque supplémentaire.",
+            ability_ENG: "While you attack, you may spend 1 #ch# from 1 of your #ill# upgrade card. If you do, roll 1 additional attack die.",
             slots: [
                 "Talent",
                 "Title",
@@ -4070,6 +4115,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "Din Djarin",
+            name_ENG: "Din Djarin", 
             id: 70,
             faction: "Mandalorian_Clans",
             ship: "Naboo Royal N-1 Starfighter",
@@ -4080,6 +4126,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             unique: true,
             title: ["Din Djarin's N1"],
             ability: "Lorsque vous défendez ou effectuez une attaque, si vous êtes dans le  #Farc#  à portée 1-2 de 2 vaisseaux ennemis ou plus, vous pouvez changer 1 de vos résultats vierges en résultat #eye#.",
+            ability_ENG: "While you defend or perform an attack, if you are in the #Farc# at range 1-2 of 2 enemy ships or more, you may change 1 of your blank results into a #eye# result.",
             slots: [
                 "Talent",
                 "Talent",
@@ -4091,6 +4138,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "Grogu",
+            name_ENG: "Grogu",
             id: 71,
             faction: "Mandalorian_Clans",
             ship: "Naboo Royal N-1 Starfighter",
@@ -4102,6 +4150,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             unique: true,
             title: ["Din Djarin's N1"],
             ability: "Lorsqu’un vaisseau à portée 0-2 subit des dégâts, vous pouvez récupérer 1#fo#",
+            ability_ENG: "While a friendly ship at range 0-2 suffers any damage, you may recover 1#fo#", 
             slots: [
                 "Force",
                 "Title"
@@ -4112,6 +4161,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "Sabine Wren",
+            name_ENG: "Sabine Wren", 
             id: 72,
             faction: "Mandalorian_Clans",
              ship: "Naboo Royal N-1 Starfighter",
@@ -4121,12 +4171,14 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             loadout: 10,
             unique: true,
             ability: "Avant de vous activer, vous pouvez effectuer une action #BR# ou #BO#",
+            ability_ENG: "Before you activate, you may perform a #BR# or #BO# action.", 
             slots: [
                 "Talent"
             ]
         },
         {
             name: "R5-D4",
+            name_ENG: "R5-D4",
             id: 73,
             faction: "Mandalorian_Clans",
              ship: "Naboo Royal N-1 Starfighter",
@@ -4138,6 +4190,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             title: ["Din Djarin's N1"],
             keyword: ["Droid"],
             ability: "Lorsqu’une attaque contre vous échoue, gagnez 1 marqueur de calcul.",
+            ability_ENG: "While an attack against you fails, receive 1 calculate token.", 
             slots: [
                 "Title"
 
