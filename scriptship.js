@@ -4196,7 +4196,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
 
             ],
             modifier_func: [
-            	() => auto_equip("title")
+            	() => auto_equip("title"),
+                () => droid()
                     ]
         },
         {
@@ -4352,6 +4353,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
 
 {
             name: "Dash Rendar",
+            name_ENG: "Dash Rendar",
             id: 82,
             unique: true,
             faction: "Pirates_and_Smugglers",
@@ -4362,6 +4364,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             loadout: 15,
             title: ["Outrider"],
             ability: "Lorsque vous vous déplacez, ignorez les obstacles",
+            ability_ENG: "While you move, ignore obstacles",
             slots: [
                 "Talent",
                 "Talent",
@@ -4373,6 +4376,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: '"Leebo"',
+            name_ENG: '"Leebo"',
             id: 83,
             unique: true,
             faction: "Pirates_and_Smugglers",
@@ -4383,7 +4387,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             loadout: 15,
             title: ["Outrider"],
             keyword: ["Droid"],
-            ability: "Après avoir défendu ou attaqué, si vous avez dépensé un marqueur de calcul, recevez un marqueur de calcul.",
+            ability: "Après avoir défendu ou attaqué, si vous avez dépensé un marqueur de calcul, recevez un jeton calcul.",
+            ability_ENG: "After you defend or perform an attack, if you spend a calculate token, receive a calculate token.",
             slots: [
                 "Talent",
                 "Title"
@@ -4407,6 +4412,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "Han Solo",
+            name_ENG: "Han Solo", 
             id: 85,
             unique: true,
             faction: "Pirates_and_Smugglers",
@@ -4416,7 +4422,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 6,
             points: 9,
             loadout: 10,
-            ability: "Tant que vous attaquez ou défendez, si l’attaque est obstruée par un obstacle, vous pouvez lancer un dé supplémentaire.",
+            ability: "Tant que vous attaquez ou défendez, si l’attaque est obstruée par un obstacle, vous pouvez lancer un dé supplémentaire.<br>Si vous défendez ou attaquez en étant à portée 0 d'un obstacle, vous pouvez lancer 1 dé supplémentaire",
+            ability_ENG: "While you defend or perform an attack, if the attack is obstructed by an obstacle, you may roll 1 additional die.<br>If you defend or perform an attack while being at range 0 of an obstacle, you may roll 1 additional die.", 
             slots: [
                 "Talent",
                 "Talent",
@@ -4426,6 +4433,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "Lando Calrissian",
+            name_ENG: "Lando Calrissian", 
             id: 86,
             unique: true,
             faction: "Pirates_and_Smugglers",
@@ -4435,7 +4443,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 5,
             points: 8,
             loadout: 10,
-            ability: "Après avoir lancé des dés, si vous n’êtes pas stressé, vous pouvez gagner 1 marqueur de stress pour relancer tous vos résultats vierges.",
+            ability: "Après avoir lancé des dés, si vous n’êtes pas stressé, vous pouvez gagner 1 jeton stress pour relancer tous vos résultats vierges.",
+            ability_ENG: "After rolling dice, if you are not stressed, you may receive a stress token to reroll all you blank results.", 
             slots: [
                 "Talent",
                 "Talent",
@@ -4444,6 +4453,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "Chewbacca",
+            name_ENG: "Chewbacca",
             id: 87,
             unique: true,
             faction: "Pirates_and_Smugglers",
@@ -4456,6 +4466,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             points: 7,
             loadout: 10,
             ability: "Lorsque vous devriez recevoir une carte de dégât face visible, vous pouvez dépenser 1 #ch# pour la recevoir face cachée à la place.",
+            ability_ENG: "When you would receive a face up damage card, you may spend 1 #ch# to receive it facedown instead.", 
             slots: [
                 "Talent",
                 "Title"
@@ -4465,6 +4476,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
  
         {
             name: "L3-37",
+            name_ENG: "L3-37",
             id: 88,
             unique: true,
             faction: "Pirates_and_Smugglers",
@@ -4475,9 +4487,13 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             loadout: 10,
             keyword: ["Droid"],
             ability: "Si vous n’êtes pas protégé, réduisez la difficulté de vos virages légers.",
+            ability_ENG: "If you are not protected, reduce the difficulty of your bank turns.",
             slots: [
                 "Talent"               
-            ]
+            ],
+            modifier_func: [
+                () => droid()
+                ]
         },
         {
             name: "Capitaine de Cargo",
@@ -4493,6 +4509,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "Lando Calrissian #Escape Craft#",
+            name_ENG: "Lando Calrissian #Escape Craft#",
             id: 90,
             unique: true,
             faction: "Pirates_and_Smugglers",
@@ -4501,7 +4518,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 4,
             points: 2,
             loadout: 10,
-            ability: "Après avoir lancé des dés, si vous n’êtes pas stressé, vous pouvez gagner 1 marqueur de stress pour relancer tous vos résultats vierges.",
+            ability: "Après avoir lancé des dés, si vous n’êtes pas stressé, vous pouvez gagner 1 jeton stress pour relancer tous vos résultats vierges.",
+            ability_ENG: "After rolling dice, if you are not stressed, you may receive 1 stress token to reroll all your blank results.",
             slots: [
                 "Talent",
                 "Talent"                
@@ -4519,12 +4537,14 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             points: 2,
             loadout: 5,
             ability: "Les vaisseaux alliés à portée 0-1 peuvent effectuer des attaques à portée 0 des obstacles.",
+            ability_ENG: "Friendly ships at range 0-1 may perform attacks at range 0 of obstacles."
             slots: [
                 "Talent"                
             ]
         },
         {
             name: "L3-37 #Escape Craft#",
+            name_ENG: "L3-37 #Escape Craft#",
             id: 92,
             unique: true,
             faction: "Pirates_and_Smugglers",
@@ -4535,9 +4555,13 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             loadout: 10,
             keyword: ["Droid"],
             ability: "Si vous n’êtes pas protégé, réduisez la difficulté de vos virages légers.",
+            ability_ENG: "If you are not protected, reduce the difficulty of your bank turns.",
             slots: [
                 "Talent"                
-            ]
+            ],
+            modifier_func: [
+                () => droid()
+                ]
         },
         {
             name: "Drone Autopiloté",
@@ -4552,13 +4576,17 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             points: 2,
             loadout: 0,
             keyword: ["Droid"],
-            function: "changer chassis",
+            modifier_func: [
+                () => change_chassis("Rigged Energy Cells"),  //créer fonction
+                () => droid()
+                ],
             slots: [
                 
             ]
         },
         {
             name: "Kath Scarlet",
+            name_ENG: "Kath Scarlet",
             id: 94,
             unique: true,
             faction: "Pirates_and_Smugglers",
@@ -4568,12 +4596,14 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             points: 11,
             loadout: 10,
             ability: "Lorsque vous effectuez une attaque principale, s’il y a au moins 1 vaisseau allié non-limité à portée 0 du défenseur, lancez 1 dé supplémentaire.",
+            ability_ENG: "While you perform a primary attack, if there is at least 1 friendly non limited ship ship at range 0 of the defender, roll 1 additional die.",
             slots: [
                 "Talent"
                ]
         },
 {
             name: "Hondo Ohnaka",
+            name_ENG: "Hondo Ohnaka",
             id: 95,
             unique: true,
             faction: "Pirates_and_Smugglers",
@@ -4583,7 +4613,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             points: 12,
             loadout: 15,
             title: ["Slave 1"],
-            ability: "ACTION : Choisissez 2 vaisseaux non énormes à portée 0-3 de vous qui ne sont pas alliés l’un l’autre. Chaque vaisseau peut effectuer une action qui se trouve sur votre barre d’action, même stressé, dans l’ordre de votre choix. Puis gagner 1 marqueur de calcul.",
+            ability: "ACTION : Choisissez 2 vaisseaux non énormes à portée 0-3 de vous qui ne sont pas alliés l’un l’autre. Chaque vaisseau peut effectuer une action qui se trouve sur votre barre d’action, même stressé, dans l’ordre de votre choix. Puis gagner 1 jeton calcul.",
+            ability_ENG: "ACTION : Choose 2 non huge ships at range 0-3 of you who are not friendly to each other. Each ship may perform an action which is on its action bar, even stressed, in the order of your choice. Then receive 1 calculate token.",
             slots: [
                 "Talent",
                 "Talent",
@@ -4595,6 +4626,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
 {
             name: "Emon Azzameen",
+            name_ENG: "Emon Azzameen",
             id: 96,
             unique: true,
             faction: "Pirates_and_Smugglers",
@@ -4604,7 +4636,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             points: 12,
             loadout: 15,
             title: ["Andrasta"],
-            ability: "Si vous devez larguer un engin en utilisant un gabarit 1#straight#, vous pouvez utiliser à la place un gabarit 3#Lturn# ou 3#straight# ou 3#Rturn#",
+            ability: "Si vous devez larguer un engin en utilisant le gabarit 1#straight#, vous pouvez utiliser à la place un gabarit 3#Lturn# ou 3#straight# ou 3#Rturn#",
+            ability_ENG: "If you would drop a device using the 1 #straight# template, you may use a 3 #Lturn# or #straight# or #Rturn# template instead.",
             slots: [
                 "Talent",
                 "Title"
@@ -4615,6 +4648,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
          {
             name: "Sana Starros",
+            name_ENG: "Sana Starros",
             id: 97,
             unique: true,
             faction: "Pirates_and_Smugglers",
@@ -4626,12 +4660,14 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             points: 11,
             loadout: 10,
             ability: "À tout moment, choisissez un vaisseau allié à portée 0-1. Vous pouvez dépenser 1#ch# pour échanger une de vos améliorations avec une de ses améliorations du même type", 
+            ability_ENG: "At any moment, you may spend 1 #ch# to choose a friendly ship at range 0-1. If you do, exchange 1 of your upgrades with 1 of its upgrade of the same type",
             slots: [
                 "Talent"                
             ]
         },
         {
             name: "Serissu",
+            name_ENG: "Serissu",
             id: 98,
             unique: true,
             faction: "Pirates_and_Smugglers",
@@ -4641,6 +4677,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             points: 7,
             loadout: 10,
             ability: "Lorsqu’un vaisseau allié à portée 0-1 défend, il peut relancer l’un de ses dés.",
+            ability_ENG: "While a friendly ship at range 0-1 defends, it may reroll one die.",
             slots: [
                 "Talent",
                 "Talent"               
@@ -4651,6 +4688,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
 {
             name: "Laetin A'shera",
+            name_ENG: "Laetin A'shera",
             id: 99,
             unique: true,
             faction: "Pirates_and_Smugglers",
@@ -4659,7 +4697,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 3,
             points: 6,
             loadout: 10,
-            ability: "Après avoir défendu ou attaqué, si l’attaque a échoué, gagnez 1 marqueur d’évasion.",
+            ability: "Après avoir défendu ou attaqué, si l’attaque a échoué, gagnez 1 jeton évasion.",
+            ability_ENG: "After you defend of perform an attack, if the attack failed, receive 1 evade token.",
             slots: [
                 "Talent"                
             ],
@@ -4684,6 +4723,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
  {
             name: "Inaldra",
+            name_ENG: "Inaldra",
             id: 101,
             unique: true,
             faction: "Pirates_and_Smugglers",
@@ -4693,6 +4733,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             points: 6,
             loadout: 10,
             ability: "Lorsque vous attaquez ou défendez, vous pouvez subir 1 #hit# pour relancer autant de dés que souhaité.",
+            ability_ENG: "While you defend or perform an attack, you may suffer 1 #hit# to reroll as many dice as needed.",
             slots: [
                 "Talent"                
             ],
@@ -4702,6 +4743,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "Aleas Rans'ery",
+            name_ENG: "Aleas Rans'ery",
             id: 102,
             unique: true,
             faction: "Pirates_and_Smugglers",
@@ -4711,6 +4753,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             points: 6,
             loadout: 10,
             ability: "Lorsque vous défendez, si l’attaque est à portée 3 ou obstruée, lancez un dé supplémentaire.",
+            ability_ENG: "While you defend, if the attack is at range 3 or obstructed, roll 1 additional die.", 
             slots: [
                 "Talent"                
             ],
@@ -4733,6 +4776,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             points: 9,
             loadout: 10,
             ability: "Avant qu’un engin allié n’explose, vous pouvez dépenser 1 #ch# pour l’empêcher d’exploser.<br>Lorsque vous vous défendez contre une attaque obstruée par une bombe ou une mine, lancez 1 dé de défense supplémentaire.",
+            ability_ENG: "Before a friendly device detonates, you may spend 1 #ch# to prevent its detonation.<br>While you defend against an attack obstructed by a device, roll 1 additional defense die.", 
             slots: [
                 "Talent",
                 "Talent",               
@@ -4741,6 +4785,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "Sol Sixxa",
+            name_ENG: "Sol Sixxa",
             id: 104,
             unique: true,
             faction: "Pirates_and_Smugglers",
@@ -4750,6 +4795,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             points: 5,
             loadout: 10,
             ability: "Lorsque vous devez larguer un engin avec le gabarit 1#straight#, vous pouvez le larguer en utilisant n’importe lequel des gabarit de vitesse 1.",
+            ability_ENG: "When you would drop a device with the 1#straight# template, you may drop it using any speed 1 template instead",
             slots: [
                 "Talent"
                   ]
@@ -4771,6 +4817,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "Jinkins",
+            name_ENG: "Jinkins",
             id: 106,
             unique: true,
             faction: "Pirates_and_Smugglers",
@@ -4783,6 +4830,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             points: 9,
             loadout: 10,
             ability: "Lorsque vous larguez ou lancez une bombe, placez un marqueur « Puissance » dessus. Lorsqu’elle explose, augmentez la portée de l’explosion de 1.", 
+            ability_ENG: "While you drop or launch a bomb, place a 'power' token on it. When a bomb with a 'power' token detonates, increase its effect range by 1.",#
             slots: [
                 "Talent",                
                 "Title"
@@ -4790,6 +4838,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "N'dru Suhlak",
+            name_ENG: "N'dru Suhlak",
             id: 107,
             unique: true,
             faction: "Pirates_and_Smugglers",
@@ -4799,12 +4848,14 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             points: 4,
             loadout: 10,
             ability: "Lorsque vous effectuez une attaque principale, s’il n’y a pas d’autres vaisseaux alliés à portée 0-2, lancez 1 dé d’attaque supplémentaire.",
+            ability_ENG: "While you perform a primary attack, if there is no other friendly ships at range 0-2, roll 1 additional attack die.", 
             slots: [
                 "Talent"                
             ]
         },
         {
             name: "Kaa'to Leeachos",
+            name_ENG: "Kaa'to Leeachos",
             id: 108,
             unique: true,
             faction: "Pirates_and_Smugglers",
@@ -4813,7 +4864,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 3,
             points: 4,
             loadout: 10,
-            ability: "Au début de la phase d’engagement, vous pouvez choisir 1 vaisseau allié à portée 0-2. Dans ce cas, transférez 1 marqueur concentration ou évasion de ce vaisseau vers vous.",
+            ability: "Au début de la phase d’engagement, vous pouvez choisir 1 vaisseau allié à portée 0-2. Dans ce cas, transférez 1 jeton concentration ou évasion de ce vaisseau vers vous.",
+            ability_ENG: "At the beginning of Engagement Phase, you may choose 1 friendly ship at range 0-2. If you do, transfer 1 focus or evade token from this ship to yourself.",
             slots: [
                 "Talent"                
             ]
@@ -4828,10 +4880,11 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 1,
             points: 3,
             loadout: 5,
-            slots: [ 0 ]
+            slots: []
         },
         {
             name: "Kanan Jarrus #HWK290#",
+            name_ENG: "Kanan Jarrus #HWK290#",
             id: 110,
             unique: true,
             faction: "Pirates_and_Smugglers",
@@ -4842,12 +4895,14 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             points: 7,
             loadout: 10,
             ability: "Lorsque vous ou un vaisseau dans votre #tur# défend, vous pouvez dépenser 1#fo#. Dans ce cas, l’attaquant lance 1 dé d’attaque de moins.",
+            ability_ENG: "While you or a friendly ship in your #tur# defends, you may spend 1 #fo#. If you do, the attacker roll 1 attack die less",
             slots: [
                 "Force"            
                 ]
         },
  {
             name: "Tápusk",
+            name_ENG: "Tapusk",
             id: 111,
             unique: true,
             faction: "Pirates_and_Smugglers",
@@ -4858,7 +4913,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             recurring: 1,
             points: 6,
             loadout: 10,
-            ability: "Au début de la phase de fin, vous pouvez dépenser 2 charges pour vous choisir ou un vaisseau dans votre #tur#  avec 1 ou plusieurs marqueurs circulaires. Pendant la phase de fin, ces jetons circulaires ne sont pas retirés.",
+            ability: "Au début de la phase de fin, vous pouvez dépenser 2 #ch# pour vous choisir ou un vaisseau dans votre #tur# avec 1 ou plusieurs jetons circulaires. Pendant la phase de fin, ces jetons circulaires ne sont pas retirés.",
+            ability_ENG: "At the beginning of End Phase, you may spend 2 #ch# to choose yourself or a ship in your #tur# with 1 circular token or more. During End Phase, those circular tokens are not removed.",
             slots: [
                 "Talent"               
             ]
@@ -4869,6 +4925,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
 
  {
             name: "IG-88A",
+            name_ENG: "IG-88A",
             id: 112,
             unique: true,
             faction: "Bounty_Hunters_Guild",
@@ -4879,18 +4936,21 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             loadout: 10,
             title: ["IG-2000"],
             keyword: ["Droid"],
-            ability: "Au début de la phase d’engagement, vous pouvez choisir 1 vaisseau allié à portée 1–3 avec #CA# dans sa barre d’action. Dans ce cas, transférez-lui 1 de vos marqueurs de calcul.",
+            ability: "Au début de la phase d’engagement, vous pouvez choisir 1 vaisseau allié à portée 1–3 avec #CA# dans sa barre d’action. Dans ce cas, transférez-lui 1 de vos jetons calcul.",
+            ability_ENG: "At the beginning of Engagement Phase, you may choose 1 friendly ship at range 1-3 with #CA# in its action bar. If you do, transfer 1 of your calculate tokens to him.",
             slots: [
                 "Talent",
                 "Title"
                 
             ],
             modifier_func: [
-            	() => auto_equip("title")
+            	() => auto_equip("title"),
+                () => droid()
                     ]
         },
         {
             name: "IG-88B",
+            name_ENG: "IG-88B",
             id: 113,
             unique: true,
             faction: "Bounty_Hunters_Guild",
@@ -4902,16 +4962,19 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             loadout: 10,
             keyword: ["Droid"],
             ability: "Après avoir effectué une attaque ratée, vous pouvez effectuer une attaque bonus #can#",
+            ability_ENG: "After you perform a failed attack, you may perform a bonus #can# attack", 
             slots: [
                 "Talent",
                 "Title"               
             ],
             modifier_func: [
-            	() => auto_equip("title")
+            	() => auto_equip("title"),
+                () => droid(),
                     ]
         },
         {
             name: "IG-88C",
+            name_ENG: "IG-88C",
             id: 114,
             unique: true,
             faction: "Bounty_Hunters_Guild",
@@ -4923,17 +4986,20 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             loadout: 10,
             keyword: ["Droid"],
             ability: "Après avoir effectué une action #BO# , vous pouvez effectuer une action #EV# .",
+            ability_ENG: "After you perform a #BO# action, you mau perform a #EV# action.",
             slots: [
                 "Talent",
                 "Title"
                 
             ],
             modifier_func: [
-            	() => auto_equip("title")
+                () => droid(),
+                () => auto_equip("title")
                     ]
         },
         {
             name: "IG-88D",
+            name_ENG: "IG-88D",
             id: 115,
             unique: true,
             faction: "Bounty_Hunters_Guild",
@@ -4945,13 +5011,15 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             title: ["IG-2000"],
             keyword: ["Droid"],
             ability: "Tant que vous exécutez une manœuvre Boucle de Segnor #Sleft# ou #Sright# ), vous pouvez utiliser un autre gabarit de même vitesse mais de même direction à la place.",
+            ability_ENG: "While you execute a Segnor Loop #Sleft# or #Sright# maneuver, you may use another template of the same speed and same direction instead.",
             slots: [
                 "Talent",
                 "Title"
                 
             ],
             modifier_func: [
-            	() => auto_equip("title")
+            	() => auto_equip("title"),
+                () => droid()
                     ]
         },
         {
@@ -4967,6 +5035,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             unique: true,
             title: ["Razor Crest"],
             ability: "Tant que vous défendez ou effectuez une attaque si vous êtes dans le #Farc# à portée 1-2 d'au moins 2 vaisseaux ennemis, vous pouvez changer 1 de vos résultats vierges en un résultat #eye#.",
+            ability_ENG: "While you defend or perform an attack, if you are in the #Farc# at range 1-2 of at least 2 enemy ships, you may change 1 of your blank results into a #eye# result.",
             slots: [
                 "Talent",
                 "Talent",
@@ -4978,6 +5047,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "Q9-0",
+            name_ENG: "Q9-0",
             id: 117,
             faction: "Bounty_Hunters_Guild",
             ship: "ST-70 Assault Ship",
@@ -4988,18 +5058,20 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             unique: true,
             title: ["Razor Crest"],
             keyword: ["Droid"],
-            
-            ability: "Après avoir entièrement exécuté une manœuvre avancée, vous pouvez effectuer une action #CA# ou #BR#, même si vous êtes stressé. Dans ce cas, gagnez 1 marqueur de contrainte.", 
+            ability_ENG: "After you fully execute an advanced maneuver, you may perform a #CA# or #BR# action, even while stressed. If you do, receive a strain token.",
+            ability: "Après avoir entièrement exécuté une manœuvre avancée, vous pouvez effectuer une action #CA# ou #BR#, même si vous êtes stressé. Dans ce cas, gagnez 1 jeton contrainte.", 
             slots: [
                 "Talent",
                 "Title"
             ],
             modifier_func: [
-            	() => auto_equip("title")
+            	() => auto_equip("title"),
+                () => droid()
                     ]
         },
         {
             name: "4-LOM",
+            name_ENG: "4-LOM",
             id: 118,
             unique: true,
             faction: "Bounty_Hunters_Guild",
@@ -5010,17 +5082,20 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             loadout: 15,
             keyword: ["Droid"] ,
             title: ["Mist Hunter"],
-            ability: "Après avoir entièrement exécuté une manœuvre rouge, gagnez 1 marqueur de calcul. Au début de la phase de dénouement, vous pouvez choisir un vaisseau à portée 0–1. Dans ce cas, transférez 1 de vos marqueurs de stress à ce vaisseau.",
+            ability: "Après avoir entièrement exécuté une manœuvre rouge, gagnez 1 jeton calcul. Au début de la phase de fin, vous pouvez choisir un vaisseau à portée 0–1. Dans ce cas, transférez 1 de vos jetons stress à ce vaisseau.",
+            ability_ENG: "After you fully execute a red maneuver, receive 1 calculate token. At the beginning of End Phase, you may choose 1 ship at range 0-1. If you do, transfer 1 of your stress tokens to this ship.",
             slots: [
                 "Talent",
                 "Title"
             ],
             modifier_func: [
-            	() => auto_equip("title")
+            	() => auto_equip("title"),
+                () => droid()
                     ]
         },
 {
             name: "Zuckuss",
+            name_ENG: "Zuckus",
             id: 119,
             unique: true,
             faction: "Bounty_Hunters_Guild",
@@ -5031,6 +5106,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             points: 8,
             loadout: 15,
             ability: "Tant que vous effectuez une attaque principale, vous pouvez lancer 1 dé d’attaque supplémentaire. Dans ce cas, le défenseur lance 1 dé de défense supplémentaire.",
+            ability_ENG: "While you perform a primary attack, you may roll 1 additional attack die. If you do, the defender roll 1 additional defense die.",
             slots: [
                 "Talent",
                 "Title"
@@ -5041,6 +5117,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "Dengar",
+            name_ENG: "Dengar",
             id: 120,
             unique: true,
             faction: "Bounty_Hunters_Guild",
@@ -5053,6 +5130,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             loadout: 15,
             title: ["Punishing One"],
             ability: "Après avoir défendu, si l’attaquant est dans votre #Farc#, vous pouvez dépenser 1 #ch# pour effectuer une attaque bonus contre cet attaquant.",
+            ability_ENG: "After you defend, if the attacker is in yout #Farc#, you may spend 1 #ch# to perform a bonus attack against this attacker.",
             slots: [
                 "Talent",
                 "Talent",
@@ -5065,6 +5143,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "Tel Trevura",
+            name_ENG: "Tel Trevura",
             id: 121,
             unique: true,
             faction: "Bounty_Hunters_Guild",
@@ -5075,6 +5154,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             points: 7,
             loadout: 10,
             ability: "Si vous devez être détruit, vous pouvez dépenser 1 #ch#. Dans ce cas, défaussez toutes vos cartes de dégât, subissez 5 dégâts #hit#, et placez-vous en réserve à la place. Au début de la prochaine phase de préparation, placez-vous intégralement à portée 1 de votre bord Joueur.",
+            ability_ENG: "If you would be destroyed, you may spend 1 #ch#. If you do, discard all your damage card, then suffer 5 #hit# damage, and place yourself in reserve instead. At the beginning of the next planning phase, place yourself within range 1 of your board edge.", 
             slots: [
                 "Talent"
                 
@@ -5082,6 +5162,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
 {
             name: "Manaroo",
+            name_ENG: "Manaroo",
             id: 122,
             unique: true,
             faction: "Bounty_Hunters_Guild",
@@ -5091,7 +5172,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             points: 7,
             loadout: 15,
             title: ["Punishing One"],
-            ability: "Au début de la phase d’engagement, vous pouvez choisir un vaisseau allié à portée 0–2. Dans ce cas, transférez à ce vaisseau tous vos marqueurs verts.",
+            ability: "Au début de la phase d’engagement, vous pouvez choisir un vaisseau allié à portée 0–2. Dans ce cas, transférez à ce vaisseau tout ou partie de vos marqueurs verts.",
+            ability_ENG: "At the beginning of Engagement Phase, you may choose a friendly ship at range 0-2. If you do, transfer any number of your green tokens to this ship.",
             slots: [
                 "Talent",
                 "Title"
@@ -5102,6 +5184,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "Beilert Valance",
+            name_ENG: "Beilert Valance",
             id: 123,
             unique: true,
             faction: "Bounty_Hunters_Guild",
@@ -5111,6 +5194,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             points: 8,
             loadout: 10,
             ability: "Lorsque vous révélez une manœuvre rouge, vous pouvez effectuer une action (avant de vous déplacer)",
+            ability_ENG: "When you reveal a red maneuver, you may perform an action (before you move)",
             slots: [
                 "Talent",
                 "Talent"                
@@ -5118,6 +5202,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "Graz",
+            name_ENG: "Graz",
             id: 124,
             unique: true,
             faction: "Bounty_Hunters_Guild",
@@ -5126,7 +5211,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 4,
             points: 6,
             loadout: 10,
-            ability: "Tant que vous défendez, si vous êtes derrière l’attaquant, lancez 1 dé de défense supplémentaire.<br>Tant que vous effectuez une attaque, si vous êtes derrière le défenseur, lancez 1 dé d’attaque supplémentaire.",
+            ability: "Tant que vous défendez, si vous êtes derrière l’attaquant, lancez 1 dé de défense supplémentaire.<br>Tant que vous attaquez, si vous êtes derrière le défenseur, lancez 1 dé d’attaque supplémentaire.",
+            ability_ENG: "While you defend, if you are behind the attacker, roll 1 additional attack die.<br>While you perform an attack, if you are behind the defender, roll 1 additional attack die.",
             slots: [
                 "Talent",
                 "Talent"
@@ -5135,6 +5221,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
 {
             name: "Viktor Hel",
+            name_ENG: "Viktor Hel",
             id: 125,
             unique: true,
             faction: "Bounty_Hunters_Guild",
@@ -5143,7 +5230,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 4,
             points: 6,
             loadout: 10,
-            ability: "Après avoir défendu, si vous n’avez pas lancé exactement 2 dés de défense, l’attaquant gagne 1 marqueur de stress.",
+            ability: "Après avoir défendu, si vous n’avez pas lancé exactement 2 dés de défense, l’attaquant gagne 1 jeton stress.",
+            ability_ENG: "After you defend, if you haven't rolled exactly 2 defense dice, the attacker receives 1 stress token",
             slots: [
                 "Talent",
                 "Talent"
@@ -5162,12 +5250,14 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             points: 6,
             loadout: 10,
             ability: "Après qu’un vaisseau ennemi a subi des dégâts, s’il n’est pas en train de défendre, vous pouvez effectuer une attaque bonus contre ce vaisseau.",
+            ability_ENG: "After an enemy ship suffer damage, if it is not defending, you may perform a bonus attack against this ship.",
             slots: [
                 "Talent"                
             ]
         },
         {
             name: "Bossk",
+            name_ENG: "Bossk",
             id: 127,
             unique: true,
             faction: "Bounty_Hunters_Guild",
@@ -5178,6 +5268,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             loadout: 15,
             title: ["Hound's Tooth"],
             ability: "Tant que vous effectuez une attaque principale, après l’étape « Neutraliser les résultats », vous pouvez dépenser 1 résultat #crit# pour ajouter 2 résultats #hit# .",
+            ability_ENG: "While you perform a primary attack, after the 'Neutralize Results' step, you may spend 1 #crit# result to add 2 #hit# results.",
             slots: [
                 "Talent",
                 "Title"
@@ -5188,6 +5279,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
 {
             name: "Nashtah Pup",
+            name_ENG: "Nashtah Pup",
             id: 128,
             unique: true,
             faction: "Bounty_Hunters_Guild",
@@ -5196,7 +5288,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 0,
             points: 2,
             loadout: 0,
-            ability: "Ne peut être joué que si un YV666 avec le titre Hound’s Tooth est dans votre escadron. Quand le Hound’s Tooth est détruit, vous devez vous déployer. Vous pouvez copier :<br>- Le texte de sa capacité de pilote<br>-  Le texte de l’une de ses améliorations #crew# ",
+            ability: "Ne peut être joué que si un YV666 avec le titre Hound’s Tooth est dans votre escadron. Vous ne pouvez vous déployez que lorsque le Hound's Tooth est détruit. Vous pouvez copier :<br>- Le texte de sa capacité de pilote ou<br>-  Le texte de l’une de ses améliorations #crew# ",
+            ability_ENG: "Cannot be played if there's no YV666 with the Hound's Tooth title in your squad. You may deploy only when the Hound's Tooth is destroyed. You may copy :<br>- Its Pilot ability or<br>- The text of one of its #crew# upgrade",
             slots: [
             ],
             
@@ -5205,6 +5298,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
 {
             name: "Bossk #Z95#",
+            name_ENG: "Bossk #Z95#",
             id: 129,
             faction: "Bounty_Hunters_Guild",
             unique: true,
@@ -5214,12 +5308,14 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             points: 4,
             loadout: 10,
             ability: "Tant que vous effectuez une attaque principale, après l’étape « Neutraliser les résultats », vous pouvez dépenser 1 résultat #crit# pour ajouter 2 résultats #hit# .",
+            ability_ENG: "While you perform a primary attack, after the 'Neutralize Results' stem, you may spend 1 #crit# result to add 2 #hit# results.",
             slots: [
                 "Talent"                
             ]
         },
         {
             name: "Cad Bane #Scum#",
+            name_ENG: "Cad Bane #Scum#",
             id: 130,
             unique: true,
             faction: "Bounty_Hunters_Guild",
@@ -5231,7 +5327,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             points: 7,
             loadout: 15,
             title: ["Xanadu Blood"],
-            ability: "Après avoir effectué une attaque qui a touché, vous pouvez dépenser 2 #ch# pour transférer 1 de vos marqueurs rouges non-verrouillage ou orange au défenseur.",
+            ability: "Après avoir effectué une attaque qui a touché, vous pouvez dépenser 2 #ch# pour transférer 1 de vos jetons rouges non-verrouillage ou orange au défenseur.",
+            ability_ENG: "After you perform an attack that hits, you may spend 2 #ch# to transfer 1 of your non lock red tokens or orange tokens to the defender.",
             slots: [
                 "Talent",
                 "Talent",
@@ -5243,6 +5340,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
 {
             name: "Nom Lumb",
+            name_ENG: "Nom Lumb",
             id: 131,
             unique: true,
             faction: "Bounty_Hunters_Guild",
@@ -5252,12 +5350,14 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             points: 6,
             loadout: 10,
             ability: "Au début de la phase d’engagement, vous pouvez choisir 1 vaisseau ennemi dans votre #Farc#. Dans ce cas, considérez votre initiative comme étant égale à celle de ce vaisseau jusqu’à la fin du round.",
+            ability_ENG: "At the beginning of Engagement Phase, you may choose 1 enemy ship in your #Farc#. If you do, consider your initiative as equal to this ship's initiative until the end of the round.",
             slots: [
                 "Talent"                
             ]
         },
  {
             name: "Durge",
+            name_ENG: "Durge",
             id: 132,
             unique: true,
             faction: "Bounty_Hunters_Guild",
@@ -5267,12 +5367,14 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             points: 7,
             loadout: 10,
             ability: "Tant que vous défendez, après l'étape Neutraliser les Résultats, s'il y a plus de résultats #hit#/#crit# que vos boucliers actifs, vous pouvez changer 1 résultat #hit# en 1 résultat #crit# et annuler 1 résultat #hit#.",
+            ability_ENG: "While you defend, after the 'Neutralize Results' step, if there are more #hit#/#crit# results than your active shields, you may change 1 #hit# result into 1 #crit# result to cancel 1 #hit# result",
             slots: [
                 "Talent"                
             ]
         },
         {
             name: "Boba Fett",
+            name_ENG: "Boba Fett",
             id: 133,
             unique: true,
             faction: "Bounty_Hunters_Guild",
@@ -5283,6 +5385,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             loadout: 15,
             title: ["Slave 1"],
             ability: "Tant que vous défendez ou effectuez une attaque, vous pouvez relancer 1 de vos dés pour chaque vaisseau ennemi à portée 0–1.",
+            ability_ENG: "While you defend or perform an attack, you may reroll 1 of your dice for each enemy ship at range 0-1",
             slots: [
                 "Talent",
                 "Talent",
@@ -5294,6 +5397,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
          {
             name: "Aurra Sing",
+            name_ENG: "Aurra Sing",
             id: 134,
             unique: true,
             faction: "Bounty_Hunters_Guild",
@@ -5304,7 +5408,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             points: 13,
             loadout: 15,
             title: ["Slave 1"],
-            ability: "Avant de vous engager, vous pouvez dépenser 1 #fo# pour choisir 2 vaisseaux ennemis à portée 0-1. Transférez n'importe quel nombre de marqueurs orange et rouges entre ces 2 vaisseaux.",
+            ability: "Avant de vous engager, vous pouvez dépenser 1 #fo# pour choisir 2 vaisseaux ennemis à portée 0-1. Transférez n'importe quel nombre de jetons orange et rouges entre ces 2 vaisseaux.",
+            ability_ENG: "Before you engage, you may spend 1 #fo# to choose 2 enemy ships at range 0-1. Tranfer as many orange or red tokens between those 2 ships",
             slots: [
                 "Talent",
                 "Talent",
@@ -5326,6 +5431,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             points: 12,
             loadout: 10,
             ability: "Après qu’un vaisseau ennemi a subi des dégâts, s’il n’est pas en train de défendre, vous pouvez effectuer une attaque bonus contre ce vaisseau.",
+            ability_ENG: "After an enemy ship suffers damage, if it is not defending, you may perform a bonus attack against this ship",
             slots: [
                 "Talent"                
             ]
@@ -5997,7 +6103,10 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             keyword: ["Droid"],
             loadout: 0,
             slots: [                
-            ]
+            ],
+            modifier_func: [
+                () => droid()
+                ]
         },
   		
   		{
@@ -6078,7 +6187,10 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             loadout: 6,
             keyword: ["Droid"],
             slots: [                
-            ]
+            ],
+            modifier_func: [
+                () => droid()
+                ]
         },
   
         {
