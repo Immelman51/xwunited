@@ -10722,7 +10722,7 @@ function displayslots(yy) { //crée les menus de slot et contient l'écoute des 
             checkUpgradeValidation(event)
             updateUpgradeCount(y);
             updateTotalCost();
-            //displayDescriptionUpgrade(event);
+            displayDescriptionUpgrade(event);
             fillUpgradesSelected(y)
 
             })
@@ -10747,7 +10747,7 @@ function displayslots(yy) { //crée les menus de slot et contient l'écoute des 
             y = event.target.id.slice(4,5);   
             updateUpgradeCount(y);
             updateTotalCost();
-            //displayDescriptionUpgrade(event);
+            displayDescriptionUpgrade(event);
             fillUpgradesSelected(y)
         });
         slotmenu.addEventListener("mouseover", function(event){
@@ -10998,7 +10998,7 @@ populateMenu('slot'+y+'_'+nbrSlots,slotmenucontent);
             y= event.target.id.slice(4,5);
             updateUpgradeCount(y);
             updateTotalCost();
-            //displayDescriptionUpgrade(event);
+            displayDescriptionUpgrade(event);
             checkUpgradeValidation(event);
             fillUpgradesSelected(y)
     })
@@ -11130,7 +11130,7 @@ function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'acti
         displayslots(numero)  ;
         upgradeListGet(numero);
         checkUpgRestriction(numero);
-        //displayDescriptionPilot(numero);
+        displayDescriptionPilot(numero);
     });  
    
 
