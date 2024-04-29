@@ -3042,7 +3042,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             unique: true,
             faction: "Rebel_Alliance",
             ship: "UT-60D U-wing",
-            shipId: 32,
+            shipId: 34,
             skill: 4,
             points: 7,
             loadout: 10,
@@ -10722,10 +10722,14 @@ function displayslots(yy) { //crée les menus de slot et contient l'écoute des 
             checkUpgradeValidation(event)
             updateUpgradeCount(y);
             updateTotalCost();
-            displayDescriptionUpgrade(event);
+            //displayDescriptionUpgrade(event);
             fillUpgradesSelected(y)
 
-            })    
+            })
+    slotmenu.addEventListener("mouseover", function(event){
+        y = event.target.id.slice(4,5);
+        displayDescriptionUpgrade(event);
+    })    
         index++;  
          }
         } 
@@ -10743,8 +10747,11 @@ function displayslots(yy) { //crée les menus de slot et contient l'écoute des 
             y = event.target.id.slice(4,5);   
             updateUpgradeCount(y);
             updateTotalCost();
-            displayDescriptionUpgrade(event);
+            //displayDescriptionUpgrade(event);
             fillUpgradesSelected(y)
+        });
+        slotmenu.addEventListener("mouseover", function(event){
+            displayDescriptionUpgrade(event)
         })
        
     }  
@@ -10983,13 +10990,15 @@ for (let j=0; j<upgrades_Objects[y][nbrSlots].length; j++){
 populateMenu('slot'+y+'_'+nbrSlots,slotmenucontent);
 
 //fin de la recopie du code
-
+        slotmenu.addEventListener("mouseover", function(event){
+            displayDescriptionUpgrade(event);
+        })
 
         slotmenu.addEventListener("input", function(event) {//cette faction décrit le calcul des mises à jour des points pour le loadout et le cout du pilote
             y= event.target.id.slice(4,5);
             updateUpgradeCount(y);
             updateTotalCost();
-            displayDescriptionUpgrade(event);
+            //displayDescriptionUpgrade(event);
             checkUpgradeValidation(event);
             fillUpgradesSelected(y)
     })
@@ -11111,13 +11120,17 @@ function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'acti
        y = event.target.id.slice(10,11); 
        select_pilot_list(numero);
     }) ;
+    newpilot.addEventListener("mouseover", function(event){
+        y = event.target.id.slice(11,12); //y = numéro du pilote modifié
+        displayDescriptionPilot(numero);
+    })
     newpilot.addEventListener('input', function(event) {
         y = event.target.id.slice(11,12); //y = numéro du pilote modifié
         dataGetFromPilot(numero);
         displayslots(numero)  ;
         upgradeListGet(numero);
         checkUpgRestriction(numero);
-        displayDescriptionPilot(numero);
+        //displayDescriptionPilot(numero);
     });  
    
 
