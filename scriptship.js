@@ -88,7 +88,7 @@ const chassis = [
     },
     {
         name: "Controlled Ailerons",
-        id 12,
+        id: 12,
         effect1: "<em><strong>Ailerons Contrôlables :</strong></em> Avant de révéler votre cadran, si vous n'êtes pas stressé, vous pouvez accélérer."
     },
     {
@@ -3127,7 +3127,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"          
             ],
             modifier_func: [
-            	() => auto_equip("title")
+            	() => auto_equip("Title","Moldy Crow (0)")
                     ]
         },
         {
@@ -3169,7 +3169,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 
             ],
             modifier_func: [
-            	() => auto_equip("title")
+            	() => auto_equip("Title","Moldy Crow (0)")
                     ]
         },
         {
@@ -3191,7 +3191,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"
             ],
             modifier_func: [
-            	() => auto_equip("title")
+            	() => auto_equip("Title","Moldy Crow (0)")
                     ]
         },
         {
@@ -3206,7 +3206,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             points: 7,
             loadout: 10,
             ability: "Après avoir effectué une action #BR# ou #BO#, vous pouvez choisir un vaisseau allié à portée 0–1. Ce vaisseau peut effectuer une action #FS# .",
-            ability_ENG: 'After performing a #BR# or #BO# action, you may choose a friendly ship at range 0-1. This ship may perform a #FS# action.",
+            ability_ENG: "After performing a #BR# or #BO# action, you may choose a friendly ship at range 0-1. This ship may perform a #FS# action.",
             slots: [
                 "Talent",
                 "Talent"
@@ -4041,7 +4041,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"
                 ],
             modifier_func: [
-            	() => auto_equip("title")
+            	() => auto_equip("Title","Nightbrother (0)")
                     ]
         },
         {
@@ -4065,7 +4065,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             
             ],
             modifier_func: [
-            	() => auto_equip("title")
+            	() => auto_equip("Title","Razor Crest (0)")
                     ]
         },
         {
@@ -4087,7 +4087,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                "Title"
             ],
             modifier_func: [
-            	() => auto_equip("title"),
+            	() => auto_equip("Title","Razor Crest (0)"),
                 () => free_upg("Modification")
                     ]
         },
@@ -4110,7 +4110,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title",
             ],
             modifier_func: [
-            	() => auto_equip("title")
+            	() => auto_equip("Title","Razor Crest (0)")
                     ]
         },
         {
@@ -4133,7 +4133,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"
             ],
             modifier_func: [
-            	() => auto_equip("title")
+            	() => auto_equip("Title","Din Djarin's N1 (0)")
                     ]
         },
         {
@@ -4156,7 +4156,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"
             ],
             modifier_func: [
-            	() => auto_equip("title")
+            	() => auto_equip("Title","Din Djarin's N1 (0)")
                     ]
         },
         {
@@ -4196,7 +4196,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
 
             ],
             modifier_func: [
-            	() => auto_equip("title"),
+            	() => auto_equip("Title","Din Djarin's N1 (0)"),
                 () => droid()
                     ]
         },
@@ -4371,7 +4371,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"
             ],
             modifier_func: [
-            	() => auto_equip("title")
+            	() => auto_equip("Title","Outrider (0)")
                     ]            
         },
         {
@@ -4394,7 +4394,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"
             ],
             modifier_func: [
-            	() => auto_equip("title")
+            	() => auto_equip("Title","Outrider (0)")
                     ]
         },
         {
@@ -4537,7 +4537,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             points: 2,
             loadout: 5,
             ability: "Les vaisseaux alliés à portée 0-1 peuvent effectuer des attaques à portée 0 des obstacles.",
-            ability_ENG: "Friendly ships at range 0-1 may perform attacks at range 0 of obstacles."
+            ability_ENG: "Friendly ships at range 0-1 may perform attacks at range 0 of obstacles.",
             slots: [
                 "Talent"                
             ]
@@ -4621,7 +4621,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"
             ],
             modifier_func: [
-            	() => auto_equip("title")
+            	() => auto_equip("Title","Slave 1 (0)")
                     ]
         },
 {
@@ -4643,7 +4643,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"
             ],
             modifier_func: [
-            	() => auto_equip("title")
+            	() => auto_equip("Title","Andrasta (0)")
                     ]
         },
          {
@@ -4830,7 +4830,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             points: 9,
             loadout: 10,
             ability: "Lorsque vous larguez ou lancez une bombe, placez un marqueur « Puissance » dessus. Lorsqu’elle explose, augmentez la portée de l’explosion de 1.", 
-            ability_ENG: "While you drop or launch a bomb, place a 'power' token on it. When a bomb with a 'power' token detonates, increase its effect range by 1.",#
+            ability_ENG: "While you drop or launch a bomb, place a 'power' token on it. When a bomb with a 'power' token detonates, increase its effect range by 1.",
             slots: [
                 "Talent",                
                 "Title"
@@ -4944,7 +4944,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 
             ],
             modifier_func: [
-            	() => auto_equip("title"),
+            	() => auto_equip("Title","IG-2000 (0)"),
                 () => droid()
                     ]
         },
@@ -4968,7 +4968,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"               
             ],
             modifier_func: [
-            	() => auto_equip("title"),
+            	() => auto_equip("Title","IG-2000 (0)"),
                 () => droid(),
                     ]
         },
@@ -4994,7 +4994,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             ],
             modifier_func: [
                 () => droid(),
-                () => auto_equip("title")
+                () => auto_equip("Title","IG-2000 (0)")
                     ]
         },
         {
@@ -5018,7 +5018,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 
             ],
             modifier_func: [
-            	() => auto_equip("title"),
+            	() => auto_equip("Title","IG-2000 (0)"),
                 () => droid()
                     ]
         },
@@ -5042,7 +5042,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"
             ],
             modifier_func: [
-            	() => auto_equip("title")
+            	() => auto_equip("Title","Razor Crest (0)")
                     ]
         },
         {
@@ -5065,7 +5065,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"
             ],
             modifier_func: [
-            	() => auto_equip("title"),
+            	() => auto_equip("Title","Razor Crest (0)"),
                 () => droid()
                     ]
         },
@@ -5089,7 +5089,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"
             ],
             modifier_func: [
-            	() => auto_equip("title"),
+            	() => auto_equip("Title","Mist Hunter (0)"),
                 () => droid()
                     ]
         },
@@ -5112,7 +5112,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"
             ],
             modifier_func: [
-            	() => auto_equip("title")
+            	() => auto_equip("Title","Mist Hunter (0)")
                     ]
         },
         {
@@ -5138,7 +5138,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"
             ],
             modifier_func: [
-            	() => auto_equip("title")
+            	() => auto_equip("Title","Punishing One (0)")
                     ]
         },
         {
@@ -5179,7 +5179,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"
             ],
             modifier_func: [
-            	() => auto_equip("title")
+            	() => auto_equip("Title","Punishing One (0)")
                     ]
         },
         {
@@ -5274,7 +5274,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"
             ],
             modifier_func: [
-            	() => auto_equip("title")
+            	() => auto_equip("Title","Hound's Tooth (0)")
                     ]
         },
 {
@@ -5335,7 +5335,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"
             ],
             modifier_func: [
-            	() => auto_equip("title")
+            	() => auto_equip("Title","Xanadu Blood (0)")
                     ]
         },
 {
@@ -5392,7 +5392,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"
             ],
             modifier_func: [
-            	() => auto_equip("title")
+            	() => auto_equip("Title","Slave 1 (0)")
                     ]
         },
          {
@@ -5416,11 +5416,11 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"
             ],
             modifier_func: [
-            	() => auto_equip("title")
+            	() => auto_equip("Title","Slave 1 (0)")
                     ]
         },
          {
-            name: Capitaine Jostero #Firespray#",
+            name: "Capitaine Jostero #Firespray#",
             name_ENG: "Captain Jostero #Firespray#",
             id: 135,
             unique: true,
@@ -5457,7 +5457,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"                
             ],
             modifier_func: [
-            	() => auto_equip("title")
+            	() => auto_equip("Title","Ghost (0)")
                     ]
         },
         {
@@ -5481,7 +5481,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"                
             ],
             modifier_func: [
-            	() => auto_equip("title")
+            	() => auto_equip("Title","Ghost (0)")
                     ]
         },
         {
@@ -5502,7 +5502,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"                
             ],
             modifier_func: [
-            	() => auto_equip("title")
+            	() => auto_equip("Title","Ghost (0)")
                     ]
         },
         {
@@ -5524,7 +5524,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"                
             ],
             modifier_func: [
-            	() => auto_equip("title")
+            	() => auto_equip("Title","Ghost (0)")
                     ]
         },
         {
@@ -5547,7 +5547,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"                
             ],
             modifier_func: [
-            	() => auto_equip("title")
+            	() => auto_equip("Title","Phantom 1 (0)")
                     ]
         },
         {
@@ -5569,7 +5569,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"                
             ],
             modifier_func: [
-            	() => auto_equip("title")
+            	() => auto_equip("Title","Phantom 1 (0)")
                     ]
         },
         {
@@ -5593,7 +5593,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"                
             ],
             modifier_func: [
-            	() => auto_equip("title")
+            	() => auto_equip("Title","Phantom 1 (0)")
                     ]
         },
         {
@@ -5614,7 +5614,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"                
             ],
             modifier_func: [
-            	() => auto_equip("title")
+            	() => auto_equip("Title","Phantom 1 (0)")
                     ]
         },
         {
@@ -5635,7 +5635,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"                
             ],
             modifier_func: [
-            	() => auto_equip("title")
+            	() => auto_equip("Title","Phantom 2 (0)")
                     ]
         },
         {
@@ -5657,7 +5657,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"                
             ],
             modifier_func: [
-            	() => auto_equip("title")
+            	() => auto_equip("Title","Phantom 2 (0)")
                     ]
         },
         
@@ -5682,7 +5682,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"                
             ],
             modifier_func: [
-            	() => auto_equip("title")
+            	() => auto_equip("Title","Phantom 2 (0)")
                     ]
         },
         {
@@ -5705,7 +5705,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"                
             ],
             modifier_func: [
-            	() => auto_equip("title")
+            	() => auto_equip("Title","Phantom 2 (0)")
                     ]
         },
         {
@@ -5727,7 +5727,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"                
             ],
             modifier_func: [
-            	() => auto_equip("title")
+            	() => auto_equip("Title","Sabine's Masterpiece (0)")
                     ]
         },
         {
@@ -5751,7 +5751,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"                
             ],
             modifier_func: [
-            	() => auto_equip("title")
+            	() => auto_equip("Title","Sabine's Masterpiece (0)")
                     ]
         },
         {
@@ -5774,7 +5774,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"                
             ],
             modifier_func: [
-            	() => auto_equip("title")
+            	() => auto_equip("Title","Sabine's Masterpiece (0)")
                     ]
         },
         {
@@ -5795,7 +5795,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"                
             ],
             modifier_func: [
-            	() => auto_equip("title")
+            	() => auto_equip("Title","Sabine's Masterpiece (0)")
                     ]
         },
         {
@@ -5819,7 +5819,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"                
             ],
             modifier_func: [
-            	() => auto_equip("title")
+            	() => auto_equip("Title","Nightbrother (0)")
                     ]
         },
         {
@@ -5840,7 +5840,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"                
             ],
             modifier_func: [
-            	() => auto_equip("title")
+            	() => auto_equip("Title","Nightbrother (0)")
                     ]
         },
         {
@@ -5861,7 +5861,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"                
             ],
             modifier_func: [
-            	() => auto_equip("title")
+            	() => auto_equip("Title","Sato's Hammer (0)")
                     ]
         },
         {
@@ -5882,7 +5882,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"                
             ],
             modifier_func: [
-            	() => auto_equip("title")
+            	() => auto_equip("Title","Sato's Hammer (0)")
                     ]
         },
         {
@@ -5904,7 +5904,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"                
             ],
             modifier_func: [
-            	() => auto_equip("title")
+            	() => auto_equip("Title","Mighty Oak Apocalypse (0)")
                     ]
         },
         {
@@ -5926,7 +5926,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"                
             ],
             modifier_func: [
-            	() => auto_equip("title")
+            	() => auto_equip("Title","Mighty Oak Apocalypse (0)")
                     ]
         },
         {
@@ -6037,7 +6037,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"                
             ],
             modifier_func: [
-            	() => auto_equip("title")
+            	() => auto_equip("Title","Soulless One (0)")
                     ]
         },
         {
@@ -6481,7 +6481,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 3,
             points: 5,
             loadout: 10,
-            ability: "Après qu'un autre vaisseau allié à portée 0-2 a été détruit, vous pouvez effectuer une action #CD#", même stressé. Lorsque vous coordonnez, le vaisseau que vous choississez peut effectuer uniquement une action qui se trouve aussi sur votre barre d'action.",
+            ability: "Après qu'un autre vaisseau allié à portée 0-2 a été détruit, vous pouvez effectuer une action #CD#, même stressé. Lorsque vous coordonnez, le vaisseau que vous choississez peut effectuer uniquement une action qui se trouve aussi sur votre barre d'action.",
             ability_ENG: "After another friendly ship at range 0-2 is destroyed, you may perform a #CD# action, even while stressed. While you coordinate, the ship you choose can perform an action only if that action is also on your action bar.",
             slots: [
                 "Talent"            
@@ -6544,7 +6544,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 4,
             points: 7,
             loadout: 10,
-            ability: "Lorsque vous effectuez une attaque principale #tur#, si le défenseur est dans votre #Barc#", lancez 1 dé supplémentaire.",
+            ability: "Lorsque vous effectuez une attaque principale #tur#, si le défenseur est dans votre #Barc#, lancez 1 dé supplémentaire.",
             ability_ENG: "While you perform a  #tur# primary attack, if the defender is in your #Barc#, roll 1 additional die.",
             slots: [
                 "Talent"            
@@ -6610,7 +6610,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 3,
             points: 6,
             loadout: 10,
-            ability: "Après avoir entièremement effectué une manoeuvre ou effectué une action, si vous vous êtes déplacé à travers un vaisseau ennemi, vous pouvez vérouiller le vaisseau,",",
+            ability: "Après avoir entièremement effectué une manoeuvre ou effectué une action, si vous vous êtes déplacé à travers un vaisseau ennemi, vous pouvez vérouiller le vaisseau,",
             ability_ENG: "After you fully execute a maneuver or perform a action, if you moved through an enemy ship, you may acquire a lock on that ship.",
             slots: [
                 "Talent"            
@@ -6673,7 +6673,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             ship: "Upsilon-Class Command Shuttle",
             shipId: 49,
             skill: 3,
-            charge 2,
+            charge: 2,
             points: 9,
             loadout: 10,
             ability: "Lorsqu'un vaisseau allié à portée 1-2 avec une initiative inférieure à la votre défend ou attaque, si vous avez au moins 1 #ch# active, ce vaisseau peut relancer 1 résultat #eye#. Après qu'un vaisseau ennemi à portée 0-3 est détruit, perdez 1 #ch#",
@@ -7111,7 +7111,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"            
             ],
             modifier_func: [
-            	() => auto_equip("title")
+            	() => auto_equip("Title","Millenium Falcon (0)")
                     ]
         },
         {
@@ -7133,7 +7133,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"            
             ],
             modifier_func: [
-            	() => auto_equip("title")
+            	() => auto_equip("Title","Millenium Falcon (0)")
                     ]            
         },
         {
@@ -7154,7 +7154,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"            
             ],
             modifier_func: [
-            	() => auto_equip("title")
+            	() => auto_equip("Title","Millenium Falcon (0)")
                     ]            
         },
         {
@@ -7176,7 +7176,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"            
             ],
             modifier_func: [
-            	() => auto_equip("title")
+            	() => auto_equip("Title","Millenium Falcon (0)")
                     ]            
         },
         {
@@ -7363,7 +7363,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "Tesa Nasz",
-            id: 241,.
+            id: 241,
             unique: true,
             faction: "Resistance",
             ship: "Y-Wing NTL-2",
@@ -7419,10 +7419,10 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             faction: "Imperial_Elite_Forces",
             ship: "VT-49 Decimator",
             shipId: 17,
-            skill: ,
+            skill: 3,
             points: 11,
             loadout: 10,
-            ability: "Vous pouvez attaquer à portée 0. Considérez vos attaques à portée 0 comme des attaques à portée 1."",
+            ability: "Vous pouvez attaquer à portée 0. Considérez vos attaques à portée 0 comme des attaques à portée 1.",
             ability_ENG: "You may attack at range 0. While you perform an attack at attack range 0, treat it as an attack at attack range 1.",
             slots: [
                 "Talent"            
@@ -7435,7 +7435,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             faction: "Imperial_Elite_Forces",
             ship: "VT-49 Decimator",
             shipId: 17,
-            skill: ,
+            skill: 4,
             charge: 1,
             recurring: true,
             points: 11,
@@ -9950,7 +9950,7 @@ const upgrades = [
                 available: false, 
                 modify: false,
                 slot: "Talent",
-                points: ?,
+                points: 2,
                 faction: ["C.I.S"],
                 effect: "Lorsque vous recevez 1 jeton rouge (non-Acquisition), vous pouvez le placer sur cette carte à la place pour l'ignorer (1 max par carte). Lorsque vous exécutez une manoeuvre bleue, vous ne pouvez retirer qu'un seul marqueur rouge. Vous pouvez retirer, le marqueur présent sur la carte.",
                 effect_ENG: "When you would receive 1 red token (non Lock), you may place it on this card instead to ignore it (1 max per card). When you execute a blue maneuver, you may remove only one red token. You may remove the red token on this card.",
@@ -9977,7 +9977,7 @@ const upgrades = [
                 modify: false,
                 unique: true,
                 slot: "Crew",
-                points: ?,
+                points: 0,
                 faction: ["Agents_of_Chaos"],
                 effect: "",
                 effect_ENG: ""
@@ -9993,7 +9993,7 @@ const upgrades = [
                 points: 3,
                 faction: ["C.I.S","Agents_of_Chaos"],
                 effect: "Au début de la phase d’engagement, vous pouvez dépenser 1 marqueur de calcul et 1 #ch# pour lancer 1 nuée de droïdes buzz en utilisant le gabarit 3 #Lbank#, #straight# ou #Rbank#.<br>La #ch# de cette carte ne peut pas être récupérée",
-                effect_ENG: "
+                effect_ENG: ""
             },
             {
                 name: "Droïde Sonde DRK1",
@@ -10194,7 +10194,7 @@ const upgrades = [
                 faction: ["Resistance"],
                 modifier_func: [
                     () => change_stat("Force",1)
-                ]
+                ],
                 effect: "Lorsque vous défendez ou attaquez, si le vaisseau ennemi est dans votre #tur#, vous pouvez dépenser 1 #fo# pour modifier l'un de vos résultats vierges en #hit# ou #evd#.",
                 effect_ENG: "While you defend or perform an attack, if the enemy ship is in your #tur#, you may spend 1 #fo# to change 1 of your blank results to a #hit# or #evd# result."
             },
@@ -10436,7 +10436,7 @@ const upgrades = [
                 points: 6,
                 faction: ["Imperial_Elite_Forces"],
                 effect: "Mise en place : Assignez la condition 'Proie' à un vaisseau. A la fin de la phase d'activation, si vous êtes à portée 0-1 du vaisseau avec la condition 'Proie', il gagne 1 jeton épuisement et 1 jeton contrainte. Lorsque ce vaisseau est détruit, vous devez assigner la condition 'Proie' à un vaisseau au delà de la portée 3 de vous. S'il n'y en a pas, assignez la à un vaisseau à portée 3. Répétez cette opération en réduisant la portée jusqu'à trouver une cible potentielle.",
-                effect_ENG: "SETUP : assign the "prey" condition to a ship. At the end of activation phase, if you are at range 0-1 of the ship with the prey condition, it gains 1 deplete and 1 strain token. When the ship is destroyed, you MUST assign the prey condition to a ship beyond range 3 of you. If there's none, assign it to a ship at range 3. Continue this operation by reducing the range until there's a suitable target."
+                effect_ENG: "SETUP : assign the 'Prey' condition to a ship. At the end of activation phase, if you are at range 0-1 of the ship with the prey condition, it gains 1 deplete and 1 strain token. When the ship is destroyed, you MUST assign the prey condition to a ship beyond range 3 of you. If there's none, assign it to a ship at range 3. Continue this operation by reducing the range until there's a suitable target."
         
             },
             {
@@ -10823,12 +10823,12 @@ function checkUpgRestriction(yy){ //populate les menus slots avec les bonnes upg
 
 
 
-function also_Occupies(yy, targetSlot){ //A utiliser lorsqu'une upgrade utilise un slot de plus
+function also_Occupies(targetSlot){ //A utiliser lorsqu'une upgrade utilise un slot de plus
    
-    for (let i=0; i<upgradesSelected[yy].length;i++){
+    for (let i=0; i<upgradesSelected[y].length;i++){
        
       if(upgradesSelected[y][i]==='<'+targetSlot+'>'){
-        let field = document.getElementById("slot"+yy+"_"+i);
+        let field = document.getElementById("slot"+y+"_"+i);
         
         field.textContent = "##";
         field.setAttribute("disabled","");
@@ -10858,11 +10858,11 @@ function checkUpgradeValidation(e) { //va checker s'il existe une fonction modif
 }
 
 
-function  add_slots (yy, targetSlot){ //A utiliser si une upgrade rajoute des slots
-    let nbrSlots = upgrades_Type[yy].length;
-    shipslot = document.getElementById('shipslots'+yy);
+function  add_slots (targetSlot){ //A utiliser si une upgrade rajoute des slots
+    let nbrSlots = upgrades_Type[y].length;
+    shipslot = document.getElementById('shipslots'+y);
     slotmenu = document.createElement('select');
-    slotmenu.setAttribute('id', 'slot'+yy+"_"+nbrSlots);
+    slotmenu.setAttribute('id', 'slot'+y+"_"+nbrSlots);
     slotmenu.setAttribute('class', 'slotElement'+' '+targetSlot);
     shipslot.appendChild(slotmenu);
         //Il faut créer la liste des upgrades pour populate les nouveaux menus
@@ -10874,25 +10874,25 @@ function  add_slots (yy, targetSlot){ //A utiliser si une upgrade rajoute des sl
                   }
         }
         
-        upgrades_Objects[yy].push(upgObjList);
-        upgrades_Type[yy].push(targetSlot);
+        upgrades_Objects[y].push(upgObjList);
+        upgrades_Type[y].push(targetSlot);
         let slotmenucontent = ['<'+targetSlot+'>'];
 //on reprend une partie du code checkUpgRestriction(). On n'appelle pas la fonction car le slotmenu est réinitialisé entièrement, ce qui fait perdre toutes les upgrades sélectionnées
-for (let j=0; j<upgrades_Objects[yy][nbrSlots].length; j++){
+for (let j=0; j<upgrades_Objects[y][nbrSlots].length; j++){
             
-    if (upgrades_Objects[yy][nbrSlots][j]['available']===true){
-        slotmenucontent.push(upgrades_Objects[y][nbrSlots][j]['name'] + " ("+upgrades_Objects[yy][nbrSlots][j]['points'] + ")");
+    if (upgrades_Objects[y][nbrSlots][j]['available']===true){
+        slotmenucontent.push(upgrades_Objects[y][nbrSlots][j]['name'] + " ("+upgrades_Objects[y][nbrSlots][j]['points'] + ")");
     }else{
         
-        testRestriction(y,upgrades_Objects[yy][nbrSlots][j]['restrictions']);
+        testRestriction(y,upgrades_Objects[y][nbrSlots][j]['restrictions']);
         
         if (restrict===true) {
-        slotmenucontent.push(upgrades_Objects[yy][nbrSlots][j]['name'] + " ("+upgrades_Objects[yy][nbrSlots][j]['points'] + ")"); 
+        slotmenucontent.push(upgrades_Objects[y][nbrSlots][j]['name'] + " ("+upgrades_Objects[y][nbrSlots][j]['points'] + ")"); 
         }
     }
     
 }
-populateMenu('slot'+yy+'_'+nbrSlots,slotmenucontent);
+populateMenu('slot'+y+'_'+nbrSlots,slotmenucontent);
 
 //fin de la recopie du code
 
@@ -10905,11 +10905,25 @@ populateMenu('slot'+yy+'_'+nbrSlots,slotmenucontent);
             checkUpgradeValidation(event);
             fillUpgradesSelected(y)
     })
-   
+
 }
 
-function auto_equip(slot){
-
+function auto_equip(Slot,UPG){
+    let numero_slot = 0; 
+    for(let i = 0;i<upgrades_Type[y].length;i++){
+        if (upgrades_Type===Slot){
+            numero_slot=i;
+        }
+    }
+    let slotToEquip = document.getElementById('slot'+y+'_'+numero_slot);
+    options = slotToEquip.options;
+    for (let j = 0;j<options.length; j++){
+        if(options[j].text === UPG){
+            slotToEquip.selectedIndex = j;
+            slotToEquip.setAttribute("disabled","");
+            break;
+        }
+    }
 }
 function weapon_Harpoint(){
 
