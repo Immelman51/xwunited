@@ -3127,7 +3127,10 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"          
             ],
             modifier_func: [
-            	() => auto_equip("Title","Moldy Crow (0)")
+            	() => auto_equip("Title","Moldy Crow (0)"),
+                () => add_slots("Illicit"),
+                () => add_slots("Cannon"),
+                () => also_Occupies("Modification"),
                     ]
         },
         {
@@ -3169,7 +3172,10 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 
             ],
             modifier_func: [
-            	() => auto_equip("Title","Moldy Crow (0)")
+            	() => auto_equip("Title","Moldy Crow (0)"),
+                () => add_slots("Illicit"),
+                () => add_slots("Cannon"),
+                () => also_Occupies("Modification"),
                     ]
         },
         {
@@ -3191,11 +3197,14 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"
             ],
             modifier_func: [
-            	() => auto_equip("Title","Moldy Crow (0)")
+            	() => auto_equip("Title","Moldy Crow (0)"),
+                () => add_slots("Illicit"),
+                () => add_slots("Cannon"),
+                () => also_Occupies("Modification"),
                     ]
         },
         {
-            name: "Jake Farrell",
+            name: "Jake Farell",
             name_ENG: "Jake Farell",
             id: 18,
             unique: true,
@@ -4133,7 +4142,12 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"
             ],
             modifier_func: [
-            	() => auto_equip("Title","Din Djarin's N1 (0)")
+            	() => auto_equip("Title","Din Djarin's N1 (0)"),
+                () => add_slots("Crew"),
+                    () => add_slots("Tech"),
+                    () => add_slots("Illicit"),
+                    () => also_Occupies("Astromech"),
+                    () => also_Occupies("Torpedo"),
                     ]
         },
         {
@@ -4156,7 +4170,12 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"
             ],
             modifier_func: [
-            	() => auto_equip("Title","Din Djarin's N1 (0)")
+            	() => auto_equip("Title","Din Djarin's N1 (0)"),
+                () => add_slots("Crew"),
+                    () => add_slots("Tech"),
+                    () => add_slots("Illicit"),
+                    () => also_Occupies("Astromech"),
+                    () => also_Occupies("Torpedo"),
                     ]
         },
         {
@@ -4197,7 +4216,12 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             ],
             modifier_func: [
             	() => auto_equip("Title","Din Djarin's N1 (0)"),
-                () => droid()
+                () => droid(),
+                () => add_slots("Crew"),
+                    () => add_slots("Tech"),
+                    () => add_slots("Illicit"),
+                    () => also_Occupies("Astromech"),
+                    () => also_Occupies("Torpedo"),
                     ]
         },
         {
@@ -4371,7 +4395,9 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"
             ],
             modifier_func: [
-            	() => auto_equip("Title","Outrider (0)")
+            	() => auto_equip("Title","Outrider (0)"),
+                () => add_slots("Gunner"),
+                    () => add_slots("Cannon"),
                     ]            
         },
         {
@@ -4394,7 +4420,10 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"
             ],
             modifier_func: [
-            	() => auto_equip("Title","Outrider (0)")
+            	() => auto_equip("Title","Outrider (0)"),
+                () => add_slots("Gunner"),
+                    () => add_slots("Cannon"),
+                    () => droid()
                     ]
         },
         {
@@ -4621,7 +4650,10 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"
             ],
             modifier_func: [
-            	() => auto_equip("Title","Slave 1 (0)")
+            	() => auto_equip("Title","Slave 1 (0)"),
+                () => add_slots("Gunner"),
+                    () => add_slots("Cannon"),
+                    () => add_slots("Illicit"),
                     ]
         },
 {
@@ -4643,7 +4675,10 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"
             ],
             modifier_func: [
-            	() => auto_equip("Title","Andrasta (0)")
+            	() => auto_equip("Title","Andrasta (0)"),
+                () => add_slots("Payload"),
+                () => add_slots("Payload"),
+                () => add_slots("Illicit")
                     ]
         },
          {
@@ -4945,7 +4980,9 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             ],
             modifier_func: [
             	() => auto_equip("Title","IG-2000 (0)"),
-                () => droid()
+                () => droid(),
+                () => add_slots("Calculator"),
+                () => also_Occupies("Modification"),
                     ]
         },
         {
@@ -4970,6 +5007,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             modifier_func: [
             	() => auto_equip("Title","IG-2000 (0)"),
                 () => droid(),
+                () => add_slots("Calculator"),
+                () => also_Occupies("Modification"),
                     ]
         },
         {
@@ -4994,7 +5033,9 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             ],
             modifier_func: [
                 () => droid(),
-                () => auto_equip("Title","IG-2000 (0)")
+                () => auto_equip("Title","IG-2000 (0)"),
+                () => add_slots("Calculator"),
+                () => also_Occupies("Modification"),
                     ]
         },
         {
@@ -5019,7 +5060,9 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             ],
             modifier_func: [
             	() => auto_equip("Title","IG-2000 (0)"),
-                () => droid()
+                () => droid(),
+                () => add_slots("Calculator"),
+                () => also_Occupies("Modification"),
                     ]
         },
         {
@@ -5138,7 +5181,10 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"
             ],
             modifier_func: [
-            	() => auto_equip("Title","Punishing One (0)")
+            	() => auto_equip("Title","Punishing One (0)"),
+                () => add_slots("Astromech"),
+                () => change_stat("attackt",1),
+                () => also_Occupies("Crew"),
                     ]
         },
         {
@@ -5179,7 +5225,10 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"
             ],
             modifier_func: [
-            	() => auto_equip("Title","Punishing One (0)")
+            	() => auto_equip("Title","Punishing One (0)"),
+                () => add_slots("Astromech"),
+                () => change_stat("attackt",1),
+                () => also_Occupies("Crew"),
                     ]
         },
         {
@@ -5274,7 +5323,10 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"
             ],
             modifier_func: [
-            	() => auto_equip("Title","Hound's Tooth (0)")
+            	() => auto_equip("Title","Hound's Tooth (0)"),
+                () => add_slots("Gunner"),
+                () => add_slots("Cannon"),
+                () => also_Occupies("Illicit"),
                     ]
         },
 {
@@ -5335,7 +5387,9 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"
             ],
             modifier_func: [
-            	() => auto_equip("Title","Xanadu Blood (0)")
+            	() => auto_equip("Title","Xanadu Blood (0)"),
+                () => add_slots("Payload"),
+                () => add_slots("Crew"),
                     ]
         },
 {
@@ -5392,7 +5446,10 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"
             ],
             modifier_func: [
-            	() => auto_equip("Title","Slave 1 (0)")
+            	() => auto_equip("Title","Slave 1 (0)"),
+                () => add_slots("Gunner"),
+                    () => add_slots("Cannon"),
+                    () => add_slots("Illicit"),
                     ]
         },
          {
@@ -5416,7 +5473,10 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"
             ],
             modifier_func: [
-            	() => auto_equip("Title","Slave 1 (0)")
+            	() => auto_equip("Title","Slave 1 (0)"),
+                () => add_slots("Gunner"),
+                    () => add_slots("Cannon"),
+                    () => add_slots("Illicit"),
                     ]
         },
          {
@@ -7111,7 +7171,14 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"            
             ],
             modifier_func: [
-            	() => auto_equip("Title","Millenium Falcon (0)")
+            	() => auto_equip("Title","Millenium Falcon (0)"),
+                () => also_Occupies("Missile"),
+                () => lose_chassis("Docking Ship"),
+                () => add_slots("Sensor"),
+                () => add_slots("Calculator"),
+                () => change_stat("attackt",1),
+                () => change_stat("loadout",5),
+                () => change_stat("points",1)
                     ]
         },
         {
@@ -7133,7 +7200,14 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"            
             ],
             modifier_func: [
-            	() => auto_equip("Title","Millenium Falcon (0)")
+            	() => auto_equip("Title","Millenium Falcon (0)"),
+                () => also_Occupies("Missile"),
+                    () => lose_chassis("Docking Ship"),
+                    () => add_slots("Sensor"),
+                    () => add_slots("Calculator"),
+                    () => change_stat("attackt",1),
+                    () => change_stat("loadout",5),
+                    () => change_stat("points",1)
                     ]            
         },
         {
@@ -7154,7 +7228,14 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"            
             ],
             modifier_func: [
-            	() => auto_equip("Title","Millenium Falcon (0)")
+            	() => auto_equip("Title","Millenium Falcon (0)"),
+                () => also_Occupies("Missile"),
+                    () => lose_chassis("Docking Ship"),
+                    () => add_slots("Sensor"),
+                    () => add_slots("Calculator"),
+                    () => change_stat("attackt",1),
+                    () => change_stat("loadout",5),
+                    () => change_stat("points",1)
                     ]            
         },
         {
@@ -7176,7 +7257,14 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"            
             ],
             modifier_func: [
-            	() => auto_equip("Title","Millenium Falcon (0)")
+            	() => auto_equip("Title","Millenium Falcon (0)"),
+                () => also_Occupies("Missile"),
+                    () => lose_chassis("Docking Ship"),
+                    () => add_slots("Sensor"),
+                    () => add_slots("Calculator"),
+                    () => change_stat("attackt",1),
+                    () => change_stat("loadout",5),
+                    () => change_stat("points",1)
                     ]            
         },
         {
@@ -10911,7 +10999,7 @@ populateMenu('slot'+y+'_'+nbrSlots,slotmenucontent);
 function auto_equip(Slot,UPG){
     let numero_slot = 0; 
     for(let i = 0;i<upgrades_Type[y].length;i++){
-        if (upgrades_Type===Slot){
+        if (upgrades_Type[y][i]===Slot){
             numero_slot=i;
         }
     }
