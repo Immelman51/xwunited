@@ -224,7 +224,7 @@ const ships =
                 [ 0, 0, 2, 0, 0, 3, 0, 0]
             ],
             base: ["Large"],
-            slots: ["Missile", "Crew", "Crew", "Modification"]
+            slots: ["Missile", "Crew", "Crew", "Gunner", "Modification"]
         },
         {
         
@@ -668,7 +668,7 @@ const ships =
                 [ 0, 0, 2, 0, 0, 3 ]
             ],
             base: ["Small"],
-            slots: ["Modification", "Cannon", "Torpedo", "Missile"]
+            slots: ["Modification"]
         },
         {
     
@@ -1332,7 +1332,8 @@ const ships =
                 [ 2, 1, 1, 1, 2, 0, 0, 0, 0, 0],
                 [ 2, 2, 1, 2, 2, 0, 0, 0, 3, 3],
                 [ 0, 0, 2, 0, 0, 3, 0, 0, 0, 0]
-            ]
+            ],
+            slots: ['Tech','Modification','Astromech']
         },
         {
            
@@ -1361,7 +1362,8 @@ const ships =
                 [ 2, 1, 1, 1, 2, 0, 3, 3],
                 [ 0, 0, 1, 0, 0, 0, 0, 0],
                 [ 0, 0, 1, 0, 0, 3, 0, 0]
-            ]
+            ],
+            slots: ['Tech','Missile','Modification']
         },
         {
       
@@ -1505,7 +1507,8 @@ const ships =
                 [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
                 [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
             ],
-            base: ["Large"]
+            base: ["Large"],
+            slots: ['Crew','Gunner','Tech','Tech','Payload','Payload','Turret','Modification']
         },
         {
       
@@ -1787,7 +1790,8 @@ const ships =
                 [ 2, 2, 1, 2, 2, 0, 0, 0, 0, 0],
                 [ 0, 3, 2, 3, 0, 3, 0, 0, 0, 0],
                 [ 0, 0, 3, 0, 0, 0, 0, 0, 0, 0]
-            ]
+            ],
+            slots: ['Crew','Tech','Modification']
         },
         {
      
@@ -1814,7 +1818,8 @@ const ships =
                 [ 2, 2, 1, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0 ],
                 [ 0, 3, 2, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
                 [ 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
-            ]
+            ],
+            slots: ['Crew','Crew','Tech','Cannon','Modification','Astromech']
         },
         {
     
@@ -2166,7 +2171,8 @@ const ships =
                 [ 3, 2, 1, 2, 3, 0],
                 [ 0, 0, 3, 0, 0, 0],
                 [ 0, 0, 0, 0, 0, 3]
-            ]
+            ],
+            slots: ['Tech','Torpedo','Payload','Turret','Illicit','Modification','Astromech']
         },
         {
      
@@ -3092,7 +3098,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             faction: "Rebel_Alliance",
             ship: "UT-60D U-wing",
             modify: false,
-		shipId: 34,
+		    shipId: 34,
             skill: 2,
             points: 7,
             loadout: 10,
@@ -3111,8 +3117,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             unique: true,
             skill: 3,
             ship: "UT-60D U-wing",
-        modify: true,    
-	shipId: 34,
+            modify: true,    
+	        shipId: 34,
             points: 7,
             loadout: 10,
             ability: "Après avoir gagné un marqueur de stress, gagnez 1 marqueur de calcul.",
@@ -3132,13 +3138,13 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             faction: "Rebel_Alliance",
             ship: "HWK-290 Light Freighter",
             modify: true,
-		shipId: 8,
+		    shipId: 8,
             skill: 5,
             points: 7,
             loadout: 15,
             title: ["Moldy Crow"],
             ability: "Tant qu’un vaisseau allié situé dans votre arc de tir effectue une attaque principale, si vous n’êtes pas stressé, vous pouvez gagner 1 marqueur de stress. Dans ce cas, ce vaisseau peut lancer 1 dé d’attaque supplémentaire.",
-            ability: "While a friendly ship in your firing arc performs a primary attack, if you are not stressed, you may receive 1 stress token. If you do, this ship may roll 1 additional attack die.",
+            ability_ENG: "While a friendly ship in your firing arc performs a primary attack, if you are not stressed, you may receive 1 stress token. If you do, this ship may roll 1 additional attack die.",
             slots: [
                 "Talent",
                 "Talent",
@@ -4733,7 +4739,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             name_ENG: "Hondo Ohnaka",
             id: 95,
             unique: true,
-	modify: true,
+	        modify: true,
             faction: "Pirates_and_Smugglers",
             ship: "Firespray-class Patrol Craft",
             shipId: 7,
@@ -4760,7 +4766,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             name_ENG: "Emon Azzameen",
             id: 96,
             unique: true,
-	modify: true,
+	        modify: true,
             faction: "Pirates_and_Smugglers",
             ship: "Firespray-class Patrol Craft",
             shipId: 7,
@@ -4786,7 +4792,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             name_ENG: "Sana Starros",
             id: 97,
             unique: true,
-		 modify: false,
+		    modify: false,
             faction: "Pirates_and_Smugglers",
             ship: "Firespray-class Patrol Craft",
             shipId: 7,
@@ -4809,7 +4815,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             faction: "Pirates_and_Smugglers",
             ship: "M3-A Interceptor",
             shipId: 19,
-		modify: true,
+		    modify: true,
             skill: 5,
             points: 7,
             loadout: 10,
@@ -4831,7 +4837,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             faction: "Pirates_and_Smugglers",
             ship: "M3-A Interceptor",
             shipId: 19,
-	modify: true,
+	        modify: true,
             skill: 3,
             points: 6,
             loadout: 10,
@@ -4851,7 +4857,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             faction: "Pirates_and_Smugglers",
             ship: "M3-A Interceptor",
             shipId: 19,
-	 modify: true,
+	        modify: true,
             skill: 3,
             points: 5,
             loadout: 5,
@@ -4868,7 +4874,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             faction: "Pirates_and_Smugglers",
             ship: "M3-A Interceptor",
             shipId: 19,
-	 modify: true,
+	        modify: true,
             skill: 2,
             points: 6,
             loadout: 10,
@@ -4889,7 +4895,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             faction: "Pirates_and_Smugglers",
             ship: "M3-A Interceptor",
             shipId: 19,
-		modify: true,
+		    modify: true,
             skill: 3,
             points: 6,
             loadout: 10,
@@ -7156,10 +7162,11 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
 //////////////////////////////////////////////////////////////
 		{
             name: "Poe Dameron",
+            name_ENG: "Poe Dameron",
             id: 214,
             unique: true,
             faction: "Resistance",
-            ship: "T-70 X-Wing",
+            ship: "T-70 X-wing",
             shipId: 44,
 			modify: true,
             skill: 6,
@@ -7182,11 +7189,12 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "Temmin Wexley",
+            name_ENG: "Temmin Wexley",
             id: 215,
             unique: true,
             faction: "Resistance",
-            ship: "T-70 X-Wing",
-		modify: false,
+            ship: "T-70 X-wing",
+		    modify: false,
             shipId: 44,
             skill: 4,
             points: 7,
@@ -7200,12 +7208,13 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "Jess Pava",
+            name_ENG: "Jess Pava",
             id: 216,
             unique: true,
             faction: "Resistance",
-            ship: "T-70 X-Wing",
+            ship: "T-70 X-wing",
             shipId: 44,
-		modify: false,
+		    modify: false,
             skill: 3,
             points: 7,
             charge: 1,
@@ -7219,12 +7228,13 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "Ello Asty",
+            name_ENG: "Ello Asty",
             id: 217,
             unique: true,
             faction: "Resistance",
-            ship: "T-70 X-Wing",
+            ship: "T-70 X-wing",
             shipId: 44,
-		modify: false,
+		    modify: false,
             skill: 5,
             points: 8,
             loadout: 10,
@@ -7237,12 +7247,13 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "Paige Tico",
+            name_ENG: "Paige Tico",
             id: 218,
             unique: true,
             faction: "Resistance",
-            ship: "Starfortress MG100",
-            shipId: 44,
-		modify: false,
+            ship: "MG-100 StarFortress",
+            shipId: 50,
+		    modify: false,
             skill: 5,
             points: 9,
             charge: 2,
@@ -7256,12 +7267,13 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "Ben Teene",
+            name_ENG: "Ben Teene",
             id: 219,
             unique: true,
             faction: "Resistance",
-            ship: "Starfortress MG100",
-            shipId: 44,
-		modify: false,
+            ship: "MG-100 StarFortress",
+            shipId: 50,
+		    modify: false,
             skill: 3,
             points: 9,
             loadout: 10,
@@ -7273,12 +7285,13 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "Finch Dallow",
+            name_ENG: "Finch Dallow",
             id: 220,
             unique: true,
             faction: "Resistance",
-            ship: "Starfortress MG100",
-            shipId: 44,
-		modify: false,
+            ship: "MG-100 StarFortress",
+            shipId: 50,
+		    modify: false,
             skill: 4,
             points: 9,
             loadout: 10,
@@ -7290,12 +7303,13 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "Edon Kappehl",
+            name_ENG: "Edon Kappehl",
             id: 221,
             unique: true,
             faction: "Resistance",
-            ship: "Starfortress MG100",
-            shipId: 44,
-		modify: false,
+            ship: "MG-100 StarFortress",
+            shipId: 50,
+		    modify: false,
             skill: 3,
             points: 9,
             loadout: 10,
@@ -7307,12 +7321,13 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "L'ulo L'ampar",
+            name_ENG: "L'ulo L'ampar",
             id: 222,
             unique: true,
             faction: "Resistance",
-            ship: "RZ-2 A-Wing",
-            shipId: 44,
-		modify: false,
+            ship: "RZ-2 A-wing",
+            shipId: 45,
+		    modify: false,
             skill: 5,
             points: 7,
             loadout: 10,
@@ -7326,12 +7341,13 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "Tallissan Lintra",
+            name_ENG: "Tallissan Lintra",
             id: 223,
             unique: true,
             faction: "Resistance",
-            ship: "RZ-2 A-Wing",
-            shipId: 44,
-		modify: false,
+            ship: "RZ-2 A-wing",
+            shipId: 45,
+		    modify: false,
             skill: 5,
             charge: 1,
             recurring: true,
@@ -7346,12 +7362,13 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "Zizi Tlo",
+            name_ENG: "Zizi Tlo",
             id: 224,
             unique: true,
             faction: "Resistance",
-            ship: "RZ-2 A-Wing",
-            shipId: 44,
-		modify: false,
+            ship: "RZ-2 A-wing",
+            shipId: 45,
+		    modify: false,
             skill: 5,
             points: 7,
             charge: 1,
@@ -7366,12 +7383,13 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "Seftin Vanik",
+            name_ENG: "Seftin Vanik",
             id: 225,
             unique: true,
             faction: "Resistance",
-            ship: "RZ-2 A-Wing",
-            shipId: 44,
-		modify: false,
+            ship: "RZ-2 A-wing",
+            shipId: 45,
+		    modify: false,
             skill: 5,
             points: 6,
             loadout: 10,
@@ -7384,12 +7402,13 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "Han Solo #Res#",
+            name_ENG: "Han Solo #Res#",
             id: 226,
             unique: true,
             faction: "Resistance",
             ship: "YT-1300 Light Freighter",
-            shipId: 44,
-		modify: true,
+            shipId: 3,
+		    modify: true,
             skill: 6,
             points: 9,
             loadout: 15,
@@ -7415,12 +7434,13 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "Rey",
+            name_ENG: "Rey",
             id: 227,
             unique: true,
             faction: "Resistance",
             ship: "YT-1300 Light Freighter",
-            shipId: 44,
-		modify: true,
+            shipId: 3,
+		    modify: true,
             skill: 5,
             points: 10,
             loadout: 15,
@@ -7445,12 +7465,13 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "Chewbacca #Res#",
+            name_ENG: "Chewbacca #Res#",
             id: 228,
             unique: true,
             faction: "Resistance",
             ship: "YT-1300 Light Freighter",
-            shipId: 44,
-		modify: true,
+            shipId: 3,
+		    modify: true,
             skill: 4,
             points: 8,
             loadout: 15,
@@ -7474,12 +7495,13 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "Lando Calrissian #Res#",
+            name_ENG: "Lando Calrissian #Res#",
             id: 229,
             unique: true,
             faction: "Resistance",
             ship: "YT-1300 Light Freighter",
-            shipId: 44,
-		modify: true,
+            shipId: 3,
+		    modify: true,
             skill: 5,
             points: 10,
             loadout: 15,
@@ -7504,12 +7526,13 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "Cova Nell",
+            name_ENG: "Cova Nell",
             id: 230,
             unique: true,
             faction: "Resistance",
             ship: "Resistance Transport",
-            shipId: 44,
-		modify: false,
+            shipId: 61,
+		    modify: false,
             skill: 4,
             points: 7,
             loadout: 10,
@@ -7522,12 +7545,13 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "Nodin Chavdri",
+            name_ENG: "Nodin Chavdri",
             id: 231,
             unique: true,
             faction: "Resistance",
             ship: "Resistance Transport",
-            shipId: 44,
-		modify: false,
+            shipId: 61,
+		    modify: false,
             skill: 2,
             points: 6,
             loadout: 10,
@@ -7539,12 +7563,13 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "Pammich Nerro Goode",
+            name_ENG: "Pammich Nerro Goode",
             id: 232,
             unique: true,
             faction: "Resistance",
             ship: "Resistance Transport",
-            shipId: 44,
-		modify: false,
+            shipId: 61,
+		    modify: false,
             skill: 3,
             points: 5,
             loadout: 10,
@@ -7556,12 +7581,13 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "Taka Jamoreesa",
+            name_ENG: "Taka Jamoreesa",
             id: 233,
             unique: true,
             faction: "Resistance",
             ship: "Resistance Transport",
-            shipId: 44,
-		modify: false,
+            shipId: 61,
+		    modify: false,
             skill: 2,
             points: 6,
             loadout: 10,
@@ -7573,12 +7599,13 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "Finn",
+            name_ENG: "Finn",
             id: 234,
             unique: true,
             faction: "Resistance",
             ship: "Resistance Transport Pod",
-            shipId: 44,
-		modify: false,
+            shipId: 60,
+		    modify: false,
             skill: 3,
             points: 3,
             loadout: 5,
@@ -7591,12 +7618,13 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "Rose Tico",
+            name_ENG: "Rose Tico",
             id: 235,
             unique: true,
             faction: "Resistance",
             ship: "Resistance Transport Pod",
-            shipId: 44,
-		modify: false,
+            shipId: 60,
+		    modify: false,
             skill: 3,
             points: 3,
             loadout: 5,
@@ -7609,12 +7637,13 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "BB-8",
+            name_ENG: "BB-8",
             id: 236,
             unique: true,
             faction: "Resistance",
             ship: "Resistance Transport Pod",
-            shipId: 44,
-		modify: true,
+            shipId: 60,
+		    modify: true,
             skill: 1,
             points: 2,
             loadout: 5,
@@ -7628,12 +7657,13 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "Vi Moradi",
+            name_ENG: "Vi Moradi",
             id: 237,
             unique: true,
             faction: "Resistance",
             ship: "Resistance Transport Pod",
             modify: false,
-		shipId: 44,
+		    shipId: 60,
             skill: 1,
             points: 2,
             loadout: 5,
@@ -7645,12 +7675,13 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "Zori Bliss",
+            name_ENG: "Zori Bliss",
             id: 238,
             unique: true,
             faction: "Resistance",
-            ship: "Y-Wing NTL-2",
+            ship: "BTA-NR2 Y-wing",
             modify: false,
-		shipId: 44,
+		    shipId: 74,
             skill: 5,
             points: 8,
             charge: 1,
@@ -7665,12 +7696,13 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "Aftab Ackbar",
+            name_ENG: "Aftab Ackbar",
             id: 239,
             unique: true,
             faction: "Resistance",
-            ship: "Y-Wing NTL-2",
+            ship: "BTA-NR2 Y-wing",
             modify: false,
-		shipId: 44,
+		    shipId: 74,
             skill: 2,
             points: 7,
             loadout: 10,
@@ -7682,12 +7714,13 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "Lega Fossang",
+            name_ENG: "Lega Fossang",
             id: 240,
             unique: true,
             faction: "Resistance",
             modify: false,
-		ship: "Y-Wing NTL-2",
-            shipId: 44,
+		    ship: "BTA-NR2 Y-wing",
+            shipId: 74,
             skill: 3,
             points: 7,
             loadout: 10,
@@ -7700,12 +7733,13 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "Tesa Nasz",
+            name_ENG: "Tesa Nasz",
             id: 241,
             unique: true,
             faction: "Resistance",
-            ship: "Y-Wing NTL-2",
+            ship: "BTA-NR2 Y-wing",
             modify: false,
-		shipId: 44,
+		    shipId: 74,
             skill: 4,
             points: 7,
             loadout: 10,
@@ -7721,9 +7755,9 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             id: 242,
             unique: false,
             modify: false,
-		faction: "Resistance",
-            ship: "Y-Wing NTL-2",
-            shipId: 44,
+		    faction: "Resistance",
+            ship: "BTA-NR2 Y-wing",
+            shipId: 74,
             skill: 2,
             points: 6,
             loadout: 3,
@@ -9634,7 +9668,7 @@ const upgrades = [
                 name: "Super Blaster de Poupe",
                 name_eng: "Hotshot Tail Blaster",
                 id: 113,
-                available: false,
+                available: true,
                 modify: false,
                 points: 2,
                 attackb: 2,
@@ -11216,8 +11250,9 @@ function also_Occupies(targetSlot){ //A utiliser lorsqu'une upgrade utilise un s
       if(upgradesSelected[y][i]==='<'+targetSlot+'>'){
         let field = document.getElementById("slot"+y+"_"+i);
         
-        field.textContent = "##";
+        field.value = "<"+targetSlot+">";
         field.setAttribute("disabled","");
+        
         return
 
       }  
@@ -11274,7 +11309,7 @@ for (let j=0; j<upgrades_Objects[y][nbrSlots].length; j++){
         slotmenucontent.push(upgrades_Objects[y][nbrSlots][j]['name'] + " ("+upgrades_Objects[y][nbrSlots][j]['points'] + ")"); 
         }
     }
-    
+    fillUpgradesSelected(y);
 }
 populateMenu('slot'+y+'_'+nbrSlots,slotmenucontent);
 
@@ -11311,9 +11346,50 @@ function auto_equip(Slot,UPG){
         }
     }
 }
-function weapon_Harpoint(){
 
-}
+function weapon_Hardpoint(){
+    add_slots("Cannon");
+    add_slots("Torpedo");
+    add_slots("Missile");
+    let cannon_menu = null;
+    let missile_menu = null;
+    let torpedo_menu = null;
+    for (let j = 0; j<upgradesSelected[y].length;j++){
+        if(upgradesSelected[y][j]==='<Cannon>'){
+            cannon_menu = document.getElementById("slot"+y+"_"+j);
+            torpedo_menu = document.getElementById("slot"+y+"_"+(j+1));
+            missile_menu = document.getElementById("slot"+y+"_"+(j+2));
+        
+            break;
+        }
+        }
+     cannon_menu.addEventListener("input", function () {
+        also_Occupies("Torpedo");
+        also_Occupies("Missile");
+        if (cannon_menu.value === "<Cannon>"){
+            torpedo_menu.removeAttribute('disabled');
+            missile_menu.removeAttribute('disabled');
+        }
+     })
+     missile_menu.addEventListener("input", function() {
+        also_Occupies("Cannon");
+        also_Occupies("Torpedo");
+        if (missile_menu.value === "<Missile>"){
+            cannon_menu.removeAttribute('disabled');
+            torpedo_menu.removeAttribute('disabled');
+        }
+     })
+     torpedo_menu.addEventListener("input",function () {
+        also_Occupies("Cannon");
+        also_Occupies("Missile");
+        if (torpedo_menu.value === "<Torpedo>"){
+            cannon_menu.removeAttribute('disabled');
+            missile_menu.removeAttribute('disabled');
+        }
+     })   
+    }
+
+
 
 function add_action (act){
 
@@ -11330,6 +11406,9 @@ function lose_chassis(){
 function add_chassis(chas){
     
     }
+function droid() {
+
+}
     
 function upgradeListGet(yy) { //va chercher les options pour populate les menus de slots crées avec displaylots(), et remplit la var upgrades_Objects
   
