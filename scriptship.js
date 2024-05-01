@@ -2872,7 +2872,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             faction: "Rebel_Alliance",
             ship: "T-65 X-wing",
             modify: false,
-	    shipId: 0,
+	        shipId: 0,
             skill: 3,
             points: 6,
             loadout: 5,
@@ -2883,7 +2883,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             name_ENG: "Luke Skywalker",
             id: 1,
             modify: false,
-	    unique: true,
+	        unique: true,
             faction: "Rebel_Alliance",
             ship: "T-65 X-wing",
             shipId: 0,
@@ -2907,7 +2907,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             faction: "Rebel_Alliance",
             ship: "T-65 X-wing",
             modify: false,
-		shipId: 0,
+		    shipId: 0,
             skill: 6,
             points: 8,
             loadout: 10,
@@ -2928,7 +2928,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             faction: "Rebel_Alliance",
             ship: "T-65 X-wing",
             modify: false,
-		shipId: 0,
+		    shipId: 0,
             skill: 3,
             points: 7,
             loadout: 10,
@@ -2946,7 +2946,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             faction: "Rebel_Alliance",
             ship: "T-65 X-wing",
             modify: false,
-		shipId: 0,
+		    shipId: 0,
             skill: 5,
             charge: 1,
             recurring: 1,
@@ -2967,8 +2967,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             unique: true,
             faction: "Rebel_Alliance",
             ship: "BTL-A4 Y-wing",
-        modify: false,    
-	shipId: 1,
+            modify: false,    
+	        shipId: 1,
             skill: 5,
             points: 7,
             loadout: 10,
@@ -2986,8 +2986,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             id: 6,
             unique: true,
             faction: "Rebel_Alliance",
-        modify: false,    
-	ship: "BTL-A4 Y-wing",
+            modify: false,    
+	        ship: "BTL-A4 Y-wing",
             shipId: 1,
             skill: 5,
             points: 6,
@@ -3008,7 +3008,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             faction: "Rebel_Alliance",
             ship: "BTL-A4 Y-wing",
             modify: false,
-		shipId: 1,
+		    shipId: 1,
             skill: 4,
             points: 7,
             loadout: 10,
@@ -3027,7 +3027,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             faction: "Rebel_Alliance",
             ship: "BTL-A4 Y-wing",
             modify: false,
-		shipId: 1,
+		    shipId: 1,
             skill: 3,
             points: 6,
             loadout: 10,
@@ -3045,7 +3045,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             faction: "Rebel_Alliance",
             ship: "BTL-A4 Y-wing",
             modify: false,
-		shipId: 1,
+		    shipId: 1,
             skill: 3,
             points: 5,
             loadout: 5,
@@ -3058,8 +3058,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             unique: true,
             faction: "Rebel_Alliance",
             ship: "UT-60D U-wing",
-        modify: false,    
-	shipId: 34,
+            modify: false,    
+	        shipId: 34,
             skill: 4,
             points: 7,
             loadout: 10,
@@ -3078,7 +3078,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             faction: "Rebel_Alliance",
             ship: "UT-60D U-wing",
             modify: false,
-		shipId: 34,
+		    shipId: 34,
             skill: 3,
             points: 8,
             loadout: 10,
@@ -3126,8 +3126,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             slots: [
 
             ],
-	modifier_func: [
-		() => droid()
+	        modifier_func: [
+		        () => droid()
 		]
         },
         {
@@ -3154,7 +3154,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             	() => auto_equip("Title","Moldy Crow (0)"),
                 () => add_slots("Illicit"),
                 () => add_slots("Cannon"),
-                () => also_Occupies("Modification"),
+                () => also_Occupies("Modification",146),
                     ]
         },
         {
@@ -3165,7 +3165,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             faction: "Rebel_Alliance",
             ship: "HWK-290 Light Freighter",
             modify: false,
-		shipId: 8,
+		    shipId: 8,
             skill: 4,
             points: 6,
             loadout: 10,
@@ -3185,7 +3185,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             faction: "Rebel_Alliance",
             ship: "HWK-290 Light Freighter",
             modify: true,
-		shipId: 8,
+		    shipId: 8,
             skill: 3,
             points: 6,
             loadout: 15,
@@ -3201,7 +3201,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             	() => auto_equip("Title","Moldy Crow (0)"),
                 () => add_slots("Illicit"),
                 () => add_slots("Cannon"),
-                () => also_Occupies("Modification"),
+                () => also_Occupies("Modification",146),
                     ]
         },
         {
@@ -3212,7 +3212,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             faction: "Rebel_Alliance",
             ship: "HWK-290 Light Freighter",
             modify: true,
-		shipId: 8,
+		    shipId: 8,
             skill: 3,
             points: 8,
             loadout: 15,
@@ -3227,7 +3227,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             	() => auto_equip("Title","Moldy Crow (0)"),
                 () => add_slots("Illicit"),
                 () => add_slots("Cannon"),
-                () => also_Occupies("Modification"),
+                () => also_Occupies("Modification",146),
                     ]
         },
         {
@@ -3238,7 +3238,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             faction: "Rebel_Alliance",
             ship: "RZ-1 A-wing",
             modify: false,
-		shipId: 2,
+		    shipId: 2,
             skill: 4,
             points: 7,
             loadout: 10,
@@ -3258,7 +3258,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             faction: "Rebel_Alliance",
             ship: "RZ-1 A-wing",
             modify: false,
-	    shipId: 2,
+	        shipId: 2,
             skill: 3,
             points: 6,
             loadout: 10,
@@ -3277,8 +3277,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             unique: true,
             faction: "Rebel_Alliance",
             ship: "RZ-1 A-wing",
-         modify: false,   
-	 shipId: 2,
+            modify: false,   
+	        shipId: 2,
             skill: 5,
             points: 7,
             loadout: 10,
@@ -3300,7 +3300,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             faction: "Rebel_Alliance",
             ship: "RZ-1 A-wing",
             modify: false,
-		shipId: 2,
+		    shipId: 2,
             skill: 3,
             points: 6,
             loadout: 10,
@@ -3320,7 +3320,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             faction: "Rebel_Alliance",
             ship: "RZ-1 A-wing",
             modify: false,
-	shipId: 2,
+	        shipId: 2,
             skill: 3,
             points: 5,
             loadout: 5,
@@ -3337,7 +3337,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             faction: "Rebel_Alliance",
             ship: "A/SF-01 B-wing",
             modify: false,
-		shipId: 10,
+		    shipId: 10,
             skill: 4,
             points: 8,
             loadout: 10,
@@ -3355,7 +3355,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             faction: "Rebel_Alliance",
             ship: "A/SF-01 B-wing",
             modify: false,
-		shipId: 10,
+		    shipId: 10,
             skill: 4,
             points: 8,
             loadout: 10,
@@ -3373,8 +3373,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             unique: true,
             faction: "Rebel_Alliance",
             ship: "A/SF-01 B-wing",
-        modify: false,    
-	shipId: 10,
+            modify: false,    
+	        shipId: 10,
             skill: 3,
             points: 8,
             loadout: 10,
@@ -3389,8 +3389,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             name_ENG: "Gina Moonsong",
             id: 26,
             faction: "Rebel_Alliance",
-        modify: false,    
-	unique: true,
+            modify: false,    
+	        unique: true,
             skill: 5,
             ship: "A/SF-01 B-wing",
             shipId: 10,
@@ -3409,8 +3409,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             id: 27,
             faction: "Rebel_Alliance",
             ship: "A/SF-01 B-wing",
-         modify: false,   
-	 shipId: 10,
+            modify: false,   
+	        shipId: 10,
             skill: 2,
             points: 7,
             loadout: 5,
@@ -3424,7 +3424,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             faction: "Rebel_Alliance",
             ship: "ARC-170 Starfighter",
             modify: false,
-		shipId: 30,
+		    shipId: 30,
             skill: 4,
             points: 7,
             loadout: 10,
@@ -3443,7 +3443,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             faction: "Rebel_Alliance",
             ship: "ARC-170 Starfighter",
             modify: false,
-		shipId: 30,
+		    shipId: 30,
             skill: 4,
             points: 8,
             loadout: 10,
@@ -3464,7 +3464,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             faction: "Imperial_Academy",
             ship: "Lambda-class T-4a Shuttle",
             modify: false,
-	       shipId: 9,
+	        shipId: 9,
             skill: 4,
             points: 8,
             loadout: 10,
@@ -3482,7 +3482,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             faction: "Imperial_Academy",
             ship: "Lambda-class T-4a Shuttle",
             modify: false,
-		shipId: 9,
+		    shipId: 9,
             skill: 3,
             points: 7,
             loadout: 10,
@@ -3499,7 +3499,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             faction: "Imperial_Academy",
             ship: "Lambda-class T-4a Shuttle",
             modify: false,
-		shipId: 9,
+		    shipId: 9,
             skill: 3,
             charge: 2,
             points: 7,
@@ -3517,7 +3517,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             faction: "Imperial_Academy",
             ship: "TIE Advanced x1",
             modify: false,
-		shipId: 5,
+		    shipId: 5,
             skill: 6,
             points: 10,
             loadout: 10,
@@ -3538,7 +3538,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             faction: "Imperial_Academy",
             ship: "TIE Advanced x1",
             modify: false,
-		shipId: 5,
+		    shipId: 5,
             skill: 5,
             points: 8,
             loadout: 10,
@@ -3556,7 +3556,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             faction: "Imperial_Academy",
             ship: "TIE Advanced x1",
             modify: false,
-		shipId: 5,
+		    shipId: 5,
             skill: 3,
             points: 7,
             loadout: 10,
@@ -3574,7 +3574,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             faction: "Imperial_Academy",
             ship: "TIE Advanced x1",
             modify: false,
-		shipId: 5,
+		    shipId: 5,
             skill: 5,
             points: 8,
             loadout: 10,
@@ -3592,7 +3592,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             faction: "Imperial_Academy",
             ship: "TIE/in Interceptor",
             modify: false,
-		shipId: 6,
+		    shipId: 6,
             skill: 1,
             points: 5,
             loadout: 5,
@@ -3608,13 +3608,14 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             faction: "Imperial_Academy",
             ship: "TIE/in Interceptor",
             modify: false,
-		shipId: 6,
+		    shipId: 6,
             skill: 3,
             points: 6,
             loadout: 10,
             ability: "Tant que vous effectuez un tonneau, vous devez utiliser le gabarit #Lbank# ou #Rbank# à la place du gabarit #straight#.",
             ability_ENG: "While you perform a barell roll, you must use the template #Lbank# or #Rbank# instead of the #straight# template.",
             slots: [
+                "Talent",
                 "Talent"
 
             ]
@@ -3626,8 +3627,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             unique: true,
             faction: "Imperial_Academy",
             ship: "TIE/in Interceptor",
-         modify: false,   
-	 shipId: 6,
+            modify: false,   
+	        shipId: 6,
             skill: 2,
             charge: 1,
             recurring: 1,
@@ -3636,6 +3637,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             ability: "Pendant la phase d’engagement, après qu’un petit vaisseau allié à portée 0–3 a été détruit, s’il ne s’était pas déjà engagé à cette phase, vous pouvez dépenser 1 #ch#. Dans ce cas, il s’engage à l’initiative actuelle.",
             ability_ENG: "During Engagement Phase, after a small friendly ship at range 0-3 is destroyed, if he hasn't engaged yet during this phase, you may spend 1 #ch#. If you do, he engages with the current initiative.",
             slots: [
+                "Talent",
                 "Talent"
             ]
         },
@@ -3646,8 +3648,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             unique: true,
             faction: "Imperial_Academy",
             ship: "TIE/in Interceptor",
-        modify: false,    
-	shipId: 6,
+            modify: false,    
+	        shipId: 6,
             skill: 5,
             charge: 1,
             recurring: 1,
@@ -3667,8 +3669,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             unique: true,
             faction: "Imperial_Academy",
             ship: "TIE/in Interceptor",
-         modify: false,   
-	 shipId: 6,
+            modify: false,   
+	        shipId: 6,
             skill: 4,
             points: 7,
             loadout: 10,
@@ -3687,7 +3689,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             faction: "Imperial_Academy",
             ship: "TIE/sa Bomber",
             modify: false,
-		 shipId: 11,
+		    shipId: 11,
             skill: 4,
             points: 7,
             loadout: 10,
@@ -3705,7 +3707,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             faction: "Imperial_Academy",
             ship: "TIE/sa Bomber",
             modify: false,
-		shipId: 11,
+		    shipId: 11,
             skill: 4,
             points: 6,
             loadout: 10,
@@ -3723,7 +3725,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             faction: "Imperial_Academy",
             ship: "TIE/sa Bomber",
             modify: false,
-		shipId: 11,
+		    shipId: 11,
             skill: 5,
             points: 6,
             loadout: 10,
@@ -3742,7 +3744,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             faction: "Imperial_Academy",
             ship: "TIE/sa Bomber",
             modify: false,
-		shipId: 11,
+		    shipId: 11,
             skill: 2,
             charge: 2,
             recurring: true, 
@@ -3761,7 +3763,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             faction: "Imperial_Academy",
             ship: "TIE/sa Bomber",
             modify: false,
-		shipId: 11,
+		    shipId: 11,
             skill: 2,
             points: 5,
             loadout: 5,
@@ -3775,7 +3777,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             faction: "Imperial_Academy",
             ship: "TIE/ln Fighter",
             modify: false,
-		shipId: 4,
+		    shipId: 4,
             skill: 5,
             points: 5,
             loadout: 10,
@@ -3793,8 +3795,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             unique: true,
             faction: "Imperial_Academy",
             ship: "TIE/ln Fighter",
-        modify: false,    
-	shipId: 4,
+            modify: false,    
+	        shipId: 4,
             skill: 5,
             points: 4,
             loadout: 10,
@@ -3811,8 +3813,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             id: 49,
             faction: "Imperial_Academy",
             ship: "TIE/ln Fighter",
-         modify: false,   
-	 shipId: 4,
+            modify: false,   
+	        shipId: 4,
             skill: 5,
             points: 4,
             loadout: 10,
@@ -3829,8 +3831,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             id: 50,
             faction: "Imperial_Academy",
             ship: "TIE/ln Fighter",
-         modify: false,   
-	 shipId: 4,
+            modify: false,   
+	        shipId: 4,
             skill: 6,
             points: 4,
             loadout: 10,
@@ -3846,8 +3848,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             id: 51,
             faction: "Imperial_Academy",
             ship: "TIE/ln Fighter",
-        modify: false,    
-	shipId: 4,
+            modify: false,    
+	        shipId: 4,
             skill: 1,
             points: 3,
             loadout: 0,
@@ -3859,8 +3861,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             name_ENG: "Carida Academy Cadet",
             id: 52,
             faction: "Imperial_Academy",
-        modify: false,    
-	skill: 1,
+            modify: false,    
+	        skill: 1,
             ship: "TIE/rb Heavy",
             shipId: 69,
             points: 5,
@@ -3875,7 +3877,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             faction: "Imperial_Academy",
             skill: 3,
             modify: false,
-		unique: true,
+		    unique: true,
             ship: "TIE/rb Heavy",
             shipId: 69,
             points: 6,
@@ -3894,7 +3896,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 4,
             unique: true,
             modify: false,
-		ship: "TIE/rb Heavy",
+		    ship: "TIE/rb Heavy",
             shipId: 69,
             points: 6,
             loadout: 10,
@@ -3909,8 +3911,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             name_ENG: "Flight Leader Ubbel",
             id: 55,
             unique: true,
-         modify: false,   
-	 faction: "Imperial_Academy",
+            modify: false,   
+	        faction: "Imperial_Academy",
             ship: "TIE/rb Heavy",
             shipId: 69,
             skill: 5,
@@ -3933,8 +3935,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             name_ENG: "Fenn Rau",
             id: 56,
             unique: true,
-         modify: false,   
-	 faction: "Mandalorian_Clans",
+            modify: false,   
+	        faction: "Mandalorian_Clans",
             ship: "Fang Fighter",
             shipId: 31,
             skill: 6,
@@ -3954,7 +3956,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             id: 57,
             unique: true,
             modify: false,
-		faction: "Mandalorian_Clans",
+		    faction: "Mandalorian_Clans",
             ship: "Fang Fighter",
             shipId: 31,
             skill: 5,
@@ -3973,7 +3975,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             id: 58,
             unique: true,
             modify: false,
-		faction: "Mandalorian_Clans",
+		    faction: "Mandalorian_Clans",
             ship: "Fang Fighter",
             shipId: 31,
             skill: 4,
@@ -3991,7 +3993,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             name_ENG: "Skull Squadron Pilot",
             id: 59,
             modify: false,
-		faction: "Mandalorian_Clans",
+		    faction: "Mandalorian_Clans",
             ship: "Fang Fighter",
             shipId: 31,
             skill: 4,
@@ -4005,7 +4007,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             id: 60,
             unique: true,
             modify: false,
-		faction: "Mandalorian_Clans",
+		    faction: "Mandalorian_Clans",
             ship: "Fang Fighter",
             shipId: 31,
             skill: 3,
@@ -4024,7 +4026,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             faction: "Mandalorian_Clans",
             ship: "Gauntlet Fighter",
             modify: false,
-		shipId: 77,
+		    shipId: 77,
             skill: 3,
             points: 11,
             loadout: 10,
@@ -4044,7 +4046,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             faction: "Mandalorian_Clans",
             ship: "Gauntlet Fighter",
             modify: false,
-		shipId: 77,
+		    shipId: 77,
             skill: 4,
             points: 11,
             loadout: 10,
@@ -4062,7 +4064,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             faction: "Mandalorian_Clans",
             ship: "Gauntlet Fighter",
             modify: false,
-		shipId: 77,
+		    shipId: 77,
             skill: 4,
             points: 11,
             loadout: 10,
@@ -4080,7 +4082,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             faction: "Mandalorian_Clans",
             ship: "Gauntlet Fighter",
             modify: false,
-		shipId: 77,
+		    shipId: 77,
             skill: 3,
             points: 11,
             loadout: 10,
@@ -4096,7 +4098,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             id: 65,
             faction: "Mandalorian_Clans",
             modify: false,
-		ship: "Gauntlet Fighter",
+		    ship: "Gauntlet Fighter",
             shipId: 77,
             skill: 2,
             points: 10,
@@ -4111,7 +4113,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             faction: "Shadow Collective", //Customiser le leader Maul             
 			ship: "Gauntlet Fighter",
             modify: true,
-		shipId: 77,
+		    shipId: 77,
             skill: 5,
             points: 12,
             loadout: 15,
@@ -4136,7 +4138,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             faction: "Mandalorian_Clans",
             ship: "ST-70 Assault Ship",
             modify: true,
-		shipId: 78,
+		    shipId: 78,
             skill: 5,
             points: 9,
             loadout: 15,
@@ -4161,7 +4163,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             faction: "Mandalorian_Clans",
             ship: "ST-70 Assault Ship",
             modify: true,
-		shipId: 78,
+		    shipId: 78,
             skill: 3,
             points: 8,
             loadout: 10,
@@ -4185,7 +4187,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             faction: "Mandalorian_Clans",
             ship: "ST-70 Assault Ship",
             modify: true,
-		shipId: 78,
+		    shipId: 78,
             skill: 3,
             points: 7,
             loadout: 15,
@@ -4208,7 +4210,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             faction: "Mandalorian_Clans",
             ship: "Naboo Royal N-1 Starfighter",
             modify: true,
-		shipId: 58,
+		    shipId: 58,
             skill: 5,
             points: 6,
             loadout: 15,
@@ -4226,8 +4228,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 () => add_slots("Crew"),
                     () => add_slots("Tech"),
                     () => add_slots("Illicit"),
-                    () => also_Occupies("Astromech"),
-                    () => also_Occupies("Torpedo"),
+                    () => also_Occupies("Astromech",144),
+                    () => also_Occupies("Torpedo",144),
                     ]
         },
         {
@@ -4239,7 +4241,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             shipId: 58,
             force: 2,
             modify: true,
-		skill: 0,
+		    skill: 0,
             points: 5,
             loadout: 15,
             unique: true,
@@ -4255,8 +4257,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 () => add_slots("Crew"),
                     () => add_slots("Tech"),
                     () => add_slots("Illicit"),
-                    () => also_Occupies("Astromech"),
-                    () => also_Occupies("Torpedo"),
+                    () => also_Occupies("Astromech",144),
+                    () => also_Occupies("Torpedo",144),
                     ]
         },
         {
@@ -4267,7 +4269,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
              ship: "Naboo Royal N-1 Starfighter",
              shipId: 58,
             modify: false,
-		skill: 3,
+		    skill: 3,
             points: 5,
             loadout: 10,
             unique: true,
@@ -4286,7 +4288,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
              shipId: 58,
             skill: 2,
             modify: true,
-		points: 4,
+		    points: 4,
             loadout: 15,
             unique: true,
             title: ["Din Djarin's N1"],
@@ -4303,8 +4305,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 () => add_slots("Crew"),
                     () => add_slots("Tech"),
                     () => add_slots("Illicit"),
-                    () => also_Occupies("Astromech"),
-                    () => also_Occupies("Torpedo"),
+                    () => also_Occupies("Astromech",144),
+                    () => also_Occupies("Torpedo",144),
                     ]
         },
         {
@@ -4315,7 +4317,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             faction: "Mandalorian_Clans",
             ship: "Aggressor Assault Fighter",
             modify: false,
-		shipId: 20,
+		    shipId: 20,
             skill: 4,
             points: 12,
             loadout: 10,
@@ -4333,7 +4335,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             faction: "Mandalorian_Clans",
             ship: "Aggressor Assault Fighter",
             modify: false,
-		shipId: 20,
+		    shipId: 20,
             skill: 3,
             points: 12,
             loadout: 10,
@@ -4353,7 +4355,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             faction: "Mandalorian_Clans",
             ship: "Aggressor Assault Fighter",
             modify: false,
-		shipId: 20,
+		    shipId: 20,
             skill: 5,
             points: 13,
             loadout: 10,
@@ -4372,7 +4374,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             faction: "Mandalorian_Clans",
             ship: "Aggressor Assault Fighter",
             modify: false,
-		shipId: 20,
+		    shipId: 20,
             skill: 2,
             charge: 1,
             recurring: true,
@@ -4392,7 +4394,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             unique: true,
             faction: "Mandalorian_Clans",
             modify: false,
-		ship: "Commando Team",
+		    ship: "Commando Team",
             shipId: 81,
             skill: 2,
             points: 2,
@@ -4411,7 +4413,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             unique: true,
             faction: "Mandalorian_Clans",
             modify: false,
-		ship: "Commando Team",
+		    ship: "Commando Team",
             shipId: 81,
             skill: 1,
             points: 2,
@@ -4430,7 +4432,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             unique: true,
             faction: "Mandalorian_Clans",
             modify: false,
-		ship: "Commando Team",
+		    ship: "Commando Team",
             shipId: 81,
             skill: 1,
             points: 2,
@@ -4450,7 +4452,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             faction: "Mandalorian_Clans",
             ship: "Commando Team",
             modify: false,
-		shipId: 81,
+		    shipId: 81,
             skill: 4,
             charge: 1,
             recurring: true,
@@ -4473,8 +4475,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             unique: true,
             faction: "Pirates_and_Smugglers",
             ship: "YT-2400 Light Freighter",
-        modify: true,    
-	shipId: 16,
+            modify: true,    
+	        shipId: 16,
             skill: 5,
             points: 10,
             loadout: 15,
@@ -4497,7 +4499,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             name_ENG: '"Leebo"',
             id: 83,
             modify: true,
-		unique: true,
+		    unique: true,
             faction: "Pirates_and_Smugglers",
             ship: "YT-2400 Light Freighter",
             shipId: 16,
@@ -4526,7 +4528,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             faction: "Pirates_and_Smugglers",
             ship: "YT-2400 Light Freighter",
             modify: false,
-		shipId: 16,
+		    shipId: 16,
             skill: 1,
             points: 7,
             loadout: 5,
@@ -4542,7 +4544,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             ship: "YT-1300 Light Freighter",
             title: ["Millenium Falcon"],
             modify: false,
-	shipId: 3,
+	        shipId: 3,
             skill: 6,
             points: 9,
             loadout: 10,
@@ -4560,7 +4562,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             name_ENG: "Lando Calrissian", 
             id: 86,
             unique: true,
-		modify: false,
+		    modify: false,
             faction: "Pirates_and_Smugglers",
             ship: "YT-1300 Light Freighter",
             title: ["Millenium Falcon"],
@@ -4585,7 +4587,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             ship: "YT-1300 Light Freighter",
             title: ["Millenium Falcon"],
             shipId: 3,
-		modify: false,
+		    modify: false,
             skill: 4,
             charge: 1,
             recurring: 1,
@@ -4608,7 +4610,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             faction: "Pirates_and_Smugglers",
             ship: "YT-1300 Light Freighter",
             shipId: 3,
-		modify: true,
+		    modify: true,
             skill: 2,
             points: 7,
             loadout: 10,
@@ -4626,7 +4628,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             name: "Capitaine de Cargo",
             name_ENG: "Freighter Captain",
             modify: false,
-		id: 89,
+		    id: 89,
             faction: "Pirates_and_Smugglers",
             ship: "YT-1300 Light Freighter",
             shipId: 3,
@@ -4641,7 +4643,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             id: 90,
             unique: true,
             modify: false,
-		faction: "Pirates_and_Smugglers",
+		    faction: "Pirates_and_Smugglers",
             ship: "Escape Craft",
             shipId: 43,
             skill: 4,
@@ -4660,7 +4662,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             id: 91,
             unique: true,
             modify: false,
-		faction: "Pirates_and_Smugglers",
+		    faction: "Pirates_and_Smugglers",
             ship: "Escape Craft",
             shipId: 43,
             skill: 3,
@@ -4678,7 +4680,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             id: 92,
             unique: true,
             modify: true,
-		faction: "Pirates_and_Smugglers",
+		    faction: "Pirates_and_Smugglers",
             ship: "Escape Craft",
             shipId: 43,
             skill: 2,
@@ -4702,7 +4704,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             faction: "Pirates_and_Smugglers",
             ship: "Escape Craft",
             modify: true,
-		shipId: 43,
+		    shipId: 43,
             skill: 1,
             charge: 3,
             points: 2,
@@ -4722,7 +4724,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             id: 94,
             unique: true,
             modify: false,
-		faction: "Pirates_and_Smugglers",
+		    faction: "Pirates_and_Smugglers",
             ship: "Firespray-class Patrol Craft",
             shipId: 7,
             skill: 4,
@@ -4917,7 +4919,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             ship: "Scurrg H-6 Bomber",
             title: ["Havoc"],
             shipId: 37,
-		modify: false,
+		    modify: false,
             skill: 5,
             charge: 1,
             recurring: 1,
@@ -4939,7 +4941,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             faction: "Pirates_and_Smugglers",
             ship: "Scurrg H-6 Bomber",
             shipId: 37,
-		modify: false,
+		    modify: false,
             skill: 3,
             points: 5,
             loadout: 10,
@@ -4957,7 +4959,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             ship: "Scurrg H-6 Bomber",
             title: ["Havoc"],
             shipId: 37,
-		modify: false,
+		    modify: false,
             skill: 2,
             points: 5,
             loadout: 7,
@@ -4974,7 +4976,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             ship: "Scurrg H-6 Bomber",
             title: ["Havoc"],
             shipId: 37,
-		modify: false,
+		    modify: false,
             skill: 1,
             charge: 1,
             recurring: 1,
@@ -4995,7 +4997,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             faction: "Pirates_and_Smugglers",
             ship: "Z-95-AF4 Headhunter",
             shipId: 12,
-		modify: false,
+		    modify: false,
             skill: 4,
             points: 4,
             loadout: 10,
@@ -5013,7 +5015,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             faction: "Pirates_and_Smugglers",
             ship: "Z-95-AF4 Headhunter",
             shipId: 12,
-		modify: false,
+		    modify: false,
             skill: 3,
             points: 4,
             loadout: 10,
@@ -5030,7 +5032,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             faction: "Pirates_and_Smugglers",
             ship: "Z-95-AF4 Headhunter",
             shipId: 12,
-	modify: false,
+	        modify: false,
             skill: 1,
             points: 3,
             loadout: 5,
@@ -5044,7 +5046,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             faction: "Pirates_and_Smugglers",
             ship: "HWK-290 Light Freighter",
             shipId: 8,
-		modify: false,
+		    modify: false,
             skill: 3,
             force: 1,
             points: 7,
@@ -5063,7 +5065,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             faction: "Pirates_and_Smugglers",
             ship: "HWK-290 Light Freighter",
             shipId: 8,
-	 modify: false,
+	        modify: false,
             skill: 5,
             charge: 2,
             recurring: 1,
@@ -5087,7 +5089,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             faction: "Bounty_Hunters_Guild",
             ship: "Aggressor Assault Fighter",
             shipId: 20,
-	 modify: true,
+	        modify: true,
             skill: 4,
             points: 11,
             loadout: 10,
@@ -5104,7 +5106,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             	() => auto_equip("Title","IG-2000 (0)"),
                 () => droid(),
                 () => add_slots("Calculator"),
-                () => also_Occupies("Modification"),
+                () => also_Occupies("Modification",143),
                     ]
         },
         {
@@ -5112,7 +5114,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             name_ENG: "IG-88B",
             id: 113,
             unique: true,
-		modify: true,
+		    modify: true,
             faction: "Bounty_Hunters_Guild",
             ship: "Aggressor Assault Fighter",
             shipId: 20,
@@ -5131,7 +5133,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             	() => auto_equip("Title","IG-2000 (0)"),
                 () => droid(),
                 () => add_slots("Calculator"),
-                () => also_Occupies("Modification"),
+                () => also_Occupies("Modification",143),
                     ]
         },
         {
@@ -5139,7 +5141,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             name_ENG: "IG-88C",
             id: 114,
             unique: true,
-		modify: true,
+		    modify: true,
             faction: "Bounty_Hunters_Guild",
             ship: "Aggressor Assault Fighter",
             shipId: 20,
@@ -5159,7 +5161,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 () => droid(),
                 () => auto_equip("Title","IG-2000 (0)"),
                 () => add_slots("Calculator"),
-                () => also_Occupies("Modification"),
+                () => also_Occupies("Modification",143),
                     ]
         },
         {
@@ -5167,7 +5169,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             name_ENG: "IG-88D",
             id: 115,
             unique: true,
-		modify: true,
+		    modify: true,
             faction: "Bounty_Hunters_Guild",
             ship: "Aggressor Assault Fighter",
             shipId: 20,
@@ -5187,7 +5189,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             	() => auto_equip("Title","IG-2000 (0)"),
                 () => droid(),
                 () => add_slots("Calculator"),
-                () => also_Occupies("Modification"),
+                () => also_Occupies("Modification",143),
                     ]
         },
         {
@@ -5197,7 +5199,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             faction: "Bounty_Hunters_Guild",
             ship: "ST-70 Assault Ship",
             shipId: 78,
-		modify: true,
+		    modify: true,
             skill: 5,
             points: 8,
             loadout: 15,
@@ -5221,7 +5223,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             faction: "Bounty_Hunters_Guild",
             ship: "ST-70 Assault Ship",
             shipId: 78,
-		modify: true,
+		    modify: true,
             skill: 5,
             points: 7,
             loadout: 15,
@@ -5244,7 +5246,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             name_ENG: "4-LOM",
             id: 118,
             modify: true,
-		unique: true,
+		    unique: true,
             faction: "Bounty_Hunters_Guild",
             ship: "G-1A Starfighter",
             shipId: 28,
@@ -5267,8 +5269,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
 {
             name: "Zuckuss",
             name_ENG: "Zuckus",
-	modify: true,
-	id: 119,
+	        modify: true,
+	        id: 119,
             unique: true,
             faction: "Bounty_Hunters_Guild",
             ship: "G-1A Starfighter",
@@ -5292,7 +5294,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             name_ENG: "Dengar",
             id: 120,
             modify: true,
-		unique: true,
+		    unique: true,
             faction: "Bounty_Hunters_Guild",
             ship: "JumpMaster 5000",
             shipId: 29,
@@ -5314,7 +5316,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             	() => auto_equip("Title","Punishing One (0)"),
                 () => add_slots("Astromech"),
                 () => change_stat("attackt",1),
-                () => also_Occupies("Crew"),
+                () => also_Occupies("Crew",142),
                     ]
         },
         {
@@ -5344,7 +5346,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             faction: "Bounty_Hunters_Guild",
             ship: "JumpMaster 5000",
             shipId: 29,
-	modify: true,
+	        modify: true,
             skill: 3,
             points: 7,
             loadout: 15,
@@ -5359,7 +5361,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             	() => auto_equip("Title","Punishing One (0)"),
                 () => add_slots("Astromech"),
                 () => change_stat("attackt",1),
-                () => also_Occupies("Crew"),
+                () => also_Occupies("Crew",142),
                     ]
         },
         {
@@ -5370,7 +5372,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             faction: "Bounty_Hunters_Guild",
             ship: "JumpMaster 5000",
             shipId: 29,
-		modify: false,
+		    modify: false,
             skill: 5,
             points: 8,
             loadout: 10,
@@ -5389,7 +5391,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             faction: "Bounty_Hunters_Guild",
             ship: "Kihraxz Fighter",
             shipId: 22,
-		modify: false,
+		    modify: false,
             skill: 4,
             points: 6,
             loadout: 10,
@@ -5408,7 +5410,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             unique: true,
             faction: "Bounty_Hunters_Guild",
             ship: "Kihraxz Fighter",
-	modify: false,
+	        modify: false,
             shipId: 22,
             skill: 4,
             points: 6,
@@ -5428,7 +5430,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             unique: true,
             faction: "Bounty_Hunters_Guild",
             ship: "Kihraxz Fighter",
-	 modify: false,
+	        modify: false,
             shipId: 22,
             skill: 3,
             points: 6,
@@ -5447,7 +5449,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             faction: "Bounty_Hunters_Guild",
             ship: "YV-666 Light Freighter",
             shipId: 21,
-		modify: true,
+		    modify: true,
             skill: 4,
             points: 10,
             loadout: 15,
@@ -5462,7 +5464,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             	() => auto_equip("Title","Hound's Tooth (0)"),
                 () => add_slots("Gunner"),
                 () => add_slots("Cannon"),
-                () => also_Occupies("Illicit"),
+                () => also_Occupies("Illicit",137),
                     ]
         },
 {
@@ -5473,7 +5475,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             faction: "Bounty_Hunters_Guild",
             ship: "Z-95-AF4 Headhunter",
             shipId: 12,
-	modify: false,
+	        modify: false,
             skill: 0,
             points: 2,
             loadout: 0,
@@ -5494,7 +5496,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 4,
             ship: "Z-95-AF4 Headhunter",
             shipId: 12,
-	modify: false,
+	        modify: false,
             points: 4,
             loadout: 10,
             ability: "Tant que vous effectuez une attaque principale, après l’étape « Neutraliser les résultats », vous pouvez dépenser 1 résultat #crit# pour ajouter 2 résultats #hit# .",
@@ -5511,7 +5513,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             faction: "Bounty_Hunters_Guild",
             ship: "Rogue-class Starfighter",
             shipId: 80,
-		modify: true,
+		    modify: true,
             skill: 4,
             charge: 2,
             recurring: 1,
@@ -5539,7 +5541,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             faction: "Bounty_Hunters_Guild",
             ship: "Rogue-class Starfighter",
             shipId: 80,
-	modify: false,
+	        modify: false,
             skill: 1,
             points: 6,
             loadout: 10,
@@ -5557,7 +5559,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             faction: "Bounty_Hunters_Guild",
             ship: "Rogue-class Starfighter",
             shipId: 80,
-	 modify: false,
+	        modify: false,
             skill: 5,
             points: 7,
             loadout: 10,
@@ -5574,7 +5576,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             unique: true,
             faction: "Bounty_Hunters_Guild",
             ship: "Firespray-class Patrol Craft",
-		modify: true,
+		    modify: true,
             shipId: 7,
             skill: 5,
             points: 14,
@@ -5606,7 +5608,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             force: 1,
             points: 13,
             loadout: 15,
-		 modify: true,
+		    modify: true,
             title: ["Slave 1"],
             ability: "Avant de vous engager, vous pouvez dépenser 1 #fo# pour choisir 2 vaisseaux ennemis à portée 0-1. Transférez n'importe quel nombre de jetons orange et rouges entre ces 2 vaisseaux.",
             ability_ENG: "Before you engage, you may spend 1 #fo# to choose 2 enemy ships at range 0-1. Tranfer as many orange or red tokens between those 2 ships",
@@ -7423,7 +7425,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             ],
             modifier_func: [
             	() => auto_equip("Title","Millenium Falcon (0)"),
-                () => also_Occupies("Missile"),
+                () => also_Occupies("Missile",134),
                 () => lose_chassis("Docking Ship"),
                 () => add_slots("Sensor"),
                 () => add_slots("Calculator"),
@@ -7454,7 +7456,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             ],
             modifier_func: [
             	() => auto_equip("Title","Millenium Falcon (0)"),
-                () => also_Occupies("Missile"),
+                () => also_Occupies("Missile",134),
                     () => lose_chassis("Docking Ship"),
                     () => add_slots("Sensor"),
                     () => add_slots("Calculator"),
@@ -7484,7 +7486,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             ],
             modifier_func: [
             	() => auto_equip("Title","Millenium Falcon (0)"),
-                () => also_Occupies("Missile"),
+                () => also_Occupies("Missile",134),
                     () => lose_chassis("Docking Ship"),
                     () => add_slots("Sensor"),
                     () => add_slots("Calculator"),
@@ -7515,7 +7517,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             ],
             modifier_func: [
             	() => auto_equip("Title","Millenium Falcon (0)"),
-                () => also_Occupies("Missile"),
+                () => also_Occupies("Missile",134),
                     () => lose_chassis("Docking Ship"),
                     () => add_slots("Sensor"),
                     () => add_slots("Calculator"),
@@ -7951,6 +7953,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             ability_ENG: "While you perform an attack, after the Neutralize Results step, if the attack hits, you may spend 2 #fo#. If you do, change all of your #hit# results to #crit# results.",
             slots: [
                 "Talent",
+                "Talent",
                 "Force"            
             ]
         },
@@ -7969,6 +7972,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             ability_ENG: "After you perform an attack, you may perform a #BR# or #BO# action, even if you are stressed.",
             slots: [
                 "Talent",
+                "Talent",
                 "Talent"            
             ]
         },
@@ -7980,7 +7984,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             faction: "Imperial_Elite_Forces",
             ship: "TIE/in Interceptor",
             modify: false,
-		shipId: 6,
+		    shipId: 6,
             skill: 4,
             points: 6,
             loadout: 0,
@@ -7998,7 +8002,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             faction: "Imperial_Elite_Forces",
             ship: "TIE/ca Punisher",
             modify: false,
-		shipId: 24,
+		    shipId: 24,
             skill: 4,
             points: 8,
             loadout: 10,
@@ -8032,7 +8036,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             faction: "Imperial_Elite_Forces",
             ship: "TIE/d Defender",
             modify: false,
-		shipId: 13,
+		    shipId: 13,
             skill: 5,
             points: 12,
             loadout: 10,
@@ -8190,7 +8194,7 @@ const upgrades = [
         // ##############################################      GENERIC UPGRADE ##########################""
             {
                 name: "Astromech R2",
-            	name_eng: "R2 Astromech",
+            	name_ENG: "R2 Astromech",
                 id: 0,
                 available: true,
                 modify: false,
@@ -8202,7 +8206,7 @@ const upgrades = [
             },
             {
     			name:"Astromech R3",
-                name_eng: "R3 Astromech",
+                name_ENG: "R3 Astromech",
                 modify: false,
                 id: 1,
                 available: true,
@@ -8213,7 +8217,7 @@ const upgrades = [
             },
             {
                 name:"Astromech R4",
-                name_eng: "R4 Astromech",
+                name_ENG: "R4 Astromech",
                 id: 2,
                 available: true,
                 modify: false,
@@ -8225,7 +8229,7 @@ const upgrades = [
              },
             {
                 name:"Astromech R5",
-                name_eng: "R5 Astromech",
+                name_ENG: "R5 Astromech",
                 id: 3,
                 available: true,
                 modify: false,
@@ -8237,7 +8241,7 @@ const upgrades = [
             },
             {
                 name: "Astromech Vigilant",
-                name_eng: "Watchful Astromech",
+                name_ENG: "Watchful Astromech",
                 id: 4,
                 available: true,
                 modify: false,
@@ -8249,7 +8253,7 @@ const upgrades = [
             
      {
                 name: "Tireur Hors-Pair",
-                name_eng: "Crack Shot",
+                name_ENG: "Crack Shot",
                 id: 5,
                 available: true,
                 modify: false,
@@ -8261,22 +8265,23 @@ const upgrades = [
             },
     {
                 name: "Insaisissable",
-                name_eng: "Elusive",
+                name_ENG: "Elusive",
                 id: 6,
                 available: false,
                 modify: true,
                 slot: "Talent",
                 points: 5,
                 effect: "Lorsque vous défendez contre une attaque à portée 3 ou contre une attaque de #tur#, vous pouvez améliorer un dé de défense.",
-                restrictions: [1,"upgrade","Modification",""],
+                restrictions: [2,"upgrade","Talent",""],
                 faction: "",
                 modifier_func: [
-                    () => also_Occupies("Modification")
+                    () => also_Occupies("Talent",6)
+        
                 ]       
             },
     {
                 name: "Loup Solitaire",
-                name_eng: "Lone Wolf",
+                name_ENG: "Lone Wolf",
                 id: 7,
                 available: true,
                 modify: false,
@@ -8289,7 +8294,7 @@ const upgrades = [
             },
             {
                 name: "Intimidation",
-                name_eng: "Intimidation",
+                name_ENG: "Intimidation",
                 id: 8,
                 available: true,
                 modify: false,
@@ -8300,7 +8305,7 @@ const upgrades = [
             },
      {
                 name:"Adresse au Tir",
-                name_eng: "Marksmanship",
+                name_ENG: "Marksmanship",
                 id: 9,
                 available: true,
                 modify: false,
@@ -8311,7 +8316,7 @@ const upgrades = [
             },
     {
                 name: "Manoeuvre Improbable",
-                name_eng: "Outmaneuver",
+                name_ENG: "Outmaneuver",
                 id: 10,
                 available: true,
                 modify: false,
@@ -8322,7 +8327,7 @@ const upgrades = [
             },
      {
                 name: "Prédateur",
-                name_eng: "Predator",
+                name_ENG: "Predator",
                 id: 11,
                 available: true,
                 modify: false,
@@ -8333,7 +8338,7 @@ const upgrades = [
             },
      {
                 name: "Chef d'Escouade",
-                name_eng: "Squad Leader",
+                name_ENG: "Squad Leader",
                 id: 12,
                 available: true,
                 modify: true,
@@ -8348,7 +8353,7 @@ const upgrades = [
             },
      {
                 name: "Tactique de Nuée",
-                name_eng: "Swarm Tactics",
+                name_ENG: "Swarm Tactics",
                 id: 13,
                 available: true,
                 modify: false,
@@ -8359,7 +8364,7 @@ const upgrades = [
             },
     {
                 name: "Tir Habile",
-                name_eng: "Trick Shot",
+                name_ENG: "Trick Shot",
                 id: 14,
                 available: true,
                 modify: false,
@@ -8370,7 +8375,7 @@ const upgrades = [
             },
      {
                 name:"Tir Instantané",
-                name_eng: "Snap Shot",
+                name_ENG: "Snap Shot",
                 id: 15,
                 available: true,
                 modify: false,
@@ -8384,7 +8389,7 @@ const upgrades = [
             },
     {
                 name: "Officier Tactique",
-                name_eng: "Tactical Officer",
+                name_ENG: "Tactical Officer",
                 id: 16,
                 available: false,
                 modify: true,
@@ -8399,7 +8404,7 @@ const upgrades = [
             },
      {
                 name: "Copilote Perspicace",
-                name_eng: "Perceptive Copilot",
+                name_ENG: "Perceptive Copilot",
                 id: 17,
                 available: true,
                 modify: false,
@@ -8410,7 +8415,7 @@ const upgrades = [
             },
     {
                 name: "Apprenti Technicien",
-                name_eng: "Novice Technician",
+                name_ENG: "Novice Technician",
                 id: 18,
                 available: true,
                 modify: false,
@@ -8421,7 +8426,7 @@ const upgrades = [
             },
     {
                 name: "Droïde 'Gonk' GNK",
-                name_eng: 'GNK "Gonk" Droid',
+                name_ENG: 'GNK "Gonk" Droid',
                 id: 19,
                 available: true,
                 modify: false,
@@ -8433,7 +8438,7 @@ const upgrades = [
             },
     {
                 name: "Slicer Freelance",
-                name_eng: "Freelance Slicer",
+                name_ENG: "Freelance Slicer",
                 id: 20,
                 available: true,
                 modify: false,
@@ -8444,7 +8449,7 @@ const upgrades = [
             },
      {
                 name: "Cannonier Adroit",
-                name_eng: "Agile Gunner",
+                name_ENG: "Agile Gunner",
                 id: 21,
                 available: true,
                 modify: false,
@@ -8455,7 +8460,7 @@ const upgrades = [
             },
      {
                 name: "Artilleur Hors-Pair",
-                name_eng: "Hotshot Gunner",
+                name_ENG: "Hotshot Gunner",
                 id: 22,
                 available: true,
                 modify: false,
@@ -8467,7 +8472,7 @@ const upgrades = [
      {
                 
                 name: "Bombardier Compétent",
-                name_eng: "Skilled Bombardier",
+                name_ENG: "Skilled Bombardier",
                 id: 23,
                 available: true,
                 modify: false,
@@ -8478,7 +8483,7 @@ const upgrades = [
             },
      {
                 name: "Artilleur Vétéran",
-                name_eng: "Veteran Gunner",
+                name_ENG: "Veteran Gunner",
                 id: 24,
                 available: true,
                 modify: false,
@@ -8489,7 +8494,7 @@ const upgrades = [
               },
       {
                 name: "Officier des Systèmes d'Armement",
-                name_eng: "Weapons Systems Officer",
+                name_ENG: "Weapons Systems Officer",
                 id: 25,
                 available: true,
                 modify: false,
@@ -8500,7 +8505,7 @@ const upgrades = [
             },
     {
                 name: "Ciblage Prioritaire Automatisé",
-                name_eng: "Automated Target Priority",
+                name_ENG: "Automated Target Priority",
                 id: 26,
                 available: true,
                 modify: false,
@@ -8511,7 +8516,7 @@ const upgrades = [
             },
      {
                 name: "Analyseur de Modèles",
-                name_eng: "Pattern Analyzer",
+                name_ENG: "Pattern Analyzer",
                 id: 27,
                 available: true,
                 modify: false,
@@ -8522,7 +8527,7 @@ const upgrades = [
             },
      {
                 name: "Optiques Avancées",
-                name_eng: "Advanced Optics",
+                name_ENG: "Advanced Optics",
                 id: 28,
                 available: true,
                 modify: false,
@@ -8534,7 +8539,7 @@ const upgrades = [
      
      {
                 name: "Synchroniseur Télémétrique",
-                name_eng: "Targeting Synchronizer",
+                name_ENG: "Targeting Synchronizer",
                 id: 29,
                 available: true,
                 modify: false,
@@ -8546,7 +8551,7 @@ const upgrades = [
             },
      {
                 name: "Missiles Ioniques",
-                name_eng: "Ion Missiles",
+                name_ENG: "Ion Missiles",
                 id: 30,
                 available: true,
                 modify: false,
@@ -8560,7 +8565,7 @@ const upgrades = [
             },
     {
                 name: "Missiles à Tête Chercheuse",
-                name_eng: "Homing Missiles",
+                name_ENG: "Homing Missiles",
                 id: 31,
                 available: true,
                 modify: false,
@@ -8574,7 +8579,7 @@ const upgrades = [
             },
     {
                 name: "Missiles Groupés",
-                name_eng: "Cluster Missiles",
+                name_ENG: "Cluster Missiles",
                 id: 32,
                 available: true,
                 modify: false,
@@ -8588,25 +8593,25 @@ const upgrades = [
             },
     {
                 name: "Roquettes de Barrage",
-                name_eng: "Barrage Rockets",
+                name_ENG: "Barrage Rockets",
                 id: 33,
                 available: false,
-                modify: false,
+                modify: true,
                 slot: "Missile",
                 points: 7,
                 attack: 3,
                 range: [2,3],
                 charge: 5,
                 effect: "Attaque (#FS#) Portée 2-3 #Farc# 3 dés: Dépensez 1 #ch#. Si le défenseur est dans votre #bulls#, vous pouvez dépenser 1 ou plusieurs ch pour relancer autant de dés d’attaque.",
-                restrictions: [2,"upgrade", "Missile",""],
+                restrictions: [1,"upgrade", "Torpedo",""],
                 faction: "",
                 modifier_func: [
-                    () => also_Occupies("Missile")
+                    () => also_Occupies("Torpedo",33)
                 ]
             },
     {
                 name: "Traceurs XX-23 S",
-                name_eng: "XX-23 S-Thread Tracers",
+                name_ENG: "XX-23 S-Thread Tracers",
                 id: 34,
                 available: true,
                 modify: false,
@@ -8621,7 +8626,7 @@ const upgrades = [
             },
             {
                 name: "Missile Harpon",
-                name_eng: "Harpoon Missile",
+                name_ENG: "Harpoon Missile",
                 id: 35,
                 available: true,
                 modify: false,
@@ -8635,7 +8640,7 @@ const upgrades = [
             },
     {
                 name: "Torpilles à Plasma",
-                name_eng: "Plasma Torpedoes",
+                name_ENG: "Plasma Torpedoes",
                 id: 36,
                 available: true,
                 modify: false,
@@ -8649,7 +8654,7 @@ const upgrades = [
             },
      {
                 name: "Torpille à Proton Avancée",
-                name_eng: "Adv. Proton Torpedo",
+                name_ENG: "Adv. Proton Torpedo",
                 id: 37,
                 available: true,
                 modify: false,
@@ -8663,7 +8668,7 @@ const upgrades = [
             },
              {
                 name: "Torpilles à Concussion",
-                name_eng: "Concussion Torpedoes",
+                name_ENG: "Concussion Torpedoes",
                 id: 38,
                 available: true,
                 modify: false,
@@ -8679,7 +8684,7 @@ const upgrades = [
            
             {
                 name: "Roquette à Proton",
-                name_eng: "Proton Rocket",
+                name_ENG: "Proton Rocket",
                 id: 39,
                 available: true,
                 modify: false,
@@ -8693,7 +8698,7 @@ const upgrades = [
             },
             {
                 name: "Générateur de Sous-Munitions",
-                name_eng: "Bomblet Generator",
+                name_ENG: "Bomblet Generator",
                 id: 40,
                 available: false,
                 modify: false,
@@ -8705,12 +8710,12 @@ const upgrades = [
                 restrictions: [2,"upgrade", "Payload",""],
                 faction: "",
                 modifier_func: [
-                    () => also_Occupies("Payload")
+                    () => also_Occupies("Payload",40)
                 ]
             },
      {
                 name: "Filet Conner",
-                name_eng: "Conner Nets",
+                name_ENG: "Conner Nets",
                 id: 41,
                 available: true,
                 modify: false,
@@ -8723,7 +8728,7 @@ const upgrades = [
             },
      {
                 name: "Bombes à Proton",
-                name_eng: "Proton Bombs",
+                name_ENG: "Proton Bombs",
                 id: 42,
                 available: true,
                 modify: false,
@@ -8736,7 +8741,7 @@ const upgrades = [
             },
      {
                 name: "Mines de Proximité",
-                name_eng: "Proximity Mines",
+                name_ENG: "Proximity Mines",
                 id: 43,
                 available: true,
                 modify: false,
@@ -8749,7 +8754,7 @@ const upgrades = [
             },
     {
                 name: "Charges Sismiques",
-                name_eng: "Seismic Charges",
+                name_ENG: "Seismic Charges",
                 id: 44,
                 available: true,
                 modify: false,
@@ -8762,7 +8767,7 @@ const upgrades = [
             },
     {
                 name: "Bombes Ioniques",
-                name_eng: "Ion Bombs",
+                name_ENG: "Ion Bombs",
                 id: 45,
                 available: true,
                 modify: false,
@@ -8775,7 +8780,7 @@ const upgrades = [
             },
      {
                 name: 'Rayon de Brouillage',
-                name_eng: "Jamming Beam",
+                name_ENG: "Jamming Beam",
                 id: 46,
                 available: true,
                 modify: false,
@@ -8788,7 +8793,7 @@ const upgrades = [
             },
      {
                 name: "Rayon Tracteur",
-                name_eng: "Tractor Beam",
+                name_ENG: "Tractor Beam",
                 id: 47,
                 available: true,
                 modify: false,
@@ -8801,7 +8806,7 @@ const upgrades = [
             },
     {
                 name: "Canon Ionique",
-                name_eng: "Ion Cannon",
+                name_ENG: "Ion Cannon",
                 id: 48,
                 available: true,
                 modify: false,
@@ -8814,7 +8819,7 @@ const upgrades = [
             },
     {
                 name: "Canon Laser Lourd",
-                name_eng: "Heavy Laser Cannon",
+                name_ENG: "Heavy Laser Cannon",
                 id: 49,
                 available: true,
                 modify: false,
@@ -8827,7 +8832,7 @@ const upgrades = [
             },
             {
                 name: "Canons Laser Jumelés",
-                name_eng: "Synced Laser Cannons",
+                name_ENG: "Synced Laser Cannons",
                 id: 50,
                 available: false,
                 modify: true,
@@ -8838,13 +8843,13 @@ const upgrades = [
                 effect: "Portée 2-3 #Farc# 3 dés Attaque : si vous êtes calculateur, vous pouvez améliorer 1 dé d’attaque",
                 restrictions: [2,"upgrade", "Cannon",""],
                 faction: "",
-                modifier_func_func: [
-                    () => also_Occupies("Cannon")
+                modifier_func: [
+                    () => also_Occupies("Cannon",50)
                 ]
             },
     {
                 name: "Tourelle à Canon Ionique",
-                name_eng: "Ion Cannon Turret",
+                name_ENG: "Ion Cannon Turret",
                 id: 51,
                 available: true,
                 modify: true,
@@ -8861,7 +8866,7 @@ const upgrades = [
             },
      {
                 name: "Tourelle Dorsale",
-                name_eng: "Dorsal Turret",
+                name_ENG: "Dorsal Turret",
                 id: 52,
                 available: true,
                 modify: true,
@@ -8877,7 +8882,7 @@ const upgrades = [
             },
      {
                 name: "Autoblasters",
-                name_eng: "Autoblasters",
+                name_ENG: "Autoblasters",
                 id: 53,
                 available: true,
                 modify: true,
@@ -8893,7 +8898,7 @@ const upgrades = [
             },
             {
                 name: "Tourelle Laser Jumelé",
-                name_eng: "Twin Laser Turrets",
+                name_ENG: "Twin Laser Turrets",
                 id: 54,
                 available: true,
                 modify: true,
@@ -8909,7 +8914,7 @@ const upgrades = [
             },
              {
                 name : "Support pour Canon Rotatif",
-                name_eng: "Cannon Turret Support",
+                name_ENG: "Cannon Turret Support",
                 id: 55,
                 available: true,
                 modify: true,
@@ -8923,7 +8928,7 @@ const upgrades = [
             },
              {
                 name: "Appareil d'Occultation",
-                name_eng: "Cloaking Device",
+                name_ENG: "Cloaking Device",
                 id: 56,
                 available: false,
                 modify: false,
@@ -8937,7 +8942,7 @@ const upgrades = [
             },
             {
                 name: "Cybernétiques de Contrebande",
-                name_eng: "Contraband Cybernetics",
+                name_ENG: "Contraband Cybernetics",
                 id: 57,
                 available: true,
                 modify: false,
@@ -8949,7 +8954,7 @@ const upgrades = [
             },
             {
                 name: "Salve Automatique",
-                name_eng: "Deadman's Switch",
+                name_ENG: "Deadman's Switch",
                 id: 58,
                 available: true,
                 modify: false,
@@ -8960,7 +8965,7 @@ const upgrades = [
             },
      {
                 name: "Hypercarburant Coaxium",
-                name_eng: "Coaxium Hyperfuel",
+                name_ENG: "Coaxium Hyperfuel",
                 id: 59,
                 available: true,
                 modify: false,
@@ -8972,7 +8977,7 @@ const upgrades = [
             },
      {
                 name: "Codes Transpondeur Falsifiés",
-                name_eng: "False Transponder Codes",
+                name_ENG: "False Transponder Codes",
                 id: 60,
                 available: true,
                 modify: false,
@@ -8984,7 +8989,7 @@ const upgrades = [
             },
              {
                 name: "Blindage Ablatif", 
-                name_eng: "Ablative Plating",
+                name_ENG: "Ablative Plating",
                 id: 61,
                 available: false,
                 modify: false,
@@ -8998,7 +9003,7 @@ const upgrades = [
             },
     {
                 name: "Postcombustion",
-                name_eng: "Afterburners",
+                name_ENG: "Afterburners",
                 id: 62,
                 available: false,
                 modify: false,
@@ -9012,7 +9017,7 @@ const upgrades = [
             },
     {
                 name: "Moteur Amélioré",
-                name_eng: "Engine Upgrade",
+                name_ENG: "Engine Upgrade",
                 id: 63,
                 available: false,
                 modify: true,
@@ -9029,7 +9034,7 @@ const upgrades = [
             },
             {
                 name: "Munitions à Sûreté Intégrée",
-                name_eng: "Munitions Failsafe",
+                name_ENG: "Munitions Failsafe",
                 modify: false,
                 id: 64,
                 available: true,
@@ -9040,7 +9045,7 @@ const upgrades = [
             },
     {
                 name: "Brouilleur Tactique",
-                name_eng: "Tactical Scrambler",
+                name_ENG: "Tactical Scrambler",
                 id: 65,
                 available: false,
                 modify: false,
@@ -9052,7 +9057,7 @@ const upgrades = [
             },
     {
                 name: "Coque Améliorée",
-                name_eng: "Hull Upgrade",
+                name_ENG: "Hull Upgrade",
                 id: 65,
                 available: true,
                 modify: true,
@@ -9066,7 +9071,7 @@ const upgrades = [
             },
     {
                 name: "Bouclier Amélioré",
-                name_eng: "Shield Upgrade",
+                name_ENG: "Shield Upgrade",
                 id: 66,
                 available: true,
                 modify: true,
@@ -9080,7 +9085,7 @@ const upgrades = [
             },
             {
                 name: "Système d'Occultation",
-                name_eng: "Stealth Device",
+                name_ENG: "Stealth Device",
                 id: 67,
                 available: true,
                 modify: false,
@@ -9092,7 +9097,7 @@ const upgrades = [
             },
      {
                 name: "Détonateur à Retardement",
-                name_eng: "Delayed Fuses",
+                name_ENG: "Delayed Fuses",
                 id: 68,
                 available: true,
                 modify: false,
@@ -9103,7 +9108,7 @@ const upgrades = [
             },
     {
                 name: "Ordinateur de Visée",
-                name_eng: "Targeting Computer",
+                name_ENG: "Targeting Computer",
                 id: 69,
                 available: true,
                 modify: true,
@@ -9117,7 +9122,7 @@ const upgrades = [
             },
     {
                 name: "Senseurs Avancés",
-                name_eng: "Advanced Sensors",
+                name_ENG: "Advanced Sensors",
                 id: 70,
                 available: true,
                 modify: false,
@@ -9128,7 +9133,7 @@ const upgrades = [
             },
             {
                 name: "Détecteur Anticollision",
-                name_eng: "Collision Detector",
+                name_ENG: "Collision Detector",
                 id: 71,
                 available: true,
                 modify: false,
@@ -9140,7 +9145,7 @@ const upgrades = [
             },
             {
                 name: "Système de Controle de Tir",
-                name_eng: "Fire-Control System",
+                name_ENG: "Fire-Control System",
                 id: 72,
                 available: true,
                 modify: false,
@@ -9151,7 +9156,7 @@ const upgrades = [
             },
              {
                 name: "Scanner Longue Portée",
-                name_eng: "Long Range Scanner",
+                name_ENG: "Long Range Scanner",
                 id: 73,
                 available: true,
                 modify: false,
@@ -9162,7 +9167,7 @@ const upgrades = [
             },
              {
                 name: "Brouilleur de Senseur",
-                name_eng: "Sensor Jammer",
+                name_ENG: "Sensor Jammer",
                 id: 74,
                 available: true,
                 modify: false,
@@ -9173,7 +9178,7 @@ const upgrades = [
             },
     {
                 name: "Patience",
-                name_eng: "Patience",
+                name_ENG: "Patience",
                 id: 75,
                 available: true,
                 modify: false,
@@ -9185,7 +9190,7 @@ const upgrades = [
             },
      {
                 name: "Réflexes Prémonitoires",
-                name_eng: "Precognitive Reflexes",
+                name_ENG: "Precognitive Reflexes",
                 id: 76,
                 available: false,
                 modify: false,
@@ -9197,7 +9202,7 @@ const upgrades = [
             },
     {
                 name: "As de la Manoeuvre",
-                name_eng: "Brilliant Evasion",
+                name_ENG: "Brilliant Evasion",
                 id: 77,
                 available: true,
                 modify: false,
@@ -9208,7 +9213,7 @@ const upgrades = [
             },
     {
                 name: "Sens",
-                name_eng: "Sense",
+                name_ENG: "Sense",
                 id: 78,
                 available: true,
                 modify: false,
@@ -9219,7 +9224,7 @@ const upgrades = [
             },
     {
                 name: "Visée Instinctive",
-                name_eng: "Instinctive Aim",
+                name_ENG: "Instinctive Aim",
                 id: 79,
                 available: true,
                 modify: false,
@@ -9230,7 +9235,7 @@ const upgrades = [
             },
             {
                 name: "Système de Tir Automatique",
-                name_eng: "Automatic Gunning System",
+                name_ENG: "Automatic Gunning System",
                 id: 80,
                 available: true,
                 modify: false,
@@ -9241,7 +9246,7 @@ const upgrades = [
             },
              {
                 name: "Calculs en Réseau Avancés",
-                name_eng: "Advanced Networked Calculations",
+                name_ENG: "Advanced Networked Calculations",
                 id: 81,
                 available: true,
                 modify: false,
@@ -9252,7 +9257,7 @@ const upgrades = [
             },
              {
                 name: "Données de Pistage Hyperspatial",
-                name_eng: "Hyperspace Tracking Data",
+                name_ENG: "Hyperspace Tracking Data",
                 id: 82,
                 available: true,
                 modify: false,
@@ -9264,7 +9269,7 @@ const upgrades = [
             },
              {
                 name: "Ordinateur de Vol Avancé",
-                name_eng: "Advanced Flight Computer",
+                name_ENG: "Advanced Flight Computer",
                 id: 83,
                 available: true,
                 modify: false,
@@ -9276,7 +9281,7 @@ const upgrades = [
             },
              {
                 name: "Crypteur de Données",
-                name_eng: "Encrypter",
+                name_ENG: "Encrypter",
                 id: 84,
                 available: true,
                 modify: false,
@@ -9290,7 +9295,7 @@ const upgrades = [
     
             {
                 name: "R2-D2",
-                name_eng: "R2-D2",
+                name_ENG: "R2-D2",
                 id: 85,
                 available: true,
                 modify: false,
@@ -9303,7 +9308,7 @@ const upgrades = [
             },
              {
                 name: "R5-D8",
-                name_eng: "R5-D8",
+                name_ENG: "R5-D8",
                 id: 86,
                 available: true,
                 modify: false,
@@ -9316,7 +9321,7 @@ const upgrades = [
             },
              {
                 name: "C-3PO",
-                name_eng: "C-3PO",
+                name_ENG: "C-3PO",
                 id: 87,
                 available: true,
                 modify: true,
@@ -9331,7 +9336,7 @@ const upgrades = [
             },
              {
                 name: "Cassian Andor",
-                name_eng: "Cassian Andor",
+                name_ENG: "Cassian Andor",
                 id: 88,
                 available: true,
                 modify: false,
@@ -9343,7 +9348,7 @@ const upgrades = [
             },
             {
                 name: "Leia Organa",
-                name_eng: "Leia Organa",
+                name_ENG: "Leia Organa",
                 id: 89,
                 available: true,
                 modify: false,
@@ -9357,7 +9362,7 @@ const upgrades = [
             },
             {
                 name: "R2-D2 #Crew#",
-                name_eng: "R2-D2 #Crew#",
+                name_ENG: "R2-D2 #Crew#",
                 id: 90,
                 available: true,
                 modify: false,
@@ -9369,7 +9374,7 @@ const upgrades = [
             },
             {
                 name: "Bistan",
-                name_eng: "Bistan",
+                name_ENG: "Bistan",
                 id: 91,
                 available: true,
                 modify: false,
@@ -9381,7 +9386,7 @@ const upgrades = [
             },
     {
                 name: "Luke Skywalker",
-                name_eng: "Luke Skywalker",
+                name_ENG: "Luke Skywalker",
                 id: 92,
                 available: true,
                 modify: true,
@@ -9397,7 +9402,7 @@ const upgrades = [
             },
     {
                 name: "Altruisme",
-                name_eng: "Selfless",
+                name_ENG: "Selfless",
                 id: 93,
                 available: true,
                 modify: false,
@@ -9408,7 +9413,7 @@ const upgrades = [
             },
      {
                 name: "K-2SO",
-                name_eng: "K-2SO",
+                name_ENG: "K-2SO",
                 id: 94,
                 available: true,
                 modify: true,
@@ -9428,7 +9433,7 @@ const upgrades = [
     
             {
                 name: "Dark Vador",
-                name_eng: "Darth Vader",
+                name_ENG: "Darth Vader",
                 id: 95,
                 available: true,
                 modify: false,
@@ -9444,7 +9449,7 @@ const upgrades = [
             },
     {
                 name: "Grand Moff Tarkin",
-                name_eng: "Grand Moff Tarkin",
+                name_ENG: "Grand Moff Tarkin",
                 id: 96,
                 available: true,
                 modify: false,
@@ -9458,7 +9463,7 @@ const upgrades = [
             },
      {
                 name: "Impitoyable",
-                name_eng: "Ruthless",
+                name_ENG: "Ruthless",
                 id: 97,
                 available: true,
                 modify: false,
@@ -9469,7 +9474,7 @@ const upgrades = [
             },
     {
                 name: "Moteurs Ioniques de Précision",
-                name_eng: "Precision Ion Engines",
+                name_ENG: "Precision Ion Engines",
                 id: 98,
                 available: false,
                 modify: false,
@@ -9482,7 +9487,7 @@ const upgrades = [
             },
             {
                 name: "Moteur Ionique Jumelé Mk2",
-                name_eng: "Twin Ion Engine Mk2",
+                name_ENG: "Twin Ion Engine Mk2",
                 id: 99,
                 available: false,
                 modify: false,
@@ -9494,7 +9499,7 @@ const upgrades = [
             },
             {
                 name: "Chassis Allégé",
-                name_eng: "Lightweight Frame",
+                name_ENG: "Lightweight Frame",
                 id: 100,
                 available: false,
                 modify: false,
@@ -9506,7 +9511,7 @@ const upgrades = [
             },
      {
                 name: "Migs Mayfeld",
-                name_eng: "Migs Mayfeld",
+                name_ENG: "Migs Mayfeld",
                 id: 101,
                 available: true,
                 modify: false,
@@ -9518,7 +9523,7 @@ const upgrades = [
             },
             {
                 name: "Artilleur Impérial",
-                nam_eng: "Imperial Gunner",
+                nam_ENG: "Imperial Gunner",
                 id: 102,
                 available: true,
                 modify: false,
@@ -9533,7 +9538,7 @@ const upgrades = [
     
             {
                 name: "Boba Fett",
-                name_eng: "Boba Fett",
+                name_ENG: "Boba Fett",
                 id: 103,
                 available: true,
                 modify: false,
@@ -9545,7 +9550,7 @@ const upgrades = [
             },
              {
                 name: "Cad Bane",
-                name_eng: "Cad Bane",
+                name_ENG: "Cad Bane",
                 id: 104,
                 available: true,
                 modify: false,
@@ -9557,7 +9562,7 @@ const upgrades = [
             },
             {
                 name: "4-LOM",
-                name_eng: "4-LOM",
+                name_ENG: "4-LOM",
                 id: 105,
                 available: true,
                 modify: false,
@@ -9569,7 +9574,7 @@ const upgrades = [
             },
             {
                 name: "IG-88D",
-                name_eng: "IG-88D",
+                name_ENG: "IG-88D",
                 id: 106,
                 available: true,
                 modify: true,
@@ -9585,7 +9590,7 @@ const upgrades = [
             },
             {
                 name: "Zuckuss",
-                name_eng: "Zuckuss",
+                name_ENG: "Zuckuss",
                 id: 107,
                 available: true,
                 modify: false,
@@ -9597,7 +9602,7 @@ const upgrades = [
             },
      {
                 name: "Bossk",
-                name_eng: "Bossk",
+                name_ENG: "Bossk",
                 id: 108,
                 available: true,
                 modify: false,
@@ -9609,7 +9614,7 @@ const upgrades = [
             },
      {
                 name: "Dengar",
-                name_eng: "Dengar",
+                name_ENG: "Dengar",
                 id: 109,
                 available: true,
                 modify: false,
@@ -9624,7 +9629,7 @@ const upgrades = [
             },
      {
                 name: "Greedo",
-                name_eng: "Greedo",
+                name_ENG: "Greedo",
                 id: 110,
                 available: true,
                 modify: false,
@@ -9638,7 +9643,7 @@ const upgrades = [
             },
      {
                 name: "Capteur de Positionnement",
-                name_eng: "Tracking Fob",
+                name_ENG: "Tracking Fob",
                 id: 111,
                 available: true,
                 modify: true,
@@ -9653,7 +9658,7 @@ const upgrades = [
             },
             {
                 name: "Célèbre",
-                name_eng: "Notorious",
+                name_ENG: "Notorious",
                 id: 112,
                 available: true,
                 modify: false,
@@ -9666,7 +9671,7 @@ const upgrades = [
             },
     {
                 name: "Super Blaster de Poupe",
-                name_eng: "Hotshot Tail Blaster",
+                name_ENG: "Hotshot Tail Blaster",
                 id: 113,
                 available: true,
                 modify: false,
@@ -9684,7 +9689,7 @@ const upgrades = [
     //###################################################MANDALORIAN_CLANS
              {
                 name: "Intrépide",
-                name_eng: "Fearless",
+                name_ENG: "Fearless",
                 id: 114,
                 available: true,
                 modify: false,
@@ -9695,7 +9700,7 @@ const upgrades = [
             },
      {
                 name: "Bo-Katan Kryze",
-                name_eng: "Bo-Katan Kryze",
+                name_ENG: "Bo-Katan Kryze",
                 id: 115,
                 available: true,
                 modify: false,
@@ -9707,7 +9712,7 @@ const upgrades = [
             },
      {
                 name: "Fenn Rau",
-                name_eng: "Fenn Rau",
+                name_ENG: "Fenn Rau",
                 id: 116,
                 available: true,
                 modify: false,
@@ -9720,7 +9725,7 @@ const upgrades = [
             },
     {
                 name: "Gar Saxon",
-                name_eng: "Gar Saxon",
+                name_ENG: "Gar Saxon",
                 id: 117,
                 available: true,
                 modify: false,
@@ -9732,7 +9737,7 @@ const upgrades = [
             },
             {
                 name: "Korkie Kryze",
-                name_eng: "Korkie Kryze",
+                name_ENG: "Korkie Kryze",
                 id: 118,
                 available: true,
                 modify: false,
@@ -9744,7 +9749,7 @@ const upgrades = [
             },
      {
                 name: "Pre Vizsla",
-                name_eng: "Pre Vizsla",
+                name_ENG: "Pre Vizsla",
                 id: 119,
                 available: true,
                 modify: true,
@@ -9759,7 +9764,7 @@ const upgrades = [
             },
     {
                 name: "Ursa Wren",
-                name_eng: "Ursa Wren",
+                name_ENG: "Ursa Wren",
                 id: 120,
                 available: true,
                 modify: false,
@@ -9771,7 +9776,7 @@ const upgrades = [
             },
     {
                 name: "Tiber Saxon",
-                name_eng: "Tiber Saxon",
+                name_ENG: "Tiber Saxon",
                 id: 121,
                 available: true,
                 modify: false,
@@ -9785,7 +9790,7 @@ const upgrades = [
             },
      {
                 name: "Blindage Renforcé en Beskar",
-                name_eng: "Beskar Reinforced Plating",
+                name_ENG: "Beskar Reinforced Plating",
                 id: 122,
                 available: true,
                 modify: false,
@@ -9798,7 +9803,7 @@ const upgrades = [
             },
             {
                 name: "Optiques Mandaloriennes",
-                name_eng: "Mandalorian Optics",
+                name_ENG: "Mandalorian Optics",
                 id: 123,
                 available: true,
                 modify: false,
@@ -9813,7 +9818,7 @@ const upgrades = [
     //###########################################################PIRATES_AND_Smugglers
             {
                 name: "Chewbacca",
-                name_eng: "Chewbacca",
+                name_ENG: "Chewbacca",
                 id: 124,
                 available: true,
                 modify: false,
@@ -9827,7 +9832,7 @@ const upgrades = [
             },
     {
                 name: "Cikatro Vizago",
-                name_eng: "Cikatro Vizago",
+                name_ENG: "Cikatro Vizago",
                 id: 125,
                 available: true,
                 modify: false,
@@ -9839,7 +9844,7 @@ const upgrades = [
             },
     {
                 name: "L3-37",
-                name_eng: "L3-37",
+                name_ENG: "L3-37",
                 id: 126,
                 available: true,
                 modify: false,
@@ -9851,7 +9856,7 @@ const upgrades = [
             },
      {
                 name: "Han Solo",
-                name_eng: "Han Solo",
+                name_ENG: "Han Solo",
                 id: 127,
                 available: true,
                 modify: false,
@@ -9863,7 +9868,7 @@ const upgrades = [
             },
       {
                 name: "Largage de Cargaison",
-                name_eng: "Rigged Cargo Chute",
+                name_ENG: "Rigged Cargo Chute",
                 id: 128,
                 available: false,
                 modify: false,
@@ -9877,7 +9882,7 @@ const upgrades = [
             },
     {
                 name: "Havoc",
-                name_eng: "Havoc",
+                name_ENG: "Havoc",
                 id: 129,
                 available: false,
                 modify: true,
@@ -9889,7 +9894,7 @@ const upgrades = [
                 effect: "Retire en emplacement #crew#. Ajoute #sensor# et #astromech#. Ajoute 5 points de Loadout et augmente le coût du vaisseau de 1",
                 restrictions: [1,"title", "Havoc",""],
                 modifier_func: [
-                    () => also_Occupies("Crew"),
+                    () => also_Occupies("Crew",129),
                     () => add_slots("Sensor"),
                     () => add_slots("Astromech"),
                     () => change_stat("loadout",5),
@@ -9899,7 +9904,7 @@ const upgrades = [
             },
     {
                 name: "Lando Calrissian",
-                name_eng: "Lando Calrissian",
+                name_ENG: "Lando Calrissian",
                 id: 130,
                 available: true,
                 modify: false,
@@ -9911,7 +9916,7 @@ const upgrades = [
             },
      {
                 name: "Hondo Ohnaka",
-                name_eng: "Hondo Ohnaka",
+                name_ENG: "Hondo Ohnaka",
                 id: 131,
                 available: true,
                 modify: false,
@@ -9926,7 +9931,7 @@ const upgrades = [
     
     {
                 name: "Compartiment de Contrebande",
-                name_eng: "Smuggling Compartment",
+                name_ENG: "Smuggling Compartment",
                 id: 132,
                 available: false,
                 modify: true,
@@ -9943,7 +9948,7 @@ const upgrades = [
             },
             {
                 name: "Roublard",
-                name_eng: "Cunning",
+                name_ENG: "Cunning",
                 id: 133,
                 available: true,
                 modify: false,
@@ -9954,7 +9959,7 @@ const upgrades = [
             },
             {
                 name: "Millenium Falcon",
-                name_eng: "Millenium Falcon",
+                name_ENG: "Millenium Falcon",
                 id: 134,
                 available: false,
                 modify: true,
@@ -9966,7 +9971,7 @@ const upgrades = [
                 restrictions: [1, "title", "Millenium Falcon",""],
                 effect: "Retire en emplacement #missile# et la capacité 'Vaisseau-Mère'. Ajoute #sensor# et #calculator#. Ajoute 5 points de Loadout et augmente le coût du vaisseau de 1",
                 modifier_func: [
-                    () => also_Occupies("Missile"),
+                    () => also_Occupies("Missile",134),
                     () => lose_chassis("Docking Ship"),
                     () => add_slots("Sensor"),
                     () => add_slots("Calculator"),
@@ -9978,7 +9983,7 @@ const upgrades = [
             },
             {
                 name: "Torpilles à Proton",
-                name_eng: "Proton Torpedoes",
+                name_ENG: "Proton Torpedoes",
                 id: 135,
                 available: true,
                 modify: false,
@@ -9992,7 +9997,7 @@ const upgrades = [
             },
             {
                 name: "Xanadu Blood",
-                name_eng: "Xanadu Blood",
+                name_ENG: "Xanadu Blood",
                 id: 136,
                 available: false,
                 modify: true,
@@ -10012,7 +10017,7 @@ const upgrades = [
             },
             {
                 name: "Hound's Tooth",
-                name_eng: "Hound's Tooth",
+                name_ENG: "Hound's Tooth",
                 id: 137,
                 available: false,
                 modify: true,
@@ -10026,13 +10031,13 @@ const upgrades = [
                 modifier_func: [
                     () => add_slots("Gunner"),
                     () => add_slots("Cannon"),
-                    () => also_Occupies("Illicit"),
+                    () => also_Occupies("Illicit",137),
                  
                 ]
             },
             {
                 name: "Slave 1",
-                name_eng: "Slave 1",
+                name_ENG: "Slave 1",
                 id: 138,
                 available: false,
                 modify: true,
@@ -10053,7 +10058,7 @@ const upgrades = [
             },
             {
                 name: "Andrasta",
-                name_eng: "Andrasta",
+                name_ENG: "Andrasta",
                 id: 139,
                 available: false,
                 modify: true,
@@ -10074,7 +10079,7 @@ const upgrades = [
             },
             {
                 name: "Outrider",
-                name_eng: "Outrider",
+                name_ENG: "Outrider",
                 id: 140,
                 available: false,
                 modify: true,
@@ -10094,7 +10099,7 @@ const upgrades = [
             },
             {
                 name: "Mist Hunter",
-                name_eng: "Mist Hunter",
+                name_ENG: "Mist Hunter",
                 id: 141,
                 available: false,
                 modify: false,
@@ -10112,7 +10117,7 @@ const upgrades = [
             },
             {
                 name: "Punishing One",
-                name_eng: "Punishing One",
+                name_ENG: "Punishing One",
                 id: 142,
                 available: false,
                 modify: true,
@@ -10127,13 +10132,13 @@ const upgrades = [
                 modifier_func: [
                     () => add_slots("Astromech"),
                     () => change_stat("attackt",1),
-                    () => also_Occupies("Crew"),
+                    () => also_Occupies("Crew",142),
                    
                 ]
             },
             {
                 name: "IG-2000",
-                name_eng: "IG-2000",
+                name_ENG: "IG-2000",
                 id: 143,
                 available: false,
                 modify: true,
@@ -10146,13 +10151,13 @@ const upgrades = [
                 effect: "",
                 modifier_func: [
                     () => add_slots("Calculator"),
-                    () => also_Occupies("Modification"),
+                    () => also_Occupies("Modification",143),
                     
                 ]
             },
             {
                 name: "N1 de Din Djarin",
-                name_eng: "Din Djarin's N1",
+                name_ENG: "Din Djarin's N1",
                 id: 144,
                 available: false,
                 modify: true,
@@ -10167,14 +10172,14 @@ const upgrades = [
                     () => add_slots("Crew"),
                     () => add_slots("Tech"),
                     () => add_slots("Illicit"),
-                    () => also_Occupies("Astromech"),
-                    () => also_Occupies("Torpedo"),
+                    () => also_Occupies("Astromech",144),
+                    () => also_Occupies("Torpedo",144),
                  
                 ]
             },
             {
                 name: "Razor Crest",
-                name_eng: "Razor Crest",
+                name_ENG: "Razor Crest",
                 id: 145,
                 slot: "Title",
                 available: false,
@@ -10192,7 +10197,7 @@ const upgrades = [
             },
             {
                 name: "Moldy Crow",
-                name_eng: "Moldy Crow",
+                name_ENG: "Moldy Crow",
                 id: 146,
                 slot: "Title",
                 available: false,
@@ -10206,12 +10211,12 @@ const upgrades = [
                 modifier_func: [
                     () => add_slots("Illicit"),
                     () => add_slots("Cannon"),
-                    () => also_Occupies("Modification"),
+                    () => also_Occupies("Modification",146),
                 ]
             },
             {
                 name: "Simulateur de Trajectoire",
-                name_eng: "Trajectory Simulator",
+                name_ENG: "Trajectory Simulator",
                 id: 147,
                 available: true, 
                 modify: false,
@@ -10224,7 +10229,7 @@ const upgrades = [
 ////////////////////////////////////////////////
 			{
                 name: "Courageux",
-                name_eng: "Brave",
+                name_ENG: "Brave",
                 id: 148,
                 available: true, 
                 modify: false,
@@ -10236,7 +10241,7 @@ const upgrades = [
             },
             {
                 name: "Chopper",
-                name_eng: "Chopper",
+                name_ENG: "Chopper",
                 id: 149,
                 available: true, 
                 modify: false,
@@ -10249,7 +10254,7 @@ const upgrades = [
             },
    			{
                 name: "C1-10P",
-                name_eng: "C1-10P",
+                name_ENG: "C1-10P",
                 id: 150,
                 available: true, 
                 modify: false,
@@ -10265,7 +10270,7 @@ const upgrades = [
     /////Fenn rau Mandalorian clans////////
     		{
                 name: "Ezra Bridger",
-                name_eng: "Ezra Bridger",
+                name_ENG: "Ezra Bridger",
                 id: 151,
                 available: true, 
                 modify: false,
@@ -10282,7 +10287,7 @@ const upgrades = [
             },
             {
                 name: "Kanan Jarrus",
-                name_eng: "Kanan Jarrus",
+                name_ENG: "Kanan Jarrus",
                 id: 152,
                 available: true, 
                 modify: false,
@@ -10299,7 +10304,7 @@ const upgrades = [
             },
             {
                 name: "Hera Syndulla",
-                name_eng: "Hera Syndulla",
+                name_ENG: "Hera Syndulla",
                 id: 153,
                 available: true, 
                 unique: true,
@@ -10312,7 +10317,7 @@ const upgrades = [
             },
             {
                 name: "Zeb Orellios",
-                name_eng: "Zeb Orellios",
+                name_ENG: "Zeb Orellios",
                 id: 154,
                 available: true, 
                 unique: true,
@@ -10325,7 +10330,7 @@ const upgrades = [
             },
             {
                 name: "Sabine Wren",
-                name_eng: "Sabine Wren",
+                name_ENG: "Sabine Wren",
                 id: 155,
                 unique: true,
                 available: true, 
@@ -10340,7 +10345,7 @@ const upgrades = [
 //////////////////////////////////////////////////////
             {
                 name: "Infatigable",
-                name_eng: "Relentless",
+                name_ENG: "Relentless",
                 id: 156,
                 available: false, 
                 modify: false,
@@ -10353,7 +10358,7 @@ const upgrades = [
             },
             {
                 name: "Nute Gunray",
-                name_eng: "Nute Gunray",
+                name_ENG: "Nute Gunray",
                 id: 157,
                 available: true, 
                 modify: false,
@@ -10366,7 +10371,7 @@ const upgrades = [
             },
             {
                 name: "Poggle le Bref",
-                name_eng: "Poggle the Lesser",
+                name_ENG: "Poggle the Lesser",
                 id: 158,
                 available: true, 
                 modify: false,
@@ -10379,7 +10384,7 @@ const upgrades = [
             },
             {
                 name: "Missile Discorde",
-                name_eng: "Discord Missile",
+                name_ENG: "Discord Missile",
                 id: 159,
                 max_per_squad: 3,
                 available: true, 
@@ -10392,7 +10397,7 @@ const upgrades = [
             },
             {
                 name: "Droïde Sonde DRK1",
-                name_eng: "DRK1 Probe Droid",
+                name_ENG: "DRK1 Probe Droid",
                 id: 160,
                 available: true, 
                 modify: false,
@@ -10405,7 +10410,7 @@ const upgrades = [
             },
             {
                 name: "Obus Energétiques",
-                name_eng: "Energy Cell Charge",
+                name_ENG: "Energy Cell Charge",
                 id: 161,
                 available: true, 
                 modify: false,
@@ -10418,7 +10423,7 @@ const upgrades = [
             },
             {
                 name: "Calculs Indépendants",
-                name_eng: "Independant Calculation",
+                name_ENG: "Independant Calculation",
                 id: 162,
                 available: true, 
                 modify: false,
@@ -10431,7 +10436,7 @@ const upgrades = [
             },
             {
                 name: "Kalani",
-                name_eng: "Kalani",
+                name_ENG: "Kalani",
                 id: 163,
                 available: true, 
                 modify: true,
@@ -10442,13 +10447,13 @@ const upgrades = [
                 effect: "Après qu’un vaisseau ennemi a exécuté une manœuvre, s’il est dans le d’un vaisseau allié à portée 0–3, vous pouvez dépenser 1 . Dans ce cas, ce vaisseau allié verrouille ce vaisseau ennemi, puis gagne 1 marqueur de stress.",
                 effect_ENG: "",
                 modifier_func: [
-                () => also_Occupies("Calculator"),
+                () => also_Occupies("Calculator",163),
                 () => add_action("Calculate")
                 ]
             },
             {
                 name: "Kraken",
-                name_eng: "Kraken",
+                name_ENG: "Kraken",
                 id: 164,
                 available: true, 
                 modify: true,
@@ -10459,13 +10464,13 @@ const upgrades = [
                 effect: "Pendant la phase de dénouement, vous pouvez choisir jusqu’à 3 vaisseaux alliés à portée 0-3. Dans ce cas, chacun de ces vaisseaux ne retire pas 1 marqueur de calcul.",
                 effect_ENG: "",
                 modifier_func: [
-                () => also_Occupies("Calculator"),
+                () => also_Occupies("Calculator",164),
                 () => add_action("Calculate")
                 ]
             },
             {
                 name: "AUT-0",
-                name_eng: "AUT-0",
+                name_ENG: "AUT-0",
                 id: 165,
                 available: true, 
                 modify: true,
@@ -10476,13 +10481,13 @@ const upgrades = [
                 effect: "Avant de vous engager, vous pouvez transférer un jeton calcul à un vaisseau calculateur à portée 0-3. Dans ce cas, ce vaisseau effectue une attaque bonus. Vous gagnez 1 jeton désarmé.",
                 effect_ENG: "",
                 modifier_func: [
-                () => also_Occupies("Calculator"),
+                () => also_Occupies("Calculator",165),
                 () => add_action("Calculate")
                 ]
             },
             {
                 name: "Linwodo",
-                name_eng: "Linwodo",
+                name_ENG: "Linwodo",
                 id: 166,
                 available: true, 
                 modify: true,
@@ -10493,14 +10498,14 @@ const upgrades = [
                 effect: "Vous gagnez la capacité 'Calculs en Réseau'. Après qu'un vaisseau allié à portée 0-3 avec #CA# dans sa barre d'action a été détruit, chaque vaisseau allié à portée 0-3 avec #CA# dans sa barre d'action gagne 1 marqueur de calcul.",
                 effect_ENG: "You gain the 'Networked Calculation' ship ability. After a friendly ship at range 0-3 with #CA# in its action bar has been destroyed, each friendly ship at range 0-3 with #CA# in its action bar receives 1 calculate token.",
                 modifier_func: [
-                () => also_Occupies("Calculator"),
+                () => also_Occupies("Calculator",166),
                 () => add_action("Calculate"),
                 () => add_chassis("Networked Calculations")
                 ]
             },
             {
                 name: "Général Grievous",
-                name_eng: "General Grievous",
+                name_ENG: "General Grievous",
                 id: 167,
                 available: true, 
                 unique: true,
@@ -10515,7 +10520,7 @@ const upgrades = [
 //////////////////////////////////////////////////
 			{
                 name: "Héroïque",
-                name_eng: "Heroic",
+                name_ENG: "Heroic",
                 id: 168,
                 available: true, 
                 modify: false,
@@ -10527,7 +10532,7 @@ const upgrades = [
             },
             {
                 name: "Kaydel Connix",
-                name_eng: "Kaydel Connix",
+                name_ENG: "Kaydel Connix",
                 id: 169,
                 available: true, 
                 unique: true,
@@ -10540,7 +10545,7 @@ const upgrades = [
             },
             {
                 name: "Rose Tico",
-                name_eng: "Rose Tico",
+                name_ENG: "Rose Tico",
                 id: 170,
                 unique: true,
                 available: true, 
@@ -10553,7 +10558,7 @@ const upgrades = [
             },
             {
                 name: "Peinture Ferrosphère",
-                name_eng: "Ferrosphere Paint",
+                name_ENG: "Ferrosphere Paint",
                 id: 171,
                 available: true, 
                 modify: false,
@@ -10565,7 +10570,7 @@ const upgrades = [
             },
             {
                 name: "Finn",
-                name_eng: "Finn",
+                name_ENG: "Finn",
                 id: 172,
                 available: true, 
                 unique: true,
@@ -10578,7 +10583,7 @@ const upgrades = [
             },
             {
                 name: "Rey",
-                name_eng: "Rey",
+                name_ENG: "Rey",
                 id: 173,
                 available: true, 
                 modify: false,
@@ -10595,7 +10600,7 @@ const upgrades = [
             },
             {
                 name: "M9-G8",
-                name_eng: "M9-G8",
+                name_ENG: "M9-G8",
                 id: 174,
                 available: true, 
                 modify: false,
@@ -10608,7 +10613,7 @@ const upgrades = [
             },
             {
                 name: "Astromech BB",
-                name_eng: "BB Astromech",
+                name_ENG: "BB Astromech",
                 id: 175,
                 available: true, 
                 modify: false,
@@ -10621,7 +10626,7 @@ const upgrades = [
             },
             {
                 name: "BB-8",
-                name_eng: "BB-8",
+                name_ENG: "BB-8",
                 id: 176,
                 available: true, 
                 unique: true,
@@ -10635,7 +10640,7 @@ const upgrades = [
             },
             {
                 name: "R6-D8",
-                name_eng: "R6-D8",
+                name_ENG: "R6-D8",
                 id: 177,
                 available: true, 
                 unique: true,
@@ -10648,7 +10653,7 @@ const upgrades = [
             },
             {
                 name: "R5-X3",
-                name_eng: "R5-X3",
+                name_ENG: "R5-X3",
                 id: 178,
                 available: true, 
                 modify: false,
@@ -10664,7 +10669,7 @@ const upgrades = [
 ///////////////////////////////////////////////////
 			{
                 name: "Fanatique",
-                name_eng: "Fanatical",
+                name_ENG: "Fanatical",
                 id: 179,
                 available: true, 
                 modify: false,
@@ -10676,7 +10681,7 @@ const upgrades = [
             },
             {
                 name: "Général Hux",
-                name_eng: "General Hux",
+                name_ENG: "General Hux",
                 id: 180,
                 available: true, 
                 modify: false,
@@ -10689,7 +10694,7 @@ const upgrades = [
             },
             {
                 name: "DT-798",
-                name_eng: "DT-798",
+                name_ENG: "DT-798",
                 id: 181,
                 available: true, 
                 modify: false,
@@ -10702,7 +10707,7 @@ const upgrades = [
             },
             {
                 name: "Technicien en Munition du Premier Ordre",
-                name_eng: "First Order Ordnance Tech",
+                name_ENG: "First Order Ordnance Tech",
                 id: 182,
                 available: true, 
                 modify: false,
@@ -10717,7 +10722,7 @@ const upgrades = [
             },
             {
                 name: "Artilleur des Forces Spéciales",
-                name_eng: "Special Forces Gunner",
+                name_ENG: "Special Forces Gunner",
                 id: 183,
                 available: false, 
                 modify: false,
@@ -10731,7 +10736,7 @@ const upgrades = [
             }, 
             {
                 name: "Kylo Ren",
-                name_eng: "Kylo Ren",
+                name_ENG: "Kylo Ren",
                 id: 184,
                 available: true, 
                 modify: true,
@@ -10749,7 +10754,7 @@ const upgrades = [
             },
             {
                 name: "Cellules Energétiques au Deuterium",
-                name_eng: "Deuterium Power Cells",
+                name_ENG: "Deuterium Power Cells",
                 id: 185,
                 available: true, 
                 modify: true,
@@ -10760,13 +10765,13 @@ const upgrades = [
                 effect: "Pendant la phase système, vous pouvez dépenser 1 #ch# et gagner 1 jeton désarmé pour récupérer 1 bouclier.<br>Lorsque vous devriez recevoir 1 jeton non lock, si vous n'êtes pas stressé, vous pouvez dépenser 1 #ch# pour gagner 1 jeton stress à la place.",
                 effect_ENG: "During the System Phase, you may spend 1 #ch# and gain 1 disarm token to recover 1 shield.<br>Before you would gain 1 non-lock token, if you are not stressed, you may spend 1 #ch# to gain 1 stress token instead.",
                 modifier_func: [
-                () => also_Occupies('Modification')
+                () => also_Occupies('Modification',185)
                 ]
                 
             },
             {
                 name: "Codes Biohexacrypt",
-                name_eng: "Biohexacrypt Codes",
+                name_ENG: "Biohexacrypt Codes",
                 id: 186,
                 available: true, 
                 modify: false,
@@ -10779,7 +10784,7 @@ const upgrades = [
             },
             {
                 name: "Capitaine Phasma",
-                name_eng: "Captain Phasma",
+                name_ENG: "Captain Phasma",
                 id: 187,
                 available: true, 
                 modify: false,
@@ -10793,7 +10798,7 @@ const upgrades = [
             },
             {
                 name: "Officier de Pont Thanison",
-                name_eng: "Petty Officer Thanison",
+                name_ENG: "Petty Officer Thanison",
                 id: 188,
                 available: true, 
                 modify: false,
@@ -10809,7 +10814,7 @@ const upgrades = [
 //////////////////////////////////////////////////////
             {
                 name: "Efficace",
-                name_eng: "Efficient",
+                name_ENG: "Efficient",
                 id: 189,
                 available: true, 
                 modify: false,
@@ -10822,7 +10827,7 @@ const upgrades = [
             },
             {
                 name: "Rukh",
-                name_eng: "Rukh",
+                name_ENG: "Rukh",
                 id: 190,
                 available: true, 
                 unique: true,
@@ -10836,7 +10841,7 @@ const upgrades = [
             },
             {
                 name: "Grand Inquisiteur",
-                name_eng: "Grand Inquisitor",
+                name_ENG: "Grand Inquisitor",
                 id: 191,
                 available: true, 
                 modify: true,
@@ -10855,7 +10860,7 @@ const upgrades = [
             },
             {
                 name: "Ciena Ree",
-                name_eng: "Ciena Ree",
+                name_ENG: "Ciena Ree",
                 id: 192,
                 unique: true,
                 available: true, 
@@ -10869,7 +10874,7 @@ const upgrades = [
             },
             {
                 name: "Septième Soeur",
-                name_eng: "Seventh Sister",
+                name_ENG: "Seventh Sister",
                 id: 193,
                 available: true, 
                 unique: true,
@@ -10887,7 +10892,7 @@ const upgrades = [
             },
             {
                 name: "Cinquième Frère",
-                name_eng: "Fifth Brother",
+                name_ENG: "Fifth Brother",
                 id: 194,
                 available: true, 
                 unique: true,
@@ -11055,6 +11060,7 @@ function displayslots(yy) { //crée les menus de slot et contient l'écoute des 
         shipslot.appendChild(slotmenu);
         slotmenu.addEventListener("input", function(event) {//cette faction décrit le calcul des mises à jour des points pour le loadout et le cout du pilote
             y = event.target.id.slice(4,5);   
+            checkUpgradeValidation(event);
             updateUpgradeCount(y);
             updateTotalCost();
             displayDescriptionUpgrade(event);
@@ -11243,23 +11249,46 @@ function checkPilotModifier(e) { //va checker s'il existe des fonctions dans mod
 		}
 }
 
-function also_Occupies(targetSlot){ //A utiliser lorsqu'une upgrade utilise un slot de plus
-   
+function also_Occupies(targetSlot,id){ //A utiliser lorsqu'une upgrade utilise un slot de plus. On va en plus écouter le menu qui a été rempli pour inverser l'opération si l'upg est retirée.
+    fillUpgradesSelected(y);
+    let field = null;
     for (let i=0; i<upgradesSelected[y].length;i++){
        
       if(upgradesSelected[y][i]==='<'+targetSlot+'>'){
-        let field = document.getElementById("slot"+y+"_"+i);
-        
+        field = document.getElementById("slot"+y+"_"+i);
         field.value = "<"+targetSlot+">";
         field.setAttribute("disabled","");
-        
-        return
-
-      }  
+        break;
+      }
+     } 
+   //on va chercher à annuler l'état disabled des champs suite à la fonction  also_Occupies, lorsque l'amélioration est retirée
+    let upgname = upgrades[id]["name"]; 
+    let p = upgrades[id]["points"];
+    let upgslot = null;
+    for (let k = 0 ; k<upgradesSelected[y].length; k++){ // on va rechercher dans quel menu l'upgrade qui a déclenché occupies_Slot se trouve 
+        if (upgradesSelected[y][k] === upgname + ' (' + p + ')'){
+            upgslot = document.getElementById('slot'+y+'_'+k);
+            break;
+        }
     }
+    if (field===null){ //ce cas arrive si le targetslot est déjà occupé par une autre upgrade
+        alert('Not Available. <'+targetSlot+'> required.')
+        upgslot.value = '<'+upgrades[id]["slot"]+'>';
+        return;
+    }
+    let listenfunction = function(){ //fonction qui va servir dans l'écoute juste au dessous
+        field.removeAttribute('disabled');
+        fillUpgradesSelected(y);
+    }
+
+    upgslot.addEventListener('input', function(){
+        listenfunction();
+        upgslot.removeEventListener('input',listenfunction); //on arrête d'écouter le menu si l'upg a été retirée
+    }) 
+
 }
 function checkUpgradeValidation(e) { //va checker s'il existe une fonction modify liée à l'upgrade, et va lancer les modifs éventuelles type add_slots ou change_stat
-    
+   
     let field = e.target.id; // "slotyy_i"
     let pilnbr = field.substring(4, 5);
     let upgnbr = field.substring(6, 7);
