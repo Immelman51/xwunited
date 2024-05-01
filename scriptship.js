@@ -11288,7 +11288,7 @@ function also_Occupies(targetSlot,id){ //A utiliser lorsqu'une upgrade utilise u
 
 }
 function checkUpgradeValidation(e) { //va checker s'il existe une fonction modify liée à l'upgrade, et va lancer les modifs éventuelles type add_slots ou change_stat
-   
+   fillUpgradesSelected(y);
     let field = e.target.id; // "slotyy_i"
     let pilnbr = field.substring(4, 5);
     let upgnbr = field.substring(6, 7);
@@ -11374,6 +11374,7 @@ function auto_equip(Slot,UPG){
             break;
         }
     }
+    fillUpgradesSelected(y);
 }
 
 function weapon_Hardpoint(){
