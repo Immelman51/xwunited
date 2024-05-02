@@ -9869,7 +9869,7 @@ const upgrades = [
       {
                 name: "Largage de Cargaison",
                 name_ENG: "Rigged Cargo Chute",
-                id: 128,
+                id: 127,
                 available: false,
                 modify: false,
                 slot: "Illicit",
@@ -9883,7 +9883,7 @@ const upgrades = [
     {
                 name: "Havoc",
                 name_ENG: "Havoc",
-                id: 129,
+                id: 128,
                 available: false,
                 modify: true,
                 slot: "Title",
@@ -9891,11 +9891,11 @@ const upgrades = [
                 unique: true,
                 faction: ["Pirates_and_Smugglers"],
                 ship: "Scurrg H-6 Bomber",
-                effect: "Retire en emplacement #crew#. Ajoute #sensor# et #astromech#. Ajoute 5 points de Loadout et augmente le coût du vaisseau de 1",
+                effect: "Retire en emplacement #crew#. Ajoute #tech# et #astromech#. Ajoute 5 points de Loadout et augmente le coût du vaisseau de 1",
                 restrictions: [1,"title", "Havoc",""],
                 modifier_func: [
-                    () => also_Occupies("Crew",129),
-                    () => add_slots("Sensor"),
+                    () => also_Occupies("Crew",128),
+                    () => add_slots("Tech"),
                     () => add_slots("Astromech"),
                     () => change_stat("loadout",5),
                     () => change_stat("points",1)
@@ -9905,7 +9905,7 @@ const upgrades = [
     {
                 name: "Lando Calrissian",
                 name_ENG: "Lando Calrissian",
-                id: 130,
+                id: 129,
                 available: true,
                 modify: false,
                 slot: "Crew",
@@ -9917,7 +9917,7 @@ const upgrades = [
      {
                 name: "Hondo Ohnaka",
                 name_ENG: "Hondo Ohnaka",
-                id: 131,
+                id: 130,
                 available: true,
                 modify: false,
                 unique: true,
@@ -9932,7 +9932,7 @@ const upgrades = [
     {
                 name: "Compartiment de Contrebande",
                 name_ENG: "Smuggling Compartment",
-                id: 132,
+                id: 131,
                 available: false,
                 modify: true,
                 slot: "Modification",
@@ -9949,7 +9949,7 @@ const upgrades = [
             {
                 name: "Roublard",
                 name_ENG: "Cunning",
-                id: 133,
+                id: 132,
                 available: true,
                 modify: false,
                 slot: "Talent",
@@ -9960,7 +9960,7 @@ const upgrades = [
             {
                 name: "Millenium Falcon",
                 name_ENG: "Millenium Falcon",
-                id: 134,
+                id: 133,
                 available: false,
                 modify: true,
                 slot: "Title",
@@ -9984,7 +9984,7 @@ const upgrades = [
             {
                 name: "Torpilles à Proton",
                 name_ENG: "Proton Torpedoes",
-                id: 135,
+                id: 134,
                 available: true,
                 modify: false,
                 slot: "Torpedo",
@@ -9998,7 +9998,7 @@ const upgrades = [
             {
                 name: "Xanadu Blood",
                 name_ENG: "Xanadu Blood",
-                id: 136,
+                id: 135,
                 available: false,
                 modify: true,
                 slot: "Title",
@@ -10018,7 +10018,7 @@ const upgrades = [
             {
                 name: "Hound's Tooth",
                 name_ENG: "Hound's Tooth",
-                id: 137,
+                id: 136,
                 available: false,
                 modify: true,
                 slot: "Title",
@@ -10038,7 +10038,7 @@ const upgrades = [
             {
                 name: "Slave 1",
                 name_ENG: "Slave 1",
-                id: 138,
+                id: 137,
                 available: false,
                 modify: true,
                 slot: "Title",
@@ -10059,7 +10059,7 @@ const upgrades = [
             {
                 name: "Andrasta",
                 name_ENG: "Andrasta",
-                id: 139,
+                id: 138,
                 available: false,
                 modify: true,
                 slot: "Title",
@@ -10080,7 +10080,7 @@ const upgrades = [
             {
                 name: "Outrider",
                 name_ENG: "Outrider",
-                id: 140,
+                id: 139,
                 available: false,
                 modify: true,
                 slot: "Title",
@@ -10100,7 +10100,7 @@ const upgrades = [
             {
                 name: "Mist Hunter",
                 name_ENG: "Mist Hunter",
-                id: 141,
+                id: 140,
                 available: false,
                 modify: false,
                 slot: "Title",
@@ -10118,7 +10118,7 @@ const upgrades = [
             {
                 name: "Punishing One",
                 name_ENG: "Punishing One",
-                id: 142,
+                id: 141,
                 available: false,
                 modify: true,
                 slot: "Title",
@@ -10139,7 +10139,7 @@ const upgrades = [
             {
                 name: "IG-2000",
                 name_ENG: "IG-2000",
-                id: 143,
+                id: 142,
                 available: false,
                 modify: true,
                 slot: "Title",
@@ -10158,7 +10158,7 @@ const upgrades = [
             {
                 name: "N1 de Din Djarin",
                 name_ENG: "Din Djarin's N1",
-                id: 144,
+                id: 143,
                 available: false,
                 modify: true,
                 slot: "Title",
@@ -10180,7 +10180,7 @@ const upgrades = [
             {
                 name: "Razor Crest",
                 name_ENG: "Razor Crest",
-                id: 145,
+                id: 144,
                 slot: "Title",
                 available: false,
                 modify: false,
@@ -10198,7 +10198,7 @@ const upgrades = [
             {
                 name: "Moldy Crow",
                 name_ENG: "Moldy Crow",
-                id: 146,
+                id: 145,
                 slot: "Title",
                 available: false,
                 modify: true,
@@ -10217,7 +10217,7 @@ const upgrades = [
             {
                 name: "Simulateur de Trajectoire",
                 name_ENG: "Trajectory Simulator",
-                id: 147,
+                id: 146,
                 available: true, 
                 modify: false,
                 slot: "Tech",
@@ -10230,7 +10230,7 @@ const upgrades = [
 			{
                 name: "Courageux",
                 name_ENG: "Brave",
-                id: 148,
+                id: 147,
                 available: true, 
                 modify: false,
                 slot: "Talent",
@@ -10242,7 +10242,7 @@ const upgrades = [
             {
                 name: "Chopper",
                 name_ENG: "Chopper",
-                id: 149,
+                id: 148,
                 available: true, 
                 modify: false,
                 unique: true,
@@ -10255,7 +10255,7 @@ const upgrades = [
    			{
                 name: "C1-10P",
                 name_ENG: "C1-10P",
-                id: 150,
+                id: 149,
                 available: true, 
                 modify: false,
                 unique: true,
@@ -10271,7 +10271,7 @@ const upgrades = [
     		{
                 name: "Ezra Bridger",
                 name_ENG: "Ezra Bridger",
-                id: 151,
+                id: 150,
                 available: true, 
                 modify: false,
                 unique: true,
@@ -10288,7 +10288,7 @@ const upgrades = [
             {
                 name: "Kanan Jarrus",
                 name_ENG: "Kanan Jarrus",
-                id: 152,
+                id: 151,
                 available: true, 
                 modify: false,
                 unique: true,
@@ -10305,7 +10305,7 @@ const upgrades = [
             {
                 name: "Hera Syndulla",
                 name_ENG: "Hera Syndulla",
-                id: 153,
+                id: 152,
                 available: true, 
                 unique: true,
                 modify: false,
@@ -10318,7 +10318,7 @@ const upgrades = [
             {
                 name: "Zeb Orellios",
                 name_ENG: "Zeb Orellios",
-                id: 154,
+                id: 153,
                 available: true, 
                 unique: true,
                 modify: false,
@@ -10331,7 +10331,7 @@ const upgrades = [
             {
                 name: "Sabine Wren",
                 name_ENG: "Sabine Wren",
-                id: 155,
+                id: 154,
                 unique: true,
                 available: true, 
                 modify: false,
@@ -10346,7 +10346,7 @@ const upgrades = [
             {
                 name: "Infatigable",
                 name_ENG: "Relentless",
-                id: 156,
+                id: 155,
                 available: false, 
                 modify: false,
                 slot: "Talent",
@@ -10359,7 +10359,7 @@ const upgrades = [
             {
                 name: "Nute Gunray",
                 name_ENG: "Nute Gunray",
-                id: 157,
+                id: 156,
                 available: true, 
                 modify: false,
                 unique: true,
@@ -10372,7 +10372,7 @@ const upgrades = [
             {
                 name: "Poggle le Bref",
                 name_ENG: "Poggle the Lesser",
-                id: 158,
+                id: 157,
                 available: true, 
                 modify: false,
                 unique: true,
@@ -10385,7 +10385,7 @@ const upgrades = [
             {
                 name: "Missile Discorde",
                 name_ENG: "Discord Missile",
-                id: 159,
+                id: 158,
                 max_per_squad: 3,
                 available: true, 
                 modify: false,
@@ -10398,7 +10398,7 @@ const upgrades = [
             {
                 name: "Droïde Sonde DRK1",
                 name_ENG: "DRK1 Probe Droid",
-                id: 160,
+                id: 159,
                 available: true, 
                 modify: false,
                 slot: "Missile",
@@ -10411,7 +10411,7 @@ const upgrades = [
             {
                 name: "Obus Energétiques",
                 name_ENG: "Energy Cell Charge",
-                id: 161,
+                id: 160,
                 available: true, 
                 modify: false,
                 slot: "Missile",
@@ -10424,7 +10424,7 @@ const upgrades = [
             {
                 name: "Calculs Indépendants",
                 name_ENG: "Independant Calculation",
-                id: 162,
+                id: 161,
                 available: true, 
                 modify: false,
                 slot: "Modification",
@@ -10437,7 +10437,7 @@ const upgrades = [
             {
                 name: "Kalani",
                 name_ENG: "Kalani",
-                id: 163,
+                id: 162,
                 available: true, 
                 modify: true,
                 slot: "Crew",
@@ -10454,7 +10454,7 @@ const upgrades = [
             {
                 name: "Kraken",
                 name_ENG: "Kraken",
-                id: 164,
+                id: 163,
                 available: true, 
                 modify: true,
                 slot: "Crew",
@@ -10471,7 +10471,7 @@ const upgrades = [
             {
                 name: "AUT-0",
                 name_ENG: "AUT-0",
-                id: 165,
+                id: 164,
                 available: true, 
                 modify: true,
                 slot: "Crew",
@@ -10488,7 +10488,7 @@ const upgrades = [
             {
                 name: "Linwodo",
                 name_ENG: "Linwodo",
-                id: 166,
+                id: 165,
                 available: true, 
                 modify: true,
                 slot: "Crew",
@@ -10506,7 +10506,7 @@ const upgrades = [
             {
                 name: "Général Grievous",
                 name_ENG: "General Grievous",
-                id: 167,
+                id: 166,
                 available: true, 
                 unique: true,
                 modify: false,
@@ -10521,7 +10521,7 @@ const upgrades = [
 			{
                 name: "Héroïque",
                 name_ENG: "Heroic",
-                id: 168,
+                id: 167,
                 available: true, 
                 modify: false,
                 slot: "Talent",
@@ -10533,7 +10533,7 @@ const upgrades = [
             {
                 name: "Kaydel Connix",
                 name_ENG: "Kaydel Connix",
-                id: 169,
+                id: 168,
                 available: true, 
                 unique: true,
                 modify: false,
@@ -10546,7 +10546,7 @@ const upgrades = [
             {
                 name: "Rose Tico",
                 name_ENG: "Rose Tico",
-                id: 170,
+                id: 169,
                 unique: true,
                 available: true, 
                 modify: false,
@@ -10559,7 +10559,7 @@ const upgrades = [
             {
                 name: "Peinture Ferrosphère",
                 name_ENG: "Ferrosphere Paint",
-                id: 171,
+                id: 170,
                 available: true, 
                 modify: false,
                 slot: "Tech",
@@ -10571,7 +10571,7 @@ const upgrades = [
             {
                 name: "Finn",
                 name_ENG: "Finn",
-                id: 172,
+                id: 171,
                 available: true, 
                 unique: true,
                 modify: false,
@@ -10584,7 +10584,7 @@ const upgrades = [
             {
                 name: "Rey",
                 name_ENG: "Rey",
-                id: 173,
+                id: 172,
                 available: true, 
                 modify: false,
                 unique: true,
@@ -10601,7 +10601,7 @@ const upgrades = [
             {
                 name: "M9-G8",
                 name_ENG: "M9-G8",
-                id: 174,
+                id: 173,
                 available: true, 
                 modify: false,
                 slot: "Astromech",
@@ -10614,7 +10614,7 @@ const upgrades = [
             {
                 name: "Astromech BB",
                 name_ENG: "BB Astromech",
-                id: 175,
+                id: 174,
                 available: true, 
                 modify: false,
                 slot: "Astromech",
@@ -10627,7 +10627,7 @@ const upgrades = [
             {
                 name: "BB-8",
                 name_ENG: "BB-8",
-                id: 176,
+                id: 175,
                 available: true, 
                 unique: true,
                 modify: false,
@@ -10641,7 +10641,7 @@ const upgrades = [
             {
                 name: "R6-D8",
                 name_ENG: "R6-D8",
-                id: 177,
+                id: 176,
                 available: true, 
                 unique: true,
                 modify: false,
@@ -10654,7 +10654,7 @@ const upgrades = [
             {
                 name: "R5-X3",
                 name_ENG: "R5-X3",
-                id: 178,
+                id: 177,
                 available: true, 
                 modify: false,
                 unique: true,
@@ -10670,7 +10670,7 @@ const upgrades = [
 			{
                 name: "Fanatique",
                 name_ENG: "Fanatical",
-                id: 179,
+                id: 178,
                 available: true, 
                 modify: false,
                 slot: "Talent",
@@ -10682,7 +10682,7 @@ const upgrades = [
             {
                 name: "Général Hux",
                 name_ENG: "General Hux",
-                id: 180,
+                id: 179,
                 available: true, 
                 modify: false,
                 unique: true,
@@ -10693,9 +10693,9 @@ const upgrades = [
                 effect_ENG: "While you perform a white #CD# action, you may treat it as red. If you do, you may coordinate up to 2 additional ships of the same ship type, and each ship you coordinate must perform the same action, treating that action as red."
             },
             {
-                name: "DT-798",
-                name_ENG: "DT-798",
-                id: 181,
+                name: "Jace Rucklin",
+                name_ENG: "Jace Rucklin",
+                id: 180,
                 available: true, 
                 modify: false,
                 unique: true,
@@ -10708,7 +10708,7 @@ const upgrades = [
             {
                 name: "Technicien en Munition du Premier Ordre",
                 name_ENG: "First Order Ordnance Tech",
-                id: 182,
+                id: 181,
                 available: true, 
                 modify: false,
                 slot: "Gunner",
@@ -10723,7 +10723,7 @@ const upgrades = [
             {
                 name: "Artilleur des Forces Spéciales",
                 name_ENG: "Special Forces Gunner",
-                id: 183,
+                id: 182,
                 available: false, 
                 modify: false,
                 slot: "Gunner",
@@ -10737,7 +10737,7 @@ const upgrades = [
             {
                 name: "Kylo Ren",
                 name_ENG: "Kylo Ren",
-                id: 184,
+                id: 183,
                 available: true, 
                 modify: true,
                 unique: true,
@@ -10755,7 +10755,7 @@ const upgrades = [
             {
                 name: "Cellules Energétiques au Deuterium",
                 name_ENG: "Deuterium Power Cells",
-                id: 185,
+                id: 184,
                 available: true, 
                 modify: true,
                 slot: "Tech",
@@ -10772,7 +10772,7 @@ const upgrades = [
             {
                 name: "Codes Biohexacrypt",
                 name_ENG: "Biohexacrypt Codes",
-                id: 186,
+                id: 185,
                 available: true, 
                 modify: false,
                 slot: "Calculator",
@@ -10785,7 +10785,7 @@ const upgrades = [
             {
                 name: "Capitaine Phasma",
                 name_ENG: "Captain Phasma",
-                id: 187,
+                id: 186,
                 available: true, 
                 modify: false,
                 unique: true,
@@ -10799,7 +10799,7 @@ const upgrades = [
             {
                 name: "Officier de Pont Thanison",
                 name_ENG: "Petty Officer Thanison",
-                id: 188,
+                id: 187,
                 available: true, 
                 modify: false,
                 unique: true,
@@ -10815,7 +10815,7 @@ const upgrades = [
             {
                 name: "Efficace",
                 name_ENG: "Efficient",
-                id: 189,
+                id: 188,
                 available: true, 
                 modify: false,
                 slot: "Talent",
@@ -10828,7 +10828,7 @@ const upgrades = [
             {
                 name: "Rukh",
                 name_ENG: "Rukh",
-                id: 190,
+                id: 189,
                 available: true, 
                 unique: true,
                 modify: false,
@@ -10842,7 +10842,7 @@ const upgrades = [
             {
                 name: "Grand Inquisiteur",
                 name_ENG: "Grand Inquisitor",
-                id: 191,
+                id: 190,
                 available: true, 
                 modify: true,
                 unique: true,
@@ -10861,7 +10861,7 @@ const upgrades = [
             {
                 name: "Ciena Ree",
                 name_ENG: "Ciena Ree",
-                id: 192,
+                id: 191,
                 unique: true,
                 available: true, 
                 modify: false,
@@ -10875,7 +10875,7 @@ const upgrades = [
             {
                 name: "Septième Soeur",
                 name_ENG: "Seventh Sister",
-                id: 193,
+                id: 192,
                 available: true, 
                 unique: true,
                 modify: true,
@@ -10893,7 +10893,7 @@ const upgrades = [
             {
                 name: "Cinquième Frère",
                 name_ENG: "Fifth Brother",
-                id: 194,
+                id: 193,
                 available: true, 
                 unique: true,
                 modify: true,
@@ -11529,7 +11529,8 @@ function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'acti
         upgradeListGet(numero);
         checkUpgRestriction(numero);
         displayDescriptionPilot(numero);
-	checkPilotModifier(event);
+	    checkPilotModifier(event);
+        checkUpgRestriction(numero); //on le refait car il peut y avoir des upgrades disponibles suite à check pilot modfier (exemple : Emon gagne 2 slot de payload ce qui lui permet d'équiper les générateurs de sous munitions)
     });  
    
 
