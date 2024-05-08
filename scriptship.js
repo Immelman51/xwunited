@@ -11250,7 +11250,7 @@ function checkPilotModifier(e) { //va checker s'il existe des fonctions dans mod
 }
 
 function also_Occupies(targetSlot,id){ //A utiliser lorsqu'une upgrade utilise un slot de plus. On va en plus écouter le menu qui a été rempli pour inverser l'opération si l'upg est retirée.
-    fillUpgradesSelected(y);
+   /* fillUpgradesSelected(y);
     let field = null;
     for (let i=0; i<upgradesSelected[y].length;i++){
        
@@ -11286,6 +11286,46 @@ function also_Occupies(targetSlot,id){ //A utiliser lorsqu'une upgrade utilise u
         upgslot.removeEventListener('input',listenfunction); //on arrête d'écouter le menu si l'upg a été retirée
     }) 
 
+}*/
+fillUpgradesSelected(y);
+    let field = null;
+    for (let i = 0; i < upgradesSelected[y].length; i++) {
+        if (upgradesSelected[y][i] === '<' + targetSlot + '>') {
+            field = document.getElementById('slot' + y + '_' + i);
+            field.value = '<' + targetSlot + '>';
+            field.setAttribute('disabled', '');
+            break;
+        }
+    }
+
+    let upgname = upgrades[id]['name'];
+    let p = upgrades[id]['points'];
+    let upgslot = null;
+    for (let k = 0; k < upgradesSelected[y].length; k++) {
+        if (upgradesSelected[y][k] === upgname + ' (' + p + ')') {
+            upgslot = document.getElementById('slot' + y + '_' + k);
+            break;
+        }
+    }
+
+    if (!field) {
+        alert('Not Available. <' + targetSlot + '> required.');
+        if (upgslot) {
+            upgslot.value = '<' + upgrades[id]['slot'] + '>';
+        }
+        return;
+    }
+
+    let listenfunction = function () {
+        field.removeAttribute('disabled');
+        fillUpgradesSelected(y);
+        console.log('Event listener removed');
+        upgslot.removeEventListener('input', listenfunction);
+    };
+
+    if (upgslot) {
+        upgslot.addEventListener('input', listenfunction);
+    }
 }
 function checkUpgradeValidation(e) { //va checker s'il existe une fonction modify liée à l'upgrade, et va lancer les modifs éventuelles type add_slots ou change_stat
    fillUpgradesSelected(y);
@@ -11419,7 +11459,16 @@ function weapon_Hardpoint(){
      })   
     }
 
-
+function check_Unique(event){ //check si l'upgrade ou le pilote est déjà utilisé par un(e) autre du même nom
+        let selMenuVal = event.target.value;
+        selMenuVal = selMenuVal.substring(0, selMenuVal.lastIndexOf(' (')).trim(); //on retire le (8) de Luke Skywalker (8)
+        if (upgradesSelected.some(element => element.includes(selMenuVal))){
+            alert(selMenuVal+'is already in your squad');
+            event.target.selectedIndex = 0;
+        }
+    
+} 
+    
 
 function add_action (act){
 
@@ -11427,7 +11476,7 @@ function add_action (act){
 function add_condition(con){
 
 }
-function change_stat(table){
+function change_stat(stat, value){
 
 }
 function lose_chassis(){
@@ -11524,6 +11573,7 @@ function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'acti
     })
     newpilot.addEventListener('input', function(event) {
         y = event.target.id.slice(11,12); //y = numéro du pilote modifié
+        check_Unique(event);
         dataGetFromPilot(numero);
         displayslots(numero)  ;
         upgradeListGet(numero);
