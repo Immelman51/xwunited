@@ -13,8 +13,10 @@ let shipquantity = -1; //compteur qui ne sert pas à compter mais à numéroter 
  let upgrades_Objects= [[],[],[],[],[],[],[],[]]; // va contenir la liste des contenus des menus slots mais sous forme d'objet
  let upgradesSelected = [[],[],[],[],[],[],[],[]]; //va contenir les upgrades sélectionnées
  let overCostTab = [0,0,0,0,0,0,0,0]; //Cette variable va stocker les augmentations des couts des pilotes dûs aux emports d'upgrade supérieurs au loadout de base
- let y= "0";
-let restrict = false;
+ let y= "0"; //valeur qui indique l'index du pilote podifié
+ let z= "0"; //valeur qui indique l'index dans le menu de l'élément sélectionné
+let x= "0"; //valeur qui indique l'index du menu d'amélioration sélectionné (sloty_x)
+ let restrict = false;
 
 
 //description des chassis
@@ -11032,7 +11034,7 @@ function displayslots(yy) { //crée les menus de slot et contient l'écoute des 
     slotmenu.setAttribute('class', 'slotElement'+' '+pilot_list[yy]["slots"][i]);
     shipslot.appendChild(slotmenu);
     slotmenu.addEventListener("input", function(event) {//cette faction décrit le calcul des mises à jour des points pour le loadout et le cout du pilote
-            y = event.target.id.slice(4,5);
+            identifyElement(event);
             checkUpgradeValidation(event)
             updateUpgradeCount(y);
             updateTotalCost();
@@ -11042,7 +11044,7 @@ function displayslots(yy) { //crée les menus de slot et contient l'écoute des 
 
             })
     slotmenu.addEventListener("mouseover", function(event){
-        y = event.target.id.slice(4,5);
+        identifyElement(event);
         displayDescriptionUpgrade(event);
     })    
         index++;  
@@ -11059,7 +11061,7 @@ function displayslots(yy) { //crée les menus de slot et contient l'écoute des 
         slotmenu.setAttribute('class', 'slotElement'+' '+ships[pilot_list[yy]["shipId"]]["slots"][j] );
         shipslot.appendChild(slotmenu);
         slotmenu.addEventListener("input", function(event) {//cette faction décrit le calcul des mises à jour des points pour le loadout et le cout du pilote
-            y = event.target.id.slice(4,5);   
+            identifyElement(event);   
             checkUpgradeValidation(event);
             updateUpgradeCount(y);
             updateTotalCost();
@@ -11082,7 +11084,13 @@ function fillUpgradesSelected(yy){
         upgradesSelected[yy].push(slotM.value)
     }
 }
-
+function identifyElement(event){ //sloty_x & index z de l'élément sélectionné
+    let slotMe = event.target.id;
+    z = event.target.selectedIndex;
+    y = slotMe.substring(4,5);
+    x = slotMe.substring(6);
+     
+}
 function updateUpgradeCount(yy) {//cette faction décrit le calcul des mises à jour des points pour le loadout et le cout du pilote
     let newLoadoutValue = pilot_list[yy]["loadout"];
     costcount = document.getElementById("shipcost"+yy);
@@ -11388,7 +11396,7 @@ populateMenu('slot'+y+'_'+nbrSlots,slotmenucontent);
         })
 
         slotmenu.addEventListener("input", function(event) {//cette faction décrit le calcul des mises à jour des points pour le loadout et le cout du pilote
-            y= event.target.id.slice(4,5);
+            identifyElement(event);
             updateUpgradeCount(y);
             updateTotalCost();
             displayDescriptionUpgrade(event);
