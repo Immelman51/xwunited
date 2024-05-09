@@ -11,13 +11,15 @@ let shipquantity = -1; //compteur qui ne sert pas à compter mais à numéroter 
  let pilot_list = [{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0}]; //Dans ce tableau, on stocker les objets pilotes
  let upgrades_Type = [[],[],[],[],[],[],[],[]]; //va contenir tous les slots pour chaque pilote
  let upgrades_Objects= [[],[],[],[],[],[],[],[]]; // va contenir la liste des contenus des menus slots mais sous forme d'objet
+ 
+ let upgrades_Objects_Val= [[],[],[],[],[],[],[],[]]; // va contenir la liste des contenus des menus slots après validation mais sous forme d'objet
  let upgradesSelected = [[],[],[],[],[],[],[],[]]; //va contenir les upgrades sélectionnées
  let overCostTab = [0,0,0,0,0,0,0,0]; //Cette variable va stocker les augmentations des couts des pilotes dûs aux emports d'upgrade supérieurs au loadout de base
  let y= "0"; //valeur qui indique l'index du pilote podifié
  let z= "0"; //valeur qui indique l'index dans le menu de l'élément sélectionné
 let x= "0"; //valeur qui indique l'index du menu d'amélioration sélectionné (sloty_x)
  let restrict = false;
-let unique_List = [[],[],[],[],[],[],[],[]]; //va contenir les noms des upgrades et pilotes uniques
+let restricted_List = [[0],[1],[2],[3],[4],[5],[6],[7],[8]]; //va contenir les noms des upgrades (8 premiers sous tableaux) et pilotes uniques (9eme sous tableau)
 
 //description des chassis
 
@@ -11193,7 +11195,9 @@ function displayslots(yy) { //crée les menus de slot et contient l'écoute des 
     shipslot.appendChild(slotmenu);
     slotmenu.addEventListener("input", function(event) {//cette faction décrit le calcul des mises à jour des points pour le loadout et le cout du pilote
             identifyElement(event);
+            
             checkUpgradeValidation(event)
+            check_restricted_List(event);
             updateUpgradeCount(y);
             updateTotalCost();
             displayDescriptionUpgrade(event);
@@ -11202,7 +11206,7 @@ function displayslots(yy) { //crée les menus de slot et contient l'écoute des 
 
             })
     slotmenu.addEventListener("mouseover", function(event){
-        identifyElement(event);
+        
         displayDescriptionUpgrade(event);
     })    
         index++;  
@@ -11219,8 +11223,10 @@ function displayslots(yy) { //crée les menus de slot et contient l'écoute des 
         slotmenu.setAttribute('class', 'slotElement'+' '+ships[pilot_list[yy]["shipId"]]["slots"][j] );
         shipslot.appendChild(slotmenu);
         slotmenu.addEventListener("input", function(event) {//cette faction décrit le calcul des mises à jour des points pour le loadout et le cout du pilote
-            identifyElement(event);   
+            identifyElement(event); 
+              
             checkUpgradeValidation(event);
+            check_restricted_List(event);
             updateUpgradeCount(y);
             updateTotalCost();
             displayDescriptionUpgrade(event);
@@ -11242,11 +11248,19 @@ function fillUpgradesSelected(yy){
         upgradesSelected[yy].push(slotM.value)
     }
 }
-function identifyElement(event){ //sloty_x & index z de l'élément sélectionné
+function identifyElement(event){ //sloty_x & index z de l'élément sélectionné, ou pilote dans ce cas x=-1
     let slotMe = event.target.id;
-    z = event.target.selectedIndex;
-    y = slotMe.substring(4,5);
-    x = slotMe.substring(6);
+    if (slotMe.indexOf("pilot")>0){ //si l'id contient la chaine "pilot"
+        z = event.target.selectedIndex;
+        y = slotMe.substring(11);
+        x = -1;
+    }else{
+        if (slotMe.indexOf("slot")===0)
+        z = event.target.selectedIndex;
+        y = slotMe.substring(4,5);
+        x = slotMe.substring(6);
+    }
+   
      
 }
 function updateUpgradeCount(yy) {//cette faction décrit le calcul des mises à jour des points pour le loadout et le cout du pilote
@@ -11382,22 +11396,26 @@ function checkUpgRestriction(yy){ //populate les menus slots avec les bonnes upg
    
     for (let i=0; i<upgrades_Objects[yy].length;i++) {
         let slotmenucontent = [];
+        let slotmenuobjects =[];
         slotmenucontent.push("<"+upgrades_Type[yy][i]+">");
         
         for (let j=0; j<upgrades_Objects[yy][i].length; j++){
             
             if (upgrades_Objects[yy][i][j]['available']===true){
                 slotmenucontent.push(upgrades_Objects[yy][i][j]['name']+" ("+upgrades_Objects[yy][i][j]['points']+")");
+                slotmenuobjects.push(upgrades_Objects[yy][i][j]);
             }else{
                 
                 testRestriction(yy,upgrades_Objects[yy][i][j]['restrictions']);
                 
                 if (restrict===true) {
                 slotmenucontent.push(upgrades_Objects[yy][i][j]['name']+" ("+upgrades_Objects[yy][i][j]['points']+")"); 
-                }
+                slotmenuobjects.push(upgrades_Objects[yy][i][j]);
+            }
             }
             
         }
+        upgrades_Objects_Val[yy].push(slotmenuobjects);
         populateMenu('slot'+yy+'_'+i,slotmenucontent);
         fillUpgradesSelected(yy)
     }
@@ -11555,6 +11573,7 @@ populateMenu('slot'+y+'_'+nbrSlots,slotmenucontent);
 
         slotmenu.addEventListener("input", function(event) {//cette faction décrit le calcul des mises à jour des points pour le loadout et le cout du pilote
             identifyElement(event);
+            check_restricted_List(event);
             updateUpgradeCount(y);
             updateTotalCost();
             displayDescriptionUpgrade(event);
@@ -11625,23 +11644,61 @@ function weapon_Hardpoint(){
      })   
     }
 
-function check_Unique(event){ //check si l'upgrade ou le pilote est déjà utilisé par un(e) autre du même nom
-        
-    let selMenuVal = event.target.value;
-        selMenuVal = selMenuVal.substring(0, selMenuVal.lastIndexOf(' (')).trim(); //on retire le (8) de Luke Skywalker (8)
-        if (upgradesSelected.some(element => element.includes(selMenuVal))){
-            alert(selMenuVal+'is already in your squad');
-            event.target.selectedIndex = 0;
-        }
+function check_restricted_List(event){ //check si l'upgrade ou le pilote est déjà utilisé par un(e) autre du même nom
     
-} 
-function upgrade_unique_List(yy){
+    let newname = '';
+    let maxnbr = 8;
+    if (x === -1){ //si c'est un pilote
+        newname = pilot_list[y]['name'];
+        maxnbr = pilot_list[y]['max_per_squad']
+    }else{ // si c'est une upgrade
+        newname = upgrades_Objects_Val[y][x][z-1]['name'];
+        maxnbr = upgrades_Objects_Val[y][x][z-1]['max_per_squad'];
+    }
+    if (maxnbr === 8){
+        return; // si il n'y a pas de limitation on arrête
+    }
+console.log(newname+' '+maxnbr);
+    while (maxnbr>0) {
+    for (let i=0 ; i<9 ; i++){
+        for (let j = 0 ; j<restricted_List[i].length ; j++){
+            if (restricted_List[i][j]===newname){
+                maxnbr = maxnbr -1 ;
+            }
+        }
+        }
+        break;
+    }
+    console.log(maxnbr);
+    if (maxnbr <= 0) { // cela arrive si on a excédé le nombre d'exemplaires de l'upgrade/pilote
+        alert(newname +' is no more available in your squad');
+        event.target.selectedIndex = 0;
+    }else{
+        upgrade_restricted_List(y); //l'upgrade ou le pilote est accepté donc on peut mettre à jour cette restricted_List
+    }
+    
+ }
+    
+ 
+function upgrade_restricted_List(yy){
+    
+    let namepil = "menu_pilot"+yy;
+    if (pilot_list[yy]['max_per_squad'] < 8){
+        namepil = pilot_list[yy]['name'];
+    }
+    restricted_List[8][yy]= namepil;
+    
     for (let i=0 ; i<upgradesSelected[yy].length ; i++){
         slotmenu = document.getElementById('slot'+yy+'_'+i);
         z = slotmenu.selectedIndex;
-        if (upgrades_Objects[yy][i][z-1]['unique']
+        let nameupg = 'slot'+yy+'_'+i;
+        if ((z > 0) && (upgrades_Objects_Val[yy][i][z-1]['max_per_squad'] < 8)) {
+            nameupg = upgrades_Objects_Val[yy][i][z-1]['name'];
+        }
+        restricted_List[yy][i]= nameupg;
+        }
     }
-}    
+    
 
 function add_action (act){
 
@@ -11699,6 +11756,7 @@ try { //Si on ne met pas ça, le fait d'avoir une valeur non définie fait plant
 }
 upgrades_Objects[yy].push(upgObjList); //Ainsi, ce tableau aura cette structure : [[[Objets talent pil 1][objets torpille pil 1][objets modifications pil 1]][[objets talent pil 2][objets modification pil 2]]....] 
 }
+
 }
 
 function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'active via le bouton Addship
@@ -11745,12 +11803,13 @@ function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'acti
         displayDescriptionPilot(numero);
     })
     newpilot.addEventListener('input', function(event) {
-        y = event.target.id.slice(11,12); //y = numéro du pilote modifié
-        check_Unique(event);
+        identifyElement(event);
+        
         dataGetFromPilot(numero);
         displayslots(numero)  ;
         upgradeListGet(numero);
         checkUpgRestriction(numero);
+        check_restricted_List(event);
         displayDescriptionPilot(numero);
 	    checkPilotModifier(event);
         checkUpgRestriction(numero); //on le refait car il peut y avoir des upgrades disponibles suite à check pilot modfier (exemple : Emon gagne 2 slot de payload ce qui lui permet d'équiper les générateurs de sous munitions)
