@@ -11,7 +11,6 @@ let shipquantity = -1; //compteur qui ne sert pas à compter mais à numéroter 
  let pilot_list = [{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0}]; //Dans ce tableau, on stocker les objets pilotes
  let upgrades_Type = [[],[],[],[],[],[],[],[]]; //va contenir tous les slots pour chaque pilote
  let upgrades_Objects= [[],[],[],[],[],[],[],[]]; // va contenir la liste des contenus des menus slots mais sous forme d'objet
- 
  let upgrades_Objects_Val= [[],[],[],[],[],[],[],[]]; // va contenir la liste des contenus des menus slots après validation mais sous forme d'objet
  let upgradesSelected = [[],[],[],[],[],[],[],[]]; //va contenir les upgrades sélectionnées
  let overCostTab = [0,0,0,0,0,0,0,0]; //Cette variable va stocker les augmentations des couts des pilotes dûs aux emports d'upgrade supérieurs au loadout de base
@@ -20,6 +19,7 @@ let shipquantity = -1; //compteur qui ne sert pas à compter mais à numéroter 
 let x= "0"; //valeur qui indique l'index du menu d'amélioration sélectionné (sloty_x)
  let restrict = false;
 let restricted_List = [[0],[1],[2],[3],[4],[5],[6],[7],[8]]; //va contenir les noms des upgrades (8 premiers sous tableaux) et pilotes uniques (9eme sous tableau)
+
 
 //description des chassis
 
@@ -2874,8 +2874,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             name_ENG: "Red Squadron Veteran",
             id: 0,
             faction: "Rebel_Alliance",
-            ship: "T-65 X-wing",
             max_per_squad: 8,
+            ship: "T-65 X-wing",
             modify: false,
 	        shipId: 0,
             skill: 3,
@@ -3048,8 +3048,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             name_ENG: "Gold Squadron Veteran",
             id: 9,
             faction: "Rebel_Alliance",
-            max_per_squad: 8,
             ship: "BTL-A4 Y-wing",
+            max_per_squad: 8,
             modify: false,
 		    shipId: 1,
             skill: 3,
@@ -3323,9 +3323,9 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             name: "Pilote de l'Escadron Vert",
             name_ENG: "Green Squadron Pilot",
             id: 22,
-            max_per_squad: 8,
             faction: "Rebel_Alliance",
             ship: "RZ-1 A-wing",
+            max_per_squad: 8,
             modify: false,
 	        shipId: 2,
             skill: 3,
@@ -3598,8 +3598,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             name_ENG: "Alpha Squadron Pilot",
             id: 37,
             faction: "Imperial_Academy",
-            ship: "TIE/in Interceptor",
             max_per_squad: 8,
+            ship: "TIE/in Interceptor",
             modify: false,
 		    shipId: 6,
             skill: 1,
@@ -3857,8 +3857,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             name_ENG: "Academy Pilot",
             id: 51,
             faction: "Imperial_Academy",
-            ship: "TIE/ln Fighter",
             max_per_squad: 8,
+            ship: "TIE/ln Fighter",
             modify: false,    
 	        shipId: 4,
             skill: 1,
@@ -3871,10 +3871,10 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             name: "Cadet de l'Académie Carida",
             name_ENG: "Carida Academy Cadet",
             id: 52,
+            max_per_squad: 8,
             faction: "Imperial_Academy",
             modify: false,    
-	        max_per_squad: 8,
-            skill: 1,
+	        skill: 1,
             ship: "TIE/rb Heavy",
             shipId: 69,
             points: 5,
@@ -4005,8 +4005,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             name_ENG: "Skull Squadron Pilot",
             id: 59,
             modify: false,
-		    faction: "Mandalorian_Clans",
-            max_per_squad: 8,
+		    max_per_squad: 8,
+            faction: "Mandalorian_Clans",
             ship: "Fang Fighter",
             shipId: 31,
             skill: 4,
@@ -4110,9 +4110,9 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             name_ENG: "Nite Owl Liberator",
             id: 65,
             faction: "Mandalorian_Clans",
+            max_per_squad: 8,
             modify: false,
-		    max_per_squad: 8,
-            ship: "Gauntlet Fighter",
+		    ship: "Gauntlet Fighter",
             shipId: 77,
             skill: 2,
             points: 10,
@@ -4541,9 +4541,9 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             id: 84,
             faction: "Pirates_and_Smugglers",
             ship: "YT-2400 Light Freighter",
+            max_per_squad: 8,
             modify: false,
-		    max_per_squad: 8,
-            shipId: 16,
+		    shipId: 16,
             skill: 1,
             points: 7,
             loadout: 5,
@@ -4644,8 +4644,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             name_ENG: "Freighter Captain",
             modify: false,
 		    id: 89,
-            faction: "Pirates_and_Smugglers",
             max_per_squad: 8,
+            faction: "Pirates_and_Smugglers",
             ship: "YT-1300 Light Freighter",
             shipId: 3,
             skill: 1,
@@ -4874,7 +4874,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             id: 100,
             faction: "Pirates_and_Smugglers",
             max_per_squad: 8,
-            hip: "M3-A Interceptor",
+            ship: "M3-A Interceptor",
             shipId: 19,
 	        modify: true,
             skill: 3,
@@ -4973,8 +4973,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             name_ENG: "Lok Revenant",
             id: 105,
             faction: "Pirates_and_Smugglers",
-            ship: "Scurrg H-6 Bomber",
             max_per_squad: 8,
+            ship: "Scurrg H-6 Bomber",
             title: ["Havoc"],
             shipId: 37,
 		    modify: false,
@@ -5049,7 +5049,6 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             id: 109,
             faction: "Pirates_and_Smugglers",
             ship: "Z-95-AF4 Headhunter",
-            max_per_squad: 8,
             shipId: 12,
 	        modify: false,
             skill: 1,
@@ -5663,7 +5662,6 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
 ///////////////////PHOENIX CELL /////////////////////
 {
             name: "Hera Syndulla",
-            name_ENG: "Hera Syndulla",
             id: 136,
             max_per_squad: 1,
             faction: "Phoenix_Cell",
@@ -5688,7 +5686,6 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "Kanan Jarrus",
-            name_ENG: "Kanan Jarrus",
             id: 137,
             max_per_squad: 1,
             faction: "Phoenix_Cell",
@@ -5714,7 +5711,6 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "Chopper",
-            name_ENG: "Chopper",
             id: 138,
             max_per_squad: 1,
 		    modify: true,
@@ -5738,7 +5734,6 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "Alexsandr Kallus",
-            name_ENG: "Alexsandr Kallus",
             id: 139,
             max_per_squad: 1,
             faction: "Phoenix_Cell",
@@ -5762,7 +5757,6 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "Hera Syndulla",
-            name_ENG: "Hera Syndulla",
             id: 140,
             max_per_squad: 1,
             faction: "Phoenix_Cell",
@@ -5787,7 +5781,6 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "Sabine Wren",
-            name_ENG: "Sabine Wren",
             id: 141,
             max_per_squad: 1,
             faction: "Phoenix_Cell",
@@ -5811,7 +5804,6 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "Kanan Jarrus",
-            name_ENG: "Kanan Jarrus",
             id: 142,
             max_per_squad: 1,
             faction: "Phoenix_Cell",
@@ -5836,7 +5828,6 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "Zeb Orellios",
-            name_ENG: "Zeb Orellios",
             id: 143,
             max_per_squad: 1,
             faction: "Phoenix_Cell",
@@ -5844,7 +5835,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             shipId: 26,
             skill: 2,
             modify: true,
-		title: "Phantom 1",
+		    title: "Phantom 1",
             points: 5,
             loadout: 15,
             ability: "Lorsque vous défendez, les résultat #crit# sont neutralisés avant les résultats #hit#.",
@@ -5859,7 +5850,6 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "AP5",
-            name_ENG: "AP5",
             id: 144,
             max_per_squad: 1,
             faction: "Phoenix_Cell",
@@ -5867,7 +5857,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             shipId: 45,
             skill: 1,
             modify: true,
-		    title: "Phantom 2",
+		title: "Phantom 2",
             points: 5,
             loadout: 15,
             ability: "Lorsque vous coordonnez, si vous choisissez un vaisseau avec exactement 1 jeton stress, il peut effectuer des actions.", 
@@ -5883,7 +5873,6 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "Alexsandr Kallus",
-            name_ENG: "Alexsandr Kallus",
             id: 145,
             max_per_squad: 1,
             faction: "Phoenix_Cell",
@@ -5908,7 +5897,6 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         
         {
             name: "Ahsoka Tano",
-            name_ENG: "Ahsoka Tano",
             id: 146,
             max_per_squad: 1,
             faction: "Phoenix_Cell",
@@ -5957,7 +5945,6 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "Sabine Wren",
-            name_ENG: "Sabine Wren",
             id: 148,
             max_per_squad: 1,
             faction: "Phoenix_Cell",
@@ -5981,7 +5968,6 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "Ezra Bridger",
-            name_ENG: "Ezra Bridger",
             id: 149,
             max_per_squad: 1,
             faction: "Phoenix_Cell",
@@ -6006,7 +5992,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "Capitaine Rex",
-            name_ENG: "Captain Rex #TIE#",
+            name_ENG: "Captain Rex",
             id: 150,
             max_per_squad: 1,
             faction: "Phoenix_Cell",
@@ -6030,7 +6016,6 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "Zeb Orellios",
-            name_ENG: "Zeb Orellios",
             id: 151,
             max_per_squad: 1,
             faction: "Phoenix_Cell",
@@ -6053,7 +6038,6 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "Ezra Bridger",
-            name_ENG: "Ezra Bridger",
             id: 152,
             max_per_squad: 1,
             faction: "Phoenix_Cell",
@@ -6078,7 +6062,6 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "Chopper",
-            name_ENG: "Chopper",
             id: 153,
             max_per_squad: 1,
             faction: "Phoenix_Cell",
@@ -6088,7 +6071,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             points: 10,
             title: "Nightbrother",
             modify: true,
-		loadout: 15,
+		    loadout: 15,
             ability: "Au début de la phase d'engagement, chaque vaisseau ennemi à portée 0 reçoit 2 jeton brouillage.", 
             ability_ENG: "At the start of the Engagement Phase, each enemy ship at range 0 gains 2 jam tokens.",
             slots: [
@@ -6102,7 +6085,6 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "Mart Mattin",
-            name_ENG: "Mart Mattin",
             id: 154,
             max_per_squad: 1,
             faction: "Phoenix_Cell",
@@ -6125,7 +6107,6 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "Gooti Terez",
-            name_ENG: "Gooti Terez",
             id: 155,
             max_per_squad: 1,
             faction: "Phoenix_Cell",
@@ -6148,7 +6129,6 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "Lohgarra",
-            name_ENG: "Lohgarra",
             id: 156,
             max_per_squad: 1,
             faction: "Phoenix_Cell",
@@ -6172,7 +6152,6 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "Thane Kyrell",
-            name_ENG: "Thane Kyrell",
             id: 157,
             max_per_squad: 1,
             faction: "Phoenix_Cell",
@@ -6196,7 +6175,6 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "Ahsoka Tano",
-            name_ENG: "Ahsoka Tano",
             id: 158,
             max_per_squad: 1,
             faction: "Phoenix_Cell",
@@ -6217,7 +6195,6 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "Lieutenant Dicer",
-            name_ENG: "Lieutenant Dicer",
             id: 159,
             max_per_squad: 1,
             faction: "Phoenix_Cell",
@@ -6236,7 +6213,6 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "Fenn Rau",
-            name_ENG: "Fenn Rau",
             id: 160,
             max_per_squad: 1,
             faction: "Phoenix_Cell",
@@ -6256,7 +6232,6 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "Derek Klivian",
-            name_ENG: "Derek Klivian",
             id: 161,
             max_per_squad: 1,
             faction: "Phoenix_Cell",
@@ -6279,6 +6254,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             id: 162,
             max_per_squad: 8,
             faction: "Phoenix_Cell",
+            max_per_squad: 8,
             modify: false,
 		    ship: "RZ-1 A-wing",
             shipId: 2,
@@ -6293,7 +6269,6 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
 //////////////////////C.I.S /////////////
 		{
             name: "General Grievous",
-            name_ENG: "General Grievous",
             id: 163,
             max_per_squad: 1,
             faction: "C.I.S",
@@ -6323,7 +6298,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             faction: "C.I.S",
             ship: "Belbullab-22 Starfighter",
             modify: false,
-		shipId: 57,
+		    shipId: 57,
             skill: 2,
             points: 6,
             loadout: 10,
@@ -6335,7 +6310,6 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
 		{
             name: "Wat Tambor",
-            name_ENG: "Wat Tambor",
             id: 165,
             max_per_squad: 1,
             faction: "C.I.S",
@@ -6353,7 +6327,6 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
   		{
             name: "General Kleeve",
-            name_ENG: "General Kleeve",
             id: 166,
             max_per_squad: 1,
             faction: "C.I.S",
@@ -6374,12 +6347,11 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             name: "Autopilote Feethan Ottraw",
             name_ENG: "Feethan Ottraw Autopilot",
             id: 167,
-            unique: false,
-            faction: "C.I.S",
             max_per_squad: 8,
+            faction: "C.I.S",
             ship: "Belbullab-22 Starfighter",
             shipId: 57,
-		    modify: true,
+		modify: true,
             skill: 1,
             points: 5,
             keyword: ["Droid"],
@@ -6393,7 +6365,6 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
   		
   		{
             name: "AP5",
-            name_ENG: "AP5",
             id: 168,
             max_per_squad: 1,
             faction: "C.I.S",
@@ -6415,7 +6386,6 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
 		{
             name: "Rune Haako",
-            name_ENG: "Rune Haako",
             id: 169,
             max_per_squad: 1,
             faction: "C.I.S",
@@ -6433,7 +6403,6 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
         {
             name: "Nute Gunray",
-            name_ENG: "Nute Gunray",
             id: 170,
             max_per_squad: 1,
             faction: "C.I.S",
@@ -6451,7 +6420,6 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
 		{
             name: "Riff Tamson",
-            name_ENG: "Riff Tamson",
             id: 171,
             max_per_squad: 1,
             faction: "C.I.S",
@@ -6471,11 +6439,12 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             name: "Autopilote de Droïde Tactique",
             name_ENG: "Tactical Droid Autopilot",
             id: 172,
+            max_per_squad: 8,
             faction: "C.I.S",
+            max_per_squad: 8,
             ship: "Sheathipede-Class Shuttle",
             shipId: 45,
-		    max_per_squad: 8,
-            modify: true,
+		    modify: true,
             skill: 1,
             points: 6,
             loadout: 6,
@@ -6527,7 +6496,6 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
   		{
             name: "DGS-286",
-            name_ENG: "DGS-286",
             id: 175,
             max_per_squad: 1,
             faction: "C.I.S",
@@ -6546,7 +6514,6 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         },
     	{
             name: "DGS-047",
-            name_ENG: "DGS-047",
             id: 176,
             max_per_squad: 1,
             faction: "C.I.S",
@@ -6569,6 +6536,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             id: 177,
             max_per_squad: 8,
             faction: "C.I.S",
+            max_per_squad: 8,
             ship: "HMP Droid Gunship",
             shipId: 67,
 		    modify: false,
@@ -6624,6 +6592,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             id: 180,
             max_per_squad: 8,
             faction: "C.I.S",
+            max_per_squad: 8,
             ship: "Droid Tri-fighter",
 			modify: false,
             shipId: 70,
@@ -6681,7 +6650,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             faction: "C.I.S",
             ship: "Hyena-class Droid Bomber",
             shipId: 59,
-		    modify: false,
+		    max_per_squad: 8,
+            modify: false,
             skill: 1,
             points: 5,
             loadout: 2,
@@ -6698,7 +6668,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             faction: "C.I.S",
             ship: "Vulture-class Droid Fighter",
             shipId: 56,
-		    modify: false,
+		    max_per_squad: 8,
+            modify: false,
             skill: 1,
             points: 3,
             loadout: 0,
@@ -7845,7 +7816,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             name_ENG: "Captain Oicunn",
             id: 244,
             modify: false,
-		max_per_squad: 1,
+		    max_per_squad: 1,
             faction: "Imperial_Elite_Forces",
             ship: "VT-49 Decimator",
             shipId: 17,
@@ -8244,14 +8215,13 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
     ];
  
 const upgrades = [
-        // ///////////////////////////////////////////     GENERIC UPGRADE ///////////////////////////////////////////////////
+        // ##############################################      GENERIC UPGRADE ##########################""
             {
                 name: "Astromech R2",
             	name_ENG: "R2 Astromech",
                 id: 0,
                 available: true,
                 modify: false,
-                max_per_squad: 8,
                 slot: "Astromech",
                 points: 6,
                 charge: 2,
@@ -8264,7 +8234,6 @@ const upgrades = [
                 modify: false,
                 id: 1,
                 available: true,
-                max_per_squad: 8,
                 slot: "Astromech",
                 points: 3,
                 effect: "Vous pouvez maintenir jusqu’à 2 cibles verrouillées. Chaque verrouillage doit être sur un objet différent. Après avoir effectué une action #TL# , vous pouvez verrouiller une cible.",
@@ -8274,8 +8243,8 @@ const upgrades = [
                 name:"Astromech R4",
                 name_ENG: "R4 Astromech",
                 id: 2,
-                available: true,
                 max_per_squad: 8,
+                available: true,
                 modify: false,
                 slot: "Astromech",
                 points: 2,
@@ -8287,8 +8256,8 @@ const upgrades = [
                 name:"Astromech R5",
                 name_ENG: "R5 Astromech",
                 id: 3,
-                available: true,
                 max_per_squad: 8,
+                available: true,
                 modify: false,
                 slot: "Astromech",
                 points: 4,
@@ -8300,8 +8269,8 @@ const upgrades = [
                 name: "Astromech Vigilant",
                 name_ENG: "Watchful Astromech",
                 id: 4,
-                available: true,
                 max_per_squad: 8,
+                available: true,
                 modify: false,
                 slot: "Astromech",
                 points: 2,
@@ -8313,10 +8282,10 @@ const upgrades = [
                 name: "Tireur Hors-Pair",
                 name_ENG: "Crack Shot",
                 id: 5,
+                max_per_squad: 8,
                 available: true,
                 modify: false,
-                max_per_squad: 8,
-                lot: "Talent",
+                slot: "Talent",
                 points: 3,
                 charge: 1,
                 effect: "Tant que vous effectuez une attaque principale, si le défenseur est dans votre #bulls#, avant l’étape « Neutraliser les résultats », vous pouvez dépenser 1 #ch# pour annuler 1 résultat #hit#.",
@@ -8326,10 +8295,10 @@ const upgrades = [
                 name: "Insaisissable",
                 name_ENG: "Elusive",
                 id: 6,
+                max_per_squad: 8,
                 available: false,
                 modify: true,
                 slot: "Talent",
-                max_per_squad: 8,
                 points: 5,
                 effect: "Lorsque vous défendez contre une attaque à portée 3 ou contre une attaque de #tur#, vous pouvez améliorer un dé de défense.",
                 restrictions: [2,"upgrade","Talent",""],
@@ -8343,9 +8312,9 @@ const upgrades = [
                 name: "Loup Solitaire",
                 name_ENG: "Lone Wolf",
                 id: 7,
+                max_per_squad: 8,
                 available: true,
                 modify: false,
-                max_per_squad: 8,
                 slot: "Talent",
                 points: 3,
                 recurring: 1,
@@ -8357,8 +8326,8 @@ const upgrades = [
                 name: "Intimidation",
                 name_ENG: "Intimidation",
                 id: 8,
-                available: true,
                 max_per_squad: 8,
+                available: true,
                 modify: false,
                 slot: "Talent",
                 points: 2,
@@ -8369,8 +8338,8 @@ const upgrades = [
                 name:"Adresse au Tir",
                 name_ENG: "Marksmanship",
                 id: 9,
-                available: true,
                 max_per_squad: 8,
+                available: true,
                 modify: false,
                 slot: "Talent",
                 points: 1,
@@ -8381,8 +8350,8 @@ const upgrades = [
                 name: "Manoeuvre Improbable",
                 name_ENG: "Outmaneuver",
                 id: 10,
-                available: true,
                 max_per_squad: 8,
+                available: true,
                 modify: false,
                 slot: "Talent",
                 points: 8,
@@ -8393,9 +8362,9 @@ const upgrades = [
                 name: "Prédateur",
                 name_ENG: "Predator",
                 id: 11,
+                max_per_squad: 8,
                 available: true,
                 modify: false,
-                max_per_squad: 8,
                 slot: "Talent",
                 points: 3,
                 effect: "Tant que vous effectuez une attaque principale, si le défenseur est dans votre #bulls#, vous pouvez relancer 1 dé d’attaque.",
@@ -8407,9 +8376,9 @@ const upgrades = [
                 id: 12,
                 available: true,
                 modify: true,
-                max_per_squad: 1,
                 slot: "Talent",
                 points: 5,
+                max_per_squad: 1,
                 effect: "Tant que vous coordonnez, le vaisseau que vous avez choisi peut effectuer une action seulement si celle-ci est également dans votre barre d’action.<br>Ajoute l'action (CO)",
                 faction: "",
                 modifier_func: [
@@ -8420,9 +8389,9 @@ const upgrades = [
                 name: "Tactique de Nuée",
                 name_ENG: "Swarm Tactics",
                 id: 13,
+                max_per_squad: 8,
                 available: true,
                 modify: false,
-                max_per_squad: 8,
                 slot: "Talent",
                 points: 2,
                 effect: "Au début de la phase d’engagement, vous pouvez choisir 1 vaisseau allié à portée 1. Dans ce cas, considérez que son initiative est égale à la vôtre jusqu’à la fin du round.",
@@ -8432,9 +8401,9 @@ const upgrades = [
                 name: "Tir Habile",
                 name_ENG: "Trick Shot",
                 id: 14,
+                max_per_squad: 8,
                 available: true,
                 modify: false,
-                max_per_squad: 8,
                 slot: "Talent",
                 points: 3,
                 effect: "Tant que vous effectuez une attaque qui est gênée par un obstacle, lancez 1 dé d’attaque supplémentaire.",
@@ -8444,10 +8413,10 @@ const upgrades = [
                 name:"Tir Instantané",
                 name_ENG: "Snap Shot",
                 id: 15,
+                max_per_squad: 8,
                 available: true,
                 modify: false,
                 slot: "Talent",
-                max_per_squad: 8,
                 points: 6,
                 attack: 2,
                 range: [2],
@@ -8459,10 +8428,10 @@ const upgrades = [
                 name: "Officier Tactique",
                 name_ENG: "Tactical Officer",
                 id: 16,
+                max_per_squad: 8,
                 available: false,
                 modify: true,
                 slot: "Crew",
-                max_per_squad: 8,
                 points: 3,
                 effect: "Ajoute l'action #CO# blanche",
                 restrictions: [1,"action", "R-Coordinate",""],
@@ -8475,9 +8444,9 @@ const upgrades = [
                 name: "Copilote Perspicace",
                 name_ENG: "Perceptive Copilot",
                 id: 17,
+                max_per_squad: 8,
                 available: true,
                 modify: false,
-                max_per_squad: 8,
                 slot: "Crew",
                 points: 8,
                 effect: "Après avoir effectué une action #FS#, gagnez 1 marqueur de concentration.",
@@ -8487,8 +8456,8 @@ const upgrades = [
                 name: "Apprenti Technicien",
                 name_ENG: "Novice Technician",
                 id: 18,
-                available: true,
                 max_per_squad: 8,
+                available: true,
                 modify: false,
                 slot: "Crew",
                 points: 2,
@@ -8499,9 +8468,9 @@ const upgrades = [
                 name: "Droïde 'Gonk' GNK",
                 name_ENG: 'GNK "Gonk" Droid',
                 id: 19,
+                max_per_squad: 8,
                 available: true,
                 modify: false,
-                max_per_squad: 8,
                 slot: "Crew",
                 points: 4,
                 charge: 1,
@@ -8512,8 +8481,8 @@ const upgrades = [
                 name: "Slicer Freelance",
                 name_ENG: "Freelance Slicer",
                 id: 20,
-                available: true,
                 max_per_squad: 8,
+                available: true,
                 modify: false,
                 slot: "Crew",
                 points: 2,
@@ -8524,9 +8493,9 @@ const upgrades = [
                 name: "Cannonier Adroit",
                 name_ENG: "Agile Gunner",
                 id: 21,
+                max_per_squad: 8,
                 available: true,
                 modify: false,
-                max_per_squad: 8,
                 slot: "Gunner",
                 points: 1,
                 effect: "Pendant la phase de dénouement, vous pouvez faire pivoter votre indicateur #tur#",
@@ -8536,9 +8505,9 @@ const upgrades = [
                 name: "Artilleur Hors-Pair",
                 name_ENG: "Hotshot Gunner",
                 id: 22,
+                max_per_squad: 8,
                 available: true,
                 modify: false,
-                max_per_squad: 8,
                 slot: "Gunner",
                 points: 6,
                 effect: "Après avoir effectué une attaque de #tur#, retirez un marqueur de concentration, de calcul, ou d’évasion du défenseur.",
@@ -8549,8 +8518,8 @@ const upgrades = [
                 name: "Bombardier Compétent",
                 name_ENG: "Skilled Bombardier",
                 id: 23,
-                available: true,
                 max_per_squad: 8,
+                available: true,
                 modify: false,
                 slot: "Gunner",
                 points: 2,
@@ -8561,8 +8530,8 @@ const upgrades = [
                 name: "Artilleur Vétéran",
                 name_ENG: "Veteran Gunner",
                 id: 24,
-                available: true,
                 max_per_squad: 8,
+                available: true,
                 modify: false,
                 slot: "Gunner",
                 points: 5,
@@ -8573,8 +8542,8 @@ const upgrades = [
                 name: "Officier des Systèmes d'Armement",
                 name_ENG: "Weapons Systems Officer",
                 id: 25,
-                available: true,
                 max_per_squad: 8,
+                available: true,
                 modify: false,
                 points: 6,
                 slot: "Gunner",
@@ -8585,8 +8554,8 @@ const upgrades = [
                 name: "Ciblage Prioritaire Automatisé",
                 name_ENG: "Automated Target Priority",
                 id: 26,
-                available: true,
                 max_per_squad: 8,
+                available: true,
                 modify: false,
                 slot: "Tech",
                 points: 2,
@@ -8597,9 +8566,9 @@ const upgrades = [
                 name: "Analyseur de Modèles",
                 name_ENG: "Pattern Analyzer",
                 id: 27,
+                max_per_squad: 8,
                 available: true,
                 modify: false,
-                max_per_squad: 8,
                 slot: "Tech",
                 points: 5,
                 effect: "Tant que vous exécutez entièrement une manœuvre rouge, avant l’étape « Vérifier la difficulté », vous pouvez effectuer 1 action.",
@@ -8609,9 +8578,9 @@ const upgrades = [
                 name: "Optiques Avancées",
                 name_ENG: "Advanced Optics",
                 id: 28,
+                max_per_squad: 8,
                 available: true,
                 modify: false,
-                max_per_squad: 8,
                 slot: "Tech",
                 points: 5,
                 effect: "Tant que vous effectuez une attaque, vous pouvez dépenser 1 marqueur de concentration pour changer 1 de vos résultats vierges en un résultat #hit#.",
@@ -8622,9 +8591,9 @@ const upgrades = [
                 name: "Synchroniseur Télémétrique",
                 name_ENG: "Targeting Synchronizer",
                 id: 29,
+                max_per_squad: 8,
                 available: true,
                 modify: false,
-                max_per_squad: 8,
                 slot: "Tech",
                 points: 2,
                 effect: "Tant qu’un vaisseau allié à portée 1–3 effectue une attaque contre une cible que vous avez verrouillée, ce vaisseau allié ignore le prérequis d’attaque #TL#.",
@@ -8635,11 +8604,11 @@ const upgrades = [
                 name: "Missiles Ioniques",
                 name_ENG: "Ion Missiles",
                 id: 30,
+                max_per_squad: 8,
                 available: true,
                 modify: false,
                 slot: "Missile",
                 points: 4,
-                max_per_squad: 8,
                 attack: 3,
                 range: [2,3],
                 charge: 3,
@@ -8650,10 +8619,10 @@ const upgrades = [
                 name: "Missiles à Tête Chercheuse",
                 name_ENG: "Homing Missiles",
                 id: 31,
+                max_per_squad: 8,
                 available: true,
                 modify: false,
                 slot: "Missile",
-                max_per_squad: 8,
                 points: 4,
                 attack: 4,
                 range: [2,3],
@@ -8665,11 +8634,11 @@ const upgrades = [
                 name: "Missiles Groupés",
                 name_ENG: "Cluster Missiles",
                 id: 32,
+                max_per_squad: 8,
                 available: true,
                 modify: false,
                 slot: "Missile",
                 points: 4,
-                max_per_squad: 8,
                 attack: 3,
                 range: [1,2],
                 charge: 2,
@@ -8680,11 +8649,11 @@ const upgrades = [
                 name: "Roquettes de Barrage",
                 name_ENG: "Barrage Rockets",
                 id: 33,
+                max_per_squad: 8,
                 available: false,
                 modify: true,
                 slot: "Missile",
                 points: 7,
-                max_per_squad: 8,
                 attack: 3,
                 range: [2,3],
                 charge: 5,
@@ -8717,7 +8686,6 @@ const upgrades = [
                 available: true,
                 modify: false,
                 slot: "Missile",
-                max_per_squad: 8,
                 attack: 3,
                 range: [1,3],
                 charge: 1,
@@ -8729,9 +8697,9 @@ const upgrades = [
                 name: "Torpilles à Plasma",
                 name_ENG: "Plasma Torpedoes",
                 id: 36,
+                max_per_squad: 8,
                 available: true,
                 modify: false,
-                max_per_squad: 8,
                 slot: "Torpedo",
                 points: 6,
                 attack: 3,
@@ -8744,10 +8712,10 @@ const upgrades = [
                 name: "Torpille à Proton Avancée",
                 name_ENG: "Adv. Proton Torpedo",
                 id: 37,
+                max_per_squad: 8,
                 available: true,
                 modify: false,
                 slot: "Torpedo",
-                max_per_squad: 8,
                 points: 8,
                 attack: 5,
                 range: [1],
@@ -8759,10 +8727,10 @@ const upgrades = [
                 name: "Torpilles à Concussion",
                 name_ENG: "Concussion Torpedoes",
                 id: 38,
+                max_per_squad: 8,
                 available: true,
                 modify: false,
                 slot: "Torpedo",
-                max_per_squad: 8,
                 points: 6,
                 attack: 3,
                 range: [2,3],
@@ -8776,11 +8744,11 @@ const upgrades = [
                 name: "Roquette à Proton",
                 name_ENG: "Proton Rocket",
                 id: 39,
+                max_per_squad: 8,
                 available: true,
                 modify: false,
                 slot: "Torpedo",
                 points: 8,
-                max_per_squad: 8,
                 attackbull: 5,
                 range: [1,2],
                 charge: 1,
@@ -8791,9 +8759,9 @@ const upgrades = [
                 name: "Générateur de Sous-Munitions",
                 name_ENG: "Bomblet Generator",
                 id: 40,
+                max_per_squad: 8,
                 available: false,
                 modify: true,
-                max_per_squad: 8,
                 slot: "Payload",
                 points: 2,
                 charge: 2,
@@ -8809,9 +8777,9 @@ const upgrades = [
                 name: "Filet Conner",
                 name_ENG: "Conner Nets",
                 id: 41,
+                max_per_squad: 8,
                 available: true,
                 modify: false,
-                max_per_squad: 8,
                 slot: "Payload",
                 points: 3,
                 charge: 1,
@@ -8823,9 +8791,9 @@ const upgrades = [
                 name: "Bombes à Proton",
                 name_ENG: "Proton Bombs",
                 id: 42,
+                max_per_squad: 8,
                 available: true,
                 modify: false,
-                max_per_squad: 8,
                 slot: "Payload",
                 points: 4,
                 charge: 2,
@@ -8837,10 +8805,10 @@ const upgrades = [
                 name: "Mines de Proximité",
                 name_ENG: "Proximity Mines",
                 id: 43,
+                max_per_squad: 8,
                 available: true,
                 modify: false,
                 slot: "Payload",
-                max_per_squad: 8,
                 points: 6,
                 charge: 2,
                 effect: "Pendant la phase de système, vous pouvez dépenser 1 #ch# pour larguer une mine de proximité en utilisant le gabarit 1#straight#.<br>Les #ch# de cette carte ne peuvent pas être récupérées.",
@@ -8851,10 +8819,10 @@ const upgrades = [
                 name: "Charges Sismiques",
                 name_ENG: "Seismic Charges",
                 id: 44,
+                max_per_squad: 8,
                 available: true,
                 modify: false,
                 slot: "Payload",
-                max_per_squad: 8,
                 points: 2,
                 charge: 2,
                 effect: "Pendant la phase de système, vous pouvez dépenser 1 #ch# pour larguer une charge sismique en utilisant le gabarit 1#straight#.",
@@ -8865,9 +8833,9 @@ const upgrades = [
                 name: "Bombes Ioniques",
                 name_ENG: "Ion Bombs",
                 id: 45,
+                max_per_squad: 8,
                 available: true,
                 modify: false,
-                max_per_squad: 8,
                 slot: "Payload",
                 points: 3,
                 charge: 2,
@@ -8879,9 +8847,9 @@ const upgrades = [
                 name: 'Rayon de Brouillage',
                 name_ENG: "Jamming Beam",
                 id: 46,
+                max_per_squad: 8,
                 available: true,
                 modify: false,
-                max_per_squad: 8,
                 slot: "Cannon",
                 points: 1,
                 attack: 3,
@@ -8893,9 +8861,9 @@ const upgrades = [
                 name: "Rayon Tracteur",
                 name_ENG: "Tractor Beam",
                 id: 47,
+                max_per_squad: 8,
                 available: true,
                 modify: false,
-                max_per_squad: 8,
                 slot: "Cannon",
                 points: 4,
                 attack: 3,
@@ -8907,9 +8875,9 @@ const upgrades = [
                 name: "Canon Ionique",
                 name_ENG: "Ion Cannon",
                 id: 48,
+                max_per_squad: 8,
                 available: true,
                 modify: false,
-                max_per_squad: 8,
                 slot: "Cannon",
                 points: 5,
                 attack: 3,
@@ -8921,10 +8889,10 @@ const upgrades = [
                 name: "Canon Laser Lourd",
                 name_ENG: "Heavy Laser Cannon",
                 id: 49,
+                max_per_squad: 8,
                 available: true,
                 modify: false,
-                max_per_squad: 8,
-                lot: "Cannon",
+                slot: "Cannon",
                 points: 4,
                 attackbull: 4,
                 range: [2,3],
@@ -8938,7 +8906,6 @@ const upgrades = [
                 available: false,
                 modify: true,
                 slot: "Cannon",
-                max_per_squad: 8,
                 points: 7,
                 attack: 3,
                 range: [2,3],
@@ -8953,8 +8920,8 @@ const upgrades = [
                 name: "Tourelle à Canon Ionique",
                 name_ENG: "Ion Cannon Turret",
                 id: 51,
-                available: true,
                 max_per_squad: 8,
+                available: true,
                 modify: true,
                 slot: "Turret",
                 points: 5,
@@ -8971,9 +8938,9 @@ const upgrades = [
                 name: "Tourelle Dorsale",
                 name_ENG: "Dorsal Turret",
                 id: 52,
+                max_per_squad: 8,
                 available: true,
                 modify: true,
-                max_per_squad: 8,
                 slot: "Turret",
                 points: 2,
                 attackt: 2,
@@ -9005,9 +8972,9 @@ const upgrades = [
                 name: "Tourelle Laser Jumelé",
                 name_ENG: "Twin Laser Turrets",
                 id: 54,
+                max_per_squad: 8,
                 available: true,
                 modify: true,
-                max_per_squad: 8,
                 slot: "Turret",
                 points: 4,
                 attackt: 3,
@@ -9022,8 +8989,8 @@ const upgrades = [
                 name : "Support pour Canon Rotatif",
                 name_ENG: "Cannon Turret Support",
                 id: 55,
-                available: true,
                 max_per_squad: 8,
+                available: true,
                 modify: true,
                 slot: "Turret",
                 points: 3,
@@ -9039,9 +9006,9 @@ const upgrades = [
                 id: 56,
                 available: false,
                 modify: false,
-                max_per_squad: 1,
                 slot: "Illicit",
                 points: 4,
+                max_per_squad: 1,
                 charge: 2,
                 effect: "Action : Dépensez 1 #ch# pour effectuer une action #CK#.<br>Au début de la phase de préparation, lancez 1 dé d’attaque. Sur un résultat #eye#, désoccultez-vous ou défaussez votre marqueur d’occultation.",
                 restrictions: [1,"base","Small", "Medium"],
@@ -9051,10 +9018,10 @@ const upgrades = [
                 name: "Cybernétiques de Contrebande",
                 name_ENG: "Contraband Cybernetics",
                 id: 57,
+                max_per_squad: 8,
                 available: true,
                 modify: false,
                 slot: "Illicit",
-                max_per_squad: 8,
                 points: 3,
                 charge: 1,
                 effect: "Avant votre activation, vous pouvez dépenser 1 #ch#. Dans ce cas, jusqu’à la fin du round, vous pouvez effectuer des actions et exécuter des manœuvres rouges, même si vous êtes stressé.",
@@ -9064,10 +9031,10 @@ const upgrades = [
                 name: "Salve Automatique",
                 name_ENG: "Deadman's Switch",
                 id: 58,
+                max_per_squad: 8,
                 available: true,
                 modify: false,
                 slot: "Illicit",
-                max_per_squad: 8,
                 points: 2,
                 effect: "Après que vous avez été détruit, chaque autre vaisseau à portée 0–1 subit 1 dégât #hit#.",
                 faction: ""
@@ -9076,9 +9043,9 @@ const upgrades = [
                 name: "Hypercarburant Coaxium",
                 name_ENG: "Coaxium Hyperfuel",
                 id: 59,
+                max_per_squad: 8,
                 available: true,
                 modify: false,
-                max_per_squad: 8,
                 slot: "Illicit",
                 points: 5,
                 effect: "ACTION : dépensez 1 #ch#. Vous pouvez effectuer une action #MASL#. Vous pouvez effectuer cette action même après avoir partiellement effectué une manoeuvre ou sous l’effet du stress. Puis exposez 1 carte de dégât ou prenez 1 dégât critique.",
@@ -9089,9 +9056,9 @@ const upgrades = [
                 name: "Codes Transpondeur Falsifiés",
                 name_ENG: "False Transponder Codes",
                 id: 60,
+                max_per_squad: 8,
                 available: true,
                 modify: false,
-                max_per_squad: 8,
                 points: 3,
                 charge: 1,
                 slot: "Illicit",
@@ -9102,9 +9069,9 @@ const upgrades = [
                 name: "Blindage Ablatif", 
                 name_ENG: "Ablative Plating",
                 id: 61,
+                max_per_squad: 8,
                 available: false,
                 modify: false,
-                max_per_squad: 8,
                 slot: "Modification",
                 points: 4,
                 charge: 2,
@@ -9119,7 +9086,6 @@ const upgrades = [
                 id: 62,
                 available: false,
                 modify: false,
-                max_per_squad: 8,
                 slot: "Modification",
                 points: 6,
                 charge: 2,
@@ -9134,7 +9100,6 @@ const upgrades = [
                 id: 63,
                 available: false,
                 modify: true,
-                max_per_squad: 8,
                 slot: "Modification",
                 points: 3,
                 effect: "Donne l'action #BO# blanche",
@@ -9162,10 +9127,10 @@ const upgrades = [
                 name: "Brouilleur Tactique",
                 name_ENG: "Tactical Scrambler",
                 id: 65,
+                max_per_squad: 8,
                 available: false,
                 modify: false,
                 slot: "Modification",
-                max_per_squad: 8,
                 points: 2,
                 effect: "Tant que vous gênez l’attaque d’un vaisseau ennemi, le défenseur lance 1 dé de défense supplémentaire.",
                 restrictions: [1,"base", "Medium", "Large"],
@@ -9177,8 +9142,8 @@ const upgrades = [
                 id: 66,
                 available: true,
                 modify: true,
-                slot: "Modification",
                 max_per_squad: 8,
+                slot: "Modification",
                 points: 6,
                 effect: "+1 Coque",
                 faction: "",
@@ -9190,9 +9155,9 @@ const upgrades = [
                 name: "Bouclier Amélioré",
                 name_ENG: "Shield Upgrade",
                 id: 67,
+                max_per_squad: 8,
                 available: true,
                 modify: true,
-                max_per_squad: 8,
                 slot: "Modification",
                 points: 7,
                 effect: "+1 Bouclier",
@@ -9206,8 +9171,8 @@ const upgrades = [
                 name_ENG: "Stealth Device",
                 id: 68,
                 available: true,
-                modify: false,
                 max_per_squad: 8,
+                modify: false,
                 slot: "Modification",
                 points: 6,
                 charge: 1,
@@ -9218,9 +9183,9 @@ const upgrades = [
                 name: "Détonateur à Retardement",
                 name_ENG: "Delayed Fuses",
                 id: 69,
+                max_per_squad: 8,
                 available: true,
                 modify: false,
-                max_per_squad: 8,
                 slot: "Modification",
                 points: 1,
                 effect: "Après avoir largué, lancé ou placé une bombe ou une mine, vous pouvez placer dessus 1 marqueur d’amorce.",
@@ -9230,10 +9195,10 @@ const upgrades = [
                 name: "Ordinateur de Visée",
                 name_ENG: "Targeting Computer",
                 id: 70,
+                max_per_squad: 8,
                 available: true,
                 modify: true,
                 slot: "Modification",
-                max_per_squad: 8,
                 points: 2,
                 effect: "Donne accès l'action #TL#",
                 faction: "",
@@ -9245,9 +9210,9 @@ const upgrades = [
                 name: "Senseurs Avancés",
                 name_ENG: "Advanced Sensors",
                 id: 71,
+                max_per_squad: 8,
                 available: true,
                 modify: false,
-                max_per_squad: 8,
                 slot: "Sensor",
                 points: 8,
                 effect: "Après avoir révélé votre cadran, vous pouvez effectuer 1 action. Dans ce cas, vous ne pouvez pas effectuer d’autre action pendant votre activation.",
@@ -9257,9 +9222,9 @@ const upgrades = [
                 name: "Détecteur Anticollision",
                 name_ENG: "Collision Detector",
                 id: 72,
+                max_per_squad: 8,
                 available: true,
                 modify: false,
-                max_per_squad: 8,
                 slot: "Sensor",
                 points: 5,
                 charge: 2,
@@ -9270,8 +9235,8 @@ const upgrades = [
                 name: "Système de Controle de Tir",
                 name_ENG: "Fire-Control System",
                 id: 73,
-                available: true,
                 max_per_squad: 8,
+                available: true,
                 modify: false,
                 slot: "Sensor",
                 points: 2,
@@ -9282,8 +9247,8 @@ const upgrades = [
                 name: "Scanner Longue Portée",
                 name_ENG: "Long Range Scanner",
                 id: 74,
-                available: true,
                 max_per_squad: 8,
+                available: true,
                 modify: false,
                 slot: "Sensor",
                 points: 5,
@@ -9294,8 +9259,8 @@ const upgrades = [
                 name: "Brouilleur de Senseur",
                 name_ENG: "Sensor Jammer",
                 id: 75,
-                available: true,
                 max_per_squad: 8,
+                available: true,
                 modify: false,
                 slot: "Sensor",
                 points: 8,
@@ -9306,8 +9271,8 @@ const upgrades = [
                 name: "Patience",
                 name_ENG: "Patience",
                 id: 76,
-                available: true,
                 max_per_squad: 8,
+                available: true,
                 modify: false,
                 slot: "Force",
                 points: 2,
@@ -9320,8 +9285,8 @@ const upgrades = [
                 name_ENG: "Precognitive Reflexes",
                 id: 77,
                 available: false,
-                modify: false,
                 max_per_squad: 8,
+                modify: false,
                 slot: "Force",
                 points: 9,
                 effect: "Après avoir révélé votre cadran, vous pouvez dépenser 1 #fo# pour effectuer une action #BR# ou #BO#. Puis, si vous avez effectué une action qui n’est pas sur votre barre d’action, recevez 2 marqueurs de contrainte. Dans ce cas, vous ne pouvez pas effectuer une autre action pendant votre activation.",
@@ -9332,8 +9297,8 @@ const upgrades = [
                 name: "As de la Manoeuvre",
                 name_ENG: "Brilliant Evasion",
                 id: 78,
-                available: true,
                 max_per_squad: 8,
+                available: true,
                 modify: false,
                 slot: "Force",
                 points: 2,
@@ -9344,8 +9309,8 @@ const upgrades = [
                 name: "Sens",
                 name_ENG: "Sense",
                 id: 79,
-                available: true,
                 max_per_squad: 8,
+                available: true,
                 modify: false,
                 slot: "Force",
                 points: 5,
@@ -9356,8 +9321,8 @@ const upgrades = [
                 name: "Visée Instinctive",
                 name_ENG: "Instinctive Aim",
                 id: 80,
-                available: true,
                 max_per_squad: 8,
+                available: true,
                 modify: false,
                 slot: "Force",
                 points: 1,
@@ -9368,9 +9333,9 @@ const upgrades = [
                 name: "Système de Tir Automatique",
                 name_ENG: "Automatic Gunning System",
                 id: 81,
+                max_per_squad: 8,
                 available: true,
                 modify: false,
-                max_per_squad: 8,
                 slot: "Calculator",
                 points: 3,
                 effect: "Après avoir effectué une attaque principale, vous pouvez effectuer une attaque bonus d’arme secondaire. Lors de cette attaque, vous ne pouvez pas ajouter ou modifier des dés d’attaque.",
@@ -9380,9 +9345,9 @@ const upgrades = [
                 name: "Calculs en Réseau Avancés",
                 name_ENG: "Advanced Networked Calculations",
                 id: 82,
+                max_per_squad: 8,
                 available: true,
                 modify: false,
-                max_per_squad: 8,
                 slot: "Calculator",
                 points: 2,
                 effect: "Lorsque vous défendez ou attaquez, vous pouvez dépenser 1 marqueur de calcul d’un vaisseau allié à portée 0-2 pour changer 1 résultat #eye# en résultat #evd# ou #hit#.",
@@ -9392,11 +9357,12 @@ const upgrades = [
                 name: "Données de Pistage Hyperspatial",
                 name_ENG: "Hyperspace Tracking Data",
                 id: 83,
+                max_per_squad: 8,
                 available: true,
-                max_per_squad: 1,
                 modify: false,
                 slot: "Calculator",
                 points: 4,
+                max_per_squad: 1,
                 effect: "Mise en place : vous pouvez considérer votre initiative comme étant 0 ou 7. A la fin de la phase de mise en place, tous les vaisseaux alliés à portée 0-2 de vous gagne 1 marqueur de calcul. Ces marqueurs de calcul ne sont pas nettoyés en phase de fin.",
                 faction: ""
             },
@@ -9404,11 +9370,12 @@ const upgrades = [
                 name: "Ordinateur de Vol Avancé",
                 name_ENG: "Advanced Flight Computer",
                 id: 84,
+                max_per_squad: 8,
                 available: true,
                 modify: false,
-                max_per_squad: 1,
                 slot: "Calculator",
                 points: 3,
+                max_per_squad: 1,
                 effect: "Mise en place : vous commencez en réserve. Vous pouvez dépenser entre 0 et 2 charges.<br>Au début de la phase de planification, s’il n’y a plus de charge sur cette carte, retournez là face cachée, puis placez votre vaisseau intégralement à portée 1 d’un bord de l’aire de jeu.",
                 faction: ""
             },
@@ -9416,9 +9383,9 @@ const upgrades = [
                 name: "Crypteur de Données",
                 name_ENG: "Encrypter",
                 id: 85,
+                max_per_squad: 8,
                 available: true,
                 modify: false,
-                max_per_squad: 8,
                 slot: "Calculator",
                 points: 5,
                 effect: "Vous pouvez coordonner jusqu’à la portée 3. Lorsque vous coordonnez un vaisseau, recevez 1 marqueur de calcul.",
@@ -9538,9 +9505,10 @@ const upgrades = [
                 name: "Altruisme",
                 name_ENG: "Selfless",
                 id: 94,
+                
+                max_per_squad: 8,
                 available: true,
                 modify: false,
-                max_per_squad: 8,
                 slot: "Talent",
                 points: 3,
                 effect: "Tant qu’un autre vaisseau allié à portée 0–1 défend, avant l’étape « Neutraliser les résultats », si vous êtes dans l’arc de l’attaque, vous pouvez subir 1 dégât #crit# pour annuler 1 résultat #crit#.",
@@ -9550,6 +9518,7 @@ const upgrades = [
                 name: "K-2SO",
                 name_ENG: "K-2SO",
                 id: 95,
+                max_per_squad: 8,
                 available: true,
                 modify: true,
                 slot: "Crew",
@@ -9600,8 +9569,8 @@ const upgrades = [
                 name: "Impitoyable",
                 name_ENG: "Ruthless",
                 id: 98,
-                available: true,
                 max_per_squad: 8,
+                available: true,
                 modify: false,
                 slot: "Talent",
                 effect: "Tant que vous effectuez une attaque, vous pouvez choisir un autre vaisseau allié à portée 0–1 du défenseur. Dans ce cas, le vaisseau choisi subit 1 dégât #hit# et vous pouvez changer 1 de vos résultats de dé en un résultat #hit#.",
@@ -9612,9 +9581,9 @@ const upgrades = [
                 name: "Moteurs Ioniques de Précision",
                 name_ENG: "Precision Ion Engines",
                 id: 99,
+                max_per_squad: 8,
                 available: false,
                 modify: false,
-                max_per_squad: 8,
                 slot: "Modification",
                 points: 2,
                 effect: "Avant d’exécuter une manœuvre de Virage Koiogran à vitesse 1–3, vous pouvez dépenser 1 #ch# pour exécuter cette manœuvre en tant que #Sleft# ou #Sright# de même vitesse à la place, et vice-versa.",
@@ -9626,9 +9595,9 @@ const upgrades = [
                 name: "Moteur Ionique Jumelé Mk2",
                 name_ENG: "Twin Ion Engine Mk2",
                 id: 100,
+                max_per_squad: 8,
                 available: false,
                 modify: false,
-                max_per_squad: 8,
                 slot: "Modification",
                 points: 2,
                 effect: "Après avoir effectué une manœuvre rouge, vous pouvez dépenser 1 #ch# pour effectuer un tonneau.",
@@ -9639,10 +9608,10 @@ const upgrades = [
                 name: "Chassis Allégé",
                 name_ENG: "Lightweight Frame",
                 id: 101,
+                max_per_squad: 8,
                 available: false,
                 modify: false,
                 slot: "Modification",
-                max_per_squad: 8,
                 points: 3,
                 effect: "Lorsqu’un adversaire vous attaque, il peut modifier un résultat #hit# en #crit# . Si vous deviez lancer 2 dés de défense ou moins, vous pouvez lancer 1 dé de défense supplémentaire.",
                 restrictions: [1,"keyword", "TIE",""],
@@ -9664,9 +9633,9 @@ const upgrades = [
                 name: "Artilleur Impérial",
                 nam_ENG: "Imperial Gunner",
                 id: 103,
+                max_per_squad: 8,
                 available: true,
                 modify: false,
-                max_per_squad: 8,
                 points: 5,
                 slot: "Gunner",
                 effect: "Après avoir effectué une attaque qui a échoué, le défenseur gagne un marqueur d’épuisement.",
@@ -9800,9 +9769,9 @@ const upgrades = [
                 name: "Célèbre",
                 name_ENG: "Notorious",
                 id: 113,
+                max_per_squad: 8,
                 available: true,
                 modify: false,
-                max_per_squad: 8,
                 points: 4,
                 charge: 2,
                 faction: ["Bounty_Hunters_Guild"],
@@ -9814,9 +9783,9 @@ const upgrades = [
                 name: "Super Blaster de Poupe",
                 name_ENG: "Hotshot Tail Blaster",
                 id: 114,
+                max_per_squad: 8,
                 available: true,
                 modify: false,
-                max_per_squad: 8,
                 points: 2,
                 attackb: 2,
                 range: [0,1],
@@ -9833,7 +9802,6 @@ const upgrades = [
                 name: "Intrépide",
                 name_ENG: "Fearless",
                 id: 115,
-                max_per_squad: 8,
                 available: true,
                 modify: false,
                 slot: "Talent",
@@ -9935,10 +9903,10 @@ const upgrades = [
                 name: "Blindage Renforcé en Beskar",
                 name_ENG: "Beskar Reinforced Plating",
                 id: 123,
+                max_per_squad: 8,
                 available: true,
                 modify: false,
                 points: 3,
-                max_per_squad: 8,
                 slot: "Modification",
                 charge: 3,
                 effect: "Tant que vous défendez si l'attaquant est dans votre #Farc# , avant qu'une carte de dégât ne vous soit attribuée face visible, vous pouvez dépenser 1 #ch# pour recevoir cette carte face cachée à la place ou dépenser 2 #ch# pour la défausser.",
@@ -9949,9 +9917,9 @@ const upgrades = [
                 name: "Optiques Mandaloriennes",
                 name_ENG: "Mandalorian Optics",
                 id: 124,
+                max_per_squad: 8,
                 available: true,
                 modify: false,
-                max_per_squad: 8,
                 points: 3,
                 slot: "Modification",
                 charge: 2,
@@ -10017,6 +9985,7 @@ const upgrades = [
                 id: 129,
                 available: false,
                 modify: false,
+                max_per_squad: 8,
                 slot: "Illicit",
                 points: 4,
                 charge: 1,
@@ -10033,7 +10002,7 @@ const upgrades = [
                 modify: true,
                 slot: "Title",
                 points: 0,
-                max_per_squad: 2,
+                max_per_squad: 1,
                 faction: ["Pirates_and_Smugglers"],
                 ship: "Scurrg H-6 Bomber",
                 effect: "Retire en emplacement #crew#. Ajoute #tech# et #astromech#. Ajoute 5 points de Loadout et augmente le coût du vaisseau de 1",
@@ -10043,7 +10012,10 @@ const upgrades = [
                     () => add_slots("Tech"),
                     () => add_slots("Astromech"),
                     () => change_stat("loadout",5),
-                    () => change_stat("points",1)
+                    () => change_stat("points",1),
+                    () => may_remove_slots("Astromech",130), //WARNING ! The order of the slots to remove is very important. You have to start removing the last slot, and keep on removing them starting from the last one. Or Else the function 'may_remove_slot' will fail. The reason is a bit tricky, but to make it simple, this function will remove (splice) elements in the array upgrades_Objets and upgrades_Type thinking the position is the last digit of the slotmenu.id. 
+                    () => may_remove_slots("Tech",130)
+                    
                 ]
                 
             },
@@ -10078,10 +10050,10 @@ const upgrades = [
                 name: "Compartiment de Contrebande",
                 name_ENG: "Smuggling Compartment",
                 id: 133,
+                max_per_squad: 8,
                 available: false,
                 modify: true,
                 slot: "Modification",
-                max_per_squad: 8,
                 points: 2,
                 faction: ["Pirates_and_Smugglers"],
                 effect: "Gagnez 1 autre emplacement #mod# et un emplacement #ill#",
@@ -10096,9 +10068,9 @@ const upgrades = [
                 name: "Roublard",
                 name_ENG: "Cunning",
                 id: 134,
+                max_per_squad: 8,
                 available: true,
                 modify: false,
-                max_per_squad: 8,
                 slot: "Talent",
                 points: 3,
                 effect: "Après avoir traversé un obstacle ou un engin, gagnez 1 marqueur de concentration et retirez un marqueur rouge.",
@@ -10132,9 +10104,9 @@ const upgrades = [
                 name: "Torpilles à Proton",
                 name_ENG: "Proton Torpedoes",
                 id: 136,
+                max_per_squad: 8,
                 available: true,
                 modify: false,
-                max_per_squad: 8,
                 slot: "Torpedo",
                 points: 10,
                 faction: "",
@@ -10366,8 +10338,8 @@ const upgrades = [
                 name: "Simulateur de Trajectoire",
                 name_ENG: "Trajectory Simulator",
                 id: 148,
-                available: true, 
                 max_per_squad: 8,
+                available: true, 
                 modify: false,
                 slot: "Tech",
                 points: 4,
@@ -10498,7 +10470,6 @@ const upgrades = [
                 name_ENG: "Relentless",
                 id: 157,
                 available: false, 
-                max_per_squad: 8,
                 modify: false,
                 slot: "Talent",
                 points: 2,
@@ -10563,10 +10534,10 @@ const upgrades = [
                 name: "Obus Energétiques",
                 name_ENG: "Energy Cell Charge",
                 id: 162,
+                max_per_squad: 8,
                 available: true, 
                 modify: false,
                 slot: "Missile",
-                max_per_squad: 8,
                 charge: 1,
                 points: 4,
                 faction: ["C.I.S"],
@@ -10577,10 +10548,10 @@ const upgrades = [
                 name: "Calculs Indépendants",
                 name_ENG: "Independant Calculation",
                 id: 163,
+                max_per_squad: 8,
                 available: true, 
                 modify: false,
                 slot: "Modification",
-                max_per_squad: 8,
                 points: 2,
                 faction: ["C.I.S"],
                 effect: "Remplacez votre capacité de vaisseau Calculs en Réseau par la suivante : Calculs Indépendants : tant que vous effectuez une action blanche , vous pouvez la considérer comme rouge pour gagner 1 marqueur de calcul supplémentaire. Les autres vaisseaux ne peuvent pas dépenser vos marqueurs de calcul en utilisant la capacité de vaisseau Calculs en Réseau.",
@@ -10675,9 +10646,9 @@ const upgrades = [
                 name: "Héroïque",
                 name_ENG: "Heroic",
                 id: 169,
+                max_per_squad: 8,
                 available: true, 
                 modify: false,
-                max_per_squad: 8,
                 slot: "Talent",
                 points: 2,
                 faction: ["Resistance"],
@@ -10714,8 +10685,8 @@ const upgrades = [
                 name: "Peinture Ferrosphère",
                 name_ENG: "Ferrosphere Paint",
                 id: 172,
-                available: true, 
                 max_per_squad: 8,
+                available: true, 
                 modify: false,
                 slot: "Tech",
                 points: 2,
@@ -10772,7 +10743,6 @@ const upgrades = [
                 id: 176,
                 available: true, 
                 modify: false,
-                max_per_squad: 8,
                 slot: "Astromech",
                 charge: 2,
                 points: 2,
@@ -10827,8 +10797,8 @@ const upgrades = [
                 name: "Fanatique",
                 name_ENG: "Fanatical",
                 id: 180,
-                available: true, 
                 max_per_squad: 8,
+                available: true, 
                 modify: false,
                 slot: "Talent",
                 points: 1,
@@ -10866,8 +10836,8 @@ const upgrades = [
                 name: "Technicien en Munition du Premier Ordre",
                 name_ENG: "First Order Ordnance Tech",
                 id: 183,
-                available: true, 
                 max_per_squad: 8,
+                available: true, 
                 modify: false,
                 slot: "Gunner",
                 points: 2,
@@ -10882,8 +10852,8 @@ const upgrades = [
                 name: "Artilleur des Forces Spéciales",
                 name_ENG: "Special Forces Gunner",
                 id: 184,
-                available: false, 
                 max_per_squad: 8,
+                available: false, 
                 modify: false,
                 slot: "Gunner",
                 points: 2,
@@ -10914,9 +10884,9 @@ const upgrades = [
             {
                 name: "Cellules Energétiques au Deuterium",
                 name_ENG: "Deuterium Power Cells",
+                max_per_squad: 8,
                 id: 186,
                 available: true, 
-                max_per_squad: 8,
                 modify: true,
                 slot: "Tech",
                 charge: 2,
@@ -10933,8 +10903,8 @@ const upgrades = [
                 name: "Codes Biohexacrypt",
                 name_ENG: "Biohexacrypt Codes",
                 id: 187,
-                available: true, 
                 max_per_squad: 8,
+                available: true, 
                 modify: false,
                 slot: "Calculator",
                 points: 1,
@@ -11196,8 +11166,7 @@ function displayslots(yy) { //crée les menus de slot et contient l'écoute des 
     slotmenu.addEventListener("input", function(event) {//cette faction décrit le calcul des mises à jour des points pour le loadout et le cout du pilote
             identifyElement(event);
             check_restricted_List(event);
-            checkUpgradeValidation(event)
-            
+            checkUpgradeValidation(event);
             updateUpgradeCount(y);
             updateTotalCost();
             displayDescriptionUpgrade(event);
@@ -11224,9 +11193,8 @@ function displayslots(yy) { //crée les menus de slot et contient l'écoute des 
         shipslot.appendChild(slotmenu);
         slotmenu.addEventListener("input", function(event) {//cette faction décrit le calcul des mises à jour des points pour le loadout et le cout du pilote
             identifyElement(event); 
-            check_restricted_List(event); 
+            check_restricted_List(event);    
             checkUpgradeValidation(event);
-            
             updateUpgradeCount(y);
             updateTotalCost();
             displayDescriptionUpgrade(event);
@@ -11248,6 +11216,7 @@ function fillUpgradesSelected(yy){
         upgradesSelected[yy].push(slotM.value)
     }
 }
+
 function identifyElement(event){ //sloty_x & index z de l'élément sélectionné, ou pilote dans ce cas x=-1
     let slotMe = event.target.id;
     if (slotMe.indexOf("pilot")>0){ //si l'id contient la chaine "pilot"
@@ -11396,7 +11365,7 @@ function checkUpgRestriction(yy){ //populate les menus slots avec les bonnes upg
    
     for (let i=0; i<upgrades_Objects[yy].length;i++) {
         let slotmenucontent = [];
-        let slotmenuobjects =[];
+        let slotmenuobjects = [];
         slotmenucontent.push("<"+upgrades_Type[yy][i]+">");
         
         for (let j=0; j<upgrades_Objects[yy][i].length; j++){
@@ -11434,7 +11403,7 @@ function checkPilotModifier(e) { //va checker s'il existe des fonctions dans mod
 }
 
 function also_Occupies(targetSlot,id){ //A utiliser lorsqu'une upgrade utilise un slot de plus. On va en plus écouter le menu qui a été rempli pour inverser l'opération si l'upg est retirée.
-   /* fillUpgradesSelected(y);
+    /*fillUpgradesSelected(y);
     let field = null;
     for (let i=0; i<upgradesSelected[y].length;i++){
        
@@ -11468,10 +11437,8 @@ function also_Occupies(targetSlot,id){ //A utiliser lorsqu'une upgrade utilise u
     upgslot.addEventListener('input', function(){
         listenfunction();
         upgslot.removeEventListener('input',listenfunction); //on arrête d'écouter le menu si l'upg a été retirée
-    }) 
-
-}*/
-fillUpgradesSelected(y);
+    }) */
+    fillUpgradesSelected(y);
     let field = null;
     for (let i = 0; i < upgradesSelected[y].length; i++) {
         if (upgradesSelected[y][i] === '<' + targetSlot + '>') {
@@ -11481,7 +11448,6 @@ fillUpgradesSelected(y);
             break;
         }
     }
-
     let upgname = upgrades[id]['name'];
     let p = upgrades[id]['points'];
     let upgslot = null;
@@ -11491,26 +11457,60 @@ fillUpgradesSelected(y);
             break;
         }
     }
-
     if (!field) {
         alert('Not Available. <' + targetSlot + '> required.');
         if (upgslot) {
             upgslot.value = '<' + upgrades[id]['slot'] + '>';
         }
-        return;
-    }
-
-    let listenfunction = function () {
-        field.removeAttribute('disabled');
-        fillUpgradesSelected(y);
-        console.log('Event listener removed');
-        upgslot.removeEventListener('input', listenfunction);
-    };
-
-    if (upgslot) {
-        upgslot.addEventListener('input', listenfunction);
-    }
+    return;
 }
+
+let listenfunction = function () {
+    field.removeAttribute('disabled');
+    fillUpgradesSelected(y);
+    console.log('Event listener removed');
+    upgslot.removeEventListener('input', listenfunction);
+};
+
+if (upgslot) {
+    upgslot.addEventListener('input', listenfunction);
+} 
+
+
+
+function may_remove_slots(slot,id){ //permet de retirer des slots
+    fillUpgradesSelected(y); //WARNING ! The order of the slots to remove is very important. You have to start removing the last slot, and keep on removing them starting from the last one. Or Else the function 'may_remove_slot' will fail. The reason is a bit tricky, but to make it simple, this function will remove (splice) elements in the array upgrades_Objets and upgrades_Type thinking the position is the last digit of the slotmenu.id. 
+    let upgname = upgrades[id]["name"]; 
+    let p = upgrades[id]["points"];
+    let upgslot = null;
+    for (let k = 0 ; k<upgradesSelected[y].length; k++){ // on va rechercher dans quel menu l'upgrade qui a déclenché occupies_Slot se trouve 
+        if (upgradesSelected[y][k] === upgname + ' (' + p + ')'){
+            upgslot = document.getElementById('slot'+y+'_'+k);
+            break;
+        }
+    }
+    let fieldtoremove = document.getElementsByClassName('slotElement'+' '+slot+' '+y);
+    let listenfunction = function(){
+        for (let i = 0; i<fieldtoremove.length; i++) {
+            idfield = fieldtoremove[i].id; //besoin de connaitre la position de champ pour pouvoir l'extraire de upgrades_Object et upgrades_Type. 
+            positionfield = idfield.charAt(idfield.length - 1);
+            upgrades_Objects[y].splice(positionfield, 1);
+            upgrades_Type[y].splice(positionfield, 1);
+            fieldtoremove[i].parentNode.removeChild(fieldtoremove[i]);
+            
+            }
+        }
+    upgslot.addEventListener('input', function() {
+            listenfunction();
+           upgslot.removeEventListener('input', listenfunction);
+        })
+        
+        fillUpgradesSelected(y);  
+    
+    
+}
+
+
 function checkUpgradeValidation(e) { //va checker s'il existe une fonction modify liée à l'upgrade, et va lancer les modifs éventuelles type add_slots ou change_stat
    fillUpgradesSelected(y);
     let field = e.target.id; // "slotyy_i"
@@ -11535,7 +11535,7 @@ function  add_slots (targetSlot){ //A utiliser si une upgrade rajoute des slots
     shipslot = document.getElementById('shipslots'+y);
     slotmenu = document.createElement('select');
     slotmenu.setAttribute('id', 'slot'+y+"_"+nbrSlots);
-    slotmenu.setAttribute('class', 'slotElement'+' '+targetSlot);
+    slotmenu.setAttribute('class', 'slotElement'+' '+targetSlot+' '+y);
     shipslot.appendChild(slotmenu);
         //Il faut créer la liste des upgrades pour populate les nouveaux menus
     let upgObjList = [];
@@ -11582,6 +11582,62 @@ populateMenu('slot'+y+'_'+nbrSlots,slotmenucontent);
     })
 
 }
+
+function check_restricted_List(event){ //check si l'upgrade ou le pilote est déjà utilisé par un(e) autre du même nom
+    let newname = '';
+    let maxnbr = 8;
+    if (x === -1){ //si c'est un pilote
+        newname = pilot_list[y]['name'];
+        maxnbr = pilot_list[y]['max_per_squad']
+    }else{ // si c'est une upgrade
+        newname = upgrades_Objects_Val[y][x][z-1]['name'];
+        maxnbr = upgrades_Objects_Val[y][x][z-1]['max_per_squad'];
+    }
+    if (maxnbr === 8){
+        return; // si il n'y a pas de limitation on arrête
+    }
+console.log(newname+' '+maxnbr);
+    while (maxnbr>0) {
+    for (let i=0 ; i<9 ; i++){
+        for (let j = 0 ; j<restricted_List[i].length ; j++){
+            if (restricted_List[i][j]===newname){
+                maxnbr = maxnbr -1 ;
+            }
+        }
+        }
+        break;
+    }
+    console.log(maxnbr);
+    if (maxnbr <= 0) { // cela arrive si on a excédé le nombre d'exemplaires de l'upgrade/pilote
+        alert(newname +' is no more available in your squad');
+        event.target.selectedIndex = 0;
+        return; //va arrêter tout processus par exemple le check_upgrade_validation qui va lancer des modifs de menus
+    }else{
+        upgrade_restricted_List(y); //l'upgrade ou le pilote est accepté donc on peut mettre à jour cette restricted_List
+    }
+    
+ }
+    
+ 
+function upgrade_restricted_List(yy){
+    
+    let namepil = "menu_pilot"+yy;
+    if (pilot_list[yy]['max_per_squad'] < 8){
+        namepil = pilot_list[yy]['name'];
+    }
+    restricted_List[8][yy]= namepil;
+    
+    for (let i=0 ; i<upgradesSelected[yy].length ; i++){
+        slotmenu = document.getElementById('slot'+yy+'_'+i);
+        z = slotmenu.selectedIndex;
+        let nameupg = 'slot'+yy+'_'+i;
+        if ((z > 0) && (upgrades_Objects_Val[yy][i][z-1]['max_per_squad'] < 8)) {
+            nameupg = upgrades_Objects_Val[yy][i][z-1]['name'];
+        }
+        restricted_List[yy][i]= nameupg;
+        }
+    }
+    
 
 function auto_equip(Slot,UPG){
     let numero_slot = 0; 
@@ -11644,62 +11700,7 @@ function weapon_Hardpoint(){
      })   
     }
 
-function check_restricted_List(event){ //check si l'upgrade ou le pilote est déjà utilisé par un(e) autre du même nom
-    
-    let newname = '';
-    let maxnbr = 8;
-    if (x === -1){ //si c'est un pilote
-        newname = pilot_list[y]['name'];
-        maxnbr = pilot_list[y]['max_per_squad']
-    }else{ // si c'est une upgrade
-        newname = upgrades_Objects_Val[y][x][z-1]['name'];
-        maxnbr = upgrades_Objects_Val[y][x][z-1]['max_per_squad'];
-    }
-    if (maxnbr === 8){
-        return; // si il n'y a pas de limitation on arrête
-    }
-console.log(newname+' '+maxnbr);
-    while (maxnbr>0) {
-    for (let i=0 ; i<9 ; i++){
-        for (let j = 0 ; j<restricted_List[i].length ; j++){
-            if (restricted_List[i][j]===newname){
-                maxnbr = maxnbr -1 ;
-            }
-        }
-        }
-        break;
-    }
-    console.log(maxnbr);
-    if (maxnbr <= 0) { // cela arrive si on a excédé le nombre d'exemplaires de l'upgrade/pilote
-        alert(newname +' is no more available in your squad');
-        event.target.selectedIndex = 0;
-        return; //va arrêter tout processus par exemple le check_upgrade_validation qui va lancer des modifs de menus
-    }else{
-        upgrade_restricted_List(y); //l'upgrade ou le pilote est accepté donc on peut mettre à jour cette restricted_List
-    }
-    
- }
-    
- 
-function upgrade_restricted_List(yy){
-    
-    let namepil = "menu_pilot"+yy;
-    if (pilot_list[yy]['max_per_squad'] < 8){
-        namepil = pilot_list[yy]['name'];
-    }
-    restricted_List[8][yy]= namepil;
-    
-    for (let i=0 ; i<upgradesSelected[yy].length ; i++){
-        slotmenu = document.getElementById('slot'+yy+'_'+i);
-        z = slotmenu.selectedIndex;
-        let nameupg = 'slot'+yy+'_'+i;
-        if ((z > 0) && (upgrades_Objects_Val[yy][i][z-1]['max_per_squad'] < 8)) {
-            nameupg = upgrades_Objects_Val[yy][i][z-1]['name'];
-        }
-        restricted_List[yy][i]= nameupg;
-        }
-    }
-    
+
 
 function add_action (act){
 
@@ -11757,7 +11758,6 @@ try { //Si on ne met pas ça, le fait d'avoir une valeur non définie fait plant
 }
 upgrades_Objects[yy].push(upgObjList); //Ainsi, ce tableau aura cette structure : [[[Objets talent pil 1][objets torpille pil 1][objets modifications pil 1]][[objets talent pil 2][objets modification pil 2]]....] 
 }
-
 }
 
 function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'active via le bouton Addship
@@ -11805,7 +11805,6 @@ function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'acti
     })
     newpilot.addEventListener('input', function(event) {
         identifyElement(event);
-        
         dataGetFromPilot(numero);
         displayslots(numero)  ;
         upgradeListGet(numero);
