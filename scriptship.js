@@ -11195,9 +11195,9 @@ function displayslots(yy) { //crée les menus de slot et contient l'écoute des 
     shipslot.appendChild(slotmenu);
     slotmenu.addEventListener("input", function(event) {//cette faction décrit le calcul des mises à jour des points pour le loadout et le cout du pilote
             identifyElement(event);
-            
-            checkUpgradeValidation(event)
             check_restricted_List(event);
+            checkUpgradeValidation(event)
+            
             updateUpgradeCount(y);
             updateTotalCost();
             displayDescriptionUpgrade(event);
@@ -11224,9 +11224,9 @@ function displayslots(yy) { //crée les menus de slot et contient l'écoute des 
         shipslot.appendChild(slotmenu);
         slotmenu.addEventListener("input", function(event) {//cette faction décrit le calcul des mises à jour des points pour le loadout et le cout du pilote
             identifyElement(event); 
-              
+            check_restricted_List(event); 
             checkUpgradeValidation(event);
-            check_restricted_List(event);
+            
             updateUpgradeCount(y);
             updateTotalCost();
             displayDescriptionUpgrade(event);
@@ -11673,6 +11673,7 @@ console.log(newname+' '+maxnbr);
     if (maxnbr <= 0) { // cela arrive si on a excédé le nombre d'exemplaires de l'upgrade/pilote
         alert(newname +' is no more available in your squad');
         event.target.selectedIndex = 0;
+        return; //va arrêter tout processus par exemple le check_upgrade_validation qui va lancer des modifs de menus
     }else{
         upgrade_restricted_List(y); //l'upgrade ou le pilote est accepté donc on peut mettre à jour cette restricted_List
     }
