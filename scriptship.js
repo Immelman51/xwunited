@@ -20,6 +20,7 @@ let x= "0"; //valeur qui indique l'index du menu d'amélioration sélectionné (
  let restrict = false;
 let restricted_List = [[0],[1],[2],[3],[4],[5],[6],[7],[8]]; //va contenir les noms des upgrades (8 premiers sous tableaux) et pilotes uniques (9eme sous tableau)
 
+let listFull = []; //va contenir toutes les informations de chaque vaisseau sous forme d'objet dans le but de faire des preview de liste ou de les présenter sous une autre forme
 
 //description des chassis
 
@@ -11786,7 +11787,7 @@ function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'acti
     let newslots = document.createElement('div');
     let newcost = document.createElement('div');
     let newloadout = document.createElement('div');
-    newpara.setAttribute('class','new');
+    newpara.setAttribute('class','new'+shipquantity);
     newdiv.setAttribute('id','ship'+numero);
     newdiv.setAttribute('class','ship');
     newship.setAttribute('id','menu_ship_'+numero );
@@ -11832,6 +11833,35 @@ function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'acti
    
 
 }
+
+function remove_ship() {
+    
+    // Get all elements with the specified class name
+    const elements = document.getElementsByClassName("new"+shipquantity);
+        
+    // Convert HTMLCollection to array for easier manipulation
+    const elementsArray = Array.from(elements);
+
+    // Remove each element from its parent node
+    elementsArray.forEach(element => {
+        element.parentNode.removeChild(element);
+    });
+    
+    overCostTab[shipquantity] = 0;
+    upgrades_Type[shipquantity] = [];
+    upgrades_Objects[shipquantity]= [];
+    upgradesSelected[shipquantity] = [];
+    upgrades_Objects_Val[shipquantity]= [];
+    restricted_List[shipquantity] = [shipquantity];
+    pilot_list[shipquantity] = {name:"",points:0};
+
+    shipquantity--;
+    updateTotalCost();
+
+}       
+
+
+
 function displayDescriptionPilot(i) { //permet d'afficher la capacité du pilote en bas de page
     description_upg_pil_Field=document.getElementById("descript_upg");
     description_upg_pil_Field.innerHTML="";
@@ -11871,7 +11901,9 @@ leaderselect.addEventListener("input", function() {
 //permet d'associer la fonction add_ship au bouton addship
 const addMenuButton = document.getElementById("addshipbutton");
 addMenuButton.addEventListener('click', add_ship);
-
+//permet d'associer la fonction remove_ship au bouton remove ship
+const removeMenuButton = document.getElementById('removeshipbutton');
+removeMenuButton.addEventListener('click', remove_ship);
 
 
 
