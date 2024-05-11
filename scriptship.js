@@ -5610,8 +5610,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             modifier_func: [
             	() => auto_equip("Title","Slave 1 (0)"),
                 () => add_slots("Gunner"),
-                    () => add_slots("Cannon"),
-                    () => add_slots("Illicit"),
+                () => add_slots("Cannon"),
+                () => add_slots("Illicit"),
                     ]
         },
          {
@@ -5638,8 +5638,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             modifier_func: [
             	() => auto_equip("Title","Slave 1 (0)"),
                 () => add_slots("Gunner"),
-                    () => add_slots("Cannon"),
-                    () => add_slots("Illicit"),
+                () => add_slots("Cannon"),
+                () => add_slots("Illicit"),
                     ]
         },
          {
@@ -10060,7 +10060,9 @@ const upgrades = [
                 restrictions: [1,"base", "Medium", "Large"],
                 modifier_func: [
                     () => add_slots("Illicit"),
-                    () => add_slots("Modification")
+                    () => add_slots("Modification"),
+                    () => may_remove_slots("Modification"),
+                    () => may_remove_slots("Illicit")
                 ]
                 
             },
@@ -10096,7 +10098,9 @@ const upgrades = [
                     () => add_slots("Calculator"),
                     () => change_stat("attackt",1),
                     () => change_stat("loadout",5),
-                    () => change_stat("points",1)
+                    () => change_stat("points",1),
+                    () => may_remove_slots("Calculator"),
+                    () => may_remove_slots("Sensor")
                 ]
                
             },
