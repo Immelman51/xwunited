@@ -11245,7 +11245,12 @@ function fillUpgradesSelected(yy){
     for (let i=0; i<upgrades_Type[y].length ; i++){
         slotM = document.getElementById("slot"+yy+"_"+i);
         upgradesSelected[yy].push(slotM.value);
-        listFull[yy].upgrade_list.push(upgrades_Objects_Val[yy][i]['id'])
+        
+        if (slotM.selectedIndex>0){
+            
+            listFull[yy].upgrade_list.push(upgrades_Objects_Val[yy][i][slotM.selectedIndex-1]['id'])
+        }
+            
     }
 }
 
