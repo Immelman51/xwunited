@@ -10013,8 +10013,8 @@ const upgrades = [
                     () => add_slots("Astromech"),
                     () => change_stat("loadout",5),
                     () => change_stat("points",1),
-                    () => may_remove_slots("Astromech",130), //WARNING ! The order of the slots to remove is very important. You have to start removing the last slot, and keep on removing them starting from the last one. Or Else the function 'may_remove_slot' will fail. The reason is a bit tricky, but to make it simple, this function will remove (splice) elements in the array upgrades_Objets and upgrades_Type thinking the position is the last digit of the slotmenu.id. 
-                    () => may_remove_slots("Tech",130)
+                    () => may_remove_slots("Astromech"), //WARNING ! The order of the slots to remove is very important. You have to start removing the last slot, and keep on removing them starting from the last one. Or Else the function 'may_remove_slot' will fail. The reason is a bit tricky, but to make it simple, this function will remove (splice) elements in the array upgrades_Objets and upgrades_Type thinking the position is the last digit of the slotmenu.id. 
+                    () => may_remove_slots("Tech")
                     
                 ]
                 
@@ -11102,9 +11102,13 @@ function removeElementsByClass() {//permet de supprimer tous les éléments qui 
             overCostTab = [0,0,0,0,0,0,0,0];
             totalcostvalue = 0;
             y= 0;
+            x=0;
+            z=0;
             upgrades_Type = [[],[],[],[],[],[],[],[]];
             upgrades_Objects= [[],[],[],[],[],[],[],[]];
             upgradesSelected = [[],[],[],[],[],[],[],[]];
+            upgrades_Objects_Val= [[],[],[],[],[],[],[],[]];
+            restricted_List = [[0],[1],[2],[3],[4],[5],[6],[7],[8]];
             pilot_list = [{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0}];
 }       
 
@@ -11362,7 +11366,7 @@ if (testR>=nbr){
 
 
 function checkUpgRestriction(yy){ //populate les menus slots avec les bonnes upgrades
-   
+    upgrades_Objects_Val[yy]=[]; //on le réinitialise car checkUpgRestriction est exécutée 2 fois (Cf add_ship function)
     for (let i=0; i<upgrades_Objects[yy].length;i++) {
         let slotmenucontent = [];
         let slotmenuobjects = [];
@@ -11384,6 +11388,7 @@ function checkUpgRestriction(yy){ //populate les menus slots avec les bonnes upg
             }
             
         }
+        console.log(slotmenuobjects);
         upgrades_Objects_Val[yy].push(slotmenuobjects);
         populateMenu('slot'+yy+'_'+i,slotmenucontent);
         fillUpgradesSelected(yy)
@@ -11475,30 +11480,27 @@ let listenfunction = function () {
 if (upgslot) {
     upgslot.addEventListener('input', listenfunction);
 } 
+}
 
 
 
-function may_remove_slots(slot,id){ //permet de retirer des slots
-    fillUpgradesSelected(y); //WARNING ! The order of the slots to remove is very important. You have to start removing the last slot, and keep on removing them starting from the last one. Or Else the function 'may_remove_slot' will fail. The reason is a bit tricky, but to make it simple, this function will remove (splice) elements in the array upgrades_Objets and upgrades_Type thinking the position is the last digit of the slotmenu.id. 
-    let upgname = upgrades[id]["name"]; 
-    let p = upgrades[id]["points"];
-    let upgslot = null;
-    for (let k = 0 ; k<upgradesSelected[y].length; k++){ // on va rechercher dans quel menu l'upgrade qui a déclenché occupies_Slot se trouve 
-        if (upgradesSelected[y][k] === upgname + ' (' + p + ')'){
-            upgslot = document.getElementById('slot'+y+'_'+k);
-            break;
-        }
-    }
+function may_remove_slots(slot){ //permet de retirer des slots
+    //WARNING ! The order of the slots to remove is very important. You have to start removing the last slot, and keep on removing them starting from the last one. Or Else the function 'may_remove_slot' will fail. The reason is a bit tricky, but to make it simple, this function will remove (splice) elements in the array upgrades_Objets and upgrades_Type thinking the position is the last digit of the slotmenu.id. 
+    
+    let upgslot = document.getElementById('slot'+y+'_'+x);
+            
+
     let fieldtoremove = document.getElementsByClassName('slotElement'+' '+slot+' '+y);
     let listenfunction = function(){
-        for (let i = 0; i<fieldtoremove.length; i++) {
-            idfield = fieldtoremove[i].id; //besoin de connaitre la position de champ pour pouvoir l'extraire de upgrades_Object et upgrades_Type. 
-            positionfield = idfield.charAt(idfield.length - 1);
+            
+            idfield = fieldtoremove[fieldtoremove.length-1].id; //besoin de connaitre la position de champ pour pouvoir l'extraire de upgrades_Object et upgrades_Type. 
+            positionfield = idfield.substring(6);
             upgrades_Objects[y].splice(positionfield, 1);
             upgrades_Type[y].splice(positionfield, 1);
-            fieldtoremove[i].parentNode.removeChild(fieldtoremove[i]);
+            upgrades_Objects_Val[y].splice(positionfield, 1);
+            fieldtoremove[fieldtoremove.length-1].parentNode.removeChild(fieldtoremove[fieldtoremove.length-1]);
+            fillUpgradesSelected(y);
             
-            }
         }
     upgslot.addEventListener('input', function() {
             listenfunction();
@@ -11549,21 +11551,25 @@ function  add_slots (targetSlot){ //A utiliser si une upgrade rajoute des slots
         upgrades_Objects[y].push(upgObjList);
         upgrades_Type[y].push(targetSlot);
         let slotmenucontent = ['<'+targetSlot+'>'];
+        let slotmenuobjects = [];
 //on reprend une partie du code checkUpgRestriction(). On n'appelle pas la fonction car le slotmenu est réinitialisé entièrement, ce qui fait perdre toutes les upgrades sélectionnées
 for (let j=0; j<upgrades_Objects[y][nbrSlots].length; j++){
             
     if (upgrades_Objects[y][nbrSlots][j]['available']===true){
         slotmenucontent.push(upgrades_Objects[y][nbrSlots][j]['name'] + " ("+upgrades_Objects[y][nbrSlots][j]['points'] + ")");
+        slotmenuobjects.push(upgrades_Objects[y][nbrSlots][j]);
     }else{
         
         testRestriction(y,upgrades_Objects[y][nbrSlots][j]['restrictions']);
         
         if (restrict===true) {
         slotmenucontent.push(upgrades_Objects[y][nbrSlots][j]['name'] + " ("+upgrades_Objects[y][nbrSlots][j]['points'] + ")"); 
-        }
+        slotmenuobjects.push(upgrades_Objects[y][nbrSlots][j]);
+    }
     }
     fillUpgradesSelected(y);
 }
+upgrades_Objects_Val[y].push(slotmenuobjects);
 populateMenu('slot'+y+'_'+nbrSlots,slotmenucontent);
 
 //fin de la recopie du code
@@ -11586,6 +11592,10 @@ populateMenu('slot'+y+'_'+nbrSlots,slotmenucontent);
 function check_restricted_List(event){ //check si l'upgrade ou le pilote est déjà utilisé par un(e) autre du même nom
     let newname = '';
     let maxnbr = 8;
+    if (z===0){ //si on séléctionne la valeur vide d'un menu (la ligne 0), il faut arrêter la vérif et mettre à jour les menus
+        upgrade_restricted_List(y);
+        return;
+    }
     if (x === -1){ //si c'est un pilote
         newname = pilot_list[y]['name'];
         maxnbr = pilot_list[y]['max_per_squad']
@@ -11596,7 +11606,7 @@ function check_restricted_List(event){ //check si l'upgrade ou le pilote est dé
     if (maxnbr === 8){
         return; // si il n'y a pas de limitation on arrête
     }
-console.log(newname+' '+maxnbr);
+
     while (maxnbr>0) {
     for (let i=0 ; i<9 ; i++){
         for (let j = 0 ; j<restricted_List[i].length ; j++){
@@ -11607,7 +11617,7 @@ console.log(newname+' '+maxnbr);
         }
         break;
     }
-    console.log(maxnbr);
+    
     if (maxnbr <= 0) { // cela arrive si on a excédé le nombre d'exemplaires de l'upgrade/pilote
         alert(newname +' is no more available in your squad');
         event.target.selectedIndex = 0;
@@ -11725,6 +11735,7 @@ function upgradeListGet(yy) { //va chercher les options pour populate les menus 
   
   let index = 0; 
   upgrades_Objects[yy] = [];
+  upgrades_Objects_Val[yy] = [];
   
 try { //Si on ne met pas ça, le fait d'avoir une valeur non définie fait planter la fonction
     if  (typeof pilot_list[yy]["slots"][0] === 'undefined') { //la valeur 0 a été mise dans tous endroits où il n'y avait pas de slot (exemple: les pilotes génériques)
