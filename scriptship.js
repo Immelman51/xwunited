@@ -11388,7 +11388,7 @@ function checkUpgRestriction(yy){ //populate les menus slots avec les bonnes upg
             }
             
         }
-        console.log(slotmenuobjects);
+        
         upgrades_Objects_Val[yy].push(slotmenuobjects);
         populateMenu('slot'+yy+'_'+i,slotmenucontent);
         fillUpgradesSelected(yy)
@@ -11473,7 +11473,7 @@ function also_Occupies(targetSlot,id){ //A utiliser lorsqu'une upgrade utilise u
 let listenfunction = function () {
     field.removeAttribute('disabled');
     fillUpgradesSelected(y);
-    console.log('Event listener removed');
+    
     upgslot.removeEventListener('input', listenfunction);
 };
 
@@ -11486,7 +11486,7 @@ if (upgslot) {
 
 function may_remove_slots(slot){ //permet de retirer des slots
     //WARNING ! The order of the slots to remove is very important. You have to start removing the last slot, and keep on removing them starting from the last one. Or Else the function 'may_remove_slot' will fail. The reason is a bit tricky, but to make it simple, this function will remove (splice) elements in the array upgrades_Objets and upgrades_Type thinking the position is the last digit of the slotmenu.id. 
-    
+   
     let upgslot = document.getElementById('slot'+y+'_'+x);
             
 
@@ -11500,17 +11500,16 @@ function may_remove_slots(slot){ //permet de retirer des slots
             upgrades_Objects_Val[y].splice(positionfield, 1);
             fieldtoremove[fieldtoremove.length-1].parentNode.removeChild(fieldtoremove[fieldtoremove.length-1]);
             fillUpgradesSelected(y);
-            
+            console.log('remonving'+slot); 
+            upgslot.removeEventListener('input', listenfunction);
         }
-    upgslot.addEventListener('input', function() {
-            listenfunction();
-           upgslot.removeEventListener('input', listenfunction);
-        })
-        
+        if (upgslot) {
+               
+            upgslot.addEventListener('input', listenfunction)  ;
+        }
         fillUpgradesSelected(y);  
-    
-    
 }
+
 
 
 function checkUpgradeValidation(e) { //va checker s'il existe une fonction modify liée à l'upgrade, et va lancer les modifs éventuelles type add_slots ou change_stat
@@ -11533,6 +11532,7 @@ function checkUpgradeValidation(e) { //va checker s'il existe une fonction modif
 
 
 function  add_slots (targetSlot){ //A utiliser si une upgrade rajoute des slots
+    console.log('adding '+targetSlot);
     let nbrSlots = upgrades_Type[y].length;
     shipslot = document.getElementById('shipslots'+y);
     slotmenu = document.createElement('select');
