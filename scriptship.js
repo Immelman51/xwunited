@@ -20,7 +20,27 @@ let x= "0"; //valeur qui indique l'index du menu d'amélioration sélectionné (
  let restrict = false;
 let restricted_List = [[0],[1],[2],[3],[4],[5],[6],[7],[8]]; //va contenir les noms des upgrades (8 premiers sous tableaux) et pilotes uniques (9eme sous tableau)
 
-let listFull = []; //va contenir toutes les informations de chaque vaisseau sous forme d'objet dans le but de faire des preview de liste ou de les présenter sous une autre forme
+let listFull = []; //va contenir toutes les informations de chaque vaisseau sous forme d'objet (shipObject) dans le but de faire des preview de liste ou de les présenter sous une autre forme
+const shipObject = {
+    ship_name: "",
+    ship_id:"",
+    ship_attack:"",
+    ship_attackt:"",
+    ship_attackb:"",
+    ship_agility:"",
+    ship_hull:"",
+    ship_shield:"",
+    ship_actions:[],
+    ship_chassis:[],
+    pilot_name:"",
+    pilot_id:"",
+    pilot_max_per_squad:"",
+    pilot_skill:"",
+    pilot_points:"",
+    pilot_force:"",
+    pilot_ability:"",
+    upgrade_list:[],
+}
 
 //description des chassis
 
@@ -11115,7 +11135,8 @@ function removeElementsByClass() {//permet de supprimer tous les éléments qui 
             upgrades_Objects_Val= [[],[],[],[],[],[],[],[]];
             restricted_List = [[0],[1],[2],[3],[4],[5],[6],[7],[8]];
             pilot_list = [{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0}];
-}       
+            listFull = [];
+        }       
 
 function select_pilot_list(x) {//permet de remplir la liste des pilotes disponibles correspondant au vaisseau sélectionné
     factionnameget();
@@ -11220,9 +11241,11 @@ function displayslots(yy) { //crée les menus de slot et contient l'écoute des 
 }
 function fillUpgradesSelected(yy){
     upgradesSelected[yy] = [];
+    listFull[yy].upgrade_list = [];
     for (let i=0; i<upgrades_Type[y].length ; i++){
         slotM = document.getElementById("slot"+yy+"_"+i);
-        upgradesSelected[yy].push(slotM.value)
+        upgradesSelected[yy].push(slotM.value);
+        listFull[yy].upgrade_list.push(upgrades_Objects_Val[yy][i]['id'])
     }
 }
 
@@ -11258,61 +11281,61 @@ function updateUpgradeCount(yy) {//cette faction décrit le calcul des mises à 
     	if (newLoadoutValue>=0) {
 	overCostTab[yy]=0;
 	costcount.textContent = pilot_list[yy]["points"] //Si le loadout value est supérieur à 0, le cost doit être égal a la valeur initiale du pilote sans modificateur
-
+            listFull[yy].pilot_points = costcount + overCostTab[yy];
 	return;
 	}
 	if ((newLoadoutValue<0) && (newLoadoutValue>-6) ) {
         overCostTab[yy]=1;
         costcount.textContent = pilot_list[yy]["points"] + '+' + overCostTab[yy]; //Si le loadout value est entre -1 et -5 compris, le cost du pilote augmente de 1
-        
+        listFull[yy].pilot_points = costcount + overCostTab[yy];
         return;
     }
     if ((newLoadoutValue<-5) && (newLoadoutValue>-11) ) {
         overCostTab[y]=2;
         costcount.textContent = pilot_list[yy]["points"] + '+' + overCostTab[yy] ; //Si le loadout value est entre -6 et -9 compris, le cost du pilote augmente de 2
-        
+        listFull[yy].pilot_points = costcount + overCostTab[yy];
         return;
     }
     if ((newLoadoutValue<-10) && (newLoadoutValue>-16) ) {
         overCostTab[y]=3;
         costcount.textContent = pilot_list[yy]["points"] + '+' + overCostTab[yy] ; //Si le loadout value est entre -10 et -15 compris, le cost du pilote augmente de 3
-        
+        listFull[yy].pilot_points = costcount + overCostTab[yy];
         return;
     }
     if ((newLoadoutValue<-15) && (newLoadoutValue>-21) ) {
         overCostTab[y]=4;
         costcount.textContent = pilot_list[yy]["points"] + '+' + overCostTab[yy]; //Si le loadout value est entre -16 et -20 compris, le cost du pilote augmente de 4
-        
+        listFull[yy].pilot_points = costcount + overCostTab[yy];
         return;
     }
     if ((newLoadoutValue<-20) && (newLoadoutValue>-26) ) {
         overCostTab[y]=5;
         costcount.textContent = pilot_list[yy]["points"] + '+' + overCostTab[yy] ; //Si le loadout value est entre -21 et -25 compris, le cost du pilote augmente de 5
-        
+        listFull[yy].pilot_points = costcount + overCostTab[yy];
         return;
     }
     if ((newLoadoutValue<-25) && (newLoadoutValue>-31) ) {
         overCostTab[y]=6;
         costcount.textContent = pilot_list[yy]["points"] + '+' + overCostTab[yy] ; 
-        
+        listFull[yy].pilot_points = costcount + overCostTab[yy];
         return;
      }
     if ((newLoadoutValue<-30) && (newLoadoutValue>-36) ) {
         overCostTab[y]=7;
         costcount.textContent = pilot_list[yy]["points"] + '+' + overCostTab[yy] ; 
-        
+        listFull[yy].pilot_points = costcount + overCostTab[yy];
         return;
     }
     if ((newLoadoutValue<-35) && (newLoadoutValue>-41) ) {
         overCostTab[y]=8;
         costcount.textContent = pilot_list[yy]["points"] + '+' + overCostTab[yy] ; 
-        
+        listFull[yy].pilot_points = costcount + overCostTab[yy];
         return;
     }
     if (newLoadoutValue<-40) {
         overCostTab[y]=9;
         costcount.textContent = pilot_list[yy]["points"] + '+' + overCostTab[yy];
-        
+        listFull[yy].pilot_points = costcount + overCostTab[yy];
         return; 
     }
 
@@ -11779,6 +11802,7 @@ upgrades_Objects[yy].push(upgObjList); //Ainsi, ce tableau aura cette structure 
 function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'active via le bouton Addship
     shipquantity++;
     let numero = String(shipquantity);
+    listFull.push(shipObject);
     const squad = document.getElementById("squad");
     let newpara = document.createElement('p');
     let newdiv = document.createElement('div');
@@ -11829,12 +11853,24 @@ function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'acti
         displayDescriptionPilot(numero);
 	    checkPilotModifier(event);
         checkUpgRestriction(numero); //on le refait car il peut y avoir des upgrades disponibles suite à check pilot modfier (exemple : Emon gagne 2 slot de payload ce qui lui permet d'équiper les générateurs de sous munitions)
+        fill_listFull_Pilot(shipquantity);
     });  
    
-
+    
+}
+function fill_listFull_Pilot(yy){ // fonction qui renseigne la partie pilote de l'objet shipObject
+    listFull[yy].pilot_name = pilot_list[yy]['name'];
+    listFull[yy].pilot_id = pilot_list[yy]['id'];
+    listFull[yy].pilot_max_per_squad = pilots[pilot_list[yy]['id']]['max_per_squad'];
+    listFull[yy].pilot_skill = pilots[pilot_list[yy]['id']]['skill'];
+    listFull[yy].pilot_points = pilots[pilot_list[yy]['id']]['points'];
+    listFull[yy].pilot_force = pilots[pilot_list[yy]['id']]['force'];
+    listFull[yy].pilot_ability = pilots[pilot_list[yy]['id']]['ability'];
+    
 }
 
-function remove_ship() {
+
+function remove_ship() { //fonction qui permet de retirer le dernier vaisseau. S'active via le bouton Removeship
     
     // Get all elements with the specified class name
     const elements = document.getElementsByClassName("new"+shipquantity);
@@ -11854,10 +11890,10 @@ function remove_ship() {
     upgrades_Objects_Val[shipquantity]= [];
     restricted_List[shipquantity] = [shipquantity];
     pilot_list[shipquantity] = {name:"",points:0};
-
+    listFull.slice(0,-1);
     shipquantity--;
     updateTotalCost();
-
+    
 }       
 
 
