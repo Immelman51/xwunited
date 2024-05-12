@@ -39,6 +39,7 @@ const shipObject = {
     pilot_points:"",
     pilot_force:"",
     pilot_ability:"",
+    pilot_loadout:"",
     upgrade_list:[],
 }
 
@@ -11283,11 +11284,11 @@ function updateUpgradeCount(yy) {//cette faction décrit le calcul des mises à 
         newLoadoutValue = newLoadoutValue - upgValue;
     }
     loadoutcount.textContent = newLoadoutValue;
-    	if (newLoadoutValue>=0) {
-	overCostTab[yy]=0;
-	costcount.textContent = pilot_list[yy]["points"] //Si le loadout value est supérieur à 0, le cost doit être égal a la valeur initiale du pilote sans modificateur
-            listFull[yy].pilot_points = costcount + overCostTab[yy];
-	return;
+    if (newLoadoutValue>=0) {
+	    overCostTab[yy]=0;
+	    costcount.textContent = pilot_list[yy]["points"] //Si le loadout value est supérieur à 0, le cost doit être égal a la valeur initiale du pilote sans modificateur
+        listFull[yy].pilot_points = costcount + overCostTab[yy];
+	    return;
 	}
 	if ((newLoadoutValue<0) && (newLoadoutValue>-6) ) {
         overCostTab[yy]=1;
@@ -11752,8 +11753,66 @@ function add_condition(con){
 
 }
 function change_stat(stat, value){
-
+    let shipOrPilot = true; //si c'est une stat ship qui est modifiée, alors shipOrPilot == true. Si c'est une stat pilot qui est modifiée, alors shipOrPilot == false.
+    switch (stat){
+    case 'points' : 
+    pilot_list[y]['points'] = pilot_list[y]['points'] + value;
+    updateUpgradeCount(y);
+    updateTotalCost();
+    listFull[y].pilot_points = pilot_list[y]['points'];
+    shipOrPilot = false;
+    break;
+    case 'loadout' :
+    pilot_list[y]['loadout'] =  pilot_list[y]['loadout'] + value;
+    updateUpgradeCount(y);
+    updateTotalCost();
+    listFull[y].pilot_loadout = pilot_list[y]['loadout'];
+    shipOrPilot = false;
+    break;
+    case 'attack' :
+    listFull[y].ship_attack = listFull[y].ship_attack + value;
+    shipOrPilot = true;
+    break;
+    case 'attackt' : 
+    listFull[y].ship_attackt = listFull[y].ship_attackt + value;
+    shipOrPilot = true;
+    break;
+    case 'force' :
+    listFull[y].pilot_force = listFull[y].pilot_force + value;
+    shipOrPilot = false;
+    break;
+    case 'hull' :
+    listFull[y].ship_hull = listFull[y].ship_hull + value;
+    shipOrPilot = true;
+    break;
+    case 'shield' :
+    listFull[y].ship_shield = listFull[y].ship_shield + value;
+    shipOrPilot = true;
+    break;
+    default : 
+    alert(stat + ' has to be added in change_stat function');
+    }
+    //il faut que tout revienne dans l'ordre lorsque l'upgrade est changée
+    if (x>-1) { //si la carte qui modifie n'est pas un pilote, alors c'est une upgrade
+        targetupg = document.getElementById('slot'+y+'_'+x);
+        let listenfunction = function() {
+            if (shipOrPilot === false){ //si c'est une stat pilot
+            listFull[y]['pilot_'+stat] = pilots[pilot_list[y]['id']][stat];
+            pilot_list[y][stat] = pilot_list[y][stat] - value;
+            updateUpgradeCount(y);
+            updateTotalCost();
+            }else{ // si c'est une stat ship
+            listFull[y]['ship_'+stat] = ships[pilot_list[y]['shipId']][stat];
+            }
+        targetupg.removeEventListener('input', listenfunction);
+        }
+    if (targetupg) {
+    targetupg.addEventListener('input', listenfunction)  ;
+    }
+    }
+      
 }
+
 function lose_chassis(){
 
 }
@@ -11866,11 +11925,11 @@ function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'acti
 function fill_listFull_Pilot(yy){ // fonction qui renseigne la partie pilote de l'objet shipObject
     listFull[yy].pilot_name = pilot_list[yy]['name'];
     listFull[yy].pilot_id = pilot_list[yy]['id'];
-    listFull[yy].pilot_max_per_squad = pilots[pilot_list[yy]['id']]['max_per_squad'];
-    listFull[yy].pilot_skill = pilots[pilot_list[yy]['id']]['skill'];
-    listFull[yy].pilot_points = pilots[pilot_list[yy]['id']]['points'];
-    listFull[yy].pilot_force = pilots[pilot_list[yy]['id']]['force'];
-    listFull[yy].pilot_ability = pilots[pilot_list[yy]['id']]['ability'];
+    listFull[yy].pilot_max_per_squad = pilot_list[yy]['max_per_squad'];
+    listFull[yy].pilot_skill = pilot_list[yy]['skill'];
+    listFull[yy].pilot_points = pilot_list[yy]['points'];
+    listFull[yy].pilot_force = pilot_list[yy]['force'];
+    listFull[yy].pilot_ability = pilot_list[yy]['ability'];
     
 }
 
