@@ -20,6 +20,7 @@ let x= "0"; //valeur qui indique l'index du menu d'amélioration sélectionné (
  let restrict = false;
 let restricted_List = [[0],[1],[2],[3],[4],[5],[6],[7],[8]]; //va contenir les noms des upgrades (8 premiers sous tableaux) et pilotes uniques (9eme sous tableau)
 
+let shipObject_available = [];
 let listFull = []; //va contenir toutes les informations de chaque vaisseau sous forme d'objet (shipObject) dans le but de faire des preview de liste ou de les présenter sous une autre forme
 const shipObject = {
     ship_name: "",
@@ -11344,9 +11345,11 @@ function select_ship_list() {//permet de remplir la liste des vaisseaux disponib
     factionnameget();
     
     ship_available = ["Select Ship"];
+    shipObject_available = [];
     for (let i = 0; i < ships.length; i++) {
         if (ships[i]["factions"].includes(factionno1) || ships[i]["factions"].includes(factionno2) || ships[i]["factions"].includes(factionno3)) {
         ship_available.push(ships[i]["name"]) ;
+        shipObject_available.push(ships[i]);
         }
        
         };
@@ -11457,11 +11460,11 @@ function displayslots(yy) { //crée les menus de slot et contient l'écoute des 
     } 
    
     for (j= 0 ; j<ships[pilot_list[yy]["shipId"]]["slots"].length ; j++) { //on ajoute aussi les slots liés au chassis que l'on va chercher grace au 
-        shipId
-        force: 0,upgrades_Type[yy].push(ships[pilot_list[yy]["shipId"]]["slots"][j]);
+        
+        upgrades_Type[yy].push(ships[pilot_list[yy]["shipId"]]["slots"][j]);
         slotmenu = document.createElement('select');
         slotmenu.setAttribute('id', 'slot'+yy+"_"+(j+index));
-        force: 0,slotmenu.setAttribute('class', 'slotElement'+' '+ships[pilot_list[yy]["shipId"]]["slots"][j] );
+        slotmenu.setAttribute('class', 'slotElement'+' '+ships[pilot_list[yy]["shipId"]]["slots"][j] );
         shipslot.appendChild(slotmenu);
         slotmenu.addEventListener("input", function(event) {//cette faction décrit le calcul des mises à jour des points pour le loadout et le cout du pilote
             identifyElement(event); 
@@ -12158,7 +12161,7 @@ function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'acti
         displayDescriptionPilot(numero);
 	    checkPilotModifier(event);
         checkUpgRestriction(numero); //on le refait car il peut y avoir des upgrades disponibles suite à check pilot modfier (exemple : Emon gagne 2 slot de payload ce qui lui permet d'équiper les générateurs de sous munitions)
-        fill_listFull_Pilot(shipquantity);
+        fill_listFull_Pilot(numero);
     });  
    
     
