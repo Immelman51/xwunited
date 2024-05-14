@@ -30,7 +30,7 @@ const shipObject = {
     ship_attackb:"",
     ship_agility:"",
     ship_hull:"",
-    ship_shield:"",
+    ship_shields:"",
     ship_actions:[],
     ship_chassis:[],
     pilot_name:"",
@@ -149,14 +149,16 @@ const ships =
             factions: [ "Rebel_Alliance", "Partisans", "New_Republic" ],
             id: 0,
             attack: 3,
+            attackt: 0,
+            attackb: 0,
             agility: 2,
             keyword: [],
             hull: 4,
             shields: 2,
             actions: [
-                "Focus",
-                "Lock",
-                "Barrel Roll"
+                [0,"Fo", "W"], //0 means simple  action, Fo eans Focus, and "W" is white
+                [0,"Lo", "W"],
+                [0, "Br","W"]
             ],
             chassis: ["Servomotor S-Foils"],
             maneuvers: [
@@ -177,14 +179,16 @@ const ships =
             id: 1,
             keyword: [],
             attack: 2,
+            attack: 0,
+            attackb: 0,
             agility: 1,
             hull: 6,
             shields: 2,
             actions: [
-                "Focus",
-                "Lock",
-                "R-Barrel Roll",
-                "R-Reload"
+                [0,"Fo", "W"],
+                [0,"Lo", "W"],
+                [0,"Br", "R"], //R means red
+                [0,"Rd", "R"],
             ],
             maneuvers: [
                 [ 0, 0, 0, 0, 0, 0],
@@ -201,6 +205,8 @@ const ships =
             name: "RZ-1 A-wing",
             factions: [ "Rebel_Alliance", "Phoenix_Cell" ],
             attack: 2,
+            attackt: 0,
+            attackb: 0,
             id:2,
             agility: 3,
             keyword: [],
@@ -208,11 +214,11 @@ const ships =
             shields: 2,
             chassis: ["Vectored Thrusters"],
             actions: [
-                "Focus",
-                "Evade",
-                "Lock",
-                "Barrel Roll",
-                "Boost"
+                [0,"Fo", "W"],
+                [0,"Ev", "W"],
+                [0,"Lo", "W"],
+                [0,"Br", "W"],
+                [0,"Bo", "W"]
             ],
             maneuvers: [
                 [ 0, 0, 0, 0, 0, 0, 0, 0],
@@ -232,16 +238,18 @@ const ships =
             id: 3,
             keyword: [],
             attackt: 2,
+            attack: 0,
+            attackb: 0,
             agility: 1,
             hull: 8,
             shields: 5,
             chassis: ["Docking Ship"],
             chassisid: 0,
             actions: [
-                "Focus",
-                "Lock",
-                "Rotate Arc",
-                "R-Boost"
+                [0,"Fo", "W"],
+                [0,"Lo", "W"],
+                [0,"Ro", "W"],
+                [0,"Bo", "R"],
             ],
             maneuvers: [
                 [ 0, 0, 0, 0, 0, 0, 0, 0],
@@ -259,14 +267,16 @@ const ships =
             factions: ["Phoenix_Cell", "Imperial_Academy", "Imperial_Elite_Forces", "Imperial_Remnants"],
             id: 4,
             attack: 2,
+            attackt: 0,
+            attackb: 0,
             agility: 3,
             hull: 3,
             shields: 0,
             keyword: ["TIE"],
             actions: [
-                "Focus",
-                "Barrel Roll",
-                "Evade"
+                [0,"Fo", "W"],
+                [0,"Br", "W"],
+                [0,"Ev", "W"],
             ],
             maneuvers: [
                 [ 0, 0, 0, 0, 0, 0],
@@ -285,16 +295,17 @@ const ships =
             factions: [ "Imperial_Academy" ],
             id: 5,
             attack: 2,
+            attackt: 0,
+            attackb: 0,
             agility: 3,
             hull: 3,
             shields: 2,
             keyword: ["TIE"],
             chassis: ["Advanced Targeting Computer"],
             actions: [
-                "Focus",
-                "R-> Barrel Roll",
-                "Lock",
-                "Barrel Roll"
+                [1,"Fo", "W", "Br", "R"], //1 means linked action
+                [0,"Lo", "W"],
+                [0,"Br", "W"],
             ],
             maneuvers: [
                 [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
@@ -313,16 +324,18 @@ const ships =
             factions: [ "Imperial_Academy", "Imperial_Elite_Forces", "Imperial_Remnants" ],
             id: 6,
             attack: 3,
+            attackt: 0,
+            attackb: 0,
             agility: 3,
             hull: 3,
             shields: 0,
             keyword: ["TIE"],
             chassis: ["Autothrusters"],
             actions: [
-                "Focus",
-                "Barrel Roll",
-                "Boost",
-                "Evade"
+                [0,"Fo", "W"],
+                [0,"Br", "W"],
+                [0,"BO", "W"],
+                [0,"Ev", "W"]
             ],
             base: ["Small"],
             maneuvers: [
@@ -342,16 +355,17 @@ const ships =
             id: 7,
             attack: 3,
             attackb: 3,
+            attackt: 0,
             agility: 2,
             hull: 6,
             shields: 4,
             base: ["Medium"],
             keyword: [],
             actions: [
-                "Focus",
-                "Lock",
-                "Boost",
-                "R-Reinforce"
+                [0,"Fo", "W"],
+                [0,"Lo", "W"],
+                [0,"Bo", "W"],
+                [0,"Re", "R"]
             ],
             maneuvers: [
                 [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
@@ -12146,6 +12160,7 @@ function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'acti
     newship.addEventListener('input', function(event) {
        y = event.target.id.slice(10,11); 
        select_pilot_list(numero);
+       fill_listFull_Ship(numero);
     }) ;
     newpilot.addEventListener("mouseover", function(event){
         y = event.target.id.slice(11,12); //y = numéro du pilote modifié
@@ -12166,7 +12181,7 @@ function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'acti
    
     
 }
-function fill_listFull_Pilot(yy){ // fonction qui renseigne la partie pilote de l'objet shipObject
+function fill_listFull_Pilot(yy){ // fonction qui renseigne la partie pilote de l'objet shipObject dans listFull
     listFull[yy].pilot_name = pilot_list[yy]['name'];
     listFull[yy].pilot_id = pilot_list[yy]['id'];
     listFull[yy].pilot_max_per_squad = pilot_list[yy]['max_per_squad'];
@@ -12175,6 +12190,20 @@ function fill_listFull_Pilot(yy){ // fonction qui renseigne la partie pilote de 
     listFull[yy].pilot_force = pilot_list[yy]['force'];
     listFull[yy].pilot_ability = pilot_list[yy]['ability'];
     
+}
+function fill_listFull_Ship(yy){ //fonction qui renseigne la partie ship de l'objet shipObject dans listFull
+    shipmenu = document.getElementById('menu_ship_'+yy);
+    shipindex = shipmenu.selectedIndex;
+    listFull[yy].ship_name = shipObject_available[shipindex-1]['name'];
+    listFull[yy].ship_id = shipObject_available[shipindex-1]['id'];
+    listFull[yy].ship_attack = shipObject_available[shipindex-1]['attack'];
+    listFull[yy].ship_attackt = shipObject_available[shipindex-1]['attackt'];
+    listFull[yy].ship_attackb = shipObject_available[shipindex-1]['attackb'];
+    listFull[yy].ship_agility = shipObject_available[shipindex-1]['agility'];
+    listFull[yy].ship_hull = shipObject_available[shipindex-1]['hull'];
+    listFull[yy].ship_shields = shipObject_available[shipindex-1]['shields'];
+    listFull[yy].ship_actions = shipObject_available[shipindex-1]['actions'];
+    listFull[yy].ship_chassis = shipObject_available[shipindex-1]['chassis'];
 }
 
 
