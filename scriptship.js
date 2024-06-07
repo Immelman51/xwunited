@@ -9,6 +9,7 @@ let shipquantity = -1; //compteur qui ne sert pas à compter mais à numéroter 
 
  let pilot_selected_list = ["","","","","","","",""]; // Dans ce tableau, on va stocker la valeur sélectée de chaque menu_pilot
  let pilot_list = [{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0}]; //Dans ce tableau, on stocker les objets pilotes
+ let pilot_objects = [[],[],[],[],[],[],[],[]]; //va contenir tous les objets pilotes disponibles pour chaque ligne
  let upgrades_Type = [[],[],[],[],[],[],[],[]]; //va contenir tous les slots pour chaque pilote
  let upgrades_Objects= [[],[],[],[],[],[],[],[]]; // va contenir la liste des contenus des menus slots mais sous forme d'objet
  let upgrades_Objects_Val= [[],[],[],[],[],[],[],[]]; // va contenir la liste des contenus des menus slots après validation mais sous forme d'objet
@@ -4243,7 +4244,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"
                 ],
             modifier_func: [
-            	() => auto_equip("Title",1)
+            	() => auto_equip("Title",1,202)
                     ]
         },
         {
@@ -5837,7 +5838,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             shipId: 25,
 	        modify: true,
             skill: 6,
-            title: "Ghost",
+            title: ["Ghost"],
             points: 12,
             loadout: 15,
             ability: "Après avoir révélé une manoeuvre rouge ou bleue, vous pouvez modifier votre cadran pour une autre manoeuvre de même difficulté.",
@@ -5849,7 +5850,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"                
             ],
             modifier_func: [
-            	() => auto_equip("Title",1)
+            	() => auto_equip("Title",1,203)
                     ]
         },
         {
@@ -5863,7 +5864,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 3,
             force: 2,
             recurring: true,
-            title: "Ghost",
+            title: ["Ghost"],
             points: 12,
             loadout: 15,
             ability: "Lorsqu'un vaisseau allié dans votre arc de tir défend, vous pouvez dépenser 1 #fo#. Dans ce cas, l'attaquant lance 1 dé d'attaque en moins.",
@@ -5874,7 +5875,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"                
             ],
             modifier_func: [
-            	() => auto_equip("Title",1)
+            	() => auto_equip("Title",1,203)
                     ]
         },
         {
@@ -5887,7 +5888,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             force: 0,
             shipId: 25,
             skill: 2,
-            title: "Ghost",
+            title: ["Ghost"],
             points: 10,
             loadout: 15,
             ability: "Au début de la phase d'engagement, chaque vaisseau ennemi à portée 0 reçoit 2 jetons brouillage.",
@@ -5897,7 +5898,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"                
             ],
             modifier_func: [
-            	() => auto_equip("Title",1),
+            	() => auto_equip("Title",1,203),
 		    () => droid()
                     ]
         },
@@ -5911,7 +5912,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
 		    force: 0,
             shipId: 25,
             skill: 4,
-            title: "Ghost",
+            title: ["Ghost"],
             points: 10,
             loadout: 15,
             ability: "Lorsque vous défendez, si l'attaquant a modifié au moins 1 dé d'attaque, vous pouvez lancer 1 dé de défense supplémentaire.",
@@ -5922,7 +5923,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"                
             ],
             modifier_func: [
-            	() => auto_equip("Title",1)
+            	() => auto_equip("Title",1,203)
                     ]
         },
         {
@@ -5935,7 +5936,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             shipId: 26,
             skill: 6,
             modify: true,
-		    title: "Phantom 1",
+		    title: ["Phantom 1"],
             points: 6,
             loadout: 15,
             ability: "Après avoir révélé une manoeuvre rouge ou bleue, vous pouvez modifier votre cadran pour une autre manoeuvre de même difficulté.",
@@ -5947,7 +5948,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"                
             ],
             modifier_func: [
-            	() => auto_equip("Title",1)
+            	() => auto_equip("Title",1,198)
                     ]
         },
         {
@@ -5960,7 +5961,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             shipId: 26,
             skill: 3,
             modify: true,
-		    title: "Phantom 1",
+		    title: ["Phantom 1"],
             points: 6,
             loadout: 15,
             ability: "Avant de vous activer, vous pouvez effectuer une action de #BR# ou #BO#.",
@@ -5971,7 +5972,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"                
             ],
             modifier_func: [
-            	() => auto_equip("Title",1)
+            	() => auto_equip("Title",1,198)
                     ]
         },
         {
@@ -5984,7 +5985,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 3,
             force: 2,
             modify: true,
-            title: "Phantom 1",
+            title: ["Phantom 1"],
             points: 6,
             loadout: 15,
             ability: "Lorsqu'un vaisseau allié dans votre arc de tir défend, vous pouvez dépenser 1 #fo#. Dans ce cas, l'attaquant lance 1 dé d'attaque en moins.",
@@ -5995,7 +5996,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"                
             ],
             modifier_func: [
-            	() => auto_equip("Title",1)
+            	() => auto_equip("Title",1,198)
                     ]
         },
         {
@@ -6008,7 +6009,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             shipId: 26,
             skill: 2,
             modify: true,
-		    title: "Phantom 1",
+		    title: ["Phantom 1"],
             points: 5,
             loadout: 15,
             ability: "Lorsque vous défendez, les résultat #crit# sont neutralisés avant les résultats #hit#.",
@@ -6018,7 +6019,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"                
             ],
             modifier_func: [
-            	() => auto_equip("Title",1)
+            	() => auto_equip("Title",1,198)
                     ]
         },
         {
@@ -6031,7 +6032,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             shipId: 45,
             skill: 1,
             modify: true,
-		title: "Phantom 2",
+		    title: ["Phantom 2"],
             points: 5,
             loadout: 15,
             ability: "Lorsque vous coordonnez, si vous choisissez un vaisseau avec exactement 1 jeton stress, il peut effectuer des actions.", 
@@ -6041,7 +6042,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"                
             ],
             modifier_func: [
-            	() => auto_equip("Title",1),
+            	() => auto_equip("Title",1,199),
 		    () => droid()
                     ]
         },
@@ -6055,7 +6056,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             shipId: 45,
             skill: 4,
             modify: true,
-		    title: "Phantom 2",
+		    title: ["Phantom 2"],
             points: 6,
             loadout: 15,
             ability: "Lorsque vous défendez, si l'attaquant a modifié au moins 1 dé d'attaque, vous pouvez lancer 1 dé de défense supplémentaire.",
@@ -6066,7 +6067,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"                
             ],
             modifier_func: [
-            	() => auto_equip("Title",1)
+            	() => auto_equip("Title",1,199)
                     ]
         },
         
@@ -6080,7 +6081,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 5,
             force: 3,
             modify: true,
-            title: "Phantom 2",
+            title: ["Phantom 2"],
             points: 6,
             loadout: 15,
             ability: "Après avoir entièrement effectué une manoeuvre, vous pouvez choisir un vaisseau allié à portée 1-2 et dépenser 2 #fo#. Ce vaisseau peut effectuer une action, même stressé.",
@@ -6091,7 +6092,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"                
             ],
             modifier_func: [
-            	() => auto_equip("Title",1)
+            	() => auto_equip("Title",1,199)
                     ]
         },
         {
@@ -6106,7 +6107,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 2,
             points: 5,
             modify: true,
-		    title: "Phantom 2",
+		    title: ["Phantom 2"],
             loadout: 15,
             ability: "Après avoir attaqué, assignez la condition 'Tir de Suppression' au défenseur.",
             ability_ENG: "After you perform an attack, assign the Suppressive Fire condition to the defender.",
@@ -6116,7 +6117,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"                
             ],
             modifier_func: [
-            	() => auto_equip("Title",1)
+            	() => auto_equip("Title",1,199)
                     ]
         },
         {
@@ -6130,7 +6131,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 3,
             points: 4,
             modify: true,
-		    title: "Sabine's Masterpiece",
+		    title: ["Sabine's Masterpiece"],
             loadout: 15,
             ability: "Avant de vous activer, vous pouvez effectuer une action #BR# ou #BO#.", 
             ability_ENG: "Before you activate, you may perform a #BR# or #BO# action.",
@@ -6140,7 +6141,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"                
             ],
             modifier_func: [
-            	() => auto_equip("Title",1)
+            	() => auto_equip("Title",1,196),
+                () => add_slots("Illicit"),
                     ]
         },
         {
@@ -6154,7 +6156,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             force: 1,
             modify: true,
             points: 4,
-            title: "Sabine's Masterpiece",
+            title: ["Sabine's Masterpiece"],
             loadout: 15,
             ability: "Lorsque vous défendez ou attaquez, si vous êtes stressé, vous pouvez dépenser 1 #fo# pour modifier jusqu'à 2 de vos résultats #eye# en #hit# ou #evd#.",
             ability_ENG: "While you defend or perform an attack, if you are stressed, you may spend 1 #fo# to change up to 2 of your #eye# results to #hit# or #evd# results.",
@@ -6164,7 +6166,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"                
             ],
             modifier_func: [
-            	() => auto_equip("Title","Sabine's Masterpiece (0)")
+            	() => auto_equip("Title",1,196),
+                () => add_slots("Illicit"),
                     ]
         },
         {
@@ -6179,7 +6182,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 2,
             points: 3,
             modify: true,
-		    title: "Sabine's Masterpiece",
+		    title: ["Sabine's Masterpiece"],
             loadout: 15,
             ability: "Après avoir attaqué, assignez la condition 'Tir de Suppression' au défenseur.",
             ability_ENG: "After you perform an attack, assign the Suppressive Fire condition to the defender.",
@@ -6189,7 +6192,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"                
             ],
             modifier_func: [
-            	() => auto_equip("Title","Sabine's Masterpiece (0)")
+            	() => auto_equip("Title",1,196),
+                () => add_slots("Illicit"),
                     ]
         },
         {
@@ -6203,7 +6207,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 2,
             points: 3,
             modify: true,
-		    title: "Sabine's Masterpiece",
+		    title: ["Sabine's Masterpiece"],
             loadout: 15,
             ability: "Lorsque vous défendez, les résultats #crit# sont neutralisés avant les #hit#.",
             ability_ENG: "While you defend, #crit# results are neutralized before #hit# results.",
@@ -6212,7 +6216,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"                
             ],
             modifier_func: [
-            	() => auto_equip("Title","Sabine's Masterpiece (0)")
+            	() => auto_equip("Title",1,196),
+                () => add_slots("Illicit")
                     ]
         },
         {
@@ -6226,7 +6231,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             points: 11,
             force: 1,
             modify: true, 
-            title: "Nightbrother",
+            title: ["Nightbrother"],
             loadout: 15,
             ability: "Lorsque vous défendez ou attaquez, si vous êtes stressé, vous pouvez dépenser 1 #fo# pour modifier jusqu'à 2 de vos résultats #eye# en #hit# ou #evd#.",
             ability_ENG: "While you defend or perform an attack, if you are stressed, you may spend 1 #fo# to change up to 2 of your #eye# results to #hit# or #evd# results.",
@@ -6236,7 +6241,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"                
             ],
             modifier_func: [
-            	() => auto_equip("Title",1)
+            	() => auto_equip("Title",1,202)
                     ]
         },
         {
@@ -6249,7 +6254,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             shipId: 77,
             skill: 3,
             points: 10,
-            title: "Nightbrother",
+            title: ["Nightbrother"],
             modify: true,
 		    loadout: 15,
             ability: "Au début de la phase d'engagement, chaque vaisseau ennemi à portée 0 reçoit 2 jeton brouillage.", 
@@ -6259,7 +6264,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"                
             ],
             modifier_func: [
-            	() => auto_equip("Title",1),
+            	() => auto_equip("Title",1,202),
 		    () => droid()
                     ]
         },
@@ -6273,7 +6278,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             shipId: 16,
             skill: 2,
             points: 9,
-            title: "Sato's Hammer",
+            title: ["Sato's Hammer"],
 		    modify: true,
             loadout: 15,
             ability: "Au début de la phase d'engagement, vous pouvez effectuer une action rouge #BR#.",
@@ -6283,7 +6288,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"                
             ],
             modifier_func: [
-            	() => auto_equip("Title",1)
+            	() => auto_equip("Title",1,200)
                     ]
         },
         {
@@ -6297,7 +6302,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 1,
             points: 8,
             modify: true,
-		    title: "Sato's Hammer",
+		    title: ["Sato's Hammer"],
             loadout: 15,
             ability: "Après avoir défendu contre une attaque portée 1, l'attaquant reçoit 1 jeton de contrainte.",
             ability_ENG: "After you defend against a Range 1 attack, the attacker gains 1 strain token.",
@@ -6306,7 +6311,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"                
             ],
             modifier_func: [
-            	() => auto_equip("Title",1)
+            	() => auto_equip("Title",1,200)
                     ]
         },
         {
@@ -6320,7 +6325,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 5,
             points: 9,
             modify: true,
-		    title: "Mighty Oak Apocalypse",
+		    title: ["Mighty Oak Apocalypse"],
             loadout: 15,
             ability: "Tant que vous êtes stressé, ignorez Sensor Blackout.", 
             ability_ENG: "While you are stressed, you ignore the Sensor Blackout ability.",
@@ -6330,7 +6335,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"                
             ],
             modifier_func: [
-            	() => auto_equip("Title",1)
+            	() => auto_equip("Title",1,201)
                     ]
         },
         {
@@ -6344,7 +6349,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 4,
             points: 8,
             modify: true,
-		    title: "Mighty Oak Apocalypse",
+		    title: ["Mighty Oak Apocalypse"],
             loadout: 15,
             ability: "Lorsque vous attaquez, vous pouvez dépenser 1 résultat #eye#, #crit# ou #hit# pour regarder les cartes de dégat face cachée du défenseur, en choisir 1, et l'exposer.",
             ability_ENG: "While you perform an attack, you may spend 1 #eye#, #crit#, or #hit# result to look at the defender's facedown damage cards, choose 1, and expose it.",
@@ -6354,7 +6359,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"                
             ],
             modifier_func: [
-            	() => auto_equip("Title",1)
+            	() => auto_equip("Title",1,201)
                     ]
         },
         {
@@ -6466,7 +6471,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             shipId: 57,
             skill: 4,
             points: 8,
-            title: "Soulless One",
+            title: ["Soulless One"],
             loadout: 15,
             ability: "Lorsque vous effectuez une attaque principale, si vous n'êtes pas dans l'arc de tir du défenseur, vous pouvez relancer jusqu'à 2 dés d'attaque.",
             ability_ENG: "While you perform a primary attack, if you are not in the defender's firing arc, you may reroll up to 2 attack dice.",
@@ -6476,7 +6481,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"                
             ],
             modifier_func: [
-            	() => auto_equip("Title",1)
+            	() => auto_equip("Title",1,204)
                     ]
         },
         {
@@ -7440,7 +7445,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             charge: 1,
             recurring: true,
             loadout: 15,
-            title: "Black One",
+            title: ["Black One"],
             ability: "Après avoir effectué une action, vous pouve dépenser 1 #ch# pour effectuer une action blanche, en la considérant comme rouge.",
             ability_ENG: "After you perform an action, you may spend 1 charge to perform a white action, treating it as red.",
             slots: [
@@ -7450,7 +7455,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"            
             ],
 			modifier_func: [
-				() => auto_equip("Title",1)
+				() => auto_equip("Title",1,197),
+                () => add_slots("Turret")
 				]
         },
         {
@@ -7690,7 +7696,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 6,
             points: 9,
             loadout: 15,
-            title: "Millenium Falcon",
+            title: ["Millenium Falcon"],
             ability: "Mise en place : Vous pouvez vous placer n'importe où sur l'aire de jeu, au delà de la portée 3 des vaisseaux ennemis.",
             ability_ENG: "Setup: You can be placed anywhere in the play area beyond range 3 of enemy ships.",
             slots: [
@@ -7700,8 +7706,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"            
             ],
             modifier_func: [
-            	() => auto_equip("Title",1),
-                () => also_Occupies("Missile",134),
+            	() => auto_equip("Title",1,135),
+                () => also_Occupies("Missile",135),
                 () => lose_chassis("Docking Ship"),
                 () => add_slots("Sensor"),
                 () => add_slots("Calculator"),
@@ -7723,7 +7729,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             skill: 5,
             points: 10,
             loadout: 15,
-            title: "Millenium Falcon",
+            title: ["Millenium Falcon"],
             ability: "Lorsque vous défendez ou attaquez, si le vaisseau ennemi est dans votre #Farc#, vous pouvez dépenser 1 #fo# pour modifier l'un de vos résultats vierge en #evd# ou #hit#.",
             ability_ENG: "While you defend or perform an attack, if the enemy ship is in your #Farc# , you may spend 1 force to change 1 of your blank results to an #evd# or #hit# result.",
             slots: [
@@ -7732,8 +7738,8 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"            
             ],
             modifier_func: [
-            	() => auto_equip("Title",1),
-                () => also_Occupies("Missile",134),
+            	() => auto_equip("Title",1,135),
+                () => also_Occupies("Missile",135),
                     () => lose_chassis("Docking Ship"),
                     () => add_slots("Sensor"),
                     () => add_slots("Calculator"),
@@ -7757,14 +7763,14 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             loadout: 15,
             ability: "Après qu'un vaisseau allié à portée 0-3 est détruit, avant que le vaisseau ne soit retiré, vous pouvez effectuer une action. Puis, vous pouvez effectuer une attaque bonus.",
             ability_ENG: "After a friendly ship at range 0-3 is destroyed, before that ship is removed, you may perform an action. Then you may perform a bonus attack.",
-        	title: "Millenium Falcon",
+        	title: ["Millenium Falcon"],
             slots: [
                 "Talent",
                 "Title"            
             ],
             modifier_func: [
-            	() => auto_equip("Title",1),
-                () => also_Occupies("Missile",134),
+            	() => auto_equip("Title",1,135),
+                () => also_Occupies("Missile",135),
                     () => lose_chassis("Docking Ship"),
                     () => add_slots("Sensor"),
                     () => add_slots("Calculator"),
@@ -7788,15 +7794,15 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             loadout: 15,
             ability: "Après avoir exécuté entièrement une manoeuvre rouge ou effectué une action rouge, vous pouvez dépenser n'importe quel nombre de #ch# pour choisir autant de vaisseaux alliés à portée 0-2. Ces vaisseaux peuvent effectuer une action, même stressés.",
             ability_ENG: "After you fully execute a red maneuver or perform a red action, you may spend any number of Charge to choose that many friendly ships at range 0-2. The chosen ships may perform an action, even while stressed. ",
-            title: "Millenium Falcon",
+            title: ["Millenium Falcon"],
             slots: [
                 "Talent",
                 "Talent",
                 "Title"            
             ],
             modifier_func: [
-            	() => auto_equip("Title",1),
-                () => also_Occupies("Missile",134),
+            	() => auto_equip("Title",1,135),
+                () => also_Occupies("Missile",135),
                     () => lose_chassis("Docking Ship"),
                     () => add_slots("Sensor"),
                     () => add_slots("Calculator"),
@@ -11325,7 +11331,153 @@ const upgrades = [
 ///////////////// Precision Ion Engine/////////
 ///////////Lightweight Frame/////////////
 ////////////Imperial Gunner///////////////
-              
+{
+    name: "Sabine's Masterpiece",
+    name_ENG: "Sabine's Masterpiece",
+    id: 196,
+    available: false,
+    modify: true,
+    slot: "Title",
+    points: 0,
+    max_per_squad: 1,
+    faction: ["Phoenix_Cell"],
+    ship: "TIE/ln Fighter",
+    effect: "",
+    restrictions: [1,"title", "Sabine's Masterpiece",""],
+    modifier_func: [
+        () => add_slots("Illicit"),        
+    ]
+    
+},
+{
+    name: "Black One",
+    name_ENG: "Black One",
+    id: 197,
+    available: false,
+    modify: true,
+    slot: "Title",
+    points: 0,
+    max_per_squad: 1,
+    faction: ["Resistance"],
+    ship: "T-70 X-Wing",
+    effect: "",
+    restrictions: [1,"title", "Black One",""],
+    modifier_func: [
+        () => add_slots("Turret"),        
+    ]
+    
+},
+{
+    name: "Phantom 1",
+    name_ENG: "Phantom 1",
+    id: 198,
+    available: false,
+    modify: false,
+    slot: "Title",
+    points: 0,
+    max_per_squad: 1,
+    faction: ["Phoenix_Cell"],
+    ship: "Attack Shuttle",
+    effect: "",
+    restrictions: [1,"title", "Phantom 1",""],
+    
+},
+{
+    name: "Phantom 2",
+    name_ENG: "Phantom 2",
+    id: 199,
+    available: false,
+    modify: false,
+    slot: "Title",
+    points: 0,
+    max_per_squad: 1,
+    faction: ["Phoenix_Cell"],
+    ship: "Sheathipede-Class Shuttle",
+    effect: "",
+    restrictions: [1,"title", "Phantom 2",""],
+    
+},
+{
+    name: "Sato's Hammer",
+    name_ENG: "Sato's Hammer",
+    id: 200,
+    available: false,
+    modify: false,
+    slot: "Title",
+    points: 0,
+    max_per_squad: 1,
+    faction: ["Phoenix_Cell"],
+    ship: "YT-2400 Light Freighter",
+    effect: "",
+    restrictions: [1,"title", "Sato's Hammer",""],
+    
+},
+{
+    name: "Mighty Oak Apocalypse",
+    name_ENG: "Mighty Oak Apocalypse",
+    id: 201,
+    available: false,
+    modify: false,
+    slot: "Title",
+    points: 0,
+    max_per_squad: 1,
+    faction: ["Phoenix_Cell"],
+    ship: "YT-2400 Light Freighter",
+    effect: "",
+    restrictions: [1,"title", "Mighty Oak Apocalypse",""],
+    
+},
+{
+    name: "Nightbrother",
+    name_ENG: "Nightbrother",
+    id: 202,
+    available: false,
+    modify: true,
+    slot: "Title",
+    points: 0,
+    max_per_squad: 1,
+    faction: ["Phoenix_Cell"],
+    ship: "Gauntlet Fighter",
+    effect: "",
+    restrictions: [1,"title", "Nightbrother",""],
+    modifier_func: [
+        () => add_slots("Turret"),        
+    ]
+},
+{
+    name: "Ghost",
+    name_ENG: "Ghost",
+    id: 203,
+    available: false,
+    modify: false,
+    slot: "Title",
+    points: 0,
+    max_per_squad: 1,
+    faction: ["Phoenix_Cell"],
+    ship: "VCX-100 Light Freighter",
+    effect: "",
+    restrictions: [1,"title", "Ghost",""],
+           
+},
+{
+    name: "Soulless One",
+    name_ENG: "Soulless One",
+    id: 204,
+    available: false,
+    modify: true,
+    slot: "Title",
+    points: 0,
+    max_per_squad: 1,
+    faction: ["C.I.S"],
+    ship: "Belbullab-22 Starfighter",
+    effect: "",
+    restrictions: [1,"title", "Soulless One",""],
+    modifier_func: [
+        () => add_slots("Turret"),  
+    ]       
+},
+
+
     ]   
     
     
@@ -11396,32 +11548,33 @@ function removeElementsByClass() {//permet de supprimer tous les éléments qui 
             listFull = [];
         }       
 
-function select_pilot_list(x) {//permet de remplir la liste des pilotes disponibles correspondant au vaisseau sélectionné
+function select_pilot_list(x){ //permet de remplir la liste des pilotes disponibles correspondant au vaisseau sélectionné
     factionnameget();
     let pilot_available = ["Select Pilot"];
     ship_selected_list[x] = document.getElementById("menu_ship_"+ x).value;
     for (let i= 0; i< pilots.length; i++) {
     if ((pilots[i]["faction"]===factionno1 || pilots[i]["faction"]===factionno2 || pilots[i]["faction"]===factionno3) && (pilots[i]["ship"]===ship_selected_list[x])) {
         pilot_available.push(pilots[i]["name"] + ' (' + pilots[i]["points"] + ')' );//on ajoute dans la liste le nom des pilotes avec leur cout
-        
-    }
+        pilot_objects[x].push(pilots[i]);
    } 
    populateMenu("menu_pilot_" + x, pilot_available);
   
   
 }
+}
+
 function dataGetFromPilot(yy) { //On prend le pilote et on recopie l'objet pilote dans pilot_list, et on va incrémenter le totalcost
     pilot_selected_list[yy] = document.getElementById("menu_pilot_"+yy).value;
     costcount = document.getElementById("shipcost"+yy);
     loadoutcount= document.getElementById("shiploadout"+yy);
     totalcount= document.getElementById("totalcost");
     totalcostvalue = 0; //remise à 0 sinon il s'incrémente à chaque saisie de pilote
-    for (i=0; i<pilots.length; i++) {
+    /*for (i=0; i<pilots.length; i++) {
         let endIndex = pilot_selected_list[yy].indexOf(" ("); // Find the index of " (" 
         let nomPilote = pilot_selected_list[yy].substring(0, endIndex); //On retire les parenthèses avec le cout pour pouvoir faire une comparaison stricte dans la ligne d'après
         if (nomPilote===pilots[i]["name"]) {
-            pilot_list[yy] = pilots[i];
-	    
+            pilot_list[yy] = pilots[i];*/
+            pilot_list[yy] = pilot_objects[yy][z-1];
             costcount.textContent = pilot_list[yy]["points"];
             loadoutcount.textContent = pilot_list[yy]["loadout"];
             for (j=0; j<8 ;j++) {
@@ -11430,8 +11583,9 @@ function dataGetFromPilot(yy) { //On prend le pilote et on recopie l'objet pilot
          totalcount.textContent = totalcostvalue;   
          return
             }
-    }
-}
+    
+
+
 
 function displayslots(yy) { //crée les menus de slot et contient l'écoute des "modification" des slots
      // Get the parent element
@@ -11704,41 +11858,7 @@ function checkPilotModifier(e) { //va checker s'il existe des fonctions dans mod
 }
 
 function also_Occupies(targetSlot,id){ //A utiliser lorsqu'une upgrade utilise un slot de plus. On va en plus écouter le menu qui a été rempli pour inverser l'opération si l'upg est retirée.
-    /*fillUpgradesSelected(y);
-    let field = null;
-    for (let i=0; i<upgradesSelected[y].length;i++){
-       
-      if(upgradesSelected[y][i]==='<'+targetSlot+'>'){
-        field = document.getElementById("slot"+y+"_"+i);
-        field.value = "<"+targetSlot+">";
-        field.setAttribute("disabled","");
-        break;
-      }
-     } 
-   //on va chercher à annuler l'état disabled des champs suite à la fonction  also_Occupies, lorsque l'amélioration est retirée
-    let upgname = upgrades[id]["name"]; 
-    let p = upgrades[id]["points"];
-    let upgslot = null;
-    for (let k = 0 ; k<upgradesSelected[y].length; k++){ // on va rechercher dans quel menu l'upgrade qui a déclenché occupies_Slot se trouve 
-        if (upgradesSelected[y][k] === upgname + ' (' + p + ')'){
-            upgslot = document.getElementById('slot'+y+'_'+k);
-            break;
-        }
-    }
-    if (field===null){ //ce cas arrive si le targetslot est déjà occupé par une autre upgrade
-        alert('Not Available. <'+targetSlot+'> required.')
-        upgslot.value = '<'+upgrades[id]["slot"]+'>';
-        return;
-    }
-    let listenfunction = function(){ //fonction qui va servir dans l'écoute juste au dessous
-        field.removeAttribute('disabled');
-        fillUpgradesSelected(y);
-    }
-
-    upgslot.addEventListener('input', function(){
-        listenfunction();
-        upgslot.removeEventListener('input',listenfunction); //on arrête d'écouter le menu si l'upg a été retirée
-    }) */
+    
     fillUpgradesSelected(y);
     let field = null;
     for (let i = 0; i < upgradesSelected[y].length; i++) {
@@ -11925,7 +12045,7 @@ function check_restricted_List(event){ //check si l'upgrade ou le pilote est dé
  }
     
  
-function upgrade_restricted_List(yy){
+function upgrade_restricted_List(yy){ //va mettre à jour la restricted_List. les pilotes sont mis dans une 9 ème table, sinon les upgrades sont mises dans les 7 premières tables
     
     let namepil = "menu_pilot"+yy;
     if (pilot_list[yy]['max_per_squad'] < 8){
@@ -11937,7 +12057,7 @@ function upgrade_restricted_List(yy){
         slotmenu = document.getElementById('slot'+yy+'_'+i);
         z = slotmenu.selectedIndex;
         let nameupg = 'slot'+yy+'_'+i;
-        if ((z > 0) && (upgrades_Objects_Val[yy][i][z-1]['max_per_squad'] < 8)) {
+        if ((z > 0) && (upgrades_Objects_Val[yy][i][z-1]['max_per_squad'] < 8)) { // si ce n'est pas une upgrade limitée, alors max per squad = 8 et il n'y a pas besoin de renseigner la restrited List
             nameupg = upgrades_Objects_Val[yy][i][z-1]['name'];
         }
         restricted_List[yy][i]= nameupg;
@@ -11945,7 +12065,27 @@ function upgrade_restricted_List(yy){
     }
     
 
-function auto_equip(Slot,index){
+function auto_equip(Slot, indexMenu, indexUpgrade){
+    // on va faire un check si l'upgrade est limitée. On ne peut pas se servir de la fonction check_restricted_List car le champ visé par l'event est celui du pilote et non de l'upgrade. On va donc recopier une partie de son code et l'adapter
+    nameUpgrade = upgrades[indexUpgrade]['name']; 
+    maxNbrUpgrade = upgrades[indexUpgrade]['max_per_squad'];
+    while (maxNbrUpgrade>0) {
+        for (let i=0 ; i<9 ; i++){
+            for (let j = 0 ; j<restricted_List[i].length ; j++){
+                if (restricted_List[i][j]===nameUpgrade){
+                    maxNbrUpgrade = maxNbrUpgrade -1 ;
+                }
+            }
+            }
+           
+            break;
+        }
+    if (maxNbrUpgrade <= 0) {
+        alert(nameUpgrade +' is no more available in your squad');
+        document.getElementById('menu_pilot_'+y).selectedIndex = 0; //on refuse la prise en compte du pilote
+        return;
+    }
+    // fin du check
     let numero_slot = 0; 
     for(let i = 0;i<upgrades_Type[y].length;i++){
         if (upgrades_Type[y][i]===Slot){
@@ -11954,9 +12094,10 @@ function auto_equip(Slot,index){
     }
     let slotToEquip = document.getElementById('slot'+y+'_'+numero_slot);
     options = slotToEquip.options;
-    slotToEquip.selectedIndex = index;
+    slotToEquip.selectedIndex = indexMenu;
     slotToEquip.setAttribute("disabled","");
     fillUpgradesSelected(y);
+    upgrade_restricted_List(y);
     console.log(slotToEquip.value);
 }
 
@@ -12133,7 +12274,7 @@ function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'acti
     let newslots = document.createElement('div');
     let newcost = document.createElement('div');
     let newloadout = document.createElement('div');
-    newpara.setAttribute('class','new'+shipquantity);
+    newpara.setAttribute('class','new '+shipquantity);
     newdiv.setAttribute('id','ship'+numero);
     newdiv.setAttribute('class','ship');
     newship.setAttribute('id','menu_ship_'+numero );
