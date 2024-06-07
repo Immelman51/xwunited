@@ -11543,6 +11543,7 @@ function removeElementsByClass() {//permet de supprimer tous les éléments qui 
             upgrades_Objects= [[],[],[],[],[],[],[],[]];
             upgradesSelected = [[],[],[],[],[],[],[],[]];
             upgrades_Objects_Val= [[],[],[],[],[],[],[],[]];
+            pilot_objects = [[],[],[],[],[],[],[],[]];
             restricted_List = [[0],[1],[2],[3],[4],[5],[6],[7],[8]];
             pilot_list = [{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0}];
             listFull = [];
