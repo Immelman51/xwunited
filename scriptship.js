@@ -47,7 +47,7 @@ const shipObject = {
 
 //description des chassis
 
-
+/*
 const chassis = [
     {
         name: "Docking Ship",
@@ -8504,8 +8504,9 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         
 
     ];
+    */
  
-const upgrades = [
+/*const upgrades = [
         // ##############################################      GENERIC UPGRADE ##########################""
             {
                 name: "Astromech R2",
@@ -10525,10 +10526,10 @@ const upgrades = [
                 ship: "G-1A Starfighter",
                 restrictions: [1,"title", "Mist Hunter",""],
                 effect: "",
-                /*modifier_func: [
+                modifier_func: [
                     [() => change_stat,["points",1]],
                     [() => change_stat,["loadout",5]]
-                ]*/
+                ]
             },
             {
                 name: "Punishing One",
@@ -10605,10 +10606,10 @@ const upgrades = [
                 ship: "ST-70 Assault Ship",
                 restrictions: [1,"title", "Razor Crest",""],
                 effect: "",
-                /*modifier_func: [
+                modifier_func: [
                     [() => change_stat,["points",1]],
                     [() => change_stat,["loadout",5]]
-                ]*/
+                ]
             },
             {
                 name: "Moldy Crow",
@@ -11488,7 +11489,7 @@ const upgrades = [
 
     ]   
     
-    
+  */  
  
  
  function populateMenu(menuId, options) {//fonction qui permet de remplir un menu avec un tableau d'options
