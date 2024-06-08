@@ -3217,10 +3217,10 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"          
             ],
             modifier_func: [
-            	() => auto_equip("Title",1),
+            	() => auto_equip("Title",1,147),
                 () => add_slots("Illicit"),
                 () => add_slots("Cannon"),
-                () => also_Occupies("Modification",146),
+                () => also_Occupies("Modification",147),
                     ]
         },
         {
@@ -3266,10 +3266,10 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 
             ],
             modifier_func: [
-            	() => auto_equip("Title",1),
+            	() => auto_equip("Title",1,147),
                 () => add_slots("Illicit"),
                 () => add_slots("Cannon"),
-                () => also_Occupies("Modification",146),
+                () => also_Occupies("Modification",147),
                     ]
         },
         {
@@ -3293,10 +3293,10 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"
             ],
             modifier_func: [
-            	() => auto_equip("Title",1),
+            	() => auto_equip("Title",1,147),
                 () => add_slots("Illicit"),
                 () => add_slots("Cannon"),
-                () => also_Occupies("Modification",146),
+                () => also_Occupies("Modification",147),
                     ]
         },
         {
@@ -4302,7 +4302,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                "Title"
             ],
             modifier_func: [
-            	() => auto_equip("Title",1),
+            	() => auto_equip("Title",1,146),
                 () => free_upg("Modification")
                     ]
         },
@@ -4327,7 +4327,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title",
             ],
             modifier_func: [
-            	() => auto_equip("Title",1)
+            	() => auto_equip("Title",1,146)
                     ]
         },
         {
@@ -4352,12 +4352,12 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"
             ],
             modifier_func: [
-            	() => auto_equip("Title",1),
+            	() => auto_equip("Title",1,145),
                 () => add_slots("Crew"),
                     () => add_slots("Tech"),
                     () => add_slots("Illicit"),
-                    () => also_Occupies("Astromech",144),
-                    () => also_Occupies("Torpedo",144),
+                    () => also_Occupies("Astromech",145),
+                    () => also_Occupies("Torpedo",145),
                     ]
         },
         {
@@ -4381,12 +4381,12 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"
             ],
             modifier_func: [
-            	() => auto_equip("Title",1),
+            	() => auto_equip("Title",1,145),
                 () => add_slots("Crew"),
                     () => add_slots("Tech"),
                     () => add_slots("Illicit"),
-                    () => also_Occupies("Astromech",144),
-                    () => also_Occupies("Torpedo",144),
+                    () => also_Occupies("Astromech",145),
+                    () => also_Occupies("Torpedo",145),
                     ]
         },
         {
@@ -4430,13 +4430,13 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
 
             ],
             modifier_func: [
-            	() => auto_equip("Title",1),
+            	() => auto_equip("Title",145),
                 () => droid(),
                 () => add_slots("Crew"),
                     () => add_slots("Tech"),
                     () => add_slots("Illicit"),
-                    () => also_Occupies("Astromech",144),
-                    () => also_Occupies("Torpedo",144),
+                    () => also_Occupies("Astromech",145),
+                    () => also_Occupies("Torpedo",145),
                     ]
         },
         {
@@ -4628,7 +4628,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"
             ],
             modifier_func: [
-            	() => auto_equip("Title",1),
+            	() => auto_equip("Title",1,141),
                 () => add_slots("Gunner"),
                     () => add_slots("Cannon"),
                     ]            
@@ -4655,7 +4655,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"
             ],
             modifier_func: [
-            	() => auto_equip("Title",1),
+            	() => auto_equip("Title",1,141),
                 () => add_slots("Gunner"),
                     () => add_slots("Cannon"),
                     () => droid()
@@ -4911,7 +4911,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"
             ],
             modifier_func: [
-            	() => auto_equip("Title",1), //le chiffre correspond à l'index de l'upgrade dans le menu
+            	() => auto_equip("Title",1,139), //le chiffre correspond à l'index de l'upgrade dans le menu
                 () => add_slots("Gunner"),
                 () => add_slots("Cannon"),
                 () => add_slots("Illicit"),
@@ -4938,7 +4938,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"
             ],
             modifier_func: [
-            	() => auto_equip("Title",1),
+            	() => auto_equip("Title",1,140),
                 () => add_slots("Payload"),
                 () => add_slots("Payload"),
                 () => add_slots("Illicit")
@@ -5275,10 +5275,10 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 
             ],
             modifier_func: [
-            	() => auto_equip("Title",1),
+            	() => auto_equip("Title",1,144),
                 () => droid(),
                 () => add_slots("Calculator"),
-                () => also_Occupies("Modification",143),
+                () => also_Occupies("Modification",144),
                     ]
         },
         {
@@ -5303,10 +5303,10 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"               
             ],
             modifier_func: [
-            	() => auto_equip("Title",1),
+            	() => auto_equip("Title",1,144),
                 () => droid(),
                 () => add_slots("Calculator"),
-                () => also_Occupies("Modification",143),
+                () => also_Occupies("Modification",144),
                     ]
         },
         {
@@ -5333,9 +5333,9 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             ],
             modifier_func: [
                 () => droid(),
-                () => auto_equip("Title",1),
+                () => auto_equip("Title",1,144),
                 () => add_slots("Calculator"),
-                () => also_Occupies("Modification",143),
+                () => also_Occupies("Modification",144),
                     ]
         },
         {
@@ -5361,10 +5361,10 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 
             ],
             modifier_func: [
-            	() => auto_equip("Title",1),
+            	() => auto_equip("Title",1,144),
                 () => droid(),
                 () => add_slots("Calculator"),
-                () => also_Occupies("Modification",143),
+                () => also_Occupies("Modification",144),
                     ]
         },
         {
@@ -5389,7 +5389,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"
             ],
             modifier_func: [
-            	() => auto_equip("Title",1)
+            	() => auto_equip("Title",1,146)
                     ]
         },
         {
@@ -5414,7 +5414,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"
             ],
             modifier_func: [
-            	() => auto_equip("Title",1),
+            	() => auto_equip("Title",1,146),
                 () => droid()
                     ]
         },
@@ -5440,7 +5440,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"
             ],
             modifier_func: [
-            	() => auto_equip("Title",1),
+            	() => auto_equip("Title",1,142),
                 () => droid()
                     ]
         },
@@ -5465,7 +5465,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"
             ],
             modifier_func: [
-            	() => auto_equip("Title",1)
+            	() => auto_equip("Title",1,142)
                     ]
         },
         {
@@ -5493,10 +5493,10 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"
             ],
             modifier_func: [
-            	() => auto_equip("Title",1),
+            	() => auto_equip("Title",1,143),
                 () => add_slots("Astromech"),
                 () => change_stat("attackt",1),
-                () => also_Occupies("Crew",142),
+                () => also_Occupies("Crew",143),
                     ]
         },
         {
@@ -5540,10 +5540,10 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"
             ],
             modifier_func: [
-            	() => auto_equip("Title",1),
+            	() => auto_equip("Title",1,143),
                 () => add_slots("Astromech"),
                 () => change_stat("attackt",1),
-                () => also_Occupies("Crew",142),
+                () => also_Occupies("Crew",143),
                     ]
         },
         {
@@ -5648,7 +5648,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"
             ],
             modifier_func: [
-            	() => auto_equip("Title",1),
+            	() => auto_equip("Title",1,138),
                 () => add_slots("Gunner"),
                 () => add_slots("Cannon"),
                 () => also_Occupies("Illicit",137),
@@ -5718,7 +5718,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"
             ],
             modifier_func: [
-            	() => auto_equip("Title",1),
+            	() => auto_equip("Title",1,137),
                 () => add_slots("Payload"),
                 () => add_slots("Crew"),
                     ]
@@ -5783,7 +5783,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"
             ],
             modifier_func: [
-            	() => auto_equip("Title",1),
+            	() => auto_equip("Title",1,139),
                 () => add_slots("Gunner"),
                 () => add_slots("Cannon"),
                 () => add_slots("Illicit"),
@@ -5811,7 +5811,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
                 "Title"
             ],
             modifier_func: [
-            	() => auto_equip("Title",1),
+            	() => auto_equip("Title",1,139),
                 () => add_slots("Gunner"),
                 () => add_slots("Cannon"),
                 () => add_slots("Illicit"),
@@ -11485,7 +11485,6 @@ const upgrades = [
         () => add_slots("Turret"),  
     ]       
 },
-
 
     ]   
      
