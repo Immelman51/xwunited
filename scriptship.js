@@ -47,7 +47,7 @@ const shipObject = {
 
 //description des chassis
 
-/*
+
 const chassis = [
     {
         name: "Docking Ship",
@@ -8504,9 +8504,9 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
         
 
     ];
-    */
+    
  
-/*const upgrades = [
+const upgrades = [
         // ##############################################      GENERIC UPGRADE ##########################""
             {
                 name: "Astromech R2",
@@ -11488,8 +11488,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
 
 
     ]   
-    
-  */  
+     
  
  
  function populateMenu(menuId, options) {//fonction qui permet de remplir un menu avec un tableau d'options
