@@ -60,12 +60,12 @@ const leaders =
      leaderid: 8,
      leaderability: ""
      },
-     {
+     /*{
      leadername: "Saw Gerrera",
      leaderfaction: ["Partisans","",""],
      leaderid: 9,
      leaderability: ""
-     },
+     },*/
      {
      leadername: "Moff Jerjerrod",
      leaderfaction: ["Imperial_Elite_Forces","",""],
@@ -84,7 +84,7 @@ const leaders =
      leaderid: 12,
      leaderability: ""
      },
-     {
+     /*{
      leadername: "Anakin Skywalker",
      leaderfaction: ["Jedi_Order","",""],
      leaderid: 13,
@@ -101,14 +101,14 @@ const leaders =
      leaderfaction: ["Agents_of_Chaos","",""],
      leaderid: 15,
      leaderability: ""
-     },
+     },*/
      {
      leadername: "Nute Gunray",
      leaderfaction: ["C.I.S","",""],
      leaderid: 16,
      leaderability: ""
      },
-     {
+     /*{
      leadername: "Padme Amidala",
      leaderfaction: ["Galactic_Senate","",""],
      leaderid: 17,
@@ -155,7 +155,7 @@ const leaders =
      leaderfaction: ["Black_Sun","",""],
      leaderid: 24,
      leaderability: ""
-     }
+     }*/
      
      ];
      

@@ -1419,6 +1419,7 @@ const ships =
             keyword: ["TIE"],
             shields: 1,
             base: ["Small"],
+            slots: ["Tech","Modification"],
             actions: [
                 "Focus",
                 "Evade",
@@ -1447,6 +1448,7 @@ const ships =
             base: ["Small"],
             keyword: ["TIE"],
             chassis: ["Autothrusters"],
+            slots: ["Tech","Torpedo","Modification","Sensor"],
             actions: [
                 "Focus",
                 "Boost",
@@ -1473,6 +1475,7 @@ const ships =
             hull: 3,
             shields: 3,
             base: ["Small"],
+            slots: ["Gunner","Tech","Missile","Modification"],
             keyword: ["TIE"],
             chassis: ["Heavy Weapon Turret"],
             actions: [
@@ -1506,6 +1509,7 @@ const ships =
             shields: 6,
             chassis: "???",
             keyword: [],
+            slots: ["Crew","Crew","Modification","Modification","Sensor","Calculator","Calculator"],
             actions: [
                 "Focus",
                 "Lock",
@@ -1707,6 +1711,7 @@ const ships =
             base: ["Small"],
             keyword: [],
             chassis: ["Grappling Struts"],
+            slots: ["Missile"],
             actions: [
                 "Calculate",
                 "Lock",
@@ -1723,8 +1728,6 @@ const ships =
             ]
         },
         {
-            
- 
             name: "Belbullab-22 Starfighter",
             id:57,
             factions: ["C.I.S"],
@@ -1734,6 +1737,7 @@ const ships =
             shields: 2,
             base: ["Small"],
             keyword: [],
+            slots: ["Modification","Modification","Calculator"],
             actions: [
                 "Focus",
                 "Lock",
@@ -1792,6 +1796,7 @@ const ships =
             base: ["Small"],
             keyword: [],
             chassis: ["Landing Struts"],
+            slots: ["Missile","Torpedo","Payload","Modification","Sensor"],
             actions: [
                 "Calculate",
                 "Lock",
@@ -2010,6 +2015,7 @@ const ships =
             base: ["Small"],
             keyword: [],
             chassis: ["Repulsorlift Stabilizers"],
+            slots: ["Crew","Missile","Missile","Payload","Modification","Calculator"],
             actions: [
                 "Calculate",
                 "Lock",
@@ -2096,6 +2102,7 @@ const ships =
             base: ["Small"],
             keyword: [],
             chassis: ["Networked Calculations"],
+            slots: ["Modification","Sensor","Calculator","Calculator"],
             actions: [
                 "Calculate",
                 "Evade",
@@ -2261,6 +2268,7 @@ const ships =
             base: ["Small"],
             keyword: ["TIE"],
             chassis: ["Pursuit Thrusters"],
+            slots: ["Gunner","Missile","Torpedo","Payload","Payload","Modification"],
             actions: [
                 "Focus",
                 "Lock",
@@ -6029,7 +6037,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             faction: "Phoenix_Cell",
             ship: "Sheathipede-Class Shuttle",
             force: 0,
-            shipId: 45,
+            shipId: 41,
             skill: 1,
             modify: true,
 		    title: ["Phantom 2"],
@@ -6053,7 +6061,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             faction: "Phoenix_Cell",
             ship: "Sheathipede-Class Shuttle",
             force: 0,
-            shipId: 45,
+            shipId: 41,
             skill: 4,
             modify: true,
 		    title: ["Phantom 2"],
@@ -6077,7 +6085,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             max_per_squad: 1,
             faction: "Phoenix_Cell",
             ship: "Sheathipede-Class Shuttle",
-            shipId: 45,
+            shipId: 41,
             skill: 5,
             force: 3,
             modify: true,
@@ -6103,7 +6111,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             faction: "Phoenix_Cell",
             ship: "Sheathipede-Class Shuttle",
             force: 0,
-            shipId: 45,
+            shipId: 41,
             skill: 2,
             points: 5,
             modify: true,
@@ -6568,7 +6576,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             faction: "C.I.S",
             ship: "Sheathipede-Class Shuttle",
             force: 0,
-            shipId: 45,
+            shipId: 41,
 	        modify: true,
             skill: 1,
             points: 7,
@@ -6591,7 +6599,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             ship: "Sheathipede-Class Shuttle",
 	        modify: false,
             force: 0,
-            shipId: 45,
+            shipId: 41,
             skill: 3,
             points: 7,
             loadout: 10,
@@ -6608,7 +6616,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             faction: "C.I.S",
             ship: "Sheathipede-Class Shuttle",
             force: 0,
-            shipId: 45,
+            shipId: 41,
 		    modify: false,
             skill: 2,
             points: 7,
@@ -6626,7 +6634,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             faction: "C.I.S",
             ship: "Sheathipede-Class Shuttle",
             force: 0,
-            shipId: 45,
+            shipId: 41,
 			modify: false,
             skill: 2,
             points: 7,
@@ -6646,7 +6654,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             max_per_squad: 8,
             ship: "Sheathipede-Class Shuttle",
             force: 0,
-            shipId: 45,
+            shipId: 41,
 		    modify: true,
             skill: 1,
             points: 6,
@@ -8131,7 +8139,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             max_per_squad: 1,
             faction: "Imperial_Elite_Forces",
             modify: false,
-		    ship: "Tie/ln Fighter",
+		    ship: "TIE/ln Fighter",
             force: 0,
             shipId: 4,
             skill: 4,
@@ -8152,7 +8160,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             max_per_squad: 1,
             faction: "Imperial_Elite_Forces",
             modify: false,
-		    ship: "Tie/ln Fighter",
+		    ship: "TIE/ln Fighter",
             force: 0,
             shipId: 4,
             skill: 4,
@@ -8170,7 +8178,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             id: 248,
             max_per_squad: 1,
             faction: "Imperial_Elite_Forces",
-            ship: "Tie/ln Fighter",
+            ship: "TIE/ln Fighter",
             modify: false,
 		    force: 0,
             shipId: 4,
@@ -8189,7 +8197,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             id: 249,
             max_per_squad: 1,
             faction: "Imperial_Elite_Forces",
-            ship: "Tie/ln Fighter",
+            ship: "TIE/ln Fighter",
             modify: false,
 		    force: 0,
             shipId: 4,
@@ -11510,7 +11518,7 @@ function select_ship_list() {//permet de remplir la liste des vaisseaux disponib
 
     factionnameget();
     
-    ship_available = ["Select Ship"];
+    ship_available = ["<Select Ship>"];
     shipObject_available = [];
     for (let i = 0; i < ships.length; i++) {
         if (ships[i]["factions"].includes(factionno1) || ships[i]["factions"].includes(factionno2) || ships[i]["factions"].includes(factionno3)) {
@@ -11551,7 +11559,7 @@ function removeElementsByClass() {//permet de supprimer tous les éléments qui 
 
 function select_pilot_list(x){ //permet de remplir la liste des pilotes disponibles correspondant au vaisseau sélectionné
     factionnameget();
-    let pilot_available = ["Select Pilot"];
+    let pilot_available = ["<Select Pilot>"];
     ship_selected_list[x] = document.getElementById("menu_ship_"+ x).value;
     for (let i= 0; i< pilots.length; i++) {
     if ((pilots[i]["faction"]===factionno1 || pilots[i]["faction"]===factionno2 || pilots[i]["faction"]===factionno3) && (pilots[i]["ship"]===ship_selected_list[x])) {
