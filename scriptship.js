@@ -5651,7 +5651,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             	() => auto_equip("Title",1,138),
                 () => add_slots("Gunner"),
                 () => add_slots("Cannon"),
-                () => also_Occupies("Illicit",137),
+                () => also_Occupies("Illicit",138),
                     ]
         },
 {
@@ -5721,6 +5721,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             	() => auto_equip("Title",1,137),
                 () => add_slots("Payload"),
                 () => add_slots("Crew"),
+                () => also_Occupies("Modification",137)
                     ]
         },
 {
@@ -10427,6 +10428,7 @@ const upgrades = [
                 modifier_func: [
                     () => add_slots("Payload"),
                     () => add_slots("Crew"),
+                    () => also_Occupies("Modification",137)
              
                 ]
                 
