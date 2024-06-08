@@ -12047,6 +12047,11 @@ function check_restricted_List(event){ //check si l'upgrade ou le pilote est dé
     if (maxnbr <= 0) { // cela arrive si on a excédé le nombre d'exemplaires de l'upgrade/pilote
         alert(newname +' is no more available in your squad');
         event.target.selectedIndex = 0;
+        if (x=== -1){ //il faut remettre à jour certaines listes
+            pilot_selected_list[y] =  { name: "", points: 0 };
+        }else{
+            upgradesSelected[y][x] = event.target.value;
+        }
         return; //va arrêter tout processus par exemple le check_upgrade_validation qui va lancer des modifs de menus
     }else{
         upgrade_restricted_List(y); //l'upgrade ou le pilote est accepté donc on peut mettre à jour cette restricted_List
@@ -12309,7 +12314,8 @@ function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'acti
     populateMenu("menu_ship_"+numero, ship_available);
     //ajout de l'écoute d'un input sur le nouveau menu newship
     newship.addEventListener('input', function(event) {
-       y = event.target.id.slice(10,11); 
+       //y = event.target.id.slice(10,11);  
+       identifyElement(event);
        select_pilot_list(numero);
        fill_listFull_Ship(numero);
     }) ;
@@ -12333,6 +12339,9 @@ function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'acti
     
 }
 function fill_listFull_Pilot(yy){ // fonction qui renseigne la partie pilote de l'objet shipObject dans listFull
+    if (z=0){ //ne pas lancer cette fonction si on a sélectionné une valeur nulle, ie la première valeur de chaque menu
+        return;
+    }
     listFull[yy].pilot_name = pilot_list[yy]['name'];
     listFull[yy].pilot_id = pilot_list[yy]['id'];
     listFull[yy].pilot_max_per_squad = pilot_list[yy]['max_per_squad'];
@@ -12343,6 +12352,9 @@ function fill_listFull_Pilot(yy){ // fonction qui renseigne la partie pilote de 
     
 }
 function fill_listFull_Ship(yy){ //fonction qui renseigne la partie ship de l'objet shipObject dans listFull
+    if (z=0){ //ne pas lancer cette fonction si on a sélectionné une valeur nulle, ie la première valeur de chaque menu
+        return;
+    }
     shipmenu = document.getElementById('menu_ship_'+yy);
     shipindex = shipmenu.selectedIndex;
     listFull[yy].ship_name = shipObject_available[shipindex-1]['name'];
@@ -12361,7 +12373,7 @@ function fill_listFull_Ship(yy){ //fonction qui renseigne la partie ship de l'ob
 function remove_ship() { //fonction qui permet de retirer le dernier vaisseau. S'active via le bouton Removeship
     
     // Get all elements with the specified class name
-    const elements = document.getElementsByClassName("new"+shipquantity);
+    const elements = document.getElementsByClassName("new "+shipquantity);
         
     // Convert HTMLCollection to array for easier manipulation
     const elementsArray = Array.from(elements);
@@ -12377,9 +12389,13 @@ function remove_ship() { //fonction qui permet de retirer le dernier vaisseau. S
     upgradesSelected[shipquantity] = [];
     upgrades_Objects_Val[shipquantity]= [];
     restricted_List[shipquantity] = [shipquantity];
+    restricted_List[8][shipquantity] = "";
     pilot_list[shipquantity] = {name:"",points:0};
     listFull.slice(0,-1);
-    shipquantity--;
+    if (shipquantity>0){
+        shipquantity--;
+    }
+        
     updateTotalCost();
     
 }       
