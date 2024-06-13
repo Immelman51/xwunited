@@ -11530,9 +11530,9 @@ function select_ship_list() {//permet de remplir la liste des vaisseaux disponib
         };
         
 };
-function removeElementsByClass() {//permet de supprimer tous les éléments qui possèdent la class "new". Utile lorsqu'on change de leader
+function removeElementsByClass(classname) {//permet de supprimer tous les éléments qui possèdent la class "new". Utile lorsqu'on change de leader
             // Get all elements with the specified class name
-            const elements = document.getElementsByClassName("new");
+            const elements = document.getElementsByClassName(classname);
         
             // Convert HTMLCollection to array for easier manipulation
             const elementsArray = Array.from(elements);
@@ -11541,7 +11541,7 @@ function removeElementsByClass() {//permet de supprimer tous les éléments qui 
             elementsArray.forEach(element => {
                 element.parentNode.removeChild(element);
             });
-            shipquantity = -1;
+            /*shipquantity = -1;
             
             overCostTab = [0,0,0,0,0,0,0,0];
             totalcostvalue = 0;
@@ -11555,7 +11555,7 @@ function removeElementsByClass() {//permet de supprimer tous les éléments qui 
             pilot_objects = [[],[],[],[],[],[],[],[]];
             restricted_List = [[0],[1],[2],[3],[4],[5],[6],[7],[8]];
             pilot_list = [{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0}];
-            listFull = [];
+            listFull = [];*/
         }       
 
 function select_pilot_list(x){ //permet de remplir la liste des pilotes disponibles correspondant au vaisseau sélectionné
@@ -12372,7 +12372,7 @@ function fill_listFull_Ship(yy){ //fonction qui renseigne la partie ship de l'ob
 
 function remove_ship() { //fonction qui permet de retirer le dernier vaisseau. S'active via le bouton Removeship
     
-    // Get all elements with the specified class name
+    /*// Get all elements with the specified class name
     const elements = document.getElementsByClassName("new "+shipquantity);
         
     // Convert HTMLCollection to array for easier manipulation
@@ -12381,15 +12381,17 @@ function remove_ship() { //fonction qui permet de retirer le dernier vaisseau. S
     // Remove each element from its parent node
     elementsArray.forEach(element => {
         element.parentNode.removeChild(element);
-    });
-    
+    });*/
+    removeElementsByClass("new "+shipquantity);
+    pilot_objects[shipquantity]=[];
+    pilot_selected_list[shipquantity]="";
     overCostTab[shipquantity] = 0;
     upgrades_Type[shipquantity] = [];
     upgrades_Objects[shipquantity]= [];
     upgradesSelected[shipquantity] = [];
     upgrades_Objects_Val[shipquantity]= [];
-    restricted_List[shipquantity] = [shipquantity];
-    restricted_List[8][shipquantity] = "";
+    restricted_List[shipquantity] = [shipquantity]; //retrait des upgrades du dernier vaisseau
+    restricted_List[8][shipquantity] = "";  //retrait du nom du pilote du dernier vaisseau
     pilot_list[shipquantity] = {name:"",points:0};
     listFull.slice(0,-1);
     if (shipquantity>0){
@@ -12426,13 +12428,24 @@ function displayDescriptionUpgrade(event){ //permet d'afficher l'effet de l'amé
 //On écoute les changements sur selection leader pour "populate" préparer réinitialiser les valeurs
 leaderselect = document.getElementById("menu_leader");
 leaderselect.addEventListener("input", function() {
-    removeElementsByClass()
+    removeElementsByClass("new")
     select_ship_list();
     document.getElementById("descript_upg").innerHTML="";
-   upgrades_Objects= [[],[],[],[],[],[],[],[]];
-    overCostTab = [0,0,0,0,0,0,0,0]
-    upgradesSelected = [[],[],[],[],[],[],[],[]]
-    upgrades_Type = [[],[],[],[],[],[],[],[]]
+    shipquantity = -1;
+    overCostTab = [0,0,0,0,0,0,0,0];
+    totalcostvalue = 0;
+    y= 0;
+    x=0;
+    z=0;
+    pilot_selected_list=[];
+    upgrades_Type = [[],[],[],[],[],[],[],[]];
+    upgrades_Objects= [[],[],[],[],[],[],[],[]];
+    upgradesSelected = [[],[],[],[],[],[],[],[]];
+    upgrades_Objects_Val= [[],[],[],[],[],[],[],[]];
+    pilot_objects = [[],[],[],[],[],[],[],[]];
+    restricted_List = [[0],[1],[2],[3],[4],[5],[6],[7],[8]];
+    pilot_list = [{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0}];
+    listFull = [];
 }); 
 
 
