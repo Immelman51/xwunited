@@ -11613,7 +11613,7 @@ function displayslots(yy) { //crée les menus de slot et contient l'écoute des 
         upgrades_Type[yy].push(pilot_list[yy]["slots"][i]);
     slotmenu = document.createElement('select');
     slotmenu.setAttribute('id', 'slot'+yy+"_"+i);
-    slotmenu.setAttribute('class', 'slotElement'+' '+pilot_list[yy]["slots"][i]);
+    slotmenu.setAttribute('class', 'slotElement'+y+' '+pilot_list[yy]["slots"][i]);
     shipslot.appendChild(slotmenu);
     slotmenu.addEventListener("input", function(event) {//cette faction décrit le calcul des mises à jour des points pour le loadout et le cout du pilote
             identifyElement(event);
@@ -12297,7 +12297,7 @@ function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'acti
     newpilot.setAttribute('id','menu_pilot_'+numero);
     newpilot.setAttribute('class','menu shipmenu pilotmenu');
     newslots.setAttribute('id','shipslots'+numero);
-    newslots.setAttribute('class','slot new');
+    newslots.setAttribute('class','slot '+numero);
     newcost.setAttribute('id','shipcost'+numero);
     newcost.setAttribute('class','count cost');
     newloadout.setAttribute('id','shiploadout'+numero);
@@ -12318,6 +12318,14 @@ function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'acti
        identifyElement(event);
        select_pilot_list(numero);
        fill_listFull_Ship(numero);
+       removeElementsByClass("slotElement"+numero);
+      restricted_List[numero] = [];
+      upgradesSelected[numero] = [];
+      upgrades_Objects[numero] = [];
+      upgrades_Objects_Val[numero] = [];
+      upgrades_Type[numero] = [];
+
+
     }) ;
     newpilot.addEventListener("mouseover", function(event){
         y = event.target.id.slice(11,12); //y = numéro du pilote modifié
@@ -12382,7 +12390,8 @@ function remove_ship() { //fonction qui permet de retirer le dernier vaisseau. S
     elementsArray.forEach(element => {
         element.parentNode.removeChild(element);
     });*/
-    removeElementsByClass("new "+shipquantity);
+    removeElementsByClass("new "+shipquantity); //retire la balise <p> qui contient tous les éléments
+    
     pilot_objects[shipquantity]=[];
     pilot_selected_list[shipquantity]="";
     overCostTab[shipquantity] = 0;
