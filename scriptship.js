@@ -12320,7 +12320,7 @@ function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'acti
        fill_listFull_Ship(numero);
        removeElementsByClass("slotElement"+numero);
       restricted_List[numero] = [];
-      restricted_List[8][numero] = "";
+      restricted_List[8][numero] = ""; //Il faut aussi retirer le nom du pilote
       upgradesSelected[numero] = [];
       upgrades_Objects[numero] = [];
       upgrades_Objects_Val[numero] = [];
