@@ -11642,7 +11642,7 @@ function displayslots(yy) { //crée les menus de slot et contient l'écoute des 
         upgrades_Type[yy].push(ships[pilot_list[yy]["shipId"]]["slots"][j]);
         slotmenu = document.createElement('select');
         slotmenu.setAttribute('id', 'slot'+yy+"_"+(j+index));
-        slotmenu.setAttribute('class', 'slotElement'+' '+ships[pilot_list[yy]["shipId"]]["slots"][j] );
+        slotmenu.setAttribute('class', 'slotElement'+y+' '+ships[pilot_list[yy]["shipId"]]["slots"][j] );
         shipslot.appendChild(slotmenu);
         slotmenu.addEventListener("input", function(event) {//cette faction décrit le calcul des mises à jour des points pour le loadout et le cout du pilote
             identifyElement(event); 
@@ -11916,7 +11916,7 @@ function may_remove_slots(slot){ //permet de retirer des slots
     let upgslot = document.getElementById('slot'+y+'_'+x);
             
 
-    let fieldtoremove = document.getElementsByClassName('slotElement'+' '+slot+' '+y);
+    let fieldtoremove = document.getElementsByClassName('slotElement'+y+' '+slot);
     let listenfunction = function(){
             
             idfield = fieldtoremove[fieldtoremove.length-1].id; //besoin de connaitre la position de champ pour pouvoir l'extraire de upgrades_Object et upgrades_Type. 
@@ -11963,7 +11963,7 @@ function  add_slots (targetSlot){ //A utiliser si une upgrade rajoute des slots
     shipslot = document.getElementById('shipslots'+y);
     slotmenu = document.createElement('select');
     slotmenu.setAttribute('id', 'slot'+y+"_"+nbrSlots);
-    slotmenu.setAttribute('class', 'slotElement'+' '+targetSlot+' '+y);
+    slotmenu.setAttribute('class', 'slotElement'+y+' '+targetSlot);
     shipslot.appendChild(slotmenu);
         //Il faut créer la liste des upgrades pour populate les nouveaux menus
     let upgObjList = [];
@@ -12316,6 +12316,7 @@ function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'acti
     newship.addEventListener('input', function(event) {
        //y = event.target.id.slice(10,11);  
        identifyElement(event);
+       pilot_objects[numero] = [];
        select_pilot_list(numero);
        fill_listFull_Ship(numero);
        removeElementsByClass("slotElement"+numero);
@@ -12325,6 +12326,10 @@ function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'acti
       upgrades_Objects[numero] = [];
       upgrades_Objects_Val[numero] = [];
       upgrades_Type[numero] = [];
+      pilot_list[numero]= {name:"",points:0};
+      listFull[numero] = {};
+      
+
 
 
     }) ;
