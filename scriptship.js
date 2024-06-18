@@ -12491,6 +12491,7 @@ function hasher(){ //on inscrit dans hash le nombre de vaisseaux (shipquantity+1
         hash = hash + ",";
         
     }
+    hash = hash.slice(0,-1); //on retire la virgule finale
 }
 
 
