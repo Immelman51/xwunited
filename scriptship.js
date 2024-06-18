@@ -44,6 +44,7 @@ const shipObject = {
     pilot_loadout:"",
     upgrade_list:[],
 }
+let hash = "";
 
 //description des chassis
 
@@ -12316,18 +12317,18 @@ function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'acti
     newship.addEventListener('input', function(event) {
        //y = event.target.id.slice(10,11);  
        identifyElement(event);
-       pilot_objects[numero] = [];
+       pilot_objects[numero] = []; //Il faut nettoyer toutes les infos du ship/pilot/slots précédent
        select_pilot_list(numero);
        fill_listFull_Ship(numero);
        removeElementsByClass("slotElement"+numero);
-      restricted_List[numero] = [];
+      restricted_List[numero] = []; //Il faut nettoyer toutes les infos du ship/pilot/slots précédent
       restricted_List[8][numero] = ""; //Il faut aussi retirer le nom du pilote
-      upgradesSelected[numero] = [];
-      upgrades_Objects[numero] = [];
-      upgrades_Objects_Val[numero] = [];
-      upgrades_Type[numero] = [];
-      pilot_list[numero]= {name:"",points:0};
-      listFull[numero] = {};
+      upgradesSelected[numero] = []; //Il faut nettoyer toutes les infos du ship/pilot/slots précédent
+      upgrades_Objects[numero] = []; //Il faut nettoyer toutes les infos du ship/pilot/slots précédent
+      upgrades_Objects_Val[numero] = []; //Il faut nettoyer toutes les infos du ship/pilot/slots précédent
+      upgrades_Type[numero] = []; //Il faut nettoyer toutes les infos du ship/pilot/slots précédent
+      pilot_list[numero]= {name:"",points:0}; //Il faut nettoyer toutes les infos du ship/pilot/slots précédent
+      listFull[numero] = {}; //Il faut nettoyer toutes les infos du ship/pilot/slots précédent
       
 
 
@@ -12382,6 +12383,7 @@ function fill_listFull_Ship(yy){ //fonction qui renseigne la partie ship de l'ob
     listFull[yy].ship_actions = shipObject_available[shipindex-1]['actions'];
     listFull[yy].ship_chassis = shipObject_available[shipindex-1]['chassis'];
 }
+
 
 
 function remove_ship() { //fonction qui permet de retirer le dernier vaisseau. S'active via le bouton Removeship
@@ -12475,6 +12477,21 @@ removeMenuButton.addEventListener('click', remove_ship);
 
 
 
+
+function hasher(){ //on inscrit dans hash le nombre de vaisseaux (shipquantity+1) on va transformer tous les ids du ship pilote et upgrades séparés par la lettre "e", puis chaque vaisseaux différents séparés par ",".
+    hash = String(shipquantity+1) +'e';
+    for(i = 0; shipquantity; i++) {
+        let string_ship_ID = String(listFull[i].ship_id);
+        let string_pilot_ID = String(listFull[i].pilot_id);
+        hash = hash + string_ship_ID + "e" + string_pilot_ID +"e";
+        for(j = 0; listFull[i].upgrade_list.length; j++){
+            let string_upgrades_ID = String(listFull[i].upgrade_list[j]);
+            hash = hash + string_upgrades_ID + "e";
+        }
+        hash = hash + ",";
+        
+    }
+}
 
 
 
