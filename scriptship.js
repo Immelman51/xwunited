@@ -4279,7 +4279,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             
             ],
             modifier_func: [
-            	() => auto_equip("Title",1)
+            	() => auto_equip("Title",1,146)
                     ]
         },
         {
@@ -4631,7 +4631,7 @@ const pilots = [ //ne pas metre de parenthèses ( ou ) dans les noms de pilotes 
             modifier_func: [
             	() => auto_equip("Title",1,141),
                 () => add_slots("Gunner"),
-                    () => add_slots("Cannon"),
+                () => add_slots("Cannon"),
                     ]            
         },
         {
@@ -12493,6 +12493,10 @@ function hasher(){ //on inscrit dans hash le nombre de vaisseaux (shipquantity+1
     }
     hash = hash.slice(0,-1); //on retire la virgule finale
 }
+
+//Voici le lien de printsquad avec le hash à sa suite (qui permettra de savoir quoi imprimer)
+const linkToPrintSquad = document.getElementById('printsquad');
+linkToPrintSquad.href =  'print_squad.html#${hash}';
 
 
 
