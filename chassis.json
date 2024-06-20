@@ -83,7 +83,17 @@
         "name": "Rigged Energy Cells",
         "id": 15,
         "effect1": "<em><strong>Cellules Énergétiques Bidouillées :</strong></em> Pendant la phase de système, si vous n’êtes pas arrimé, perdez 1 #ch# . À la fin de la phase d’activation, vous êtes détruit si vous avez 0 #ch#. Avant de retirer votre figurine, chaque vaisseau à porté 0–1 subit 1 dégât #crit#"
-    }
+    },
+    {
+        "name": "",
+        "id": 16,
+        "effect1": ""
+    },
+{
+    "name": "Networked Calculations",
+    "id":17,
+    "effect1":""
+}
 
 
 

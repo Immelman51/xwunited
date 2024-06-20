@@ -48,6 +48,9 @@ ships :
   2 : () => add_slots("Illicit"),
   3 : () => also_Occupies("Modification",146)
   4 : () => free_upg("Modification")
-  5 : () => change_chassis("Rigged Energy Cells")
+  5 : () => change_chassis(10)    id du chassis
   6 : () => weapon_Hardpoint()
-  7 : () => change_stat("attackt",3),
+  7 : () => change_stat("attackt",1),
+  8 : () => add_action([0,"Co","R"])
+  9 : () => add_condition(3)     id de la condition
+  10 : () => may_remove_slots("Astromech") //WARNING ! The order of the "slot"s to remove is very important. You have to start removing the last "slot", and keep on removing them starting from the last one. Or Else the function 'may_remove_"slot"' will fail. The reason is a bit tricky, but to make it simple, this function will remove (splice) elements in the array upgrades_Objets and upgrades_Type thinking the position is the last digit of the "slot"menu."id". 
