@@ -2,6 +2,8 @@
  Custom xw
 
 ABOUT JSON DATABASES :
+
+##########################################################################################################################################################################
 ships : 
 
 "actions" : [0,"Fo", "W"], 
@@ -35,7 +37,7 @@ ships :
   ]             
   Column Description : [L-Turn, L-Bank, Straight, R-Bank, R-Turn, K-Turn, S-Loop L, S-Loop R, T-Roll L, T-Roll R, L-Reverse, Straight Reverse, R-Reverse]
 
-
+########################################################################################################################################################################
   Pilots :
   //ne pas mettre de parenthèses ( ou ) dans les noms de pilotes car elles sont utilisées pour les cout dans les menus pilote
 
