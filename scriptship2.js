@@ -1,3 +1,42 @@
+let requestURLships = "https://raw.githubusercontent.com/Immelman51/xwunited/main/ships.json";
+let requestURLchassis = "https://raw.githubusercontent.com/Immelman51/xwunited/main/chassis.json";
+let requestURLpilots = "https://raw.githubusercontent.com/Immelman51/xwunited/main/pilots.json";
+let requestURLupgrades = "https://raw.githubusercontent.com/Immelman51/xwunited/main/upgrades.json";
+
+let ships, chassis, pilots, upgrades;
+
+async function fetchData(url) {
+    let response = await fetch(url);
+    if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    return await response.json();
+}
+
+(async () => {
+    try {
+        ships = await fetchData(requestURLships);
+        chassis = await fetchData(requestURLchassis);
+        pilots = await fetchData(requestURLpilots);
+        upgrades = await fetchData(requestURLupgrades);
+
+        console.log(ships);
+        console.log(chassis);
+        console.log(pilots);
+        console.log(upgrades);
+
+        // Vous pouvez maintenant utiliser les variables ships, chassis, pilots, et upgrades ici ou dans d'autres fonctions
+    } catch (error) {
+        console.error("Failed to fetch data: ", error);
+    }
+})();
+
+// Vous pouvez également accéder aux variables ships, chassis, pilots, et upgrades ici après que les données ont été chargées
+
+
+
+
+
 let shipquantity = -1; //compteur qui ne sert pas à compter mais à numéroter les id des menus
  let ship_available = [];
  let ship_selected_list = ["","","","","","","",""]; // Dans ce tableau, on va stocker la valeur sélectée de chaque menu_ship
@@ -834,6 +873,8 @@ function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'acti
     let newslots = document.createElement('div');
     let newcost = document.createElement('div');
     let newloadout = document.createElement('div');
+    let newchassis = document.createElement('div');
+    let newtitle = document.createElement('div');
     newpara.setAttribute('class','new '+shipquantity);
     newdiv.setAttribute('id','ship'+numero);
     newdiv.setAttribute('class','ship');
@@ -847,6 +888,10 @@ function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'acti
     newcost.setAttribute('class','count cost');
     newloadout.setAttribute('id','shiploadout'+numero);
     newloadout.setAttribute('class','count loadout');
+    newchassis.setAttribute('class','new chassis '+numero);
+    newchassis.setAttribute('id','shipchassis'+numero);
+    newtitle.setAttribute('class','new title '+numero);
+    newtitle.setAttribute('id','title'+numero);
 
     squad.appendChild(newpara);
     newpara.appendChild(newdiv);
@@ -855,6 +900,8 @@ function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'acti
     newpara.appendChild(newslots);
     newdiv.appendChild(newcost);
     newdiv.appendChild(newloadout);
+    newdiv.appendChild(newchassis);
+    newdiv.appendChild(newtitle);
     
     populateMenu("menu_ship_"+numero, ship_available);
     //ajout de l'écoute d'un input sur le nouveau menu newship
