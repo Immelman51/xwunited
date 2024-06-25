@@ -1,3 +1,4 @@
+
 let requestURLships = "https://raw.githubusercontent.com/Immelman51/xwunited/main/ships.json";
 let requestURLchassis = "https://raw.githubusercontent.com/Immelman51/xwunited/main/chassis.json";
 let requestURLpilots = "https://raw.githubusercontent.com/Immelman51/xwunited/main/pilots.json";
@@ -15,11 +16,12 @@ async function fetchData(url) {
 
 (async () => {
     try {
+        
         ships = await fetchData(requestURLships);
         chassis = await fetchData(requestURLchassis);
         pilots = await fetchData(requestURLpilots);
         upgrades = await fetchData(requestURLupgrades);
-
+        
         console.log(ships);
         console.log(chassis);
         console.log(pilots);

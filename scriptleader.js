@@ -1,6 +1,8 @@
 let requestURLleaders = "https://raw.githubusercontent.com/Immelman51/xwunited/main/leaders.json";
 
-let leaders;
+let leaders =[];
+let menuLeader = [];
+
 async function fetchData(url) {
     let response = await fetch(url);
     if (!response.ok) {
@@ -8,16 +10,21 @@ async function fetchData(url) {
     }
     return await response.json();
 }
-
-(async () => {
+// Fetch leaders data and populate menuLeader
+async function initializeData() {
     try {
         leaders = await fetchData(requestURLleaders);
         console.log(leaders);
-       
+        for (let i = 0; i < leaders.length; i++) {
+            menuLeader.push(leaders[i]["leadername"]);
+        }
     } catch (error) {
         console.error("Failed to fetch data: ", error);
     }
-})();
+}
+
+
+
 
 
 /*const leaders =
@@ -192,22 +199,24 @@ async function fetchData(url) {
     });
 }
 
-let menuLeader = [];
-let indexleader = 0;
+/*let menuLeader = [];
+let indexleader = 0;*/
 
-// charger les options pour le menu leader
-for(let i = 0; i<leaders.length; i++) {
-    menuLeader.push(leaders[i]["leadername"]);
-};
 
  
     
-  const menuFaction = ["<Select Faction>","Rebel_Alliance","Imperial_Academy","Mandalorian_Clans","Pirates_and_Smugglers","Bounty_Hunters_Guild","Phoenix_Cell","C.I.S","Resistance","Imperial_Elite_Forces","First_Order","Partisans","Shadow_Specialists","Jedi_Order","New_Republic","Hutt_Cartel","Agent_of_Chaos","Galactic_Senate","Imperial_Remnants","Black_Sun","Crime_Syndicates","ISB","Colossus"];
+const menuFaction = ["<Select Faction>","Rebel_Alliance","Imperial_Academy","Mandalorian_Clans","Pirates_and_Smugglers","Bounty_Hunters_Guild","Phoenix_Cell","C.I.S","Resistance","Imperial_Elite_Forces","First_Order","Partisans","Shadow_Specialists","Jedi_Order","New_Republic","Hutt_Cartel","Agent_of_Chaos","Galactic_Senate","Imperial_Remnants","Black_Sun","Crime_Syndicates","ISB","Colossus"];
 
-//on remplit les menus au chargement
-window.addEventListener("DOMContentLoaded", function() {    
-    populateMenu("menu_faction",menuFaction);
-    populateMenu("menu_leader",menuLeader);   
+// Populate menus after initializing data
+async function populateMenus() {
+    await initializeData();
+    populateMenu("menu_faction", menuFaction);
+    populateMenu("menu_leader", menuLeader);
+}
+
+// Run populateMenus after DOM content is loaded
+window.addEventListener("DOMContentLoaded", function() {
+    populateMenus();
 });
 
 
