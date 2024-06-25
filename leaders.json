@@ -1,0 +1,178 @@
+[
+{
+    "leadername": "<Select Leader>",
+    "leaderfaction": ["","",""],
+    "leaderid": 0,
+    "leaderability": "",
+    "charge": 0
+} ,
+    {
+     "leadername":  "Greef Carga",
+     "leaderfaction": ["Bounty_Hunters_Guild","",""],
+     "leaderability": "Si vous avez au moins un capteur de positionnement, vous choisissez à qui vous attribuez la condition au lieu de votre adversaire. Si la cible est détruite, gagnez 2 #scenario_point#",
+     "leaderid": 1,
+     "charge": 0
+     },
+     {
+     "leadername": "Jan Dodonna",
+     "leaderfaction": ["Rebel_Alliance","",""],
+     "leaderid": 2,
+     "charge": 2,
+     "leaderability": "A chaque fois que vous effectuez une action de scénario, récupérez 1 #ch#. En phase système, vous pouvez dépenser 2 #ch# : gagnez 1 #scenario_point#"
+     },
+     {
+     "leadername": "Hondo Ohnaka",
+     "leaderfaction": ["Pirates_and_Smugglers","",""],
+     "leaderid": 3,
+     "charge": 3,
+     "leaderability": "A chaque fois qu'un de vos vaisseaux esquive parfaitement une attaque, récupérez 1 #ch# sur votre leader. En phase système, vous pouvez dépenser 3 #ch# : gagnez 1 #scenario_point#"
+     },
+     {
+     "leadername": "Bo Katan Kryze",
+     "leaderfaction": ["Mandalorian_Clans","",""],
+     "leaderid": 4,
+     "charge": 1,
+     "leaderability": "Au début de la phase de programmation, lancez 1 dé rouge.<br> 'vierge' : brouillez un de vos vaisseaux ;<br>#eye# : brouillez 1 vaisseau allié, assignez 1 calcul à un vaisseau.<br>#hit#: récupérez 1 #ch#.<br>#crit# : récupérez 1 #ch# et réparez une carte de dégat face ouverte.<br>Lorsque vous détruisez un vaisseau adverse, vous pouvez dépenser 1 #ch# pour gagner 1 #scenario_point#"
+     },
+     {
+     "leadername": "Grand Moff Tarkin",
+     "leaderfaction": ["Imperial_Academy","",""],
+     "leaderid": 5,
+     "charge": 2,
+     "leaderability": "A chaque fois que vous utilisez l'effet du talent 'Impitoyable', récupérez 1 #ch# sur votre carte leader. En phase Système, vous pouvez dépenser 2 #ch# : Gagnez 1 #scenario_point#."
+     },
+     {
+     "leadername": "Darth Vader",
+     "leaderfaction": ["Bounty_Hunters_Guild","Imperial_Academy" ,""],
+     "leaderid": 6,
+     "charge": 3,
+     "leaderability": "1 fois par ronde, lorsque vous attaquez un vaisseau, vous pouvez dépenser 1 #ch# pour améliorer un dé d'attaque."
+     },
+     {
+     "leadername": "Admiral Ackbar",
+     "leaderfaction": ["Pirates_and_Smugglers", "Rebel_Alliance", ""],
+     "leaderid": 7,
+     "charge": 2,
+     "leaderability": "Lorsqu'un de vos vaisseaux est déclaré défenseur lors d'un attaque, vous pouvez dépenser 1 #ch#. Dans ce cas, il peut effectuer un tonneau ou une accélération puis il reçoit un marqueur de stress. Si le vaisseau n'a pas l'action utlisée dans sa barre d'action ou qu'il était déjà stressé, il prend 1 dégat ou expose une carte de dégat. Ce mouvement peut annuler l'attaque en cours."
+     },
+     {
+     "leadername": "Jun Sato",
+     "leaderfaction": ["Phoenix_Cell","",""],
+     "leaderid": 8,
+     "leaderability": "",
+     "charge": 0
+     },
+     {
+     "leadername": "##Saw Gerrera",
+     "leaderfaction": ["Partisans","",""],
+     "leaderid": 9,
+     "leaderability": "",
+     "charge": 0
+     },
+     {
+     "leadername": "Moff Jerjerrod",
+     "leaderfaction": ["Imperial_Elite_Forces","",""],
+     "leaderid": 10,
+     "leaderability": "",
+     "charge": 0
+     },
+     {
+     "leadername": "Amilyn Holdo",
+     "leaderfaction": ["Resistance","",""],
+     "leaderid": 11,
+     "leaderability": "",
+     "charge": 0
+     },
+     {
+     "leadername": "General Hux",
+     "leaderfaction": ["First_Order","",""],
+     "leaderid": 12,
+     "leaderability": "",
+     "charge": 0
+     },
+     {
+     "leadername": "##Anakin Skywalker",
+     "leaderfaction": ["Jedi_Order","",""],
+     "leaderid": 13,
+     "leaderability": "",
+     "charge": 0
+     },
+     {
+     "leadername": "##Bib Fortuna",
+     "leaderfaction": ["Hutt_Cartel","",""],
+     "leaderid": 14,
+     "leaderability": "",
+     "charge": 0
+     },
+     {
+     "leadername": "##Count Dooku",
+     "leaderfaction": ["Agents_of_Chaos","",""],
+     "leaderid": 15,
+     "leaderability": "",
+     "charge": 0
+     },
+     {
+     "leadername": "Nute Gunray",
+     "leaderfaction": ["C.I.S","",""],
+     "leaderid": 16,
+     "leaderability": "",
+     "charge": 0
+     },
+     {
+     "leadername": "##Padme Amidala",
+     "leaderfaction": ["Galactic_Senate","",""],
+     "leaderid": 17,
+     "leaderability": "",
+     "charge": 0
+     },
+     {
+     "leadername": "##General Syndulla",
+     "leaderfaction": ["New_Republic","",""],
+     "leaderid": 18,
+     "leaderability": "",
+     "charge": 0
+     },
+     {
+     "leadername": "##Captain Doza",
+     "leaderfaction": ["Colossus","",""],
+     "leaderid": 19,
+     "leaderability": "",
+     "charge": 0
+     },
+     {
+     "leadername": "##General Pryde",
+     "leaderfaction": ["Shadow_Specialists","",""],
+     "leaderid": 20,
+     "leaderability": "",
+     "charge": 0
+     },
+     {
+     "leadername": "##Moff Gideon",
+     "leaderfaction": ["Imperial_Remnants","",""],
+     "leaderid": 21,
+     "leaderability": "",
+     "charge": 0
+     },
+     {
+     "leadername": "##Qi'Ra (C.D.)",
+     "leaderfaction": ["Crime_Syndicates","",""],
+     "leaderid": 22,
+     "leaderability": "",
+     "charge": 0
+     },
+     {
+     "leadername": "##Lom Pyke (P.S.)",
+     "leaderfaction": ["Crime_Syndicates","",""],
+     "leaderid": 23,
+     "leaderability": "",
+     "charge": 0
+     },
+     {
+     "leadername": "##Prince Xizor",
+     "leaderfaction": ["Black_Sun","",""],
+     "leaderid": 24,
+     "leaderability": "",
+     "charge": 0
+     }
+     
+     ]

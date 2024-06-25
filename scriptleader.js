@@ -1,4 +1,26 @@
-const leaders =
+let requestURLleaders = "https://raw.githubusercontent.com/Immelman51/xwunited/main/leaders.json";
+
+let leaders;
+async function fetchData(url) {
+    let response = await fetch(url);
+    if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    return await response.json();
+}
+
+(async () => {
+    try {
+        leaders = await fetchData(requestURLleaders);
+        console.log(leaders);
+       
+    } catch (error) {
+        console.error("Failed to fetch data: ", error);
+    }
+})();
+
+
+/*const leaders =
 [
 {
     leadername: "<Select Leader>",
@@ -65,7 +87,7 @@ const leaders =
      leaderfaction: ["Partisans","",""],
      leaderid: 9,
      leaderability: ""
-     },*/
+     },
      {
      leadername: "Moff Jerjerrod",
      leaderfaction: ["Imperial_Elite_Forces","",""],
@@ -101,7 +123,7 @@ const leaders =
      leaderfaction: ["Agents_of_Chaos","",""],
      leaderid: 15,
      leaderability: ""
-     },*/
+     },
      {
      leadername: "Nute Gunray",
      leaderfaction: ["C.I.S","",""],
@@ -155,10 +177,10 @@ const leaders =
      leaderfaction: ["Black_Sun","",""],
      leaderid: 24,
      leaderability: ""
-     }*/
+     }
      
-     ];
-     
+     ];*/
+
      // Function to populate dropdown menu options
  function populateMenu(menuId, options) {
     const menu = document.getElementById(menuId);
@@ -224,10 +246,11 @@ document.getElementById("faction3logo").setAttribute("src",'img/'+factionval3+'m
 /*rechecher les leaders qui appartiennent à la faction concernée et modifier le menu déroulant en fonction*/
 
 function selection_faction () {
-    
+let factionbutton = document.getElementById("faction");    
 let factionvalue = factionselect.value;
 if (factionvalue === "<Select Faction>") {
     populateMenu("menu_leader", menuLeader);
+    factionbutton.setAttribute("disabled","");
     return; // Exit the function early
 };
 
@@ -237,6 +260,7 @@ if (leaders[i]["leaderfaction"].includes(factionvalue)) {
 listeleader.push(leaders[i]["leadername"]) ;
 }
 }
+factionbutton.removeAttribute("disabled");
 populateMenu("menu_leader",listeleader);
 }
 

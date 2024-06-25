@@ -69,6 +69,7 @@ const shipObject = {
     modifiers:"", //At1 = front attack+1 ; Ag1 = Agility +1 ; Pt2 = points + 2 .... Tout sera séparé par le caractère "e"
 }
 let hash = "";
+let faction_hash = "";
 
 
 function populateMenu(menuId, options) {//fonction qui permet de remplir un menu avec un tableau d'options
@@ -1115,6 +1116,12 @@ leaderselect.addEventListener("input", function() {
     listFull = [];
 }); 
 
+function faction_cards(){ //dans scriptleader, lorsqu'une faction est sélectionnée, le bouton faction perd son attribut disabled
+    let selected_faction = document.getElementById("menu_faction").value;
+    faction_hash = selected_faction;
+    const linkToFactionCards = document.getElementById('menu_faction');
+    linkToFactionCards.href =  'faction_cards.html#${faction_hash}';
+}
 
 
 
@@ -1124,6 +1131,9 @@ addMenuButton.addEventListener('click', add_ship);
 //permet d'associer la fonction remove_ship au bouton remove ship
 const removeMenuButton = document.getElementById('removeshipbutton');
 removeMenuButton.addEventListener('click', remove_ship);
+//permet d'associer la fonction faction_cards au bouton faction
+const factionCards = document.getElementById('faction');
+factionCards.addEventListener('click', faction_cards);
 
 
 
