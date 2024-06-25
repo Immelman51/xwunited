@@ -1132,7 +1132,8 @@ factionCards.addEventListener('click', function() {
     let selected_faction = document.getElementById("menu_faction").value;
     const pageURL = "https://github.com/Immelman51/xwunited/faction_cards.html";
     // Construct the full URL with the hash
-    let fullUrl = `${pageURL}#${selected_faction}`;
+    let fullUrl = `faction_cards.html#${selected_faction}`;
+    //let fullUrl = `${pageURL}#${selected_faction}`;
     // Navigate to the URL
     window.location.href = fullUrl;
 });
