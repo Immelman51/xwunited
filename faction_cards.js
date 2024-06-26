@@ -46,11 +46,21 @@ if(window.location.hash) {
 for (let i = 0; i<leaders.length; i++);
     if (leaders[i]["leaderfaction"].includes(factionSelected)){
         let newleader = document.createElement('p');
-        newleader.setAttribute("id", "leader"+i);
         newleader.setAttribute("class", "leader");
-        let newleadername = document.createElement('h1');
+        let newleadername = document.createElement('h2');
+        newleadername.setAttribute("class", "leader name");
         newleadername.texcontent = leaders[i]["leadername"];
+        let newleadercharge = document.createElement('div');
+        newleadercharge.setAttribute("class", "leader charge");
+        newleadercharge.textContent = leaders[i]["charge"];
+        for (let j=0; j<3 ; j++){
+            let factions = leaders[i]["leaderfaction"][j];
+            let factionlogo = document.createElement("div");
+            factionlogo.setAttribute("class", "leader faction");
+            factionlogo.setAttribute("src",'img/'+factions+'mini.jpg');
+        }
         let newleaderability = document.createElement("div");
         newleaderability.textContent = leaders[i]["leaderability"];
-        let
+        newleaderability.setAttribute("class", "leader ability");
     }
+
