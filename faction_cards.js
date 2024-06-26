@@ -76,6 +76,7 @@ for (let i = 0; i<leaders.length; i++){
         newleader.appendChild(newleaderability);
 
         document.body.appendChild(newleader);
+        
     }
 }
 };
