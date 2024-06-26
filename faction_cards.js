@@ -14,7 +14,7 @@ async function fetchData(url) {
     return await response.json();
 }
 
-(async () => {
+async function loadAllData() {
     try {
         ships = await fetchData(requestURLships);
         chassis = await fetchData(requestURLchassis);
@@ -27,13 +27,17 @@ async function fetchData(url) {
         console.log(pilots);
         console.log(upgrades);
 
+        // Call function to handle the DOM manipulation after data is loaded
+        displayLeaders();
+
         // Vous pouvez maintenant utiliser les variables ships, chassis, pilots, et upgrades ici ou dans d'autres fonctions
     } catch (error) {
         console.error("Failed to fetch data: ", error);
     }
-})();
+};
 
-let factionSelected = "";
+
+    let factionSelected = "";
 
 if(window.location.hash) {
     // Mettez le hash dans une variable et supprimer le caractère #
@@ -42,16 +46,16 @@ if(window.location.hash) {
 } else {
     // Aucun hash n'est trouvé
 }
+function displayLeaders() { //on va d'abord faire afficher les leaders de la faction sélectionnée
 
-(async () => {
-for (let i = 0; i<leaders.length; i++){
+for (let i = 0; i<leaders.length; i++){ 
     if (leaders[i]["leaderfaction"].includes(factionSelected)){
         let newleader = document.createElement('p');
         newleader.setAttribute("class", "leader");
 
-        let newleadername = document.createElement('h2');
+        let newleadername = document.createElement('div');
         newleadername.setAttribute("class", "leader name");
-        newleadername.texcontent = leaders[i]["leadername"];
+        newleadername.textcontent = leaders[i]["leadername"];
         newleader.appendChild(newleadername);
 
         let newleadercharge = document.createElement('div');
@@ -74,4 +78,7 @@ for (let i = 0; i<leaders.length; i++){
         document.body.appendChild(newleader);
     }
 }
-});
+};
+
+// Load all data and then execute the rest
+loadAllData();
