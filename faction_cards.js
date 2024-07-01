@@ -29,6 +29,7 @@ async function loadAllData() {
 
         // Call function to handle the DOM manipulation after data is loaded
         displayLeaders();
+        displayShipsandPilots();
 
         // Vous pouvez maintenant utiliser les variables ships, chassis, pilots, et upgrades ici ou dans d'autres fonctions
     } catch (error) {
@@ -105,32 +106,32 @@ for (let i=0 ; i<ships.length; i++){ //on va afficher d'abord le vaisseau/chassi
 
         let newshipattack = document.createElement('div');
         newshipattack.setAttribute("class", "ship attack");
-        let attributesNames = ships[i].getAttributeNames(); //on va voir tester les différents les noms des différents noms d'attributs pour détecter ceux qui visent les attaques
-        for (let j = 0 ; attributesNames.length ; j++){
+        let attributesNames = Object.keys(ships[i]); //on va voir tester les différents les noms des différents noms d'attributs pour détecter ceux qui visent les attaques
+        for (let j = 0 ; j<attributesNames.length ; j++){
             let attack1 = null;
             switch(attributesNames[j]){
                 case 'attack': 
-                    attack1 = createElement('div');
+                    attack1 = document.createElement('div');
                     attack1.setAttribute("src",'img/attack.jpg');
                     attack1.innerHTML = ships[i]["attack"];
                 break;
                 case 'attackt' :
-                    attack1 = createElement('div');
+                    attack1 = document.createElement('div');
                     attack1.setAttribute("src",'img/attackt.jpg');
                     attack1.innerHTML = ships[i]["attackt"];
                     break;
                 case 'attackb' :
-                    attack1 = createElement('div');
+                    attack1 = document.createElement('div');
                     attack1.setAttribute("src",'img/attackb.jpg');
                     attack1.innerHTML = ships[i]["attackb"];
                     break;
                 case 'attackbull' :
-                    attack1 = createElement('div');
+                    attack1 = document.createElement('div');
                     attack1.setAttribute("src",'img/attackbull.jpg');
                     attack1.innerHTML = ships[i]["attackbull"];
                     break;
                 case 'attackf' :
-                    attack1 = createElement('div');
+                    attack1 = document.createElement('div');
                     attack1.setAttribute("src",'img/attackf.jpg');
                     attack1.innerHTML = ships[i]["attackf"];
                     break;
@@ -179,7 +180,7 @@ for (let i=0 ; i<ships.length; i++){ //on va afficher d'abord le vaisseau/chassi
         }
         newship.appendChild(newshipsize);
 
-        for (let m=0; m<pilots[j]["slots"]; m++){ //on va développer tous les slots associés au vaisseau
+        for (let m=0; m<ships[i]["slots"]; m++){ //on va développer tous les slots associés au vaisseau
             newshipslots = document.createElement('div');
             newshipslots.setAttribute("class", "ship slot");
             newshipslots.setAttribute("src", 'img/'+ships[i]["slots"][m]+'.jpg');
