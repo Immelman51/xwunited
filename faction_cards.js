@@ -233,7 +233,7 @@ document.body.appendChild(newship);
 // on est toujours dans la boucle if qui teste que le vaisseau appartient à la faction
     for (let j = 0; j<pilots.length; j++){
         
-        if (pilots[j]['shipId']===ships[i]['id']){
+        if ((pilots[j]['shipId']===ships[i]['id']) && pilots[j]['faction']===factionSelected){ //si le pilote a le bon ship Id et qu'il appartient à la faction sélectionnée, alors...
             
             let newpilot = document.createElement('p');
             newpilot.setAttribute("class","pilot");
@@ -253,7 +253,7 @@ document.body.appendChild(newship);
                 break;  
             }
 
-            console.log(limitNumber);
+
             let newpilotname = document.createElement('div');
             newpilotname.setAttribute("class", "pilot name");
             newpilotname.innerHTML = limitNumber+" "+pilots[j]["name"]+ " ("+pilots[j]["skill"]+")";   // on écrit le limitNumber = Max_per_Squad avant le nom du pilote  , puis le skill entre parenthèses   
