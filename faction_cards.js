@@ -232,44 +232,49 @@ document.body.appendChild(newship);
 // Maintenant on va afficher les pilotes !! Grosse boucle for ! et en voilà une autre qui l'est tout autant
 // on est toujours dans la boucle if qui teste que le vaisseau appartient à la faction
     for (let j = 0; j<pilots.length; j++){
-        if (pilots[j]['shipID']===ships[i]['id']){
+        
+        if (pilots[j]['shipId']===ships[i]['id']){
+            
             let newpilot = document.createElement('p');
             newpilot.setAttribute("class","pilot");
             
             let limitNumber = "";
             switch(pilots[j]['max_per_squad']){
-                case '1' : 
+                case 1 : 
                 limitNumber = "*";
                 break;
-                case '2' :
+                case 2 :
                 limitNumber = "**";
                 break; 
-                case '3' :
+                case 3 :
                 limitNumber = "***";
                 break; 
                 default : 
-                limitNumber = "";
                 break;  
             }
 
-
+            console.log(limitNumber);
             let newpilotname = document.createElement('div');
             newpilotname.setAttribute("class", "pilot name");
             newpilotname.innerHTML = limitNumber+" "+pilots[j]["name"]+ " ("+pilots[j]["skill"]+")";   // on écrit le limitNumber = Max_per_Squad avant le nom du pilote  , puis le skill entre parenthèses   
             newpilot.appendChild(newpilotname);
 
             if (pilots[j]["force"]>0){
+                let newpilotforcelogo = document.createElement('div');
                 let newpilotforce = document.createElement('div');
                 newpilotforce.setAttribute("class", "pilot force");
-                newpilotforce.setAttribute("src", 'img/forcestat.jpg');
+                newpilotforcelogo.setAttribute("src", 'img/forcestat.jpg');
                 newpilotforce.innerHTML = pilots[j]["force"];
+                newpilot.appendChild(newpilotforcelogo);
                 newpilot.appendChild(newpilotforce);
             }
             if (pilots[j]["charge"]>0){
+                let newpilotchargelogo = document.createElement('div');
                 let newpilotcharge = document.createElement('div');
                 newpilotcharge.setAttribute("class", "pilot charge");
-                newpilotcharge.setAttribute("src", 'img/chargestat.jpg');
+                newpilotchargelogo.setAttribute("src", 'img/chargestat.jpg');
                 newpilotcharge.innerHTML = pilots[j]["charge"];
+                newpilot.appendChild(newpilotchargelogo);
                 newpilot.appendChild(newpilotcharge);
             }
 
@@ -285,14 +290,18 @@ document.body.appendChild(newship);
 
             let newpilottitle = document.createElement('div');
             newpilottitle.setAttribute("class", "pilot title");
-            newpilottitle.innerHTML = pilots[j]["title"];
             newpilot.appendChild(newpilottitle);
-
+            if (typeof pilots[j]["title"] !== 'undefined'){ //certains pilotes n'ont pas de title
+            newpilottitle.innerHTML = pilots[j]["title"];
+            
+            }
             
             for (let k=0; k<pilots[j]["slots"]; k++){ //on va développer tous les slots du pilote
+                newpilotslotslogo = document.createElement('div');
                 newpilotslots = document.createElement('div');
                 newpilotslots.setAttribute("class", "pilot slot");
-                newpilotslots.setAttribute("src", 'img/'+pilots[j]["slots"][k]+'.jpg');
+                newpilotslotslogo.setAttribute("src", 'img/'+pilots[j]["slots"][k]+'.jpg');
+                newpilot.appendChild(newpilotslotslogo);
                 newpilot.appendChild(newpilotslots);
             } 
             
@@ -301,10 +310,13 @@ document.body.appendChild(newship);
 
             let newpilotability = document.createElement('div');
             newpilotability.setAttribute("class", "pilot ability");
-            newpilotability.innerHTML = pilots[j]["ability"];
             newpilot.appendChild(newpilotability); 
+            if (typeof pilots[j]["ability"] !== 'undefined'){ //certains pilotes n'ont pas d'ability (pilotes génériques)
+            newpilotability.innerHTML = pilots[j]["ability"];
+            }
 
             document.body.appendChild(newpilot);
+            
 
         }
     }        
