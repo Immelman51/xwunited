@@ -15,6 +15,9 @@ async function fetchData(url) {
 }
 
 async function loadAllData() {
+    
+   
+
     try {
         ships = await fetchData(requestURLships);
         chassis = await fetchData(requestURLchassis);
@@ -29,7 +32,9 @@ async function loadAllData() {
 
         // Call function to handle the DOM manipulation after data is loaded
         displayLeaders();
+   
         displayShipsandPilots();
+      
 
         // Vous pouvez maintenant utiliser les variables ships, chassis, pilots, et upgrades ici ou dans d'autres fonctions
     } catch (error) {
@@ -49,8 +54,11 @@ if(window.location.hash) {
 }
 function displayLeaders() { //on va d'abord faire afficher les leaders de la faction sélectionnée
     
+    
+
     let pLeader = document.createElement('div'); //permet d'accéder à la section leaders via le menu du header
     pLeader.setAttribute("id", "leaders");
+    document.body.appendChild(pLeader);
     
 for (let i = 0; i<leaders.length; i++){ 
     if (leaders[i]["leaderfaction"].includes(factionSelected)){
@@ -91,8 +99,10 @@ for (let i = 0; i<leaders.length; i++){
 
 function displayShipsandPilots() { //on va d'abord faire afficher les ships et les pilots associés
 
+    
     let pPilots = document.createElement('div'); //permet d'accéder à la section pilots via le menu du header
     pPilots.setAttribute("id", "pilots");
+    document.body.appendChild(pPilots);
 
 for (let i=0 ; i<ships.length; i++){ //on va afficher d'abord le vaisseau/chassis.... puis après les pilotes associés
     if (ships[i]["factions"].includes(factionSelected)){
@@ -201,7 +211,9 @@ shipactions.addEventListener('click', function() {
 });
 shipmaneuvers.addEventListener('click', function(){
     displaymaneuvers(ships[i]['id']); //on stocke l'ID pour retrouver rapidement les manoeuvres dans l'objet
-});    
+});  
+
+document.body.appendChild(newship);
 
 // On a fini de décrire le ship   
 // Maintenant on va afficher les pilotes !! Grosse boucle for ! et en voilà une autre qui l'est tout autant
@@ -236,14 +248,14 @@ shipmaneuvers.addEventListener('click', function(){
             if (pilots[j]["force"]>0){
                 let newpilotforce = document.createElement('div');
                 newpilotforce.setAttribute("class", "pilot force");
-                newpilotforce.setAttribute("src", 'img/force.jpg');
+                newpilotforce.setAttribute("src", 'img/forcestat.jpg');
                 newpilotforce.innerHTML = pilots[j]["force"];
                 newpilot.appendChild(newpilotforce);
             }
             if (pilots[j]["charge"]>0){
                 let newpilotcharge = document.createElement('div');
                 newpilotcharge.setAttribute("class", "pilot charge");
-                newpilotcharge.setAttribute("src", 'img/charge.jpg');
+                newpilotcharge.setAttribute("src", 'img/chargestat.jpg');
                 newpilotcharge.innerHTML = pilots[j]["charge"];
                 newpilot.appendChild(newpilotcharge);
             }
@@ -279,6 +291,8 @@ shipmaneuvers.addEventListener('click', function(){
             newpilotability.innerHTML = pilots[j]["ability"];
             newpilot.appendChild(newpilotability); 
 
+            document.body.appendChild(newpilot);
+
         }
     }        
     }
@@ -296,4 +310,7 @@ function displaymaneuvers(shipID) {
 
 }
 // Load all data and then execute the rest
-loadAllData();
+
+
+
+    loadAllData();
