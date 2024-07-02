@@ -166,7 +166,7 @@ for (let i=0 ; i<ships.length; i++){ //on va afficher d'abord le vaisseau/chassi
         let newshipshield = document.createElement('div');
         newshipshield.setAttribute("class", "ship shield");
         newshipshield.setAttribute("src", 'img/shield.jpg');
-        newshipshield.innerHTML = ships[i]["shield"];        
+        newshipshield.innerHTML = ships[i]["shields"];        
         newship.appendChild(newshipshield);
 
         
