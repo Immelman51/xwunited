@@ -117,6 +117,7 @@ for (let i=0 ; i<ships.length; i++){ //on va afficher d'abord le vaisseau/chassi
         let newshipattack = document.createElement('div');
         newshipattack.setAttribute("class", "ship attack");
         let attributesNames = Object.keys(ships[i]); //on va voir tester les différents les noms des différents noms d'attributs pour détecter ceux qui visent les attaques
+        
         for (let j = 0 ; j<attributesNames.length ; j++){
             let attacklogo = document.createElement('div');
             let attackk = null;
@@ -149,8 +150,10 @@ for (let i=0 ; i<ships.length; i++){ //on va afficher d'abord le vaisseau/chassi
                 default :
                     break;
             }
-            newshipattack.appendChild(attacklogo);
-            newshipattack.appendChild(attackk);
+            if (attackk !== null) {
+                newshipattack.appendChild(attacklogo);
+                newshipattack.appendChild(attackk);
+            }
         }
         newship.appendChild(newshipattack);
 
