@@ -34,6 +34,8 @@ async function loadAllData() {
         displayLeaders();
    
         displayShipsandPilots();
+
+        displayUpgrades();
       
 
         // Vous pouvez maintenant utiliser les variables ships, chassis, pilots, et upgrades ici ou dans d'autres fonctions
@@ -325,6 +327,67 @@ document.body.appendChild(newship);
 
 }
 
+//Maintenant on va afficher les upgrades réservées à la faction, puis les upgrades génériques
+//C'est parti !
+
+function displayUpgrades() {
+    let pUpgrades = document.createElement('div'); //permet d'accéder à la section upgrades via le menu du header
+    pUpgrades.setAttribute("id", "upgrades");
+    document.body.appendChild(pUpgrades);
+
+    for (let i = 0; i<upgrades.length; i++){
+        if (upgrades[i]["faction"].includes(factionSelected)){
+            let newupgrade = document.createElement('p');
+            newupgrade.setAttribute("class", "upgrade faction");
+        
+
+            let limitNumber = "";
+            switch(upgrades[i]['max_per_squad']){
+                case 1 : 
+                limitNumber = "*";
+                break;
+                case 2 :
+                limitNumber = "**";
+                break; 
+                case 3 :
+                limitNumber = "***";
+                break; 
+                default : 
+                break;  
+            }
+        
+            let newupgradename = document.createElement('div');
+        newupgradename.setAttribute("class", "upgrade name");
+        newupgradename.innerHTML = limitNumber+" "+upgrades[i]["name"];        
+        newupgrade.appendChild(newupgradename);
+
+        
+        let newupgradetype = document.createElement('div');
+        let newupgradetypelogo = document.createElement('div');
+        newupgradetype.setAttribute("class", "upgrade type");
+        newupgradetype.innerHTML = upgrades[i]["slot"]; 
+        newupgradetypelogo.setAttribute('src',  'img/'+upgrades[i]["slot"]+'.jpg')       
+        newupgrade.appendChild(newupgradetype);
+        newupgrade.appendChild(newupgradetypelogo);
+
+        let newupgradepoints = document.createElement('div');
+        newupgradepoints.setAttribute("class", "upgrade points");
+        newupgradepoints.innerHTML = upgrades[i]["points"];        
+        newupgrade.appendChild(newupgradepoints);
+
+        let newupgradeeffect = document.createElement('div');
+        newupgradeeffect.setAttribute("class", "upgrade effect");
+        newupgradeeffect.innerHTML = upgrades[i]["effect"];        
+        newupgrade.appendChild(newupgradeeffect);
+
+        document.body.appendChild(newupgrade);
+
+
+
+        
+        }
+    }
+}
 
 
 function displayactions(shipID) {
@@ -334,8 +397,9 @@ function displayactions(shipID) {
 function displaymaneuvers(shipID) {
 
 }
+
+
+
+
 // Load all data and then execute the rest
-
-
-
     loadAllData();
