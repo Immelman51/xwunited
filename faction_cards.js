@@ -331,9 +331,9 @@ document.body.appendChild(newship);
 //C'est parti !
 
 function displayUpgrades() {
-    let pUpgrades = document.createElement('div'); //permet d'accéder à la section upgrades via le menu du header
-    pUpgrades.setAttribute("id", "upgrades");
-    document.body.appendChild(pUpgrades);
+    let pUpgradesfaction = document.createElement('div'); //permet d'accéder à la section upgrades via le menu du header
+    pUpgradesfaction.setAttribute("id", "upgradesfaction");
+    document.body.appendChild(pUpgradesfaction);
 
     for (let i = 0; i<upgrades.length; i++){
         if (upgrades[i]["faction"].includes(factionSelected)){
@@ -387,6 +387,58 @@ function displayUpgrades() {
         
         }
     }
+    let pUpgradesGen = document.createElement("div");
+    pUpgradesGen.setAttribute("id", "upgradesgen");
+    document.body.appendChild(pUpgradesGen);
+    
+    for (let j = 0; j<upgrades.length; j++) { //on va maintenant afficher les upgrades génériques
+        if (upgrades[j]["faction"]===""){
+            let newupgrade = document.createElement('p');
+            newupgrade.setAttribute("class", "upgrade generic");
+        
+
+            let limitNumber = "";
+            switch(upgrades[j]['max_per_squad']){
+                case 1 : 
+                limitNumber = "*";
+                break;
+                case 2 :
+                limitNumber = "**";
+                break; 
+                case 3 :
+                limitNumber = "***";
+                break; 
+                default : 
+                break;  
+            }
+        
+            let newupgradename = document.createElement('div');
+        newupgradename.setAttribute("class", "upgrade name");
+        newupgradename.innerHTML = limitNumber+" "+upgrades[j]["name"];        
+        newupgrade.appendChild(newupgradename);
+
+        
+        let newupgradetype = document.createElement('div');
+        let newupgradetypelogo = document.createElement('div');
+        newupgradetype.setAttribute("class", "upgrade type");
+        newupgradetype.innerHTML = upgrades[j]["slot"]; 
+        newupgradetypelogo.setAttribute('src',  'img/'+upgrades[j]["slot"]+'.jpg')       
+        newupgrade.appendChild(newupgradetype);
+        newupgrade.appendChild(newupgradetypelogo);
+
+        let newupgradepoints = document.createElement('div');
+        newupgradepoints.setAttribute("class", "upgrade points");
+        newupgradepoints.innerHTML = upgrades[j]["points"];        
+        newupgrade.appendChild(newupgradepoints);
+
+        let newupgradeeffect = document.createElement('div');
+        newupgradeeffect.setAttribute("class", "upgrade effect");
+        newupgradeeffect.innerHTML = upgrades[j]["effect"];        
+        newupgrade.appendChild(newupgradeeffect);
+
+        document.body.appendChild(newupgrade);
+        }
+}
 }
 
 
