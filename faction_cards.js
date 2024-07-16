@@ -217,9 +217,11 @@ for (let i=0 ; i<ships.length; i++){ //on va afficher d'abord le vaisseau/chassi
         let newshipothers = document.createElement('div');
         let shipactions = document.createElement('a');
         shipactions.innerHTML = "Actions";
+        shipactions.setAttribute('class','action');
         newshipothers.appendChild(shipactions);    
         let shipmaneuvers = document.createElement('a');
         shipmaneuvers.innerHTML = "Maneuvers";
+        shipmaneuvers.setAttribute('class','maneuver');
         newshipothers.appendChild(shipmaneuvers);
 shipactions.addEventListener('click', function() {
     displayactions(ships[i]['id']); //on stocke l'ID pour retrouver rapidement les actions dans l'objet
@@ -371,12 +373,12 @@ function displayUpgrades() {
         newupgrade.appendChild(newupgradetypelogo);
 
         let newupgradepoints = document.createElement('div');
-        newupgradepoints.setAttribute("class", "upgrade points");
+        newupgradepoints.setAttribute("class", "upgrade value");
         newupgradepoints.innerHTML = upgrades[i]["points"];        
         newupgrade.appendChild(newupgradepoints);
 
         let newupgradeeffect = document.createElement('div');
-        newupgradeeffect.setAttribute("class", "upgrade effect");
+        newupgradeeffect.setAttribute("class", "upgrade ability");
         newupgradeeffect.innerHTML = upgrades[i]["effect"];        
         newupgrade.appendChild(newupgradeeffect);
 

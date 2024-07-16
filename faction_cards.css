@@ -8,16 +8,34 @@ header {
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
-    max-width: 750px;
+    max-width: 21cm;
+    position: sticky;
 }
 
-.ship {
+
+
+
+
+.leader {
     background-color: black;
     padding: 5px;
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 4fr 1fr 1fr 1fr 1fr 1fr;
     gap: 2px;
-    max-width: 750px;
+    max-width: 21cm;
+    justify-content: center;
+    align-content: center;
+    color:aliceblue ; 
+     
+}
+
+.ship {
+    background-color: rgb(179, 43, 43);
+    padding: 5px;
+    display:grid;
+    grid-template-columns: 4fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 2px;
+    max-width: 21cm;
     justify-content: center;
     align-content: center;
     color:aliceblue ; 
@@ -25,40 +43,113 @@ header {
 }
 
 .pilot {
-    background-color: rgb(153, 19, 19);
+    background-color: rgb(189, 141, 141);
     padding: 5px;
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 4fr 1fr 1fr 1fr 1fr 1fr ;
     gap: 2px;
-    max-width: 750px;
-    justify-content: center;
-    align-content: center;
-    color:aliceblue ; 
-     
-}
-
-.upgrade {
-    background-color: rgb(16, 26, 158);
-    padding: 5px;
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    gap: 2px;
-    max-width: 750px;
-    justify-content: center;
-    align-content: center;
-    color:aliceblue ; 
-     
-}
-
-.generic {
-    background-color: rgb(160, 165, 236);
-    padding: 5px;
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    gap: 2px;
-    max-width: 750px;
+    max-width: 21cm;
     justify-content: center;
     align-content: center;
     color:rgb(0, 0, 0) ; 
      
 }
+
+.upgrade.faction {
+    background-color: rgb(16, 26, 158);
+    padding: 5px;
+    display:grid;
+    grid-template-columns: 4fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 2px;
+    max-width: 21cm;
+    justify-content: center;
+    align-content: center;
+    color:aliceblue ; 
+     
+}
+
+.upgrade.generic {
+    background-color: rgb(160, 165, 236);
+    padding: 5px;
+    display:grid;
+    grid-template-columns: 4fr 1fr 1fr 1fr 1fr 1fr ;
+    gap: 2px;
+    max-width: 21cm;
+    justify-content: center;
+    align-content: center;
+    color:rgb(0, 0, 0) ; 
+     
+}
+
+.name {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.ability {
+    grid-column: 1 / 6;
+    grid-row: 2;
+}
+
+.charge {
+    grid-column: 6;
+    grid-row: 1;
+}
+
+.attack{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.agility{
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.hull{
+    grid-column: 4;
+    grid-row: 1;
+}
+
+.shield{
+    grid-column: 5;
+    grid-row: 1;
+}
+
+.size{
+    grid-column: 1 ;
+    grid-row: 3;
+}
+
+.action{
+    grid-column: 2 / 3;
+    grid-row: 3;
+}
+
+.maneuver{
+    grid-column: 4 / 6;
+    grid-row: 3;
+}
+
+.type{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.points{
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.loadout{
+    grid-column: 4;
+    grid-row: 1;
+}
+
+.force{
+    grid-column: 5;
+    grid-row: 1;
+}
+
+
+
