@@ -1,0 +1,64 @@
+header {
+    display: table;
+    width: 100%;
+    background-color: black;
+    color:aliceblue ; 
+   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    max-width: 750px;
+}
+
+.ship {
+    background-color: black;
+    padding: 5px;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 2px;
+    max-width: 750px;
+    justify-content: center;
+    align-content: center;
+    color:aliceblue ; 
+     
+}
+
+.pilot {
+    background-color: rgb(153, 19, 19);
+    padding: 5px;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 2px;
+    max-width: 750px;
+    justify-content: center;
+    align-content: center;
+    color:aliceblue ; 
+     
+}
+
+.upgrade {
+    background-color: rgb(16, 26, 158);
+    padding: 5px;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 2px;
+    max-width: 750px;
+    justify-content: center;
+    align-content: center;
+    color:aliceblue ; 
+     
+}
+
+.generic {
+    background-color: rgb(160, 165, 236);
+    padding: 5px;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 2px;
+    max-width: 750px;
+    justify-content: center;
+    align-content: center;
+    color:rgb(0, 0, 0) ; 
+     
+}
