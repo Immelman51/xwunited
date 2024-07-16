@@ -59,8 +59,8 @@
      "leadername": "Jun Sato",
      "leaderfaction": ["Phoenix_Cell","",""],
      "leaderid": 8,
-     "leaderability": "",
-     "charge": 0
+     "leaderability": "Après avoir défendu à portée 0-1, si vous n'avez pas subi de dégat, vous pouvez dépenser 1 #ch# pour gagner 1 #scenario_point#.<br>Après avoir attaqué à portée 0-1, si vous avez détruit un vaisseau, vous pouvez dépenser 1 #ch# pour gagner 1 #scenario_point.",
+     "charge": 1
      },
      {
      "leadername": "##Saw Gerrera",
@@ -87,7 +87,7 @@
      "leadername": "General Hux",
      "leaderfaction": ["First_Order","",""],
      "leaderid": 12,
-     "leaderability": "",
+     "leaderability": "Lorsqu'un de vos vaisseaux effectue un 'tir revanche', vous pouvez améliorer 1 dé d'attaque. Si vous détruisez un vaisseau ainsi, gagnez 1 #scenario_point#.",
      "charge": 0
      },
      {
@@ -115,7 +115,7 @@
      "leadername": "Nute Gunray",
      "leaderfaction": ["C.I.S","",""],
      "leaderid": 16,
-     "leaderability": "",
+     "leaderability": "A la fin de la partie, si vous avez un vaisseau encore en jeu équipé d'une amélioration #tactical_droid#, gagnez 2 #scenario_point#.",
      "charge": 0
      },
      {
