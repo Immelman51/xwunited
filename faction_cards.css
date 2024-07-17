@@ -84,71 +84,89 @@ header {
 .name {
     grid-column: 1;
     grid-row: 1;
+    border: 1px solid black; /* Border to visualize the grid item */
 }
 
 .ability {
-    grid-column: 1 / 6;
-    grid-row: 2;
+    grid-column: 1 / span 6; /* spans from the first to the sixth column */
+    grid-row: 2; /* places the item in the second row */
+    display: flex; /* added for centering content */
+    align-items: center; /* centers content vertically */
+    border: 1px solid black; /* Border to visualize the grid item */
 }
 
 .charge {
     grid-column: 6;
     grid-row: 1;
+    border: 1px solid rgb(255, 255, 255); /* Border to visualize the grid item */
 }
 
 .attack{
     grid-column: 2;
     grid-row: 1;
+    border: 1px solid black; /* Border to visualize the grid item */
 }
 
 .agility{
     grid-column: 3;
     grid-row: 1;
+    border: 1px solid black; /* Border to visualize the grid item */
 }
 
 .hull{
     grid-column: 4;
     grid-row: 1;
+    border: 1px solid black; /* Border to visualize the grid item */
 }
 
 .shield{
     grid-column: 5;
     grid-row: 1;
+    border: 1px solid black; /* Border to visualize the grid item */
 }
 
 .size{
     grid-column: 1 ;
     grid-row: 3;
+    border: 1px solid black; /* Border to visualize the grid item */
 }
 
 .action{
-    grid-column: 2 / 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
     grid-row: 3;
+    border: 1px solid black; /* Border to visualize the grid item */
 }
 
 .maneuver{
-    grid-column: 4 / 6;
+    grid-column-start: 4;
+    grid-column-end: 6;
     grid-row: 3;
+    border: 1px solid black; /* Border to visualize the grid item */
 }
 
 .type{
     grid-column: 2;
     grid-row: 1;
+    border: 1px solid black; /* Border to visualize the grid item */
 }
 
 .points{
     grid-column: 3;
     grid-row: 1;
+    border: 1px solid black; /* Border to visualize the grid item */
 }
 
 .loadout{
     grid-column: 4;
     grid-row: 1;
+    border: 1px solid black; /* Border to visualize the grid item */
 }
 
 .force{
     grid-column: 5;
     grid-row: 1;
+    border: 1px solid black; /* Border to visualize the grid item */
 }
 
 
