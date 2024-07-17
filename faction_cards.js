@@ -73,7 +73,7 @@ for (let i = 0; i<leaders.length; i++){
         newleadername.innerHTML = leaders[i]["leadername"];        
         newleader.appendChild(newleadername);
 
-        
+
 
         let newleadercharge = document.createElement('div');
         newleadercharge.setAttribute("class", "leader charge");
@@ -128,30 +128,35 @@ for (let i=0 ; i<ships.length; i++){ //on va afficher d'abord le vaisseau/chassi
             switch(attributesNames[j]){
                 case 'attack': 
                     attackk = document.createElement('div');
+                    attackk.setAttribute('class', 'ship attack value');
                     attacklogo.setAttribute("src",'img/attack.jpg');
                     attacklogo.setAttribute("class", "ship attack logo");
                     attackk.innerHTML = ships[i]["attack"];
                     break;
                 case 'attackt' :
                     attackk = document.createElement('div');
+                    attackk.setAttribute('class', 'ship attack value');
                     attacklogo.setAttribute("src",'img/attackt.jpg');
                     attacklogo.setAttribute("class", "ship attack logo");
                     attackk.innerHTML = ships[i]["attackt"];
                     break;
                 case 'attackb' :
                     attackk = document.createElement('div');
+                    attackk.setAttribute('class', 'ship attack value');
                     attacklogo.setAttribute("src",'img/attackb.jpg');
                     attacklogo.setAttribute("class", "ship attack logo");
                     attackk.innerHTML = ships[i]["attackb"];
                     break;
                 case 'attackbull' :
                     attackk = document.createElement('div');
+                    attackk.setAttribute('class', 'ship attack value');
                     attacklogo.setAttribute("src",'img/attackbull.jpg');
                     attacklogo.setAttribute("class", "ship attack logo");
                     attackk.innerHTML = ships[i]["attackbull"];
                     break;
                 case 'attackf' :
                     attackk = document.createElement('div');
+                    attackk.setAttribute('class', 'ship attack value');
                     attacklogo.setAttribute("src",'img/attackf.jpg');
                     attacklogo.setAttribute("class", "ship attack logo");
                     attackk.innerHTML = ships[i]["attackf"];
@@ -166,31 +171,40 @@ for (let i=0 ; i<ships.length; i++){ //on va afficher d'abord le vaisseau/chassi
         }
         newship.appendChild(newshipattack);
 
-        let newshipagilitylogo = document.createElement('div');
-        let newshipagility = document.createElement('img');
+        let newshipagility = document.createElement('div');
+        let shipagilitylogo = document.createElement('img');
+        let shipagility = document.createElement('div');
+        shipagility.setAttribute("class", "ship agility value");
         newshipagility.setAttribute("class", "ship agility");
-        newshipagilitylogo.setAttribute("src", 'img/agility.jpg');
-        newshipagilitylogo.setAttribute("class", "ship agility logo");
-        newshipagility.innerHTML = ships[i]["agility"];        
-        newship.appendChild(newshipagilitylogo);
+        shipagilitylogo.setAttribute("src", 'img/agility.jpg');
+        shipagilitylogo.setAttribute("class", "ship agility logo");
+        shipagility.innerHTML = ships[i]["agility"];        
+        newshipagility.appendChild(shipagilitylogo);
+        newshipagility.appendChild(shipagility);
         newship.appendChild(newshipagility);
 
-        let newshiphulllogo = document.createElement('img');
         let newshiphull = document.createElement('div');
+        let shiphulllogo = document.createElement('img');
+        let shiphull = document.createElement('div');
+        shiphull.setAttribute('class','ship hull value')
         newshiphull.setAttribute("class", "ship hull");
-        newshiphulllogo.setAttribute("src", 'img/hull.jpg');
-        newshiphulllogo.setAttribute("class", "ship hull logo");
-        newshiphull.innerHTML = ships[i]["hull"];        
-        newship.appendChild(newshiphulllogo);
+        shiphulllogo.setAttribute("src", 'img/hull.jpg');
+        shiphulllogo.setAttribute("class", "ship hull logo");
+        shiphull.innerHTML = ships[i]["hull"];        
+        newshiphull.appendChild(shiphulllogo);
+        newshiphull.appendChild(shiphull);
         newship.appendChild(newshiphull);
 
         let newshipshield = document.createElement('div');
-        let newshipshieldlogo = document.createElement('img');
+        let shipshield = document.createElement('div');
+        let shipshieldlogo = document.createElement('img');
         newshipshield.setAttribute("class", "ship shield");
-        newshipshieldlogo.setAttribute("src", 'img/shield.jpg');
-        newshipshieldlogo.setAttribute("class", "ship shield logo");
-        newshipshield.innerHTML = ships[i]["shields"];        
-        newship.appendChild(newshipshieldlogo);
+        shipshield.setAttribute("class", "ship shield value");
+        shipshieldlogo.setAttribute("src", 'img/shield.jpg');
+        shipshieldlogo.setAttribute("class", "ship shield logo");
+        shipshield.innerHTML = ships[i]["shields"];        
+        newshipshield.appendChild(shipshieldlogo);
+        newshipshield.appendChild(shipshield);
         newship.appendChild(newshipshield);
         
 

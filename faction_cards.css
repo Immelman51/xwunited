@@ -129,6 +129,7 @@ header {
     grid-column: 1 ;
     grid-row: 3;
     border: 1px solid black; /* Border to visualize the grid item */
+
 }
 
 .action{
@@ -168,6 +169,9 @@ header {
     grid-row: 1;
     border: 1px solid black; /* Border to visualize the grid item */
 }
-
+.logo {
+    width: 25px; /* Example size, adjust as needed */
+    height: auto; /* Maintain aspect ratio */
+}
 
 
