@@ -10,9 +10,18 @@ header {
     align-content: center;
     max-width: 21cm;
     position: sticky;
+    top: 0;
+    width: 100%; /* Make sure the container takes up the full width */
 }
 
-
+a {
+    flex-grow: 1; /* Allows each section to grow and take up equal space */
+    flex-basis: 0; /* Ensures sections start from zero width and grow equally */
+    padding: 10px; /* Optional: adds padding around each section */
+    text-align: center; /* Optional: centers text within each section */
+    border: 1px solid black; /* Optional: adds a border for visual distinction */
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+}
 
 
 
