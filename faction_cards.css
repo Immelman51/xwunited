@@ -1,8 +1,8 @@
 header {
     display: table;
     width: 100%;
-    background-color: black;
-    color:aliceblue ; 
+    
+    color:rgb(0, 0, 0) ; 
    
     display: flex;
     flex-wrap: wrap;
@@ -12,15 +12,17 @@ header {
     position: sticky;
     top: 0;
     width: 100%; /* Make sure the container takes up the full width */
+    
 }
 
 a {
     flex-grow: 1; /* Allows each section to grow and take up equal space */
     flex-basis: 0; /* Ensures sections start from zero width and grow equally */
-    padding: 10px; /* Optional: adds padding around each section */
+    padding: 5px; /* Optional: adds padding around each section */
     text-align: center; /* Optional: centers text within each section */
-    border: 1px solid black; /* Optional: adds a border for visual distinction */
+    border: 2px solid black;
     box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+    background-color: rgb(98, 255, 190);;
 }
 
 
@@ -48,6 +50,7 @@ a {
     justify-content: center;
     align-content: center;
     color:aliceblue ; 
+    border: 1px solid black; /* Border to visualize the grid item */
      
 }
 
@@ -110,29 +113,19 @@ a {
     border: 1px solid rgb(255, 255, 255); /* Border to visualize the grid item */
 }
 
-.attack{
-    grid-column: 2;
-    grid-row: 1;
-    border: 1px solid black; /* Border to visualize the grid item */
+
+
+.attack,
+.agility,
+.hull,
+.shield {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    
 }
 
-.agility{
-    grid-column: 3;
-    grid-row: 1;
-    border: 1px solid black; /* Border to visualize the grid item */
-}
 
-.hull{
-    grid-column: 4;
-    grid-row: 1;
-    border: 1px solid black; /* Border to visualize the grid item */
-}
-
-.shield{
-    grid-column: 5;
-    grid-row: 1;
-    border: 1px solid black; /* Border to visualize the grid item */
-}
 
 .size{
     grid-column: 1 ;
@@ -179,8 +172,13 @@ a {
     border: 1px solid black; /* Border to visualize the grid item */
 }
 .logo {
-    width: 25px; /* Example size, adjust as needed */
-    height: auto; /* Maintain aspect ratio */
+    height: 50%;
+    object-fit: cover;
+    
 }
-
+.value {
+    margin-left: 2px; /* Adjust margin as needed */
+    font-size: large;
+    color: black;
+}
 
