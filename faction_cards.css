@@ -178,7 +178,10 @@ a {
 .points{
     grid-column: 1;
     grid-row: 1;
-    border: 1px solid black; /* Border to visualize the grid item */
+    border: 1px solid rgb(201, 28, 28); /* Border to visualize the grid item */
+    font-weight: bold;
+    color: rgb(201, 28, 28);
+    align-items: center;
     
 }
 
