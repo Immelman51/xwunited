@@ -31,7 +31,7 @@ a {
     background-color: black;
     padding: 5px;
     display:grid;
-    grid-template-columns: 4fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 2px;
     max-width: 21cm;
     justify-content: center;
@@ -44,7 +44,7 @@ a {
     background-color: rgb(179, 43, 43);
     padding: 5px;
     display:grid;
-    grid-template-columns: 4fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 2px;
     max-width: 21cm;
     justify-content: center;
@@ -58,7 +58,7 @@ a {
     background-color: rgb(189, 141, 141);
     padding: 5px;
     display:grid;
-    grid-template-columns: 4fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 6fr 1fr 1fr ;
     gap: 2px;
     max-width: 21cm;
     justify-content: center;
@@ -71,7 +71,7 @@ a {
     background-color: rgb(16, 26, 158);
     padding: 5px;
     display:grid;
-    grid-template-columns: 4fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 2px;
     max-width: 21cm;
     justify-content: center;
@@ -84,7 +84,7 @@ a {
     background-color: rgb(160, 165, 236);
     padding: 5px;
     display:grid;
-    grid-template-columns: 4fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
     gap: 2px;
     max-width: 21cm;
     justify-content: center;
@@ -94,26 +94,47 @@ a {
 }
 
 .name {
-    grid-column: 1;
+    grid-column: 1 / 5;
     grid-row: 1;
     border: 1px solid black; /* Border to visualize the grid item */
+    text-align: center; /* Center the text horizontally */
+    display: flex; /* Use flexbox for centering */
+    align-items: center; /* Center the text vertically */
+    justify-content: center; /* Center the text horizontally */
+
+}
+.leader.name {
+    grid-column: 1 / 4;
+    grid-row: 1;
+    border: 1px solid black; /* Border to visualize the grid item */
+    text-align: center; /* Center the text horizontally */
+    display: flex; /* Use flexbox for centering */
+    align-items: center; /* Center the text vertically */
+    justify-content: center; /* Center the text horizontally */
+
 }
 
 .ability {
-    grid-column: 1 / span 6; /* spans from the first to the sixth column */
-    grid-row: 2; /* places the item in the second row */
+    grid-column: 1 / 5; /* spans from the first to the sixth column */
+    grid-row: 3; /* places the item in the second row */
     display: flex; /* added for centering content */
     align-items: center; /* centers content vertically */
     border: 1px solid black; /* Border to visualize the grid item */
 }
 
-.charge {
-    grid-column: 6;
+.leader.charge {
+    grid-column: 4;
     grid-row: 1;
     border: 1px solid rgb(255, 255, 255); /* Border to visualize the grid item */
+    align-items: center; /* centers content vertically */
+    text-align: center;
 }
 
-
+.pilot.name {
+    grid-column: 2 / 5;
+    display: flex; /* added for centering content */
+    align-items: center; /* centers content vertically */
+}
 
 .attack,
 .agility,
@@ -129,7 +150,7 @@ a {
 
 .size{
     grid-column: 1 ;
-    grid-row: 3;
+    grid-row: 4;
     border: 1px solid black; /* Border to visualize the grid item */
 
 }
@@ -150,25 +171,26 @@ a {
 
 .type{
     grid-column: 2;
-    grid-row: 1;
+    grid-row: 2;
     border: 1px solid black; /* Border to visualize the grid item */
 }
 
 .points{
-    grid-column: 3;
+    grid-column: 1;
     grid-row: 1;
     border: 1px solid black; /* Border to visualize the grid item */
+    
 }
 
 .loadout{
-    grid-column: 4;
-    grid-row: 1;
+    grid-column: 1;
+    grid-row: 2;
     border: 1px solid black; /* Border to visualize the grid item */
 }
 
 .force{
-    grid-column: 5;
-    grid-row: 1;
+    grid-column: 4;
+    grid-row: 2;
     border: 1px solid black; /* Border to visualize the grid item */
 }
 .logo {
@@ -182,3 +204,20 @@ a {
     color: black;
 }
 
+.title {
+    grid-column: 2 ;
+    grid-row: 2;
+    text-align: center; /* Center the text horizontally */
+    display: flex; /* Use flexbox for centering */
+    align-items: center; /* Center the text vertically */
+    justify-content: center; /* Center the text horizontally */
+    background-color: black;
+    color: white;
+
+
+}
+.charge {
+    grid-column: 3;
+    grid-row: 2;
+    border: 1px solid black; /* Border to visualize the grid item */  
+}

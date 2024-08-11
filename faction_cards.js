@@ -351,11 +351,12 @@ document.body.appendChild(newship);
             newpilotloadout.innerHTML = pilots[j]["loadout"];
             newpilot.appendChild(newpilotloadout);
 
-            let newpilottitle = document.createElement('div');
-            newpilottitle.setAttribute("class", "pilot title");
-            newpilot.appendChild(newpilottitle);
+            
             if (typeof pilots[j]["title"] !== 'undefined'){ //certains pilotes n'ont pas de title
-            newpilottitle.innerHTML = pilots[j]["title"];
+                let newpilottitle = document.createElement('div');
+                newpilottitle.setAttribute("class", "pilot title");
+                newpilot.appendChild(newpilottitle);
+                newpilottitle.innerHTML = pilots[j]["title"];
             
             }
             
