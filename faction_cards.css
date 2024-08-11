@@ -68,7 +68,7 @@ a {
 }
 
 .upgrade.faction {
-    background-color: rgb(16, 26, 158);
+    background-color: rgb(67, 73, 160);
     padding: 5px;
     display:grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -194,7 +194,7 @@ a {
     border: 1px solid black; /* Border to visualize the grid item */
 }
 .logo {
-    height: 50%;
+    max-width: 100%;
     object-fit: cover;
     
 }
