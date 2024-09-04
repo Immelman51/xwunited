@@ -173,6 +173,13 @@
      "leaderid": 24,
      "leaderability": "",
      "charge": 0
+     },
+     {
+        "leadername": "##Colonel Yularen",
+        "leaderfaction": ["I.S.B","",""],
+        "leaderid": 25,
+        "leaderability":"",
+        "charge":0
      }
      
      ]
