@@ -1,8 +1,9 @@
  [
+    
     {
-        "name": "Docking Ship",
+        "name": "",
         "id": 0,
-        "effect1": "<em><strong>Vaisseau-Mère :</strong></em> MISE EN PLACE: vous <mark>DEVEZ</mark> avoir un vaisseau arrimé avec vous avec la capacité <em>Co-Pilot</em>. Considérez les boucliers de votre vaisseau arrimé comme les vôtres."
+        "effect1": "" 
     },
     {
         "name": "Copilot",
@@ -85,15 +86,221 @@
         "effect1": "<em><strong>Cellules Énergétiques Bidouillées :</strong></em> Pendant la phase de système, si vous n’êtes pas arrimé, perdez 1 #ch# . À la fin de la phase d’activation, vous êtes détruit si vous avez 0 #ch#. Avant de retirer votre figurine, chaque vaisseau à porté 0–1 subit 1 dégât #crit#"
     },
     {
-        "name": "",
+        "name": "Docking Ship",
         "id": 16,
-        "effect1": ""
+        "effect1": "<em><strong>Vaisseau-Mère :</strong></em> MISE EN PLACE: vous <mark>DEVEZ</mark> avoir un vaisseau arrimé avec vous avec la capacité <em>Co-Pilot</em>. Considérez les boucliers de votre vaisseau arrimé comme les vôtres."
     },
 {
     "name": "Networked Calculations",
     "id":17,
     "effect1":""
+},
+{
+    "name": "Tail Cannon",
+    "id":18,
+    "effect1":""
+},
+{
+    "name": "Stygium Array",
+    "id":19,
+    "effect1": ""
+},
+{
+    "name": "Microthrusters",
+    "id":20,
+    "effect1":""
+},
+{
+    "name": "Weapon Hardpoint",
+    "id":21,
+    "effect1":""
+},
+{
+    "name": "Ghost",
+    "id":22,
+    "effect1":""
+},
+{
+"name":"Locked and Loaded",
+"id":23,
+"effect1":""
+},
+{
+    "name":"Concordia Faceoff",
+    "id":24,
+    "effect1":""
+},
+{
+    "name":"Spacetug Tractor Array",
+    "id":25,
+    "effect1":""
+},
+{
+    "name":"Dead to Rights",
+    "id": 26,
+    "effect1":""
+},
+{
+    "name":"Comms Shuttle",
+    "id":27,
+    "effect1":""
+},
+{
+    "name":"Integrated S-Foils",
+    "id":28,
+    "effect1":""
+},
+{
+    "name": "Refined Gyrostabilizers",
+    "id":29,
+    "effect1":""
+},
+{
+    "name":"Heavy Weapon Turret",
+    "id":30,
+    "effect1":""
+},
+{
+    "name":"Notched Stabilizers",
+    "id":31,
+    "effect1":""
+},
+{
+    "name":"Fine-Tuned Controls",
+    "id":32,
+    "effect1":""
+},
+{
+    "name":"Calibrated Laser Targeting",
+    "id":33,
+    "effect1":""
+},
+{
+    "name":"Grappling Struts",
+    "id":34,
+    "effect1":""
+},
+{
+    "name":"Pinpoint Tractor Array",
+    "id":35,
+    "effect1":""
+},
+{
+    "name":"Plated Hull",
+    "id":36,
+    "effect1":""
+},
+{
+    "name":"Explosion with Wings",
+    "id":37,
+    "effect1":""
+},
+{
+    "name":"Fine-Tuned Thrusters",
+    "id":38,
+    "effect1":""
+},
+{
+    "name":"Repulsorlift Stabilizers",
+    "id":39,
+    "effect1":""
+},
+{
+    "name":"Fire Convergence",
+    "id":40,
+    "effect1":""
+},
+{
+    "name":"Twin Ion Engines",
+    "id":41,
+    "effect1":""
+},
+{
+    "name":"Intuitive Controls",
+    "id":42,
+    "effect1":""
+},
+{
+    "name":"Intuitive Interface",
+    "id":43,
+    "effect1":""
+},
+{
+    "name":"Enhanced Jamming Suite",
+    "id":44,
+    "effect1":""
+},
+{
+    "name":"Pursuit Thrusters",
+    "id": 45,
+    "effect1":""
+},
+{
+    "name":"Troop Bay",
+    "id":46,
+    "effect1":""
+},
+{
+    "name":"Hidden Devices",
+    "id":47,
+    "effect1":""
+},
+{
+    "name":"Versatile Frame",
+    "id":48,
+    "effect1":""
+},
+{
+    "name":"Boarding",
+    "id":49,
+    "effect1":""
+},
+{
+    "name":"Multiple Targets",
+    "id":50,
+    "effect1":""
+},
+{
+    "name":"Hit & Run",
+    "id":51,
+    "effect1":""
+},
+{
+    "name":"Tractor Constrictor",
+    "id":52,
+    "effect1":""
+},
+{
+    "name":"Advanced Bomber",
+    "id":53,
+    "effect1":""
+},
+{
+    "name":"Overdrive Thrusters",
+    "id":54,
+    "effect1":""
+},
+{
+    "name":"Turbo Thrusters",
+    "id":55,
+    "effect1":""
+},
+{
+    "name": "Folding Wings",
+    "id":56,
+    "effect1":""
+},
+{
+    "name":"Night Buzzard",
+    "id":57,
+    "effect1":""
+},
+{
+    "name":"Tail Laser Turret",
+    "id":58,
+    "effect1":""
 }
+
 
 
 

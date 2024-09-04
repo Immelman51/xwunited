@@ -1863,10 +1863,10 @@
             "faction": ["Pirates_and_Smugglers", "Resistance"],
             "ship": "YT-1300 Light Freighter",
             "restrictions": [1, "title", "Millenium Falcon",""],
-            "effect": "Retire en emplacement #missile# et la capacité 'Vaisseau-Mère'. Ajoute #sensor# et #calculator#. Ajoute 5 points de Loadout et augmente le coût du vaisseau de 1",
+            "effect": "Retire un emplacement #missile# et la capacité 'Vaisseau-Mère'. Ajoute #sensor# et #calculator#.",
             "modifier_func": [
                 [3,"Missile",135],
-                [5,16],
+                [0, "lose_chassis"],
                 [2,"Sensor"],
                 [2,"Calculator"],
                 [7,"attackt",1],
