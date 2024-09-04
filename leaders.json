@@ -176,7 +176,7 @@
      },
      {
         "leadername": "##Colonel Yularen",
-        "leaderfaction": ["I.S.B","",""],
+        "leaderfaction": ["ISB","",""],
         "leaderid": 25,
         "leaderability":"",
         "charge":0
