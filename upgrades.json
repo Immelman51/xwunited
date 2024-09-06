@@ -82,16 +82,14 @@
             "id": 6,
             "max_per_squad": 8,
             "available": false,
-            "modify": true,
+            "modify": false,
             "slot": "Talent",
             "points": 5,
             "effect": "Lorsque vous défendez contre une attaque à portée 3 ou contre une attaque de #tur#, vous pouvez améliorer un dé de défense.",
-            "restrictions": [2,"upgrade","Talent",""],
             "faction": "",
-            "modifier_func": [
-                [3,"Talent",6]
-    
-            ]       
+            "charge": 2,
+            "recurring": 1
+                
         },
 {
             "name": "Loup Solitaire",
@@ -101,7 +99,7 @@
             "available": true,
             "modify": false,
             "slot": "Talent",
-            "points": 3,
+            "points": 4,
             "recurring": 1,
             "charge": 1,
             "effect": "Tant que vous défendez ou que vous effectuez une attaque, s’il n’y a aucun autre vaisseau allié à portée 0–2, vous pouvez dépenser 1 #ch# pour relancer 1 de vos dés.",
@@ -139,7 +137,7 @@
             "available": true,
             "modify": false,
             "slot": "Talent",
-            "points": 8,
+            "points": 6,
             "effect": "Tant que vous effectuez une attaque #Farc#, si vous n’êtes pas dans l’arc de tir du défenseur, il lance 1 dé de défense en moins.",
             "faction": ""
         },
@@ -151,7 +149,7 @@
             "available": true,
             "modify": false,
             "slot": "Talent",
-            "points": 3,
+            "points": 2,
             "effect": "Tant que vous effectuez une attaque principale, si le défenseur est dans votre #bulls#, vous pouvez relancer 1 dé d’attaque.",
             "faction": ""
         },
@@ -167,7 +165,7 @@
             "effect": "Tant que vous coordonnez, le vaisseau que vous avez choisi peut effectuer une action seulement si celle-ci est également dans votre barre d’action.<br>Ajoute l'action (CO)",
             "faction": "",
             "modifier_func": [
-                [8,[0,"Co","R"]]
+                [0, "add_action", [0,"Co","R"]]
             ]
         },
  {
@@ -178,7 +176,7 @@
             "available": true,
             "modify": false,
             "slot": "Talent",
-            "points": 2,
+            "points": 1,
             "effect": "Au début de la phase d’engagement, vous pouvez choisir 1 vaisseau allié à portée 1. Dans ce cas, considérez que son initiative est égale à la vôtre jusqu’à la fin du round.",
             "faction": ""
         },
@@ -190,8 +188,8 @@
             "available": true,
             "modify": false,
             "slot": "Talent",
-            "points": 3,
-            "effect": "Tant que vous effectuez une attaque qui est gênée par un obstacle, lancez 1 dé d’attaque supplémentaire.",
+            "points": 4,
+            "effect": "Lorsque vous attaquez, si l'attaque qui est obstruée par un obstacle ou si la cible est à portée 0 d'un obstacle, lancez 1 dé d’attaque supplémentaire.",
             "faction": ""
         },
  {
@@ -202,7 +200,7 @@
             "available": true,
             "modify": false,
             "slot": "Talent",
-            "points": 6,
+            "points": 3,
             "attack": 2,
             "range": [2],
             "effect": "Après qu’un vaisseau ennemi a exécuté une manœuvre, vous pouvez effectuer cette attaque contre lui en tant qu’attaque bonus.<br>Attaque : vos dés ne peuvent pas être modifiés.",
@@ -1285,7 +1283,7 @@
             "available": true,
             "modify": false,
             "slot": "Talent",
-            "points": 3,
+            "points": 1,
             "effect": "Tant qu’un autre vaisseau allié à portée 0–1 défend, avant l’étape « Neutraliser les résultats », si vous êtes dans l’arc de l’attaque, vous pouvez subir 1 dégât #crit# pour annuler 1 résultat #crit#.",
             "faction": ["Rebel_Alliance"]
         },
@@ -1542,7 +1540,7 @@
             "max_per_squad": 8,
             "available": true,
             "modify": false,
-            "points": 4,
+            "points": 3,
             "charge": 2,
             "faction": ["Bounty_Hunters_Guild"],
             "recurring": 1,
@@ -2226,7 +2224,7 @@
             "slot": "Talent",
             "points": 2,
             "faction": ["C.I.S"],
-            "effect": "Lorsque vous recevez 1 jeton rouge (non-Acquisition), vous pouvez le placer sur cette carte à la place pour l'ignorer (1 max par carte). Lorsque vous exécutez une manoeuvre bleue, vous ne pouvez retirer qu'un seul marqueur rouge. Vous pouvez retirer, le marqueur présent sur la carte.",
+            "effect": "Lorsque vous recevez 1 jeton rouge (non-Acquisition), vous pouvez le placer sur cette carte à la place pour l'ignorer (1 max par carte). Lorsque vous exécutez une manoeuvre bleue, vous ne pouvez retirer qu'un seul marqueur rouge. Vous pouvez retirer le marqueur présent sur la carte.",
             "effect_ENG": "When you would receive 1 red token (non Lock), you may place it on this card instead to ignore it (1 max per card). When you execute a blue maneuver, you may remove only one red token. You may remove the red token on this card."
             
         },
@@ -3143,6 +3141,58 @@
     "attackbull": 4,
     "range": [2,3],
     "effect": "Portée 2-3 #Farc# 4 dés. Si le défenseur n’est pas dans le #bulls#, alors l’attaque devient IMPRECISE.",
+    "faction": ""
+},
+{
+    "name": "Encerclement Marg Sabl",
+    "name_ENG": "Marg Sabl Closure",
+    "id": 219,
+    "max_per_squad": 8,
+    "available": true,
+    "modify": false,
+    "slot": "Talent",
+    "points": 1,
+    "effect": "Après avoir exécuté entièrement une manœuvre, vous pouvez choisir un vaisseau ennemi à portée 1. Dans ce cas, recevez un jeton contrainte pour donner un jeton contrainte à ce vaisseau.",
+    "effect_ENG": "After fully performing a maneuver, you may choose an enemy ship at range 1. If you do, receive a strain token to deal a strain token to this ship.",
+    "faction": ""
+},
+{
+    "name": "Tir Assuré",
+    "name_ENG": "Deadeye Shot",
+    "id": 220,
+    "max_per_squad": 8,
+    "available": true,
+    "modify": false,
+    "slot": "Talent",
+    "points": 1,
+    "effect": "Lorsque vous effectuez une attaque, si le défenseur se trouve dans votre #bulls#, vous pouvez dégrader l’un de vos dés pour exposer une carte de dégat",
+    "effect_ENG": "When you perform an attack, if the defender is in your #bulls#, you may downgrade one oy your dice to expose a damage card from the defender.",
+    "faction": ""
+},
+{
+    "name": "Salve de Saturation",
+    "name_ENG": "Saturation Salvo",
+    "id": 221,
+    "max_per_squad": 8,
+    "available": true,
+    "modify": false,
+    "slot": "Talent",
+    "points": 2,
+    "effect": "Lorsque vous effectuez une attaque #mi# ou #to#, vous pouvez recevoir un marqueur d’épuisement, pour améliorer un dé d’attaque ou dégrader 1 dé de défense.",
+    "effect_ENG": "While you perform a #mi# or #to# attack, you may receive a deplete token. If you do, you may upgrade an attack die or downgrade a defender's defense die.",
+    "faction": ""
+},
+{
+    "name": "Galvanisé",
+    "name_ENG": "Wired",
+    "id": 222,
+    "max_per_squad": 8,
+    "available": true,
+    "modify": false,
+    "slot": "Talent",
+    "points": 2,
+    "effect": "Lorsque vous attaquez ou défendez, si vous êtes stressé, vous pouvez relancer un résultat #eye#.",
+    "effect_ENG": "While you attack or defend, if you are stressed, you may reroll an #eye# result",
     "faction": ""
 }
 

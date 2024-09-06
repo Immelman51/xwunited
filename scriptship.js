@@ -371,9 +371,9 @@ function checkPilotModifier() { //va checker s'il existe des fonctions dans modi
     if (pilot_list[y]['modify'] === true){
         for (let m = 0; m<pilot_list[y]['modifier_func'].length ; m++){
             switch (pilot_list[y]['modifier_func'][m][0]) { //on va vérifier le numéro à l'index 0 de chaque table dans modifier_func. Ce numéro indique une fonction à exectuer
-                /*case 0:
-                    droid();
-                    break;*/
+                case 0:
+                    
+                    break;
                 case 1: 
                     auto_equip(pilot_list[y]['modifier_func'][m][1], pilot_list[y]['modifier_func'][m][2], pilot_list[y]['modifier_func'][m][3]);
                     break;

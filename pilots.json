@@ -304,7 +304,7 @@
 
             ],
 	        "modifier_func": [
-		        [0, "droid"]
+		        [0, "droid", ""]
 		]
         },
         {
@@ -1651,7 +1651,7 @@
             "logistic":0,
             "max_per_squad": 1,
             "title": ["Din Djarin's N1"],
-            "keyword": ["Droid"],
+            "keyword": ["Droid", ""],
             "ability": "Lorsqu’une attaque contre vous échoue, gagnez 1 marqueur de calcul.",
             "ability_ENG": "While an attack against you fails, receive 1 calculate token.", 
             "slots": [
@@ -1665,7 +1665,7 @@
             	[1,"Title",1,145],
                 [3,"Astromech",145],
                 [3,"Torpedo",145],
-                [0, "droid"]
+                [0, "droid", ""]
                     ]
         },
         {
@@ -1905,7 +1905,7 @@
             ],
             "modifier_func": [
             	[1,"Title",1,141],
-                [0, "droid"]
+                [0, "droid", ""]
                     ]
         },
         {
@@ -2042,7 +2042,7 @@
                 "Talent"               
             ],
             "modifier_func": [
-                [0, "droid"]
+                [0, "droid", ""]
                 ]
         },
         {
@@ -2126,7 +2126,7 @@
                 "Talent"                
             ],
             "modifier_func": [
-                [0,"droid"]
+                [0,"droid", ""]
                 ]
         },
         {
@@ -2146,7 +2146,7 @@
             
             "modifier_func": [
                 [0,"change_chassis", 15], 
-                [0, "droid"]
+                [0, "droid", ""]
                 ],
             "slots": [
                 
@@ -2586,7 +2586,7 @@
             ],
             "modifier_func": [
             	[1,"Title",1,144],
-                [0,"droid"],
+                [0,"droid", ""],
                 [3,"Modification",144]
                     ]
         },
@@ -2616,7 +2616,7 @@
             ],
             "modifier_func": [
             	[1,"Title",1,144],
-                [0,"droid"],
+                [0,"droid", ""],
                 [3,"Modification",144]
                     ]
         },
@@ -2646,7 +2646,7 @@
             ],
             "modifier_func": [
                 [1,"Title",1,144],
-                [0, "droid"],
+                [0, "droid", ""],
                 [3,"Modification",144]
                     ]
         },
@@ -2676,7 +2676,7 @@
             ],
             "modifier_func": [
             	[1,"Title",1,144],
-                [0, "droid"],
+                [0, "droid", ""],
                 [3,"Modification",144]
                     ]
         },
@@ -2732,7 +2732,7 @@
             ],
             "modifier_func": [
             	[1,"Title",1,146],
-                [0, "droid"]
+                [0, "droid", ""]
                     ]
         },
         {
@@ -2760,7 +2760,7 @@
                 
             ],
             "modifier_func": [
-            	[0, "droid"],
+            	[0, "droid", ""],
                 [1,"Title",1,142]
                     ]
         },
