@@ -1304,7 +1304,6 @@
             "name_ENG": "Skull Squadron Pilot",
             "id": 59,
             "modify": false,
-		    "logistic":0,
             "max_per_squad": 8,
             "faction": "Mandalorian_Clans",
             "ship": "Fang Fighter",
@@ -2417,7 +2416,6 @@
             "name_ENG": "Lok Revenant",
             "id": 105,
             "faction": "Pirates_and_Smugglers",
-            "logistic":0,
             "max_per_squad": 8,
             "ship": "Scurrg H-6 Bomber",
             "title": ["Havoc"],
@@ -4083,7 +4081,6 @@
 		    "modify": true,
             "skill": 1,
             "points": 6,
-            "logistic": 6,
             "slots": [                
             ],
             "modifier_func": [
@@ -4309,7 +4306,6 @@
             "modify": false,
             "skill": 1,
             "points": 5,
-            "logistic": 2,
             "slots": [
                             
             ]
@@ -4914,7 +4910,6 @@
             "shipId": 93,
             "skill": 2,
             "points": 8,
-            "logistic": 4,
             "slots": [            
             ]
         },
@@ -5594,7 +5589,6 @@
             "shipId": 74,
             "skill": 2,
             "points": 6,
-            "logistic": 3,
             "slots": [            
             ]
         },
