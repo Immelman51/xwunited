@@ -47,6 +47,9 @@ let shipquantity = -1; //compteur qui ne sert pas à compter mais à numéroter 
  let factionno2 = "";
  let factionno3 = "";
  let totalcostvalue = 0;
+ let logisticvalue = 0; 
+ let logisticEquipped = [0,0,0,0,0,0,0,0];
+ let leader_ID = 0; 
 
  let pilot_selected_list = ["","","","","","","",""]; // Dans ce tableau, on va stocker la valeur sélectée de chaque menu_pilot
  let pilot_list = [{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0}]; //Dans ce tableau, on stocker les objets pilotes
@@ -64,12 +67,6 @@ let x= "0"; //valeur qui indique l'index du menu d'amélioration sélectionné (
 let restricted_List = [[0],[1],[2],[3],[4],[5],[6],[7],[8]]; //va contenir les noms des upgrades (8 premiers sous tableaux) et pilotes uniques (9eme sous tableau)
 
 let shipObject_available = []; //comme ship_available, mais contient les objets au lieu des noms
-let listFull = []; //va contenir toutes les informations de chaque vaisseau sous forme d'objet (shipObject) dans le but de faire des preview de liste ou de les présenter sous une autre forme
-const shipObject = {
-    ship_id:"",
-    pilot_id:"",
-    modifiers:"", //At1 = front attack+1 ; Ag1 = Agility +1 ; Pt2 = points + 2 .... Tout sera séparé par le caractère "e"
-}
 let hash = "";
 let faction_hash = "";
 
@@ -123,21 +120,7 @@ function removeElementsByClass(classname) {//permet de supprimer tous les élém
             elementsArray.forEach(element => {
                 element.parentNode.removeChild(element);
             });
-            /*shipquantity = -1;
             
-            overCostTab = [0,0,0,0,0,0,0,0];
-            totalcostvalue = 0;
-            y= 0;
-            x=0;
-            z=0;
-            upgrades_Type = [[],[],[],[],[],[],[],[]];
-            upgrades_Objects= [[],[],[],[],[],[],[],[]];
-            upgradesSelected = [[],[],[],[],[],[],[],[]];
-            upgrades_Objects_Val= [[],[],[],[],[],[],[],[]];
-            pilot_objects = [[],[],[],[],[],[],[],[]];
-            restricted_List = [[0],[1],[2],[3],[4],[5],[6],[7],[8]];
-            pilot_list = [{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0}];
-            listFull = [];*/
         }       
 
 function select_pilot_list(x){ //permet de remplir la liste des pilotes disponibles correspondant au vaisseau sélectionné
@@ -200,7 +183,7 @@ function displayslots(yy) { //crée les menus de slot et contient l'écoute des 
     slotmenu.addEventListener("input", function(event) {//cette faction décrit le calcul des mises à jour des points pour le loadout et le cout du pilote
             identifyElement(event);
             check_restricted_List(event);
-            checkUpgradeValidation(event);
+            checkUpgradeModifier(event);
             updateUpgradeCount(y);
             updateTotalCost();
             displayDescriptionUpgrade(event);
@@ -229,7 +212,7 @@ function displayslots(yy) { //crée les menus de slot et contient l'écoute des 
         slotmenu.addEventListener("input", function(event) {//cette faction décrit le calcul des mises à jour des points pour le loadout et le cout du pilote
             identifyElement(event); 
             check_restricted_List(event);    
-            checkUpgradeValidation(event);
+            checkUpgradeModifier(event);
             updateUpgradeCount(y);
             updateTotalCost();
             displayDescriptionUpgrade(event);
@@ -247,7 +230,7 @@ function displayslots(yy) { //crée les menus de slot et contient l'écoute des 
 function fillUpgradesSelected(yy){
     upgradesSelected[yy] = [];
     upgradesSelected_ID[yy] = [];
-    listFull[yy].upgrade_list = [];
+    
     for (let i=0; i<upgrades_Type[y].length ; i++){
         slotM = document.getElementById("slot"+yy+"_"+i);
         upgradesSelected[yy].push(slotM.value);
@@ -276,89 +259,31 @@ function identifyElement(event){ //sloty_x & index z de l'élément sélectionn�
    
      
 }
-function updateUpgradeCount(yy) {//cette faction décrit le calcul des mises à jour des points pour le loadout et le cout du pilote
-    let newLoadoutValue = pilot_list[yy]["loadout"];
-    costcount = document.getElementById("shipcost"+yy);
-    loadoutcount= document.getElementById("shiploadout"+yy);
-    for (k=0; k<upgrades_Type[y].length ; k++) {
-        let slotMenu = document.getElementById('slot'+yy+"_"+k);
-        let slotString = slotMenu.value;
-        let startIndex = slotString.indexOf("(") + 1; // Find the index of '(' and add 1 to skip '('
-        let endIndex = slotString.indexOf(")"); // Find the index of ')'
-        let extractedString = slotString.substring(startIndex, endIndex); // Extract the substring between '(' and ')'
-        let upgValue = parseInt(extractedString) || 0; //transforme la chaine en entier, et si elle est vide elle renvoir 0 (utile pour toutes les string type <"crew"> qui ne contiennent pas de parenthèses)
-        newLoadoutValue = newLoadoutValue - upgValue;
-    }
-    loadoutcount.textContent = newLoadoutValue;
-    if (newLoadoutValue>=0) {
-	    overCostTab[yy]=0;
-	    costcount.textContent = pilot_list[yy]["points"] //Si le loadout value est supérieur à 0, le cost doit être égal a la valeur initiale du pilote sans modificateur
-        listFull[yy].pilot_points = costcount + overCostTab[yy];
-	    return;
-	}
-	if ((newLoadoutValue<0) && (newLoadoutValue>-6) ) {
-        overCostTab[yy]=1;
-        costcount.textContent = pilot_list[yy]["points"] + '+' + overCostTab[yy]; //Si le loadout value est entre -1 et -5 compris, le cost du pilote augmente de 1
-        listFull[yy].pilot_points = costcount + overCostTab[yy];
-        return;
-    }
-    if ((newLoadoutValue<-5) && (newLoadoutValue>-11) ) {
-        overCostTab[y]=2;
-        costcount.textContent = pilot_list[yy]["points"] + '+' + overCostTab[yy] ; //Si le loadout value est entre -6 et -9 compris, le cost du pilote augmente de 2
-        listFull[yy].pilot_points = costcount + overCostTab[yy];
-        return;
-    }
-    if ((newLoadoutValue<-10) && (newLoadoutValue>-16) ) {
-        overCostTab[y]=3;
-        costcount.textContent = pilot_list[yy]["points"] + '+' + overCostTab[yy] ; //Si le loadout value est entre -10 et -15 compris, le cost du pilote augmente de 3
-        listFull[yy].pilot_points = costcount + overCostTab[yy];
-        return;
-    }
-    if ((newLoadoutValue<-15) && (newLoadoutValue>-21) ) {
-        overCostTab[y]=4;
-        costcount.textContent = pilot_list[yy]["points"] + '+' + overCostTab[yy]; //Si le loadout value est entre -16 et -20 compris, le cost du pilote augmente de 4
-        listFull[yy].pilot_points = costcount + overCostTab[yy];
-        return;
-    }
-    if ((newLoadoutValue<-20) && (newLoadoutValue>-26) ) {
-        overCostTab[y]=5;
-        costcount.textContent = pilot_list[yy]["points"] + '+' + overCostTab[yy] ; //Si le loadout value est entre -21 et -25 compris, le cost du pilote augmente de 5
-        listFull[yy].pilot_points = costcount + overCostTab[yy];
-        return;
-    }
-    if ((newLoadoutValue<-25) && (newLoadoutValue>-31) ) {
-        overCostTab[y]=6;
-        costcount.textContent = pilot_list[yy]["points"] + '+' + overCostTab[yy] ; 
-        listFull[yy].pilot_points = costcount + overCostTab[yy];
-        return;
-     }
-    if ((newLoadoutValue<-30) && (newLoadoutValue>-36) ) {
-        overCostTab[y]=7;
-        costcount.textContent = pilot_list[yy]["points"] + '+' + overCostTab[yy] ; 
-        listFull[yy].pilot_points = costcount + overCostTab[yy];
-        return;
-    }
-    if ((newLoadoutValue<-35) && (newLoadoutValue>-41) ) {
-        overCostTab[y]=8;
-        costcount.textContent = pilot_list[yy]["points"] + '+' + overCostTab[yy] ; 
-        listFull[yy].pilot_points = costcount + overCostTab[yy];
-        return;
-    }
-    if (newLoadoutValue<-40) {
-        overCostTab[y]=9;
-        costcount.textContent = pilot_list[yy]["points"] + '+' + overCostTab[yy];
-        listFull[yy].pilot_points = costcount + overCostTab[yy];
-        return; 
-    }
 
-}
-function updateTotalCost() {
+function updateTotalCost() { //update total cost AND logistic value
     totalcostvalue = 0 ;
+    logisticvalue = leaders[leader_ID]["logistic"];
     for (j=0; j<8; j++){
-        totalcostvalue = totalcostvalue + pilot_list[j]["points"] + overCostTab[j];
+        totalcostvalue = totalcostvalue + pilot_list[j]["points"];
+        logisticvalue = logisticvalue - logisticEquipped[j]; 
     }
     totalcount= document.getElementById("totalcost");
     totalcount.textContent = totalcostvalue; 
+    totallogistic = document.getElementById("logistic_value");
+    totallogistic.textContent = logisticvalue;
+}
+function updateUpgradeCount(yy) { //update the table logistic_Equipped
+    logisticEquipped[yy] = 0;
+    logisticEquipped[yy]= logisticEquipped[yy] - pilot_list[yy]["logistic"]; // we get the eventual logistic bonus given from the pilot, and we put minus sign because unlike the total cost, we substract from the logistic total 
+    console.log(logisticEquipped[yy]);
+    for (j=0; j<upgradesSelected_ID.length ; j++){
+        console.log(upgradesSelected_ID[yy][j]);
+        if (upgradesSelected_ID[yy][j]>-1){
+        logisticEquipped[yy]= logisticEquipped[yy] + upgrades[upgradesSelected_ID[yy][j]]["points"];
+        console.log(logisticEquipped[yy]);
+    }
+}
+
 }
 
 function testRestriction (yy,tableRestrictions){//va vérifier si les restrictions sont true, et renvoie la valeur restrict=true si c'est bon
@@ -377,13 +302,13 @@ switch (list) {
         varlist = upgrades_Type[yy];
         break;
     case 'base':
-        force: 0,varlist = ships[pilot_list[yy]['shipId']]['base'];
+        varlist = ships[pilot_list[yy]['shipId']]['base'];
         break;
     case 'keyword' :
-        force: 0,varlist =  ships[pilot_list[yy]['shipId']]['keyword']; 
+        varlist =  ships[pilot_list[yy]['shipId']]['keyword']; 
         break;
     case 'action' :
-        force: 0,varlist = ships[pilot_list[yy]['shipId']]['actions'];
+        varlist = ships[pilot_list[yy]['shipId']]['actions'];
         break;
     default : 
         
@@ -442,19 +367,13 @@ function checkUpgRestriction(yy){ //populate les menus slots avec les bonnes upg
     }
 
 function checkPilotModifier() { //va checker s'il existe des fonctions dans modifier_func du pilote sélectionné et va les executer
-	 /*let field = e.target.id; // "menu_pilot_y"
-	let pilnbr = field.substring(11, 12);
-	if (pilot_list[pilnbr]["modify"]===true){
-		for (let m=0; m<pilot_list[pilnbr]["modifier_func"].length ;m++){
-			pilot_list[pilnbr]["modifier_func"][m](); // va executer toutes les fonctions de modifier_func du pilote
-		}	    
-		}*/
+	 
     if (pilot_list[y]['modify'] === true){
         for (let m = 0; m<pilot_list[y]['modifier_func'].length ; m++){
             switch (pilot_list[y]['modifier_func'][m][0]) { //on va vérifier le numéro à l'index 0 de chaque table dans modifier_func. Ce numéro indique une fonction à exectuer
-                case 0:
+                /*case 0:
                     droid();
-                    break;
+                    break;*/
                 case 1: 
                     auto_equip(pilot_list[y]['modifier_func'][m][1], pilot_list[y]['modifier_func'][m][2], pilot_list[y]['modifier_func'][m][3]);
                     break;
@@ -464,25 +383,25 @@ function checkPilotModifier() { //va checker s'il existe des fonctions dans modi
                 case 3 : 
                     also_Occupies(pilot_list[y]['modifier_func'][m][1], pilot_list[y]['modifier_func'][m][2]);
                     break;
-                case 4 :
+                /*case 4 :
                     free_upg(pilot_list[y]['modifier_func'][m][1]);
-                    break;
-                case 5 : 
+                    break;*/
+                /*case 5 : 
                     change_chassis(pilot_list[y]['modifier_func'][m][1]);
-                    break;
-                case 6 : 
+                    break;*/
+                /*case 6 : 
                     weapon_Hardpoint();
-                    break;
-                case 7 : 
+                    break;*/
+                /*case 7 : 
                     change_stat(pilot_list[y]['modifier_func'][m][1], pilot_list[y]['modifier_func'][m][2]);
-                    break ; 
-                case 8 : 
+                    break ;*/ 
+                /*case 8 : 
                     let actionArray = pilot_list[y]['modifier_func'][m][1]
                     add_action()
-                    break;
-                case 9 : 
+                    break;*/
+                /*case 9 : 
                     add_condition(pilot_list[y]['modifier_func'][m][1]);
-                    break;
+                    break;*/
                 case 10 :
                     may_remove_slots(pilot_list[y]['modifier_func'][m][1]);
                     break;
@@ -497,7 +416,7 @@ function checkPilotModifier() { //va checker s'il existe des fonctions dans modi
 
 
 
-function checkUpgradeValidation() { //va checker s'il existe une fonction modify liée à l'upgrade, et va lancer les modifs éventuelles type add_slots ou change_stat
+function checkUpgradeModifier() { //va checker s'il existe une fonction modify liée à l'upgrade, et va lancer les modifs éventuelles type add_slots ou change_stat
    fillUpgradesSelected(y);
     /*let field = e.target.id; // "slotyy_i"
     let pilnbr = field.substring(4, 5);
@@ -517,9 +436,6 @@ function checkUpgradeValidation() { //va checker s'il existe une fonction modify
         if (upgrades[upgradeID]["modify"] === true){
             for(m = 0; m<upgrades[upgradeID]["modifier_func"].length; m++){
                 switch (upgrades[upgradeID]['modifier_func'][m][0]) { //on va vérifier le numéro à l'index 0 de chaque table dans modifier_func. Ce numéro indique une fonction à exectuer
-            case 0:
-                droid();
-                break;
             case 1: 
                 auto_equip(upgrades[upgradeID]['modifier_func'][m][1], upgrades[upgradeID]['modifier_func'][m][2], upgrades[upgradeID]['modifier_func'][m][3]);
                 break;
@@ -529,25 +445,16 @@ function checkUpgradeValidation() { //va checker s'il existe une fonction modify
             case 3 : 
                 also_Occupies(upgrades[upgradeID]['modifier_func'][m][1], upgrades[upgradeID]['modifier_func'][m][2]);
                 break;
-            case 4 :
+            /*case 4 :
                 free_upg(upgrades[upgradeID]['modifier_func'][m][1]);
                 break;
-            case 5 : 
-                change_chassis(upgrades[upgradeID]['modifier_func'][m][1]);
-                break;
-            case 6 : 
+           */
+            /*case 6 : 
                 weapon_Hardpoint();
-                break;
-            case 7 : 
-                change_stat(upgrades[upgradeID]['modifier_func'][m][1], upgrades[upgradeID]['modifier_func'][m][2]);
-                break ; 
-            case 8 : 
-                let actionArray = upgrades[upgradeID]['modifier_func'][m][1]
-                add_action()
-                break;
-            case 9 : 
-                add_condition(upgrades[upgradeID]['modifier_func'][m][1]);
-                break;
+                break;*/
+            
+        
+         
             case 10 :
                 may_remove_slots(upgrades[upgradeID]['modifier_func'][m][1]);
                 break;
@@ -626,10 +533,6 @@ function upgrade_restricted_List(yy){ //va mettre à jour la restricted_List. le
     }
     
 
-
-function droid() { //Action n°0
-
-}
 
 function auto_equip(Slot, indexMenu, indexUpgrade){ //action n°1
     // on va faire un check si l'upgrade est limitée. On ne peut pas se servir de la fonction check_restricted_List car le champ visé par l'event est celui du pilote et non de l'upgrade. On va donc recopier une partie de son code et l'adapter
@@ -719,7 +622,7 @@ populateMenu('slot'+y+'_'+nbrSlots,slotmenucontent);
             updateUpgradeCount(y);
             updateTotalCost();
             displayDescriptionUpgrade(event);
-            checkUpgradeValidation(event);
+            checkUpgradeModifier(event);
             fillUpgradesSelected(y)
     })
 
@@ -761,130 +664,11 @@ if (upgslot) {
 } 
 }
 
-function free_upg(slot){ //Action n°4
 
-}
 
-function change_chassis(addOrRem,chassisID){ //Action n°5
+function change_chassis(chassisIDs){ //Action n°5 chassisIDs is a table wher we add 1 or more chassis ability. This function removes the current chassis abilities and replace them with the new ones 
   
 }
-
-function weapon_Hardpoint(){ //Action n°6
-    add_slots("Cannon");
-    add_slots("Torpedo");
-    add_slots("Missile");
-    let cannon_menu = null;
-    let missile_menu = null;
-    let torpedo_menu = null;
-    for (let j = 0; j<upgradesSelected[y].length;j++){
-        if(upgradesSelected[y][j]==='<Cannon>'){
-            cannon_menu = document.getElementById("slot"+y+"_"+j);
-            torpedo_menu = document.getElementById("slot"+y+"_"+(j+1));
-            missile_menu = document.getElementById("slot"+y+"_"+(j+2));
-        
-            break;
-        }
-        }
-     cannon_menu.addEventListener("input", function () {
-        
-        if (cannon_menu.selectedIndex === 0){
-            torpedo_menu.removeAttribute('disabled');
-            missile_menu.removeAttribute('disabled');
-        }else{
-            also_Occupies("Torpedo");
-            also_Occupies("Missile");
-        }
-     })
-     missile_menu.addEventListener("input", function() {
-        
-        if (missile_menu.selectedIndex === 0){
-            cannon_menu.removeAttribute('disabled');
-            torpedo_menu.removeAttribute('disabled');
-        }else{
-            also_Occupies("Cannon");
-            also_Occupies("Torpedo");
-        }
-     })
-     torpedo_menu.addEventListener("input",function () {
-        
-        if (torpedo_menu.selectedIndex === 0){
-            cannon_menu.removeAttribute('disabled');
-            missile_menu.removeAttribute('disabled');
-        }else{
-            also_Occupies("Cannon");
-            also_Occupies("Missile");
-        }
-     })   
-    }
-
-function change_stat(stat, value){ //Action n°7
-        let shipOrPilot = true; //si c'est une stat ship qui est modifiée, alors shipOrPilot == true. Si c'est une stat pilot qui est modifiée, alors shipOrPilot == false.
-        switch (stat){
-        case 'points' : 
-        pilot_list[y]['points'] = pilot_list[y]['points'] + value;
-        updateUpgradeCount(y);
-        updateTotalCost();
-        listFull[y].pilot_points = pilot_list[y]['points'];
-        shipOrPilot = false;
-        break;
-        case 'loadout' :
-        pilot_list[y]['loadout'] =  pilot_list[y]['loadout'] + value;
-        updateUpgradeCount(y);
-        updateTotalCost();
-        listFull[y].pilot_loadout = pilot_list[y]['loadout'];
-        shipOrPilot = false;
-        break;
-        case 'attack' :
-        listFull[y].ship_attack = listFull[y].ship_attack + value;
-        shipOrPilot = true;
-        break;
-        case 'attackt' : 
-        listFull[y].ship_attackt = listFull[y].ship_attackt + value;
-        shipOrPilot = true;
-        break;
-        case 'force' :
-        listFull[y].pilot_force = listFull[y].pilot_force + value;
-        shipOrPilot = false;
-        break;
-        case 'hull' :
-        listFull[y].ship_hull = listFull[y].ship_hull + value;
-        shipOrPilot = true;
-        break;
-        case 'shield' :
-        listFull[y].ship_shield = listFull[y].ship_shield + value;
-        shipOrPilot = true;
-        break;
-        default : 
-        alert(stat + ' has to be added in change_stat function');
-        }
-        //il faut que tout revienne dans l'ordre lorsque l'upgrade est changée
-        if (x>-1) { //si la carte qui modifie n'est pas un pilote, alors c'est une upgrade
-            targetupg = document.getElementById('slot'+y+'_'+x);
-            let listenfunction = function() {
-                if (shipOrPilot === false){ //si c'est une stat pilot
-                listFull[y]['pilot_'+stat] = pilots[pilot_list[y]['id']][stat];
-                pilot_list[y][stat] = pilot_list[y][stat] - value;
-                updateUpgradeCount(y);
-                updateTotalCost();
-                }else{ // si c'est une stat ship
-                force: 0,listFull[y]['ship_'+stat] = ships[pilot_list[y]['shipId']][stat];
-                }
-            targetupg.removeEventListener('input', listenfunction);
-            }
-        if (targetupg) {
-        targetupg.addEventListener('input', listenfunction)  ;
-        }
-        }
-          
-    }
-
-function add_action (link,action,color){ //Action n°8
-
-    }
-
-function add_condition(conditionID){ //Action n°9
-
-    }
 
 function may_remove_slots(slot){ //Action n°10 : permet de retirer des slots
         //WARNING ! The order of the slots to remove is very important. You have to start removing the last slot, and keep on removing them starting from the last one. Or Else the function 'may_remove_slot' will fail. The reason is a bit tricky, but to make it simple, this function will remove (splice) elements in the array upgrades_Objets and upgrades_Type thinking the position is the last digit of the slotmenu.id. 
@@ -957,7 +741,6 @@ upgrades_Objects[yy].push(upgObjList); //Ainsi, ce tableau aura cette structure 
 function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'active via le bouton Addship
     shipquantity++;
     let numero = String(shipquantity);
-    listFull.push(shipObject);
     const squad = document.getElementById("squad");
     let newpara = document.createElement('p');
     let newdiv = document.createElement('div');
@@ -1011,7 +794,7 @@ function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'acti
       upgrades_Objects_Val[numero] = []; //Il faut nettoyer toutes les infos du ship/pilot/slots précédent
       upgrades_Type[numero] = []; //Il faut nettoyer toutes les infos du ship/pilot/slots précédent
       pilot_list[numero]= {name:"",points:0}; //Il faut nettoyer toutes les infos du ship/pilot/slots précédent
-      listFull[numero] = {}; //Il faut nettoyer toutes les infos du ship/pilot/slots précédent
+      
       
 
 
@@ -1031,7 +814,7 @@ function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'acti
         displayDescriptionPilot(numero);
 	    checkPilotModifier(event);
         checkUpgRestriction(numero); //on le refait car il peut y avoir des upgrades disponibles suite à check pilot modfier (exemple : Emon gagne 2 slot de payload ce qui lui permet d'équiper les générateurs de sous munitions)
-        
+        updateTotalCost();
     });  
    
     
@@ -1063,7 +846,7 @@ function remove_ship() { //fonction qui permet de retirer le dernier vaisseau. S
     restricted_List[shipquantity] = [shipquantity]; //retrait des upgrades du dernier vaisseau
     restricted_List[8][shipquantity] = "";  //retrait du nom du pilote du dernier vaisseau
     pilot_list[shipquantity] = {name:"",points:0};
-    listFull.slice(0,-1);
+   
     if (shipquantity>0){
         shipquantity--;
     }
@@ -1100,10 +883,11 @@ leaderselect = document.getElementById("menu_leader");
 leaderselect.addEventListener("input", function() {
     removeElementsByClass("new")
     select_ship_list();
+    leader_ID=leaderselect.selectedIndex ; 
+    
     document.getElementById("descript_upg").innerHTML="";
     shipquantity = -1;
-    overCostTab = [0,0,0,0,0,0,0,0];
-    totalcostvalue = 0;
+
     y= 0;
     x=0;
     z=0;
@@ -1115,7 +899,7 @@ leaderselect.addEventListener("input", function() {
     pilot_objects = [[],[],[],[],[],[],[],[]];
     restricted_List = [[0],[1],[2],[3],[4],[5],[6],[7],[8]];
     pilot_list = [{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0}];
-    listFull = [];
+    updateTotalCost();
 }); 
 
     

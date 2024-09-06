@@ -3,6 +3,7 @@
     {
             "name": "T-65 X-wing",
             "factions": [ "Rebel_Alliance", "Partisans", "New_Republic" ],
+            "chassis": [6],
             "id": 0,
             "attack": 3,
             "agility": 2,
@@ -14,7 +15,7 @@
                 [0,"Lo", "W"],
                 [0, "Br","W"]
             ],
-            "chassis": ["Servomotor S-Foils"],
+            
             "maneuvers": [
                 [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
                 [ 0, 1, 1, 1, 0, 0, 0, 0, 0, 0],
@@ -28,8 +29,8 @@
         {    
             
             "name": "BTL-A4 Y-wing",
-            "factions": [ "Rebel_Alliance", "Hutt_Cartel", "Shadow_Specialists" ],
-            
+            "factions": [ "Rebel_Alliance", "Hutt_Cartel", "Shadow_Specialists" ],            
+            "chassis":[0],
             "id": 1,
             "keyword": [],
             "attack": 2,
@@ -62,7 +63,7 @@
             "keyword": [],
             "hull": 2,
             "shields": 2,
-            "chassis": ["Vectored Thrusters"],
+            "chassis": [5],
             "actions": [
                 [0,"Fo", "W"],
                 [0,"Ev", "W"],
@@ -87,11 +88,11 @@
             "factions": [ "Pirates_and_Smugglers", "Resistance" ],
             "id": 3,
             "keyword": [],
-            "attackt": 2,
+            "attackt": 3,
             "agility": 1,
             "hull": 8,
             "shields": 5,
-            "chassis": ["Docking Ship"],
+            "chassis": [0],
             "actions": [
                 [0,"Fo", "W"],
                 [0,"Lo", "W"],
@@ -112,6 +113,7 @@
         
             "name": "TIE/ln Fighter",
             "factions": ["Phoenix_Cell", "Imperial_Academy", "Imperial_Elite_Forces", "Imperial_Remnants"],
+            "chassis":[0],
             "id": 4,
             "attack": 2,
             "agility": 3,
@@ -144,7 +146,7 @@
             "hull": 3,
             "shields": 2,
             "keyword": ["TIE"],
-            "chassis": ["Advanced Targeting Computer"],
+            "chassis": [7],
             "actions": [
                 [1,"Fo", "W", "Br", "R"],
                 [0,"Lo", "W"],
@@ -171,7 +173,7 @@
             "hull": 3,
             "shields": 0,
             "keyword": ["TIE"],
-            "chassis": ["Autothrusters"],
+            "chassis": [10],
             "actions": [
                 [0,"Fo", "W"],
                 [0,"Br", "W"],
@@ -193,6 +195,7 @@
         
             "name": "Firespray-class Patrol Craft",
             "factions": [ "Pirates_and_Smugglers", "Bounty_Hunters_Guild", "Agents_of_Chaos"],
+            "chassis":[0],
             "id": 7,
             "attack": 3,
             "attackb": 3,
@@ -220,8 +223,9 @@
         
             "name": "HWK-290 Light Freighter",
             "factions": [ "Rebel_Alliance", "Pirates_and_Smugglers", "Hutt_Cartel" ],
+            "chassis":[0],
             "id": 8,
-            "attackt": 1,
+            "attack": 1,
             "agility": 2,
             "hull": 3,
             "shields": 2,
@@ -254,7 +258,7 @@
             "hull": 6,
             "shields": 4,
             "keyword": [],
-            "chassis": ["Tail Cannon"],
+            "chassis": [18],
             "actions": [
                 [0,"Fo", "W"],
                 [0,"Co", "W"],
@@ -282,7 +286,7 @@
             "hull": 4,
             "shields": 4,
             "keyword": [],
-            "chassis": ["Stabilized S-Foils"],
+            "chassis": [6],
             "actions": [
                 [1,"Fo", "W", "Br", "R"],
                 [0,"Lo", "W"],
@@ -310,7 +314,7 @@
             "hull": 6,
             "shields": 0,
             "keyword": ["TIE"],
-            "chassis": ["Nimble Bomber"],
+            "chassis": [8],
             "actions": [
                 [0,"Fo", "W"],
                 [0,"Lo", "W"],
@@ -333,6 +337,7 @@
         
             "name": "Z-95-AF4 Headhunter",
             "factions": [ "Partisans", "Bounty_Hunters_Guild", "Black_Sun", "Pirates_and_Smugglers"  ],
+            "chassis":[0],
             "id": 12,
             "attack": 2,
             "base": ["Small"],
@@ -367,7 +372,7 @@
             "shields": 4,
             "base": ["Small"],
             "keyword": ["TIE"],
-            "chassis": ["Full Throttle"],
+            "chassis": [11],
             "actions": [
                 [0,"Fo", "W"],
                 [0,"Lo", "W"],
@@ -391,6 +396,7 @@
     
             "name": "E-wing",
             "factions": [ "New_Republic" ],
+            "chassis":[0],
             "id": 14,
             "attack": 3,
             "agility": 3,
@@ -426,7 +432,7 @@
             "shields": 2,
             "base": ["Small"],
             "keyword": ["TIE"],
-            "chassis": ["Stygium Array"],
+            "chassis": [19],
             "actions": [
                 [0,"Fo", "W"],
                 [0,"Ev", "W"],
@@ -451,7 +457,7 @@
             "agility": 2,
             "hull": 6,
             "shields": 4,
-            "chassis": ["Sensor Blackout"],
+            "chassis": [2],
             "keyword": [],
             "actions": [
                 [0,"Fo", "W"],
@@ -474,6 +480,7 @@
        
             "name": "VT-49 Decimator",
             "factions": [ "Imperial_Elite_Forces" ],
+            "chassis":[0],
             "id": 17,
             "attackt": 3,
             "agility": 0,
@@ -507,7 +514,7 @@
             "agility": 3,
             "hull": 4,
             "shields": 1,
-            "chassis": ["Microthrusters"],
+            "chassis": [20],
             "keyword": [],
             "actions": [
                 [0,"Fo", "W"],
@@ -535,7 +542,7 @@
             "agility": 3,
             "hull": 3,
             "shields": 1,
-            "chassis": ["Weapon Hardpoint"],
+            "chassis": [21],
             "keyword": [],
             "actions": [
                 [0,"Fo", "W"],
@@ -560,6 +567,7 @@
        
             "name": "Aggressor Assault Fighter",
             "factions": [ "Bounty_Hunters_Guild", "Mandalorian_Clans" ],
+            "chassis":[0],
             "id": 20,
             "attack": 3,
             "agility": 3,
@@ -587,6 +595,7 @@
     
             "name": "YV-666 Light Freighter",
             "factions": [ "Hutt_Cartel", "Crime Syndicate", "Bounty_Hunters_Guild" ],
+            "chassis":[0],
             "id": 21,
             "attackf": 3,
             "agility": 1,
@@ -614,6 +623,7 @@
        
             "name": "Kihraxz Fighter",
             "factions": ["Black_Sun", "Hutt_Cartel", "Bounty_Hunters_Guild"],
+            "chassis":[0],
             "id": 22,
             "attack": 3,
             "agility": 2,
@@ -640,6 +650,7 @@
   
             "name": "BTL-S8 K-wing",
             "factions": ["New_Republic"],
+            "chassis":[0],
             "id": 23,
             "attackt": 2,
             "agility": 1,
@@ -667,6 +678,7 @@
     
             "name": "TIE/ca Punisher",
             "factions": ["Imperial_Elite_Forces"],
+            "chassis":[0],
             "id": 24,
             "attack": 2,
             "agility": 1,
@@ -701,7 +713,7 @@
             "shields": 4,
             "base": ["Large"],
             "keyword": [],
-            "chassis": ["Ghost"],
+            "chassis": [22],
             "actions": [
                 [0,"Fo", "W"],
                 [0,"Lo", "W"],
@@ -727,7 +739,7 @@
             "agility": 2,
             "hull": 3,
             "shields": 1,
-            "chassis": ["Locked and Loaded"],
+            "chassis": [23],
             "keyword": [],
             "actions": [
                 [0,"Fo", "W"],
@@ -749,6 +761,7 @@
   
             "name": "TIE Advanced v1",
             "factions": ["Imperial_Elite_Forces"],
+            "chassis":[0],
             "id": 27,
             "attack": 2,
             "agility": 3,
@@ -778,6 +791,7 @@
        
             "name": "G-1A Starfighter",
             "factions": ["Bounty_Hunters_Guild"],
+            "chassis":[0],
             "id": 28,
             "attack": 3,
             "agility": 1,
@@ -804,6 +818,7 @@
     
             "name": "JumpMaster 5000",
             "factions": ["Bounty_Hunters_Guild"],
+            "chassis":[0],
             "id": 29,
             "base": ["Large"],
             "attackt": 2,
@@ -830,6 +845,7 @@
  
             "name": "ARC-170 Starfighter",
             "factions": ["Rebel_Alliance","Galactic_Senate"],
+            "chassis":[0],
             "id": 30,
             "attack": 3,
             "attackb": 2,
@@ -863,7 +879,7 @@
             "agility": 3,
             "hull": 4,
             "shields": 0,
-            "chassis": ["Concordia Faceoff"],
+            "chassis": [24],
             "keyword": [],
             "actions": [
                 [0,"Fo", "W"],
@@ -887,6 +903,7 @@
     
             "name": "Lancer-Class Pursuit Craft",
             "factions": ["Black_Sun", "Crime_Syndicates"],
+            "chassis":[0],
             "id": 32,
             "base": ["Large"],
             "attack": 3,
@@ -921,7 +938,7 @@
             "agility": 2,
             "hull": 5,
             "shields": 0,
-            "chassis": ["Spacetug Tractor Array"],
+            "chassis": [25],
             "keyword": [],
             "actions": [
                 [0,"Fo", "W"],
@@ -948,7 +965,7 @@
             "agility": 2,
             "hull": 5,
             "shields": 3,
-            "chassis": ["Pivot Wing"],
+            "chassis": [4],
             "keyword": [],
             "actions": [
                 [0,"Fo", "W"],
@@ -977,7 +994,7 @@
             "shields": 0,
             "base": ["Small"],
             "keyword": ["TIE"],
-            "chassis": ["Adaptive Ailerons"],
+            "chassis": [14],
             "actions": [
                 [0,"Fo", "W"],
                 [0,"Ev", "W"],
@@ -996,11 +1013,12 @@
 
             "name": "Auzituck Gunship",
             "factions": ["Partisans"],
+            "chassis":[0],
             "id": 36,
             "attackf": 3,
             "agility": 1,
-            "hull": 6,
-            "shields": 2,
+            "hull": 4,
+            "shields": 1,
             "base": ["Small"],
             "keyword": [],
             "actions": [
@@ -1022,6 +1040,7 @@
 
             "name": "Scurrg H-6 Bomber",
             "factions": ["Pirates_and_Smugglers"],
+            "chassis":[0],
             "id": 37,
             "attack": 3,
             "agility": 1,
@@ -1048,6 +1067,7 @@
   
  
             "name": "TIE/ag Aggressor",
+            "chassis":[0],
             "id": 38,
             "factions": ["ISB"],
             "attack": 2,
@@ -1108,7 +1128,7 @@
             "hull": 7,
             "shields": 2,
             "base": ["Medium"],
-            "chassis": ["Dead to Rights"],
+            "chassis": [26],
             "keyword": [],
             "actions": [
                 [0,"Fo", "W"],
@@ -1136,7 +1156,7 @@
             "hull": 4,
             "shields": 1,
             "base": ["Small"],
-            "chassis": ["Comms Shuttle"],
+            "chassis": [27],
             "keyword": [],
             "actions": [
                 [0,"Fo", "W"],
@@ -1164,7 +1184,7 @@
             "shields": 2,
             "base": ["Medium"],
             "keyword": ["TIE"],
-            "chassis": ["Controlled Ailerons"],
+            "chassis": [12],
             "actions": [
                 [0,"Fo", "W"],
                 [0,"Ev", "W"],
@@ -1189,7 +1209,7 @@
             "agility": 2,
             "hull": 2,
             "shields": 2,
-            "chassis": ["Co-Pilot"],
+            "chassis": [1],
             "base": ["Small"],
             "keyword": [],
             "actions": [
@@ -1217,7 +1237,7 @@
             "shields": 3,
             "base": ["Small"],
             "keyword": [],
-            "chassis": ["Integrated S-Foils"],
+            "chassis": [28],
             "actions": [
                 [0,"Fo", "W"],
                 [0,"Lo", "W"],
@@ -1244,7 +1264,7 @@
             "shields": 2,
             "base": ["Small"],
             "keyword": [],
-            "chassis": ["Refined Gyrostabilizers"],
+            "chassis": [29],
             "actions": [
                 [0,"Fo", "W"],
                 [0,"Lo", "W"],
@@ -1268,6 +1288,7 @@
 
             "name": "TIE/fo Fighter",
             "factions": ["First_Order", "Shadow_Specialists"],
+            "chassis":[0],
             "id": 46,
             "attack": 2,
             "agility": 3,
@@ -1304,7 +1325,7 @@
             "shields": 2,
             "base": ["Small"],
             "keyword": ["TIE"],
-            "chassis": ["Autothrusters"],
+            "chassis": [10],
             "slots": ["Tech","Torpedo","Modification","Sensor"],
             "actions": [
                 [0,"Fo", "W"],
@@ -1335,7 +1356,7 @@
             "base": ["Small"],
             "slots": ["Gunner","Tech","Missile","Modification"],
             "keyword": ["TIE"],
-            "chassis": ["Heavy Weapon Turret"],
+            "chassis": [30],
             "actions": [
                 [1,"Fo", "W", "Ra", "W"],
                 [1,"Ev", "W", "Ra", "W"],
@@ -1362,7 +1383,7 @@
             "agility": 1,
             "hull": 6,
             "shields": 6,
-            "chassis": "???",
+            "chassis": [0],
             "keyword": [],
             "slots": ["Crew","Crew","Modification","Modification","Sensor","Calculator","Calculator"],
             "actions": [
@@ -1387,6 +1408,7 @@
     
    
             "name": "MG-100 StarFortress",
+            "chassis":[0],
             "id": 50,
             "factions": ["Resistance"],
             "attack": 3,
@@ -1424,7 +1446,7 @@
             "hull": 3,
             "shields": 0,
             "base": ["Small"],
-            "chassis": ["Notched Stabilizers"],
+            "chassis": [31],
             "keyword": ["TIE"],
             "actions": [
                 [0,"Fo", "W"],
@@ -1446,6 +1468,7 @@
 
             "name": "V-19 Torrent Starfighter",
             "factions": ["Galactic_Senate"],
+            "chassis":[0],
             "id": 52,
             "attack": 2,
             "agility": 2,
@@ -1480,7 +1503,7 @@
             "shields": 1,
             "base": ["Small"],
             "keyword": ["Hyperspace Ring"],
-            "chassis": ["Fine-Tuned Controls", "Calibrated Laser Targeting"],
+            "chassis": [32,33],
             "actions": [
                 [0,"Fo", "W"],
                 [0,"Lo", "W"],                
@@ -1510,7 +1533,7 @@
             "shields": 3,
             "base": ["Small"],
             "keyword": ["Hyperspace Ring"],
-            "chassis": ["Fine-Tuned Controls"],
+            "chassis": [32],
             "actions": [
                 [0,"Fo", "W"],
                 [0,"Lo", "W"],                
@@ -1531,6 +1554,7 @@
     
             "name": "Sith Infiltrator",
             "factions": ["Agents_of_Chaos"],
+            "chassis":[0],
             "id": 55,
             "attack": 3,
             "agility": 1,
@@ -1567,7 +1591,7 @@
             "shields": 0,
             "base": ["Small"],
             "keyword": [],
-            "chassis": ["Grappling Struts"],
+            "chassis": [34],
             "slots": ["Missile"],
             "actions": [
                 [0,"Cc", "W"],
@@ -1586,6 +1610,7 @@
         },
         {
             "name": "Belbullab-22 Starfighter",
+            "chassis":[0],
             "id":57,
             "factions": ["C.I.S"],
             "attack": 3,
@@ -1621,7 +1646,7 @@
             "agility": 2,
             "hull": 3,
             "shields": 2,
-            "chassis": ["Full Throttle"],
+            "chassis": [11],
             "base": ["Small"],
             "keyword": [],
             "actions": [
@@ -1652,7 +1677,7 @@
             "shields": 0,
             "base": ["Small"],
             "keyword": [],
-            "chassis": ["Landing Struts"],
+            "chassis": [34],
             "slots": ["Missile","Torpedo","Payload","Modification","Sensor"],
             "actions": [
                 [0,"Cc", "W"],
@@ -1681,7 +1706,7 @@
             "shields": 1,
             "base": ["Small"],
             "keyword": [],
-            "chassis": ["Co-Pilot"],
+            "chassis": [1],
             "actions": [
                 [0,"Fo", "W"],
                 [0,"Lo", "R"],                
@@ -1710,7 +1735,7 @@
             "shields": 3,
             "base": ["Small"],
             "keyword": [],
-            "chassis": ["Docking Ship"],
+            "chassis": [16],
             "actions": [
                 [0,"Fo", "W"],
                 [0,"Lo", "W"],                
@@ -1739,7 +1764,7 @@
             "shields": 0,
             "base": ["Small"],
             "keyword": [],
-            "chassis": ["Pinpoint Tractor Array"],
+            "chassis": [35],
             "actions": [
                 [0,"Fo", "W"],
                 [0,"Ev", "W"] 
@@ -1766,7 +1791,7 @@
             "shields": 3,
             "base": ["Small"],
             "keyword": [],
-            "chassis": ["Plated Hull"],
+            "chassis": [36],
             "actions": [
                 [0,"Fo", "W"],
                 [0,"Lo", "W"],                
@@ -1794,7 +1819,7 @@
             "shields": 0,
             "base": ["Small"],
             "keyword": [],
-            "chassis": ["Explosion with Wings"],
+            "chassis": [37],
             "actions": [
                 [0,"Fo", "W"],
                 [0,"Ev", "W"],                
@@ -1822,7 +1847,7 @@
             "shields": 2,
             "base": ["Small"],
             "keyword": ["TIE"],
-            "chassis": ["Fine-Tuned Thrusters"],
+            "chassis": [38],
             "actions": [
                 [0,"Fo", "W"],
                 [0,"Lo", "W"],                
@@ -1844,6 +1869,7 @@
 
             "name": "Xi-class Light Shuttle",
             "factions": ["Shadow_Specialists"],
+            "chassis":[0],
             "id": 66,
             "attack": 2,
             "agility": 2,
@@ -1878,7 +1904,7 @@
             "shields": 3,
             "base": ["Small"],
             "keyword": [],
-            "chassis": ["Repulsorlift Stabilizers"],
+            "chassis": [39],
             "slots": ["Crew","Missile","Missile","Payload","Modification","Calculator"],
             "actions": [
                 [0,"Cc", "W"],
@@ -1906,7 +1932,7 @@
             "shields": 2,
             "base": ["Medium"],
             "keyword": [],
-            "chassis": ["Fire Convergence"],
+            "chassis": [],
             "actions": [
                 [0,"Fo", "W"],
                 [0,"Lo", "W"],                
@@ -1935,7 +1961,7 @@
             "shields": 0,
             "base": ["Medium"],
             "keyword": ["TIE"],
-            "chassis": ["Rotating Cannons"],
+            "chassis": [13],
             "actions": [
                 [0,"Fo", "W"],
                 [0,"Re", "W"],                
@@ -1965,7 +1991,7 @@
             "shields": 0,
             "base": ["Small"],
             "keyword": [],
-            "chassis": ["Networked Calculations"],
+            "chassis": [17],
             "slots": ["Modification","Sensor","Calculator","Calculator"],
             "actions": [
                 [0,"Cc", "W"],
@@ -1996,7 +2022,7 @@
             "shields": 2,
             "keyword": ["TIE", "Hyperspace Ring"],
             "base": ["Small"],
-            "chassis": ["Twin Ion Engines"],
+            "chassis": [41],
             "actions": [
                 [0,"Fo", "W"],             
                 [0,"Lo", "W"],
@@ -2025,7 +2051,7 @@
             "shields": 0,
             "base": ["Small"],
             "keyword": ["Hyperspace Ring"],
-            "chassis": ["Intuitive Controls"],
+            "chassis": [42],
             "actions": [
                 [0,"Fo", "W"],
                 [0,"Ev", "W"],                
@@ -2046,6 +2072,7 @@
         {
     
             "name": "Syliure-class Hyperspace Ring",
+            "chassis":[0],
             "id": 73,
             "factions": ["J"],
             "agility": 1,
@@ -2070,7 +2097,7 @@
             "shields": 3,
             "base": ["Small"],
             "keyword": [],
-            "chassis": ["Intuitive Interface"],
+            "chassis": [43],
             "actions": [
                 [0,"Fo", "W"],
                 [0,"Bo", "R"],                
@@ -2100,7 +2127,7 @@
             "shields": 2,
             "keyword": ["TIE"],
             "base": ["Small"],
-            "chassis": ["Enhanced Jamming Suite"],
+            "chassis": [44],
             "actions": [
                 [1,"Fo", "W", "Ja", "W"],
                 [0,"Ev", "W"],                
@@ -2129,7 +2156,7 @@
             "shields": 2,
             "base": ["Small"],
             "keyword": ["TIE"],
-            "chassis": ["Pursuit Thrusters"],
+            "chassis": [45],
             "slots": ["Gunner","Missile","Torpedo","Payload","Payload","Modification"],
             "actions": [
                 [0,"Fo", "W"],               
@@ -2161,7 +2188,7 @@
             "shields": 2,
             "base": ["Large"],
             "keyword": [],
-            "chassis": ["Troop Bay , Swivel Wing"] ,
+            "chassis": [ 9, 46] ,
             "actions": [
                 [0,"Fo", "W"],               
                 [0,"Re", "R"],
@@ -2191,7 +2218,7 @@
             "shields": 2,
             "base": ["Medium"],
             "keyword": [],
-            "chassis": ["Hidden Devices"],
+            "chassis": [47],
             "actions": [
                 [0,"Fo", "W"],               
                 [0,"Lo", "W"],
@@ -2220,7 +2247,7 @@
             "keyword": [],
             "hull": 2,
             "shields": 2,
-            "chassis": ["Versatile Frame"],
+            "chassis": [48],
             "actions": [
                 [0,"Fo", "W"],               
                 [0,"Lo", "W"],
@@ -2245,7 +2272,7 @@
             "keyword": [],
             "hull": 5,
             "shields": 2,
-            "chassis": ["Dead to Rights"],
+            "chassis": [26],
             "actions": [
                 [1,"Fo", "W", "Bo", "R"],
                 [1,"Fo", "W", "Br", "R"],
@@ -2275,7 +2302,7 @@
             "keyword": [],
             "hull": 2,
             "shields": 0,
-            "chassis": ["Boarding","Multiple Targets"],
+            "chassis": [49,50],
             "actions": [
                 [0,"Fo", "W"],               
                 [0,"Ev", "W"],
@@ -2292,6 +2319,7 @@
         {
         	"name": "T6 Shuttle",
             "factions": [ "Partisans", "Jedi_Order", "New_Republic" ],
+            "chassis":[0],
             "id": 82,
             "attack": 2,
             "attackb": 2,
@@ -2325,7 +2353,7 @@
             "keyword": [],
             "hull": 7,
             "shields": 1,
-            "chassis": ["Plated Hull"],
+            "chassis": [36],
             "actions": [
                 [0,"Fo", "W"],               
                 [1,"Lo", "W", "Rd", "R"],
@@ -2351,7 +2379,7 @@
             "keyword": ["Crimson_Dawn"],
             "hull": 2,
             "shields": 1,
-            "chassis": ["Hit & Run"],
+            "chassis": [51],
             "actions": [
                 [1,"Fo", "W", "Ck", "R"],               
                 [0,"Ck", "W"],
@@ -2380,7 +2408,7 @@
             "keyword": ["Pyke_Syndicate"],
             "hull": 5,
             "shields": 2,
-            "chassis": ["Tractor Constrictor"],
+            "chassis": [],
             "actions": [
                 [0,"Fo", "W"],               
                 [0,"Lo", "W"],
@@ -2407,7 +2435,7 @@
             "keyword": [],
             "hull": 9,
             "shields": 3,
-            "chassis": ["Advanced Bomber"],
+            "chassis": [53],
             "actions": [
                 [1,"Fo", "W", "Rd", "R"],               
                 [1,"Lo", "W", "Rd", "R"],
@@ -2434,7 +2462,7 @@
             "keyword": [],
             "hull": 4,
             "shields": 0,
-            "chassis": ["Full Throttle","Overdrive Thrusters"],
+            "chassis": [11,54],
             "actions": [
                 [0,"Fo", "W"],               
                 [0,"Br", "W"],
@@ -2461,7 +2489,7 @@
             "keyword": [],
             "hull": 5,
             "shields": 0,
-            "chassis": ["Calibrated Laser Targeting","Fine-Tuned Thrusters"],
+            "chassis": [33,38],
             "actions": [
                 [0,"Fo", "W"],               
                 [0,"Br", "W"],
@@ -2488,7 +2516,7 @@
             "keyword": [],
             "hull": 5,
             "shields": 0,
-            "chassis": ["Microthrusters","Pinpoint Tractor Array"],
+            "chassis": [20,35],
             "actions": [
                 [0,"Fo", "W"],               
                 [0,"Br", "W"],
@@ -2514,7 +2542,7 @@
             "keyword": [],
             "hull": 4,
             "shields": 0,
-            "chassis": ["Autothrusters","Intuitive Interface"],
+            "chassis": [10,43],
             "actions": [
                 [0,"Fo", "W"],               
                 [0,"Br", "W"],
@@ -2540,7 +2568,7 @@
             "keyword": [],
             "hull": 4,
             "shields": 0,
-            "chassis": ["Controlled Ailerons","Pursuit Thrusters"],
+            "chassis": [12,45],
             "actions": [
                 [0,"Fo", "W"],               
                 [0,"Br", "W"],
@@ -2566,7 +2594,7 @@
             "keyword": [],
             "hull": 2,
             "shields": 2,
-            "chassis": ["TurBo Thrusters","Folding Wings"],
+            "chassis": [55,56],
             "actions": [
                 
             ],
@@ -2590,7 +2618,7 @@
             "keyword": ["TIE"],
             "hull": 5,
             "shields": 1,
-            "chassis": [],
+            "chassis": [0],
             "actions": [
                 [1,"Fo", "W", "Br", "R"],               
                 [1,"Lo", "W", "Bo", "R"]
@@ -2616,7 +2644,7 @@
             "keyword": [],
             "hull": 7,
             "shields": 3,
-            "chassis": ["Night Buzzard"],
+            "chassis": [57],
             "actions": [
                 
             ],
@@ -2640,7 +2668,7 @@
             "keyword": [],
             "hull": 6,
             "shields": 5,
-            "chassis": ["Tail Laser Turret"],
+            "chassis": [58],
             "actions": [
                
             ],
@@ -2665,7 +2693,7 @@
             "keyword": [],
             "hull": 3,
             "shields": 1,
-            "chassis": ["Overdrive Thrusters"],
+            "chassis": [54],
             "actions": [
                 
             ],
@@ -2689,7 +2717,7 @@
             "keyword": [],
             "hull": 6,
             "shields": 2,
-            "chassis": ["Troop Bay"],
+            "chassis": [46],
             "actions": [
                 
             ],
