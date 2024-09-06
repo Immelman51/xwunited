@@ -262,7 +262,7 @@ function identifyElement(event){ //sloty_x & index z de l'élément sélectionn�
 
 function updateTotalCost() { //update total cost AND logistic value
     totalcostvalue = 0 ;
-    logisticvalue = leaders[leader_ID][logistic]
+    logisticvalue = leaders[leader_ID]["logistic"];
     for (j=0; j<8; j++){
         totalcostvalue = totalcostvalue + pilot_list[j]["points"];
         logisticvalue = logisticvalue - logisticEquipped[j]; 
@@ -273,10 +273,14 @@ function updateTotalCost() { //update total cost AND logistic value
     totallogistic.textContent = logisticvalue;
 }
 function updateUpgradeCount(yy) { //update the table logistic_Equipped
-    logisticEquipped(yy)= - pilots[pilot_list[yy]["id"]][logistic]; // we get the eventual logistic bonus given from the pilot, and we put minus sign because unlike the total cost, we substract from the logistic total 
+    logisticEquipped[yy] = 0;
+    logisticEquipped[yy]= logisticEquipped[yy] - pilot_list[yy]["logistic"]; // we get the eventual logistic bonus given from the pilot, and we put minus sign because unlike the total cost, we substract from the logistic total 
+    console.log(logisticEquipped[yy]);
     for (j=0; j<upgradesSelected_ID.length ; j++){
+        console.log(upgradesSelected_ID[yy][j]);
         if (upgradesSelected_ID[yy][j]>-1){
-        logisticEquipped(yy)=logisticEquipped(yy) + upgrades[upgradesSelected_ID[yy][j]]["points"];
+        logisticEquipped[yy]= logisticEquipped[yy] + upgrades[upgradesSelected_ID[yy][j]]["points"];
+        console.log(logisticEquipped[yy]);
     }
 }
 
@@ -880,10 +884,11 @@ leaderselect.addEventListener("input", function() {
     removeElementsByClass("new")
     select_ship_list();
     leader_ID=leaderselect.selectedIndex ; 
+    updateTotalCost();
     document.getElementById("descript_upg").innerHTML="";
     shipquantity = -1;
     totalcostvalue = 0;
-    logisticvalue = leaders[leader_ID][logistic];
+
     y= 0;
     x=0;
     z=0;

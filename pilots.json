@@ -3112,7 +3112,7 @@
             "name": "Boba Fett",
             "name_ENG": "Boba Fett",
             "id": 133,
-            "logistic":0,
+            "logistic": 0,
             "max_per_squad": 1,
             "faction": "Bounty_Hunters_Guild",
             "ship": "Firespray-class Patrol Craft",
@@ -3127,9 +3127,10 @@
             "ability": "Tant que vous défendez ou effectuez une attaque, vous pouvez relancer 1 de vos dés pour chaque vaisseau ennemi à portée 0–1.",
             "ability_ENG": "While you defend or perform an attack, you may reroll 1 of your dice for each enemy ship at range 0-1",
             "slots": [
+                "Title",
                 "Talent",
-                "Talent",
-                "Title"
+                "Talent"
+                
             ],
             "modifier_func": [
             	[1,"Title",1,139],
