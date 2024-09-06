@@ -1057,16 +1057,16 @@
             
         },
  {
-            "name": "Réflexes Prémonitoires",
-            "name_ENG": "Precognitive Reflexes",
+            "name": "Réflexes Surnaturels",
+            "name_ENG": "Supernatural Reflexes",
             "id": 77,
             "available": false,
             "max_per_squad": 8,
             "modify": false,
             "slot": "Force",
-            "points": 9,
-            "effect": "Après avoir révélé votre cadran, vous pouvez dépenser 1 #fo# pour effectuer une action #BR# ou #BO#. Puis, si vous avez effectué une action qui n’est pas sur votre barre d’action, recevez 2 marqueurs de contrainte. Dans ce cas, vous ne pouvez pas effectuer une autre action pendant votre activation.",
-            "restrictions": [1,"base", "Small",""],
+            "points": 3,
+            "effect": "Après avoir révélé votre cadran, vous pouvez dépenser 3 #fo# pour effectuer une action #BR# ou #BO#. Puis, si vous avez effectué une action qui n’est pas sur votre barre d’action, recevez 2 marqueurs de contrainte. Dans ce cas, vous ne pouvez pas effectuer une autre action pendant votre activation.",
+            "effect_ENG": "After you reveal your dial, you may spend 3 #fo# to perform a #BR# or #BO# action. Then, if you have performed an action which is not on your action bar, receive 2 strain tokens. In this case, you cannot perform an other action during your activation.",
             "faction": ""
         },
 {
@@ -1077,8 +1077,9 @@
             "available": true,
             "modify": false,
             "slot": "Force",
-            "points": 2,
-            "effect": "Tant que vous défendez, si vous n’êtes pas dans le #bulls# de l’attaquant, vous pouvez dépenser 1 #fo# pour changer 2 de vos résultats #eye# en résultats #evd#.",
+            "points": 1,
+            "effect": "Lorsque vous défendez, vous pouvez dépenser 1 #fo#. Dans ce cas, améliorez 1 dé de défense.",
+            "effect_ENG": "While you defend, you may spend 1 #fo#. If you do, upgrade 1 defense die.",
             "faction": ""
         },
 {
@@ -1089,8 +1090,9 @@
             "available": true,
             "modify": false,
             "slot": "Force",
-            "points": 5,
-            "effect": "Pendant la phase de système, vous pouvez choisir 1 vaisseau à portée 0–1 et regarder son cadran. Si vous dépensez 1 #fo#, vous pouvez choisir un vaisseau à portée 0–3 à la place.",
+            "points": 2,
+            "effect": "Pendant la phase de système, vous pouvez dépenser 2 #fo#. Dans ce cas, vous pouvez regarder le cadran de manoeuvre d'un ennemi à portée 0-2. Puis vous pouvez modifier votre manoeuvre",
+            "effect_ENG": "During System Phase, you may spend 2 #fo#. If you do, you may look at an enemy ship dial at range 0-2. Then you may change you maneuver.",
             "faction": ""
         },
 {
@@ -3193,6 +3195,134 @@
     "points": 2,
     "effect": "Lorsque vous attaquez ou défendez, si vous êtes stressé, vous pouvez relancer un résultat #eye#.",
     "effect_ENG": "While you attack or defend, if you are stressed, you may reroll an #eye# result",
+    "faction": ""
+},
+{
+    "name": "Gambit des Astéroïdes",
+    "name_ENG": "Debris Gambit",
+    "id": 223,
+    "max_per_squad": 8,
+    "available": true,
+    "modify": true,
+    "slot": "Talent",
+    "points": 3,
+    "effect": "Ajoute l’action #EV# rouge. Tant que vous effectuez une action #EV# rouge, s'il y a un obstacle à portée 0-1, considérez cette action comme blanche à la place. Lorsque vous chevauchez ou traversez un obstacle, vous pouvez effectuer une action #EV#.",
+    "effect_ENG": "Add the red #EV# action. While you perform a red #EV# action, if there's an obstacle at range 0-1, consider it white instead. When you overlap or move through an obstacle, you may perform an #EV# action.",
+    "faction": "",
+    "modifier_func": [
+        [0, "add_action", [0,"Ev","R"]]
+    ]
+},
+{
+    "name": "Maitrise de Soi",
+    "name_ENG": "Composure",
+    "id": 224,
+    "max_per_squad": 8,
+    "available": true,
+    "modify": false,
+    "slot": "Talent",
+    "points": 3,
+    "effect": "Lorsqu’une action échoue, vous pouvez dépenser 1 #ch# pour effectuer une autre action.",
+    "effect_ENG": "When you perform an action that fails, you may spend 1 #ch# to perform another maneuver.",
+    "faction": "",
+    "charge": 1,
+    "recurring": 1
+},
+{
+    "name": "Feinte",
+    "name_ENG": "Juke",
+    "id": 225,
+    "max_per_squad": 8,
+    "available": true,
+    "modify": false,
+    "slot": "Talent",
+    "points": 4,
+    "effect": "Lorsque vous attaquez, si vous avez un marqueur d'évasion, vous pouvez changer 1 des résultats #evd# du défenseur en un résultat #eye#.",
+    "effect_ENG": "While you perform an attack, if you are evading, you may modify 1 of the #evd# results of the defender into an #eye# result.",
+    "faction": ""
+     
+},
+{
+    "name": "Leurre",
+    "name_ENG": "Decoy",
+    "id": 226,
+    "max_per_squad": 8,
+    "available": true,
+    "modify": false,
+    "slot": "Talent",
+    "points": 4,
+    "effect": "Lorsqu’un autre vaisseau allié est ciblé par une attaque, si vous êtes dans l’arc de tir, vous pouvez recevoir un marqueur d’épuisement. Dans ce cas, l’attaque vous cible à la place, si la portée le permet.",
+    "effect_ENG": "While a friendly ship is targeted by an attack, if you are in the attack arc, you may receive a deplete token. If you do, you are targeted by the attacker instead, if the range allows it.",
+    "faction": ""
+},
+{
+    "name": "As de l'Espace",
+    "name_ENG": "Expert Handling",
+    "id": 227,
+    "max_per_squad": 8,
+    "available": true,
+    "modify": true,
+    "slot": "Talent",
+    "points": 6,
+    "effect": "Ajoute l'action #BR# rouge. Si vous la possédiez déjà, elle devient blanche. Si vous êtes un socle large, si vous effectuez une action #BR# rouge, recevez 1 jeton contrainte.",
+    "effect_ENG": "Add the red #BR# action. If you already had it, it becomes white. If you are large base ship, when you perform a red #BR# action, receive a strain token.",
+    "faction": "",
+    "modifier_func": [
+        [0, "add_action", [0,"Br","R"]]
+    ]
+},
+{
+    "name": "Expertise",
+    "name_ENG": "Expetise",
+    "id": 228,
+    "max_per_squad": 8,
+    "available": true,
+    "modify": false,
+    "slot": "Talent",
+    "points": 6,
+    "effect": "Lorsque vous lancez des dés, si vous n'êtes pas stressé, vous pouvez dépenser 1 #ch#. Si vous le faites, améliorez ou dégradez 1 dé. Durant la phase de fin, vous pouvez perdre 1 point d'initiative pour récupérer 1 #ch#.",
+    "effect_ENG": "When you roll any dice, if you are not stressed, you may spend 1 #ch#. If you do, upgrade or downgrade a die. During the end phase, you may lose 1 initiative point to recover 1 #ch#.",
+    "faction": "",
+    "charge": 1
+},
+{
+    "name": "Opportuniste",
+    "name_ENG": "Opportunist",
+    "id": 229,
+    "max_per_squad": 8,
+    "available": true,
+    "modify": false,
+    "slot": "Talent",
+    "points": 6,
+    "effect": "Lorsque vous attaquez 1 vaisseau sans marqueur vert, vous pouvez perdre 1 point d'initiative, dans ce cas, lancez 1 dé d'attaque supplémentaire.",
+    "effect_ENG": "While you perform an attack against a ship without green tokens, you may lose 1 initiative point. If you do, roll 1 additional attack die.",
+    "faction": ""
+},
+{
+    "name": "Détermination",
+    "name_ENG": "Determination",
+    "id": 230,
+    "max_per_squad": 8,
+    "available": true,
+    "modify": false,
+    "slot": "Talent",
+    "points": 5,
+    "effect": "Lorsque vous recevez une carte de dégat pilote face ouverte, vous pouvez dépenser 1 #ch#. Dans ce cas, retirez cette carte.",
+    "effect_ENG": "When you receive a face up pilot damage card, you may spend 1 #ch#. If you do, discard this damage card.",
+    "faction": "",
+    "charge": 1
+},
+{
+    "name": "Casse-Cou",
+    "name_ENG": "Daredevil",
+    "id": 231,
+    "max_per_squad": 8,
+    "available": true,
+    "modify": false,
+    "slot": "Talent",
+    "points": 5,
+    "effect": "Lorsque vous accélérez, vous pouvez utiliser des gabarits #turn# de même vitesse et de même direction à la place",
+    "effect_ENG": "While you boost, you may use #turn# templates of the same speed and same direction instead.",
     "faction": ""
 }
 
