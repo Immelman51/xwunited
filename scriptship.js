@@ -47,6 +47,9 @@ let shipquantity = -1; //compteur qui ne sert pas à compter mais à numéroter 
  let factionno2 = "";
  let factionno3 = "";
  let totalcostvalue = 0;
+ let logisticvalue = 0; 
+ let logisticEquipped = [0,0,0,0,0,0,0,0];
+ let leader_ID = 0; 
 
  let pilot_selected_list = ["","","","","","","",""]; // Dans ce tableau, on va stocker la valeur sélectée de chaque menu_pilot
  let pilot_list = [{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0}]; //Dans ce tableau, on stocker les objets pilotes
@@ -257,13 +260,26 @@ function identifyElement(event){ //sloty_x & index z de l'élément sélectionn�
      
 }
 
-function updateTotalCost() {
+function updateTotalCost() { //update total cost AND logistic value
     totalcostvalue = 0 ;
+    logisticvalue = leaders[leader_ID][logistic]
     for (j=0; j<8; j++){
         totalcostvalue = totalcostvalue + pilot_list[j]["points"];
+        logisticvalue = logisticvalue - logisticEquipped[j]; 
     }
     totalcount= document.getElementById("totalcost");
     totalcount.textContent = totalcostvalue; 
+    totallogistic = document.getElementById("logistic_value");
+    totallogistic.textContent = logisticvalue;
+}
+function updateUpgradeCount(yy) { //update the table logistic_Equipped
+    logisticEquipped(yy)= - pilots[pilot_list[yy]["id"]][logistic]; // we get the eventual logistic bonus given from the pilot, and we put minus sign because unlike the total cost, we substract from the logistic total 
+    for (j=0; j<upgradesSelected_ID.length ; j++){
+        if (upgradesSelected_ID[yy][j]>-1){
+        logisticEquipped(yy)=logisticEquipped(yy) + upgrades[upgradesSelected_ID[yy][j]]["points"];
+    }
+}
+
 }
 
 function testRestriction (yy,tableRestrictions){//va vérifier si les restrictions sont true, et renvoie la valeur restrict=true si c'est bon
@@ -794,7 +810,7 @@ function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'acti
         displayDescriptionPilot(numero);
 	    checkPilotModifier(event);
         checkUpgRestriction(numero); //on le refait car il peut y avoir des upgrades disponibles suite à check pilot modfier (exemple : Emon gagne 2 slot de payload ce qui lui permet d'équiper les générateurs de sous munitions)
-        
+        updateTotalCost();
     });  
    
     
@@ -863,9 +879,11 @@ leaderselect = document.getElementById("menu_leader");
 leaderselect.addEventListener("input", function() {
     removeElementsByClass("new")
     select_ship_list();
+    leader_ID=leaderselect.selectedIndex ; 
     document.getElementById("descript_upg").innerHTML="";
     shipquantity = -1;
     totalcostvalue = 0;
+    logisticvalue = leaders[leader_ID][logistic];
     y= 0;
     x=0;
     z=0;

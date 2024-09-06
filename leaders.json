@@ -4,7 +4,8 @@
     "leaderfaction": ["","",""],
     "leaderid": 0,
     "leaderability": "",
-    "charge": 0
+    "charge": 0,
+    "logistic": 0
 } ,
     {
      "leadername":  "Greef Carga",

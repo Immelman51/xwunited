@@ -68,6 +68,7 @@ When a leader is selected, it removes all previous selected pilots, clean every 
 It runs also the function [factionnameget()] to display the factions names and logos.
 Then it runs the function [select_ship_list()] which is going to populate the ship menus with the ships your leader allows.
 The tables [ship_available] and [shipObject_available] are filled.
+We record the ID of the selected leader in [leader_ID].
 
 
 # You click on add ship. I creates a ship menu and a pilot menu. 
@@ -92,15 +93,17 @@ Other functions are triggered when you select a pilot:
 
 - [checkUpgRestriction(y)] : If we have equipped some upgrade with auto_equip, then we check again if it's valid (example : you select Han Solo in the Millenium Falcon, and then you select Chewbacca which also flies the Millenium Falcon)
 
+- [updateTotalCost(y)] : sum of all pilots' cost from pilot_list[ cost ]. (updates also the logistic part, see below)
+
 # You select an upgrade
 Because those menus are listened thanks to displayslots(y) function, when you select an upgrade, some functions are triggered :
 - [check_restricted_List(event)] : look above
 
 - [checkUpgradeModifier(event)] : it is the equivalent of checkPilotModifier(event) but for the upgrades ; if the value of modify is true, it will trigger some other functions.
 
-- [updateUpgradeCount(y)] : # has to be updated since the "logistic" implementation
+- [updateUpgradeCount(y)] : update the table [logisticEquipped] which contains the sum of all equipped upgrades minus the eventual logistic bonus of the pilot (default 0) 
 
-- [updateTotalCost(y)] : # has to be updated
+- [updateTotalCost(y)] : updates the logistic total : logistic total (leader's logistic) minus all logisticEquipped (see above)
 
 - [displayDescriptionUpgrade(event)] : same goal as displayDescriptionPilot but for upgrades. It is also listened when "moused over".
 
