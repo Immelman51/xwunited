@@ -347,19 +347,13 @@ function checkUpgRestriction(yy){ //populate les menus slots avec les bonnes upg
     }
 
 function checkPilotModifier() { //va checker s'il existe des fonctions dans modifier_func du pilote sélectionné et va les executer
-	 /*let field = e.target.id; // "menu_pilot_y"
-	let pilnbr = field.substring(11, 12);
-	if (pilot_list[pilnbr]["modify"]===true){
-		for (let m=0; m<pilot_list[pilnbr]["modifier_func"].length ;m++){
-			pilot_list[pilnbr]["modifier_func"][m](); // va executer toutes les fonctions de modifier_func du pilote
-		}	    
-		}*/
+	 
     if (pilot_list[y]['modify'] === true){
         for (let m = 0; m<pilot_list[y]['modifier_func'].length ; m++){
             switch (pilot_list[y]['modifier_func'][m][0]) { //on va vérifier le numéro à l'index 0 de chaque table dans modifier_func. Ce numéro indique une fonction à exectuer
-                case 0:
+                /*case 0:
                     droid();
-                    break;
+                    break;*/
                 case 1: 
                     auto_equip(pilot_list[y]['modifier_func'][m][1], pilot_list[y]['modifier_func'][m][2], pilot_list[y]['modifier_func'][m][3]);
                     break;
@@ -369,25 +363,25 @@ function checkPilotModifier() { //va checker s'il existe des fonctions dans modi
                 case 3 : 
                     also_Occupies(pilot_list[y]['modifier_func'][m][1], pilot_list[y]['modifier_func'][m][2]);
                     break;
-                case 4 :
+                /*case 4 :
                     free_upg(pilot_list[y]['modifier_func'][m][1]);
-                    break;
-                case 5 : 
+                    break;*/
+                /*case 5 : 
                     change_chassis(pilot_list[y]['modifier_func'][m][1]);
-                    break;
-                case 6 : 
+                    break;*/
+                /*case 6 : 
                     weapon_Hardpoint();
-                    break;
-                case 7 : 
+                    break;*/
+                /*case 7 : 
                     change_stat(pilot_list[y]['modifier_func'][m][1], pilot_list[y]['modifier_func'][m][2]);
-                    break ; 
-                case 8 : 
+                    break ;*/ 
+                /*case 8 : 
                     let actionArray = pilot_list[y]['modifier_func'][m][1]
                     add_action()
-                    break;
-                case 9 : 
+                    break;*/
+                /*case 9 : 
                     add_condition(pilot_list[y]['modifier_func'][m][1]);
-                    break;
+                    break;*/
                 case 10 :
                     may_remove_slots(pilot_list[y]['modifier_func'][m][1]);
                     break;
@@ -650,63 +644,11 @@ if (upgslot) {
 } 
 }
 
-function free_upg(slot){ //Action n°4
 
-}
 
-function change_chassis(addOrRem,chassisID){ //Action n°5
+function change_chassis(chassisIDs){ //Action n°5 chassisIDs is a table wher we add 1 or more chassis ability. This function removes the current chassis abilities and replace them with the new ones 
   
 }
-
-function weapon_Hardpoint(){ //Action n°6
-    add_slots("Cannon");
-    add_slots("Torpedo");
-    add_slots("Missile");
-    let cannon_menu = null;
-    let missile_menu = null;
-    let torpedo_menu = null;
-    for (let j = 0; j<upgradesSelected[y].length;j++){
-        if(upgradesSelected[y][j]==='<Cannon>'){
-            cannon_menu = document.getElementById("slot"+y+"_"+j);
-            torpedo_menu = document.getElementById("slot"+y+"_"+(j+1));
-            missile_menu = document.getElementById("slot"+y+"_"+(j+2));
-        
-            break;
-        }
-        }
-     cannon_menu.addEventListener("input", function () {
-        
-        if (cannon_menu.selectedIndex === 0){
-            torpedo_menu.removeAttribute('disabled');
-            missile_menu.removeAttribute('disabled');
-        }else{
-            also_Occupies("Torpedo");
-            also_Occupies("Missile");
-        }
-     })
-     missile_menu.addEventListener("input", function() {
-        
-        if (missile_menu.selectedIndex === 0){
-            cannon_menu.removeAttribute('disabled');
-            torpedo_menu.removeAttribute('disabled');
-        }else{
-            also_Occupies("Cannon");
-            also_Occupies("Torpedo");
-        }
-     })
-     torpedo_menu.addEventListener("input",function () {
-        
-        if (torpedo_menu.selectedIndex === 0){
-            cannon_menu.removeAttribute('disabled');
-            missile_menu.removeAttribute('disabled');
-        }else{
-            also_Occupies("Cannon");
-            also_Occupies("Missile");
-        }
-     })   
-    }
-
-
 
 function may_remove_slots(slot){ //Action n°10 : permet de retirer des slots
         //WARNING ! The order of the slots to remove is very important. You have to start removing the last slot, and keep on removing them starting from the last one. Or Else the function 'may_remove_slot' will fail. The reason is a bit tricky, but to make it simple, this function will remove (splice) elements in the array upgrades_Objets and upgrades_Type thinking the position is the last digit of the slotmenu.id. 
@@ -923,7 +865,6 @@ leaderselect.addEventListener("input", function() {
     select_ship_list();
     document.getElementById("descript_upg").innerHTML="";
     shipquantity = -1;
-    overCostTab = [0,0,0,0,0,0,0,0];
     totalcostvalue = 0;
     y= 0;
     x=0;
