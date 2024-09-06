@@ -180,7 +180,7 @@ function displayslots(yy) { //crée les menus de slot et contient l'écoute des 
     slotmenu.addEventListener("input", function(event) {//cette faction décrit le calcul des mises à jour des points pour le loadout et le cout du pilote
             identifyElement(event);
             check_restricted_List(event);
-            checkUpgradeValidation(event);
+            checkUpgradeModifier(event);
             updateUpgradeCount(y);
             updateTotalCost();
             displayDescriptionUpgrade(event);
@@ -209,7 +209,7 @@ function displayslots(yy) { //crée les menus de slot et contient l'écoute des 
         slotmenu.addEventListener("input", function(event) {//cette faction décrit le calcul des mises à jour des points pour le loadout et le cout du pilote
             identifyElement(event); 
             check_restricted_List(event);    
-            checkUpgradeValidation(event);
+            checkUpgradeModifier(event);
             updateUpgradeCount(y);
             updateTotalCost();
             displayDescriptionUpgrade(event);
@@ -396,7 +396,7 @@ function checkPilotModifier() { //va checker s'il existe des fonctions dans modi
 
 
 
-function checkUpgradeValidation() { //va checker s'il existe une fonction modify liée à l'upgrade, et va lancer les modifs éventuelles type add_slots ou change_stat
+function checkUpgradeModifier() { //va checker s'il existe une fonction modify liée à l'upgrade, et va lancer les modifs éventuelles type add_slots ou change_stat
    fillUpgradesSelected(y);
     /*let field = e.target.id; // "slotyy_i"
     let pilnbr = field.substring(4, 5);
@@ -425,13 +425,13 @@ function checkUpgradeValidation() { //va checker s'il existe une fonction modify
             case 3 : 
                 also_Occupies(upgrades[upgradeID]['modifier_func'][m][1], upgrades[upgradeID]['modifier_func'][m][2]);
                 break;
-            case 4 :
+            /*case 4 :
                 free_upg(upgrades[upgradeID]['modifier_func'][m][1]);
                 break;
-           
-            case 6 : 
+           */
+            /*case 6 : 
                 weapon_Hardpoint();
-                break;
+                break;*/
             
         
          
@@ -602,7 +602,7 @@ populateMenu('slot'+y+'_'+nbrSlots,slotmenucontent);
             updateUpgradeCount(y);
             updateTotalCost();
             displayDescriptionUpgrade(event);
-            checkUpgradeValidation(event);
+            checkUpgradeModifier(event);
             fillUpgradesSelected(y)
     })
 

@@ -84,12 +84,7 @@ header {
       
 }
 
-.count {
-        justify-self: center;
-}
-.cost {
-    color: aliceblue;
-}
+
 
 .loadout {
     color: rgb(76, 173, 101)
@@ -131,13 +126,22 @@ select {
     position: sticky;
     bottom:0;
     display: grid;
-    grid-template-columns: 1fr 30px;
+    grid-template-columns: 1fr 30px 30px;
     max-width: 750px;
 }
 .total {
     font-size: x-large;
-    color:aliceblue;
     align-self: center;
+    justify-self: center;
+}
+.count {
+    color:aliceblue;
+}
+.logistic {
+    color:rgb(188, 226, 81);
+}
+.cost {
+color: aliceblue;
 }
 
 .printing_option {

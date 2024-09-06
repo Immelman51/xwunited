@@ -92,12 +92,27 @@ Other functions are triggered when you select a pilot:
 
 - [checkUpgRestriction(y)] : If we have equipped some upgrade with auto_equip, then we check again if it's valid (example : you select Han Solo in the Millenium Falcon, and then you select Chewbacca which also flies the Millenium Falcon)
 
+# You select an upgrade
+Because those menus are listened thanks to displayslots(y) function, when you select an upgrade, some functions are triggered :
+- [check_restricted_List(event)] : look above
+
+- [checkUpgradeModifier(event)] : it is the equivalent of checkPilotModifier(event) but for the upgrades ; if the value of modify is true, it will trigger some other functions.
+
+- [updateUpgradeCount(y)] : # has to be updated since the "logistic" implementation
+
+- [updateTotalCost(y)] : # has to be updated
+
+- [displayDescriptionUpgrade(event)] : same goal as displayDescriptionPilot but for upgrades. It is also listened when "moused over".
+
+- [fillUpgradesSelected(y)] : explained above
 
 
-# Thanks to the identifyElement(event) function, we know everytime you click on a menu what menu it is. It records 3 coordonates :
+
+# Thanks to the identifyElement(event) function, we know everytime you click on a menu what menu it is. It records 3 coordinates :
 - x = -1 if a pilot menu has been selected. Else, it is an upgrade menu, and x is equal to the number of the upgrade menu in the html page. (cf example below)
 - y indicates which ship number is modified (pilot or its upgrades) between 0 and 7.
 - z is the index of the menu element you selected. (if the menu displays Element 0, Element 1, Element 2, in this order, z is equal to 0 1 or 2).
+
 Exemple in the html page : 
 - I select Hondo ohnaka as a leader
 - I select Z95 as a ship, and N'dru Suhlak as a pilot (id menu_ship_0 and id menu_pilot_0) (menu_ship_y and menu_pilot_y)
