@@ -884,10 +884,9 @@ leaderselect.addEventListener("input", function() {
     removeElementsByClass("new")
     select_ship_list();
     leader_ID=leaderselect.selectedIndex ; 
-    updateTotalCost();
+    
     document.getElementById("descript_upg").innerHTML="";
     shipquantity = -1;
-    totalcostvalue = 0;
 
     y= 0;
     x=0;
@@ -900,7 +899,7 @@ leaderselect.addEventListener("input", function() {
     pilot_objects = [[],[],[],[],[],[],[],[]];
     restricted_List = [[0],[1],[2],[3],[4],[5],[6],[7],[8]];
     pilot_list = [{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0}];
-    
+    updateTotalCost();
 }); 
 
     
