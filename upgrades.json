@@ -1053,8 +1053,8 @@
             "available": true,
             "modify": false,
             "slot": "Force",
-            "points": 2,
-            "effect": "Au début de la phase d’engagement, s’il y a un vaisseau ennemi dans votre #Farc#, vous pouvez gagner 1 marqueur d’épuisement pour récupérer 1 #fo#.",
+            "points": 0,
+            "effect": "En phase système, vous pouvez gagner 1 marqueur d’épuisement pour récupérer 1 #fo#.",
             "faction": ""           
             
         },
@@ -1069,7 +1069,10 @@
             "points": 3,
             "effect": "Après avoir révélé votre cadran, vous pouvez dépenser 3 #fo# pour effectuer une action #BR# ou #BO#. Puis, si vous avez effectué une action qui n’est pas sur votre barre d’action, recevez 2 marqueurs de contrainte. Dans ce cas, vous ne pouvez pas effectuer une autre action pendant votre activation.",
             "effect_ENG": "After you reveal your dial, you may spend 3 #fo# to perform a #BR# or #BO# action. Then, if you have performed an action which is not on your action bar, receive 2 strain tokens. In this case, you cannot perform an other action during your activation.",
-            "faction": ""
+            "faction": "",
+            "restrictions": [
+                    [1, "size", "small"]
+            ]
         },
 {
             "name": "As de la Manoeuvre",
@@ -1091,7 +1094,7 @@
             "max_per_squad": 8,
             "available": true,
             "modify": false,
-            "slot": "Force",
+            "slot": "",
             "points": 2,
             "effect": "Pendant la phase de système, vous pouvez dépenser 2 #fo#. Dans ce cas, vous pouvez regarder le cadran de manoeuvre d'un ennemi à portée 0-2. Puis vous pouvez modifier votre manoeuvre",
             "effect_ENG": "During System Phase, you may spend 2 #fo#. If you do, you may look at an enemy ship dial at range 0-2. Then you may change you maneuver.",
@@ -1104,7 +1107,7 @@
             "max_per_squad": 8,
             "available": true,
             "modify": false,
-            "slot": "Force",
+            "slot": "",
             "points": 1,
             "effect": "Tant que vous effectuez une attaque spéciale, vous pouvez dépenser 1 #fo# pour ignorer le prérequis #TL# ou #FS#.",
             "faction": ""
@@ -1269,12 +1272,12 @@
             "modify": true,
             "slot": "Gunner",
             "points": 8,
-            "force": 1,
+            "force": "1",
             "max_per_squad": 1,
             "effect": "Tant que vous effectuez une attaque qui n’est pas une attaque #Farc#, vous pouvez dépenser 1 #fo#. Si vous le faites, lancez 1 dé d’attaque supplémentaire.",
             "faction": ["Rebel_Alliance"],
             "modifier_func": [
-               [7,"force",1]
+               [0,"change_stat","force",1]
             ]
         },
 {
@@ -1321,7 +1324,7 @@
             "effect": "Au début de la phase d’engagement, vous pouvez choisir 1 vaisseau dans votre arc de tir à portée 0–2 et dépenser 1 #fo#. Dans ce cas, ce vaisseau subit 1 dégât #hit# sauf s’il choisit de retirer 1 marqueur vert.",
             "faction": ["Imperial_Academy"],
             "modifier_func": [
-                [7,"force",1]
+                [0,"change_stat","force",1]
             ]
         },
 {
@@ -2151,7 +2154,7 @@
             "points": 10,
             "faction": ["Phoenix_Cell"],
             "modifier_func": [
-                [7,"force",1]
+                [0,"change_stat","force",1]
             ],
             "effect": "Après avoir attaqué, vous pouvez dépenser 1 #fo#. Dans ce cas, vous pouvez effectuer une attaque bonus PRECISE de tourelle.",
             "effect_ENG": "After you perform an attack, you can spend 1 #fo#. If you do, you can perform a SHARPENED bonus Turret attack." 
@@ -2168,7 +2171,7 @@
             "points": 10,
             "faction": ["Phoenix_Cell"],
             "modifier_func": [
-                [7,"force",1]
+                [0,"change_stat","force",1]
             ],
             "effect": "Après qu'un vaisseau allié à portée 0-2 exécute entièrement une manoeuvre blanche, vous pouvez dépenser 1 #fo# pour retirer 1 jeton stress de ce vaisseau.",
             "effect_ENG": "After a friendly ship at range 0-2 fully executes a white maneuver, you may spend 1 #fo# to remove 1 stress token from that ship."
@@ -2466,7 +2469,7 @@
             "points": 11,
             "faction": ["Resistance"],
             "modifier_func": [
-                [7,"force",1]
+                [0,"change_stat","force",1]
             ],
             "effect": "Lorsque vous défendez ou attaquez, si le vaisseau ennemi est dans votre #tur#, vous pouvez dépenser 1 #fo# pour modifier l'un de vos résultats vierges en #hit# ou #evd#.",
             "effect_ENG": "While you defend or perform an attack, if the enemy ship is in your #tur#, you may spend 1 #fo# to change 1 of your blank results to a #hit# or #evd# result."
@@ -2621,7 +2624,7 @@
             "points": 8,
             "faction": ["First_Order"],
             "modifier_func": [
-                [7,"force",1]
+                [0,"change_stat","force",1]
             ],
             "effect": "Action: Choisissez 1 vaisseau ennemi à portée 1-3. Dans ce cas, dépensez 1 #fo# pour assigner la condition 'Je vais te montrer le côté obscur' à ce vaisseau",
             "effect_ENG": "Action: Choose 1 enemy ship at range 1-3. If you do, spend 1 #fo# to assign the I'll Show You The Dark Side condition to the ship."
@@ -2728,7 +2731,7 @@
             "points": 12,
             "faction": ["Imperial_Elite_Forces"],
             "modifier_func": [
-                [7,"force",1]
+                [0,"change_stat","force",1]
             ],
             "effect": "Après qu'un vaisseau ennemi à portée 0-2 a révélé son cadran, vous pouvez dépenser 1 #fo# pour effectuer 1 action blanche de votre barre d'action, en considérant cette action comme rouge.",
             "effect_ENG": "After an enemy ship at range 0-2 revealed its dial, you may spend 1 #fo# to perform a white action of your action bar, considering it as red."
@@ -2761,7 +2764,7 @@
             "points": 8,
             "faction": ["Imperial_Elite_Forces"],
             "modifier_func": [
-                [7,"force",1]
+                [0,"change_stat","force",1]
             ],
             "effect": "Si un vaisseau ennemi à portée 0-1 est censé gagner un marqueur de stress, vous pouvez dépenser 1 #fo# pour qu'il gagne 1 jeton brouillage ou tracté à la place.",
             "effect_ENG": "When an enemy ship at range 0-1 would receive a stress token, you may spend 1 #fo# so that it receives 1 jam or tractored token instead."
@@ -2779,7 +2782,7 @@
             "force": 1,
             "faction": ["Imperial_Elite_Forces"],
             "modifier_func": [
-                [7,"force",1]
+                [0,"change_stat","force",1]
             ],
             "effect": "Tant que vous effectuez une attaque, vous pouvez dépenser 1 #fo# pour changer 1 de vos résultats #eye# en #crit#.",
             "effect_ENG": "When you perform an attack, you may spend 1 #fo# to change 1 #eye# result into 1 #crit## result."
@@ -3320,7 +3323,33 @@
     "effect": "Lorsque vous accélérez, vous pouvez utiliser des gabarits #turn# de même vitesse et de même direction à la place",
     "effect_ENG": "While you boost, you may use #turn# templates of the same speed and same direction instead.",
     "faction": ""
-}
+},
+        {
+                "name": "Perception Renforcée",
+                "name_ENG": Heightened Perception",
+                "id": 232,
+                "max_per_squad": 8,
+                "available": true,
+                "modify": false,
+                "slot": "Force",
+                "points": 1,
+                "effect": "En phase Système, vous pouvez dépensez 1 #fo#. Si vous le faites :<br>- Activez-vous à expérience +1 ou -1<br>- Engagez-vous à expérience 7."
+                "effect_ENG": "During System Phase, you may spend 1 #fo#. If you do:<br>- Activate with an experience +1 or -1<br>- Engage at experience 7.",
+                "faction": ""
+        },
+        {
+                "name": "Tir Fracassant",
+                "name_ENG": "Shattering Shot",
+                "id": 233,
+                "max_per_squad": 8,
+                "available": true, 
+                "modify": false, 
+                "slot": "Force",
+                "points": 1,
+                "effect": "",
+                "effect_ENG": "",
+                "faction": ""
+        }
 
 
 ]   
