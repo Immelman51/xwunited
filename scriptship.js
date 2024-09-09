@@ -278,7 +278,7 @@ function updateUpgradeCount(yy) { //update the table logistic_Equipped
     for (j=0; j<upgradesSelected_ID.length ; j++){
         console.log(upgradesSelected_ID[yy][j]);
         if (upgradesSelected_ID[yy][j]>-1) {
-            if ((upgrades[upgradesSelected_ID[yy][j]]["slot"]!=="Talent") && (upgrades[upgradesSelected_ID[yy][j]]["slot"]!=="Force")) {
+            if ((upgrades[upgradesSelected_ID[yy][j]]["slot"]!=="Talent") && (upgrades[upgradesSelected_ID[yy][j]]["slot"]!=="Force")) { //cette condition permet de ne pas compter les couts des talents et force
                 logisticEquipped[yy]= logisticEquipped[yy] + upgrades[upgradesSelected_ID[yy][j]]["points"];
             }
         
