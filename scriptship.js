@@ -274,13 +274,14 @@ function updateTotalCost() { //update total cost AND logistic value
 }
 function updateUpgradeCount(yy) { //update the table logistic_Equipped
     logisticEquipped[yy] = 0;
-    logisticEquipped[yy]= logisticEquipped[yy] - pilot_list[yy]["logistic"]; // we get the eventual logistic bonus given from the pilot, and we put minus sign because unlike the total cost, we substract from the logistic total 
     console.log(logisticEquipped[yy]);
     for (j=0; j<upgradesSelected_ID.length ; j++){
         console.log(upgradesSelected_ID[yy][j]);
-        if (upgradesSelected_ID[yy][j]>-1){
-        logisticEquipped[yy]= logisticEquipped[yy] + upgrades[upgradesSelected_ID[yy][j]]["points"];
-        console.log(logisticEquipped[yy]);
+        if (upgradesSelected_ID[yy][j]>-1) {
+            if ((upgrades[upgradesSelected_ID[yy][j]]["slot"]!=="Talent") && (upgrades[upgradesSelected_ID[yy][j]]["slot"]!=="Force")) {
+                logisticEquipped[yy]= logisticEquipped[yy] + upgrades[upgradesSelected_ID[yy][j]]["points"];
+            }
+        
     }
 }
 
@@ -405,6 +406,7 @@ function checkPilotModifier() { //va checker s'il existe des fonctions dans modi
                 case 10 :
                     may_remove_slots(pilot_list[y]['modifier_func'][m][1]);
                     break;
+                
                 default :
                     alert("There's a bug that should be reported");
                     break;
@@ -666,9 +668,7 @@ if (upgslot) {
 
 
 
-function change_chassis(chassisIDs){ //Action n°5 chassisIDs is a table wher we add 1 or more chassis ability. This function removes the current chassis abilities and replace them with the new ones 
-  
-}
+
 
 function may_remove_slots(slot){ //Action n°10 : permet de retirer des slots
         //WARNING ! The order of the slots to remove is very important. You have to start removing the last slot, and keep on removing them starting from the last one. Or Else the function 'may_remove_slot' will fail. The reason is a bit tricky, but to make it simple, this function will remove (splice) elements in the array upgrades_Objets and upgrades_Type thinking the position is the last digit of the slotmenu.id. 

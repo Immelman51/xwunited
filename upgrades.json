@@ -69,12 +69,15 @@
             "id": 5,
             "max_per_squad": 8,
             "available": true,
-            "modify": false,
+            "modify": true,
             "slot": "Talent",
             "points": 3,
             "charge": 1,
             "effect": "Tant que vous effectuez une attaque principale, si le défenseur est dans votre #bulls#, avant l’étape « Neutraliser les résultats », vous pouvez dépenser 1 #ch# pour annuler 1 résultat #hit#.",
-            "faction": ""
+            "faction": "",
+            "modifier_func":[
+                
+            ]
         },
 {
             "name": "Insaisissable",
