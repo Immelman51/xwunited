@@ -293,7 +293,7 @@ let nbr = tableRestrictions[0];
 let list = tableRestrictions[1];
 let target1 = tableRestrictions[2];
 let target2 = tableRestrictions[3];
-
+console.log(tableRestrictions);
 switch (list) {
     case 'title':
         varlist = pilot_list[yy]["title"];
@@ -347,7 +347,7 @@ function checkUpgRestriction(yy){ //populate les menus slots avec les bonnes upg
                 slotmenucontent.push(upgrades_Objects[yy][i][j]['name']+" ("+upgrades_Objects[yy][i][j]['points']+")");
                 slotmenuobjects.push(upgrades_Objects[yy][i][j]);
             }else{
-                
+                console.log(upgrades_Objects[yy][i][j]);
                 testRestriction(yy,upgrades_Objects[yy][i][j]['restrictions']);
                 
                 if (restrict===true) {

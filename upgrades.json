@@ -87,8 +87,8 @@
             "points": 5,
             "effect": "Lorsque vous défendez contre une attaque à portée 3 ou contre une attaque de #tur#, vous pouvez améliorer un dé de défense.",
             "faction": "",
-            "charge": 2,
-            "recurring": 1
+            "charge": "2+",
+            "restrictions": [1,"base", "Small",""]
                 
         },
 {
@@ -100,8 +100,7 @@
             "modify": false,
             "slot": "Talent",
             "points": 4,
-            "recurring": 1,
-            "charge": 1,
+            "charge": "1+",
             "effect": "Tant que vous défendez ou que vous effectuez une attaque, s’il n’y a aucun autre vaisseau allié à portée 0–2, vous pouvez dépenser 1 #ch# pour relancer 1 de vos dés.",
             "faction": ""
         },
@@ -1232,9 +1231,8 @@
             "points": 6,
             "max_per_squad": 1,
             "faction": ["Rebel_Alliance"],
-            "charge": 3,
-            "effect": "Au début de la phase de fin, vous pouvez dépenser 3 #ch#. Chaque vaisseau allié peut retirer 1 marqueur de stress.",
-            "recurring": 1
+            "charge": "3+",
+            "effect": "Au début de la phase de fin, vous pouvez dépenser 3 #ch#. Chaque vaisseau allié peut retirer 1 marqueur de stress."
         },
         {
             "name": "R2-D2",
@@ -1334,8 +1332,7 @@
             "max_per_squad": 1,
             "faction": ["Imperial_Academy"],
             "effect": "Pendant la phase de système, vous pouvez dépenser 2 #ch#. Dans ce cas, chaque vaisseau allié peut verrouiller un vaisseau que vous avez verrouillé.",
-            "charge": 2,
-            "recurring": 1
+            "charge": "2+"
         },
  {
             "name": "Impitoyable",
@@ -1502,8 +1499,7 @@
             "max_per_squad": 1,
             "faction": ["Bounty_Hunters_Guild"],
             "effect": "Après avoir défendu, si l’attaquant est dans votre arc de tir, vous pouvez dépenser 1 #ch# . Dans ce cas, lancez 1 dé d’attaque sauf si l’attaquant choisit de retirer 1 marqueur vert. Sur un résultat #hit# ou #crit#, l’attaquant subit 1 dégât #hit#.",
-            "recurring": 1,
-            "charge": 1
+            "charge": "1+"
 
         },
  {
@@ -1516,9 +1512,8 @@
             "points": 1,
             "max_per_squad": 1,
             "faction": ["Bounty_Hunters_Guild"],
-            "charge": 1,
-            "effect": "Tant que vous attaquez, vous dépensez 1#ch# pour modifier un résultat #hit# en #crit#.<br>Tant que vous défendez, si la charge est active, l'attaquant peut modifier un résultat #hit# en #crit#.", 
-            "recurring": 1
+            "charge": "1+",
+            "effect": "Tant que vous attaquez, vous dépensez 1#ch# pour modifier un résultat #hit# en #crit#.<br>Tant que vous défendez, si la charge est active, l'attaquant peut modifier un résultat #hit# en #crit#."
         },
  {
             "name": "Capteur de Positionnement",
@@ -1543,9 +1538,8 @@
             "available": true,
             "modify": false,
             "points": 3,
-            "charge": 2,
+            "charge": "2+",
             "faction": ["Bounty_Hunters_Guild"],
-            "recurring": 1,
             "effect": "", 
             "slot": "Talent"
         },
@@ -1661,8 +1655,7 @@
             "available": true,
             "modify": false,
             "points": 6,
-            "charge": 2,
-            "recurring": 1,
+            "charge": "2+",
             "slot": "Gunner",
             "effect": "Après avoir effectué une attaque à portée 1-2 qui a touché, si le défenseur n’a pas de carte de dégât face visible, vous pouvez dépenser 1 ou plusieurs charges. Pour chaque charge dépensée, le défenseur gagne un marqueur de contrainte.",
             "faction": ["Mandalorian_Clans"],
@@ -1709,8 +1702,8 @@
             "max_per_squad": 1,
             "faction": ["Pirates_and_Smugglers"],
             "effect": "Après avoir effectué une attaque, vous pouvez dépenser 2#ch# pour effectuer une attaque améliorée bonus depuis un arc de tir qui n’a pas encore été utilisé ce tour.",
-            "charge": 2,
-            "recurring": 1
+            "charge": "2+"
+        
         },
 {
             "name": "Cikatro Vizago",
@@ -3225,8 +3218,8 @@
     "effect": "Lorsqu’une action échoue, vous pouvez dépenser 1 #ch# pour effectuer une autre action.",
     "effect_ENG": "When you perform an action that fails, you may spend 1 #ch# to perform another maneuver.",
     "faction": "",
-    "charge": 1,
-    "recurring": 1
+    "charge": "1+"
+
 },
 {
     "name": "Feinte",

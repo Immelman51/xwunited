@@ -97,8 +97,7 @@
             "force": 0,
             "shipId": 0,
             "skill": 5,
-            "charge": 1,
-            "recurring": 1,
+            "charge": "1+",
             "points": 5,
             
             "ability": "Après avoir effectué une attaque, vous pouvez dépenser 1 #ch# pour assigner au défenseur 1 marqueur de brouillage. Après avoir défendu, vous pouvez dépenser 1 #ch# pour assigner à l'attaquant 1 marqueur de brouillage.",
@@ -887,8 +886,7 @@
             "force": 0,
             "shipId": 6,
             "skill": 2,
-            "charge": 1,
-            "recurring": 1,
+            "charge": "1+",
             "points": 6,
             
             "ability": "Pendant la phase d’engagement, après qu’un petit vaisseau allié à portée 0–3 a été détruit, s’il ne s’était pas déjà engagé à cette phase, vous pouvez dépenser 1 #ch#. Dans ce cas, il s’engage à l’initiative actuelle.",
@@ -910,8 +908,7 @@
             "force": 0,
             "shipId": 6,
             "skill": 5,
-            "charge": 1,
-            "recurring": 1,
+            "charge": "1+",
             "points": 8,
             
             "ability": "Tant que vous défendez ou effectuez une attaque, et s’il y a un vaisseau allié à portée 1 du vaisseau ennemi attaquant ou défendant, vous pouvez dépenser 1 #ch#. Dans ce cas, vous pouvez dépenser 1 marqueur vert appartenant à ce vaisseau allié.",
@@ -1019,8 +1016,7 @@
             "force": 0,
             "shipId": 11,
             "skill": 2,
-            "charge": 2,
-            "recurring": true, 
+            "charge": "2+",
             "points": 6,
             
             "ability": "Après avoir entièrement exécuté une manœuvre à vitesse 3-5, si vous n'avez pas largué ou lancé d'engin à ce round, vous pouvez dépenser 2#ch# pour larguer ou lancer une bombe en utilisant le gabarit 3#straight#.",
@@ -1348,8 +1344,7 @@
             "skill": 3,
             "points": 11,
             
-            "charge": 2,
-            "recurring": 1,
+            "charge": "2+",
             "logistic":0,
             "max_per_squad": 1,
             "ability": "Tant que vous effectuez une attaque, si l’initiative du défenseur est égale ou plus grande que la vôtre, vous pouvez dépenser 2#ch# pour lancer 1 dé supplémentaire.",
@@ -1746,8 +1741,7 @@
             "force": 0,
             "shipId": 20,
             "skill": 2,
-            "charge": 1,
-            "recurring": true,
+            "charge": "1+",
             "points": 12,
             
             "ability": "Après avoir défendu contre un vaisseau dans votre #Farc# , vous pouvez dépenser 1 #ch#. Dans ce cas, vous pouvez verrouiller l’attaquant et effectuer une attaque bonus de #can# contre lui.",
@@ -1835,8 +1829,7 @@
             "force": 0,
             "shipId": 81,
             "skill": 4,
-            "charge": 1,
-            "recurring": true,
+            "charge": "1+",
             "points": 3,
             
             "ability": "Lorsqu’un vaisseau allié à portée 0-2 effectue une attaque principale, si l’attaquant est dans le #Farc# du défenseur, vous pouvez dépenser 1 #ch#. Dans ce cas, l’attaquant lance 1 dé d’attaque supplémentaire.",
@@ -2001,8 +1994,7 @@
             "shipId": 3,
 		    "modify": false,
             "skill": 4,
-            "charge": 1,
-            "recurring": 1,
+            "charge": "1+",
             "points": 7,
             
             "ability": "Lorsque vous devriez recevoir une carte de dégât face visible, vous pouvez dépenser 1 #ch# pour la recevoir face cachée à la place.",
@@ -2246,8 +2238,7 @@
             "ship": "Firespray-class Patrol Craft",
             "force": 0,
             "shipId": 7,
-            "charge": 1,
-            "recurring": 1,
+            "charge": "1+",
             "skill": 4,
             "points": 11,
             
@@ -2377,8 +2368,7 @@
             "shipId": 37,
 		    "modify": false,
             "skill": 5,
-            "charge": 1,
-            "recurring": 1,
+            "charge": "1+",
             "points": 9,
             
             "ability": "Avant qu’un engin allié n’explose, vous pouvez dépenser 1 #ch# pour l’empêcher d’exploser.<br>Lorsque vous vous défendez contre une attaque obstruée par une bombe ou une mine, lancez 1 dé de défense supplémentaire.",
@@ -2443,8 +2433,8 @@
             "shipId": 37,
 		    "modify": false,
             "skill": 1,
-            "charge": 1,
-            "recurring": 1,
+            "charge": "1+",
+           
             "points": 9,
             
             "ability": "Lorsque vous larguez ou lancez une bombe, placez un marqueur « Puissance » dessus. Lorsqu’elle explose, augmentez la portée de l’explosion de 1.", 
@@ -2545,8 +2535,8 @@
             "shipId": 8,
 	        "modify": false,
             "skill": 5,
-            "charge": 2,
-            "recurring": 1,
+            "charge": "2+",
+        
             "points": 6,
             
             "ability": "Au début de la phase de fin, vous pouvez dépenser 2 #ch# pour vous choisir ou un vaisseau dans votre #tur# avec 1 ou plusieurs jetons circulaires. Pendant la phase de fin, ces jetons circulaires ne sont pas retirés.",
@@ -2802,8 +2792,8 @@
             "force": 0,
             "shipId": 29,
             "skill": 6,
-            "charge": 1,
-            "recurring": 1,
+            "charge": "1+",
+            
             "points": 10,
             
             "title": ["Punishing One"],
@@ -3046,8 +3036,8 @@
             "shipId": 80,
 		    "modify": true,
             "skill": 4,
-            "charge": 2,
-            "recurring": 1,
+            "charge": "2+",
+          
             "points": 7,
             
             "title": ["Xanadu Blood"],
@@ -3226,8 +3216,8 @@
 		    "modify": true,
             "skill": 3,
             "charge":0,
-            "force": 2,
-            "recurring": true,
+            "force": "2+",
+    
             "title": ["Ghost"],
             "points": 12,
             
@@ -4686,8 +4676,8 @@
 		    "modify": false,
             "skill": 3,
             "points": 10,
-            "charge": 1,
-            "recurring": true,
+            "charge": "1+",
+          
             
             "ability": "Après avoir subi des dégats, vous pouvez dépenser 1 #ch# pour effectuer une action.",
             "ability_ENG": "After you suffer damage, you may spend 1  to perform an action.",
@@ -4887,8 +4877,8 @@
 		    "modify": false,
             "skill": 3,
             "points": 9,
-            "charge": 2,
-            "recurring": true,
+            "charge": "2+",
+    
             
             "ability": "Lorsque vous subissez des dégats, vous pouvez dépenser 1 #ch# pour coordonner un vaisseau. Ce vaisseau reçoit 1 jeton stress ou contrainte.",
             "ability_ENG": "When you suffer damage, you may spend 1 #ch# to coordinate a ship. It gains 1 stress or strain token.",
@@ -4927,8 +4917,8 @@
 			"modify": true,
             "skill": 6,
             "points": 9,
-            "charge": 1,
-            "recurring": true,
+            "charge": "1+",
+    
             
             "title": ["Black One"],
             "ability": "Après avoir effectué une action, vous pouve dépenser 1 #ch# pour effectuer une action blanche, en la considérant comme rouge.",
@@ -4979,8 +4969,8 @@
 		    "modify": false,
             "skill": 3,
             "points": 7,
-            "charge": 1,
-            "recurring": true,
+            "charge": "1+",
+          
             
             "ability": "Lorsque vous défendez ou attaquez, vous pouvez depenser 1 #ch# pour relancer jusqu'à 1 de vos dés pour chaque autre vaisseau allié à portée 0-1.",
             "ability_ENG": "While you defend or perform an attack, you may spend 1 #ch# to reroll up to 1 of your dice for each other friendly ship at range 0-1.",
@@ -5130,8 +5120,8 @@
             "shipId": 45,
 		    "modify": false,
             "skill": 5,
-            "charge": 1,
-            "recurring": true,
+            "charge": "1+",
+       
             "points": 6,
             
             "ability": "Lorsqu'un vaisseau ennemi dans votre #bulls# attaque, vous pouvez dépenser 1 #ch#. Dans ce cas, le défenseur lance 1 dé de défense supplémentaire",
@@ -5154,8 +5144,8 @@
 		    "modify": false,
             "skill": 5,
             "points": 7,
-            "charge": 1,
-            "recurring": true,
+            "charge": "1+",
+     
             
             "ability": "Après avoir défendu ou attaqué, vous pouvez dépenser 1 #ch# pour gagner un jeton concentration ou évasion.",
             "ability_ENG": "After you defend or perform an attack, you may spend 1 #ch# to gain 1 focus or evade token.",
@@ -5501,8 +5491,8 @@
             "shipId": 74,
             "skill": 5,
             "points": 8,
-            "charge": 1,
-            "recurring" : true,
+            "charge": "1+",
+    
             
             "ability": "Après qu'un vaisseau à portée 1 effectue une action pendant son étape 'Effectuer une action', si cette action est aussi sur votre barre d'action, vous pouvez dépenser 1 #ch# pour effectuer cette action, en la considérant comme rouge.",
             "ability_ENG": "After a ship at range 1 performs an action during its Perform Action step, if that action is on your action bar, you may spend 1 #ch# to perform that action, treating it as red.",
@@ -5647,8 +5637,8 @@
             "force": 0,
             "shipId": 17,
             "skill": 4,
-            "charge": 1,
-            "recurring": true,
+            "charge": "1+",
+      
             "points": 11,
             
             "ability": "Pendant la phase de fin, vous pouvez retourner votre jeton renforcement de l'autre côté. Lorsque vous recevez un jeton épuisement, vous pouvez dépenser 1 #ch# pour le retirer.",
@@ -5668,8 +5658,8 @@
             "force": 0,
             "shipId": 4,
             "skill": 4,
-            "charge": 2,
-            "recurring": true,
+            "charge": "2+",
+           
             "points": 5,
             
             "ability": "Lorsqu'un TIE allié à portée 0-1 devrait subir des dégats, vous pouvez dépenser 2 #ch#. Dans ce cas, prévenez 1 dégat.",
