@@ -3158,17 +3158,18 @@
     "faction": ""
 },
 {
-    "name": "Tir Assuré",
-    "name_ENG": "Deadeye Shot",
+    "name": "Discret",
+    "name_ENG": "Secretive",
     "id": 220,
     "max_per_squad": 8,
-    "available": true,
+    "available": true, 
     "modify": false,
     "slot": "Talent",
     "points": 1,
-    "effect": "Lorsque vous effectuez une attaque, si le défenseur se trouve dans votre #bulls#, vous pouvez dégrader l’un de vos dés pour exposer une carte de dégat",
-    "effect_ENG": "When you perform an attack, if the defender is in your #bulls#, you may downgrade one oy your dice to expose a damage card from the defender.",
-    "faction": ""
+    "charge":"1+",
+    "effect": "Placez 1 jeton avec une valeur de 1 à 4 face cachée sur votre pilote, pour indiquer la capacité secrète disponible.<br>1 : Lorsque vous vous engagez, dépensez 1 #ch# pour effectuer une attaque à portée 0.<br>2 : Lorsque vous défendez contre une attaque #mi# ou #to#, vous pouvez dépenser 1 #ch# pour brouiller l'attaquant.<br>3 : Pendant la phase Système, dépensez 1 #ch# pour effectuer une action #BR# ou #BO# de votre barre d'action. La charge ne peut pas être récupérée.<br>4 : Lorsque vous révélez une manoeuvre rouge, dépensez 1 #ch# pour réduire la difficulté de la manoeuvre. Cette charge ne peut pas être récupérée.",
+    "effect_ENG": "Place 1 token with a value from 1 to 4 face down on your pilot, to remember the secret ability available.<br>1 : When you engage, spend 1 #ch# to perform an attack at range 0.<br>2 : When you defend against a #mi# or #to# attack, you may spend 1 #ch# to jam the attacker.<br>3 : During System Phase, spend 1 #ch# to perform a #BR# or #BO# action on your action bar. This charge cannot be recovered.<br>4 : When you reveal a red maneuver, spend 1 #ch# to reduce the maneuver difficulty. This charge cannot be recovered.",
+    "faction": "Black_Sun"
 },
 {
     "name": "Salve de Saturation",
@@ -3184,17 +3185,17 @@
     "faction": ""
 },
 {
-    "name": "Galvanisé",
-    "name_ENG": "Wired",
+    "name": "Egorgeur",
+    "name_ENG": "Cutthroat",
     "id": 222,
     "max_per_squad": 8,
     "available": true,
     "modify": false,
     "slot": "Talent",
     "points": 2,
-    "effect": "Lorsque vous attaquez ou défendez, si vous êtes stressé, vous pouvez relancer un résultat #eye#.",
-    "effect_ENG": "While you attack or defend, if you are stressed, you may reroll an #eye# result",
-    "faction": ""
+    "effect": "Après qu'un vaisseau allié à portée 0-3 est détruit, si ce vaisseau est limité or possède l'amélioration <i>Egorgeur</i>, vous pouvez retirer 1 de vos marqueurs orange ou rouge, ou récupérer 1 #ch# non récursive sur l'une de vos améliorations, sur votre pilote, ou sur votre leader.",
+    "effect_ENG": "After another friendly ship at range 0-3 is destroyed, if that ship is limited or has the Cutthroat upgrade, you may remove 1 of your orange or red tokens, or recover 1 non-recurring  on your ship card or one of your equipped upgrade cards, on your pilot card, or on your leader card.",
+    "faction": "Hutt_Cartel"
 },
 {
     "name": "Gambit des Astéroïdes",
@@ -3242,17 +3243,18 @@
      
 },
 {
-    "name": "Leurre",
-    "name_ENG": "Decoy",
+    "name": "Confiance Fragile",
+    "name_ENG": "Fragile Trust",
     "id": 226,
     "max_per_squad": 8,
     "available": true,
     "modify": false,
     "slot": "Talent",
-    "points": 4,
-    "effect": "Lorsqu’un autre vaisseau allié est ciblé par une attaque, si vous êtes dans l’arc de tir, vous pouvez recevoir un marqueur d’épuisement. Dans ce cas, l’attaque vous cible à la place, si la portée le permet.",
-    "effect_ENG": "While a friendly ship is targeted by an attack, if you are in the attack arc, you may receive a deplete token. If you do, you are targeted by the attacker instead, if the range allows it.",
-    "faction": ""
+    "points": 1,
+    "charge":1,
+    "effect": "CONFIANCE FRAGILE : Tant que la #ch# sur cette carte est active, lorsque vous attaquez ou défendez, vous pouvez changer un résultat #eye# en un résultat #hit# ou #evd#. <br> MEFIANCE : Durant la phase système, recevez 1 jeton contrainte. Lorsque vous effectuez une action #FS#, recevez 1 jeton de contrainte. <br>ACTION : récupérez 1 #ch#",
+    "effect_ENG": "FRAGILE TRUST : While the #ch# on this card is active, when you attack or defend, you may change an #eye# result into a #hit# or #evd# result.<br>DISTRUST : During System phase, gain 1 strain token. When you perform a #FS# action gain 1 strain token. <br>ACTION : recover 1 #ch#.",
+    "faction": "Crime_Syndicates"
 },
 {
     "name": "As de l'Espace",
@@ -3285,30 +3287,30 @@
     "charge": 1
 },
 {
-    "name": "Opportuniste",
-    "name_ENG": "Opportunist",
+    "name": "Discipliné",
+    "name_ENG": "Disciplined",
     "id": 229,
     "max_per_squad": 8,
     "available": true,
     "modify": false,
     "slot": "Talent",
-    "points": 6,
-    "effect": "Lorsque vous attaquez 1 vaisseau sans marqueur vert, vous pouvez perdre 1 point d'initiative, dans ce cas, lancez 1 dé d'attaque supplémentaire.",
-    "effect_ENG": "While you perform an attack against a ship without green tokens, you may lose 1 initiative point. If you do, roll 1 additional attack die.",
-    "faction": ""
+    "points": 1,
+    "effect": "Après qu'un vaisseau allié à portée 0-3 est détruit, si ce vaisseau est limité or possède le talent <i>Discipliné</i>, vous pouvez effectuer une action #TL# ou #BR#.",
+    "effect_ENG": "After another friendly ship at range 0-3 is destroyed, if that ship is limited or has the Disciplined upgrade, you may perform a #TL# or #BR# action.",
+    "faction": "ISB"
 },
 {
-    "name": "Détermination",
-    "name_ENG": "Determination",
+    "name": "Extrémiste",
+    "name_ENG": "Extremist",
     "id": 230,
     "max_per_squad": 8,
     "available": true,
     "modify": false,
     "slot": "Talent",
-    "points": 5,
-    "effect": "Lorsque vous recevez une carte de dégat pilote face ouverte, vous pouvez dépenser 1 #ch#. Dans ce cas, retirez cette carte.",
-    "effect_ENG": "When you receive a face up pilot damage card, you may spend 1 #ch#. If you do, discard this damage card.",
-    "faction": "",
+    "points": 3,
+    "effect": "Avant de lancer des dés d'attaque, vous pouvez subir un #hit# pour donner un marqueur de contrainte à votre cible.",
+    "effect_ENG": "Before you roll attack dice, you may suffer a #hit# to strain your target.",
+    "faction": "Partisans",
     "charge": 1
 },
 {
