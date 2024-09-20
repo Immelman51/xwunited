@@ -950,5 +950,5 @@ const linkToPrintSquad = document.getElementById('printsquad');
 linkToPrintSquad.addEventListener('click', function(e){
     e.preventDefault();
     hasher();
-window.location.href =  `print_squad.html?#{hash}`
+window.location.href =  `print_squad.html?#${hash}`
 })
