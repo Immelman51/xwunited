@@ -221,7 +221,7 @@
             "restrictions": [1,"action", "R-Coordinate",""],
             "faction": "",
             "modifier_func": [
-                [8,[0,"Co","W"]]
+                [0,"add_action",[0,"Co","W"]]
             ]
         },
  {
@@ -713,7 +713,7 @@
             "effect": "Portée 1-2 #Farc# 3 dés Attaque : si cette attaque touche, dépensez 1 résultat #hit# ou #crit# pour faire subir 1 dégât #hit# au défenseur. Tous les résultats #hit#/#crit# restants infligent des marqueurs ioniques au lieu des dégâts.",
             "faction": "",
             "modifier_func": [
-                [8,[0,"Ra","W"]]
+                [0,"add_action",[0,"Ra","W"]]
             ]
                
         },
@@ -731,7 +731,7 @@
             "effect": "Portée 1-2 #tur# 2 dés, Attaque",
             "faction": "",
             "modifier_func": [
-                [8,[0,"Ra","W"]]
+                [0,"add_action",[0,"Ra","W"]]
             ]
         },
  {
@@ -748,7 +748,7 @@
             "effect": "Portée 0-1 #tur# 2 dés. ATTAQUE PRECISE",
             "faction": "",
             "modifier_func": [
-                [8,[0,"Ra","W"]]
+                [0,"add_action",[0,"Ra","W"]]
             ]
         },
         {
@@ -765,7 +765,7 @@
             "effect": "Portée 2-3 #tur# 3 dés Attaque : attaque IMPRECISE<br>puis Attaque: attaque IMPRECISE.",
             "faction": "",
             "modifier_func": [
-                [8,[0,"Ra","W"]]
+                [0,"add_action",[0,"Ra","W"]]
             ]
         },
          {
@@ -780,7 +780,7 @@
             "effect": "Choisissez une amélioration #can# équipée et placez un marqueur canon rotatif dessus. La restriction #Farc# de votre #can# devient #tur#. Vous pouvez tourner l’arc de votre #can# avec l’action #RT#.",
             "faction": "",
             "modifier_func": [
-                [8,[0,"Ra","W"]]
+                [0,"add_action",[0,"Ra","W"]]
             ]
         },
          {
@@ -981,7 +981,7 @@
             "effect": "Donne accès l'action #TL#",
             "faction": "",
             "modifier_func": [
-                [8,[0,"Lo","W"]]
+                [0,"add_action",[0,"Lo","W"]]
             ]
         },
 {
@@ -1212,7 +1212,7 @@
             "effect": "Avant de lancer les dés de défense, vous pouvez dépenser 1 marqueur de calcul pour dire à voix haute un nombre supérieur ou égal à 1. Dans ce cas et si vous obtenez exactement cette quantité de résultats #evd# sur votre lancer, ajoutez 1 résultat #evd#.",
             "faction": ["Rebel_Alliance","New_Republic","Resistance"],
             "modifier_func": [
-                [8,[0,"Cc","W"]]
+                [0,"add_action",[0,"Cc","W"]]
             ]
         },
          {
@@ -1305,8 +1305,8 @@
             "max_per_squad": 1,
             "points": 7,
             "modifier_func": [
-                [8,[0,"Cc","W"]],
-                [8,[0,"Ja","W"]]
+                [0,"add_action",[0,"Cc","W"]],
+                [0,"add_action",[0,"Ja","W"]]
             ]
         },
 
@@ -1466,7 +1466,7 @@
             "effect": "Vous avez la capacité de pilote de chaque autre vaisseau allié qui possède la capacité IG-2000.<br>Après avoir effectué une action #CA#, gagnez 1 marqueur de calcul.",
             "faction": ["Bounty_Hunters_Guild"],
             "modifier_func": [
-                [8,[0,"Cc","W"]]
+                [0,"add_action", [0,"Cc","W"]]
             ]
 
         },
@@ -1639,7 +1639,7 @@
             "effect": "ACTION : Déployez un Super Commando qui est arrimé avec vous.<br>ACTION : Choisissez un Super Commando à portée 0-3. Il peut alors accélérer, même partiellement.",
             "max_per_squad": 1,
             "modifier_func": [
-                [8,[0,"Co","W"]]
+                [0, "add_action", [0,"Co","W"]]
             ]
         },
 {
@@ -2323,7 +2323,7 @@
             "effect_ENG": "",
             "modifier_func": [
             [3,"Calculator",164],
-            [8,[0,"Cc","W"]]
+            [0,"add_action",[0,"Cc","W"]]
             ]
         },
         {
@@ -2340,7 +2340,7 @@
             "effect_ENG": "",
             "modifier_func": [
                 [3,"Calculator",165],
-                [8,[0,"Cc","W"]]
+                [0,"add_action",[0,"Cc","W"]]
             ]
         },
         {
@@ -2357,7 +2357,7 @@
             "effect_ENG": "",
             "modifier_func": [
                 [3,"Calculator",166],
-                [8,[0,"Cc","W"]]
+                [0,"add_action",[0,"Cc","W"]]
             ]
         },
         {
@@ -2374,7 +2374,7 @@
             "effect_ENG": "You gain the 'Networked Calculation' ship ability. After a friendly ship at range 0-3 with #CA# in its action bar has been destroyed, each friendly ship at range 0-3 with #CA# in its action bar receives 1 calculate token.",
             "modifier_func": [
                 [3,"Calculator",167],
-                [8,[0,"Cc","W"]],
+                [0,"add_action",[0,"Cc","W"]],
                 [5,17]
             ]
         },
@@ -2594,7 +2594,7 @@
             "effect": "ajoute #RL# -> #TL#",
             "effect_ENG": "Adds #RL# -> #TL#",
             "modifier_func": [
-                [8,[1,"Rd","W","Lo","R"]]
+                [0,"add_action",[1,"Rd","W","Lo","R"]]
             ]
         },
         {

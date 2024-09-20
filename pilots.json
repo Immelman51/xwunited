@@ -1468,8 +1468,9 @@
             "ability": "Lorsque vous attaquez vous pouvez dépenser 1#ch# sur l’une de vos cartes #ill#  pour lancer 1 dé d’attaque supplémentaire.",
             "ability_ENG": "While you attack, you may spend 1 #ch# from 1 of your #ill# upgrade card. If you do, roll 1 additional attack die.",
             "slots": [
-                "Talent",
-                "Title"
+                "Title",
+                "Talent"
+                
             ],
             "modifier_func": [
             	[1,"Title",1,146]
@@ -2600,8 +2601,9 @@
             "ability_ENG": "After you fully execute an advanced maneuver, you may perform a #CA# or #BR# action, even while stressed. If you do, receive a strain token.",
             "ability": "Après avoir entièrement exécuté une manœuvre avancée, vous pouvez effectuer une action #CA# ou #BR#, même si vous êtes stressé. Dans ce cas, gagnez 1 jeton contrainte.", 
             "slots": [
-                "Talent",
-                "Title"
+                "Title",
+                "Talent"
+                
             ],
             "modifier_func": [
             	[1,"Title",1,146],
@@ -2654,8 +2656,9 @@
             "ability": "Tant que vous effectuez une attaque principale, vous pouvez lancer 1 dé d’attaque supplémentaire. Dans ce cas, le défenseur lance 1 dé de défense supplémentaire.",
             "ability_ENG": "While you perform a primary attack, you may roll 1 additional attack die. If you do, the defender roll 1 additional defense die.",
             "slots": [
-                "Talent",
-                "Title"
+                "Title",
+                "Talent"
+                
             ],
             "modifier_func": [
             	[1,"Title",1,142]
@@ -2680,10 +2683,11 @@
             "ability": "Après avoir défendu, si l’attaquant est dans votre #Farc#, vous pouvez dépenser 1 #ch# pour effectuer une attaque bonus contre cet attaquant.",
             "ability_ENG": "After you defend, if the attacker is in yout #Farc#, you may spend 1 #ch# to perform a bonus attack against this attacker.",
             "slots": [
+                "Title",
                 "Talent",
                 "Talent",
-                "Talent",
-                "Title"
+                "Talent"
+                
             ],
             "modifier_func": [
             	[1,"Title",1,143],
@@ -2730,8 +2734,9 @@
             "ability": "Au début de la phase d’engagement, vous pouvez choisir un vaisseau allié à portée 0–2. Dans ce cas, transférez à ce vaisseau tout ou partie de vos marqueurs verts.",
             "ability_ENG": "At the beginning of Engagement Phase, you may choose a friendly ship at range 0-2. If you do, transfer any number of your green tokens to this ship.",
             "slots": [
-                "Talent",
-                "Title"
+                "Title",
+                "Talent"
+                
             ],
             "modifier_func": [
             	[1,"Title",1,143],
@@ -2843,8 +2848,9 @@
             "ability": "Tant que vous effectuez une attaque principale, après l’étape « Neutraliser les résultats », vous pouvez dépenser 1 résultat #crit# pour ajouter 2 résultats #hit# .",
             "ability_ENG": "While you perform a primary attack, after the 'Neutralize Results' step, you may spend 1 #crit# result to add 2 #hit# results.",
             "slots": [
-                "Talent",
-                "Title"
+                "Title",
+                "Talent"
+                
             ],
             "modifier_func": [
             	[1,"Title",1,138],
@@ -2914,9 +2920,10 @@
             "ability": "Après avoir effectué une attaque qui a touché, vous pouvez dépenser 2 #ch# pour transférer 1 de vos jetons rouges non-verrouillage ou orange au défenseur.",
             "ability_ENG": "After you perform an attack that hits, you may spend 2 #ch# to transfer 1 of your non lock red tokens or orange tokens to the defender.",
             "slots": [
+                "Title",
                 "Talent",
-                "Talent",
-                "Title"
+                "Talent"
+                
             ],
             "modifier_func": [
             	[1,"Title",1,137],
@@ -3012,9 +3019,10 @@
             "ability": "Avant de vous engager, vous pouvez dépenser 1 #fo# pour choisir 2 vaisseaux ennemis à portée 0-1. Transférez n'importe quel nombre de jetons orange et rouges entre ces 2 vaisseaux.",
             "ability_ENG": "Before you engage, you may spend 1 #fo# to choose 2 enemy ships at range 0-1. Tranfer as many orange or red tokens between those 2 ships",
             "slots": [
+                "Title",
                 "Talent",
-                "Talent",
-                "Title"
+                "Talent"
+                
             ],
             "modifier_func": [
             	[1,"Title",1,139],
@@ -3060,10 +3068,11 @@
             "ability": "Après avoir révélé une manoeuvre rouge ou bleue, vous pouvez modifier votre cadran pour une autre manoeuvre de même difficulté.",
             "ability_ENG": "After you reveal a red or blue maneuver, you may set your dial to another maneuver of the same difficulty.",
             "slots": [
+                "Title" ,
                 "Talent",
                 "Talent",
-                "Talent",
-                "Title"                
+                "Talent"
+                               
             ],
             "modifier_func": [
             	[1,"Title",1,203]
@@ -3087,9 +3096,10 @@
             "ability": "Lorsqu'un vaisseau allié dans votre arc de tir défend, vous pouvez dépenser 1 #fo#. Dans ce cas, l'attaquant lance 1 dé d'attaque en moins.",
             "ability_ENG": "While a friendly ship in your firing arc defends, you may spend 1 force. If you do, the attacker rolls 1 fewer attack die.",
             "slots": [
+                "Title",
                 "Talent",
-                "Force",
-                "Title"                
+                "Force"
+                                
             ],
             "modifier_func": [
             	[1,"Title",1,203]
@@ -3112,8 +3122,9 @@
             "ability": "Au début de la phase d'engagement, chaque vaisseau ennemi à portée 0 reçoit 2 jetons brouillage.",
             "ability_ENG": "At the start of the Engagement Phase, each enemy ship at range 0 gains 2 jam tokens.",
             "slots": [
-                "Talent",
-                "Title"                
+                "Title"  ,
+                "Talent"
+                              
             ],
             "modifier_func": [
             	[1,"Title",1,203],
@@ -3137,9 +3148,10 @@
             "ability": "Lorsque vous défendez, si l'attaquant a modifié au moins 1 dé d'attaque, vous pouvez lancer 1 dé de défense supplémentaire.",
             "ability_ENG": "While you defend, if the attacker modified any attack dice, you may roll 1 additional defense die.", 
             "slots": [
+                "Title",
                 "Talent",
-                "Talent",
-                "Title"                
+                "Talent"
+                                
             ],
             "modifier_func": [
             	[1,"Title",1,203]
@@ -3162,10 +3174,11 @@
             "ability": "Après avoir révélé une manoeuvre rouge ou bleue, vous pouvez modifier votre cadran pour une autre manoeuvre de même difficulté.",
             "ability_ENG": "After you reveal a red or blue maneuver, you may set your dial to another maneuver of the same difficulty.",
             "slots": [
+                "Title",
                 "Talent",
                 "Talent",
-                "Talent",
-                "Title"                
+                "Talent"
+                                
             ],
             "modifier_func": [
             	[1,"Title",1,198]
@@ -3188,9 +3201,10 @@
             "ability": "Avant de vous activer, vous pouvez effectuer une action de #BR# ou #BO#.",
             "ability_ENG": "Before you activate, you may perform a #BR# or #BO# action.",
             "slots": [
+                "Title",
                 "Talent",
-                "Talent",
-                "Title"                
+                "Talent"
+                                
             ],
             "modifier_func": [
             	[1,"Title",1,198]
@@ -3213,9 +3227,10 @@
             "ability": "Lorsqu'un vaisseau allié dans votre arc de tir défend, vous pouvez dépenser 1 #fo#. Dans ce cas, l'attaquant lance 1 dé d'attaque en moins.",
             "ability_ENG": "While a friendly ship in your firing arc defends, you may spend 1 #fo#. If you do, the attacker rolls 1 fewer attack die.",
             "slots": [
+                "Title" ,
                 "Talent",
-                "Force",
-                "Title"                
+                "Force"
+                               
             ],
             "modifier_func": [
             	[1,"Title",1,198]
@@ -3238,8 +3253,9 @@
             "ability": "Lorsque vous défendez, les résultat #crit# sont neutralisés avant les résultats #hit#.",
             "ability_ENG": "While you defend, #crit# results are neutralized before #hit# results.",
             "slots": [
-                "Talent",
-                "Title"                
+                "Title" ,
+                "Talent"
+                               
             ],
             "modifier_func": [
             	[1,"Title",1,198]
@@ -3262,8 +3278,9 @@
             "ability": "Lorsque vous coordonnez, si vous choisissez un vaisseau avec exactement 1 jeton stress, il peut effectuer des actions.", 
             "ability_ENG": "While you coordinate, if you chose a ship with exactly 1 stress token, it can perform actions.",
             "slots": [
-                "Talent",
-                "Title"                
+                "Title" ,
+                "Talent"
+                               
             ],
             "modifier_func": [
             	[1,"Title",1,199],
@@ -3287,9 +3304,10 @@
             "ability": "Lorsque vous défendez, si l'attaquant a modifié au moins 1 dé d'attaque, vous pouvez lancer 1 dé de défense supplémentaire.",
             "ability_ENG": "While you defend, if the attacker modified any attack dice, you may roll 1 additional defense die.", 
             "slots": [
+                "Title" ,
                 "Talent",
-                "Talent",
-                "Title"                
+                "Talent"
+                               
             ],
             "modifier_func": [
             	[1,"Title",1,199]
@@ -3313,9 +3331,10 @@
             "ability": "Après avoir entièrement effectué une manoeuvre, vous pouvez choisir un vaisseau allié à portée 1-2 et dépenser 2 #fo#. Ce vaisseau peut effectuer une action, même stressé.",
             "ability_ENG": "After you fully execute a maneuver, you may choose a friendly ship at range 1-2 and spend 2 #fo# . That ship may perform an action, even while stressed.",
             "slots": [
+                "Title" ,
                 "Talent",
-                "Force",
-                "Title"                
+                "Force"
+                               
             ],
             "modifier_func": [
             	[1,"Title",1,199]
@@ -3339,9 +3358,10 @@
             "ability": "Après avoir attaqué, assignez la condition 'Tir de Suppression' au défenseur.",
             "ability_ENG": "After you perform an attack, assign the Suppressive Fire condition to the defender.",
             "slots": [
+                "Title" ,
                 "Talent",
-                "Talent",
-                "Title"                
+                "Talent"
+                               
             ],
             "modifier_func": [
             	[1,"Title",1,199]
@@ -3364,9 +3384,10 @@
             "ability": "Avant de vous activer, vous pouvez effectuer une action #BR# ou #BO#.", 
             "ability_ENG": "Before you activate, you may perform a #BR# or #BO# action.",
             "slots": [
+                "Title",
                 "Talent",
-                "Talent",
-                "Title"                
+                "Talent"
+                                
             ],
             "modifier_func": [
             	[1,"Title",1,196],
@@ -3390,9 +3411,10 @@
             "ability": "Lorsque vous défendez ou attaquez, si vous êtes stressé, vous pouvez dépenser 1 #fo# pour modifier jusqu'à 2 de vos résultats #eye# en #hit# ou #evd#.",
             "ability_ENG": "While you defend or perform an attack, if you are stressed, you may spend 1 #fo# to change up to 2 of your #eye# results to #hit# or #evd# results.",
             "slots": [
+                "Title",
                 "Talent",
-                "Force",
-                "Title"                
+                "Force"
+                                
             ],
             "modifier_func": [
             	[1,"Title",1,196],
@@ -3417,9 +3439,10 @@
             "ability": "Après avoir attaqué, assignez la condition 'Tir de Suppression' au défenseur.",
             "ability_ENG": "After you perform an attack, assign the Suppressive Fire condition to the defender.",
             "slots": [
+                "Title",
                 "Talent",
-                "Talent",
-                "Title"                
+                "Talent"
+                                
             ],
             "modifier_func": [
             	[1,"Title",1,196],
@@ -3443,8 +3466,9 @@
             "ability": "Lorsque vous défendez, les résultats #crit# sont neutralisés avant les #hit#.",
             "ability_ENG": "While you defend, #crit# results are neutralized before #hit# results.",
             "slots": [
-                "Talent",
-                "Title"                
+                "Title",
+                "Talent"
+                                
             ],
             "modifier_func": [
             	[1,"Title",1,196],
@@ -3468,9 +3492,10 @@
             "ability": "Lorsque vous défendez ou attaquez, si vous êtes stressé, vous pouvez dépenser 1 #fo# pour modifier jusqu'à 2 de vos résultats #eye# en #hit# ou #evd#.",
             "ability_ENG": "While you defend or perform an attack, if you are stressed, you may spend 1 #fo# to change up to 2 of your #eye# results to #hit# or #evd# results.",
             "slots": [
+                "Title",
                 "Talent",
-                "Force",
-                "Title"                
+                "Force"
+                                
             ],
             "modifier_func": [
             	[1,"Title",1,202]
@@ -3493,8 +3518,9 @@
             "ability": "Au début de la phase d'engagement, chaque vaisseau ennemi à portée 0 reçoit 2 jeton brouillage.", 
             "ability_ENG": "At the start of the Engagement Phase, each enemy ship at range 0 gains 2 jam tokens.",
             "slots": [
-                "Talent",
-                "Title"                
+                "Title" ,
+                "Talent"
+                               
             ],
             "modifier_func": [
             	[1,"Title",1,202],
@@ -3518,8 +3544,9 @@
             "ability": "Au début de la phase d'engagement, vous pouvez effectuer une action rouge #BR#.",
             "ability_ENG": "At the start of engagement phase, you may perform a Red #BR# action.",
             "slots": [
-                "Talent",
-                "Title"                
+                "Title",
+                "Talent"
+                                
             ],
             "modifier_func": [
             	[1,"Title",1,200]
@@ -3542,8 +3569,9 @@
             "ability": "Après avoir défendu contre une attaque portée 1, l'attaquant reçoit 1 jeton de contrainte.",
             "ability_ENG": "After you defend against a Range 1 attack, the attacker gains 1 strain token.",
             "slots": [
-                "Talent",
-                "Title"                
+                "Title" ,
+                "Talent"
+                               
             ],
             "modifier_func": [
             	[1,"Title",1,200]
@@ -3566,9 +3594,10 @@
             "ability": "Tant que vous êtes stressé, ignorez Sensor Blackout.", 
             "ability_ENG": "While you are stressed, you ignore the Sensor Blackout ability.",
             "slots": [
+                "Title" ,
                 "Talent",
-                "Talent",
-                "Title"                
+                "Talent"
+                               
             ],
             "modifier_func": [
             	[1,"Title",1,201]
@@ -3591,9 +3620,10 @@
             "ability": "Lorsque vous attaquez, vous pouvez dépenser 1 résultat #eye#, #crit# ou #hit# pour regarder les cartes de dégat face cachée du défenseur, en choisir 1, et l'exposer.",
             "ability_ENG": "While you perform an attack, you may spend 1 #eye#, #crit#, or #hit# result to look at the defender's facedown damage cards, choose 1, and expose it.",
             "slots": [
+                "Title",
                 "Talent",
-                "Talent",
-                "Title"                
+                "Talent"
+                                
             ],
             "modifier_func": [
             	[1,"Title",1,201]
@@ -3718,10 +3748,11 @@
             "ability": "Lorsque vous effectuez une attaque principale, si vous n'êtes pas dans l'arc de tir du défenseur, vous pouvez relancer jusqu'à 2 dés d'attaque.",
             "ability_ENG": "While you perform a primary attack, if you are not in the defender's firing arc, you may reroll up to 2 attack dice.",
             "slots": [
+                "Title" ,
                 "Talent",
                 "Talent",
-                "Sensor",
-                "Title"                
+                "Sensor"
+                               
             ],
             "modifier_func": [
             	[1,"Title",1,204]
@@ -4710,10 +4741,11 @@
             "ability": "Après avoir effectué une action, vous pouve dépenser 1 #ch# pour effectuer une action blanche, en la considérant comme rouge.",
             "ability_ENG": "After you perform an action, you may spend 1 charge to perform a white action, treating it as red.",
             "slots": [
+                "Title",
                 "Talent",
                 "Talent",
-                "Talent",
-                "Title"            
+                "Talent"
+                            
             ],
 			"modifier_func": [
 				[1,"Title",1,197],
@@ -4969,10 +5001,11 @@
             "ability": "Mise en place : Vous pouvez vous placer n'importe où sur l'aire de jeu, au delà de la portée 3 des vaisseaux ennemis.",
             "ability_ENG": "Setup: You can be placed anywhere in the play area beyond range 3 of enemy ships.",
             "slots": [
+                "Title",
                 "Talent",
                 "Talent",
-                "Talent",
-                "Title"            
+                "Talent"
+                            
             ],
             "modifier_func": [
             	[1,"Title",1,135],
@@ -5002,9 +5035,10 @@
             "ability": "Lorsque vous défendez ou attaquez, si le vaisseau ennemi est dans votre #Farc#, vous pouvez dépenser 1 #fo# pour modifier l'un de vos résultats vierge en #evd# ou #hit#.",
             "ability_ENG": "While you defend or perform an attack, if the enemy ship is in your #Farc# , you may spend 1 #fo# to change 1 of your blank results to an #evd# or #hit# result.",
             "slots": [
+                "Title" ,
                 "Talent",
-                "Force",
-                "Title"            
+                "Force"
+                           
             ],
             "modifier_func": [
             	[1,"Title",1,135],
@@ -5033,8 +5067,9 @@
             "ability_ENG": "After a friendly ship at range 0-3 is destroyed, before that ship is removed, you may perform an action. Then you may perform a bonus attack.",
         	"title": ["Millenium Falcon"],
             "slots": [
-                "Talent",
-                "Title"            
+                "Title",
+                "Talent"
+                            
             ],
             "modifier_func": [
             	[1,"Title",1,135],
@@ -5063,9 +5098,10 @@
             "ability_ENG": "After you fully execute a red maneuver or perform a red action, you may spend any number of charges to choose that many friendly ships at range 0-2. The chosen ships may perform an action, even while stressed. ",
             "title": ["Millenium Falcon"],
             "slots": [
+                "Title",
                 "Talent",
-                "Talent",
-                "Title"            
+                "Talent"
+                            
             ],
             "modifier_func": [
             	[1,"Title",1,135],
