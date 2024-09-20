@@ -204,7 +204,7 @@ async function initializeData() {
 
  
     
-const menuFaction = ["<Select Faction>","Rebel_Alliance","Imperial_Academy","Mandalorian_Clans","Pirates_and_Smugglers","Bounty_Hunters_Guild","Phoenix_Cell","C.I.S","Resistance","Imperial_Elite_Forces","First_Order","Partisans","Shadow_Specialists","Jedi_Order","New_Republic","Hutt_Cartel","Agent_of_Chaos","Galactic_Senate","Imperial_Remnants","Black_Sun","Crime_Syndicates","ISB","Colossus"];
+const menuFaction = ["<Select Faction>","Rebel_Alliance","Imperial_Academy","Mandalorian_Clans","Pirates_and_Smugglers","Bounty_Hunters_Guild","Phoenix_Cell","C.I.S","Resistance","Imperial_Elite_Forces","First_Order","Partisans","Shadow_Specialists","Jedi_Order","New_Republic","Hutt_Cartel","Agents_of_Chaos","Galactic_Senate","Imperial_Remnants","Black_Sun","Crime_Syndicates","ISB","Colossus"];
 
 // Populate menus after initializing data
 async function populateMenus() {
