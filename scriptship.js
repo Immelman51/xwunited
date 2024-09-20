@@ -274,9 +274,9 @@ function updateTotalCost() { //update total cost AND logistic value
 }
 function updateUpgradeCount(yy) { //update the table logistic_Equipped
     logisticEquipped[yy] = 0;
-    console.log(logisticEquipped[yy]);
+    
     for (j=0; j<upgradesSelected_ID.length ; j++){
-        console.log(upgradesSelected_ID[yy][j]);
+        
         if (upgradesSelected_ID[yy][j]>-1) {
             if ((upgrades[upgradesSelected_ID[yy][j]]["slot"]!=="Talent") && (upgrades[upgradesSelected_ID[yy][j]]["slot"]!=="Force")) { //cette condition permet de ne pas compter les couts des talents et force
                 logisticEquipped[yy]= logisticEquipped[yy] + upgrades[upgradesSelected_ID[yy][j]]["points"];
@@ -686,7 +686,7 @@ function may_remove_slots(slot){ //Action n°10 : permet de retirer des slots
                 upgrades_Objects_Val[y].splice(positionfield, 1);
                 fieldtoremove[fieldtoremove.length-1].parentNode.removeChild(fieldtoremove[fieldtoremove.length-1]);
                 fillUpgradesSelected(y);
-                console.log('remonving'+slot); 
+                console.log('removing'+slot); 
                 upgslot.removeEventListener('input', listenfunction);
             }
             if (upgslot) {
@@ -928,7 +928,7 @@ function hasher(){ //on inscrit dans hash le nombre de vaisseaux (shipquantity+1
     hash = String(shipquantity+1) +'quantity';
     
     for(i = 0; shipquantity; i++) {
-        
+        console.log(pilot_list[i]['id']);
         let string_pilot_ID = String(pilot_list[i]['id']);
         hash = hash + string_pilot_ID +"pilot"; // 
         
