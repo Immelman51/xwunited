@@ -947,4 +947,7 @@ hash = hash.slice(0,-1); //on retire la virgule finale
 
 //Voici le lien de printsquad avec le hash à sa suite (qui permettra de savoir quoi imprimer)
 const linkToPrintSquad = document.getElementById('printsquad');
-linkToPrintSquad.href =  'print_squad.html#${hash}';
+linkToPrintSquad.addEventListener('click', function(e){
+    e.preventDefault();
+window.location.href =  `print_squad.html?#{hash}`
+})
