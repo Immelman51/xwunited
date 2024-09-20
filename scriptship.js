@@ -949,5 +949,6 @@ hash = hash.slice(0,-1); //on retire la virgule finale
 const linkToPrintSquad = document.getElementById('printsquad');
 linkToPrintSquad.addEventListener('click', function(e){
     e.preventDefault();
+    hasher();
 window.location.href =  `print_squad.html?#{hash}`
 })
