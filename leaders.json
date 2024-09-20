@@ -187,7 +187,7 @@
      "leadername": "##Lom Pyke (P.S.)",
      "leaderfaction": ["Crime_Syndicates","",""],
      "leaderid": 23,
-     "leaderability": "",
+     "leaderability": "If only ally ships equipped with fragile trust are attacked this round, lose 1 #ch#. ",
      "charge": 0,
      "logistic": 35
      },
