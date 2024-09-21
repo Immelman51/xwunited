@@ -1732,7 +1732,8 @@
             "slot": "Crew",
             "points": 4,
             "max_per_squad": 1,
-            "effect": "Mise en Place : équipez-vous avec cette face visible.<br>Tant que vous défendez, vous pouvez retourner cette carte. Dans ce cas, l’attaquant doit relancer tous les dés d’attaque.<br>Face retournée : Si vous n’êtes pas protégé, diminuez la difficulté de vos manœuvres #Lbank# et #Rbank#.",
+            "charge":1,
+            "effect": "Tant que vous défendez, vous pouvez dépenser 1 #ch#. Dans ce cas, l’attaquant doit relancer tous les dés d’attaque.<br>Si votre charge est dépensée et si vous n’êtes pas protégé, diminuez la difficulté de vos manœuvres #Lbank# et #Rbank#.",
             "faction": ["Pirates_and_Smugglers"]
         },
  {

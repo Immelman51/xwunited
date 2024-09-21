@@ -1855,9 +1855,8 @@
             "slots": [
                 "Title",
                 "Talent",
-                "Talent",
                 "Talent"
-                            
+                                         
                 
             ],
             "modifier_func": [

@@ -150,7 +150,7 @@ function dataGetFromPilot(yy) { //On prend le pilote et on recopie l'objet pilot
         if (nomPilote===pilots[i]["name"]) {
             pilot_list[yy] = pilots[i];*/
             pilot_list[yy] = pilot_objects[yy][z-1];
-            costcount.textContent = pilot_list[yy]["points"];
+            costcount.textContent = pilot_list[yy]["skill"];
             loadoutcount.textContent = pilot_list[yy]["loadout"];
             for (j=0; j<8 ;j++) {
                 totalcostvalue = totalcostvalue + pilot_list[j]["points"];
@@ -924,13 +924,13 @@ factionCards.addEventListener('click', function() {
 
 
 function hasher(){ //on inscrit dans hash le nombre de vaisseaux (shipquantity+1) on va transformer tous les ids du ship pilote et upgrades séparés par la lettre "z", chaque info différente (pilot, upgrades, modifiers) est séparée par des x, puis chaque vaisseaux différents séparés par ",".
-    hash = String(leaderID) + 'leader';
-    hash = String(shipquantity) +'quantity';
+    hash = String(leaderID) + ',';
+    
     
     for(i = 0; i<shipquantity+1; i++) {
         console.log(pilot_list[i]['id']);
         let string_pilot_ID = String(pilot_list[i]['id']);
-        hash = hash + string_pilot_ID +"pilot"; // 
+        hash = hash + string_pilot_ID +"u"; // 
         
         for (let j = 0; j < upgradesSelected_ID[i].length; j++){
             if (upgradesSelected_ID[i][j]>-1){

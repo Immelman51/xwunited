@@ -1,3 +1,37 @@
+let requestURLships = "https://raw.githubusercontent.com/Immelman51/xwunited/main/ships.json";
+let requestURLchassis = "https://raw.githubusercontent.com/Immelman51/xwunited/main/chassis.json";
+let requestURLpilots = "https://raw.githubusercontent.com/Immelman51/xwunited/main/pilots.json";
+let requestURLupgrades = "https://raw.githubusercontent.com/Immelman51/xwunited/main/upgrades.json";
+
+let ships, chassis, pilots, upgrades;
+
+async function fetchData(url) {
+    let response = await fetch(url);
+    if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    return await response.json();
+}
+
+(async () => {
+    try {
+        
+        ships = await fetchData(requestURLships);
+        chassis = await fetchData(requestURLchassis);
+        pilots = await fetchData(requestURLpilots);
+        upgrades = await fetchData(requestURLupgrades);
+        
+        console.log(ships);
+        console.log(chassis);
+        console.log(pilots);
+        console.log(upgrades);
+
+        // Vous pouvez maintenant utiliser les variables ships, chassis, pilots, et upgrades ici ou dans d'autres fonctions
+    } catch (error) {
+        console.error("Failed to fetch data: ", error);
+    }
+})();
+
 // Function to get the indexes from the URL hash
 function getIndexesFromHash() {
     // Get the hash from the URL
@@ -8,22 +42,8 @@ function getIndexesFromHash() {
 
     return indexes;
 }
+// The array 'indexes' contains ! ["leaderID","pilotID+u+upgrade1ID+u+upgrade2ID","pilotID"....]
 
-// Display the indexes on the page
-function displayIndexes() {
-    const indexes = getIndexesFromHash();
-    const contentDiv = document.getElementById('content');
+window.onload = getIndexesFromHash();
 
-    // Create a list of indexes
-    const ul = document.createElement('ul');
-    indexes.forEach(index => {
-        const li = document.createElement('li');
-        li.textContent = `Index: ${index}`;
-        ul.appendChild(li);
-    });
 
-    contentDiv.appendChild(ul);
-}
-
-// Run the displayIndexes function when the page loads
-window.onload = displayIndexes;
