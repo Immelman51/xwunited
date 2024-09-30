@@ -1,9 +1,9 @@
 .container {
-    width: 826px;
-    height: 1170px;
-    display: grid;
-    grid-template-columns: 1em 1em 1em 1em 1em 1em 1em;
-    grid-template-rows: 1em 1em 1em 1em 1em 1em 1em 1em 1em;
+    width: 20cm;
+    height: 4cm;
+    display: flex;
+    flex-wrap: wrap;
+   
 }
 
 .leader {
