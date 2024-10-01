@@ -218,7 +218,7 @@
             "slot": "Crew",
             "points": 3,
             "effect": "Ajoute l'action #CO# blanche",
-            "restrictions": [1,"action", "R-Coordinate",""],
+            "restrictions": [1,"action", [0,"Co", "R"],""],
             "faction": "",
             "modifier_func": [
                 [0,"add_action",[0,"Co","W"]]
@@ -1071,7 +1071,7 @@
             "effect_ENG": "After you reveal your dial, you may spend 3 #fo# to perform a #BR# or #BO# action. Then, if you have performed an action which is not on your action bar, receive 2 strain tokens. In this case, you cannot perform an other action during your activation.",
             "faction": "",
             "restrictions": [
-                    [1, "size", "small"]
+                    [1, "size", "small", ""]
             ]
         },
 {
@@ -2948,7 +2948,7 @@
     "ship": "YT-1300 Light Freighter",
     "effect": "Ajoute la capacité de chassis 'Vaisseau-Mère'. Vous pouvez arrimer une Navette de Secours à votre vaisseau.",
     "effect_ENG": "Add the 'Docking Ship' chassis ability. You may dock an Escape Craft to your ship",
-    "restrictions":[1,"ship","YT-1300 Light Freighter"],
+    "restrictions":[1,"ship","YT-1300 Light Freighter",""],
     "modifier_func": [
         [0, "change_chassis", 16]
     ]
