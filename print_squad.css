@@ -7,8 +7,12 @@ body{
     height: 4cm;
     display: flex;
     flex-flow: row wrap;
-    
-   
+}
+.squad {
+    width: 20cm;
+    height: 5cm;
+    display: flex;
+    flex-flow: row wrap;
 }
 
 
@@ -41,5 +45,6 @@ body{
 
 div {
     width:100%;
-    
+
 }
+

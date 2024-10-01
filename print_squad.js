@@ -69,7 +69,7 @@ let pilotdata = [[],[],[],[],[],[],[],[]];
 
 function getPilotData(x){ //we take indexes[x], and we are going to extract all datas from pilot x
     const pilotx = indexes[x+1].split('u');
-    pilotdata[x].push(pilotx);
+    pilotdata[x] = pilotx;
 }
 
 function displayPilotActions(x){
@@ -105,6 +105,7 @@ function displayPilot(x){
     
     getPilotData(x);
     const pid = pilotdata[x][0] //We store the PilotID we got from indexes and stored into pilotdata thanks with pilotdata()
+    console.log(pid);
     pilotSkill.textContent = pilots[pid]['skill'];
     pilotFaction.setAttribute("src",'img/'+pilots[pid]['faction']+'mini.jpg');
     pilotName.textContent = pilots[pid]['name'];
