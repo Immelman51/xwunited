@@ -1,3 +1,6 @@
+let pilotdata = [[],[],[],[],[],[],[],[]];
+let indexes = [];
+
 let requestURLships = "https://raw.githubusercontent.com/Immelman51/xwunited/main/ships.json";
 let requestURLchassis = "https://raw.githubusercontent.com/Immelman51/xwunited/main/chassis.json";
 let requestURLpilots = "https://raw.githubusercontent.com/Immelman51/xwunited/main/pilots.json";
@@ -14,6 +17,9 @@ async function fetchData(url) {
     return await response.json();
 }
 
+
+
+
 (async () => {
     try {
         
@@ -22,33 +28,24 @@ async function fetchData(url) {
         pilots = await fetchData(requestURLpilots);
         upgrades = await fetchData(requestURLupgrades);
         leaders = await fetchData(requestURLleaders);
-        
-        console.log(ships);
-        console.log(chassis);
-        console.log(pilots);
-        console.log(upgrades);
-        console.log(leaders);
+           
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-        // Vous pouvez maintenant utiliser les variables ships, chassis, pilots, et upgrades ici ou dans d'autres fonctions
-    } catch (error) {
-        console.error("Failed to fetch data: ", error);
-    }
-})();
- let indexes = [];
-// Function to get the indexes from the URL hash
-function getIndexesFromHash() {
+
+async function getIndexesFromHash() { // Function to get the indexes from the URL hash
     // Get the hash from the URL
     const hash = window.location.hash.substring(1);
 
     // Split the hash into an array
     indexes = hash.split(',');
 
-    return indexes;
+    return indexes; // The array 'indexes' contains ! ["leaderID","pilotID+u+upgrade1ID+u+upgrade2ID","pilotID"....]
 }
-// The array 'indexes' contains ! ["leaderID","pilotID+u+upgrade1ID+u+upgrade2ID","pilotID"....]
 
 
-function displayLeader(){
+async function displayLeader(){
 const lID = indexes[0];
 
 const leaderName = document.getElementById('lname');
@@ -65,7 +62,8 @@ leaderAbility.textContent = leaders[lID]['leaderability'];
 leaderCharge.textContent = leaders[lID]['charge'];
 
 }
-let pilotdata = [[],[],[],[],[],[],[],[]];
+
+
 
 function getPilotData(x){ //we take indexes[x], and we are going to extract all datas from pilot x
     const pilotx = indexes[x+1].split('u');
@@ -92,20 +90,10 @@ function displayPilot(x){
     const pilotForce = document.getElementById('force'+x);
     const pilotCharge = document.getElementById('charge'+x);
     const pilotActions = document.getElementById('actions'+x);
-    /*const pilotUpgrade0 = document.getElementById('upgrade'+x+'_0');
-    const pilotUpgrade1 = document.getElementById('upgrade'+x+'_1');
-    const pilotUpgrade2 = document.getElementById('upgrade'+x+'_2');
-    const pilotUpgrade3 = document.getElementById('upgrade'+x+'_3');
-    const pilotUpgrade4 = document.getElementById('upgrade'+x+'_4');
-    const pilotUpgrade5 = document.getElementById('upgrade'+x+'_5');
-    const pilotUpgrade6 = document.getElementById('upgrade'+x+'_6');
-    const pilotUpgrade7 = document.getElementById('upgrade'+x+'_7');*/
-    /*const pilotChassis1 = document.getElementById('chassis'+x+'_1');
-    const pilotChassis2 = document.getElementById('chassis'+x+'_2');*/
+    
     
     getPilotData(x);
     const pid = pilotdata[x][0] //We store the PilotID we got from indexes and stored into pilotdata thanks with pilotdata()
-    console.log(pid);
     pilotSkill.textContent = pilots[pid]['skill'];
     pilotFaction.setAttribute("src",'img/'+pilots[pid]['faction']+'mini.jpg');
     pilotName.textContent = pilots[pid]['name'];
@@ -132,28 +120,55 @@ function displayPilot(x){
         for(j=0; j<nbrcharge;j++){ //is going to display as many charge logos as the number of charges the upgrade has
             newcharge = document.createElement('img');
             newcharge.setAttribute("src","img/chargestat.jpg");
-            document.getElementById('upgrade'+x+'_'(i-1)).appendChild(newcharge);
+            document.getElementById('upgrade'+x+'_'+(i-1)).appendChild(newcharge);
         }
     }
     
     //And now, let's display thoses chassis abilities !
-    let cid = chassis[ships[sid]['chassis']]; //cid is an array this time!!
+    let cid = ships[sid]['chassis']; //cid is an array this time!!
+    
     for(i=0; i<cid.length; i++){
     document.getElementById('chassis'+x+'_'+i).textContent = chassis[cid[i]]['effect1']; //this covers 2 cases and a half : 1) there's only 1 chassis ability with a simple effect ; 2) there are 2 chassis abilities : 3) if the chassis ability has 2 effects, then it writes the first effect
     }
     if(chassis[cid[0]]["nbrOfEffectsnbr"]=2){
-    document.getElementById('chassis'+x+'_'+2).textContent = chassis[cid[i]]['effect2']; //this finishes the case 3) just above : we write the second effect of the chassis ability   
+    document.getElementById('chassis'+x+'_'+1).textContent = chassis[cid[0]]['effect2']; //this finishes the case 3) just above : we write the second effect of the chassis ability   
     }
 
     }
 
+async function executeFunctions(){ //on crée une fonction asynchrone pour que tout se lance dans l'ordre
+    console.log(ships);
+    console.log(chassis);
+    console.log(pilots);
+    console.log(upgrades);
+    console.log(leaders);    
+    await getIndexesFromHash();
+    await displayLeader();
+        for(i=0; i<pilotdata.length; i++){
+            displayPilot(i);
+        }
+    }
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+    
+        executeFunctions(); // on execute la fonction ultime!!!!!!!!!
+        
+    } catch (error) {
+        console.error("Failed to fetch data: ", error);
+    }
+})();
 
 
 
-window.onload = function(){
-    getIndexesFromHash();
-    displayLeader();
-}
+
+
+
+
+
+
 
 
 
