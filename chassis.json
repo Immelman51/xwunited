@@ -3,301 +3,360 @@
     {
         "name": "",
         "id": 0,
+        "nbrOfEffects": 1,
         "effect1": "" 
     },
     {
         "name": "Copilot",
         "id": 1,
+        "nbrOfEffects": 1,
         "effect1": "<em><strong>Copilote :</strong></em> Tant que vous êtes arrimé, votre Vaisseau-Mère considère aussi votre capacité de pilote comme étant le sien."
     },
     {
         "name": "Sensor Blindspot",
         "id": 2,
+        "nbrOfEffects": 1,
         "effect1": "<em><strong>Angle-Mort des Senseurs :</strong></em> Tant que vous effectuez une attaque principale à portée 0-1, lancez 1 dé d'attaque en moins. Tant que vous défendez à portée 1, lancez 1 dé de défense en moins"
 
     },
     {
         "name": "Servomotor S-Foils",
         "id": 3,
+        "nbrOfEffects": 2,
         "effect1": "<em><strong>Servomoteurs S-Foils :</strong></em> Avant de vous activez, vous pouvez retourner cette carte",
         "effect2": ""
     },
     {
         "name": "Pivot Wing",
         "id": 4,
+        "nbrOfEffects": 2,
         "effect1": "<em><strong>Aile Pivot (Baissée):</strong></em> ",
         "effect2": "<em><strong>Aile Pivot (Relevée):</strong></em> "
     },
     {
         "name": "Vectored Thrusters",
         "id": 5,
+        "nbrOfEffects": 1,
         "effect1": "<em><strong>Propulseurs Vectorisés :</strong></em> "
     },
     {
         "name": "Stabilized S-Foils",
         "id": 6,
+        "nbrOfEffects": 2,
         "effect1": "<em><strong>S-Foils Stabilisés :</strong></em> ",
         "effect2": "<em><strong>S-Foils Stabilisés :</strong></em> "
     },
     {
         "name": "Advanced Targetting Computer",
         "id": 7,
+        "nbrOfEffects": 1,
         "effect1": "<em><strong>Ordinateur de Visée Avancé:</strong></em> Tant que vous effectuez une attaque principale contre un défenseur que vous avez vérouillé, lancez 1 dé d'attaque supplémentaire et changez 1 résultat #hit# en un résultat #crit#"
     },
     {
         "name": "Nimble Bomber",
         "id": 8,
+        "nbrOfEffects": 1,
         "effect1": "<em><strong>Bombardier Agile :</strong></em> Si vous devez utiliser un gabarit #straight# pour larguer un engin, vous pouvez utiliser un gabarit #Lbank# ou #Rbank# de même vitesse à la place."
     },
     {
        "name": "Swivel Wing",
     "id": 9,   
+    "nbrOfEffects": 2,
     "effect1": "<em><strong>Aile Basculante (Baissée):</strong></em> Après avoir executé une manoeuvre [0#stop#], vous pouvez pivoter votre vaisseau de 90° ou 180°. Dans ce cas vous <strong>devez</strong> retourner cette carte.",
        "effect2": "<em><strong>Aile Basculante (Relevée):</strong></em> Tant que vous défendez, lancez 1 dé de défense en moins. Après avoir entièrement executé une manoeuvre non-stationnaire [0#stop#], vous pouvez retourner cette carte." 
     },
     {
         "name": "Autothrusters",
         "id": 10,
+        "nbrOfEffects": 1,
         "effect1": "<em><strong>Autopropulseurs :</strong></em> Après avoir effectué une action, vous pouvez effectuer une action #BR# rouge ou #BO# rouge."
     },
     {
         "name": "Full Throttle",
         "id": 11,
+        "nbrOfEffects": 1,
         "effect1": "<em><strong>Plein Gaz :</strong></em> Après avoir entièrement executé une manoeuvre à vitesse 3-5, vous pouvez gagner un jeton évasion."
     },
     {
         "name": "Controlled Ailerons",
         "id": 12,
+        "nbrOfEffects": 1,
         "effect1": "<em><strong>Ailerons Contrôlables :</strong></em> Avant de révéler votre cadran, si vous n'êtes pas stressé, vous pouvez accélérer."
     },
     {
         "name": "Rotating Cannons",
         "id": 13,
+        "nbrOfEffects": 1,
         "effect1": "<em><strong>Canons Rotatifs :</strong></em> Vous pouvez pivoter votre indicateur #tur# uniquement, vers votre #Farc# ou #Barc#. Vous <strong>devez</strong> considérer le prérequis #Farc# de cos améliorations #can# équipées comme étant #tur#."
     },
     {
         "name": "Adaptative Ailerons",
         "id": 14,
+        "nbrOfEffects": 1,
         "effect1": "<em><strong>Ailerons Adaptables :</strong></em> Avant de révéler votre cadran, si vous n'êtes pas stressé, vous <strong>devez</strong> accélérer."
     },
     {
         "name": "Rigged Energy Cells",
         "id": 15,
+        "nbrOfEffects": 1,
         "effect1": "<em><strong>Cellules Énergétiques Bidouillées :</strong></em> Pendant la phase de système, si vous n’êtes pas arrimé, perdez 1 #ch# . À la fin de la phase d’activation, vous êtes détruit si vous avez 0 #ch#. Avant de retirer votre figurine, chaque vaisseau à porté 0–1 subit 1 dégât #crit#"
     },
     {
         "name": "Docking Ship",
         "id": 16,
+        "nbrOfEffects": 1,
         "effect1": "<em><strong>Vaisseau-Mère :</strong></em> MISE EN PLACE: vous <mark>DEVEZ</mark> avoir un vaisseau arrimé avec vous avec la capacité <em>Co-Pilot</em>. Considérez les boucliers de votre vaisseau arrimé comme les vôtres."
     },
 {
     "name": "Networked Calculations",
     "id":17,
+    "nbrOfEffects": 1,
     "effect1":""
 },
 {
     "name": "Tail Cannon",
     "id":18,
+    "nbrOfEffects": 1,
     "effect1":""
 },
 {
     "name": "Stygium Array",
     "id":19,
+    "nbrOfEffects": 1,
     "effect1": ""
 },
 {
     "name": "Microthrusters",
     "id":20,
+    "nbrOfEffects": 1,
     "effect1":""
 },
 {
     "name": "Weapon Hardpoint",
     "id":21,
+    "nbrOfEffects": 1,
     "effect1":""
 },
 {
     "name": "Ghost",
     "id":22,
+    "nbrOfEffects": 1,
     "effect1":""
 },
 {
 "name":"Locked and Loaded",
 "id":23,
+"nbrOfEffects": 1,
 "effect1":""
 },
 {
     "name":"Concordia Faceoff",
     "id":24,
+    "nbrOfEffects": 1,
     "effect1":""
 },
 {
     "name":"Spacetug Tractor Array",
     "id":25,
+    "nbrOfEffects": 1,
     "effect1":""
 },
 {
     "name":"Dead to Rights",
     "id": 26,
+    "nbrOfEffects": 1,
     "effect1":""
 },
 {
     "name":"Comms Shuttle",
     "id":27,
+    "nbrOfEffects": 1,
     "effect1":""
 },
 {
     "name":"Integrated S-Foils",
     "id":28,
+    "nbrOfEffects": 2,
     "effect1":""
 },
 {
     "name": "Refined Gyrostabilizers",
     "id":29,
+    "nbrOfEffects": 1,
     "effect1":""
 },
 {
     "name":"Heavy Weapon Turret",
     "id":30,
+    "nbrOfEffects": 1,
     "effect1":""
 },
 {
     "name":"Notched Stabilizers",
     "id":31,
+    "nbrOfEffects": 1,
     "effect1":""
 },
 {
     "name":"Fine-Tuned Controls",
     "id":32,
+    "nbrOfEffects": 1,
     "effect1":""
 },
 {
     "name":"Calibrated Laser Targeting",
     "id":33,
+    "nbrOfEffects": 1,
     "effect1":""
 },
 {
     "name":"Grappling Struts",
     "id":34,
+    "nbrOfEffects": 2,
     "effect1":""
 },
 {
     "name":"Pinpoint Tractor Array",
     "id":35,
+    "nbrOfEffects": 1,
     "effect1":""
 },
 {
     "name":"Plated Hull",
     "id":36,
+    "nbrOfEffects": 1,
     "effect1":""
 },
 {
     "name":"Explosion with Wings",
     "id":37,
+    "nbrOfEffects": 1,
     "effect1":""
 },
 {
     "name":"Fine-Tuned Thrusters",
     "id":38,
+    "nbrOfEffects": 1,
     "effect1":""
 },
 {
     "name":"Repulsorlift Stabilizers",
     "id":39,
+    "nbrOfEffects": 2,
     "effect1":""
 },
 {
     "name":"Fire Convergence",
     "id":40,
+    "nbrOfEffects": 1,
     "effect1":""
 },
 {
     "name":"Twin Ion Engines",
     "id":41,
+    "nbrOfEffects": 1,
     "effect1":""
 },
 {
     "name":"Intuitive Controls",
     "id":42,
+    "nbrOfEffects": 1,
     "effect1":""
 },
 {
     "name":"Intuitive Interface",
     "id":43,
+    "nbrOfEffects": 1,
     "effect1":""
 },
 {
     "name":"Enhanced Jamming Suite",
     "id":44,
+    "nbrOfEffects": 1,
     "effect1":""
 },
 {
     "name":"Pursuit Thrusters",
     "id": 45,
+    "nbrOfEffects": 1,
     "effect1":""
 },
 {
     "name":"Troop Bay",
     "id":46,
+    "nbrOfEffects": 1,
     "effect1":""
 },
 {
     "name":"Hidden Devices",
     "id":47,
+    "nbrOfEffects": 1,
     "effect1":""
 },
 {
     "name":"Versatile Frame",
     "id":48,
+    "nbrOfEffects": 1,
     "effect1":""
 },
 {
     "name":"Boarding",
     "id":49,
+    "nbrOfEffects": 1,
     "effect1":""
 },
 {
     "name":"Multiple Targets",
     "id":50,
+    "nbrOfEffects": 1,
     "effect1":""
 },
 {
     "name":"Hit & Run",
     "id":51,
+    "nbrOfEffects": 1,
     "effect1":""
 },
 {
     "name":"Tractor Constrictor",
     "id":52,
+    "nbrOfEffects": 1,
     "effect1":""
 },
 {
     "name":"Advanced Bomber",
     "id":53,
+    "nbrOfEffects": 1,
     "effect1":""
 },
 {
     "name":"Overdrive Thrusters",
     "id":54,
+    "nbrOfEffects": 1,
     "effect1":""
 },
 {
     "name":"Turbo Thrusters",
     "id":55,
+    "nbrOfEffects": 1,
     "effect1":""
 },
 {
     "name": "Folding Wings",
     "id":56,
+    "nbrOfEffects": 1,
     "effect1":""
 },
 {
     "name":"Night Buzzard",
     "id":57,
+    "nbrOfEffects": 1,
     "effect1":""
 },
 {
     "name":"Tail Laser Turret",
     "id":58,
+    "nbrOfEffects": 1,
     "effect1":""
 }
 

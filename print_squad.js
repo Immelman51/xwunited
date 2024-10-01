@@ -65,8 +65,19 @@ leaderAbility.textContent = leaders[lID]['leaderability'];
 leaderCharge.textContent = leaders[lID]['charge'];
 
 }
+let pilotdata = [[],[],[],[],[],[],[],[]];
 
-function displayPilot(x){
+function getPilotData(x){ //we take indexes[x], and we are going to extract all datas from pilot x
+    const pilotx = indexes[x+1].split('u');
+    pilotdata[x].push(pilotx);
+}
+
+function displayPilotActions(x){
+
+}
+
+function displayPilot(x){ 
+    
     const pilotSkill = document.getElementById('pskill'+x);
     const pilotFaction = document.getElementById('plogo'+x);
     const pilotName = document.getElementById('name'+x);
@@ -81,18 +92,60 @@ function displayPilot(x){
     const pilotForce = document.getElementById('force'+x);
     const pilotCharge = document.getElementById('charge'+x);
     const pilotActions = document.getElementById('actions'+x);
-    const pilotUpgrade0 = document.getElementById('upgrade'+x+'_0');
+    /*const pilotUpgrade0 = document.getElementById('upgrade'+x+'_0');
     const pilotUpgrade1 = document.getElementById('upgrade'+x+'_1');
     const pilotUpgrade2 = document.getElementById('upgrade'+x+'_2');
     const pilotUpgrade3 = document.getElementById('upgrade'+x+'_3');
     const pilotUpgrade4 = document.getElementById('upgrade'+x+'_4');
     const pilotUpgrade5 = document.getElementById('upgrade'+x+'_5');
     const pilotUpgrade6 = document.getElementById('upgrade'+x+'_6');
-    const pilotUpgrade7 = document.getElementById('upgrade'+x+'_7');
-    const pilotChassis1 = document.getElementById('chassis'+x+'_1');
-    const pilotChassis2 = document.getElementById('chassis'+x+'_2');
+    const pilotUpgrade7 = document.getElementById('upgrade'+x+'_7');*/
+    /*const pilotChassis1 = document.getElementById('chassis'+x+'_1');
+    const pilotChassis2 = document.getElementById('chassis'+x+'_2');*/
+    
+    getPilotData(x);
+    const pid = pilotdata[x][0] //We store the PilotID we got from indexes and stored into pilotdata thanks with pilotdata()
+    pilotSkill.textContent = pilots[pid]['skill'];
+    pilotFaction.setAttribute("src",'img/'+pilots[pid]['faction']+'mini.jpg');
+    pilotName.textContent = pilots[pid]['name'];
+    pilotAbility.textContent = pilots[pid]['ability'];
+    pilotForce.textContent = pilots[pid]['force'];
+    pilotCharge.textContent = pilots[pid]['charge'];
+    pilotCost.textContent = pilots[pid]['points'];
+        
+    const sid = pilots[pid]['shipId']; //We store the ship ID
+    pilotShip.textContent = ships[sid]['name'];
+    pilotAttack1.textContent = ships[sid]["attack"][0][1]; // "attack": [["F",3],["B",3]],
+    if(ships[sid]["attack"].length === 2){
+        pilotAttack2.textContent = ships[sid]["attack"][1][1];
+    }
+    pilotAgility.textContent = ships[sid]["agility"];
+    pilotHull.textContent = ships[sid]["hull"];
+    pilotShield.textContent = ships[sid]["shield"];
+    displayPilotActions(x);
 
-}
+    for(i=1; i<pilotdata[x].length; i++){ //We now tackle upgrades equipped. we start i at 1 because at 0, there's the pilotID
+        let uid = pilotdata[x][i];
+        document.getElementById('upgrade'+x+'_'+(i-1)).textContent = upgrades[uid]['name'];
+        let nbrcharge = upgrades[uid]['charge'];
+        for(j=0; j<nbrcharge;j++){ //is going to display as many charge logos as the number of charges the upgrade has
+            newcharge = document.createElement('img');
+            newcharge.setAttribute("src","img/chargestat.jpg");
+            document.getElementById('upgrade'+x+'_'(i-1)).appendChild(newcharge);
+        }
+    }
+    
+    //And now, let's display thoses chassis abilities !
+    let cid = chassis[ships[sid]['chassis']]; //cid is an array this time!!
+    for(i=0; i<cid.length; i++){
+    document.getElementById('chassis'+x+'_'+i).textContent = chassis[cid[i]]['effect1']; //this covers 2 cases and a half : 1) there's only 1 chassis ability with a simple effect ; 2) there are 2 chassis abilities : 3) if the chassis ability has 2 effects, then it writes the first effect
+    }
+    if(chassis[cid[0]]["nbrOfEffectsnbr"]=2){
+    document.getElementById('chassis'+x+'_'+2).textContent = chassis[cid[i]]['effect2']; //this finishes the case 3) just above : we write the second effect of the chassis ability   
+    }
+
+    }
+
 
 
 
