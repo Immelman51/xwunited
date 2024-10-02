@@ -119,6 +119,7 @@ function displayPilot(x){
         let nbrcharge = upgrades[uid]['charge'];
         for(j=0; j<nbrcharge;j++){ //is going to display as many charge logos as the number of charges the upgrade has
             newcharge = document.createElement('img');
+            newcharge.setAttribute("class","chargeimg");
             newcharge.setAttribute("src","img/chargestat.jpg");
             document.getElementById('upgrade'+x+'_'+(i-1)).appendChild(newcharge);
         }
@@ -130,7 +131,7 @@ function displayPilot(x){
     for(i=0; i<cid.length; i++){
     document.getElementById('chassis'+x+'_'+i).textContent = chassis[cid[i]]['effect1']; //this covers 2 cases and a half : 1) there's only 1 chassis ability with a simple effect ; 2) there are 2 chassis abilities : 3) if the chassis ability has 2 effects, then it writes the first effect
     }
-    if(chassis[cid[0]]["nbrOfEffectsnbr"]=2){
+    if(chassis[cid[0]]["nbrOfEffectsnbr"]===2){
     document.getElementById('chassis'+x+'_'+1).textContent = chassis[cid[0]]['effect2']; //this finishes the case 3) just above : we write the second effect of the chassis ability   
     }
 
@@ -144,8 +145,8 @@ async function executeFunctions(){ //on crée une fonction asynchrone pour que t
     console.log(leaders);    
     await getIndexesFromHash();
     await displayLeader();
-        for(i=0; i<pilotdata.length; i++){
-            displayPilot(i);
+        for(k=0; k<indexes.length-1; k++){
+            displayPilot(k);
         }
     }
 

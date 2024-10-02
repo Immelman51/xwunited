@@ -13,12 +13,19 @@ body{
     height: 5cm;
     display: flex;
     flex-flow: row wrap;
+    border: solid ;
+    align-items: baseline;
 }
 
 
-.faction {
+.factionleader {
     width: 1.5cm;
     height: 1.5cm;
+
+}
+.factionpilot {
+    width: 1cm;
+    height: 1cm;
 
 }
 
@@ -36,6 +43,12 @@ body{
     height: 1.5cm;
 
 }
+.chargeimg{
+    height: 1.5cm;
+    width:1.5cm;
+    resize: both;
+
+}
 
 .leaderability{
     width: 20cm;
@@ -43,8 +56,62 @@ body{
 
 }
 
-div {
-    width:100%;
-
+.pskill{
+    font-size: x-large;
+    font-weight: bolder;
+    color: chocolate;
+    text-align: center;
+    padding: 10px;
 }
+ .name{
+    font-size: x-large;
+    font-weight: bolder;
+    text-align: center;
+    padding: 10px;
+    width: 13cm;
+ }
+ .cost{
+    font-size: x-large;
+    font-weight: bolder;
+    color: rgb(29, 214, 183);
+    text-align: center;
+    padding: 10px;
+ }
+.attack{
+    font-size: large;
+    font-weight: bolder;
+    color: rgb(214, 41, 29);
+    text-align: center;
+    padding: 10px; 
+}
+.agility{
+    font-size: large;
+    font-weight: bolder;
+    color: rgb(53, 124, 21);
+    text-align: center;
+    padding: 10px; 
+}
+.hull{
+    font-size: large;
+    font-weight: bolder;
+    color: rgb(209, 185, 46);
+    text-align: center;
+    padding: 10px; 
+}
+.shield{
+    font-size: large;
+    font-weight: bolder;
+    color: rgb(63, 29, 214);
+    text-align: center;
+    padding: 10px; 
+}
+.force{
+    font-size: large;
+    font-weight: bolder;
+    color: rgb(146, 29, 214);
+    text-align: center;
+    padding: 10px; 
+}
+
+
 
