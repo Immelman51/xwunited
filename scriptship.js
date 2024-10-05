@@ -294,7 +294,7 @@ let nbr = tableRestrictions[0];
 let list = tableRestrictions[1];
 let target1 = tableRestrictions[2];
 let target2 = tableRestrictions[3];
-console.log(tableRestrictions);
+console.log(tableRestrictions+yy);
 switch (list) {
     case 'title':
         varlist = pilot_list[yy]["title"];
