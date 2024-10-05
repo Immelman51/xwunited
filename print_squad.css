@@ -3,18 +3,18 @@ body{
 
 }
 .container {
-    width: 20cm;
+    width: 19cm;
     height: 4cm;
     display: flex;
     flex-flow: row wrap;
 }
 .squad {
-    width: 20cm;
-    height: 5cm;
-    display: flex;
-    flex-flow: row wrap;
-    border: solid ;
-    align-items: baseline;
+    width: 19cm;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1cm 1.5cm 7.75cm 7.75cm 1cm ;
+    gap:2px;
+    grid-template-rows: 1cm auto auto auto auto auto auto;
 }
 
 
@@ -24,14 +24,12 @@ body{
 
 }
 .factionpilot {
-    width: 1cm;
-    height: 1cm;
+    grid-area: 1 / 2 / 2 / 3;
 
 }
 
 .leadername {
-    width: 8cm;
-    height: 1.5cm;
+    grid-area: 1 / ;
     font-size: larger;
     font-weight: bolder;
     text-align: center;
