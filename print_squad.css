@@ -5,35 +5,104 @@ body{
 .container {
     width: 19cm;
     height: 4cm;
-    display: flex;
-    flex-flow: row wrap;
-}
-.squad {
-    width: 19cm;
-    height: auto;
     display: grid;
-    grid-template-columns: 1cm 1.5cm 7.75cm 7.75cm 1cm ;
-    gap:2px;
-    grid-template-rows: 1cm auto auto auto auto auto auto;
+    grid-template-columns: 2cm 2cm 2cm 7cm 6cm ;
+    grid-template-rows: 2cm auto;
 }
-
-
+  
 .factionleader {
     width: 1.5cm;
     height: 1.5cm;
 
 }
-.factionpilot {
-    grid-area: 1 / 2 / 2 / 3;
-
-}
-
 .leadername {
-    grid-area: 1 / ;
+    grid-area: 1 / 4 / 2 / 5 ;
     font-size: larger;
     font-weight: bolder;
     text-align: center;
     
+}
+.leaderability{
+    width: 20cm;
+    height: 2.5cm;
+
+}
+
+
+.squad {
+    width: 19cm;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1cm 1.5cm 7.75cm 7.75cm 1.5cm 1cm ;
+    gap:2px;
+    grid-template-rows: 1cm auto auto auto auto auto auto auto auto auto auto auto;
+}
+.pskill{
+    grid-area: 1 / 1 / 2 / 2;
+    font-size: x-large;
+    font-weight: bolder;
+    color: chocolate;
+    text-align: center;
+    padding: 10px;
+}
+
+.factionpilot {
+    grid-area: 1 / 2 / 2 / 3;
+
+}
+.name{
+    grid-area: 1 / 3 / 2 / 4;
+    font-size: x-large;
+    font-weight: bolder;
+    text-align: center;
+    padding: 10px;
+    width: 13cm;
+ }
+.ship{
+    grid-area: 1 / 4 / 2 / 5;
+}
+.cost{
+    grid-area: 1 / 6 / 2 / 7;
+    font-size: x-large;
+    font-weight: bolder;
+    color: rgb(29, 214, 183);
+    text-align: center;
+    padding: 10px;
+ }
+ .attack{
+    grid-area: 2 / 1 / 4 / 3;
+    font-size: large;
+    font-weight: bolder;
+    color: rgb(214, 41, 29);
+    text-align: center;
+    padding: 10px; 
+}
+.agility{
+    grid-area: 4 / 1 / 5 / 3;
+    font-size: large;
+    font-weight: bolder;
+    color: rgb(53, 124, 21);
+    text-align: center;
+    padding: 10px; 
+}
+.hull{
+    grid-area: 5 / 1 / 6 / 3;
+    font-size: large;
+    font-weight: bolder;
+    color: rgb(209, 185, 46);
+    text-align: center;
+    padding: 10px; 
+}
+.shield{
+    grid-area: 6 / 1 / 7 / 3;
+    font-size: large;
+    font-weight: bolder;
+    color: rgb(63, 29, 214);
+    text-align: center;
+    padding: 10px; 
+}
+.actions{
+    grid-area: 2 / 5 / 7 / 7;
 }
 
 .charge {
@@ -47,62 +116,6 @@ body{
     resize: both;
 
 }
-
-.leaderability{
-    width: 20cm;
-    height: 2.5cm;
-
-}
-
-.pskill{
-    font-size: x-large;
-    font-weight: bolder;
-    color: chocolate;
-    text-align: center;
-    padding: 10px;
-}
- .name{
-    font-size: x-large;
-    font-weight: bolder;
-    text-align: center;
-    padding: 10px;
-    width: 13cm;
- }
- .cost{
-    font-size: x-large;
-    font-weight: bolder;
-    color: rgb(29, 214, 183);
-    text-align: center;
-    padding: 10px;
- }
-.attack{
-    font-size: large;
-    font-weight: bolder;
-    color: rgb(214, 41, 29);
-    text-align: center;
-    padding: 10px; 
-}
-.agility{
-    font-size: large;
-    font-weight: bolder;
-    color: rgb(53, 124, 21);
-    text-align: center;
-    padding: 10px; 
-}
-.hull{
-    font-size: large;
-    font-weight: bolder;
-    color: rgb(209, 185, 46);
-    text-align: center;
-    padding: 10px; 
-}
-.shield{
-    font-size: large;
-    font-weight: bolder;
-    color: rgb(63, 29, 214);
-    text-align: center;
-    padding: 10px; 
-}
 .force{
     font-size: large;
     font-weight: bolder;
@@ -110,6 +123,17 @@ body{
     text-align: center;
     padding: 10px; 
 }
+
+.upgrade{
+
+}
+.chassis{
+
+}
+
+ 
+ 
+
 
 
 
