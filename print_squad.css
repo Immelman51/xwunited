@@ -7,14 +7,18 @@ body{
     height: 4cm;
     display: grid;
     grid-template-columns: 1.5cm 1.5cm 1.5cm 7cm 6cm ;
-    grid-template-rows: 1.5cm auto;
+    grid-template-rows: 1.5cm auto 1.5cm;
 }
   
 .factionleader {
     grid-area: 1 / 1 / 2 / 4;
     max-height: 1.5cm;
-    
+    display: flex;
 
+}
+.factionimg{
+    height: 1.5cm;
+    width: 1.5cm;
 }
 .leadername {
     grid-area: 1 / 4 / 2 / 5 ;
@@ -27,7 +31,12 @@ body{
     grid-area: 2 / 1 / 3 / 6 ;
 
 }
-
+.leadercharge {
+    grid-area: 3 / 1 / 4 / 6 ;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1.5cm;
+}
 
 .squad {
     width: 19cm;

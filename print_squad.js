@@ -49,17 +49,28 @@ async function displayLeader(){
 const lID = indexes[0];
 
 const leaderName = document.getElementById('lname');
-const faction1 = document.getElementById('faction1');
-const faction2 = document.getElementById('faction2');
-const faction3 = document.getElementById('faction3');
+const faction = document.getElementById('leaderfaction');
 const leaderAbility = document.getElementById('lability');
 const leaderCharge = document.getElementById('lcharge');
 leaderName.textContent = leaders[lID]['leadername'];
-faction1.setAttribute("src",'img/'+leaders[lID]['leaderfaction'][0]+'mini.jpg') ;
-faction2.setAttribute("src",'img/'+leaders[lID]['leaderfaction'][1]+'mini.jpg') ;
-faction3.setAttribute("src",'img/'+leaders[lID]['leaderfaction'][2]+'mini.jpg') ;
+for(i=0; i<3; i++){
+    if(leaders[lID]['leaderfaction'][i] !== ""){
+    let factionimg = document.createElement('img');
+    factionimg.setAttribute('class', 'factionimg');
+    factionimg.setAttribute("src",'img/'+leaders[lID]['leaderfaction'][i]+'mini.jpg') ;
+    faction.appendChild(factionimg);
+    }
+}
+
 leaderAbility.textContent = leaders[lID]['leaderability'];
-leaderCharge.textContent = leaders[lID]['charge'];
+
+for(j=0; j<leaders[lID]['charge'];j++){ //We display as many charge logos as the number of charges the leader has
+    newcharge = document.createElement('img');
+    newcharge.setAttribute("class","chargeimg");
+    newcharge.setAttribute("src","img/chargestat.jpg");
+    leaderCharge.appendChild(newcharge);
+
+} 
 
 }
 
