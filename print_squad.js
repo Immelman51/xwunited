@@ -97,21 +97,54 @@ function displayPilot(x){
     pilotSkill.textContent = pilots[pid]['skill'];
     pilotFaction.setAttribute("src",'img/'+pilots[pid]['faction']+'mini.jpg');
     pilotName.textContent = pilots[pid]['name'];
-    pilotAbility.textContent = pilots[pid]['ability'];
-    pilotForce.textContent = pilots[pid]['force'];
-    pilotCharge.textContent = pilots[pid]['charge'];
+    pilotAbility.textContent = pilots[pid]['ability']; 
     pilotCost.textContent = pilots[pid]['points'];
         
     const sid = pilots[pid]['shipId']; //We store the ship ID
     pilotShip.textContent = ships[sid]['name'];
-    pilotAttack1.textContent = ships[sid]["attack"][0][1]; // "attack": [["F",3],["B",3]],
+    pilotAttack1.textContent = ships[sid]["attack"][0][1]+' '; // "attack": [["F",3],["B",3]],
+    attack1img = document.createElement('img');
+    attack1img.setAttribute("class","logo");
+    attack1img.setAttribute("src","img/attack"+ships[sid]["attack"][0][0]+".jpg");
+    pilotAttack1.appendChild(attack1img);
     if(ships[sid]["attack"].length === 2){
-        pilotAttack2.textContent = ships[sid]["attack"][1][1];
+        pilotAttack2.textContent = ships[sid]["attack"][1][1]+' ';
+        attack2img = document.createElement('img');
+        attack2img.setAttribute("class","logo");
+        attack2img.setAttribute("src","img/attack"+ships[sid]["attack"][1][0]+".jpg");
+        pilotAttack2.appendChild(attack2img);
     }
-    pilotAgility.textContent = ships[sid]["agility"];
-    pilotHull.textContent = ships[sid]["hull"];
-    pilotShield.textContent = ships[sid]["shield"];
+    pilotAgility.textContent = ships[sid]["agility"]+' ';
+    agilityimg = document.createElement('img');
+    agilityimg.setAttribute("class","logo");
+    agilityimg.setAttribute("src","img/agility.jpg");
+    pilotAgility.appendChild(agilityimg);
+    pilotHull.textContent = ships[sid]["hull"]+' ';
+    hullimg = document.createElement('img');
+    hullimg.setAttribute("class","logo");
+    hullimg.setAttribute("src","img/hull.jpg");
+    pilotHull.appendChild(hullimg);
+    pilotShield.textContent = ships[sid]["shields"]+' ';
+    shieldimg = document.createElement('img');
+    shieldimg.setAttribute("class","logo");
+    shieldimg.setAttribute("src","img/shield.jpg");
+    pilotShield.appendChild(shieldimg);
     displayPilotActions(x);
+    
+    for(j=0; j<pilots[pid]['charge'];j++){ //We are going to display as many charge pictures as the charge value of the pilot
+        newcharge = document.createElement('img');
+        newcharge.setAttribute("class","chargeimg");
+        newchage.setAttribute("src","img/chargestat.jpg");
+        pilotCharge.appendChild(newcharge);
+
+    } 
+    for(k=0; k<pilots[pid]['force'];k++){ //We are going to display as many force pictures as the charge value of the pilot
+        newforce = document.createElement('img');
+        newforce.setAttribute("class","forceimg");
+        newforce.setAttribute("src","img/forcestat.jpg");
+        pilotForce.appendChild(newforce);
+        
+    } 
 
     for(i=1; i<pilotdata[x].length; i++){ //We now tackle upgrades equipped. we start i at 1 because at 0, there's the pilotID
         let uid = pilotdata[x][i];
