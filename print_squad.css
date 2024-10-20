@@ -1,7 +1,4 @@
-body{
-    width: 20cm;
 
-}
 .container {
     width: 19cm;
     height: 4cm;
@@ -85,7 +82,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: large;
+    font-size: larger;
     font-weight: bolder;
     color: rgb(214, 41, 29);
     text-align: center;
@@ -96,7 +93,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: large;
+    font-size: larger;
     font-weight: bolder;
     color: rgb(53, 124, 21);
     text-align: center;
@@ -107,7 +104,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: large;
+    font-size: larger;
     font-weight: bolder;
     color: rgb(209, 185, 46);
     text-align: center;
@@ -119,7 +116,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: large;
+    font-size: larger;
     font-weight: bolder;
     color: rgb(63, 29, 214);
     text-align: center;
