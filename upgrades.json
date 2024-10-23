@@ -1822,14 +1822,12 @@
             "available": false,
             "modify": true,
             "slot": "Modification",
-            "points": 2,
+            "points": 1,
             "faction": ["Pirates_and_Smugglers"],
-            "effect": "Gagnez 1 autre emplacement #mod# et un emplacement #ill#",
+            "effect": "Gagnez 1 autre emplacement #ill#",
             "restrictions": [1,"base", "Medium", "Large"],
             "modifier_func": [
                 [2,"Illicit"],
-                [2,"Modification"],
-                [10,"Modification"],
                 [10,"Illicit"]
             ]
             

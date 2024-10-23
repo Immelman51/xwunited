@@ -195,7 +195,9 @@ function displayPilot(x){
 
     for(i=1; i<pilotdata[x].length; i++){ //We now tackle upgrades equipped. we start i at 1 because at 0, there's the pilotID
         let uid = pilotdata[x][i];
+        console.log('upgrade'+x+'_'+(i-1));
         document.getElementById('upgrade'+x+'_'+(i-1)).textContent = upgrades[uid]['name'];
+        console.log(upgrades[uid]['name']);
         let nbrcharge = upgrades[uid]['charge'];
         for(j=0; j<nbrcharge;j++){ //is going to display as many charge logos as the number of charges the upgrade has
             newcharge = document.createElement('img');
@@ -215,7 +217,7 @@ function displayPilot(x){
     document.getElementById('chassis'+x+'_'+1).innerHTML = chassis[cid[0]]['effect2']; //this finishes the case 3) just above : we write the second effect of the chassis ability   
     }
    
-    console.log(`Pilot ${x} displayed successfully`); 
+    
 }
 
 async function executeFunctions(){ //on crée une fonction asynchrone pour que tout se lance dans l'ordre

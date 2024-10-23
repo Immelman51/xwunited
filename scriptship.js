@@ -275,11 +275,12 @@ function updateTotalCost() { //update total cost AND logistic value
 function updateUpgradeCount(yy) { //update the table logistic_Equipped
     logisticEquipped[yy] = 0;
     
-    for (j=0; j<upgradesSelected_ID.length ; j++){
+    for (j=0; j<upgradesSelected_ID[yy].length ; j++){
         
         if (upgradesSelected_ID[yy][j]>-1) {
             if ((upgrades[upgradesSelected_ID[yy][j]]["slot"]!=="Talent") && (upgrades[upgradesSelected_ID[yy][j]]["slot"]!=="Force")) { //cette condition permet de ne pas compter les couts des talents et force
                 logisticEquipped[yy]= logisticEquipped[yy] + upgrades[upgradesSelected_ID[yy][j]]["points"];
+                console.log(upgrades[upgradesSelected_ID[yy][j]]["points"]+'   '+logisticEquipped[yy]);
             }
         
     }
@@ -373,7 +374,6 @@ function checkPilotModifier() { //va checker s'il existe des fonctions dans modi
         for (let m = 0; m<pilot_list[y]['modifier_func'].length ; m++){
             switch (pilot_list[y]['modifier_func'][m][0]) { //on va vérifier le numéro à l'index 0 de chaque table dans modifier_func. Ce numéro indique une fonction à exectuer
                 case 0 :
-                    console.log("case 0");
                     break;
                 case 1: 
                     auto_equip(pilot_list[y]['modifier_func'][m][1], pilot_list[y]['modifier_func'][m][2], pilot_list[y]['modifier_func'][m][3]);
@@ -438,6 +438,8 @@ function checkUpgradeModifier() { //va checker s'il existe une fonction modify l
         if (upgrades[upgradeID]["modify"] === true){
             for(m = 0; m<upgrades[upgradeID]["modifier_func"].length; m++){
                 switch (upgrades[upgradeID]['modifier_func'][m][0]) { //on va vérifier le numéro à l'index 0 de chaque table dans modifier_func. Ce numéro indique une fonction à exectuer
+            case 0 :
+                break;
             case 1: 
                 auto_equip(upgrades[upgradeID]['modifier_func'][m][1], upgrades[upgradeID]['modifier_func'][m][2], upgrades[upgradeID]['modifier_func'][m][3]);
                 break;

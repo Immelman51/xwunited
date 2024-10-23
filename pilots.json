@@ -1801,7 +1801,7 @@
             "force": 0,
             "shipId": 16,
             "skill": 3,
-            "points": 8,
+            "points": 9,
             
             "title": ["Outrider"],
             "ability": "Après avoir défendu ou attaqué, si vous avez dépensé un marqueur de calcul, recevez un jeton calcul.",
