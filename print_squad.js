@@ -211,9 +211,9 @@ function displayPilot(x){
     let cid = ships[sid]['chassis']; //cid is an array this time!!
     switch(cid.length){
         case 1 :
-            document.getElementById('chassis'+x+'_'+1).innerHTML = chassis[cid[i]]['effect1'];
-            document.getElementById('chassis'+x+'_'+2).innerHTML = chassis[cid[i]]['effect2']; 
-            document.getElementById('chassis'+x+'_'+3).innerHTML = chassis[cid[i]]['effect3'];
+            document.getElementById('chassis'+x+'_'+1).innerHTML = chassis[cid[0]]['effect1'];
+            document.getElementById('chassis'+x+'_'+2).innerHTML = chassis[cid[0]]['effect2']; 
+            document.getElementById('chassis'+x+'_'+3).innerHTML = chassis[cid[0]]['effect3'];
             break;
         case 2 : 
             if(chassis[cid[0]]["nbrOfEffectsnbr"]===3){ //rules to display several chassis on 1 ship. We have to take in account the case where we need more than 3 div to display thoses abilities. In that case, we display 2 chassis ability in chassis0
