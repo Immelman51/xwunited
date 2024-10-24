@@ -84,8 +84,12 @@
     font-size: larger;
     font-weight: bolder;
     text-align: center;
+    border : solid;
    
 
+ }
+ .logo{
+    vertical-align: middle;
  }
  .attack{
     color: rgb(214, 41, 29);
@@ -101,52 +105,7 @@
  }
 
  
- /*.attack{
-    grid-area: 2 / 1 / 4 / 3;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: larger;
-    font-weight: bolder;
-    color: rgb(214, 41, 29);
-    text-align: center;
-    background-color: black;
-}
-.agility{
-    grid-area: 4 / 1 / 5 / 3;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: larger;
-    font-weight: bolder;
-    color: rgb(53, 124, 21);
-    text-align: center;
-    background-color: black;
-}
-.hull{
-    grid-area: 5 / 1 / 6 / 3;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: larger;
-    font-weight: bolder;
-    color: rgb(209, 185, 46);
-    text-align: center; 
-    background-color: black;
-    
-}
-.shield{
-    grid-area: 6 / 1 / 7 / 3;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: larger;
-    font-weight: bolder;
-    color: rgb(63, 29, 214);
-    text-align: center;
-    background-color: black; 
-}
-    */
+ 
 .ability{
     grid-area: 2 / 3 / 5 / 12;
     display: flex;
@@ -185,6 +144,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    
 
 }
 

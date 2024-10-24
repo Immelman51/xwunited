@@ -121,7 +121,7 @@ function displayPilot(x){
     pilotShip.textContent = ships[sid]['name'];
     
     //Attack 1 and Attack 2
-    pilotstat.innerHTML = ships[sid]["attack"][0][1] + ' <img src="img/attack'+ships[sid]["attack"][0][0] +'.jpg" class="logo"/>' ;
+    pilotstat.innerHTML = '<span class="attack">' +ships[sid]["attack"][0][1] + '</span> <img src="img/attack'+ships[sid]["attack"][0][0] +'.jpg" class="logo"/>' ;
     if(ships[sid]["attack"].length === 2){
     pilotstat.innerHTML = pilotstat.innerHTML + '<br><span class="attack">' + ships[sid]["attack"][1][1] + '</span> <img src="img/attack'+ships[sid]["attack"][1][0] +'.jpg" class="logo"/>' ;
     }
