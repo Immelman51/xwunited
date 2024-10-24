@@ -95,6 +95,9 @@ function displayPilot(x){
     const pilotName = document.getElementById('name'+x);
     const pilotShip = document.getElementById('ship'+x);
     const pilotCost = document.getElementById('cost'+x);
+    
+    const pilotstat = document.getElementById('stat'+x);
+
     const pilotAttack1 = document.getElementById('attack1'+x);
     const pilotAttack2 = document.getElementById('attack2'+x);
     const pilotAgility = document.getElementById('agility'+x);
@@ -117,45 +120,23 @@ function displayPilot(x){
     const sid = pilots[pid]['shipId']; //We store the ship ID
     pilotShip.textContent = ships[sid]['name'];
     
-    pilotAttack1.innerHTML = ''; //We empty the DOM elements because it can freeze the page if we don't
-    pilotAttack2.innerHTML = ''; //We empty the DOM elements because it can freeze the page if we don't
-    pilotAttack1.textContent = ships[sid]["attack"][0][1]+' '; // "attack": [["F",3],["B",3]],
-    attack1img = document.createElement('img');
-    attack1img.setAttribute("class","logo");
-    attack1img.setAttribute("src","img/attack"+ships[sid]["attack"][0][0]+".jpg");
-    pilotAttack1.appendChild(attack1img);
+    //Attack 1 and Attack 2
+    pilotstat.innerHTML = ships[sid]["attack"][0][1] + ' <img src="img/attack'+ships[sid]["attack"][0][0] +'.jpg" class="logo"/>' ;
     if(ships[sid]["attack"].length === 2){
-        pilotAttack2.textContent = ships[sid]["attack"][1][1]+' ';
-        attack2img = document.createElement('img');
-        attack2img.setAttribute("class","logo");
-        attack2img.setAttribute("src","img/attack"+ships[sid]["attack"][1][0]+".jpg");
-        pilotAttack2.appendChild(attack2img);
+    pilotstat.innerHTML = pilotstat.innerHTML + '<br><span class="attack">' + ships[sid]["attack"][1][1] + '</span> <img src="img/attack'+ships[sid]["attack"][1][0] +'.jpg" class="logo"/>' ;
     }
-   
-    pilotAgility.innerHTML = ''; //We empty the DOM elements because it can freeze the page if we don't
-    pilotAgility.textContent = ships[sid]["agility"]+' ';
-    agilityimg = document.createElement('img');
-    agilityimg.setAttribute("class","logo");
-    agilityimg.setAttribute("src","img/agility.jpg");
-    pilotAgility.appendChild(agilityimg);
-   
-    pilotHull.innerHTML = ''; //We empty the DOM elements because it can freeze the page if we don't
-    pilotHull.textContent = ships[sid]["hull"]+' ';
-    hullimg = document.createElement('img');
-    hullimg.setAttribute("class","logo");
-    hullimg.setAttribute("src","img/hull.jpg");
-    pilotHull.appendChild(hullimg);
-  
-    pilotShield.innerHTML = ''; //We empty the DOM elements because it can freeze the page if we don't
-    pilotShield.textContent = ships[sid]["shields"]+' ';
-    shieldimg = document.createElement('img');
-    shieldimg.setAttribute("class","logo");
-    shieldimg.setAttribute("src","img/shield.jpg");
-    pilotShield.appendChild(shieldimg);
-   
+    //Agility
+    pilotstat.innerHTML = pilotstat.innerHTML + '<br><span class="agility">' + ships[sid]["agility"] + '</span> <img src="img/agility.jpg" class="logo"/>' ;
+
+    //Hull
+    pilotstat.innerHTML = pilotstat.innerHTML + '<br><span class="hull">' + ships[sid]["hull"] + '</span> <img src="img/hull.jpg" class="logo"/>' ;
+
+    //shield
+    pilotstat.innerHTML = pilotstat.innerHTML + '<br><span class="shield">' + ships[sid]["shields"] + '</span> <img src="img/shield.jpg" class="logo"/>' ;
+
+    
     //displayPilotActions(x);
     
-    pilotCharge.innerHTML = ''; // Vide l'élément avant d'ajouter de nouveaux éléments 
     for(j=0; j<pilots[pid]['charge'][0];j++){ //We are going to display as many charge pictures as the charge value of the pilot
         newcharge = document.createElement('img');
         newcharge.setAttribute("class","chargeimg");
