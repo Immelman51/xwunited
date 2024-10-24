@@ -159,15 +159,15 @@ function displayPilot(x){
     for(j=0; j<pilots[pid]['charge'][0];j++){ //We are going to display as many charge pictures as the charge value of the pilot
         newcharge = document.createElement('img');
         newcharge.setAttribute("class","chargeimg");
-        newchage.setAttribute("src","img/chargestat.jpg");
+        newcharge.setAttribute("src","img/chargestat.jpg");
         newchargeEvolution = document.createElement('img'); // the index 1 of the charge tables indicates if it's recurring or not. We have to display it, and there's a jpg for every case.
         newchargeEvolution.setAttribute("class","chargeimg");
         switch(pilots[pid]['charge'][1]){
             case "+" :
-                newchageEvolution.setAttribute("src","img/chargeplus.jpg");
+                newchargeEvolution.setAttribute("src","img/chargeplus.jpg");
                 break;
             case "-" :   
-            newchageEvolution.setAttribute("src","img/chargeminus.jpg");
+            newchargeEvolution.setAttribute("src","img/chargeminus.jpg");
                 break;
             default :
             break;
