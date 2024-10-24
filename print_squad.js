@@ -209,16 +209,37 @@ function displayPilot(x){
     
     //And now, let's display thoses chassis abilities !
     let cid = ships[sid]['chassis']; //cid is an array this time!!
+    switch(cid.length){
+        case 1 :
+            document.getElementById('chassis'+x+'_'+1).innerHTML = chassis[cid[i]]['effect1'];
+            document.getElementById('chassis'+x+'_'+2).innerHTML = chassis[cid[i]]['effect2']; 
+            document.getElementById('chassis'+x+'_'+3).innerHTML = chassis[cid[i]]['effect3'];
+            break;
+        case 2 : 
+            if(chassis[cid[0]]["nbrOfEffectsnbr"]===3){ //rules to display several chassis on 1 ship. We have to take in account the case where we need more than 3 div to display thoses abilities. In that case, we display 2 chassis ability in chassis0
+                document.getElementById('chassis'+x+'_'+1).innerHTML = chassis[cid[1]]['effect1'] <br> chassis[cid[0]]['effect1']; 
+                document.getElementById('chassis'+x+'_'+2).innerHTML = chassis[cid[0]]['effect2']; 
+                document.getElementById('chassis'+x+'_'+3).innerHTML = chassis[cid[0]]['effect3']; 
+            }
+            if(chassis[cid[1]]["nbrOfEffectsnbr"]===3){ //rules to display several chassis on 1 ship. We have to take in account the case where we need more than 3 div to display thoses abilities. In that case, we display 2 chassis ability in chassis0
+                document.getElementById('chassis'+x+'_'+1).innerHTML = chassis[cid[0]]['effect1'] <br> chassis[cid[1]]['effect1']; 
+                document.getElementById('chassis'+x+'_'+2).innerHTML = chassis[cid[1]]['effect2']; 
+                document.getElementById('chassis'+x+'_'+3).innerHTML = chassis[cid[1]]['effect3']; 
+            }
+            if((chassis[cid[0]]["nbrOfEffectsnbr"]===1) && (chassis[cid[1]]["nbrOfEffectsnbr"]===1)){ //if the 2 chassis abilities has 1 effect, then we display then into chassis2 and chassis3 and we leave chassis1 blank
+                document.getElementById('chassis'+x+'_'+2).innerHTML = chassis[cid[0]]['effect1'];
+                document.getElementById('chassis'+x+'_'+3).innerHTML = chassis[cid[1]]['effect1'];
+
+            }
+            break;
+        default :
+            break;
+        }
+
+ }
     
-    for(i=0; i<cid.length; i++){
-    document.getElementById('chassis'+x+'_'+i).innerHTML = chassis[cid[i]]['effect1']; //this covers 2 cases and a half : 1) there's only 1 chassis ability with a simple effect ; 2) there are 2 chassis abilities : 3) if the chassis ability has 2 effects, then it writes the first effect
-    }
-    if(chassis[cid[0]]["nbrOfEffectsnbr"]===2){
-    document.getElementById('chassis'+x+'_'+1).innerHTML = chassis[cid[0]]['effect2']; //this finishes the case 3) just above : we write the second effect of the chassis ability   
-    }
-   
     
-}
+
 
 async function executeFunctions(){ //on crée une fonction asynchrone pour que tout se lance dans l'ordre
     console.log(ships);
