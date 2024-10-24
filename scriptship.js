@@ -273,6 +273,7 @@ function updateTotalCost() { //update total cost AND logistic value
     totallogistic.textContent = logisticvalue;
 }
 function updateUpgradeCount(yy) { //update the table logistic_Equipped
+    
     logisticEquipped[yy] = 0;
     
     for (j=0; j<upgradesSelected_ID[yy].length ; j++){
@@ -280,10 +281,11 @@ function updateUpgradeCount(yy) { //update the table logistic_Equipped
         if (upgradesSelected_ID[yy][j]>-1) {
             if ((upgrades[upgradesSelected_ID[yy][j]]["slot"]!=="Talent") && (upgrades[upgradesSelected_ID[yy][j]]["slot"]!=="Force")) { //cette condition permet de ne pas compter les couts des talents et force
                 logisticEquipped[yy]= logisticEquipped[yy] + upgrades[upgradesSelected_ID[yy][j]]["points"];
-                console.log(upgrades[upgradesSelected_ID[yy][j]]["points"]+'   '+logisticEquipped[yy]);
+                
             }
         
     }
+    
 }
 
 }
@@ -616,6 +618,9 @@ upgrades_Objects_Val[y].push(slotmenuobjects);
 populateMenu('slot'+y+'_'+nbrSlots,slotmenucontent);
 
 //fin de la recopie du code
+//On va rajouter 1 index à upgradesSelected_ID[y]. On rajoute un '-1' qui correspond à un menu où on n'a pas sélectionné d'upgrade
+upgradesSelected_ID[y].push(-1);
+
         slotmenu.addEventListener("mouseover", function(event){
             displayDescriptionUpgrade(event);
         })
@@ -623,6 +628,7 @@ populateMenu('slot'+y+'_'+nbrSlots,slotmenucontent);
         slotmenu.addEventListener("input", function(event) {//cette faction décrit le calcul des mises à jour des points pour le loadout et le cout du pilote
             identifyElement(event);
             check_restricted_List(event);
+            fillUpgradesSelected(y)
             updateUpgradeCount(y);
             updateTotalCost();
             displayDescriptionUpgrade(event);
@@ -679,6 +685,8 @@ function may_remove_slots(slot){ //Action n°10 : permet de retirer des slots
                 
     
         let fieldtoremove = document.getElementsByClassName('slotElement'+y+' '+slot);
+        
+        
         let listenfunction = function(){
                 
                 idfield = fieldtoremove[fieldtoremove.length-1].id; //besoin de connaitre la position de champ pour pouvoir l'extraire de upgrades_Object et upgrades_Type. 
@@ -690,12 +698,17 @@ function may_remove_slots(slot){ //Action n°10 : permet de retirer des slots
                 fillUpgradesSelected(y);
                 console.log('removing'+slot); 
                 upgslot.removeEventListener('input', listenfunction);
+                upgradesSelected_ID[y].pop(); //On va retirer la dernière valeur de upgradesSelected_ID car il n'y a plus d'élément à cet endroit
+                updateUpgradeCount(y);
+                updateTotalCost();
             }
             if (upgslot) {
                    
                 upgslot.addEventListener('input', listenfunction)  ;
             }
-            fillUpgradesSelected(y);  
+        fillUpgradesSelected(y); 
+        updateUpgradeCount(y);
+        
     }
     
 
