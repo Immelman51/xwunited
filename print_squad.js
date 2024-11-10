@@ -75,7 +75,19 @@ for(j=0; j<leaders[lID]['charge'];j++){ //We display as many charge logos as the
 
 }
 
+function removeElementsByClass(classname) {//permet de supprimer tous les éléments qui possèdent la class "new". Utile lorsqu'on change de leader
+    // Get all elements with the specified class name
+    const elements = document.getElementsByClassName(classname);
 
+    // Convert HTMLCollection to array for easier manipulation
+    const elementsArray = Array.from(elements);
+
+    // Remove each element from its parent node
+    elementsArray.forEach(element => {
+        element.parentNode.removeChild(element);
+    });
+    
+}       
 
 function getPilotData(x){ //we take indexes[x], and we are going to extract all datas from pilot x
     const pilotx = indexes[x].split('u');
@@ -249,6 +261,10 @@ async function executeFunctions(){ //on crée une fonction asynchrone pour que t
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
     
         executeFunctions(); // on execute la fonction ultime!!!!!!!!!
+        for (k=indexes.length ; k<9 ; k++ ){ //on va supprimer les éléments des pilotes qui n'ont pas été sélectionnés
+            removeElementsByClass(k);
+        }
+        
         
     } catch (error) {
         console.error("Failed to fetch data: ", error);
