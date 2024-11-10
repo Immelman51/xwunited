@@ -232,23 +232,31 @@ function displayPilot(x){
  }
  
  async function displayUpgradeDescription() { //This is the function that will display all the updates selected in the squad
+    descriptions = document.getElementById('descriptions');
     for (i=1 ; i<indexes.length ; i++){
         for ( j=1 ; j<pilotdata[i].length ; j++){
             upg = upgrades[pilotdata[i][j]]
             newupgrade = document.createElement('div');
             newupgrade.setAttribute('class', 'upgrade');
-            newupgrade.innerHTML = upg['name'] + ' (' + upg['slot'] + ')<br>';
+            newupgrade.innerHTML = '<b>' + upg['name'] +'</b>' + ' (' + upg['slot'] + ') - ';
             switch (upg['slot']) {
                 case 'Canon' :
                 case 'Turret' :
                 case 'Torpedo' :
                 case 'Missile' :
-                    newupgrade.innerHTML +=  upg['range'] ;
-                    newupgrade.innerHTML +=  upg['range'] ;
+                case 'Weapon Hardpoint' :
+                    newupgrade.innerHTML +=  'Portée : ' + upg['range'] + ' - ';
+                    newupgrade.innerHTML += '<img src="img/attack'+ upg['attack'][0] +'.jpg" class="logo"/> ' + upg['attack'][1] + '<br>';
+                default :
+                    newupgrade.innerHTML += upg['effect'];
+            }
+            descriptions.appendChild(newupgrade);   
             }
         }
+        
+        
     }
- }
+ 
     
 
 
@@ -267,6 +275,7 @@ async function executeFunctions(){ //on crée une fonction asynchrone pour que t
          
         
         }
+    await displayUpgradeDescription();
     
 
             
