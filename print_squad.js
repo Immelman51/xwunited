@@ -230,7 +230,25 @@ function displayPilot(x){
         }
 
  }
-    
+ 
+ async function displayUpgradeDescription() { //This is the function that will display all the updates selected in the squad
+    for (i=1 ; i<indexes.length ; i++){
+        for ( j=1 ; j<pilotdata[i].length ; j++){
+            upg = upgrades[pilotdata[i][j]]
+            newupgrade = document.createElement('div');
+            newupgrade.setAttribute('class', 'upgrade');
+            newupgrade.innerHTML = upg['name'] + ' (' + upg['slot'] + ')<br>';
+            switch (upg['slot']) {
+                case 'Canon' :
+                case 'Turret' :
+                case 'Torpedo' :
+                case 'Missile' :
+                    newupgrade.innerHTML +=  upg['range'] ;
+                    newupgrade.innerHTML +=  upg['range'] ;
+            }
+        }
+    }
+ }
     
 
 
