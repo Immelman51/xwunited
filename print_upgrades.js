@@ -20,12 +20,9 @@ async function fetchData(url) {
         upgrades = await fetchData(requestURLupgrades);
         
         
-        console.log(upgrades);
+        
 
-    } catch (error) {
-        console.error("Failed to fetch data: ", error);
-    }
-})();
+   
 
 async function getIndexesFromHash() { // Function to get the indexes from the URL hash
     // Get the hash from the URL
@@ -39,7 +36,7 @@ async function getIndexesFromHash() { // Function to get the indexes from the UR
 
 async function getUpgradeData(){ //we fill upgradeData with all the upgrades Id
     for (j=0 ; j<indexes.length ; j++){
-    const upgradex = indexes[x].split(',');
+    const upgradex = indexes[j].split(',');
     upgradeData.push(upgradex);
     }
 }
@@ -89,3 +86,8 @@ async function executeFunctions(){ //on crée une fonction asynchrone pour que t
 
 //on execute enfin la fonction finale
 executeFunctions();
+
+} catch (error) {
+    console.error("Failed to fetch data: ", error);
+}
+})();

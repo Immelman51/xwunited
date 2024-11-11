@@ -1,7 +1,12 @@
-header {
+.footer{
     display: flex;
     gap : 30px;
-    padding-bottom: 10px;
+    position: sticky;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    border: dotted;
+    background-color: antiquewhite;
 }
 .container {
     width: 19cm;
@@ -45,7 +50,7 @@ header {
 .squad {
     width: 19cm;
     display: grid;
-    grid-template-columns: 1cm 1.5cm 1.5cm 1.5cm 1.5cm 1.5cm 1cm 2cm 1.5cm 1.5cm 1.5cm 1.5cm 1.5cm ;
+    grid-template-columns: 1cm 1.5cm 1.5cm 1.5cm 1.5cm 1.5cm 1.5cm 1.5cm 1.5cm 1.5cm 1.5cm 1.5cm 1cm ;
     grid-template-rows: 1.5cm auto auto auto auto auto auto auto auto auto auto auto auto auto;
 }
 .pskill{
@@ -85,7 +90,8 @@ header {
  }
  .stat{
     grid-area: 2 / 1 / 7 /3;
-    
+    height: 137px;
+    padding-top: 25px;
     align-items: center;
     justify-content: center;
     font-size: larger;
@@ -121,14 +127,16 @@ header {
 }
 .actions{
     grid-area: 2 / 12 / 7 / 14;
+    display: flex;
+    height: 162px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border: solid;
 }
 
 .action{
     display: flex;
-    flex-direction: column;
     max-height: 1cm;
     justify-content: center;
     align-items: center;
