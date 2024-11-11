@@ -271,13 +271,13 @@ function displayPilot(x){
             switch (upgrades[uid]['charge'][1]) {
                 case "+" :
                     recurring = document.createElement('img');
-                    recurring.setAttribute("class","chargeimg");
+                    recurring.setAttribute("class","recurring");
                     recurring.setAttribute("src","img/chargeplus.jpg");
                     document.getElementById('upgrade'+x+'_'+(i-1)).appendChild(recurring);
                     break;
                 case "-" :
                     recurring = document.createElement('img');
-                    recurring.setAttribute("class","chargeimg");
+                    recurring.setAttribute("class","recurring");
                     recurring.setAttribute("src","img/chargeminus.jpg");
                     document.getElementById('upgrade'+x+'_'+(i-1)).appendChild(recurring);
                     break;
