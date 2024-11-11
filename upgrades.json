@@ -2401,8 +2401,10 @@
             "slot": "Missile",
             "charge": [1,"0"],
             "points": 4,
+            "attack": ["F", 3],
+            "range": [2,3],
             "faction": ["C.I.S"],
-            "effect": "Attaque #CA# portée 2-3, 3 dés : dépensez 1 #ch#. Tant que vous effectuez cette attaque, vous pouvez dépenser 1 marqueur de calcul pour changer 1 résultat #eye# en un résultat #crit#.<br>Action : rechargez cette carte.",
+            "effect": "Attaque #CA# : dépensez 1 #ch#. Tant que vous effectuez cette attaque, vous pouvez dépenser 1 marqueur de calcul pour changer 1 résultat #eye# en un résultat #crit#.<br>Action : rechargez cette carte.",
             "effect_ENG": ""
         },
         {

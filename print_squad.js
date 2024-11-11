@@ -71,7 +71,7 @@ for(i=0; i<3; i++){
     }
 }
 
-leaderAbility.textContent = leaders[lID]['leaderability'];
+leaderAbility.innerHTML = leaders[lID]['leaderability'];
 const nbrOfLeaderCharges = leaders[lID]['charge'][0];
 console.log(nbrOfLeaderCharges);
 
@@ -147,12 +147,15 @@ function displayPilotActions(x){
             
             newaction1 = document.createElement('img');
             newaction1.setAttribute('src', 'img/'+actionsArray[g][1]+'.jpg');
+            newaction1.setAttribute('class','linked action');
             
             newlink = document.createElement('img');
             newlink.setAttribute('src', 'img/fleche.jpg');
+            newlink.setAttribute('class','linked action');
             
             newaction2 = document.createElement('img');
             newaction2.setAttribute('src', 'img/'+actionsArray[g][2]+'.jpg');
+            newaction2.setAttribute('class','linked action');
 
             newaction.appendChild(newaction1);
             newaction.appendChild(newlink);
@@ -255,40 +258,70 @@ function displayPilot(x){
       
     } 
   
-
+    let mcount = 0; //this is a counter for the coming 'for' loop
     for(i=1; i<13 ; i++){ //We now tackle upgrades equipped. we start i at 1 because at 0, there's the pilotID
         if(i<pilotdata[x].length){
         let uid = pilotdata[x][i];
-        document.getElementById('upgrade'+x+'_'+(i-1)).textContent = upgrades[uid]['name'];
-        let nbrcharge = upgrades[uid]['charge'][0];
+        let mdiv;
         
+        if((pilots[pid]["charge"][0]===0)&&(pilots[pid]["force"]===0)&&(i<3)){ //to save some space on the sheet, if the pilot has no force or charge, we use that space to fill some upgrades
+            switch (i){
+                case 1 :
+                    mdiv = document.getElementById('charge'+x);
+                    mdiv.setAttribute('class','upgrade charge'); 
+                    mcount++;
+                    break;
+                case 2 : 
+                    mdiv = document.getElementById('force'+x);
+                    mdiv.setAttribute('class','upgrade force'); 
+                    mcount++;
+                    break;
+                default :
+                    break;
+            }
+            
+        }else{
+        mdiv = document.getElementById('upgrade'+x+'_'+(i-1-mcount));
+        }
+        
+        mdiv.textContent = upgrades[uid]['name'];
+        
+        let nbrcharge = upgrades[uid]['charge'][0];
         for(j=0; j<nbrcharge;j++){ //is going to display as many charge logos as the number of charges the upgrade has
             newcharge = document.createElement('img');
             newcharge.setAttribute("class","chargeimg");
             newcharge.setAttribute("src","img/chargestat.jpg");
-            document.getElementById('upgrade'+x+'_'+(i-1)).appendChild(newcharge);
-        }
+            mdiv.appendChild(newcharge);
+        
             switch (upgrades[uid]['charge'][1]) {
                 case "+" :
                     recurring = document.createElement('img');
                     recurring.setAttribute("class","recurring");
                     recurring.setAttribute("src","img/chargeplus.jpg");
-                    document.getElementById('upgrade'+x+'_'+(i-1)).appendChild(recurring);
+                    mdiv.appendChild(recurring);
                     break;
                 case "-" :
                     recurring = document.createElement('img');
                     recurring.setAttribute("class","recurring");
                     recurring.setAttribute("src","img/chargeminus.jpg");
-                    document.getElementById('upgrade'+x+'_'+(i-1)).appendChild(recurring);
+                    mdiv.appendChild(recurring);
                     break;
                 default :
                 break;
             }
+        }
         
     }else{
-        removeElementById("upgrade"+x+"_"+(i-1));
+        removeElementById("upgrade"+x+"_"+(i-1-mcount));
     }
+}
+    for(m=0;m<mcount;m++){ //we need to remove some more upgrade div if mcount is postive
+        removeElementById("upgrade"+x+"_"+(11-m));
     }
+    
+
+
+    
     
     //And now, let's display thoses chassis abilities !
     let cid = ships[sid]['chassis']; //cid is an array this time!!
