@@ -11,7 +11,7 @@ header {
     grid-template-rows: 1.5cm auto 1.5cm;
 }
   
-.factionleader {
+.leaderfaction {
     grid-area: 1 / 1 / 2 / 4;
     max-height: 1.5cm;
     display: flex;
@@ -121,6 +121,19 @@ header {
 }
 .actions{
     grid-area: 2 / 12 / 7 / 14;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.action{
+    display: flex;
+    flex-direction: column;
+    max-height: 1cm;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 3;
+
 }
 
 .charge {
@@ -152,7 +165,7 @@ header {
 }
 
 .upg0{
-    grid-area: 7 / 1 / 8 / 7;
+    grid-area: 7 / 1 / 8 / 8;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -164,12 +177,12 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    grid-area: 7 / 7 / 8 / 14;
+    grid-area: 7 / 8 / 8 / 14;
     
 
 }
 .upg2{
-    grid-area: 8 / 1 / 9 / 7;
+    grid-area: 8 / 1 / 9 / 8;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -177,14 +190,14 @@ header {
 }
 
 .upg3{
-    grid-area: 8 / 7 / 9 / 14;
+    grid-area: 8 / 8 / 9 / 14;
     display: flex;
     align-items: center;
     justify-content: center;
 
 }
 .upg4{
-    grid-area: 9 / 1 / 10 / 7;
+    grid-area: 9 / 1 / 10 / 8;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -192,14 +205,14 @@ header {
 }
 
 .upg5{
-    grid-area: 9 / 7 / 10 / 14;
+    grid-area: 9 / 8 / 10 / 14;
     display: flex;
     align-items: center;
     justify-content: center;
 
 }
 .upg6{
-    grid-area: 10 / 1 / 11 / 7;
+    grid-area: 10 / 1 / 11 / 8;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -207,43 +220,43 @@ header {
 }
 
 .upg7{
-    grid-area: 10 / 7 / 11 / 14;
+    grid-area: 10 / 8 / 11 / 14;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .upg8{
-    grid-area: 11 / 1 / 12 / 7;
+    grid-area: 11 / 1 / 12 / 8;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .upg9{
-    grid-area: 11 / 7 / 12 / 14;
+    grid-area: 11 / 8 / 12 / 14;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .upg8{
-    grid-area: 12 / 1 / 13 / 7;
+    grid-area: 12 / 1 / 13 / 8;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .upg9{
-    grid-area: 12 / 7 / 13 / 14;
+    grid-area: 12 / 8 / 13 / 14;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .upg10{
-    grid-area: 13 / 1 / 14 / 7;
+    grid-area: 13 / 1 / 14 / 8;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .upg11{
-    grid-area: 13 / 7 / 14 / 14;
+    grid-area: 13 / 8 / 14 / 14;
     display: flex;
     align-items: center;
     justify-content: center;

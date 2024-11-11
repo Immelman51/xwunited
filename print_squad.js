@@ -128,10 +128,47 @@ function getPilotData(x){ //we take indexes[x], and we are going to extract all 
     pilotdata[x] = pilotx;
 }
 
-/*function displayPilotActions(x){
+function displayPilotActions(x){
+    const pilotID = pilotdata[x][0];
+    const shipID = pilots[pilotID]['shipId'];
+    const actionsArray = ships[shipID]['actions'];
+    actionlist = document.getElementById('actions'+x);
+    for(g=0 ; g<actionsArray.length ; g++){
+        switch(actionsArray[g][0]){
+            case 0 : //if 0 is the first value, it is a simple action
+            newaction = document.createElement('img');
+            newaction.setAttribute('class','action');
+            newaction.setAttribute('src', 'img/'+actionsArray[g][1]+'.jpg');
+            actionlist.appendChild(newaction);
+            break;
+            case 1 : //if 1 is the first value, then it is a linked action
+            newaction = document.createElement('div');
+            newaction.setAttribute('class','action');
+            
+            newaction1 = document.createElement('img');
+            newaction1.setAttribute('src', 'img/'+actionsArray[g][1]+'.jpg');
+            
+            newlink = document.createElement('img');
+            newlink.setAttribute('src', 'img/fleche.jpg');
+            
+            newaction2 = document.createElement('img');
+            newaction2.setAttribute('src', 'img/'+actionsArray[g][2]+'.jpg');
+
+            newaction.appendChild(newaction1);
+            newaction.appendChild(newlink);
+            newaction.appendChild(newaction2);
+            actionlist.appendChild(newaction);
+            break;
+            default :
+            console.log('there is a mistake in ships.json for ship ID n°'+shipID);
+            break;
+        }
+    }
+
 
 }
-*/
+
+
 function displayPilot(x){ 
     console.log(`Displaying pilot for index ${x}`);
     
@@ -180,7 +217,7 @@ function displayPilot(x){
     pilotstat.innerHTML = pilotstat.innerHTML + '<br><span class="shield">' + ships[sid]["shields"] + '</span> <img src="img/shield.jpg" class="logo"/>' ;
 
     
-    //displayPilotActions(x);
+    displayPilotActions(x);
     
     for(j=0; j<pilots[pid]['charge'][0];j++){ //We are going to display as many charge pictures as the charge value of the pilot
         newcharge = document.createElement('img');
@@ -230,6 +267,7 @@ function displayPilot(x){
             newcharge.setAttribute("class","chargeimg");
             newcharge.setAttribute("src","img/chargestat.jpg");
             document.getElementById('upgrade'+x+'_'+(i-1)).appendChild(newcharge);
+        }
             switch (upgrades[uid]['charge'][1]) {
                 case "+" :
                     recurring = document.createElement('img');
@@ -246,7 +284,7 @@ function displayPilot(x){
                 default :
                 break;
             }
-        }
+        
     }else{
         removeElementById("upgrade"+x+"_"+(i-1));
     }
