@@ -72,13 +72,27 @@ for(i=0; i<3; i++){
 }
 
 leaderAbility.textContent = leaders[lID]['leaderability'];
+const nbrOfLeaderCharges = leaders[lID]['charge'][0];
+console.log(nbrOfLeaderCharges);
 
-for(j=0; j<leaders[lID]['charge'];j++){ //We display as many charge logos as the number of charges the leader has
-    newcharge = document.createElement('img');
-    newcharge.setAttribute("class","chargeimg");
-    newcharge.setAttribute("src","img/chargestat.jpg");
-    leaderCharge.appendChild(newcharge);
-
+for(j=0; j<nbrOfLeaderCharges ;j++){ //We display as many charge logos as the number of charges the leader has
+        switch (leaders[lID]['charge'][1]) {
+        case "Red" :
+            newcharge = document.createElement('img');
+            newcharge.setAttribute("class","chargeimg");
+            newcharge.setAttribute("src","img/chargestatRed.jpg");
+            leaderCharge.appendChild(newcharge);
+            break;
+        case "0" :
+            newcharge = document.createElement('img');
+            newcharge.setAttribute("class","chargeimg");
+            newcharge.setAttribute("src","img/chargestat.jpg");
+            leaderCharge.appendChild(newcharge);
+            break;
+        default :
+        console.log("This leader charge configuration has not been programmed in displayLeader() from print_squad.js. There also might be a mistake in leaders.json.")
+        break;
+    }
 } 
 
 }
@@ -95,7 +109,18 @@ function removeElementsByClass(classname) {//permet de supprimer tous les élém
         element.parentNode.removeChild(element);
     });
     
-}       
+}   
+
+function removeElementById(id) {
+    const element = document.getElementById(id);
+    if (element) {
+        element.remove();
+        
+    } else {
+        console.log(`No element found with ID "${id}".`);
+    }
+}
+
 
 function getPilotData(x){ //we take indexes[x], and we are going to extract all datas from pilot x
     const pilotx = indexes[x].split('u');
@@ -194,18 +219,37 @@ function displayPilot(x){
     } 
   
 
-    for(i=1; i<pilotdata[x].length; i++){ //We now tackle upgrades equipped. we start i at 1 because at 0, there's the pilotID
+    for(i=1; i<13 ; i++){ //We now tackle upgrades equipped. we start i at 1 because at 0, there's the pilotID
+        if(i<pilotdata[x].length){
         let uid = pilotdata[x][i];
-        console.log('upgrade'+x+'_'+(i-1));
         document.getElementById('upgrade'+x+'_'+(i-1)).textContent = upgrades[uid]['name'];
-        console.log(upgrades[uid]['name']);
-        let nbrcharge = upgrades[uid]['charge'];
+        let nbrcharge = upgrades[uid]['charge'][0];
+        
         for(j=0; j<nbrcharge;j++){ //is going to display as many charge logos as the number of charges the upgrade has
             newcharge = document.createElement('img');
             newcharge.setAttribute("class","chargeimg");
             newcharge.setAttribute("src","img/chargestat.jpg");
             document.getElementById('upgrade'+x+'_'+(i-1)).appendChild(newcharge);
+            switch (upgrades[uid]['charge'][1]) {
+                case "+" :
+                    recurring = document.createElement('img');
+                    recurring.setAttribute("class","chargeimg");
+                    recurring.setAttribute("src","img/chargeplus.jpg");
+                    document.getElementById('upgrade'+x+'_'+(i-1)).appendChild(recurring);
+                    break;
+                case "-" :
+                    recurring = document.createElement('img');
+                    recurring.setAttribute("class","chargeimg");
+                    recurring.setAttribute("src","img/chargeminus.jpg");
+                    document.getElementById('upgrade'+x+'_'+(i-1)).appendChild(recurring);
+                    break;
+                default :
+                break;
+            }
         }
+    }else{
+        removeElementById("upgrade"+x+"_"+(i-1));
+    }
     }
     
     //And now, let's display thoses chassis abilities !
@@ -213,8 +257,8 @@ function displayPilot(x){
     switch(cid.length){
         case 1 :
             document.getElementById('chassis'+x+'_'+1).innerHTML = chassis[cid[0]]['effect1'];
-            document.getElementById('chassis'+x+'_'+2).innerHTML = chassis[cid[0]]['effect2']; 
-            document.getElementById('chassis'+x+'_'+3).innerHTML = chassis[cid[0]]['effect3'];
+            removeElementById("chassis"+x+"_2");
+            removeElementById("chassis"+x+"_3");
             break;
         case 2 : 
             if(chassis[cid[0]]["nbrOfEffectsnbr"]===3){ //rules to display several chassis on 1 ship. We have to take in account the case where we need more than 3 div to display thoses abilities. In that case, we display 2 chassis ability in chassis0
@@ -230,6 +274,7 @@ function displayPilot(x){
             if((chassis[cid[0]]["nbrOfEffectsnbr"]===1) && (chassis[cid[1]]["nbrOfEffectsnbr"]===1)){ //if the 2 chassis abilities has 1 effect, then we display then into chassis2 and chassis3 and we leave chassis1 blank
                 document.getElementById('chassis'+x+'_'+2).innerHTML = chassis[cid[0]]['effect1'];
                 document.getElementById('chassis'+x+'_'+3).innerHTML = chassis[cid[1]]['effect1'];
+                removeElementById("chassis"+x+"_1");
 
             }
             break;
