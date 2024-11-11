@@ -9,11 +9,14 @@
     background-color: antiquewhite;
 }
 .container {
-    width: 19cm;
+    width: 25cm;
     height: 4cm;
     display: grid;
-    grid-template-columns: 1.5cm 1.5cm 1.5cm 7cm 6cm ;
+    grid-template-columns: 1.5cm 1.5cm 1.5cm 9cm 9cm ;
     grid-template-rows: 1.5cm auto 1.5cm;
+    border: thick double;
+    margin-bottom: 15px;
+
 }
   
 .leaderfaction {
@@ -27,17 +30,16 @@
     width: 1.5cm;
 }
 .leadername {
-    grid-area: 1 / 4 / 2 / 5 ;
+    grid-area: 1 / 1 / 2 / 6 ;
     font-size: larger;
     font-weight: bolder;
     text-align: center;
     
 }
-.bouton {
-    grid-area: 1 / 4 / 2 / 5;
-}
+
 .leaderability{
     grid-area: 2 / 1 / 3 / 6 ;
+    justify-content: center;
 
 }
 .leadercharge {
@@ -48,10 +50,12 @@
 }
 
 .squad {
-    width: 19cm;
+    width: 25cm;
     display: grid;
-    grid-template-columns: 1cm 1.5cm 1.5cm 1.5cm 1.5cm 1.5cm 1.5cm 1.5cm 1.5cm 1.5cm 1.5cm 1.5cm 1cm ;
-    grid-template-rows: 1.5cm auto auto auto auto auto auto auto auto auto auto auto auto auto;
+    grid-template-columns: 1cm 1.5cm 5.8cm 4.1cm 4.1cm 5.8cm 1.5cm 1cm ;
+    grid-template-rows: 1.5cm 1cm 1cm 1cm 1cm 1cm auto auto auto auto auto auto auto;
+    margin-bottom: 15px;
+    
 }
 .pskill{
     grid-area: 1 / 1 / 2 / 2;
@@ -65,10 +69,12 @@
 .factionpilot {
     grid-area: 1 / 2 / 2 / 3;
     height: 1.5cm;
+    width: 1.5cm;
+    
 
 }
 .name{
-    grid-area: 1 / 3 / 2 / 8;
+    grid-area: 1 / 1 / 2 / 7;
     font-size: x-large;
     font-weight: bolder;
     text-align: center;
@@ -76,12 +82,12 @@
     
  }
 .ship{
-    grid-area: 1 / 8 / 2 / 13;
+    grid-area: 1 / 6 / 2 / 8;
     align-self: center;
     text-align: center;
 }
 .cost{
-    grid-area: 1 / 13 / 2 / 14;
+    grid-area: 1 / 8 / 2 / 9;
     font-size: x-large;
     font-weight: bolder;
     color: rgb(29, 214, 183);
@@ -89,8 +95,7 @@
     padding: 10px;
  }
  .stat{
-    grid-area: 2 / 1 / 7 /3;
-    height: 137px;
+    grid-area: 2 / 1 / 7 / 3;
     padding-top: 25px;
     align-items: center;
     justify-content: center;
@@ -120,15 +125,16 @@
  
  
 .ability{
-    grid-area: 2 / 3 / 5 / 12;
+    grid-area: 2 / 3 / 5 / 7;
     display: flex;
     text-align: center;
     align-items: center;
+    justify-content: center;
+
 }
 .actions{
-    grid-area: 2 / 12 / 7 / 14;
+    grid-area: 2 / 7 / 7 / 9;
     display: flex;
-    height: 162px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -145,7 +151,7 @@
 }
 
 .charge {
-    grid-area: 6 / 3 / 7 / 7;
+    grid-area: 6 / 3 / 7 / 5;
     width: 6cm;
     height: 1.5cm;
 
@@ -156,13 +162,18 @@
     resize: both;
 
 }
+.recurring{
+    width: 0.5cm;
+    height: 0.5cm;
+    resize: both;
+}
 .forceimg{
     height: 1.5cm;
     width: 1.5cm;
     resize: both;
 }
 .force{
-    grid-area: 6 / 8 / 7 / 11;
+    grid-area: 6 / 5 / 7 / 7;
     width: 6cm;
     height: 1.5cm;
     
@@ -170,13 +181,15 @@
 
 .upgrade{
     height : 1.5cm;
+    border: dashed;
 }
 
 .upg0{
-    grid-area: 7 / 1 / 8 / 8;
+    grid-area: 7 / 1 / 8 / 4;
     display: flex;
     align-items: center;
     justify-content: center;
+    
     
 
 }
@@ -185,12 +198,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    grid-area: 7 / 8 / 8 / 14;
+    grid-area: 7 / 4 / 8 / 6;
     
 
 }
 .upg2{
-    grid-area: 8 / 1 / 9 / 8;
+    grid-area: 7 / 6 / 8 / 9;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -198,14 +211,14 @@
 }
 
 .upg3{
-    grid-area: 8 / 8 / 9 / 14;
+    grid-area: 8 / 1 / 9 / 4;
     display: flex;
     align-items: center;
     justify-content: center;
 
 }
 .upg4{
-    grid-area: 9 / 1 / 10 / 8;
+    grid-area: 8 / 4 / 9 / 6;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -213,14 +226,14 @@
 }
 
 .upg5{
-    grid-area: 9 / 8 / 10 / 14;
+    grid-area: 8 / 6 / 9 / 9;
     display: flex;
     align-items: center;
     justify-content: center;
 
 }
 .upg6{
-    grid-area: 10 / 1 / 11 / 8;
+    grid-area: 9 / 1 / 10 / 4;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -228,57 +241,57 @@
 }
 
 .upg7{
-    grid-area: 10 / 8 / 11 / 14;
+    grid-area: 9 / 4 / 10 / 6;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .upg8{
-    grid-area: 11 / 1 / 12 / 8;
+    grid-area: 9 / 6 / 10 / 9;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .upg9{
-    grid-area: 11 / 8 / 12 / 14;
+    grid-area: 10 / 1 / 11 / 4;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .upg8{
-    grid-area: 12 / 1 / 13 / 8;
+    grid-area: 10 / 4 / 11 / 6;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .upg9{
-    grid-area: 12 / 8 / 13 / 14;
+    grid-area: 10 / 6 / 11 / 9;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .upg10{
-    grid-area: 13 / 1 / 14 / 8;
+    grid-area: 11 / 1 / 12 / 4;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .upg11{
-    grid-area: 13 / 8 / 14 / 14;
+    grid-area: 11 / 4 / 12 / 6;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .chs1{
-    grid-area: 14 / 1 / 15 / 14;
+    grid-area: 12 / 1 / 13 / 9;
 }
 .chs2{
-    grid-area: 15 / 1 / 16 / 7;
+    grid-area: 13 / 1 / 14 / 5;
 
 }
 .chs3{
-    grid-area: 15 / 7 / 16 / 14;
+    grid-area: 13 / 5 / 14 / 9;
 }
 
 .upgrade{
