@@ -80,7 +80,7 @@
      "logistic": 15
      },
      {
-     "leadername": "Moff Jerjerrod",
+     "leadername": "##Moff Jerjerrod",
      "leaderfaction": ["Imperial_Elite_Forces","",""],
      "leaderid": 10,
      "leaderability": "",
@@ -88,7 +88,7 @@
      "logistic": 25
      },
      {
-     "leadername": "Amilyn Holdo",
+     "leadername": "##Amilyn Holdo",
      "leaderfaction": ["Resistance","",""],
      "leaderid": 11,
      "leaderability": "",
