@@ -27,10 +27,10 @@
     {
         "name": "Servomotor S-Foils",
         "id": 3,
-        "nbrOfEffects": 3,
-        "effect1": "<em><strong>Servomoteurs S-Foils :</strong></em> Avant de vous activer, vous pouvez changer de configuration",
-        "effect2": "<strong>Déplié</strong> : ",
-        "effect3": "<strong>Replié</strong> : Tant que vous effectuez une attaque principale, lancez 1 dé en moins.<br>Ajoute : <img src='T65Sfoils.png' alt='' />"
+        "nbrOfEffects": 2,
+        "effect1": "",
+        "effect2": "<em><strong>Servomoteurs S-Foils (Déplié) :</strong></em>",
+        "effect3": "<em><strong>Servomoteurs S-Foils (Réplié) :</strong></em> : Tant que vous effectuez une attaque principale, lancez 1 dé en moins.<br>Ajoute : <img class='action' src='T65Sfoils.png' alt='' />"
     },
     {
         "name": "Pivot Wing",
@@ -477,8 +477,10 @@
  "id":59,
  "nbrOfEffects":2,
  "effect1":"",
- "effect2": "<em><strong>Propulseur d'Interception (Accroché): </strong></em>Tant que vous avez 1 #ch# active, pendant la phase système, recevez 1 jeton de désarmement. <img class='action' src='img/Sl W.jpg'><img class='action' src='img/arrow.jpg'><img class='action' src='img/Tl R.jpg'><br><img class='chargeimg' src='img/chargestatRed.jpg'><img class='chargeimg' src='img/chargestatRed.jpg'><img class='recurring' src='img/chargeminus.jpg'>",
- "effect3": "<em><strong>Propulseur d'Interception (Détaché): </strong></em>" 
+ "effect2": "<em><strong>Propulseur d'Interception (Accroché): </strong></em>Tant que vous avez 1 #ch# active, pendant la phase système, recevez 1 jeton de désarmement. <img class='action' src='interceptbooster.png><br><img class='chargeimg' src='img/chargestatRed.jpg'><img class='chargeimg' src='img/chargestatRed.jpg'><img class='recurring' src='img/chargeminus.jpg'>",
+ "effect3": "<em><strong>Propulseur d'Interception (Détaché): </strong></em>Vous ne pouvez pas changer de configuration"
+}
+  
 
 
 
