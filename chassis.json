@@ -29,16 +29,16 @@
         "id": 3,
         "nbrOfEffects": 2,
         "effect1": "",
-        "effect2": "<em><strong>Servomoteurs S-Foils (Déplié) :</strong></em> <img class='chargeimg' src='img/chargestatRed.jpg'>,
-        "effect3": "<em><strong>Servomoteurs S-Foils (Réplié) :</strong></em> : Tant que vous effectuez une attaque principale, lancez 1 dé en moins.<br>Ajoute : <img class='action' src='T65Sfoils.png' alt='' /> <img class='chargeimg' src='img/chargestat.jpg'">"
+        "effect2": "<img class='chargeimg' src='img/chargestatRed.jpg'><em><strong>Servomoteurs S-Foils (Déplié) :</strong></em>",
+        "effect3": "<img class='chargeimg' src='img/chargestat.jpg'> <em><strong>Servomoteurs S-Foils (Réplié) :</strong></em> : Tant que vous effectuez une attaque principale, lancez 1 dé en moins.<br>Ajoute : <img class='action' src='T65Sfoils.png' alt='' />"
     },
     {
         "name": "Pivot Wing",
         "id": 4,
         "nbrOfEffects": 3,
         "effect1": "",
-        "effect2": "<em><strong>Aile Pivot (Relevée):</strong></em> <img class='chargeimg' src='img/chargestatRed.jpg'>",
-        "effect3": "<em><strong>Aile Pivot (Baissée):</strong></em> <img class='chargeimg' src='img/chargestat.jpg'>"
+        "effect2": "<img class='chargeimg' src='img/chargestatRed.jpg'> <em><strong>Aile Pivot (Relevée):</strong></em>",
+        "effect3": "<img class='chargeimg' src='img/chargestat.jpg'> <em><strong>Aile Pivot (Baissée):</strong></em>"
     },
     {
         "name": "Vectored Thrusters",
@@ -53,8 +53,8 @@
         "id": 6,
         "nbrOfEffects": 2,
         "effect1": "",
-        "effect2": "<em><strong>S-Foils Stabilisés :</strong></em> <img class='chargeimg' src='img/chargestatRed.jpg'>",
-        "effect3": "<em><strong>S-Foils Stabilisés :</strong></em> <img class='chargeimg' src='img/chargestat.jpg'>"
+        "effect2": "<img class='chargeimg' src='img/chargestatRed.jpg'> em><strong>S-Foils Stabilisés :</strong></em>",
+        "effect3": "<img class='chargeimg' src='img/chargestat.jpg'> <em><strong>S-Foils Stabilisés :</strong></em>"
     },
     {
         "name": "Advanced Targetting Computer",
@@ -77,8 +77,8 @@
     "id": 9,   
     "nbrOfEffects": 2,
     "effect1": "",
-    "effect2": "<em><strong>Aile Basculante (Baissée):</strong></em> Après avoir executé une manoeuvre [0#stop#], vous pouvez pivoter votre vaisseau de 90° ou 180°. Tant que vous défendez, lancez 1 dé de défense en moins. <img class='chargeimg' src='img/chargestatRed.jpg'>",
-    "effect3": "<em><strong>Aile Basculante (Relevée):</strong></em> <img class='chargeimg' src='img/chargestat.jpg'>",
+    "effect2": "<img class='chargeimg' src='img/chargestatRed.jpg'> <em><strong>Aile Basculante (Baissée):</strong></em> Après avoir executé une manoeuvre [0#stop#], vous pouvez pivoter votre vaisseau de 90° ou 180°. Tant que vous défendez, lancez 1 dé de défense en moins.",
+    "effect3": "<img class='chargeimg' src='img/chargestat.jpg'> <em><strong>Aile Basculante (Relevée):</strong></em> "
     },
     {
         "name": "Autothrusters",
@@ -140,7 +140,7 @@
     "name": "Networked Calculations",
     "id":17,
     "nbrOfEffects": 1,
-    "effect1":"<em><strong>Calculs en Réseau : </strong></em>"Lorsque vous défendez ou attaquez, you pouvez dépenser 1 jeton #Cc# d'un vaisseau allié à portée 0-1 pour modifier 1 résultat #eye# en résultat #hit# ou #evd#.,
+    "effect1":"<em><strong>Calculs en Réseau : </strong></em> Lorsque vous défendez ou attaquez, you pouvez dépenser 1 jeton #Cc# d'un vaisseau allié à portée 0-1 pour modifier 1 résultat #eye# en résultat #hit# ou #evd#.",
     "effect2": "",
     "effect3": "" 
 },

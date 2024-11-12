@@ -26,8 +26,7 @@
             "ship": "T-65 X-wing",
             "shipId": 0,
             "skill": 5,
-            "points": 9,
-            
+            "points": 9,            
             "charge":[0],
             "force": 2,
             "ability": "Après être devenu le défenseur (avant que les dés ne soient lancés), vous pouvez récupérer 1 #fo# .",
