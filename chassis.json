@@ -140,7 +140,7 @@
     "name": "Networked Calculations",
     "id":17,
     "nbrOfEffects": 1,
-    "effect1":"",
+    "effect1":"<em><strong>Calculs en Réseau : </strong></em>"Lorsque vous défendez ou attaquez, you pouvez dépenser 1 jeton #Cc# d'un vaisseau allié à portée 0-1 pour modifier 1 résultat #eye# en résultat #hit# ou #evd#.,
     "effect2": "",
     "effect3": "" 
 },
@@ -277,8 +277,8 @@
     "id":34,
     "nbrOfEffects": 2,
     "effect1":"",
-    "effect2": "",
-    "effect3": "" 
+    "effect2": "<em><strong>Support d'Ancrage (Replié) : </strong></em>",
+    "effect3": "<em><strong>Support d'Ancrage (Déplié) : </strong></em>Après un mouvement, si vous chevauchez un astéroïde/débris, ignorez ses effets<br>Si vous commencez votre tour sur un astéroïde/débris, si vous révélez un virage, tournez de 90° dans la direction sélectionnée. Si vous révélez toute autre manoeuvre, retirez un marqueur de stress et ne vous déplacez pas." 
 },
 {
     "name":"Pinpoint Tractor Array",
@@ -471,7 +471,14 @@
     "effect1":"",
     "effect2": "",
     "effect3": "" 
-}
+},
+{
+ "name":"Intercept Booster",
+ "id":59,
+ "nbrOfEffects":2,
+ "effect1":"",
+ "effect2": "<em><strong>Propulseur d'Interception (Accroché): </strong></em>Tant que vous avez 1 #ch# active, pendant la phase système, recevez 1 jeton de désarmement. <img class='action' src='img/Sl W.jpg'><img class='action' src='img/arrow.jpg'><img class='action' src='img/Tl R.jpg'><br><img class='chargeimg' src='img/chargestatRed.jpg'><img class='chargeimg' src='img/chargestatRed.jpg'><img class='recurring' src='img/chargeminus.jpg'>",
+ "effect3": "<em><strong>Propulseur d'Interception (Détaché): </strong></em>" 
 
 
 
