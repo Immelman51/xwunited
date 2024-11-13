@@ -1859,7 +1859,10 @@
                 
             ],
             "modifier_func": [
-            	[1,"Title",1,135]
+            	[1,"Title",1,135],
+                [2,"Sensor"],
+                [3,"Missile"],
+                [3,"Calculator"]
                
 
             ]
@@ -1872,13 +1875,11 @@
 		    "modify": true,
             "faction": "Pirates_and_Smugglers",
             "ship": "YT-1300 Light Freighter",
-            "title": ["Millenium Falcon"],
             "charge":[0],
             "force": 0,
             "shipId": 3,
             "skill": 5,
-            "points": 8,
-            
+            "points": 8,            
             "ability": "Après avoir lancé des dés, si vous n’êtes pas stressé, vous pouvez gagner 1 jeton stress pour relancer tous vos résultats vierges.",
             "ability_ENG": "After rolling dice, if you are not stressed, you may receive a stress token to reroll all you blank results.", 
             "slots": [
@@ -1917,7 +1918,10 @@
                 
             ],
             "modifier_func": [
-            	[1,"Title",1,135]
+            	[1,"Title",1,135],
+                [2,"Sensor"],
+                [3,"Missile"],
+                [3,"Calculator"]
                
                 
             ]
@@ -2674,9 +2678,7 @@
             "shipId": 29,
             "skill": 6,
             "charge": [1,"+"],
-            
             "points": 10,
-            
             "title": ["Punishing One"],
             "ability": "Après avoir défendu, si l’attaquant est dans votre #Farc#, vous pouvez dépenser 1 #ch# pour effectuer une attaque bonus contre cet attaquant.",
             "ability_ENG": "After you defend, if the attacker is in yout #Farc#, you may spend 1 #ch# to perform a bonus attack against this attacker.",
@@ -2690,7 +2692,7 @@
             "modifier_func": [
             	[1,"Title",1,143],
                 [2,"Astromech"],
-                [7,"attackt",1],
+                [2,"Missile"],
                 [3,"Crew",143]
                     ]
         },

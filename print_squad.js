@@ -2,6 +2,7 @@ let pilotdata = [[],[],[],[],[],[],[],[]];
 let indexes = [];
 let hash2 = '';
 
+
 let requestURLships = "https://raw.githubusercontent.com/Immelman51/xwunited/main/ships.json";
 let requestURLchassis = "https://raw.githubusercontent.com/Immelman51/xwunited/main/chassis.json";
 let requestURLpilots = "https://raw.githubusercontent.com/Immelman51/xwunited/main/pilots.json";
@@ -257,9 +258,43 @@ function displayPilot(x){
        
       
     } 
-  
+
+     
+    
+    //And now, let's display thoses chassis abilities !
+    let cid = ships[sid]['chassis']; //cid is an array this time!!
+    switch(cid.length){
+        case 1 :
+            document.getElementById('chassis'+x+'_'+1).innerHTML = chassis[cid[0]]['effect1'];
+            document.getElementById('chassis'+x+'_'+1).setAttribute('class','C'+cid[0]); //We change the class of this chassis, so we can remove it with functions contained in title such as Millenium Falcon.
+            removeElementById("chassis"+x+"_2");
+            removeElementById("chassis"+x+"_3");
+            break;
+        case 2 : 
+            if(chassis[cid[0]]["nbrOfEffectsnbr"]===2){ //rules to display several chassis on 1 ship. We have to take in account the case where we need more than 3 div to display thoses abilities. In that case, we display 2 chassis ability in chassis0
+                document.getElementById('chassis'+x+'_'+1).innerHTML = chassis[cid[1]]['effect1']+'<br>'+chassis[cid[0]]['effect1']; 
+                document.getElementById('chassis'+x+'_'+2).innerHTML = chassis[cid[0]]['effect2']; 
+                document.getElementById('chassis'+x+'_'+3).innerHTML = chassis[cid[0]]['effect3']; 
+            }
+            if(chassis[cid[1]]["nbrOfEffectsnbr"]===2){ //rules to display several chassis on 1 ship. We have to take in account the case where we need more than 3 div to display thoses abilities. In that case, we display 2 chassis ability in chassis0
+                document.getElementById('chassis'+x+'_'+1).innerHTML = chassis[cid[0]]['effect1']+'<br>'+chassis[cid[1]]['effect1']; 
+                document.getElementById('chassis'+x+'_'+2).innerHTML = chassis[cid[1]]['effect2']; 
+                document.getElementById('chassis'+x+'_'+3).innerHTML = chassis[cid[1]]['effect3']; 
+            }
+            if((chassis[cid[0]]["nbrOfEffectsnbr"]===1) && (chassis[cid[1]]["nbrOfEffectsnbr"]===1)){ //if the 2 chassis abilities has 1 effect, then we display then into chassis2 and chassis3 and we leave chassis1 blank
+                document.getElementById('chassis'+x+'_'+2).innerHTML = chassis[cid[0]]['effect1'];
+                document.getElementById('chassis'+x+'_'+3).innerHTML = chassis[cid[1]]['effect1'];
+                removeElementById("chassis"+x+"_1");
+
+            }
+            break;
+        default :
+            break;
+        }
+
+        //We now tackle upgrades equipped. we start i at 1 because at 0, there's the pilotID
     let mcount = 0; //this is a counter for the coming 'for' loop
-    for(i=1; i<13 ; i++){ //We now tackle upgrades equipped. we start i at 1 because at 0, there's the pilotID
+    for(i=1; i<13 ; i++){ 
         if(i<pilotdata[x].length){
         let uid = pilotdata[x][i];
         let mdiv;
@@ -286,6 +321,14 @@ function displayPilot(x){
         
         mdiv.textContent = upgrades[uid]['name'];
         
+        switch (upgrades[uid]['add_data'][0]) { //we are going to process the data in add_data entry. Those may add a small picture to remind the player some specific effect of the upgrade, or remove some HTML elements such as the millenium falcon that removes a chassis ability
+            case 'removeclass' :
+                removeElementsByClass(upgrades[uid]['add_data'][1]);
+                break;
+            default :
+                break;
+        }
+        
         let nbrcharge = upgrades[uid]['charge'][0];
         for(j=0; j<nbrcharge;j++){ //is going to display as many charge logos as the number of charges the upgrade has
             newcharge = document.createElement('img');
@@ -310,7 +353,6 @@ function displayPilot(x){
                 break;
             }
         }
-        
     }else{
         removeElementById("upgrade"+x+"_"+(i-1-mcount));
     }
@@ -320,38 +362,6 @@ function displayPilot(x){
     }
     
 
-
-    
-    
-    //And now, let's display thoses chassis abilities !
-    let cid = ships[sid]['chassis']; //cid is an array this time!!
-    switch(cid.length){
-        case 1 :
-            document.getElementById('chassis'+x+'_'+1).innerHTML = chassis[cid[0]]['effect1'];
-            removeElementById("chassis"+x+"_2");
-            removeElementById("chassis"+x+"_3");
-            break;
-        case 2 : 
-            if(chassis[cid[0]]["nbrOfEffectsnbr"]===3){ //rules to display several chassis on 1 ship. We have to take in account the case where we need more than 3 div to display thoses abilities. In that case, we display 2 chassis ability in chassis0
-                document.getElementById('chassis'+x+'_'+1).innerHTML = chassis[cid[1]]['effect1'] <br> chassis[cid[0]]['effect1']; 
-                document.getElementById('chassis'+x+'_'+2).innerHTML = chassis[cid[0]]['effect2']; 
-                document.getElementById('chassis'+x+'_'+3).innerHTML = chassis[cid[0]]['effect3']; 
-            }
-            if(chassis[cid[1]]["nbrOfEffectsnbr"]===3){ //rules to display several chassis on 1 ship. We have to take in account the case where we need more than 3 div to display thoses abilities. In that case, we display 2 chassis ability in chassis0
-                document.getElementById('chassis'+x+'_'+1).innerHTML = chassis[cid[0]]['effect1'] <br> chassis[cid[1]]['effect1']; 
-                document.getElementById('chassis'+x+'_'+2).innerHTML = chassis[cid[1]]['effect2']; 
-                document.getElementById('chassis'+x+'_'+3).innerHTML = chassis[cid[1]]['effect3']; 
-            }
-            if((chassis[cid[0]]["nbrOfEffectsnbr"]===1) && (chassis[cid[1]]["nbrOfEffectsnbr"]===1)){ //if the 2 chassis abilities has 1 effect, then we display then into chassis2 and chassis3 and we leave chassis1 blank
-                document.getElementById('chassis'+x+'_'+2).innerHTML = chassis[cid[0]]['effect1'];
-                document.getElementById('chassis'+x+'_'+3).innerHTML = chassis[cid[1]]['effect1'];
-                removeElementById("chassis"+x+"_1");
-
-            }
-            break;
-        default :
-            break;
-        }
 
  }
  
@@ -375,7 +385,6 @@ async function executeFunctions(){ //on crée une fonction asynchrone pour que t
          
         
         }
-                
     
     }
 

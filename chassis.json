@@ -28,17 +28,17 @@
         "name": "Servomotor S-Foils",
         "id": 3,
         "nbrOfEffects": 2,
-        "effect1": "",
-        "effect2": "<img class='chargeimg' src='img/chargestatRed.jpg'><em><strong>Servomoteurs S-Foils (Déplié) :</strong></em>",
-        "effect3": "<img class='chargeimg' src='img/chargestat.jpg'> <em><strong>Servomoteurs S-Foils (Réplié) :</strong></em> : Tant que vous effectuez une attaque principale, lancez 1 dé en moins.<br>Ajoute : <img class='action' src='T65Sfoils.png' alt='' />"
+        "effect1": "<em><strong>Servomoteurs S-Foils :</strong></em>",
+        "effect2": "<img class='chargeimg' src='img/chargestatRed.jpg'> <em>(Déplié) : </em>",
+        "effect3": "<img class='chargeimg' src='img/chargestat.jpg'> <em>(Réplié) : </em>Tant que vous effectuez une attaque principale, lancez 1 dé en moins.<br>Ajoute : <img class='action' src='T65Sfoils.png' alt='' />"
     },
     {
         "name": "Pivot Wing",
         "id": 4,
-        "nbrOfEffects": 3,
-        "effect1": "",
-        "effect2": "<img class='chargeimg' src='img/chargestatRed.jpg'> <em><strong>Aile Pivot (Relevée):</strong></em>",
-        "effect3": "<img class='chargeimg' src='img/chargestat.jpg'> <em><strong>Aile Pivot (Baissée):</strong></em>"
+        "nbrOfEffects": 2,
+        "effect1": "<em><strong>Aile Pivot :</strong></em>",
+        "effect2": "<img class='chargeimg' src='img/chargestatRed.jpg'> <em>(Relevée) : </em>",
+        "effect3": "<img class='chargeimg' src='img/chargestat.jpg'> <em>(Baissée) : </em>"
     },
     {
         "name": "Vectored Thrusters",
@@ -52,9 +52,9 @@
         "name": "Stabilized S-Foils",
         "id": 6,
         "nbrOfEffects": 2,
-        "effect1": "",
-        "effect2": "<img class='chargeimg' src='img/chargestatRed.jpg'> em><strong>S-Foils Stabilisés :</strong></em>",
-        "effect3": "<img class='chargeimg' src='img/chargestat.jpg'> <em><strong>S-Foils Stabilisés :</strong></em>"
+        "effect1": "<em><strong>S-Foils Stabilisés :</strong></em>",
+        "effect2": "<img class='chargeimg' src='img/chargestatRed.jpg'>",
+        "effect3": "<img class='chargeimg' src='img/chargestat.jpg'>"
     },
     {
         "name": "Advanced Targetting Computer",
@@ -76,9 +76,9 @@
     "name": "Swivel Wing",
     "id": 9,   
     "nbrOfEffects": 2,
-    "effect1": "",
-    "effect2": "<img class='chargeimg' src='img/chargestatRed.jpg'> <em><strong>Aile Basculante (Baissée):</strong></em> Après avoir executé une manoeuvre [0#stop#], vous pouvez pivoter votre vaisseau de 90° ou 180°. Tant que vous défendez, lancez 1 dé de défense en moins.",
-    "effect3": "<img class='chargeimg' src='img/chargestat.jpg'> <em><strong>Aile Basculante (Relevée):</strong></em> "
+    "effect1": "<em><strong>Aile Basculante</strong></em>",
+    "effect2": "<img class='chargeimg' src='img/chargestatRed.jpg'> <em> (Baissée): </em> Après avoir executé une manoeuvre [0#stop#], vous pouvez pivoter votre vaisseau de 90° ou 180°. Tant que vous défendez, lancez 1 dé de défense en moins.",
+    "effect3": "<img class='chargeimg' src='img/chargestat.jpg'> <em>(Relevée) :</em>"
     },
     {
         "name": "Autothrusters",
@@ -228,7 +228,7 @@
     "name":"Integrated S-Foils",
     "id":28,
     "nbrOfEffects": 2,
-    "effect1":"",
+    "effect1":"<em><strong>S-Foils Intégrés : </strong></em>",
     "effect2": "<img class='chargeimg' src='img/chargestat.jpg'>",
     "effect3": "<img class='chargeimg' src='img/chargestatRed.jpg'>" 
 },
@@ -276,9 +276,9 @@
     "name":"Grappling Struts",
     "id":34,
     "nbrOfEffects": 2,
-    "effect1":"",
-    "effect2": "<img class='chargeimg' src='img/chargestatRed.jpg'> <em><strong>Support d'Ancrage (Replié) : </strong></em>",
-    "effect3": "<img class='chargeimg' src='img/chargestat.jpg'> <em><strong>Support d'Ancrage (Déplié) : </strong></em><img class='chargeimg' src='img/chargestatRed.jpg'> Après un mouvement, si vous chevauchez un astéroïde/débris, ignorez ses effets<br>Si vous commencez votre tour sur un astéroïde/débris, si vous révélez un virage, tournez de 90° dans la direction sélectionnée. Si vous révélez toute autre manoeuvre, retirez un marqueur de stress et ne vous déplacez pas." 
+    "effect1":"<em><strong>Support d'Ancrage : </strong></em>",
+    "effect2": "<img class='chargeimg' src='img/chargestatRed.jpg'> <em>(Replié) : </em>",
+    "effect3": "<img class='chargeimg' src='img/chargestat.jpg'> <em>(Déplié) : </em><img class='chargeimg' src='img/chargestatRed.jpg'> Après un mouvement, si vous chevauchez un astéroïde/débris, ignorez ses effets<br>Si vous commencez votre tour sur un astéroïde/débris, si vous révélez un virage, tournez de 90° dans la direction sélectionnée. Si vous révélez toute autre manoeuvre, retirez un marqueur de stress et ne vous déplacez pas." 
 },
 {
     "name":"Pinpoint Tractor Array",
@@ -316,11 +316,11 @@
     "name":"Repulsorlift Stabilizers",
     "id":39,
     "nbrOfEffects": 2,
-    "effect1":"",
-    "effect2": "<img class='chargeimg' src='img/chargestatRed.jpg'> <em><strong>Stabilisateurs de Répulseurs : (inactifs) </strong></em>Reduisez la difficulté de vos manoeuvres #straight#.",
-    "effect2ENG": "<img class='chargeimg' src='img/chargestatRed.jpg'> <em><strong>Repulsorlift Stabilizers : (inactive) </strong></em>Reduce the difficulty of your #straight# maneuvers.",
-    "effect3ENG": "<img class='chargeimg' src='img/chargestat.jpg'> <em><strong>Repulsorlift Stabilizers : (active) </strong></em>After you reveal a #Lturn# / #Lbank# / #Rbank# / #Lturn# maneuver, you must perform that maneuver as a sideslip, increasing its difficulty.",
-    "effect3": "<img class='chargeimg' src='img/chargestat.jpg'> <em><strong>Stabilisateurs de Répulseurs : (actifs) </strong></em>Après avoir révélé une manoeuvre #Lturn# / #Lbank# / #Rbank# / #Lturn#, vous devez effectuer cette manoeuvre comme, increasing its difficulty." 
+    "effect1":"<em><strong>Stabilisateurs de Répulseurs : </strong></em>",
+    "effect2": "<img class='chargeimg' src='img/chargestatRed.jpg'> <em>(Inactifs) : </em>Reduisez la difficulté de vos manoeuvres #straight#.",
+    "effect2ENG": "<img class='chargeimg' src='img/chargestatRed.jpg'> <em>(Inactive) : </em>Reduce the difficulty of your #straight# maneuvers.",
+    "effect3ENG": "<img class='chargeimg' src='img/chargestat.jpg'> <em>(Active) : </em>After you reveal a #Lturn# / #Lbank# / #Rbank# / #Lturn# maneuver, you must perform that maneuver as a sideslip, increasing its difficulty.",
+    "effect3": "<img class='chargeimg' src='img/chargestat.jpg'> <em>(Actifs) : </em>Après avoir révélé une manoeuvre #Lturn# / #Lbank# / #Rbank# / #Lturn#, vous devez effectuer cette manoeuvre comme, increasing its difficulty." 
 
 },
 {
@@ -454,7 +454,7 @@
 {
     "name": "Folding Wings",
     "id":56,
-    "nbrOfEffects": 1,
+    "nbrOfEffects": 2,
     "effect1":"",
     "effect2": "<img class='chargeimg' src='img/chargestat.jpg'>",
     "effect3": "<img class='chargeimg' src='img/chargestatRed.jpg'>" 
@@ -479,9 +479,9 @@
  "name":"Intercept Booster",
  "id":59,
  "nbrOfEffects":2,
- "effect1":"",
- "effect2": "<img class='chargeimg' src='img/chargestat.jpg'><img class='chargeimg' src='img/chargestat.jpg'><img class='chargeimg' src='img/chargeminus.jpg'><em><strong>Propulseur d'Interception (Accroché): </strong></em>Tant que vous avez 1 #ch# active, pendant la phase système, recevez 1 jeton de désarmement. <img class='action' src='interceptbooster.png>",
- "effect3": "<em><strong>Propulseur d'Interception (Détaché): </strong></em>Vous ne pouvez pas changer de configuration"
+ "effect1":"<em><strong>Propulseur d'Interception : </strong></em>",
+ "effect2": "<img class='chargeimg' src='img/chargestat.jpg'><img class='chargeimg' src='img/chargestat.jpg'><img class='chargeimg' src='img/chargeminus.jpg'> <em>(Accroché) : </em>Tant que vous avez 1 #ch# active, pendant la phase système, recevez 1 jeton de désarmement. <img class='action' src='interceptbooster.png>",
+ "effect3": "<em>(Détaché) : </em>Vous ne pouvez pas changer de configuration"
 }
   
 

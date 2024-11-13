@@ -387,29 +387,9 @@ function checkPilotModifier() { //va checker s'il existe des fonctions dans modi
                 case 3 : 
                     also_Occupies(pilot_list[y]['modifier_func'][m][1], pilot_list[y]['modifier_func'][m][2]);
                     break;
-                /*case 4 :
-                    free_upg(pilot_list[y]['modifier_func'][m][1]);
-                    break;*/
-                /*case 5 : 
-                    change_chassis(pilot_list[y]['modifier_func'][m][1]);
-                    break;*/
-                /*case 6 : 
-                    weapon_Hardpoint();
-                    break;*/
-                /*case 7 : 
-                    change_stat(pilot_list[y]['modifier_func'][m][1], pilot_list[y]['modifier_func'][m][2]);
-                    break ;*/ 
-                /*case 8 : 
-                    let actionArray = pilot_list[y]['modifier_func'][m][1]
-                    add_action()
-                    break;*/
-                /*case 9 : 
-                    add_condition(pilot_list[y]['modifier_func'][m][1]);
-                    break;*/
                 case 10 :
                     may_remove_slots(pilot_list[y]['modifier_func'][m][1]);
-                    break;
-                
+                    break;   
                 default :
                     alert("There's a bug that should be reported");
                     break;

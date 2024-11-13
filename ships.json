@@ -92,7 +92,7 @@
             "agility": 1,
             "hull": 8,
             "shields": 5,
-            "chassis": [0],
+            "chassis": [16],
             "actions": [
                 [0,"Fo W"],
                 [0,"Lo W"],
@@ -107,7 +107,7 @@
                 [ 0, 0, 2, 0, 0, 3, 0, 0]
             ],
             "base": ["Large"],
-            "slots": ["Missile", "Crew", "Crew", "Gunner", "Modification"]
+            "slots": ["Missile", "Crew", "Crew", "Gunner", "Modification","Calculator"]
         },
         {
         
