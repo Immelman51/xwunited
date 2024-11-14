@@ -263,16 +263,21 @@ function displayPilot(x){
     
     //And now, let's display thoses chassis abilities !
     let cid = ships[sid]['chassis']; //cid is an array this time!!
-    console.log('chassis : '+cid);
+   
     switch(cid.length){
+        
         case 1 :
-            
+            if(chassis[cid[0]]["nbrOfEffects"]===0){
+            removeElementById("chassis"+x+"_1");    
+            removeElementById("chassis"+x+"_2");
+            removeElementById("chassis"+x+"_3");
+            }
             if(chassis[cid[0]]["nbrOfEffects"]===1){
             document.getElementById('chassis'+x+'_'+1).innerHTML = chassis[cid[0]]['effect1'];
             document.getElementById('chassis'+x+'_'+1).setAttribute('class','C'+cid[0]+' chs1'); //We change the class of this chassis, so we can remove it with functions contained in title such as Millenium Falcon.
             removeElementById("chassis"+x+"_2");
             removeElementById("chassis"+x+"_3");
-            console.log('case 1 + nbrofEffects 1');
+            
             }
             if(chassis[cid[0]]["nbrOfEffects"]===2){
             document.getElementById('chassis'+x+'_'+1).innerHTML = chassis[cid[0]]['effect1'];
@@ -345,7 +350,7 @@ function displayPilot(x){
             newcharge.setAttribute("class","chargeimg");
             newcharge.setAttribute("src","img/chargestat.jpg");
             mdiv.appendChild(newcharge);
-        
+        }
             switch (upgrades[uid]['charge'][1]) {
                 case "+" :
                     recurring = document.createElement('img');
@@ -361,7 +366,7 @@ function displayPilot(x){
                     break;
                 default :
                 break;
-            }
+            
         }
     }else{
         removeElementById("upgrade"+x+"_"+(i-1-mcount));
@@ -416,7 +421,7 @@ async function executeFunctions(){ //on crée une fonction asynchrone pour que t
 
 // prepare the hash to add at the end of the web adress for Print_upgrades
 function hasher(){
-
+hash2 = "";
 for (i=1 ; i<indexes.length ; i++){
     for ( j=1 ; j<pilotdata[i].length ; j++){
             hash2 += pilotdata[i][j] + ',';
@@ -424,7 +429,7 @@ for (i=1 ; i<indexes.length ; i++){
        hash2 = hash2.slice(0,-1) ; //removing the additionnal coma
        hash2 += 'p';
     }
-    hash2 = hash2.slice(0,-2); //on retire le ',p' final
+    hash2 = hash2.slice(0,-1); //on retire le ',p' final
 }
 
 

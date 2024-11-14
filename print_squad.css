@@ -267,18 +267,24 @@
 .chs1{
     grid-area: 12 / 1 / 13 / 9;
     padding-top: 10px;
-    background-color: rgb(183, 233, 216);
+    padding-bottom: 10px;
+    background-color: rgb(160, 160, 160);
+    text-align: center;
+    align-items: center;
 }
 .chs2{
     grid-area: 13 / 1 / 14 / 5;
     padding-top: 10px;
-    background-color: rgb(247, 165, 165);
+    align-items: center;
+    border-bottom: 3px black;
 
 }
 .chs3{
     grid-area: 13 / 5 / 14 / 9;
     padding-top: 10px;
-    background-color: rgb(229, 247, 165);
+    align-items: center;
+    border-bottom: 3px black;
+    
 }
 
 

@@ -50,6 +50,7 @@ async function displayUpgradeDescription() { //This is the function that will di
         newpilot.setAttribute('class','pilot');
         for ( j=0 ; j<upgradeData[i].length ; j++){
             upg = upgrades[upgradeData[i][j]]
+            console.log(upgradeData);
             newupgrade = document.createElement('div');
             newupgrade.setAttribute('class', 'upgrade');
             newupgrade.innerHTML = '<b>' + upg['name'] +'</b>' + ' (' + upg['slot'] + ') - ';
