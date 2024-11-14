@@ -148,7 +148,7 @@
     "name": "Tail Laser Cannon",
     "id":18,
     "nbrOfEffects": 1,
-    "effect1":"<em><strong>Canon de Poupe : </strong></em>Considérez le #Farc# de vos attaques #canon# comme #Barc#.",
+    "effect1":"<em><strong>Canon Laser de Poupe : </strong></em>Considérez le #Farc# de vos attaques #canon# comme #Barc#.",
     "effect2": "",
     "effect3": "" 
 },
@@ -254,7 +254,7 @@
     "name":"Notched Stabilizers",
     "id":31,
     "nbrOfEffects": 1,
-    "effect1":"",
+    "effect1":"<em><strong>Stabilisateurs Crantés : </strong></em>Tant que vous vous déplacez, ignorez les astéroïdes.",
     "effect2": "",
     "effect3": "" 
 },
@@ -262,7 +262,7 @@
     "name":"Fine-Tuned Controls",
     "id":32,
     "nbrOfEffects": 1,
-    "effect1":"",
+    "effect1":"<em><strong>Commandes Réactives : </strong></em>Après avoir entièrement exécuté une manœuvre, vous pouvez dépenser 1 Force pour effectuer une action #BR# ou #BO#.",
     "effect2": "",
     "effect3": "" 
 },
@@ -270,7 +270,7 @@
     "name":"Calibrated Laser Targeting",
     "id":33,
     "nbrOfEffects": 1,
-    "effect1":"",
+    "effect1":"<em><strong>Visée Laser Calibrée : </strong></em>Tant que vous effectuez une attaque principale, si le défenseur est dans votre #bulls#, ajoutez 1 résultat #eye#.",
     "effect2": "",
     "effect3": "" 
 },
@@ -279,14 +279,14 @@
     "id":34,
     "nbrOfEffects": 2,
     "effect1":"<em><strong>Support d'Ancrage : </strong></em>",
-    "effect2": "<img class='chargeimg' src='img/chargestatRed.jpg'> <em>(Replié) : </em>",
-    "effect3": "<img class='chargeimg' src='img/chargestat.jpg'> <em>(Déplié) : </em><img class='chargeimg' src='img/chargestatRed.jpg'> Après un mouvement, si vous chevauchez un astéroïde/débris, ignorez ses effets<br>Si vous commencez votre tour sur un astéroïde/débris, si vous révélez un virage, tournez de 90° dans la direction sélectionnée. Si vous révélez toute autre manoeuvre, retirez un marqueur de stress et ne vous déplacez pas." 
+    "effect2": "<img class='chargeimg' src='img/chargestatRed.jpg'> <em>(Replié) : </em>Après un mouvement, si vous chevauchez un astéroïde/débris, ignorez ses effets et changez de configuration.",
+    "effect3": "<img class='chargeimg' src='img/chargestat.jpg'> <em>(Déplié) : </em><img class='chargeimg' src='img/chargestatRed.jpg'>Ignorez l'astéroïde/débris que vous chevauchez. Si vous révélez un virage, tournez de 90° dans la direction sélectionnée et ignorez la manoeuvre. Si vous révélez toute autre manoeuvre, ne vous déplacez pas et ignorez la manoeuvre." 
 },
 {
     "name":"Pinpoint Tractor Array",
     "id":35,
     "nbrOfEffects": 1,
-    "effect1":"",
+    "effect1":"<em><strong>Dispositif Tracteur De Précision : </strong></em>vous ne pouvez pas faire pivoter votre #tur# vers votre #Barc#. Après avoir exécuté une manœuvre, vous pouvez gagner 1 marqueur de rayon tracteur pour effectuer une action #RO#.",
     "effect2": "",
     "effect3": "" 
 },
@@ -294,7 +294,7 @@
     "name":"Plated Hull",
     "id":36,
     "nbrOfEffects": 1,
-    "effect1":"",
+    "effect1":"<em><strong>Coque Blindée : </strong></em>Tant que vous défendez, si vous n’êtes pas critiquement endommagé, changez 1 résultat #crit# en un résultat #hit#.",
     "effect2": "",
     "effect3": "" 
 },
@@ -302,7 +302,7 @@
     "name":"Explosion with Wings",
     "id":37,
     "nbrOfEffects": 1,
-    "effect1":"",
+    "effect1":"<em><strong>Explosion en Vol : </strong></em><strong>Mise en Place : </strong>1 carte de dégât face cachée vous est attribuée. Après avoir effectué une action #SL#, vous pouvez exposer 1 carte de dégât pour retirer 1 marqueur de désarmement.",
     "effect2": "",
     "effect3": "" 
 },
@@ -329,7 +329,7 @@
     "name":"Fire Convergence",
     "id":40,
     "nbrOfEffects": 1,
-    "effect1":"<img class='chargeimg' src='img/chargestat.jpg'><img class='chargeimg' src='img/chargestat.jpg'>",
+    "effect1":"<img class='chargeimg' src='img/chargestat.jpg'><img class='chargeimg' src='img/chargestat.jpg'><em><strong>Convergence Des Tirs : </strong></em>Tant qu’un vaisseau allié effectue une attaque non-#tur#, si le défenseur est dans votre #tur#, vous pouvez dépenser 1 #ch#. Dans ce cas, l’attaquant relance jusqu’à 2 dés d’attaque.",
     "effect2": "",
     "effect3": "" 
 },
@@ -337,7 +337,7 @@
     "name":"Twin Ion Engines",
     "id":41,
     "nbrOfEffects": 1,
-    "effect1":"",
+    "effect1":"<em><strong>Moteurs Ioniques Jumelés : </strong></em>Vous pouvez équipper des améliorations réservées aux TIE.",
     "effect2": "",
     "effect3": "" 
 },
@@ -345,7 +345,7 @@
     "name":"Intuitive Controls",
     "id":42,
     "nbrOfEffects": 1,
-    "effect1":"",
+    "effect1":"<em><strong>Contrôles Intuitifs : </strong></em>Pendant la phase de système, vous pouvez effectuer une action #BR# violette ou #BO# violette.",
     "effect2": "",
     "effect3": "" 
 },
@@ -353,7 +353,7 @@
     "name":"Intuitive Interface",
     "id":43,
     "nbrOfEffects": 1,
-    "effect1":"",
+    "effect1":"<em><strong>Interface Intuitive : </strong></em>Après avoir effectué une action ajoutée à votre barre d'action par une amélioration #talent#, #ill#, #mod#, vous pouvez effectuer une action #CC#",
     "effect2": "",
     "effect3": "" 
 },
@@ -361,7 +361,7 @@
     "name":"Enhanced Jamming Suite",
     "id":44,
     "nbrOfEffects": 1,
-    "effect1":"",
+    "effect1":"<em><strong>Brouilleurs Renforcés : </strong></em>Tant que vous brouillez, vous pouvez vous choisir ou choisir un autre vaisseau allié.<br>Tant que vous défendez, si l'attaquant n'a pas de marqueur vert ou s'il y a un vaisseau brouillé dans l'arc d'attaque, vous pouvez lancer 1 dé de défense supplémentaire. ",
     "effect2": "",
     "effect3": "" 
 },
@@ -369,7 +369,7 @@
     "name":"Pursuit Thrusters",
     "id": 45,
     "nbrOfEffects": 1,
-    "effect1":"",
+    "effect1":"<em><strong>Propulseurs de Poursuite : </strong></em>Pendant la Phase de Système, vous pouvez effectuer une action #BO#.",
     "effect2": "",
     "effect3": "" 
 },
@@ -377,7 +377,7 @@
     "name":"Troop Bay",
     "id":46,
     "nbrOfEffects": 1,
-    "effect1":"",
+    "effect1":"<em><strong><strong>Baie de Largage : </strong></em><strong>Mise en Place : </strong>Un 'Super Commando' doit être arrimé avec vous.",
     "effect2": "",
     "effect3": "" 
 },
@@ -385,7 +385,7 @@
     "name":"Hidden Devices",
     "id":47,
     "nbrOfEffects": 1,
-    "effect1":"<img class='chargeimg' src='img/chargestat.jpg'>",
+    "effect1":"<img class='chargeimg' src='img/chargestat.jpg'><em><strong>Appareils Dissimulés : </strong></em>Vous pouvez dépenser cette charge comme si elle se trouvait sur une de vos cartes #ill# équipées.",
     "effect2": "",
     "effect3": "" 
 },
@@ -401,7 +401,7 @@
     "name":"Boarding",
     "id":49,
     "nbrOfEffects": 1,
-    "effect1":"",
+    "effect1":"<em><strong>Abordage : </strong></em>Vous pouvez attaquer à portée 0. Dans ce cas, les dés de défense ne peuvent pas être modifiés.",
     "effect2": "",
     "effect3": "" 
 },
@@ -409,7 +409,7 @@
     "name":"Multiple Targets",
     "id":50,
     "nbrOfEffects": 1,
-    "effect1":"",
+    "effect1":"<em><strong>Cibles Multiples : </strong></em>Lorsque vous subissez une attaque qui touche, annulez tous les résultats et prenez 1 dégat #hit#.",
     "effect2": "",
     "effect3": "" 
 },
@@ -417,15 +417,17 @@
     "name":"Hit & Run",
     "id":51,
     "nbrOfEffects": 1,
-    "effect1":"",
+    "effect1ENG":"<em><strong>Hit and Run : </strong></em>When you attack or defend, if the speed of your revealed maneuver is higher than the one of the ship attacking you or defending against you, you can roll one additional die.",
+    "effect1":"<em><strong>Fulgurance : </strong></em>Lorsque vous attaquez ou défendez, si la vitesse de votre manoeuvre révélée est plus grande que celle du vaisseau vous attaquant ou se défendant contre vous, alors vous pouvez lancer un dé supplémentaire.",
     "effect2": "",
     "effect3": "" 
 },
 {
-    "name":"Tractor Constrictor",
+    "name":"Constrictor",
     "id":52,
     "nbrOfEffects": 1,
-    "effect1":"",
+    "effect1ENG":"<em><strong>Constrictor : </strong></em>Before you perform an attack, if an enemy ship is in your #bulls#, you may receive a deplete token to assign him 2 Tractor Tokens.",
+    "effect1":"<em><strong>Constricteur</strong></em>Avant d'effectuer une attaque, si le vaisseau ennemi se trouve dans votre #bulls#, vous pouvez recevoir un jeton épuisement pour lui assigner 2 jetons rayon tracteur.",
     "effect2": "",
     "effect3": "" 
 },
@@ -433,7 +435,8 @@
     "name":"Advanced Bomber",
     "id":53,
     "nbrOfEffects": 1,
-    "effect1":"",
+    "effect1ENG":"<em><strong>Advanced bomber : </strong></em>You may launch device instead of dropping them, using the same template. #RD# action allows you to recover 1 #ch# even when said otherwise.",
+    "effect1":"<em><strong>Bombardier Avancé : </strong></em>Vous pouvez lancer des engins au lieu de les larguer, en utilisant le même gabarit. L'action #RD# vous permet de récuperer 1 #ch# même si le contraire est spécifié.",
     "effect2": "",
     "effect3": "" 
 },
@@ -441,7 +444,7 @@
     "name":"Overdrive Thrusters",
     "id":54,
     "nbrOfEffects": 1,
-    "effect1":"",
+    "effect1":"<em><strong>Surcharge des Propulseurs : </strong></em>Lorsque vous effectuez une action blanche #BR# ou #BO#, vous pouvez la considérez comme rouge et utiliser le gabarit de vitesse supérieure de même direction.",
     "effect2": "",
     "effect3": "" 
 },
@@ -449,7 +452,8 @@
     "name":"Turbo Thrusters",
     "id":55,
     "nbrOfEffects": 1,
-    "effect1":"",
+    "effect1ENG":"<img class='chargeimg' src='img/chargestat.jpg'><em><strong>Turbo Thrusters : </strong></em>After you execute a #SL# action, you can spend 1 #ch# or expose a damage card to remove a disable token.",
+    "effect1":"<img class='chargeimg' src='img/chargestat.jpg'><em><strong>Turbo-Propulseurs : </strong></em>Après avoir exécuté une action #SL#, vous pouvez dépenser 1 #ch# ou exposer une carte de dégat pour retirer un marqueur de désarmement.",
     "effect2": "",
     "effect3": "" 
 },
@@ -457,15 +461,15 @@
     "name": "Folding Wings",
     "id":56,
     "nbrOfEffects": 2,
-    "effect1":"",
-    "effect2": "<img class='chargeimg' src='img/chargestat.jpg'>",
-    "effect3": "<img class='chargeimg' src='img/chargestatRed.jpg'>" 
+    "effect1":"<em><strong>Ailes Repliantes : </strong></em>",
+    "effect2": "<img class='chargeimg' src='img/chargestatRed.jpg'><em>(Pliées) : </em>Vous pouvez attaquer uniquement dans votre #bulls#.<br>Lorsque vous défendez, lancez 1 dé de défense en plus.",
+    "effect3": "<img class='chargeimg' src='img/chargestat.jpg'><em>(Dépliées) : </em>Cosidérez vos attaque #Farc# comme des attaques #bulls#.<br>En phase de fin, récupérez 1 #ch# sur vos 'Turbo-Propulseurs'." 
 },
 {
     "name":"Night Buzzard",
     "id":57,
     "nbrOfEffects": 1,
-    "effect1":"",
+    "effect1":"<em><strong>Night Buzzard : </strong></em>Après avoir effectué une manoeuvre, vous pouvez augmenter sa difficulté, vous pouvez récupérer 1 #ch# de votre capacité de pilote.",
     "effect2": "",
     "effect3": "" 
 },
@@ -473,7 +477,7 @@
     "name":"Tail Laser Turret",
     "id":58,
     "nbrOfEffects": 1,
-    "effect1":"",
+    "effect1":"<em><strong>Tourelle Laser de Poupe : </strong></em>Votre tourelle ne peut être tournée que vers l'arrière.",
     "effect2": "",
     "effect3": "" 
 },
