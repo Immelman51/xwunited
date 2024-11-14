@@ -321,9 +321,9 @@ function displayPilot(x){
         
         mdiv.textContent = upgrades[uid]['name'];
         
-        switch (upgrades[uid]['add_data'][0]) { //we are going to process the data in add_data entry. Those may add a small picture to remind the player some specific effect of the upgrade, or remove some HTML elements such as the millenium falcon that removes a chassis ability
+        switch (upgrades[uid]['add_Data'][0]) { //we are going to process the data in add_data entry. Those may add a small picture to remind the player some specific effect of the upgrade, or remove some HTML elements such as the millenium falcon that removes a chassis ability
             case 'removeclass' :
-                removeElementsByClass(upgrades[uid]['add_data'][1]);
+                removeElementsByClass(upgrades[uid]['add_Data'][1]);
                 break;
             default :
                 break;

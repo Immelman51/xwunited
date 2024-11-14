@@ -1861,7 +1861,6 @@
             "modifier_func": [
             	[1,"Title",1,135],
                 [2,"Sensor"],
-                [3,"Missile"],
                 [3,"Calculator"]
                
 
@@ -1872,25 +1871,19 @@
             "name_ENG": "Lando Calrissian", 
             "id": 86,
             "max_per_squad": 1,
-		    "modify": true,
+		    "modify": false,
             "faction": "Pirates_and_Smugglers",
             "ship": "YT-1300 Light Freighter",
             "charge":[0],
             "force": 0,
-            "shipId": 3,
+            "shipId": 3, 
             "skill": 5,
             "points": 8,            
             "ability": "Après avoir lancé des dés, si vous n’êtes pas stressé, vous pouvez gagner 1 jeton stress pour relancer tous vos résultats vierges.",
             "ability_ENG": "After rolling dice, if you are not stressed, you may receive a stress token to reroll all you blank results.", 
             "slots": [
-                "Title",
                 "Talent",
                 "Talent"
-                
-            ],
-            "modifier_func": [
-            	[1,"Title",1,135]
-               
                 
             ]
         },
@@ -1920,7 +1913,6 @@
             "modifier_func": [
             	[1,"Title",1,135],
                 [2,"Sensor"],
-                [3,"Missile"],
                 [3,"Calculator"]
                
                 
@@ -1938,7 +1930,7 @@
             "charge":[0],
             "force": 0,
             "shipId": 3,
-		    "modify": true,
+		    "modify": false,
             "skill": 2,
             "points": 7,
             

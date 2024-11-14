@@ -293,13 +293,13 @@ function updateUpgradeCount(yy) { //update the table logistic_Equipped
 }
 
 function testRestriction (yy,tableRestrictions){//va vérifier si les restrictions sont true, et renvoie la valeur restrict=true si c'est bon
-    let testR = 0;
+let testR = 0;
 let varlist = [];
 let nbr = tableRestrictions[0];
 let list = tableRestrictions[1];
 let target1 = tableRestrictions[2];
 let target2 = tableRestrictions[3];
-console.log(tableRestrictions+yy);
+
 switch (list) {
     case 'title':
         varlist = pilot_list[yy]["title"];
@@ -316,11 +316,13 @@ switch (list) {
     case 'action' :
         varlist = ships[pilot_list[yy]['shipId']]['actions'];
         break;
-    default : 
+    default :
+        console.log('error testRestriction and varlist'); 
+        break;
         
 }
-
-        for (i=0; i<varlist.length; i++) {
+    
+    for (i=0; i<varlist.length; i++) {
             
     if ((varlist[i]===target1)||(varlist[i]===target2)) {
         testR++;
