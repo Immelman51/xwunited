@@ -2080,7 +2080,7 @@
             "faction": ["Pirates_and_Smugglers", "Resistance"],
             "ship": "YT-1300 Light Freighter",
             "restrictions": [1, "title", "Millenium Falcon",""],
-            "effect": "Retire un emplacement #missile#, #calculator# et la capacité 'Vaisseau-Mère'. Ajoute #sensor#."
+            "effect": "Retire un emplacement #calculator# et la capacité 'Vaisseau-Mère'. Ajoute #sensor#."
           
            
         },
