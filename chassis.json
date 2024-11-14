@@ -37,14 +37,14 @@
         "id": 4,
         "nbrOfEffects": 2,
         "effect1": "<em><strong>Aile Pivot :</strong></em>",
-        "effect2": "<img class='chargeimg' src='img/chargestatRed.jpg'> <em>(Relevée) : </em>",
+        "effect2": "<img class='chargeimg' src='img/chargestatRed.jpg'> <em>(Relevée) : </em>Après avoir executé une manoeuvre [0#stop#], vous pouvez pivoter votre vaisseau de 90° ou 180°. Tant que vous défendez, lancez 1 dé de défense en moins.",
         "effect3": "<img class='chargeimg' src='img/chargestat.jpg'> <em>(Baissée) : </em>"
     },
     {
         "name": "Vectored Thrusters",
         "id": 5,
         "nbrOfEffects": 1,
-        "effect1": "<em><strong>Propulseurs Vectorisés :</strong></em> ",
+        "effect1": "<em><strong>Propulseurs Vectorisés :</strong></em> Après avoir effectué une action, vous pouvez effectuer une action #BO# rouge.",
         "effect2": "",
         "effect3": "" 
     },
@@ -53,8 +53,8 @@
         "id": 6,
         "nbrOfEffects": 2,
         "effect1": "<em><strong>S-Foils Stabilisés :</strong></em>",
-        "effect2": "<img class='chargeimg' src='img/chargestatRed.jpg'>",
-        "effect3": "<img class='chargeimg' src='img/chargestat.jpg'>"
+        "effect2": "<img class='chargeimg' src='img/chargestatRed.jpg'><em>(Repliés) : </em>Lorsque vous attaquez, si la cible n'est pas dans votre #bulls#, lancez 1 dé de moins.<br><img class='action' src='img/confBwingR1.jpg'><br><img class='action' src='img/Rd R.jpg'>",
+        "effect3": "<img class='chargeimg' src='img/chargestat.jpg'><em>(Dépliés) : </em>Après avoir effectué une attaque, vous pouvez dépenser votre verrouillage sur le défenseur pour effectuer une attaque bonus #canon# contre ce vaisseau en utilisant une amélioration #canon# avec laquelle vous n’avez pas attaqué à ce round.<br><img class='action' src='img/confBwingD.jpg'>"
     },
     {
         "name": "Advanced Targetting Computer",
@@ -148,7 +148,7 @@
     "name": "Tail Laser Cannon",
     "id":18,
     "nbrOfEffects": 1,
-    "effect1":"",
+    "effect1":"<em><strong>Canon de Poupe : </strong></em>Considérez le #Farc# de vos attaques #canon# comme #Barc#.",
     "effect2": "",
     "effect3": "" 
 },
@@ -156,7 +156,7 @@
     "name": "Stygium Array",
     "id":19,
     "nbrOfEffects": 1,
-    "effect1": "",
+    "effect1": "<em><strong>Réseau de Stygium : </strong></em>après vous être désocculté, vous pouvez effectuer une action #EV#. Au début de la phase de dénouement, vous pouvez dépenser 1 marqueur d’évasion pour gagner 1 marqueur d’occultation.",
     "effect2": "",
     "effect3": "" 
 },
@@ -164,7 +164,7 @@
     "name": "Microthrusters",
     "id":20,
     "nbrOfEffects": 1,
-    "effect1":"",
+    "effect1":"<em><strong>Micropropulseurs : </strong></em>Tant que vous effectuez un tonneau, vous devez utiliser le gabarit #LBank# ou #RBank à la place du gabarit #straight#.",
     "effect2": "",
     "effect3": "" 
 },
@@ -212,7 +212,7 @@
     "name":"Dead to Rights",
     "id": 26,
     "nbrOfEffects": 1,
-    "effect1":"",
+    "effect1":"<em><strong>Dans Le Mille : </strong></em>Tant que vous effectuez une attaque, si le défenseur est dans votre #bulls#, les dés de défense ne peuvent pas être modifiés en utilisant des marqueurs verts.",
     "effect2": "",
     "effect3": "" 
 },
@@ -229,14 +229,15 @@
     "id":28,
     "nbrOfEffects": 2,
     "effect1":"<em><strong>S-Foils Intégrés : </strong></em>",
-    "effect2": "<img class='chargeimg' src='img/chargestat.jpg'>",
-    "effect3": "<img class='chargeimg' src='img/chargestatRed.jpg'>" 
+    "effect2": "<img class='chargeimg' src='img/chargestatRed.jpg'><em>(Repliés)</em>Tant que vous effectuez une attaque principale, si le défenseur n’est pas dans votre #bulls#, lancez 1 dé d’attaque en moins.<br><img class='action' src='confT70.jpg>",
+    "effect3": "<img class='chargeimg' src='img/chargestat.jpg'><em>(Dépliés)</em>" 
 },
 {
     "name": "Refined Gyrostabilizers",
     "id":29,
     "nbrOfEffects": 1,
-    "effect1":"",
+    "effect1ENG":"<em><strong>Refined Gyrostabilizers: </strong></em>You can rotate your Turret Arc indicator only to your Front Arc or Rear Arc. After you perform an action, you may perform a red Action: Boost or red Action: Rotate action.",
+    "effect1": "<em><strong>Gyrostabilisateurs Perfectionnés : </strong></em>vous pouvez pivoter votre #tur# uniquement vers votre #Farc# ou #Barc#. Après avoir effectué une action, vous pouvez effectuer une action rouge #BO# ou #RO# rouge.",
     "effect2": "",
     "effect3": "" 
 },
@@ -244,7 +245,8 @@
     "name":"Heavy Weapon Turret",
     "id":30,
     "nbrOfEffects": 1,
-    "effect1":"",
+    "effect1ENG":"<em><strong>Heavy Weapon Turret : </strong></em>You can rotate your #tur# indicator only to your #Farc# or #Barc#. You must treat the #Farc# requirement of your equipped #mis# upgrades as #tur#.",
+    "effect1":"<em><strong>Tourelle D’arme Lourde : </strong></em>Vous pouvez pivoter votre indicateur #tur# uniquement vers votre #Farc# ou #Barc#. Vous devez considérer le prérequis #Farc# de vos améliorations #mis# équipées comme étant #tur#.",
     "effect2": "",
     "effect3": "" 
 },
@@ -308,7 +310,7 @@
     "name":"Fine-Tuned Thrusters",
     "id":38,
     "nbrOfEffects": 1,
-    "effect1":"",
+    "effect1":"<em><strong>Propulseurs Réactifs : </strong></em>Après avoir entièrement exécuté une manœuvre, si vous n’êtes pas épuisé ou contraint, vous pouvez gagner 1 marqueur d’épuisement ou de contrainte pour effectuer une action #LO# ou #BR#.",
     "effect2": "",
     "effect3": "" 
 },

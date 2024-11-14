@@ -263,25 +263,35 @@ function displayPilot(x){
     
     //And now, let's display thoses chassis abilities !
     let cid = ships[sid]['chassis']; //cid is an array this time!!
+    console.log('chassis : '+cid);
     switch(cid.length){
         case 1 :
+            
+            if(chassis[cid[0]]["nbrOfEffects"]===1){
             document.getElementById('chassis'+x+'_'+1).innerHTML = chassis[cid[0]]['effect1'];
             document.getElementById('chassis'+x+'_'+1).setAttribute('class','C'+cid[0]); //We change the class of this chassis, so we can remove it with functions contained in title such as Millenium Falcon.
             removeElementById("chassis"+x+"_2");
             removeElementById("chassis"+x+"_3");
+            console.log('case 1 + nbrofEffects 1');
+            }
+            if(chassis[cid[0]]["nbrOfEffects"]===2){
+            document.getElementById('chassis'+x+'_'+1).innerHTML = chassis[cid[0]]['effect1'];
+            document.getElementById('chassis'+x+'_'+2).innerHTML = chassis[cid[0]]['effect2'];
+            document.getElementById('chassis'+x+'_'+3).innerHTML = chassis[cid[0]]['effect3'];    
+            }
             break;
         case 2 : 
-            if(chassis[cid[0]]["nbrOfEffectsnbr"]===2){ //rules to display several chassis on 1 ship. We have to take in account the case where we need more than 3 div to display thoses abilities. In that case, we display 2 chassis ability in chassis0
+            if(chassis[cid[0]]["nbrOfEffects"]===2){ //rules to display several chassis on 1 ship. We have to take in account the case where we need more than 3 div to display thoses abilities. In that case, we display 2 chassis ability in chassis0
                 document.getElementById('chassis'+x+'_'+1).innerHTML = chassis[cid[1]]['effect1']+'<br>'+chassis[cid[0]]['effect1']; 
                 document.getElementById('chassis'+x+'_'+2).innerHTML = chassis[cid[0]]['effect2']; 
                 document.getElementById('chassis'+x+'_'+3).innerHTML = chassis[cid[0]]['effect3']; 
             }
-            if(chassis[cid[1]]["nbrOfEffectsnbr"]===2){ //rules to display several chassis on 1 ship. We have to take in account the case where we need more than 3 div to display thoses abilities. In that case, we display 2 chassis ability in chassis0
+            if(chassis[cid[1]]["nbrOfEffects"]===2){ //rules to display several chassis on 1 ship. We have to take in account the case where we need more than 3 div to display thoses abilities. In that case, we display 2 chassis ability in chassis0
                 document.getElementById('chassis'+x+'_'+1).innerHTML = chassis[cid[0]]['effect1']+'<br>'+chassis[cid[1]]['effect1']; 
                 document.getElementById('chassis'+x+'_'+2).innerHTML = chassis[cid[1]]['effect2']; 
                 document.getElementById('chassis'+x+'_'+3).innerHTML = chassis[cid[1]]['effect3']; 
             }
-            if((chassis[cid[0]]["nbrOfEffectsnbr"]===1) && (chassis[cid[1]]["nbrOfEffectsnbr"]===1)){ //if the 2 chassis abilities has 1 effect, then we display then into chassis2 and chassis3 and we leave chassis1 blank
+            if((chassis[cid[0]]["nbrOfEffects"]===1) && (chassis[cid[1]]["nbrOfEffects"]===1)){ //if the 2 chassis abilities has 1 effect, then we display then into chassis2 and chassis3 and we leave chassis1 blank
                 document.getElementById('chassis'+x+'_'+2).innerHTML = chassis[cid[0]]['effect1'];
                 document.getElementById('chassis'+x+'_'+3).innerHTML = chassis[cid[1]]['effect1'];
                 removeElementById("chassis"+x+"_1");

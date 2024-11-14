@@ -3,7 +3,7 @@
     {
             "name": "T-65 X-wing",
             "factions": [ "Rebel_Alliance", "Partisans", "New_Republic" ],
-            "chassis": [6],
+            "chassis": [3],
             "id": 0,
             "attack": [["F",3]],
             "agility": 2,
