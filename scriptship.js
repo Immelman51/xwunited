@@ -430,7 +430,7 @@ function checkUpgradeModifier() { //va checker s'il existe une fonction modify l
                 add_slots(upgrades[upgradeID]['modifier_func'][m][1]);
                 break;
             case 3 : 
-                also_Occupies(upgrades[upgradeID]['modifier_func'][m][1], upgrades[upgradeID]['modifier_func'][m][2]);
+                also_Occupies(upgrades[upgradeID]['modifier_func'][m][1]);//, upgrades[upgradeID]['modifier_func'][m][2]);
                 break;
             /*case 4 :
                 free_upg(upgrades[upgradeID]['modifier_func'][m][1]);

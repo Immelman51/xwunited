@@ -2257,7 +2257,7 @@
             "title": ["Havoc"],
             "force": 0,
             "shipId": 37,
-		    "modify": false,
+		    "modify": true,
             "skill": 5,
             "charge": [1,"+"],
             "points": 9,
@@ -2269,7 +2269,13 @@
                 "Talent",
                 "Talent"             
                 
-            ]
+            ],
+            "modifier_func": [
+            	[1,"Title",1,130],
+                [3,"Crew",130],
+                [2,"Tech"],
+                [2,"Astromech"]
+                    ]
         },
         {
             "name": "Sol Sixxa",
@@ -2298,7 +2304,7 @@
             "faction": "Pirates_and_Smugglers",
             "max_per_squad": 8,
             "ship": "Scurrg H-6 Bomber",
-            "title": ["Havoc"],
+          
             "charge":[0],
             "force": 0,
             "shipId": 37,
@@ -2306,7 +2312,7 @@
             "skill": 2,
             "points": 7,
             "slots": [
-                "Title"
+                
             ]
         },
         {
@@ -2319,7 +2325,7 @@
             "title": ["Havoc"],
             "force": 0,
             "shipId": 37,
-		    "modify": false,
+		    "modify": true,
             "skill": 1,
             "charge": [1,"+"],
            
@@ -2331,7 +2337,13 @@
                 "Title",
                 "Talent"                
                 
-            ]
+            ],
+            "modifier_func": [
+            	[1,"Title",1,130],
+                [3,"Crew",130],
+                [2,"Tech"],
+                [2,"Astromech"]
+                    ]
         },
         {
             "name": "N'dru Suhlak",
@@ -4555,7 +4567,7 @@
             "shipId": 47,
 			"modify": false,
             "skill": 3,
-            "points": 4,
+            "points": 12,
             
             "ability": "Lorsque vous attaquez, si l'attaque est obstruée par un obstacle, le défenseur lance 2 dés de défense en moins.",
             "ability_ENG": "While you perform an attack, if the attack is obstructed by an obstacle, the defender rolls 2 fewer defense dice.",
@@ -4574,7 +4586,7 @@
             "shipId": 47,
 		    "modify": false,
             "skill": 3,
-            "points": 4,
+            "points": 11,
             
             "ability": "Tant que vous êtes stressé, vous pouvez considérer les vaisseaux ennemis dans votre #Farc# comme étant dans votre #bulls#",
             "ability_ENG": "While you are stressed, you may treat enemy ships in your #Farc# as being in your #bulls#.",
@@ -4593,7 +4605,7 @@
             "shipId": 47,
 		    "modify": false,
             "skill": 3,
-            "points": 4,
+            "points": 11,
             
             "ability": "Tant que vous êtes endommagé, considérez votre initiative étant à 6.",
             "ability_ENG": "While you are damaged, treat your initiative as 6.",
@@ -4612,7 +4624,7 @@
             "charge":[0],
             "force": 2,
             "skill": 3,
-            "points": 4,
+            "points": 13,
             
             "ability": "Avant qu'un vaisseau ennemi dans votre #bulls# ne reçoive une carte de dégat face cachée, vous pouvez dépenser 1 #fo#. Dans ce cas, cette carte de dégat est reçue face révélée à la place.",
             "ability_ENG": "Before an enemy ship in your #bulls# is dealt a facedown damage card, you may spend 1 #fo#. If you do, that damage card is dealt face up instead.",
@@ -4632,7 +4644,7 @@
             "shipId": 47,
 		    "modify": false,
             "skill": 1,
-            "points": 4,
+            "points": 10,
             
             "slots": [            
             ]
@@ -4648,8 +4660,8 @@
             "force": 0,
             "shipId": 93,
 		    "modify": false,
-            "skill": 3,
-            "points": 10,
+            "skill": 5,
+            "points": 9,
             
             "ability": "Lorsqu'un vaisseau allié à portée 0-3 avec 1 seul point de coque attaque ou défend, il peut relancer 1 dé.",
             "ability_ENG": "When a friendly ship at range 0-3 with only 1 hull left attacks or defends, it can reroll 1 die.",
@@ -4667,8 +4679,8 @@
             "force": 0,
             "shipId": 93,
 		    "modify": false,
-            "skill": 3,
-            "points": 9,
+            "skill": 4,
+            "points": 8,
             
             "ability": "Tant que vous avez 2 cartes de dégat, vous lancez 1 dé supplémentaire lorsque vous attaquez ou défendez.",
             "ability_ENG": "When you have 2 damage card, you roll 1 additional die  while you defend or attack.",
@@ -4687,10 +4699,8 @@
             "shipId": 93,
 		    "modify": false,
             "skill": 3,
-            "points": 9,
-            "charge": "2+",
-    
-            
+            "points": 8,
+            "charge": [2,"+"],            
             "ability": "Lorsque vous subissez des dégats, vous pouvez dépenser 1 #ch# pour coordonner un vaisseau. Ce vaisseau reçoit 1 jeton stress ou contrainte.",
             "ability_ENG": "When you suffer damage, you may spend 1 #ch# to coordinate a ship. It gains 1 stress or strain token.",
             "slots": [
@@ -4709,7 +4719,7 @@
             "force": 0,
             "shipId": 93,
             "skill": 2,
-            "points": 8,
+            "points": 7,
             "slots": [            
             ]
         },
@@ -5815,6 +5825,7 @@
                 "Talent"            
             ]
         }
+
   
         
 

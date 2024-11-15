@@ -2604,7 +2604,7 @@
             "factions": [ "First_Order" ],
             "id": 93,
             "attack": [["F",3]],
-            "agility": 2,
+            "agility": 1,
             "base": ["Medium"],
             "keyword": ["TIE"],
             "hull": 5,
