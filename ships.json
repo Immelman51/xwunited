@@ -2600,7 +2600,7 @@
             "slots": ["Modification"]
         },
         {
-        	"name": "Tie Echelon",
+        	"name": "TIE Echelon",
             "factions": [ "First_Order" ],
             "id": 93,
             "attack": [["F",3]],
