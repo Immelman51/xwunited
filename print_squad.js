@@ -227,6 +227,8 @@ function displayPilot(x){
         newcharge = document.createElement('img');
         newcharge.setAttribute("class","chargeimg");
         newcharge.setAttribute("src","img/chargestat.jpg");
+        pilotCharge.appendChild(newcharge);
+      }
         newchargeEvolution = document.createElement('img'); // the index 1 of the charge tables indicates if it's recurring or not. We have to display it, and there's a jpg for every case.
         newchargeEvolution.setAttribute("class","recurring");
         switch(pilots[pid]['charge'][1]){
@@ -240,10 +242,10 @@ function displayPilot(x){
             break;
         }
         
-        pilotCharge.appendChild(newcharge);
+        
         pilotCharge.appendChild(newchargeEvolution);
 
-    }
+    
    
     
    
