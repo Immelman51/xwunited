@@ -2040,10 +2040,11 @@
             "ability_ENG": "",
             "modifier_func": [
                 [1, "Special",1,236] ,
-                [0, "droid", ""]
+                [1, "Droid",1,237]
                 ],
             "slots": [
-                
+                "Special",
+                "Droid"
             ]
         },
         {

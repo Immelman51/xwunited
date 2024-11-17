@@ -138,7 +138,7 @@ function displayPilotActions(x){
         switch(actionsArray[g][0]){
             case 0 : //if 0 is the first value, it is a simple action
             newaction = document.createElement('img');
-            newaction.setAttribute('class','action');
+            newaction.setAttribute('class','action '+x+''+actionsArray[g][1]);
             newaction.setAttribute('src', 'img/'+actionsArray[g][1]+'.jpg');
             actionlist.appendChild(newaction);
             break;
@@ -148,7 +148,7 @@ function displayPilotActions(x){
             
             newaction1 = document.createElement('img');
             newaction1.setAttribute('src', 'img/'+actionsArray[g][1]+'.jpg');
-            newaction1.setAttribute('class','linked action');
+            newaction1.setAttribute('class','linked action '+x+''+actionsArray[g][1]);
             
             newlink = document.createElement('img');
             newlink.setAttribute('src', 'img/fleche.jpg');
@@ -156,7 +156,7 @@ function displayPilotActions(x){
             
             newaction2 = document.createElement('img');
             newaction2.setAttribute('src', 'img/'+actionsArray[g][2]+'.jpg');
-            newaction2.setAttribute('class','linked action');
+            newaction2.setAttribute('class','linked action '+x+''+actionsArray[g][2]);
 
             newaction.appendChild(newaction1);
             newaction.appendChild(newlink);
@@ -349,6 +349,16 @@ function displayPilot(x){
                 chassisToChange.innerHTML = upgrades[uid]['add_data'][2];
                 mdiv.setAttribute('class',"toDelete");
                 removeElementByclass("toDelete");
+                break;
+            case 'droid' : //every droid Pilots
+                let focusWActions = document.getElementsByClassName(x+'Fo W');
+                let focusRActions = document.getElementsByClassName(x+'Fo W');
+                for (f=0 ; f<focusWActions.length ; f++){
+                    focusWActions[f].setAttribute('src','img/Cc W.jpg');
+                }
+                for (f=0 ; f<focusRActions.length ; f++){
+                    focusRActions[f].setAttribute('src','img/Cc R.jpg');
+                }
                 break;
             default :
                 break;

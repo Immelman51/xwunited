@@ -52,7 +52,7 @@ async function displayUpgradeDescription() { //This is the function that will di
         if(indexes[i]!==""){
             newpilot = document.createElement('div');
             newpilot.setAttribute('class','pilot');
-            newPilot.innerHTML = "<font size='20'>"+pilots[upgradeData[i][0]]['name']+"</font>";
+            newPilot.innerHTML = "<font size='20'>"+pilots[upgradeData[i][0]]['name']+"</font><br>";
             for ( j=1 ; j<upgradeData[i].length ; j++){ //we begin at 1 because the entry 0 is the pilotID
                 upg = upgrades[upgradeData[i][j]]
                 console.log(upgradeData);
