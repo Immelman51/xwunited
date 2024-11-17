@@ -433,7 +433,7 @@ async function executeFunctions(){ //on crée une fonction asynchrone pour que t
 function hasher(){
 hash2 = "";
 for (i=1 ; i<indexes.length ; i++){
-    for ( j=1 ; j<pilotdata[i].length ; j++){
+    for ( j=0 ; j<pilotdata[i].length ; j++){
             hash2 += pilotdata[i][j] + ',';
        }
        hash2 = hash2.slice(0,-1) ; //removing the additionnal coma

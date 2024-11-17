@@ -1,5 +1,7 @@
 let requestURLupgrades = "https://raw.githubusercontent.com/Immelman51/xwunited/main/upgrades.json";
+let requestURLpilots = "https://raw.githubusercontent.com/Immelman51/xwunited/main/pilots.json";
 
+let pilots;
 let upgrades;
 
 let indexes;
@@ -17,6 +19,7 @@ async function fetchData(url) {
 (async () => {
     try {
         
+        pilots = await fetchData(requestURLpilots);
         upgrades = await fetchData(requestURLupgrades);
         
         
@@ -46,35 +49,38 @@ async function getUpgradeData(){ //we fill upgradeData with all the upgrades Id
 async function displayUpgradeDescription() { //This is the function that will display all the updates selected in the squad
     descriptions = document.getElementById('descriptions');
     for (i=0 ; i<indexes.length ; i++){
-        newpilot = document.createElement('div');
-        newpilot.setAttribute('class','pilot');
-        for ( j=0 ; j<upgradeData[i].length ; j++){
-            upg = upgrades[upgradeData[i][j]]
-            console.log(upgradeData);
-            newupgrade = document.createElement('div');
-            newupgrade.setAttribute('class', 'upgrade');
-            newupgrade.innerHTML = '<b>' + upg['name'] +'</b>' + ' (' + upg['slot'] + ') - ';
-            switch (upg['slot']) {
-                case 'Canon' :
-                case 'Turret' :
-                case 'Torpedo' :
-                case 'Missile' :
-                case 'Weapon Hardpoint' :
-                    newupgrade.innerHTML +=  'Portée : ' + upg['range'] + ' - ';
-                    newupgrade.innerHTML += '<img src="img/attack'+ upg['attack'][0] +'.jpg" class="logo"/> ' + upg['attack'][1] + '<br>';
-                default :
-                    newupgrade.innerHTML += upg['effect'];
-            }
-            newpilot.appendChild(newupgrade);   
+        if(indexes[i]!==""){
+            newpilot = document.createElement('div');
+            newpilot.setAttribute('class','pilot');
+            newPilot.innerHTML = "<font size='20'>"+pilots[upgradeData[i][0]]['name']+"</font>";
+            for ( j=1 ; j<upgradeData[i].length ; j++){ //we begin at 1 because the entry 0 is the pilotID
+                upg = upgrades[upgradeData[i][j]]
+                console.log(upgradeData);
+                newupgrade = document.createElement('div');
+                newupgrade.setAttribute('class', 'upgrade');
+                newupgrade.innerHTML = '<b>' + upg['name'] +'</b>' + ' (' + upg['slot'] + ') - ';
+                switch (upg['slot']) {
+                    case 'Canon' :
+                    case 'Turret' :
+                    case 'Torpedo' :
+                    case 'Missile' :
+                    case 'Weapon Hardpoint' :
+                        newupgrade.innerHTML +=  'Portée : ' + upg['range'] + ' - ';
+                        newupgrade.innerHTML += '<img src="img/attack'+ upg['attack'][0] +'.jpg" class="logo"/> ' + upg['attack'][1] + '<br>';
+                    default :
+                        newupgrade.innerHTML += upg['effect'];
+                }
+                newpilot.appendChild(newupgrade);   
             }
             descriptions.appendChild(newpilot);
         }
+    }
         
         
     }
 
 async function executeFunctions(){ //on crée une fonction asynchrone pour que tout se lance dans l'ordre
-        
+        console.log(pilots);
         console.log(upgrades);
          
         await getIndexesFromHash();
