@@ -20,7 +20,7 @@
         "name": "Sensor Blindspot",
         "id": 2,
         "nbrOfEffects": 1,
-        "effect1": "<em><strong>Angle-Mort des Senseurs :</strong></em> Tant que vous effectuez une attaque principale à portée 0-1, lancez 1 dé d'attaque en moins. Tant que vous défendez à portée 1, lancez 1 dé de défense en moins",
+        "effect1": "<em><strong>Angle-Mort des Senseurs :</strong></em> Tant que vous effectuez une attaque à portée 0-1, lancez 1 dé d'attaque en moins. Tant que vous défendez à portée 1, lancez 1 dé de défense en moins",
         "effect2": "",
         "effect3": "" 
     },
