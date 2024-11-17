@@ -350,15 +350,16 @@ function displayPilot(x){
                 removeElementsByClass(upgrades[uid]['add_Data'][1]);
                 break;
             case 'changeChassis' : //Autopilot Drone
-                
+                console.log('changeChassis '+upgrades[uid]['add_Data']);
                 chassisToChange = document.getElementsByClassName(upgrades[uid]['add_Data'][1]);
-                chassisToChange.innerHTML = upgrades[uid]['add_Data'][2];
+                chassisToChange[0].innerHTML = upgrades[uid]['add_Data'][2];
                 mdiv.setAttribute('class',"toDelete");
                 removeElementsByClass('toDelete');
                 break;
             case 'droid' : //every droid Pilots
                 let focusWActions = document.getElementsByClassName(x+'Fo W');
-                let focusRActions = document.getElementsByClassName(x+'Fo W');
+                console.log(focusWActions);
+                let focusRActions = document.getElementsByClassName(x+'Fo R');
                 for (f=0 ; f<focusWActions.length ; f++){
                     focusWActions[f].setAttribute('src','img/Cc W.jpg');
                 }

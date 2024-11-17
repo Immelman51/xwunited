@@ -132,7 +132,7 @@
         "name": "Docking Ship",
         "id": 16,
         "nbrOfEffects": 1,
-        "effect1": "<em><strong>Vaisseau-Mère :</strong></em> MISE EN PLACE: vous <mark>DEVEZ</mark> avoir un vaisseau arrimé avec vous avec la capacité <em>Co-Pilot</em>. Considérez les boucliers de votre vaisseau arrimé comme les vôtres.",
+        "effect1": "<em><strong>Vaisseau-Mère :</strong></em> MISE EN PLACE: vous <mark>DEVEZ</mark> avoir un vaisseau arrimé avec vous avec la capacité <em>Copilot</em>. Considérez les boucliers de votre vaisseau arrimé comme les vôtres.",
         "effect2": "",
         "effect3": "" 
     },

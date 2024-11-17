@@ -1986,7 +1986,7 @@
             "slot": "Title",
             "add_Data": [0],
             "charge": [0],
-            "points": 2,
+            "points": 0,
             "max_per_squad": 1,
             "faction": ["Pirates_and_Smugglers"],
             "ship": "Scurrg H-6 Bomber",
@@ -1995,9 +1995,8 @@
             "modifier_func": [
                 [3,"Crew",130],
                 [2,"Tech"],
-                [2,"Astromech"],                
-                [10,"Astromech"],
-                [10,"Tech"]
+                [2,"Astromech"]                
+               
                 
             ]
             
@@ -3792,7 +3791,7 @@
             "available":true,
             "modify":false,
             "slot":"Special",
-            "add_Data": ["changeChassis", "C1","<em><strong>Copilote : </strong></em>MISE EN PLACE : Vous devez être arrimé à un vaisseau YT-1300 Light Freighter. "],
+            "add_Data": ["changeChassis", "C1","<em><strong>Copilote 2: </strong></em>MISE EN PLACE : Vous <mark>devez</mark> être arrimé à un vaisseau YT-1300 Light Freighter. "],
             "charge": [0],
             "points":0,
             "effect": "À la fin de la phase d’activation, si vous n'êtes pas arrimé perdez 1 #ch#. Vous êtes détruit si vous avez 0 #ch#. Avant de retirer votre figurine, chaque vaisseau à porté 0–1 subit 1 dégât #crit# ",
