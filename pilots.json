@@ -285,10 +285,10 @@
             "ability": "Après avoir gagné un marqueur de stress, gagnez 1 marqueur de calcul.",
             "ability_ENG": "After you receive a stress token, receive 1 calculate token.",
             "slots": [
-
+                "Droid"
             ],
 	        "modifier_func": [
-		        [0, "droid", ""]
+                [1, "Droid",1,237]
 		]
         },
         {
@@ -1572,11 +1572,11 @@
             
             "max_per_squad": 1,
             "title": ["Din Djarin's N1"],
-            "keyword": ["Droid", ""],
             "ability": "Lorsqu’une attaque contre vous échoue, gagnez 1 marqueur de calcul.",
             "ability_ENG": "While an attack against you fails, receive 1 calculate token.", 
             "slots": [
                 "Title",
+                "Droid",
                 "Crew",
                 "Tech",
                 "Illicit"
@@ -1586,7 +1586,7 @@
             	[1,"Title",1,145],
                 [3,"Astromech",145],
                 [3,"Torpedo",145],
-                [0, "droid", ""]
+                [1, "Droid",1,237]
                     ]
         },
         {
@@ -1807,6 +1807,7 @@
             "ability_ENG": "After you defend or perform an attack, if you spend a calculate token, receive a calculate token.",
             "slots": [
                 "Title",
+                "Droid",
                 "Talent",
                 "Gunner",
                 "Cannon"
@@ -1814,7 +1815,7 @@
             ],
             "modifier_func": [
             	[1,"Title",1,141],
-                [0, "droid", ""]
+                [1, "Droid",1,237]
                     ]
         },
         {
@@ -1937,10 +1938,11 @@
             "ability": "Si vous n’êtes pas protégé, réduisez la difficulté de vos virages légers.",
             "ability_ENG": "If you are not protected, reduce the difficulty of your bank turns.",
             "slots": [
+                "Droid",
                 "Talent"               
             ],
             "modifier_func": [
-                [0, "droid", ""]
+                [1, "Droid",1,237]
                 ]
         },
         {
@@ -2017,10 +2019,11 @@
             "ability": "Si vous n’êtes pas protégé, réduisez la difficulté de vos virages légers.",
             "ability_ENG": "If you are not protected, reduce the difficulty of your bank turns.",
             "slots": [
+                "Droid",
                 "Talent"                
             ],
             "modifier_func": [
-                [0,"droid", ""]
+                [1, "Droid",1,237]
                 ]
         },
         {
@@ -2464,6 +2467,7 @@
             "ability": "Au début de la phase d’engagement, vous pouvez choisir 1 vaisseau allié à portée 1–3 avec #CA# dans sa barre d’action. Dans ce cas, transférez-lui 1 de vos jetons calcul.",
             "ability_ENG": "At the beginning of Engagement Phase, you may choose 1 friendly ship at range 1-3 with #CA# in its action bar. If you do, transfer 1 of your calculate tokens to him.",
             "slots": [
+                "Droid",
                 "Title",
                 "Talent",
                 "Calculator"
@@ -2473,7 +2477,7 @@
             ],
             "modifier_func": [
             	[1,"Title",1,144],
-                [0,"droid", ""],
+                [1, "Droid",1,237],
                 [3,"Modification",144]
                     ]
         },
@@ -2495,6 +2499,7 @@
             "ability": "Après avoir effectué une attaque ratée, vous pouvez effectuer une attaque bonus #can#",
             "ability_ENG": "After you perform a failed attack, you may perform a bonus #can# attack", 
             "slots": [
+                "Droid",
                 "Title" ,
                 "Talent",
                 "Calculator"
@@ -2502,7 +2507,7 @@
             ],
             "modifier_func": [
             	[1,"Title",1,144],
-                [0,"droid", ""],
+                [1, "Droid",1,237],
                 [3,"Modification",144]
                     ]
         },
@@ -2524,6 +2529,7 @@
             "ability": "Après avoir effectué une action #BO# , vous pouvez effectuer une action #EV# .",
             "ability_ENG": "After you perform a #BO# action, you mau perform a #EV# action.",
             "slots": [
+                "Droid",
                 "Title",
                 "Talent"
                 
@@ -2531,7 +2537,7 @@
             ],
             "modifier_func": [
                 [1,"Title",1,144],
-                [0, "droid", ""],
+                [1, "Droid",1,237],
                 [3,"Modification",144]
                     ]
         },
@@ -2553,6 +2559,7 @@
             "ability": "Tant que vous exécutez une manœuvre Boucle de Segnor #Sleft# ou #Sright# ), vous pouvez utiliser un autre gabarit de même vitesse mais de même direction à la place.",
             "ability_ENG": "While you execute a Segnor Loop #Sleft# or #Sright# maneuver, you may use another template of the same speed and same direction instead.",
             "slots": [
+                "Droid",
                 "Title",
                 "Talent"
                 
@@ -2560,7 +2567,7 @@
             ],
             "modifier_func": [
             	[1,"Title",1,144],
-                [0, "droid", ""],
+                [1, "Droid",1,237],
                 [3,"Modification",144]
                     ]
         },
@@ -2609,13 +2616,14 @@
             "ability_ENG": "After you fully execute an advanced maneuver, you may perform a #CA# or #BR# action, even while stressed. If you do, receive a strain token.",
             "ability": "Après avoir entièrement exécuté une manœuvre avancée, vous pouvez effectuer une action #CA# ou #BR#, même si vous êtes stressé. Dans ce cas, gagnez 1 jeton contrainte.", 
             "slots": [
+                "Droid",
                 "Title",
                 "Talent"
                 
             ],
             "modifier_func": [
             	[1,"Title",1,146],
-                [0, "droid", ""]
+                [1, "Droid",1,237]
                     ]
         },
         {
@@ -2636,13 +2644,13 @@
             "ability": "Après avoir entièrement exécuté une manœuvre rouge, gagnez 1 jeton calcul. Au début de la phase de fin, vous pouvez choisir un vaisseau à portée 0–1. Dans ce cas, transférez 1 de vos jetons stress à ce vaisseau.",
             "ability_ENG": "After you fully execute a red maneuver, receive 1 calculate token. At the beginning of End Phase, you may choose 1 ship at range 0-1. If you do, transfer 1 of your stress tokens to this ship.",
             "slots": [
-                
+                "Droid",
                 "Title",
                 "Talent"
                 
             ],
             "modifier_func": [
-            	[0, "droid", ""],
+            	[1, "Droid",1,237],
                 [1,"Title",1,142]
                     ]
         },
@@ -3936,10 +3944,11 @@
 		    "modify": true,
             "skill": 1,
             "points": 6,
-            "slots": [                
+            "slots": [   
+                "Droid"             
             ],
             "modifier_func": [
-                [0]
+                [1, "Droid",1,237]
                 ]
         },
   

@@ -224,23 +224,28 @@ function displayPilot(x){
     displayPilotActions(x);
     
     for(j=0; j<pilots[pid]['charge'][0];j++){ //We are going to display as many charge pictures as the charge value of the pilot
+        console.log('creating div for pilot charge');
         newcharge = document.createElement('img');
         newcharge.setAttribute("class","chargeimg");
         newcharge.setAttribute("src","img/chargestat.jpg");
         pilotCharge.appendChild(newcharge);
       }
-        newchargeEvolution = document.createElement('img'); // the index 1 of the charge tables indicates if it's recurring or not. We have to display it, and there's a jpg for every case.
-        newchargeEvolution.setAttribute("class","recurring");
+        
        
         switch(pilots[pid]['charge'][1]){
             case "+" :
+                newchargeEvolution = document.createElement('img'); // the index 1 of the charge tables indicates if it's recurring or not. We have to display it, and there's a jpg for every case.
+                newchargeEvolution.setAttribute("class","recurring");
                 newchargeEvolution.setAttribute("src","img/chargeplus.jpg");
-            case "-" :   
+                pilotCharge.appendChild(newchargeEvolution);
+                break;
+            case "-" : 
+                newchargeEvolution = document.createElement('img'); // the index 1 of the charge tables indicates if it's recurring or not. We have to display it, and there's a jpg for every case.
+                newchargeEvolution.setAttribute("class","recurring");  
                 newchargeEvolution.setAttribute("src","img/chargeminus.jpg");
-            case "0" :
-               break; 
-            default :
-            pilotCharge.appendChild(newchargeEvolution);
+                pilotCharge.appendChild(newchargeEvolution);
+                break;
+            default :            
             break;
         }
         
