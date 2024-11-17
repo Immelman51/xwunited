@@ -231,7 +231,7 @@ function displayPilot(x){
       }
         newchargeEvolution = document.createElement('img'); // the index 1 of the charge tables indicates if it's recurring or not. We have to display it, and there's a jpg for every case.
         newchargeEvolution.setAttribute("class","recurring");
-        console.log('test : '+pilots[pid]['charge'][1]);
+       
         switch(pilots[pid]['charge'][1]){
             case "+" :
                 newchargeEvolution.setAttribute("src","img/chargeplus.jpg");
@@ -345,10 +345,11 @@ function displayPilot(x){
                 removeElementsByClass(upgrades[uid]['add_Data'][1]);
                 break;
             case 'changeChassis' : //Autopilot Drone
-                chassisToChange = document.getElementsByClassName(upgrades[uid]['add_data'][1]);
-                chassisToChange.innerHTML = upgrades[uid]['add_data'][2];
+                
+                chassisToChange = document.getElementsByClassName(upgrades[uid]['add_Data'][1]);
+                chassisToChange.innerHTML = upgrades[uid]['add_Data'][2];
                 mdiv.setAttribute('class',"toDelete");
-                removeElementByclass("toDelete");
+                removeElementsByClass('toDelete');
                 break;
             case 'droid' : //every droid Pilots
                 let focusWActions = document.getElementsByClassName(x+'Fo W');

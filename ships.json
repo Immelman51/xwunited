@@ -230,9 +230,8 @@
             "shields": 2,
             "keyword": [],
             "actions": [
-                [1,"Fo W", "Ra R"],
-                [1,"Lo W", "Ra R"],
-                [0,"Ra W"],
+                [1,"Fo W", "Ro R"],
+                [1,"Lo W", "Ro R"],
                 [0,"Bo R"],
                 [0,"Ja R"]
                 
@@ -462,8 +461,8 @@
             "actions": [
                 [0,"Fo W"],
                 [0,"Lo W"],
-                [0,"Br R"],
-                [0,"Ra W"]
+                [0,"Br R"]
+                
                
             ],
             "base": ["Large"],
@@ -491,7 +490,7 @@
                 [0,"Fo W"],
                 [0,"Lo W"],
                 [0,"Re W"],
-                [0,"Ra W"],
+                [0,"Ro W"],
                 [0,"Co R"]
                 
             ],
@@ -662,7 +661,7 @@
                 [0,"Fo W"],
                 [0,"Lo W"],
                 [0,"Sl W"],
-                [0,"Ra W"],
+                [0,"Ro W"],
                 [0,"Rd W"]
                 
             ],
@@ -827,8 +826,8 @@
             "shields": 3,
             "keyword": [],
             "actions": [
-                [1,"Fo W", "Ra R"],
-                [1,"Lo W", "Ra R"],
+                [1,"Fo W", "Ro R"],
+                [1,"Lo W", "Ro R"],
                 [0,"Br R"]
               
             ],
@@ -915,7 +914,7 @@
                 [0,"Fo W"],
                 [0,"Lo W"],
                 [0,"Ev W"],
-                [0,"Ra W"]
+                [0,"Ro W"]
                 
             ],
             "maneuvers": [
@@ -1355,10 +1354,10 @@
             "keyword": ["TIE"],
             "chassis": [30],
             "actions": [
-                [1,"Fo W", "Ra W"],
-                [1,"Ev W", "Ra W"],
-                [1,"Br W", "Ra W"],
-                [1,"Bo W", "Ra W"]
+                [1,"Fo W", "Ro W"],
+                [1,"Ev W", "Ro W"],
+                [1,"Br W", "Ro W"],
+                [1,"Bo W", "Ro W"]
              
             ],
             "maneuvers": [
@@ -1416,7 +1415,7 @@
             "actions": [
                 [0,"Fo W"],
                 [0,"Lo W"],
-                [0,"Ra W"],
+                [0,"Ro W"],
                 [0,"Rd W"]
                
             ],
@@ -1931,7 +1930,7 @@
             "actions": [
                 [0,"Fo W"],
                 [0,"Lo W"],                
-                [0,"Ra W"],
+                [0,"Ro W"],
                 [0,"Re R"],
                 [0,"Rd W"]
                
@@ -1962,7 +1961,7 @@
                 [0,"Re W"],                
                 [0,"Lo W"],
                 [0,"Br R"],
-                [1,"Ra W", "Cc R"]
+                [1,"Ro W", "Cc R"]
                 
             ],
             "maneuvers": [
