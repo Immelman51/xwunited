@@ -231,19 +231,21 @@ function displayPilot(x){
       }
         newchargeEvolution = document.createElement('img'); // the index 1 of the charge tables indicates if it's recurring or not. We have to display it, and there's a jpg for every case.
         newchargeEvolution.setAttribute("class","recurring");
+        console.log('test : '+pilots[pid]['charge'][1]);
         switch(pilots[pid]['charge'][1]){
             case "+" :
                 newchargeEvolution.setAttribute("src","img/chargeplus.jpg");
-                break;
             case "-" :   
-            newchargeEvolution.setAttribute("src","img/chargeminus.jpg");
-                break;
+                newchargeEvolution.setAttribute("src","img/chargeminus.jpg");
+            case "0" :
+               break; 
             default :
+            pilotCharge.appendChild(newchargeEvolution);
             break;
         }
         
         
-        pilotCharge.appendChild(newchargeEvolution);
+       
 
     
    
@@ -339,8 +341,14 @@ function displayPilot(x){
         mdiv.textContent = upgrades[uid]['name'];
         
         switch (upgrades[uid]['add_Data'][0]) { //we are going to process the data in add_data entry. Those may add a small picture to remind the player some specific effect of the upgrade, or remove some HTML elements such as the millenium falcon that removes a chassis ability
-            case 'removeclass' :
+            case 'removeclass' : //Millenium Falcon
                 removeElementsByClass(upgrades[uid]['add_Data'][1]);
+                break;
+            case 'changeChassis' : //Autopilot Drone
+                chassisToChange = document.getElementsByClassName(upgrades[uid]['add_data'][1]);
+                chassisToChange.innerHTML = upgrades[uid]['add_data'][2];
+                mdiv.setAttribute('class',"toDelete");
+                removeElementByclass("toDelete");
                 break;
             default :
                 break;

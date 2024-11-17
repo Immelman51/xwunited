@@ -2034,11 +2034,12 @@
             "force": 0,
             "shipId": 43,
             "skill": 1,
-            "charge": [3,"-"],
+            "charge": [3,"0"],
             "points": 2,
-            
+            "ability": "Cellules Énergétiques Bidouillées : À la fin de la phase d’activation, si vous n'êtes pas arrimé perdez 1 #ch#. Vous êtes détruit si vous avez 0 #ch#. Avant de retirer votre figurine, chaque vaisseau à porté 0–1 subit 1 dégât #crit#.",
+            "ability_ENG": "",
             "modifier_func": [
-                [0,"change_chassis", 15], 
+                [1, "Special",1,236] ,
                 [0, "droid", ""]
                 ],
             "slots": [
@@ -4997,8 +4998,7 @@
             "shipId": 3,
 		    "modify": true,
             "skill": 6,
-            "points": 9,
-            
+            "points": 9,            
             "title": ["Millenium Falcon"],
             "ability": "Mise en place : Vous pouvez vous placer n'importe où sur l'aire de jeu, au delà de la portée 3 des vaisseaux ennemis.",
             "ability_ENG": "Setup: You can be placed anywhere in the play area beyond range 3 of enemy ships.",
@@ -5011,11 +5011,8 @@
             ],
             "modifier_func": [
             	[1,"Title",1,135],
-                [3,"Missile",135],
-                [5,""],
                 [2,"Sensor"],
-                [2,"Calculator"],
-                [7,"attackt",1]
+                [3,"Calculator"]
         
                     ]
         },
@@ -5044,11 +5041,8 @@
             ],
             "modifier_func": [
             	[1,"Title",1,135],
-                [3,"Missile",135],
-                [5,""],
                 [2,"Sensor"],
-                [2,"Calculator"],
-                [7,"attackt",1]
+                [3,"Calculator"]
                     ]            
         },
         {
@@ -5075,11 +5069,8 @@
             ],
             "modifier_func": [
             	[1,"Title",1,135],
-                [3,"Missile",135],
-                [5,""],
                 [2,"Sensor"],
-                [2,"Calculator"],
-                [7,"attackt",1]
+                [3,"Calculator"]
                     ]            
         },
         {
@@ -5107,11 +5098,8 @@
             ],
             "modifier_func": [
             	[1,"Title",1,135],
-                [3,"Missile",135],
-                [5,""],
                 [2,"Sensor"],
-                [2,"Calculator"],
-                [7,"attackt",1]
+                [3,"Calculator"]
                     ]            
         },
         {
