@@ -59,7 +59,7 @@ let shipquantity = -1; //compteur qui ne sert pas à compter mais à numéroter 
  let upgrades_Objects_Val= [[],[],[],[],[],[],[],[]]; // va contenir la liste des contenus des menus slots après validation mais sous forme d'objet
  let upgradesSelected = [[],[],[],[],[],[],[],[]]; //va contenir les nom des upgrades sélectionnées
  let upgradesSelected_ID = [[],[],[],[],[],[],[],[]]; //va contenir les id des upgrades sélectionnées (si rien n'est sélectionné, alors la valeur est -1)
- let overCostTab = [0,0,0,0,0,0,0,0]; //Cette variable va stocker les augmentations des couts des pilotes dûs aux emports d'upgrade supérieurs au loadout de base
+ //let overCostTab = [0,0,0,0,0,0,0,0]; //Cette variable va stocker les augmentations des couts des pilotes dûs aux emports d'upgrade supérieurs au loadout de base
  let y= "0"; //valeur qui indique l'index du pilote podifié
  let z= "0"; //valeur qui indique l'index dans le menu de l'élément sélectionné
 let x= "0"; //valeur qui indique l'index du menu d'amélioration sélectionné (sloty_x)
@@ -124,7 +124,7 @@ function removeElementsByClass(classname) {//permet de supprimer tous les élém
                 element.parentNode.removeChild(element);
             });
             
-        }       
+}       
 
 function select_pilot_list(x){ //permet de remplir la liste des pilotes disponibles correspondant au vaisseau sélectionné
     factionnameget();
@@ -144,7 +144,7 @@ function select_pilot_list(x){ //permet de remplir la liste des pilotes disponib
 function dataGetFromPilot(yy) { //On prend le pilote et on recopie l'objet pilote dans pilot_list, et on va incrémenter le totalcost
     pilot_selected_list[yy] = document.getElementById("menu_pilot_"+yy).value;
     skillLvl = document.getElementById("initiative"+yy);
-    loadoutcount= document.getElementById("shiploadout"+yy);
+    //loadoutcount= document.getElementById("shiploadout"+yy);
     totalcount= document.getElementById("totalcost");
     totalcostvalue = 0; //remise à 0 sinon il s'incrémente à chaque saisie de pilote
     /*for (i=0; i<pilots.length; i++) {
@@ -154,13 +154,13 @@ function dataGetFromPilot(yy) { //On prend le pilote et on recopie l'objet pilot
             pilot_list[yy] = pilots[i];*/
             pilot_list[yy] = pilot_objects[yy][z-1];
             skillLvl.textContent = "I "+pilot_list[yy]["skill"];
-            loadoutcount.textContent = pilot_list[yy]["loadout"];
+            //loadoutcount.textContent = pilot_list[yy]["loadout"];
             for (j=0; j<8 ;j++) {
                 totalcostvalue = totalcostvalue + pilot_list[j]["points"];
                 };
          totalcount.textContent = totalcostvalue;   
          return
-            }
+}
     
 function displayslots(yy) { //crée les menus de slot et contient l'écoute des "modification" des slots
      // Get the parent element
@@ -371,7 +371,7 @@ function checkUpgRestriction(yy){ //populate les menus slots avec les bonnes upg
     }
     fillUpgradesSelected(yy)
 
-    }
+}
 
 function checkPilotModifier() { //va checker s'il existe des fonctions dans modifier_func du pilote sélectionné et va les executer
 	 
@@ -497,7 +497,7 @@ function check_restricted_List(event){ //check si l'upgrade ou le pilote est dé
         upgrade_restricted_List(y); //l'upgrade ou le pilote est accepté donc on peut mettre à jour cette restricted_List
     }
     
- }
+}
      
 function upgrade_restricted_List(yy){ //va mettre à jour la restricted_List. les pilotes sont mis dans une 9 ème table, sinon les upgrades sont mises dans les 7 premières tables
     
@@ -516,7 +516,7 @@ function upgrade_restricted_List(yy){ //va mettre à jour la restricted_List. le
         }
         restricted_List[yy][i]= nameupg;
         }
-    }
+}
     
 function auto_equip(Slot, indexMenu, indexUpgrade){ //action n°1
     // on va faire un check si l'upgrade est limitée. On ne peut pas se servir de la fonction check_restricted_List car le champ visé par l'event est celui du pilote et non de l'upgrade. On va donc recopier une partie de son code et l'adapter
@@ -683,7 +683,7 @@ function may_remove_slots(slot){ //Action n°10 : permet de retirer des slots
         fillUpgradesSelected(y); 
         updateUpgradeCount(y);
         
-    }
+}
  
 function upgradeListGet(yy) { //va chercher les options pour populate les menus de slots crées avec displaylots(), et remplit la var upgrades_Objects
   
@@ -735,7 +735,7 @@ function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'acti
     let newpilot = document.createElement('select');
     let newslots = document.createElement('div');
     let newinitiative = document.createElement('div');
-    let newloadout = document.createElement('div');
+    let newremovebutton = document.createElement('button');
     let newchassis = document.createElement('div');
     let newtitle = document.createElement('div');
     newpara.setAttribute('class','new '+shipquantity);
@@ -749,8 +749,8 @@ function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'acti
     newslots.setAttribute('class','slot '+numero);
     newinitiative.setAttribute('id','initiative'+numero);
     newinitiative.setAttribute('class','initiative');
-    newloadout.setAttribute('id','shiploadout'+numero);
-    newloadout.setAttribute('class','count loadout');
+    newremovebutton.setAttribute('id','removeB'+numero);
+    newremovebutton.setAttribute('class','bouton removeB'+numero);
     newchassis.setAttribute('class','new chassis '+numero);
     newchassis.setAttribute('id','shipchassis'+numero);
     newtitle.setAttribute('class','new title '+numero);
@@ -762,7 +762,7 @@ function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'acti
     newdiv.appendChild(newpilot);
     newpara.appendChild(newslots);
     newdiv.appendChild(newinitiative);
-    newdiv.appendChild(newloadout);
+    newdiv.appendChild(newremovebutton);
     newdiv.appendChild(newchassis);
     newdiv.appendChild(newtitle);
     
@@ -783,14 +783,12 @@ function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'acti
       pilot_list[numero]= {name:"",points:0}; //Il faut nettoyer toutes les infos du ship/pilot/slots précédent
       
       
-
-
-
     }) ;
     newpilot.addEventListener("mouseover", function(event){
         y = event.target.id.slice(11,12); //y = numéro du pilote modifié
         displayDescriptionPilot(numero);
     })
+
     newpilot.addEventListener('input', function(event) {
         identifyElement(event);
         dataGetFromPilot(numero);
@@ -803,11 +801,46 @@ function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'acti
         checkUpgRestriction(numero); //on le refait car il peut y avoir des upgrades disponibles suite à check pilot modfier (exemple : Emon gagne 2 slot de payload ce qui lui permet d'équiper les générateurs de sous munitions)
         updateTotalCost();
     });  
+
+   newremovebutton.addEventListener('click', function(event){ //we code the remove button located on the same line as the pilot and ship
+    let buttonID = event.target.id;
+    xB = buttonID.slice(-1);
+    remove_ship(xB);
+    while (xB < shipquantity){
+    pilot_objects[xB]=pilot_objects[xB+1];
+    pilot_selected_list[xB]=pilot_selected_list[xB+1];
+    upgrades_Type[xB] = upgrades_Type[xB+1];
+    upgrades_Objects[xB]= upgrades_Objects[xB+1];
+    upgradesSelected[xB] = upgradesSelected[xB+1];
+    upgrades_Objects_Val[xB]= upgrades_Objects_Val[xB+1];
+    restricted_List[xB] = restricted_List[xB+1]; 
+    restricted_List[8][xB] = restricted_List[8][xB+1];  
+    pilot_list[xB] = pilot_list[xB+1];
+
+    menu_shipxB1 = document.getElementById('menu_ship_'+(xB+1));
+    console.log(menu_shipxB1.id);
+    menu_shipxB1.setAttribute('id','menu_ship_'+xB);
+    console.log(menu_shipxB1.id);
    
+    menu_pilotxB1 = document.getElementById('menu_pilot_'+(xB+1));
+    menu_pilotxB1.setAttribute('id','menu_pilot_'+xB);
+   
+    initiativexB1 =document.getElementById('initiative'+(xB+1));
+    initiativexB1xB1.setAttribute('id','initiative'+xB);    
+
+    for(h=0 ; h<upgrades_Objects[xB].length ; h++){
+        slotxB1 = document.getElementById('slot'+(xB+1)+'_'+h);
+        slotxB1.setAttribute('id','slot'+xB+'_'+h);
+        slotxB1.setAttribute('class','slotElement'+xB+' '+targetSlot);
+    }
+        xB++;
+    }
+    
+   })
     
 }
 
-function remove_ship() { //fonction qui permet de retirer le dernier vaisseau. S'active via le bouton Removeship
+function remove_ship(n) { //fonction qui permet de retirer le dernier vaisseau. S'active via le bouton Removeship
     
     /*// Get all elements with the specified class name
     const elements = document.getElementsByClassName("new "+shipquantity);
@@ -819,18 +852,17 @@ function remove_ship() { //fonction qui permet de retirer le dernier vaisseau. S
     elementsArray.forEach(element => {
         element.parentNode.removeChild(element);
     });*/
-    removeElementsByClass("new "+shipquantity); //retire la balise <p> qui contient tous les éléments
+    removeElementsByClass("new "+n); //retire la balise <p> qui contient tous les éléments
     
-    pilot_objects[shipquantity]=[];
-    pilot_selected_list[shipquantity]="";
-    overCostTab[shipquantity] = 0;
-    upgrades_Type[shipquantity] = [];
-    upgrades_Objects[shipquantity]= [];
-    upgradesSelected[shipquantity] = [];
-    upgrades_Objects_Val[shipquantity]= [];
-    restricted_List[shipquantity] = [shipquantity]; //retrait des upgrades du dernier vaisseau
-    restricted_List[8][shipquantity] = "";  //retrait du nom du pilote du dernier vaisseau
-    pilot_list[shipquantity] = {name:"",points:0};
+    pilot_objects[n]=[];
+    pilot_selected_list[n]="";
+    upgrades_Type[n] = [];
+    upgrades_Objects[n]= [];
+    upgradesSelected[n] = [];
+    upgrades_Objects_Val[n]= [];
+    restricted_List[n] = [n]; //retrait des upgrades du dernier vaisseau
+    restricted_List[8][n] = "";  //retrait du nom du pilote du dernier vaisseau
+    pilot_list[n] = {name:"",points:0};
    
     if (shipquantity>0){
         shipquantity--;
@@ -867,7 +899,7 @@ leaderselect = document.getElementById("menu_leader");
 leaderselect.addEventListener("input", function() {
     removeElementsByClass("new")
     select_ship_list();
-    leader_ID=leaderselect.selectedIndex ; 
+    leader_ID = leaderselect.selectedIndex ; 
     
     document.getElementById("descript_upg").innerHTML="";
     shipquantity = -1;
@@ -893,7 +925,7 @@ const addMenuButton = document.getElementById("addshipbutton");
 addMenuButton.addEventListener('click', add_ship);
 //permet d'associer la fonction remove_ship au bouton remove ship
 const removeMenuButton = document.getElementById('removeshipbutton');
-removeMenuButton.addEventListener('click', remove_ship);
+removeMenuButton.addEventListener('click', remove_ship(shipquantity));
 //permet d'associer la fonction faction_cards au bouton faction
 const factionCards = document.getElementById('faction');
 factionCards.addEventListener('click', function() {
