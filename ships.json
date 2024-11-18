@@ -559,7 +559,7 @@
                 [ 0, 0, 2, 0, 0, 3 ]
             ],
             "base": ["Small"],
-            "slots": ["Modification"]
+            "slots": ["Modification","Weapon Hardpoint"]
         },
         {
     
@@ -1234,7 +1234,7 @@
             "shields": 3,
             "base": ["Small"],
             "keyword": [],
-            "chassis": [28],
+            "chassis": [28,21],
             "actions": [
                 [0,"Fo W"],
                 [0,"Lo W"],
@@ -1247,7 +1247,7 @@
                 [ 2, 2, 1, 2, 2, 0, 0, 0, 3, 3],
                 [ 0, 0, 2, 0, 0, 3, 0, 0, 0, 0]
             ],
-            "slots": ["Tech","Modification","Astromech"]
+            "slots": ["Tech","Modification","Astromech","Weapon Hardpoint"]
         },
         {
            

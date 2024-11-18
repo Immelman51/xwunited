@@ -2168,8 +2168,8 @@
             "ability_ENG": "While a friendly ship at range 0-1 defends, it may reroll one die.",
             "slots": [
                 "Talent",
-                "Talent",
-                "Weapon Hardpoint"               
+                "Talent"
+                               
             ]
         },
 {
@@ -2189,8 +2189,8 @@
             "ability": "Après avoir défendu ou attaqué, si l’attaque a échoué, gagnez 1 jeton évasion.",
             "ability_ENG": "After you defend of perform an attack, if the attack failed, receive 1 evade token.",
             "slots": [
-                "Talent",
-                "Weapon Hardpoint"                
+                "Talent"
+                                
             ]
         },
  {
@@ -2207,7 +2207,9 @@
             "skill": 3,
             "points": 5,
             
-            "slots": ["Weapon Hardpoint"]
+            "slots": [
+
+            ]
            
         },
  {
@@ -2227,8 +2229,7 @@
             "ability": "Lorsque vous attaquez ou défendez, vous pouvez subir 1 #hit# pour relancer autant de dés que souhaité.",
             "ability_ENG": "While you defend or perform an attack, you may suffer 1 #hit# to reroll as many dice as needed.",
             "slots": [
-                "Talent",
-                "Weapon Hardpoint"                
+                "Talent"               
             ]
         },
         {
@@ -2248,8 +2249,7 @@
             "ability": "Lorsque vous défendez, si l’attaque est à portée 3 ou obstruée, lancez un dé supplémentaire.",
             "ability_ENG": "While you defend, if the attack is at range 3 or obstructed, roll 1 additional die.", 
             "slots": [
-                "Talent",
-                "Weapon Hardpoint"                
+                "Talent"              
             ]
         },
         {
@@ -2745,8 +2745,8 @@
             "points": 8,
             
             "title": ["Punishing One"],
-            "ability": "Au début de la phase d’engagement, vous pouvez choisir un vaisseau allié à portée 0–2. Dans ce cas, transférez à ce vaisseau tout ou partie de vos marqueurs verts.",
-            "ability_ENG": "At the beginning of Engagement Phase, you may choose a friendly ship at range 0-2. If you do, transfer any number of your green tokens to this ship.",
+            "ability": "Au début de la phase d’engagement, vous pouvez choisir un vaisseau allié à portée 0–2. Dans ce cas, transférez à ce vaisseau tout ou partie de vos marqueurs verts et/ou rouge.",
+            "ability_ENG": "At the beginning of Engagement Phase, you may choose a friendly ship at range 0-2. If you do, transfer any number of your green and/or red tokens to this ship.",
             "slots": [
                 "Title",
                 "Talent"
@@ -2755,7 +2755,7 @@
             "modifier_func": [
             	[1,"Title",1,143],
                 [2,"Astromech"],
-                [7,"attackt",1],
+                [2,"Missile"],
                 [3,"Crew",143]
                     ]
         },
@@ -3137,12 +3137,13 @@
             "ability_ENG": "At the start of the Engagement Phase, each enemy ship at range 0 gains 2 jam tokens.",
             "slots": [
                 "Title"  ,
+                "Droid",
                 "Talent"
                               
             ],
             "modifier_func": [
             	[1,"Title",1,203],
-		        [0]
+		        [1,"Droid",1,237]
                     ]
         },
         {
@@ -3293,12 +3294,13 @@
             "ability_ENG": "While you coordinate, if you chose a ship with exactly 1 stress token, it can perform actions.",
             "slots": [
                 "Title" ,
+                "Droid",
                 "Talent"
                                
             ],
             "modifier_func": [
             	[1,"Title",1,199],
-                [0]
+                [1,"Droid",1,237]
                     ]
         },
         {
@@ -3533,12 +3535,13 @@
             "ability_ENG": "At the start of the Engagement Phase, each enemy ship at range 0 gains 2 jam tokens.",
             "slots": [
                 "Title" ,
+                "Droid",
                 "Talent"
                                
             ],
             "modifier_func": [
             	[1,"Title",1,202],
-                [0]
+                [1,"Droid",1,237]
                     ]
         },
         {
@@ -3845,10 +3848,11 @@
             "skill": 1,
             "points": 5,
             
-            "slots": [                
+            "slots": [ 
+                "Droid"              
             ],
             "modifier_func": [
-                [0]
+                [1,"Droid",1,237]
                 ]
         },
   		
@@ -3868,10 +3872,12 @@
             "ability": "Lorsque vous coordonnez, is vous choisissez un vaisseau avec exactement 1 jeton stress, il peut effectuer une action.",
             "ability_ENG": "While you coordinate, if you chose a ship with exactly 1 stress token, it can perform actions.",
             "slots": [
-                "Talent"                
+                "Droid",
+                "Talent"
+                                
             ],
 		"modifier_func": [
-			[0]
+			[1,"Droid",1,237]
 			]
         },
 		{
@@ -5252,9 +5258,10 @@
             "ability": "Pendant la phase système, vous pouvez effectuer une action rouge #BR# ou #BO#.",
             "ability_ENG": "During the System Phase, you may perform a red #BR# or #BO# action.",
             "slots": [
+                "Droid"
             ],
 		"modifier_func": [
-			[0]
+            [1,"Droid",1,237]
 			]
         },
         {
