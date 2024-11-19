@@ -805,6 +805,7 @@ function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'acti
    newremovebutton.addEventListener('click', function(event){ //we code the remove button located on the same line as the pilot and ship
     let buttonID = event.target.id;
     xB = buttonID.slice(-1);
+    Number(xB);
     remove_ship(xB);
     while (xB < shipquantity){
     pilot_objects[xB]=pilot_objects[xB+1];
