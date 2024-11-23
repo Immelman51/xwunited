@@ -882,8 +882,37 @@ function remove_ship(n) { //fonction qui permet de retirer le dernier vaisseau. 
 function displayDescriptionPilot(i) { //permet d'afficher la capacité du pilote en bas de page
     description_upg_pil_Field=document.getElementById("descript_upg");
     description_upg_pil_Field.innerHTML="";
-    description_upg_pil_Field.textContent = pilot_list[i]["ability"];
+    description_upg_pil_Field.innerHTML = pilot_list[i]["ability"];
 
+}
+
+function displayDescriptionShip(event){ //displays ship'stats and chassis abilities (and maneuvers ?)
+    description_upg_pil_Field=document.getElementById("descript_upg");
+    description_upg_pil_Field.innerHTML="";
+    
+    for (k=0; k<ships.length; k++){
+        if (event.target.value === ships[k]["name"]) { //il faut pas oublier de virer les (x) dans les menus
+            description_upg_pil_Field.innerHTML = '<span color="red">' +ships[k]["attack"][0][1] + '</span> <img src="img/attack'+ships[k]["attack"][0][0] +'.jpg" class="logo"/>';
+            if (ships[k]['attack'].length>1){
+                description_upg_pil_Field.innerHTML =  description_upg_pil_Field.innerHTML+'<span color="red">' +ships[k]["attack"][1][1] + '</span> <img src="img/attack'+ships[k]["attack"][1][0] +'.jpg" class="logo"/>';     
+            }
+            description_upg_pil_Field.innerHTML =  description_upg_pil_Field.innerHTML+'<span color="green">' +ships[k]["agility"] + '<span class="logo"/>';
+            description_upg_pil_Field.innerHTML =  description_upg_pil_Field.innerHTML+'<span color="yellow">' +ships[k]["hull"] + '<span class="logo"/>';
+            description_upg_pil_Field.innerHTML =  description_upg_pil_Field.innerHTML+'<span color="blue">' +ships[k]["shields"] + '<span class="logo"/><br>';
+            let chassisEq = ships[k]['chassis'];
+            for(ch=0;ch<chassisEq.length;ch++){
+                description_upg_pil_Field.innerHTML =  description_upg_pil_Field.innerHTML+chassis[chassisEq[ch]]['effect1'];
+                description_upg_pil_Field.innerHTML =  description_upg_pil_Field.innerHTML+chassis[chassisEq[ch]]['effect2'];
+                description_upg_pil_Field.innerHTML =  description_upg_pil_Field.innerHTML+chassis[chassisEq[ch]]['effect3'];
+            }
+            
+
+
+   
+            return;
+        
+    }
+}
 }
 
 function displayDescriptionUpgrade(event){ //permet d'afficher l'effet de l'amélioration sélectionée
@@ -892,7 +921,7 @@ function displayDescriptionUpgrade(event){ //permet d'afficher l'effet de l'amé
     
     for (k=0; k<upgrades.length; k++){
         if (event.target.value.slice(0, -4) === upgrades[k]["name"]) { //il faut pas oublier de virer les (x) dans les menus
-            description_upg_pil_Field.textContent = upgrades[k]["effect"];
+            description_upg_pil_Field.innerHTML = upgrades[k]["effect"];
                   
             return
         }

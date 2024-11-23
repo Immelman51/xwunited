@@ -184,15 +184,15 @@ function displayPilot(x){
     
     const pilotstat = document.getElementById('stat'+x);
 
-    const pilotAttack1 = document.getElementById('attack1'+x);
-    const pilotAttack2 = document.getElementById('attack2'+x);
-    const pilotAgility = document.getElementById('agility'+x);
-    const pilotHull = document.getElementById('hull'+x);
-    const pilotShield = document.getElementById('shield'+x);
+    //const pilotAttack1 = document.getElementById('attack1'+x);
+    //const pilotAttack2 = document.getElementById('attack2'+x);
+    //const pilotAgility = document.getElementById('agility'+x);
+    //const pilotHull = document.getElementById('hull'+x);
+    //const pilotShield = document.getElementById('shield'+x);
     const pilotAbility = document.getElementById('ability'+x);
     const pilotForce = document.getElementById('force'+x);
     const pilotCharge = document.getElementById('charge'+x);
-    const pilotActions = document.getElementById('actions'+x);
+    //const pilotActions = document.getElementById('actions'+x);
     
     
     getPilotData(x);
