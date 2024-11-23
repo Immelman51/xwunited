@@ -156,3 +156,7 @@ color: aliceblue;
     padding: 3px;
     width : 25%; 
 }
+
+.removeB {
+    background-color: brown;
+}
