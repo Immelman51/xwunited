@@ -893,13 +893,13 @@ function displayDescriptionShip(event){ //displays ship'stats and chassis abilit
     
     for (k=0; k<ships.length; k++){
         if (event.target.value === ships[k]["name"]) { //il faut pas oublier de virer les (x) dans les menus
-            description_upg_pil_Field.innerHTML = '<span color="red">' +ships[k]["attack"][0][1] + '</span> <img src="img/attack'+ships[k]["attack"][0][0] +'.jpg" class="logo"/>';
+            description_upg_pil_Field.innerHTML = '<span style="color: red">' +ships[k]["attack"][0][1] + '</span> <img src="img/attack'+ships[k]["attack"][0][0] +'.jpg" class="logo"/>';
             if (ships[k]['attack'].length>1){
-                description_upg_pil_Field.innerHTML =  description_upg_pil_Field.innerHTML+'<span color="red">' +ships[k]["attack"][1][1] + '</span> <img src="img/attack'+ships[k]["attack"][1][0] +'.jpg" class="logo"/>';     
+                description_upg_pil_Field.innerHTML =  description_upg_pil_Field.innerHTML+'<span style="color: red">' +ships[k]["attack"][1][1] + '</span> <img src="img/attack'+ships[k]["attack"][1][0] +'.jpg" class="logo"/>';     
             }
-            description_upg_pil_Field.innerHTML =  description_upg_pil_Field.innerHTML+'<span color="green">' +ships[k]["agility"] + '<span class="logo"/>';
-            description_upg_pil_Field.innerHTML =  description_upg_pil_Field.innerHTML+'<span color="yellow">' +ships[k]["hull"] + '<span class="logo"/>';
-            description_upg_pil_Field.innerHTML =  description_upg_pil_Field.innerHTML+'<span color="blue">' +ships[k]["shields"] + '<span class="logo"/><br>';
+            description_upg_pil_Field.innerHTML =  description_upg_pil_Field.innerHTML+'<span style="color: green">' +ships[k]["agility"] + '<span class="logo"/>';
+            description_upg_pil_Field.innerHTML =  description_upg_pil_Field.innerHTML+'<span style="color: yellow">' +ships[k]["hull"] + '<span class="logo"/>';
+            description_upg_pil_Field.innerHTML =  description_upg_pil_Field.innerHTML+'<span style="color: skyblue">' +ships[k]["shields"] + '<span class="logo"/><br>';
             let chassisEq = ships[k]['chassis'];
             for(ch=0;ch<chassisEq.length;ch++){
                 description_upg_pil_Field.innerHTML =  description_upg_pil_Field.innerHTML+chassis[chassisEq[ch]]['effect1'];

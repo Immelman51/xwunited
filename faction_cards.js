@@ -88,7 +88,7 @@ for (let i = 0; i<leaders.length; i++){
             newleader.appendChild(factionlogo);
         }
         let newleaderability = document.createElement("div");
-        newleaderability.textContent = leaders[i]["leaderability"];
+        newleaderability.innerHTML = leaders[i]["leaderability"];
         newleaderability.setAttribute("class", "leader ability");
         newleader.appendChild(newleaderability);
 
@@ -120,75 +120,11 @@ for (let i=0 ; i<ships.length; i++){ //on va afficher d'abord le vaisseau/chassi
 
         let newshipattack = document.createElement('div');
         newshipattack.setAttribute("class", "ship attack");
-        let attributesNames = Object.keys(ships[i]); //on va voir tester les différents les noms des différents noms d'attributs pour détecter ceux qui visent les attaques
-       
-        for (let j = 0 ; j<attributesNames.length ; j++){
-            let attackk = null;
-            let attacklogo = null;
+        newshipattack.innerHTML = '<span class="attack">' +ships[i]["attack"][0][1] + '</span> <img src="img/attack'+ships[i]["attack"][0][0] +'.jpg" class="logo"/>' ;
+    if(ships[i]["attack"].length === 2){
+    newshipattack.innerHTML = newshipattack.innerHTML + '<span class="attack">   ' + ships[i]["attack"][1][1] + '</span> <img src="img/attack'+ships[i]["attack"][1][0] +'.jpg" class="logo"/>' ;
+    }
             
-
-            switch(attributesNames[j]){
-                case 'attack': 
-                attacklogo = document.createElement('img');
-                attackk = document.createElement('div');
-                attackk.setAttribute('class', 'attack value');
-                attacklogo.setAttribute("class", "attack logo");
-                    attacklogo.setAttribute("src",'img/attack.jpg');  
-                    attackk.innerHTML = ships[i]["attack"];
-                    newshipattack.appendChild(attacklogo);
-            newshipattack.appendChild(attackk);            
-                    break;
-                case 'attackt' :
-                    attacklogo = document.createElement('img');
-                    attackk = document.createElement('div');
-                    attackk.setAttribute('class', 'attack value');
-                    attacklogo.setAttribute("class", "attack logo");    
-                attacklogo.setAttribute("src",'img/attackt.jpg');
-                    attackk.innerHTML = ships[i]["attackt"];
-                    newshipattack.appendChild(attacklogo);
-            newshipattack.appendChild(attackk);
-                    break;
-                case 'attackb' :
-                    attacklogo = document.createElement('img');
-                    attackk = document.createElement('div');
-                    attackk.setAttribute('class', 'attack value');
-                    attacklogo.setAttribute("class", "attack logo");    
-                attacklogo.setAttribute("src",'img/attackb.jpg');
-                    attackk.innerHTML = ships[i]["attackb"];
-                    newshipattack.appendChild(attacklogo);
-            newshipattack.appendChild(attackk);
-                    break;
-                case 'attackbull' :
-                    attacklogo = document.createElement('img');
-                    attackk = document.createElement('div');
-                    attackk.setAttribute('class', 'attack value');
-                    attacklogo.setAttribute("class", "attack logo");    
-                attacklogo.setAttribute("src",'img/attackbull.jpg');
-                    attackk.innerHTML = ships[i]["attackbull"];
-                    newshipattack.appendChild(attacklogo);
-            newshipattack.appendChild(attackk);
-                    break;
-                case 'attackf' :
-                    attacklogo = document.createElement('img');
-                    attackk = document.createElement('div');
-                    attackk.setAttribute('class', 'attack value');
-                    attacklogo.setAttribute("class", "attack logo");    
-                attacklogo.setAttribute("src",'img/attackf.jpg');
-                    attackk.innerHTML = ships[i]["attackf"];
-                    newshipattack.appendChild(attacklogo);
-            newshipattack.appendChild(attackk);
-                    break;
-                default :
-                    break;
-            }
-            if (attackk !== null) {
-                newshipattack.appendChild(attacklogo);
-                newshipattack.appendChild(attackk);
-            }
-        
-        }
-        
-        
         newship.appendChild(newshipattack);
 
 let newshipagility = document.createElement('div');
@@ -345,11 +281,6 @@ document.body.appendChild(newship);
             newpilotvalue.setAttribute("class", "pilot points");
             newpilotvalue.innerHTML = pilots[j]["points"];
             newpilot.appendChild(newpilotvalue);
-
-            let newpilotloadout = document.createElement('div');
-            newpilotloadout.setAttribute("class", "pilot loadout");
-            newpilotloadout.innerHTML = pilots[j]["loadout"];
-            newpilot.appendChild(newpilotloadout);
 
             
             if (typeof pilots[j]["title"] !== 'undefined'){ //certains pilotes n'ont pas de title
