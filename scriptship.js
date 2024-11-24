@@ -769,6 +769,7 @@ function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'acti
        identifyElement(event);
        pilot_objects[numero] = []; //Il faut nettoyer toutes les infos du ship/pilot/slots précédent
        select_pilot_list(numero);
+       displayDescriptionShip(event);
        removeElementsByClass("slotElement"+numero);
       restricted_List[numero] = []; //Il faut nettoyer toutes les infos du ship/pilot/slots précédent
       restricted_List[8][numero] = ""; //Il faut aussi retirer le nom du pilote
