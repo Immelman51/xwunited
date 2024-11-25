@@ -136,6 +136,10 @@ a {
     align-items: center; /* centers content vertically */
 }
 
+.attack {
+    color: black;
+}
+
 .attack,
 .agility,
 .hull,
@@ -185,11 +189,7 @@ a {
     
 }
 
-.loadout{
-    grid-column: 1;
-    grid-row: 2;
-    border: 1px solid black; /* Border to visualize the grid item */
-}
+
 
 .force{
     grid-column: 4;

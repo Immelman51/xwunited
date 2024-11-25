@@ -120,9 +120,10 @@ for (let i=0 ; i<ships.length; i++){ //on va afficher d'abord le vaisseau/chassi
 
         let newshipattack = document.createElement('div');
         newshipattack.setAttribute("class", "ship attack");
-        newshipattack.innerHTML = '<span class="attack">' +ships[i]["attack"][0][1] + '</span> <img src="img/attack'+ships[i]["attack"][0][0] +'.jpg" class="logo"/>' ;
+        console.log("attack"+ships[i]["attack"][0][0]);
+        newshipattack.innerHTML = '<span style="color: black" class="attack">' +ships[i]["attack"][0][1] + '</span> <img src="img/attack'+ships[i]["attack"][0][0] +'.jpg" class="logo"/>' ;
     if(ships[i]["attack"].length === 2){
-    newshipattack.innerHTML = newshipattack.innerHTML + '<span class="attack">   ' + ships[i]["attack"][1][1] + '</span> <img src="img/attack'+ships[i]["attack"][1][0] +'.jpg" class="logo"/>' ;
+    newshipattack.innerHTML = newshipattack.innerHTML + "<img class='logo' src='img/attack"+ships[i]["attack"][1][0] +".jpg'/><span style='color: black' class='attack'>" + ships[i]["attack"][1][1] + "</span>"  ;
     }
             
         newship.appendChild(newshipattack);
