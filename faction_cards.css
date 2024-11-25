@@ -47,6 +47,7 @@ a {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 2px;
     max-width: 21cm;
+    color: aliceblue;
     justify-content: center;
     align-content: center;
     
@@ -136,9 +137,7 @@ a {
     align-items: center; /* centers content vertically */
 }
 
-.attack {
-    color: black;
-}
+
 
 .attack,
 .agility,
@@ -223,4 +222,9 @@ a {
     grid-column: 3;
     grid-row: 2;
     border: 1px solid black; /* Border to visualize the grid item */  
+}
+
+.container {
+    display: flex;
+    align-items: center;
 }

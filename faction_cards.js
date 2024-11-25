@@ -118,79 +118,72 @@ for (let i=0 ; i<ships.length; i++){ //on va afficher d'abord le vaisseau/chassi
         newshipname.innerHTML = ships[i]["name"];        
         newship.appendChild(newshipname);
 
-        let newshipattack = document.createElement('div');
-        newshipattack.setAttribute("class", "ship attack");
-        newshipattack.innerHTML = '<span style="color: black" class="attack">' +ships[i]["attack"][0][1] + '</span> <img src="img/attack'+ships[i]["attack"][0][0] +'.jpg" class="logo"/>' ;
+        
+        let shipattackContainer = document.createElement('div');
+        shipattackContainer.setAttribute("class","ship attack container");
+        shipattackContainer.innerHTML = '<span style="color: black" class="attack value">' +ships[i]["attack"][0][1] + '</span> <img src="img/attack'+ships[i]["attack"][0][0] +'.jpg" class="attack logo"/>' ;
     if(ships[i]["attack"].length === 2){
-    newshipattack.innerHTML = newshipattack.innerHTML + "<img class='logo' src='img/attack"+ships[i]["attack"][1][0] +".jpg'/><span style='color: black' class='attack'>" + ships[i]["attack"][1][1] + "</span>"  ;
-    }
-            
-        newship.appendChild(newshipattack);
+    newshipattack.innerHTML = newshipattack.innerHTML + "<img class='attack logo' src='img/attack"+ships[i]["attack"][1][0] +".jpg'/><span style='color: black' class='attack'>" + ships[i]["attack"][1][1] + "</span>"  ;
+    } 
+    newship.appendChild(shipattackContainer);
 
-let newshipagility = document.createElement('div');
+
 let shipagilityContainer = document.createElement('div');
 let shipagilitylogo = document.createElement('img');
 let shipagility = document.createElement('div');
 shipagility.setAttribute("class", "agility value");
-newshipagility.setAttribute("class", "ship agility");
 shipagilitylogo.setAttribute("src", 'img/agility.jpg');
 shipagilitylogo.setAttribute("class", "agility logo");
 shipagility.innerHTML = ships[i]["agility"];
-shipagilityContainer.setAttribute("class", "agility container");
-
+shipagilityContainer.setAttribute("class", "ship agility container");
 shipagilityContainer.appendChild(shipagilitylogo);
 shipagilityContainer.appendChild(shipagility);
-newshipagility.appendChild(shipagilityContainer);
-newship.appendChild(newshipagility);
+newship.appendChild(shipagilityContainer);
 
-let newshiphull = document.createElement('div');
+
 let shiphullContainer = document.createElement('div');
 let shiphulllogo = document.createElement('img');
 let shiphull = document.createElement('div');
-shiphull.setAttribute('class','hull value')
-newshiphull.setAttribute("class", "ship hull");
+shiphull.setAttribute('class','hull value');
 shiphulllogo.setAttribute("src", 'img/hull.jpg');
 shiphulllogo.setAttribute("class", "hull logo");
 shiphull.innerHTML = ships[i]["hull"];
-shiphullContainer.setAttribute("class", "hull container");
+shiphullContainer.setAttribute("class", "ship hull container");
 
 shiphullContainer.appendChild(shiphulllogo);
 shiphullContainer.appendChild(shiphull);
-newshiphull.appendChild(shiphullContainer);
-newship.appendChild(newshiphull);
+newship.appendChild(shiphullContainer);
 
-        let newshipshield = document.createElement('div');
-        let shipshieldContainer = document.createElement('div');
-        let shipshield = document.createElement('div');
-        let shipshieldlogo = document.createElement('img');
-        newshipshield.setAttribute("class", "ship shield");
-        shipshield.setAttribute("class", "shield value");
-        shipshieldlogo.setAttribute("src", 'img/shield.jpg');
-        shipshieldlogo.setAttribute("class", "shield logo");
-        shipshield.innerHTML = ships[i]["shields"];   
-        shipshieldContainer.setAttribute("class", "shield container");
+let shipshieldContainer = document.createElement('div');
+let shipshield = document.createElement('div');
+let shipshieldlogo = document.createElement('img');
+shipshield.setAttribute("class", "shield value");
+shipshieldlogo.setAttribute("src", 'img/shield.jpg');
+shipshieldlogo.setAttribute("class", "shield logo");
+shipshield.innerHTML = ships[i]["shields"];   
+shipshieldContainer.setAttribute("class", "ship shield container");
      
-        shipshieldContainer.appendChild(shipshieldlogo);
-        shipshieldContainer.appendChild(shipshield);
-        newshipshield.appendChild(shipshieldContainer);
-        newship.appendChild(newshipshield);
+shipshieldContainer.appendChild(shipshieldlogo);
+shipshieldContainer.appendChild(shipshield);
+newship.appendChild(shipshieldContainer);
         
-
+//Second line flexbox
+let shipSecondLine = document.createElement('div');
+shipSecondLine.setAttribute("class","container");
         
         let shipsizecontainer = document.createElement('div');
-        shipsizecontainer.setAttribute("class", "ship size container logo");
-        
+        shipsizecontainer.setAttribute("class", "size logo");
         switch(ships[i]['base'][0]){
-            case 'small' :
+            case 'Small' :
                 shipsizecontainer.innerHTML = "<img src='img/smallbase.jpg'/>";
                 break;
-            case 'medium' :
+            case 'Medium' :
                 shipsizecontainer.innerHTML = "<img src='img/mediumbase.jpg'/>" ;
                 break;
-            case 'large' :
+            case 'Large' :
                 shipsizecontainer.innerHTML = "<img src='img/largebase.jpg'/>";
                 break;
-            case 'huge' :
+            case 'Huge' :
                 shipsizecontainer.innerHTML = "<img src='img/hugebase.jpg'/>";
                 break;
             default : 
@@ -198,14 +191,17 @@ newship.appendChild(newshiphull);
                 break;
         }
         
-        newship.appendChild(shipsizecontainer);
+        shipSecondLine.appendChild(shipsizecontainer);
 
-        for (let m=0; m<ships[i]["slots"]; m++){ //on va développer tous les slots associés au vaisseau
-            newshipslots = document.createElement('div');
-            newshipslots.setAttribute("class", "ship slot");
+        shipSlots = document.createElement('div');
+        shipSlots.setAttribute("class","container");
+        for (let m=0; m<ships[i]["slots"].length; m++){ //on va développer tous les slots associés au vaisseau
+            newshipslots = document.createElement('img');            
+            newshipslots.setAttribute("class", "slot");
             newshipslots.setAttribute("src", 'img/'+ships[i]["slots"][m]+'.jpg');
-            newpilot.appendChild(newshipslots);
+            shipSlots.appendChild(newshipslots);
         } 
+        shipSecondLine.appendChild(shipSlots);
 
 
     //On va mettre des liens pour afficher les actions, les manoeuvres ... sous forme de pop-up
@@ -218,13 +214,14 @@ newship.appendChild(newshiphull);
         shipmaneuvers.innerHTML = "Maneuvers";
         shipmaneuvers.setAttribute('class','maneuver');
         newshipothers.appendChild(shipmaneuvers);
+        shipSecondLine.appendChild(newshipothers);
 shipactions.addEventListener('click', function() {
     displayactions(ships[i]['id']); //on stocke l'ID pour retrouver rapidement les actions dans l'objet
 });
 shipmaneuvers.addEventListener('click', function(){
     displaymaneuvers(ships[i]['id']); //on stocke l'ID pour retrouver rapidement les manoeuvres dans l'objet
 });  
-
+newship.appendChild(shipSecondLine);
 document.body.appendChild(newship);
 
 // On a fini de décrire le ship   
