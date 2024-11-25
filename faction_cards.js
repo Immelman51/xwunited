@@ -120,7 +120,6 @@ for (let i=0 ; i<ships.length; i++){ //on va afficher d'abord le vaisseau/chassi
 
         let newshipattack = document.createElement('div');
         newshipattack.setAttribute("class", "ship attack");
-        console.log("attack"+ships[i]["attack"][0][0]);
         newshipattack.innerHTML = '<span style="color: black" class="attack">' +ships[i]["attack"][0][1] + '</span> <img src="img/attack'+ships[i]["attack"][0][0] +'.jpg" class="logo"/>' ;
     if(ships[i]["attack"].length === 2){
     newshipattack.innerHTML = newshipattack.innerHTML + "<img class='logo' src='img/attack"+ships[i]["attack"][1][0] +".jpg'/><span style='color: black' class='attack'>" + ships[i]["attack"][1][1] + "</span>"  ;
@@ -179,27 +178,26 @@ newship.appendChild(newshiphull);
 
         
         let shipsizecontainer = document.createElement('div');
-        shipsizecontainer.setAttribute("class", "ship size container");
-        let newshipsize = document.createElement('div');
-        newshipsize.setAttribute("class", "ship size logo");
+        shipsizecontainer.setAttribute("class", "ship size container logo");
+        
         switch(ships[i]['base'][0]){
             case 'small' :
-                newshipsize.innerHTML = "<img src='img/smallbase.jpg'/>";
+                shipsizecontainer.innerHTML = "<img src='img/smallbase.jpg'/>";
                 break;
             case 'medium' :
-                nnewshipsize.innerHTML = "<img src='img/mediumbase.jpg'/>" ;
+                shipsizecontainer.innerHTML = "<img src='img/mediumbase.jpg'/>" ;
                 break;
             case 'large' :
-                newshipsize.innerHTML = "<img src='img/largebase.jpg'/>";
+                shipsizecontainer.innerHTML = "<img src='img/largebase.jpg'/>";
                 break;
             case 'huge' :
-                newshipsize.innerHTML = "<img src='img/hugebase.jpg'/>";
+                shipsizecontainer.innerHTML = "<img src='img/hugebase.jpg'/>";
                 break;
             default : 
                 console.log("error ship size logo " + i) ;   
                 break;
         }
-        shipsizecontainer.appendChild(newshipsize)
+        
         newship.appendChild(shipsizecontainer);
 
         for (let m=0; m<ships[i]["slots"]; m++){ //on va développer tous les slots associés au vaisseau
