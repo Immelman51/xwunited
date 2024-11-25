@@ -95,10 +95,9 @@ a {
 }
 
 .ship.name {
-    
+    box-sizing: border-box;
     grid-area: 1 / 1 / 2 / 5;
     border: 1px solid black; /* Border to visualize the grid item */
-    text-align: center; /* Center the text horizontally */
     display: flex; /* Use flexbox for centering */
     align-items: center; /* Center the text vertically */
     justify-content: center; /* Center the text horizontally */
