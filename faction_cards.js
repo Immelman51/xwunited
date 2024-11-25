@@ -180,22 +180,23 @@ newship.appendChild(newshiphull);
         
         let shipsizecontainer = document.createElement('div');
         shipsizecontainer.setAttribute("class", "ship size container");
-        let newshipsize = document.createElement('img');
+        let newshipsize = document.createElement('div');
         newshipsize.setAttribute("class", "ship size logo");
         switch(ships[i]['base'][0]){
             case 'small' :
-                newshipsize.setAttribute("src", 'img/smallbase.jpg');
+                newshipsize.innerHTML = "<img src='img/smallbase.jpg'/>";
                 break;
             case 'medium' :
-                newshipsize.setAttribute("src", 'img/mediumbase.jpg');
+                nnewshipsize.innerHTML = "<img src='img/mediumbase.jpg'/>" ;
                 break;
             case 'large' :
-                newshipsize.setAttribute("src", 'img/largebase.jpg');
+                newshipsize.innerHTML = "<img src='img/largebase.jpg'/>";
                 break;
             case 'huge' :
-                newshipsize.setAttribute("src", 'img/hugebase.jpg');
+                newshipsize.innerHTML = "<img src='img/hugebase.jpg'/>";
                 break;
             default : 
+                console.log("error ship size logo " + i) ;   
                 break;
         }
         shipsizecontainer.appendChild(newshipsize)
