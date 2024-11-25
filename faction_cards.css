@@ -94,9 +94,9 @@ a {
      
 }
 
-.name {
-    grid-column: 1 / 5;
-    grid-row: 1;
+.ship.name {
+    
+    grid-area: 1 / 1 / 2 / 5;
     border: 1px solid black; /* Border to visualize the grid item */
     text-align: center; /* Center the text horizontally */
     display: flex; /* Use flexbox for centering */
