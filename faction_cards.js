@@ -254,7 +254,7 @@ maneuversDiv.setAttribute('class','ship container maneuvers');
 maneuversDiv.setAttribute('id',"maneuvers"+i);
 for(g=0; g<shipManeuvers.length; g++){
     manspeed = document.createElement('div');
-    manspeed.setAttribute('class','man'+g+'0');
+    manspeed.setAttribute('class','man'+g+'sp');
     manspeedimg = document.createElement('img');
     manspeedimg.setAttribute('src','img/man'+g+'.jpg');
     manspeedimg.setAttribute('class','manlogo');
