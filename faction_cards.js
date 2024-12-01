@@ -260,7 +260,8 @@ for(g=0; g<shipManeuvers.length; g++){
    }
    if (sum===0){
     console.log('no maneuvers at '+g+' speed');
-   }else{
+     
+    }else{
     manspeed = document.createElement('div');
     manspeed.setAttribute('class','man'+g+'sp');
     manspeedimg = document.createElement('img');
@@ -274,43 +275,53 @@ for(g=0; g<shipManeuvers.length; g++){
         manimg = document.createElement('img');
         manimg.setAttribute('class','manlogo');
         let mantype = '';
+        if(g===0){
+            mantype = 'Op' //Stop maneuver
+        }else{
         switch (h){
             case 0 :
-                mantype = 'Tl';
+                mantype = 'Tl'; //Turn Left
                 break;
             case 1 :
-                mantype = 'Bl';
+                mantype = 'Bl'; //Bank Left
                 break;
             case 2 :
-                mantype = "St";
+                mantype = "St"; //Straight
                 break;
             case 3 : 
-                mantype = "Br";
+                mantype = "Br"; //Bank Right
                 break;
             case 4 : 
-                mantype = 'Tr';
+                mantype = 'Tr'; //Turn Right
                 break;
             case 5 :
-                mantype = 'Ko';
+                mantype = 'Ko'; //Koyogran turn
                 break;
             case 6 :
-                mantype = 'Sl';
+                mantype = 'Sl'; //Segnor loop Left
                 break;
             case 7 :
-                mantype = 'Sr';
+                mantype = 'Sr'; //Segnor Loop right
                 break;
             case 8 :
-                mantype = 'Rl';
+                mantype = "Al"; //tallon roll left
                 break;
             case 9 :
-                mantype = 'Rs';
+                mantype = "Ar"; //Tallon roll Right
                 break;
             case 10 :
-                mantype = 'Rr';
+                mantype = 'Rl'; //Reverse Left
+                break;
+            case 11 :
+                mantype = 'Rs'; // Reverse Straight
+                break;
+            case 12 :
+                mantype = 'Rr'; // Reverse Right
                 break;
             default :
                 mantype = 'Blank';
                 break;
+        }
         }
         if(shipManeuvers[g][h]===0){
             manimg.setAttribute('src','img/manBlank.jpg');
