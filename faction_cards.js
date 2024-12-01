@@ -250,15 +250,24 @@ newship.appendChild(shipSlots);
 //we show the ship's maneuvers
 let shipManeuvers = ships[i]['maneuvers'];
 maneuversDiv = document.createElement('div');
-maneuversDiv.setAttribute('class','ship container maneuvers');
+maneuversDiv.setAttribute('class','ship maneuvers');
 maneuversDiv.setAttribute('id',"maneuvers"+i);
 for(g=0; g<shipManeuvers.length; g++){
+   //if there is no maneuver at 'g' speed, we don't create a new div. Let's test this :
+   let sum = 0;
+   for(s=0;s<shipManeuvers[g].length;s++){
+        sum += shipManeuvers[g][s];
+   }
+   if (sum===0){
+    console.log('no maneuvers at '+g+' speed');
+   }else{
     manspeed = document.createElement('div');
     manspeed.setAttribute('class','man'+g+'sp');
     manspeedimg = document.createElement('img');
     manspeedimg.setAttribute('src','img/man'+g+'.jpg');
     manspeedimg.setAttribute('class','manlogo');
     manspeed.appendChild(manspeedimg);
+    maneuversDiv.appendChild(manspeed);
     for(h=0 ; h<shipManeuvers[g].length; h++){
         man = document.createElement('div');
         man.setAttribute('class','man'+g+h);
@@ -303,10 +312,18 @@ for(g=0; g<shipManeuvers.length; g++){
                 mantype = 'Blank';
                 break;
         }
-        manimg.setAttribute('src','img/man'+mantype+shipManeuvers[g][h]+'.jpg');
-        man.appendChild(manimg);
-    }
+        if(shipManeuvers[g][h]===0){
+            manimg.setAttribute('src','img/manBlank.jpg');
+        }else{
+            manimg.setAttribute('src','img/man'+mantype+shipManeuvers[g][h]+'.jpg');
+        }
+    man.appendChild(manimg);
+    maneuversDiv.appendChild(man);
 }
+   }
+}
+newship.appendChild(maneuversDiv);
+
 
    
 document.body.appendChild(newship);
