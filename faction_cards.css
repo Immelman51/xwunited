@@ -22,7 +22,8 @@ a {
     text-align: center; /* Optional: centers text within each section */
     border: 2px solid black;
     box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
-    background-color: rgb(98, 255, 190);;
+    background-color: rgb(98, 255, 190);
+    color:rgb(0, 0, 0);
 }
 
 
@@ -39,18 +40,42 @@ a {
     color:aliceblue ; 
      
 }
+.leader.name {
+    grid-column: 1 / 4;
+    grid-row: 1;
+    border: 1px solid black; /* Border to visualize the grid item */
+    text-align: center; /* Center the text horizontally */
+    display: flex; /* Use flexbox for centering */
+    align-items: center; /* Center the text vertically */
+    justify-content: center; /* Center the text horizontally */
 
+}
+
+.ability {
+    grid-column: 1 / 5; /* spans from the first to the sixth column */
+    grid-row: 3; /* places the item in the second row */
+    display: flex; /* added for centering content */
+    align-items: center; /* centers content vertically */
+    border: 1px solid black; /* Border to visualize the grid item */
+}
+
+.leader.charge {
+    grid-column: 4;
+    grid-row: 1;
+    border: 1px solid rgb(255, 255, 255); /* Border to visualize the grid item */
+    align-items: center; /* centers content vertically */
+    text-align: center;
+}
 .ship {
     background-color: rgb(179, 43, 43);
     padding: 5px;
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 4cm 4cm 4cm 4cm 4cm 5cm;
     gap: 2px;
-    max-width: 21cm;
+    max-width: 25cm;
     color: aliceblue;
     justify-content: center;
-    align-content: center;
-    
+    align-content: center;    
     border: 1px solid black; /* Border to visualize the grid item */
      
 }
@@ -96,48 +121,13 @@ a {
 
 .ship.name {
     box-sizing: border-box;
-    grid-area: 1 / 1 / 2 / 5;
+    grid-area: 1 / 1 / 2 / 7;
     border: 1px solid black; /* Border to visualize the grid item */
     display: flex; /* Use flexbox for centering */
     align-items: center; /* Center the text vertically */
     justify-content: center; /* Center the text horizontally */
 
 }
-.leader.name {
-    grid-column: 1 / 4;
-    grid-row: 1;
-    border: 1px solid black; /* Border to visualize the grid item */
-    text-align: center; /* Center the text horizontally */
-    display: flex; /* Use flexbox for centering */
-    align-items: center; /* Center the text vertically */
-    justify-content: center; /* Center the text horizontally */
-
-}
-
-.ability {
-    grid-column: 1 / 5; /* spans from the first to the sixth column */
-    grid-row: 3; /* places the item in the second row */
-    display: flex; /* added for centering content */
-    align-items: center; /* centers content vertically */
-    border: 1px solid black; /* Border to visualize the grid item */
-}
-
-.leader.charge {
-    grid-column: 4;
-    grid-row: 1;
-    border: 1px solid rgb(255, 255, 255); /* Border to visualize the grid item */
-    align-items: center; /* centers content vertically */
-    text-align: center;
-}
-
-.pilot.name {
-    grid-column: 2 / 5;
-    display: flex; /* added for centering content */
-    align-items: center; /* centers content vertically */
-}
-
-
-
 .attack,
 .agility,
 .hull,
@@ -147,35 +137,71 @@ a {
     background-color: white;
     
 }
-
-
-
+.attack.container{
+    grid-area: 2 / 1 / 3 / 2;
+}
+.agility.container{
+    grid-area: 2 / 2 / 3 / 3;
+}
+.hull.container{
+    grid-area: 2 / 3 / 3 / 4;
+}
+.shield.container{
+    grid-area: 2 / 4 / 3 / 5;
+}
 .size{
-    grid-column: 1 ;
-    grid-row: 4;
-    border: 1px solid black; /* Border to visualize the grid item */
+    grid-area: 3 / 1 / 4 / 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
 
-.action{
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row: 3;
+.ship.container.action{
+    grid-area: 2 / 5 / 4 / 6;
+    flex-direction: column;
+    
+   
+
+}
+.ship.maneuver{
+    grid-area: 2 / 6 / 4 / 7;
     border: 1px solid black; /* Border to visualize the grid item */
+}
+.actionlogo{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    max-height: 0.7cm;  
+
+
+}
+.slots{
+    display: flex;
+    grid-area: 3 / 2 / 4 / 3;
 }
 
-.maneuver{
-    grid-column-start: 4;
-    grid-column-end: 6;
-    grid-row: 3;
-    border: 1px solid black; /* Border to visualize the grid item */
-}
 
 .type{
     grid-column: 2;
     grid-row: 2;
     border: 1px solid black; /* Border to visualize the grid item */
 }
+
+
+.pilot.name {
+    grid-column: 2 / 5;
+    display: flex; /* added for centering content */
+    align-items: center; /* centers content vertically */
+}
+
+
+
+
+
+
+
+
 
 .points{
     grid-column: 1;
@@ -196,7 +222,7 @@ a {
 }
 .logo {
     max-width: 100%;
-    object-fit: cover;
+    object-fit: contain;
     
 }
 .value {
@@ -226,4 +252,6 @@ a {
 .container {
     display: flex;
     align-items: center;
+    border: 1px solid black; /* Border to visualize the grid item */
+    background-color: white;
 }

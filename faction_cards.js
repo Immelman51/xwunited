@@ -100,7 +100,6 @@ for (let i = 0; i<leaders.length; i++){
 }
 };
 
-
 function displayShipsandPilots() { //on va d'abord faire afficher les ships et les pilots associés
 
     
@@ -112,6 +111,7 @@ for (let i=0 ; i<ships.length; i++){ //on va afficher d'abord le vaisseau/chassi
     if (ships[i]["factions"].includes(factionSelected)){
         let newship = document.createElement('p');
         newship.setAttribute("class","ship");
+        newship.setAttribute("id","ship"+i);
 
         let newshipname = document.createElement('div');
         newshipname.setAttribute("class", "ship name");
@@ -166,10 +166,54 @@ shipshieldContainer.setAttribute("class", "ship shield container");
 shipshieldContainer.appendChild(shipshieldlogo);
 shipshieldContainer.appendChild(shipshield);
 newship.appendChild(shipshieldContainer);
+
+//We show ship actions
+const actionsArray = ships[i]['actions'];
+    let actionlist = document.createElement('div');
+    actionlist.setAttribute('id','action'+i);
+    actionlist.setAttribute("class","ship container action");
+    for(g=0 ; g<actionsArray.length ; g++){
+        switch(actionsArray[g][0]){
+            case 0 : //if 0 is the first value, it is a simple action
+            newaction = document.createElement('img');
+            newaction.setAttribute('class','actionlogo '+i+''+actionsArray[g][1]);
+            newaction.setAttribute('src', 'img/'+actionsArray[g][1]+'.jpg');
+            actionlist.appendChild(newaction);
+            break;
+            case 1 : //if 1 is the first value, then it is a linked action
+            newaction = document.createElement('div');
+            newaction.setAttribute('class','actionlogo');
+            
+            newaction1 = document.createElement('img');
+            newaction1.setAttribute('src', 'img/'+actionsArray[g][1]+'.jpg');
+            newaction1.setAttribute('class','linked actionlogo '+i+''+actionsArray[g][1]);
+            
+            newlink = document.createElement('img');
+            newlink.setAttribute('src', 'img/fleche.jpg');
+            newlink.setAttribute('class','linked actionlogo');
+            
+            newaction2 = document.createElement('img');
+            newaction2.setAttribute('src', 'img/'+actionsArray[g][2]+'.jpg');
+            newaction2.setAttribute('class','linked actionlogo '+i+''+actionsArray[g][2]);
+
+            newaction.appendChild(newaction1);
+            newaction.appendChild(newlink);
+            newaction.appendChild(newaction2);
+            actionlist.appendChild(newaction);
+            break;
+            default :
+            console.log('there is a mistake in ships.json for ship ID n°'+shipID);
+            break;
+        }
+    }   
+newship.appendChild(actionlist);
+
+
+
         
 //Second line flexbox
-let shipSecondLine = document.createElement('div');
-shipSecondLine.setAttribute("class","container");
+//let shipSecondLine = document.createElement('div');
+//shipSecondLine.setAttribute("class","container");
         
         let shipsizecontainer = document.createElement('div');
         shipsizecontainer.setAttribute("class", "size logo");
@@ -191,37 +235,80 @@ shipSecondLine.setAttribute("class","container");
                 break;
         }
         
-        shipSecondLine.appendChild(shipsizecontainer);
+        newship.appendChild(shipsizecontainer);
 
         shipSlots = document.createElement('div');
-        shipSlots.setAttribute("class","container");
+        shipSlots.setAttribute("class","slots container");
         for (let m=0; m<ships[i]["slots"].length; m++){ //on va développer tous les slots associés au vaisseau
             newshipslots = document.createElement('img');            
             newshipslots.setAttribute("class", "slot");
             newshipslots.setAttribute("src", 'img/'+ships[i]["slots"][m]+'.jpg');
             shipSlots.appendChild(newshipslots);
         } 
-        shipSecondLine.appendChild(shipSlots);
+newship.appendChild(shipSlots);
 
+//we show the ship's maneuvers
+let shipManeuvers = ships[i]['maneuvers'];
+maneuversDiv = document.createElement('div');
+maneuversDiv.setAttribute('class','ship container maneuvers');
+maneuversDiv.setAttribute('id',"maneuvers"+i);
+for(g=0; g<shipManeuvers.length; g++){
+    manspeed = document.createElement('div');
+    manspeed.setAttribute('class','man'+g+'0');
+    manspeedimg = document.createElement('img');
+    manspeedimg.setAttribute('src','img/man'+g+'.jpg');
+    manspeedimg.setAttribute('class','manlogo');
+    manspeed.appendChild(manspeedimg);
+    for(h=0 ; h<shipManeuvers[g].length; h++){
+        man = document.createElement('div');
+        man.setAttribute('class','man'+g+h);
+        manimg = document.createElement('img');
+        manimg.setAttribute('class','manlogo');
+        let mantype = '';
+        switch (h){
+            case 0 :
+                mantype = 'Tl';
+                break;
+            case 1 :
+                mantype = 'Bl';
+                break;
+            case 2 :
+                mantype = "St";
+                break;
+            case 3 : 
+                mantype = "Br";
+                break;
+            case 4 : 
+                mantype = 'Tr';
+                break;
+            case 5 :
+                mantype = 'Ko';
+                break;
+            case 6 :
+                mantype = 'Sl';
+                break;
+            case 7 :
+                mantype = 'Sr';
+                break;
+            case 8 :
+                mantype = 'Rl';
+                break;
+            case 9 :
+                mantype = 'Rs';
+                break;
+            case 10 :
+                mantype = 'Rr';
+                break;
+            default :
+                mantype = 'Blank';
+                break;
+        }
+        manimg.setAttribute('src','img/man'+mantype+shipManeuvers[g][h]+'.jpg');
+        man.appendChild(manimg);
+    }
+}
 
-    //On va mettre des liens pour afficher les actions, les manoeuvres ... sous forme de pop-up
-        let newshipothers = document.createElement('div');
-        let shipactions = document.createElement('a');
-        shipactions.innerHTML = "Actions";
-        shipactions.setAttribute('class','action');
-        newshipothers.appendChild(shipactions);    
-        let shipmaneuvers = document.createElement('a');
-        shipmaneuvers.innerHTML = "Maneuvers";
-        shipmaneuvers.setAttribute('class','maneuver');
-        newshipothers.appendChild(shipmaneuvers);
-        shipSecondLine.appendChild(newshipothers);
-shipactions.addEventListener('click', function() {
-    displayactions(ships[i]['id']); //on stocke l'ID pour retrouver rapidement les actions dans l'objet
-});
-shipmaneuvers.addEventListener('click', function(){
-    displaymaneuvers(ships[i]['id']); //on stocke l'ID pour retrouver rapidement les manoeuvres dans l'objet
-});  
-newship.appendChild(shipSecondLine);
+   
 document.body.appendChild(newship);
 
 // On a fini de décrire le ship   
