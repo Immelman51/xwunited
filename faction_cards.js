@@ -123,7 +123,7 @@ for (let i=0 ; i<ships.length; i++){ //on va afficher d'abord le vaisseau/chassi
         shipattackContainer.setAttribute("class","ship attack container");
         shipattackContainer.innerHTML = '<span style="color: black" class="attack value">' +ships[i]["attack"][0][1] + '</span> <img src="img/attack'+ships[i]["attack"][0][0] +'.jpg" class="attack logo"/>' ;
     if(ships[i]["attack"].length === 2){
-    newshipattack.innerHTML = newshipattack.innerHTML + "<img class='attack logo' src='img/attack"+ships[i]["attack"][1][0] +".jpg'/><span style='color: black' class='attack'>" + ships[i]["attack"][1][1] + "</span>"  ;
+        shipattackContainer.innerHTML = shipattackContainer.innerHTML + "<img class='attack logo' src='img/attack"+ships[i]["attack"][1][0] +".jpg'/><span style='color: black' class='attack'>" + ships[i]["attack"][1][1] + "</span>"  ;
     } 
     newship.appendChild(shipattackContainer);
 
@@ -259,21 +259,26 @@ for(g=0; g<shipManeuvers.length; g++){
         sum += shipManeuvers[g][s];
    }
    if (sum===0){
-    console.log('no maneuvers at '+g+' speed');
+    console.log(ships[i]['name']+' no maneuvers at '+g+' speed');
      
     }else{
     manspeed = document.createElement('div');
     manspeed.setAttribute('class','man'+g+'sp');
+    if(shipManeuvers[g].length<6){ //It's just an rendering element, because when there's only 5 columns, the pictures are streched horizontally and it looks bad. So we add a blank sixth column.
+        console.log('adding a sixth column for rendering purpose');
+        borderimg = document.createElement('img')
+        borderimg.setAttribute('src','img/manBlank.jpg');
+        borderimg.setAttribute('class','manlogo');
+        manspeed.appendChild(borderimg);
+    }else{
     manspeedimg = document.createElement('img');
     manspeedimg.setAttribute('src','img/man'+g+'.jpg');
     manspeedimg.setAttribute('class','manlogo');
     manspeed.appendChild(manspeedimg);
     maneuversDiv.appendChild(manspeed);
+    }
     for(h=0 ; h<shipManeuvers[g].length; h++){
-        man = document.createElement('div');
-        man.setAttribute('class','man'+g+h);
-        manimg = document.createElement('img');
-        manimg.setAttribute('class','manlogo');
+        
         let mantype = '';
         if(g===0){
             mantype = 'Op' //Stop maneuver
@@ -324,12 +329,17 @@ for(g=0; g<shipManeuvers.length; g++){
         }
         }
         if(shipManeuvers[g][h]===0){
-            manimg.setAttribute('src','img/manBlank.jpg');
+            console.log('no man');
         }else{
+            man = document.createElement('div');
+            man.setAttribute('class','man'+g+h);
+            manimg = document.createElement('img');
+            manimg.setAttribute('class','manlogo');
             manimg.setAttribute('src','img/man'+mantype+shipManeuvers[g][h]+'.jpg');
+            man.appendChild(manimg);
+            maneuversDiv.appendChild(man);
         }
-    man.appendChild(manimg);
-    maneuversDiv.appendChild(man);
+   
 }
    }
 }

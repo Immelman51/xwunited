@@ -164,13 +164,11 @@ a {
     grid-area: 3 / 3 / 4 / 5;
     flex-wrap: wrap;
     
+    
    }
 
 
-.maneuvers{
-    grid-area: 2 / 5 / 4 / 7;
-    border: 1px solid black; /* Border to visualize the grid item */
-}
+
 .actionlogo{
     display: flex;
     justify-content: center;
@@ -180,21 +178,30 @@ a {
 
 }
 .maneuvers{
+    grid-area: 2 / 5 / 4 / 7;
+    border: 1px solid black; /* Border to visualize the grid item */
     display: grid;
     width: 100%; /* Occupe la largeur totale de la case */
-    height: 100%; /* Occupe la hauteur totale de la case */
+    max-height: 220px;
     grid-template-columns: repeat(auto-fit, minmax(0, 1fr)); /* Colonnes dynamiques */
-    grid-template-rows: repeat(5, 1fr); /* 5 lignes égales */
+    grid-template-rows: repeat(auto-fit, minmax(0,1fr));
+    /*grid-auto-rows: minmax(0, 1fr); */
     box-sizing: border-box; /* Inclut les bordures et paddings */
-    object-fit: contain; /* Si ce sont des images ou des contenus redimensionnables */
-    overflow: hidden;
+  
    
 }
+
+.maneuvers > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .manlogo{
-    object-fit: cover;
+    object-fit:fill ;
     width: 100%;
     height: 100%;
 }
+
 .man0sp{
     grid-area: 6 / 1 / 7 / 2;
 }
@@ -402,6 +409,30 @@ a {
 }
 .man59{
     grid-area: 1 / 11/ 2 / 12; 
+}
+.man110{
+    grid-area: 5 / 12/ 6 / 13; 
+
+}
+.man210{
+    grid-area: 4 / 12/ 5 / 13; 
+
+}
+.man111{
+    grid-area: 5 / 13/ 6 / 14; 
+
+}
+.man211{
+    grid-area: 4 / 13/ 5 / 14; 
+
+}
+.man112{
+    grid-area: 5 / 14/ 6 / 15; 
+
+}
+.man212{
+    grid-area: 4 / 14/ 5 / 15; 
+
 }
 
 .slots{
