@@ -1100,7 +1100,7 @@
             "shields": 3,
             "base": ["Small"],
             "keyword": [],
-            "chassis": ["???"],
+            "chassis": [0],
             "actions": [
                 [0,"Fo W"],
                 [0,"Lo W"],
@@ -1926,7 +1926,7 @@
             "shields": 2,
             "base": ["Medium"],
             "keyword": [],
-            "chassis": [],
+            "chassis": [40],
             "actions": [
                 [0,"Fo W"],
                 [0,"Lo W"],                
@@ -2398,7 +2398,7 @@
             "keyword": ["Pyke_Syndicate"],
             "hull": 5,
             "shields": 2,
-            "chassis": [],
+            "chassis": [0],
             "actions": [
                 [0,"Fo W"],               
                 [0,"Lo W"],

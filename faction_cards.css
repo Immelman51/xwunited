@@ -163,6 +163,7 @@ a {
 .ship.container.action{
     grid-area: 3 / 3 / 4 / 5;
     flex-wrap: wrap;
+    justify-content: space-around;
     
     
    }
@@ -173,7 +174,8 @@ a {
     display: flex;
     justify-content: center;
     align-items: center; 
-    max-height: 0.8cm;  
+    max-height: 1cm;  
+    margin: 5px;
 
 
 }
@@ -183,7 +185,7 @@ a {
     display: grid;
     width: 100%; /* Occupe la largeur totale de la case */
     max-height: 220px;
-    grid-template-columns: repeat(auto-fit, minmax(0, 1fr)); /* Colonnes dynamiques */
+    grid-template-columns: repeat(auto-fit, minmax(0, 50px)); /* Colonnes dynamiques */
     grid-template-rows: repeat(auto-fit, minmax(0,1fr));
     /*grid-auto-rows: minmax(0, 1fr); */
     box-sizing: border-box; /* Inclut les bordures et paddings */
@@ -200,6 +202,11 @@ a {
     object-fit:fill ;
     width: 100%;
     height: 100%;
+}
+.manSpeed{
+    object-fit: fill;
+    height: 100%;
+    width: 40px;
 }
 
 .man0sp{
@@ -440,7 +447,12 @@ a {
     flex-wrap: wrap;
     grid-area: 3 / 2 / 4 / 3;
 }
-
+.chassisShip{
+    grid-area: 4 / 1 / 5 / 6;
+}
+.chargeimg{
+    max-width: 1cm;
+}
 
 .type{
     grid-column: 2;
@@ -483,11 +495,11 @@ a {
     grid-row: 2;
     border: 1px solid black; /* Border to visualize the grid item */
 }
-.logo {
+/*.logo {
     max-width: 100%;
     object-fit: contain;
     
-}
+}*/
 .value {
     margin-left: 2px; /* Adjust margin as needed */
     font-size: large;

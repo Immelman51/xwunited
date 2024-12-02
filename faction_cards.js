@@ -264,19 +264,13 @@ for(g=0; g<shipManeuvers.length; g++){
     }else{
     manspeed = document.createElement('div');
     manspeed.setAttribute('class','man'+g+'sp');
-    if(shipManeuvers[g].length<6){ //It's just an rendering element, because when there's only 5 columns, the pictures are streched horizontally and it looks bad. So we add a blank sixth column.
-        console.log('adding a sixth column for rendering purpose');
-        borderimg = document.createElement('img')
-        borderimg.setAttribute('src','img/manBlank.jpg');
-        borderimg.setAttribute('class','manlogo');
-        manspeed.appendChild(borderimg);
-    }else{
+    
     manspeedimg = document.createElement('img');
     manspeedimg.setAttribute('src','img/man'+g+'.jpg');
     manspeedimg.setAttribute('class','manlogo');
     manspeed.appendChild(manspeedimg);
     maneuversDiv.appendChild(manspeed);
-    }
+    
     for(h=0 ; h<shipManeuvers[g].length; h++){
         
         let mantype = '';
@@ -345,6 +339,20 @@ for(g=0; g<shipManeuvers.length; g++){
 }
 newship.appendChild(maneuversDiv);
 
+//We display the chassis ability
+chassisShip = document.createElement('div');
+chassisShip.setAttribute('id','chassisShip'+i);
+chassisShip.setAttribute('class','chassisShip');
+if(ships[i]['chassis'][0]!==0){
+for(c=0;c<ships[i]['chassis'].length;c++){
+    chassisShip.innerHTML += chassis[ships[i]['chassis'][c]]['effect1']+'<br>';
+    if(chassis[ships[i]['chassis'][c]]['nbrOfEffects']===2){
+    chassisShip.innerHTML += chassis[ships[i]['chassis'][c]]['effect2']+'<br>';  
+    chassisShip.innerHTML += chassis[ships[i]['chassis'][c]]['effect3']+'<br>';
+    }
+}
+}
+newship.appendChild(chassisShip);
 
    
 document.body.appendChild(newship);
