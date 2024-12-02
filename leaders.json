@@ -67,8 +67,8 @@
      "leadername": "Jun Sato",
      "leaderfaction": ["Phoenix_Cell","",""],
      "leaderid": 8,
-     "leaderability": "Après avoir défendu à portée 0-1, si vous n'avez pas subi de dégat, vous pouvez dépenser 1 #ch# pour gagner 1 #scenario_point#.<br>Après avoir attaqué à portée 0-1, si vous avez détruit un vaisseau, vous pouvez dépenser 1 #ch# pour gagner 1 #scenario_point.",
-     "charge": [1,"Red"],
+     "leaderability": "Après avoir défendu à portée 0-1, si vous n'avez pas subi de dégat, vous pouvez récupérer 1 #ch#.<br>Après avoir attaqué à portée 0-1, si vous avez détruit un vaisseau, vous pouvez récupérer 1#ch#.<br>En phase de fin, vous pouvez dépenser 2 #ch# pour gagner 1 #scenario_point.",
+     "charge": [2,"Red"],
      "logistic": 15
      },
      {
