@@ -388,24 +388,30 @@ document.body.appendChild(newship);
             newpilotname.innerHTML = limitNumber+" "+pilots[j]["name"]+ " ("+pilots[j]["skill"]+")";   // on écrit le limitNumber = Max_per_Squad avant le nom du pilote  , puis le skill entre parenthèses   
             newpilot.appendChild(newpilotname);
 
+            let newpilotChargeForce = document.createElement('div');
+            newpilotChargeForce.setAttribute('class','pilot force');
             if (pilots[j]["force"]>0){
                 let newpilotforcelogo = document.createElement('div');
                 let newpilotforce = document.createElement('div');
                 newpilotforce.setAttribute("class", "pilot force");
                 newpilotforcelogo.setAttribute("src", 'img/forcestat.jpg');
+                newpilotforcelogo.setAttribute("class", 'chargeimg');
                 newpilotforce.innerHTML = pilots[j]["force"];
-                newpilot.appendChild(newpilotforcelogo);
-                newpilot.appendChild(newpilotforce);
+                newpilotforce.appendChild(newpilotforcelogo);
+                newpilotChargeForce.appendChild(newpilotforce);
             }
             if (pilots[j]["charge"]>0){
                 let newpilotchargelogo = document.createElement('div');
                 let newpilotcharge = document.createElement('div');
-                newpilotcharge.setAttribute("class", "pilot charge");
+                newpilotcharge.setAttribute("class", "pilot force");
+                newpilotchargelogo.setAttribute("class", 'pilot chargeimg');
                 newpilotchargelogo.setAttribute("src", 'img/chargestat.jpg');
+
                 newpilotcharge.innerHTML = pilots[j]["charge"];
-                newpilot.appendChild(newpilotchargelogo);
-                newpilot.appendChild(newpilotcharge);
+                newpilotcharge.appendChild(newpilotchargelogo);
+                newpilotChargeForce.appendChild(newpilotcharge);
             }
+            newpilot.appendChild(newpilotChargeForce);
 
             let newpilotvalue = document.createElement('div');
             newpilotvalue.setAttribute("class", "pilot points");
@@ -420,17 +426,16 @@ document.body.appendChild(newship);
                 newpilottitle.innerHTML = pilots[j]["title"];
             
             }
-            
-            for (let k=0; k<pilots[j]["slots"]; k++){ //on va développer tous les slots du pilote
-                newpilotslotslogo = document.createElement('div');
-                newpilotslots = document.createElement('div');
-                newpilotslots.setAttribute("class", "pilot slot");
+            newpilotslots = document.createElement('div');
+            newpilotslots.setAttribute("class", "pilot slots");
+            for (let k=0; k<pilots[j]["slots"].length; k++){ //on va développer tous les slots du pilote
+                newpilotslotslogo = document.createElement('img');                            
                 newpilotslotslogo.setAttribute("src", 'img/'+pilots[j]["slots"][k]+'.jpg');
-                newpilot.appendChild(newpilotslotslogo);
-                newpilot.appendChild(newpilotslots);
+                newpilotslots.appendChild(newpilotslotslogo);
+                
             } 
             
-            
+            newpilot.appendChild(newpilotslots);
             
 
             let newpilotability = document.createElement('div');
