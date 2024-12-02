@@ -85,11 +85,12 @@ a {
 
 .pilot {
     background-color: rgb(189, 141, 141);
-    padding: 5px;
+    
     display:grid;
     grid-template-columns: 1fr 6fr 1fr 1fr ;
     gap: 2px;
     max-width: 25cm;
+    padding: 5px;
     justify-content: center;
     align-content: center;
     color:rgb(0, 0, 0) ; 
@@ -100,9 +101,9 @@ a {
     background-color: rgb(67, 73, 160);
     padding: 5px;
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 5fr 3fr ;
     gap: 2px;
-    max-width: 21cm;
+    max-width: 25cm;
     justify-content: center;
     align-content: center;
     color:aliceblue ; 
@@ -113,9 +114,9 @@ a {
     background-color: rgb(160, 165, 236);
     padding: 5px;
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 5fr 3fr  ;
     gap: 2px;
-    max-width: 21cm;
+    max-width: 25cm;
     justify-content: center;
     align-content: center;
     color:rgb(0, 0, 0) ; 
@@ -160,14 +161,16 @@ a {
 
 }
 
-.ship.container.action{
+.ship.container.actionBar{
     grid-area: 3 / 3 / 4 / 5;
     flex-wrap: wrap;
     justify-content: space-around;
     
     
    }
-
+.action{
+    max-height: 1cm;
+}
 
 
 .actionlogo{
@@ -448,16 +451,17 @@ a {
     grid-area: 3 / 2 / 4 / 3;
 }
 .chassisShip{
-    grid-area: 4 / 1 / 5 / 6;
+    grid-area: 4 / 1 / 5 / 7;
 }
 .chargeimg{
     max-width: 1cm;
 }
 
-.type{
-    grid-column: 2;
-    grid-row: 2;
+.upgrade.type{
+    grid-area: 1 / 3 / 2 / 4;
     border: 1px solid black; /* Border to visualize the grid item */
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -483,10 +487,18 @@ a {
     display: flex;
     align-items: center;
     align-content: center;
+    padding: 5px;
+    justify-content: center;
+    align-content: center;
     
 }
+.upgrade.name{
+    grid-area: 1 / 2 / 2 / 3;
+    display: flex;
+    justify-content: center;
+}
 .upgrade.ability{
-    grid-area: 1 / 3 / 4 / 5;
+    grid-area: 2 / 1 / 3 / 4;
 }
 
 

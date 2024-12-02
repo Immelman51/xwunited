@@ -171,7 +171,7 @@ newship.appendChild(shipshieldContainer);
 const actionsArray = ships[i]['actions'];
     let actionlist = document.createElement('div');
     actionlist.setAttribute('id','action'+i);
-    actionlist.setAttribute("class","ship container action");
+    actionlist.setAttribute("class","ship container actionBar");
     for(g=0 ; g<actionsArray.length ; g++){
         switch(actionsArray[g][0]){
             case 0 : //if 0 is the first value, it is a simple action
@@ -182,19 +182,19 @@ const actionsArray = ships[i]['actions'];
             break;
             case 1 : //if 1 is the first value, then it is a linked action
             newaction = document.createElement('div');
-            newaction.setAttribute('class','actionlogo');
+            newaction.setAttribute('class','linked actionlogo');
             
             newaction1 = document.createElement('img');
             newaction1.setAttribute('src', 'img/'+actionsArray[g][1]+'.jpg');
-            newaction1.setAttribute('class','linked actionlogo '+i+''+actionsArray[g][1]);
+            newaction1.setAttribute('class','actionlogo '+i+''+actionsArray[g][1]);
             
             newlink = document.createElement('img');
             newlink.setAttribute('src', 'img/fleche.jpg');
-            newlink.setAttribute('class','linked actionlogo');
+            newlink.setAttribute('class','actionlogo');
             
             newaction2 = document.createElement('img');
             newaction2.setAttribute('src', 'img/'+actionsArray[g][2]+'.jpg');
-            newaction2.setAttribute('class','linked actionlogo '+i+''+actionsArray[g][2]);
+            newaction2.setAttribute('class','actionlogo '+i+''+actionsArray[g][2]);
 
             newaction.appendChild(newaction1);
             newaction.appendChild(newlink);
@@ -494,7 +494,7 @@ function displayUpgrades() {
         newupgrade.appendChild(newupgradetypelogo);
 
         let newupgradepoints = document.createElement('div');
-        newupgradepoints.setAttribute("class", "upgrade value");
+        newupgradepoints.setAttribute("class", "upgrade points");
         newupgradepoints.innerHTML = upgrades[i]["points"];        
         newupgrade.appendChild(newupgradepoints);
 
