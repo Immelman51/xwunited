@@ -1,0 +1,96 @@
+header {
+    display: table;
+    width: 100%;
+    
+    color:rgb(0, 0, 0) ; 
+   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    max-width: 25cm;
+    position: sticky;
+    top: 0;
+    width: 100%; /* Make sure the container takes up the full width */
+    
+}
+
+a {
+    flex-grow: 1; /* Allows each section to grow and take up equal space */
+    flex-basis: 0; /* Ensures sections start from zero width and grow equally */
+    padding: 5px; /* Optional: adds padding around each section */
+    text-align: center; /* Optional: centers text within each section */
+    border: 2px solid black;
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+    background-color: rgb(98, 255, 190);
+    color:rgb(0, 0, 0);
+}
+
+
+
+
+.upgrade.generic {
+    background-color: rgb(160, 165, 236);
+    padding: 5px;
+    display:grid;
+    grid-template-columns: 1fr 5fr 3fr  ;
+    gap: 2px;
+    max-width: 25cm;
+    justify-content: center;
+    align-content: center;
+    color:rgb(0, 0, 0) ; 
+     
+}
+
+
+
+.chargeimg{
+    max-width: 1cm;
+}
+
+.upgrade.type{
+    grid-area: 1 / 3 / 2 / 4;
+    border: 1px solid black; /* Border to visualize the grid item */
+    display: flex;
+    justify-content: center;
+}
+
+
+.points{
+    grid-column: 1;
+    grid-row: 1;
+    border: 1px solid rgb(201, 28, 28); /* Border to visualize the grid item */
+    font-weight: bold;
+    color: rgb(201, 28, 28);
+    display: flex;
+    align-items: center;
+    align-content: center;
+    padding: 5px;
+    justify-content: center;
+    align-content: center;
+    
+}
+
+.upgrade.name{
+    grid-area: 1 / 2 / 2 / 3;
+    display: flex;
+    justify-content: center;
+}
+
+.upgrade.ability{
+    grid-area: 2 / 1 / 3 / 4;
+}
+
+
+.value {
+    margin-left: 2px; /* Adjust margin as needed */
+    font-size: large;
+    color: black;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    border: 1px solid black; /* Border to visualize the grid item */
+    background-color: white;
+}

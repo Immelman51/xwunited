@@ -480,7 +480,7 @@ a {
     grid-area: 1 / 3 / 2 / 4;
 }
 .pilot.title {
-    grid-area: 2 / 1 / 3 / 3;
+    grid-area: 2 / 2 / 3 / 3;
     text-align: center; /* Center the text horizontally */
     display: flex; /* Use flexbox for centering */
     align-items: center; /* Center the text vertically */

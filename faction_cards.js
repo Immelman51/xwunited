@@ -515,7 +515,7 @@ function displayUpgrades() {
         
         }
     }
-    let pUpgradesGen = document.createElement("div");
+   /* let pUpgradesGen = document.createElement("div");
     pUpgradesGen.setAttribute("id", "upgradesgen");
     document.body.appendChild(pUpgradesGen);
     
@@ -566,17 +566,10 @@ function displayUpgrades() {
 
         document.body.appendChild(newupgrade);
         }
-}
-}
-
-
-function displayactions(shipID) {
-
+}*/
 }
 
-function displaymaneuvers(shipID) {
 
-}
 
 
 
