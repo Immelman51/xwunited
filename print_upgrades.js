@@ -52,7 +52,7 @@ async function displayUpgradeDescription() { //This is the function that will di
         if(indexes[i]!==""){
             newpilot = document.createElement('div');
             newpilot.setAttribute('class','pilot');
-            newPilot.innerHTML = "<font size='20'>"+pilots[upgradeData[i][0]]['name']+"</font><br>";
+            newpilot.innerHTML = "<font size='20'>"+pilots[upgradeData[i][0]]['name']+"</font><br>";
             for ( j=1 ; j<upgradeData[i].length ; j++){ //we begin at 1 because the entry 0 is the pilotID
                 upg = upgrades[upgradeData[i][j]]
                 console.log(upgradeData);
@@ -65,7 +65,7 @@ async function displayUpgradeDescription() { //This is the function that will di
                     case 'Torpedo' :
                     case 'Missile' :
                     case 'Weapon Hardpoint' :
-                        newupgrade.innerHTML +=  'Portée : ' + upg['range'] + ' - ';
+                        newupgrade.innerHTML +=  'Portée : ' + upg['range'][0]+'/'+upg['range'][1] + ' - ';
                         newupgrade.innerHTML += '<img src="img/attack'+ upg['attack'][0] +'.jpg" class="logo"/> ' + upg['attack'][1] + '<br>';
                     default :
                         newupgrade.innerHTML += upg['effect'];

@@ -279,13 +279,14 @@ function displayPilot(x){
             removeElementById("chassis"+x+"_2");
             removeElementById("chassis"+x+"_3");
             }
+
             if(chassis[cid[0]]["nbrOfEffects"]===1){
             document.getElementById('chassis'+x+'_'+1).innerHTML = chassis[cid[0]]['effect1'];
             document.getElementById('chassis'+x+'_'+1).setAttribute('class','C'+cid[0]+' chs1'); //We change the class of this chassis, so we can remove it with functions contained in title such as Millenium Falcon.
             removeElementById("chassis"+x+"_2");
-            removeElementById("chassis"+x+"_3");
-            
+            removeElementById("chassis"+x+"_3");            
             }
+            
             if(chassis[cid[0]]["nbrOfEffects"]===2){
             document.getElementById('chassis'+x+'_'+1).innerHTML = chassis[cid[0]]['effect1'];
             document.getElementById('chassis'+x+'_'+2).innerHTML = chassis[cid[0]]['effect2'];

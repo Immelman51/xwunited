@@ -97,7 +97,7 @@
             "modify": false,
             "slot": "Talent",
             "points": 5,
-            "effect": "Lorsque vous défendez contre une attaque à portée 3 ou contre une attaque de #tur#, vous pouvez améliorer un dé de défense.",
+            "effect": "Lorsque vous défendez contre une attaque à portée 3 ou contre une attaque de #tur#, vous pouvez dépenser 1#ch# pour améliorer un dé de défense.",
             "faction": "",
             "add_Data": [0],
             "charge": [2,"+"],
