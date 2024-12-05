@@ -377,7 +377,7 @@
     "name":"Troop Bay",
     "id":46,
     "nbrOfEffects": 1,
-    "effect1":"<em><strong><strong>Baie de Largage : </strong></em><strong>Mise en Place : </strong>Un 'Super Commando' doit être arrimé avec vous.",
+    "effect1":"<em><strong><strong>Baie de Largage : </strong></em><strong>Mise en Place : </strong>Un 'Super Commando' peut être arrimé avec vous.",
     "effect2": "",
     "effect3": "" 
 },

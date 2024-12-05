@@ -180,7 +180,7 @@ function displayslots(yy) { //crée les menus de slot et contient l'écoute des 
     slotmenu.setAttribute('id', 'slot'+yy+"_"+i);
     slotmenu.setAttribute('class', 'slotElement'+yy);//+' '+pilot_list[yy]["slots"][i]);
     shipslot.appendChild(slotmenu);
-    slotmenu.addEventListener("input", function(event) {//cette faction décrit le calcul des mises à jour des points pour le loadout et le cout du pilote
+    slotmenu.addEventListener("input", function(event) {//cette fonction décrit le calcul des mises à jour des points pour le loadout et le cout du pilote
             identifyElement(event);
             check_restricted_List(event);
             checkUpgradeModifier(event);
@@ -781,6 +781,10 @@ function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'acti
       
       
     }) ;
+    newship.addEventListener('mouseover', function(event){
+        displayDescriptionShip(event);
+
+    })
     newpilot.addEventListener("mouseover", function(event){
         y = event.target.id.slice(11,12); //y = numéro du pilote modifié
         displayDescriptionPilot(numero);
@@ -900,11 +904,12 @@ function displayDescriptionShip(event){ //displays ship'stats and chassis abilit
             description_upg_pil_Field.innerHTML =  description_upg_pil_Field.innerHTML+'<span style="color: green">' +ships[k]["agility"] + '<span class="logo"/>';
             description_upg_pil_Field.innerHTML =  description_upg_pil_Field.innerHTML+'<span style="color: yellow">' +ships[k]["hull"] + '<span class="logo"/>';
             description_upg_pil_Field.innerHTML =  description_upg_pil_Field.innerHTML+'<span style="color: skyblue">' +ships[k]["shields"] + '<span class="logo"/><br>';
+            
             let chassisEq = ships[k]['chassis'];
             for(ch=0;ch<chassisEq.length;ch++){
-                description_upg_pil_Field.innerHTML =  description_upg_pil_Field.innerHTML+chassis[chassisEq[ch]]['effect1'];
-                description_upg_pil_Field.innerHTML =  description_upg_pil_Field.innerHTML+chassis[chassisEq[ch]]['effect2'];
-                description_upg_pil_Field.innerHTML =  description_upg_pil_Field.innerHTML+chassis[chassisEq[ch]]['effect3'];
+                description_upg_pil_Field.innerHTML +=  chassis[chassisEq[ch]]['effect1']+'<br>';
+                description_upg_pil_Field.innerHTML +=  chassis[chassisEq[ch]]['effect2']+'<br>';
+                description_upg_pil_Field.innerHTML +=  chassis[chassisEq[ch]]['effect3']+'<br>';
             }
             
 
