@@ -180,8 +180,7 @@ function displayPilot(x){
     const pilotFaction = document.getElementById('plogo'+x);
     const pilotName = document.getElementById('name'+x);
     const pilotShip = document.getElementById('ship'+x);
-    const pilotCost = document.getElementById('cost'+x);
-    
+    const pilotCost = document.getElementById('cost'+x);    
     const pilotstat = document.getElementById('stat'+x);
 
     //const pilotAttack1 = document.getElementById('attack1'+x);
@@ -190,12 +189,11 @@ function displayPilot(x){
     //const pilotHull = document.getElementById('hull'+x);
     //const pilotShield = document.getElementById('shield'+x);
     const pilotAbility = document.getElementById('ability'+x);
-    const pilotForce = document.getElementById('force'+x);
-    const pilotCharge = document.getElementById('charge'+x);
+    const pilotChargeForce = document.getElementById('chargeforce'+x);
     //const pilotActions = document.getElementById('actions'+x);
     
-    
     getPilotData(x);
+
     const pid = pilotdata[x][0] //We store the PilotID we got from indexes and stored into pilotdata thanks with pilotdata()
     pilotSkill.textContent = pilots[pid]['skill'];
     pilotFaction.setAttribute("src",'img/'+pilots[pid]['faction']+'mini.jpg');
@@ -226,9 +224,9 @@ function displayPilot(x){
     for(j=0; j<pilots[pid]['charge'][0];j++){ //We are going to display as many charge pictures as the charge value of the pilot
         console.log('creating div for pilot charge');
         newcharge = document.createElement('img');
-        newcharge.setAttribute("class","chargeimg");
+        newcharge.setAttribute("class","chargeforceimg");
         newcharge.setAttribute("src","img/chargestat.jpg");
-        pilotCharge.appendChild(newcharge);
+        pilotChargeForce.appendChild(newcharge);
       }
         
        
@@ -237,13 +235,13 @@ function displayPilot(x){
                 newchargeEvolution = document.createElement('img'); // the index 1 of the charge tables indicates if it's recurring or not. We have to display it, and there's a jpg for every case.
                 newchargeEvolution.setAttribute("class","recurring");
                 newchargeEvolution.setAttribute("src","img/chargeplus.jpg");
-                pilotCharge.appendChild(newchargeEvolution);
+                pilotChargeForce.appendChild(newchargeEvolution);
                 break;
             case "-" : 
                 newchargeEvolution = document.createElement('img'); // the index 1 of the charge tables indicates if it's recurring or not. We have to display it, and there's a jpg for every case.
                 newchargeEvolution.setAttribute("class","recurring");  
                 newchargeEvolution.setAttribute("src","img/chargeminus.jpg");
-                pilotCharge.appendChild(newchargeEvolution);
+                pilotChargeForce.appendChild(newchargeEvolution);
                 break;
             default :            
             break;
@@ -261,9 +259,9 @@ function displayPilot(x){
     for(f=0 ; f<pilots[pid]['force'] ; f++){ //We are going to display as many force pictures as the charge value of the pilot
         
         let newforce = document.createElement('img');
-        newforce.setAttribute("class","forceimg");
+        newforce.setAttribute("class","chargeforceimg");
         newforce.setAttribute("src","img/forcestat.jpg");
-        pilotForce.appendChild(newforce);
+        pilotChargeForce.appendChild(newforce);
        
       
     } 
@@ -319,31 +317,23 @@ function displayPilot(x){
         //We now tackle upgrades equipped. we start i at 1 because at 0, there's the pilotID
     let mcount = 0; //this is a counter for the coming 'for' loop
     for(i=1; i<13 ; i++){ 
+        
         if(i<pilotdata[x].length){
         let uid = pilotdata[x][i];
         let mdiv;
         
         if((pilots[pid]["charge"][0]===0)&&(pilots[pid]["force"]===0)&&(i<3)){ //to save some space on the sheet, if the pilot has no force or charge, we use that space to fill some upgrades
-            switch (i){
-                case 1 :
-                    mdiv = document.getElementById('charge'+x);
-                    mdiv.setAttribute('class','upgrade charge'); 
+            
+                    mdiv = document.getElementById('chargeforce'+x);
+                    mdiv.setAttribute('class','upgrade special'); 
                     mcount++;
-                    break;
-                case 2 : 
-                    mdiv = document.getElementById('force'+x);
-                    mdiv.setAttribute('class','upgrade force'); 
-                    mcount++;
-                    break;
-                default :
-                    break;
-            }
             
         }else{
         mdiv = document.getElementById('upgrade'+x+'_'+(i-1-mcount));
         }
-        
-        mdiv.textContent = upgrades[uid]['name'];
+        mdivupg = document.createElement('div');
+        mdivupg.setAttribute('class','upgrade');
+        mdivupg.textContent = upgrades[uid]['name'];
         
         switch (upgrades[uid]['add_Data'][0]) { //we are going to process the data in add_data entry. Those may add a small picture to remind the player some specific effect of the upgrade, or remove some HTML elements such as the millenium falcon that removes a chassis ability
             case 'removeclass' : //Millenium Falcon
@@ -374,27 +364,28 @@ function displayPilot(x){
         let nbrcharge = upgrades[uid]['charge'][0];
         for(j=0; j<nbrcharge;j++){ //is going to display as many charge logos as the number of charges the upgrade has
             newcharge = document.createElement('img');
-            newcharge.setAttribute("class","chargeimg");
+            newcharge.setAttribute("class","chargeforceimg");
             newcharge.setAttribute("src","img/chargestat.jpg");
-            mdiv.appendChild(newcharge);
+            mdivupg.appendChild(newcharge);
         }
             switch (upgrades[uid]['charge'][1]) {
                 case "+" :
                     recurring = document.createElement('img');
                     recurring.setAttribute("class","recurring");
                     recurring.setAttribute("src","img/chargeplus.jpg");
-                    mdiv.appendChild(recurring);
+                    mdivupg.appendChild(recurring);
                     break;
                 case "-" :
                     recurring = document.createElement('img');
                     recurring.setAttribute("class","recurring");
                     recurring.setAttribute("src","img/chargeminus.jpg");
-                    mdiv.appendChild(recurring);
+                    mdivupg.appendChild(recurring);
                     break;
                 default :
                 break;
             
         }
+        mdiv.appendChild(mdivupg);
     }else{
         removeElementById("upgrade"+x+"_"+(i-1-mcount));
     }

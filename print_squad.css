@@ -55,9 +55,10 @@
 .squad {
     width: 25cm;
     display: grid;
-    grid-template-columns: 1cm 1.5cm 5.8cm 4.1cm 4.1cm 5.3cm 2cm 1cm ;
+    grid-template-columns: 1cm 1.5cm 5.8cm 4.2cm 4.2cm 5.3cm 2cm 1cm ;
     grid-template-rows: 1.5cm 1cm 1cm 1cm 1cm 1.5cm auto auto auto auto auto auto auto;
     margin-bottom: 15px;
+    border: solid rgb(13, 0, 128);
     
 }
 .pskill{
@@ -158,13 +159,14 @@
     flex-shrink: 4;
 }
 
-.charge {
-    grid-area: 6 / 3 / 7 / 5;
-    
+.chargeforce {
+    grid-area: 6 / 3 / 7 / 7;
+    display: flex;
+    justify-content: center;
     height: 1.5cm;
 
 }
-.chargeimg{
+.chargeforceimg{
     height: 1.5cm;
     width: 1.5cm;
     resize: both;
@@ -175,17 +177,12 @@
     height: 1cm;
     resize: both;
 }
-.forceimg{
-    height: 1.5cm;
-    width: 1.5cm;
-    resize: both;
+.upgrade.special{
+    grid-area: 6 / 3 / 7 / 7;
+    display: flex;
+    justify-content: space-around;
 }
-.force{
-    grid-area: 6 / 5 / 7 / 7;
-    
-    height: 1.5cm;
-    
-}
+
 
 .upgrade{
     height : 1.5cm;
