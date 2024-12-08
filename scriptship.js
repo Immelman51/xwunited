@@ -351,15 +351,33 @@ function checkUpgRestriction(yy){ //populate les menus slots avec les bonnes upg
         for (let j=0; j<upgrades_Objects[yy][i].length; j++){
             
             if (upgrades_Objects[yy][i][j]['available']===true){
-                slotmenucontent.push(upgrades_Objects[yy][i][j]['name']+" ("+upgrades_Objects[yy][i][j]['points']+")");
-                slotmenuobjects.push(upgrades_Objects[yy][i][j]);
+                switch (upgrades_Objects[yy][i][j]['slot']) {
+                    case 'Talent' :
+                    case 'Force' :
+                        slotmenucontent.push(upgrades_Objects[yy][i][j]['name']+" "+upgrades_Objects[yy][i][j]['points']);
+                        slotmenuobjects.push(upgrades_Objects[yy][i][j]);
+                        break;
+                    default :    
+                        slotmenucontent.push(upgrades_Objects[yy][i][j]['name']+" ("+upgrades_Objects[yy][i][j]['points']+")");
+                        slotmenuobjects.push(upgrades_Objects[yy][i][j]);
+                break
+                }
             }else{
                 
                 testRestriction(yy,upgrades_Objects[yy][i][j]['restrictions']);
                 
                 if (restrict===true) {
-                slotmenucontent.push(upgrades_Objects[yy][i][j]['name']+" ("+upgrades_Objects[yy][i][j]['points']+")"); 
-                slotmenuobjects.push(upgrades_Objects[yy][i][j]);
+                    switch (upgrades_Objects[yy][i][j]['slot']) {
+                        case 'Talent' :
+                        case 'Force' :
+                            slotmenucontent.push(upgrades_Objects[yy][i][j]['name']+" "+upgrades_Objects[yy][i][j]['points']);
+                            slotmenuobjects.push(upgrades_Objects[yy][i][j]);
+                            break;
+                        default :    
+                            slotmenucontent.push(upgrades_Objects[yy][i][j]['name']+" ("+upgrades_Objects[yy][i][j]['points']+")");
+                            slotmenuobjects.push(upgrades_Objects[yy][i][j]);
+                    break
+                    }
             }
             }
             
@@ -579,15 +597,33 @@ function  add_slots (targetSlot){ //Action n°2 : A utiliser si une upgrade rajo
 for (let j=0; j<upgrades_Objects[y][nbrSlots].length; j++){
             
     if (upgrades_Objects[y][nbrSlots][j]['available']===true){
-        slotmenucontent.push(upgrades_Objects[y][nbrSlots][j]['name'] + " ("+upgrades_Objects[y][nbrSlots][j]['points'] + ")");
-        slotmenuobjects.push(upgrades_Objects[y][nbrSlots][j]);
+        switch (upgrades_Objects[yy][i][j]['slot']) {
+            case 'Talent' :
+            case 'Force' :
+                slotmenucontent.push(upgrades_Objects[yy][i][j]['name']+" "+upgrades_Objects[yy][i][j]['points']);
+                slotmenuobjects.push(upgrades_Objects[yy][i][j]);
+                break;
+            default :    
+                slotmenucontent.push(upgrades_Objects[yy][i][j]['name']+" ("+upgrades_Objects[yy][i][j]['points']+")");
+                slotmenuobjects.push(upgrades_Objects[yy][i][j]);
+        break
+        }
     }else{
         
         testRestriction(y,upgrades_Objects[y][nbrSlots][j]['restrictions']);
         
         if (restrict===true) {
-        slotmenucontent.push(upgrades_Objects[y][nbrSlots][j]['name'] + " ("+upgrades_Objects[y][nbrSlots][j]['points'] + ")"); 
-        slotmenuobjects.push(upgrades_Objects[y][nbrSlots][j]);
+            switch (upgrades_Objects[yy][i][j]['slot']) {
+                case 'Talent' :
+                case 'Force' :
+                    slotmenucontent.push(upgrades_Objects[yy][i][j]['name']+" "+upgrades_Objects[yy][i][j]['points']);
+                    slotmenuobjects.push(upgrades_Objects[yy][i][j]);
+                    break;
+                default :    
+                    slotmenucontent.push(upgrades_Objects[yy][i][j]['name']+" ("+upgrades_Objects[yy][i][j]['points']+")");
+                    slotmenuobjects.push(upgrades_Objects[yy][i][j]);
+            break
+            }
     }
     }
     fillUpgradesSelected(y);
