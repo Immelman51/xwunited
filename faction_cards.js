@@ -118,12 +118,37 @@ for (let i=0 ; i<ships.length; i++){ //on va afficher d'abord le vaisseau/chassi
         newshipname.innerHTML = ships[i]["name"];        
         newship.appendChild(newshipname);
 
+        let shipsizecontainer = document.createElement('div');
+        shipsizecontainer.setAttribute("class", "size");
+        shipsizetext = document.createElement('div'); //we create a div in the div to apply him some style wit css
+        shipsizetext.setAttribute("class", "size");
+        switch(ships[i]['base'][0]){
+            case 'Small' :
+                shipsizetext.innerHTML = "Sml";
+                break;
+            case 'Medium' :
+                shipsizetext.innerHTML = "Med" ;
+                break;
+            case 'Large' :
+                shipsizetext.innerHTML = "Lrg";
+                break;
+            case 'Huge' :
+                shipsizetext.innerHTML = "Hug";
+                break;
+            default : 
+                console.log("error ship size logo " + i) ;   
+                break;
+        }
+       
+        shipsizecontainer.appendChild(shipsizetext);
+        newship.appendChild(shipsizecontainer);
+
         
         let shipattackContainer = document.createElement('div');
-        shipattackContainer.setAttribute("class","ship attack container");
+        shipattackContainer.setAttribute("class","attack container");
         shipattackContainer.innerHTML = '<span style="color: black" class="attack value">' +ships[i]["attack"][0][1] + '</span> <img src="img/attack'+ships[i]["attack"][0][0] +'.jpg" class="attack logo"/>' ;
     if(ships[i]["attack"].length === 2){
-        shipattackContainer.innerHTML = shipattackContainer.innerHTML + "<img class='attack logo' src='img/attack"+ships[i]["attack"][1][0] +".jpg'/><span style='color: black' class='attack'>" + ships[i]["attack"][1][1] + "</span>"  ;
+        shipattackContainer.innerHTML +=  "<img class='attack logo' src='img/attack"+ships[i]["attack"][1][0] +".jpg'/><span style='color: black' class='attack value'>" + ships[i]["attack"][1][1] + "</span>"  ;
     } 
     newship.appendChild(shipattackContainer);
 
@@ -171,7 +196,7 @@ newship.appendChild(shipshieldContainer);
 const actionsArray = ships[i]['actions'];
     let actionlist = document.createElement('div');
     actionlist.setAttribute('id','action'+i);
-    actionlist.setAttribute("class","ship container actionBar");
+    actionlist.setAttribute("class","container actionBar");
     for(g=0 ; g<actionsArray.length ; g++){
         switch(actionsArray[g][0]){
             case 0 : //if 0 is the first value, it is a simple action
@@ -215,27 +240,7 @@ newship.appendChild(actionlist);
 //let shipSecondLine = document.createElement('div');
 //shipSecondLine.setAttribute("class","container");
         
-        let shipsizecontainer = document.createElement('div');
-        shipsizecontainer.setAttribute("class", "size logo");
-        switch(ships[i]['base'][0]){
-            case 'Small' :
-                shipsizecontainer.innerHTML = "<img src='img/smallbase.jpg'/>";
-                break;
-            case 'Medium' :
-                shipsizecontainer.innerHTML = "<img src='img/mediumbase.jpg'/>" ;
-                break;
-            case 'Large' :
-                shipsizecontainer.innerHTML = "<img src='img/largebase.jpg'/>";
-                break;
-            case 'Huge' :
-                shipsizecontainer.innerHTML = "<img src='img/hugebase.jpg'/>";
-                break;
-            default : 
-                console.log("error ship size logo " + i) ;   
-                break;
-        }
-        
-        newship.appendChild(shipsizecontainer);
+     
 
         shipSlots = document.createElement('div');
         shipSlots.setAttribute("class","slots container");

@@ -142,6 +142,14 @@ a {
     background-color: white;
     
 }
+
+.agility,
+.hull,
+.shield {
+    object-fit: contain;
+    max-width: calc(90% - 1px);
+    flex: 1 1 calc(90% - 1px);
+}
 .attack.container{
     grid-area: 2 / 1 / 3 / 2;
 }
@@ -155,20 +163,30 @@ a {
     grid-area: 2 / 4 / 3 / 5;
 }
 .size{
-    grid-area: 3 / 1 / 4 / 2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    grid-area: 1 / 6 / 2 / 7;
+    box-sizing: border-box;
+    display: flex; /* Use flexbox for centering */
+    align-items: center; /* Center the text vertically */
+    justify-content: flex-end; 
 
 }
-
-.ship.container.actionBar{
+.slots{
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: 3 / 1 / 4 / 3;
+    max-height: 50px;
+    justify-content: space-around;
+    flex: 1 1 calc(25% - 2px);
+    object-fit: contain;
+}
+.container.actionBar{
     grid-area: 3 / 3 / 4 / 5;
     flex-wrap: wrap;
     justify-content: space-around;
-    
+    max-height: 50px;
     
    }
+
 .action{
     max-height: 1cm;
 }
@@ -179,7 +197,9 @@ a {
     justify-content: center;
     align-items: center; 
     max-height: 1cm;  
-    margin: 5px;
+    object-fit: contain;
+    max-width: calc(25% - 2px);
+    flex: 1 1 calc(25% - 2px);
 
 
 }
@@ -446,11 +466,7 @@ a {
 
 }
 
-.slots{
-    display: flex;
-    flex-wrap: wrap;
-    grid-area: 3 / 2 / 4 / 3;
-}
+
 .chassisShip{
     grid-area: 4 / 1 / 5 / 7;
 }

@@ -80,13 +80,13 @@ for(j=0; j<nbrOfLeaderCharges ;j++){ //We display as many charge logos as the nu
         switch (leaders[lID]['charge'][1]) {
         case "Red" :
             newcharge = document.createElement('img');
-            newcharge.setAttribute("class","chargeimg");
+            newcharge.setAttribute("class","chargeforceimg");
             newcharge.setAttribute("src","img/chargestatRed.jpg");
             leaderCharge.appendChild(newcharge);
             break;
         case "0" :
             newcharge = document.createElement('img');
-            newcharge.setAttribute("class","chargeimg");
+            newcharge.setAttribute("class","chargeforceimg");
             newcharge.setAttribute("src","img/chargestat.jpg");
             leaderCharge.appendChild(newcharge);
             break;
@@ -94,6 +94,7 @@ for(j=0; j<nbrOfLeaderCharges ;j++){ //We display as many charge logos as the nu
         console.log("This leader charge configuration has not been programmed in displayLeader() from print_squad.js. There also might be a mistake in leaders.json.")
         break;
     }
+
 } 
 
 }
