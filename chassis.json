@@ -280,7 +280,7 @@
     "nbrOfEffects": 2,
     "effect1":"<em><strong>Support d'Ancrage : </strong></em>",
     "effect2": "<img class='chargeimg logo' src='img/chargestatRed.jpg'> <em>(Replié) : </em>Après un mouvement, si vous chevauchez un astéroïde/débris, ignorez ses effets et changez de configuration.",
-    "effect3": "<img class='chargeimg logo' src='img/chargestat.jpg'> <em>(Déplié) : </em><img class='chargeimg logo' src='img/chargestatRed.jpg'>Ignorez l'astéroïde/débris que vous chevauchez. Si vous révélez un virage, tournez de 90° dans la direction sélectionnée et ignorez la manoeuvre. Si vous révélez toute autre manoeuvre, ne vous déplacez pas et ignorez la manoeuvre." 
+    "effect3": "<img class='chargeimg logo' src='img/chargestat.jpg'> <em>(Déplié) : </em>Ignorez l'astéroïde/débris que vous chevauchez. Si vous révélez un virage, tournez de 90° dans la direction sélectionnée et ignorez la manoeuvre. Si vous révélez toute autre manoeuvre, ne vous déplacez pas et ignorez la manoeuvre." 
 },
 {
     "name":"Pinpoint Tractor Array",

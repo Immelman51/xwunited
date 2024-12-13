@@ -207,19 +207,19 @@ const actionsArray = ships[i]['actions'];
             break;
             case 1 : //if 1 is the first value, then it is a linked action
             newaction = document.createElement('div');
-            newaction.setAttribute('class','linked actionlogo');
+            newaction.setAttribute('class','linkedcontainer');
             
             newaction1 = document.createElement('img');
             newaction1.setAttribute('src', 'img/'+actionsArray[g][1]+'.jpg');
-            newaction1.setAttribute('class','actionlogo '+i+''+actionsArray[g][1]);
+            newaction1.setAttribute('class','linkedimg '+i+''+actionsArray[g][1]);
             
             newlink = document.createElement('img');
             newlink.setAttribute('src', 'img/fleche.jpg');
-            newlink.setAttribute('class','actionlogo');
+            newlink.setAttribute('class','linkedimgarrow');
             
             newaction2 = document.createElement('img');
             newaction2.setAttribute('src', 'img/'+actionsArray[g][2]+'.jpg');
-            newaction2.setAttribute('class','actionlogo '+i+''+actionsArray[g][2]);
+            newaction2.setAttribute('class','linkedimg '+i+''+actionsArray[g][2]);
 
             newaction.appendChild(newaction1);
             newaction.appendChild(newlink);
