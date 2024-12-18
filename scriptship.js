@@ -597,15 +597,15 @@ function  add_slots (targetSlot){ //Action n°2 : A utiliser si une upgrade rajo
 for (let j=0; j<upgrades_Objects[y][nbrSlots].length; j++){
             
     if (upgrades_Objects[y][nbrSlots][j]['available']===true){
-        switch (upgrades_Objects[yy][i][j]['slot']) {
+        switch (upgrades_Objects[y][i][j]['slot']) {
             case 'Talent' :
             case 'Force' :
-                slotmenucontent.push(upgrades_Objects[yy][i][j]['name']+" "+upgrades_Objects[yy][i][j]['points']);
+                slotmenucontent.push(upgrades_Objects[y][i][j]['name']+" "+upgrades_Objects[y][i][j]['points']);
                 slotmenuobjects.push(upgrades_Objects[yy][i][j]);
                 break;
             default :    
-                slotmenucontent.push(upgrades_Objects[yy][i][j]['name']+" ("+upgrades_Objects[yy][i][j]['points']+")");
-                slotmenuobjects.push(upgrades_Objects[yy][i][j]);
+                slotmenucontent.push(upgrades_Objects[y][i][j]['name']+" ("+upgrades_Objects[y][i][j]['points']+")");
+                slotmenuobjects.push(upgrades_Objects[y][i][j]);
         break
         }
     }else{
@@ -613,15 +613,15 @@ for (let j=0; j<upgrades_Objects[y][nbrSlots].length; j++){
         testRestriction(y,upgrades_Objects[y][nbrSlots][j]['restrictions']);
         
         if (restrict===true) {
-            switch (upgrades_Objects[yy][i][j]['slot']) {
+            switch (upgrades_Objects[y][i][j]['slot']) {
                 case 'Talent' :
                 case 'Force' :
-                    slotmenucontent.push(upgrades_Objects[yy][i][j]['name']+" "+upgrades_Objects[yy][i][j]['points']);
-                    slotmenuobjects.push(upgrades_Objects[yy][i][j]);
+                    slotmenucontent.push(upgrades_Objects[y][i][j]['name']+" "+upgrades_Objects[y][i][j]['points']);
+                    slotmenuobjects.push(upgrades_Objects[y][i][j]);
                     break;
                 default :    
-                    slotmenucontent.push(upgrades_Objects[yy][i][j]['name']+" ("+upgrades_Objects[yy][i][j]['points']+")");
-                    slotmenuobjects.push(upgrades_Objects[yy][i][j]);
+                    slotmenucontent.push(upgrades_Objects[y][i][j]['name']+" ("+upgrades_Objects[y][i][j]['points']+")");
+                    slotmenuobjects.push(upgrades_Objects[y][i][j]);
             break
             }
     }
