@@ -5829,9 +5829,622 @@
                 "Talent",
                 "Talent"            
             ]
+        },
+        {
+            "name": "Anakin Skywalker",
+            "id": 265,
+            "max_per_squad": 1,
+            "modify": false,
+		    "faction": "Jedi_Order",
+            "ship": "Delta-7 Aethersprite",
+            "charge":[0],
+            "force": 3,
+            "shipId": 53,
+            "skill": 6,
+            "points": 5,            
+            "ability": "Après avoir entièrement exécuté une manœuvre, si il y a un vaisseau ennemi dans votre #Farc# à portée 0-1 ou dans votre #bulls#, vous pouvez dépenser 1#fo# pour retirer un marqueur de stress.",
+            "ability_ENG": "After you fully execute a maneuver, if there is an enemy ship in your #Farc# at range 0-1 or in your #bulls#, you may spend 1 #fo# to remove 1 stress token.",
+            "slots": [
+                "Talent",
+                "Talent",
+                "Force",
+                "Astromech",
+                "Modification",
+                "Hyperspace Ring"
+
+            ]
+        },
+        {
+            "name": "Obi-Wan Kenobi",
+            "id": 266,
+            "max_per_squad": 1,
+            "modify": false,
+		    "faction": "Jedi_Order",
+            "ship": "Delta-7 Aethersprite",
+            "charge":[0],
+            "force": 3,
+            "shipId": 53,
+            "skill": 5,
+            "points": 5,            
+            "ability": "Après qu'un vaisseau allié à portée 0-2 a dépensé un jeton de concentration, vous pouvez 1#fo#. Dans ce cas, ce vaisseau reçoit 1 jeton de concentration.",
+            "ability_ENG": "After a friendly ship at range 0-2 spends a focus token, you may spend 1 #fo#. If you do, that ship gains 1 focus token.",
+            "slots": [
+                "Talent",
+                "Force",
+                "Astromech",
+                "Modification",
+                "Hyperspace Ring"
+
+            ]
+        },
+        {
+            "name": "Plo Koon",
+            "id": 267,
+            "max_per_squad": 1,
+            "modify": false,
+		    "faction": "Jedi_Order",
+            "ship": "Delta-7 Aethersprite",
+            "charge":[0],
+            "force": 2,
+            "shipId": 53,
+            "skill": 5,
+            "points": 5,            
+            "ability": "Au début de la phase d'engagement, vous pouvez dépenser 1 #fo# et choisir un autre vaisseau allié à portée 0-2. Dans ce cas, vous pouvez transférer 1 jeton vert de votre vaisseau vers lui, ou trasnférer 1 jeton orange de son vaisseau vers le votre.",
+            "ability_ENG": "At the start of the Engagement Phase, you may spend 1 #fo# and choose another friendly ship at range 0-2. If you do, you may transfer 1 green token to it or transfer one orange token from it to yourself.",
+            "slots": [
+                "Talent",
+                "Force",
+                "Astromech",
+                "Modification",
+                "Hyperspace Ring"
+
+            ]
+        },
+        {
+            "name": "Ahsoka Tano",
+            "id": 268,
+            "max_per_squad": 1,
+            "modify": false,
+		    "faction": "Jedi_Order",
+            "ship": "Delta-7 Aethersprite",
+            "charge":[0],
+            "force": 1,
+            "shipId": 53,
+            "skill": 3,
+            "points": 5,            
+            "ability": "Après avoir entièrement exécuté une manoeuvre, vous pouvez choisir un vaisseau allié à portée 0-1 et dépenser 1 #fo#. Ce vaisseau peut effectuer une action, même s'il est stressé.",
+            "ability_ENG": "After you fully execute a maneuver, you may choose a friendly ship at range 0-1 and spend 1 #fo#. That ship may perform an action, even if it is stressed.",
+            "slots": [
+                "Talent",
+                "Force",
+                "Astromech",
+                "Modification",
+                "Hyperspace Ring"
+
+            ]
+        },
+
+        {
+            "name": "Mace Windu",
+            "id": 269,
+            "max_per_squad": 1,
+            "modify": false,
+		    "faction": "Jedi_Order",
+            "ship": "Delta-7b Aethersprite",
+            "charge":[0],
+            "force": 3,
+            "shipId": 54,
+            "skill": 4,
+            "points": 5,            
+            "ability": "Après avoir entièrement exécuté une manoeuvre, récupérez 1 #fo#",
+            "ability_ENG": "After you fully execute a red maneuver, recover 1 #fo#.",
+            "slots": [
+                "Talent",
+                "Force",
+                "Force",
+                "Astromech",
+                "Modification",
+                "Hyperspace Ring"
+
+            ]
+        },
+        {
+            "name": "Luminara Unduli",
+            "id": 270,
+            "max_per_squad": 1,
+            "modify": false,
+		    "faction": "Jedi_Order",
+            "ship": "Delta-7b Aethersprite",
+            "charge":[0],
+            "force": 2,
+            "shipId": 54,
+            "skill": 4,
+            "points": 5,            
+            "ability": "Lorsqu'un vaisseau allié à portée 0-2 défend, s'il ne se trouve pas dans le #bulls# de l'attaquant, vous pouvez dépenser 1 #fo#. Dans ce cas, dégradez 1 dé d'attaque.",
+            "ability_ENG": "While a friendly ship at range 0-2 defends, if it is not in the attacker's #bulls#, you may spend 1 #fo#. If you do, downgrade an attack die",
+            "slots": [
+                "Talent",
+                "Force",
+                "Astromech",
+                "Modification",
+                "Hyperspace Ring"
+
+            ]
+        },
+        {
+            "name": "Bariss Offee",
+            "id": 271,
+            "max_per_squad": 1,
+            "modify": false,
+		    "faction": "Jedi_Order",
+            "ship": "Delta-7b Aethersprite",
+            "charge":[0],
+            "force": 1,
+            "shipId": 54,
+            "skill": 3,
+            "points": 5,            
+            "ability": "Lorsqu'un vaisseau allié à portée 0-2 effectue une attaque, si le défenseur se trouve dans son #bulls#, vous pouvez dépenser 1 #fo#. Dans ce cas, améliorez 1 dé d'attaque.",
+            "ability_ENG": "While a friendly ship at range 0-2 performs an attack, if the defender is in its #bulls#, you may spend 1 #fo#. If you do, upgrade an attack die.",
+            "slots": [
+                "Talent",
+                "Force",
+                "Astromech",
+                "Modification",
+                "Hyperspace Ring"
+
+            ]
+        },
+        {
+            "name": "Adi Gallia",
+            "id": 272,
+            "max_per_squad": 1,
+            "modify": false,
+		    "faction": "Jedi_Order",
+            "ship": "Delta-7b Aethersprite",
+            "charge":[0],
+            "force": 2,
+            "shipId": 54,
+            "skill": 5,
+            "points": 5,            
+            "ability": "Lorsque vous attaquez à portée 1, vous pouvez dépenser 1 #fo#. Dans ce cas, l'attaquant n'applique pas le bonus de portée.<br>Lorsque vous effectuez une attaque contre un vaisseau à portée 3, vous pouvez dépenser 1 #fo#. Dans ce cas, le défenseur n'applique pas le bonus de portée.",
+            "ability_ENG": "While you defend at attack range 1, you may spend 1 #fo#. If you do, the attacker cannot apply the range bonus.<br>While you perform an attack against a defender at attack range 3, you may spend 1 #fo#, the defender cannot apply the range bonus.",
+            "slots": [
+                "Talent",
+                "Force",
+                "Astromech",
+                "Modification",
+                "Hyperspace Ring"
+
+            ]
+        },
+        {
+            "name": "Yoda",
+            "id": 273,
+            "max_per_squad": 1,
+            "modify": false,
+		    "faction": "Jedi_Order",
+            "ship": "Eta-2 Actis",
+            "charge":[0],
+            "force": 3,
+            "shipId": 72,
+            "skill": 3,
+            "points": 5,            
+            "ability": "Après qu'un vaisseau allié à portée 0-3 a dépensé au moins 1 #fo#, vous pouvez dépenser 1 #fo#. Dans ce cas, ce vaisseau récupère 1 #fo#.",
+            "ability_ENG": "After another friendly ship at range 0-3 spends 1 or more #fo#, you may spend 1 #fo#. If you do, that ship recovers 1 #fo#.",
+            "slots": [
+                "Force",
+                "Force",
+                "Force",
+                "Cannon",
+                "Astromech",
+                "Modification",
+                "Hyperspace Ring"
+
+            ]
+        },
+        {
+            "name": "Aayla Secura",
+            "id": 275,
+            "max_per_squad": 1,
+            "modify": false,
+		    "faction": "Jedi_Order",
+            "ship": "Eta-2 Actis",
+            "charge":[0],
+            "force": 2,
+            "shipId": 72,
+            "skill": 5,
+            "points": 5,            
+            "ability": "Lorsqu'un vaisseau ennemi dans votre #Farc# à portée 0-1 effectue une attaque, le défenseur peut modifier 1 résultat vierge en résultat #eye#.",
+            "ability_ENG": "While an enemy ship in your #Farc# at range 0-1 performs an attack, the defender may change 1 blank result to a #eye# result.",
+            "slots": [
+                "Talent",
+                "Talent",
+                "Force",
+                "Cannon",
+                "Astromech",
+                "Modification",
+                "Hyperspace Ring"
+
+            ]
+        },
+        {
+            "name": "Shaak Ti",
+            "id": 276,
+            "max_per_squad": 1,
+            "modify": false,
+		    "faction": "Jedi_Order",
+            "ship": "Eta-2 Actis",
+            "charge":[0],
+            "force": 2,
+            "shipId": 72,
+            "skill": 4,
+            "points": 5,            
+            "ability": "Au début de la phase de fin, vous pouvez dépenser 1 ou plusieurs #fo# pour choisir autant de vaisseaux alliés à portée 0-2. Dans ce cas, chaque vaisseau choisi ne retire pas 1 jeton vert pendant la phase de fin.",
+            "ability_ENG": "At the start of the End Phase, you may spend any number of #fo# to choose that many friendly ships at range 0-2. Each chosen ship does not remove 1 focus or evade token during this End Phase.",
+            "slots": [
+                "Talent",
+                "Force",
+                "Cannon",
+                "Astromech",
+                "Modification",
+                "Hyperspace Ring"
+
+            ]
+        },
+        {
+            "name": "Kit Fisto",
+            "id": 277,
+            "max_per_squad": 1,
+            "modify": false,
+		    "faction": "Jedi_Order",
+            "ship": "Eta-2 Actis",
+            "charge":[0],
+            "force": 2,
+            "shipId": 72,
+            "skill": 4,
+            "points": 5,            
+            "ability": "Lorsqu'un autre vaisseau allié à portée 0-3 défend, si l'attaquant est dans son #bulls#, vous pouvez dépenser 1 #fo# pour changer un résultat vierge du défenseur en résultat #eye#.",
+            "ability_ENG": "While another friendly ship at range 0-3 defends, if the attacker is in its #bulls#, you may spend 1 #fo# to change 1 of the defender's blank results to a #eye# result.",
+            "slots": [
+                "Talent",
+                "Force",
+                "Cannon",
+                "Astromech",
+                "Modification",
+                "Hyperspace Ring"
+
+            ]
+        },
+
+        {
+            "name": "Hound",
+            "id": 278,
+            "max_per_squad": 1,
+            "modify": false,
+		    "faction": "Jedi_Order",
+            "ship": "LAAT/i Gunship",
+            "charge":[0],
+            "force": 0,
+            "shipId": 68,
+            "skill": 2,
+            "points": 5,            
+            "ability": "Après qu'un petit vaisseau allié dans votre #Tarc# reçoit un jeton de contrainte ou d'épuisement, si vous n'avez pas de jeton de ce type, vous pouvez transférer ce jeton depuis ce vaisseau vers le votre.",
+            "ability_ENG": "After a friendly small ship in your #Tarc# gains a deplete or strain token, if you have no tokens of that type, you may transfer that token to yourself.",
+            "slots": [
+                "Talent",
+                "Crew",
+                "Crew",
+                "Gunner",
+                "Gunner",
+                "Missile",
+                "Turret"
+
+            ]
+        },
+        {
+            "name": "Warthog",
+            "id": 279,
+            "max_per_squad": 1,
+            "modify": false,
+		    "faction": "Jedi_Order",
+            "ship": "LAAT/i Gunship",
+            "charge":[0],
+            "force": 0,
+            "shipId": 68,
+            "skill": 3,
+            "points": 5,            
+            "ability": "Après que vous ou un vaisseau allié non-limité à portée 0-2 est détruit pendant la phase d'engagement, ce vaisseau n'est pas retiré de la partie avant la fin de cette phase.",
+            "ability_ENG": "After you or a friendly non-limited ship at range 0-2 are destroyed during the Engagement Phase, that ship is not removed until the end of that phase.",
+            "slots": [
+                "Talent",
+                "Crew",
+                "Crew",
+                "Gunner",
+                "Gunner",
+                "Missile",
+                "Turret"
+
+            ]
+        },
+        {
+            "name": "Hawk",
+            "id": 280,
+            "max_per_squad": 1,
+            "modify": false,
+		    "faction": "Jedi_Order",
+            "ship": "LAAT/i Gunship",
+            "charge":[0],
+            "force": 0,
+            "shipId": 68,
+            "skill": 4,
+            "points": 5,            
+            "ability": "Au début de la phase de fin, chaque vaisseau allié à portée 0-1 qui a une manoeuvre révélée de vitesse 3-5 peut gagner 1 jeton de contrainte pour effectuer une action #BR# ou #BO#",
+            "ability_ENG": "At the start of the End Phase, each friendly ship at range 0-1 that has a revealed maneuver of speed 3-5 may gain 1 strain token to perform a #BR# or #BO# action.",
+            "slots": [
+                "Talent",
+                "Crew",
+                "Crew",
+                "Gunner",
+                "Gunner",
+                "Missile",
+                "Turret"
+
+            ]
+        },
+        {
+            "name": "Sicko",
+            "id": 281,
+            "max_per_squad": 1,
+            "modify": false,
+		    "faction": "Jedi_Order",
+            "ship": "LAAT/i Gunship",
+            "charge":[0],
+            "force": 0,
+            "shipId": 68,
+            "skill": 2,
+            "points": 5,            
+            "ability": "Après avoir executé une manoeuvre basique, vous pouvez assigner à votre vaisseau la condition 'Manoeuvre Malaisante'.",
+            "ability_ENG": "After you execute a basic maneuver, you may assign the 'Sickening Maneuver' condition to yourself.",
+            "slots": [
+                "Talent",
+                "Crew",
+                "Crew",
+                "Gunner",
+                "Gunner",
+                "Missile",
+                "Turret"
+
+            ]
+        },
+        {
+            "name":"Anakin Skywalker",
+            "id": 282,
+            "max_per_squad": 1,
+            "modify": false,
+		    "faction": "Jedi_Order",
+            "ship": "BTL-B Y-wing",
+            "charge":[0],
+            "force": 3,
+            "shipId": 63,
+            "skill": 6,
+            "points": 5,            
+            "ability": "Après avoir entièrement exécuté une manœuvre, si il y a un vaisseau ennemi dans votre #Farc# à portée 0-1 ou dans votre #bulls#, vous pouvez dépenser 1#fo# pour retirer un marqueur de stress.",
+            "ability_ENG": "After you fully execute a maneuver, if there is an enemy ship in your #Farc# at range 0-1 or in your #bulls#, you may spend 1 #fo# to remove 1 stress token.",
+            "slots": [
+                "Talent",
+                "Talent",
+                "Force",
+                "Gunner",
+                "Torpedo",
+                "Astromech",
+                "Payload",
+                "Turret",
+                "Modification"
+
+            ]
+        },
+        {
+            "name":"Goji",
+            "id": 283,
+            "max_per_squad": 1,
+            "modify": false,
+		    "faction": "Jedi_Order",
+            "ship": "BTL-B Y-wing",
+            "charge":[0],
+            "force": 0,
+            "shipId": 63,
+            "skill": 2,
+            "points": 5,            
+            "ability": "Lorsqu'un vaisseau allié à portée 0-3 se défend, il peut lancer 1 dé de défense additionnel pour chaque bombe alliée à portée 0-1 de ce vaisseau.",
+            "ability_ENG": "While a friendly ship at range 0-3 defends, it may roll 1 additional defense die for each friendly bomb at 0-1 of it.",
+            "slots": [
+                "Talent",
+                "Gunner",
+                "Torpedo",
+                "Astromech",
+                "Payload",
+                "Turret",
+                "Modification"
+
+            ]
+        },
+        {
+            "name":"Broadside",
+            "id": 284,
+            "max_per_squad": 1,
+            "modify": false,
+		    "faction": "Jedi_Order",
+            "ship": "BTL-B Y-wing",
+            "charge":[0],
+            "force": 0,
+            "shipId": 63,
+            "skill": 3,
+            "points": 5,            
+            "ability": "Lorsque vous effectuez une attaque #tur#, si votre indicateur #tur# se trouve dans votre #Larc# ou #Rarc#, vous pouvez changer 1 résultat vierge en #eye#.",
+            "ability_ENG": "While you perform a #tur# attack, if your #tur# indicator is in your #Larc# or #Rarc#, you may change 1 blank result to a #eye# result.",
+            "slots": [
+                "Talent",
+                "Gunner",
+                "Torpedo",
+                "Astromech",
+                "Payload",
+                "Turret",
+                "Modification"
+
+            ]
+        },
+        {
+            "name":"Matchstick",
+            "id": 285,
+            "max_per_squad": 1,
+            "modify": false,
+		    "faction": "Jedi_Order",
+            "ship": "BTL-B Y-wing",
+            "charge":[0],
+            "force": 0,
+            "shipId": 63,
+            "skill": 4,
+            "points": 5,            
+            "ability": "Lorsque vous effectuez une attaque, vous pouvez relancer 1 dé d'attaque pour chaque jeton rouge que vous possédez.",
+            "ability_ENG": "While you perform an attack, you may reroll 1 attack die for each red token you have.",
+            "slots": [
+                "Talent",
+                "Gunner",
+                "Torpedo",
+                "Astromech",
+                "Payload",
+                "Turret",
+                "Modification"
+
+            ]
+        },
+        {
+            "name":"Bomardier de l'Escadron Ombre",
+            "id": 286,
+            "max_per_squad": 1,
+            "modify": false,
+		    "faction": "Jedi_Order",
+            "ship": "BTL-B Y-wing",
+            "charge":[0],
+            "force": 0,
+            "shipId": 63,
+            "skill": 2,
+            "points": 5,            
+            "ability": "",
+            "ability_ENG": "",
+            "slots": [
+                "Gunner",
+                "Torpedo",
+                "Astromech",
+                "Payload",
+                "Turret",
+                "Modification"
+
+            ]
         }
+  /*      {
+            "name":"Mace Windu",
+            "id": 0,
+            "max_per_squad": 1,
+            "modify": false,
+		    "faction": "Jedi_Order",
+            "ship": "T6 Shuttle",
+            "charge":[0],
+            "force": 0,
+            "shipId": 82,
+            "skill": 6,
+            "points": 5,            
+            "ability": "Lorsqu'un autre vaisseau allié à portée 0-3 défend, si l'attaquant est dans son #bulls#, vous pouvez dépenser 1 #fo# pour changer un résultat vierge du défenseur en résultat #eye#.",
+            "ability_ENG": "While another friendly ship at range 0-3 defends, if the attacker is in its #bulls#, you may spend 1 #fo# to change 1 of the defender's blank results to a #eye# result.",
+            "slots": [
+                "Talent",
+                "Force",
+                "Force",
+                "Crew",
+                "Gunner",
+                "Modification",
+                "Sensor",
+                "Calculator"
 
-  
-        
+            ]
+        },
+        {
+            "name":"Mace Windu",
+            "id": 0,
+            "max_per_squad": 1,
+            "modify": false,
+		    "faction": "Jedi_Order",
+            "ship": "T6 Shuttle",
+            "charge":[0],
+            "force": 0,
+            "shipId": 82,
+            "skill": 6,
+            "points": 5,            
+            "ability": "Lorsqu'un autre vaisseau allié à portée 0-3 défend, si l'attaquant est dans son #bulls#, vous pouvez dépenser 1 #fo# pour changer un résultat vierge du défenseur en résultat #eye#.",
+            "ability_ENG": "While another friendly ship at range 0-3 defends, if the attacker is in its #bulls#, you may spend 1 #fo# to change 1 of the defender's blank results to a #eye# result.",
+            "slots": [
+                "Talent",
+                "Force",
+                "Force",
+                "Crew",
+                "Gunner",
+                "Modification",
+                "Sensor",
+                "Calculator"
 
+            ]
+        },
+        {
+            "name":"Mace Windu",
+            "id": 0,
+            "max_per_squad": 1,
+            "modify": false,
+		    "faction": "Jedi_Order",
+            "ship": "T6 Shuttle",
+            "charge":[0],
+            "force": 0,
+            "shipId": 82,
+            "skill": 6,
+            "points": 5,            
+            "ability": "Lorsqu'un autre vaisseau allié à portée 0-3 défend, si l'attaquant est dans son #bulls#, vous pouvez dépenser 1 #fo# pour changer un résultat vierge du défenseur en résultat #eye#.",
+            "ability_ENG": "While another friendly ship at range 0-3 defends, if the attacker is in its #bulls#, you may spend 1 #fo# to change 1 of the defender's blank results to a #eye# result.",
+            "slots": [
+                "Talent",
+                "Force",
+                "Force",
+                "Crew",
+                "Gunner",
+                "Modification",
+                "Sensor",
+                "Calculator"
+
+            ]
+        },
+        {
+            "name":"Mace Windu",
+            "id": 0,
+            "max_per_squad": 1,
+            "modify": false,
+		    "faction": "Jedi_Order",
+            "ship": "T6 Shuttle",
+            "charge":[0],
+            "force": 0,
+            "shipId": 82,
+            "skill": 6,
+            "points": 5,            
+            "ability": "Lorsqu'un autre vaisseau allié à portée 0-3 défend, si l'attaquant est dans son #bulls#, vous pouvez dépenser 1 #fo# pour changer un résultat vierge du défenseur en résultat #eye#.",
+            "ability_ENG": "While another friendly ship at range 0-3 defends, if the attacker is in its #bulls#, you may spend 1 #fo# to change 1 of the defender's blank results to a #eye# result.",
+            "slots": [
+                "Talent",
+                "Force",
+                "Force",
+                "Crew",
+                "Gunner",
+                "Modification",
+                "Sensor",
+                "Calculator"
+
+            ]
+        }
+     */   
     ]

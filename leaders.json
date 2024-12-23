@@ -99,8 +99,8 @@
      "leadername": "General Hux",
      "leaderfaction": ["First_Order","",""],
      "leaderid": 12,
-     "leaderability": "Lorsqu'un de vos vaisseaux effectue un 'tir revanche', vous pouvez améliorer 1 dé d'attaque. Si vous détruisez un vaisseau ainsi, gagnez 2 #scenario_point#.",
-     "charge": [0],
+     "leaderability": "Lorsqu'un de vos vaisseaux est détruit, vous pouvez dépenser 1 #ch#. Dans ce cas, il peut effectuer un 'tir revanche' même s'il n'a pas la bonne initiative. Lorsque vous effectuez un 'tir revanche', vous pouvez améliorer 1 dé d'attaque. Si vous détruisez un vaisseau ainsi, gagnez 2 #scenario_point#.",
+     "charge": [3],
      "logistic": 25
      },
      {
