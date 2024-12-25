@@ -880,7 +880,7 @@
                 [ 3, 2, 2, 2, 3, 0 ],
                 [ 0, 0, 3, 0, 0, 3 ]
             ],
-            "slots": ["Crew", "Gunner", "Astromech", "Modification"]
+            "slots": ["Crew", "Gunner", "Torpedo", "Astromech", "Modification"]
         },
         {
    
@@ -1518,7 +1518,7 @@
                 [ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0],
                 [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
             ],
-            "slots": []
+            "slots": ["Missile","Torpedo","Modification"]
 
         },
         {
@@ -1548,7 +1548,7 @@
                 [ 0, 0, 2, 0, 0, 3, 0, 0],
                 [ 0, 0, 2, 0, 0, 3, 0, 0]
             ],
-            "slots": []
+            "slots": ["Astromech","Modification","Hyperspace Ring"]
 
            
         },
@@ -1580,7 +1580,7 @@
                 [ 0, 0, 2, 0, 0, 3, 0, 0],
                 [ 0, 0, 2, 0, 0, 3, 0, 0]
             ],
-            "slots": []
+            "slots": ["Astromech","Modification","Hyperspace Ring"]
 
         },
         {
@@ -1843,7 +1843,7 @@
                 [ 0, 0, 3, 0, 0, 3],
                 [ 0, 0, 0, 0, 0, 0]
             ],
-            "slots": []
+            "slots": ["Gunner","Torpedo","Payload","Turret","Astromech","Modification"]
 
         },
         {
@@ -1994,7 +1994,7 @@
                 [ 0, 0, 3, 0, 0],
                 [ 0, 0, 0, 0, 0]
             ],
-            "slots": []
+            "slots": ["Crew","Crew","Gunner","Gunner","Missile","Torpedo","Turret","Modification"]
 
         },
         {
@@ -2085,7 +2085,7 @@
                 [ 0, 0, 2, 0, 0, 3],
                 [ 0, 0, 2, 0, 0, 0]
             ],
-            "slots": []
+            "slots": ["Payload","Astromech","Modification","Hyperspace Ring"]
 
         },
         {
@@ -2116,7 +2116,7 @@
                 [ 0, 0, 1, 0, 0, 3, 0, 0, 0, 0 ],
                 [ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0 ]
             ],
-            "slots": []
+            "slots": ["Cannon","Astromech","Modification","Hyperspace Ring"]
 
         },
         {
@@ -2310,7 +2310,7 @@
                 [ 2, 2, 1, 2, 2, 3],
                 [ 0, 0, 2, 0, 0, 3]
             ],
-            "slots": []
+            "slots": ["Missile","Modification","Sensor"]
 
         },
         {

@@ -3832,6 +3832,21 @@
              "effect": "Toute action #FS# devient #CA#",
              "effect_ENG": "#FS# actions become #CA#",
              "faction": "" 
+         },
+         {
+            "name": "Marauder",
+             "name_ENG": "Marauder",
+             "id":238,
+             "max_per_squad":1,
+             "available":true,
+             "modify":false,
+             "slot":"Title",
+             "add_Data": [0],
+             "charge": [0],
+             "points":0,
+             "effect": "",
+             "effect_ENG": "",
+             "faction": "Galactic_Senate" 
          }
 
 
