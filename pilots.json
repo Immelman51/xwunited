@@ -6792,7 +6792,82 @@
             "ability_ENG": "",
             "slots": [
            ]
+        },
+        {
+            "name": "Ric Ollié",
+            "id": 317,
+            "max_per_squad": 1,
+            "modify": false,
+		    "faction": "Galactic_Senate",
+            "ship": "Naboo Royal N-1 Starfighter",
+            "charge":[0],
+            "force": 0,
+            "shipId": 52,
+            "skill": 5,
+            "points": 6,                        
+            "ability": "Lorsque vous défendez ou effectuez une attaque principale, si la vitesse de votre manoeuvre révélée est plus grande que celle de l'ennemi, lancez 1 dé supplémentaire.",
+            "ability_ENG": "While you defend or perform a primary attack, if the speed of your revealed maneuver is higher than the enemy ship's, roll 1 additional die.",
+            "slots": [
+                "Talent",
+                "Talent"
+           ]
+        },
+        {
+            "name": "Gavyn Sykes",
+            "id": 318,
+            "max_per_squad": 1,
+            "modify": false,
+		    "faction": "Galactic_Senate",
+            "ship": "Naboo Royal N-1 Starfighter",
+            "charge":[0],
+            "force": 0,
+            "shipId": 52,
+            "skill": 3,
+            "points": 6,                        
+            "ability": "Lorsque vous défendez ou attaquez, si la vitesse de votre manoeuvre révélée est plus grande que celle de l'ennemi, vous pouvez relancer vos résultats vierges.",
+            "ability_ENG": "While you defend or perform an attack, if the speed of your revealed maneuver is greater than the enemy ship's, you may reroll your blank results.",
+            "slots": [
+                "Talent"
+           ]
+        },
+        {
+            "name": "Dinée Ellberger",
+            "id": 319,
+            "max_per_squad": 1,
+            "modify": false,
+		    "faction": "Galactic_Senate",
+            "ship": "Naboo Royal N-1 Starfighter",
+            "charge":[0],
+            "force": 0,
+            "shipId": 52,
+            "skill": 3,
+            "points": 6,                        
+            "ability": "Lorsque vous défendez ou attaquez, si la vitesse de votre manoeuvre révélée est la même que celle de l'ennemi, les dés de ce vaisseau ne peuvent pas être modifiés.",
+            "ability_ENG": "While you defend or perform an attack, if the speed of your revealed maneuver is the same as the enemy ship's, that ship's dice cannot be modified.",
+            "slots": [
+                "Talent"
+           ]
+        },
+        {
+            "name": "Anakin Skywalker",
+            "id": 320,
+            "max_per_squad": 1,
+            "modify": false,
+		    "faction": "Galactic_Senate",
+            "ship": "Naboo Royal N-1 Starfighter",
+            "charge":[0],
+            "force": 1,
+            "shipId": 52,
+            "skill": 4,
+            "points": 6,                        
+            "ability": "Avant de révéler votre manoeuvre, vous pouvez dépenser 1 #fo# pour faire un tonneau (ce n'est pas une action).",
+            "ability_ENG": "Before you reveal your maneuver, you may spend 1 #fo# to barrel roll (this is not an action).",
+            "slots": [
+                "Talent",
+                "Force"
+           ]
         }
+
 
 
 

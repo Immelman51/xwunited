@@ -359,6 +359,8 @@ function displayPilot(x){
                     focusRActions[f].setAttribute('src','img/Cc R.jpg');
                 }
                 break;
+            
+
             default :
                 break;
         }

@@ -3671,7 +3671,7 @@
     "charge":[1,"+"],
     "effect": "Placez 1 jeton avec une valeur de 1 à 4 face cachée sur votre pilote, pour indiquer la capacité secrète disponible.<br>1 : Lorsque vous vous engagez, dépensez 1 #ch# pour effectuer une attaque à portée 0.<br>2 : Lorsque vous défendez contre une attaque #mi# ou #to#, vous pouvez dépenser 1 #ch# pour brouiller l'attaquant.<br>3 : Pendant la phase Système, dépensez 1 #ch# pour effectuer une action #BR# ou #BO# de votre barre d'action. La charge ne peut pas être récupérée.<br>4 : Lorsque vous révélez une manoeuvre rouge, dépensez 1 #ch# pour réduire la difficulté de la manoeuvre. Cette charge ne peut pas être récupérée.",
     "effect_ENG": "Place 1 token with a value from 1 to 4 face down on your pilot, to remember the secret ability available.<br>1 : When you engage, spend 1 #ch# to perform an attack at range 0.<br>2 : When you defend against a #mi# or #to# attack, you may spend 1 #ch# to jam the attacker.<br>3 : During System Phase, spend 1 #ch# to perform a #BR# or #BO# action on your action bar. This charge cannot be recovered.<br>4 : When you reveal a red maneuver, spend 1 #ch# to reduce the maneuver difficulty. This charge cannot be recovered.",
-    "faction": "Black_Sun"
+    "faction": ["Black_Sun"]
 },
 
 
@@ -3688,7 +3688,7 @@
     "points": "*2*",
     "effect": "Après qu'un vaisseau allié à portée 0-3 est détruit, si ce vaisseau est limité or possède l'amélioration <i>Egorgeur</i>, vous pouvez retirer 1 de vos marqueurs orange ou rouge, ou récupérer 1 #ch# non récursive sur l'une de vos améliorations, sur votre pilote, ou sur votre leader.",
     "effect_ENG": "After another friendly ship at range 0-3 is destroyed, if that ship is limited or has the Cutthroat upgrade, you may remove 1 of your orange or red tokens, or recover 1 non-recurring  on your ship card or one of your equipped upgrade cards, on your pilot card, or on your leader card.",
-    "faction": "Hutt_Cartel"
+    "faction": ["Hutt_Cartel"]
 },
 
 
@@ -3706,7 +3706,7 @@
     "charge": [1,"0"],
     "effect": "CONFIANCE FRAGILE : Tant que la #ch# sur cette carte est active, lorsque vous attaquez ou défendez, vous pouvez changer un résultat #eye# en un résultat #hit# ou #evd#. <br> MEFIANCE : Durant la phase système, recevez 1 jeton contrainte. Lorsque vous effectuez une action #FS#, recevez 1 jeton de contrainte. <br>ACTION : récupérez 1 #ch#",
     "effect_ENG": "FRAGILE TRUST : While the #ch# on this card is active, when you attack or defend, you may change an #eye# result into a #hit# or #evd# result.<br>DISTRUST : During System phase, gain 1 strain token. When you perform a #FS# action gain 1 strain token. <br>ACTION : recover 1 #ch#.",
-    "faction": "Crime_Syndicates"
+    "faction": ["Crime_Syndicates"]
 },
 
 
@@ -3723,7 +3723,7 @@
     "points": "*1*",
     "effect": "Après qu'un vaisseau allié à portée 0-3 est détruit, si ce vaisseau est limité or possède le talent <i>Discipliné</i>, vous pouvez effectuer une action #TL# ou #BR#.",
     "effect_ENG": "After another friendly ship at range 0-3 is destroyed, if that ship is limited or has the Disciplined upgrade, you may perform a #TL# or #BR# action.",
-    "faction": "ISB"
+    "faction": ["ISB"]
 },
 {
     "name": "Extrémiste",
@@ -3736,7 +3736,7 @@
     "points": "*3*",
     "effect": "Avant de lancer des dés d'attaque, vous pouvez subir un #hit# pour donner un marqueur de contrainte à votre cible.",
     "effect_ENG": "Before you roll attack dice, you may suffer a #hit# to strain your target.",
-    "faction": "Partisans",
+    "faction": ["Partisans"],
     "add_Data": [0],
     "charge": [1,"0"]
 },
@@ -3846,8 +3846,390 @@
              "points":0,
              "effect": "",
              "effect_ENG": "",
-             "faction": "Galactic_Senate" 
+             "faction": ["Galactic_Senate"] 
+         },
+         {
+            "name": "Hyperspace Ring",
+             "name_ENG": "Hyperspace Ring",
+             "id":239,
+             "max_per_squad":8,
+             "available":true,
+             "modify":false,
+             "slot":"Hyperspace Ring",
+             "add_Data": [0],
+             "charge": [1,"0"],
+             "points": 2,
+             "effect": "Mise en Place : Vous commencez dans la réserve. Au début de la phase de fin du tour 1, placez vous dans la portée 1 d'un bord.<br>Tant que votre charge est active, augmentez la difficulté de vos virages serrés. Lorsque vous prenez 1 dégat, dépenser 1 #ch# pour l'annuler.<br>En phase de fin, si votre charge est inactive, vous pouvez larguer votre anneau (petit socle de vaisseau).",
+             "effect_ENG": "Setup : You begin in reserve. At the beginning of the first end phase, place yourself within range 1 of a border.<br>While your charge is active, increase the difficulty of your turn maneuvers. When you take a damage, spend 1 #ch# to cancel it.<br>During End Phase, if you charge is inactive, you may drop your ring (small ship base).",
+             "faction": ""
+         },
+         {
+            "name": "Stoïque",
+             "name_ENG": "Stoic",
+             "id":240,
+             "max_per_squad":8,
+             "available":true,
+             "modify":false,
+             "slot":"Talent",
+             "add_Data": [0],
+             "charge": [1,"0"],
+             "points":1,
+             "effect": "Lorsque vous recevez 1 jeton orange ou rouge, vous pouvez dépenser 1 #ch# pour le retirer.",
+             "effect_ENG": "When you receive 1 red or orange token, you can spend 1 #ch# to remove it.",
+             "faction": ["Jedi_Order"] 
+         },
+         {
+            "name": "Dévoué",
+             "name_ENG": "Dedicated",
+             "id":241,
+             "max_per_squad":8,
+             "available":true,
+             "modify":false,
+             "slot":"Talent",
+             "add_Data": [0],
+             "charge": [0],
+             "points":2,
+             "effect": "Tant qu’un autre vaisseau allié situé dans votre #Larc# ou #Rarc# à portée 0-2 défend, s’il est limité ou possède l’amélioration Dévoué et que vous n’êtes pas contraint, vous pouvez gagner 1 marqueur de contrainte. Dans ce cas, le défenseur relance 1 de ses résultats vierges.",
+             "effect_ENG": "While another friendly ship in your #Larc# or #Rarc# at range 0-2 defends, if it is limited or has the Dedicated upgrade and you are not strained, you may gain 1 strain token. If you do, the defender rerolls 1 of their blank results.",
+             "faction": ["Galactic_Senate"] 
+         },
+         {
+            "name": "Capitaine Clone Rex",
+             "name_ENG": "Clone Captain Rex",
+             "id":242,
+             "max_per_squad":1,
+             "available":true,
+             "modify":false,
+             "slot":"Crew",
+             "add_Data": [0],
+             "charge": [0],
+             "points":3,
+             "effect": "Début de la Mise en Place : Votre adversaire assigne la condition 'Mission Sauvetage d'Otage' à l'un de ses vaisseaux.<br>Mission Sauvetage d'Otage : A la fin du jeu, gagnez 3 points de scénario. Lorsque vous êtes détruit, larguez une 'Capsule de l'Otage' à portée 1 de vous et perdez la condition 'MSO'.<br>Capsule de l'Otage : (Satellite) Quand un vaisseau est à portée 0-1, il peut effectuer une action de sauvetage : (ACTION SCENARIO) : Assignez la condition 'MSO' à votre vaisseau, et remettez la capsule de l'otage en réserve.",
+             "effect_ENG": "Beginning of Setup : Your opponent assign the 'Hostage Rescue Mission' condition to one of his ships.<br>Hostage Rescue Mission : At the end of the game, gain 3 Scenario Points. When you are destroyed, drop a 'Hostage Capsule' at range 1 of you and lose the 'HRM' condition.<br>Hostage Capsule : (Remote) When a ship is at range 0-1, it can do a rescue action : (SCENARIO ACTION) : assign the 'HRM' condition to your ship, and put the Hostage Capsule into Reserve.",
+             "faction": ["Galactic_Senate"] 
+         },
+         {
+            "name": "Omega",
+             "name_ENG": "Omega",
+             "id":243,
+             "max_per_squad":1,
+             "available":true,
+             "modify":false,
+             "slot":"Crew",
+             "add_Data": [0],
+             "charge": [0],
+             "points":5,
+             "effect": "Fin de Partie : Si vous n'êtes pas détruit, gagnez 3 points de scenario.<br>ACTION : Choisissez un vaisseau ennemi à portée 1-2 dans votre arc de tir. Il gagne 2 jetons épuisement.",
+             "effect_ENG": "End Game : If you are not destroyed, gain 3 Scenario Points.<br>ACTION : Choose an enemy ship at range 1-2 in your firing arc. It gains 2 deplete tokens.",
+             "faction": ["Galactic_Senate"] 
+         },
+         {
+            "name": "Artilleur de la 7ème Flotte",
+             "name_ENG": "7th Fleet Gunner",
+             "id":244,
+             "max_per_squad":8,
+             "available":true,
+             "modify":false,
+             "slot":"Gunner",
+             "add_Data": [0],
+             "charge": [0],
+             "points":8,
+             "effect": "",
+             "effect_ENG": "",
+             "faction": ["Galactic_Senate"] 
+         },
+         {
+            "name": "Commandant Clone Cody",
+             "name_ENG": "Clone Commander Cody",
+             "id":245,
+             "max_per_squad":1,
+             "available":true,
+             "modify":false,
+             "slot":"Gunner",
+             "add_Data": [0],
+             "charge": [0],
+             "points":3,
+             "effect": "",
+             "effect_ENG": "",
+             "faction": ["Galactic_Senate"] 
+         },
+         {
+            "name": "'Fives''",
+             "name_ENG": "'Fives'",
+             "id":246,
+             "max_per_squad":1,
+             "available":true,
+             "modify":false,
+             "slot":"Crew",
+             "add_Data": [0],
+             "charge": [0],
+             "points":2,
+             "effect": "",
+             "effect_ENG": "",
+             "faction": ["Galactic_Senate"] 
+         },
+         {
+            "name": "R2-C4",
+             "name_ENG": "R2-C4",
+             "id":247,
+             "max_per_squad":1,
+             "available":true,
+             "modify":false,
+             "slot":"Astromech",
+             "add_Data": [0],
+             "charge": [0],
+             "points":2,
+             "effect": "",
+             "effect_ENG": "",
+             "faction": ["Galactic_Senate"] 
+         },
+         {
+            "name": "Message Prioritaire",
+             "name_ENG": "Priority Message",
+             "id":248,
+             "max_per_squad":1,
+             "available":true,
+             "modify":false,
+             "slot":"Modification",
+             "add_Data": [0],
+             "charge": [0],
+             "points":4,
+             "effect": "",
+             "effect_ENG": "",
+             "faction": ["Galactic_Senate"] 
+         },
+         {
+            "name": "Console Synchronisée",
+             "name_ENG": "Synchronised Console",
+             "id":249,
+             "max_per_squad":8,
+             "available":true,
+             "modify":false,
+             "slot":"Calculator",
+             "add_Data": [0],
+             "charge": [0],
+             "points":1,
+             "effect": "",
+             "effect_ENG": "",
+             "faction": ["Galactic_Senate","Jedi_Order"] 
+         },
+         {
+            "name": "Chancellor Palpatine",
+             "name_ENG": "Chancellier Palpatine",
+             "id":250,
+             "max_per_squad":1,
+             "available":true,
+             "modify":false,
+             "slot":"Crew",
+             "add_Data": [0],
+             "charge": [0],
+             "points":8,
+             "effect": "",
+             "effect_ENG": "",
+             "faction": ["Galactic_Senate","Jedi_Order"] 
+         },
+         {
+            "name": "Kit Fisto",
+             "name_ENG": "Kit Fisto",
+             "id":251,
+             "max_per_squad":1,
+             "available":true,
+             "modify": true,
+             "slot":"Crew",
+             "add_Data": [0],
+             "charge": [0],
+             "points":8,
+             "effect": "",
+             "effect_ENG": "",
+             "faction": ["Jedi_Order"],
+             "modifier_func":[
+
+             ]
+         },
+         {
+            "name": "Wolfpack",
+             "name_ENG": "Wolfpack",
+             "id":252,
+             "max_per_squad":1,
+             "available":true,
+             "modify":true,
+             "slot":"Gunner",
+             "add_Data": [0],
+             "charge": [0],
+             "points":8,
+             "effect": "",
+             "effect_ENG": "",
+             "faction": ["Jedi_Order"],
+             "modifier_func": [
+                [3,"Crew",252]
+             ]
+         },
+         {
+            "name": "Plo Koon",
+             "name_ENG": "Plo Koon",
+             "id":253,
+             "max_per_squad":1,
+             "available":true,
+             "modify":true,
+             "slot":"Crew",
+             "add_Data": [0],
+             "charge": [0],
+             "points":8,
+             "effect": "",
+             "effect_ENG": "",
+             "faction": ["Jedi_Order"],
+             "modifier_func": [
+                
+             ]
+         },
+         {
+            "name": "Yoda",
+             "name_ENG": "Yoda",
+             "id":254,
+             "max_per_squad":1,
+             "available":true,
+             "modify":true,
+             "slot":"Crew",
+             "add_Data": [0],
+             "charge": [0],
+             "points":8,
+             "effect": "",
+             "effect_ENG": "",
+             "faction": ["Jedi_Order"],
+             "modifier_func": [
+                
+             ]
+         },
+         {
+            "name": "Ahsoka Tano",
+             "name_ENG": "Ahsoka Tano",
+             "id":255,
+             "max_per_squad":1,
+             "available":true,
+             "modify":true,
+             "slot":"Gunner",
+             "add_Data": [0],
+             "charge": [0],
+             "points":8,
+             "effect": "",
+             "effect_ENG": "",
+             "faction": ["Jedi_Order"],
+             "modifier_func": [
+                
+             ]
+         },
+         {
+            "name": "Q7 Astromech",
+             "name_ENG": "Q7 Astromech",
+             "id":256,
+             "max_per_squad":8,
+             "available":true,
+             "modify":false,
+             "slot":"Astromech",
+             "add_Data": [0],
+             "charge": [0],
+             "points":2,
+             "effect": "",
+             "effect_ENG": "",
+             "faction": ["Jedi_Order"]
+         },
+         {
+            "name": "R4-P44",
+             "name_ENG": "R4-P44",
+             "id":257,
+             "max_per_squad":1,
+             "available":true,
+             "modify":false,
+             "slot":"Astromech",
+             "add_Data": [0],
+             "charge": [0],
+             "points":2,
+             "effect": "",
+             "effect_ENG": "",
+             "faction": ["Jedi_Order"]
+         },
+         {
+            "name": "R4-P Astromech",
+             "name_ENG": "R4-P Astromech",
+             "id":258,
+             "max_per_squad":8,
+             "available":true,
+             "modify":false,
+             "slot":"Astromech",
+             "add_Data": [0],
+             "charge": [0],
+             "points":2,
+             "effect": "",
+             "effect_ENG": "",
+             "faction": ["Jedi_Order"]
+         },
+         {
+            "name": "R7-A7",
+             "name_ENG": "R7-A7",
+             "id":259,
+             "max_per_squad":1,
+             "available":true,
+             "modify":false,
+             "slot":"Astromech",
+             "add_Data": [0],
+             "charge": [0],
+             "points":2,
+             "effect": "",
+             "effect_ENG": "",
+             "faction": ["Jedi_Order"]
+         },
+         {
+            "name": "R4-P17",
+             "name_ENG": "R4-P17",
+             "id":260,
+             "max_per_squad":1,
+             "available":true,
+             "modify":false,
+             "slot":"Astromech",
+             "add_Data": [0],
+             "charge": [0],
+             "points":2,
+             "effect": "",
+             "effect_ENG": "",
+             "faction": ["Jedi_Order"]
+         },
+         {
+            "name": "Ghost Company",
+             "name_ENG": "Ghost Company",
+             "id":261,
+             "max_per_squad":1,
+             "available":true,
+             "modify":true,
+             "slot":"Gunner",
+             "add_Data": [0],
+             "charge": [0],
+             "points":5,
+             "effect": "",
+             "effect_ENG": "",
+             "faction": ["Jedi_Order"],
+             "modifier_func": [
+                [3,"Crew",252]
+             ]
+         },
+         {
+            "name": "Aayla Secura",
+             "name_ENG": "Aayla Secura",
+             "id":262,
+             "max_per_squad":1,
+             "available":true,
+             "modify":true,
+             "slot":"Crew",
+             "add_Data": [0],
+             "charge": [0],
+             "points":8,
+             "effect": "",
+             "effect_ENG": "",
+             "faction": ["Jedi_Order"],
+             "modifier_func": [
+                
+             ]
          }
+
 
 
 
