@@ -1443,8 +1443,8 @@
             ]
         },
 {
-            "name": "Altruisme",
-            "name_ENG": "Selfless",
+            "name": "*Altruisme",
+            "name_ENG": "*Selfless",
             "id": 94,
             
             "max_per_squad": 8,
@@ -1510,8 +1510,8 @@
             "charge": [2,"+"]
         },
  {
-            "name": "Impitoyable",
-            "name_ENG": "Ruthless",
+            "name": "*Impitoyable",
+            "name_ENG": "*Ruthless",
             "id": 98,
             "max_per_squad": 8,
             "available": true,
@@ -1733,8 +1733,8 @@
             ]
         },
         {
-            "name": "Célèbre",
-            "name_ENG": "Notorious",
+            "name": "*Célèbre",
+            "name_ENG": "*Notorious",
             "id": 113,
             "max_per_squad": 8,
             "available": true,
@@ -1766,8 +1766,8 @@
         },
 
          {
-            "name": "Intrépide",
-            "name_ENG": "Fearless",
+            "name": "*Intrépide",
+            "name_ENG": "*Fearless",
             "id": 115,
             "available": true,
             "modify": false,
@@ -2060,8 +2060,8 @@
             
         },
         {
-            "name": "Roublard",
-            "name_ENG": "Cunning",
+            "name": "*Roublard",
+            "name_ENG": "*Cunning",
             "id": 134,
             "max_per_squad": 8,
             "available": true,
@@ -2356,8 +2356,8 @@
         },
 
         {
-            "name": "Courageux",
-            "name_ENG": "Brave",
+            "name": "*Courageux",
+            "name_ENG": "*Brave",
             "id": 149,
             "max_per_squad": 8,
             "available": true, 
@@ -2487,8 +2487,8 @@
         },
 
         {
-            "name": "Infatigable",
-            "name_ENG": "Relentless",
+            "name": "*Infatigable",
+            "name_ENG": "*Relentless",
             "id": 157,
             "available": true, 
             "modify": false,
@@ -2688,8 +2688,8 @@
         },
 
         {
-            "name": "Héroïque",
-            "name_ENG": "Heroic",
+            "name": "*Héroïque",
+            "name_ENG": "*Heroic",
             "id": 169,
             "max_per_squad": 8,
             "available": true, 
@@ -2857,8 +2857,8 @@
         },
 
         {
-            "name": "Fanatique",
-            "name_ENG": "Fanatical",
+            "name": "*Fanatique",
+            "name_ENG": "*Fanatical",
             "id": 180,
             "max_per_squad": 8,
             "available": true, 
@@ -3600,7 +3600,7 @@
     "slot": "Talent",
     "add_Data": [0],
     "charge": [0],
-    "points": "*5*",
+    "points": "*4*",
     "effect": "Lorsque vous accélérez, vous pouvez utiliser des gabarits #turn# de même vitesse et de même direction à la place",
     "effect_ENG": "While you boost, you may use #turn# templates of the same speed and same direction instead.",
     "faction": ""
@@ -3617,7 +3617,7 @@
     "slot": "Talent",
     "add_Data": [0],
     "charge": [0],
-    "points": "*6*",
+    "points": "*5*",
     "effect": "Tant que vous effectuez une attaque #Farc#, si vous n’êtes pas dans l’arc de tir du défenseur, il lance 1 dé de défense en moins.",
     "faction": ""
 },
@@ -3659,8 +3659,8 @@
 
 
 {
-    "name": "Discret",
-    "name_ENG": "Secretive",
+    "name": "*Discret",
+    "name_ENG": "*Secretive",
     "id": 227,
     "max_per_squad": 8,
     "available": true, 
@@ -3676,8 +3676,8 @@
 
 
 {
-    "name": "Egorgeur",
-    "name_ENG": "Cutthroat",
+    "name": "*Egorgeur",
+    "name_ENG": "*Cutthroat",
     "id": 228,
     "max_per_squad": 8,
     "available": true,
@@ -3694,8 +3694,8 @@
 
 
 {
-    "name": "Confiance Fragile",
-    "name_ENG": "Fragile Trust",
+    "name": "*Confiance Fragile",
+    "name_ENG": "*Fragile Trust",
     "id": 229,
     "max_per_squad": 8,
     "available": true,
@@ -3711,8 +3711,8 @@
 
 
 {
-    "name": "Discipliné",
-    "name_ENG": "Disciplined",
+    "name": "*Discipliné",
+    "name_ENG": "*Disciplined",
     "id": 230,
     "max_per_squad": 8,
     "available": true,
@@ -3726,8 +3726,8 @@
     "faction": ["ISB"]
 },
 {
-    "name": "Extrémiste",
-    "name_ENG": "Extremist",
+    "name": "*Extrémiste",
+    "name_ENG": "*Extremist",
     "id": 231,
     "max_per_squad": 8,
     "available": true,
@@ -3864,8 +3864,8 @@
              "faction": ""
          },
          {
-            "name": "Stoïque",
-             "name_ENG": "Stoic",
+            "name": "*Stoïque",
+             "name_ENG": "*Stoic",
              "id":240,
              "max_per_squad":8,
              "available":true,
@@ -3879,8 +3879,8 @@
              "faction": ["Jedi_Order"] 
          },
          {
-            "name": "Dévoué",
-             "name_ENG": "Dedicated",
+            "name": "*Dévoué",
+             "name_ENG": "*Dedicated",
              "id":241,
              "max_per_squad":8,
              "available":true,
