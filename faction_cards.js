@@ -124,16 +124,16 @@ for (let i=0 ; i<ships.length; i++){ //on va afficher d'abord le vaisseau/chassi
         shipsizetext.setAttribute("class", "size");
         switch(ships[i]['base'][0]){
             case 'Small' :
-                shipsizetext.innerHTML = "Sml";
+                shipsizetext.innerHTML = "Sml ";
                 break;
             case 'Medium' :
-                shipsizetext.innerHTML = "Med" ;
+                shipsizetext.innerHTML = "Med " ;
                 break;
             case 'Large' :
-                shipsizetext.innerHTML = "Lrg";
+                shipsizetext.innerHTML = "Lrg ";
                 break;
             case 'Huge' :
-                shipsizetext.innerHTML = "Hug";
+                shipsizetext.innerHTML = "Hug ";
                 break;
             default : 
                 console.log("error ship size logo " + i) ;   
