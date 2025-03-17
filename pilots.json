@@ -6866,7 +6866,213 @@
                 "Talent",
                 "Force"
            ]
+        },
+        {
+            "name": "'Duchess'",
+            "id": 321,
+            "max_per_squad": 1,
+            "modify": false,
+		    "faction": "I.S.B",
+            "ship": "TIE/sk Striker",
+            "charge":[0],
+            "force": 0,
+            "shipId": 35,
+            "skill": 5,
+            "points": 7,                        
+            "ability": "Vous pouvez choisir de ne pas utiliser vos <strong>Ailerons Adaptatifs</strong>.<br>Vous pouvez utiliser vos <strong>Ailerons Adaptatifs</strong> même stressé.",
+            "ability_ENG": "You may choose not to use your <strong>Adaptive Ailerons</strong>.<br>You may use your <strong>Adaptive Ailerons</strong> even while stressed.",
+            "slots": [
+                "Talent",
+                "Talent"
+           ]
+        },
+        {
+            "name": "'Countdown'",
+            "id": 322,
+            "max_per_squad": 1,
+            "modify": false,
+		    "faction": "I.S.B",
+            "ship": "TIE/sk Striker",
+            "charge":[0],
+            "force": 0,
+            "shipId": 35,
+            "skill": 4,
+            "points": 7,                        
+            "ability": "Lorsque vous défendez, après l'étape 'Neutraliser les résultats', si vous n'êtes pas stressé, vous pouvez subir 1 #hit# et recevoir 1 jeton stress. Dans ce cas, annulez tous les résultats des dés.",
+            "ability_ENG": "While you defend, after the Neutralize Results step, if you are not stressed, you may suffer 1 #hit# damage and gain 1 stress token. If you do, cancel all dice results.",
+            "slots": [
+                "Talent"
+           ]
+        },
+        {
+            "name": "'Pure Sabacc'",
+            "id": 323,
+            "max_per_squad": 1,
+            "modify": false,
+		    "faction": "I.S.B",
+            "ship": "TIE/sk Striker",
+            "charge":[0],
+            "force": 0,
+            "shipId": 35,
+            "skill": 4,
+            "points": 7,                        
+            "ability": "Lorsque vous attaquez, si vous avez 1 dégat ou moins, vous pouvez lancer 1 dé d'attaque supplémentaire.",
+            "ability_ENG": "While you perform an attack, if you have 1 or fewer damage cards, you may roll 1 additional attack die.",
+            "slots": [
+                "Talent"
+           ]
+        },
+        {
+            "name": "'Vagabond'",
+            "id": 324,
+            "max_per_squad": 1,
+            "modify": false,
+		    "faction": "I.S.B",
+            "ship": "TIE/sk Striker",
+            "charge":[0],
+            "force": 0,
+            "shipId": 35,
+            "skill": 2,
+            "points": 6,                        
+            "ability": "Après avoir utilisé vos Ailerons Adaptatifs, si vous n'êtes pas stressé, vous pouvez larguer 1 engin.",
+            "ability_ENG": "After you move using your Adaptive Ailerons, if you are not stressed you may drop 1 payload.",
+            "slots": [
+                "Talent"
+           ]
+        },
+        {
+            "name": "Sentinelle Planétaire",
+            "name_ENG": "Planetary Sentinel",
+            "id": 325,
+            "max_per_squad": 8,
+            "modify": false,
+		    "faction": "I.S.B",
+            "ship": "TIE/sk Striker",
+            "charge":[0],
+            "force": 0,
+            "shipId": 35,
+            "skill": 1,
+            "points": 5,                        
+            "ability": "",
+            "ability_ENG": "",
+            "slots": [
+           ]
+        },
+        {
+            "name": "Captain Feroph",
+            "name_ENG": "Captain Feroph",
+            "id": 326,
+            "max_per_squad": 1,
+            "modify": false,
+		    "faction": "I.S.B",
+            "ship": "TIE Reaper",
+            "charge":[0],
+            "force": 0,
+            "shipId": 42,
+            "skill": 3,
+            "points": 7,                        
+            "ability": "Lorsque vous défendez, si l'attaquant n'a pas de jeton vert, vous pouvez modifier l'un de vos résultats vierge ou #eye# en un résultat #evd#.",
+            "ability_ENG": "While you defend, if the attacker does not have any green tokens, you may change 1 of your blank or #eye# results to an #evd# result.",
+            "slots": [
+                "Talent"
+           ]
+        },
+        {
+            "name": "Major Vermeil",
+            "name_ENG": "Major Vermeil",
+            "id": 327,
+            "max_per_squad": 1,
+            "modify": false,
+		    "faction": "I.S.B",
+            "ship": "TIE Reaper",
+            "charge":[0],
+            "force": 0,
+            "shipId": 42,
+            "skill": 4,
+            "points": 7,                        
+            "ability": "Lorsque vous attaquez, si le défenseur n'a pas de jeton vert, vous pouvez modifier l'un de vos résultats vierge ou #eye# en un résultat #hit#.",
+            "ability_ENG": "While you perform an attack, if the defender does not have any green tokens, you may change 1 of your blank or #eye# results to a #hit# result.",
+            "slots": [
+                "Talent"
+           ]
+        },
+        {
+            "name": "Vizier",
+            "name_ENG": "Vizier",
+            "id": 328,
+            "max_per_squad": 1,
+            "modify": false,
+		    "faction": "I.S.B",
+            "ship": "TIE Reaper",
+            "charge":[0],
+            "force": 0,
+            "shipId": 42,
+            "skill": 2,
+            "points": 7,                        
+            "ability": "Après vous être déplacé en utilisant vos Ailerons Contrôlables, vous pouvez effectuer une action #CD#. Dans ce cas, sautez votre étape 'Effectuer une action'.",
+            "ability_ENG": "After you move using your Controlled Ailerons ship ability, you may perform a #CD# action. If you do, skip your Perform Action step.",
+            "slots": [
+                "Talent"
+           ]
+        },
+        {
+            "name": "Double Edge",
+            "name_ENG": "Double Edge",
+            "id": 329,
+            "max_per_squad": 1,
+            "modify": false,
+		    "faction": "I.S.B",
+            "ship": "TIE/ag Aggressor",
+            "charge":[0],
+            "force": 0,
+            "shipId": 38,
+            "skill": 2,
+            "points": 5,                        
+            "ability": "Après avoir effectuer une attaque spéciale qui a manqué, vous pouvez effectuer une attaque bonus en utilisant une arme différente.",
+            "ability_ENG": "After you perform a special attack that misses, you may perform a bonus attack using a different weapon.",
+            "slots": [
+                "Talent"
+           ]
+        },
+        {
+            "name": "Lieutenant Kestal",
+            "name_ENG": "Lieutenant Kestal",
+            "id": 330,
+            "max_per_squad": 1,
+            "modify": false,
+		    "faction": "I.S.B",
+            "ship": "TIE/ag Aggressor",
+            "charge":[0],
+            "force": 0,
+            "shipId": 38,
+            "skill": 2,
+            "points": 5,                        
+            "ability": "Lorsque vous attaquez, après que le défenseur a lancé ses dés de défense, vous pouvez dépenser 1 jeton de concentration pour anuler tous les résultats vierge/#eye#.",
+            "ability_ENG": "While you perform an attack, after the defender rolls defense dice, you may spend 1 focus token to cancel all of the defender's blank/#eye# results.",
+            "slots": [
+                "Talent"
+           ]
+        },
+        {
+            "name": "Eclaireurs de l'Escadron Onyx",
+            "name_ENG": "Onyx Squadron Scout",
+            "id": 331,
+            "max_per_squad": 8,
+            "modify": false,
+		    "faction": "I.S.B",
+            "ship": "TIE/ag Aggressor",
+            "charge":[0],
+            "force": 0,
+            "shipId": 38,
+            "skill": 2,
+            "points": 5,                        
+            "ability": "",
+            "ability_ENG": "",
+            "slots": [
+           ]
         }
+
+
 
 
 
