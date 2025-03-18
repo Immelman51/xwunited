@@ -601,7 +601,7 @@
         {
     
             "name": "YV-666 Light Freighter",
-            "factions": [ "Hutt_Cartel", "Crime Syndicate", "Bounty_Hunters_Guild" ],
+            "factions": [ "Hutt_Cartel", "Crime_Syndicates", "Bounty_Hunters_Guild" ],
             "chassis":[0],
             "id": 21,
             "attack": [["180",3]],
@@ -2781,6 +2781,35 @@
                 [ 0, 0, 1, 0, 0, 3,0,0]
             ],
             "slots": ["Crew","Gunner","Gunner","Missile","Turret","Modification"]
+        },
+        {
+            "name": "Modified TIE/ln Fighter",
+            "factions": ["Crime_Syndicates"],
+            "id": 98,
+            "base": ["Small"],
+            "keyword":[],
+            "attack": [["F",2]],
+            "agility": 3,
+            "hull": 3,
+            "shields": 0,
+            "chassis": [31],
+            "actions": [
+                [0,"Fo W"],
+                [0,"Br W"],
+                [0,"Ev W"]
+            ],
+            "maneuvers": [
+                [ 0, 0, 0, 0, 0, 0],
+                [ 2, 0, 0, 0, 2, 0],
+                [ 2, 1, 1, 1, 2, 0],
+                [ 2, 2, 1, 2, 2, 3],
+                [ 0, 0, 2, 0, 0, 0],
+                [ 0, 0, 3, 0, 0, 0]
+            ],
+            "slots": [
+                "Illicit",
+                "Modification"
+            ]
         }
         
         

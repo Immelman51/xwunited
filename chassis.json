@@ -254,7 +254,7 @@
     "name":"Notched Stabilizers",
     "id":31,
     "nbrOfEffects": 1,
-    "effect1":"<em><strong>Stabilisateurs Crantés : </strong></em>Tant que vous vous déplacez, ignorez les astéroïdes.",
+    "effect1":"<em><strong>Stabilisateurs Crantés : </strong></em>Tant que vous vous déplacez, ignorez les astéroïdes et les débris.",
     "effect2": "",
     "effect3": "" 
 },
