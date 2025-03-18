@@ -305,7 +305,7 @@
             "skill": 5,
             "points": 7,
             
-            "title": ["Moldy Crow"],
+            "title": ["Moldy Crow",1],
             "ability": "Tant qu’un vaisseau allié situé dans votre arc de tir effectue une attaque principale, si vous n’êtes pas stressé, vous pouvez gagner 1 marqueur de stress. Dans ce cas, ce vaisseau peut lancer 1 dé d’attaque supplémentaire.",
             "ability_ENG": "While a friendly ship in your firing arc performs a primary attack, if you are not stressed, you may receive 1 stress token. If you do, this ship may roll 1 additional attack die.",
             "slots": [
@@ -358,7 +358,7 @@
             "skill": 3,
             "points": 6,
             
-            "title": ["Moldy Crow"],
+            "title": ["Moldy Crow",1],
             "ability": "Au début de la phase d’engagement, vous pouvez transférer 1 de vos marqueurs de concentration à un vaisseau allié situé dans votre arc de tir.",
             "ability_ENG": "At the beginning of Engagement Phase, you may transfer 1 of your focus tokens to a friendly ship in your firing arc.",
             "slots": [
@@ -388,7 +388,7 @@
             "skill": 3,
             "points": 8,
             
-            "title": ["Moldy Crow"],
+            "title": ["Moldy Crow",1],
             "ability": "Au début de la phase d’engagement, vous pouvez transférer un marqueur de stress de votre vaisseau vers un vaisseau allié dans votre arc de tir. Lorsque vous retirez un marqueur de stress de votre vaisseau, vous pouvez effectuer une action.",
             "ability_ENG": "At the beginning of Engagement Phase, you may transfer 1 stress token from you to a friendly ship in your firing arc. When you remove a stress token from you, you may perform an action.",
             "slots": [
@@ -1379,7 +1379,7 @@
             "max_per_squad": 1,
             "charge":[0],
             "force": 3,
-            "title": ["Nightbrother"],
+            "title": ["Nightbrother",1],
             "ability": "Lorsque vous effectuez une action #CO# , vous pouvez dépenser 1#fo# . Dans ce cas, considérez l’action comme blanche et vous pouvez coordonner 1 vaisseau allié supplémentaire ; chaque vaisseau allié que vous avez coordonné ainsi gagne 1 marqueur de contrainte.",
             "ability_ENG": "While you perform a #CO# action, you may spend 1#fo#. If you do, consider it as a white action, and you may coordinate 1 additional friendly ship ; each friendly ship you have coordinated this way receives 1 strain token.", 
             "slots": [
@@ -1406,7 +1406,7 @@
             "skill": 5,
             "points": 9,
             
-            "title": ["Razor Crest"],
+            "title": ["Razor Crest",1],
             "max_per_squad": 1,
             "ability": "Lorsque vous défendez ou effectuez une attaque, si vous êtes dans le  #Farc#  à portée 1-2 de 2 vaisseaux ennemis ou plus, vous pouvez changer 1 de vos résultats vierges en résultat #eye#.",
             "ability_ENG": "While you defend or perform an attack, if you are in the #Farc# at range 1-2 of 2 enemy ships or more, you may change 1 of your blank results into a #eye# result.",
@@ -1435,7 +1435,7 @@
             "points": 8,
             
             "max_per_squad": 1,
-            "title": ["Razor Crest"],
+            "title": ["Razor Crest",1],
             "ability": "MISE EN PLACE : Si l’amélioration  #mod# que vous équipez possède 1 ou plusieurs charges, ajoutez en une supplémentaire.",
             "ability_ENG": "SETUP : If the #mod# upgrade you equip has 1 or more charges, add 1 additional #ch#.", 
             "slots": [
@@ -1463,7 +1463,7 @@
             "points": 7,
             
             "max_per_squad": 1,
-            "title": ["Razor Crest"],
+            "title": ["Razor Crest",1],
             "ability": "Lorsque vous attaquez vous pouvez dépenser 1#ch# sur l’une de vos cartes #ill#  pour lancer 1 dé d’attaque supplémentaire.",
             "ability_ENG": "While you attack, you may spend 1 #ch# from 1 of your #ill# upgrade card. If you do, roll 1 additional attack die.",
             "slots": [
@@ -1489,7 +1489,7 @@
             "points": 6,
             
             "max_per_squad": 1,
-            "title": ["Din Djarin's N1"],
+            "title": ["Din Djarin's N1",1],
             "ability": "Lorsque vous défendez ou effectuez une attaque, si vous êtes dans le  #Farc#  à portée 1-2 de 2 vaisseaux ennemis ou plus, vous pouvez changer 1 de vos résultats vierges en résultat #eye#.",
             "ability_ENG": "While you defend or perform an attack, if you are in the #Farc# at range 1-2 of 2 enemy ships or more, you may change 1 of your blank results into a #eye# result.",
             "slots": [
@@ -1521,7 +1521,7 @@
             "points": 5,
             
             "max_per_squad": 1,
-            "title": ["Din Djarin's N1"],
+            "title": ["Din Djarin's N1",1],
             "ability": "Lorsqu’un vaisseau à portée 0-2 subit des dégâts, vous pouvez récupérer 1#fo#",
             "ability_ENG": "While a friendly ship at range 0-2 suffers any damage, you may recover 1#fo#", 
             "slots": [
@@ -1571,7 +1571,7 @@
 		    "points": 4,
             
             "max_per_squad": 1,
-            "title": ["Din Djarin's N1"],
+            "title": ["Din Djarin's N1",1],
             "ability": "Lorsqu’une attaque contre vous échoue, gagnez 1 marqueur de calcul.",
             "ability_ENG": "While an attack against you fails, receive 1 calculate token.", 
             "slots": [
@@ -1773,7 +1773,7 @@
             "skill": 5,
             "points": 9,
             
-            "title": ["Outrider"],
+            "title": ["Outrider",1],
             "ability": "Lorsque vous vous déplacez, ignorez les obstacles",
             "ability_ENG": "While you move, ignore obstacles",
             "slots": [
@@ -1802,7 +1802,7 @@
             "skill": 3,
             "points": 8,
             
-            "title": ["Outrider"],
+            "title": ["Outrider",1],
             "ability": "Après avoir défendu ou attaqué, si vous avez dépensé un marqueur de calcul, recevez un jeton calcul.",
             "ability_ENG": "After you defend or perform an attack, if you spend a calculate token, receive a calculate token.",
             "slots": [
@@ -1842,7 +1842,7 @@
             "max_per_squad": 1,
             "faction": "Pirates_and_Smugglers",
             "ship": "YT-1300 Light Freighter",
-            "title": ["Millenium Falcon"],
+            "title": ["Millenium Falcon",1],
             "modify": true,
 	        "charge":[0],
             "force": 0,
@@ -1895,7 +1895,7 @@
             "max_per_squad": 1,
             "faction": "Pirates_and_Smugglers",
             "ship": "YT-1300 Light Freighter",
-            "title": ["Millenium Falcon"],
+            "title": ["Millenium Falcon",1],
             "force": 0,
             "shipId": 3,
 		    "modify": false,
@@ -2084,7 +2084,7 @@
             "skill": 1,
             "points": 12,
             
-            "title": ["Slave 1"],
+            "title": ["Slave 1",1],
             "ability": "ACTION : Choisissez 2 vaisseaux non énormes à portée 0-3 de vous qui ne sont pas alliés l’un l’autre. Chaque vaisseau peut effectuer une action qui se trouve sur votre barre d’action, même stressé, dans l’ordre de votre choix. Puis gagner 1 jeton calcul.",
             "ability_ENG": "ACTION : Choose 2 non huge ships at range 0-3 of you who are not friendly to each other. Each ship may perform an action which is on its action bar, even stressed, in the order of your choice. Then receive 1 calculate token.",
             "slots": [
@@ -2115,7 +2115,7 @@
             "skill": 4,
             "points": 12,
             
-            "title": ["Andrasta"],
+            "title": ["Andrasta",1],
             "ability": "Si vous devez larguer un engin en utilisant le gabarit 1#straight#, vous pouvez utiliser à la place un gabarit 3#Lturn# ou 3#straight# ou 3#Rturn#",
             "ability_ENG": "If you would drop a device using the 1 #straight# template, you may use a 3 #Lturn# or #straight# or #Rturn# template instead.",
             "slots": [
@@ -2259,7 +2259,7 @@
             "max_per_squad": 1,
             "faction": "Pirates_and_Smugglers",
             "ship": "Scurrg H-6 Bomber",
-            "title": ["Havoc"],
+            "title": ["Havoc",1],
             "force": 0,
             "shipId": 37,
 		    "modify": true,
@@ -2327,7 +2327,7 @@
             "max_per_squad": 1,
             "faction": "Pirates_and_Smugglers",
             "ship": "Scurrg H-6 Bomber",
-            "title": ["Havoc"],
+            "title": ["Havoc",1],
             "force": 0,
             "shipId": 37,
 		    "modify": true,
@@ -2463,7 +2463,7 @@
             "skill": 4,
             "points": 11,
             
-            "title": ["IG-2000"],
+            "title": ["IG-2000",4],
             "ability": "Au début de la phase d’engagement, vous pouvez choisir 1 vaisseau allié à portée 1–3 avec #CA# dans sa barre d’action. Dans ce cas, transférez-lui 1 de vos jetons calcul.",
             "ability_ENG": "At the beginning of Engagement Phase, you may choose 1 friendly ship at range 1-3 with #CA# in its action bar. If you do, transfer 1 of your calculate tokens to him.",
             "slots": [
@@ -2494,7 +2494,7 @@
             "shipId": 20,
             "skill": 4,
             "points": 11,
-            "title": ["IG-2000"],
+            "title": ["IG-2000",4],
             
             "ability": "Après avoir effectué une attaque ratée, vous pouvez effectuer une attaque bonus #can#",
             "ability_ENG": "After you perform a failed attack, you may perform a bonus #can# attack", 
@@ -2524,7 +2524,7 @@
             "shipId": 20,
             "skill": 4,
             "points": 11,
-            "title": ["IG-2000"],
+            "title": ["IG-2000",4],
             
             "ability": "Après avoir effectué une action #BO# , vous pouvez effectuer une action #EV# .",
             "ability_ENG": "After you perform a #BO# action, you mau perform a #EV# action.",
@@ -2555,7 +2555,7 @@
             "skill": 4,
             "points": 10,
             
-            "title": ["IG-2000"],
+            "title": ["IG-2000",4],
             "ability": "Tant que vous exécutez une manœuvre Boucle de Segnor #Sleft# ou #Sright# ), vous pouvez utiliser un autre gabarit de même vitesse mais de même direction à la place.",
             "ability_ENG": "While you execute a Segnor Loop #Sleft# or #Sright# maneuver, you may use another template of the same speed and same direction instead.",
             "slots": [
@@ -2585,7 +2585,7 @@
             "points": 8,
             
             "max_per_squad": 1,
-            "title": ["Razor Crest"],
+            "title": ["Razor Crest",1],
             "ability": "Tant que vous défendez ou effectuez une attaque si vous êtes dans le #Farc# à portée 1-2 d'au moins 2 vaisseaux ennemis, vous pouvez changer 1 de vos résultats vierges en un résultat #eye#.",
             "ability_ENG": "While you defend or perform an attack, if you are in the #Farc# at range 1-2 of at least 2 enemy ships, you may change 1 of your blank results into a #eye# result.",
             "slots": [
@@ -2612,7 +2612,7 @@
             "points": 7,
             
             "max_per_squad": 1,
-            "title": ["Razor Crest"],
+            "title": ["Razor Crest",1],
             "ability_ENG": "After you fully execute an advanced maneuver, you may perform a #CA# or #BR# action, even while stressed. If you do, receive a strain token.",
             "ability": "Après avoir entièrement exécuté une manœuvre avancée, vous pouvez effectuer une action #CA# ou #BR#, même si vous êtes stressé. Dans ce cas, gagnez 1 jeton contrainte.", 
             "slots": [
@@ -2640,7 +2640,7 @@
             "skill": 3,
             "points": 8,
             
-            "title": ["Mist Hunter"],
+            "title": ["Mist Hunter",1],
             "ability": "Après avoir entièrement exécuté une manœuvre rouge, gagnez 1 jeton calcul. Au début de la phase de fin, vous pouvez choisir un vaisseau à portée 0–1. Dans ce cas, transférez 1 de vos jetons stress à ce vaisseau.",
             "ability_ENG": "After you fully execute a red maneuver, receive 1 calculate token. At the beginning of End Phase, you may choose 1 ship at range 0-1. If you do, transfer 1 of your stress tokens to this ship.",
             "slots": [
@@ -2662,7 +2662,7 @@
             "max_per_squad": 1,
             "faction": "Bounty_Hunters_Guild",
             "ship": "G-1A Starfighter",
-            "title": ["Mist Hunter"],
+            "title": ["Mist Hunter",1],
             "charge":[0],
             "force": 0,
             "shipId": 28,
@@ -2693,7 +2693,7 @@
             "skill": 6,
             "charge": [1,"+"],
             "points": 10,
-            "title": ["Punishing One"],
+            "title": ["Punishing One",1],
             "ability": "Après avoir défendu, si l’attaquant est dans votre #Farc#, vous pouvez dépenser 1 #ch# pour effectuer une attaque bonus contre cet attaquant.",
             "ability_ENG": "After you defend, if the attacker is in yout #Farc#, you may spend 1 #ch# to perform a bonus attack against this attacker.",
             "slots": [
@@ -2744,7 +2744,7 @@
             "skill": 3,
             "points": 8,
             
-            "title": ["Punishing One"],
+            "title": ["Punishing One",1],
             "ability": "Au début de la phase d’engagement, vous pouvez choisir un vaisseau allié à portée 0–2. Dans ce cas, transférez à ce vaisseau tout ou partie de vos marqueurs verts et/ou rouge.",
             "ability_ENG": "At the beginning of Engagement Phase, you may choose a friendly ship at range 0-2. If you do, transfer any number of your green and/or red tokens to this ship.",
             "slots": [
@@ -2858,7 +2858,7 @@
             "skill": 4,
             "points": 10,
             
-            "title": ["Hound's Tooth"],
+            "title": ["Hound's Tooth",1],
             "ability": "Tant que vous effectuez une attaque principale, après l’étape « Neutraliser les résultats », vous pouvez dépenser 1 résultat #crit# pour ajouter 2 résultats #hit# .",
             "ability_ENG": "While you perform a primary attack, after the 'Neutralize Results' step, you may spend 1 #crit# result to add 2 #hit# results.",
             "slots": [
@@ -2930,7 +2930,7 @@
           
             "points": 7,
             
-            "title": ["Xanadu Blood"],
+            "title": ["Xanadu Blood",1],
             "ability": "Après avoir effectué une attaque qui a touché, vous pouvez dépenser 2 #ch# pour transférer 1 de vos jetons rouges non-verrouillage ou orange au défenseur.",
             "ability_ENG": "After you perform an attack that hits, you may spend 2 #ch# to transfer 1 of your non lock red tokens or orange tokens to the defender.",
             "slots": [
@@ -2999,7 +2999,7 @@
             "skill": 5,
             "points": 14,
             
-            "title": ["Slave 1"],
+            "title": ["Slave 1",1],
             "ability": "Tant que vous défendez ou effectuez une attaque, vous pouvez relancer 1 de vos dés pour chaque vaisseau ennemi à portée 0–1.",
             "ability_ENG": "While you defend or perform an attack, you may reroll 1 of your dice for each enemy ship at range 0-1",
             "slots": [
@@ -3029,7 +3029,7 @@
             "points": 13,
             
 		    "modify": true,
-            "title": ["Slave 1"],
+            "title": ["Slave 1",1],
             "ability": "Avant de vous engager, vous pouvez dépenser 1 #fo# pour choisir 2 vaisseaux ennemis à portée 0-1. Transférez n'importe quel nombre de jetons orange et rouges entre ces 2 vaisseaux.",
             "ability_ENG": "Before you engage, you may spend 1 #fo# to choose 2 enemy ships at range 0-1. Tranfer as many orange or red tokens between those 2 ships",
             "slots": [
@@ -3076,7 +3076,7 @@
             "shipId": 25,
 	        "modify": true,
             "skill": 6,
-            "title": ["Ghost"],
+            "title": ["Ghost",1],
             "points": 12,
             
             "ability": "Après avoir révélé une manoeuvre rouge ou bleue, vous pouvez modifier votre cadran pour une autre manoeuvre de même difficulté.",
@@ -3104,7 +3104,7 @@
             "charge":[0],
             "force": "2+",
     
-            "title": ["Ghost"],
+            "title": ["Ghost",1],
             "points": 12,
             
             "ability": "Lorsqu'un vaisseau allié dans votre arc de tir défend, vous pouvez dépenser 1 #fo#. Dans ce cas, l'attaquant lance 1 dé d'attaque en moins.",
@@ -3130,7 +3130,7 @@
             "force": 0,
             "shipId": 25,
             "skill": 2,
-            "title": ["Ghost"],
+            "title": ["Ghost",1],
             "points": 10,
             
             "ability": "Au début de la phase d'engagement, chaque vaisseau ennemi à portée 0 reçoit 2 jetons brouillage.",
@@ -3157,7 +3157,7 @@
             "force": 0,
             "shipId": 25,
             "skill": 4,
-            "title": ["Ghost"],
+            "title": ["Ghost",1],
             "points": 10,
             
             "ability": "Lorsque vous défendez, si l'attaquant a modifié au moins 1 dé d'attaque, vous pouvez lancer 1 dé de défense supplémentaire.",
@@ -3183,7 +3183,7 @@
             "shipId": 26,
             "skill": 6,
             "modify": true,
-		    "title": ["Phantom 1"],
+		    "title": ["Phantom 1",1],
             "points": 6,
             
             "ability": "Après avoir révélé une manoeuvre rouge ou bleue, vous pouvez modifier votre cadran pour une autre manoeuvre de même difficulté.",
@@ -3210,7 +3210,7 @@
             "shipId": 26,
             "skill": 3,
             "modify": true,
-		    "title": ["Phantom 1"],
+		    "title": ["Phantom 1",1],
             "points": 6,
             
             "ability": "Avant de vous activer, vous pouvez effectuer une action de #BR# ou #BO#.",
@@ -3236,7 +3236,7 @@
             "charge":[0],
             "force": 2,
             "modify": true,
-            "title": ["Phantom 1"],
+            "title": ["Phantom 1",1],
             "points": 6,
             
             "ability": "Lorsqu'un vaisseau allié dans votre arc de tir défend, vous pouvez dépenser 1 #fo#. Dans ce cas, l'attaquant lance 1 dé d'attaque en moins.",
@@ -3262,7 +3262,7 @@
             "shipId": 26,
             "skill": 2,
             "modify": true,
-		    "title": ["Phantom 1"],
+		    "title": ["Phantom 1",1],
             "points": 5,
             
             "ability": "Lorsque vous défendez, les résultat #crit# sont neutralisés avant les résultats #hit#.",
@@ -3287,7 +3287,7 @@
             "shipId": 41,
             "skill": 1,
             "modify": true,
-		    "title": ["Phantom 2"],
+		    "title": ["Phantom 2",1],
             "points": 5,
             
             "ability": "Lorsque vous coordonnez, si vous choisissez un vaisseau avec exactement 1 jeton stress, il peut effectuer des actions.", 
@@ -3314,7 +3314,7 @@
             "shipId": 41,
             "skill": 4,
             "modify": true,
-		    "title": ["Phantom 2"],
+		    "title": ["Phantom 2",1],
             "points": 6,
             
             "ability": "Lorsque vous défendez, si l'attaquant a modifié au moins 1 dé d'attaque, vous pouvez lancer 1 dé de défense supplémentaire.",
@@ -3341,7 +3341,7 @@
             "charge":[0],
             "force": 3,
             "modify": true,
-            "title": ["Phantom 2"],
+            "title": ["Phantom 2",1],
             "points": 6,
             
             "ability": "Après avoir entièrement effectué une manoeuvre, vous pouvez choisir un vaisseau allié à portée 1-2 et dépenser 2 #fo#. Ce vaisseau peut effectuer une action, même stressé.",
@@ -3369,7 +3369,7 @@
             "skill": 2,
             "points": 5,
             "modify": true,
-		    "title": ["Phantom 2"],
+		    "title": ["Phantom 2",1],
             
             "ability": "Après avoir attaqué, assignez la condition 'Tir de Suppression' au défenseur.",
             "ability_ENG": "After you perform an attack, assign the Suppressive Fire condition to the defender.",
@@ -3395,7 +3395,7 @@
             "skill": 3,
             "points": 4,
             "modify": true,
-		    "title": ["Sabine's Masterpiece"],
+		    "title": ["Sabine's Masterpiece",1],
             
             "ability": "Avant de vous activer, vous pouvez effectuer une action #BR# ou #BO#.", 
             "ability_ENG": "Before you activate, you may perform a #BR# or #BO# action.",
@@ -3422,7 +3422,7 @@
             "force": 1,
             "modify": true,
             "points": 4,
-            "title": ["Sabine's Masterpiece"],
+            "title": ["Sabine's Masterpiece",1],
             
             "ability": "Lorsque vous défendez ou attaquez, si vous êtes stressé, vous pouvez dépenser 1 #fo# pour modifier jusqu'à 2 de vos résultats #eye# en #hit# ou #evd#.",
             "ability_ENG": "While you defend or perform an attack, if you are stressed, you may spend 1 #fo# to change up to 2 of your #eye# results to #hit# or #evd# results.",
@@ -3450,7 +3450,7 @@
             "skill": 2,
             "points": 3,
             "modify": true,
-		    "title": ["Sabine's Masterpiece"],
+		    "title": ["Sabine's Masterpiece",1],
             
             "ability": "Après avoir attaqué, assignez la condition 'Tir de Suppression' au défenseur.",
             "ability_ENG": "After you perform an attack, assign the Suppressive Fire condition to the defender.",
@@ -3477,7 +3477,7 @@
             "skill": 2,
             "points": 3,
             "modify": true,
-		    "title": ["Sabine's Masterpiece"],
+		    "title": ["Sabine's Masterpiece",1],
             
             "ability": "Lorsque vous défendez, les résultats #crit# sont neutralisés avant les #hit#.",
             "ability_ENG": "While you defend, #crit# results are neutralized before #hit# results.",
@@ -3503,7 +3503,7 @@
             "charge":[0],
             "force": 1,
             "modify": true, 
-            "title": ["Nightbrother"],
+            "title": ["Nightbrother",1],
             
             "ability": "Lorsque vous défendez ou attaquez, si vous êtes stressé, vous pouvez dépenser 1 #fo# pour modifier jusqu'à 2 de vos résultats #eye# en #hit# ou #evd#.",
             "ability_ENG": "While you defend or perform an attack, if you are stressed, you may spend 1 #fo# to change up to 2 of your #eye# results to #hit# or #evd# results.",
@@ -3528,7 +3528,7 @@
             "shipId": 77,
             "skill": 3,
             "points": 10,
-            "title": ["Nightbrother"],
+            "title": ["Nightbrother",1],
             "modify": true,
 		    
             "ability": "Au début de la phase d'engagement, chaque vaisseau ennemi à portée 0 reçoit 2 jeton brouillage.", 
@@ -3555,7 +3555,7 @@
             "shipId": 16,
             "skill": 2,
             "points": 9,
-            "title": ["Sato's Hammer"],
+            "title": ["Sato's Hammer",1],
 		    "modify": true,
             
             "ability": "Au début de la phase d'engagement, vous pouvez effectuer une action rouge #BR#.",
@@ -3581,7 +3581,7 @@
             "skill": 1,
             "points": 8,
             "modify": true,
-		    "title": ["Sato's Hammer"],
+		    "title": ["Sato's Hammer",1],
             
             "ability": "Après avoir défendu contre une attaque portée 1, l'attaquant reçoit 1 jeton de contrainte.",
             "ability_ENG": "After you defend against a Range 1 attack, the attacker gains 1 strain token.",
@@ -3606,7 +3606,7 @@
             "skill": 5,
             "points": 9,
             "modify": true,
-		    "title": ["Mighty Oak Apocalypse"],
+		    "title": ["Mighty Oak Apocalypse",1],
             
             "ability": "Tant que vous êtes stressé, ignorez Sensor Blackout.", 
             "ability_ENG": "While you are stressed, you ignore the Sensor Blackout ability.",
@@ -3632,7 +3632,7 @@
             "skill": 4,
             "points": 8,
             "modify": true,
-		    "title": ["Mighty Oak Apocalypse"],
+		    "title": ["Mighty Oak Apocalypse",1],
             
             "ability": "Lorsque vous attaquez, vous pouvez dépenser 1 résultat #eye#, #crit# ou #hit# pour regarder les cartes de dégat face cachée du défenseur, en choisir 1, et l'exposer.",
             "ability_ENG": "While you perform an attack, you may spend 1 #eye#, #crit#, or #hit# result to look at the defender's facedown damage cards, choose 1, and expose it.",
@@ -3760,7 +3760,7 @@
             "shipId": 57,
             "skill": 4,
             "points": 8,
-            "title": ["Soulless One"],
+            "title": ["Soulless One",1],
             
             "ability": "Lorsque vous effectuez une attaque principale, si vous n'êtes pas dans l'arc de tir du défenseur, vous pouvez relancer jusqu'à 2 dés d'attaque.",
             "ability_ENG": "While you perform a primary attack, if you are not in the defender's firing arc, you may reroll up to 2 attack dice.",
@@ -4756,7 +4756,7 @@
             "charge": [1,"+"],
     
             
-            "title": ["Black One"],
+            "title": ["Black One",1],
             "ability": "Après avoir effectué une action, vous pouve dépenser 1 #ch# pour effectuer une action blanche, en la considérant comme rouge.",
             "ability_ENG": "After you perform an action, you may spend 1 charge to perform a white action, treating it as red.",
             "slots": [
@@ -5015,7 +5015,7 @@
 		    "modify": true,
             "skill": 6,
             "points": 9,            
-            "title": ["Millenium Falcon"],
+            "title": ["Millenium Falcon",1],
             "ability": "Mise en place : Vous pouvez vous placer n'importe où sur l'aire de jeu, au delà de la portée 3 des vaisseaux ennemis.",
             "ability_ENG": "Setup: You can be placed anywhere in the play area beyond range 3 of enemy ships.",
             "slots": [
@@ -5046,7 +5046,7 @@
             "skill": 5,
             "points": 10,
             
-            "title": ["Millenium Falcon"],
+            "title": ["Millenium Falcon",1],
             "ability": "Lorsque vous défendez ou attaquez, si le vaisseau ennemi est dans votre #Farc#, vous pouvez dépenser 1 #fo# pour modifier l'un de vos résultats vierge en #evd# ou #hit#.",
             "ability_ENG": "While you defend or perform an attack, if the enemy ship is in your #Farc# , you may spend 1 #fo# to change 1 of your blank results to an #evd# or #hit# result.",
             "slots": [
@@ -5077,7 +5077,7 @@
             
             "ability": "Après qu'un vaisseau allié à portée 0-3 est détruit, avant que le vaisseau ne soit retiré, vous pouvez effectuer une action. Puis, vous pouvez effectuer une attaque bonus.",
             "ability_ENG": "After a friendly ship at range 0-3 is destroyed, before that ship is removed, you may perform an action. Then you may perform a bonus attack.",
-        	"title": ["Millenium Falcon"],
+        	"title": ["Millenium Falcon",1],
             "slots": [
                 "Title",
                 "Talent"
@@ -5105,7 +5105,7 @@
             
             "ability": "Après avoir exécuté entièrement une manoeuvre rouge ou effectué une action rouge, vous pouvez dépenser n'importe quel nombre de #ch# pour choisir autant de vaisseaux alliés à portée 0-2. Ces vaisseaux peuvent effectuer une action, même stressés.",
             "ability_ENG": "After you fully execute a red maneuver or perform a red action, you may spend any number of charges to choose that many friendly ships at range 0-2. The chosen ships may perform an action, even while stressed. ",
-            "title": ["Millenium Falcon"],
+            "title": ["Millenium Falcon",1],
             "slots": [
                 "Title",
                 "Talent",
@@ -6699,7 +6699,7 @@
             "shipId": 58,
             "skill": 4,
             "points": 8,            
-            "title": "Marauder",            
+            "title": ["Marauder",1],            
             "ability": "Après avoir effectué une action, vous pouvez effectuer une action #CA#. Pendant la phase de fin, vous pouvez dépenser un jeton calcul. Dans ce cas, coordonnez un vaisseau 1-3",
             "ability_ENG": "After you perform an action, you may perform a bonus #CA# action. At the end phase, you may spend a calculate token. If you do, you may coordinate a ship at range 1-3.",
             "slots": [
@@ -6720,7 +6720,7 @@
             "shipId": 58,
             "skill": 4,
             "points": 8,
-            "title": "Marauder",                        
+            "title": ["Marauder",1],                        
             "ability": "Après avoir effectué une action, vous pouvez effectuer une action rouge #JA#. Pendant la phase de fin, si il y a un vaisseau brouillé à portée 0-1, coordonnez un vaisseau à portée 1-3.",
             "ability_ENG": "After you perform an action, you may perform a red #JA# action. At the end phase, if there is a jammed ship at range 0-1, you may coordinate a ship at range 1-3.",
             "slots": [
@@ -6741,7 +6741,7 @@
             "shipId": 58,
             "skill": 3,
             "points": 8,
-            "title": "Marauder",                        
+            "title": ["Marauder",1],                        
             "ability": "Après avoir effectué une action, vous pouvez effectuer une action rouge #TL#. Pendant la phase de fin, vous pouvez dépenser une acquisition que vous avez sur un vaisseau. Dans ce cas, coordonnez ce vaisseau.",
             "ability_ENG": "After you perform an action, you may perform a red #TL# action. At the end phase, you may spend a lock you have on a ship. If you do, coordinate this ship.",
             "slots": [
@@ -6764,7 +6764,7 @@
             "shipId": 58,
             "skill": 1,
             "points": 8,
-            "title": "Marauder",            
+            "title": ["Marauder",1],            
             "ability": "Après avoir effectué une action, vous pouvez effectuer une action rouge #BR#. Pendant la phase de fun, vous pouvez dépenser 1 jeton stress pour effectuer une attaque bonus principale contre un vaisseau ennemi à portée 0.",
             "ability_ENG": "After you perform an action, you may perform a red #BR# action. At the end phase, you may spend a stress token to perform a bonus primary attack against an enemy ship at range 0.",
             "slots": [
@@ -7258,10 +7258,11 @@
             "shipId": 32,
             "skill": 4,
             "points": 11,
-            "title": ["Banshee"],                        
+            "title": ["Banshee",1],                        
             "ability": "Au début de la phase d'engagement, vous pouvez choisir 1 vaisseau ennemi dans votre #tur# à portée 0-2 et dépenser 1 #fo#. Dans ce cas, ce vaisseau reçoit 1 jeton de stress à moins qu'il ne retire 1 jeton vert.",
             "ability_ENG": "At the start of the Engagement Phase, you may choose 1 enemy ship in your #tur# at range 0-2 and spend 1 force. If you do, that ship gains 1 stress token unless it removes 1 green token.",
             "slots": [
+                "Title",
                 "Talent",
                 "Force"
            ]
@@ -7757,6 +7758,123 @@
             "ability": "Lorsque vous défendez ou attaquez, si le vaisseau ennemi est d'une taille plus grande que vous, lancez 1 dé additionnel.",
             "ability_ENG": "While you defend or perform an attack, if the enemy ship is a larger size than you, roll 1 additional die.",
             "slots": [
+                "Talent"
+           ]
+        },
+        {
+            "name": "Guri",
+            "name_ENG": "Guri",
+            "id": 368,
+            "max_per_squad": 1,
+            "modify": false,
+		    "faction": "Black_Sun",
+            "ship": "StarViper-class Attack Platform",
+            "charge":[0],
+            "force": 0,
+            "shipId": 18,
+            "skill": 5,
+            "points": 11,                        
+            "ability": "Au début de la phase d’engagement, s’il y a au moins 1 vaisseau ennemi à portée 0-1, vous pouvez gagner 1 jeton de concentration.",
+            "ability_ENG": "At the start of the Engagement Phase, if there is at least 1 enemy ship at range 0-1, you may gain 1 focus token.",
+            "slots": [
+                "Talent"
+           ]
+        },
+        {
+            "name": "Prince Xizor",
+            "name_ENG": "Prince Xizor",
+            "id": 369,
+            "max_per_squad": 1,
+            "modify": false,
+		    "faction": "Black_Sun",
+            "ship": "StarViper-class Attack Platform",
+            "charge":[0],
+            "force": 0,
+            "shipId": 18,
+            "skill": 4,
+            "points": 10,                        
+            "ability": "Tant que vous défendez, après l’étape « Neutraliser les résultats », un autre vaisseau allié à portée 0-1 et dans l’arc de l’attaque peut subir 1 dégât #hit# ou #crit#. Dans ce cas, annulez 1 dégât correspondant.",
+            "ability_ENG": "While you defend, after the Neutralize Results step, another friendly ship at range 0-1 and in the attack arc may suffer 1 #hit# or #crit# damage. If it does, cancel 1 matching result.",
+            "slots": [
+                "Talent",
+                "Talent"
+           ]
+        },
+        {
+            "name": "Dalan Oberos",
+            "name_ENG": "Dalan Oberos",
+            "id": 370,
+            "max_per_squad": 1,
+            "modify": false,
+		    "faction": "Black_Sun",
+            "ship": "StarViper-class Attack Platform",
+            "charge":[0],
+            "force": 0,
+            "shipId": 18,
+            "skill": 4,
+            "points": 10,                        
+            "ability": "Au début de la phase d’engagement, vous pouvez choisir 1 vaisseau protégé dans votre #bulls# et dépenser 1 #ch#. Dans ce cas, ce vaisseau perd 1 bouclier et vous récupérez 1 bouclier.",
+            "ability_ENG": "At the start of the engagement phase, you may choose 1 shielded ship in your #bulls# and spend 1 charge. If you do, that ship loses 1 shield and you recover 1 shield.",
+            "slots": [
+                "Talent"
+           ]
+        },
+        {
+            "name": "Ziton Moj",
+            "name_ENG": "Ziton Moj",
+            "id": 371,
+            "max_per_squad": 1,
+            "modify": false,
+		    "faction": "Black_Sun",
+            "ship": "StarViper-class Attack Platform",
+            "charge":[0],
+            "force": 0,
+            "shipId": 18,
+            "skill": 3,
+            "points": 10,                        
+            "ability": "??",
+            "ability_ENG": "??",
+            "slots": [
+                "Talent",
+                "Talent"
+           ]
+        },
+        {
+            "name": "Assassin du Soleil Noir",
+            "name_ENG": "Black Sun Assassin",
+            "id": 372,
+            "max_per_squad": 8,
+            "modify": false,
+		    "faction": "Black_Sun",
+            "ship": "StarViper-class Attack Platform",
+            "charge":[0],
+            "force": 0,
+            "shipId": 18,
+            "skill": 4,
+            "points": 9,                        
+            "ability": "",
+            "ability_ENG": "",
+            "slots": [
+           ]
+        },
+        {
+            "name": "Talonbane Cobra",
+            "name_ENG": "Talonbane Cobra",
+            "id": 373,
+            "max_per_squad": 1,
+            "modify": false,
+            "title": ["Vaksai",2],
+		    "faction": "Black_Sun",
+            "ship": "Kihraxz Fighter",
+            "charge":[0],
+            "force": 0,
+            "shipId": 22,
+            "skill": 5,
+            "points": 9,                        
+            "ability": "",
+            "ability_ENG": "",
+            "slots": [
+                "Talent",
                 "Talent"
            ]
         }
