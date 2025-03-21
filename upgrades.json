@@ -4330,8 +4330,8 @@
              "add_Data": [0],
              "charge": [0],
              "points": 0,
-             "effect": "",
-             "effect_ENG": "",
+             "effect": "Ajoute 1 emplacement #sensor#, retire 1 emplacement #mod#.",
+             "effect_ENG": "Add 1 #sensor# slot, remove 1 #mod# slot.",
              "faction": ["Crime_Syndicates"],
              "modifier_func": [
                 

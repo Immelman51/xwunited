@@ -1503,8 +1503,8 @@
             ],
             "modifier_func": [
             	[1,"Title",1,145],
-                [3,"Astromech",145],
-                [3,"Torpedo",145]
+                [3,"Astromech"],
+                [3,"Torpedo"]
                     ]
         },
         {
@@ -1533,8 +1533,8 @@
             ],
             "modifier_func": [
             	[1,"Title",1,145],
-                [3,"Astromech",145],
-                [3,"Torpedo",145]
+                [3,"Astromech"],
+                [3,"Torpedo"]
                     ]
         },
         {
@@ -1584,8 +1584,8 @@
             ],
             "modifier_func": [
             	[1,"Title",1,145],
-                [3,"Astromech",145],
-                [3,"Torpedo",145],
+                [3,"Astromech"],
+                [3,"Torpedo"],
                 [1, "Droid",1,237]
                     ]
         },
@@ -1907,13 +1907,13 @@
             "ability_ENG": "When you would receive a face up damage card, you may spend 1 #ch# to receive it facedown instead.", 
             "slots": [
                 "Title",
-                "Talent"
+                "Talent",
+                "Sensor"
                 
                 
             ],
             "modifier_func": [
             	[1,"Title",1,135],
-                [2,"Sensor"],
                 [3,"Calculator"]
                
                 
@@ -2272,14 +2272,15 @@
             "slots": [
                 "Title",
                 "Talent",
-                "Talent"             
+                "Talent",
+                "Tech",
+                "Astromech"             
                 
             ],
             "modifier_func": [
             	[1,"Title",1,130],
-                [3,"Crew",130],
-                [2,"Tech"],
-                [2,"Astromech"]
+                [3,"Crew"]
+                
                     ]
         },
         {
@@ -2340,14 +2341,15 @@
             "ability_ENG": "While you drop or launch a bomb, place a 'power' token on it. When a bomb with a 'power' token detonates, increase its effect range by 1.",
             "slots": [
                 "Title",
-                "Talent"                
+                "Talent" ,
+                "Tech",
+                "Astromech"               
                 
             ],
             "modifier_func": [
             	[1,"Title",1,130],
-                [3,"Crew",130],
-                [2,"Tech"],
-                [2,"Astromech"]
+                [3,"Crew"]
+                
                     ]
         },
         {
@@ -2700,14 +2702,14 @@
                 "Title",
                 "Talent",
                 "Talent",
-                "Talent"
+                "Talent",
+                "Missile",
+                "Astromech"
                 
             ],
             "modifier_func": [
             	[1,"Title",1,143],
-                [2,"Astromech"],
-                [2,"Missile"],
-                [3,"Crew",143]
+                [3,"Crew"]
                     ]
         },
         {
@@ -2749,14 +2751,14 @@
             "ability_ENG": "At the beginning of Engagement Phase, you may choose a friendly ship at range 0-2. If you do, transfer any number of your green and/or red tokens to this ship.",
             "slots": [
                 "Title",
-                "Talent"
+                "Talent",
+                "Missile",
+                "Astromech"
                 
             ],
             "modifier_func": [
             	[1,"Title",1,143],
-                [2,"Astromech"],
-                [2,"Missile"],
-                [3,"Crew",143]
+                [3,"Crew"]
                     ]
         },
         {
@@ -2863,14 +2865,14 @@
             "ability_ENG": "While you perform a primary attack, after the 'Neutralize Results' step, you may spend 1 #crit# result to add 2 #hit# results.",
             "slots": [
                 "Title",
-                "Talent"
+                "Talent",
+                "Gunner",
+                "Cannon"
                 
             ],
             "modifier_func": [
             	[1,"Title",1,138],
-                [2,"Gunner"],
-                [2,"Cannon"],
-                [3,"Illicit",138]
+                [3,"Illicit"]
                     ]
         },
 {
@@ -2936,13 +2938,13 @@
             "slots": [
                 "Title",
                 "Talent",
-                "Talent"
+                "Talent",
+                "Payload",
+                "Crew"
                 
             ],
             "modifier_func": [
-            	[1,"Title",1,137],
-                [2,"Payload"],
-                [2,"Crew"]
+            	[1,"Title",1,137]
                     ]
         },
 {
@@ -3005,14 +3007,14 @@
             "slots": [
                 "Title",
                 "Talent",
-                "Talent"
+                "Talent",
+                "Gunner",
+                "Cannon",
+                "Illicit"
                 
             ],
             "modifier_func": [
-            	[1,"Title",1,139],
-                [2,"Gunner"],
-                [2,"Cannon"],
-                [2,"Illicit"]
+            	[1,"Title",1,139]
                     ]
         },
          {
@@ -3035,14 +3037,15 @@
             "slots": [
                 "Title",
                 "Talent",
-                "Talent"
+                "Talent",
+                "Gunner",
+                "Cannon",
+                "Illicit"
                 
             ],
             "modifier_func": [
-            	[1,"Title",1,139],
-                [2,"Gunner"],
-                [2,"Cannon"],
-                [2,"Illicit"]
+            	[1,"Title",1,139]
+               
                     ]
         },
          {
@@ -3402,12 +3405,12 @@
             "slots": [
                 "Title",
                 "Talent",
-                "Talent"
+                "Talent",
+                "Illicit"
                                 
             ],
             "modifier_func": [
-            	[1,"Title",1,196],
-                [2,"Illicit"]
+            	[1,"Title",1,196]
                     ]
         },
         {
@@ -3429,12 +3432,12 @@
             "slots": [
                 "Title",
                 "Talent",
-                "Force"
+                "Force",
+                "Illicit"
                                 
             ],
             "modifier_func": [
-            	[1,"Title",1,196],
-                [2,"Illicit"]
+            	[1,"Title",1,196]
                     ]
         },
         {
@@ -3457,12 +3460,12 @@
             "slots": [
                 "Title",
                 "Talent",
-                "Talent"
+                "Talent",
+                "Illicit"
                                 
             ],
             "modifier_func": [
-            	[1,"Title",1,196],
-                [2,"Illicit"]
+            	[1,"Title",1,196]
                     ]
         },
         {
@@ -3483,12 +3486,12 @@
             "ability_ENG": "While you defend, #crit# results are neutralized before #hit# results.",
             "slots": [
                 "Title",
-                "Talent"
+                "Talent",
+                "Illicit"
                                 
             ],
             "modifier_func": [
-            	[1,"Title",1,196],
-                [2,"Illicit"]
+            	[1,"Title",1,196]
                     ]
         },
         {
@@ -4763,12 +4766,12 @@
                 "Title",
                 "Talent",
                 "Talent",
-                "Talent"
+                "Talent",
+                "Turret"
                             
             ],
 			"modifier_func": [
-				[1,"Title",1,197],
-                [2,"Turret"]
+				[1,"Title",1,197]
 				]
         },
         {
@@ -5022,12 +5025,12 @@
                 "Title",
                 "Talent",
                 "Talent",
-                "Talent"
+                "Talent",
+                "Sensor"
                             
             ],
             "modifier_func": [
             	[1,"Title",1,135],
-                [2,"Sensor"],
                 [3,"Calculator"]
         
                     ]
@@ -5052,12 +5055,12 @@
             "slots": [
                 "Title" ,
                 "Talent",
-                "Force"
+                "Force",
+                "Sensor"
                            
             ],
             "modifier_func": [
             	[1,"Title",1,135],
-                [2,"Sensor"],
                 [3,"Calculator"]
                     ]            
         },
@@ -5080,12 +5083,12 @@
         	"title": ["Millenium Falcon"],
             "slots": [
                 "Title",
-                "Talent"
+                "Talent",
+                "Sensor"
                             
             ],
             "modifier_func": [
             	[1,"Title",1,135],
-                [2,"Sensor"],
                 [3,"Calculator"]
                     ]            
         },
@@ -5109,12 +5112,12 @@
             "slots": [
                 "Title",
                 "Talent",
-                "Talent"
+                "Talent",
+                "Sensor"
                             
             ],
             "modifier_func": [
             	[1,"Title",1,135],
-                [2,"Sensor"],
                 [3,"Calculator"]
                     ]            
         },
@@ -7271,10 +7274,12 @@
             "slots": [
                 "Title",
                 "Talent",
-                "Force"
+                "Force",
+                "Sensor"
            ],
            "modifier_func":[
-                [1,"Title",1,268]
+                [1,"Title",1,268],
+                [3,"Modification"]
             ]
         },
         {
@@ -7787,6 +7792,7 @@
             "ability": "Au début de la phase d’engagement, s’il y a au moins 1 vaisseau ennemi à portée 0-1, vous pouvez gagner 1 jeton de concentration.",
             "ability_ENG": "At the start of the Engagement Phase, if there is at least 1 enemy ship at range 0-1, you may gain 1 focus token.",
             "slots": [
+                "Talent",
                 "Talent"
            ]
         },
@@ -7803,7 +7809,7 @@
             "force": 0,
             "shipId": 18,
             "skill": 4,
-            "points": 10,                        
+            "points": 11,                        
             "ability": "Tant que vous défendez, après l’étape « Neutraliser les résultats », un autre vaisseau allié à portée 0-1 et dans l’arc de l’attaque peut subir 1 dégât #hit# ou #crit#. Dans ce cas, annulez 1 dégât correspondant.",
             "ability_ENG": "While you defend, after the Neutralize Results step, another friendly ship at range 0-1 and in the attack arc may suffer 1 #hit# or #crit# damage. If it does, cancel 1 matching result.",
             "slots": [
@@ -8100,7 +8106,7 @@
            ],
            "modifier_func":[
                 [1,"Title",1,282],
-                [3,"Modification",282]
+                [3,"Modification"]
             ]
         },
         {
@@ -8674,7 +8680,7 @@
            ],
            "modifier_func": [
             	[1,"Title",1,147],
-                [3,"Modification",147]
+                [3,"Modification"]
                 
                     ]
            
