@@ -405,7 +405,7 @@ function checkPilotModifier() { //va checker s'il existe des fonctions dans modi
                     add_slots(pilot_list[y]['modifier_func'][m][1]);
                     break;
                 case 3 : 
-                    also_Occupies(pilot_list[y]['modifier_func'][m][1], pilot_list[y]['modifier_func'][m][2]);
+                    also_Occupies(pilot_list[y]['modifier_func'][m][1]); //, pilot_list[y]['modifier_func'][m][2]);
                     break;
                 case 10 :
                     may_remove_slots(pilot_list[y]['modifier_func'][m][1]);

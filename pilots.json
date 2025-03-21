@@ -1855,13 +1855,13 @@
             "slots": [
                 "Title",
                 "Talent",
-                "Talent"
+                "Talent",
+                "Sensor"
                                          
                 
             ],
             "modifier_func": [
             	[1,"Title",1,135],
-                [2,"Sensor"],
                 [3,"Calculator"]
                
 
@@ -7809,7 +7809,10 @@
             "slots": [
                 "Title",
                 "Talent",
-                "Talent"
+                "Talent",
+                "Sensor",
+                "Illicit"
+
            ],
            "modifier_func":[
                 [1,"Title",1,269]
@@ -7878,7 +7881,7 @@
             "id": 372,
             "max_per_squad": 1,
             "modify": true,
-            "title": ["Vaksai"],
+            "title": ["Vaksai (**)"],
 		    "faction": "Black_Sun",
             "ship": "Kihraxz Fighter",
             "charge":[0],
@@ -7891,7 +7894,10 @@
             "slots": [
                 "Title",
                 "Talent",
-                "Talent"
+                "Talent",
+                "Tech",
+                "Modification",
+                "Illicit"
            ],
            "modifier_func":[
                 [1,"Title",1,275]
@@ -7903,7 +7909,7 @@
             "id": 373,
             "max_per_squad": 1,
             "modify": true,
-            "title": ["Vaksai"],
+            "title": ["Vaksai (**)"],
 		    "faction": "Black_Sun",
             "ship": "Kihraxz Fighter",
             "charge":[0],
@@ -7915,7 +7921,10 @@
             "ability_ENG": "",
             "slots": [
                 "Title",
-                "Talent"
+                "Talent",
+                "Tech",
+                "Modification",
+                "Illicit"
                 
            ],
            "modifier_func":[
@@ -7928,7 +7937,7 @@
             "id": 374,
             "max_per_squad": 1,
             "modify": true,
-            "title": ["Vaksai"],
+            "title": ["Vaksai (**)"],
 		    "faction": "Black_Sun",
             "ship": "Kihraxz Fighter",
             "charge":[0],
@@ -7940,7 +7949,10 @@
             "ability_ENG": "",
             "slots": [
                 "Title",
-                "Talent"
+                "Talent",
+                "Tech",
+                "Modification",
+                "Illicit"
                 
            ],
            "modifier_func":[
@@ -7953,7 +7965,7 @@
             "id": 375,
             "max_per_squad": 1,
             "modify": true,
-            "title": ["Vaksai"],
+            "title": ["Vaksai (**)"],
 		    "faction": "Black_Sun",
             "ship": "Kihraxz Fighter",
             "charge":[0],
@@ -7965,7 +7977,10 @@
             "ability_ENG": "",
             "slots": [
                 "Title",
-                "Talent"
+                "Talent",
+                "Tech",
+                "Modification",
+                "Illicit"
                 
            ],
            "modifier_func":[
@@ -7978,7 +7993,7 @@
             "id": 376,
             "max_per_squad": 8,
             "modify": true,
-            "title": ["Vaksai"],
+            "title": ["Vaksai (**)"],
 		    "faction": "Black_Sun",
             "ship": "Kihraxz Fighter",
             "charge":[0],
@@ -7989,7 +8004,10 @@
             "ability": "",
             "ability_ENG": "",
             "slots": [
-                "Title"
+                "Title",
+                "Tech",
+                "Modification",
+                "Illicit"
                                
            ],
            "modifier_func":[
@@ -8062,7 +8080,7 @@
             "name_ENG": "Ketsu Onyo",
             "id": 380,
             "max_per_squad": 1,
-            "modify": false,
+            "modify": true,
             "title": ["Shadow Caster"],
 		    "faction": "Black_Sun",
             "ship": "Lancer-Class Pursuit Craft",
@@ -8076,9 +8094,14 @@
             "slots": [
                 "Title",
                 "Talent",
-                "Talent"
+                "Talent",
+                "Gunner"
                                
-           ]
+           ],
+           "modifier_func":[
+                [1,"Title",1,282],
+                [3,"Modification",282]
+            ]
         },
         {
             "name": "Gyran",
@@ -8644,7 +8667,10 @@
             "ability": "Après qu'un vaisseau ennemi à portée 0-3 reçoit au moins 1 jeton ion, vous pouvez dépenser 2 #ch#. Dans ce cas, ce vaisseau reçoit 2 jetons ion additionnels",
             "ability_ENG": "After an enemy ship at range 0-3 receives at least 1 ion token, you may spend 2 #ch#. If you do, that ship gains 2 additional ion tokens.",
             "slots": [
-                 "Talent"         
+                "Title", 
+                "Talent",
+                "Illicit",
+                "Cannon"         
            ],
            "modifier_func": [
             	[1,"Title",1,147],

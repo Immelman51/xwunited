@@ -418,7 +418,7 @@
                 [ 0, 0, 1, 0, 0, 3, 0, 0 ],
                 [ 0, 0, 2, 0, 0, 0, 0, 0 ]
             ],
-            "slots": []
+            "slots": ["Tech","Torpedo","Modification","Astromech","Sensor","Sensor"]
 
         },
         {
@@ -447,7 +447,7 @@
                 [ 2, 2, 1, 2, 2, 3],
                 [ 0, 0, 2, 0, 0, 3]
             ],
-            "slots": []
+            "slots": ["Tech","Gunner","Modification","Modification","Calculator"]
 
         },
         {
@@ -506,7 +506,7 @@
                 [ 2, 2, 2, 2, 2],
                 [ 0, 0, 2, 0, 0]
             ],
-            "slots": []
+            "slots": ["Crew","Crew","Gunner","Gunner","Missile","Cannon","Turret","Modification"]
 
         },
         {
@@ -536,7 +536,7 @@
                 [ 0, 2, 1, 2, 0, 0, 3, 3],
                 [ 0, 0, 2, 0, 0, 0, 0, 0]
             ],
-            "slots": []
+            "slots": ["Tech","Torpedo","Modification"]
 
         },
         {
@@ -939,7 +939,7 @@
                 [ 0, 0, 1, 0, 0, 0],
                 [ 0, 0, 2, 0, 0, 3]
             ],
-            "slots": []
+            "slots": ["Crew","Illicit","Illicit","Modification","Modification"]
 
         },
         {

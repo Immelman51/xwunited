@@ -4348,8 +4348,8 @@
              "add_Data": [0],
              "charge": [0],
              "points": 0,
-             "effect": "",
-             "effect_ENG": "",
+             "effect": "ajoute 1 emplacement #sensor# et #illicit#.",
+             "effect_ENG": "add 1 #sensor# slot and 1 #illicit# slot.",
              "faction": ["Black_Sun"],
              "modifier_func": [
                 
@@ -4457,8 +4457,8 @@
              "add_Data": [0],
              "charge": [0],
              "points": 0,
-             "effect": "",
-             "effect_ENG": "",
+             "effect": "ajoute 1 emplacement #tech#, #modification# et #illicit#.",
+             "effect_ENG": "add 1 #tech# slot, #modification# slot and #illicit# slot.",
              "faction": ["Black_Sun"],
              "modifier_func": [
                 
@@ -4573,19 +4573,19 @@
              ]
          },
          {
-            "name": "",
-             "name_ENG": "",
+            "name": "Shadow Caster",
+             "name_ENG": "Shadow Caster",
              "id":282,
              "max_per_squad":1,
              "available":true,
              "modify":false,
-             "slot":"Crew",
+             "slot":"Title",
              "add_Data": [0],
              "charge": [0],
              "points": 0,
-             "effect": "",
-             "effect_ENG": "",
-             "faction": ["Resistance"],
+             "effect": "Retire un emplacement #mod# et ajoute un emplacement #gunner#.",
+             "effect_ENG": "Add 1 #gunner# slot, and remove 1 #mod# slot.",
+             "faction": ["Black_Sun"],
              "modifier_func": [
                 
              ]
