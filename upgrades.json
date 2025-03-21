@@ -3704,8 +3704,8 @@
     "points": "*1*",
     "add_Data": [0],
     "charge": [1,"0"],
-    "effect": "CONFIANCE FRAGILE : Tant que la #ch# sur cette carte est active, lorsque vous attaquez ou défendez, vous pouvez changer un résultat #eye# en un résultat #hit# ou #evd#. <br> MEFIANCE : Durant la phase système, recevez 1 jeton contrainte. Lorsque vous effectuez une action #FS#, recevez 1 jeton de contrainte. <br>ACTION : récupérez 1 #ch#",
-    "effect_ENG": "FRAGILE TRUST : While the #ch# on this card is active, when you attack or defend, you may change an #eye# result into a #hit# or #evd# result.<br>DISTRUST : During System phase, gain 1 strain token. When you perform a #FS# action gain 1 strain token. <br>ACTION : recover 1 #ch#.",
+    "effect": "CONFIANCE FRAGILE : Tant que la #ch# sur cette amélioration est active, lorsque vous attaquez ou défendez, vous pouvez changer un résultat #eye# en un résultat #hit# ou #evd#. <br> MEFIANCE : Si votre charge est inactive, durant la phase système, recevez 1 jeton contrainte. Lorsque vous effectuez une action #FS#, recevez 1 jeton de contrainte. <br>ACTION : récupérez 1 #ch#",
+    "effect_ENG": "FRAGILE TRUST : While the #ch# on this upgrade is active, when you attack or defend, you may change an #eye# result into a #hit# or #evd# result.<br>DISTRUST : If your charge is inactive, during System phase, gain 1 strain token. When you perform a #FS# action gain 1 strain token. <br>ACTION : recover 1 #ch#.",
     "faction": ["Crime_Syndicates"]
 },
 
@@ -4204,8 +4204,8 @@
              "add_Data": [0],
              "charge": [0],
              "points":5,
-             "effect": "",
-             "effect_ENG": "",
+             "effect": "??",
+             "effect_ENG": "??",
              "faction": ["Jedi_Order"],
              "modifier_func": [
                 [3,"Crew",252]
@@ -4222,13 +4222,486 @@
              "add_Data": [0],
              "charge": [0],
              "points":8,
-             "effect": "",
-             "effect_ENG": "",
+             "effect": "??",
+             "effect_ENG": "??",
              "faction": ["Jedi_Order"],
              "modifier_func": [
                 
              ]
+         },
+         {
+            "name": "Qi'Ra",
+             "name_ENG": "Qi'Ra",
+             "id":263,
+             "max_per_squad":1,
+             "available":true,
+             "modify":false,
+             "slot":"Crew",
+             "add_Data": [0],
+             "charge": [0],
+             "points": 0,
+             "effect": "??",
+             "effect_ENG": "??",
+             "faction": ["Crime_Syndicates"],
+             "modifier_func": [
+                
+             ]
+         },
+         {
+            "name": "Tobias Becket",
+             "name_ENG": "Tobias Becket",
+             "id":264,
+             "max_per_squad":1,
+             "available":true,
+             "modify":false,
+             "slot":"Crew",
+             "add_Data": [0],
+             "charge": [0],
+             "points": 0,
+             "effect": "??",
+             "effect_ENG": "??",
+             "faction": ["Crime_Syndicates"],
+             "modifier_func": [
+                
+             ]
+         },
+         {
+            "name": "Latts Razzi",
+             "name_ENG": "Latts Razzi",
+             "id":265,
+             "max_per_squad":1,
+             "available":true,
+             "modify":false,
+             "slot":"Crew",
+             "add_Data": [0],
+             "charge": [0],
+             "points": 4,
+             "effect": "Lorsque vous défendez, si l'attaquant est stressé, vous pouvez retirer 1 jeton de stress de l'attaquant pour modifier 1 résultat vierge/oeil en résultat #evd#.",
+             "effect_ENG": "While you defend, if the attacker is stressed, you may remove 1 stress from the attacker to change 1 of your blank/eye results to an #evd# result.",
+             "faction": ["Crime_Syndicates"],
+             "modifier_func": [
+                
+             ]
+         },
+         {
+            "name": "Dispositif de Retour",
+             "name_ENG": "Feedback Array",
+             "id":266,
+             "max_per_squad":8,
+             "available":true,
+             "modify":false,
+             "slot":"Illicit",
+             "add_Data": [0],
+             "charge": [0],
+             "points": 5,
+             "effect": "Avant de vous engagez, vous pouvez recevoir 1 jeton ion et 1 jeton désarmement. Chaque autre vaisseau à portée 0 subit 1 dégat #hit#.",
+             "effect_ENG": "Before you engage, you may gain 1 ion token and 1 disarm token. Each other ship at range 0 suffers 1 #hit# damage.",
+             "faction": ["Crime_Syndicates", "Hutt_Cartel"],
+             "modifier_func": [
+                
+             ]
+         },
+         {
+            "name": "Amortisseurs Inertiels",
+             "name_ENG": "Inertial Dampeners",
+             "id":267,
+             "max_per_squad":8,
+             "available":true,
+             "modify":false,
+             "slot":"Illicit",
+             "add_Data": [0],
+             "charge": [0],
+             "points": 6,
+             "effect": "Avant d’exécuter une manœuvre, vous pouvez dépenser 1 bouclier. Dans ce cas, exécutez une manœuvre 0#stop# blanche à la place de celle que vous avez révélée, puis gagnez 1 marqueur de stress.",
+             "effect_ENG": "Before you would execute a maneuver, you may spend 1 shield. If you do, execute a white 0#stop# instead of the maneuver you revealed, then gain 1 stress token.",
+             "faction": ["Crime_Syndicates"],
+             "modifier_func": [
+                
+             ]
+         },
+         {
+            "name": "Banshee",
+             "name_ENG": "Banshee",
+             "id":268,
+             "max_per_squad":1,
+             "available":true,
+             "modify":false,
+             "slot":"Title",
+             "add_Data": [0],
+             "charge": [0],
+             "points": 0,
+             "effect": "",
+             "effect_ENG": "",
+             "faction": ["Crime_Syndicates"],
+             "modifier_func": [
+                
+             ]
+         },
+         {
+            "name": "Virago",
+             "name_ENG": "Virago",
+             "id":269,
+             "max_per_squad":1,
+             "available":true,
+             "modify":false,
+             "slot":"Title",
+             "add_Data": [0],
+             "charge": [0],
+             "points": 0,
+             "effect": "",
+             "effect_ENG": "",
+             "faction": ["Black_Sun"],
+             "modifier_func": [
+                
+             ]
+         },
+         {
+            "name": "Guri",
+             "name_ENG": "Guri",
+             "id":270,
+             "max_per_squad":1,
+             "available":true,
+             "modify":false,
+             "slot":"Crew",
+             "add_Data": [0],
+             "charge": [0],
+             "points": 5,
+             "effect": "A la fin de la phase d'activation, s'il y a un vaisseau ennemi à portée 0-1, recevez 1 jeton calcul. S'il n'y a pas de vaisseau ennemi à portée 0-2, recevez 1 jeton brouillage.",
+             "effect_ENG": "At the end of activation phase, if there's an enemy ship at range 0-1, gain a calculate token. If there isn't any enemy ship at range 0-2, gain a jam token.",
+             "faction": ["Black_Sun"],
+             "modifier_func": [
+                
+             ]
+         },
+         {
+            "name": "Module NS-9 Starpath",
+            "name_ENG": "NS-9 Starpath Module",
+            "id":271,
+            "max_per_squad":1,
+            "available":false,
+            "modify":true,
+            "slot":"Illicit",
+            "add_Data": [0],
+            "charge": [1,"0"],
+            "points": 0,
+            "effect": "Si votre charge est active, vous ne pouvez pas être ciblé par une attaque. Si vous attaquez, ou si vous êtes le dernier vaisseau en jeu de votre escadron, dépensez 1#ch#.",
+            "effect_ENG": "If your charge is active, you cannot be targeted by attack. If you perform an attack, or if you are the last ship of your squadron in battle, lose 1 #ch#.",
+            "faction": ["Black_Sun"],
+            "restrictions": [1,"upgrade", "Modification",""],
+            "modifier_func": [
+                [3,"Modification",271]
+            ]
+         },
+         {
+            "name": "Kestu Onyo",
+             "name_ENG": "Ketsu Onyo",
+             "id":272,
+             "max_per_squad":1,
+             "available":true,
+             "modify":false,
+             "slot":"Crew",
+             "add_Data": [0],
+             "charge": [0],
+             "points": 2,
+             "effect": "Au début de la phase de Fin, vous pouvez choisir 1 vaisseau ennemi à portée 0-2 dans votre arc de tir. Dans ce cas, ce vaisseau ne retire pas ses jetons tractage.",
+             "effect_ENG": "At the start of the End Phase, you may choose 1 enemy ship at range 0-2 in your firing arc. If you do, that ship does not remove its tractor tokens.",
+             "faction": ["Black_Sun"],
+             "modifier_func": [
+                
+             ]
+         },
+         {
+            "name": "Modulateurs Surrégulés",
+             "name_ENG": "Overtuned Modulators",
+             "id":273,
+             "max_per_squad":8,
+             "available":true,
+             "modify":false,
+             "slot":"Illicit",
+             "add_Data": [0],
+             "charge": [0],
+             "points": 3,
+             "effect": "Pendant la phase Système, si vous n'êtes pas stressé, vous pouvez dépenser 1 #ch# pour recevoir 3 jetons calcul. Pendant la phase de fin, si votre #ch# est inactive, pour chaque jeton vert que vous retirez, recevez 1 jeton contrainte.",
+             "effect_ENG": "During the System Phase, if you are not stressed, you may spend 1 #ch# to gain 3 calculate tokens. During the End Phase, if your #ch# is inactive, for each green token you remove, gain 1 strain token.",
+             "faction": ["Black_Sun"],
+             "modifier_func": [
+                
+             ]
+         },
+         {
+            "name": "Faisceau Laser Tranchant",
+             "name_ENG": "Cutting Laser Beam",
+             "id":274,
+             "max_per_squad":1,
+             "available":true,
+             "modify":false,
+             "slot":"Illicit",
+             "add_Data": [0],
+             "charge": [1,"0"],
+             "points": 6,
+             "effect": "Après avoir partiellement exécuté une manoeuvre, vous pouvez dépenser 1 #ch#. Dans ce cas, chaque autre vaisseau à portée 0 recoivent 1 carte face visible.",
+             "effect_ENG": "After you partially execute a maneuver, you may spend 1 #ch#. If you do, every other ships at range 0 take 1 faceup damage card.",
+             "faction": ["Black_Sun","Partisans"],
+             "modifier_func": [
+                
+             ]
+         },
+         {
+            "name": "Vaksaï (**)",
+             "name_ENG": "Vaksaï (**)",
+             "id":275,
+             "max_per_squad":2,
+             "available":true,
+             "modify":false,
+             "slot":"Title",
+             "add_Data": [0],
+             "charge": [0],
+             "points": 0,
+             "effect": "",
+             "effect_ENG": "",
+             "faction": ["Black_Sun"],
+             "modifier_func": [
+                
+             ]
+         },
+         {
+            "name": "Unkar Plutt",
+             "name_ENG": "Unkar Plutt",
+             "id":276,
+             "max_per_squad":1,
+             "available":true,
+             "modify":false,
+             "slot":"Crew",
+             "add_Data": [0],
+             "charge": [0],
+             "points": 2,
+             "effect": "Après avoir exécuté partiellement une manoeuvre, vous pouvez subir 1 dégat #hit# pour effectuer 1 action blanche.",
+             "effect_ENG": "After you partially execute a maneuver, you may suffer 1 #hit# damage to perform 1 white action.",
+             "faction": ["Hutt_Cartel"],
+             "modifier_func": [
+                
+             ]
+         },
+         {
+            "name": "Gamut Key",
+             "name_ENG": "Gamut Key",
+             "id":277,
+             "max_per_squad":1,
+             "available":true,
+             "modify":false,
+             "slot":"Crew",
+             "add_Data": [0],
+             "charge": [2,"+"],
+             "points": 6,
+             "effect": "Au début de la phase de Fin, vous pouvez dépenser 2 #ch# pour choisir un vaisseau à portée 0-1 avec 1 ou plusieurs jetons ronds. Pendant la phase de fin, ces jetons ronds ne sont pas retirés.",
+             "effect_ENG": "At the start of the End Phase, you may spend 2 #ch# to choose a ship at range 0-1 with 1 or more circular tokens. During the End Phase, circular tokens are not removed from that ship.",
+             "faction": ["Hutt_Cartel"],
+             "modifier_func": [
+                
+             ]
+         },
+         {
+            "name": "Greedo",
+             "name_ENG": "Greedo",
+             "id":278,
+             "max_per_squad":1,
+             "available":true,
+             "modify":false,
+             "slot":"Gunner",
+             "add_Data": [0],
+             "charge": [1,"+"],
+             "points": 2,
+             "effect": "Lorsque vous attaquez, vous pouvez dépenser 1 #ch# pour modifier 1 résultat #hit# en #crit#. Lorsque vous défendez, si votre charge est active, l'attaquant peut modifier 1 résultat #hit# en #crit#.",
+             "effect_ENG": "While you perform an attack, you may spend 1 #ch# to change 1 #hit# result to a #crit# result. While you defend, if your #ch# is active, the attacker may change 1 #hit# result to a #crit# result.",
+             "faction": ["Hutt_Cartel"],
+             "modifier_func": [
+                
+             ]
+         },
+         {
+            "name": "0-0-0",
+             "name_ENG": "0-0-0",
+             "id":279,
+             "max_per_squad":1,
+             "available":true,
+             "modify":false,
+             "slot":"Crew",
+             "add_Data": [0],
+             "charge": [0],
+             "points": 5,
+             "effect": "Au début de la phase d'engagement, vous pouvez choisir 1 vaisseau ennemi à portée 0-1. Dans ce cas, vous recevez 1 jeton calcul à moins que ce vaisseau ne choississe de recevoir 1 jeton stress.",
+             "effect_ENG": "At the start of the Engagement Phase, you may choose 1 enemy ship at range 0-1. If you do, you gain 1 calculate token unless that ship chooses to gain 1 stress token.",
+             "faction": ["Hutt_Cartel"],
+             "modifier_func": [
+                
+             ]
+         },
+         {
+            "name": "BT-1",
+             "name_ENG": "BT-1",
+             "id":280,
+             "max_per_squad":1,
+             "available":true,
+             "modify":false,
+             "slot":"Gunner",
+             "add_Data": [0],
+             "charge": [0],
+             "points": 2,
+             "effect": "Lorsque vous attaquez, vous pouvez modifier 1 résultat #hit# en #crit# pour chaque jeton stress que le défenseur possède.",
+             "effect_ENG": "While you perform an attack, you may change 1 #hit# result to a #crit# result for each stress token the defender has.",
+             "faction": ["Hutt_Cartel"],
+             "modifier_func": [
+                
+             ]
+         },
+         {
+            "name": "Peli Motto",
+             "name_ENG": "Peli Motto",
+             "id":281,
+             "max_per_squad":1,
+             "available":true,
+             "modify":false,
+             "slot":"Crew",
+             "add_Data": [0],
+             "charge": [0],
+             "points": 3,
+             "effect": "Pendant la phase Système, vous pouvez effectuer une action sur l'une de vos cartes de dégat, même stressé. Après avoir réparé une carte de dégat face visible, vous pouvez lancer 1 dé d'attaque. Sur un résultat #hit#, réparez une autre carte de dégat face visible. Sur un résultat #crit#, exposez 1 carte de dégat.",
+             "effect_ENG": "During the System Phase, you may perform an action on 1 of your damage cards, even while stressed. After you repair a faceup Ship damage card, you may roll 1 attack die. On a #hit# result, repair another faceup Ship damage card. On a #crit# result, expose 1 damage card.",
+             "faction": ["Hutt_Cartel"],
+             "modifier_func": [
+                
+             ]
+         },
+         {
+            "name": "",
+             "name_ENG": "",
+             "id":282,
+             "max_per_squad":1,
+             "available":true,
+             "modify":false,
+             "slot":"Crew",
+             "add_Data": [0],
+             "charge": [0],
+             "points": 0,
+             "effect": "",
+             "effect_ENG": "",
+             "faction": ["Resistance"],
+             "modifier_func": [
+                
+             ]
+         },
+         {
+            "name": "",
+             "name_ENG": "",
+             "id":282,
+             "max_per_squad":1,
+             "available":true,
+             "modify":false,
+             "slot":"Crew",
+             "add_Data": [0],
+             "charge": [0],
+             "points": 0,
+             "effect": "",
+             "effect_ENG": "",
+             "faction": ["New_Republic"],
+             "modifier_func": [
+                
+             ]
+         },
+         {
+            "name": "",
+             "name_ENG": "",
+             "id":282,
+             "max_per_squad":1,
+             "available":true,
+             "modify":false,
+             "slot":"Crew",
+             "add_Data": [0],
+             "charge": [0],
+             "points": 0,
+             "effect": "",
+             "effect_ENG": "",
+             "faction": ["Colossus"],
+             "modifier_func": [
+                
+             ]
+         },
+         {
+            "name": "",
+             "name_ENG": "",
+             "id":282,
+             "max_per_squad":1,
+             "available":true,
+             "modify":false,
+             "slot":"Crew",
+             "add_Data": [0],
+             "charge": [0],
+             "points": 0,
+             "effect": "",
+             "effect_ENG": "",
+             "faction": ["Agents_of_Chaos"],
+             "modifier_func": [
+                
+             ]
+         },
+         {
+            "name": "",
+             "name_ENG": "",
+             "id":282,
+             "max_per_squad":1,
+             "available":true,
+             "modify":false,
+             "slot":"Crew",
+             "add_Data": [0],
+             "charge": [0],
+             "points": 0,
+             "effect": "",
+             "effect_ENG": "",
+             "faction": ["First Order"],
+             "modifier_func": [
+                
+             ]
+         },
+         {
+            "name": "",
+             "name_ENG": "",
+             "id":282,
+             "max_per_squad":1,
+             "available":true,
+             "modify":false,
+             "slot":"Crew",
+             "add_Data": [0],
+             "charge": [0],
+             "points": 0,
+             "effect": "",
+             "effect_ENG": "",
+             "faction": ["Shadow Specialists"],
+             "modifier_func": [
+                
+             ]
+         },
+         {
+            "name": "",
+             "name_ENG": "",
+             "id":282,
+             "max_per_squad":1,
+             "available":true,
+             "modify":false,
+             "slot":"Crew",
+             "add_Data": [0],
+             "charge": [0],
+             "points": 0,
+             "effect": "",
+             "effect_ENG": "",
+             "faction": ["Imperial Remnants"],
+             "modifier_func": [
+                
+             ]
          }
+
+         
+         
+
 
 
 

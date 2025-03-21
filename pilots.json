@@ -305,7 +305,7 @@
             "skill": 5,
             "points": 7,
             
-            "title": ["Moldy Crow",1],
+            "title": ["Moldy Crow"],
             "ability": "Tant qu’un vaisseau allié situé dans votre arc de tir effectue une attaque principale, si vous n’êtes pas stressé, vous pouvez gagner 1 marqueur de stress. Dans ce cas, ce vaisseau peut lancer 1 dé d’attaque supplémentaire.",
             "ability_ENG": "While a friendly ship in your firing arc performs a primary attack, if you are not stressed, you may receive 1 stress token. If you do, this ship may roll 1 additional attack die.",
             "slots": [
@@ -358,7 +358,7 @@
             "skill": 3,
             "points": 6,
             
-            "title": ["Moldy Crow",1],
+            "title": ["Moldy Crow"],
             "ability": "Au début de la phase d’engagement, vous pouvez transférer 1 de vos marqueurs de concentration à un vaisseau allié situé dans votre arc de tir.",
             "ability_ENG": "At the beginning of Engagement Phase, you may transfer 1 of your focus tokens to a friendly ship in your firing arc.",
             "slots": [
@@ -388,7 +388,7 @@
             "skill": 3,
             "points": 8,
             
-            "title": ["Moldy Crow",1],
+            "title": ["Moldy Crow"],
             "ability": "Au début de la phase d’engagement, vous pouvez transférer un marqueur de stress de votre vaisseau vers un vaisseau allié dans votre arc de tir. Lorsque vous retirez un marqueur de stress de votre vaisseau, vous pouvez effectuer une action.",
             "ability_ENG": "At the beginning of Engagement Phase, you may transfer 1 stress token from you to a friendly ship in your firing arc. When you remove a stress token from you, you may perform an action.",
             "slots": [
@@ -1379,7 +1379,7 @@
             "max_per_squad": 1,
             "charge":[0],
             "force": 3,
-            "title": ["Nightbrother",1],
+            "title": ["Nightbrother"],
             "ability": "Lorsque vous effectuez une action #CO# , vous pouvez dépenser 1#fo# . Dans ce cas, considérez l’action comme blanche et vous pouvez coordonner 1 vaisseau allié supplémentaire ; chaque vaisseau allié que vous avez coordonné ainsi gagne 1 marqueur de contrainte.",
             "ability_ENG": "While you perform a #CO# action, you may spend 1#fo#. If you do, consider it as a white action, and you may coordinate 1 additional friendly ship ; each friendly ship you have coordinated this way receives 1 strain token.", 
             "slots": [
@@ -1406,7 +1406,7 @@
             "skill": 5,
             "points": 9,
             
-            "title": ["Razor Crest",1],
+            "title": ["Razor Crest"],
             "max_per_squad": 1,
             "ability": "Lorsque vous défendez ou effectuez une attaque, si vous êtes dans le  #Farc#  à portée 1-2 de 2 vaisseaux ennemis ou plus, vous pouvez changer 1 de vos résultats vierges en résultat #eye#.",
             "ability_ENG": "While you defend or perform an attack, if you are in the #Farc# at range 1-2 of 2 enemy ships or more, you may change 1 of your blank results into a #eye# result.",
@@ -1435,7 +1435,7 @@
             "points": 8,
             
             "max_per_squad": 1,
-            "title": ["Razor Crest",1],
+            "title": ["Razor Crest"],
             "ability": "MISE EN PLACE : Si l’amélioration  #mod# que vous équipez possède 1 ou plusieurs charges, ajoutez en une supplémentaire.",
             "ability_ENG": "SETUP : If the #mod# upgrade you equip has 1 or more charges, add 1 additional #ch#.", 
             "slots": [
@@ -1463,7 +1463,7 @@
             "points": 7,
             
             "max_per_squad": 1,
-            "title": ["Razor Crest",1],
+            "title": ["Razor Crest"],
             "ability": "Lorsque vous attaquez vous pouvez dépenser 1#ch# sur l’une de vos cartes #ill#  pour lancer 1 dé d’attaque supplémentaire.",
             "ability_ENG": "While you attack, you may spend 1 #ch# from 1 of your #ill# upgrade card. If you do, roll 1 additional attack die.",
             "slots": [
@@ -1489,7 +1489,7 @@
             "points": 6,
             
             "max_per_squad": 1,
-            "title": ["Din Djarin's N1",1],
+            "title": ["Din Djarin's N1"],
             "ability": "Lorsque vous défendez ou effectuez une attaque, si vous êtes dans le  #Farc#  à portée 1-2 de 2 vaisseaux ennemis ou plus, vous pouvez changer 1 de vos résultats vierges en résultat #eye#.",
             "ability_ENG": "While you defend or perform an attack, if you are in the #Farc# at range 1-2 of 2 enemy ships or more, you may change 1 of your blank results into a #eye# result.",
             "slots": [
@@ -1521,7 +1521,7 @@
             "points": 5,
             
             "max_per_squad": 1,
-            "title": ["Din Djarin's N1",1],
+            "title": ["Din Djarin's N1"],
             "ability": "Lorsqu’un vaisseau à portée 0-2 subit des dégâts, vous pouvez récupérer 1#fo#",
             "ability_ENG": "While a friendly ship at range 0-2 suffers any damage, you may recover 1#fo#", 
             "slots": [
@@ -1571,7 +1571,7 @@
 		    "points": 4,
             
             "max_per_squad": 1,
-            "title": ["Din Djarin's N1",1],
+            "title": ["Din Djarin's N1"],
             "ability": "Lorsqu’une attaque contre vous échoue, gagnez 1 marqueur de calcul.",
             "ability_ENG": "While an attack against you fails, receive 1 calculate token.", 
             "slots": [
@@ -1773,7 +1773,7 @@
             "skill": 5,
             "points": 9,
             
-            "title": ["Outrider",1],
+            "title": ["Outrider"],
             "ability": "Lorsque vous vous déplacez, ignorez les obstacles",
             "ability_ENG": "While you move, ignore obstacles",
             "slots": [
@@ -1802,7 +1802,7 @@
             "skill": 3,
             "points": 8,
             
-            "title": ["Outrider",1],
+            "title": ["Outrider"],
             "ability": "Après avoir défendu ou attaqué, si vous avez dépensé un marqueur de calcul, recevez un jeton calcul.",
             "ability_ENG": "After you defend or perform an attack, if you spend a calculate token, receive a calculate token.",
             "slots": [
@@ -1842,7 +1842,7 @@
             "max_per_squad": 1,
             "faction": "Pirates_and_Smugglers",
             "ship": "YT-1300 Light Freighter",
-            "title": ["Millenium Falcon",1],
+            "title": ["Millenium Falcon"],
             "modify": true,
 	        "charge":[0],
             "force": 0,
@@ -1895,7 +1895,7 @@
             "max_per_squad": 1,
             "faction": "Pirates_and_Smugglers",
             "ship": "YT-1300 Light Freighter",
-            "title": ["Millenium Falcon",1],
+            "title": ["Millenium Falcon"],
             "force": 0,
             "shipId": 3,
 		    "modify": false,
@@ -2084,7 +2084,7 @@
             "skill": 1,
             "points": 12,
             
-            "title": ["Slave 1",1],
+            "title": ["Slave 1"],
             "ability": "ACTION : Choisissez 2 vaisseaux non énormes à portée 0-3 de vous qui ne sont pas alliés l’un l’autre. Chaque vaisseau peut effectuer une action qui se trouve sur votre barre d’action, même stressé, dans l’ordre de votre choix. Puis gagner 1 jeton calcul.",
             "ability_ENG": "ACTION : Choose 2 non huge ships at range 0-3 of you who are not friendly to each other. Each ship may perform an action which is on its action bar, even stressed, in the order of your choice. Then receive 1 calculate token.",
             "slots": [
@@ -2115,7 +2115,7 @@
             "skill": 4,
             "points": 12,
             
-            "title": ["Andrasta",1],
+            "title": ["Andrasta"],
             "ability": "Si vous devez larguer un engin en utilisant le gabarit 1#straight#, vous pouvez utiliser à la place un gabarit 3#Lturn# ou 3#straight# ou 3#Rturn#",
             "ability_ENG": "If you would drop a device using the 1 #straight# template, you may use a 3 #Lturn# or #straight# or #Rturn# template instead.",
             "slots": [
@@ -2259,7 +2259,7 @@
             "max_per_squad": 1,
             "faction": "Pirates_and_Smugglers",
             "ship": "Scurrg H-6 Bomber",
-            "title": ["Havoc",1],
+            "title": ["Havoc"],
             "force": 0,
             "shipId": 37,
 		    "modify": true,
@@ -2327,7 +2327,7 @@
             "max_per_squad": 1,
             "faction": "Pirates_and_Smugglers",
             "ship": "Scurrg H-6 Bomber",
-            "title": ["Havoc",1],
+            "title": ["Havoc"],
             "force": 0,
             "shipId": 37,
 		    "modify": true,
@@ -2463,7 +2463,7 @@
             "skill": 4,
             "points": 11,
             
-            "title": ["IG-2000",4],
+            "title": ["IG-2000"],
             "ability": "Au début de la phase d’engagement, vous pouvez choisir 1 vaisseau allié à portée 1–3 avec #CA# dans sa barre d’action. Dans ce cas, transférez-lui 1 de vos jetons calcul.",
             "ability_ENG": "At the beginning of Engagement Phase, you may choose 1 friendly ship at range 1-3 with #CA# in its action bar. If you do, transfer 1 of your calculate tokens to him.",
             "slots": [
@@ -2494,7 +2494,7 @@
             "shipId": 20,
             "skill": 4,
             "points": 11,
-            "title": ["IG-2000",4],
+            "title": ["IG-2000"],
             
             "ability": "Après avoir effectué une attaque ratée, vous pouvez effectuer une attaque bonus #can#",
             "ability_ENG": "After you perform a failed attack, you may perform a bonus #can# attack", 
@@ -2524,7 +2524,7 @@
             "shipId": 20,
             "skill": 4,
             "points": 11,
-            "title": ["IG-2000",4],
+            "title": ["IG-2000"],
             
             "ability": "Après avoir effectué une action #BO# , vous pouvez effectuer une action #EV# .",
             "ability_ENG": "After you perform a #BO# action, you mau perform a #EV# action.",
@@ -2555,7 +2555,7 @@
             "skill": 4,
             "points": 10,
             
-            "title": ["IG-2000",4],
+            "title": ["IG-2000"],
             "ability": "Tant que vous exécutez une manœuvre Boucle de Segnor #Sleft# ou #Sright# ), vous pouvez utiliser un autre gabarit de même vitesse mais de même direction à la place.",
             "ability_ENG": "While you execute a Segnor Loop #Sleft# or #Sright# maneuver, you may use another template of the same speed and same direction instead.",
             "slots": [
@@ -2585,7 +2585,7 @@
             "points": 8,
             
             "max_per_squad": 1,
-            "title": ["Razor Crest",1],
+            "title": ["Razor Crest"],
             "ability": "Tant que vous défendez ou effectuez une attaque si vous êtes dans le #Farc# à portée 1-2 d'au moins 2 vaisseaux ennemis, vous pouvez changer 1 de vos résultats vierges en un résultat #eye#.",
             "ability_ENG": "While you defend or perform an attack, if you are in the #Farc# at range 1-2 of at least 2 enemy ships, you may change 1 of your blank results into a #eye# result.",
             "slots": [
@@ -2612,7 +2612,7 @@
             "points": 7,
             
             "max_per_squad": 1,
-            "title": ["Razor Crest",1],
+            "title": ["Razor Crest"],
             "ability_ENG": "After you fully execute an advanced maneuver, you may perform a #CA# or #BR# action, even while stressed. If you do, receive a strain token.",
             "ability": "Après avoir entièrement exécuté une manœuvre avancée, vous pouvez effectuer une action #CA# ou #BR#, même si vous êtes stressé. Dans ce cas, gagnez 1 jeton contrainte.", 
             "slots": [
@@ -2640,7 +2640,7 @@
             "skill": 3,
             "points": 8,
             
-            "title": ["Mist Hunter",1],
+            "title": ["Mist Hunter"],
             "ability": "Après avoir entièrement exécuté une manœuvre rouge, gagnez 1 jeton calcul. Au début de la phase de fin, vous pouvez choisir un vaisseau à portée 0–1. Dans ce cas, transférez 1 de vos jetons stress à ce vaisseau.",
             "ability_ENG": "After you fully execute a red maneuver, receive 1 calculate token. At the beginning of End Phase, you may choose 1 ship at range 0-1. If you do, transfer 1 of your stress tokens to this ship.",
             "slots": [
@@ -2662,7 +2662,7 @@
             "max_per_squad": 1,
             "faction": "Bounty_Hunters_Guild",
             "ship": "G-1A Starfighter",
-            "title": ["Mist Hunter",1],
+            "title": ["Mist Hunter"],
             "charge":[0],
             "force": 0,
             "shipId": 28,
@@ -2693,7 +2693,7 @@
             "skill": 6,
             "charge": [1,"+"],
             "points": 10,
-            "title": ["Punishing One",1],
+            "title": ["Punishing One"],
             "ability": "Après avoir défendu, si l’attaquant est dans votre #Farc#, vous pouvez dépenser 1 #ch# pour effectuer une attaque bonus contre cet attaquant.",
             "ability_ENG": "After you defend, if the attacker is in yout #Farc#, you may spend 1 #ch# to perform a bonus attack against this attacker.",
             "slots": [
@@ -2744,7 +2744,7 @@
             "skill": 3,
             "points": 8,
             
-            "title": ["Punishing One",1],
+            "title": ["Punishing One"],
             "ability": "Au début de la phase d’engagement, vous pouvez choisir un vaisseau allié à portée 0–2. Dans ce cas, transférez à ce vaisseau tout ou partie de vos marqueurs verts et/ou rouge.",
             "ability_ENG": "At the beginning of Engagement Phase, you may choose a friendly ship at range 0-2. If you do, transfer any number of your green and/or red tokens to this ship.",
             "slots": [
@@ -2858,7 +2858,7 @@
             "skill": 4,
             "points": 10,
             
-            "title": ["Hound's Tooth",1],
+            "title": ["Hound's Tooth"],
             "ability": "Tant que vous effectuez une attaque principale, après l’étape « Neutraliser les résultats », vous pouvez dépenser 1 résultat #crit# pour ajouter 2 résultats #hit# .",
             "ability_ENG": "While you perform a primary attack, after the 'Neutralize Results' step, you may spend 1 #crit# result to add 2 #hit# results.",
             "slots": [
@@ -2930,7 +2930,7 @@
           
             "points": 7,
             
-            "title": ["Xanadu Blood",1],
+            "title": ["Xanadu Blood"],
             "ability": "Après avoir effectué une attaque qui a touché, vous pouvez dépenser 2 #ch# pour transférer 1 de vos jetons rouges non-verrouillage ou orange au défenseur.",
             "ability_ENG": "After you perform an attack that hits, you may spend 2 #ch# to transfer 1 of your non lock red tokens or orange tokens to the defender.",
             "slots": [
@@ -2999,7 +2999,7 @@
             "skill": 5,
             "points": 14,
             
-            "title": ["Slave 1",1],
+            "title": ["Slave 1"],
             "ability": "Tant que vous défendez ou effectuez une attaque, vous pouvez relancer 1 de vos dés pour chaque vaisseau ennemi à portée 0–1.",
             "ability_ENG": "While you defend or perform an attack, you may reroll 1 of your dice for each enemy ship at range 0-1",
             "slots": [
@@ -3029,7 +3029,7 @@
             "points": 13,
             
 		    "modify": true,
-            "title": ["Slave 1",1],
+            "title": ["Slave 1"],
             "ability": "Avant de vous engager, vous pouvez dépenser 1 #fo# pour choisir 2 vaisseaux ennemis à portée 0-1. Transférez n'importe quel nombre de jetons orange et rouges entre ces 2 vaisseaux.",
             "ability_ENG": "Before you engage, you may spend 1 #fo# to choose 2 enemy ships at range 0-1. Tranfer as many orange or red tokens between those 2 ships",
             "slots": [
@@ -3076,7 +3076,7 @@
             "shipId": 25,
 	        "modify": true,
             "skill": 6,
-            "title": ["Ghost",1],
+            "title": ["Ghost"],
             "points": 12,
             
             "ability": "Après avoir révélé une manoeuvre rouge ou bleue, vous pouvez modifier votre cadran pour une autre manoeuvre de même difficulté.",
@@ -3104,7 +3104,7 @@
             "charge":[0],
             "force": "2+",
     
-            "title": ["Ghost",1],
+            "title": ["Ghost"],
             "points": 12,
             
             "ability": "Lorsqu'un vaisseau allié dans votre arc de tir défend, vous pouvez dépenser 1 #fo#. Dans ce cas, l'attaquant lance 1 dé d'attaque en moins.",
@@ -3130,7 +3130,7 @@
             "force": 0,
             "shipId": 25,
             "skill": 2,
-            "title": ["Ghost",1],
+            "title": ["Ghost"],
             "points": 10,
             
             "ability": "Au début de la phase d'engagement, chaque vaisseau ennemi à portée 0 reçoit 2 jetons brouillage.",
@@ -3157,7 +3157,7 @@
             "force": 0,
             "shipId": 25,
             "skill": 4,
-            "title": ["Ghost",1],
+            "title": ["Ghost"],
             "points": 10,
             
             "ability": "Lorsque vous défendez, si l'attaquant a modifié au moins 1 dé d'attaque, vous pouvez lancer 1 dé de défense supplémentaire.",
@@ -3183,7 +3183,7 @@
             "shipId": 26,
             "skill": 6,
             "modify": true,
-		    "title": ["Phantom 1",1],
+		    "title": ["Phantom 1"],
             "points": 6,
             
             "ability": "Après avoir révélé une manoeuvre rouge ou bleue, vous pouvez modifier votre cadran pour une autre manoeuvre de même difficulté.",
@@ -3236,7 +3236,7 @@
             "charge":[0],
             "force": 2,
             "modify": true,
-            "title": ["Phantom 1",1],
+            "title": ["Phantom 1"],
             "points": 6,
             
             "ability": "Lorsqu'un vaisseau allié dans votre arc de tir défend, vous pouvez dépenser 1 #fo#. Dans ce cas, l'attaquant lance 1 dé d'attaque en moins.",
@@ -3262,7 +3262,7 @@
             "shipId": 26,
             "skill": 2,
             "modify": true,
-		    "title": ["Phantom 1",1],
+		    "title": ["Phantom 1"],
             "points": 5,
             
             "ability": "Lorsque vous défendez, les résultat #crit# sont neutralisés avant les résultats #hit#.",
@@ -3287,7 +3287,7 @@
             "shipId": 41,
             "skill": 1,
             "modify": true,
-		    "title": ["Phantom 2",1],
+		    "title": ["Phantom 2"],
             "points": 5,
             
             "ability": "Lorsque vous coordonnez, si vous choisissez un vaisseau avec exactement 1 jeton stress, il peut effectuer des actions.", 
@@ -3314,7 +3314,7 @@
             "shipId": 41,
             "skill": 4,
             "modify": true,
-		    "title": ["Phantom 2",1],
+		    "title": ["Phantom 2"],
             "points": 6,
             
             "ability": "Lorsque vous défendez, si l'attaquant a modifié au moins 1 dé d'attaque, vous pouvez lancer 1 dé de défense supplémentaire.",
@@ -3341,7 +3341,7 @@
             "charge":[0],
             "force": 3,
             "modify": true,
-            "title": ["Phantom 2",1],
+            "title": ["Phantom 2"],
             "points": 6,
             
             "ability": "Après avoir entièrement effectué une manoeuvre, vous pouvez choisir un vaisseau allié à portée 1-2 et dépenser 2 #fo#. Ce vaisseau peut effectuer une action, même stressé.",
@@ -3369,7 +3369,7 @@
             "skill": 2,
             "points": 5,
             "modify": true,
-		    "title": ["Phantom 2",1],
+		    "title": ["Phantom 2"],
             
             "ability": "Après avoir attaqué, assignez la condition 'Tir de Suppression' au défenseur.",
             "ability_ENG": "After you perform an attack, assign the Suppressive Fire condition to the defender.",
@@ -3395,7 +3395,7 @@
             "skill": 3,
             "points": 4,
             "modify": true,
-		    "title": ["Sabine's Masterpiece",1],
+		    "title": ["Sabine's Masterpiece"],
             
             "ability": "Avant de vous activer, vous pouvez effectuer une action #BR# ou #BO#.", 
             "ability_ENG": "Before you activate, you may perform a #BR# or #BO# action.",
@@ -3422,7 +3422,7 @@
             "force": 1,
             "modify": true,
             "points": 4,
-            "title": ["Sabine's Masterpiece",1],
+            "title": ["Sabine's Masterpiece"],
             
             "ability": "Lorsque vous défendez ou attaquez, si vous êtes stressé, vous pouvez dépenser 1 #fo# pour modifier jusqu'à 2 de vos résultats #eye# en #hit# ou #evd#.",
             "ability_ENG": "While you defend or perform an attack, if you are stressed, you may spend 1 #fo# to change up to 2 of your #eye# results to #hit# or #evd# results.",
@@ -3450,7 +3450,7 @@
             "skill": 2,
             "points": 3,
             "modify": true,
-		    "title": ["Sabine's Masterpiece",1],
+		    "title": ["Sabine's Masterpiece"],
             
             "ability": "Après avoir attaqué, assignez la condition 'Tir de Suppression' au défenseur.",
             "ability_ENG": "After you perform an attack, assign the Suppressive Fire condition to the defender.",
@@ -3477,7 +3477,7 @@
             "skill": 2,
             "points": 3,
             "modify": true,
-		    "title": ["Sabine's Masterpiece",1],
+		    "title": ["Sabine's Masterpiece"],
             
             "ability": "Lorsque vous défendez, les résultats #crit# sont neutralisés avant les #hit#.",
             "ability_ENG": "While you defend, #crit# results are neutralized before #hit# results.",
@@ -3503,7 +3503,7 @@
             "charge":[0],
             "force": 1,
             "modify": true, 
-            "title": ["Nightbrother",1],
+            "title": ["Nightbrother"],
             
             "ability": "Lorsque vous défendez ou attaquez, si vous êtes stressé, vous pouvez dépenser 1 #fo# pour modifier jusqu'à 2 de vos résultats #eye# en #hit# ou #evd#.",
             "ability_ENG": "While you defend or perform an attack, if you are stressed, you may spend 1 #fo# to change up to 2 of your #eye# results to #hit# or #evd# results.",
@@ -3528,7 +3528,7 @@
             "shipId": 77,
             "skill": 3,
             "points": 10,
-            "title": ["Nightbrother",1],
+            "title": ["Nightbrother"],
             "modify": true,
 		    
             "ability": "Au début de la phase d'engagement, chaque vaisseau ennemi à portée 0 reçoit 2 jeton brouillage.", 
@@ -3555,7 +3555,7 @@
             "shipId": 16,
             "skill": 2,
             "points": 9,
-            "title": ["Sato's Hammer",1],
+            "title": ["Sato's Hammer"],
 		    "modify": true,
             
             "ability": "Au début de la phase d'engagement, vous pouvez effectuer une action rouge #BR#.",
@@ -3581,7 +3581,7 @@
             "skill": 1,
             "points": 8,
             "modify": true,
-		    "title": ["Sato's Hammer",1],
+		    "title": ["Sato's Hammer"],
             
             "ability": "Après avoir défendu contre une attaque portée 1, l'attaquant reçoit 1 jeton de contrainte.",
             "ability_ENG": "After you defend against a Range 1 attack, the attacker gains 1 strain token.",
@@ -3606,7 +3606,7 @@
             "skill": 5,
             "points": 9,
             "modify": true,
-		    "title": ["Mighty Oak Apocalypse",1],
+		    "title": ["Mighty Oak Apocalypse"],
             
             "ability": "Tant que vous êtes stressé, ignorez Sensor Blackout.", 
             "ability_ENG": "While you are stressed, you ignore the Sensor Blackout ability.",
@@ -3632,7 +3632,7 @@
             "skill": 4,
             "points": 8,
             "modify": true,
-		    "title": ["Mighty Oak Apocalypse",1],
+		    "title": ["Mighty Oak Apocalypse"],
             
             "ability": "Lorsque vous attaquez, vous pouvez dépenser 1 résultat #eye#, #crit# ou #hit# pour regarder les cartes de dégat face cachée du défenseur, en choisir 1, et l'exposer.",
             "ability_ENG": "While you perform an attack, you may spend 1 #eye#, #crit#, or #hit# result to look at the defender's facedown damage cards, choose 1, and expose it.",
@@ -3760,7 +3760,7 @@
             "shipId": 57,
             "skill": 4,
             "points": 8,
-            "title": ["Soulless One",1],
+            "title": ["Soulless One"],
             
             "ability": "Lorsque vous effectuez une attaque principale, si vous n'êtes pas dans l'arc de tir du défenseur, vous pouvez relancer jusqu'à 2 dés d'attaque.",
             "ability_ENG": "While you perform a primary attack, if you are not in the defender's firing arc, you may reroll up to 2 attack dice.",
@@ -4756,7 +4756,7 @@
             "charge": [1,"+"],
     
             
-            "title": ["Black One",1],
+            "title": ["Black One"],
             "ability": "Après avoir effectué une action, vous pouve dépenser 1 #ch# pour effectuer une action blanche, en la considérant comme rouge.",
             "ability_ENG": "After you perform an action, you may spend 1 charge to perform a white action, treating it as red.",
             "slots": [
@@ -5015,7 +5015,7 @@
 		    "modify": true,
             "skill": 6,
             "points": 9,            
-            "title": ["Millenium Falcon",1],
+            "title": ["Millenium Falcon"],
             "ability": "Mise en place : Vous pouvez vous placer n'importe où sur l'aire de jeu, au delà de la portée 3 des vaisseaux ennemis.",
             "ability_ENG": "Setup: You can be placed anywhere in the play area beyond range 3 of enemy ships.",
             "slots": [
@@ -5046,7 +5046,7 @@
             "skill": 5,
             "points": 10,
             
-            "title": ["Millenium Falcon",1],
+            "title": ["Millenium Falcon"],
             "ability": "Lorsque vous défendez ou attaquez, si le vaisseau ennemi est dans votre #Farc#, vous pouvez dépenser 1 #fo# pour modifier l'un de vos résultats vierge en #evd# ou #hit#.",
             "ability_ENG": "While you defend or perform an attack, if the enemy ship is in your #Farc# , you may spend 1 #fo# to change 1 of your blank results to an #evd# or #hit# result.",
             "slots": [
@@ -5077,7 +5077,7 @@
             
             "ability": "Après qu'un vaisseau allié à portée 0-3 est détruit, avant que le vaisseau ne soit retiré, vous pouvez effectuer une action. Puis, vous pouvez effectuer une attaque bonus.",
             "ability_ENG": "After a friendly ship at range 0-3 is destroyed, before that ship is removed, you may perform an action. Then you may perform a bonus attack.",
-        	"title": ["Millenium Falcon",1],
+        	"title": ["Millenium Falcon"],
             "slots": [
                 "Title",
                 "Talent"
@@ -5105,7 +5105,7 @@
             
             "ability": "Après avoir exécuté entièrement une manoeuvre rouge ou effectué une action rouge, vous pouvez dépenser n'importe quel nombre de #ch# pour choisir autant de vaisseaux alliés à portée 0-2. Ces vaisseaux peuvent effectuer une action, même stressés.",
             "ability_ENG": "After you fully execute a red maneuver or perform a red action, you may spend any number of charges to choose that many friendly ships at range 0-2. The chosen ships may perform an action, even while stressed. ",
-            "title": ["Millenium Falcon",1],
+            "title": ["Millenium Falcon"],
             "slots": [
                 "Title",
                 "Talent",
@@ -6007,7 +6007,7 @@
         },
         {
             "name": "Aayla Secura",
-            "id": 275,
+            "id": 274,
             "max_per_squad": 1,
             "modify": false,
 		    "faction": "Jedi_Order",
@@ -6027,7 +6027,7 @@
         },
         {
             "name": "Shaak Ti",
-            "id": 276,
+            "id": 275,
             "max_per_squad": 1,
             "modify": false,
 		    "faction": "Jedi_Order",
@@ -6046,7 +6046,7 @@
         },
         {
             "name": "Kit Fisto",
-            "id": 277,
+            "id": 276,
             "max_per_squad": 1,
             "modify": false,
 		    "faction": "Jedi_Order",
@@ -6066,7 +6066,7 @@
 
         {
             "name": "Drift",
-            "id": 278,
+            "id": 277,
             "max_per_squad": 1,
             "modify": false,
 		    "faction": "Jedi_Order",
@@ -6084,7 +6084,7 @@
         },
         {
             "name": "Stub",
-            "id": 279,
+            "id": 278,
             "max_per_squad": 1,
             "modify": false,
 		    "faction": "Jedi_Order",
@@ -6102,7 +6102,7 @@
         },
         {
             "name": "Boost",
-            "id": 280,
+            "id": 279,
             "max_per_squad": 1,
             "modify": false,
 		    "faction": "Jedi_Order",
@@ -6120,7 +6120,7 @@
         },
         {
             "name": "Killer",
-            "id": 281,
+            "id": 280,
             "max_per_squad": 1,
             "modify": false,
 		    "faction": "Jedi_Order",
@@ -6138,7 +6138,7 @@
         },
         {
             "name": "Eclaireur de l'Escadron Ombre",
-            "id": 282,
+            "id": 281,
             "max_per_squad": 8,
             "modify": false,
 		    "faction": "Jedi_Order",
@@ -6156,7 +6156,7 @@
         },
         {
             "name":"Anakin Skywalker",
-            "id": 283,
+            "id": 282,
             "max_per_squad": 1,
             "modify": false,
 		    "faction": "Jedi_Order",
@@ -6176,7 +6176,7 @@
         },
         {
             "name":"Goji",
-            "id": 284,
+            "id": 283,
             "max_per_squad": 1,
             "modify": false,
 		    "faction": "Jedi_Order",
@@ -6194,7 +6194,7 @@
         },
         {
             "name":"Broadside",
-            "id": 285,
+            "id": 284,
             "max_per_squad": 1,
             "modify": false,
 		    "faction": "Jedi_Order",
@@ -6212,7 +6212,7 @@
         },
         {
             "name":"Matchstick",
-            "id": 286,
+            "id": 285,
             "max_per_squad": 1,
             "modify": false,
 		    "faction": "Jedi_Order",
@@ -6230,7 +6230,7 @@
         },
         {
             "name":"Bombardier de l'Escadron Ombre",
-            "id": 287,
+            "id": 286,
             "max_per_squad": 8,
             "modify": false,
 		    "faction": "Jedi_Order",
@@ -6247,7 +6247,7 @@
         },
        {
             "name":"Mace Windu",
-            "id": 288,
+            "id": 287,
             "max_per_squad": 1,
             "modify": false,
 		    "faction": "Jedi_Order",
@@ -6267,7 +6267,7 @@
         },
         {
             "name":"Sifo Dyas",
-            "id": 289,
+            "id": 288,
             "max_per_squad": 1,
             "modify": false,
 		    "faction": "Jedi_Order",
@@ -6286,7 +6286,7 @@
         },
         {
             "name":"Quinlan Vos",
-            "id": 290,
+            "id": 289,
             "max_per_squad": 1,
             "modify": false,
 		    "faction": "Jedi_Order",
@@ -6305,7 +6305,7 @@
         },
         {
             "name":"Commander Cody",
-            "id": 291,
+            "id": 290,
             "max_per_squad": 1,
             "modify": false,
 		    "faction": "Jedi_Order",
@@ -6324,7 +6324,7 @@
 
         {
             "name": "Hound",
-            "id": 292,
+            "id": 291,
             "max_per_squad": 1,
             "modify": false,
 		    "faction": "Galactic_Senate",
@@ -6342,7 +6342,7 @@
         },
         {
             "name": "Warthog",
-            "id": 293,
+            "id": 292,
             "max_per_squad": 1,
             "modify": false,
 		    "faction": "Galactic_Senate",
@@ -6360,7 +6360,7 @@
         },
         {
             "name": "Hawk",
-            "id": 294,
+            "id": 293,
             "max_per_squad": 1,
             "modify": false,
 		    "faction": "Galactic_Senate",
@@ -6378,7 +6378,7 @@
         },
         {
             "name": "Sicko",
-            "id": 295,
+            "id": 294,
             "max_per_squad": 1,
             "modify": false,
 		    "faction": "Galactic_Senate",
@@ -6396,7 +6396,7 @@
         },
         {
             "name": "Odd Ball",
-            "id": 296,
+            "id": 295,
             "max_per_squad": 1,
             "modify": false,
 		    "faction": "Galactic_Senate",
@@ -6415,7 +6415,7 @@
         },
         {
             "name": "Kickback",
-            "id": 297,
+            "id": 296,
             "max_per_squad": 1,
             "modify": false,
 		    "faction": "Galactic_Senate",
@@ -6433,7 +6433,7 @@
         },
         {
             "name": "Axe",
-            "id": 298,
+            "id": 297,
             "max_per_squad": 1,
             "modify": false,
 		    "faction": "Galactic_Senate",
@@ -6451,7 +6451,7 @@
         },
         {
             "name": "Tucker",
-            "id": 299,
+            "id": 298,
             "max_per_squad": 1,
             "modify": false,
 		    "faction": "Galactic_Senate",
@@ -6469,7 +6469,7 @@
         },
         {
             "name": "Protecteur de l'Escadron Bleu",
-            "id": 300,
+            "id": 299,
             "max_per_squad": 8,
             "modify": false,
 		    "faction": "Galactic_Senate",
@@ -6487,7 +6487,7 @@
         },
         {
             "name": "Escorte de l'Escadron Ombre",
-            "id": 301,
+            "id": 300,
             "max_per_squad": 8,
             "modify": false,
 		    "faction": "Galactic_Senate",
@@ -6504,7 +6504,7 @@
         },
         {
             "name": "Contrail",
-            "id": 302,
+            "id": 301,
             "max_per_squad": 1,
             "modify": false,
 		    "faction": "Galactic_Senate",
@@ -6523,7 +6523,7 @@
         },
         {
             "name": "Klick",
-            "id": 303,
+            "id": 302,
             "max_per_squad": 1,
             "modify": false,
 		    "faction": "Galactic_Senate",
@@ -6541,7 +6541,7 @@
         },
         {
             "name": "Wilhuff Tarkin",
-            "id": 304,
+            "id": 303,
             "max_per_squad": 1,
             "modify": false,
 		    "faction": "Galactic_Senate",
@@ -6559,7 +6559,7 @@
         },
         {
             "name": "Crosshair",
-            "id": 305,
+            "id": 304,
             "max_per_squad": 1,
             "modify": false,
 		    "faction": "Galactic_Senate",
@@ -6578,7 +6578,7 @@
         },
         {
             "name": "Pilote du 104ème Bataillon",
-            "id": 306,
+            "id": 305,
             "max_per_squad": 8,
             "modify": false,
 		    "faction": "Galactic_Senate",
@@ -6595,7 +6595,7 @@
         },
         {
             "name": "Wolffe",
-            "id": 307,
+            "id": 306,
             "max_per_squad": 1,
             "modify": false,
 		    "faction": "Galactic_Senate",
@@ -6614,7 +6614,7 @@
         },
         {
             "name": "Odd Ball",
-            "id": 308,
+            "id": 307,
             "max_per_squad": 1,
             "modify": false,
 		    "faction": "Galactic_Senate",
@@ -6633,7 +6633,7 @@
         },
         {
             "name": "Sinker",
-            "id": 309,
+            "id": 308,
             "max_per_squad": 1,
             "modify": false,
 		    "faction": "Galactic_Senate",
@@ -6652,7 +6652,7 @@
         },
         {
             "name": "Jag",
-            "id": 310,
+            "id": 309,
             "max_per_squad": 1,
             "modify": false,
 		    "faction": "Galactic_Senate",
@@ -6671,7 +6671,7 @@
         },
         {
             "name": "Pilote de Navette d'Escorte",
-            "id": 311,
+            "id": 310,
             "max_per_squad": 8,
             "modify": false,
 		    "faction": "Galactic_Senate",
@@ -6689,7 +6689,7 @@
         },
         {
             "name": "Echo",
-            "id": 312,
+            "id": 311,
             "max_per_squad": 1,
             "modify": true,
 		    "faction": "Galactic_Senate",
@@ -6699,18 +6699,20 @@
             "shipId": 58,
             "skill": 4,
             "points": 8,            
-            "title": ["Marauder",1],            
+            "title": ["Marauder"],            
             "ability": "Après avoir effectué une action, vous pouvez effectuer une action #CA#. Pendant la phase de fin, vous pouvez dépenser un jeton calcul. Dans ce cas, coordonnez un vaisseau 1-3",
             "ability_ENG": "After you perform an action, you may perform a bonus #CA# action. At the end phase, you may spend a calculate token. If you do, you may coordinate a ship at range 1-3.",
             "slots": [
                 "Title",
                 "Talent"
             ],
-            "modifier_func":[]
+            "modifier_func":[
+                [1,"Title",1,238]
+            ]
         },
         {
             "name": "Tech",
-            "id": 313,
+            "id": 312,
             "max_per_squad": 1,
             "modify": true,
 		    "faction": "Galactic_Senate",
@@ -6720,18 +6722,20 @@
             "shipId": 58,
             "skill": 4,
             "points": 8,
-            "title": ["Marauder",1],                        
+            "title": ["Marauder"],                        
             "ability": "Après avoir effectué une action, vous pouvez effectuer une action rouge #JA#. Pendant la phase de fin, si il y a un vaisseau brouillé à portée 0-1, coordonnez un vaisseau à portée 1-3.",
             "ability_ENG": "After you perform an action, you may perform a red #JA# action. At the end phase, if there is a jammed ship at range 0-1, you may coordinate a ship at range 1-3.",
             "slots": [
                 "Title",
                 "Talent"
             ],
-            "modifier_func":[]
+            "modifier_func":[
+                [1,"Title",1,238]
+            ]
         },
         {
             "name": "Hunter",
-            "id": 314,
+            "id": 313,
             "max_per_squad": 1,
             "modify": true,
 		    "faction": "Galactic_Senate",
@@ -6741,7 +6745,7 @@
             "shipId": 58,
             "skill": 3,
             "points": 8,
-            "title": ["Marauder",1],                        
+            "title": ["Marauder"],                        
             "ability": "Après avoir effectué une action, vous pouvez effectuer une action rouge #TL#. Pendant la phase de fin, vous pouvez dépenser une acquisition que vous avez sur un vaisseau. Dans ce cas, coordonnez ce vaisseau.",
             "ability_ENG": "After you perform an action, you may perform a red #TL# action. At the end phase, you may spend a lock you have on a ship. If you do, coordinate this ship.",
             "slots": [
@@ -6749,12 +6753,15 @@
                 "Talent"
 
             ],
-            "modifier_func":[]
+            "modifier_func": [
+            	[1,"Title",1,238]
+                
+            ]
 
         },
         {
             "name": "Wrecker",
-            "id": 315,
+            "id": 314,
             "max_per_squad": 1,
             "modify": true,
 		    "faction": "Galactic_Senate",
@@ -6764,7 +6771,7 @@
             "shipId": 58,
             "skill": 1,
             "points": 8,
-            "title": ["Marauder",1],            
+            "title": ["Marauder"],            
             "ability": "Après avoir effectué une action, vous pouvez effectuer une action rouge #BR#. Pendant la phase de fun, vous pouvez dépenser 1 jeton stress pour effectuer une attaque bonus principale contre un vaisseau ennemi à portée 0.",
             "ability_ENG": "After you perform an action, you may perform a red #BR# action. At the end phase, you may spend a stress token to perform a bonus primary attack against an enemy ship at range 0.",
             "slots": [
@@ -6778,7 +6785,7 @@
         },
         {
             "name": "Officier de l'Escadron Bravo",
-            "id": 316,
+            "id": 315,
             "max_per_squad": 8,
             "modify": false,
 		    "faction": "Galactic_Senate",
@@ -6795,7 +6802,7 @@
         },
         {
             "name": "Ric Ollié",
-            "id": 317,
+            "id": 316,
             "max_per_squad": 1,
             "modify": false,
 		    "faction": "Galactic_Senate",
@@ -6814,7 +6821,7 @@
         },
         {
             "name": "Gavyn Sykes",
-            "id": 318,
+            "id": 317,
             "max_per_squad": 1,
             "modify": false,
 		    "faction": "Galactic_Senate",
@@ -6832,7 +6839,7 @@
         },
         {
             "name": "Dinée Ellberger",
-            "id": 319,
+            "id": 318,
             "max_per_squad": 1,
             "modify": false,
 		    "faction": "Galactic_Senate",
@@ -6850,7 +6857,7 @@
         },
         {
             "name": "Anakin Skywalker",
-            "id": 320,
+            "id": 319,
             "max_per_squad": 1,
             "modify": false,
 		    "faction": "Galactic_Senate",
@@ -6869,7 +6876,7 @@
         },
         {
             "name": "'Duchess'",
-            "id": 321,
+            "id": 320,
             "max_per_squad": 1,
             "modify": false,
 		    "faction": "I.S.B",
@@ -6888,7 +6895,7 @@
         },
         {
             "name": "'Countdown'",
-            "id": 322,
+            "id": 321,
             "max_per_squad": 1,
             "modify": false,
 		    "faction": "I.S.B",
@@ -6906,7 +6913,7 @@
         },
         {
             "name": "'Pure Sabacc'",
-            "id": 323,
+            "id": 322,
             "max_per_squad": 1,
             "modify": false,
 		    "faction": "I.S.B",
@@ -6924,7 +6931,7 @@
         },
         {
             "name": "'Vagabond'",
-            "id": 324,
+            "id": 323,
             "max_per_squad": 1,
             "modify": false,
 		    "faction": "I.S.B",
@@ -6943,7 +6950,7 @@
         {
             "name": "Sentinelle Planétaire",
             "name_ENG": "Planetary Sentinel",
-            "id": 325,
+            "id": 324,
             "max_per_squad": 8,
             "modify": false,
 		    "faction": "I.S.B",
@@ -6961,7 +6968,7 @@
         {
             "name": "Captain Feroph",
             "name_ENG": "Captain Feroph",
-            "id": 326,
+            "id": 325,
             "max_per_squad": 1,
             "modify": false,
 		    "faction": "I.S.B",
@@ -6980,7 +6987,7 @@
         {
             "name": "Major Vermeil",
             "name_ENG": "Major Vermeil",
-            "id": 327,
+            "id": 326,
             "max_per_squad": 1,
             "modify": false,
 		    "faction": "I.S.B",
@@ -6999,7 +7006,7 @@
         {
             "name": "Vizier",
             "name_ENG": "Vizier",
-            "id": 328,
+            "id": 327,
             "max_per_squad": 1,
             "modify": false,
 		    "faction": "I.S.B",
@@ -7018,7 +7025,7 @@
         {
             "name": "Double Edge",
             "name_ENG": "Double Edge",
-            "id": 329,
+            "id": 328,
             "max_per_squad": 1,
             "modify": false,
 		    "faction": "I.S.B",
@@ -7037,7 +7044,7 @@
         {
             "name": "Lieutenant Kestal",
             "name_ENG": "Lieutenant Kestal",
-            "id": 330,
+            "id": 329,
             "max_per_squad": 1,
             "modify": false,
 		    "faction": "I.S.B",
@@ -7056,7 +7063,7 @@
         {
             "name": "Eclaireurs de l'Escadron Onyx",
             "name_ENG": "Onyx Squadron Scout",
-            "id": 331,
+            "id": 330,
             "max_per_squad": 8,
             "modify": false,
 		    "faction": "I.S.B",
@@ -7074,7 +7081,7 @@
         {
             "name": "Major Vynder",
             "name_ENG": "Major Vynder",
-            "id": 332,
+            "id": 331,
             "max_per_squad": 1,
             "modify": false,
 		    "faction": "I.S.B",
@@ -7093,7 +7100,7 @@
         {
             "name": "Lieutenant Karsabi",
             "name_ENG": "Lieutenant Karsabi",
-            "id": 333,
+            "id": 332,
             "max_per_squad": 1,
             "modify": false,
 		    "faction": "I.S.B",
@@ -7112,7 +7119,7 @@
         {
             "name": "Dedra Meero",
             "name_ENG": "Dedra Meero",
-            "id": 334,
+            "id": 333,
             "max_per_squad": 1,
             "modify": false,
 		    "faction": "I.S.B",
@@ -7131,7 +7138,7 @@
         {
             "name": "Major Partagaz",
             "name_ENG": "Major Partagaz",
-            "id": 335,
+            "id": 334,
             "max_per_squad": 1,
             "modify": false,
 		    "faction": "I.S.B",
@@ -7150,7 +7157,7 @@
         {
             "name": "Lieutenant Blevin",
             "name_ENG": "Lieutenant Blevin",
-            "id": 336,
+            "id": 335,
             "max_per_squad": 1,
             "modify": false,
 		    "faction": "I.S.B",
@@ -7169,7 +7176,7 @@
         {
             "name": "'Whisper'",
             "name_ENG": "'Whisper'",
-            "id": 337,
+            "id": 336,
             "max_per_squad": 1,
             "modify": false,
 		    "faction": "I.S.B",
@@ -7189,7 +7196,7 @@
         {
             "name": "'Mirage'",
             "name_ENG": "'Mirage'",
-            "id": 338,
+            "id": 337,
             "max_per_squad": 1,
             "modify": false,
 		    "faction": "I.S.B",
@@ -7209,7 +7216,7 @@
         {
             "name": "Gareth Agamar",
             "name_ENG": "Gareth Agamar",
-            "id": 339,
+            "id": 338,
             "max_per_squad": 1,
             "modify": false,
 		    "faction": "I.S.B",
@@ -7229,7 +7236,7 @@
         {
             "name": "As de l'Escadron Sigma",
             "name_ENG": "Sigma Squadron Ace",
-            "id": 340,
+            "id": 339,
             "max_per_squad": 8,
             "modify": false,
 		    "faction": "I.S.B",
@@ -7248,9 +7255,9 @@
         {
             "name": "Assaj Ventress",
             "name_ENG": "Assaj Ventress",
-            "id": 341,
+            "id": 340,
             "max_per_squad": 1,
-            "modify": false,
+            "modify": true,
 		    "faction": "Crime_Syndicates",
             "ship": "Lancer-Class Pursuit Craft",
             "charge":[0],
@@ -7258,19 +7265,22 @@
             "shipId": 32,
             "skill": 4,
             "points": 11,
-            "title": ["Banshee",1],                        
+            "title": ["Banshee"],                        
             "ability": "Au début de la phase d'engagement, vous pouvez choisir 1 vaisseau ennemi dans votre #tur# à portée 0-2 et dépenser 1 #fo#. Dans ce cas, ce vaisseau reçoit 1 jeton de stress à moins qu'il ne retire 1 jeton vert.",
             "ability_ENG": "At the start of the Engagement Phase, you may choose 1 enemy ship in your #tur# at range 0-2 and spend 1 force. If you do, that ship gains 1 stress token unless it removes 1 green token.",
             "slots": [
                 "Title",
                 "Talent",
                 "Force"
-           ]
+           ],
+           "modifier_func":[
+                [1,"Title",1,268]
+            ]
         },
         {
             "name": "Rio Durant",
             "name_ENG": "Rio Durant",
-            "id": 342,
+            "id": 341,
             "max_per_squad": 1,
             "modify": false,
 		    "faction": "Crime_Syndicates",
@@ -7289,7 +7299,7 @@
         {
             "name": "Drex",
             "name_ENG": "Drex",
-            "id": 343,
+            "id": 342,
             "max_per_squad": 1,
             "modify": false,
 		    "faction": "Crime_Syndicates",
@@ -7308,7 +7318,7 @@
         {
             "name": "Informateur de l'Aube Ecarlate",
             "name_ENG": "Crimson Dawn Broker",
-            "id": 344,
+            "id": 343,
             "max_per_squad": 8,
             "modify": false,
 		    "faction": "Crime_Syndicates",
@@ -7327,7 +7337,7 @@
         {
             "name": "Marg Krim",
             "name_ENG": "Marg Krim",
-            "id": 345,
+            "id": 344,
             "max_per_squad": 1,
             "modify": false,
 		    "faction": "Crime_Syndicates",
@@ -7346,7 +7356,7 @@
         {
             "name": "Fife",
             "name_ENG": "Fife",
-            "id": 346,
+            "id": 345,
             "max_per_squad": 1,
             "modify": false,
 		    "faction": "Crime_Syndicates",
@@ -7365,7 +7375,7 @@
         {
             "name": "Quay Tolsite",
             "name_ENG": "Quay Tolsite",
-            "id": 347,
+            "id": 346,
             "max_per_squad": 1,
             "modify": false,
 		    "faction": "Crime_Syndicates",
@@ -7384,7 +7394,7 @@
         {
             "name": "Omel Sampak",
             "name_ENG": "Omel Sampak",
-            "id": 348,
+            "id": 347,
             "max_per_squad": 1,
             "modify": false,
 		    "faction": "Crime_Syndicates",
@@ -7403,7 +7413,7 @@
         {
             "name": "Patrouilleur du Syndicat Pyke",
             "name_ENG": "Pyke Syndicate Patroller",
-            "id": 349,
+            "id": 348,
             "max_per_squad": 1,
             "modify": false,
 		    "faction": "Crime_Syndicates",
@@ -7421,7 +7431,7 @@
         {
             "name": "Dryden Vos",
             "name_ENG": "Dryden Vos",
-            "id": 350,
+            "id": 349,
             "max_per_squad": 1,
             "modify": false,
 		    "faction": "Crime_Syndicates",
@@ -7441,7 +7451,7 @@
         {
             "name": "Sabé",
             "name_ENG": "Sabé",
-            "id": 351,
+            "id": 350,
             "max_per_squad": 1,
             "modify": false,
 		    "faction": "Crime_Syndicates",
@@ -7460,7 +7470,7 @@
         {
             "name": "Gallin Crae",
             "name_ENG": "Gallin Crae",
-            "id": 352,
+            "id": 351,
             "max_per_squad": 1,
             "modify": false,
 		    "faction": "Crime_Syndicates",
@@ -7479,7 +7489,7 @@
         {
             "name": "Deathstick",
             "name_ENG": "Deathstick",
-            "id": 353,
+            "id": 352,
             "max_per_squad": 1,
             "modify": false,
 		    "faction": "Crime_Syndicates",
@@ -7498,7 +7508,7 @@
         {
             "name": "As de l'Aube Ecarlate",
             "name_ENG": "Crimson Dawn Ace",
-            "id": 354,
+            "id": 353,
             "max_per_squad": 8,
             "modify": false,
 		    "faction": "Crime_Syndicates",
@@ -7517,7 +7527,7 @@
         {
             "name": "Qi'Ra",
             "name_ENG": "Qi'Ra",
-            "id": 355,
+            "id": 354,
             "max_per_squad": 1,
             "modify": false,
 		    "faction": "Crime_Syndicates",
@@ -7536,7 +7546,7 @@
         {
             "name": "Tobias Becket",
             "name_ENG": "Tobias Becket",
-            "id": 356,
+            "id": 355,
             "max_per_squad": 1,
             "modify": false,
 		    "faction": "Crime_Syndicates",
@@ -7556,7 +7566,7 @@
         {
             "name": "Trinia",
             "name_ENG": "Trinia",
-            "id": 357,
+            "id": 356,
             "max_per_squad": 1,
             "modify": false,
 		    "faction": "Crime_Syndicates",
@@ -7575,7 +7585,7 @@
         {
             "name": "Noyjo",
             "name_ENG": "Noyjo",
-            "id": 358,
+            "id": 357,
             "max_per_squad": 1,
             "modify": false,
 		    "faction": "Crime_Syndicates",
@@ -7594,7 +7604,7 @@
         {
             "name": "Exécuteur de l'Aube Ecarlate",
             "name_ENG": "Crimson Dawn Executioner",
-            "id": 359,
+            "id": 358,
             "max_per_squad": 8,
             "modify": false,
 		    "faction": "Crime_Syndicates",
@@ -7613,7 +7623,7 @@
         {
             "name": "Latts Razzi",
             "name_ENG": "Latts Razzi",
-            "id": 360,
+            "id": 359,
             "max_per_squad": 1,
             "modify": false,
 		    "faction": "Crime_Syndicates",
@@ -7632,7 +7642,7 @@
         {
             "name": "Tray'Essek",
             "name_ENG": "Tray'Essek",
-            "id": 361,
+            "id": 360,
             "max_per_squad": 1,
             "modify": false,
 		    "faction": "Crime_Syndicates",
@@ -7651,7 +7661,7 @@
         {
             "name": "Rikard",
             "name_ENG": "Rikard",
-            "id": 362,
+            "id": 361,
             "max_per_squad": 1,
             "modify": false,
 		    "faction": "Crime_Syndicates",
@@ -7670,7 +7680,7 @@
         {
             "name": "Pilote de Cargo Pyke",
             "name_ENG": "Pyke Freighter Pilot",
-            "id": 363,
+            "id": 362,
             "max_per_squad": 1,
             "modify": false,
 		    "faction": "Crime_Syndicates",
@@ -7688,7 +7698,7 @@
         {
             "name": "Capitaine Seevor",
             "name_ENG": "Captain Seevor",
-            "id": 364,
+            "id": 363,
             "max_per_squad": 1,
             "modify": false,
 		    "faction": "Crime_Syndicates",
@@ -7707,7 +7717,7 @@
         {
             "name": "Superviseur Yushin",
             "name_ENG": "Overseer Yushin",
-            "id": 365,
+            "id": 364,
             "max_per_squad": 1,
             "modify": false,
 		    "faction": "Crime_Syndicates",
@@ -7726,7 +7736,7 @@
         {
             "name": "Contremaitre Proach",
             "name_ENG": "Foreman Proach",
-            "id": 366,
+            "id": 365,
             "max_per_squad": 1,
             "modify": false,
 		    "faction": "Crime_Syndicates",
@@ -7745,7 +7755,7 @@
         {
             "name": "Ahaav",
             "name_ENG": "Ahaav",
-            "id": 367,
+            "id": 366,
             "max_per_squad": 1,
             "modify": false,
 		    "faction": "Crime_Syndicates",
@@ -7764,7 +7774,7 @@
         {
             "name": "Guri",
             "name_ENG": "Guri",
-            "id": 368,
+            "id": 367,
             "max_per_squad": 1,
             "modify": false,
 		    "faction": "Black_Sun",
@@ -7783,9 +7793,10 @@
         {
             "name": "Prince Xizor",
             "name_ENG": "Prince Xizor",
-            "id": 369,
+            "id": 368,
             "max_per_squad": 1,
-            "modify": false,
+            "modify": true,
+            "title": ["Virago"],
 		    "faction": "Black_Sun",
             "ship": "StarViper-class Attack Platform",
             "charge":[0],
@@ -7796,14 +7807,18 @@
             "ability": "Tant que vous défendez, après l’étape « Neutraliser les résultats », un autre vaisseau allié à portée 0-1 et dans l’arc de l’attaque peut subir 1 dégât #hit# ou #crit#. Dans ce cas, annulez 1 dégât correspondant.",
             "ability_ENG": "While you defend, after the Neutralize Results step, another friendly ship at range 0-1 and in the attack arc may suffer 1 #hit# or #crit# damage. If it does, cancel 1 matching result.",
             "slots": [
+                "Title",
                 "Talent",
                 "Talent"
-           ]
+           ],
+           "modifier_func":[
+                [1,"Title",1,269]
+            ]
         },
         {
             "name": "Dalan Oberos",
             "name_ENG": "Dalan Oberos",
-            "id": 370,
+            "id": 369,
             "max_per_squad": 1,
             "modify": false,
 		    "faction": "Black_Sun",
@@ -7822,7 +7837,7 @@
         {
             "name": "Ziton Moj",
             "name_ENG": "Ziton Moj",
-            "id": 371,
+            "id": 370,
             "max_per_squad": 1,
             "modify": false,
 		    "faction": "Black_Sun",
@@ -7842,7 +7857,7 @@
         {
             "name": "Assassin du Soleil Noir",
             "name_ENG": "Black Sun Assassin",
-            "id": 372,
+            "id": 371,
             "max_per_squad": 8,
             "modify": false,
 		    "faction": "Black_Sun",
@@ -7860,10 +7875,110 @@
         {
             "name": "Talonbane Cobra",
             "name_ENG": "Talonbane Cobra",
+            "id": 372,
+            "max_per_squad": 1,
+            "modify": true,
+            "title": ["Vaksai"],
+		    "faction": "Black_Sun",
+            "ship": "Kihraxz Fighter",
+            "charge":[0],
+            "force": 0,
+            "shipId": 22,
+            "skill": 5,
+            "points": 7,                        
+            "ability": "??",
+            "ability_ENG": "??",
+            "slots": [
+                "Title",
+                "Talent",
+                "Talent"
+           ],
+           "modifier_func":[
+                [1,"Title",1,275]
+            ]
+        },
+        {
+            "name": "Untas",
+            "name_ENG": "Untas",
             "id": 373,
             "max_per_squad": 1,
-            "modify": false,
-            "title": ["Vaksai",2],
+            "modify": true,
+            "title": ["Vaksai"],
+		    "faction": "Black_Sun",
+            "ship": "Kihraxz Fighter",
+            "charge":[0],
+            "force": 0,
+            "shipId": 22,
+            "skill": 4,
+            "points": 6,                        
+            "ability": "",
+            "ability_ENG": "",
+            "slots": [
+                "Title",
+                "Talent"
+                
+           ],
+           "modifier_func":[
+                [1,"Title",1,275]
+            ]
+        },
+        {
+            "name": "Amos Torq",
+            "name_ENG": "Amos Torq",
+            "id": 374,
+            "max_per_squad": 1,
+            "modify": true,
+            "title": ["Vaksai"],
+		    "faction": "Black_Sun",
+            "ship": "Kihraxz Fighter",
+            "charge":[0],
+            "force": 0,
+            "shipId": 22,
+            "skill": 4,
+            "points": 6,                        
+            "ability": "",
+            "ability_ENG": "",
+            "slots": [
+                "Title",
+                "Talent"
+                
+           ],
+           "modifier_func":[
+                [1,"Title",1,275]
+            ]
+        },
+        {
+            "name": "Ovlaw Grimlow",
+            "name_ENG": "Ovlaw Grimlow",
+            "id": 375,
+            "max_per_squad": 1,
+            "modify": true,
+            "title": ["Vaksai"],
+		    "faction": "Black_Sun",
+            "ship": "Kihraxz Fighter",
+            "charge":[0],
+            "force": 0,
+            "shipId": 22,
+            "skill": 2,
+            "points": 6,                        
+            "ability": "",
+            "ability_ENG": "",
+            "slots": [
+                "Title",
+                "Talent"
+                
+           ],
+           "modifier_func":[
+                [1,"Title",1,275]
+            ]
+        },
+        {
+            "name": "As du Soleil Noir",
+            "name_ENG": "Black Sun Ace",
+            "id": 376,
+            "max_per_squad": 8,
+            "modify": true,
+            "title": ["Vaksai"],
 		    "faction": "Black_Sun",
             "ship": "Kihraxz Fighter",
             "charge":[0],
@@ -7874,12 +7989,830 @@
             "ability": "",
             "ability_ENG": "",
             "slots": [
+                "Title"
+                               
+           ],
+           "modifier_func":[
+                [1,"Title",1,275]
+            ]
+        },
+        {
+            "name": "Jarret Black Nail",
+            "name_ENG": "Jarret Black Nail",
+            "id": 377,
+            "max_per_squad": 1,
+            "modify": false,
+		    "faction": "Black_Sun",
+            "ship": "Z-95-AF4 Headhunter",
+            "charge":[0],
+            "force": 0,
+            "shipId": 12,
+            "skill": 5,
+            "points": 5,                        
+            "ability": "",
+            "ability_ENG": "",
+            "slots": [
+                "Talent",
+                "Talent"
+                
+           ]
+        },
+        {
+            "name": "Nutuu Plunb",
+            "name_ENG": "Nutuu Plunb",
+            "id": 378,
+            "max_per_squad": 1,
+            "modify": false,
+		    "faction": "Black_Sun",
+            "ship": "Z-95-AF4 Headhunter",
+            "charge":[0],
+            "force": 0,
+            "shipId": 12,
+            "skill": 2,
+            "points": 4,                        
+            "ability": "",
+            "ability_ENG": "",
+            "slots": [
+                "Talent"
+                
+           ]
+        },
+        {
+            "name": "Soldat du Soleil Noir",
+            "name_ENG": "Black Sun Soldier",
+            "id": 379,
+            "max_per_squad": 8,
+            "modify": false,
+		    "faction": "Black_Sun",
+            "ship": "Z-95-AF4 Headhunter",
+            "charge":[0],
+            "force": 0,
+            "shipId": 12,
+            "skill": 2,
+            "points": 3,                        
+            "ability": "",
+            "ability_ENG": "",
+            "slots": [
+                               
+           ]
+        },
+        
+        {
+            "name": "Ketsu Onyo",
+            "name_ENG": "Ketsu Onyo",
+            "id": 380,
+            "max_per_squad": 1,
+            "modify": false,
+            "title": ["Shadow Caster"],
+		    "faction": "Black_Sun",
+            "ship": "Lancer-Class Pursuit Craft",
+            "charge":[0],
+            "force": 0,
+            "shipId": 32,
+            "skill": 5,
+            "points": 11,                        
+            "ability": "",
+            "ability_ENG": "",
+            "slots": [
+                "Title",
+                "Talent",
+                "Talent"
+                               
+           ]
+        },
+        {
+            "name": "Gyran",
+            "name_ENG": "Gyran",
+            "id": 381,
+            "max_per_squad": 1,
+            "modify": false,
+		    "faction": "Black_Sun",
+            "ship": "Lancer-Class Pursuit Craft",
+            "charge":[0],
+            "force": 0,
+            "shipId": 32,
+            "skill": 4,
+            "points": 10,                        
+            "ability": "",
+            "ability_ENG": "",
+            "slots": [
+                "Talent"
+                               
+           ]
+        },
+        {
+            "name": "Malva Greek",
+            "name_ENG": "Malva Greek",
+            "id": 382,
+            "max_per_squad": 1,
+            "modify": false,
+		    "faction": "Black_Sun",
+            "ship": "Lancer-Class Pursuit Craft",
+            "charge":[0],
+            "force": 0,
+            "shipId": 32,
+            "skill": 3,
+            "points": 10,                        
+            "ability": "",
+            "ability_ENG": "",
+            "slots": [
+                "Talent"
+                               
+           ]
+        },
+        {
+            "name": "Chasseur des Ports Fantômes",
+            "name_ENG": "Shadowport Hunter",
+            "id": 383,
+            "max_per_squad": 8,
+            "modify": false,
+		    "faction": "Black_Sun",
+            "ship": "Lancer-Class Pursuit Craft",
+            "charge":[0],
+            "force": 0,
+            "shipId": 32,
+            "skill": 2,
+            "points": 9,                        
+            "ability": "",
+            "ability_ENG": "",
+            "slots": [
+                                              
+           ]
+        },
+        {
+            "name": "Zu Pike",
+            "name_ENG": "Zu Pike",
+            "id": 384,
+            "max_per_squad": 1,
+            "modify": false,
+		    "faction": "Black_Sun",
+            "ship": "Rihkxyrk Attack Ship",
+            "charge":[0],
+            "force": 0,
+            "shipId": 86,
+            "skill": 5,
+            "points": 8,                        
+            "ability": "",
+            "ability_ENG": "",
+            "slots": [
+                "Talent",
+                "Talent"
+                                              
+           ]
+        },
+        {
+            "name": "Zan Pike",
+            "name_ENG": "Zan Pike",
+            "id": 385,
+            "max_per_squad": 1,
+            "modify": false,
+		    "faction": "Black_Sun",
+            "ship": "Rihkxyrk Attack Ship",
+            "charge":[0],
+            "force": 0,
+            "shipId": 86,
+            "skill": 5,
+            "points": 8,                        
+            "ability": "",
+            "ability_ENG": "",
+            "slots": [
+                "Talent",
+                "Talent"
+                                              
+           ]
+        },
+        {
+            "name": "Zeka Thyne",
+            "name_ENG": "Zeka Thyne",
+            "id": 386,
+            "max_per_squad": 1,
+            "modify": false,
+		    "faction": "Black_Sun",
+            "ship": "Rihkxyrk Attack Ship",
+            "charge":[0],
+            "force": 0,
+            "shipId": 86,
+            "skill": 3,
+            "points": 8,                        
+            "ability": "",
+            "ability_ENG": "",
+            "slots": [
+                "Talent"
+                                              
+           ]
+        },
+        {
+            "name": "Lar'Omx",
+            "name_ENG": "Lar'Omx",
+            "id": 387,
+            "max_per_squad": 1,
+            "modify": false,
+		    "faction": "Black_Sun",
+            "ship": "Supa Starfighter",
+            "charge":[0],
+            "force": 0,
+            "shipId": 83,
+            "skill": 5,
+            "points": 8,                        
+            "ability": "",
+            "ability_ENG": "",
+            "slots": [
+                "Talent",
+                "Talent"
+                                              
+           ]
+        },
+        {
+            "name": "Rynscar",
+            "name_ENG": "Rynscar",
+            "id": 388,
+            "max_per_squad": 1,
+            "modify": false,
+		    "faction": "Black_Sun",
+            "ship": "Supa Starfighter",
+            "charge":[0],
+            "force": 0,
+            "shipId": 83,
+            "skill": 3,
+            "points": 7,                        
+            "ability": "",
+            "ability_ENG": "",
+            "slots": [
+                "Talent"
+                                              
+           ]
+        },
+        {
+            "name": "Duc Blazor",
+            "name_ENG": "Duke Blazor",
+            "id": 389,
+            "max_per_squad": 1,
+            "modify": false,
+		    "faction": "Black_Sun",
+            "ship": "Supa Starfighter",
+            "charge":[0],
+            "force": 0,
+            "shipId": 83,
+            "skill": 4,
+            "points": 7,                        
+            "ability": "",
+            "ability_ENG": "",
+            "slots": [
+                "Talent"
+                                              
+           ]
+        },
+        {
+            "name": "Dalan Oberos",
+            "name_ENG": "Dalan Oberos",
+            "id": 390,
+            "max_per_squad": 1,
+            "modify": false,
+		    "faction": "Hutt_Cartel",
+            "ship": "M12-L Kimogila Fighter",
+            "charge":[2,"0"],
+            "force": 0,
+            "shipId": 40,
+            "skill": 3,
+            "points": 8,                        
+            "ability": "Au début de la phase d’engagement, vous pouvez choisir 1 vaisseau protégé dans votre #bulls# et dépenser 1 #ch#. Dans ce cas, ce vaisseau perd 1 bouclier et vous récupérez 1 bouclier.",
+            "ability_ENG": "At the start of the engagement phase, you may choose 1 shielded ship in your #bulls# and spend 1 charge. If you do, that ship loses 1 shield and you recover 1 shield.",
+            "slots": [
+                "Talent"
+                                              
+           ]
+        },
+        {
+            "name": "Torani Kulda",
+            "name_ENG": "Torani Kulda",
+            "id": 391,
+            "max_per_squad": 1,
+            "modify": false,
+		    "faction": "Hutt_Cartel",
+            "ship": "M12-L Kimogila Fighter",
+            "charge":[0],
+            "force": 0,
+            "shipId": 40,
+            "skill": 4,
+            "points": 8,                        
+            "ability": "Après avoir attaqué, chaque vaisseau ennemi dans votre #bulls# subit 1 dégat #hit# à moins qu'il ne retire 1 jeton vert.",
+            "ability_ENG": "After you perform an attack, each enemy ship in your #bulls# suffers 1 #hit# damage unless it removes 1 green token.",
+            "slots": [
+                "Talent"
+                                              
+           ]
+        },
+        {
+            "name": "Khel Tanna",
+            "name_ENG": "Khel Tanna",
+            "id": 392,
+            "max_per_squad": 1,
+            "modify": false,
+		    "faction": "Hutt_Cartel",
+            "ship": "M12-L Kimogila Fighter",
+            "charge":[0],
+            "force": 0,
+            "shipId": 40,
+            "skill": 2,
+            "points": 7,                        
+            "ability": "Après avoir effectué une attaque qui touche dans votre #bulls#, vous pouvez retirer une charge d'une amélioration équipée par le défenseur, ou sur carte du pilote défenseur.",
+            "ability_ENG": "After you perform an attack in your #bulls# that hits, you may remove a charge on an upgrade equipped by the defender, or on the pilot card's defender.",
+            "slots": [
+                "Talent"
+                                              
+           ]
+        },
+        {
+            "name": "Deva Lompop",
+            "name_ENG": "Khel Tanna",
+            "id": 393,
+            "max_per_squad": 1,
+            "modify": false,
+		    "faction": "Hutt_Cartel",
+            "ship": "M12-L Kimogila Fighter",
+            "charge":[0],
+            "force": 0,
+            "shipId": 40,
+            "skill": 3,
+            "points": 7,                        
+            "ability": "??",
+            "ability_ENG": "??",
+            "slots": [
+                "Talent"
+                                              
+           ]
+        },
+        {
+            "name": "Exécuteur du Cartel",
+            "name_ENG": "Cartel Executionner",
+            "id": 394,
+            "max_per_squad": 8,
+            "modify": false,
+		    "faction": "Hutt_Cartel",
+            "ship": "M12-L Kimogila Fighter",
+            "charge":[0],
+            "force": 0,
+            "shipId": 40,
+            "skill": 3,
+            "points": 6,                        
+            "ability": "",
+            "ability_ENG": "",
+            "slots": [
+                                              
+           ]
+        },
+        {
+            "name": "G4R-G0R V/M",
+            "name_ENG": "G4R-G0R V/M",
+            "id": 395,
+            "max_per_squad": 1,
+            "modify": true,
+		    "faction": "Hutt_Cartel",
+            "ship": "M3-A Interceptor",
+            "charge":[0],
+            "force": 0,
+            "shipId": 19,
+            "skill": 0,
+            "points": 5,                        
+            "ability": "Après avoir défendu, chaque autre vaisseau à portée 0 subit 1 dégat #crit#.",
+            "ability_ENG": "After you defend, each other ship at range 0 suffers 1 #crit# damage.",
+            "slots": [
+                      "Droid"                      
+           ],
+           "modifier_func": [
+                [1, "Droid",1,237]
+           ]
+        },
+        {
+            "name": "Quinn Jast",
+            "name_ENG": "Quinn Jast",
+            "id": 396,
+            "max_per_squad": 1,
+            "modify": false,
+		    "faction": "Hutt_Cartel",
+            "ship": "M3-A Interceptor",
+            "charge":[0],
+            "force": 0,
+            "shipId": 19,
+            "skill": 3,
+            "points": 6,                        
+            "ability": "Au début de la phase d'engagement, vous pouvez recevoir 1 jeton désarmement pour récupérer 1 #ch# sur l'une de vos améliorations.",
+            "ability_ENG": "At the start of engagement Phase, you may gain 1 disarm token to recover 1 charge on 1 of your equipped upgrades.",
+            "slots": [
+                   "Talent"          
+           ]
+           
+        },
+        {
+            "name": "Sunny Bounder",
+            "name_ENG": "Sunny Bounder",
+            "id": 397,
+            "max_per_squad": 1,
+            "modify": false,
+		    "faction": "Hutt_Cartel",
+            "ship": "M3-A Interceptor",
+            "charge":[0],
+            "force": 0,
+            "shipId": 19,
+            "skill": 1,
+            "points": 6,                        
+            "ability": "Lorsque vous défendez ou attaquez, après avoir lancé ou relancé des dés, si vous avez le même résultat que chacun de vos dés, vous pouvez ajouter 1 résultat correspondant.",
+            "ability_ENG": "While you defend or perform an attack, after you roll or reroll your dice, if you have the same result on each of your dice, you may add 1 matching result.",
+            "slots": [
+                   "Talent"          
+           ]
+           
+        },
+        {
+            "name": "Genesis Red",
+            "name_ENG": "Genesis Red",
+            "id": 398,
+            "max_per_squad": 1,
+            "modify": false,
+		    "faction": "Hutt_Cartel",
+            "ship": "M3-A Interceptor",
+            "charge":[0],
+            "force": 0,
+            "shipId": 19,
+            "skill": 5,
+            "points": 7,                        
+            "ability": "Après avoir vérouillé un vaisseau, recevez le même nombre de jeton concentration et évasion que possède ce vaisseau.",
+            "ability_ENG": "After you acquire a lock, gain the same number of focus and evade tokens that the locked ship has.",
+            "slots": [
+                   "Talent"          
+           ]
+           
+        },
+        {
+            "name": "Astropilote du Cartel",
+            "name_ENG": "Cartel Spacer",
+            "id": 399,
+            "max_per_squad": 8,
+            "modify": false,
+		    "faction": "Hutt_Cartel",
+            "ship": "M3-A Interceptor",
+            "charge":[0],
+            "force": 0,
+            "shipId": 19,
+            "skill": 1,
+            "points": 5,                        
+            "ability": "",
+            "ability_ENG": "",
+            "slots": [
+           
+           ]
+           
+        },
+        {
+            "name": "Moralo Eval",
+            "name_ENG": "Moralo Eval",
+            "id": 400,
+            "max_per_squad": 1,
+            "modify": false,
+		    "faction": "Hutt_Cartel",
+            "ship": "YV-666 Light Freighter",
+            "charge":[2,"0"],
+            "force": 0,
+            "shipId": 21,
+            "skill": 3,
+            "points": 10,                        
+            "ability": "Si vous êtes censé fuir, vous pouvez dépenser 1 #ch#. Dans ce cas, mettez-vous en réserve à la place. Au début de la prochaine phase de préparation, placez-vous intégralement à portée 1 du bord de la zone de jeu par lequel vous auriez dû fuir.",
+            "ability_ENG": "If you would flee, you may spend 1 #ch#. If you do, place yourself in reserves instead. At the start of the next Planning Phase, place yourself within range 1 of the edge of the play area that you fled from.",
+            "slots": [
+                "Talent"           
+           ]
+           
+        },
+        {
+            "name": "Ephant Mon",
+            "name_ENG": "Ephant Mon",
+            "id": 401,
+            "max_per_squad": 1,
+            "modify": false,
+		    "faction": "Hutt_Cartel",
+            "ship": "YV-666 Light Freighter",
+            "charge":[2,"0"],
+            "force": 0,
+            "shipId": 21,
+            "skill": 4,
+            "points": 10,                        
+            "ability": "Lorsqu'un vaisseau à portée 2 est détruit, vous pouvez dépenser 1 #ch#. Dans ce cas, gagnez 1 point de scénario.",
+            "ability_ENG": "When a ship at range 2 is destroyed, you may spend 1 charge. If you do, gain 1 scenario point.",
+            "slots": [
+                "Talent"           
+           ]
+           
+        },
+        {
+            "name": "EV-9D9",
+            "name_ENG": "EV-9D9",
+            "id": 402,
+            "max_per_squad": 1,
+            "modify": true,
+		    "faction": "Hutt_Cartel",
+            "ship": "YV-666 Light Freighter",
+            "charge":[0],
+            "force": 0,
+            "shipId": 21,
+            "skill": 1,
+            "points": 9,                        
+            "ability": "Lorsqu'un vaisseau ennemi à portée 0-2 est détruit, s'il a une amélioration #crew# ou #astromech# équipée, vous pouvez l'équipper sur votre vaisseau. Elle utilise à présent l'un de vos emplacement #crew#. Si vous n'avez pas d'emplacement disponible, vous pouvez retirer l'une de vos améliorations #crew# pour équipper la nouvelle.",
+            "ability_ENG": "When a enemy ship at range 0-2 is destroyed, if it has a #crew# or #astromech# equipped upgrade, you may equip it. It now occupies 1 of your available #crew# slot. If you don't have any available #crew# slot, you may remove one of your #crew# upgrade in order to equip the new one.",
+            "slots": [
+                "Droid",
+                "Talent"           
+           ],
+           "modifier_func": [
+                [1, "Droid",1,237]
+           ]
+           
+        },
+        {
+            "name": "Docteure Aphra",
+            "name_ENG": "Doctor Aphra",
+            "id": 403,
+            "max_per_squad": 1,
+            "modify": true,
+		    "faction": "Hutt_Cartel",
+            "ship": "YV-666 Light Freighter",
+            "charge":[3,"0"],
+            "force": 0,
+            "shipId": 21,
+            "skill": 3,
+            "points": 9,                        
+            "ability": "Avant de vous engager, vous pouvez dépenser 1 jeton vert et 1 #ch#. Dans ce cas, vous pouvez choisir un autre vaisseau à portée 0-1 qui n'est pas stressé. Le vaisseau choisi reçoit 1 jeton stress.",
+            "ability_ENG": "Before you engage, you may spend 1 green token and 1 #ch#. If you do, you may choose another ship at range 0-1 that is not stressed. The chosen ship gains 1 stress token.",
+            "slots": [
+                "Talent"           
+           ]
+           
+        },
+        {
+            "name": "Esclavagiste Transdoshien",
+            "name_ENG": "Transdoshan Slaver",
+            "id": 404,
+            "max_per_squad": 8,
+            "modify": true,
+		    "faction": "Hutt_Cartel",
+            "ship": "YV-666 Light Freighter",
+            "charge":[0],
+            "force": 0,
+            "shipId": 21,
+            "skill": 2,
+            "points": 8,                        
+            "ability": "",
+            "ability_ENG": "",
+            "slots": [
+                          
+           ]
+           
+        },
+        {
+            "name": "Gamut Key",
+            "name_ENG": "Gamut Key",
+            "id": 405,
+            "max_per_squad": 1,
+            "modify": false,
+		    "faction": "Hutt_Cartel",
+            "ship": "HWK-290 Light Freighter",
+            "charge":[0],
+            "force": 0,
+            "shipId": 8,
+            "skill": 3,
+            "points": 6,                        
+            "ability": "Pendant la phase de Fin, avant qu'un vaisseau ennemi dans votre #tur# récupère 1 charge ou 1 force récurrente, vous pouvez dépenser 2#ch#. Dans ce cas, ce vaisseau ne récupère pas cette charge ou cette force.",
+            "ability_ENG": "During the End Phase, before an enemy ship in your (tur) recovers 1 recurring charge or force, you may spend 2 charge. If you do, that ship does not recover that charge or force",
+            "slots": [
+                 "Talent"         
+           ]
+           
+        },
+        {
+            "name": "Torkil Mux",
+            "name_ENG": "Torkil Mux",
+            "id": 406,
+            "max_per_squad": 1,
+            "modify": false,
+		    "faction": "Hutt_Cartel",
+            "ship": "HWK-290 Light Freighter",
+            "charge":[0],
+            "force": 0,
+            "shipId": 8,
+            "skill": 3,
+            "points": 7,                        
+            "ability": "Au début de la phase d'engagement, vous pouvez choisir 1 vaisseau dans votre arc de tir. Dans ce cas, ce vaisseau s'engage à initiative 0 au lieu de son initiative normale cette ronde.",
+            "ability_ENG": "At the start of engagement phase, you may choose 1 ship in your firing arc. If you do, that ship engages at initiative 0 instead of its normal initiative value this round.",
+            "slots": [
+                 "Talent"         
+           ]
+           
+        },
+        {
+            "name": "Docteur Evazan",
+            "name_ENG": "Doctor Evazan",
+            "id": 407,
+            "max_per_squad": 1,
+            "modify": false,
+		    "faction": "Hutt_Cartel",
+            "ship": "HWK-290 Light Freighter",
+            "charge":[0],
+            "force": 0,
+            "shipId": 8,
+            "skill": 3,
+            "points": 6,                        
+            "ability": "Au début de la phase d'engagement, vous pouvez choisir 1 vaisseau dans votre arc de tir à portée 0-2. Dans ce cas, transférez 1 jeton concentration ou évasion de ce vaisseau vers vous.",
+            "ability_ENG": "At the start of the engagement phase, you may choose 1 enemy ship in your firing arc at range 0-2. If you do, transfer 1 focus or evade token from that ship to yourself.",
+            "slots": [
+                 "Talent"         
+           ]
+           
+        },
+        {
+            "name": "Dace Bonearm",
+            "name_ENG": "Dace Bonearm",
+            "id": 408,
+            "max_per_squad": 1,
+            "modify": true,
+            "title": ["Moldy Crow"],
+		    "faction": "Hutt_Cartel",
+            "ship": "HWK-290 Light Freighter",
+            "charge":[2,"+"],
+            "force": 0,
+            "shipId": 8,
+            "skill": 4,
+            "points": 6,                        
+            "ability": "Après qu'un vaisseau ennemi à portée 0-3 reçoit au moins 1 jeton ion, vous pouvez dépenser 2 #ch#. Dans ce cas, ce vaisseau reçoit 2 jetons ion additionnels",
+            "ability_ENG": "After an enemy ship at range 0-3 receives at least 1 ion token, you may spend 2 #ch#. If you do, that ship gains 2 additional ion tokens.",
+            "slots": [
+                 "Talent"         
+           ],
+           "modifier_func": [
+            	[1,"Title",1,147],
+                [3,"Modification",147]
+                
+                    ]
+           
+        },
+        {
+            "name": "Trafiquant d'Epice",
+            "name_ENG": "Spice Runner",
+            "id": 409,
+            "max_per_squad": 8,
+            "modify": false,
+		    "faction": "Hutt_Cartel",
+            "ship": "HWK-290 Light Freighter",
+            "charge":[0],
+            "force": 0,
+            "shipId": 8,
+            "skill": 1,
+            "points": 5,                        
+            "ability": "",
+            "ability_ENG": "",
+            "slots": [
+                      
+           ]
+           
+        },
+        {
+            "name": "Agent Zuvio",
+            "name_ENG": "Agent Zuvio",
+            "id": 410,
+            "max_per_squad": 1,
+            "modify": false,
+		    "faction": "Hutt_Cartel",
+            "ship": "Quadrijet Transfer Spacetug",
+            "charge":[0],
+            "force": 0,
+            "shipId": 33,
+            "skill": 4,
+            "points": 5,                        
+            "ability": "Si vous deviez larguer 1 engin, vous pouvez le lancer à la place avec le gabarit 1 #straight#.",
+            "ability_ENG": "If you would drop a payload, you may launch it using a 1 #straight# template instead. ",
+            "slots": [
+                     "Talent" 
+           ]
+           
+        },
+        {
+            "name": "Sarco Plank",
+            "name_ENG": "Sarco Plank",
+            "id": 411,
+            "max_per_squad": 1,
+            "modify": false,
+		    "faction": "Hutt_Cartel",
+            "ship": "Quadrijet Transfer Spacetug",
+            "charge":[0],
+            "force": 0,
+            "shipId": 33,
+            "skill": 2,
+            "points": 5,                        
+            "ability": "Lorsque vous attaquez ou défendez contre un vaisseau tracté, vous pouvez ajouter 1 résultat #hit# ou #evd#.",
+            "ability_ENG": "While you attack or defend against a tractored ship, you may add 1 #hit# or #evd# result.",
+            "slots": [
+                     "Talent" 
+           ]
+           
+        },
+        {
+            "name": "Unkar Plutt",
+            "name_ENG": "Unkar Plutt",
+            "id": 412,
+            "max_per_squad": 1,
+            "modify": false,
+		    "faction": "Hutt_Cartel",
+            "ship": "Quadrijet Transfer Spacetug",
+            "charge":[0],
+            "force": 0,
+            "shipId": 33,
+            "skill": 2,
+            "points": 5,                        
+            "ability": "Au début de la phase d'engagement, s'il y a 1 ou plusieurs autres vaisseaux à portée 0, vous et les autres vaisseaux à portée 0 reçoivent 1 jeton tractage.",
+            "ability_ENG": "At the start of the engagement phase, if there are one or more other ship at range 0, you and each other ship at range 0 gain 1 tractor token.",
+            "slots": [
+                     "Talent" 
+           ]
+           
+        },
+        {
+            "name": "Maraudeur du Cartel",
+            "name_ENG": "Cartel Marauder",
+            "id": 413,
+            "max_per_squad": 8,
+            "modify": false,
+		    "faction": "Hutt_Cartel",
+            "ship": "Kihraxz Fighter",
+            "charge":[0],
+            "force": 0,
+            "shipId": 22,
+            "skill": 2,
+            "points": 5,                        
+            "ability": "",
+            "ability_ENG": "",
+            "slots": [
+    
+           ]
+           
+        },
+        {
+            "name": "Kavil",
+            "name_ENG": "Kavil",
+            "id": 414,
+            "max_per_squad": 1,
+            "modify": false,
+		    "faction": "Hutt_Cartel",
+            "ship": "BTL-A4 Y-wing",
+            "charge":[0],
+            "force": 0,
+            "shipId": 33,
+            "skill": 5,
+            "points": 5,                        
+            "ability": "Lorsque vous effectuez une attaque non-#Farc#, lancez 1 dé supplémentaire.",
+            "ability_ENG": "While you perform a non-#Farc# attack, roll 1 additional attack die.",
+            "slots": [
                 "Talent",
                 "Talent"
            ]
+           
+        },
+        {
+            "name": "Drea Renthal",
+            "name_ENG": "Drea Renthal",
+            "id": 415,
+            "max_per_squad": 1,
+            "modify": false,
+		    "faction": "Hutt_Cartel",
+            "ship": "BTL-A4 Y-wing",
+            "charge":[0],
+            "force": 0,
+            "shipId": 33,
+            "skill": 4,
+            "points": 5,                        
+            "ability": "Lorsqu'un vaisseau allié non-limité attaque, si le défenseur est dans votre arc de tir, l'attaquant peut relancer 1 dé d'attaque.",
+            "ability_ENG": "While a friendly non-limited ship perform an attack, if the defender is in your firing arc, the attacker may reroll 1 attack die.",
+            "slots": [
+                "Talent"
+           ]
+           
+        },
+        {
+            "name": "Sbire du Crymorah",
+            "name_ENG": "Crymorah Goon",
+            "id": 416,
+            "max_per_squad": 8,
+            "modify": false,
+		    "faction": "Hutt_Cartel",
+            "ship": "BTL-A4 Y-wing",
+            "charge":[0],
+            "force": 0,
+            "shipId": 33,
+            "skill": 1,
+            "points": 5,                        
+            "ability": "",
+            "ability_ENG": "",
+            "slots": [
+           ]
+           
         }
-
-
 
 
 

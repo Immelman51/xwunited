@@ -945,9 +945,9 @@
         {
       
      
-            "name": "Quadrijet Transfer Spacetug",
+            "name": "BTL-A4 Y-wing",
             "id": 33,
-            "factions": ["Hutt_Cartel"],
+            "factions": ["Hutt_Cartel","Rebel_Alliance"],
             "attack": [["F",2]],
             "agility": 2,
             "hull": 5,
