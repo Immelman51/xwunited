@@ -7710,7 +7710,7 @@
             "ship": "Modified TIE/ln Fighter",
             "charge":[0],
             "force": 0,
-            "shipId": 98,
+            "shipId": 51,
             "skill": 3,
             "points": 4,                        
             "ability": "Lorsque vous défendez ou attaquez, avant que les dés ne soient lancés, si vous n'êtes pas dans le #bulls# du vaisseau ennemi, vous pouvez dépenser 1 #ch#. Dans ce cas, le vaisseau ennemi reçoit 1 jeton brouillage.",
@@ -7729,7 +7729,7 @@
             "ship": "Modified TIE/ln Fighter",
             "charge":[1, "+"],
             "force": 0,
-            "shipId": 98,
+            "shipId": 51,
             "skill": 2,
             "points": 3,                        
             "ability": "Avant qu'un vaisseau allié à portée 0-2 reçoit 1 jeton désarmement, vous pouvez dépenser 1 #ch#. Dans ce cas, ce vaisseau retire ce jeton désarmement.",
@@ -7748,7 +7748,7 @@
             "ship": "Modified TIE/ln Fighter",
             "charge":[0],
             "force": 0,
-            "shipId": 98,
+            "shipId": 51,
             "skill": 4,
             "points": 3,                        
             "ability": "Avant de vous engagez, vous pouvez choisir 1 vaisseau ennemi dans votre #bulls# à portée 1-2 et recevoir 1 jeton désarmement. Dans ce cas, ce vaisseau reçoit 1 jeton tractage.",
@@ -7767,7 +7767,7 @@
             "ship": "Modified TIE/ln Fighter",
             "charge":[0],
             "force": 0,
-            "shipId": 98,
+            "shipId": 51,
             "skill": 3,
             "points": 4,                        
             "ability": "Lorsque vous défendez ou attaquez, si le vaisseau ennemi est d'une taille plus grande que vous, lancez 1 dé additionnel.",
@@ -8844,7 +8844,343 @@
             "slots": [
            ]
            
+        },
+        {
+            "name": "Carson Teva",
+            "name_ENG": "Carson Teva",
+            "id": 417,
+            "max_per_squad": 1,
+            "modify": true,
+		    "faction": "New_Republic",
+            "ship": "T-65 X-wing",
+            "charge":[0],
+            "force": 0,
+            "shipId": 0,
+            "skill": 4,
+            "points": 7,                        
+            "ability": "Mise en Place : Assignez la condition 'Intrus' à un vaisseau.<br>Après avoir désigné le défenseur lors d'une attaque, si vous avez un verrouillage sur le défenseur, un vaisseau allié peut transférer un verrouillage qu'il avait sur vous vers le défenseur.",
+            "ability_ENG": "SETUP : assign the 'Intruder' condition to a ship.<br>After you declare the defender of an attack, if you a have lock on the defender, a friendly ship may transfer its lock token from you to the defender",
+            "slots": [
+                "Condition",
+                "Talent"                
+           ],
+           "modifier_func": [
+            	[1,"Condition",1,"??"]                              
+            ]
+           
+        },
+        {
+            "name": "Trapper Wolf",
+            "name_ENG": "Trapper Wolf",
+            "id": 418,
+            "max_per_squad": 1,
+            "modify": true,
+		    "faction": "New_Republic",
+            "ship": "T-65 X-wing",
+            "charge":[0],
+            "force": 0,
+            "shipId": 0,
+            "skill": 3,
+            "points": 7,                        
+            "ability": "Mise en Place : Assignez la condition 'Intrus' à un vaisseau.<br>Après avoir reçu un jeton stress, vous pouvez lancer 1 dé d'attaque pour le retirer. Sur un résultat #hit#, subissez un dégat #hit#.",
+            "ability_ENG": "SETUP : assign the 'Intruder' condition to a ship.<br>After you receive a stress token, you may roll 1 attack die to remove it. On a #hit# result, suffer 1 #hit# damage.",
+            "slots": [
+                "Condition",
+                "Talent"                
+           ],
+           "modifier_func": [
+            	[1,"Condition",1,"??"]                              
+            ]
+           
+        },
+        {
+            "name": "Iden Versio",
+            "name_ENG": "Iden Versio",
+            "id": 419,
+            "max_per_squad": 1,
+            "modify": false,
+		    "faction": "New_Republic",
+            "ship": "T-65 X-wing",
+            "charge":[2,"+"],
+            "force": 0,
+            "shipId": 0,
+            "skill": 5,
+            "points": 8,                        
+            "ability": "Avant qu'un vaisseau allié X-Wing ou A-Wing à portée 0-1 ne subisse des dégats, vous pouvez dépenser 2 #ch#. Dans ce cas, prévenez 1 dégat.",
+            "ability_ENG": "Before a friendly X-wing or A-wing would suffer damage at range 0-1, you may spend 2 #ch#. If you do, prevent 1 damage.",
+            "slots": [
+                "Talent",
+                "Talent"                
+           ]
+           
+        },
+        {
+            "name": "Shriv Suurgav",
+            "name_ENG": "Shriv Suurgav",
+            "id": 420,
+            "max_per_squad": 1,
+            "modify": true,
+		    "faction": "New_Republic",
+            "ship": "T-65 X-wing",
+            "charge":[0],
+            "force": 0,
+            "shipId": 0,
+            "skill": 4,
+            "points": 8,                        
+            "ability": "Mise en Place : Avant que vous ne soyez placé sur l'aire de jeu, assignez la condition 'Encouragement' à un autre vaisseau allié déjà en jeu.",
+            "ability_ENG": "SETUP : Before you are placed on the play area, assign the 'Encouragement' condition to a friendly ship already in play.",
+            "slots": [
+                "Condition",
+                "Talent"                
+           ],
+           "modifier_func": [
+            	[1,"Condition",1,"??"]                              
+            ]
+           
+        },
+        {
+            "name": "Garde d'Adelphi",
+            "name_ENG": "Adelhpi Ranger",
+            "id": 421,
+            "max_per_squad": 8,
+            "modify": false,
+		    "faction": "New_Republic",
+            "ship": "T-65 X-wing",
+            "charge":[0],
+            "force": 0,
+            "shipId": 0,
+            "skill": 2,
+            "points": 6,                        
+            "ability": "",
+            "ability_ENG": "",
+            "slots": [
+                         
+           ]
+           
+        },
+        {
+            "name": "Miranda Doni",
+            "name_ENG": "Miranda Doni",
+            "id": 422,
+            "max_per_squad": 1,
+            "modify": false,
+		    "faction": "New_Republic",
+            "ship": "BTL-S8 K-wing",
+            "charge":[0],
+            "force": 0,
+            "shipId": 23,
+            "skill": 4,
+            "points": 5,                        
+            "ability": "Lorsque vous effectuez une attaque principale, vous pouvez soit dépenser 1 bouclier pour lancer 1 dé supplémentaire, ou, si vous n'êtes pas protégé, vous pouvez lancer 1 dé de moins pour récupérer 1 bouclier.",
+            "ability_ENG": "While you perform a primary attack, you may either spend 1 shield to roll 1 additional attack die or, if you are not shielded, you may roll 1 fewer attack die to recover 1 shield.",
+            "slots": [
+                "Talent"                
+           ]
+           
+        },
+        {
+            "name": "Esege Tuketu",
+            "name_ENG": "Esege Tuketu",
+            "id": 423,
+            "max_per_squad": 1,
+            "modify": false,
+		    "faction": "New_Republic",
+            "ship": "BTL-S8 K-wing",
+            "charge":[0],
+            "force": 0,
+            "shipId": 23,
+            "skill": 3,
+            "points": 5,                        
+            "ability": "Lorsqu'un vaisseau allié à portée 0-2 défend ou attaque, il peut dépenser vos jetons concentration comme si c'était les leurs.",
+            "ability_ENG": "While a friendly ship at range 0-2 defends or performs an attack, it may spend your focus tokens as if that ship has them.",
+            "slots": [
+                "Talent"                
+           ]
+           
+        },
+        {
+            "name": "Hodo",
+            "name_ENG": "Hodo",
+            "id": 424,
+            "max_per_squad": 1,
+            "modify": true,
+		    "faction": "New_Republic",
+            "ship": "BTL-S8 K-wing",
+            "charge":[0],
+            "force": 0,
+            "shipId": 23,
+            "skill": 2,
+            "points": 5,                        
+            "ability": "Fin de la Mise en Place : Assignez la condition 'Tactique de Bombardement' à 2 vaisseaux alliés.",
+            "ability_ENG": "End of Setup : Assign the 'Bombing Tactic' to 2 friendly ships.",
+            "slots": [
+                "Condition",
+                "Talent"                
+           ],
+           "modifier_func": [
+            	[1,"Condition",1,"??"]                              
+            ]
+           
+        },
+        {
+            "name": "Pilote de la 5ème Flotte",
+            "name_ENG": "Fifth Fleet Pilot",
+            "id": 425,
+            "max_per_squad": 8,
+            "modify": false,
+		    "faction": "New_Republic",
+            "ship": "BTL-S8 K-wing",
+            "charge":[0],
+            "force": 0,
+            "shipId": 23,
+            "skill": 2,
+            "points": 7,                        
+            "ability": "",
+            "ability_ENG": "",
+            "slots": [             
+           ]
+         
+        },
+        {
+            "name": "Ahsoka Tano",
+            "name_ENG": "Ahsoka Tano",
+            "id": 426,
+            "max_per_squad": 1,
+            "modify": true,
+            "title":["T-6 1-9-7-4"],
+		    "faction": "New_Republic",
+            "ship": "T6 Shuttle",
+            "charge":[0],
+            "force": 3,
+            "shipId": 82,
+            "skill": 5,
+            "points": 7,                        
+            "ability": "??",
+            "ability_ENG": "??",
+            "slots": [     
+                "Title",
+                "Force",
+                "Talent"        
+           ]
+         
+        },
+        {
+            "name": "Huyang",
+            "name_ENG": "Huyang",
+            "id": 427,
+            "max_per_squad": 1,
+            "modify": true,
+            "title":["T-6 1-9-7-4"],
+		    "faction": "New_Republic",
+            "ship": "T6 Shuttle",
+            "charge":[0],
+            "force": 0,
+            "shipId": 82,
+            "skill": 1,
+            "points": 7,                        
+            "ability": "Fin de la Mise en Place : Assignez la condition 'Enseignement Jedi' à 1 vaisseau allié.",
+            "ability_ENG": "End of Setup : Assign the 'Jedi Counseling' to 1 friendly ship.",
+            "slots": [     
+            "Title",    
+            "Droid",
+                "Condition"
+                       
+           ],
+           "modifier_func": [
+            	[1,"Condition",1,"??"],
+                [1,"Title",1,"??"],
+                [1,"Droid",1,237]                              
+            ]
+         
+        },
+        {
+            "name": "Ezra Bridger",
+            "name_ENG": "Ezra Bridger",
+            "id": 428,
+            "max_per_squad": 1,
+            "modify": true,
+            "title":["T-6 1-9-7-4"],
+		    "faction": "New_Republic",
+            "ship": "T6 Shuttle",
+            "charge":[0],
+            "force": 2,
+            "shipId": 82,
+            "skill": 3,
+            "points": 7,                        
+            "ability": "??",
+            "ability_ENG": "??",
+            "slots": [     
+            "Title",
+            "Force"    
+                
+                       
+           ],
+           "modifier_func": [
+            	
+                [1,"Title",1,"??"]
+                                           
+            ]
+         
+        },
+        {
+            "name": "Sabine Wren",
+            "name_ENG": "Sabine Wren",
+            "id": 429,
+            "max_per_squad": 1,
+            "modify": true,
+            "title":["T-6 1-9-7-4"],
+		    "faction": "New_Republic",
+            "ship": "T6 Shuttle",
+            "charge":[0],
+            "force": 1,
+            "shipId": 82,
+            "skill": 3,
+            "points": 7,                        
+            "ability": "??",
+            "ability_ENG": "??",
+            "slots": [     
+            "Title",
+            "Talent"    
+                
+                       
+           ],
+           "modifier_func": [
+            	
+                [1,"Title",1,"??"]
+                                           
+            ]
+         
+        },
+        {
+            "name": "Hera Syndulla",
+            "name_ENG": "Hera Syndulla",
+            "id": 430,
+            "max_per_squad": 1,
+            "modify": true,
+            "title":["Ghost"],
+		    "faction": "New_Republic",
+            "ship": "VCX-100 Light Freighter",
+            "charge":[0],
+            "force": 0,
+            "shipId": 25,
+            "skill": 6,
+            "points": 7,                        
+            "ability": "Fin de la Mise en Place : Assignez la condition 'Suspect' à un vaisseau ennemi",
+            "ability_ENG": "End of SETUP : assign a 'Suspect' condition to an enemy ship.",
+            "slots": [     
+            "Title",
+            "Condition",
+            "Talent",
+            "Talent",
+            "Talent"                      
+           ],
+           "modifier_func": [
+                [1,"Title",1,"??"],
+                [1,"Condition",1,"??"]                       
+            ]
+         
         }
+        
 
 
 

@@ -387,7 +387,7 @@
                 [ 0, 0, 1, 0, 0, 2],
                 [ 0, 0, 1, 0, 0, 0]
             ],
-            "slots": []
+            "slots": ["Tech","Missile","Cannon","Modification","Sensor"]
         },
         {
      
@@ -679,7 +679,7 @@
                 [ 2, 2, 1, 2, 2],
                 [ 0, 2, 2, 2, 0]
             ],
-            "slots": []
+            "slots": ["Gunner","Gunner","Missile","Torpedo","Payload","Payload","Turret","Modification"]
 
         },
         {
@@ -709,7 +709,7 @@
                 [ 3, 2, 2, 2, 3, 0 ],
                 [ 0, 0, 0, 0, 0, 3 ]
             ],
-            "slots": []
+            "slots": ["Tech","Gunner","Missile","Missile","Torpedo","Payload","Payload","Modification"]
 
         },
         {
@@ -796,7 +796,7 @@
                 [ 0, 0, 2, 0, 0, 3, 0, 0, 0, 0 ],
                 [ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0 ]
             ],
-            "slots": []
+            "slots": ["Sensor","Missile","Modification"]
 
         },
         {
@@ -956,8 +956,9 @@
             "keyword": [],
             "actions": [
                 [0,"Fo W"],
-                [0,"Ev R"],
-                [0,"Br W"]
+                [0,"Lo W"],
+                [0,"Br W"],
+                [0,"Rd W"]
                
             ],
             "base": ["Small"],
@@ -967,7 +968,7 @@
                 [ 2, 1, 1, 1, 2, 0, 3, 3, 0, 0, 0, 3, 0 ],
                 [ 0, 2, 1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
             ],
-            "slots": []
+            "slots": ["Turret","Torpedo","Astromech","Payload","Modification"]
 
         },
         {
@@ -1023,7 +1024,7 @@
                 [ 2, 1, 1, 1, 2, 0, 3, 3 ],
                 [ 0, 2, 1, 2, 0, 0, 0, 0 ]
             ],
-            "slots": []
+            "slots": ["Payload","Modification"]
 
         },
         {
@@ -1052,7 +1053,7 @@
                 [ 2, 2, 1, 2, 2],
                 [ 0, 0, 2, 0, 0]
             ],
-            "slots": []
+            "slots": ["Gunner"]
 
         },
         {
@@ -1109,7 +1110,7 @@
                 [ 2, 2, 1, 2, 2, 0],
                 [ 0, 0, 2, 0, 0, 3]
             ],
-            "slots": []
+            "slots": ["Gunner","Missile","Turret","Modification","Calculator"]
 
         },
         {
@@ -1139,7 +1140,7 @@
                 [ 2, 2, 2, 2, 2],
                 [ 0, 0, 3, 0, 0]
             ],
-            "slots": []
+            "slots": ["Missile","Missile","Torpedo","Torpedo","Modification","Sensor"]
 
         },
         {
@@ -1168,7 +1169,7 @@
                 [ 2, 2, 1, 2, 2, 0],
                 [ 0, 0, 0, 0, 0, 3]
             ],
-            "slots": []
+            "slots": ["Missile","Torpedo","Illicit","Modification","Astromech"]
 
         },
         {
@@ -1223,7 +1224,7 @@
                 [ 3, 2, 1, 2, 3, 0, 0, 0 ],
                 [ 0, 2, 1, 2, 0, 0, 0, 0 ]
             ],
-            "slots": []
+            "slots": ["Crew","Crew","Modification"]
 
         },
         {
@@ -1487,7 +1488,7 @@
                 [ 0, 0, 2, 0, 0, 0],
                 [ 0, 0, 3, 0, 0, 0]
             ],
-            "slots": []
+            "slots": ["Illicit","Modification"]
 
         },
         {
@@ -1600,7 +1601,7 @@
                 [0,"Lo W"],                
                 [0,"Ck R"],
                 [0,"Br R"],
-                [0,"Ja R"]
+                [0,"Ja W"]
                 
             ],
             "maneuvers": [
@@ -1611,7 +1612,7 @@
                 [ 0, 0, 2, 0, 0, 0, 0, 0],
                 [ 0, 0, 0, 0, 0, 3, 0, 0]
             ],
-            "slots": []
+            "slots": ["Crew","Crew","Torpedo","Payload","Cannon","Modification","Calculator"]
 
         },
         {
@@ -1873,7 +1874,7 @@
                 [ 0, 0, 3, 0, 0, 0, 0, 0, 0, 0 ],
                 [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
             ],
-            "slots": []
+            "slots": ["Missile","Illicit","Modification","Modification","Astromech"]
 
         },
         {
@@ -1904,7 +1905,7 @@
                 [ 0, 0, 1, 0, 0, 0, 0, 0],
                 [ 0, 0, 2, 0, 0, 3, 0, 0]
             ],
-            "slots": []
+            "slots": ["Tech","Missile","Modification","Modification"]
 
         },
         {
@@ -1934,7 +1935,7 @@
                 [ 0, 0, 2, 0, 0],
                 [ 0, 0, 0, 0, 0]
             ],
-            "slots": []
+            "slots": ["Crew","Crew","Tech","Modification","Modification","Calculator"]
 
         },
         {
@@ -2116,7 +2117,7 @@
                 [ 0, 0, 1, 0, 0, 3, 0, 0, 0, 0 ],
                 [ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0 ]
             ],
-            "slots": ["Cannon","Astromech","Modification","Hyperspace Ring"]
+            "slots": ["Cannon","Astromech","Hyperspace Ring"]
 
         },
         {
@@ -2153,6 +2154,7 @@
                 [0,"Bo R"],                
                 [0,"Lo R"],
                 [0,"Br R"]
+            
             ],
             "maneuvers": [
                 [ 0, 0, 0, 0, 0, 0],
@@ -2193,7 +2195,7 @@
                 [ 0, 0, 1, 0, 0, 3, 0, 0],
                 [ 0, 0, 1, 0, 0, 3, 0, 0]
             ],
-            "slots": []
+            "slots": ["Tech","Tech","Missile","Modification"]
 
         },
         {
@@ -2781,36 +2783,8 @@
                 [ 0, 0, 1, 0, 0, 3,0,0]
             ],
             "slots": ["Crew","Gunner","Gunner","Missile","Turret","Modification"]
-        },
-        {
-            "name": "Modified TIE/ln Fighter",
-            "factions": ["Crime_Syndicates"],
-            "id": 98,
-            "base": ["Small"],
-            "keyword":[],
-            "attack": [["F",2]],
-            "agility": 3,
-            "hull": 3,
-            "shields": 0,
-            "chassis": [31],
-            "actions": [
-                [0,"Fo W"],
-                [0,"Br W"],
-                [0,"Ev W"]
-            ],
-            "maneuvers": [
-                [ 0, 0, 0, 0, 0, 0],
-                [ 2, 0, 0, 0, 2, 0],
-                [ 2, 1, 1, 1, 2, 0],
-                [ 2, 2, 1, 2, 2, 3],
-                [ 0, 0, 2, 0, 0, 0],
-                [ 0, 0, 3, 0, 0, 0]
-            ],
-            "slots": [
-                "Illicit",
-                "Modification"
-            ]
         }
+      
         
         
     ]
