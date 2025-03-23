@@ -3272,7 +3272,7 @@
 "charge": [0],
 "points": 0,
 "max_per_squad": 1,
-"faction": ["Phoenix_Cell"],
+"faction": ["Phoenix_Cell","New_Republic"],
 "ship": "VCX-100 Light Freighter",
 "effect": "",
 "restrictions": [1,"title", "Ghost",""]
@@ -3981,7 +3981,7 @@
              "points":2,
              "effect": "",
              "effect_ENG": "",
-             "faction": ["Galactic_Senate"] 
+             "faction": ["Galactic_Senate","Colossus"] 
          },
          {
             "name": "Message Prioritaire",
@@ -4591,13 +4591,155 @@
              ]
          },
          {
-            "name": "",
-             "name_ENG": "",
-             "id":282,
+            "name": "Intrus",
+             "name_ENG": "Intruder",
+             "id":283,
+             "max_per_squad":2,
+             "available":true,
+             "modify":false,
+             "slot":"Condition",
+             "add_Data": [0],
+             "charge": [0],
+             "points": 0,
+             "effect": "??",
+             "effect_ENG": "??",
+             "faction": ["New_Republic"],
+             "modifier_func": [
+                
+             ]
+         },
+         {
+            "name": "Harcelé",
+             "name_ENG": "Harrassed",
+             "id":284,
+             "max_per_squad":2,
+             "available":true,
+             "modify":false,
+             "slot":"Condition",
+             "add_Data": [0],
+             "charge": [0],
+             "points": 0,
+             "effect": "",
+             "effect_ENG": "When you remove a stress token, receive a strain or deplete token of your choice.",
+             "faction": ["New_Republic"],
+             "modifier_func": [
+                
+             ]
+         },
+         {
+            "name": "Tactique de Bombardement",
+             "name_ENG": "Bombing Tactic",
+             "id":285,
+             "max_per_squad":2,
+             "available":true,
+             "modify":false,
+             "slot":"Condition",
+             "add_Data": [0],
+             "charge": [0],
+             "points": 0,
+             "effect": "Les bombes alliées ne vous infligent pas de dégats. Vous ne déclenchez pas les Mines alliées lorsque vous vous déplacez à travers.",
+             "effect_ENG": "Friendly bombs don't inflict damage on you. You don't trigger friendly Mines when you move through them",
+             "faction": ["New_Republic"],
+             "modifier_func": [
+                
+             ]
+         },
+         {
+            "name": "Suspect",
+             "name_ENG": "Suspect",
+             "id":286,
+             "max_per_squad":2,
+             "available":true,
+             "modify":false,
+             "slot":"Condition",
+             "add_Data": [0],
+             "charge": [1,"0"],
+             "points": 0,
+             "effect": "Si la #ch# est active, au début de la phase d'engagement, vous recevez 1 jeton désarmement. Vous ne pouvez pas être attaqué. Pendant la phase de fin, vous pouvez dépenser 1 #ch#. Si vous êtes le dernier vaisseau allié en jeu, perdez 1 #ch#.<br>Si la #ch# est inactive, pendant la phase système, tous les vaisseau ennemis à portée 0-3 peuvent vous verrouiller.",
+             "effect_ENG": "If the #ch# is active, at the beginning of engagement phase, you receive a weapon disabled token. You cannot be attacked. During end phase you may spend 1#ch#. If you are the last friendly ship alive, lose 1 #ch#.<br>If the #ch# is inactive, during system phase, all enemy ships at range 0-3 can acquire locks on you.",
+             "faction": ["New_Republic"],
+             "modifier_func": [
+                
+             ]
+         },
+         {
+            "name": "Chassé",
+             "name_ENG": "Hunted",
+             "id":287,
              "max_per_squad":1,
              "available":true,
              "modify":false,
-             "slot":"Crew",
+             "slot":"Condition",
+             "add_Data": [0],
+             "charge": [0],
+             "points": 0,
+             "effect": "Lorsque Jacen Syndulla essaie de deviner votre manoeuvre, s'il a deviné juste votre direction, vous recevez 1 jeton épuisement. Si Jacen Syndulla devine en plus votre vitesse exacte, il récupère 1 #fo#.",
+             "effect_ENG": "When Jacen Syndulla tries to guess your maneuver, if he guessed the right direction, you receive 1 deplete token. If Jacen Syndulla guessed also the exact speed, he recovers 1 #fo#.",
+             "faction": ["New_Republic"],
+             "modifier_func": [
+                
+             ]
+         },
+         {
+            "name": "Maillon Faible",
+             "name_ENG": "Weakest Link",
+             "id":288,
+             "max_per_squad":1,
+             "available":true,
+             "modify":false,
+             "slot":"Condition",
+             "add_Data": [0],
+             "charge": [0],
+             "points": 0,
+             "effect": "Lorsque vous subissez 1 dégat #crit#, recevez 1 jeton contrainte.",
+             "effect_ENG": "When you suffer 1 #crit# damage, receive 1 strain token.",
+             "faction": ["New_Republic"],
+             "modifier_func": [
+                
+             ]
+         },
+         {
+            "name": "T-6 1-9-7-4",
+             "name_ENG": "T-6 1-9-7-4",
+             "id":289,
+             "max_per_squad":1,
+             "available":true,
+             "modify":false,
+             "slot":"Title",
+             "add_Data": [0],
+             "charge": [0],
+             "points": 0,
+             "effect": "",
+             "effect_ENG": "",
+             "faction": ["New_Republic"],
+             "restrictions": [1,"title", "T-6 1-9-7-4",""]
+         },
+         {
+            "name": "Connaissance Jedi",
+             "name_ENG": "Jedi Knowledge",
+             "id":290,
+             "max_per_squad":2,
+             "available":true,
+             "modify":false,
+             "slot":"Condition",
+             "add_Data": [0],
+             "charge": [0],
+             "points": 0,
+             "effect": "Lorsque vous subissez 1 dégat #crit#, recevez 1 jeton contrainte.",
+             "effect_ENG": "When you suffer 1 #crit# damage, receive 1 strain token.",
+             "faction": ["New_Republic"],
+             "modifier_func": [
+                
+             ]
+         },
+         {
+            "name": "Escorté",
+             "name_ENG": "Escort",
+             "id":291,
+             "max_per_squad":2,
+             "available":true,
+             "modify":false,
+             "slot":"Condition",
              "add_Data": [0],
              "charge": [0],
              "points": 0,
@@ -4609,9 +4751,153 @@
              ]
          },
          {
-            "name": "",
-             "name_ENG": "",
-             "id":282,
+            "name": "Fireball de Kaz",
+             "name_ENG": "Kaz' Fireball",
+             "id":292,
+             "max_per_squad":1,
+             "available":true,
+             "modify":false,
+             "slot":"Title",
+             "add_Data": [0],
+             "charge": [0],
+             "points": 0,
+             "effect": "",
+             "effect_ENG": "",
+             "faction": ["Colossus"],
+             "modifier_func": [
+                
+             ]
+         },
+         {
+            "name": "Warbird",
+             "name_ENG": "Warbird",
+             "id":293,
+             "max_per_squad":1,
+             "available":true,
+             "modify":false,
+             "slot":"Title",
+             "add_Data": [0],
+             "charge": [0],
+             "points": 0,
+             "effect": "",
+             "effect_ENG": "",
+             "faction": ["Colossus"],
+             "modifier_func": [
+                
+             ]
+         },
+         {
+            "name": "Blue Ace",
+             "name_ENG": "Blue Ace",
+             "id":294,
+             "max_per_squad":1,
+             "available":true,
+             "modify":false,
+             "slot":"Title",
+             "add_Data": [0],
+             "charge": [0],
+             "points": 0,
+             "effect": "",
+             "effect_ENG": "",
+             "faction": ["Colossus"],
+             "modifier_func": [
+                
+             ]
+         },
+         {
+            "name": "Red Ace",
+             "name_ENG": "Red Ace",
+             "id":295,
+             "max_per_squad":1,
+             "available":true,
+             "modify":false,
+             "slot":"Title",
+             "add_Data": [0],
+             "charge": [0],
+             "points": 0,
+             "effect": "",
+             "effect_ENG": "",
+             "faction": ["Colossus"],
+             "modifier_func": [
+                
+             ]
+         },
+         {
+            "name": "Yellow Ace",
+             "name_ENG": "Yellow Ace",
+             "id":296,
+             "max_per_squad":1,
+             "available":true,
+             "modify":false,
+             "slot":"Title",
+             "add_Data": [0],
+             "charge": [0],
+             "points": 0,
+             "effect": "",
+             "effect_ENG": "",
+             "faction": ["Colossus"],
+             "modifier_func": [
+                
+             ]
+         },
+         {
+            "name": "Green Ace",
+             "name_ENG": "Green Ace",
+             "id":297,
+             "max_per_squad":1,
+             "available":true,
+             "modify":false,
+             "slot":"Title",
+             "add_Data": [0],
+             "charge": [0],
+             "points": 0,
+             "effect": "",
+             "effect_ENG": "",
+             "faction": ["Colossus"],
+             "modifier_func": [
+                
+             ]
+         },
+         {
+            "name": "Black Ace",
+             "name_ENG": "Black Ace",
+             "id":298,
+             "max_per_squad":1,
+             "available":true,
+             "modify":false,
+             "slot":"Title",
+             "add_Data": [0],
+             "charge": [0],
+             "points": 0,
+             "effect": "",
+             "effect_ENG": "",
+             "faction": ["Colossus"],
+             "modifier_func": [
+                
+             ]
+         },
+         {
+            "name": "Flashy",
+             "name_ENG": "Flashy",
+             "id":299,
+             "max_per_squad":8,
+             "available":true,
+             "modify":false,
+             "slot":"Talent",
+             "add_Data": [0],
+             "charge": [1,"0"],
+             "points": 0,
+             "effect": "",
+             "effect_ENG": "",
+             "faction": ["Colossus"],
+             "modifier_func": [
+                
+             ]
+         },
+         {
+            "name": "Neeku Zovo",
+             "name_ENG": "Neeku Zovo",
+             "id":300,
              "max_per_squad":1,
              "available":true,
              "modify":false,
@@ -4627,9 +4913,9 @@
              ]
          },
          {
-            "name": "",
-             "name_ENG": "",
-             "id":282,
+            "name": "Synara San",
+             "name_ENG": "Synara San",
+             "id":301,
              "max_per_squad":1,
              "available":true,
              "modify":false,
@@ -4639,15 +4925,15 @@
              "points": 0,
              "effect": "",
              "effect_ENG": "",
-             "faction": ["Agents_of_Chaos"],
+             "faction": ["Colossus"],
              "modifier_func": [
                 
              ]
          },
          {
-            "name": "",
-             "name_ENG": "",
-             "id":282,
+            "name": "Tamara Ryvora",
+             "name_ENG": "Tamara Ryvora",
+             "id":302,
              "max_per_squad":1,
              "available":true,
              "modify":false,
@@ -4657,52 +4943,92 @@
              "points": 0,
              "effect": "",
              "effect_ENG": "",
-             "faction": ["First Order"],
+             "faction": ["Colossus"],
              "modifier_func": [
                 
              ]
          },
          {
-            "name": "",
-             "name_ENG": "",
-             "id":282,
+            "name": "'Bucket'",
+             "name_ENG": "'Bucket'",
+             "id":303,
              "max_per_squad":1,
              "available":true,
              "modify":false,
-             "slot":"Crew",
+             "slot":"Astromech",
              "add_Data": [0],
              "charge": [0],
              "points": 0,
              "effect": "",
              "effect_ENG": "",
-             "faction": ["Shadow Specialists"],
+             "faction": ["Colossus"],
              "modifier_func": [
                 
              ]
          },
          {
-            "name": "",
-             "name_ENG": "",
-             "id":282,
+            "name": "R5-G9",
+             "name_ENG": "R5-G9",
+             "id":304,
              "max_per_squad":1,
              "available":true,
              "modify":false,
-             "slot":"Crew",
+             "slot":"Astromech",
              "add_Data": [0],
              "charge": [0],
              "points": 0,
              "effect": "",
              "effect_ENG": "",
-             "faction": ["Imperial Remnants"],
+             "faction": ["Colossus"],
+             "modifier_func": [
+                
+             ]
+         },
+         {
+            "name": "R23-X9",
+             "name_ENG": "R23-X9",
+             "id":304,
+             "max_per_squad":1,
+             "available":true,
+             "modify":false,
+             "slot":"Astromech",
+             "add_Data": [0],
+             "charge": [0],
+             "points": 0,
+             "effect": "",
+             "effect_ENG": "",
+             "faction": ["Colossus"],
+             "modifier_func": [
+                
+             ]
+         },
+         {
+            "name": "R4-D12",
+             "name_ENG": "R5-G9",
+             "id":304,
+             "max_per_squad":1,
+             "available":true,
+             "modify":false,
+             "slot":"Astromech",
+             "add_Data": [0],
+             "charge": [0],
+             "points": 0,
+             "effect": "",
+             "effect_ENG": "",
+             "faction": ["Colossus"],
              "modifier_func": [
                 
              ]
          }
+         
+
+
+
 
          
          
 
-
+         
 
 
 

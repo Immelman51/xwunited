@@ -679,7 +679,7 @@
                 [ 2, 2, 1, 2, 2],
                 [ 0, 2, 2, 2, 0]
             ],
-            "slots": ["Gunner","Gunner","Missile","Torpedo","Payload","Payload","Turret","Modification"]
+            "slots": ["Gunner","Gunner","Missile","Payload","Payload","Turret","Modification"]
 
         },
         {
@@ -709,7 +709,7 @@
                 [ 3, 2, 2, 2, 3, 0 ],
                 [ 0, 0, 0, 0, 0, 3 ]
             ],
-            "slots": ["Tech","Gunner","Missile","Missile","Torpedo","Payload","Payload","Modification"]
+            "slots": ["Tech","Gunner","Missile","Torpedo","Payload","Payload","Modification"]
 
         },
         {

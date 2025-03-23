@@ -318,7 +318,7 @@
             ],
             "modifier_func": [
             	[1,"Title",1,147],
-                [3,"Modification",147]
+                [3,"Modification"]
                 
                     ]
         },
@@ -8865,7 +8865,7 @@
                 "Talent"                
            ],
            "modifier_func": [
-            	[1,"Condition",1,"??"]                              
+            	[1,"Condition",1,283]                              
             ]
            
         },
@@ -8889,7 +8889,7 @@
                 "Talent"                
            ],
            "modifier_func": [
-            	[1,"Condition",1,"??"]                              
+            	[1,"Condition",1,283]                              
             ]
            
         },
@@ -8927,14 +8927,14 @@
             "shipId": 0,
             "skill": 4,
             "points": 8,                        
-            "ability": "Mise en Place : Avant que vous ne soyez placé sur l'aire de jeu, assignez la condition 'Encouragement' à un autre vaisseau allié déjà en jeu.",
-            "ability_ENG": "SETUP : Before you are placed on the play area, assign the 'Encouragement' condition to a friendly ship already in play.",
+            "ability": "Fin de la Mise en Place : assignez la condition 'Harcelé' à un vaisseau ennemi.",
+            "ability_ENG": "End of SETUP : Assign the 'Harrassed' condition to an enemy ship.",
             "slots": [
                 "Condition",
                 "Talent"                
            ],
            "modifier_func": [
-            	[1,"Condition",1,"??"]                              
+            	[1,"Condition",1,284]                              
             ]
            
         },
@@ -8970,7 +8970,7 @@
             "force": 0,
             "shipId": 23,
             "skill": 4,
-            "points": 5,                        
+            "points": 8,                        
             "ability": "Lorsque vous effectuez une attaque principale, vous pouvez soit dépenser 1 bouclier pour lancer 1 dé supplémentaire, ou, si vous n'êtes pas protégé, vous pouvez lancer 1 dé de moins pour récupérer 1 bouclier.",
             "ability_ENG": "While you perform a primary attack, you may either spend 1 shield to roll 1 additional attack die or, if you are not shielded, you may roll 1 fewer attack die to recover 1 shield.",
             "slots": [
@@ -8990,7 +8990,7 @@
             "force": 0,
             "shipId": 23,
             "skill": 3,
-            "points": 5,                        
+            "points": 8,                        
             "ability": "Lorsqu'un vaisseau allié à portée 0-2 défend ou attaque, il peut dépenser vos jetons concentration comme si c'était les leurs.",
             "ability_ENG": "While a friendly ship at range 0-2 defends or performs an attack, it may spend your focus tokens as if that ship has them.",
             "slots": [
@@ -9010,7 +9010,7 @@
             "force": 0,
             "shipId": 23,
             "skill": 2,
-            "points": 5,                        
+            "points": 8,                        
             "ability": "Fin de la Mise en Place : Assignez la condition 'Tactique de Bombardement' à 2 vaisseaux alliés.",
             "ability_ENG": "End of Setup : Assign the 'Bombing Tactic' to 2 friendly ships.",
             "slots": [
@@ -9054,14 +9054,19 @@
             "force": 3,
             "shipId": 82,
             "skill": 5,
-            "points": 7,                        
+            "points": 12,                        
             "ability": "??",
             "ability_ENG": "??",
             "slots": [     
                 "Title",
                 "Force",
                 "Talent"        
-           ]
+           ],
+           "modifier_func": [
+            	[1,"Condition",1,"??"],
+                [1,"Title",1,289]
+                                            
+            ]
          
         },
         {
@@ -9077,9 +9082,9 @@
             "force": 0,
             "shipId": 82,
             "skill": 1,
-            "points": 7,                        
-            "ability": "Fin de la Mise en Place : Assignez la condition 'Enseignement Jedi' à 1 vaisseau allié.",
-            "ability_ENG": "End of Setup : Assign the 'Jedi Counseling' to 1 friendly ship.",
+            "points": 10,                        
+            "ability": "Fin de la Mise en Place : Assignez la condition 'Connaissance Jedi' à 1 vaisseau avec au moins 1 jeton force.",
+            "ability_ENG": "End of Setup : Assign the 'Jedi Knowledge' to a ship with at least 1 force token.",
             "slots": [     
             "Title",    
             "Droid",
@@ -9088,7 +9093,7 @@
            ],
            "modifier_func": [
             	[1,"Condition",1,"??"],
-                [1,"Title",1,"??"],
+                [1,"Title",1,289],
                 [1,"Droid",1,237]                              
             ]
          
@@ -9106,7 +9111,7 @@
             "force": 2,
             "shipId": 82,
             "skill": 3,
-            "points": 7,                        
+            "points": 11,                        
             "ability": "??",
             "ability_ENG": "??",
             "slots": [     
@@ -9117,7 +9122,7 @@
            ],
            "modifier_func": [
             	
-                [1,"Title",1,"??"]
+                [1,"Title",1,289]
                                            
             ]
          
@@ -9135,7 +9140,7 @@
             "force": 1,
             "shipId": 82,
             "skill": 3,
-            "points": 7,                        
+            "points": 11,                        
             "ability": "??",
             "ability_ENG": "??",
             "slots": [     
@@ -9146,7 +9151,7 @@
            ],
            "modifier_func": [
             	
-                [1,"Title",1,"??"]
+                [1,"Title",1,289]
                                            
             ]
          
@@ -9164,7 +9169,7 @@
             "force": 0,
             "shipId": 25,
             "skill": 6,
-            "points": 7,                        
+            "points": 12,                        
             "ability": "Fin de la Mise en Place : Assignez la condition 'Suspect' à un vaisseau ennemi",
             "ability_ENG": "End of SETUP : assign a 'Suspect' condition to an enemy ship.",
             "slots": [     
@@ -9175,11 +9180,760 @@
             "Talent"                      
            ],
            "modifier_func": [
-                [1,"Title",1,"??"],
+                [1,"Title",1,203],
+                [1,"Condition",1,286]                       
+            ]
+         
+        },
+        {
+            "name": "Chopper",
+            "name_ENG": "Chopper",
+            "id": 431,
+            "max_per_squad": 1,
+            "modify": true,
+            "title":["Ghost"],
+		    "faction": "New_Republic",
+            "ship": "VCX-100 Light Freighter",
+            "charge":[0],
+            "force": 0,
+            "shipId": 25,
+            "skill": 2,
+            "points": 10,                        
+            "ability": "??",
+            "ability_ENG": "??",
+            "slots": [     
+            "Title",
+            "Condition",
+            "Talent"
+                                 
+           ],
+           "modifier_func": [
+                [1,"Title",1,203],
+                [1,"Droid",1,237],
                 [1,"Condition",1,"??"]                       
             ]
          
+        },
+        {
+            "name": "Jacen Syndulla",
+            "name_ENG": "Jacen Syndulla",
+            "id": 432,
+            "max_per_squad": 1,
+            "modify": true,
+            "title":["Ghost"],
+		    "faction": "New_Republic",
+            "ship": "VCX-100 Light Freighter",
+            "charge":[0],
+            "force": 1,
+            "shipId": 25,
+            "skill": 1,
+            "points": 10,                        
+            "ability": "Fin de la Mise en Place : Assignez la condition 'Chassé' à un vaisseau ennemi.<br>Pendant la phase Système, vous pouvez dépenser 1 #fo# pour deviner la manoeuvre du vaisseau avec la condition 'Chassé'.",
+            "ability_ENG": "End of SETUP : assign a 'Hunted' condition to an enemy ship.<br>During System Phase, you may spend 1 #fo# to guess the maneuver of the ship with 'Hunted' condition.",
+            "slots": [     
+            "Title",
+            "Condition",
+            "Talent"
+                                 
+           ],
+           "modifier_func": [
+                [1,"Title",1,203],
+                [1,"Condition",1,287]                       
+            ]
+         
+        },
+        {
+            "name": "Greer Sonnel",
+            "name_ENG": "Greer Sonnel",
+            "id": 433,
+            "max_per_squad": 1,
+            "modify": false,
+		    "faction": "New_Republic",
+            "ship": "RZ-2 A-wing",
+            "charge":[0],
+            "force": 0,
+            "shipId": 45,
+            "skill": 4,
+            "points": 7,                        
+            "ability": "Après avoir entièrement exécuté une manoeuvre, vous pouvez tourner votre #tur#.",
+            "ability_ENG": "After you fully execute a maneuver, you may rotate your #tur#.",
+            "slots": [     
+            "Talent",
+            "Talent"
+                                 
+           ]
+         
+        },
+        {
+            "name": "Keo Venzee",
+            "name_ENG": "Keo Venzee",
+            "id": 434,
+            "max_per_squad": 1,
+            "modify": false,
+		    "faction": "New_Republic",
+            "ship": "RZ-2 A-wing",
+            "charge":[0],
+            "force": 1,
+            "shipId": 45,
+            "skill": 3,
+            "points": 8,                        
+            "ability": "Après avoir révélé votre manoeuvre, vous pouvez dépenser 1 #fo# pour l'exécuter en dérapage.",
+            "ability_ENG": "After you reveal your maneuver, you may spend 1 #fo# to execute it as a sideslip.",
+            "slots": [     
+            "Talent",
+            "Force"
+                                 
+           ]
+         
+        },
+        {
+            "name": "Zari Bangel",
+            "name_ENG": "Zari Bangel",
+            "id": 435,
+            "max_per_squad": 1,
+            "modify": false,
+		    "faction": "New_Republic",
+            "ship": "RZ-2 A-wing",
+            "charge":[0],
+            "force": 0,
+            "shipId": 45,
+            "skill": 3,
+            "points": 7,                        
+            "ability": "Vous ne sautez pas votre phase 'effectuer une action' après avoir partiellement executé une manoeuvre.",
+            "ability_ENG": "You do not skip your Perform Action step after you partially execute a maneuver.",
+            "slots": [     
+            "Talent",
+            "Talent"
+                                 
+           ]
+         
+        },
+        {
+            "name": "Ronith Blario",
+            "name_ENG": "Ronith Blario",
+            "id": 436,
+            "max_per_squad": 1,
+            "modify": false,
+		    "faction": "New_Republic",
+            "ship": "RZ-2 A-wing",
+            "charge":[0],
+            "force": 0,
+            "shipId": 45,
+            "skill": 2,
+            "points": 7,                        
+            "ability": "Lorsque vous défendez ou attaquez, si le vaisseau ennemi se trouve dans la #tur# d'un autre vaisseau allié, vous pouvez dépenser 1 jeton concentration de ce vaisseau allié pour modifier 1 de vos résultats #eye# en #evd# ou #hit#.",
+            "ability_ENG": "While you defend or perform an attack, if the enemy ship is in another friendly ship's #tur#, you may spend 1 focus token from that friendly ship to change 1 of your #eye# results to an #evd# or #hit# result.",
+            "slots": [     
+            "Talent",
+            "Talent"
+                                 
+           ]
+         
+        },
+        {
+            "name": "Recrue de l'Escadron Bleu",
+            "name_ENG": "Blue Squadron Recruit",
+            "id": 437,
+            "max_per_squad": 8,
+            "modify": false,
+		    "faction": "New_Republic",
+            "ship": "RZ-2 A-wing",
+            "charge":[0],
+            "force": 0,
+            "shipId": 45,
+            "skill": 2,
+            "points": 6,                        
+            "ability": "",
+            "ability_ENG": "",
+            "slots": [     
+            "Talent"                              
+           ]
+         
+        },
+        {
+            "name": "Etahn A'Abaht",
+            "name_ENG": "Etahn A'Abaht",
+            "id": 438,
+            "max_per_squad": 1,
+            "modify": true,
+		    "faction": "New_Republic",
+            "ship": "E-wing",
+            "charge":[0],
+            "force": 0,
+            "shipId": 14,
+            "skill": 5,
+            "points": 11,                        
+            "ability": "Fin de la Mise en Place : Assignez la condition 'Maillon Faible' à un vaisseau ennemi",
+            "ability_ENG": "End of SETUP : assign a 'Weakest Link' condition to an enemy ship.",
+            "slots": [     
+            "Condition",
+            "Talent",
+            "Talent"                              
+           ],
+           "modifier_func": [
+                [1,"Condition",1,288]                       
+            ]
+         
+        },
+        {
+            "name": "Gavin Darklighter",
+            "name_ENG": "Gavin Darklighter",
+            "id": 439,
+            "max_per_squad": 1,
+            "modify": false,
+		    "faction": "New_Republic",
+            "ship": "E-wing",
+            "charge":[0],
+            "force": 0,
+            "shipId": 14,
+            "skill": 4,
+            "points": 11,                        
+            "ability": "Lorsqu'un vaisseau allié effectue une attaque, si le défenseur se trouve dans votre #Farc#, l'attaquant peut modifier 1 résultat #hit# en #crit#.",
+            "ability_ENG": "While a friendly ship performs an attack, if the defender is in your #Farc#, the attacker may change 1 #hit# result to a #crit# result.",
+            "slots": [     
+            "Talent",
+            "Talent"                              
+           ]
+           
+        },
+        {
+            "name": "Corran Horn",
+            "name_ENG": "Corran Horn",
+            "id": 440,
+            "max_per_squad": 1,
+            "modify": false,
+		    "faction": "New_Republic",
+            "ship": "E-wing",
+            "charge":[0],
+            "force": 0,
+            "shipId": 14,
+            "skill": 5,
+            "points": 11,                        
+            "ability": "A initiative 0, vous pouvez effectuer une attaque principale bonus contre un vaisseau ennemi dans votre #bulls#. Dans ce cas, au début de la prochaine phase de planification, recevez 1 jeton désarmement.",
+            "ability_ENG": "At initiative 0, you may perform a bonus primary attack against an enemy ship in your #bulls#. If you do, at the start of the next Planning Phase, gain 1 disarm token.",
+            "slots": [     
+            "Talent",
+            "Talent"                              
+           ]
+           
+        },
+        {
+            "name": "Lieutenant Callahan",
+            "name_ENG": "Lieutenant Callahan",
+            "id": 441,
+            "max_per_squad": 1,
+            "modify": true,
+		    "faction": "New_Republic",
+            "ship": "E-wing",
+            "charge":[0],
+            "force": 0,
+            "shipId": 14,
+            "skill": 4,
+            "points": 10,                        
+            "ability": "Fin de la Mise en Place : Assignez la condition 'Escorté' à un vaisseau allié.",
+            "ability_ENG": "End of SETUP : assign a 'Escort' condition to an friendly ship.",
+            "slots": [     
+            "Condition",
+            "Talent",
+            "Talent"                              
+           ],
+           "modifier_func": [
+                [1,"Condition",1,291]                       
+            ]
+           
+        },
+        {
+            "name": "Jarek Yaeger",
+            "name_ENG": "Jarek Yaeger",
+            "id": 442,
+            "max_per_squad": 1,
+            "modify": true,
+            "title":["Kaz' Fireball"],
+		    "faction": "Colossus",
+            "ship": "Fireball",
+            "charge":[0],
+            "force": 0,
+            "shipId": 64,
+            "skill": 5,
+            "points": 11,                        
+            "ability": "",
+            "ability_ENG": "While you have 2 or fewer stress tokens, if you are damaged, you can execute red basic maneuvers even while stressed. If you are critically damaged, you can execute red advanced maneuvers even while stressed.",
+            "slots": [     
+            "Title",
+            "Talent",
+            "Talent",
+            "Talent"                              
+           ],
+           "modifier_func": [
+                [1,"Title",1,292]                       
+            ]
+           
+        },
+        {
+            "name": "Kazuda Xiono",
+            "name_ENG": "Kazuda Xiono",
+            "id": 443,
+            "max_per_squad": 1,
+            "modify": true,
+            "title":["Kaz' Fireball"],
+		    "faction": "Colossus",
+            "ship": "Fireball",
+            "charge":[0],
+            "force": 0,
+            "shipId": 64,
+            "skill": 4,
+            "points": 11,                        
+            "ability": "",
+            "ability_ENG": "While you defend or perform a primary attack, if the enemy ship's initiative is higher than the number of damage cards you have, you may roll 1 additional die.",
+            "slots": [     
+            "Title",
+            "Talent",
+            "Talent"                             
+           ],
+           "modifier_func": [
+                [1,"Title",1,292]                       
+            ]
+           
+        },
+        {
+            "name": "'Bucket'",
+            "name_ENG": "'Bucket'",
+            "id": 444,
+            "max_per_squad": 1,
+            "modify": true,
+            "title":["Kaz' Fireball"],
+		    "faction": "Colossus",
+            "ship": "Fireball",
+            "charge":[0],
+            "force": 0,
+            "shipId": 64,
+            "skill": 1,
+            "points": 11,                        
+            "ability": "",
+            "ability_ENG": "Before you expose 1 of your damage cards, you may look at your facedown damage cards, choose 1 and expose that card instead.",
+            "slots": [     
+            "Title",
+            "Droid",
+            "Crew"
+                                   
+           ],
+           "modifier_func": [
+            [1, "Droid",1,237],
+            [3,"Astromech"],
+            [1,"Title",1,292]                       
+            ]
+           
+        },
+        {
+            "name": "Venisa Doza",
+            "name_ENG": "Venisa Doza",
+            "id": 445,
+            "max_per_squad": 1,
+            "modify": false,
+		    "faction": "Colossus",
+            "ship": "T-70 X-wing",
+            "charge":[0],
+            "force": 0,
+            "shipId": 44,
+            "skill": 5,
+            "points": 11,                        
+            "ability": "",
+            "ability_ENG": "",
+            "slots": [     
+            "Talent",
+            "Talent"
+        ]
+        },
+        {
+            "name": "Norath Kev",
+            "name_ENG": "Norath Kev",
+            "id": 446,
+            "max_per_squad": 1,
+            "modify": false,
+		    "faction": "Colossus",
+            "ship": "T-70 X-wing",
+            "charge":[0],
+            "force": 0,
+            "shipId": 44,
+            "skill": 3,
+            "points": 11,                        
+            "ability": "",
+            "ability_ENG": "",
+            "slots": [     
+            "Talent"
+           
+        ]
+        },
+        {
+            "name": "Kazuda Xiono",
+            "name_ENG": "Kazuda Xiono",
+            "id": 447,
+            "max_per_squad": 1,
+            "modify": false,
+		    "faction": "Colossus",
+            "ship": "T-70 X-wing",
+            "charge":[0],
+            "force": 0,
+            "shipId": 44,
+            "skill": 4,
+            "points": 11,                        
+            "ability": "",
+            "ability_ENG": "While you defend or perform a primary attack, if the enemy ship's initiative is higher than the number of damage cards you have plus the number of shield you lost, you may roll 1 additional die.",
+            "slots": [     
+            "Talent",
+            "Talent"
+           
+        ]
+        },
+        {
+            "name": "Hugh Sion",
+            "name_ENG": "Hugh Sion",
+            "id": 448,
+            "max_per_squad": 1,
+            "modify": false,
+		    "faction": "Colossus",
+            "ship": "T-70 X-wing",
+            "charge":[0],
+            "force": 0,
+            "shipId": 44,
+            "skill": 3,
+            "points": 11,                        
+            "ability": "",
+            "ability_ENG": "While you defend or perform a primary attack, if the enemy ship's initiative is higher than the number of damage cards you have plus the number of shield you lost, you may roll 1 additional die.",
+            "slots": [     
+            "Talent"           
+        ]
+        },
+        {
+            "name": "Synara San",
+            "name_ENG": "Synara San",
+            "id": 449,
+            "max_per_squad": 1,
+            "modify": true,
+            "title": ["Warbird"],
+		    "faction": "Colossus",
+            "ship": "Lambda-class T-4a Shuttle",
+            "charge":[0],
+            "force": 0,
+            "shipId": 9,
+            "skill": 1,
+            "points": 11,                        
+            "ability": "",
+            "ability_ENG": "",
+            "slots": [     
+            "Title",
+            "Talent"           
+        ],
+        "modifier_func": [
+                [1,"Title",1,293]                       
+            ]
+        },
+        {
+            "name": "Kragan Gorr",
+            "name_ENG": "Kragan Gorr",
+            "id": 450,
+            "max_per_squad": 1,
+            "modify": true,
+            "title": ["Warbird"],
+		    "faction": "Colossus",
+            "ship": "Lambda-class T-4a Shuttle",
+            "charge":[0],
+            "force": 0,
+            "shipId": 9,
+            "skill": 5,
+            "points": 11,                        
+            "ability": "",
+            "ability_ENG": "",
+            "slots": [     
+            "Title",
+            "Talent",
+            "Talent"           
+        ],
+        "modifier_func": [
+                [1,"Title",1,293]                       
+            ]
+        },
+        {
+            "name": "Drell",
+            "name_ENG": "Drell",
+            "id": 451,
+            "max_per_squad": 1,
+            "modify": true,
+            "title": ["Warbird"],
+		    "faction": "Colossus",
+            "ship": "Lambda-class T-4a Shuttle",
+            "charge":[0],
+            "force": 0,
+            "shipId": 9,
+            "skill": 2,
+            "points": 11,                        
+            "ability": "",
+            "ability_ENG": "",
+            "slots": [     
+            "Title",
+            "Talent"                  
+        ],
+        "modifier_func": [
+                [1,"Title",1,293]                       
+            ]
+        },
+        {
+            "name": "Torra Doza",
+            "name_ENG": "Torra Doza",
+            "id": 452,
+            "max_per_squad": 1,
+            "modify": true,
+            "title": ["Blue Ace"],
+		    "faction": "Colossus",
+            "ship": "Blue Ace",
+            "charge":[0],
+            "force": 0,
+            "shipId": 87,
+            "skill": 5,
+            "points": 11,                        
+            "ability": "",
+            "ability_ENG": "When you partially execute a maneuver, you may perform an action. Then gain 1 stress token.",
+            "slots": [     
+            "Title",
+            "Talent",
+            "Talent",
+            "Talent"                  
+        ],
+        "modifier_func": [
+                [1,"Title",1,294]                       
+            ]
+        },
+        {
+            "name": "Griff Haloran",
+            "name_ENG": "Torra Doza",
+            "id": 453,
+            "max_per_squad": 1,
+            "modify": true,
+            "title": ["Blue Ace"],
+		    "faction": "Colossus",
+            "ship": "Blue Ace",
+            "charge":[0],
+            "force": 0,
+            "shipId": 87,
+            "skill": 3,
+            "points": 11,                        
+            "ability": "",
+            "ability_ENG": "When you fail a boost action, gain 1 evade token.",
+            "slots": [     
+            "Title",
+            "Talent",
+            "Talent"                  
+        ],
+        "modifier_func": [
+                [1,"Title",1,294]                       
+            ]
+        },
+        {
+            "name": "Freya Fenris",
+            "name_ENG": "Freya Fenris",
+            "id": 454,
+            "max_per_squad": 1,
+            "modify": true,
+            "title": ["Red Ace"],
+		    "faction": "Colossus",
+            "ship": "Red Ace",
+            "charge":[0],
+            "force": 0,
+            "shipId": 87,
+            "skill": 5,
+            "points": 11,                        
+            "ability": "",
+            "ability_ENG": "Each time you roll dice, you may spend 1 red token to change 1 #eye# result into an #evd# or #hit# result.",
+            "slots": [     
+            "Title",
+            "Talent",
+            "Talent",
+            "Talent"                  
+        ],
+        "modifier_func": [
+                [1,"Title",1,295]                       
+            ]
+        },
+        {
+            "name": "Torra Doza",
+            "name_ENG": "Torra Doza",
+            "id": 455,
+            "max_per_squad": 1,
+            "modify": true,
+            "title": ["Red Ace"],
+		    "faction": "Colossus",
+            "ship": "Red Ace",
+            "charge":[0],
+            "force": 0,
+            "shipId": 87,
+            "skill": 3,
+            "points": 11,                        
+            "ability": "",
+            "ability_ENG": "When you partially execute a maneuver, you may perform an action. Then gain 1 stress token.",
+            "slots": [     
+            "Title",
+            "Talent",
+            "Talent"                 
+        ],
+        "modifier_func": [
+                [1,"Title",1,295]                       
+            ]
+        },
+        {
+            "name": "Bo Keevil",
+            "name_ENG": "Bo Keevil",
+            "id": 456,
+            "max_per_squad": 1,
+            "modify": true,
+            "title": ["Yellow Ace"],
+		    "faction": "Colossus",
+            "ship": "Yellow Ace",
+            "charge":[0],
+            "force": 0,
+            "shipId": 87,
+            "skill": 5,
+            "points": 11,                        
+            "ability": "",
+            "ability_ENG": "After you perform a #BR#, if there is an enemy ship in your #bulls#, you may acquire a lock on that ship.",
+            "slots": [     
+            "Title",
+            "Talent",
+            "Talent",
+            "Talent"                 
+        ],
+        "modifier_func": [
+                [1,"Title",1,296]                       
+            ]
+        },
+        {
+            "name": "Hype Fazon",
+            "name_ENG": "Hype Fazon",
+            "id": 457,
+            "max_per_squad": 1,
+            "modify": true,
+            "title": ["Yellow Ace"],
+		    "faction": "Colossus",
+            "ship": "Yellow Ace",
+            "charge":[2,"+"],
+            "force": 0,
+            "shipId": 87,
+            "skill": 4,
+            "points": 11,                        
+            "ability": "",
+            "ability_ENG": "If a ship shoots at you, you lose 1 charge. At the end of activation phase, you may spend 1 charge to perform a bonus attack (at initiative 0)",
+            "slots": [     
+            "Title",
+            "Talent",
+            "Talent"             
+        ],
+        "modifier_func": [
+                [1,"Title",1,296]                       
+            ]
+        },
+        {
+            "name": "Hype Fazon",
+            "name_ENG": "Hype Fazon",
+            "id": 458,
+            "max_per_squad": 1,
+            "modify": true,
+            "title": ["Green Ace"],
+		    "faction": "Colossus",
+            "ship": "Green Ace",
+            "charge":[2,"+"],
+            "force": 0,
+            "shipId": 87,
+            "skill": 6,
+            "points": 11,                        
+            "ability": "",
+            "ability_ENG": "If a ship shoots at you, you lose 1 charge. At the end of activation phase, you may spend 1 charge to perform a bonus attack (at initiative 0)",
+            "slots": [     
+            "Title",
+            "Talent",
+            "Talent",
+            "Talent"                 
+        ],
+        "modifier_func": [
+                [1,"Title",1,297]                       
+            ]
+        },
+        {
+            "name": "Freya Fenris",
+            "name_ENG": "Freya Fenris",
+            "id": 459,
+            "max_per_squad": 1,
+            "modify": true,
+            "title": ["Green Ace"],
+		    "faction": "Colossus",
+            "ship": "Green Ace",
+            "charge":[0],
+            "force": 0,
+            "shipId": 87,
+            "skill": 3,
+            "points": 11,                        
+            "ability": "",
+            "ability_ENG": "Each time you roll dice, you may spend 1 red token to change 1 #eye# result into an #evd# or #hit# result.",
+            "slots": [     
+            "Title",
+            "Talent",
+            "Talent"               
+        ],
+        "modifier_func": [
+                [1,"Title",1,297]                       
+            ]
+        },
+        {
+            "name": "Griff Haloran",
+            "name_ENG": "Griff Haloran",
+            "id": 460,
+            "max_per_squad": 1,
+            "modify": true,
+            "title": ["Black Ace"],
+		    "faction": "Colossus",
+            "ship": "Black Ace",
+            "charge":[0],
+            "force": 0,
+            "shipId": 87,
+            "skill": 5,
+            "points": 11,                        
+            "ability": "",
+            "ability_ENG": "When you fail a boost action, gain 1 evade token.",
+            "slots": [     
+            "Title",
+            "Talent",
+            "Talent",
+            "Talent"               
+        ],
+        "modifier_func": [
+                [1,"Title",1,298]                       
+            ]
+        },
+        {
+            "name": "Bo Keevil",
+            "name_ENG": "Bo Keevil",
+            "id": 461,
+            "max_per_squad": 1,
+            "modify": true,
+            "title": ["Black Ace"],
+		    "faction": "Colossus",
+            "ship": "Black Ace",
+            "charge":[0],
+            "force": 0,
+            "shipId": 87,
+            "skill": 3,
+            "points": 11,                        
+            "ability": "",
+            "ability_ENG": "After you perform a #BR#, if there is an enemy ship in your #bulls#, you may acquire a lock on that ship.",
+            "slots": [     
+            "Title",
+            "Talent",
+            "Talent"             
+        ],
+        "modifier_func": [
+                [1,"Title",1,298]                       
+            ]
         }
+
+
         
 
 
