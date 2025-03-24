@@ -2589,7 +2589,7 @@
             "add_Data": [0],
             "charge": [0],
             "points": 2,
-            "faction": ["C.I.S"],
+            "faction": ["C.I.S","Agents_of_Chaos"],
             "effect": "Remplacez votre capacité de vaisseau Calculs en Réseau par la suivante : Calculs Indépendants : tant que vous effectuez une action blanche , vous pouvez la considérer comme rouge pour gagner 1 marqueur de calcul supplémentaire. Les autres vaisseaux ne peuvent pas dépenser vos marqueurs de calcul en utilisant la capacité de vaisseau Calculs en Réseau.",
             "effect_ENG": "",
             "restrictions": [1,"chassis","Networked Calculations",""]
@@ -2682,7 +2682,7 @@
             "add_Data": [0],
             "charge": [0],
             "points": 5,
-            "faction": ["C.I.S"],
+            "faction": ["C.I.S","Agents_of_Chaos"],
             "effect": "Tant que vous défendez, après l’étape « Neutraliser les résultats », s’il y a au moins 2 résultats #hit#/#crit#, vous pouvez dépenser 1 #ch# pour annuler 1 résultat #hit# ou #crit#.<br>Après qu’un vaisseau allié a été détruit, récupérez 1 #ch#.",
             "effect_ENG": ""
         },
@@ -5055,6 +5055,144 @@
              "modifier_func": [
                 
              ]
+         },
+         {
+            "name": "*Perfide",
+             "name_ENG": "*Treacherous",
+             "id":307,
+             "max_per_squad":8,
+             "available":true,
+             "modify":false,
+             "slot":"Talent",
+             "add_Data": [0],
+             "charge": [0],
+             "points": 0,
+             "effect": "Tant que vous défendez, si vous n'êtes pas dans le #bulls# de l'attaquant, lancez 1 dé de défense supplémentaire pour chaque allié Protecteur Magna Garde calculateur ou esquivant situé dans l'arc d'attaque.",
+             "effect_ENG": "While you defend, if you are not in the attacker's #bulls# , roll 1 additional defense die for each friendly calculating or evading MagnaGuard Protector in the attack arc.",
+             "faction": ["Agents_of_Chaos"],
+             "modifier_func": [
+                
+             ]
+         },
+         {
+            "name": "Boba Fett",
+             "name_ENG": "Boba Fett",
+             "id":308,
+             "max_per_squad":1,
+             "available":true,
+             "modify":false,
+             "slot":"Gunner",
+             "add_Data": [0],
+             "charge": [0],
+             "points": 0,
+             "effect": "",
+             "effect_ENG": "",
+             "faction": ["Agents_of_Chaos"],
+             "modifier_func": [
+                
+             ]
+         },
+         {
+            "name": "Dark Sidious",
+             "name_ENG": "Darth Sidious",
+             "id":309,
+             "max_per_squad":1,
+             "available":true,
+             "modify":true,
+             "slot":"Crew",
+             "add_Data": [0],
+             "charge": [0],
+             "points": 0,
+             "effect": "",
+             "effect_ENG": "",
+             "faction": ["Agents_of_Chaos"],
+             "force": 2,
+             "modifier_func": [
+                [0,"change_stat","force",2]
+            ]
+         },
+         {
+            "name": "Assaj Ventress",
+             "name_ENG": "Assaj Ventress",
+             "id":310,
+             "max_per_squad":1,
+             "available":true,
+             "modify":true,
+             "slot":"Crew",
+             "add_Data": [0],
+             "charge": [0],
+             "points": 0,
+             "effect": "",
+             "effect_ENG": "",
+             "faction": ["Agents_of_Chaos"],
+             "force": 1,
+             "modifier_func": [
+                [0,"change_stat","force",1]
+            ]
+         },
+         {
+            "name": "Jango Fett",
+             "name_ENG": "Jango Fett",
+             "id":311,
+             "max_per_squad":1,
+             "available":true,
+             "modify":false,
+             "slot":"Crew",
+             "add_Data": [0],
+             "charge": [0],
+             "points": 0,
+             "effect": "",
+             "effect_ENG": "",
+             "faction": ["Agents_of_Chaos"]
+             
+         },
+         {
+            "name": "Jango Fett",
+             "name_ENG": "Jango Fett",
+             "id":311,
+             "max_per_squad":1,
+             "available":true,
+             "modify":false,
+             "slot":"Crew",
+             "add_Data": [0],
+             "charge": [0],
+             "points": 0,
+             "effect": "",
+             "effect_ENG": "",
+             "faction": ["Agents_of_Chaos"]
+             
+         },
+         {
+            "name": "Savage Opress",
+             "name_ENG": "Savage Opress",
+             "id":312,
+             "max_per_squad":1,
+             "available":true,
+             "modify":false,
+             "slot":"Crew",
+             "add_Data": [0],
+             "charge": [0],
+             "points": 0,
+             "effect": "",
+             "effect_ENG": "",
+             "faction": ["Agents_of_Chaos"]
+             
+         },
+         {
+            "name": "Enchevêtrement",
+             "name_ENG": "Ensnare",
+             "id":313,
+             "max_per_squad":1,
+             "available":true,
+             "modify":false,
+             "slot":"Talent",
+             "add_Data": [0],
+             "charge": [0],
+             "points": 4,
+             "effect": "",
+             "effect_ENG": "",
+             "faction": ["Agents_of_Chaos"]
+             
          }
 
 

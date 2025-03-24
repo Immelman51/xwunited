@@ -10380,11 +10380,69 @@
             "skill": 3,
             "points": 4,                        
             "ability": "",
+            "ability_ENG": "While a friendly ship at range 0-2 defends, during the Neutralize Results Step, you or it may spend 1 calculate token to change all #crit# results to #hit# results.",
+            "slots": [     
+                             
+        ]       
+        },
+        {
+            "name": "DFS-311",
+            "name_ENG": "DFS-311",
+            "id": 482,
+            "max_per_squad": 1,
+            "modify": false,
+            "faction": "Agents_of_Chaos",
+            "ship": "Vulture-class Droid Fighter",
+            "charge":[0],
+            "force": 0,
+            "shipId": 56,
+            "skill": 1,
+            "points": 4,                        
+            "ability": "",
+            "ability_ENG": "At the start of the Engagement Phase, you may transfer 1 of your calculate tokens to another friendly ship at range 0-3.",
+            "slots": [     
+                             
+        ]       
+        },
+        {
+            "name": "L'Assembleur de Fer",
+            "name_ENG": "The Iron Assembler",
+            "id": 483,
+            "max_per_squad": 1,
+            "modify": false,
+            "faction": "Agents_of_Chaos",
+            "ship": "Vulture-class Droid Fighter",
+            "charge":[0],
+            "force": 0,
+            "shipId": 56,
+            "skill": 1,
+            "points": 4,                        
+            "ability": "Après qu'un vaisseau allié à portée 0-1 a sauté son étape « Exécuter la manœuvre », vous pouvez dépenser 1 #ch#. Dans ce cas, ce vaisseau allié peut réparer 1 dégât s'il se trouve à portée O d'un astéroïde ou nuage de débris.",
+            "ability_ENG": "After a friendly ship at range 0-1 skips its execute maneuver step, you may spend 1 #ch#. If you do, if there is an asteroid or debris cloud at range 0 of it, that ship may repair 1 damage.",
+            "slots": [     
+                             
+        ]       
+        },
+        {
+            "name": "Drone Séparatiste",
+            "name_ENG": "Separatist Drone",
+            "id": 484,
+            "max_per_squad": 8,
+            "modify": false,
+            "faction": "Agents_of_Chaos",
+            "ship": "Vulture-class Droid Fighter",
+            "charge":[0],
+            "force": 0,
+            "shipId": 56,
+            "skill": 3,
+            "points": 3,                        
+            "ability": "",
             "ability_ENG": "",
             "slots": [     
                              
         ]       
         }
+
 
         
 
