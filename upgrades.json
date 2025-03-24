@@ -5183,7 +5183,7 @@
              "name_ENG": "Ensnare",
              "id":313,
              "max_per_squad":1,
-             "available":true,
+             "available":false,
              "modify":false,
              "slot":"Talent",
              "add_Data": [0],
@@ -5191,9 +5191,11 @@
              "points": 4,
              "effect": "",
              "effect_ENG": "",
-             "faction": ["Agents_of_Chaos"]
+             "faction": ["Agents_of_Chaos"],
+             "restrictions": [1,"ship", "Nantex-Class Starfighter",""]
              
          }
+
 
 
          

@@ -10441,7 +10441,208 @@
             "slots": [     
                              
         ]       
+        },
+        {
+            "name": "Commandante Malarus",
+            "name_ENG": "Commander Malarus",
+            "id": 485,
+            "max_per_squad": 1,
+            "modify": false,
+            "faction": "Shadow_Specialists",
+            "ship": "TIE/fo Fighter",
+            "charge":[2,"0"],
+            "force": 0,
+            "shipId": 46,
+            "skill": 5,
+            "points": 6,                        
+            "ability": "",
+            "ability_ENG": "At the start of the Engagement Phase, you may spend 1 #ch# and gain 1 stress token. If you do, until the end of the round, while you defend or perform an attack, you may change all of your #eye# results to #evd# or #hit# results.",
+            "slots": [     
+                   "Talent",
+                   "Talent"          
+        ]       
+        },
+        {
+            "name": "Midnight",
+            "name_ENG": "Midnight",
+            "id": 486,
+            "max_per_squad": 1,
+            "modify": false,
+            "faction": "Shadow_Specialists",
+            "ship": "TIE/fo Fighter",
+            "charge":[0],
+            "force": 0,
+            "shipId": 46,
+            "skill": 6,
+            "points": 6,                        
+            "ability": "",
+            "ability_ENG": "While you defend or perform an attack, if you have a lock on the enemy ship, that ship's dice cannot be modified.",
+            "slots": [     
+                   "Talent",
+                   "Talent"          
+        ]       
+        },
+        {
+            "name": "Scorch",
+            "name_ENG": "Scorch",
+            "id": 487,
+            "max_per_squad": 1,
+            "modify": false,
+            "faction": "Shadow_Specialists",
+            "ship": "TIE/fo Fighter",
+            "charge":[0],
+            "force": 0,
+            "shipId": 46,
+            "skill": 4,
+            "points": 6,                        
+            "ability": "",
+            "ability_ENG": "While you perform a primary attack, if you are not stressed, you may gain 1 stress token to roll 1 additional attack die.",
+            "slots": [     
+                   "Talent"
+                             
+        ]       
+        },
+        {
+            "name": "Null",
+            "name_ENG": "Null",
+            "id": 488,
+            "max_per_squad": 1,
+            "modify": false,
+            "faction": "Shadow_Specialists",
+            "ship": "TIE/fo Fighter",
+            "charge":[0],
+            "force": 0,
+            "shipId": 46,
+            "skill": 0,
+            "points": 5,                        
+            "ability": "",
+            "ability_ENG": "While you are not damaged, treat your initiative value as 7.",
+            "slots": [     
+                                            
+        ]       
+        },
+        {
+            "name": "As de l'Escadron Omega",
+            "name_ENG": "Omega Squadron Ace",
+            "id": 489,
+            "max_per_squad": 8,
+            "modify": false,
+            "faction": "Shadow_Specialists",
+            "ship": "TIE/fo Fighter",
+            "charge":[0],
+            "force": 0,
+            "shipId": 46,
+            "skill": 4,
+            "points": 5,                        
+            "ability": "",
+            "ability_ENG": "",
+            "slots": [     
+                "Talent"                 
+        ]       
+        },
+        {
+            "name": "Kylo Ren",
+            "name_ENG": "Kylo Ren",
+            "id": 490,
+            "max_per_squad": 1,
+            "modify": false,
+            "faction": "Shadow_Specialists",
+            "ship": "TIE/wi Whisper Modified Interceptor",
+            "charge":[0],
+            "force": 3,
+            "shipId": 75,
+            "skill": 5,
+            "points": 5,                        
+            "ability": "",
+            "ability_ENG": "Before an enemy ship in your #bulls# is dealt a facedown damage card, you may spend 1 #fo#. If you do, that damage card is dealt face up instead.",
+            "slots": [     
+                "Force",
+                "Force",
+                "Talent"                 
+        ]       
+        },
+        {
+            "name": "Whirlwind",
+            "name_ENG": "Whirlwind",
+            "id": 491,
+            "max_per_squad": 1,
+            "modify": false,
+            "faction": "Shadow_Specialists",
+            "ship": "TIE/wi Whisper Modified Interceptor",
+            "charge":[0],
+            "force": 0,
+            "shipId": 75,
+            "skill": 3,
+            "points": 5,                        
+            "ability": "",
+            "ability_ENG": "Before you engage, you may remove any number of jam tokens, then you may gain 1 focus token for each enemy ship that has you in its #Farc#.",
+            "slots": [     
+                "Talent",
+                "Talent"                 
+        ]       
+        },
+        {
+            "name": "Wrath",
+            "name_ENG": "Wrath",
+            "id": 492,
+            "max_per_squad": 1,
+            "modify": false,
+            "faction": "Shadow_Specialists",
+            "ship": "TIE/wi Whisper Modified Interceptor",
+            "charge":[0],
+            "force": 0,
+            "shipId": 75,
+            "skill": 5,
+            "points": 5,                        
+            "ability": "",
+            "ability_ENG": "After you perform a #bulls# attack, if you have 1 or more red or orange tokens, you may perform a bonus attack against a different target.",
+            "slots": [     
+                "Talent",
+                "Talent"                 
+        ]       
+        },
+        {
+            "name": "Nightfall",
+            "name_ENG": "Nightfall",
+            "id": 493,
+            "max_per_squad": 1,
+            "modify": false,
+            "faction": "Shadow_Specialists",
+            "ship": "TIE/wi Whisper Modified Interceptor",
+            "charge":[0],
+            "force": 0,
+            "shipId": 75,
+            "skill": 5,
+            "points": 5,                        
+            "ability": "",
+            "ability_ENG": "After you fully execute a maneuver or perform a #BO# action, each ship you moved through gains 2 jam tokens.",
+            "slots": [     
+                "Talent",
+                "Talent"                 
+        ]       
+        },
+        {
+            "name": "Agent Tierny",
+            "name_ENG": "Agent Tierny",
+            "id": 494,
+            "max_per_squad": 1,
+            "modify": false,
+            "faction": "Shadow_Specialists",
+            "ship": "Xi-class Light Shuttle",
+            "charge":[0],
+            "force": 0,
+            "shipId": 66,
+            "skill": 3,
+            "points": 5,                        
+            "ability": "",
+            "ability_ENG": "Setup: After placing forces, you must assign the 'Broken Trust' condition to an enemy ship.",
+            "slots": [     
+            "Condition",    
+            "Talent"                 
+        ]       
         }
+
+
 
 
         
