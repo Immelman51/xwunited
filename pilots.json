@@ -9739,7 +9739,7 @@
             "ship": "Red Ace",
             "charge":[0],
             "force": 0,
-            "shipId": 87,
+            "shipId": 88,
             "skill": 5,
             "points": 11,                        
             "ability": "",
@@ -9765,7 +9765,7 @@
             "ship": "Red Ace",
             "charge":[0],
             "force": 0,
-            "shipId": 87,
+            "shipId": 88,
             "skill": 3,
             "points": 11,                        
             "ability": "",
@@ -9790,7 +9790,7 @@
             "ship": "Yellow Ace",
             "charge":[0],
             "force": 0,
-            "shipId": 87,
+            "shipId": 89,
             "skill": 5,
             "points": 11,                        
             "ability": "",
@@ -9816,7 +9816,7 @@
             "ship": "Yellow Ace",
             "charge":[2,"+"],
             "force": 0,
-            "shipId": 87,
+            "shipId": 89,
             "skill": 4,
             "points": 11,                        
             "ability": "",
@@ -9841,7 +9841,7 @@
             "ship": "Green Ace",
             "charge":[2,"+"],
             "force": 0,
-            "shipId": 87,
+            "shipId": 90,
             "skill": 6,
             "points": 11,                        
             "ability": "",
@@ -9867,7 +9867,7 @@
             "ship": "Green Ace",
             "charge":[0],
             "force": 0,
-            "shipId": 87,
+            "shipId": 90,
             "skill": 3,
             "points": 11,                        
             "ability": "",
@@ -9892,7 +9892,7 @@
             "ship": "Black Ace",
             "charge":[0],
             "force": 0,
-            "shipId": 87,
+            "shipId": 91,
             "skill": 5,
             "points": 11,                        
             "ability": "",
@@ -9918,7 +9918,7 @@
             "ship": "Black Ace",
             "charge":[0],
             "force": 0,
-            "shipId": 87,
+            "shipId": 91,
             "skill": 3,
             "points": 11,                        
             "ability": "",
@@ -9931,8 +9931,460 @@
         "modifier_func": [
                 [1,"Title",1,298]                       
             ]
+        },
+        {
+            "name": "Dark Maul",
+            "name_ENG": "Darth Maul",
+            "id": 462,
+            "max_per_squad": 1,
+            "modify": true,
+            "title": ["Scimitar"],
+		    "faction": "Agents_of_Chaos",
+            "ship": "Sith Infiltrator",
+            "charge":[0],
+            "force": 3,
+            "shipId": 55,
+            "skill": 5,
+            "points": 10,                        
+            "ability": "",
+            "ability_ENG": "After you perform an attack, you may spend 2 #fo# to perform a bonus primary attack against a different target. If your attack missed, you may perform that bonus primary attack against the same target instead",
+            "slots": [     
+            "Title",
+            "Force",
+            "Force"             
+        ],
+        "modifier_func": [
+                [1,"Title",1,305]                       
+            ]
+        },
+        {
+            "name": "Comte Dooku",
+            "name_ENG": "Count Dooku",
+            "id": 463,
+            "max_per_squad": 1,
+            "modify": true,
+            "title": ["Scimitar"],
+		    "faction": "Agents_of_Chaos",
+            "ship": "Sith Infiltrator",
+            "charge":[0],
+            "force": 3,
+            "shipId": 55,
+            "skill": 3,
+            "points": 10,                        
+            "ability": "",
+            "ability_ENG": "After you defend, if the attacker is in your firing arc, you may spend 1 #fo# to remove 1 of your blue or red tokens.<br>After you perform an attack that hits, you may spend 1 #fo# to perform an action.",
+            "slots": [     
+            "Title",
+            "Force",
+            "Force"             
+        ],
+        "modifier_func": [
+                [1,"Title",1,305]                       
+            ]
+        },
+        {
+            "name": "0-66",
+            "name_ENG": "0-66",
+            "id": 464,
+            "max_per_squad": 1,
+            "modify": true,
+            "title": ["Scimitar"],
+		    "faction": "Agents_of_Chaos",
+            "ship": "Sith Infiltrator",
+            "charge":[0],
+            "force": 0,
+            "shipId": 55,
+            "skill": 3,
+            "points": 8,                        
+            "ability": "",
+            "ability_ENG": "After you defend, you may spend 1 calculate token to perform an action.",
+            "slots": [     
+            "Title",
+            "Talent"             
+        ],
+        "modifier_func": [
+                [1,"Title",1,305]                       
+            ]
+        },
+        {
+            "name": "Sun Fac",
+            "name_ENG": "Sun Fac",
+            "id": 465,
+            "max_per_squad": 1,
+            "modify": false,
+		    "faction": "Agents_of_Chaos",
+            "ship": "Nantex-Class Starfighter",
+            "charge":[0],
+            "force": 0,
+            "shipId": 62,
+            "skill": 6,
+            "points": 10,                        
+            "ability": "",
+            "ability_ENG": "While you perform a primary attack, if the defender is tractored, roll 1 additional attack die.",
+            "slots": [     
+            "Talent",
+            "Talent",
+            "Talent"             
+        ]
+        },
+         {
+            "name": "Chertek",
+            "name_ENG": "Chertek",
+            "id": 466,
+            "max_per_squad": 1,
+            "modify": false,
+		    "faction": "Agents_of_Chaos",
+            "ship": "Nantex-Class Starfighter",
+            "charge":[0],
+            "force": 0,
+            "shipId": 62,
+            "skill": 4,
+            "points": 8,                        
+            "ability": "",
+            "ability_ENG": "While you perform a primary attack, if the defender is tractored, you may reroll up to 2 attack dice.",
+            "slots": [     
+            "Talent",
+            "Talent"             
+        ]
+        
+        },
+        {
+          "name": "Gorgol",
+            "name_ENG": "Gorgol",
+            "id": 467,
+            "max_per_squad": 1,
+            "modify": false,
+		    "faction": "Agents_of_Chaos",
+            "ship": "Nantex-Class Starfighter",
+            "charge":[0],
+            "force": 0,
+            "shipId": 62,
+            "skill": 2,
+            "points": 8,                        
+            "ability": "",
+            "ability_ENG": "During the System Phase, you may gain 1 disarm token and choose a friendly ship at range 1-2. If you do, it gains 1 tractor token, then repairs 1 of its faceup Ship trait damage cards.",
+            "slots": [     
+            "Talent",
+            "Talent"
+                    
+        ]  
+        },
+        {
+            "name": "Berwert Krek",
+              "name_ENG": "Berwert Krek",
+              "id": 468,
+              "max_per_squad": 1,
+              "modify": false,
+              "faction": "Agents_of_Chaos",
+              "ship": "Nantex-Class Starfighter",
+              "charge":[0],
+              "force": 0,
+              "shipId": 62,
+              "skill": 5,
+              "points": 9,                        
+              "ability": "",
+              "ability_ENG": "After you perform an attack that hits, each friendly ship with #CC# on its action bar at range 1 may acquire a lock on the defender.",
+              "slots": [     
+              "Talent",
+              "Talent",
+              "Talent"
+                      
+          ]  
+          },
+          {
+            "name": "Garde de la Ruche Stalgasin",
+              "name_ENG": "Stalgasin Hive Guard",
+              "id": 469,
+              "max_per_squad": 8,
+              "modify": false,
+              "faction": "Agents_of_Chaos",
+              "ship": "Nantex-Class Starfighter",
+              "charge":[0],
+              "force": 0,
+              "shipId": 62,
+              "skill": 3,
+              "points": 7,                        
+              "ability": "",
+              "ability_ENG": "",
+              "slots": [     
+              "Talent"          
+                      
+          ]  
+          },
+          {
+              "name": "Cad Bane",
+              "name_ENG": "Cad Bane",
+              "id": 470,
+              "max_per_squad": 1,
+              "modify": true,
+              "faction": "Agents_of_Chaos",
+              "ship": "Rogue-class Starfighter",
+              "charge":[1,"+"],
+              "force": 0,
+              "shipId": 80,
+              "skill": 4,
+              "points": 7,                        
+              "ability": "",
+              "ability_ENG": "During the Engagement Phase, after another ship at range 0-3 is destroyed, you may spend 1 charge to perform an action, even while stressed.",
+              "slots": [     
+              "Title",
+              "Talent",
+              "Talent"
+                      
+          ],
+          "modifier_func": [
+                [1,"Title",1,137]                       
+            ]  
+          },
+          {
+            "name": "Protecteur Magna Garde",
+            "name_ENG": "Magnaguard Protector",
+            "id": 471,
+            "max_per_squad": 2,
+            "modify": true,
+            "faction": "Agents_of_Chaos",
+            "ship": "Rogue-class Starfighter",
+            "charge":[0],
+            "force": 0,
+            "shipId": 80,
+            "skill": 4,
+            "points": 6,                        
+            "ability": "",
+            "ability_ENG": "Setup: After placing forces, assign the 'Guarded' condition to 1 friendly ship other than the MagnaGuard Protector",
+            "slots": [     
+            "Droid",
+            "Condition",
+            "Talent"      
+                    
+        ],
+        "modifier_func": [
+            [1, "Droid",1,237],
+            [1, "Condition",306]                                 
+            ]  
+        },
+        {
+            "name": "Durge",
+            "name_ENG": "Durge",
+            "id": 472,
+            "max_per_squad": 1,
+            "modify": false,
+            "faction": "Agents_of_Chaos",
+            "ship": "Rogue-class Starfighter",
+            "charge":[1,"0"],
+            "force": 0,
+            "shipId": 80,
+            "skill": 5,
+            "points": 7,                        
+            "ability": "",
+            "ability_ENG": "When you would be destroyed, you may spend 1 #ch# to reveal all of your facedown damage cards. If you do, discard each Direct Hit! and each of your damage cards with the Pilot trait, then repair all of your faceup damage cards.",
+            "slots": [     
+            "Talent",
+            "Talent"      
+                    
+        ]
+        },
+        {
+            "name": "Commandeur Zolghast",
+            "name_ENG": "Commander Zolghast",
+            "id": 473,
+            "max_per_squad": 1,
+            "modify": false,
+            "faction": "Agents_of_Chaos",
+            "ship": "Rogue-class Starfighter",
+            "charge":[0],
+            "force": 0,
+            "shipId": 80,
+            "skill": 3,
+            "points": 6,                        
+            "ability": "",
+            "ability_ENG": "While you defend, if the attacker is in your #B180# , roll 1 additional die.",
+            "slots": [     
+            "Talent"     
+                    
+        ]
+        },
+        {
+            "name": "Jango Fett",
+            "name_ENG": "Jango Fett",
+            "id": 474,
+            "max_per_squad": 1,
+            "title":["Slave 1"],
+            "modify": true,
+            "faction": "Agents_of_Chaos",
+            "ship": "Firespray-class Patrol Craft",
+            "charge":[0],
+            "force": 0,
+            "shipId": 7,
+            "skill": 6,
+            "points": 13,                        
+            "ability": "",
+            "ability_ENG": "While you defend or perform a primary attack, if the difficulty of your revealed maneuver is less than that of the enemy ship's, you may change 1 of the enemy ship's #eye# results to a blank result.",
+            "slots": [     
+            "Title",
+            "Talent",
+            "Talent",
+            "Talent"     
+                    
+        ],
+        "modifier_func": [
+                [1,"Title",1,139]                       
+            ]  
+        },
+        {
+            "name": "Zam Wessel",
+            "name_ENG": "Zam Wessel",
+            "id": 475,
+            "max_per_squad": 1,
+            "title":["Slave 1"],
+            "modify": true,
+            "faction": "Agents_of_Chaos",
+            "ship": "Firespray-class Patrol Craft",
+            "charge":[0],
+            "force": 0,
+            "shipId": 7,
+            "skill": 5,
+            "points": 12,                        
+            "ability": "",
+            "ability_ENG": "While you attack or defend against a stressed a ship, you may reroll 1 die.",
+            "slots": [     
+            "Title",
+            "Talent",
+            "Talent"                   
+        ],
+        "modifier_func": [
+                [1,"Title",1,139]                       
+            ]  
+        },
+        {
+            "name": "Boba Fett",
+            "name_ENG": "Boba Fett",
+            "id": 476,
+            "max_per_squad": 1,
+            "title":["Slave 1"],
+            "modify": true,
+            "faction": "Agents_of_Chaos",
+            "ship": "Firespray-class Patrol Craft",
+            "charge":[0],
+            "force": 0,
+            "shipId": 7,
+            "skill": 3,
+            "points": 11,                        
+            "ability": "",
+            "ability_ENG": "While you defend, if there are no other friendly ships at range 0-2, you may change 1 of your blank results to a #eye# result.",
+            "slots": [     
+            "Title",
+            "Talent",
+            "Talent"                   
+        ],
+        "modifier_func": [
+                [1,"Title",1,139]                       
+            ]  
+        },
+        {
+            "name": "Aurra Sing",
+            "name_ENG": "Aurra Sing",
+            "id": 477,
+            "max_per_squad": 1,
+            "title":["Slave 1"],
+            "modify": true,
+            "faction": "Agents_of_Chaos",
+            "ship": "Firespray-class Patrol Craft",
+            "charge":[0],
+            "force": 1,
+            "shipId": 7,
+            "skill": 3,
+            "points": 12,                        
+            "ability": "",
+            "ability_ENG": "Before you engage, you may spend 1 #fo# to choose 2 enemy ships at range 0-1. Transfer any number of orange and red tokens between those two ships.",
+            "slots": [     
+            "Title",
+            "Talent",
+            "Force"                   
+        ],
+        "modifier_func": [
+                [1,"Title",1,139]                       
+            ]  
+        },
+        {
+            "name": "Assaj Ventress",
+            "name_ENG": "Assaj Ventress",
+            "id": 478,
+            "max_per_squad": 1,
+            "modify": false,
+            "faction": "Agents_of_Chaos",
+            "ship": "Fanblade Starfighter",
+            "charge":[0],
+            "force": 2,
+            "shipId": 92,
+            "skill": 4,
+            "points": 8,                        
+            "ability": "",
+            "ability_ENG": "After you full execute a #SL# maneuver, you may choose an enemy ship at range 1 and spend 1 #fo#. This ship gains 1 stress token.",
+            "slots": [     
+            "Talent",
+            "Force"                   
+        ]       
+        },
+        {
+            "name": "Talia",
+            "name_ENG": "Talia",
+            "id": 479,
+            "max_per_squad": 1,
+            "modify": false,
+            "faction": "Agents_of_Chaos",
+            "ship": "Fanblade Starfighter",
+            "charge":[0],
+            "force": 1,
+            "shipId": 92,
+            "skill": 3,
+            "points": 7,                        
+            "ability": "",
+            "ability_ENG": "When you engage, if you are not stressed, you may gain 1 stress or strain token to change your ship configuration.",
+            "slots": [     
+            "Talent",
+            "Force"                   
+        ]       
+        },
+        {
+            "name": "Comte Dooku",
+            "name_ENG": "Count Dooku",
+            "id": 480,
+            "max_per_squad": 1,
+            "modify": false,
+            "faction": "Agents_of_Chaos",
+            "ship": "Fanblade Starfighter",
+            "charge":[0],
+            "force": 3,
+            "shipId": 92,
+            "skill": 3,
+            "points": 8,                        
+            "ability": "",
+            "ability_ENG": "After you defend, if the attacker is in your firing arc, you may spend 1 #fo# to remove 1 of your blue or red tokens.<br>After you perform an attack that hits, you may spend 1 #fo# to perform an action.",
+            "slots": [     
+            "Talent",
+            "Force",
+            "Force"                   
+        ]       
+        },
+        {
+            "name": "DFS-081",
+            "name_ENG": "DFS-081",
+            "id": 481,
+            "max_per_squad": 1,
+            "modify": false,
+            "faction": "Agents_of_Chaos",
+            "ship": "Vulture-class Droid Fighter",
+            "charge":[0],
+            "force": 3,
+            "shipId": 56,
+            "skill": 3,
+            "points": 4,                        
+            "ability": "",
+            "ability_ENG": "",
+            "slots": [     
+                             
+        ]       
         }
-
 
         
 

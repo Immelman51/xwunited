@@ -5019,7 +5019,45 @@
              "modifier_func": [
                 
              ]
+         },
+         {
+            "name": "Scimitar",
+             "name_ENG": "Scimitar",
+             "id":305,
+             "max_per_squad":1,
+             "available":true,
+             "modify":false,
+             "slot":"Title",
+             "add_Data": [0],
+             "charge": [0],
+             "points": 0,
+             "effect": "",
+             "effect_ENG": "",
+             "faction": ["Agents_of_Chaos"],
+             "modifier_func": [
+                
+             ]
+         },
+         {
+            "name": "Sous Protection",
+             "name_ENG": "Guarded",
+             "id":306,
+             "max_per_squad":2,
+             "available":true,
+             "modify":false,
+             "slot":"Condition",
+             "add_Data": [0],
+             "charge": [0],
+             "points": 0,
+             "effect": "Tant que vous défendez, si vous n'êtes pas dans le #bulls# de l'attaquant, lancez 1 dé de défense supplémentaire pour chaque allié Protecteur Magna Garde calculateur ou esquivant situé dans l'arc d'attaque.",
+             "effect_ENG": "While you defend, if you are not in the attacker's #bulls# , roll 1 additional defense die for each friendly calculating or evading MagnaGuard Protector in the attack arc.",
+             "faction": ["Agents_of_Chaos"],
+             "modifier_func": [
+                
+             ]
          }
+
+
          
 
 
