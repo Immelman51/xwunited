@@ -10533,7 +10533,7 @@
             "force": 0,
             "shipId": 46,
             "skill": 4,
-            "points": 5,                        
+            "points": 4,                        
             "ability": "",
             "ability_ENG": "",
             "slots": [     
@@ -10552,7 +10552,7 @@
             "force": 3,
             "shipId": 75,
             "skill": 5,
-            "points": 5,                        
+            "points": 9,                        
             "ability": "",
             "ability_ENG": "Before an enemy ship in your #bulls# is dealt a facedown damage card, you may spend 1 #fo#. If you do, that damage card is dealt face up instead.",
             "slots": [     
@@ -10573,7 +10573,7 @@
             "force": 0,
             "shipId": 75,
             "skill": 3,
-            "points": 5,                        
+            "points": 8,                        
             "ability": "",
             "ability_ENG": "Before you engage, you may remove any number of jam tokens, then you may gain 1 focus token for each enemy ship that has you in its #Farc#.",
             "slots": [     
@@ -10593,7 +10593,7 @@
             "force": 0,
             "shipId": 75,
             "skill": 5,
-            "points": 5,                        
+            "points": 7,                        
             "ability": "",
             "ability_ENG": "After you perform a #bulls# attack, if you have 1 or more red or orange tokens, you may perform a bonus attack against a different target.",
             "slots": [     
@@ -10613,7 +10613,7 @@
             "force": 0,
             "shipId": 75,
             "skill": 5,
-            "points": 5,                        
+            "points": 7,                        
             "ability": "",
             "ability_ENG": "After you fully execute a maneuver or perform a #BO# action, each ship you moved through gains 2 jam tokens.",
             "slots": [     
@@ -10626,6 +10626,29 @@
             "name_ENG": "Agent Tierny",
             "id": 494,
             "max_per_squad": 1,
+            "modify": true,
+            "faction": "Shadow_Specialists",
+            "ship": "Xi-class Light Shuttle",
+            "charge":[0],
+            "force": 0,
+            "shipId": 66,
+            "skill": 3,
+            "points": 6,                        
+            "ability": "",
+            "ability_ENG": "Setup: After placing forces, you must assign the 'Broken Trust' condition to an enemy ship.",
+            "slots": [     
+            "Condition",    
+            "Talent"                 
+        ],
+        "modifier_func": [
+            [1, "Condition",317]                                 
+            ]         
+        },
+        {
+            "name": "Agent Terex",
+            "name_ENG": "Agent Terex",
+            "id": 495,
+            "max_per_squad": 1,
             "modify": false,
             "faction": "Shadow_Specialists",
             "ship": "Xi-class Light Shuttle",
@@ -10633,13 +10656,313 @@
             "force": 0,
             "shipId": 66,
             "skill": 3,
+            "points": 6,                        
+            "ability": "",
+            "ability_ENG": "Setup: After placing forces, choose any number of your equipped #ill# upgrades and equip them to friendly ships. Each ship can be assigned only 1 #ill# this way.",
+            "slots": [     
+              "Talent",
+              "Illicit",
+              "Illicit",
+              "Illicit"                 
+        ]       
+        },
+        {
+            "name": "Commandante Malarus",
+            "name_ENG": "Commander Malarus",
+            "id": 496,
+            "max_per_squad": 1,
+            "modify": false,
+            "faction": "Shadow_Specialists",
+            "ship": "Xi-class Light Shuttle",
+            "charge":[0],
+            "force": 0,
+            "shipId": 66,
+            "skill": 5,
+            "points": 7,                        
+            "ability": "",
+            "ability_ENG": "While a friendly ship at range 0-2 performs a primary attack, before the Modify Dice step, if it has 1 or more blank results, that ship must gain 1 strain token to reroll 1 blank result, if able.",
+            "slots": [     
+              "Talent",
+              "Talent"
+        ]       
+        },
+        {
+            "name": "Gideon Hask",
+            "name_ENG": "Gideon Hask",
+            "id": 497,
+            "max_per_squad": 1,
+            "modify": false,
+            "faction": "Shadow_Specialists",
+            "ship": "Xi-class Light Shuttle",
+            "charge":[0],
+            "force": 0,
+            "shipId": 66,
+            "skill": 4,
+            "points": 6,                        
+            "ability": "",
+            "ability_ENG": "While you or a friendly small ship at range 0-2 performs a primary attack against a damaged defender, if the attacker rolled 2 or fewer attack dice, it may gain 1 strain token to roll 1 additional attack die.",
+            "slots": [     
+              "Talent"
+        ]       
+        },
+        {
+            "name": "Major Vonreg",
+            "name_ENG": "Major Vonreg",
+            "id": 498,
+            "max_per_squad": 1,
+            "modify": false,
+            "faction": "Shadow_Specialists",
+            "ship": "TIE/ba Interceptor",
+            "charge":[0],
+            "force": 0,
+            "shipId": 65,
+            "skill": 6,
+            "points": 9,                        
+            "ability": "",
+            "ability_ENG": "At the end of activation Phase, you may choose 1 enemy ship in your #bulls#. That ship gains 1 deplete or strain token of your choice.",
+            "slots": [     
+              "Talent",
+              "Talent"
+        ]       
+        },
+        {
+            "name": "Holo",
+            "name_ENG": "Major Vonreg",
+            "id": 499,
+            "max_per_squad": 1,
+            "modify": false,
+            "faction": "Shadow_Specialists",
+            "ship": "TIE/ba Interceptor",
+            "charge":[0],
+            "force": 0,
+            "shipId": 65,
+            "skill": 5,
+            "points":8,                        
+            "ability": "",
+            "ability_ENG": "At the start of the Engagement Phase, you must transfer 1 of your tokens to another friendly ship at range 0-2.",
+            "slots": [     
+              "Talent",
+              "Talent"
+        ]       
+        },
+        {
+            "name": "Ember",
+            "name_ENG": "Ember",
+            "id": 500,
+            "max_per_squad": 1,
+            "modify": false,
+            "faction": "Shadow_Specialists",
+            "ship": "TIE/ba Interceptor",
+            "charge":[0],
+            "force": 0,
+            "shipId": 65,
+            "skill": 4,
+            "points": 8,                        
+            "ability": "",
+            "ability_ENG": "While an enemy ship at range 1 defends, it cannot spend its focus or calculate tokens.",
+            "slots": [     
+              "Talent",
+              "Talent"
+        ]       
+        },
+        {
+            "name": "Marnia Un'la'na",
+            "name_ENG": "Marnia Un'la'na",
+            "id": 501,
+            "max_per_squad": 1,
+            "modify": false,
+            "faction": "Shadow_Specialists",
+            "ship": "TIE/ba Interceptor",
+            "charge":[0],
+            "force": 0,
+            "shipId": 65,
+            "skill": 4,
+            "points": 9,                        
+            "ability": "",
+            "ability_ENG": "While you perform a primary attack, you may spend your lock on the defender and a focus token to change all of your results to #crit# results.",
+            "slots": [     
+              "Talent",
+              "Talent"
+        ]       
+        },
+        {
+            "name": "Ap'lek",
+            "name_ENG": "Ap'lek",
+            "id": 502,
+            "max_per_squad": 1,
+            "modify": true,
+            "faction": "Shadow_Specialists",
+            "title": ["Night Buzzard"],
+            "ship": "Oubliette Class Transport",
+            "charge":[1,"+"],
+            "force": 1,
+            "shipId": 94,
+            "skill": 3,
+            "points": 10,                        
+            "ability": "",
+            "ability_ENG": "After you partially execute a maneuver, you may spend 1 #ch#. If you do, you may perform a #JA# action.",
+            "slots": [     
+            "Title",  
+            "Force"
+        ],
+            "modifier_func": [
+            [1, "Title",318]                                 
+            ]           
+        },
+        {
+            "name": "Cardo",
+            "name_ENG": "Cardo",
+            "id": 503,
+            "max_per_squad": 1,
+            "modify": true,
+            "faction": "Shadow_Specialists",
+            "title": ["Night Buzzard"],
+            "ship": "Oubliette Class Transport",
+            "charge":[1,"+"],
+            "force": 1,
+            "shipId": 94,
+            "skill": 1,
+            "points": 10,                        
+            "ability": "",
+            "ability_ENG": "At the start of engagement phase, you may spend 1 #ch#. If you do, you may choose 1 ship at range 0. That ship gains 1 tractor token.",
+            "slots": [     
+            "Title",  
+            "Force"
+        ],
+            "modifier_func": [
+            [1, "Title",318]                                 
+            ]           
+        },
+        {
+            "name": "Vikrul",
+            "name_ENG": "Vikrul",
+            "id": 504,
+            "max_per_squad": 1,
+            "modify": true,
+            "faction": "Shadow_Specialists",
+            "title": ["Night Buzzard"],
+            "ship": "Oubliette Class Transport",
+            "charge":[1,"+"],
+            "force": 1,
+            "shipId": 94,
+            "skill": 2,
+            "points": 10,                        
+            "ability": "",
+            "ability_ENG": "At the end of Neutralize Results Step, when you deal a #crit# damage, you may spend 1 #ch# to cancel that #crit# to deal 1 ion token instead",
+            "slots": [     
+            "Title",  
+            "Force"
+        ],
+            "modifier_func": [
+            [1, "Title",318]                                 
+            ]           
+        },
+        {
+            "name": "Kuruk",
+            "name_ENG": "Kuruk",
+            "id": 505,
+            "max_per_squad": 1,
+            "modify": true,
+            "faction": "Shadow_Specialists",
+            "title": ["Night Buzzard"],
+            "ship": "Oubliette Class Transport",
+            "charge":[1,"+"],
+            "force": 1,
+            "shipId": 94,
+            "skill": 4,
+            "points": 10,                        
+            "ability": "",
+            "ability_ENG": "After an enemy ship executes a maneuver, if it is at range 1 in your #Farc#, you may spend 1 #ch#. If you do you may perform a bonus attack with 2 attack dice. If it hits, cancel all results, and deal 1 weapon disabled token to the defender instead.",
+            "slots": [     
+            "Title",  
+            "Force"
+        ],
+            "modifier_func": [
+            [1, "Title",318]                                 
+            ]           
+        },
+        {
+            "name": "Arliz Hadrassian",
+            "name_ENG": "Arliz Hadrassian",
+            "id": 506,
+            "max_per_squad": 1,
+            "modify": false,
+            "faction": "Shadow_Specialists",
+            "title": ["Night Buzzard"],
+            "ship": "BTL-A4 Y-wing",
+            "charge":[0],
+            "force": 0,
+            "shipId": 1,
+            "skill": 4,
+            "points": 6,                        
+            "ability": "",
+            "ability_ENG": "While you perform a #Farc# attack, if you are damaged, before the Modify Dice step, you may change 1 of your #eye# results to a #crit# result.<br>While you defend, if you are damaged, you must change 1 of your #eye# results to a blank result.",
+            "slots": [     
+            "Talent",  
+            "Illicit"
+        ]         
+        },
+        {
+            "name": "Padric",
+            "name_ENG": "Padric",
+            "id": 507,
+            "max_per_squad": 1,
+            "modify": false,
+            "faction": "Shadow_Specialists",
+            "title": ["Night Buzzard"],
+            "ship": "BTL-A4 Y-wing",
+            "charge":[0],
+            "force": 0,
+            "shipId": 1,
+            "skill": 3,
+            "points": 6,                        
+            "ability": "",
+            "ability_ENG": "After a friendly device that you have locked detonates, each enemy ship at range 0-1 of that device gains 1 strain token.",
+            "slots": [     
+            "Talent",  
+            "Illicit"
+        ]         
+        },
+        {
+            "name": "Leema Kai",
+            "name_ENG": "Leema Kai",
+            "id": 508,
+            "max_per_squad": 1,
+            "modify": false,
+            "faction": "Shadow_Specialists",
+            "title": ["Night Buzzard"],
+            "ship": "BTL-A4 Y-wing",
+            "charge":[0],
+            "force": 0,
+            "shipId": 1,
+            "skill": 5,
+            "points": 6,                        
+            "ability": "",
+            "ability_ENG": "Before you engage, if you are not in any enemy ship's #Farc#, you may acquire a lock on an enemy ship in your #F180#.",
+            "slots": [     
+            "Talent",  
+            "Illicit"
+        ]         
+        },
+        {
+            "name": "Guerrier Amaxine",
+            "name_ENG": "Amaxine Warrior",
+            "id": 509,
+            "max_per_squad": 8,
+            "modify": false,
+            "faction": "Shadow_Specialists",
+            "title": ["Night Buzzard"],
+            "ship": "BTL-A4 Y-wing",
+            "charge":[0],
+            "force": 0,
+            "shipId": 1,
+            "skill": 2,
             "points": 5,                        
             "ability": "",
-            "ability_ENG": "Setup: After placing forces, you must assign the 'Broken Trust' condition to an enemy ship.",
-            "slots": [     
-            "Condition",    
-            "Talent"                 
-        ]       
+            "ability_ENG": "",
+            "slots": [       
+            "Illicit"
+        ]         
         }
 
 

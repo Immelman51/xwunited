@@ -4987,7 +4987,7 @@
          {
             "name": "R23-X9",
              "name_ENG": "R23-X9",
-             "id":304,
+             "id":305,
              "max_per_squad":1,
              "available":true,
              "modify":false,
@@ -5005,7 +5005,7 @@
          {
             "name": "R4-D12",
              "name_ENG": "R5-G9",
-             "id":304,
+             "id":306,
              "max_per_squad":1,
              "available":true,
              "modify":false,
@@ -5023,7 +5023,7 @@
          {
             "name": "Scimitar",
              "name_ENG": "Scimitar",
-             "id":305,
+             "id":307,
              "max_per_squad":1,
              "available":true,
              "modify":false,
@@ -5041,7 +5041,7 @@
          {
             "name": "Sous Protection",
              "name_ENG": "Guarded",
-             "id":306,
+             "id":308,
              "max_per_squad":2,
              "available":true,
              "modify":false,
@@ -5059,7 +5059,7 @@
          {
             "name": "*Perfide",
              "name_ENG": "*Treacherous",
-             "id":307,
+             "id":309,
              "max_per_squad":8,
              "available":true,
              "modify":false,
@@ -5077,7 +5077,7 @@
          {
             "name": "Boba Fett",
              "name_ENG": "Boba Fett",
-             "id":308,
+             "id":310,
              "max_per_squad":1,
              "available":true,
              "modify":false,
@@ -5095,7 +5095,7 @@
          {
             "name": "Dark Sidious",
              "name_ENG": "Darth Sidious",
-             "id":309,
+             "id":311,
              "max_per_squad":1,
              "available":true,
              "modify":true,
@@ -5114,7 +5114,7 @@
          {
             "name": "Assaj Ventress",
              "name_ENG": "Assaj Ventress",
-             "id":310,
+             "id":312,
              "max_per_squad":1,
              "available":true,
              "modify":true,
@@ -5133,7 +5133,7 @@
          {
             "name": "Jango Fett",
              "name_ENG": "Jango Fett",
-             "id":311,
+             "id":313,
              "max_per_squad":1,
              "available":true,
              "modify":false,
@@ -5149,7 +5149,7 @@
          {
             "name": "Jango Fett",
              "name_ENG": "Jango Fett",
-             "id":311,
+             "id":314,
              "max_per_squad":1,
              "available":true,
              "modify":false,
@@ -5165,7 +5165,7 @@
          {
             "name": "Savage Opress",
              "name_ENG": "Savage Opress",
-             "id":312,
+             "id":315,
              "max_per_squad":1,
              "available":true,
              "modify":false,
@@ -5181,7 +5181,7 @@
          {
             "name": "Enchevêtrement",
              "name_ENG": "Ensnare",
-             "id":313,
+             "id":316,
              "max_per_squad":1,
              "available":false,
              "modify":false,
@@ -5194,7 +5194,42 @@
              "faction": ["Agents_of_Chaos"],
              "restrictions": [1,"ship", "Nantex-Class Starfighter",""]
              
+         },
+         {
+            "name": "Confiance Brisée",
+             "name_ENG": "Broken Trust",
+             "id":317,
+             "max_per_squad":2,
+             "available":true,
+             "modify":false,
+             "slot":"Condition",
+             "add_Data": [0],
+             "charge": [0],
+             "points": 0,
+             "effect": "",
+             "effect_ENG": "",
+             "faction": ["Shadow_Specialists"]
+             
+             
+         },
+         {
+            "name": "Night Buzzard",
+             "name_ENG": "Night Buzzard",
+             "id":318,
+             "max_per_squad":1,
+             "available":true,
+             "modify":false,
+             "slot":"Title",
+             "add_Data": [0],
+             "charge": [0],
+             "points": 0,
+             "effect": "",
+             "effect_ENG": "",
+             "faction": ["Shadow_Specialists"]
+             
+             
          }
+
 
 
 
