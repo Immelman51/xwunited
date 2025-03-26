@@ -5228,7 +5228,25 @@
              "faction": ["Shadow_Specialists"]
              
              
+         },
+         {
+            "name": "TIE Outland (***)",
+             "name_ENG": "TIE Outland (***)",
+             "id":319,
+             "max_per_squad":3,
+             "available":true,
+             "modify":false,
+             "slot":"Title",
+             "add_Data": [0],
+             "charge": [1,"0"],
+             "points": 0,
+             "effect": "",
+             "effect_ENG": "After you perform an action, you may spend 1#ch#. If you do, you may perform a #BO# action, or #EV# action. Add 1 #tech# slot.",
+             "faction": ["Imperial_Remnants"]
+                         
+             
          }
+
 
 
 

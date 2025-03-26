@@ -10533,7 +10533,7 @@
             "force": 0,
             "shipId": 46,
             "skill": 4,
-            "points": 4,                        
+            "points": 5,                        
             "ability": "",
             "ability_ENG": "",
             "slots": [     
@@ -10888,7 +10888,6 @@
             "max_per_squad": 1,
             "modify": false,
             "faction": "Shadow_Specialists",
-            "title": ["Night Buzzard"],
             "ship": "BTL-A4 Y-wing",
             "charge":[0],
             "force": 0,
@@ -10909,7 +10908,6 @@
             "max_per_squad": 1,
             "modify": false,
             "faction": "Shadow_Specialists",
-            "title": ["Night Buzzard"],
             "ship": "BTL-A4 Y-wing",
             "charge":[0],
             "force": 0,
@@ -10930,7 +10928,6 @@
             "max_per_squad": 1,
             "modify": false,
             "faction": "Shadow_Specialists",
-            "title": ["Night Buzzard"],
             "ship": "BTL-A4 Y-wing",
             "charge":[0],
             "force": 0,
@@ -10951,7 +10948,6 @@
             "max_per_squad": 8,
             "modify": false,
             "faction": "Shadow_Specialists",
-            "title": ["Night Buzzard"],
             "ship": "BTL-A4 Y-wing",
             "charge":[0],
             "force": 0,
@@ -10963,16 +10959,516 @@
             "slots": [       
             "Illicit"
         ]         
+        },
+        {
+            "name": "Moff Gideon",
+            "name_ENG": "Moff Gideon",
+            "id": 510,
+            "max_per_squad": 1,
+            "modify": true,
+            "faction": "Imperial_Remnants",
+            "title":["TIE Outland"],
+            "ship": "TIE/ln Fighter",
+            "charge":[2,"+"],
+            "force": 0,
+            "shipId": 1,
+            "skill": 4,
+            "points": 5,                        
+            "ability": "",
+            "ability_ENG": "While an enemy ship at range 1-3 defends, before attack dice are rolled, you may spend 1 charge and choose a friendly ship at range 0-1 of the defender. If you do, defense dice cannot be modified during this attack and the chosen friendly ship gains 1 strain token.",
+            "slots": [       
+            "Title",
+            "Talent",
+            "Tech"
+        ],
+            "modifier_func": [
+            [1, "Title",319]                                 
+            ]         
+        },
+        {
+            "name": "Va-t-en-guerre du BSI",
+            "name_ENG": "ISB Jingoist",
+            "id": 511,
+            "max_per_squad":2,
+            "modify": true,
+            "faction": "Imperial_Remnants",
+            "title":["TIE Outland"],
+            "ship": "TIE/ln Fighter",
+            "charge":[0],
+            "force": 0,
+            "shipId": 1,
+            "skill": 4,
+            "points": 5,                        
+            "ability": "",
+            "ability_ENG": "Before you engage, you may choose 1 enemy ship in your #Farc# at range 0-1. If you do, that ship gains 1 deplete or strain token of your choice unless it chooses to remove 1 green token.",
+            "slots": [       
+            "Title",
+            "Talent",
+            "Tech"
+        ],
+            "modifier_func": [
+            [1, "Title",319]                                 
+            ]         
+        },
+        {
+            "name": "Yrica Quell",
+            "name_ENG": "Yrica Quell",
+            "id": 512,
+            "max_per_squad":1,
+            "modify": true,
+            "faction": "Imperial_Remnants",
+            "title":["TIE Outland"],
+            "ship": "TIE/ln Fighter",
+            "charge":[0],
+            "force": 0,
+            "shipId": 1,
+            "skill": 3,
+            "points": 5,                        
+            "ability": "",
+            "ability_ENG": "After you fully execute a maneuver, you may acquire a lock on an enemy ship in your #bulls#",
+            "slots": [       
+            "Title",
+            "Talent",
+            "Tech"
+        ],
+            "modifier_func": [
+            [1, "Title",319]                                 
+            ]         
+        },
+        {
+            "name": "Soran Keize",
+            "name_ENG": "Soran Keize",
+            "id": 513,
+            "max_per_squad":1,
+            "modify": true,
+            "faction": "Imperial_Remnants",
+            "title":["TIE Outland"],
+            "ship": "TIE/ln Fighter",
+            "charge":[0],
+            "force": 0,
+            "shipId": 1,
+            "skill": 3,
+            "points": 5,                        
+            "ability": "",
+            "ability_ENG": "While you have 2 or fewer stress tokens, you can perform white actions, even while stressed.<br>After you gain a stress token, you may perform a white action, if able.",
+            "slots": [       
+            "Title",
+            "Talent",
+            "Tech"
+        ],
+            "modifier_func": [
+            [1, "Title",319]                                 
+            ]         
+        },
+        {
+            "name": "Fidèle de l'Empire",
+            "name_ENG": "Imperial Follower",
+            "id": 514,
+            "max_per_squad":8,
+            "modify": false,
+            "faction": "Imperial_Remnants",
+            "ship": "TIE/ln Fighter",
+            "charge":[0],
+            "force": 0,
+            "shipId": 1,
+            "skill": 3,
+            "points": 4,                        
+            "ability": "",
+            "ability_ENG": "",
+            "slots": [       
+            ]   
+        },
+        {
+            "name": "Général Hess",
+            "name_ENG": "General Hess",
+            "id": 515,
+            "max_per_squad":1,
+            "modify": false,
+            "faction": "Imperial_Remnants",
+            "ship": "Omicron Class Shuttle",
+            "charge":[0],
+            "force": 0,
+            "shipId": 95,
+            "skill": 3,
+            "points": 6,                        
+            "ability": "",
+            "ability_ENG": "After you drop or launch a bomb, you may perform a #CO# action.",
+            "slots": [   
+                "Talent"    
+            ]   
+        },
+        {
+            "name": "Elia Kane",
+            "name_ENG": "Elia Kane",
+            "id": 516,
+            "max_per_squad":1,
+            "modify": false,
+            "faction": "Imperial_Remnants",
+            "ship": "Omicron Class Shuttle",
+            "charge":[0],
+            "force": 0,
+            "shipId": 95,
+            "skill": 4,
+            "points": 6,                        
+            "ability": "",
+            "ability_ENG": "During System Phase, you may receive a Cloak token. If you do, you cannot decloak this round.",
+            "slots": [   
+                "Talent"    
+            ]   
+        },
+        {
+            "name": "Baylan Skoll",
+            "name_ENG": "Baylan Skoll",
+            "id": 517,
+            "max_per_squad":1,
+            "modify": false,
+            "faction": "Imperial_Remnants",
+            "ship": "Omicron Class Shuttle",
+            "charge":[0],
+            "force": 2,
+            "shipId": 95,
+            "skill": 5,
+            "points": 8,                        
+            "ability": "",
+            "ability_ENG": "Before you activate, you may spend 1 Force. If you do, your opponent has to guess your maneuver.<br>If his guess is right, you must change your maneuver's dial and lose 1 force.<br>If his guess is wrong, an enemy ship at range 0/2 gains 1 strain token and you recover 1 force.",
+            "slots": [   
+                "Talent",
+                "Force"    
+            ]   
+        },
+        {
+            "name": "Jeela Brebtin",
+            "name_ENG": "Jeela Brebtin",
+            "id": 518,
+            "max_per_squad":1,
+            "modify": false,
+            "faction": "Imperial_Remnants",
+            "ship": "TIE/in Interceptor",
+            "charge":[0],
+            "force": 0,
+            "shipId": 6,
+            "skill": 5,
+            "points": 8,                        
+            "ability": "",
+            "ability_ENG": "While you are not stressed, you may reroll 1 die each time you attack or defend.",
+            "slots": [   
+                "Talent",
+                "Talent"    
+            ]   
+        },
+        {
+            "name": "Teso Broosh",
+            "name_ENG": "Teso Broosh",
+            "id": 519,
+            "max_per_squad":1,
+            "modify": false,
+            "faction": "Imperial_Remnants",
+            "ship": "TIE/in Interceptor",
+            "charge":[0],
+            "force": 0,
+            "shipId": 6,
+            "skill": 5,
+            "points": 8,                        
+            "ability": "",
+            "ability_ENG": "During your activation, you may expose 1 damage card to recover 1 charge on one of your #mod# upgrade.",
+            "slots": [   
+                "Talent",
+                "Talent"    
+            ]   
+        },
+        {
+            "name": "Zin Graw",
+            "name_ENG": "Zin Graw",
+            "id": 520,
+            "max_per_squad":1,
+            "modify": false,
+            "faction": "Imperial_Remnants",
+            "ship": "TIE/in Interceptor",
+            "charge":[0],
+            "force": 0,
+            "shipId": 6,
+            "skill": 5,
+            "points": 7,                        
+            "ability": "",
+            "ability_ENG": "While you defend, if you are not in the attacker's #Farc#, you may reroll your blank results.",
+            "slots": [   
+                "Talent",
+                "Talent"    
+            ]   
+        },
+        {
+            "name": "Ganem Kahi",
+            "name_ENG": "Ganem Kahi",
+            "id": 521,
+            "max_per_squad":1,
+            "modify": false,
+            "faction": "Imperial_Remnants",
+            "ship": "TIE/in Interceptor",
+            "charge":[3,"0"],
+            "force": 0,
+            "shipId": 6,
+            "skill": 5,
+            "points": 7,                        
+            "ability": "",
+            "ability_ENG": "While you attack, you may spend 1 charge. If you do, upgrade 1 of you die.",
+            "slots": [   
+                "Talent",
+                "Talent"    
+            ]   
+        },
+        {
+            "name": "Pilote de l'Escadron de l'Aile Obscure",
+            "name_ENG": "Shadow Wing Squadron Pilot",
+            "id": 522,
+            "max_per_squad":8,
+            "modify": false,
+            "faction": "Imperial_Remnants",
+            "ship": "TIE/in Interceptor",
+            "charge":[0],
+            "force": 0,
+            "shipId": 6,
+            "skill": 3,
+            "points": 6,                        
+            "ability": "",
+            "ability_ENG": "",
+            "slots": [   
+                "Talent",
+                "Talent"    
+            ]   
+        },
+        {
+            "name": "Morgan Elsbeth",
+            "name_ENG": "Morgan Elsbeth",
+            "id": 523,
+            "max_per_squad":1,
+            "modify": false,
+            "faction": "Imperial_Remnants",
+            "ship": "RP82 Fighter",
+            "charge":[0],
+            "force": 2,
+            "shipId": 96,
+            "skill": 4,
+            "points": 6,                        
+            "ability": "",
+            "ability_ENG": "After you attack, if your overdrive thrusters ability is available, you may perform a #BR# or #BO# action using your overdrive thrusters.",
+            "slots": [   
+                "Talent",
+                "Force"   
+            ]   
+        },
+        {
+            "name": "Shin Hati",
+            "name_ENG": "Shin Hati",
+            "id": 524,
+            "max_per_squad":1,
+            "modify": false,
+            "faction": "Imperial_Remnants",
+            "ship": "RP82 Fighter",
+            "charge":[0],
+            "force": 1,
+            "shipId": 96,
+            "skill": 4,
+            "points": 6,                        
+            "ability": "",
+            "ability_ENG": "Before you activate, you may spend 1 force. If you do, you may look an enemy's dial at range 1-2.",
+            "slots": [   
+                "Talent",
+                "Force"   
+            ]   
+        },
+        {
+            "name": "Inquisiteur Marrok",
+            "name_ENG": "Inquisitor Marrok",
+            "id": 525,
+            "max_per_squad":1,
+            "modify": false,
+            "faction": "Imperial_Remnants",
+            "ship": "RP82 Fighter",
+            "charge":[0],
+            "force": 1,
+            "shipId": 96,
+            "skill": 4,
+            "points": 6,                        
+            "ability": "",
+            "ability_ENG": "While you use your overdrive thruster ability, you may use 1 force to ignore obstacles. Then, if you completely or partially moved through an obstacle, gain 1 evade token.",
+            "slots": [   
+                "Talent",
+                "Force"   
+            ]   
+        },
+        {
+            "name": "Eclaireurs d'Elsbeth",
+            "name_ENG": "Elsbeth' Scouts",
+            "id": 526,
+            "max_per_squad":8,
+            "modify": false,
+            "faction": "Imperial_Remnants",
+            "ship": "RP82 Fighter",
+            "charge":[0],
+            "force": 0,
+            "shipId": 96,
+            "skill": 1,
+            "points": 4,                        
+            "ability": "",
+            "ability_ENG": "",
+            "slots": [   
+
+            ]   
+        },
+        {
+            "name": "Night Troopers",
+            "name_ENG": "Night Troopers",
+            "id": 527,
+            "max_per_squad":1,
+            "modify": false,
+            "faction": "Imperial_Remnants",
+            "ship": "Commando Team",
+            "charge":[1,"0"],
+            "force": 0,
+            "shipId": 81,
+            "skill": 1,
+            "points": 4,                        
+            "ability": "",
+            "ability_ENG": "When you would take your second damage card, gain 1 disarm token instead. If your charge is active, your opponent gains scenario points as if you were destroyed, then flip your charge.",
+            "slots": [   
+
+            ]   
+        },
+        {
+            "name": "Moff Gideon",
+            "name_ENG": "Moff Gideon",
+            "id": 528,
+            "max_per_squad":1,
+            "modify": false,
+            "faction": "Imperial_Remnants",
+            "ship": "Commando Team",
+            "charge":[0],
+            "force": 0,
+            "shipId": 81,
+            "skill": 4,
+            "points": 4,                        
+            "ability": "",
+            "ability_ENG": "While you attack, after Defense dice are rolled, you may gain a Strain Token. If you do, defense dice cannot be modified.",
+            "slots": [   
+                "Talent"
+            ]   
+        },
+        {
+            "name": "Commmandant Bragh",
+            "name_ENG": "Commander Bragh",
+            "id": 529,
+            "max_per_squad":1,
+            "modify": false,
+            "faction": "Imperial_Remnants",
+            "ship": "Commando Team",
+            "charge":[0],
+            "force": 0,
+            "shipId": 81,
+            "skill": 5,
+            "points": 3,                        
+            "ability": "",
+            "ability_ENG": "After you perform an attack at range 0, you may expose a damage card on the defender.",
+            "slots": [   
+                "Talent",
+                "Talent"
+            ]   
+        },
+        {
+            "name": "Dark Troopers",
+            "name_ENG": "Dark Troopers",
+            "id": 530,
+            "max_per_squad":1,
+            "modify": false,
+            "faction": "Imperial_Remnants",
+            "ship": "Commando Team",
+            "charge":[0],
+            "force": 0,
+            "shipId": 81,
+            "skill": 2,
+            "points": 3,                        
+            "ability": "",
+            "ability_ENG": "After you execute a 0 #stop# maneuver, you may acquire a lock on a ship at range 0-3.",
+            "slots": [   
+            ]   
+        },
+        {
+            "name": "Capitain Enoch",
+            "name_ENG": "Captain Enoch",
+            "id": 531,
+            "max_per_squad":1,
+            "modify": false,
+            "faction": "Imperial_Remnants",
+            "ship": "Laat/Le Patrol Gunship",
+            "charge":[0],
+            "force": 0,
+            "shipId": 97,
+            "skill": 4,
+            "points": 8,                        
+            "ability": "",
+            "ability_ENG": "After you completely execute a maneuver, you may deploy Super-Commandos docked with you.",
+            "slots": [   
+                "Talent",
+                "Talent"
+            ]   
+        },
+        {
+            "name": "Lieutenant Drosk",
+            "name_ENG": "Lieutenant Drosk",
+            "id": 532,
+            "max_per_squad":1,
+            "modify": false,
+            "faction": "Imperial_Remnants",
+            "ship": "Laat/Le Patrol Gunship",
+            "charge":[0],
+            "force": 0,
+            "shipId": 97,
+            "skill": 3,
+            "points": 7,                        
+            "ability": "",
+            "ability_ENG": "When you perform a bonus attack, consider it as a SHARP attack.",
+            "slots": [   
+                "Talent"
+            ]   
+        },
+        {
+            "name": "Lang",
+            "name_ENG": "Lang",
+            "id": 533,
+            "max_per_squad":1,
+            "modify": false,
+            "faction": "Imperial_Remnants",
+            "ship": "Laat/Le Patrol Gunship",
+            "charge":[2,"+"],
+            "force": 0,
+            "shipId": 97,
+            "skill": 2,
+            "points": 7,                        
+            "ability": "",
+            "ability_ENG": "While a friendly ship at range 1-2 defends, if the attacker is in your firing arc, you may spend 1 #ch#. If you do, the friendly ship defending may reroll up to 2 blank results.",
+            "slots": [   
+                "Talent"
+            ]   
+        },
+        {
+            "name": "Kullbee Sperado",
+            "name_ENG": "Kullbee Sperado",
+            "id": 534,
+            "max_per_squad":1,
+            "modify": false,
+            "faction": "Partisans",
+            "ship": "T-65 X-wing",
+            "charge":[0],
+            "force": 0,
+            "shipId": 0,
+            "skill": 4,
+            "points": 7,                        
+            "ability": "Après avoir effectué une action #BR# ou #BO#, vous pouvez changer de configuration.",
+            "ability_ENG": "",
+            "slots": [   
+                "Talent"
+            ]   
         }
 
 
-
-
-        
-
-
-
-
-
-        
+   
     ]
