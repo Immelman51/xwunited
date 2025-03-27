@@ -5245,6 +5245,40 @@
              "faction": ["Imperial_Remnants"]
                          
              
+         },
+         {
+            "name": "Stinger Mantis",
+             "name_ENG": "Stinger Mantis",
+             "id":320,
+             "max_per_squad":1,
+             "available":true,
+             "modify":false,
+             "slot":"Title",
+             "add_Data": [0],
+             "charge": [0],
+             "points": 0,
+             "effect": "",
+             "effect_ENG": "",
+             "faction": ["Partisans"]
+                         
+             
+         },
+         {
+            "name": "Fondor",
+             "name_ENG": "Fondor",
+             "id":321,
+             "max_per_squad":1,
+             "available":true,
+             "modify":false,
+             "slot":"Title",
+             "add_Data": [0],
+             "charge": [0],
+             "points": 0,
+             "effect": "",
+             "effect_ENG": "Add 1 #ill# slot and 1 #calc# slot",
+             "faction": ["Partisans"]
+                         
+             
          }
 
 
