@@ -4663,8 +4663,8 @@
              ]
          },
          {
-            "name": "Chassé",
-             "name_ENG": "Hunted",
+            "name": "Visions",
+             "name_ENG": "Visions",
              "id":287,
              "max_per_squad":1,
              "available":true,
@@ -5296,7 +5296,176 @@
              "faction": ["Partisans"]
                          
              
+         },
+         {
+            "name": "Cere Junda",
+             "name_ENG": "Cere Junda",
+             "id":323,
+             "max_per_squad":1,
+             "available":true,
+             "modify": true,
+             "slot":"Crew",
+             "force":1,
+             "add_Data": [0],
+             "charge": [0],
+             "points": 7,
+             "effect": "",
+             "effect_ENG": "While you perform an attack, you may use 1 #fo# and gain 1 deplete token to modify 1 #eye# result into a #hit# result.<br>While you defend, you may spend 1 #fo# and gain 1 strain token to modify 1 #eye# result into a #evd# result.",
+             "faction": ["Partisans"],
+             "modifier_func": [
+               [0,"change_stat","force",1]
+            ]
+                         
+             
+         },
+         {
+            "name": "Commando Wookie",
+             "name_ENG": "Wookie Commando",
+             "id":324,
+             "max_per_squad":8,
+             "available":true,
+             "modify":false,
+             "slot":"Gunner",
+             "add_Data": [0],
+             "charge": [1,"+"],
+             "points": 4,
+             "effect": "",
+             "effect_ENG": "When an enemy ship executes a maneuver at range 0-1 in your #F180#, you may spend 1 #ch#. If you do, roll a die.<br>#Crit# : inflict a damage; #hit#/#eye# : expose a damage card or a inflict a strain token.",
+             "faction": ["Partisans"]
+                         
+             
+         },
+         {
+            "name": "Moroff",
+             "name_ENG": "Moroff",
+             "id":325,
+             "max_per_squad":1,
+             "available":true,
+             "modify":false,
+             "slot":"Gunner",
+             "add_Data": [0],
+             "charge": [0],
+             "points": 5,
+             "effect": "",
+             "effect_ENG": "After you perform an attack, you may perform a bonus attack with a different weapon. You may modify a #hit# result into a #crit# result for this bonus attack.",
+             "faction": ["Partisans"]
+                         
+             
+         },
+         {
+            "name": "Magva Yarro",
+             "name_ENG": "Magva Yarro",
+             "id":326,
+             "max_per_squad":1,
+             "available":true,
+             "modify":false,
+             "slot":"Gunner",
+             "add_Data": [0],
+             "charge": [0],
+             "points": 7,
+             "effect": "",
+             "effect_ENG": "When an enemy ship in your firing arc performs an attack, it cannot reroll more then 1 dice. After you perform an attack, you may perform an attack from a different arc.",
+             "faction": ["Partisans"]
+                         
+             
+         },
+         {
+            "name": "Napalm",
+             "name_ENG": "Firebomb",
+             "id":327,
+             "max_per_squad":8,
+             "available":true,
+             "modify":false,
+             "slot":"Illicit",
+             "add_Data": [0],
+             "charge": [1,"0"],
+             "points": 2,
+             "effect": "",
+             "effect_ENG": "Consider it as a Mine. You may drop it during System Phase. When a ship moves through, it exposes a damage card, and you may flip off 1 of its #ch# located on its pilot card or upgrade.",
+             "faction": ["Partisans"]
+                         
+             
+         },
+         {
+            "name": "Module NS-9 Starpath",
+             "name_ENG": "Starpath NS-9 Module",
+             "id":328,
+             "max_per_squad":1,
+             "available":true,
+             "modify":true,
+             "slot":"Illicit",
+             "add_Data": [0],
+             "charge": [1,"0"],
+             "points": 8,
+             "effect": "",
+             "effect_ENG": "As long as your #ch# is active, you cannot be targeted by attack. If you shoot, or if you are the last ship of your squadron in battle, lose 1 #ch#.",
+             "faction": ["Partisans"],
+             "modifier_func":[
+                [3,"Modification",328]
+             ]
+                         
+             
+         },
+         {
+            "name": "Kleya Marki",
+             "name_ENG": "Kleya Marki",
+             "id":329,
+             "max_per_squad":1,
+             "available":true,
+             "modify":true,
+             "slot":"Crew",
+             "add_Data": [0],
+             "charge": [0],
+             "points": 6,
+             "effect": "",
+             "effect_ENG": "Add #JA# Action link to Red#CO# Action",
+             "faction": ["Partisans"],
+             "modifier_func":[
+                [0, "add_action", [1,"Ja W","Co R"]]
+             ]
+                         
+             
+         },
+         {
+            "name": "Agent Kallus",
+             "name_ENG": "Agent Kallus",
+             "id":330,
+             "max_per_squad":1,
+             "available":true,
+             "modify":true,
+             "slot":"Crew",
+             "add_Data": [0],
+             "charge": [0],
+             "points": 4,
+             "effect": "",
+             "effect_ENG": "END OF SETUP : assign the 'Hunted' condition to an enemy ship.",
+             "faction": ["ISB"],
+             "modifier_func":[
+                [2,"Condition"],
+                [1,"Condition",331],
+                [10,"Condition"]
+             ]
+                                      
+             
+         },
+         {
+            "name": "Traqué",
+             "name_ENG": "Hunted",
+             "id":331,
+             "max_per_squad":2,
+             "available":true,
+             "modify":false,
+             "slot":"Condition",
+             "add_Data": [0],
+             "charge": [0],
+             "points": 6,
+             "effect": "",
+             "effect_ENG": "When you are attacked by Agent Kallus' ship, it may modify an #eye# result to a #hit# result. When you are destroyed, your opponent gains 1 Objective Point",
+             "faction": ["ISB"]
+                                     
+             
          }
+
 
 
 
