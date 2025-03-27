@@ -11861,7 +11861,7 @@
             "skill": 5,
             "points": 9,                        
             "ability": "",
-            "ability_ENG": "SETUP: choose 1 enemy pilot card or 1 crew upgrade equipped on an enemy ship.<br>During system phase you may spend 1 #ch#. If you do, you may look the dial of an enemy ship at range 0-1 of the ship with the 'Spy' Condition. Moreover, if you chose a crew upgrade, consider this upgrade equipped on your ship instead of the 'Spy' ship until the end of the turn.",
+            "ability_ENG": "SETUP: choose 1 enemy pilot card or 1 crew upgrade equipped on an enemy ship and assign it the 'Spy' Condition.<br>During system phase you may spend 1 #ch#. If you do, you may look the dial of an enemy ship at range 0-1 of the ship with the 'Spy' Condition. Moreover, if you chose a crew upgrade, consider this upgrade equipped on your ship instead of the 'Spy' ship until the end of the turn.",
             "slots": [     
             "Talent",
             "Talent",

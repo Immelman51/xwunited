@@ -5279,6 +5279,23 @@
              "faction": ["Partisans"]
                          
              
+         },
+         {
+            "name": "Espion",
+             "name_ENG": "Spy",
+             "id":322,
+             "max_per_squad":2,
+             "available":true,
+             "modify":false,
+             "slot":"Condition",
+             "add_Data": [0],
+             "charge": [0],
+             "points": 0,
+             "effect": "",
+             "effect_ENG": "",
+             "faction": ["Partisans"]
+                         
+             
          }
 
 
