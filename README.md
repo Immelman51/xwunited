@@ -58,6 +58,20 @@ ships :
   10 : () => may_remove_slots("Astromech") //WARNING ! The order of the "slot"s to remove is very important. You have to start removing the last "slot", and keep on removing them starting from the last one. Or Else the function 'may_remove_"slot"' will fail. The reason is a bit tricky, but to make it simple, this function will remove (splice) elements in the array upgrades_Objets and upgrades_Type thinking the position is the last digit of the "slot"menu."id". 
 
 #########################################################################################################################################################################
+Upgrades :
+If 'available' is false, there's a 'restrictions' aray to fill.
+"restrictions":[n,"where to look","target required 1","target required 2]
+n:number of target needed to be available
+where to look : - 'title'
+                - 'upgrade'
+                - 'base'
+                - 'keyword'
+                - 'action'
+       
+
+
+
+#########################################################################################################################################################################""
 
 GENERAL DESCRIPTION OF SCRIPTSHIP.JS
 
