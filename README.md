@@ -65,9 +65,77 @@ n:number of target needed to be available
 where to look : - 'title'
                 - 'upgrade'
                 - 'base'
-                - 'keyword'
+                - 'keyword' (used for 'TIE' ships)
                 - 'action'
-       
+                - 'ship'
+target required : just write the name of the restricted upgrade
+
+Exemples:
+- Purge Troopers is a crew upgrade but need to occupy also a Gunner Slot.
+We add modify=true and the "modifier_func" at the end to auto equip this upgrade in the gunner slot as well.
+{
+            "name": "Purge Troopers",
+             "name_ENG": "Purge Troopers",
+             "id":361,
+             "max_per_squad":1,
+             "available":false,
+             "modify":true,
+             "slot":"Crew",
+             "add_Data": [0],
+             "force":0,
+             "charge": [0],
+             "points": 0,
+             "effect": "??",
+             "effect_ENG": "??",
+             "faction": ["Imperial_Remnants"],
+             "restrictions":[1,"upgrade","Gunner",""],
+             "modifier_func":[
+                [3,"Gunner",361]
+             ]
+                                     
+             
+         } 
+- Night Sisters is a Crew upgrade that occupies a second Crew Slot. That's why  n=2 in "restrictions". Same as above, we modify = true, and auto equip this upgrade in the second Crew slot.
+{
+            "name": "Soeurs de la Nuit",
+             "name_ENG": "Night Sisters",
+             "id":358,
+             "max_per_squad":1,
+             "available":false,
+             "modify":true,
+             "slot":"Crew",
+             "add_Data": [0],
+             "charge": [0],
+             "force":1,
+             "points": 0,
+             "effect": "??",
+             "effect_ENG": "??",
+             "faction": ["Imperial_Remnants"],
+             "restrictions":[2,"upgrade","Crew",""],
+             "modifier_func":[
+                [3,"Crew",358],
+                [0,"change_stat","force",1]
+             ]
+                                     
+             
+         }, 
+- Tactical Scrambler is a Modification Slot that can only be equipped on Medium or Large ships.
+{
+            "name": "Brouilleur Tactique",
+            "name_ENG": "Tactical Scrambler",
+            "id": 65,
+            "max_per_squad": 8,
+            "available": false,
+            "modify": false,
+            "slot": "Modification",
+            "add_Data": [0],
+            "charge": [0],
+            "points": 2,
+            "effect": "Tant que vous gênez l’attaque d’un vaisseau ennemi, le défenseur lance 1 dé de défense supplémentaire.",
+            "restrictions": [1,"base", "Medium", "Large"],
+            "faction": ""
+        },
+
 
 
 

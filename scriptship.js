@@ -316,6 +316,9 @@ switch (list) {
     case 'action' :
         varlist = ships[pilot_list[yy]['shipId']]['actions'];
         break;
+    case 'ship' :
+        varlist = ships[pilot_list[yy]['shipId']]['name'];
+        break;
     default :
         console.log('error testRestriction and varlist'); 
         break;
