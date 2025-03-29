@@ -441,10 +441,11 @@
     "effect3": "" 
 },
 {
-    "name":"Overdrive Thrusters",
+    "name":"Surcharge des Propulseurs",
+    "name_ENG":"Overdrive Thrusters",
     "id":54,
     "nbrOfEffects": 1,
-    "effect1":"<em><strong>Surcharge des Propulseurs : </strong></em>Lorsque vous effectuez une action blanche #BR# ou #BO#, vous pouvez la considérez comme rouge et utiliser le gabarit de vitesse supérieure de même direction.",
+    "effect1":"<em><strong>Surcharge des Propulseurs : </strong></em>Lorsque vous effectuez un #BR# ou un #BO#, vous pouvez recevoir un jeton contrainte pour utiliser le gabarit de vitesse supérieure de même direction.",
     "effect2": "",
     "effect3": "" 
 },

@@ -11,6 +11,7 @@
             "add_Data": [0],
             "charge": [2,"0"],
             "effect": "Après avoir révélé votre cadran, vous pouvez dépenser 1 #ch# et gagner 1 marqueur de désarmement pour récupérer 1 bouclier.",
+            "effect_ENG": "",
             "faction": ""
         },
         {
@@ -25,6 +26,7 @@
             "charge": [0],
             "points": 3,
             "effect": "Vous pouvez maintenir jusqu’à 2 cibles verrouillées. Chaque verrouillage doit être sur un objet différent. Après avoir effectué une action #TL# , vous pouvez verrouiller une cible.",
+            "effect_ENG": "",
             "faction": ""
         },
         {
@@ -39,6 +41,7 @@
             "charge": [0],
             "points": 2,
             "effect": "Réduisez la difficulté de vos manoeuvres de vitesse 1 et 2",
+            "effect_ENG": "",
             "faction": ""
             
          },
@@ -54,6 +57,7 @@
             "add_Data": [0],
             "charge": [2,"0"],
             "effect": "Action : dépensez 1 #ch# pour réparer 1 carte de dégât face cachée.<br>Action : réparez 1 carte de dégât Vaisseau face visible.",
+            "effect_ENG": "",
             "faction": ""
         },
         {
@@ -68,6 +72,7 @@
             "charge": [0],
             "points": 2,
             "effect": "Après avoir effectué une action #RT# ou #RD#, si vous êtes dans l'arc de tir d'un vaisseau ennemi, vous pouvez effectuer une action #CA# rouge.",
+            "effect_ENG": "",
             "faction": ""
         },
         {
@@ -97,6 +102,7 @@
             "charge": [0],
             "points": "*1*",
             "effect": "Tant que vous effectuez une attaque, si le défenseur est dans votre #bulls#, vous pouvez changer 1 résultat #hit# en un résultat #crit#.",
+            "effect_ENG": "",
             "faction": ""
         }, 
         {
@@ -111,6 +117,7 @@
             "charge": [0],
             "points": "*1*",
             "effect": "Au début de la phase d’engagement, vous pouvez choisir 1 vaisseau allié à portée 1. Dans ce cas, considérez que son initiative est égale à la vôtre jusqu’à la fin du round.",
+            "effect_ENG": "",
             "faction": ""
         },
         {
@@ -125,6 +132,7 @@
             "charge": [0],
             "points": "*2*",
             "effect": "Tant qu’un vaisseau ennemi à portée 0 défend, il lance un dé de défense en moins.",
+            "effect_ENG": "",
             "faction": ""
         },
         {
@@ -171,6 +179,7 @@
             "add_Data": [0],
             "charge": [1,"0"],
             "effect": "Tant que vous effectuez une attaque principale, si le défenseur est dans votre #bulls#, avant l’étape « Neutraliser les résultats », vous pouvez dépenser 1 #ch# pour annuler 1 résultat #hit#.",
+            "effect_ENG": "",
             "faction": "",
             "modifier_func":[
                 
@@ -188,6 +197,7 @@
             "charge": [0],
             "points": "*3*",
             "effect": "Tant que vous effectuez une attaque principale, si le défenseur est dans votre #bulls#, vous pouvez relancer 1 dé d’attaque.",
+            "effect_ENG": "",
             "faction": ""
         },
         {
@@ -204,6 +214,7 @@
             "attack": ["F",2],
             "range": [2],
             "effect": "Après qu’un vaisseau ennemi a exécuté une manœuvre, vous pouvez effectuer cette attaque contre lui en tant qu’attaque bonus.<br>Attaque : vos dés ne peuvent pas être modifiés.",
+            "effect_ENG": "",
             "faction": ""
         },
         {
@@ -236,6 +247,7 @@
             "add_Data": [0],
             "charge": [1,"+"],
             "effect": "Tant que vous défendez ou que vous effectuez une attaque, s’il n’y a aucun autre vaisseau allié à portée 0–2, vous pouvez dépenser 1 #ch# pour relancer 1 de vos dés.",
+            "effect_ENG": "",
             "faction": ""
         },
         
@@ -255,6 +267,7 @@
             "charge": [0],
             "points": 3,
             "effect": "Ajoute l'action #CO# blanche",
+            "effect_ENG": "",
             "restrictions": [1,"action", [0,"Co", "R"],""],
             "faction": "",
             "modifier_func": [
@@ -273,6 +286,7 @@
             "charge": [0],
             "points": 8,
             "effect": "Après avoir effectué une action #FS#, gagnez 1 marqueur de concentration.",
+            "effect_ENG": "",
             "faction": ""
         },
 {
@@ -287,6 +301,7 @@
             "charge": [0],
             "points": 2,
             "effect": "À la fin du round, vous pouvez lancer 1 dé d’attaque pour réparer 1 carte de dégât face visible. Puis, sur un résultat #hit#, exposez 1 carte de dégât.",
+            "effect_ENG": "",
             "faction": ""
         },
 {
@@ -301,6 +316,7 @@
             "add_Data": [0],
             "charge": [1,"0"],
             "effect": "Action : récupérez 1 #ch#.<br>Action : dépensez 1 #ch# pour récupérer 1 bouclier.",
+            "effect_ENG": "",
             "faction": ""
         },
 {
@@ -315,6 +331,7 @@
             "charge": [0],
             "points": 2,
             "effect": "Tant que vous défendez et avant que les dés d’attaque ne soient lancés, vous pouvez dépenser un marqueur de verrouillage que vous avez sur l’attaquant pour lancer 1 dé d’attaque. Dans ce cas, l’attaquant gagne 1 marqueur de brouillage. Puis, sur un résultat #hit# ou #crit#, gagnez 1 marqueur de brouillage.",
+            "effect_ENG": "",
             "faction": ""
         },
  {
@@ -329,6 +346,7 @@
             "charge": [0],
             "points": 1,
             "effect": "Pendant la phase de dénouement, vous pouvez faire pivoter votre indicateur #tur#",
+            "effect_ENG": "",
             "faction": ""
         },
  {
@@ -343,6 +361,7 @@
             "charge": [0],
             "points": 6,
             "effect": "Après avoir effectué une attaque de #tur#, retirez un marqueur de concentration, de calcul, ou d’évasion du défenseur.",
+            "effect_ENG": "",
             "faction": ""
         },
  {
@@ -358,6 +377,7 @@
             "charge": [0],
             "points": 2,
             "effect": "Si vous devez larguer ou lancer un engin, vous pouvez utiliser un gabarit de même direction mais avec une vitesse supérieure ou inférieure de 1.",
+            "effect_ENG": "",
             "faction": ""
         },
  {
@@ -372,6 +392,7 @@
             "charge": [0],
             "points": 5,
             "effect": "Après avoir effectué une attaque, vous pouvez effectuer une attaque bonus #tur# ou #can#, avec une #tur# ou un #can# que vous n’avez pas encore utilisé.",
+            "effect_ENG": "",
             "faction": ""
           },
   {
@@ -386,6 +407,7 @@
             "points": 6,
             "slot": "Gunner",
             "effect": "Après avoir effectué une attaque, vous pouvez dépenser un marqueur vert ou recevoir un marqueur de stress pour verrouiller le défenseur.",
+            "effect_ENG": "",
             "faction": ""
         },
 {
@@ -400,6 +422,7 @@
             "charge": [0],
             "points": 2,
             "effect": "Tant que vous effectuez une attaque, vous devez choisir un défenseur à la plus courte portée d’attaque valide.<br>Après avoir effectué une attaque qui a raté, placez 1 marqueur de calcul sur cette carte.<br>Avant de vous engager, vous pouvez retirer 1 marqueur de calcul de cette carte pour gagner le marqueur correspondant",
+            "effect_ENG": "",
             "faction": ""
         },
  {
@@ -414,6 +437,7 @@
             "charge": [0],
             "points": 5,
             "effect": "Tant que vous exécutez entièrement une manœuvre rouge, avant l’étape « Vérifier la difficulté », vous pouvez effectuer 1 action.",
+            "effect_ENG": "",
             "faction": ""
         },
  {
@@ -428,6 +452,7 @@
             "charge": [0],
             "points": 5,
             "effect": "Tant que vous effectuez une attaque, vous pouvez dépenser 1 marqueur de concentration pour changer 1 de vos résultats vierges en un résultat #hit#.",
+            "effect_ENG": "",
             "faction": ""
         },
  
@@ -443,6 +468,7 @@
             "charge": [0],
             "points": 2,
             "effect": "Tant qu’un vaisseau allié à portée 1–3 effectue une attaque contre une cible que vous avez verrouillée, ce vaisseau allié ignore le prérequis d’attaque #TL#.",
+            "effect_ENG": "",
             "faction": ""
 
         },
@@ -460,6 +486,7 @@
             "add_Data": [0],
             "charge": [3,"0"],
             "effect": "Attaque (#TL#) portée 2-3 #Farc# 3 dés : dépensez 1 #ch#. Si cette attaque touche, dépensez 1 résultat #hit# ou #crit# pour faire subir 1 dégât #hit# au défenseur. Tous les résultats #hit#/#crit# restants infligent des marqueurs ioniques au lieu des dégâts.",
+            "effect_ENG": "",
             "faction": ""
         },
 {
@@ -476,6 +503,7 @@
             "add_Data": [0],
             "charge": [2,"0"],
             "effect": "Attaque (#TL#) Portée 2-3 #Farc# 4 dés: dépensez 1 #ch#. Après que vous avez déclaré le défenseur, il peut choisir de subir 1 dégât #hit#. Dans ce cas, sautez les étapes « Dés d’attaque » et « Dés de défense » et considérez que l’attaque a touché.",
+            "effect_ENG": "",
             "faction": ""
         },
 {
@@ -492,6 +520,7 @@
             "add_Data": [0],
             "charge": [2,"0"],
             "effect": "Attaque (#TL#) Portée 1-2 #Farc# 3 dés. Après avoir résolu l’attaque, vous pouvez choisir un autre vaisseau à portée 0-1 du défenseur. Lancez 3 dés d’attaque : assignez autant de marqueurs de contrainte que de résultats #eye#, puis le vaisseau ciblé doit se défendre en considérant les autres résultats comme un jet d’attaque.",
+            "effect_ENG": "",
             "faction": ""
         },
 {
@@ -508,6 +537,7 @@
             "add_Data": [0],
             "charge": [5,"0"],
             "effect": "Attaque (#FS#) Portée 2-3 #Farc# 3 dés: Dépensez 1 #ch#. Si le défenseur est dans votre #bulls#, vous pouvez dépenser 1 ou plusieurs ch pour relancer autant de dés d’attaque.",
+            "effect_ENG": "",
             "restrictions": [1,"upgrade", "Torpedo",""],
             "faction": "",
             "modifier_func": [
@@ -528,6 +558,7 @@
             "charge": [2,"0"],
             "points": 3,
             "effect": "Attaque (#CA#, #FS# ou #TL#) Portée 1-3 #Farc# 3dés: dépensez 1 #ch#. Si cette attaque touche, chaque vaisseau allié à portée 1–3 du défenseur peut verrouiller le défenseur. Puis annulez tous les résultats des dés.",
+            "effect_ENG": "",
             "faction": ""
         },
         {
@@ -543,6 +574,7 @@
             "charge": [1,"0"],
             "points": 4,
             "effect": "Attaque (#FS#) Portée 1-2 #Farc# 3 dés. Si l’attaque touche, annulez tous les dés. Puis le défenseur reçoit une carte de dégât face cachée et marqueur de Rayon Tracteur.",
+            "effect_ENG": "",
             "faction": ""
         },
 {
@@ -559,6 +591,7 @@
             "add_Data": [0],
             "charge": [2,"0"],
             "effect": "Attaque (#TL#) 3dés #Farc# portée 2-3: dépensez 1 Ch. Lors de l’étape « Neutraliser les résultats », les résultats #crit# sont annulés avant les résultats #hit#. Après que cette attaque a touché, le défenseur perd 1 bouclier.",
+            "effect_ENG": "",
             "faction": ""
         },
  {
@@ -575,6 +608,7 @@
             "add_Data": [0],
             "charge": [1,"0"],
             "effect": "Attaque (#TL#) : dépensez 1 #ch#. ATTAQUE PRECISE.",
+            "effect_ENG": "",
             "faction": ""
         },
          {
@@ -591,6 +625,7 @@
             "add_Data": [0],
             "charge": [3,"0"],
             "effect": "Attaque (lock) : Portée 2-3 #Farc# 3 dés. dépensez 1 #ch#. Après que cette attaque a touché, chaque vaisseau à portée 0–1 du défenseur expose 1 de ses cartes de dégât.",
+            "effect_ENG": "",
             "faction": ""
         },
         
@@ -609,6 +644,7 @@
             "add_Data": [0],
             "charge": [1,"0"],
             "effect": "Attaque (#TL#) : dépensez 1 #ch#.",
+            "effect_ENG": "",
             "faction": ""
         },
         {
@@ -623,6 +659,7 @@
             "add_Data": [0],
             "charge": [2,"0"],
             "effect": "Pendant la phase de système, vous pouvez dépenser 1 #ch# pour larguer une sous-munition avec le gabarit 1#straight#. Au début de la phase d’activation, vous pouvez dépenser 1 bouclier pour récupérer 2 #ch#.",
+            "effect_ENG": "",
             "restrictions": [2,"upgrade", "Payload",""],
             "faction": "",
             "modifier_func": [
@@ -641,6 +678,7 @@
             "add_Data": [0],
             "charge": [1,"0"],
             "effect": "Pendant la phase de système, vous pouvez dépenser 1#ch# pour larguer un filet Conner en utilisant le gabarit 1#straight#.<br>La #ch# de cette carte ne peut pas être récupérée.",
+            "effect_ENG": "",
             "faction": ""
             
         },
@@ -656,6 +694,7 @@
             "add_Data": [0],
             "charge": [2,"0"],
             "effect": "Pendant la phase de système, vous pouvez dépenser 1 #ch# pour larguer une bombe à protons en utilisant le gabarit 1#straight#.",
+            "effect_ENG": "",
             "faction": ""
           
         },
@@ -671,6 +710,7 @@
             "add_Data": [0],
             "charge": [2,"0"],
             "effect": "Pendant la phase de système, vous pouvez dépenser 1 #ch# pour larguer une mine de proximité en utilisant le gabarit 1#straight#.<br>Les #ch# de cette carte ne peuvent pas être récupérées.",
+            "effect_ENG": "",
             "faction": ""
         
         },
@@ -686,6 +726,7 @@
             "add_Data": [0],
             "charge": [2,"0"],
             "effect": "Pendant la phase de système, vous pouvez dépenser 1 #ch# pour larguer une charge sismique en utilisant le gabarit 1#straight#.",
+            "effect_ENG": "",
             "faction": ""
            
         },
@@ -701,6 +742,7 @@
             "add_Data": [0],
             "charge": [2,"0"],
             "effect": "Pendant la phase de système, vous pouvez dépenser 1 #ch# pour larguer une charge sismique en utilisant le gabarit 1#straight#.",
+            "effect_ENG": "",
             "faction": ""
           
         },
@@ -718,6 +760,7 @@
             "attack": ["F",3],
             "range": [1,2],
             "effect": "Portée 1-2 #Farc# 3 dés Attaque : si cette attaque touche, tous les résultats #hit#/#crit# infligent des marqueurs de brouillage au lieu des dégâts.",
+            "effect_ENG": "",
             "faction": ""
         },
  {
@@ -734,6 +777,7 @@
             "attack": ["F",3],
             "range": [1,3],
             "effect": "Portée 1-3 #Farc# 3 dés, Attaque : si cette attaque touche, tous les résultats #hit#/#crit# infligent des marqueurs de rayon tracteur au lieu des dégâts.",
+            "effect_ENG": "",
             "faction": ""
         },
 {
@@ -750,6 +794,7 @@
             "attack": ["F",3],
             "range": [1,3],
             "effect": "Portée 1-3 #Farc# 3 dés Attaque : si cette attaque touche, dépensez 1 résultat #hit# ou #crit# pour faire subir 1 dégât au défenseur. Tous les résultats #hit#/#crit# restants infligent des marqueurs ioniques au lieu des dégâts.",
+            "effect_ENG": "",
             "faction": ""
         },
 {
@@ -766,6 +811,7 @@
             "attack": ["BULL",4],
             "range": [2,3],
             "effect": "Portée 2-3 #Farc# 4 dés. Si le défenseur n’est pas dans le #bulls#, alors l’attaque devient IMPRECISE.",
+            "effect_ENG": "",
             "faction": ""
         },
         {
@@ -781,6 +827,7 @@
             "attack": ["F",3],
             "range": [2,3],
             "effect": "Portée 2-3 #Farc# 3 dés Attaque : si vous êtes calculateur, vous pouvez améliorer 1 dé d’attaque",
+            "effect_ENG": "",
             "restrictions": [2,"upgrade", "Cannon",""],
             "faction": "",
             "modifier_func": [
@@ -801,6 +848,7 @@
             "attack": ["T",3],
             "range": [1,2],
             "effect": "Portée 1-2 #Farc# 3 dés Attaque : si cette attaque touche, dépensez 1 résultat #hit# ou #crit# pour faire subir 1 dégât #hit# au défenseur. Tous les résultats #hit#/#crit# restants infligent des marqueurs ioniques au lieu des dégâts.",
+            "effect_ENG": "",
             "faction": "",
             "modifier_func": [
                 [0,"add_action",[0,"Ra W"]]
@@ -821,6 +869,7 @@
             "attack": ["T",2],
             "range": [1,2],
             "effect": "Portée 1-2 #tur# 2 dés, Attaque",
+            "effect_ENG": "",
             "faction": "",
             "modifier_func": [
                 [0,"add_action",[0,"Ra W"]]
@@ -840,6 +889,7 @@
             "attack": ["T",2],
             "range": [0,1],
             "effect": "Portée 0-1 #tur# 2 dés. ATTAQUE PRECISE",
+            "effect_ENG": "",
             "faction": "",
             "modifier_func": [
                 [0,"add_action",[0,"Ra W"]]
@@ -859,6 +909,7 @@
             "attack": ["T",3],
             "range": [2,3],
             "effect": "Portée 2-3 #tur# 3 dés Attaque : attaque IMPRECISE<br>puis Attaque: attaque IMPRECISE.",
+            "effect_ENG": "",
             "faction": "",
             "modifier_func": [
                 [0,"add_action",[0,"Ra W"]]
@@ -876,6 +927,7 @@
             "charge": [0],
             "points": 3,
             "effect": "Choisissez une amélioration #can# équipée et placez un marqueur canon rotatif dessus. La restriction #Farc# de votre #can# devient #tur#. Vous pouvez tourner l’arc de votre #can# avec l’action #RT#.",
+            "effect_ENG": "",
             "faction": "",
             "modifier_func": [
                 [0,"add_action",[0,"Ra W"]]
@@ -893,6 +945,7 @@
             "add_Data": [0],
             "charge": [2,"0"],
             "effect": "Action : Dépensez 1 #ch# pour effectuer une action #CK#.<br>Au début de la phase de préparation, lancez 1 dé d’attaque. Sur un résultat #eye#, désoccultez-vous ou défaussez votre marqueur d’occultation.",
+            "effect_ENG": "",
             "restrictions": [1,"base","Small", "Medium"],
             "faction": ""
         },
@@ -908,6 +961,7 @@
             "add_Data": [0],
             "charge": [1,"0"],
             "effect": "Avant votre activation, vous pouvez dépenser 1 #ch#. Dans ce cas, jusqu’à la fin du round, vous pouvez effectuer des actions et exécuter des manœuvres rouges, même si vous êtes stressé.",
+            "effect_ENG": "",
             "faction": ""
         },
         {
@@ -922,6 +976,7 @@
             "charge": [0],
             "points": 2,
             "effect": "Après que vous avez été détruit, chaque autre vaisseau à portée 0–1 subit 1 dégât #hit#.",
+            "effect_ENG": "",
             "faction": ""
         },
  {
@@ -936,6 +991,7 @@
             "charge": [0],
             "points": 5,
             "effect": "ACTION : dépensez 1 #ch#. Vous pouvez effectuer une action #MASL#. Vous pouvez effectuer cette action même après avoir partiellement effectué une manoeuvre ou sous l’effet du stress. Puis exposez 1 carte de dégât ou prenez 1 dégât critique.",
+            "effect_ENG": "",
             "faction": ""
             
         },
@@ -951,6 +1007,7 @@
             "charge": [1,"0"],
             "slot": "Illicit",
             "effect": "Après avoir verrouillé un objet ou qu'un objet vous a verrouillé, si vous avez 1 #ch# active, perdez 1 #ch# et brouillez cet objet, en ignorant les restrictions de portée.",
+            "effect_ENG": "",
             "faction": ""
         },
          {
@@ -965,9 +1022,10 @@
             "add_Data": [0],
             "charge": [2,"0"],
             "effect": "Avant de subir des dégâts à cause d’un obstacle ou de l’explosion d’une bombe alliée, vous pouvez dépenser 1 #ch#. Dans ce cas, prévenez 1 dégât.",
+            "effect_ENG": "",
             "restrictions": 
                 [1,"base", "Medium", "Large"],
-            "faction": ""
+                "faction": ""
         },
 {
             "name": "Postcombustion",
@@ -980,9 +1038,10 @@
             "add_Data": [0],
             "charge": [2,"0"],
             "effect": "Après avoir entièrement exécuté une manœuvre à vitesse 3–5, vous pouvez dépenser 1 #ch# pour effectuer une action #BO#, même tant que vous êtes stressé.",
+            "effect_ENG": "",
             "restrictions": 
                 [1, "base", "Small",""],
-            "faction": ""
+                "faction": ""
         },
 {
             "name": "Moteur Amélioré",
@@ -995,6 +1054,7 @@
             "charge": [0],
             "points": 3,
             "effect": "Nécessite que votre vaisseau dispose de l'action #BO# rouge. Donne l'action #BO# blanche",
+            "effect_ENG": "",
             "faction": "",
             "restrictions":[1,"action", [0,"Bo R"], ""],
             "modifier_func": [
@@ -1013,6 +1073,7 @@
             "charge": [0],
             "points": 1,
             "effect": "Tant que vous effectuez une attaque #mi# ou #to#, après avoir lancé les dés d’attaque, vous pouvez annuler tous les résultats des dés pour récupérer 1 #ch# que vous avez dépensée comme coût pour l’attaque.",
+            "effect_ENG": "",
             "faction": ""
         },
 {
@@ -1027,6 +1088,7 @@
             "charge": [0],
             "points": 2,
             "effect": "Tant que vous gênez l’attaque d’un vaisseau ennemi, le défenseur lance 1 dé de défense supplémentaire.",
+            "effect_ENG": "",
             "restrictions": [1,"base", "Medium", "Large"],
             "faction": ""
         },
@@ -1042,6 +1104,7 @@
             "charge": [1,"0"],
             "points": 6,
             "effect": "Lorsque vous devriez recevoir une carte de dégat face cachée, vous pouvez dépenser 1#ch# pour la défausser à la place.",
+            "effect_ENG": "",
             "faction": ""
           
         },
@@ -1057,6 +1120,7 @@
             "charge": [1,"0"],
             "points": 7,
             "effect": "Lorsque vous devriez recevoir votre premier dégat, dépensez 1#ch# pour l'annuler.",
+            "effect_ENG": "",
             "faction": ""
            
         },
@@ -1072,6 +1136,7 @@
             "add_Data": [0],
             "charge": [1,"0"],
             "effect": "Tant que vous défendez, si votre #ch# est active, lancez 1 dé de défense supplémentaire. Après avoir subi des dégâts, perdez 1#ch#.",
+            "effect_ENG": "",
             "faction": ""
         },
  {
@@ -1086,6 +1151,7 @@
             "charge": [0],
             "points": 1,
             "effect": "Après avoir largué, lancé ou placé une bombe ou une mine, vous pouvez placer dessus 1 marqueur d’amorce.",
+            "effect_ENG": "",
             "faction": ""
         },
 {
@@ -1100,9 +1166,10 @@
             "charge": [0],
             "points": 2,
             "effect": "Donne accès l'action #TL#",
+            "effect_ENG": "",
             "faction": "",
             "modifier_func": [
-                [0,"add_action",[0,"Lo","W"]]
+                [0,"add_action",[0,"Lo W"]]
             ]
         },
 {
@@ -1117,6 +1184,7 @@
             "charge": [0],
             "points": 8,
             "effect": "Après avoir révélé votre cadran, vous pouvez effectuer 1 action. Dans ce cas, vous ne pouvez pas effectuer d’autre action pendant votre activation.",
+            "effect_ENG": "",
             "faction": ""
         },
         {
@@ -1131,6 +1199,7 @@
             "add_Data": [0],
             "charge": [2,"0"],
             "effect": "Tant que vous accélérez ou que vous effectuez un tonneau, vous pouvez vous déplacer à travers ou chevaucher les obstacles. Après vous être déplacé à travers ou avoir chevauché un obstacle, vous pouvez dépenser 1 #ch# pour ignorer ses effets jusqu’à la fin du round.",
+            "effect_ENG": "",
             "faction": ""
         },
         {
@@ -1145,6 +1214,7 @@
             "charge": [0],
             "points": 2,
             "effect": "Tant que vous effectuez une attaque, si vous avez un verrouillage sur le défenseur, vous pouvez relancer 1 dé d’attaque. Dans ce cas, vous ne pouvez pas dépenser votre marqueur de verrouillage pendant cette attaque.",
+            "effect_ENG": "",
             "faction": ""
         },
          {
@@ -1159,6 +1229,7 @@
             "charge": [0],
             "points": 5,
             "effect": "Vous pouvez verrouiller des cibles au-delà de la portée 3. Lorsque vous verrouillez une cible à portée 2 ou moins, recevez 1 marqueur d’épuisement.",
+            "effect_ENG": "",
             "faction": ""
         },
          {
@@ -1173,6 +1244,7 @@
             "charge": [0],
             "points": 8,
             "effect": "Augmentez les portées de l’action brouillage de 1. Lorsque vous défendez, vous pouvez dépenser 1 #ch# pour dégrader 1 dé d’attaque.",
+            "effect_ENG": "",
             "faction": ""
         },
 {
@@ -1187,6 +1259,7 @@
             "charge": [0],
             "points": "*0*",
             "effect": "En phase système, vous pouvez gagner 1 marqueur d’épuisement pour récupérer 1 #fo#.",
+            "effect_ENG": "",
             "faction": ""           
             
         },
@@ -1250,7 +1323,8 @@
             "charge": [0],
             "points": "*1*",
             "effect": "Tant que vous effectuez une attaque spéciale, vous pouvez dépenser 1 #fo# pour ignorer le prérequis #TL# ou #FS#. Dans ce cas, vous pouvez améliorer 1 dé d'attaque.",
-            "faction": "While you perform a special attack, you may spend 1 #fo# to ignore #TL# or #FS# restriction. If you do, you may upgrade 1 attack die"
+            "effect_ENG": "While you perform a special attack, you may spend 1 #fo# to ignore #TL# or #FS# restriction. If you do, you may upgrade 1 attack die",
+            "faction": ""
         },
         {
             "name": "Système de Tir Automatique",
@@ -1264,6 +1338,7 @@
             "charge": [0],
             "points": 3,
             "effect": "Après avoir effectué une attaque principale, vous pouvez effectuer une attaque bonus d’arme secondaire. Lors de cette attaque, vous ne pouvez pas ajouter ou modifier des dés d’attaque.",
+            "effect_ENG": "",
             "faction": ""
         },
          {
@@ -1278,6 +1353,7 @@
             "charge": [0],
             "points": 2,
             "effect": "Lorsque vous défendez ou attaquez, vous pouvez dépenser 1 marqueur de calcul d’un vaisseau allié à portée 0-2 pour changer 1 résultat #eye# en résultat #evd# ou #hit#.",
+            "effect_ENG": "",
             "faction": ""
         },
          {
@@ -1292,6 +1368,7 @@
             "points": 4,
             "max_per_squad": 1,
             "effect": "Mise en place : vous pouvez considérer votre initiative comme étant 0 ou 7. A la fin de la phase de mise en place, tous les vaisseaux alliés à portée 0-2 de vous gagne 1 marqueur de calcul. Ces marqueurs de calcul ne sont pas nettoyés en phase de fin.",
+            "effect_ENG": "",
             "faction": ""
         },
          {
@@ -1306,6 +1383,7 @@
             "points": 3,
             "max_per_squad": 1,
             "effect": "Mise en place : vous commencez en réserve. Vous pouvez dépenser entre 0 et 2 #ch#.<br>Au début de la phase de planification, s’il n’y a plus de #ch# sur cette carte, retournez là face cachée, puis placez votre vaisseau intégralement à portée 1 d’un bord de l’aire de jeu.",
+            "effect_ENG": "",
             "faction": ""
         },
          {
@@ -1320,6 +1398,7 @@
             "charge": [0],
             "points": 5,
             "effect": "Vous pouvez coordonner jusqu’à la portée 3. Lorsque vous coordonnez un vaisseau, recevez 1 marqueur de calcul.",
+            "effect_ENG": "",
             "faction": ""
         },
 
@@ -1336,6 +1415,7 @@
             "add_Data": [0],
             "charge": [2,"0"],
             "effect": "Après votre activation, vous pouvez dépenser 1 #ch# et gagner 1 marqueur d’épuisement pour réparer 1 carte de dégât, récupérer 1 bouclier ou retirer 1 engin à portée 0–1.",
+            "effect_ENG": "",
             "faction": ["Rebel_Alliance","Jedi_Order","Resistance"]
         },
          {
@@ -1350,6 +1430,7 @@
             "add_Data": [0],
             "charge": [3,"0"],
             "effect": "Action : dépensez 1 #ch# pour réparer 1 carte de dégât face cachée.<br>Action : réparez 1 carte de dégât Vaisseau face visible.",
+            "effect_ENG": "",
             "faction": ["Rebel_Alliance"]
         },
          {
@@ -1364,6 +1445,7 @@
             "points": 7,
             "max_per_squad": 1,
             "effect": "Avant de lancer les dés de défense, vous pouvez dépenser 1 marqueur de calcul pour dire à voix haute un nombre supérieur ou égal à 1. Dans ce cas et si vous obtenez exactement cette quantité de résultats #evd# sur votre lancer, ajoutez 1 résultat #evd#.",
+            "effect_ENG": "",
             "faction": ["Rebel_Alliance","New_Republic","Resistance"],
             "modifier_func": [
                 [0,"add_action",[0,"Cc W"]]
@@ -1381,6 +1463,7 @@
             "points": 5,
             "max_per_squad": 1,
             "effect": "Pendant la phase de système, vous pouvez choisir 1 vaisseau ennemi à portée 1–2, dire à voix haute une direction et une vitesse. Votre adversaire vous confirme si la direction puis la vitesse sont correctes. Si les 2 sont correctes, vous pouvez modifier votre cadran de manœuvre.",
+            "effect_ENG": "",
             "faction": ["Rebel_Alliance"]
         },
         {
@@ -1395,7 +1478,8 @@
             "faction": ["Rebel_Alliance"],
             "add_Data": [0],
             "charge": [3,"+"],
-            "effect": "Au début de la phase de fin, vous pouvez dépenser 3 #ch#. Chaque vaisseau allié peut retirer 1 marqueur de stress."
+            "effect": "Au début de la phase de fin, vous pouvez dépenser 3 #ch#. Chaque vaisseau allié peut retirer 1 marqueur de stress.",
+            "effect_ENG": ""
         },
         {
             "name": "R2-D2",
@@ -1409,6 +1493,7 @@
             "points": 8,
             "max_per_squad": 1,
             "effect": "Pendant la phase de dénouement, si vous êtes endommagé et n’êtes pas protégé, vous pouvez lancer 1 dé d’attaque pour récupérer 1 bouclier. Sur un résultat #hit#, exposez 1 de vos cartes de dégât.",
+            "effect_ENG": "",
             "faction": ["Rebel_Alliance"]
         },
         {
@@ -1423,6 +1508,7 @@
             "points": 7,
             "max_per_squad": 1,
             "effect": "Après avoir effectué une attaque principale, si vous êtes concentré, vous pouvez gagner 1 marqueur d’épuisement pour effectuer une attaque bonus.",
+            "effect_ENG": "",
             "faction": ["Rebel_Alliance"]
         },
 {
@@ -1438,6 +1524,7 @@
             "force": "1",
             "max_per_squad": 1,
             "effect": "Tant que vous effectuez une attaque qui n’est pas une attaque #Farc#, vous pouvez dépenser 1 #fo#. Si vous le faites, lancez 1 dé d’attaque supplémentaire.",
+            "effect_ENG": "",
             "faction": ["Rebel_Alliance"],
             "modifier_func": [
                [0,"change_stat","force",1]
@@ -1456,6 +1543,7 @@
             "charge": [0],
             "points": "*1*",
             "effect": "Tant qu’un autre vaisseau allié à portée 0–1 défend, avant l’étape « Neutraliser les résultats », si vous êtes dans l’arc de l’attaque, vous pouvez subir 1 dégât #crit# pour annuler 1 résultat #crit#.",
+            "effect_ENG": "",
             "faction": ["Rebel_Alliance"]
         },
  {
@@ -1467,6 +1555,7 @@
             "slot": "Crew",
             "faction": ["Rebel_Alliance"],
             "effect": "Pendant la phase de système, vous pouvez choisir un vaisseau allié à portée 0–3. Ce vaisseau gagne 1 marqueur de calcul et 1 marqueur de stress.<br>Ajoute l’action #CA# et #JM#",
+            "effect_ENG": "",
             "max_per_squad": 1,
             "add_Data": [0],
             "charge": [0],
@@ -1491,6 +1580,7 @@
             "force": 1,
             "max_per_squad": 1,
             "effect": "Au début de la phase d’engagement, vous pouvez choisir 1 vaisseau dans votre arc de tir à portée 0–2 et dépenser 1 #fo#. Dans ce cas, ce vaisseau subit 1 dégât #hit# sauf s’il choisit de retirer 1 marqueur vert.",
+            "effect_ENG": "",
             "faction": ["Imperial_Academy"],
             "modifier_func": [
                 [0,"change_stat","force",1]
@@ -1507,6 +1597,7 @@
             "max_per_squad": 1,
             "faction": ["Imperial_Academy"],
             "effect": "Pendant la phase de système, vous pouvez dépenser 2 #ch#. Dans ce cas, chaque vaisseau allié peut verrouiller un vaisseau que vous avez verrouillé.",
+            "effect_ENG": "",
             "add_Data": [0],
             "charge": [2,"+"]
         },
@@ -1519,6 +1610,7 @@
             "modify": false,
             "slot": "Talent",
             "effect": "Tant que vous effectuez une attaque, vous pouvez choisir un autre vaisseau allié à portée 0–1 du défenseur. Dans ce cas, le vaisseau choisi subit 1 dégât #hit# et vous pouvez changer 1 de vos résultats de dé en un résultat #hit#.",
+            "effect_ENG": "",
             "add_Data": [0],
             "charge": [0],
             "points": "*1*",
@@ -1534,6 +1626,7 @@
             "slot": "Modification",
             "points": 2,
             "effect": "Avant d’exécuter une manœuvre de Virage Koiogran à vitesse 1–3, vous pouvez dépenser 1 #ch# pour exécuter cette manœuvre en tant que #Sleft# ou #Sright# de même vitesse à la place, et vice-versa.",
+            "effect_ENG": "",
             "add_Data": [0],
             "charge": [2,"0"],
             "faction": "",
@@ -1551,6 +1644,7 @@
             "charge": [0],
             "points": 2,
             "effect": "Après avoir effectué une manœuvre rouge, vous pouvez dépenser 1 #ch# pour effectuer un tonneau.",
+            "effect_ENG": "",
             "restrictions": [1,"keyword", "TIE",""],
             "faction": ""
         },
@@ -1566,6 +1660,7 @@
             "charge": [0],
             "points": 3,
             "effect": "Lorsqu’un adversaire vous attaque, il peut modifier un résultat #hit# en #crit# . Si vous deviez lancer 2 dés de défense ou moins, vous pouvez lancer 1 dé de défense supplémentaire.",
+            "effect_ENG": "",
             "restrictions": [1,"keyword", "TIE",""],
             "faction": ""
         },
@@ -1581,6 +1676,7 @@
             "slot": "Gunner",
             "max_per_squad": 1,
             "effect": "Après avoir effectué une attaque qui n’est pas une attaque #Barc# , vous pouvez effectuer une attaque bonus #Barc# AFFUTEE.",
+            "effect_ENG": "",
             "faction": ["Pirates_and_Smugglers","Imperial_Academy"]
         },
         {
@@ -1595,6 +1691,7 @@
             "points": 5,
             "slot": "Gunner",
             "effect": "Après avoir effectué une attaque qui a échoué, le défenseur gagne un marqueur d’épuisement.",
+            "effect_ENG": "",
             "faction": ["Imperial_Academy","ISB","Imperial_Elite_Forces"]
         },
 
@@ -1611,6 +1708,7 @@
             "points": 2,
             "max_per_squad": 1,
             "effect": "Mise en Place : débutez en réserve.<br>À la fin de la Mise en place, placez-vous à portée 0 d’un obstacle et au-delà de la portée 3 de tout vaisseau ennemi",
+            "effect_ENG": "",
             "faction": ["Bounty_Hunters_Guild"]
         },
          {
@@ -1625,6 +1723,7 @@
             "points": 3,
             "max_per_squad": 1,
             "effect": "Avant ou après avoir largué ou lancé un engin, vous pouvez effectuer une action d’accélération rouge.",
+            "effect_ENG": "",
             "faction": ["Bounty_Hunters_Guild"]
         },
         {
@@ -1639,6 +1738,7 @@
             "points": 4,
             "max_per_squad": 1,
             "effect": "Tant que vous effectuez une attaque, après avoir lancé les dés d’attaque, vous pouvez nommer un type de marqueur vert. Dans ce cas, gagnez 2 marqueurs ioniques et, pendant cette attaque, le défenseur ne peut pas dépenser de marqueur du type nommé.",
+            "effect_ENG": "",
             "faction": ["Bounty_Hunters_Guild"]
         },
         {
@@ -1653,6 +1753,7 @@
             "points": 4,
             "max_per_squad": 1,
             "effect": "Vous avez la capacité de pilote de chaque autre vaisseau allié qui possède la capacité IG-2000.<br>Après avoir effectué une action #CA#, gagnez 1 marqueur de calcul.",
+            "effect_ENG": "",
             "faction": ["Bounty_Hunters_Guild"],
             "modifier_func": [
                 [0,"add_action", [0,"Cc W"]]
@@ -1671,6 +1772,7 @@
             "points": 4,
             "max_per_squad": 1,
             "effect": "",
+            "effect_ENG": "",
             "faction": ["Bounty_Hunters_Guild"]
         },
  {
@@ -1685,6 +1787,7 @@
             "points": 4,
             "max_per_squad": 1,
             "effect": "Après avoir effectué une attaque principale ratée, si vous n’êtes pas stressé, vous devez recevoir 1 marqueur de stress pour effectuer une attaque principale bonus contre la même cible",
+            "effect_ENG": "",
             "faction": ["Bounty_Hunters_Guild"]
         },
  {
@@ -1696,6 +1799,7 @@
             "slot": "Gunner",
             "points": 6,
             "max_per_squad": 1,
+            "effect_ENG": "",
             "faction": ["Bounty_Hunters_Guild"],
             "effect": "Après avoir défendu, si l’attaquant est dans votre arc de tir, vous pouvez dépenser 1 #ch# . Dans ce cas, lancez 1 dé d’attaque sauf si l’attaquant choisit de retirer 1 marqueur vert. Sur un résultat #hit# ou #crit#, l’attaquant subit 1 dégât #hit#.",
             "add_Data": [0],
@@ -1711,6 +1815,7 @@
             "slot": "Gunner",
             "points": 1,
             "max_per_squad": 1,
+            "effect_ENG": "",
             "faction": ["Bounty_Hunters_Guild"],
             "add_Data": [0],
             "charge": [1,"+"],
@@ -1728,6 +1833,7 @@
             "slot": "Illicit",
             "max_per_squad": 3,
             "effect": "Mise en Place : avant de placer les forces, choisissez un adversaire ; il assigne l'état 'Désigné pour Mourir' à 1 de ses vaisseaux. Il doit l'assigner à un vaisseau limité, si possible.<br>Vous ignorez les restrictions de portée lorsque vous verrouillez le vaisseau qui a l'état Désigné pour Mourir.",
+            "effect_ENG": "",
             "faction": ["Bounty_Hunters_Guild"],
             "modifier_func": [
                 [9,0]
@@ -1743,6 +1849,7 @@
             "points": "*3*",
             "add_Data": [0],
             "charge": [2,"+"],
+            "effect_ENG": "",
             "faction": ["Bounty_Hunters_Guild"],
             "effect": "", 
             "slot": "Talent"
@@ -1760,6 +1867,7 @@
             "add_Data": [0],
             "charge": [2,"0"],
             "slot": "Illicit",
+            "effect_ENG": "",
             "faction": ["Bounty_Hunters_Guild","Hutt_Cartel","Crime_Syndicates"],
             "effect": "Cette attaque peut être effectuée à portée 0.<br>Attaque #Barc#: dépensez 1 #ch#"
            
@@ -1777,6 +1885,7 @@
             "charge": [0],
             "points": "*3*",
             "effect": "Lorsque vous effectuez une attaque principale (Farc), si la portée de l’attaque est 1 et que vous êtes dans le (Farc) du défenseur, vous pouvez modifier l’un de vos résultats en #hit#.",
+            "effect_ENG": "",
             "faction": ["Mandalorian_Clans"]
         },
  {
@@ -1791,6 +1900,7 @@
             "slot": "Crew",
             "max_per_squad": 1,
             "effect": "Après avoir effectué une attaque, si le défenseur a été détruit, tous les vaisseaux alliés à portée 0-2 de vous peuvent retirer un marqueur orange ou rouge.",
+            "effect_ENG": "",
             "faction": ["Mandalorian_Clans"]
         },
  {
@@ -1818,6 +1928,7 @@
             "charge": [0],
             "points": 6,
             "slot": "Crew",
+            "effect_ENG": "",
             "faction": ["Mandalorian_Clans"],
             "effect": "Tant que vous effectuez l'action #TL# vous pouvez choisir uniquement un objet dans votre #Farc# ou votre #Barc# tant que vous effectuez une attaque principale, si le défenseur est dans votre #Farc# ou votre #Barc#, vous pouvez retirer 1 marqueur rouge ou orange du défenseur pour lancer 1 de supplémentaire, pour un maximum de 4.",
             "max_per_squad": 1
@@ -1832,6 +1943,7 @@
             "charge": [0],
             "points": 5,
             "slot": "Crew",
+            "effect_ENG": "",
             "faction": ["Mandalorian_Clans"],
             "effect": "Après qu’un vaisseau allié dans votre #F180# à portée 1-2 est devenu le défenseur, vous pouvez lui transférer 1 marqueur vert. Tant qu'un vaisseau allié dans votre #F180# à portée 1-2 défend, si vous gênez l'attaque, le défenseur lance 1 dé de défense supplémentaire.",
             "max_per_squad": 1
@@ -1846,6 +1958,7 @@
             "charge": [0],
             "points": 5,
             "slot": "Crew",
+            "effect_ENG": "",
             "faction": ["Mandalorian_Clans"],
             "effect": "ACTION : Déployez un Super Commando qui est arrimé avec vous.<br>ACTION : Choisissez un Super Commando à portée 0-3. Il peut alors accélérer, même partiellement.",
             "max_per_squad": 1,
@@ -1865,6 +1978,7 @@
             "slot": "Crew",
             "max_per_squad": 1,
             "effect": "Vous pouvez maintenir 2 verrouillages qui doivent être sur des objets différents. Lorsqu’un vaisseau allié à portée 0-3 est verrouillé par un ennemi, vous pouvez effectuer une action de verrouillage.",
+            "effect_ENG": "",
             "faction": ["Mandalorian_Clans"]
         },
 {
@@ -1878,6 +1992,7 @@
             "charge": [2,"+"],
             "slot": "Gunner",
             "effect": "Après avoir effectué une attaque à portée 1-2 qui a touché, si le défenseur n’a pas de carte de dégât face visible, vous pouvez dépenser 1 ou plusieurs charges. Pour chaque charge dépensée, le défenseur gagne un marqueur de contrainte.",
+            "effect_ENG": "",
             "faction": ["Mandalorian_Clans"],
             "max_per_squad": 1
         },
@@ -1893,6 +2008,7 @@
             "add_Data": [0],
             "charge": [3,"0"],
             "effect": "Tant que vous défendez si l'attaquant est dans votre #Farc# , avant qu'une carte de dégât ne vous soit attribuée face visible, vous pouvez dépenser 1 #ch# pour recevoir cette carte face cachée à la place ou dépenser 2 #ch# pour la défausser.",
+            "effect_ENG": "",
             "faction": ["Mandalorian_Clans"]
             
         },
@@ -1908,6 +2024,7 @@
             "add_Data": [0],
             "charge": [2,"0"],
             "effect": "Pendant la phase de système, vous pouvez dépenser 1#ch# pour verrouiller un objet dans votre #Farc#. Tant que vous effectuez une attaque principale, si vous avez un verrouillage sur le défenseur, ignorez les obstacles au-delà de la portée O qui gênent cette attaque.",
+            "effect_ENG": "",
             "faction": ["Mandalorian_Clans"]
         },
 
@@ -1922,6 +2039,7 @@
             "slot": "Gunner",
             "points": 7,
             "max_per_squad": 1,
+            "effect_ENG": "",
             "faction": ["Pirates_and_Smugglers"],
             "effect": "Après avoir effectué une attaque, vous pouvez dépenser 2#ch# pour effectuer une attaque améliorée bonus depuis un arc de tir qui n’a pas encore été utilisé ce tour.",
             "add_Data": [0],
@@ -1940,6 +2058,7 @@
             "points": 1,
             "max_per_squad": 1,
             "effect": "Pendant la phase de dénouement, vous pouvez choisir 2 améliorations #ill# équipant des vaisseaux alliés à portée 0–2. Dans ce cas, vous pouvez échanger ces améliorations. Fin de Partie : remettez toutes les améliorations #ill# sur leurs vaisseaux d’origine.",
+            "effect_ENG": "",
             "faction": ["Pirates_and_Smugglers"]
         },
 {
@@ -1954,6 +2073,7 @@
             "add_Data": [0],
             "charge":1,
             "effect": "Tant que vous défendez, vous pouvez dépenser 1 #ch#. Dans ce cas, l’attaquant doit relancer tous les dés d’attaque.<br>Si votre charge est dépensée et si vous n’êtes pas protégé, diminuez la difficulté de vos manœuvres #Lbank# et #Rbank#.",
+            "effect_ENG": "",
             "faction": ["Pirates_and_Smugglers"]
         },
  {
@@ -1968,6 +2088,7 @@
             "points": 9,
             "max_per_squad": 1,
             "effect": "Avant de vous engager, vous pouvez effectuer une action #FS# rouge.",
+            "effect_ENG": "",
             "faction": ["Pirates_and_Smugglers"]
         },
   {
@@ -1982,6 +2103,7 @@
             "add_Data": [0],
             "charge": [1,"0"],
             "effect": "Action : dépensez 1 #ch#. Larguez 1 cargaison égarée en utilisant le gabarit 1#straight#.",
+            "effect_ENG": "",
             "faction": ["Pirates_and_Smugglers","Hutt_Cartel","Crime_Syndicates"],
             "restrictions": [1,"base", "Medium", "Large"]
             
@@ -1997,6 +2119,7 @@
             "charge": [0],
             "points": 0,
             "max_per_squad": 1,
+            "effect_ENG": "",
             "faction": ["Pirates_and_Smugglers"],
             "ship": "Scurrg H-6 Bomber",
             "effect": "Retire en emplacement #crew#. Ajoute #tech# et #astromech#. Ajoute 5 points de Loadout et augmente le coût du vaisseau de 1",
@@ -2022,6 +2145,7 @@
             "points": 2,
             "max_per_squad": 1,
             "effect": "Action : lancez 2 dés de défense. Pour chaque résultat #eye# obtenu, gagnez 1 marqueur de concentration. Pour chaque résultat #evd# obtenu, gagnez 1 marqueur d’évasion. Si les deux résultats sont vierges, le joueur adverse choisit concentration ou évasion. Vous gagnez 1 marqueur de ce type.",
+            "effect_ENG": "",
             "faction": ["Pirates_and_Smugglers"]
         },
  {
@@ -2036,6 +2160,7 @@
             "charge": [0],
             "points": 5,
             "effect": "Action : choisissez 2 vaisseaux à portée 1–3 de vous qui sont alliés entre eux. Coordonnez l’un des vaisseaux choisis, puis brouillez l’autre, en ignorant les restrictions de portée.",
+            "effect_ENG": "",
             "faction": ["Pirates_and_Smugglers"]
         },
 
@@ -2051,6 +2176,7 @@
             "add_Data": [0],
             "charge": [0],
             "points": 1,
+            "effect_ENG": "",
             "faction": ["Pirates_and_Smugglers"],
             "effect": "Gagnez 1 autre emplacement #ill#",
             "restrictions": [1,"base", "Medium", "Large"],
@@ -2072,6 +2198,7 @@
             "charge": [0],
             "points": "*3*",
             "effect": "Après avoir traversé un obstacle ou un engin, gagnez 1 marqueur de concentration et retirez un marqueur rouge.",
+            "effect_ENG": "",
             "faction": ["Pirates_and_Smugglers"]
         },
         {
@@ -2085,6 +2212,7 @@
             "charge": [0],
             "points": 0,
             "max_per_squad": 1,
+            "effect_ENG": "",
             "faction": ["Pirates_and_Smugglers", "Resistance"],
             "ship": "YT-1300 Light Freighter",
             "restrictions": [1, "title", "Millenium Falcon",""],
@@ -2101,6 +2229,7 @@
             "modify": false,
             "slot": "Torpedo",
             "points": 10,
+            "effect_ENG": "",
             "faction": "",
             "effect": "4#Farc# portée 2-3, Attaque #TL#: Dépensez 1 #ch#. Changez 1 résultat #hit# en un résultat #crit#.",
             "add_Data": [0],
@@ -2119,6 +2248,7 @@
             "charge": [0],
             "points": 0,
             "max_per_squad": 1,
+            "effect_ENG": "",
             "faction": ["Agents_of_Chaos","Bounty_Hunters_Guild"],
             "ship": "Rogue-class Starfighter",
             "restrictions": [1,"title", "Xanadu Blood",""],
@@ -2141,6 +2271,7 @@
             "charge": [0],
             "points": 0,
             "max_per_squad": 1,
+            "effect_ENG": "",
             "faction": ["Bounty_Hunters_Guild"],
             "ship": "YV-666 Light Freighter",
             "restrictions": [1,"title", "Hound's Tooth",""],
@@ -2163,6 +2294,7 @@
             "charge": [0],
             "points": 0,
             "max_per_squad": 1,
+            "effect_ENG": "",
             "faction": ["Bounty_Hunters_Guild","Agents_of_Chaos","Pirates_and_Smugglers"],
             "ship": "Firespray-class Patrol Craft",
             "restrictions": [1,"title", "Slave 1",""],
@@ -2186,6 +2318,7 @@
             "charge": [0],
             "points": 0,
             "max_per_squad": 1,
+            "effect_ENG": "",
             "faction": ["Pirates_and_Smugglers"],
             "ship": "Firespray-class Patrol Craft",
             "restrictions": [1,"title", "Andrasta",""],
@@ -2209,6 +2342,7 @@
             "charge": [0],
             "points": 0,
             "max_per_squad": 1,
+            "effect_ENG": "",
             "faction": ["Pirates_and_Smugglers"],
             "ship": "YT-2400 Light Freighter",            
             "restrictions": [1,"title", "Outrider",""],
@@ -2230,6 +2364,7 @@
             "charge": [0],
             "points": 0,
             "max_per_squad": 1,
+            "effect_ENG": "",
             "faction": ["Bounty_Hunters_Guild"],
             "ship": "G-1A Starfighter",
             "restrictions": [1,"title", "Mist Hunter",""],
@@ -2247,6 +2382,7 @@
             "charge": [0],
             "points": 0,
             "max_per_squad": 1,
+            "effect_ENG": "",
             "faction": ["Bounty_Hunters_Guild"],
             "ship": "JumpMaster 5000",           
             "restrictions": [1,"title", "Punishing One",""],
@@ -2269,6 +2405,7 @@
             "charge": [0],
             "points": 0,
             "max_per_squad": 8,
+            "effect_ENG": "",
             "faction": ["Bounty_Hunters_Guild"],
             "ship": "Aggressor Assault Fighter",
             "restrictions": [1,"title", "IG-2000",""],
@@ -2290,6 +2427,7 @@
             "charge": [0],
             "points": 0,
             "max_per_squad": 1,
+            "effect_ENG": "",
             "faction": ["Mandalorian_Clans"],
             "ship": "Naboo Royal N-1 Starfighter",
             "restrictions": [1,"title", "Din Djarin's N1",""],
@@ -2314,6 +2452,7 @@
             "charge": [0],
             "points": 0,
             "max_per_squad": 1,
+            "effect_ENG": "",
             "faction": ["Mandalorian_Clans","Bounty_Hunters_Guild"],
             "ship": "ST-70 Assault Ship",
             "restrictions": [1,"title", "Razor Crest",""],
@@ -2331,6 +2470,7 @@
             "charge": [0],
             "points": 0,
             "max_per_squad": 1,
+            "effect_ENG": "",
             "faction": ["Rebel_Alliance","Pirates_and_Smugglers"],
             "ship": "HWK-290 Light Freighter",
             "restrictions": [1,"title", "Moldy Crow",""],
@@ -2352,6 +2492,7 @@
             "add_Data": [0],
             "charge": [0],
             "points": 4,
+            "effect_ENG": "",
             "faction": "",
             "effect": "Pendant la phase de système, si vous êtes censé larguer ou lancer une bombe, vous pouvez la lancer en utilisant le gabarit 5#straight# à la place."
         },
@@ -2529,7 +2670,7 @@
             "charge": [0],
             "points": 0,
             "faction": ["Agents_of_Chaos"],
-            "effect": "",
+            "effect": "ACTION : Si vous êtes à portée 0-1 d'un élément de scénario, vous pouvez le déplacer en utilisant le gabarit 1 #straight#.",
             "effect_ENG": ""
         },
         {
@@ -3146,9 +3287,10 @@
 "charge": [0],
 "points": 0,
 "max_per_squad": 1,
+"effect_ENG": "",
 "faction": ["Phoenix_Cell"],
 "ship": "TIE/ln Fighter",
-"effect": "",
+"effect": "Ajoute un emplacement #ill#.",
 "restrictions": [1,"title", "Sabine's Masterpiece",""],
 "modifier_func": [
     [2,"Illicit"]        
@@ -3166,9 +3308,10 @@
 "charge": [0],
 "points": 0,
 "max_per_squad": 1,
+"effect_ENG": "",
 "faction": ["Resistance"],
 "ship": "T-70 X-Wing",
-"effect": "",
+"effect": "Ajoute 1 emplacement #tur#.",
 "restrictions": [1,"title", "Black One",""],
 "modifier_func": [
     [2,"Turret"]        
@@ -3186,6 +3329,7 @@
 "charge": [0],
 "points": 0,
 "max_per_squad": 1,
+"effect_ENG": "",
 "faction": ["Phoenix_Cell"],
 "ship": "Attack Shuttle",
 "effect": "",
@@ -3203,6 +3347,7 @@
 "charge": [0],
 "points": 0,
 "max_per_squad": 1,
+"effect_ENG": "",
 "faction": ["Phoenix_Cell"],
 "ship": "Sheathipede-Class Shuttle",
 "effect": "",
@@ -3220,9 +3365,10 @@
 "charge": [0],
 "points": 0,
 "max_per_squad": 1,
+"effect_ENG": "",
 "faction": ["Phoenix_Cell"],
 "ship": "YT-2400 Light Freighter",
-"effect": "",
+"effect": "Ajoute 1 emplacement #ill#, retire un emplacement #mod#.",
 "restrictions": [1,"title", "Sato's Hammer",""]
 
 },
@@ -3237,9 +3383,10 @@
 "charge": [0],
 "points": 0,
 "max_per_squad": 1,
+"effect_ENG": "",
 "faction": ["Phoenix_Cell"],
 "ship": "YT-2400 Light Freighter",
-"effect": "",
+"effect": "Ajoute 1 emplacement #gunner#, retire un emplacement #mod#.",
 "restrictions": [1,"title", "Mighty Oak Apocalypse",""]
 
 },
@@ -3254,12 +3401,13 @@
 "charge": [0],
 "points": 0,
 "max_per_squad": 1,
+"effect_ENG": "",
 "faction": ["Phoenix_Cell"],
 "ship": "Gauntlet Fighter",
-"effect": "",
+"effect": "Retire la capacité 'Troop Bay'. Ajoute un emplacement #crew#.",
 "restrictions": [1,"title", "Nightbrother",""],
 "modifier_func": [
-    [2,"Turret"]        
+      
 ]
 },
 {
@@ -3273,6 +3421,7 @@
 "charge": [0],
 "points": 0,
 "max_per_squad": 1,
+"effect_ENG": "",
 "faction": ["Phoenix_Cell","New_Republic"],
 "ship": "VCX-100 Light Freighter",
 "effect": "",
@@ -3290,6 +3439,7 @@
 "charge": [0],
 "points": 0,
 "max_per_squad": 1,
+"effect_ENG": "",
 "faction": ["C.I.S"],
 "ship": "Belbullab-22 Starfighter",
 "effect": "",
@@ -3315,7 +3465,7 @@
     "effect_ENG": "Add the 'Docking Ship' chassis ability. You may dock an Escape Craft to your ship",
     "restrictions":[1,"ship","YT-1300 Light Freighter",""],
     "modifier_func": [
-        [0, "change_chassis", 16]
+        [0, "changeChassis", 16]
     ]
 },
 {
@@ -3332,6 +3482,7 @@
     "add_Data": [0],
     "charge": [3,"0"],
     "effect": "Attaque (#TL#) portée 2-3 #Farc# 3 dés : dépensez 1 #ch#. Si cette attaque touche, dépensez 1 résultat #hit# ou #crit# pour faire subir 1 dégât #hit# au défenseur. Tous les résultats #hit#/#crit# restants infligent des marqueurs ioniques au lieu des dégâts.",
+    "effect_ENG": "",
     "faction": ""
 },
 {
@@ -3348,6 +3499,7 @@
     "add_Data": [0],
     "charge": [2,"0"],
     "effect": "Attaque (#TL#) Portée 2-3 #Farc# 4 dés: dépensez 1 #ch#. Après que vous avez déclaré le défenseur, il peut choisir de subir 1 dégât #hit#. Dans ce cas, sautez les étapes « Dés d’attaque » et « Dés de défense » et considérez que l’attaque a touché.",
+    "effect_ENG": "",
     "faction": ""
 },
 {
@@ -3364,6 +3516,7 @@
     "add_Data": [0],
     "charge": [2,"0"],
     "effect": "Attaque (#TL#) Portée 1-2 #Farc# 3 dés. Après avoir résolu l’attaque, vous pouvez choisir un autre vaisseau à portée 0-1 du défenseur. Lancez 3 dés d’attaque : assignez autant de marqueurs de contrainte que de résultats #eye#, puis le vaisseau ciblé doit se défendre en considérant les autres résultats comme un jet d’attaque.",
+    "effect_ENG": "",
     "faction": ""
 },
 {
@@ -3380,6 +3533,7 @@
     "charge": [2,"0"],
     "points": 3,
     "effect": "Attaque (#CA#, #FS# ou #TL#) Portée 1-3 #Farc# 3dés: dépensez 1 #ch#. Si cette attaque touche, chaque vaisseau allié à portée 1–3 du défenseur peut verrouiller le défenseur. Puis annulez tous les résultats des dés.",
+    "effect_ENG": "",
     "faction": ""
 },
 {
@@ -3395,6 +3549,7 @@
     "charge": [1,"0"],
     "points": 5,
     "effect": "Attaque (#FS#) Portée 1-2 #Farc# 3 dés. Si l’attaque touche, annulez tous les dés. Puis le défenseur reçoit une carte de dégât face cachée et marqueur de Rayon Tracteur.",
+    "effect_ENG": "",
     "faction": ""
 },
 {
@@ -3411,6 +3566,7 @@
     "add_Data": [0],
     "charge": [2,"0"],
     "effect": "Attaque (#TL#) 3dés #Farc# portée 2-3: dépensez 1 Ch. Lors de l’étape « Neutraliser les résultats », les résultats #crit# sont annulés avant les résultats #hit#. Après que cette attaque a touché, le défenseur perd 1 bouclier.",
+    "effect_ENG": "",
     "faction": ""
 },
 {
@@ -3427,6 +3583,7 @@
     "add_Data": [0],
     "charge": [1,"0"],
     "effect": "Attaque (#TL#) : Portée 1 #Farc# 4 dés: dépensez 1 #ch#. ATTAQUE PRECISE.",
+    "effect_ENG": "",
     "faction": ""
 },
  {
@@ -3443,6 +3600,7 @@
     "add_Data": [0],
     "charge": [3,"0"],
     "effect": "Attaque (lock) : Portée 2-3 #Farc# 3 dés. dépensez 1 #ch#. Après que cette attaque a touché, chaque vaisseau à portée 0–1 du défenseur expose 1 de ses cartes de dégât.",
+    "effect_ENG": "",
     "faction": ""
 },
 
@@ -3461,6 +3619,7 @@
     "add_Data": [0],
     "charge": [1,"0"],
     "effect": "Attaque (#TL#) Portée 1-2 #bulls# 5 dés: dépensez 1 Ch.",
+    "effect_ENG": "",
     "faction": ""
 },
 {
@@ -3477,6 +3636,7 @@
     "attack": ["F",3],
     "range": [1,2],
     "effect": "Portée 1-2 #Farc# 3 dés Attaque : si cette attaque touche, tous les résultats #hit#/#crit# infligent des marqueurs de brouillage au lieu des dégâts.",
+    "effect_ENG": "",
     "faction": ""
 },
 {
@@ -3493,6 +3653,7 @@
     "attack": ["F",3],
     "range": [1,3],
     "effect": "Portée 1-3 #Farc# 3 dés, Attaque : si cette attaque touche, tous les résultats #hit#/#crit# infligent des marqueurs de rayon tracteur au lieu des dégâts.",
+    "effect_ENG": "",
     "faction": ""
 },
 {
@@ -3509,6 +3670,7 @@
     "attack": ["F",3],
     "range": [1,3],
     "effect": "Portée 1-3 #Farc# 3 dés Attaque : si cette attaque touche, dépensez 1 résultat #hit# ou #crit# pour faire subir 1 dégât au défenseur. Tous les résultats #hit#/#crit# restants infligent des marqueurs ioniques au lieu des dégâts.",
+    "effect_ENG": "",
     "faction": ""
 },
 {
@@ -3525,6 +3687,7 @@
     "attack": ["BULL",4],
     "range": [2,3],
     "effect": "Portée 2-3 #Farc# 4 dés. Si le défenseur n’est pas dans le #bulls#, alors l’attaque devient IMPRECISE.",
+    "effect_ENG": "",
     "faction": ""
 },
 {
@@ -3539,6 +3702,7 @@
     "charge": [0],
     "points": "*4*",
     "effect": "Lorsque vous attaquez, si l'attaque qui est obstruée par un obstacle ou si la cible est à portée 0 d'un obstacle, lancez 1 dé d’attaque supplémentaire.",
+    "effect_ENG": "",
     "faction": ""
 },
 {
@@ -3568,6 +3732,7 @@
     "slot": "Talent",
     "points": "*5*",
     "effect": "Lorsque vous défendez contre une attaque à portée 3 ou contre une attaque de #tur#, vous pouvez dépenser 1#ch# pour améliorer un dé de défense.",
+    "effect_ENG": "",
     "faction": "",
     "add_Data": [0],
     "charge": [2,"+"],
@@ -3586,6 +3751,7 @@
     "points": "*5*",
     "max_per_squad": 1,
     "effect": "Tant que vous coordonnez, le vaisseau que vous avez choisi peut effectuer une action seulement si celle-ci est également dans votre barre d’action.<br>Ajoute l'action (CO)",
+    "effect_ENG": "",
     "faction": "",
     "modifier_func": [
         [0, "add_action", [0,"Co R"]]
@@ -3620,6 +3786,7 @@
     "charge": [0],
     "points": "*5*",
     "effect": "Tant que vous effectuez une attaque #Farc#, si vous n’êtes pas dans l’arc de tir du défenseur, il lance 1 dé de défense en moins.",
+    "effect_ENG": "",
     "faction": ""
 },
 {
@@ -5247,7 +5414,7 @@
              "charge": [1,"0"],
              "points": 0,
              "effect": "",
-             "effect_ENG": "After you perform an action, you may spend 1#ch#. If you do, you may perform a #BO# action, or #EV# action. Add 1 #tech# slot.",
+             "effect_ENG": "After you perform an action, you may spend 1#ch#. If you do, you may perform a #BO# action, or #EV# action.",
              "faction": ["Imperial_Remnants"]
                          
              
@@ -5609,7 +5776,7 @@
              "charge": [0],
              "points": 3,
              "effect": "Tant que vous avez 2 marqueurs de stress ou moins, vous pouvez effectuer des actions #RE#, #CO# et #JA#.<br>Tant que vous effectuez une action blanche #RE#, #CO# ou #JA#, si vous êtes stressé, gagnez 1 jeton épuisement.",
-             "effect_ENG": "",
+             "effect_ENG": "??",
              "faction": ["Resistance"]
                                      
              
@@ -5626,7 +5793,7 @@
              "charge": [0],
              "points": 3,
              "effect": "Après avoir entièrement exécuté une manœuvre bleue, retirez tous vos marqueurs de stress.",
-             "effect_ENG": "",
+             "effect_ENG": "??",
              "faction": ["Resistance"]
                                      
              
@@ -5644,7 +5811,7 @@
              "charge": [0],
              "points": 10,
              "effect": "After a friendly ship reveals a non-0#stop# maneuver, you may spend 1 #fo#. If you do, the chosen ship reduces the difficulty of that maneuver.",
-             "effect_ENG": "",
+             "effect_ENG": "??",
              "faction": ["Resistance","New_Republic"],
              "modifier_func": [
                 [0,"change_stat","force",1]
@@ -5664,7 +5831,7 @@
              "charge": [0],
              "points": 5,
              "effect": "Before you engage, you may choose another friendly ship at range 1-2. You may transfer to that ship 1 token of a type that ship does not have. That ship may transfer 1 token to you of a type you do not have.",
-             "effect_ENG": "",
+            "effect_ENG": "??",
              "faction": ["Resistance"]
                                      
              

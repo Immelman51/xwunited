@@ -3511,6 +3511,7 @@
             "ability": "Lorsque vous défendez ou attaquez, si vous êtes stressé, vous pouvez dépenser 1 #fo# pour modifier jusqu'à 2 de vos résultats #eye# en #hit# ou #evd#.",
             "ability_ENG": "While you defend or perform an attack, if you are stressed, you may spend 1 #fo# to change up to 2 of your #eye# results to #hit# or #evd# results.",
             "slots": [
+                "Special",
                 "Title",
                 "Talent",
                 "Force"
@@ -3565,11 +3566,14 @@
             "ability_ENG": "At the start of engagement phase, you may perform a Red #BR# action.",
             "slots": [
                 "Title",
-                "Talent"
+                "Talent",
+                "Illicit"
                                 
             ],
             "modifier_func": [
-            	[1,"Title",1,200]
+            	[1,"Title",1,200],
+                [1,"Modification",1,200]
+
                     ]
         },
         {
@@ -3590,11 +3594,14 @@
             "ability_ENG": "After you defend against a Range 1 attack, the attacker gains 1 strain token.",
             "slots": [
                 "Title" ,
-                "Talent"
+                "Talent",
+                "Illicit"
                                
             ],
             "modifier_func": [
-            	[1,"Title",1,200]
+            	[1,"Title",1,200],
+                [1,"Modification",1,200]
+
                     ]
         },
         {
@@ -3616,11 +3623,13 @@
             "slots": [
                 "Title" ,
                 "Talent",
-                "Talent"
+                "Talent",
+                "Gunner"
                                
             ],
             "modifier_func": [
-            	[1,"Title",1,201]
+            	[1,"Title",1,201],
+                [1,"Modification",1,201]
                     ]
         },
         {
@@ -3642,11 +3651,14 @@
             "slots": [
                 "Title",
                 "Talent",
-                "Talent"
+                "Talent",
+                "Gunner"
                                 
             ],
             "modifier_func": [
-            	[1,"Title",1,201]
+            	[1,"Title",1,201],
+                [1,"Modification",1,201]
+
                     ]
         },
         {
@@ -10976,7 +10988,7 @@
             "shipId": 1,
             "skill": 4,
             "points": 5,                        
-            "ability": "",
+            "ability": "Tant qu'un vaisseau ennemi à portée 1-3 défend, avant de lancer les dés d'attaque vous pouvez dépenser 1 #ch# et choisir un vaisseau allié à portée 0-1 du défenseur. Dans ce cas, les dés de défense ne peuvent pas être modifiés lors de cette attaque et le vaisseau allié choisi gagne 1 marqueur de contrainte.",
             "ability_ENG": "While an enemy ship at range 1-3 defends, before attack dice are rolled, you may spend 1 charge and choose a friendly ship at range 0-1 of the defender. If you do, defense dice cannot be modified during this attack and the chosen friendly ship gains 1 strain token.",
             "slots": [       
             "Title",
@@ -11001,7 +11013,7 @@
             "shipId": 1,
             "skill": 4,
             "points": 5,                        
-            "ability": "",
+            "ability": "Avant de vous engager, vous pouvez choisir 1 vaisseau ennemi dans votre #Farc# à portée 0-1. Dans ce cas, il gagne 1 marqueur d'épuisement ou de contrainte (vous choisissez) à moins qu'il ne choisisse de retirer 1 marqueur vert.",
             "ability_ENG": "Before you engage, you may choose 1 enemy ship in your #Farc# at range 0-1. If you do, that ship gains 1 deplete or strain token of your choice unless it chooses to remove 1 green token.",
             "slots": [       
             "Title",
@@ -11026,7 +11038,7 @@
             "shipId": 1,
             "skill": 3,
             "points": 5,                        
-            "ability": "",
+            "ability": "Après avoir entièrement exécuté une manœuvre, vous pouvez verrouiller un vaisseau ennemi situé dans votre #bulls#.",
             "ability_ENG": "After you fully execute a maneuver, you may acquire a lock on an enemy ship in your #bulls#",
             "slots": [       
             "Title",
@@ -11051,8 +11063,8 @@
             "shipId": 1,
             "skill": 3,
             "points": 5,                        
-            "ability": "",
-            "ability_ENG": "While you have 2 or fewer stress tokens, you can perform white actions, even while stressed.<br>After you gain a stress token, you may perform a white action, if able.",
+            "ability": "Tant que vous avez 2 jetons stress ou moins, vous pouvez effectuer des actions blanches.<br>Après avoir reçu un jeton stress, vous pouvez effectuer une action blanche, si possible.",
+            "ability_ENG": "While you have 2 or fewer stress tokens, you can perform white actions.<br>After you gain a stress token, you may perform a white action, if able.",
             "slots": [       
             "Title",
             "Talent",
@@ -11093,7 +11105,7 @@
             "shipId": 95,
             "skill": 3,
             "points": 6,                        
-            "ability": "",
+            "ability": "Après avoir largué un lancé une bombe, vous pouvez effectuer une action #CO#.",
             "ability_ENG": "After you drop or launch a bomb, you may perform a #CO# action.",
             "slots": [   
                 "Talent"    
@@ -11112,7 +11124,7 @@
             "shipId": 95,
             "skill": 4,
             "points": 6,                        
-            "ability": "",
+            "ability": "Pendant la phase système, vous pouvez recevoir un jeton occultation. Dans ce cas, vous ne pouvez pas vous désocculter ce tour.",
             "ability_ENG": "During System Phase, you may receive a Cloak token. If you do, you cannot decloak this round.",
             "slots": [   
                 "Talent"    
@@ -11131,8 +11143,8 @@
             "shipId": 95,
             "skill": 5,
             "points": 8,                        
-            "ability": "",
-            "ability_ENG": "Before you activate, you may spend 1 Force. If you do, your opponent has to guess your maneuver.<br>If his guess is right, you must change your maneuver's dial and lose 1 force.<br>If his guess is wrong, an enemy ship at range 0/2 gains 1 strain token and you recover 1 force.",
+            "ability": "Avant de vous activer, vous pouvez dépenser 1 #fo# . Dans ce cas, votre adversaire doit deviner votre manoeuvre.<br>Si sa déduction est correcte, vous devez changer votre manoeuvre et perdre 1 #fo#.<br>Si sa déduction est fausse, un vaisseau ennemi à portée 0-2 reçoit un jeton contrainte et récupérez 1 #fo#.",
+            "ability_ENG": "Before you activate, you may spend 1 #fo#. If you do, your opponent has to guess your maneuver.<br>If his guess is right, you must change your maneuver's dial and lose 1 #fo# .<br>If his guess is wrong, an enemy ship at range 0-2 gains 1 strain token and you recover 1 #fo#.",
             "slots": [   
                 "Talent",
                 "Force"    
@@ -11151,7 +11163,7 @@
             "shipId": 6,
             "skill": 5,
             "points": 8,                        
-            "ability": "",
+            "ability": "Tant que vous n'êtes pas stressé, vous pouvez relancer 1 dé chaque fois que vous attaquez ou défendez.",
             "ability_ENG": "While you are not stressed, you may reroll 1 die each time you attack or defend.",
             "slots": [   
                 "Talent",
@@ -11171,7 +11183,7 @@
             "shipId": 6,
             "skill": 5,
             "points": 8,                        
-            "ability": "",
+            "ability": "Lorsque vous vous activez, vous pouvez exposer 1 carte de dégat pour récupérer 1 #ch# sur l'une de vos amélioration #mod#.",
             "ability_ENG": "During your activation, you may expose 1 damage card to recover 1 charge on one of your #mod# upgrade.",
             "slots": [   
                 "Talent",
@@ -11191,7 +11203,7 @@
             "shipId": 6,
             "skill": 5,
             "points": 7,                        
-            "ability": "",
+            "ability": "Lorsque vous défendez, si vous n'êtes pas dans le #Farc# de votre attaquant, vous pouvez relancer vos résultats vierges.",
             "ability_ENG": "While you defend, if you are not in the attacker's #Farc#, you may reroll your blank results.",
             "slots": [   
                 "Talent",
@@ -11211,7 +11223,7 @@
             "shipId": 6,
             "skill": 5,
             "points": 7,                        
-            "ability": "",
+            "ability": "Lorsque vous attaquez, vous pouvez dépenser 1 #ch#. Dans ce cas, améliorez 1 de vos dés.",
             "ability_ENG": "While you attack, you may spend 1 charge. If you do, upgrade 1 of you die.",
             "slots": [   
                 "Talent",
@@ -11251,8 +11263,8 @@
             "shipId": 96,
             "skill": 4,
             "points": 6,                        
-            "ability": "",
-            "ability_ENG": "After you attack, if your overdrive thrusters ability is available, you may perform a #BR# or #BO# action using your overdrive thrusters.",
+            "ability": "Après avoir attaqué, vous pouvez effectuer une action #BR# ou #BO# en utilisant 'Surcharge des Propulseurs'.",
+            "ability_ENG": "After you attack, you may perform a #BR# or #BO# action using your overdrive thrusters.",
             "slots": [   
                 "Talent",
                 "Force"   
@@ -11271,8 +11283,8 @@
             "shipId": 96,
             "skill": 4,
             "points": 6,                        
-            "ability": "",
-            "ability_ENG": "Before you activate, you may spend 1 force. If you do, you may look an enemy's dial at range 1-2.",
+            "ability": "Avant de vous activer, vous pouvez dépenser 1 #fo# . Dans ce cas, vous pouvez regarder le cadran d'un vaisseau ennemi à portée 1-2.",
+            "ability_ENG": "Before you activate, you may spend 1 force. If you do, you may look an enemy ship's dial at range 1-2.",
             "slots": [   
                 "Talent",
                 "Force"   
@@ -11291,8 +11303,8 @@
             "shipId": 96,
             "skill": 4,
             "points": 6,                        
-            "ability": "",
-            "ability_ENG": "While you use your overdrive thruster ability, you may use 1 force to ignore obstacles. Then, if you completely or partially moved through an obstacle, gain 1 evade token.",
+            "ability": "Lorsque vous utilisez votre capacité 'Surcharge des Propulseurs', vous pouvez dépenser 1 #fo# pour ignorer les obstacles. Puis, si vous avez effectué complètement ou partiellement une manoeuvre à travers un obstacle, recevez 1 jeton évasion.",
+            "ability_ENG": "While you use your overdrive thruster ability, you may spend 1 #fo# to ignore obstacles. Then, if you completely or partially moved through an obstacle, gain 1 evade token.",
             "slots": [   
                 "Talent",
                 "Force"   
@@ -11330,7 +11342,7 @@
             "shipId": 81,
             "skill": 1,
             "points": 4,                        
-            "ability": "",
+            "ability": "Lorsque vous devriez recevoir votre 2ème carte de dégat, recevez à la place un jeton désarmement. Si votre charge est active, votre adversaire reçoit les points de scenario comme si vous étiez détruit, puis retournez votre charge.",
             "ability_ENG": "When you would take your second damage card, gain 1 disarm token instead. If your charge is active, your opponent gains scenario points as if you were destroyed, then flip your charge.",
             "slots": [   
 
@@ -11349,7 +11361,7 @@
             "shipId": 81,
             "skill": 4,
             "points": 4,                        
-            "ability": "",
+            "ability": "Lorsque vous attaquez, après que les dés de défense ont été lancés, vous pouvez recevoir un jeton contrainte. Dans ce cas, les dés de défense ne peuvent pas être modifiés.",
             "ability_ENG": "While you attack, after Defense dice are rolled, you may gain a Strain Token. If you do, defense dice cannot be modified.",
             "slots": [   
                 "Talent"
@@ -11368,7 +11380,7 @@
             "shipId": 81,
             "skill": 5,
             "points": 3,                        
-            "ability": "",
+            "ability": "Après avoir effectué une attaque à portée 0, vous pouvez exposer une carte de dégat du défenseur.",
             "ability_ENG": "After you perform an attack at range 0, you may expose a damage card on the defender.",
             "slots": [   
                 "Talent",
@@ -11388,7 +11400,7 @@
             "shipId": 81,
             "skill": 2,
             "points": 3,                        
-            "ability": "",
+            "ability": "Après avoir exécuté une manoeuvre 0#stop#, vous pouvez vérouiller un vaisseau à portée 0-3.",
             "ability_ENG": "After you execute a 0 #stop# maneuver, you may acquire a lock on a ship at range 0-3.",
             "slots": [   
             ]   
@@ -11406,8 +11418,8 @@
             "shipId": 97,
             "skill": 4,
             "points": 8,                        
-            "ability": "",
-            "ability_ENG": "After you completely execute a maneuver, you may deploy Super-Commandos docked with you.",
+            "ability": "Après avoir complètement excécuté une manoeuvre, vous pouvez déployer une Commando Team arrimée avec vous.",
+            "ability_ENG": "After you completely execute a maneuver, you may deploy a Commando Team docked with you.",
             "slots": [   
                 "Talent",
                 "Talent"
@@ -11426,7 +11438,7 @@
             "shipId": 97,
             "skill": 3,
             "points": 7,                        
-            "ability": "",
+            "ability": "Lorsque vous effectuez une attaque bonus, considérez la comme une attaque PRECISE.",
             "ability_ENG": "When you perform a bonus attack, consider it as a SHARP attack.",
             "slots": [   
                 "Talent"
@@ -11445,8 +11457,8 @@
             "shipId": 97,
             "skill": 2,
             "points": 7,                        
-            "ability": "",
-            "ability_ENG": "While a friendly ship at range 1-2 defends, if the attacker is in your firing arc, you may spend 1 #ch#. If you do, the friendly ship defending may reroll up to 2 blank results.",
+            "ability": "Lorsqu'un vaisseau allié défend à portée 1-2, si l'attaquant est dans votre arc de tir, vous pouvez dépenser 1 #ch#. Dans ce cas, ce vaisseau allié peut relancer jusqu'à 2 de ces résultats verges.",
+            "ability_ENG": "While a friendly ship at range 1-2 defends, if the attacker is in your firing arc, you may spend 1 #ch#. If you do, this friendly ship may reroll up to 2 blank results.",
             "slots": [   
                 "Talent"
             ]   
@@ -11465,7 +11477,7 @@
             "skill": 4,
             "points": 6,                        
             "ability": "Après avoir effectué une action #BR# ou #BO#, vous pouvez changer de configuration.",
-            "ability_ENG": "",
+            "ability_ENG": "After you perform a #BR# or #BO# action, you may change your ship configuration.",
             "slots": [   
                 "Talent"
             ]   
@@ -11483,7 +11495,7 @@
             "shipId": 0,
             "skill": 2,
             "points": 7,                        
-            "ability": "",
+            "ability": "Avant de vous activer, si vous êtes concentré, vous pouvez effectuer une action.",
             "ability_ENG": "Before you activate, if you are focused, you may perform an action.",
             "slots": [   
                 "Talent"
@@ -11502,7 +11514,7 @@
             "shipId": 0,
             "skill": 2,
             "points": 6,                        
-            "ability": "",
+            "ability": "Après avoir effectué une action #BR# ou BO#, vous pouvez recevoir un jeton évasion.",
             "ability_ENG": "After you perform a #BR# or #BO# action, you may receive an evade token.",
             "slots": [   
                 "Talent"
@@ -11521,7 +11533,7 @@
             "shipId": 0,
             "skill": 3,
             "points": 7,                        
-            "ability": "",
+            "ability": "Lorsquun vaisseau allié à portée 0-2 défend, l'attaquant ne peut pas relancer plus d'un seul dé d'attaque.",
             "ability_ENG": "While a friendly ship at range 0-2 defends, the attacker cannot reroll more than 1 attack die.",
             "slots": [   
                 "Talent"
@@ -11540,7 +11552,7 @@
             "shipId": 12,
             "skill": 5,
             "points": 4,                        
-            "ability": "",
+            "ability": "Après avoir effectué une attaque, vous pouvez choisir un vaisseau allié à portée 1. Ce vaisseau peut effectuer une action, en la considérant rouge.",
             "ability_ENG": "After you perform an attack, you may choose 1 friendly ship at range 1. That ship may perform an action, treating it as red.",
             "slots": [   
                 "Talent",
@@ -11560,7 +11572,7 @@
             "shipId": 12,
             "skill": 4,
             "points": 4,                        
-            "ability": "",
+            "ability": "Lorsque vous effectuez une attaque principale, s'il y a au moins un autre vaisseau allié à portée 0-1 du défenseur, vous pouvez lancer 1 dé d'attaque supplémentaire",
             "ability_ENG": "While you perform a primary attack, if there is at least 1 other friendly ship at range 0-1 of the defender, you may roll 1 additional attack die.",
             "slots": [   
                 "Talent"
@@ -11579,7 +11591,7 @@
             "shipId": 12,
             "skill": 3,
             "points": 3,                        
-            "ability": "",
+            "ability": "Lorsque vous effectuez une attaque principale, vous pouvez subir un dégat #hit#. Dans ce cas, l'attaque devient PLUS PRECISE.",
             "ability_ENG": "While you perform a primary attack, you may suffer a #hit# damage. If you do, the attack is MORE PRECISE.",
             "slots": [   
                 "Talent"
@@ -11598,8 +11610,8 @@
             "shipId": 12,
             "skill": 1,
             "points": 3,                        
-            "ability": "",
-            "ability_ENG": "When you are destroyed, each ship at range 0-1 take 1 damage.",
+            "ability": "Lorsque vous êtes détruit, chaque vaisseau à portée 0-1 reçoit 1 dégat #hit#.",
+            "ability_ENG": "When you are destroyed, each ship at range 0-1 take 1 #hit# damage.",
             "slots": [   
                 "Talent"
             ]   
@@ -11617,7 +11629,7 @@
             "shipId": 36,
             "skill": 4,
             "points": 9,                        
-            "ability": "",
+            "ability": "Tant que vous effectuez une attaque principale, si vous êtes endommagé, vous pouvez lancer 1 dé d’attaque supplémentaire.",
             "ability_ENG": "While you perform a primary attack, if you are damaged, you may roll 1 additional attack die.",
             "slots": [   
                 "Talent"
@@ -11636,7 +11648,7 @@
             "shipId": 36,
             "skill": 3,
             "points": 8,                        
-            "ability": "",
+            "ability": "Après qu’un vaisseau allié à portée 0-1 est devenu le défenseur, vous pouvez dépenser 1 marqueur de renforcement. Dans ce cas, le vaisseau défenseur gagne 1 marqueur d’évasion.",
             "ability_ENG": "After a friendly ship at range 0-1 becomes the defender, you may spend 1 reinforce token. If you do, that ship gains 1 evade token.",
             "slots": [   
                 "Talent"
@@ -11655,7 +11667,7 @@
             "shipId": 36,
             "skill": 3,
             "points": 8,                        
-            "ability": "",
+            "ability": "Lorsque vous révélez une manoeuvre 0#stop#, vous pouvez vous renforcer.",
             "ability_ENG": "When you reveal a 0 #stop# maneuver, you may reinforce.",
             "slots": [   
                 "Talent"
@@ -11674,7 +11686,7 @@
             "shipId": 68,
             "skill": 2,
             "points": 7,                        
-            "ability": "",
+            "ability": "Lorsqu'un vaisseau ennemi dans votre arc de tir attaque à portée 1-2, vous pouvez dépenser 1 de vos #ch# <em>'Convergence des Tirs'</em>. Dans ce cas, l'attaque devient MOINS PRECISE.",
             "ability_ENG": "When an enemy ship in your firing arc is attacking at range 1-2, you can spend 1 of your <em>'Fire Convergence'</em> charge. If you do, the attack becomes LESS PRECISE.",
             "slots": [   
                 "Talent"
@@ -11693,7 +11705,7 @@
             "shipId": 68,
             "skill": 2,
             "points": 7,                        
-            "ability": "",
+            "ability": "Après avoir entièrement effectué une manoeuvre blanche, vous pouvez dépenser 1 de vos #ch# <em>'Convergence des Tirs'</em> pour vous enlever 1 jeton stress.",
             "ability_ENG": "After you completely excute a white maneuver, you can spend 1 of your <em>'Fire Convergence'</em> charge to remove a stress token from you.",
             "slots": [   
                 "Talent"
@@ -11712,7 +11724,7 @@
             "shipId": 68,
             "skill": 2,
             "points": 7,                        
-            "ability": "",
+            "ability": "Après avoir effectué une action #FO#, vous pouvez transférer 1 de vos jetons concentration à un vaisseau allé à portée 1-2.",
             "ability_ENG": "After you perform a #FO# action, you may transfer 1 of your focus tokens to a friendly ship at range 1-2.",
             "slots": [   
                 "Talent"
@@ -11726,15 +11738,16 @@
             "modify": true,
             "faction": "Partisans",
             "title":["Stinger Mantis"],
-            "ship": "LAAT/i Gunship",
+            "ship": "T6 Shuttle",
             "charge":[0],
             "force": 0,
-            "shipId": 68,
+            "shipId": 82,
             "skill": 4,
             "points": 10,                        
-            "ability": "",
+            "ability": "Après avoir effectué une action, vous pouvez effectuer une action de scénario gratuite en la considérant rouge.",
             "ability_ENG": "After you perform an action, you may perform a free scenario action treating it as a red action.",
-            "slots": [   
+            "slots": [ 
+                "Title",  
                 "Talent"
             ],
             "modifier_func": [
@@ -11750,15 +11763,16 @@
             "modify": true,
             "faction": "Partisans",
             "title":["Stinger Mantis"],
-            "ship": "LAAT/i Gunship",
+            "ship": "T6 Shuttle",
             "charge":[0],
             "force": 1,
-            "shipId": 68,
+            "shipId": 82,
             "skill": 2,
             "points": 11,                        
-            "ability": "",
+            "ability": "Lorsque vous obstruez une attaque, les vaisseaux alliés peuvent utiliser vos jetons pour modifier leurs dés de défense ou d'attaque.",
             "ability_ENG": "While you obstruct an attack, friendly ships can use your tokens to modify their defense or attack dice.",
             "slots": [   
+            "Title",
             "Force",    
             "Talent"
             ],
@@ -11774,15 +11788,16 @@
             "modify": true,
             "faction": "Partisans",
             "title":["Stinger Mantis"],
-            "ship": "LAAT/i Gunship",
+            "ship": "T6 Shuttle",
             "charge":[0],
             "force": 1,
-            "shipId": 68,
+            "shipId": 82,
             "skill": 1,
             "points": 11,                        
-            "ability": "",
+            "ability": "Au début de la phase d'engagement, vous pouvez dépenser 1 fo#. Dans ce cas, vous pouvez choisir un vaiseeau dans votre arc de tir à portée 1-2. Ce vaisseau dépense 1 jeton vert ou reçoit 1 jeton contrainte.",
             "ability_ENG": "At the start of engagement phase, you may spend 1 #fo#. If you do, you may choose a ship in your firing arc at range 1-2. That ship spends 1 green token or takes 1 strain token.",
-            "slots": [   
+            "slots": [
+                "Title",   
             "Force",    
             "Talent"
             ],
@@ -11803,7 +11818,7 @@
             "shipId": 34,
             "skill": 2,
             "points": 8,                        
-            "ability": "",
+            "ability": "Lorsque vous êtes vérouillée, recevez 1 jeton évasion.",
             "ability_ENG": "When you are locked, you receive an evade token.",
             "slots": [     
             "Talent"
@@ -11822,7 +11837,7 @@
             "shipId": 34,
             "skill": 4,
             "points": 9,                        
-            "ability": "",
+            "ability": "Lorsqu'un vaisseau allié endommagé à portée 0-3 attaque, il peut relancer 1 dé d'attaque.",
             "ability_ENG": "While a damaged friendly ship at range 0-3 performs an attack, it may reroll 1 attack die.",
             "slots": [     
             "Talent",
@@ -11842,7 +11857,7 @@
             "shipId": 34,
             "skill": 4,
             "points": 8,                        
-            "ability": "",
+            "ability": "Après avoir coordonné un vaisseau, pous pouvez recevoir 1 jeton désarmement. Dans ce cas, ce vaisseau peut effectuer une autre action.",
             "ability_ENG": "After you coordinate a ship, you may receive a weapon disabled token. If you do, this ship may perform another action.",
             "slots": [     
             "Talent"
@@ -11862,9 +11877,10 @@
             "shipId": 34,
             "skill": 5,
             "points": 9,                        
-            "ability": "",
+            "ability": "Mise en Place : choisissez 1 carte pilote ennemi ou une amélioration #crew# équippée sur un vaisseau ennemi, et assignez lui la condition 'Espion'.<br>Pendant la phase système, vous pouvez dépenser 1#ch#. Dans ce cas, vous pouvez regarder le cadran d'un vaisseau ennemi à portée 0-1 du vaisseau avec la condition 'Espion'. En plus, si vous avez choisi une amélioration #crew#, considérez que cette amélioration est équipée sur votre vaisseau à la place de son vaisseau jusqu'à la fin du tour.",
             "ability_ENG": "SETUP: choose 1 enemy pilot card or 1 crew upgrade equipped on an enemy ship and assign it the 'Spy' Condition.<br>During system phase you may spend 1 #ch#. If you do, you may look the dial of an enemy ship at range 0-1 of the ship with the 'Spy' Condition. Moreover, if you chose a crew upgrade, consider this upgrade equipped on your ship instead of the 'Spy' ship until the end of the turn.",
             "slots": [     
+            "Title",
             "Talent",
             "Talent",
             "Illicit",

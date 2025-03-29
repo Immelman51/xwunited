@@ -45,7 +45,7 @@ ships :
   () => auto_equip("Title",1), //le chiffre correspond à l'index de l'upgrade dans le menu
 
   keys to function :
-  0 : () => multiple functions that triggers when you print your squad : "droid" "add_action" "add_condition" "change_chassis"
+  0 : () => multiple functions that triggers when you print your squad : "droid" "add_action" "add_condition" "changeChassis"
   1 : () => auto_equip("Title",1,147),
   2 : () => add_slots("Illicit"),
   3 : () => also_Occupies("Modification",146)
