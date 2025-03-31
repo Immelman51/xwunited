@@ -6208,7 +6208,7 @@
              "available":false,
              "modify":true,
              "slot":"Special",
-             "add_Data": ["changeChassis","C46",""],
+             "add_Data": ["changeChassis","C46","<em><strong>Aile Basculante</strong></em>"],
              "force":0,
              "charge": [0],
              "points": 0,
