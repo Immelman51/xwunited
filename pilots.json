@@ -2046,8 +2046,8 @@
                 [1, "Droid",1,237]
                 ],
             "slots": [
-                "Special",
-                "Droid"
+                "Droid",
+                "Special"
             ]
         },
         {
@@ -3511,14 +3511,15 @@
             "ability": "Lorsque vous défendez ou attaquez, si vous êtes stressé, vous pouvez dépenser 1 #fo# pour modifier jusqu'à 2 de vos résultats #eye# en #hit# ou #evd#.",
             "ability_ENG": "While you defend or perform an attack, if you are stressed, you may spend 1 #fo# to change up to 2 of your #eye# results to #hit# or #evd# results.",
             "slots": [
-                "Special",
                 "Title",
                 "Talent",
-                "Force"
+                "Force",
+                "Special"
                                 
             ],
             "modifier_func": [
-            	[1,"Title",1,202]
+            	[1,"Title",1,202],
+                [1,"Special",1,362]
                     ]
         },
         {
@@ -3540,12 +3541,15 @@
             "slots": [
                 "Title" ,
                 "Droid",
-                "Talent"
+                "Talent",
+                "Special"
                                
             ],
             "modifier_func": [
             	[1,"Title",1,202],
-                [1,"Droid",1,237]
+                [1,"Droid",1,237],
+                [1,"Special",1,362]
+
                     ]
         },
         {

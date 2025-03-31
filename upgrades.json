@@ -6198,7 +6198,24 @@
              ]
                                      
              
-         }   
+         },
+         {
+            "name": "Nightbrother",
+             "name_ENG": "Nightbrother",
+             "id":362,
+             "max_per_squad":1,
+             "available":false,
+             "modify":true,
+             "slot":"Special",
+             "add_Data": ["changeChassis","C46",""],
+             "force":0,
+             "charge": [0],
+             "points": 0,
+             "effect": "Perte du Chassis 'Troop Bay'.",
+             "effect_ENG": "Lose 'Troop Bay' chassis ability",
+             "faction": ["Phoenix_Cell"]                
+             
+         }      
 
 
 
