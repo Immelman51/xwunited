@@ -3984,7 +3984,7 @@
             "points":0,
             "effect": "À la fin de la phase d’activation, si vous n'êtes pas arrimé perdez 1 #ch#. Vous êtes détruit si vous avez 0 #ch#. Avant de retirer votre figurine, chaque vaisseau à porté 0–1 subit 1 dégât #crit# ",
             "effect_ENG": "",
-            "faction": "" 
+            "faction": ["Pirates_and_Smugglers"] 
         },
         {
             "name": "Type : Droid",
