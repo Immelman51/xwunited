@@ -293,6 +293,7 @@ function updateUpgradeCount(yy) { //update the table logistic_Equipped
 }
 
 function testRestriction (yy,tableRestrictions){//va vérifier si les restrictions sont true, et renvoie la valeur restrict=true si c'est bon
+console.log(tableRestrictions);
 let testR = 0;
 let varlist = [];
 let nbr = tableRestrictions[0];
