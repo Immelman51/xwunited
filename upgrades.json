@@ -3976,7 +3976,7 @@
             "name_ENG": "Rigged Energy Cells",
             "id":236,
             "max_per_squad":1,
-            "available":true,
+            "available":false,
             "modify":false,
             "slot":"Special",
             "add_Data": ["changeChassis", "C1","<em><strong>Copilote 2: </strong></em>MISE EN PLACE : Vous <mark>devez</mark> être arrimé à un vaisseau YT-1300 Light Freighter. "],
@@ -3984,7 +3984,8 @@
             "points":0,
             "effect": "À la fin de la phase d’activation, si vous n'êtes pas arrimé perdez 1 #ch#. Vous êtes détruit si vous avez 0 #ch#. Avant de retirer votre figurine, chaque vaisseau à porté 0–1 subit 1 dégât #crit# ",
             "effect_ENG": "",
-            "faction": ["Pirates_and_Smugglers"] 
+            "faction": ["Pirates_and_Smugglers"],
+            "restrictions":[1,"ship", "Escape Craft",""]
         },
         {
             "name": "Type : Droid",
@@ -6204,7 +6205,7 @@
              "name_ENG": "Nightbrother",
              "id":362,
              "max_per_squad":1,
-             "available":true,
+             "available":false,
              "modify":true,
              "slot":"Special",
              "add_Data": ["changeChassis","C46",""],
@@ -6213,7 +6214,8 @@
              "points": 0,
              "effect": "Perte du Chassis 'Troop Bay'.",
              "effect_ENG": "Lose 'Troop Bay' chassis ability",
-             "faction": ["Phoenix_Cell"]                
+             "faction": ["Phoenix_Cell"],
+             "restrictions":[1,"ship","Gauntler Fighter",""]                
              
          }      
 
