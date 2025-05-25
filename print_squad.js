@@ -190,7 +190,6 @@ function displayPilot(x){
     //const pilotHull = document.getElementById('hull'+x);
     //const pilotShield = document.getElementById('shield'+x);
     const pilotAbility = document.getElementById('ability'+x);
-    const pilotChargeForce = document.getElementById('chargeforce'+x);
     //const pilotActions = document.getElementById('actions'+x);
     
     getPilotData(x);
@@ -230,11 +229,11 @@ function displayPilot(x){
     displayPilotActions(x);
     
     for(j=0; j<pilots[pid]['charge'][0];j++){ //We are going to display as many charge pictures as the charge value of the pilot
-        console.log('creating div for pilot charge');
+        
         newcharge = document.createElement('img');
         newcharge.setAttribute("class","chargeforceimg");
         newcharge.setAttribute("src","img/chargestat.png");
-        pilotChargeForce.appendChild(newcharge);
+        pilotAbility.appendChild(newcharge);
       }
         
        
@@ -243,13 +242,13 @@ function displayPilot(x){
                 newchargeEvolution = document.createElement('img'); // the index 1 of the charge tables indicates if it's recurring or not. We have to display it, and there's a jpg for every case.
                 newchargeEvolution.setAttribute("class","recurring");
                 newchargeEvolution.setAttribute("src","img/chargeplus.jpg");
-                pilotChargeForce.appendChild(newchargeEvolution);
+                pilotAbility.appendChild(newchargeEvolution);
                 break;
             case "-" : 
                 newchargeEvolution = document.createElement('img'); // the index 1 of the charge tables indicates if it's recurring or not. We have to display it, and there's a jpg for every case.
                 newchargeEvolution.setAttribute("class","recurring");  
                 newchargeEvolution.setAttribute("src","img/chargeminus.jpg");
-                pilotChargeForce.appendChild(newchargeEvolution);
+                pilotAbility.appendChild(newchargeEvolution);
                 break;
             default :            
             break;
@@ -269,7 +268,7 @@ function displayPilot(x){
         let newforce = document.createElement('img');
         newforce.setAttribute("class","chargeforceimg");
         newforce.setAttribute("src","img/forcestat.jpg");
-        pilotChargeForce.appendChild(newforce);
+        pilotName.appendChild(newforce);
        
       
     } 
