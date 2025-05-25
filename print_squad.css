@@ -76,7 +76,7 @@
 .row1-background {
     grid-area: 1 / 1 / 2 / 9; /* Ligne 1, colonne 1 à 8 (car 9 exclue) */
     background-color: rgba(255, 255, 255, 0.5);
-    z-index: 0; /* en arrière-plan */
+    z-index: 1; /* en arrière-plan */
     position: relative;
   }
   
@@ -115,7 +115,7 @@
 .chs1
 .chs2
 .chs3{
-  z-index: 1;
+  z-index: 2;
   position: relative; /* nécessaire pour que z-index fonctionne dans un contexte de stacking */
   
   
