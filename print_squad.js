@@ -198,8 +198,8 @@ function displayPilot(x){
 
     //let's display the pilot jpg
     newimage = document.createElement('img');
-    newaction.setAttribute('class','pilotImg');
-    newaction.setAttribute('src', 'img/pilots/'+pid+'.jpg');
+    newimage.setAttribute('class','pilotImg');
+    newimage.setAttribute('src', 'img/pilots/'+pid+'.jpg');
     imgPilot.appendChild(newimage);
 
     pilotSkill.textContent = pilots[pid]['skill'];
