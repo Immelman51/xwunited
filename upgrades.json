@@ -1257,7 +1257,7 @@
             "slot": "Force",
             "add_Data": [0],
             "charge": [0],
-            "points": "*0*",
+            "points": "#0#",
             "effect": "En phase système, vous pouvez gagner 1 marqueur d’épuisement pour récupérer 1 #fo#.",
             "effect_ENG": "",
             "faction": ""           
@@ -1273,7 +1273,7 @@
             "slot": "Force",
             "add_Data": [0],
             "charge": [0],
-            "points": "*3*",
+            "points": "#3#",
             "effect": "Après avoir révélé votre cadran, vous pouvez dépenser 3 #fo# pour effectuer une action #BR# ou #BO#. Puis, si vous avez effectué une action qui n’est pas sur votre barre d’action, recevez 2 marqueurs de contrainte. Dans ce cas, vous ne pouvez pas effectuer une autre action pendant votre activation.",
             "effect_ENG": "After you reveal your dial, you may spend 3 #fo# to perform a #BR# or #BO# action. Then, if you have performed an action which is not on your action bar, receive 2 strain tokens. In this case, you cannot perform an other action during your activation.",
             "faction": "",
@@ -1291,7 +1291,7 @@
             "slot": "Force",
             "add_Data": [0],
             "charge": [0],
-            "points": "*1*",
+            "points": "#1#",
             "effect": "Lorsque vous défendez, vous pouvez dépenser 1 #fo#. Dans ce cas, améliorez 1 dé de défense.",
             "effect_ENG": "While you defend, you may spend 1 #fo#. If you do, upgrade 1 defense die.",
             "faction": ""
@@ -1521,7 +1521,7 @@
             "add_Data": [0],
             "charge": [0],
             "points": 8,
-            "force": "1",
+            "force": 1,
             "max_per_squad": 1,
             "effect": "Tant que vous effectuez une attaque qui n’est pas une attaque #Farc#, vous pouvez dépenser 1 #fo#. Si vous le faites, lancez 1 dé d’attaque supplémentaire.",
             "effect_ENG": "",
@@ -3832,7 +3832,7 @@
                 "slot": "Force",
                 "add_Data": [0],
                 "charge": [0],
-                "points": "*1*",
+                "points": "#1#",
                 "effect": "En phase Système, vous pouvez dépensez 1 #fo#. Si vous le faites :<br>- Activez-vous à expérience +1 ou -1<br>- Engagez-vous à expérience 7.",
                 "effect_ENG": "During System Phase, you may spend 1 #fo#. If you do:<br>- Activate with an experience +1 or -1<br>- Engage at experience 7.",
                 "faction": ""
@@ -3847,7 +3847,7 @@
                 "slot": "Force",
                 "add_Data": [0],
                 "charge": [0],
-                "points": "*1*",
+                "points": "#1#",
                 "effect": "Lorsque vous attaquez, vous pouvez dépenser 1 #fo# pour améliorer 1 dé d'attaque.",
                 "effect_ENG": "While you attack, you may spend 1 #fo# to upgrade 1 of your attack die.",
                 "faction": ""
@@ -3862,7 +3862,7 @@
             "slot": "Force",
             "add_Data": [0],
             "charge": [0],
-            "points":"*2*",
+            "points":"#2#",
             "effect": "Après qu'un vaisseau ennemi a effectué une manoeuvre, vous pouvez dépenser 2 #fo# pour effectuer contre lui cette attaque (attaque bonus).<br>Attaque 2 #Farc# range 1-2 : Vous pouvez améliorer 1 dé d'attaque si la cible est dans votre #bulls#",
             "effect_ENG":"After an enemy ship executes a maneuver, you may spend 2 #fo# to perform this attack against it as a bonus attack.<br>Attack 2 #Farc# Range 1-2: You may upgrade 1 of your attack die if target ship is in your #bulls#.",
             "faction":""

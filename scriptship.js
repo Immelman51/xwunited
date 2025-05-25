@@ -153,8 +153,10 @@ function dataGetFromPilot(yy) { //On prend le pilote et on recopie l'objet pilot
         if (nomPilote===pilots[i]["name"]) {
             pilot_list[yy] = pilots[i];*/
             pilot_list[yy] = pilot_objects[yy][z-1];
-            skillLvl.textContent = "I "+pilot_list[yy]["skill"];
-            //loadoutcount.textContent = pilot_list[yy]["loadout"];
+            skillLvl.textContent = "I*"+pilot_list[yy]["skill"]+"*";
+            if (pilot_list[yy]['force']>0){
+                skillLvl.textContent = skillLvl.textContent + " F#"+pilot_list[yy]['force']+"#";
+            }
             for (j=0; j<8 ;j++) {
                 totalcostvalue = totalcostvalue + pilot_list[j]["points"];
                 };
@@ -228,7 +230,7 @@ function displayslots(yy) { //crée les menus de slot et contient l'écoute des 
     
 }
 
-function fillUpgradesSelected(yy){
+function fillUpgradesSelected(yy){ //fills the array UpgradesSelected (used when an input of upgrade is made)
     upgradesSelected[yy] = [];
     upgradesSelected_ID[yy] = [];
     
