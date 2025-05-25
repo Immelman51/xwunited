@@ -825,7 +825,7 @@
                 [ 0, 3, 2, 3, 0, 0 ],
                 [ 0, 0, 3, 0, 0, 3 ]
             ],
-            "slots": ["Sensor", "Crew", "Illicit", "Modification", "Calculator"]
+            "slots": ["Sensor", "Sensor", "Crew", "Illicit", "Modification", "Calculator"]
         },
         {
     

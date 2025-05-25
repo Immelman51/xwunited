@@ -48,7 +48,7 @@ ships :
   0 : () => multiple functions that triggers when you print your squad : "droid" "add_action" "add_condition" "changeChassis"
   1 : () => auto_equip("Title",1,147),
   2 : () => add_slots("Illicit"),
-  3 : () => also_Occupies("Modification",146)
+  3 : () => also_Occupies("Modification")
   // 4 : () => free_upg("Modification")
   // 5 : () => change_chassis([10])    id du chassis
   // 6 : () => weapon_Hardpoint()
@@ -56,6 +56,32 @@ ships :
   // 8 : () => add_action([0,"Co R"])
   // 9 : () => add_condition(3)     id de la condition
   10 : () => may_remove_slots("Astromech") //WARNING ! The order of the "slot"s to remove is very important. You have to start removing the last "slot", and keep on removing them starting from the last one. Or Else the function 'may_remove_"slot"' will fail. The reason is a bit tricky, but to make it simple, this function will remove (splice) elements in the array upgrades_Objets and upgrades_Type thinking the position is the last digit of the "slot"menu."id". 
+
+  Example : {
+            "name": "Gooti Terez",
+            "id": 155,
+            "max_per_squad": 1,
+            "faction": "Phoenix_Cell",
+            "ship": "YT-2400 Light Freighter",
+            "charge":[0],
+            "force": 0,
+            "shipId": 16,
+            "skill": 1,
+            "points": 8,
+            "modify": true,
+		      "title": ["Sato's Hammer"],            
+            "ability": "Après avoir défendu contre une attaque portée 1, l'attaquant reçoit 1 jeton de contrainte.",
+            "ability_ENG": "After you defend against a Range 1 attack, the attacker gains 1 strain token.",
+            "slots": [
+                "Title" ,
+                "Talent",
+                "Illicit"                               
+            ],
+            "modifier_func": [
+            	[1,"Title",1,200],
+               [3,"Modification"]
+             ]
+        },
 
 #########################################################################################################################################################################
 Upgrades :
