@@ -558,6 +558,7 @@ function auto_equip(Slot, indexUpgrade){ //action n°1
     if (maxNbrUpgrade <= 0) {
         alert(nameUpgrade +' is no more available in your squad');
         document.getElementById('menu_pilot_'+y).selectedIndex = 0; //on refuse la prise en compte du pilote
+        upgrade_restricted_List(y);
         return;
     }
     // fin du check
@@ -847,6 +848,7 @@ function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'acti
         displayDescriptionPilot(numero);
 	    checkPilotModifier(event);
         checkUpgRestriction(numero); //on le refait car il peut y avoir des upgrades disponibles suite à check pilot modfier (exemple : Emon gagne 2 slot de payload ce qui lui permet d'équiper les générateurs de sous munitions)
+        upgrade_restricted_List(y);
         updateTotalCost();
     });  
     newremovebutton.textContent = 'Delete';

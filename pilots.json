@@ -2042,7 +2042,7 @@
             "ability": "Cellules Énergétiques Bidouillées : À la fin de la phase d’activation, si vous n'êtes pas arrimé perdez 1 #ch#. Vous êtes détruit si vous avez 0 #ch#. Avant de retirer votre figurine, chaque vaisseau à porté 0–1 subit 1 dégât #crit#.",
             "ability_ENG": "",
             "modifier_func": [
-                [1, "Special",1,236] ,
+                [1, "Special",236] ,
                 [1, "Droid",237]
                 ],
             "slots": [
