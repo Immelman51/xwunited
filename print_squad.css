@@ -110,7 +110,7 @@
 .chs3{
   z-index: 1;
   position: relative; /* nécessaire pour que z-index fonctionne dans un contexte de stacking */
-  background-color: rgba(255, 255, 255, 0.5);
+  
   
 }
 .pskill{
@@ -187,6 +187,9 @@
     text-align: center;
     align-items: center;
     justify-content: center;
+    background-color: rgba(255, 255, 255, 0.5);
+
+
 
 }
 .actions{
@@ -196,6 +199,7 @@
     justify-content: center;
     align-items: center;
     border: solid;
+    background-color: white;
 }
 
 .action{
@@ -205,6 +209,8 @@
     align-items: center;
     flex-shrink: 3;
     max-width: 2.5cm;
+    background-color: white;
+
 
 }
 .linked{
@@ -234,6 +240,8 @@
     grid-area: 6 / 3 / 7 / 7;
     display: flex;
     justify-content: space-around;
+    background-color: rgba(255, 255, 255, 0.5);
+
 }
 
 
@@ -243,11 +251,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: rgba(255, 255, 255, 0.5);
+
 }
 
 .upg0{
     grid-area: 7 / 1 / 8 / 4;
-    
+    background-color: rgba(255, 255, 255, 0.5);
+
     
 
 }
@@ -255,63 +266,76 @@
 .upg1{
    
     grid-area: 7 / 4 / 8 / 6;
-    
+    background-color: rgba(255, 255, 255, 0.5);
+
 
 }
 .upg2{
     grid-area: 7 / 6 / 8 / 9;
-    
+    background-color: rgba(255, 255, 255, 0.5);
+
 }
 
 .upg3{
     grid-area: 8 / 1 / 9 / 4;
-    
+    background-color: rgba(255, 255, 255, 0.5);
+
 
 }
 .upg4{
     grid-area: 8 / 4 / 9 / 6;
-    
+    background-color: rgba(255, 255, 255, 0.5);
+
 
 }
 
 .upg5{
     grid-area: 8 / 6 / 9 / 9;
-   
+    background-color: rgba(255, 255, 255, 0.5);
+
 
 }
 .upg6{
     grid-area: 9 / 1 / 10 / 4;
-    
+    background-color: rgba(255, 255, 255, 0.5);
+
 
 }
 
 .upg7{
     grid-area: 9 / 4 / 10 / 6;
-    
+    background-color: rgba(255, 255, 255, 0.5);
+
 }
 .upg8{
     grid-area: 9 / 6 / 10 / 9;
-  
+    background-color: rgba(255, 255, 255, 0.5);
+
 }
 .upg9{
     grid-area: 10 / 1 / 11 / 4;
-    
+    background-color: rgba(255, 255, 255, 0.5);
+
 }
 .upg8{
     grid-area: 10 / 4 / 11 / 6;
-   
+    background-color: rgba(255, 255, 255, 0.5);
+
 }
 .upg9{
     grid-area: 10 / 6 / 11 / 9;
-    
+    background-color: rgba(255, 255, 255, 0.5);
+
 }
 .upg10{
     grid-area: 11 / 1 / 12 / 4;
-    
+    background-color: rgba(255, 255, 255, 0.5);
+
 }
 .upg11{
     grid-area: 11 / 4 / 12 / 6;
-   
+    background-color: rgba(255, 255, 255, 0.5);
+
 }
 
 .chs1{
@@ -327,6 +351,7 @@
     padding-top: 10px;
     align-items: center;
     border-bottom: 3px black;
+    background-color: rgb(160, 160, 160);
 
 }
 .chs3{
@@ -334,6 +359,7 @@
     padding-top: 10px;
     align-items: center;
     border-bottom: 3px black;
+    background-color: rgb(160, 160, 160);
     
 }
 
