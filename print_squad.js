@@ -325,7 +325,7 @@ function displayPilot(x){
 
         //We now tackle upgrades equipped. 
     
-    for(i=0; i<12 ; i++){ 
+    for(i=0; i<11 ; i++){ 
         while(i<pilotdata[x].length){
         let uid = pilotdata[x][i+1] //we start i+1 because at 0, there's the pilotID
         mdiv = document.getElementById('upgrade'+x+'_'+i);
@@ -390,16 +390,7 @@ function displayPilot(x){
         removeElementById("upgrade"+x+"_"+i);
     }
 }
-    
-    
-    
-
-
- 
- 
- 
- 
-    
+     
 
 
 async function executeFunctions(){ //on crée une fonction asynchrone pour que tout se lance dans l'ordre
