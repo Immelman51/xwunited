@@ -540,7 +540,7 @@ function upgrade_restricted_List(yy){ //va mettre à jour la restricted_List. le
         }
 }
     
-function auto_equip(Slot, indexMenu, indexUpgrade){ //action n°1
+function auto_equip(Slot, indexUpgrade){ //action n°1
     // on va faire un check si l'upgrade est limitée. On ne peut pas se servir de la fonction check_restricted_List car le champ visé par l'event est celui du pilote et non de l'upgrade. On va donc recopier une partie de son code et l'adapter
     nameUpgrade = upgrades[indexUpgrade]['name']; 
     maxNbrUpgrade = upgrades[indexUpgrade]['max_per_squad'];
@@ -568,8 +568,16 @@ function auto_equip(Slot, indexMenu, indexUpgrade){ //action n°1
         }
     }
     let slotToEquip = document.getElementById('slot'+y+'_'+numero_slot);
-    options = slotToEquip.options;
-    slotToEquip.selectedIndex = indexMenu;
+    console.log('AUTOEQUIP UPGRADE :' + nameUpgrade);
+    let indexSlot = 0 // We have to look for the index in the menu that match with our upgrade we want to equip
+    for(let k=0 ; k<upgrades_Objects_Val[y][numero_slot].length ; k++){
+        if (upgrades_Objects_Val[y][numero_slot][k]['name'] === nameUpgrade) {
+            indexSlot=k;
+            break;
+        }
+    }
+       
+    slotToEquip.selectedIndex = indexSlot+1;
     slotToEquip.setAttribute("disabled","");
     fillUpgradesSelected(y);
     upgrade_restricted_List(y);

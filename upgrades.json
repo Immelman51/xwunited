@@ -2113,7 +2113,7 @@
             "name_ENG": "Havoc",
             "id": 130,
             "available":true,
-            "modify":true,
+            "modify":false,
             "slot": "Title",
             "add_Data": [0],
             "charge": [0],
@@ -2122,15 +2122,7 @@
             "effect_ENG": "",
             "faction": ["Pirates_and_Smugglers"],
             "ship": "Scurrg H-6 Bomber",
-            "effect": "Retire en emplacement #crew#. Ajoute #tech# et #astromech#. Ajoute 5 points de Loadout et augmente le coût du vaisseau de 1",
-            "modifier_func": [
-                [3,"Crew",130],
-                [2,"Tech"],
-                [2,"Astromech"]                
-               
-                
-            ]
-            
+            "effect": "Retire en emplacement #crew#. Ajoute #tech# et #astromech#. Ajoute 5 points de Loadout et augmente le coût du vaisseau de 1"
         },
 {
             "name": "Lando Calrissian",
@@ -2240,7 +2232,7 @@
             "name_ENG": "Xanadu Blood",
             "id": 137,
             "available":true,
-            "modify":true,
+            "modify":false,
             "slot": "Title",
             "add_Data": [0],
             "charge": [0],
@@ -2249,12 +2241,7 @@
             "effect_ENG": "",
             "faction": ["Agents_of_Chaos","Bounty_Hunters_Guild"],
             "ship": "Rogue-class Starfighter",
-            "effect": "Ajoute un emplacement #payload# et #crew#.",
-            "modifier_func": [
-                [2,"Payload"],
-                [2,"Crew"]
-         
-            ]
+            "effect": "Ajoute un emplacement #payload# et #crew#."
             
         },
         {
@@ -2262,7 +2249,7 @@
             "name_ENG": "Hound's Tooth",
             "id": 138,
             "available":true,
-            "modify":true,
+            "modify":false,
             "slot": "Title",
             "add_Data": [0],
             "charge": [0],
@@ -2271,20 +2258,15 @@
             "effect_ENG": "",
             "faction": ["Bounty_Hunters_Guild"],
             "ship": "YV-666 Light Freighter",
-            "effect": "Ajoute un emplacement #gunner#, #canon#. Retire un emplacement #illicit#.",
-            "modifier_func": [
-                [2,"Gunner"],
-                [2,"Cannon"],
-                [3,"Illicit",138]
-             
-            ]
+            "effect": "Ajoute un emplacement #gunner#, #canon#. Retire un emplacement #illicit#."
+
         },
         {
             "name": "Slave 1",
             "name_ENG": "Slave 1",
             "id": 139,
             "available":true,
-            "modify":true,
+            "modify":false,
             "slot": "Title",
             "add_Data": [0],
             "charge": [0],
@@ -2293,21 +2275,14 @@
             "effect_ENG": "",
             "faction": ["Bounty_Hunters_Guild","Agents_of_Chaos","Pirates_and_Smugglers"],
             "ship": "Firespray-class Patrol Craft",
-            "effect": "Ajoute un emplacement #gunner#, #canon#, #illicit#.",
-            "modifier_func": [
-                [2,"Gunner"],
-                [2,"Cannon"],
-                [2,"Illicit"]
-               
-            ]
-            
+            "effect": "Ajoute un emplacement #gunner#, #canon#, #illicit#."
         },
         {
             "name": "Andrasta",
             "name_ENG": "Andrasta",
             "id": 140,
             "available":true,
-            "modify":true,
+            "modify":false,
             "slot": "Title",
             "add_Data": [0],
             "charge": [0],
@@ -2316,21 +2291,14 @@
             "effect_ENG": "",
             "faction": ["Pirates_and_Smugglers"],
             "ship": "Firespray-class Patrol Craft",
-            "effect": "Ajoute un emplacement #payload#, #payload# et #illicit#.",
-            "modifier_func": [
-                [2,"Payload"],
-                [2,"Payload"],
-                [2,"Illicit"]
-              
-            ]
-            
+            "effect": "Ajoute un emplacement #payload#, #payload# et #illicit#."
         },
         {
             "name": "Outrider",
             "name_ENG": "Outrider",
             "id": 141,
             "available":true,
-            "modify":true,
+            "modify":false,
             "slot": "Title",
             "add_Data": [0],
             "charge": [0],
@@ -2339,12 +2307,7 @@
             "effect_ENG": "",
             "faction": ["Pirates_and_Smugglers"],
             "ship": "YT-2400 Light Freighter",            
-            "effect": "Ajoute un emplacement #gunner# et #canon#.",
-            "modifier_func": [
-                [2,"Gunner"],
-                [2,"Cannon"]
-                
-            ]
+            "effect": "Ajoute un emplacement #gunner# et #canon#."
         },
         {
             "name": "Mist Hunter",
@@ -2368,7 +2331,7 @@
             "name_ENG": "Punishing One",
             "id": 143,
             "available":true,
-            "modify":true,
+            "modify":false,
             "slot": "Title",
             "add_Data": [0],
             "charge": [0],
@@ -2377,20 +2340,14 @@
             "effect_ENG": "",
             "faction": ["Bounty_Hunters_Guild"],
             "ship": "JumpMaster 5000",           
-            "effect": "Ajoute un emplacement #astromech# et #mis#. Retire un emplacement #crew#",
-            "modifier_func": [
-                [2,"Astromech"],
-                [2,"Missile"],
-                [3,"Crew",143]
-               
-            ]
+            "effect": "Ajoute un emplacement #astromech# et #mis#. Retire un emplacement #crew#"
         },
         {
             "name": "IG-2000",
             "name_ENG": "IG-2000",
             "id": 144,
             "available":true,
-            "modify":true,
+            "modify":false,
             "slot": "Title",
             "add_Data": [0],
             "charge": [0],
@@ -2399,19 +2356,14 @@
             "effect_ENG": "",
             "faction": ["Bounty_Hunters_Guild"],
             "ship": "Aggressor Assault Fighter",
-            "effect": "Ajoute un emplacement #calc# et retire un emplacement #mod#.",
-            "modifier_func": [
-                [2,"Calculator"],
-                [3,"Modification",144]
-                
-            ]
+            "effect": "Ajoute un emplacement #calc# et retire un emplacement #mod#."
         },
         {
             "name": "N1 de Din Djarin",
             "name_ENG": "Din Djarin's N1",
             "id": 145,
             "available":true,
-            "modify":true,
+            "modify":false,
             "slot": "Title",
             "add_Data": [0],
             "charge": [0],
@@ -2420,15 +2372,7 @@
             "effect_ENG": "",
             "faction": ["Mandalorian_Clans"],
             "ship": "Naboo Royal N-1 Starfighter",
-            "effect": "Ajoute un emplacement #crew#, #tech#, #ill#. Retire un emplacement #astromech# et #torpedo#.",
-            "modifier_func": [
-                [2,"Crew"],
-                [2,"Tech"],
-                [2,"Illicit"],
-                [3,"Astromech",145],
-                [3,"Torpedo",145]
-             
-            ]
+            "effect": "Ajoute un emplacement #crew#, #tech#, #ill#. Retire un emplacement #astromech# et #torpedo#."
         },
         {
             "name": "Razor Crest",
@@ -2453,7 +2397,7 @@
             "id": 147,
             "slot": "Title",
             "available":true,
-            "modify":true,
+            "modify":false,
             "add_Data": [0],
             "charge": [0],
             "points": 0,
@@ -2461,12 +2405,7 @@
             "effect_ENG": "",
             "faction": ["Rebel_Alliance","Pirates_and_Smugglers"],
             "ship": "HWK-290 Light Freighter",
-            "effect": "Ajoute un emplacement #illicit# et #canon#. Retire un emplacement #mod#.",
-            "modifier_func": [
-                [2,"Illicit"],
-                [2,"Cannon"],
-                [3,"Modification",147]
-            ]
+            "effect": "Ajoute un emplacement #illicit# et #canon#. Retire un emplacement #mod#."
         },
         {
             "name": "Simulateur de Trajectoire",
@@ -3268,7 +3207,7 @@
 "name_ENG": "Sabine's Masterpiece",
 "id": 196,
 "available":true,
-"modify":true,
+"modify":false,
 "slot": "Title",
 "add_Data": [0],
 "charge": [0],
@@ -3277,10 +3216,8 @@
 "effect_ENG": "",
 "faction": ["Phoenix_Cell"],
 "ship": "TIE/ln Fighter",
-"effect": "Ajoute un emplacement #ill#.",
-"modifier_func": [
-    [2,"Illicit"]        
-]
+"effect": "Ajoute un emplacement #ill#."
+
 
 },
 {
@@ -3288,7 +3225,7 @@
 "name_ENG": "Black One",
 "id": 197,
 "available":true,
-"modify":true,
+"modify":false,
 "slot": "Title",
 "add_Data": [0],
 "charge": [0],
@@ -3297,10 +3234,7 @@
 "effect_ENG": "",
 "faction": ["Resistance"],
 "ship": "T-70 X-Wing",
-"effect": "Ajoute 1 emplacement #tur#.",
-"modifier_func": [
-    [2,"Turret"]        
-]
+"effect": "Ajoute 1 emplacement #tur#."       
 
 },
 {
@@ -3416,7 +3350,7 @@
 "name_ENG": "Soulless One",
 "id": 204,
 "available":true,
-"modify":true,
+"modify":false,
 "slot": "Title",
 "add_Data": [0],
 "charge": [0],
@@ -3425,10 +3359,7 @@
 "effect_ENG": "",
 "faction": ["C.I.S"],
 "ship": "Belbullab-22 Starfighter",
-"effect": "",
-"modifier_func": [
-    [2,"Sensor"]  
-]       
+"effect": "Ajoute 1 emplacement #sensor#."    
 },
 {
     "name": "Système d'arrimage",
