@@ -110,6 +110,8 @@
 .chs3{
   z-index: 1;
   position: relative; /* nécessaire pour que z-index fonctionne dans un contexte de stacking */
+  background-color: rgba(255, 255, 255, 0.5);
+  
 }
 .pskill{
     grid-area: 1 / 1 / 2 / 2;
@@ -133,6 +135,7 @@
     font-weight: bolder;
     text-align: center;
     align-self: center;
+    
     
  }
 .ship{
