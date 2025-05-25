@@ -153,9 +153,9 @@ function dataGetFromPilot(yy) { //On prend le pilote et on recopie l'objet pilot
         if (nomPilote===pilots[i]["name"]) {
             pilot_list[yy] = pilots[i];*/
             pilot_list[yy] = pilot_objects[yy][z-1];
-            skillLvl.textContent = "I*"+pilot_list[yy]["skill"]+"*";
+            skillLvl.textContent = "*I"+pilot_list[yy]["skill"]+"*";
             if (pilot_list[yy]['force']>0){
-                skillLvl.textContent = skillLvl.textContent + " F#"+pilot_list[yy]['force']+"#";
+                skillLvl.textContent = skillLvl.textContent + " #F"+pilot_list[yy]['force']+"#";
             }
             for (j=0; j<8 ;j++) {
                 totalcostvalue = totalcostvalue + pilot_list[j]["points"];
