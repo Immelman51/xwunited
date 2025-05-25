@@ -250,7 +250,7 @@
     height: 1cm;
     resize: both;
 }
-.upgrade.special{
+.special{
     grid-area: 6 / 3 / 7 / 7;
     display: flex;
     justify-content: space-around;

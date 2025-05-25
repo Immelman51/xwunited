@@ -81,13 +81,13 @@ for(j=0; j<nbrOfLeaderCharges ;j++){ //We display as many charge logos as the nu
         case "Red" :
             newcharge = document.createElement('img');
             newcharge.setAttribute("class","chargeforceimg");
-            newcharge.setAttribute("src","img/chargestatRed.jpg");
+            newcharge.setAttribute("src","img/chargestatRed.png");
             leaderCharge.appendChild(newcharge);
             break;
         case "0" :
             newcharge = document.createElement('img');
             newcharge.setAttribute("class","chargeforceimg");
-            newcharge.setAttribute("src","img/chargestat.jpg");
+            newcharge.setAttribute("src","img/chargestat.png");
             leaderCharge.appendChild(newcharge);
             break;
         default :
@@ -233,7 +233,7 @@ function displayPilot(x){
         console.log('creating div for pilot charge');
         newcharge = document.createElement('img');
         newcharge.setAttribute("class","chargeforceimg");
-        newcharge.setAttribute("src","img/chargestat.jpg");
+        newcharge.setAttribute("src","img/chargestat.png");
         pilotChargeForce.appendChild(newcharge);
       }
         
@@ -335,7 +335,7 @@ function displayPilot(x){
         if((pilots[pid]["charge"][0]===0)&&(pilots[pid]["force"]===0)&&(i<3)){ //to save some space on the sheet, if the pilot has no force or charge, we use that space to fill some upgrades
             
                     mdiv = document.getElementById('chargeforce'+x);
-                    mdiv.setAttribute('class','upgrade special'); 
+                    mdiv.setAttribute('class','special'); 
                     mcount++;
             
         }else{
@@ -377,20 +377,20 @@ function displayPilot(x){
         for(j=0; j<nbrcharge;j++){ //is going to display as many charge logos as the number of charges the upgrade has
             newcharge = document.createElement('img');
             newcharge.setAttribute("class","chargeforceimg");
-            newcharge.setAttribute("src","img/chargestat.jpg");
+            newcharge.setAttribute("src","img/chargestat.png");
             mdivupg.appendChild(newcharge);
         }
             switch (upgrades[uid]['charge'][1]) {
                 case "+" :
                     recurring = document.createElement('img');
                     recurring.setAttribute("class","recurring");
-                    recurring.setAttribute("src","img/chargeplus.jpg");
+                    recurring.setAttribute("src","img/chargeplus.png");
                     mdivupg.appendChild(recurring);
                     break;
                 case "-" :
                     recurring = document.createElement('img');
                     recurring.setAttribute("class","recurring");
-                    recurring.setAttribute("src","img/chargeminus.jpg");
+                    recurring.setAttribute("src","img/chargeminus.png");
                     mdivupg.appendChild(recurring);
                     break;
                 default :
