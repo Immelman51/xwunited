@@ -53,18 +53,63 @@
 }
 
 .squad {
+    position: relative;
     width: 25cm;
     display: grid;
     grid-template-columns: 1cm 1.5cm 5.8cm 4.2cm 4.2cm 5.3cm 2cm 1cm ;
     grid-template-rows: 1.5cm 1cm 1cm 1cm 1cm 1.5cm auto auto auto auto auto auto auto;
     margin-bottom: 15px;
+    overflow: hidden;
     border: solid rgb(13, 0, 128);
     
 }
 .pilotImg{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Remplit la zone sans déformation, rogne si nécessaire */
+    z-index: 0; 
+    
+}
+.pskill,
+.factionpilot,
+.name,
+.ship,
+.cost,
+.stat,
+.ability
+.logo
+.attack
+.agility
+.hull
+.shield
+.actions
+.action
+.linked
+.chargeforce
+.chargeforceimg
+.upgrade
+.recurring
+.upgrade.special
+.upg0
+.upg1
+.upg2
+.upg3
+.upg4
+.upg5
+.upg6
+.upg7
+.upg8
+.upg9
+.upg10
+.upg11
+.chs1
+.chs2
+.chs3{
+  z-index: 1;
+  position: relative; /* nécessaire pour que z-index fonctionne dans un contexte de stacking */
 }
 .pskill{
     grid-area: 1 / 1 / 2 / 2;
