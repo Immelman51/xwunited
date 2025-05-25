@@ -144,16 +144,12 @@ function select_pilot_list(x){ //permet de remplir la liste des pilotes disponib
 function dataGetFromPilot(yy) { //On prend le pilote et on recopie l'objet pilote dans pilot_list, et on va incrémenter le totalcost
     pilot_selected_list[yy] = document.getElementById("menu_pilot_"+yy).value;
     skillLvl = document.getElementById("initiative"+yy);
-    //loadoutcount= document.getElementById("shiploadout"+yy);
+  
     totalcount= document.getElementById("totalcost");
     totalcostvalue = 0; //remise à 0 sinon il s'incrémente à chaque saisie de pilote
-    /*for (i=0; i<pilots.length; i++) {
-        let endIndex = pilot_selected_list[yy].indexOf(" ("); // Find the index of " (" 
-        let nomPilote = pilot_selected_list[yy].substring(0, endIndex); //On retire les parenthèses avec le cout pour pouvoir faire une comparaison stricte dans la ligne d'après
-        if (nomPilote===pilots[i]["name"]) {
-            pilot_list[yy] = pilots[i];*/
+   
             pilot_list[yy] = pilot_objects[yy][z-1];
-            skillLvl.textContent = "*I"+pilot_list[yy]["skill"]+"*";
+            skillLvl.textContent = "*I"+pilot_list[yy]["skill"]+"*"; //we display the initiative and the force fo the pilot selected
             if (pilot_list[yy]['force']>0){
                 skillLvl.textContent = skillLvl.textContent + " #F"+pilot_list[yy]['force']+"#";
             }

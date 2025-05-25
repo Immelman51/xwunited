@@ -3729,8 +3729,8 @@
     "modify": false,
     "slot": "Talent",
     "points": "*6*",
-    "effect": "Lorsque vous lancez des dés, si vous n'êtes pas stressé, vous pouvez dépenser 1 #ch#. Si vous le faites, améliorez ou dégradez 1 dé. Durant la phase de fin, vous pouvez perdre 1 point d'initiative pour récupérer 1 #ch#.",
-    "effect_ENG": "When you roll any dice, if you are not stressed, you may spend 1 #ch#. If you do, upgrade or downgrade a die. During the end phase, you may lose 1 initiative point to recover 1 #ch#.",
+    "effect": "Lorsque vous lancez des dés, si vous n'êtes pas stressé, vous pouvez dépenser 1 #ch#. Si vous le faites, améliorez ou dégradez 1 dé. Durant la phase de fin, vous pouvez recevoir un jeton épuisement pour récupérer 1 #ch#.",
+    "effect_ENG": "When you roll any dice, if you are not stressed, you may spend 1 #ch#. If you do, upgrade or downgrade a die. During the end phase, you may receive 1 deplete token to recover 1 #ch#.",
     "faction": "",
     "add_Data": [0],
     "charge": [1,"0"]
@@ -3833,8 +3833,8 @@
                 "add_Data": [0],
                 "charge": [0],
                 "points": "#1#",
-                "effect": "En phase Système, vous pouvez dépensez 1 #fo#. Si vous le faites :<br>- Activez-vous à expérience +1 ou -1<br>- Engagez-vous à expérience 7.",
-                "effect_ENG": "During System Phase, you may spend 1 #fo#. If you do:<br>- Activate with an experience +1 or -1<br>- Engage at experience 7.",
+                "effect": "En phase Système, vous pouvez dépensez 1 #fo#. Si vous le faites :<br>- Activez-vous à Initiative +1 ou -1<br>- Engagez-vous à Initiative 7.",
+                "effect_ENG": "During System Phase, you may spend 1 #fo#. If you do:<br>- Activate with an Initiative +1 or -1<br>- Engage at Initiative 7.",
                 "faction": ""
         },
         {

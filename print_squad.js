@@ -176,7 +176,7 @@ function displayPilotActions(x){
 
 function displayPilot(x){ 
     console.log(`Displaying pilot for index ${x}`);
-    
+    const imgPilot = document.getElementById('pilot'+x);
     const pilotSkill = document.getElementById('pskill'+x);
     const pilotFaction = document.getElementById('plogo'+x);
     const pilotName = document.getElementById('name'+x);
@@ -194,8 +194,11 @@ function displayPilot(x){
     //const pilotActions = document.getElementById('actions'+x);
     
     getPilotData(x);
-
     const pid = pilotdata[x][0] //We store the PilotID we got from indexes and stored into pilotdata thanks with pilotdata()
+
+    //let's display the pilot jpg
+    imgPilot.innerHTML = "<img src='/img/pilots/"+pid+".jpg'/>";
+
     pilotSkill.textContent = pilots[pid]['skill'];
     pilotFaction.setAttribute("src",'img/'+pilots[pid]['faction']+'mini.jpg');
     pilotName.textContent = pilots[pid]['name'];
