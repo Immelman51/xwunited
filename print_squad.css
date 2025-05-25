@@ -57,7 +57,7 @@
     width: 25cm;
     display: grid;
     grid-template-columns: 1cm 1.5cm 5.8cm 4.2cm 4.2cm 5.3cm 2cm 1cm ;
-    grid-template-rows: 1.5cm 1.5cm 0.5 1.5cm 0.5cm 0.5cm 1.5cm auto auto auto auto auto auto auto;
+    grid-template-rows: 1.5cm 0.5cm 1.5cm 1.5cm 0.5cm 0.5cm 1.5cm auto auto auto auto auto auto auto;
     margin-bottom: 15px;
     overflow: hidden;
     border: solid rgb(13, 0, 128);
@@ -147,7 +147,8 @@
     font-size: x-large;
     font-weight: bolder;
     text-align: center;
-    align-self: center;
+    justify-content: center;
+    vertical-align: middle;
     
     
  }
