@@ -57,7 +57,7 @@
     width: 25cm;
     display: grid;
     grid-template-columns: 1cm 1.5cm 5.8cm 4.2cm 4.2cm 5.3cm 2cm 1cm ;
-    grid-template-rows: 1.5cm 1.5cm 2cm 0.5cm 1.5cm 1.5cm auto auto auto auto auto auto auto;
+    grid-template-rows: 1.5cm 1.5cm 1.5cm 0.5cm 0.5cm 1.5cm auto auto auto auto auto auto auto;
     margin-bottom: 15px;
     overflow: hidden;
     border: solid rgb(13, 0, 128);
@@ -270,7 +270,7 @@
 }
 
 .upg0{
-    grid-area: 7 / 1 / 8 / 4;
+    grid-area: 6 / 3 / 7 / 5;
     
 
     
@@ -279,45 +279,55 @@
 
 .upg1{
    
-    grid-area: 7 / 4 / 8 / 6;
+    grid-area: 6 / 5 / 7 / 7;
     
 
 
 }
 .upg2{
-    grid-area: 7 / 6 / 8 / 9;
+    grid-area: 7 / 1 / 8 / 4;
     
 
 }
 
 .upg3{
-    grid-area: 8 / 1 / 9 / 4;
+    grid-area: 7 / 4 / 8 / 6;
    
 
 }
 .upg4{
-    grid-area: 8 / 4 / 9 / 6;
+    grid-area: 7 / 6 / 8 / 9;
     
 
 
 }
 
 .upg5{
-    grid-area: 8 / 6 / 9 / 9;
+    grid-area: 8 / 1 / 9 / 4;
     
 
 
 }
 .upg6{
-    grid-area: 9 / 1 / 10 / 4;
+    grid-area: 8 / 4 / 9 / 6;
     
 
 
 }
 
 .upg7{
-    grid-area: 9 / 4 / 10 / 6;
+    grid-area: 8 / 8 / 9 / 9;
    
+
+}
+.upg8{
+    grid-area: 9 / 1 / 10 / 4;
+    
+
+}
+.upg9{
+    grid-area: 9 / 4 / 10 / 6;
+    
 
 }
 .upg8{
@@ -327,26 +337,16 @@
 }
 .upg9{
     grid-area: 10 / 1 / 11 / 4;
-    
-
-}
-.upg8{
-    grid-area: 10 / 4 / 11 / 6;
-    
-
-}
-.upg9{
-    grid-area: 10 / 6 / 11 / 9;
    
 
 }
 .upg10{
-    grid-area: 11 / 1 / 12 / 4;
+    grid-area: 10 / 4 / 11 / 6;
    
 
 }
 .upg11{
-    grid-area: 11 / 4 / 12 / 6;
+    grid-area: 10 / 6 / 11 / 9;
     
 
 }

@@ -323,23 +323,12 @@ function displayPilot(x){
             break;
         }
 
-        //We now tackle upgrades equipped. we start i at 1 because at 0, there's the pilotID
-    let mcount = 0; //this is a counter for the coming 'for' loop
-    for(i=1; i<13 ; i++){ 
-        
-        if(i<pilotdata[x].length){
-        let uid = pilotdata[x][i];
-        let mdiv;
-        
-        if((pilots[pid]["charge"][0]===0)&&(pilots[pid]["force"]===0)&&(i<3)){ //to save some space on the sheet, if the pilot has no force or charge, we use that space to fill some upgrades
-            
-                    mdiv = document.getElementById('chargeforce'+x);
-                    mdiv.setAttribute('class','special'); 
-                    mcount++;
-            
-        }else{
-        mdiv = document.getElementById('upgrade'+x+'_'+(i-1-mcount));
-        }
+        //We now tackle upgrades equipped. 
+    
+    for(i=0; i<12 ; i++){ 
+        while(i<pilotdata[x].length){
+        let uid = pilotdata[x][i+1] //we start i+1 because at 0, there's the pilotID
+        mdiv = document.getElementById('upgrade'+x+'_'+i);
         mdivupg = document.createElement('div');
         mdivupg.setAttribute('class','upgrade');
         mdivupg.textContent = upgrades[uid]['name'];
@@ -397,17 +386,16 @@ function displayPilot(x){
             
         }
         mdiv.appendChild(mdivupg);
-    }else{
-        removeElementById("upgrade"+x+"_"+(i-1-mcount));
+    }
+        removeElementById("upgrade"+x+"_"+i);
     }
 }
-    for(m=0;m<mcount;m++){ //we need to remove some more upgrade div if mcount is postive
-        removeElementById("upgrade"+x+"_"+(11-m));
-    }
+    
+    
     
 
 
- }
+ 
  
  
  
