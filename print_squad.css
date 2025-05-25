@@ -57,7 +57,7 @@
     width: 25cm;
     display: grid;
     grid-template-columns: 1cm 1.5cm 5.8cm 4.2cm 4.2cm 5.3cm 2cm 1cm ;
-    grid-template-rows: 1.5cm 1.5cm 1.5cm 0.5cm 0.5cm 1.5cm auto auto auto auto auto auto auto;
+    grid-template-rows: 1.5cm 1.5cm 0.5 1.5cm 0.5cm 0.5cm 1.5cm auto auto auto auto auto auto auto;
     margin-bottom: 15px;
     overflow: hidden;
     border: solid rgb(13, 0, 128);
@@ -165,7 +165,7 @@
     padding: 10px;
  }
  .stat{
-    grid-area: 2 / 1 / 7 / 3;
+    grid-area: 2 / 1 / 8 / 3;
     padding-top: 25px;
     align-items: center;
     justify-content: center;
@@ -196,7 +196,7 @@
  
  
 .ability{
-    grid-area: 2 / 3 / 5 / 7;
+    grid-area: 3 / 3 / 6 / 7;
     display: flex;
     text-align: center;
     align-items: center;
@@ -207,7 +207,7 @@
 
 }
 .actions{
-    grid-area: 2 / 7 / 7 / 9;
+    grid-area: 2 / 7 / 8 / 9;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -251,7 +251,7 @@
     resize: both;
 }
 .special{
-    grid-area: 6 / 3 / 7 / 7;
+    
     display: flex;
     justify-content: space-around;
     
@@ -270,56 +270,56 @@
 }
 
 .upg0{
-    grid-area: 6 / 3 / 7 / 5;   
+    grid-area: 7 / 3 / 8 / 5;   
 
 }
 
 .upg1{
    
-    grid-area: 6 / 5 / 7 / 7;
+    grid-area: 7 / 5 / 8 / 7;
     
 }
 .upg2{
-    grid-area: 7 / 1 / 8 / 4;
+    grid-area: 8 / 1 / 9 / 4;
     
 
 }
 
 .upg3{
-    grid-area: 7 / 4 / 8 / 6;
+    grid-area: 8 / 4 / 9 / 6;
    
 
 }
 .upg4{
-    grid-area: 7 / 6 / 8 / 9;
+    grid-area: 8 / 6 / 9 / 9;
     
 
 
 }
 
 .upg5{
-    grid-area: 8 / 1 / 9 / 4;
+    grid-area: 9 / 1 / 10 / 4;
     
 
 
 }
 .upg6{
-    grid-area: 8 / 4 / 9 / 6;
+    grid-area: 9 / 4 / 10 / 6;
 
 }
 
 .upg7{
-    grid-area: 8 / 8 / 9 / 9;
+    grid-area: 9 / 8 / 10 / 9;
    
 
 }
 .upg8{
-    grid-area: 9 / 1 / 10 / 4;
+    grid-area: 10 / 1 / 11 / 4;
     
 
 }
 .upg9{
-    grid-area: 9 / 4 / 10 / 6;
+    grid-area: 10 / 4 / 11 / 6;
     
 
 }
