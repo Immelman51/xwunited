@@ -3105,7 +3105,7 @@
 		    "modify": true,
             "skill": 3,
             "charge":[0],
-            "force": "2+",
+            "force": 2,
     
             "title": ["Ghost"],
             "points": 12,
