@@ -241,13 +241,13 @@ function displayPilot(x){
             case "+" :
                 newchargeEvolution = document.createElement('img'); // the index 1 of the charge tables indicates if it's recurring or not. We have to display it, and there's a jpg for every case.
                 newchargeEvolution.setAttribute("class","recurring");
-                newchargeEvolution.setAttribute("src","img/chargeplus.jpg");
+                newchargeEvolution.setAttribute("src","img/chargeplus.png");
                 pilotAbility.appendChild(newchargeEvolution);
                 break;
             case "-" : 
                 newchargeEvolution = document.createElement('img'); // the index 1 of the charge tables indicates if it's recurring or not. We have to display it, and there's a jpg for every case.
                 newchargeEvolution.setAttribute("class","recurring");  
-                newchargeEvolution.setAttribute("src","img/chargeminus.jpg");
+                newchargeEvolution.setAttribute("src","img/chargeminus.png");
                 pilotAbility.appendChild(newchargeEvolution);
                 break;
             default :            
@@ -267,7 +267,7 @@ function displayPilot(x){
         
         let newforce = document.createElement('img');
         newforce.setAttribute("class","chargeforceimg");
-        newforce.setAttribute("src","img/forcestat.jpg");
+        newforce.setAttribute("src","img/forcestat.png");
         pilotName.appendChild(newforce);
        
       
