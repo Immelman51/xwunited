@@ -568,7 +568,6 @@ function auto_equip(Slot, indexUpgrade){ //action n°1
         }
     }
     let slotToEquip = document.getElementById('slot'+y+'_'+numero_slot);
-    console.log('AUTOEQUIP UPGRADE :' + nameUpgrade);
     let indexSlot = 0 // We have to look for the index in the menu that match with our upgrade we want to equip
     for(let k=0 ; k<upgrades_Objects_Val[y][numero_slot].length ; k++){
         if (upgrades_Objects_Val[y][numero_slot][k]['name'] === nameUpgrade) {
