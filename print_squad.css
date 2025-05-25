@@ -146,9 +146,8 @@
     grid-area: 1 / 1 / 2 / 7;
     font-size: x-large;
     font-weight: bolder;
-    text-align: center;
-    justify-content: center;
-    vertical-align: middle;
+    display: flex;
+    align-items: center;
     
     
  }
@@ -244,6 +243,7 @@
     height: 1.5cm;
     width: 1.5cm;
     resize: both;
+    margin-left: 10px;
 
 }
 .recurring{
