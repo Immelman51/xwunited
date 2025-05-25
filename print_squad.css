@@ -61,6 +61,11 @@
     border: solid rgb(13, 0, 128);
     
 }
+.pilotImg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .pskill{
     grid-area: 1 / 1 / 2 / 2;
     font-size: x-large;
