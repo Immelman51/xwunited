@@ -143,7 +143,7 @@
 
 }
 .name{
-    grid-area: 1 / 1 / 2 / 7;
+    grid-area: 3 / 1 / 6 / 7;
     font-size: x-large;
     font-weight: bolder;
     display: flex;
