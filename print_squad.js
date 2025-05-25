@@ -200,7 +200,8 @@ function displayPilot(x){
     newimage = document.createElement('img');
     newimage.setAttribute('class','pilotImg');
     newimage.setAttribute('src', 'img/pilots/'+pid+'.jpg');
-    imgPilot.appendChild(newimage);
+    imgPilot.insertBefore(newimage, imgPilot.firstChild);
+
 
     pilotSkill.textContent = pilots[pid]['skill'];
     pilotFaction.setAttribute("src",'img/'+pilots[pid]['faction']+'mini.jpg');

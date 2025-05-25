@@ -71,8 +71,14 @@
     height: 100%;
     object-fit: cover; /* Remplit la zone sans déformation, rogne si nécessaire */
     z-index: 0; 
+    pointer-events: none; /* pour ne pas gêner les clics */
     
 }
+.squad > *:not(.pilotImg) {
+    position: relative;
+    z-index: 2;
+  }
+
 .row1-background {
     grid-area: 1 / 1 / 2 / 9; /* Ligne 1, colonne 1 à 8 (car 9 exclue) */
     background-color: rgba(255, 255, 255, 0.5);
@@ -80,7 +86,7 @@
     position: relative;
   }
   
-.pskill,
+/*.pskill,
 .factionpilot,
 .name,
 .ship,
@@ -93,7 +99,6 @@
 .hull
 .shield
 .actions
-.action
 .linked
 .chargeforce
 .chargeforceimg
@@ -116,10 +121,11 @@
 .chs2
 .chs3{
   z-index: 2;
-  position: relative; /* nécessaire pour que z-index fonctionne dans un contexte de stacking */
+  position: relative; nécessaire pour que z-index fonctionne dans un contexte de stacking
+ } */
   
   
-}
+
 .pskill{
     grid-area: 1 / 1 / 2 / 2;
     font-size: x-large;
@@ -217,7 +223,7 @@
     align-items: center;
     flex-shrink: 3;
     max-width: 2.5cm;
-    background-color: white;
+    
 
 
 }
