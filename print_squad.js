@@ -362,6 +362,7 @@ function displayPilot(x){
         }
         
         let nbrcharge = upgrades[uid]['charge'][0];
+        let nbrforce = upgrades[uid]['force'];
         for(j=0; j<nbrcharge;j++){ //is going to display as many charge logos as the number of charges the upgrade has
             let newcharge = document.createElement('img');
             newcharge.setAttribute("class","chargeforceimg");
@@ -384,6 +385,12 @@ function displayPilot(x){
                 default :
                 break;
             
+        }
+        for(j=0; j<nbrforce; j++){
+            let newforce = document.createElement('img');
+            newforce.setAttribute("class","chargeforceimg");
+            newforce.setAttribute("src","img/forcestat.png");
+            mdivupg.appendChild(newforce);
         }
         mdiv.appendChild(mdivupg);
     }
