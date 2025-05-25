@@ -197,7 +197,10 @@ function displayPilot(x){
     const pid = pilotdata[x][0] //We store the PilotID we got from indexes and stored into pilotdata thanks with pilotdata()
 
     //let's display the pilot jpg
-    imgPilot.innerHTML = "<img src='/img/pilots/"+pid+".jpg'/>";
+    newimage = document.createElement('img');
+    newaction.setAttribute('class','pilotImg');
+    newaction.setAttribute('src', 'img/pilots/'+pid+'.jpg');
+    imgPilot.appendChild(newimage);
 
     pilotSkill.textContent = pilots[pid]['skill'];
     pilotFaction.setAttribute("src",'img/'+pilots[pid]['faction']+'mini.jpg');
