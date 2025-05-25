@@ -325,8 +325,8 @@ function displayPilot(x){
 
         //We now tackle upgrades equipped. 
     
-    for(i=0; i<11 ; i++){ 
-        while(i<pilotdata[x].length){
+    for(i=0; i< pilotdata[x].length-1 ; i++){ 
+        
         let uid = pilotdata[x][i+1] //we start i+1 because at 0, there's the pilotID
         mdiv = document.getElementById('upgrade'+x+'_'+i);
         mdivupg = document.createElement('div');
@@ -363,7 +363,7 @@ function displayPilot(x){
         
         let nbrcharge = upgrades[uid]['charge'][0];
         for(j=0; j<nbrcharge;j++){ //is going to display as many charge logos as the number of charges the upgrade has
-            newcharge = document.createElement('img');
+            let newcharge = document.createElement('img');
             newcharge.setAttribute("class","chargeforceimg");
             newcharge.setAttribute("src","img/chargestat.png");
             mdivupg.appendChild(newcharge);
@@ -387,9 +387,11 @@ function displayPilot(x){
         }
         mdiv.appendChild(mdivupg);
     }
+    for(i=pilotdata[x].length; i<11 ; i++){ //we remove the upgrade divs that aer empty
         removeElementById("upgrade"+x+"_"+i);
     }
 }
+
      
 
 
