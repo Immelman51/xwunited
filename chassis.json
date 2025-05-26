@@ -29,16 +29,16 @@
         "id": 3,
         "nbrOfEffects": 2,
         "effect1": "<em><strong>Servomoteurs S-Foils :</strong></em>",
-        "effect2": "<img class='chargeimg logo' src='img/chargestatRed.png'> <em>(Déplié) : </em>",
-        "effect3": "<img class='chargeimg logo' src='img/chargestat.png'> <em>(Réplié) : </em>Tant que vous effectuez une attaque principale, lancez 1 dé en moins. Ajoute : <img class='action' src='img/T65Sfoils.png' alt='' />"
+        "effect2": "<img class='chargeforceimg' src='img/chargestatRed.png'> <em>(Déplié) : </em>",
+        "effect3": "<img class='chargeforceimg' src='img/chargestat.png'> <em>(Réplié) : </em>Tant que vous effectuez une attaque principale, lancez 1 dé en moins. Ajoute : <img class='action' src='img/T65Sfoils.png' alt='' />"
     },
     {
         "name": "Pivot Wing",
         "id": 4,
         "nbrOfEffects": 2,
         "effect1": "<em><strong>Aile Pivot :</strong></em>",
-        "effect2": "<img class='chargeimg logo' src='img/chargestatRed.png'> <em>(Relevée) : </em>Après avoir executé une manoeuvre [0#stop#], vous pouvez pivoter votre vaisseau de 90° ou 180°. Tant que vous défendez, lancez 1 dé de défense en moins.",
-        "effect3": "<img class='chargeimg logo' src='img/chargestat.png'> <em>(Baissée) : </em>"
+        "effect2": "<img class='chargeforceimg' src='img/chargestatRed.png'> <em>(Relevée) : </em>Après avoir executé une manoeuvre [0#stop#], vous pouvez pivoter votre vaisseau de 90° ou 180°. Tant que vous défendez, lancez 1 dé de défense en moins.",
+        "effect3": "<img class='chargeforceimg' src='img/chargestat.png'> <em>(Baissée) : </em>"
     },
     {
         "name": "Vectored Thrusters",
@@ -53,8 +53,8 @@
         "id": 6,
         "nbrOfEffects": 2,
         "effect1": "<em><strong>S-Foils Stabilisés :</strong></em>",
-        "effect2": "<img class='chargeimg logo' src='img/chargestatRed.png'><em>(Repliés) : </em>Lorsque vous attaquez, si la cible n'est pas dans votre #bulls#, lancez 1 dé de moins.<br><img class='action' src='img/confBwingR1.png'><br><img class='action' src='img/Rd R.png'>",
-        "effect3": "<img class='chargeimg logo' src='img/chargestat.png'><em>(Dépliés) : </em>Après avoir effectué une attaque, vous pouvez dépenser votre verrouillage sur le défenseur pour effectuer une attaque bonus #canon# contre ce vaisseau en utilisant une amélioration #canon# avec laquelle vous n’avez pas attaqué à ce round.<br><img class='action' src='img/confBwingD.png'>"
+        "effect2": "<img class='chargeforceimg' src='img/chargestatRed.png'><em>(Repliés) : </em>Lorsque vous attaquez, si la cible n'est pas dans votre #bulls#, lancez 1 dé de moins.<br><img class='action' src='img/confBwingR1.png'><br><img class='action' src='img/Rd R.png'>",
+        "effect3": "<img class='chargeforceimg' src='img/chargestat.png'><em>(Dépliés) : </em>Après avoir effectué une attaque, vous pouvez dépenser votre verrouillage sur le défenseur pour effectuer une attaque bonus #canon# contre ce vaisseau en utilisant une amélioration #canon# avec laquelle vous n’avez pas attaqué à ce round.<br><img class='action' src='img/confBwingD.png'>"
     },
     {
         "name": "Advanced Targetting Computer",
@@ -77,8 +77,8 @@
     "id": 9,   
     "nbrOfEffects": 2,
     "effect1": "<em><strong>Aile Basculante</strong></em>",
-    "effect2": "<img class='chargeimg logo' src='img/chargestatRed.png'> <em> (Baissée): </em> Après avoir executé une manoeuvre [0#stop#], vous pouvez pivoter votre vaisseau de 90° ou 180°. Tant que vous défendez, lancez 1 dé de défense en moins.",
-    "effect3": "<img class='chargeimg logo' src='img/chargestat.png'> <em>(Relevée) :</em>"
+    "effect2": "<img class='chargeforceimg' src='img/chargestatRed.png'> <em> (Baissée): </em> Après avoir executé une manoeuvre [0#stop#], vous pouvez pivoter votre vaisseau de 90° ou 180°. Tant que vous défendez, lancez 1 dé de défense en moins.",
+    "effect3": "<img class='chargeforceimg' src='img/chargestat.png'> <em>(Relevée) :</em>"
     },
     {
         "name": "Autothrusters",
@@ -124,7 +124,7 @@
         "name": "Rigged Energy Cells",
         "id": 15,
         "nbrOfEffects": 1,
-        "effect1": "<em><strong>Cellules Énergétiques Bidouillées :</strong></em>À la fin de la phase d’activation, si vous n'êtes pas arrimé perdez 1 #ch#. Vous êtes détruit si vous avez 0 #ch#. Avant de retirer votre figurine, chaque vaisseau à porté 0–1 subit 1 dégât #crit# <img class='chargeimg logo' src='img/chargestat.png'><img class='chargeimg logo' src='img/chargestat.png'><img class='chargeimg logo' src='img/chargestat.png'>",
+        "effect1": "<em><strong>Cellules Énergétiques Bidouillées :</strong></em>À la fin de la phase d’activation, si vous n'êtes pas arrimé perdez 1 #ch#. Vous êtes détruit si vous avez 0 #ch#. Avant de retirer votre figurine, chaque vaisseau à porté 0–1 subit 1 dégât #crit# <img class='chargeforceimg' src='img/chargestat.png'><img class='chargeforceimg' src='img/chargestat.png'><img class='chargeforceimg' src='img/chargestat.png'>",
         "effect2": "",
         "effect3": "" 
     },
@@ -229,8 +229,8 @@
     "id":28,
     "nbrOfEffects": 2,
     "effect1":"<em><strong>S-Foils Intégrés : </strong></em>",
-    "effect2": "<img class='chargeimg logo' src='img/chargestatRed.png'><em>(Repliés)</em>Tant que vous effectuez une attaque principale, si le défenseur n’est pas dans votre #bulls#, lancez 1 dé d’attaque en moins.<br><img class='action' src='confT70.png>",
-    "effect3": "<img class='chargeimg logo' src='img/chargestat.png'><em>(Dépliés)</em>" 
+    "effect2": "<img class='chargeforceimg' src='img/chargestatRed.png'><em>(Repliés)</em>Tant que vous effectuez une attaque principale, si le défenseur n’est pas dans votre #bulls#, lancez 1 dé d’attaque en moins.<br><img class='action' src='confT70.png>",
+    "effect3": "<img class='chargeforceimg' src='img/chargestat.png'><em>(Dépliés)</em>" 
 },
 {
     "name": "Refined Gyrostabilizers",
@@ -279,8 +279,8 @@
     "id":34,
     "nbrOfEffects": 2,
     "effect1":"<em><strong>Support d'Ancrage : </strong></em>",
-    "effect2": "<img class='chargeimg logo' src='img/chargestatRed.png'> <em>(Replié) : </em>Après un mouvement, si vous chevauchez un astéroïde/débris, ignorez ses effets et changez de configuration.",
-    "effect3": "<img class='chargeimg logo' src='img/chargestat.png'> <em>(Déplié) : </em>Ignorez l'astéroïde/débris que vous chevauchez. Si vous révélez un virage, tournez de 90° dans la direction sélectionnée et ignorez la manoeuvre. Si vous révélez toute autre manoeuvre, ne vous déplacez pas et ignorez la manoeuvre." 
+    "effect2": "<img class='chargeforceimg' src='img/chargestatRed.png'> <em>(Replié) : </em>Après un mouvement, si vous chevauchez un astéroïde/débris, ignorez ses effets et changez de configuration.",
+    "effect3": "<img class='chargeforceimg' src='img/chargestat.png'> <em>(Déplié) : </em>Ignorez l'astéroïde/débris que vous chevauchez. Si vous révélez un virage, tournez de 90° dans la direction sélectionnée et ignorez la manoeuvre. Si vous révélez toute autre manoeuvre, ne vous déplacez pas et ignorez la manoeuvre." 
 },
 {
     "name":"Pinpoint Tractor Array",
@@ -319,17 +319,17 @@
     "id":39,
     "nbrOfEffects": 2,
     "effect1":"<em><strong>Stabilisateurs de Répulseurs : </strong></em>",
-    "effect2": "<img class='chargeimg logo' src='img/chargestatRed.png'> <em>(Inactifs) : </em>Reduisez la difficulté de vos manoeuvres #straight#.",
-    "effect2ENG": "<img class='chargeimg logo' src='img/chargestatRed.png'> <em>(Inactive) : </em>Reduce the difficulty of your #straight# maneuvers.",
-    "effect3ENG": "<img class='chargeimg logo' src='img/chargestat.png'> <em>(Active) : </em>After you reveal a #Lturn# / #Lbank# / #Rbank# / #Lturn# maneuver, you must perform that maneuver as a sideslip, increasing its difficulty.",
-    "effect3": "<img class='chargeimg logo' src='img/chargestat.png'> <em>(Actifs) : </em>Après avoir révélé une manoeuvre #Lturn# / #Lbank# / #Rbank# / #Lturn#, vous devez effectuer cette manoeuvre comme, increasing its difficulty." 
+    "effect2": "<img class='chargeforceimg' src='img/chargestatRed.png'> <em>(Inactifs) : </em>Reduisez la difficulté de vos manoeuvres #straight#.",
+    "effect2ENG": "<img class='chargeforceimg' src='img/chargestatRed.png'> <em>(Inactive) : </em>Reduce the difficulty of your #straight# maneuvers.",
+    "effect3ENG": "<img class='chargeforceimg' src='img/chargestat.png'> <em>(Active) : </em>After you reveal a #Lturn# / #Lbank# / #Rbank# / #Lturn# maneuver, you must perform that maneuver as a sideslip, increasing its difficulty.",
+    "effect3": "<img class='chargeforceimg' src='img/chargestat.png'> <em>(Actifs) : </em>Après avoir révélé une manoeuvre #Lturn# / #Lbank# / #Rbank# / #Lturn#, vous devez effectuer cette manoeuvre comme, increasing its difficulty." 
 
 },
 {
     "name":"Fire Convergence",
     "id":40,
     "nbrOfEffects": 1,
-    "effect1":"<img class='chargeimg logo' src='img/chargestat.png'><img class='chargeimg logo' src='img/chargestat.png'><em><strong>Convergence Des Tirs : </strong></em>Tant qu’un vaisseau allié effectue une attaque non-#tur#, si le défenseur est dans votre #tur#, vous pouvez dépenser 1 #ch#. Dans ce cas, l’attaquant relance jusqu’à 2 dés d’attaque.",
+    "effect1":"<img class='chargeforceimg' src='img/chargestat.png'><img class='chargeforceimg' src='img/chargestat.png'><em><strong>Convergence Des Tirs : </strong></em>Tant qu’un vaisseau allié effectue une attaque non-#tur#, si le défenseur est dans votre #tur#, vous pouvez dépenser 1 #ch#. Dans ce cas, l’attaquant relance jusqu’à 2 dés d’attaque.",
     "effect2": "",
     "effect3": "" 
 },
@@ -385,7 +385,7 @@
     "name":"Hidden Devices",
     "id":47,
     "nbrOfEffects": 1,
-    "effect1":"<img class='chargeimg logo' src='img/chargestat.png'><em><strong>Appareils Dissimulés : </strong></em>Vous pouvez dépenser cette charge comme si elle se trouvait sur une de vos cartes #ill# équipées.",
+    "effect1":"<img class='chargeforceimg' src='img/chargestat.png'><em><strong>Appareils Dissimulés : </strong></em>Vous pouvez dépenser cette charge comme si elle se trouvait sur une de vos cartes #ill# équipées.",
     "effect2": "",
     "effect3": "" 
 },
@@ -453,8 +453,8 @@
     "name":"Turbo Thrusters",
     "id":55,
     "nbrOfEffects": 1,
-    "effect1ENG":"<img class='chargeimg logo' src='img/chargestat.png'><em><strong>Turbo Thrusters : </strong></em>After you execute a #SL# action, you can spend 1 #ch# or expose a damage card to remove a disable token.",
-    "effect1":"<img class='chargeimg logo' src='img/chargestat.png'><em><strong>Turbo-Propulseurs : </strong></em>Après avoir exécuté une action #SL#, vous pouvez dépenser 1 #ch# ou exposer une carte de dégat pour retirer un marqueur de désarmement.",
+    "effect1ENG":"<img class='chargeforceimg' src='img/chargestat.png'><em><strong>Turbo Thrusters : </strong></em>After you execute a #SL# action, you can spend 1 #ch# or expose a damage card to remove a disable token.",
+    "effect1":"<img class='chargeforceimg' src='img/chargestat.png'><em><strong>Turbo-Propulseurs : </strong></em>Après avoir exécuté une action #SL#, vous pouvez dépenser 1 #ch# ou exposer une carte de dégat pour retirer un marqueur de désarmement.",
     "effect2": "",
     "effect3": "" 
 },
@@ -463,8 +463,8 @@
     "id":56,
     "nbrOfEffects": 2,
     "effect1":"<em><strong>Ailes Repliantes : </strong></em>",
-    "effect2": "<img class='chargeimg logo' src='img/chargestatRed.png'><em>(Pliées) : </em>Vous pouvez attaquer uniquement dans votre #bulls#.<br>Lorsque vous défendez, lancez 1 dé de défense en plus.",
-    "effect3": "<img class='chargeimg logo' src='img/chargestat.png'><em>(Dépliées) : </em>Cosidérez vos attaque #Farc# comme des attaques #bulls#.<br>En phase de fin, récupérez 1 #ch# sur vos 'Turbo-Propulseurs'." 
+    "effect2": "<img class='chargeforceimg' src='img/chargestatRed.png'><em>(Pliées) : </em>Vous pouvez attaquer uniquement dans votre #bulls#.<br>Lorsque vous défendez, lancez 1 dé de défense en plus.",
+    "effect3": "<img class='chargeforceimg' src='img/chargestat.png'><em>(Dépliées) : </em>Cosidérez vos attaque #Farc# comme des attaques #bulls#.<br>En phase de fin, récupérez 1 #ch# sur vos 'Turbo-Propulseurs'." 
 },
 {
     "name":"Night Buzzard",
@@ -487,7 +487,7 @@
  "id":59,
  "nbrOfEffects":2,
  "effect1":"<em><strong>Propulseur d'Interception : </strong></em>",
- "effect2": "<img class='chargeimg logo' src='img/chargestat.png'><img class='chargeimg logo' src='img/chargestat.png'><img class='chargeimg logo' src='img/chargeminus.png'> <em>(Accroché) : </em>Tant que vous avez 1 #ch# active, pendant la phase système, recevez 1 jeton de désarmement. <img class='action' src='interceptbooster.png>",
+ "effect2": "<img class='chargeforceimg' src='img/chargestat.png'><img class='chargeforceimg' src='img/chargestat.png'><img class='chargeforceimg' src='img/chargeminus.png'> <em>(Accroché) : </em>Tant que vous avez 1 #ch# active, pendant la phase système, recevez 1 jeton de désarmement. <img class='action' src='interceptbooster.png>",
  "effect3": "<em>(Détaché) : </em>Vous ne pouvez pas changer de configuration"
 }
   

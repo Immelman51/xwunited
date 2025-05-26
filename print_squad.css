@@ -197,13 +197,6 @@
     flex-shrink: 4;
 }
 
-.chargeforce {
-    grid-area: 6 / 3 / 7 / 7;
-    display: flex;
-    justify-content: center;
-    height: 1.5cm;
-
-}
 .chargeforceimg{
     height: 1.5cm;
     width: 1.5cm;
