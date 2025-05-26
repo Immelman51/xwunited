@@ -287,29 +287,28 @@
    
 
 }
+.chassis{
+background-color: rgba(160, 160, 160, 0.8);
+padding-top: 10px;
+display: flex;
+text-align: center;
+align-items: center;
 
+}
 .chs1{
     grid-area: 12 / 1 / 13 / 9;
-    padding-top: 10px;
     padding-bottom: 10px;
-    background-color: rgba(160, 160, 160, 0.8);
     text-align: center;
-    align-items: center;
+    
 }
 .chs2{
     grid-area: 13 / 1 / 14 / 5;
-    padding-top: 10px;
-    align-items: center;
     border-bottom: 3px black;
-    background-color: rgba(160, 160, 160, 0.8);
 
 }
 .chs3{
     grid-area: 13 / 5 / 14 / 9;
-    padding-top: 10px;
-    align-items: center;
     border-bottom: 3px black;
-    background-color: rgba(160, 160, 160, 0.8);
     
 }
 

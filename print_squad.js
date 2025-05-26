@@ -228,9 +228,9 @@ function displayPilot(x){
     
     displayPilotActions(x);
     
-    for(j=0; j<pilots[pid]['charge'][0];j++){ //We are going to display as many charge pictures as the charge value of the pilot
+    for(j=0; j<pilots[pid]['charge'][0];j++){ //Pilot Ability charges : We are going to display as many charge pictures as the charge value of the pilot ability
         
-        newcharge = document.createElement('img');
+        newcharge = document.createElement('img'); 
         newcharge.setAttribute("class","chargeforceimg");
         newcharge.setAttribute("src","img/chargestat.png");
         pilotAbility.appendChild(newcharge);
@@ -280,7 +280,7 @@ function displayPilot(x){
    
     switch(cid.length){
         
-        case 1 :
+        case 1 : //if there is only 1 chassis ability or no chassis ability : it can be simple, or it can be more complex such as 2 configurations.
             if(chassis[cid[0]]["nbrOfEffects"]===0){
             removeElementById("chassis"+x+"_1");    
             removeElementById("chassis"+x+"_2");
