@@ -7496,7 +7496,7 @@
             "shipId": 84,
             "skill": 5,
             "points": 6,                        
-            "ability": "Après avoir executé une manoeuvre de vitesse 1-2, vous pouvez coordonné un vaisseau allié à portée 0-2.",
+            "ability": "Après avoir executé une manoeuvre de vitesse 1-2, vous pouvez coordonner un vaisseau allié à portée 0-2.",
             "ability_ENG": "After you perform a 1-2 speed maneuver, you may coordinate a friendly ship at range 0-2.",
             "slots": [
                 "Special",
