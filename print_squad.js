@@ -336,7 +336,7 @@ function displayPilot(x){
         upglogo.setAttribute("src","img/"+upgrades[uid]['slot']+".png");
         mdivupg.appendChild(upglogo);
         mdivupg.textContent = upgrades[uid]['name'];*/
-        mdivupg.innerHTML = '<img src="img/'+upgrades[uid]["slot"]+'.jpg" class="logo"/> '+'<span>'+upgrades[uid]["name"]+'</span>'; 
+        mdivupg.innerHTML = '<img src="img/'+upgrades[uid]["slot"]+'.png" class="logo"/> '+'<span>'+upgrades[uid]["name"]+'</span>'; 
         
         
         switch (upgrades[uid]['add_Data'][0]) { //we are going to process the data in add_data entry. Those may add a small picture to remind the player some specific effect of the upgrade, or remove some HTML elements such as the millenium falcon that removes a chassis ability
