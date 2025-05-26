@@ -7,7 +7,6 @@
             "id": 0,
             "attack": [["F",3]],
             "agility": 2,
-            "keyword": [],
             "hull": 4,
             "shields": 2,
             "actions": [
@@ -32,7 +31,6 @@
             "factions": [ "Rebel_Alliance", "Hutt_Cartel", "Shadow_Specialists" ],            
             "chassis":[0],
             "id": 1,
-            "keyword": [],
             "attack": [["F",2]],
             "agility": 1,
             "hull": 6,
@@ -60,7 +58,6 @@
             "attack": [["F",2]],
             "id":2,
             "agility": 3,
-            "keyword": [],
             "hull": 2,
             "shields": 2,
             "chassis": [5],
@@ -87,7 +84,6 @@
             "name": "YT-1300 Light Freighter",
             "factions": [ "Pirates_and_Smugglers", "Resistance" ],
             "id": 3,
-            "keyword": [],
             "attack": [["T",3]],
             "agility": 1,
             "hull": 8,
@@ -119,7 +115,6 @@
             "agility": 3,
             "hull": 3,
             "shields": 0,
-            "keyword": ["TIE"],
             "actions": [
                 [0,"Fo W"],
                 [0,"Br W"],
@@ -134,7 +129,7 @@
                 [ 0, 0, 2, 0, 0, 0]
             ],
             "base": ["Small"],
-            "slots": ["Modification"]
+            "slots": ["Tie mod"]
         },
         {
     
@@ -145,7 +140,6 @@
             "agility": 3,
             "hull": 3,
             "shields": 2,
-            "keyword": ["TIE"],
             "chassis": [7],
             "actions": [
                 [1,"Fo W", "Br R"],
@@ -161,7 +155,7 @@
                 [ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0]
             ],
             "base": ["Small"],
-            "slots": ["Tech", "Missile", "Sensor", "Modification"]
+            "slots": ["Tech", "Missile", "Sensor", "Tie mod"]
         },
         {
         
@@ -172,7 +166,6 @@
             "agility": 3,
             "hull": 3,
             "shields": 0,
-            "keyword": ["TIE"],
             "chassis": [10],
             "actions": [
                 [0,"Fo W"],
@@ -189,7 +182,7 @@
                 [ 0, 0, 1, 0, 0, 3, 0, 0],
                 [ 0, 0, 2, 0, 0, 0, 0, 0]
             ],
-            "slots": ["Modification"]
+            "slots": ["Tie mod"]
         },
         {
         
@@ -202,7 +195,6 @@
             "hull": 6,
             "shields": 4,
             "base": ["Medium"],
-            "keyword": [],
             "actions": [
                 [0,"Fo W"],
                 [0,"Lo W"],
@@ -228,7 +220,6 @@
             "agility": 2,
             "hull": 3,
             "shields": 2,
-            "keyword": [],
             "actions": [
                 [1,"Fo W", "Ro R"],
                 [1,"Lo W", "Ro R"],
@@ -255,7 +246,6 @@
             "agility": 1,
             "hull": 6,
             "shields": 4,
-            "keyword": [],
             "chassis": [18],
             "actions": [
                 [0,"Fo W"],
@@ -283,7 +273,6 @@
             "agility": 1,
             "hull": 4,
             "shields": 4,
-            "keyword": [],
             "chassis": [6],
             "actions": [
                 [1,"Fo W", "Br R"],
@@ -311,7 +300,6 @@
             "agility": 2,
             "hull": 6,
             "shields": 0,
-            "keyword": ["TIE"],
             "chassis": [8],
             "actions": [
                 [0,"Fo W"],
@@ -328,7 +316,7 @@
                 [ 0, 0, 2, 0, 0, 0],
                 [ 0, 0, 0, 0, 0, 3]
             ],
-            "slots": ["Torpedo", "Missile", "Payload", "Gunner", "Modification"]
+            "slots": ["Torpedo", "Missile", "Payload", "Gunner", "Tie mod"]
         },
         {
       
@@ -339,7 +327,6 @@
             "id": 12,
             "attack": [["F",2]],
             "base": ["Small"],
-            "keyword": [],
             "agility": 2,
             "hull": 2,
             "shields": 2,
@@ -369,7 +356,6 @@
             "hull": 3,
             "shields": 4,
             "base": ["Small"],
-            "keyword": ["TIE"],
             "chassis": [11],
             "actions": [
                 [0,"Fo W"],
@@ -387,7 +373,7 @@
                 [ 0, 0, 1, 0, 0, 2],
                 [ 0, 0, 1, 0, 0, 0]
             ],
-            "slots": ["Tech","Missile","Cannon","Modification","Sensor"]
+            "slots": ["Tech","Missile","Cannon","Tie mod","Sensor"]
         },
         {
      
@@ -401,7 +387,6 @@
             "hull": 3,
             "shields": 3,
             "base": ["Small"],
-            "keyword": [],
             "actions": [
                 [0,"Fo W"],
                 [0,"Ev W"],
@@ -431,7 +416,6 @@
             "hull": 3,
             "shields": 2,
             "base": ["Small"],
-            "keyword": ["TIE"],
             "chassis": [19],
             "actions": [
                 [0,"Fo W"],
@@ -447,7 +431,7 @@
                 [ 2, 2, 1, 2, 2, 3],
                 [ 0, 0, 2, 0, 0, 3]
             ],
-            "slots": ["Tech","Gunner","Modification","Modification","Calculator"]
+            "slots": ["Tech","Gunner","Tie mod","Calculator"]
 
         },
         {
@@ -461,7 +445,6 @@
             "hull": 6,
             "shields": 4,
             "chassis": [2],
-            "keyword": [],
             "actions": [
                 [0,"Fo W"],
                 [0,"Lo W"],
@@ -489,7 +472,6 @@
             "agility": 0,
             "hull": 12,
             "shields": 4,
-            "keyword": [],
             "actions": [
                 [0,"Fo W"],
                 [0,"Lo W"],
@@ -520,7 +502,6 @@
             "hull": 4,
             "shields": 1,
             "chassis": [20],
-            "keyword": [],
             "actions": [
                 [0,"Fo W"],
                 [0,"Lo W"],
@@ -550,7 +531,6 @@
             "hull": 3,
             "shields": 1,
             "chassis": [21],
-            "keyword": [],
             "actions": [
                 [0,"Fo W"],
                 [0,"Lo W"],
@@ -588,7 +568,6 @@
         
             ],
             "base": ["Medium"],
-            "keyword": [],
             "maneuvers": [
                 [ 0, 0, 0, 0, 0, 0, 0, 0 ],
                 [ 2, 1, 1, 1, 2, 0, 0, 0 ],
@@ -609,7 +588,6 @@
             "hull": 9,
             "shields": 3,
             "base": ["Large"],
-            "keyword": [],
             "actions": [
                 [0,"Fo W"],
                 [0,"Lo W"],
@@ -636,7 +614,6 @@
             "agility": 2,
             "hull": 5,
             "shields": 1,
-            "keyword": [],
             "actions": [
                 [0,"Fo W"],
                 [0,"Lo W"],
@@ -664,7 +641,6 @@
             "hull": 6,
             "shields": 3,
             "base": ["Medium"],
-            "keyword": [],
             "actions": [
                 [0,"Fo W"],
                 [0,"Lo W"],
@@ -693,7 +669,6 @@
             "agility": 1,
             "hull": 6,
             "shields": 3,
-            "keyword": ["TIE"],
             "base": ["Medium"],
             "actions": [
                 [0,"Fo W"],
@@ -709,7 +684,7 @@
                 [ 3, 2, 2, 2, 3, 0 ],
                 [ 0, 0, 0, 0, 0, 3 ]
             ],
-            "slots": ["Tech","Gunner","Missile","Torpedo","Payload","Payload","Modification"]
+            "slots": ["Tech","Gunner","Missile","Torpedo","Payload","Payload","Tie mod"]
 
         },
         {
@@ -723,7 +698,6 @@
             "hull": 10,
             "shields": 4,
             "base": ["Large"],
-            "keyword": [],
             "chassis": [22],
             "actions": [
                 [0,"Fo W"],
@@ -751,7 +725,6 @@
             "hull": 3,
             "shields": 1,
             "chassis": [23],
-            "keyword": [],
             "actions": [
                 [0,"Fo W"],
                 [0,"Ev W"],
@@ -778,7 +751,6 @@
             "agility": 3,
             "hull": 2,
             "shields": 2,
-           "keyword": ["TIE"],
             "actions": [
                 [0,"Fo W"],
                 [0,"Ev W"],
@@ -796,7 +768,7 @@
                 [ 0, 0, 2, 0, 0, 3, 0, 0, 0, 0 ],
                 [ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0 ]
             ],
-            "slots": ["Sensor","Missile","Modification"]
+            "slots": ["Sensor","Missile","Tie mod"]
 
         },
         {
@@ -811,7 +783,6 @@
             "hull": 5,
             "shields": 4,
             "base": ["Medium"],
-            "keyword": [],
             "actions": [
                 [0,"Fo W"],
                 [0,"Lo W"],
@@ -838,7 +809,6 @@
             "agility": 2,
             "hull": 6,
             "shields": 3,
-            "keyword": [],
             "actions": [
                 [1,"Fo W", "Ro R"],
                 [1,"Lo W", "Ro R"],
@@ -866,7 +836,6 @@
             "hull": 6,
             "shields": 3,
             "base": ["Medium"],
-            "keyword": [],
             "actions": [
                 [0,"Fo W"],
                 [0,"Lo W"],
@@ -893,7 +862,6 @@
             "hull": 4,
             "shields": 0,
             "chassis": [24],
-            "keyword": [],
             "actions": [
                 [0,"Fo W"],
                 [0,"Lo W"],
@@ -923,7 +891,6 @@
             "agility": 2,
             "hull": 8,
             "shields": 2,
-            "keyword": [],
             "actions": [
                 [0,"Fo W"],
                 [0,"Lo W"],
@@ -953,7 +920,6 @@
             "hull": 5,
             "shields": 0,
             "chassis": [25],
-            "keyword": [],
             "actions": [
                 [0,"Fo W"],
                 [0,"Lo W"],
@@ -983,7 +949,6 @@
             "hull": 5,
             "shields": 3,
             "chassis": [4],
-            "keyword": [],
             "actions": [
                 [0,"Fo W"],
                 [0,"Lo W"],
@@ -1010,7 +975,6 @@
             "hull": 4,
             "shields": 0,
             "base": ["Small"],
-            "keyword": ["TIE"],
             "chassis": [14],
             "actions": [
                 [0,"Fo W"],
@@ -1024,7 +988,7 @@
                 [ 2, 1, 1, 1, 2, 0, 3, 3 ],
                 [ 0, 2, 1, 2, 0, 0, 0, 0 ]
             ],
-            "slots": ["Payload","Modification"]
+            "slots": ["Payload","Tie mod"]
 
         },
         {
@@ -1039,7 +1003,6 @@
             "hull": 4,
             "shields": 1,
             "base": ["Small"],
-            "keyword": [],
             "actions": [
                 [0,"Fo W"],
                 [0,"Br R"],
@@ -1068,7 +1031,6 @@
             "hull": 6,
             "shields": 4,
             "base": ["Medium"],
-            "keyword": [],
             "actions": [
                 [0,"Fo W"],
                 [0,"Lo W"],
@@ -1095,7 +1057,6 @@
             "agility": 2,
             "hull": 4,
             "base": ["Small"],
-            "keyword": ["TIE"],
             "shields": 1,
             "actions": [
                 [0,"Fo W"],
@@ -1110,7 +1071,7 @@
                 [ 2, 2, 1, 2, 2, 0],
                 [ 0, 0, 2, 0, 0, 3]
             ],
-            "slots": ["Gunner","Missile","Turret","Modification","Calculator"]
+            "slots": ["Gunner","Missile","Turret","Tie mod","Calculator"]
 
         },
         {
@@ -1124,7 +1085,6 @@
             "hull": 4,
             "shields": 3,
             "base": ["Small"],
-            "keyword": [],
             "chassis": [0],
             "actions": [
                 [0,"Fo W"],
@@ -1154,7 +1114,6 @@
             "shields": 2,
             "base": ["Medium"],
             "chassis": [26],
-            "keyword": [],
             "actions": [
                 [0,"Fo W"],
                 [0,"Lo W"],
@@ -1183,7 +1142,6 @@
             "shields": 1,
             "base": ["Small"],
             "chassis": [27],
-            "keyword": [],
             "actions": [
                 [0,"Fo W"],
                 [0,"Co W"]
@@ -1209,7 +1167,6 @@
             "hull": 6,
             "shields": 2,
             "base": ["Medium"],
-            "keyword": ["TIE"],
             "chassis": [12],
             "actions": [
                 [0,"Fo W"],
@@ -1224,7 +1181,7 @@
                 [ 3, 2, 1, 2, 3, 0, 0, 0 ],
                 [ 0, 2, 1, 2, 0, 0, 0, 0 ]
             ],
-            "slots": ["Crew","Crew","Modification"]
+            "slots": ["Crew","Crew","Tie mod"]
 
         },
         {
@@ -1239,7 +1196,6 @@
             "shields": 2,
             "chassis": [1],
             "base": ["Small"],
-            "keyword": [],
             "actions": [
                 [0,"Fo W"],
                 [0,"Br W"],
@@ -1264,7 +1220,6 @@
             "hull": 4,
             "shields": 3,
             "base": ["Small"],
-            "keyword": [],
             "chassis": [28,21],
             "actions": [
                 [0,"Fo W"],
@@ -1291,7 +1246,6 @@
             "hull": 2,
             "shields": 2,
             "base": ["Small"],
-            "keyword": [],
             "chassis": [29],
             "actions": [
                 [0,"Fo W"],
@@ -1321,10 +1275,9 @@
             "attack": [["F",2]],
             "agility": 3,
             "hull": 3,
-            "keyword": ["TIE"],
             "shields": 1,
             "base": ["Small"],
-            "slots": ["Tech","Modification"],
+            "slots": ["Tech","Tie mod"],
             "actions": [
                 [0,"Fo W"],
                 [0,"Lo W"],
@@ -1352,9 +1305,8 @@
             "hull": 4,
             "shields": 2,
             "base": ["Small"],
-            "keyword": ["TIE"],
             "chassis": [10],
-            "slots": ["Tech","Torpedo","Modification","Sensor"],
+            "slots": ["Tech","Torpedo","Tie mod","Sensor"],
             "actions": [
                 [0,"Fo W"],
                 [0,"Lo W"],
@@ -1381,8 +1333,7 @@
             "hull": 3,
             "shields": 3,
             "base": ["Small"],
-            "slots": ["Gunner","Tech","Missile","Modification"],
-            "keyword": ["TIE"],
+            "slots": ["Gunner","Tech","Missile","Tie mod"],
             "chassis": [30],
             "actions": [
                 [1,"Fo W", "Ro W"],
@@ -1411,7 +1362,6 @@
             "hull": 6,
             "shields": 6,
             "chassis": [0],
-            "keyword": [],
             "slots": ["Crew","Crew","Modification","Modification","Sensor","Calculator","Calculator"],
             "actions": [
                 [0,"Fo W"],
@@ -1442,7 +1392,6 @@
             "agility": 1,
             "hull": 9,
             "shields": 3,
-            "keyword": [],
             "actions": [
                 [0,"Fo W"],
                 [0,"Lo W"],
@@ -1473,7 +1422,6 @@
             "shields": 0,
             "base": ["Small"],
             "chassis": [31],
-            "keyword": ["TIE"],
             "actions": [
                 [0,"Fo W"],
                 [0,"Ev W"],
@@ -1488,7 +1436,7 @@
                 [ 0, 0, 2, 0, 0, 0],
                 [ 0, 0, 3, 0, 0, 0]
             ],
-            "slots": ["Illicit","Modification"]
+            "slots": ["Illicit","Tie mod"]
 
         },
         {
@@ -1503,7 +1451,6 @@
             "hull": 5,
             "shields": 0,
             "base": ["Small"],
-            "keyword": [],
             "actions": [
                 [0,"Fo W"],
                 [0,"Lo W"],                
@@ -1532,7 +1479,6 @@
             "hull": 3,
             "shields": 1,
             "base": ["Small"],
-            "keyword": ["Hyperspace Ring"],
             "chassis": [32,33],
             "actions": [
                 [0,"Fo W"],
@@ -1564,7 +1510,6 @@
             "hull": 3,
             "shields": 3,
             "base": ["Small"],
-            "keyword": ["Hyperspace Ring"],
             "chassis": [32],
             "actions": [
                 [0,"Fo W"],
@@ -1593,8 +1538,7 @@
             "attack": [["F",3]],
             "agility": 1,
             "hull": 6,
-            "base": ["Large"],
-            "keyword": [], 
+            "base": ["Large"], 
             "shields": 4,
             "actions": [
                 [0,"Fo W"],
@@ -1626,7 +1570,6 @@
             "hull": 3,
             "shields": 0,
             "base": ["Small"],
-            "keyword": [],
             "chassis": [34],
             "slots": ["Missile"],
             "actions": [
@@ -1654,7 +1597,6 @@
             "hull": 3,
             "shields": 2,
             "base": ["Small"],
-            "keyword": [],
             "slots": ["Modification","Modification","Calculator"],
             "actions": [
                 [0,"Fo W"],
@@ -1684,7 +1626,6 @@
             "shields": 2,
             "chassis": [11],
             "base": ["Small"],
-            "keyword": [],
             "actions": [
                 [0,"Fo W"],
                 [0,"Lo W"],                
@@ -1712,7 +1653,6 @@
             "hull": 5,
             "shields": 0,
             "base": ["Small"],
-            "keyword": [],
             "chassis": [34],
             "slots": ["Missile","Torpedo","Payload","Modification","Sensor"],
             "actions": [
@@ -1741,7 +1681,6 @@
             "hull": 3,
             "shields": 1,
             "base": ["Small"],
-            "keyword": [],
             "chassis": [1],
             "actions": [
                 [0,"Fo W"],
@@ -1770,7 +1709,6 @@
             "hull": 5,
             "shields": 3,
             "base": ["Small"],
-            "keyword": [],
             "chassis": [16],
             "actions": [
                 [0,"Fo W"],
@@ -1798,7 +1736,6 @@
             "hull": 4,
             "shields": 0,
             "base": ["Small"],
-            "keyword": [],
             "chassis": [35],
             "actions": [
                 [0,"Fo W"],
@@ -1827,7 +1764,6 @@
             "hull": 5,
             "shields": 3,
             "base": ["Small"],
-            "keyword": [],
             "chassis": [36],
             "actions": [
                 [0,"Fo W"],
@@ -1857,7 +1793,6 @@
             "hull": 6,
             "shields": 0,
             "base": ["Small"],
-            "keyword": [],
             "chassis": [37],
             "actions": [
                 [0,"Fo W"],
@@ -1887,7 +1822,6 @@
             "hull": 2,
             "shields": 2,
             "base": ["Small"],
-            "keyword": ["TIE"],
             "chassis": [38],
             "actions": [
                 [0,"Fo W"],
@@ -1905,7 +1839,7 @@
                 [ 0, 0, 1, 0, 0, 0, 0, 0],
                 [ 0, 0, 2, 0, 0, 3, 0, 0]
             ],
-            "slots": ["Tech","Missile","Modification","Modification"]
+            "slots": ["Tech","Missile","Tie mod","Tie mod"]
 
         },
         {
@@ -1919,7 +1853,6 @@
             "hull": 5,
             "shields": 2,
             "base": ["Medium"],
-            "keyword": [],
             "actions": [
                 [0,"Fo W"],
                 [0,"Lo R"],                
@@ -1948,7 +1881,6 @@
             "hull": 5,
             "shields": 3,
             "base": ["Small"],
-            "keyword": [],
             "chassis": [39],
             "slots": ["Crew","Missile","Missile","Payload","Modification","Calculator"],
             "actions": [
@@ -1977,7 +1909,6 @@
             "hull": 8,
             "shields": 2,
             "base": ["Medium"],
-            "keyword": [],
             "chassis": [40],
             "actions": [
                 [0,"Fo W"],
@@ -2008,7 +1939,6 @@
             "hull": 8,
             "shields": 0,
             "base": ["Medium"],
-            "keyword": ["TIE"],
             "chassis": [13],
             "actions": [
                 [0,"Fo W"],
@@ -2026,7 +1956,7 @@
                 [ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0 ],
                 [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
             ],
-            "slots": ["Cannon", "Cannon", "Modification", "Calculator"]
+            "slots": ["Cannon", "Cannon", "Tie mod", "Calculator"]
         },
         {
      
@@ -2038,7 +1968,6 @@
             "hull": 3,
             "shields": 0,
             "base": ["Small"],
-            "keyword": [],
             "chassis": [17],
             "slots": ["Modification","Sensor","Calculator","Calculator"],
             "actions": [
@@ -2068,7 +1997,6 @@
             "agility": 3,
             "hull": 2,
             "shields": 2,
-            "keyword": ["TIE", "Hyperspace Ring"],
             "base": ["Small"],
             "chassis": [41],
             "actions": [
@@ -2086,7 +2014,7 @@
                 [ 0, 0, 2, 0, 0, 3],
                 [ 0, 0, 2, 0, 0, 0]
             ],
-            "slots": ["Payload","Astromech","Modification","Hyperspace Ring"]
+            "slots": ["Payload","Astromech","Tie mod","Hyperspace Ring"]
 
         },
         {
@@ -2099,7 +2027,6 @@
             "hull": 3,
             "shields": 0,
             "base": ["Small"],
-            "keyword": ["Hyperspace Ring"],
             "chassis": [42],
             "actions": [
                 [0,"Fo W"],
@@ -2129,7 +2056,6 @@
             "agility": 1,
             "hull": 1,
             "shields": 2,
-            "keyword": ["Hyperspace Ring"],
             "base": ["Small"],
             "actions": [
             ],
@@ -2147,7 +2073,6 @@
             "hull": 4,
             "shields": 3,
             "base": ["Small"],
-            "keyword": [],
             "chassis": [43],
             "actions": [
                 [0,"Fo W"],
@@ -2176,7 +2101,6 @@
             "agility": 2,
             "hull": 3,
             "shields": 2,
-            "keyword": ["TIE"],
             "base": ["Small"],
             "chassis": [44],
             "actions": [
@@ -2195,7 +2119,7 @@
                 [ 0, 0, 1, 0, 0, 3, 0, 0],
                 [ 0, 0, 1, 0, 0, 3, 0, 0]
             ],
-            "slots": ["Tech","Tech","Missile","Modification"]
+            "slots": ["Tech","Tech","Missile","Tie mod"]
 
         },
         {
@@ -2208,9 +2132,8 @@
             "hull": 4,
             "shields": 2,
             "base": ["Small"],
-            "keyword": ["TIE"],
             "chassis": [45],
-            "slots": ["Gunner","Missile","Torpedo","Payload","Payload","Modification"],
+            "slots": ["Gunner","Missile","Torpedo","Payload","Payload","Tie mod"],
             "actions": [
                 [0,"Fo W"],               
                 [0,"Lo W"],
@@ -2239,7 +2162,6 @@
             "hull": 9,
             "shields": 2,
             "base": ["Large"],
-            "keyword": [],
             "chassis": [ 9, 46] ,
             "actions": [
                 [0,"Fo W"],               
@@ -2269,7 +2191,6 @@
             "hull": 7,
             "shields": 2,
             "base": ["Medium"],
-            "keyword": [],
             "chassis": [47],
             "actions": [
                 [0,"Fo W"],               
@@ -2296,7 +2217,6 @@
             "attack": [["F",2]],
             "agility": 2,
             "base": ["Small"],
-            "keyword": [],
             "hull": 2,
             "shields": 2,
             "chassis": [48],
@@ -2323,7 +2243,6 @@
             "attack": [["F",2]],
             "agility": 2,
             "base": ["Small"],
-            "keyword": [],
             "hull": 5,
             "shields": 2,
             "chassis": [26],
@@ -2353,7 +2272,6 @@
             "attack": [["F",2]],
             "agility": 2,
             "base": ["Small"],
-            "keyword": [],
             "hull": 2,
             "shields": 0,
             "chassis": [49,50],
@@ -2378,7 +2296,6 @@
             "attack": [["F",2],["B",2]],
             "agility": 3,
             "base": ["Large"],
-            "keyword": [],
             "hull": 6,
             "shields": 2,
             "actions": [
@@ -2403,7 +2320,6 @@
             "attack": [["F",3]],
             "agility": 1,
             "base": ["Medium"],
-            "keyword": [],
             "hull": 7,
             "shields": 1,
             "chassis": [36],
@@ -2429,7 +2345,6 @@
             "attack": [["F",2]],
             "agility": 2,
             "base": ["Small"],
-            "keyword": ["Crimson_Dawn"],
             "hull": 2,
             "shields": 1,
             "chassis": [51],
@@ -2458,7 +2373,6 @@
             "attack": [["F",3]],
             "agility": 1,
             "base": ["Medium"],
-            "keyword": ["Pyke_Syndicate"],
             "hull": 5,
             "shields": 2,
             "chassis": [0],
@@ -2486,7 +2400,6 @@
             "attack": [["0",0]],
             "agility": 0,
             "base": ["Medium"],
-            "keyword": [],
             "hull": 9,
             "shields": 3,
             "chassis": [53],
@@ -2513,7 +2426,6 @@
             "attack": [["F",2]],
             "agility": 3,
             "base": ["Small"],
-            "keyword": [],
             "hull": 4,
             "shields": 0,
             "chassis": [11,54],
@@ -2540,7 +2452,6 @@
             "attack": [["F",2]],
             "agility": 3,
             "base": ["Small"],
-            "keyword": [],
             "hull": 5,
             "shields": 0,
             "chassis": [33,38],
@@ -2566,7 +2477,6 @@
             "attack": [["F",1],["T",1]],
             "agility": 2,
             "base": ["Small"],
-            "keyword": [],
             "hull": 5,
             "shields": 0,
             "chassis": [20,35],
@@ -2592,7 +2502,6 @@
             "attack": [["F",2]],
             "agility": 3,
             "base": ["Small"],
-            "keyword": [],
             "hull": 4,
             "shields": 0,
             "chassis": [10,43],
@@ -2618,7 +2527,6 @@
             "attack": [["F",3]],
             "agility": 2,
             "base": ["Small"],
-            "keyword": [],
             "hull": 4,
             "shields": 0,
             "chassis": [12,45],
@@ -2644,7 +2552,6 @@
             "attack": [["BULL",3]],
             "agility": 3,
             "base": ["Small"],
-            "keyword": [],
             "hull": 2,
             "shields": 2,
             "chassis": [55,56],
@@ -2668,7 +2575,6 @@
             "attack": [["F",3]],
             "agility": 1,
             "base": ["Medium"],
-            "keyword": ["TIE"],
             "hull": 5,
             "shields": 1,
             "chassis": [0],
@@ -2685,7 +2591,7 @@
                 [ 0, 0, 1, 0, 0, 0,0,0],
                 [ 0, 0, 1, 0, 0, 3,0,0]
             ],
-            "slots": ["Crew","Gunner","Tech","Turret","Sensor"]
+            "slots": ["Crew","Gunner","Tech","Turret","Sensor","Tie mod"]
         },
         {
         	"name": "Oubliette Class Transport",
@@ -2694,7 +2600,6 @@
             "attack": [["F",3]],
             "agility": 2,
             "base": ["Large"],
-            "keyword": [],
             "hull": 7,
             "shields": 3,
             "chassis": [57],
@@ -2718,7 +2623,6 @@
             "attack": [["F",2]],
             "agility": 1,
             "base": ["Large"],
-            "keyword": [],
             "hull": 6,
             "shields": 5,
             "chassis": [58],
@@ -2743,7 +2647,6 @@
             "attackbull": 3,
             "agility": 3,
             "base": ["Small"],
-            "keyword": [],
             "hull": 3,
             "shields": 1,
             "chassis": [54],
@@ -2767,7 +2670,6 @@
             "attack": [["T",2]],
             "agility": 2,
             "base": ["Medium"],
-            "keyword": [],
             "hull": 6,
             "shields": 2,
             "chassis": [46],

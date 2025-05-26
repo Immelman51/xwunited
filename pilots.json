@@ -7289,12 +7289,14 @@
             "ability": "Au début de la phase d'engagement, vous pouvez choisir 1 vaisseau ennemi dans votre #tur# à portée 0-2 et dépenser 1 #fo#. Dans ce cas, ce vaisseau reçoit 1 jeton de stress à moins qu'il ne retire 1 jeton vert.",
             "ability_ENG": "At the start of the Engagement Phase, you may choose 1 enemy ship in your #tur# at range 0-2 and spend 1 force. If you do, that ship gains 1 stress token unless it removes 1 green token.",
             "slots": [
+                "Special",
                 "Title",
                 "Talent",
                 "Force",
                 "Sensor"
            ],
            "modifier_func":[
+                [1,"Special",364],
                 [1,"Title",268],
                 [3,"Modification"]
             ]
@@ -7304,7 +7306,7 @@
             "name_ENG": "Rio Durant",
             "id": 341,
             "max_per_squad": 1,
-            "modify": false,
+            "modify": true,
 		    "faction": "Crime_Syndicates",
             "ship": "Lancer-Class Pursuit Craft",
             "charge":[0],
@@ -7315,7 +7317,11 @@
             "ability": "Lorsque vous attaquez, vous pouvez recevoir 1 jeton contrainte. Dans ce cas, vous pouvez améliorer 1 dé d'attaque.",
             "ability_ENG": "While you attack, you may gain 1 strain token. If you do, you may upgrade 1 attack die.",
             "slots": [
+                "Special",
                 "Talent"
+           ],
+           "modifier_func":[
+                [1,"Special",364]
            ]
         },
         {
@@ -7323,7 +7329,7 @@
             "name_ENG": "Drex",
             "id": 342,
             "max_per_squad": 1,
-            "modify": false,
+            "modify": true,
 		    "faction": "Crime_Syndicates",
             "ship": "Lancer-Class Pursuit Craft",
             "charge":[0],
@@ -7334,7 +7340,11 @@
             "ability": "Après avoir effectué une manoeuvre bleue, vous pouvez tourner votre tourelle.",
             "ability_ENG": "After you perform a blue maneuver, you may rotate your turret arc.",
             "slots": [
+                "Special",
                 "Talent"
+           ],
+           "modifier_func":[
+                [1,"Special",364]
            ]
         },
         {
@@ -7342,7 +7352,7 @@
             "name_ENG": "Crimson Dawn Broker",
             "id": 343,
             "max_per_squad": 8,
-            "modify": false,
+            "modify": true,
 		    "faction": "Crime_Syndicates",
             "ship": "Lancer-Class Pursuit Craft",
             "charge":[0],
@@ -7353,7 +7363,10 @@
             "ability": "",
             "ability_ENG": "",
             "slots": [
-            
+                "Special"
+           ],
+           "modifier_func":[
+                [1,"Special",364]
            ]
         },
         {
@@ -7361,7 +7374,7 @@
             "name_ENG": "Marg Krim",
             "id": 344,
             "max_per_squad": 1,
-            "modify": false,
+            "modify": true,
 		    "faction": "Crime_Syndicates",
             "ship": "Sarissa-Class Gunship",
             "charge":[0],
@@ -7372,7 +7385,11 @@
             "ability": "Lorsque vous effectuez une attaque #mis# ou #can#, vous pouvez retirer 1 jeton tractage du défenseur pour relancer jusqu'à 2 dés d'attaque.",
             "ability_ENG": "While you perform a #mis# or #can# attack, you may remove 1 tractor token from the defender to reroll up to 2 attack dice.",
             "slots": [
+                "Special",
                 "Talent"
+           ],
+           "modifier_func":[
+                [1,"Special",363]
            ]
         },
         {
@@ -7380,7 +7397,7 @@
             "name_ENG": "Fife",
             "id": 345,
             "max_per_squad": 1,
-            "modify": false,
+            "modify": true,
 		    "faction": "Crime_Syndicates",
             "ship": "Sarissa-Class Gunship",
             "charge":[0],
@@ -7391,7 +7408,11 @@
             "ability": "Lorsque vous déclenchez la compétence 'Restricteur Tractant', vous pouvez transférer 1 des jetons tractage que vous avez assignés vers vous.",
             "ability_ENG": "When you trigger the 'Tractor Resistor' ability, you may transfer 1 of the Tractor token you've just assigned to you.",
             "slots": [
+                "Special",
                 "Talent"
+           ],
+           "modifier_func":[
+                [1,"Special",363]
            ]
         },
         {
@@ -7399,7 +7420,7 @@
             "name_ENG": "Quay Tolsite",
             "id": 346,
             "max_per_squad": 1,
-            "modify": false,
+            "modify": true,
 		    "faction": "Crime_Syndicates",
             "ship": "Sarissa-Class Gunship",
             "charge":[0],
@@ -7410,7 +7431,11 @@
             "ability": "Lorsqu'un vaisseau est tracté après que vous lui avez assigné des jetons tractage, vous pouvez le déplacer à travers des obstacles.",
             "ability_ENG": "When a ship is tractored because you assigned him some tractor tokens, you may move him over obstacles.",
             "slots": [
+                "Special",
                 "Talent"
+           ],
+           "modifier_func":[
+                [1,"Special",363]
            ]
         },
         {
@@ -7418,7 +7443,7 @@
             "name_ENG": "Omel Sampak",
             "id": 347,
             "max_per_squad": 1,
-            "modify": false,
+            "modify": true,
 		    "faction": "Crime_Syndicates",
             "ship": "Sarissa-Class Gunship",
             "charge":[0],
@@ -7429,7 +7454,11 @@
             "ability": "Lorsqu'un vaisseau ennemi à portée 0-1 retire 1 jeton tractage ou plus, assignez lui un jeton contrainte ou épuisement.",
             "ability_ENG": "When an enemy ship at range 0-1 removes 1 or more Tractor tokens, assign him a strain or deplete token.",
             "slots": [
+                "Special",
                 "Talent"
+           ],
+           "modifier_func":[
+                [1,"Special",363]
            ]
         },
         {
@@ -7437,7 +7466,7 @@
             "name_ENG": "Pyke Syndicate Patroller",
             "id": 348,
             "max_per_squad": 1,
-            "modify": false,
+            "modify": true,
 		    "faction": "Crime_Syndicates",
             "ship": "Sarissa-Class Gunship",
             "charge":[0],
@@ -7448,6 +7477,10 @@
             "ability": "",
             "ability_ENG": "",
             "slots": [
+                "Special"
+           ],
+           "modifier_func":[
+                [1,"Special",363]
            ]
         },
         {
@@ -7455,7 +7488,7 @@
             "name_ENG": "Dryden Vos",
             "id": 349,
             "max_per_squad": 1,
-            "modify": false,
+            "modify": true,
 		    "faction": "Crime_Syndicates",
             "ship": "Crimson Starfighter",
             "charge":[0],
@@ -7466,8 +7499,12 @@
             "ability": "Après avoir executé une manoeuvre de vitesse 1-2, vous pouvez coordonné un vaisseau allié à portée 0-2.",
             "ability_ENG": "After you perform a 1-2 speed maneuver, you may coordinate a friendly ship at range 0-2.",
             "slots": [
+                "Special",
                 "Talent",
                 "Talent"
+           ],
+           "modifier_func":[
+                [1,"Special",364]
            ]
         },
         {
@@ -7475,7 +7512,7 @@
             "name_ENG": "Sabé",
             "id": 350,
             "max_per_squad": 1,
-            "modify": false,
+            "modify": true,
 		    "faction": "Crime_Syndicates",
             "ship": "Crimson Starfighter",
             "charge":[0],
@@ -7486,7 +7523,11 @@
             "ability": "Lorsqu'un vaisseau allié défend, si vous êtes dans l'arc d'attaque, ce vaisseau peut dépenser l'un de vos jetons d'évasion pour ajouter 1 résultat #evd#.",
             "ability_ENG": "While a friendly ship defends, if you are in the attack arc, this ship may spend 1 of your evade token to add 1 #evd# result.",
             "slots": [
+                "Special",
                 "Talent"
+           ],
+           "modifier_func":[
+                [1,"Special",364]
            ]
         },
         {
@@ -7494,7 +7535,7 @@
             "name_ENG": "Gallin Crae",
             "id": 351,
             "max_per_squad": 1,
-            "modify": false,
+            "modify": true,
 		    "faction": "Crime_Syndicates",
             "ship": "Crimson Starfighter",
             "charge":[0],
@@ -7505,7 +7546,11 @@
             "ability": "Lorsqu'un vaisseau ennemi vous attaque, vous pouvez recevoir 1 jeton stress. Dans ce cas, la précision de l'attaque est réduite.",
             "ability_ENG": "When an enemy ship attacks you, you may gain 1 stress token. If you do, the attack accuracy is reduced.",
             "slots": [
+                "Special",
                 "Talent"
+           ],
+           "modifier_func":[
+                [1,"Special",364]
            ]
         },
         {
@@ -7513,7 +7558,7 @@
             "name_ENG": "Deathstick",
             "id": 352,
             "max_per_squad": 1,
-            "modify": false,
+            "modify": true,
 		    "faction": "Crime_Syndicates",
             "ship": "Crimson Starfighter",
             "charge":[0],
@@ -7524,7 +7569,11 @@
             "ability": "Lorsque vous vous engagez, si vous êtes occulté, vous pouvez dépenser 1 #fo# pour attaquer.",
             "ability_ENG": "When you engage, if you are cloaked, you may spend 1 #fo# to perform an attack.",
             "slots": [
+                "Special",
                 "Talent"
+           ],
+           "modifier_func":[
+                [1,"Special",364]
            ]
         },
         {
@@ -7532,7 +7581,7 @@
             "name_ENG": "Crimson Dawn Ace",
             "id": 353,
             "max_per_squad": 8,
-            "modify": false,
+            "modify": true,
 		    "faction": "Crime_Syndicates",
             "ship": "Crimson Starfighter",
             "charge":[0],
@@ -7543,7 +7592,11 @@
             "ability": "",
             "ability_ENG": "",
             "slots": [
+                "Special",
                 "Talent"
+           ],
+           "modifier_func":[
+                [1,"Special",364]
            ]
         },
         {
@@ -7551,7 +7604,7 @@
             "name_ENG": "Qi'Ra",
             "id": 354,
             "max_per_squad": 1,
-            "modify": false,
+            "modify": true,
 		    "faction": "Crime_Syndicates",
             "ship": "Supa Starfighter",
             "charge":[2,"0"],
@@ -7562,7 +7615,11 @@
             "ability": "Pendant la phase système, vous pouvez choisir 1 vaisseau allié à portée 0-1 avec une amélioration #talent# ou #ill# et dépenser 1 #ch#. Dans ce cas, récupérez 1 #ch# sur cette amélioration.",
             "ability_ENG": "During System phase, you may choose 1 friendly ship at range 0-1 with a #talent# or #ill# upgrade and spend 1 #ch#. If you do, recover 1 #ch# on this upgrade.",
             "slots": [
+                "Special",
                 "Talent"
+           ],
+           "modifier_func":[
+                [1,"Special",364]
            ]
         },
         {
@@ -7570,7 +7627,7 @@
             "name_ENG": "Tobias Becket",
             "id": 355,
             "max_per_squad": 1,
-            "modify": false,
+            "modify": true,
 		    "faction": "Crime_Syndicates",
             "ship": "Supa Starfighter",
             "charge":[1,"0"],
@@ -7581,8 +7638,12 @@
             "ability": "Pendant la phase de fin, vous pouvez dépenser 1 #ch#. Dans ce cas, vous pouvez déplacer un obstacle avec un gabarit 1 #straight#, comme s'il effectuait une manoeuvre de vitesse 1.",
             "ability_ENG": "During End Phase, you may spend 1 #ch#. If you do, you may move an obstacle with a 1 #straigth# template, as it would perform a speed 1 maneuver.",
             "slots": [
+                "Special",
                 "Talent",
                 "Talent"
+           ],
+           "modifier_func":[
+                [1,"Special",364]
            ]
         },
         {
@@ -7590,7 +7651,7 @@
             "name_ENG": "Trinia",
             "id": 356,
             "max_per_squad": 1,
-            "modify": false,
+            "modify": true,
 		    "faction": "Crime_Syndicates",
             "ship": "Supa Starfighter",
             "charge":[0],
@@ -7601,7 +7662,11 @@
             "ability": "Lorsqu'un vaisseau ennemi à portée 0-1 dans votre arc de tir utilise une compétence d'une amélioration #crew# ou #gunner#, il gagne 1 jeton contrainte ou épuisement de votre choix.",
             "ability_ENG": "When an enemy ship at range 0-1 in your firing arc use the ability of 1 of his #crew# or #gunner# upgrade, it gains 1 strain or deplete token of your choice",
             "slots": [
+                "Special",
                 "Talent"
+           ],
+           "modifier_func":[
+                [1,"Special",364]
            ]
         },
         {
@@ -7609,7 +7674,7 @@
             "name_ENG": "Noyjo",
             "id": 357,
             "max_per_squad": 1,
-            "modify": false,
+            "modify": true,
 		    "faction": "Crime_Syndicates",
             "ship": "Supa Starfighter",
             "charge":[0],
@@ -7620,7 +7685,11 @@
             "ability": "Lorsque vous êtes détruit, vous pouvez choisir un vaisseau ennemi à portée 0-1. Dans ce cas, placez 1 jeton désarmement sur une de ses améliorations ; considérez la comme retirée du jeu.",
             "ability_ENG": "When you are destroyed, you may choose an enemy ship at range 0-1. If you do, put a disarm token on 1 of its upgrade ; consider it removed from the game.",
             "slots": [
+                "Special",
                 "Talent"
+           ],
+           "modifier_func":[
+                [1,"Special",364]
            ]
         },
         {
@@ -7628,7 +7697,7 @@
             "name_ENG": "Crimson Dawn Executioner",
             "id": 358,
             "max_per_squad": 8,
-            "modify": false,
+            "modify": true,
 		    "faction": "Crime_Syndicates",
             "ship": "Supa Starfighter",
             "charge":[0],
@@ -7639,7 +7708,10 @@
             "ability": "",
             "ability_ENG": "",
             "slots": [
-                
+                "Special"
+           ],
+           "modifier_func":[
+                [1,"Special",364]
            ]
         },
         {
@@ -7647,7 +7719,7 @@
             "name_ENG": "Latts Razzi",
             "id": 359,
             "max_per_squad": 1,
-            "modify": false,
+            "modify": true,
 		    "faction": "Crime_Syndicates",
             "ship": "YV-666 Light Freighter",
             "charge":[0],
@@ -7658,7 +7730,11 @@
             "ability": "Au début de la phase d'engagement, vous pouvez choisir un vaisseau à portée 0-1 et dépenser un vérouillage que vous avez sur ce vaisseau. Dans ce cas, ce vaisseau reçoit 1 jeton tractage.",
             "ability_ENG": "At the start of the Engagement Phase, you may choose a ship at range 0-1 and spend a lock you have on that ship. If you do, that ship gains 1 tractor token.",
             "slots": [
+                "Special",
                 "Talent"
+           ],
+           "modifier_func":[
+                [1,"Special",363]
            ]
         },
         {
@@ -7666,7 +7742,7 @@
             "name_ENG": "Tray'Essek",
             "id": 360,
             "max_per_squad": 1,
-            "modify": false,
+            "modify": true,
 		    "faction": "Crime_Syndicates",
             "ship": "YV-666 Light Freighter",
             "charge":[0],
@@ -7677,7 +7753,11 @@
             "ability": "Lorsque vous effectuez une attaque principale, après l'étape 'Neutraliser les résultats', vous pouvez modifier 1 résultat #crit# en #hit# et acquérir un vérouillage sur le défenseur.",
             "ability_ENG": "While you perform a primary attack, after the Neutralize Results step, you may change 1 #crit# result #hit# result and acquire a lock on the defender.",
             "slots": [
+                "Special",
                 "Talent"
+           ],
+           "modifier_func":[
+                [1,"Special",363]
            ]
         },
         {
@@ -7685,7 +7765,7 @@
             "name_ENG": "Rikard",
             "id": 361,
             "max_per_squad": 1,
-            "modify": false,
+            "modify": true,
 		    "faction": "Crime_Syndicates",
             "ship": "YV-666 Light Freighter",
             "charge":[0],
@@ -7696,7 +7776,11 @@
             "ability": "Lorsque vous attaquez ou défendez, vous pouvez dépenser 1 #ch# sur l'amélioration 'Confiance Fragile' d'un vaisseau allié à portée 0-1. Dans ce cas, vous pouvez modifier l'un de vos résultats de dés en un résultat de votre choix.",
             "ability_ENG": "While you attack or defend, you may spend 1 #ch# on a 'Fragile Trust' upgrade from a friendly ship at range 0-1. If you do, you may change 1 of your die result into another result of your choice.",
             "slots": [
+                "Special",
                 "Talent"
+           ],
+           "modifier_func":[
+                [1,"Special",363]
            ]
         },
         {
@@ -7704,7 +7788,7 @@
             "name_ENG": "Pyke Freighter Pilot",
             "id": 362,
             "max_per_squad": 1,
-            "modify": false,
+            "modify": true,
 		    "faction": "Crime_Syndicates",
             "ship": "YV-666 Light Freighter",
             "charge":[0],
@@ -7715,6 +7799,10 @@
             "ability": "",
             "ability_ENG": "",
             "slots": [
+                "Special"
+           ],
+           "modifier_func":[
+                [1,"Special",363]
            ]
         },
         {
@@ -7722,7 +7810,7 @@
             "name_ENG": "Captain Seevor",
             "id": 363,
             "max_per_squad": 1,
-            "modify": false,
+            "modify": true,
 		    "faction": "Crime_Syndicates",
             "ship": "Modified TIE/ln Fighter",
             "charge":[0],
@@ -7733,7 +7821,11 @@
             "ability": "Lorsque vous défendez ou attaquez, avant que les dés ne soient lancés, si vous n'êtes pas dans le #bulls# du vaisseau ennemi, vous pouvez dépenser 1 #ch#. Dans ce cas, le vaisseau ennemi reçoit 1 jeton brouillage.",
             "ability_ENG": "While you defend or perform an attack, before attack dice are rolled, if you are not in the enemy ship's #bulls#, you may spend 1 #ch#. If you do, the enemy ship gains 1 jam token.",
             "slots": [
+                "Special",
                 "Talent"
+           ],
+           "modifier_func":[
+                [1,"Special",363]
            ]
         },
         {
@@ -7741,7 +7833,7 @@
             "name_ENG": "Overseer Yushin",
             "id": 364,
             "max_per_squad": 1,
-            "modify": false,
+            "modify": true,
 		    "faction": "Crime_Syndicates",
             "ship": "Modified TIE/ln Fighter",
             "charge":[1, "+"],
@@ -7752,7 +7844,11 @@
             "ability": "Avant qu'un vaisseau allié à portée 0-2 reçoit 1 jeton désarmement, vous pouvez dépenser 1 #ch#. Dans ce cas, ce vaisseau retire ce jeton désarmement.",
             "ability_ENG": "Before a friendly ship at range 0-2 gains a disarm token, you may spend 1 #ch#. If you do, that ship removes its disarm token.",
             "slots": [
+                "Special",
                 "Talent"
+           ],
+           "modifier_func":[
+                [1,"Special",363]
            ]
         },
         {
@@ -7760,7 +7856,7 @@
             "name_ENG": "Foreman Proach",
             "id": 365,
             "max_per_squad": 1,
-            "modify": false,
+            "modify": true,
 		    "faction": "Crime_Syndicates",
             "ship": "Modified TIE/ln Fighter",
             "charge":[0],
@@ -7771,7 +7867,11 @@
             "ability": "Avant de vous engagez, vous pouvez choisir 1 vaisseau ennemi dans votre #bulls# à portée 1-2 et recevoir 1 jeton désarmement. Dans ce cas, ce vaisseau reçoit 1 jeton tractage.",
             "ability_ENG": "Before you engage, you may choose 1 enemy ship in your #bulls# at range 1-2 and gain 1 disarm token. If you do, that ship gains 1 tractor token.",
             "slots": [
+                "Special",
                 "Talent"
+           ],
+           "modifier_func":[
+                [1,"Special",363]
            ]
         },
         {
@@ -7779,7 +7879,7 @@
             "name_ENG": "Ahaav",
             "id": 366,
             "max_per_squad": 1,
-            "modify": false,
+            "modify": true,
 		    "faction": "Crime_Syndicates",
             "ship": "Modified TIE/ln Fighter",
             "charge":[0],
@@ -7790,7 +7890,11 @@
             "ability": "Lorsque vous défendez ou attaquez, si le vaisseau ennemi est d'une taille plus grande que vous, lancez 1 dé additionnel.",
             "ability_ENG": "While you defend or perform an attack, if the enemy ship is a larger size than you, roll 1 additional die.",
             "slots": [
+                "Special",
                 "Talent"
+           ],
+           "modifier_func":[
+                [1,"Special",363]
            ]
         },
         {

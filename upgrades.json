@@ -1718,33 +1718,31 @@
             "name_ENG": "Precision Ion Engines",
             "id": 99,
             "max_per_squad": 8,
-            "available":false,
+            "available": true,
             "modify": false,
-            "slot": "Modification",
+            "slot": "Tie mod",
             "points": 2,
             "effect": "Avant d’exécuter une manœuvre de Virage Koiogran à vitesse 1–3, vous pouvez dépenser 1 #ch# pour exécuter cette manœuvre en tant que #Sleft# ou #Sright# de même vitesse à la place, et vice-versa.",
             "effect_ENG": "",
             "add_Data": [0],
             "force": 0,
             "charge": [2,"0"],
-            "faction": "",
-            "restrictions": [1,"keyword", "TIE",""]
+            "faction": ""
         },
         {
             "name": "Moteur Ionique Jumelé Mk2",
             "name_ENG": "Twin Ion Engine Mk2",
             "id": 100,
             "max_per_squad": 8,
-            "available":false,
+            "available":true,
             "modify": false,
-            "slot": "Modification",
+            "slot": "Tie mod",
             "add_Data": [0],
             "force": 0,
             "charge": [0],
             "points": 2,
             "effect": "Après avoir effectué une manœuvre rouge, vous pouvez dépenser 1 #ch# pour effectuer un tonneau.",
             "effect_ENG": "",
-            "restrictions": [1,"keyword", "TIE",""],
             "faction": ""
         },
         {
@@ -1752,16 +1750,15 @@
             "name_ENG": "Lightweight Frame",
             "id": 101,
             "max_per_squad": 8,
-            "available":false,
+            "available":true,
             "modify": false,
-            "slot": "Modification",
+            "slot": "Tie mod",
             "add_Data": [0],
             "force": 0,
             "charge": [0],
             "points": 3,
             "effect": "Lorsqu’un adversaire vous attaque, il peut modifier un résultat #hit# en #crit# . Si vous deviez lancer 2 dés de défense ou moins, vous pouvez lancer 1 dé de défense supplémentaire.",
             "effect_ENG": "",
-            "restrictions": [1,"keyword", "TIE",""],
             "faction": ""
         },
  {
@@ -6473,7 +6470,39 @@
              "faction": ["Phoenix_Cell"],
              "restrictions":[1,"ship","Gauntler Fighter",""]                
              
-         }      
+         },
+         {
+            "name": "Syndicat Pyke",
+             "name_ENG": "Pyke Syndicate",
+             "id":363,
+             "max_per_squad":8,
+             "available":true,
+             "modify":false,
+             "slot": "Special",
+             "force": 0,
+             "charge": [0],
+             "points": 0,
+             "effect": "",
+             "effect_ENG": "",
+             "faction": ["Crime_Syndicates"]              
+             
+         },
+         {
+            "name": "Aube Ecarlate",
+             "name_ENG": "Crimson Dawn",
+             "id":364,
+             "max_per_squad":8,
+             "available":true,
+             "modify":false,
+             "slot": "Special",
+             "force": 0,
+             "charge": [0],
+             "points": 0,
+             "effect": "",
+             "effect_ENG": "",
+             "faction": ["Crime_Syndicates"]              
+             
+         }                        
 
 
 

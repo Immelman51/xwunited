@@ -74,7 +74,7 @@
     pointer-events: none; /* pour ne pas gêner les clics */
     
 }
-.squad > *:not(.pilotImg) {
+.squad > *:not(.pilotImg) { /* allows to have all elements above the background image of the pilots*/
     position: relative;
     z-index: 2;
   }
@@ -86,43 +86,7 @@
     position: relative;
   }
   
-/*.pskill,
-.factionpilot,
-.name,
-.ship,
-.cost,
-.stat,
-.ability
-.logo
-.attack
-.agility
-.hull
-.shield
-.actions
-.linked
-.chargeforce
-.chargeforceimg
-.upgrade
-.recurring
-.upgrade.special
-.upg0
-.upg1
-.upg2
-.upg3
-.upg4
-.upg5
-.upg6
-.upg7
-.upg8
-.upg9
-.upg10
-.upg11
-.chs1
-.chs2
-.chs3{
-  z-index: 2;
-  position: relative; nécessaire pour que z-index fonctionne dans un contexte de stacking
- } */
+
   
   
 
