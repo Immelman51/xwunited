@@ -29,8 +29,8 @@
         "id": 3,
         "nbrOfEffects": 2,
         "effect1": "<em><strong>Servomoteurs S-Foils :</strong></em>",
-        "effect2": "<img class='chargeforceimg logo' src='img/chargestatRed.png'> <em>(Déplié) : </em>",
-        "effect3": "<img class='chargeforceimg logo' src='img/chargestat.png'> <em>(Réplié) : </em>Tant que vous effectuez une attaque principale, lancez 1 dé en moins. Ajoute : <img class='action' src='img/T65Sfoils.png' alt='' />"
+        "effect2": "<img class='chargeforceimg' src='img/chargestatRed.png'> <em>(Déplié) : </em>",
+        "effect3": "<img class='chargeforceimg' src='img/chargestat.png'> <em>(Réplié) : </em>Tant que vous effectuez une attaque principale, lancez 1 dé en moins. Ajoute : <img class='action' src='img/T65Sfoils.png' alt='' />"
     },
     {
         "name": "Pivot Wing",
