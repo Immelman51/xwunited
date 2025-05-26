@@ -200,6 +200,7 @@
 .chargeforceimg{
     height: 1.5cm;
     width: 1.5cm;
+    resize: both;
     margin-left: 5px;
 
 }

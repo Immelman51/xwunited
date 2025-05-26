@@ -164,3 +164,8 @@ color: aliceblue;
     height: 15px;
 
 }
+.chargeforceimg{
+    height: 1.5cm;
+    width: 1.5cm;
+    resize: both;
+}
