@@ -6434,7 +6434,7 @@
          {
             "name": "Purge Troopers",
              "name_ENG": "Purge Troopers",
-             "id":361,
+             "id":362,
              "max_per_squad":1,
              "available":false,
              "modify":true,
@@ -6456,7 +6456,7 @@
          {
             "name": "Night-Brother",
              "name_ENG": "Night-Brother",
-             "id":362,
+             "id":363,
              "max_per_squad":1,
              "available":false,
              "modify":true,
@@ -6474,7 +6474,7 @@
          {
             "name": "Syndicat Pyke",
              "name_ENG": "Pyke Syndicate",
-             "id":363,
+             "id":364,
              "max_per_squad":8,
              "available":true,
              "modify":false,
@@ -6490,7 +6490,7 @@
          {
             "name": "Aube Ecarlate",
              "name_ENG": "Crimson Dawn",
-             "id":364,
+             "id":365,
              "max_per_squad":8,
              "available":true,
              "modify":false,
