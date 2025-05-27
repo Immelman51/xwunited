@@ -2052,10 +2052,10 @@
             "name": "Syliure-class Hyperspace Ring",
             "chassis":[0],
             "id": 73,
-            "factions": ["J"],
-            "agility": 1,
+            "factions": ["Jedi_Order","Galactic_Senate"],
+            "agility": 0,
             "hull": 1,
-            "shields": 2,
+            "shields": 0,
             "base": ["Small"],
             "actions": [
             ],

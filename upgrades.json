@@ -3503,20 +3503,18 @@
 "name_ENG": "Nightbrother",
 "id": 202,
 "available":true,
-"modify":true,
+"modify":false,
 "slot": "Title",
-"add_Data": [0],
+"add_Data": ["changeChassis","C46","<em><strong>Aile Basculante</strong></em>"],
 "force": 0,
 "charge": [0],
 "points": 0,
 "max_per_squad": 1,
-"effect_ENG": "",
 "faction": ["Phoenix_Cell"],
 "ship": "Gauntlet Fighter",
 "effect": "Retire la capacité 'Troop Bay'. Ajoute un emplacement #crew#.",
-"modifier_func": [
-      
-]
+"effect_ENG": "Lose 'Troop Bay' chassis ability. Add a Crew Slot."
+
 },
 {
 "name": "Ghost",
@@ -4169,8 +4167,8 @@
              "force": 0,
              "charge": [1,"0"],
              "points": 2,
-             "effect": "Mise en Place : Vous commencez dans la réserve. Au début de la phase de fin du tour 1, placez vous dans la portée 1 d'un bord.<br>Tant que votre charge est active, augmentez la difficulté de vos virages serrés. Lorsque vous prenez 1 dégat, dépenser 1 #ch# pour l'annuler.<br>En phase de fin, si votre charge est inactive, vous pouvez larguer votre anneau (petit socle de vaisseau).",
-             "effect_ENG": "Setup : You begin in reserve. At the beginning of the first end phase, place yourself within range 1 of a border.<br>While your charge is active, increase the difficulty of your turn maneuvers. When you take a damage, spend 1 #ch# to cancel it.<br>During End Phase, if you charge is inactive, you may drop your ring (small ship base).",
+             "effect": "Mise en Place : Vous commencez dans la réserve, avec un Syliure-class Hyperspace Ring arrimé à vous. Au début de la phase de fin du tour 1, placez vous dans la portée 1 d'un bord au delà de la portée 3 d'un vaisseau adverse.<br>Tant que votre charge est active, augmentez la difficulté de vos virages sur l'aile. Lorsque vous devriez prendre 1 dégat, vous pouvez dépenser 1 #ch# pour l'annuler, et placer une carte de dégat sur l'anneau qui est arrimé.",
+             "effect_ENG": "Setup : You begin in reserve with a Syliure-class Hyperspace Ring docked with you. At the beginning of the first end phase, place yourself within range 1 of a border, beyond range 3 of an enemy ship.<br>While your charge is active, increase the difficulty of your turn maneuvers. When you would take a damage, you may spend 1 #ch# to cancel it, and place a damage card on the ring docked with you.",
              "faction": ""
          },
          {
@@ -6454,31 +6452,13 @@
              
          },
          {
-            "name": "Night-Brother",
-             "name_ENG": "Night-Brother",
-             "id":363,
-             "max_per_squad":1,
-             "available":false,
-             "modify":true,
-             "slot": "Special",
-             "add_Data": ["changeChassis","C46","<em><strong>Aile Basculante</strong></em>"],
-             "force": 0,
-             "charge": [0],
-             "points": 0,
-             "effect": "Perte du Chassis 'Troop Bay'.",
-             "effect_ENG": "Lose 'Troop Bay' chassis ability",
-             "faction": ["Phoenix_Cell"],
-             "restrictions":[1,"ship","Gauntler Fighter",""]                
-             
-         },
-         {
             "name": "Syndicat Pyke",
              "name_ENG": "Pyke Syndicate",
-             "id":364,
+             "id":363,
              "max_per_squad":8,
              "available":true,
              "modify":false,
-             "slot": "Special",
+             "slot": "Condition",
              "add_Data": [0],
              "force": 0,
              "charge": [0],
@@ -6491,12 +6471,12 @@
          {
             "name": "Aube Ecarlate",
              "name_ENG": "Crimson Dawn",
-             "id":365,
+             "id":364,
              "max_per_squad":8,
              "available":true,
              "modify":false,
              "add_Data": [0],
-             "slot": "Special",
+             "slot": "Condition",
              "force": 0,
              "charge": [0],
              "points": 0,
