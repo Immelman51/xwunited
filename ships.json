@@ -1569,7 +1569,7 @@
             "hull": 3,
             "shields": 0,
             "base": ["Small"],
-            "chassis": [34],
+            "chassis": [17,34],
             "slots": ["Missile"],
             "actions": [
                 [0,"Cc W"],
@@ -1652,7 +1652,7 @@
             "hull": 5,
             "shields": 0,
             "base": ["Small"],
-            "chassis": [34],
+            "chassis": [17,34],
             "slots": ["Missile","Torpedo","Payload","Modification","Sensor"],
             "actions": [
                 [0,"Cc W"],
