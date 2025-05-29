@@ -912,9 +912,9 @@
         {
       
      
-            "name": "BTL-A4 Y-wing",
+            "name": "Quadrijet Transfer Spacetug",
             "id": 33,
-            "factions": ["Hutt_Cartel","Rebel_Alliance"],
+            "factions": ["Hutt_Cartel"],
             "attack": [["F",2]],
             "agility": 2,
             "hull": 5,
@@ -922,9 +922,8 @@
             "chassis": [25],
             "actions": [
                 [0,"Fo W"],
-                [0,"Lo W"],
-                [0,"Br W"],
-                [0,"Rd W"]
+                [0,"Ev R"],
+                [0,"Br W"]
                
             ],
             "base": ["Small"],
@@ -934,7 +933,7 @@
                 [ 2, 1, 1, 1, 2, 0, 3, 3, 0, 0, 0, 3, 0 ],
                 [ 0, 2, 1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
             ],
-            "slots": ["Turret","Torpedo","Astromech","Payload","Modification"]
+            "slots": ["Crew,"Tech","Payload","Modification"]
 
         },
         {
@@ -2060,6 +2059,9 @@
             "actions": [
             ],
             "maneuvers": [
+                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+            	[ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+            	[ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
                 [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
             ]
         },
@@ -2284,7 +2286,8 @@
             "maneuvers": [
                 [ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
                 [ 2, 1, 1, 1, 2, 2, 0, 0, 0, 0, 2, 2, 2 ],
-                [ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+                [ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
             ],
             "slots": []
         },
