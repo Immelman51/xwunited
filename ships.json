@@ -2641,7 +2641,7 @@
         },
         {
         	"name": "RP82 Fighter",
-            "factions": [ "Imperial_Remanants" ],
+            "factions": [ "Imperial_Remnants" ],
             "id": 96,
             "attack": [["F",2]],
             "attackbull": 3,
