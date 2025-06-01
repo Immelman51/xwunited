@@ -91,24 +91,24 @@
      "leadername": "##Amilyn Holdo",
      "leaderfaction": ["Resistance","",""],
      "leaderid": 11,
-     "leaderability": "",
-     "charge": [0],
+     "leaderability": "A chaque fois qu'un vaisseau allié est détruit, perdez 1 #ch#. A la fin de partie, gagnez autant de points de #scenario_point# que de charges restantes.",
+     "charge": [3,"0"],
      "logistic": 15
      },
      {
      "leadername": "General Hux",
      "leaderfaction": ["First_Order","",""],
      "leaderid": 12,
-     "leaderability": "Lorsqu'un de vos vaisseaux est détruit, vous pouvez dépenser 1 #ch#. Dans ce cas, il peut effectuer un 'tir revanche' même s'il n'a pas la bonne initiative. Lorsque vous effectuez un 'tir revanche', vous pouvez améliorer 1 dé d'attaque. Si vous détruisez un vaisseau ainsi, gagnez 2 #scenario_point#.",
-     "charge": [3],
+     "leaderability": "Lorsqu'un de vos vaisseaux est détruit, vous pouvez dépenser 1 #ch#. Dans ce cas, il peut effectuer un 'tir revanche' même s'il n'a pas la bonne initiative. Lorsque vous effectuez un 'tir revanche', vous pouvez améliorer 1 dé d'attaque. Si vous détruisez un vaisseau ainsi, gagnez 1 #scenario_point#.",
+     "charge": [3,"0"],
      "logistic": 25
      },
      {
      "leadername": "##Anakin Skywalker",
      "leaderfaction": ["Jedi_Order","",""],
      "leaderid": 13,
-     "leaderability": "",
-     "charge": [0],
+     "leaderability": "ACTION : Dépensez 1 #ch# et choisissez un vaisseau avec de la force. Ce vaisseau peut coordonner jusqu'à 2 vaisseaux alliés qui ne disposent pas de force. Ils doivent effectuer la même action.",
+     "charge": [2,"0"],
      "logistic": 25
      },
      {
