@@ -83,7 +83,7 @@
      "leadername": "##Moff Jerjerrod",
      "leaderfaction": ["Imperial_Elite_Forces","",""],
      "leaderid": 10,
-     "leaderability": "En phase Système, votre adversaire pour récupérer 1 #ch#, OU un vaisseau allié peut s'occulter en dépensant 1 #ch#. En phase Système, vous pouvez dépenser 2 #ch# pour gagner 1 #scenario_point#.",,
+     "leaderability": "A la fin de la phase de fin, un vaisseau allié peut s'occulter en dépensant 1 #ch#, OU vous pouvez récupérer 1 #ch# et votre adversaire peut renforcer 1 de ses vaisseaux. En phase Système, vous pouvez dépenser 2 #ch# pour gagner 1 #scenario_point#.",,
      "charge": [0],
      "logistic": 25
      },
@@ -115,8 +115,8 @@
      "leadername": "##Bib Fortuna",
      "leaderfaction": ["Hutt_Cartel","",""],
      "leaderid": 14,
-     "leaderability": "",
-     "charge": [0],
+     "leaderability": "En phase de fin, vous pouvez dépenser 1#ch# pour récupérer 1 #ch# sur une de vos améliorations, OU vous pouvez dépenser 1#ch# sur 1 de vos améliorations pour récupérer 1 #ch#. En phase Système, vous pouvez dépenser 2 #ch# pour gagner 1 #scenario_point#.",
+     "charge": [2,"Red"],
      "logistic": 35
      },
      {
@@ -147,7 +147,7 @@
      "leadername": "##Générale Syndulla",
      "leaderfaction": ["New_Republic","",""],
      "leaderid": 18,
-     "leaderability": "ACTION : Récupérez 1 #ch#. Lorsque vous détruisez 1 vaisseau ennemi, dépensez 3 #ch#. Dans ce cas, gagnez 1 #scenario_point#.",
+     "leaderability": "ACTION : Récupérez 1 #ch#. Lorsque vous détruisez 1 vaisseau ennemi avec une condition alliée, dépensez 3 #ch#. Dans ce cas, gagnez 1 #scenario_point# et déplacez la condition sur un autre vaisseau ennemi.",
      "charge": [3,"Red"],
      "logistic": 25
      },
@@ -215,6 +215,69 @@
         "leaderfaction": ["C.I.S","Agents_of_Chaos",""],
         "leaderid": 26,
         "leaderability":"Vous pouvez équiper 1 Droïde Tactique #crew##calculator# supplémentaire dans votre escadron.",
+        "charge": [0],
+        "logistic": 20
+     },
+    {
+        
+        "leadername": "###Mon Mothma",
+        "leaderfaction": ["Rebel_Alliance","Partisans","Phoenix_Cell"],
+        "leaderid": 27,
+        "leaderability":"",
+        "charge": [0],
+        "logistic": 20
+     },
+     {
+        
+        "leadername": "###Empereur Palpatine",
+        "leaderfaction": ["Imperial_Academy","ISB","Imperial_Elite_Forces"],
+        "leaderid": 28,
+        "leaderability":"",
+        "charge": [0],
+        "logistic": 20
+     },
+     {
+        
+        "leadername": "###Jabba Le Hutt",
+        "leaderfaction": ["Hutt_Cartel","Bounty_Hunters_Guild","Pirates_and_Smugglers"],
+        "leaderid": 29,
+        "leaderability":"",
+        "charge": [0],
+        "logistic": 20
+     },
+     {
+        
+        "leadername": "###Maul",
+        "leaderfaction": ["Crime_Syndicates","Black_Sun","Mandalorian_Clans"],
+        "leaderid": 30,
+        "leaderability":"",
+        "charge": [0],
+        "logistic": 20
+     },
+     {
+        
+        "leadername": "##Général Windu",
+        "leaderfaction": ["Jedi_Order","Galactic_Senate",""],
+        "leaderid": 31,
+        "leaderability":"",
+        "charge": [0],
+        "logistic": 20
+     },
+     {
+        
+        "leadername": "###Générale Organa",
+        "leaderfaction": ["New_Republic","Colossus","Resistance"],
+        "leaderid": 32,
+        "leaderability":"",
+        "charge": [0],
+        "logistic": 20
+     },
+     {
+        
+        "leadername": "###Leader Suprême Snoke",
+        "leaderfaction": ["Imperial_Remnants","First_Order","Shadow_Specialists"],
+        "leaderid": 33,
+        "leaderability":"",
         "charge": [0],
         "logistic": 20
      }
