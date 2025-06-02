@@ -171,8 +171,8 @@
      "leadername": "##Moff Gideon",
      "leaderfaction": ["Imperial_Remnants","",""],
      "leaderid": 21,
-     "leaderability": "",
-     "charge": [0],
+     "leaderability": "ACTION : Si vous êtes au delà de la portée 3 de votre bord, récupérez 1 #ch#. En phase Système, vous pouvez dépenser 5 #ch# pour gagnez 1 #scenario_point# et réparer 1 carte de dégat face cachée.",
+     "charge": [5,"Red"],
      "logistic": 15
      },
      {
