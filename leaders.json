@@ -179,6 +179,7 @@
      "leadername": "##Qi'Ra (C.D.)",
      "leaderfaction": ["Crime_Syndicates","",""],
      "leaderid": 22,
+    "leaderability": "Lors de la phase de fin, si des vaisseaux 'Syndicat Pyke' ont été attaqués ce tour ci, perdez 1 #ch#. <br>Pendant la phase de fin",
      "leaderabilityENG": "During End Phase, if only 'Crimson Dawn' ships have been attacked this round, lose 1 #ch#.<br>During End Phase, if no 'Crimson Dawn' ships have been attacked this round, or a 'Pyke Syndicates' ship has been destroyed, recover 1 #ch# ",
      "charge": [0],
      "logistic": 35
