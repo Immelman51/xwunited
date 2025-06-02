@@ -139,7 +139,7 @@
      "leadername": "##Sénatrice Amidala",
      "leaderfaction": ["Galactic_Senate","",""],
      "leaderid": 17,
-     "leaderability": "En phase système, vous pouvez dépensez 1 #ch#. Dans ce cas, tous les vaisseaux reçoivent un jeton désarmement. A la fin de la partie, si votre charge est toujours active, gagnez 2 #scenario_point#.",
+     "leaderability": "En phase système, vous pouvez dépensez 1 #ch#. Dans ce cas, tous les vaisseaux reçoivent un jeton désarmement. A la fin de la partie, si votre charge est active, gagnez 1 #scenario_point#, sinon perdez 1 #scenario_point#.",
      "charge": [1,"0"],
      "logistic": 35
      },
@@ -163,7 +163,7 @@
      "leadername": "##Général Pryde",
      "leaderfaction": ["Shadow_Specialists","",""],
      "leaderid": 20,
-     "leaderability": "A la fin de la phase d'activation, un vaisseau allié peut coordonner un vaisseau ennemi, même si ce vaisseau ennemi est stressé. Dans ce cas, récupérez 1 #ch#. En phase Système, vous pouvez dépenser 2 #ch# pour gagner 1 #scenario_point#.",
+     "leaderability": "En phase Système, un vaisseau allié peut coordonner un vaisseau ennemi (effectue une action même stressé) pour récupérer 1 #ch#, OU un vaisseau allié peut brouiller un vaisseau ennemi en dépensant 1 #ch#. En phase Système, vous pouvez dépenser 2 #ch# pour gagner 1 #scenario_point#.",
      "charge": [2,"Red"],
      "logistic": 25
      },
@@ -179,16 +179,17 @@
      "leadername": "##Qi'Ra (C.D.)",
      "leaderfaction": ["Crime_Syndicates","",""],
      "leaderid": 22,
-    "leaderability": "Lors de la phase de fin, si des vaisseaux 'Syndicat Pyke' ont été attaqués ce tour ci, perdez 1 #ch#. <br>Pendant la phase de fin",
-     "leaderabilityENG": "During End Phase, if only 'Crimson Dawn' ships have been attacked this round, lose 1 #ch#.<br>During End Phase, if no 'Crimson Dawn' ships have been attacked this round, or a 'Pyke Syndicates' ship has been destroyed, recover 1 #ch# ",
-     "charge": [0],
+    "leaderability": "Lors de la phase de fin, si uniquement des vaisseaux 'Aube Ecarlate' ont été attaqués ce tour ci, perdez 1 #ch#. <br>Pendant la phase de fin, si aucun vaisseau 'Aube Ecarlate' n'a été attaqué ce tour ci, ou si un vaisseau 'Syndicat Pyke' a été détruit, récupérez 1 #ch#. En fin de partie, si votre charge est active, gagnez 2 #scenario_point#.",
+     "leaderabilityENG": "During End Phase, if only 'Crimson Dawn' ships have been attacked this round, lose 1 #ch#.<br>During End Phase, if no 'Crimson Dawn' ships have been attacked this round, or a 'Pyke Syndicates' ship has been destroyed, recover 1 #ch#. At the end of the game, if your charge is active, gain 2 #scenario_point#.",
+     "charge": [1,"0"],
      "logistic": 35
      },
      {
      "leadername": "##Lom Pyke (P.S.)",
      "leaderfaction": ["Crime_Syndicates","",""],
      "leaderid": 23,
-     "leaderabilityENG": "During End Phase, if only 'Pyke Syndicates' ships have been attacked this round, lose 1 #ch#.<br>During End Phase, if no 'Pyke Syndicates' ships have been attacked this round, or a 'Crimson Dawn' ship has been destroyed, recover 1 #ch# ",
+    "leaderability": "Lors de la phase de fin, si uniquement des vaisseaux 'Syndicat Pyke' ont été attaqués ce tour ci, perdez 1 #ch#. <br>Pendant la phase de fin, si aucun vaisseau 'Syndicat Pyke' n'a été attaqué ce tour ci, ou si un vaisseau 'Aube Ecarlate' a été détruit, récupérez 1 #ch#. En fin de partie, si votre charge est active, gagnez 2 #scenario_point#.",
+     "leaderabilityENG": "During End Phase, if only 'Pyke Syndicates' ships have been attacked this round, lose 1 #ch#.<br>During End Phase, if no 'Pyke Syndicates' ships have been attacked this round, or a 'Crimson Dawn' ship has been destroyed, recover 1 #ch#. At the end of the game, if your charge is active, gain 2 #scenario_point#.",
      "charge": [1,"0"],
      "logistic": 35
      },
@@ -196,8 +197,8 @@
      "leadername": "##Prince Xizor",
      "leaderfaction": ["Black_Sun","",""],
      "leaderid": 24,
-     "leaderability": "",
-     "charge": [0],
+     "leaderability": "Lors de la phase système, vous pouvez dépenser 1 #ch#. Dans ce cas, choisissez 1 vaisseau ennemi. Ce tour ci, jouez le comme un vaisseau allié. En fin de partie, si votre charge est active, gagnez 1 #scenario_point#, sinon perdez 1 #scenario_point#.",
+     "charge": [1,"0"],
      "logistic": 35
      },
      {
