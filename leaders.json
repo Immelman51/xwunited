@@ -91,7 +91,7 @@
      "leadername": "##Amilyn Holdo",
      "leaderfaction": ["Resistance","",""],
      "leaderid": 11,
-     "leaderability": "A chaque fois qu'un vaisseau allié est détruit, perdez 1 #ch#. A la fin de partie, gagnez autant de points de #scenario_point# que de charges restantes.",
+     "leaderability": "A chaque fois qu'un vaisseau allié est détruit, perdez 1 #ch#. A la fin de partie, gagnez autant de #scenario_point# que de charges restantes.",
      "charge": [3,"0"],
      "logistic": 15
      },
@@ -107,7 +107,7 @@
      "leadername": "##Anakin Skywalker",
      "leaderfaction": ["Jedi_Order","",""],
      "leaderid": 13,
-     "leaderability": "ACTION : Dépensez 1 #ch# et choisissez un vaisseau avec de la force. Ce vaisseau peut coordonner jusqu'à 2 vaisseaux alliés qui ne disposent pas de force. Ils doivent effectuer la même action.",
+     "leaderability": "ACTION : Dépensez 1 #ch# et choisissez un vaisseau avec de la force. Ce vaisseau peut coordonner jusqu'à 2 vaisseaux alliés qui ne disposent pas de force. Ils doivent effectuer la même action.<br>ACTION : Dépensez 1 #ch# et choisissez un vaisseau avec de la force. Il reçoit 2 jetons contrainte et gagnez 1 #scenario_point#.",
      "charge": [2,"0"],
      "logistic": 25
      },
@@ -123,15 +123,15 @@
      "leadername": "##Count Dooku",
      "leaderfaction": ["Agents_of_Chaos","",""],
      "leaderid": 15,
-     "leaderability": "",
-     "charge": [0],
+     "leaderability": "ACTION : Dépensez 1 #ch# et choisissez un vaisseau ennemi avec de la force. Il perd 1 point de force et un vaisseau allié en regagne 1.<br>ACTION : Dépensez 1 #ch# et choisissez un vaisseau ennemi sans force. Il gagne 1 point de force qu'il peut utiliser comme un calcul en defense. gagnez 1 #scenario_point#.",
+     "charge": [3,"0"],
      "logistic": 15
      },
      {
      "leadername": "Nute Gunray",
      "leaderfaction": ["C.I.S","",""],
      "leaderid": 16,
-     "leaderability": "A la fin de la partie, si vous avez un vaisseau encore en jeu équipé d'une amélioration #tactical_droid#, gagnez 2 #scenario_point#.",
+     "leaderability": "A la fin de la partie, si vous avez un vaisseau encore en jeu équipé d'une amélioration #crew##calculator#, gagnez 2 #scenario_point#.",
      "charge": [0],
      "logistic": 35
      },
