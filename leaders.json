@@ -75,15 +75,15 @@
      "leadername": "##Saw Gerrera",
      "leaderfaction": ["Partisans","",""],
      "leaderid": 9,
-     "leaderability": "",
-     "charge": [0],
+     "leaderability": "Chaque fois qu'un vaisseau allié est détruit, récupérez 1 #ch#. A tout moment, vous pouvez dépenser 2 #ch#. Dans ce cas, gagnez 1 #scenario_point# et exposez jusqu'à 2 cartes de dégat sur des vaisseaux ennemis.",
+     "charge": [2,"Red"],
      "logistic": 15
      },
      {
      "leadername": "##Moff Jerjerrod",
      "leaderfaction": ["Imperial_Elite_Forces","",""],
      "leaderid": 10,
-     "leaderability": "",
+     "leaderability": "En phase Système, votre adversaire pour récupérer 1 #ch#, OU un vaisseau allié peut s'occulter en dépensant 1 #ch#. En phase Système, vous pouvez dépenser 2 #ch# pour gagner 1 #scenario_point#.",,
      "charge": [0],
      "logistic": 25
      },
@@ -123,7 +123,7 @@
      "leadername": "##Comte Dooku",
      "leaderfaction": ["Agents_of_Chaos","",""],
      "leaderid": 15,
-     "leaderability": "ACTION : Choisissez un vaisseau ennemi avec de la force. Il perd 1 point de force et un vaisseau allié en regagne 1. <br>ACTION : Dépensez 1 #ch# et choisissez un vaisseau ennemi sans force. Il gagne 1 point de force qu'il peut utiliser comme un calcul en defense. Gagnez 1 #scenario_point#.",
+     "leaderability": "ACTION : Choisissez un vaisseau ennemi avec de la force. Il perd 1 point de force et un vaisseau allié en regagne 1. <br>ACTION : (1 fois par ronde) Dépensez 1 #ch# et choisissez un vaisseau ennemi sans force. Il gagne 1 point de force qu'il peut utiliser comme un calcul en defense. Gagnez 1 #scenario_point#.",
      "charge": [3,"0"],
      "logistic": 15
      },
@@ -131,7 +131,7 @@
      "leadername": "Nute Gunray",
      "leaderfaction": ["C.I.S","",""],
      "leaderid": 16,
-     "leaderability": "A la fin de la partie, si vous avez un vaisseau encore en jeu équipé d'une amélioration #crew##calculator#, gagnez 2 #scenario_point#.",
+     "leaderability": "A la fin de la partie, si vous avez un vaisseau encore en jeu équipé d'une amélioration Droïde Tactique  #crew##calculator#, gagnez 2 #scenario_point#.",
      "charge": [0],
      "logistic": 35
      },
@@ -171,7 +171,7 @@
      "leadername": "##Moff Gideon",
      "leaderfaction": ["Imperial_Remnants","",""],
      "leaderid": 21,
-     "leaderability": "ACTION : Si vous êtes au delà de la portée 3 de votre bord, récupérez 1 #ch#. En phase Système, vous pouvez dépenser 5 #ch# pour gagnez 1 #scenario_point# et réparer 1 carte de dégat face cachée.",
+     "leaderability": "ACTION : Si vous êtes au delà de la portée 3 de votre bord, récupérez 1 #ch#. En phase Système, vous pouvez dépenser 5 #ch# pour gagnez 1 #scenario_point# et réparer jusqu'à 1 carte de dégat face cachée et jusqu'à 1 carte de dégat face ouverte.",
      "charge": [5,"Red"],
      "logistic": 15
      },
@@ -205,8 +205,8 @@
         "leadername": "##Colonel Yularen",
         "leaderfaction": ["ISB","",""],
         "leaderid": 25,
-        "leaderability":"",
-        "charge": [0],
+        "leaderability":"A la phase de fin, récupérez 1 #ch# pour chaque jeton brouillage retiré par des vaisseaux ennemis. En phase système, vous pouvez dépensez 2 #ch# pour gagner 1 #scenario_point#.",
+        "charge": [2,"Red"],
         "logistic": 25
      },
      {
@@ -214,7 +214,7 @@
         "leadername": "##Général Grievous",
         "leaderfaction": ["C.I.S","Agents_of_Chaos",""],
         "leaderid": 26,
-        "leaderability":"",
+        "leaderability":"Vous pouvez équiper 1 Droïde Tactique #crew##calculator# supplémentaire dans votre escadron.",
         "charge": [0],
         "logistic": 20
      }
