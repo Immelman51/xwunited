@@ -302,10 +302,19 @@
         "charge": [0],
         "logistic": 25
      },
+     {
+        "leadername": "##Reine Soruna",
+        "leaderfaction": ["New_Republic","Naboo_Defense_Force",""],
+        "leaderid": 33,
+        "numberOfFactions": 2,
+        "leaderability":"",
+        "charge": [0],
+        "logistic": 25
+     },
       {
         "leadername": "##Chancelier Suprême Palpatine",
         "leaderfaction": ["Jedi_Order","Clone_Army","Naboo_Defense_Force"],
-        "leaderid": 33,
+        "leaderid": 34,
         "numberOfFactions": 3,
         "leaderability":"",
         "charge": [0],
@@ -314,7 +323,7 @@
       {
         "leadername": "##Maul",
         "leaderfaction": ["Crime_Syndicates","Black_Sun","Mandalorian_Clans"],
-        "leaderid": 34,
+        "leaderid": 35,
         "numberOfFactions": 3,
         "leaderability":"",
         "charge": [0],
@@ -323,7 +332,7 @@
       {
         "leadername": "##Jabba le Hutt",
         "leaderfaction": ["Hutt_Cartel","Pirates_and_Smugglers","Bounty_Hunters_Guild"],
-        "leaderid": 35,
+        "leaderid": 36,
         "numberOfFactions": 3,
         "leaderability":"",
         "charge": [0],
@@ -332,7 +341,7 @@
       {
         "leadername": "##Générale Organa",
         "leaderfaction": ["New_Republic","Colossus","Resistance"],
-        "leaderid": 36,
+        "leaderid": 37,
         "numberOfFactions": 3,
         "leaderability":"",
         "charge": [0],
@@ -341,7 +350,7 @@
       {
         "leadername": "##Suprême Leader Snoke",
         "leaderfaction": ["First_Order","Shadow_Specialists","Imperial_Remnants"],
-        "leaderid": 37,
+        "leaderid": 38,
         "numberOfFactions": 3,
         "leaderability":"",
         "charge": [0],
@@ -350,7 +359,7 @@
       {
         "leadername": "##Empereur Palpatine",
         "leaderfaction": ["Imperial_Academy","ISB","Imperial_Elite_Squadrons"],
-        "leaderid": 38,
+        "leaderid": 39,
         "numberOfFactions": 3,
         "leaderability":"",
         "charge": [0],
@@ -359,7 +368,7 @@
       {
         "leadername": "##Mon Mothma",
         "leaderfaction": ["Rebel_Alliance","Partisans","Phoenix_Cell"],
-        "leaderid": 39,
+        "leaderid": 40,
         "numberOfFactions": 3,
         "leaderability":"",
         "charge": [0],
@@ -368,7 +377,7 @@
       {
         "leadername": "##Comte Dooku",
         "leaderfaction": ["Trade_Federation","Separatist_Government","Agents_of_Chaos"],
-        "leaderid": 40,
+        "leaderid": 41,
         "numberOfFactions": 3,
         "leaderability":"",
         "charge": [0],
