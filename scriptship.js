@@ -779,6 +779,10 @@ function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'acti
     let newdiv = document.createElement('div');
     let newship = document.createElement('select');
     let newpilot = document.createElement('select');
+    let newzone = document.getElementById('div');
+    let newchassis = document.createElement('div');
+    let newtitle = document.createElement('div');
+    let newpoints = document.createElement('div');
     let newslots = document.createElement('div');
     let newinitiative = document.createElement('div');
     let newremovebutton = document.createElement('button');
@@ -791,6 +795,15 @@ function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'acti
     newship.setAttribute('class','menu shipmenu' );
     newpilot.setAttribute('id','menu_pilot_'+numero);
     newpilot.setAttribute('class','menu shipmenu pilotmenu');
+    newzone.setAttribute('id','zone'+numero);
+    newzone.setAttribute('class','zone');
+    newchassis.setAttribute('id','chassis'+numero);
+    newchassis.setAttribute('class','chassis');
+    newtitle.setAttribute('id','title'+numero);
+    newtitle.setAttribute('class','title');
+    newpoints.setAttribute('id','points'+numero);
+    newpoints.setAttribute('class','points');
+    
     newslots.setAttribute('id','shipslots'+numero);
     newslots.setAttribute('class','slot '+numero);
     newinitiative.setAttribute('id','initiative'+numero);
@@ -803,6 +816,9 @@ function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'acti
     newpara.appendChild(newdiv);
     newdiv.appendChild(newship);
     newdiv.appendChild(newpilot);
+    newzone.appendChild(newchassis);
+    newzone.appendChild(newtitle);
+    newzone.appendChild(newpoints);
     newpara.appendChild(newslots);
     newdiv.appendChild(newinitiative);
     newdiv.appendChild(newremovebutton);
