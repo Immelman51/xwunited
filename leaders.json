@@ -3,6 +3,7 @@
     "leadername": "<Select Leader>",
     "leaderfaction": ["","",""],
     "leaderid": 0,
+    "numberOfFactions": 0,
     "leaderability": "",
     "charge": [0],
     "logistic": 0
@@ -10,6 +11,7 @@
     {
      "leadername":  "Greef Carga",
      "leaderfaction": ["Bounty_Hunters_Guild","",""],
+     "numberOfFactions": 1,
      "leaderability": "Si vous avez au moins un capteur de positionnement, vous choisissez à qui vous attribuez la condition au lieu de votre adversaire. Si la cible est détruite, gagnez 2 #scenario_point#",
      "leaderid": 1,
      "charge": [0],
@@ -20,6 +22,7 @@
      "leaderfaction": ["Rebel_Alliance","",""],
      "leaderid": 2,
      "charge": [2,"Red"],
+     "numberOfFactions": 1,
      "leaderability": "A chaque fois que vous effectuez une action de scénario, récupérez 1 #ch#. En phase système, vous pouvez dépenser 2 #ch# : gagnez 1 #scenario_point#",
      "logistic": 15
      },
@@ -28,6 +31,7 @@
      "leaderfaction": ["Pirates_and_Smugglers","",""],
      "leaderid": 3,
      "charge": [3,"Red"],
+     "numberOfFactions": 1,
      "leaderability": "A chaque fois qu'un de vos vaisseaux esquive parfaitement une attaque, récupérez 1 #ch# sur votre leader. En phase système, vous pouvez dépenser 3 #ch# : gagnez 1 #scenario_point#",
      "logistic": 25
      },
@@ -36,6 +40,7 @@
      "leaderfaction": ["Mandalorian_Clans","",""],
      "leaderid": 4,
      "charge": [1,"Red"],
+     "numberOfFactions": 1,
      "leaderability": "Au début de la phase de programmation, lancez 1 dé rouge.<br> 'vierge' : brouillez un de vos vaisseaux ;<br>#eye# : brouillez 1 vaisseau allié, assignez 1 calcul à un vaisseau.<br>#hit#: récupérez 1 #ch#.<br>#crit# : récupérez 1 #ch# et réparez une carte de dégat face ouverte.<br>Lorsque vous détruisez un vaisseau adverse, vous pouvez dépenser 1 #ch# pour gagner 1 #scenario_point#",
      "logistic": 35
      },
@@ -44,29 +49,35 @@
      "leaderfaction": ["Imperial_Academy","",""],
      "leaderid": 5,
      "charge": [2,"Red"],
+     "numberOfFactions": 1,
      "leaderability": "A chaque fois que vous utilisez l'effet du talent 'Impitoyable', récupérez 1 #ch# sur votre carte leader. En phase Système, vous pouvez dépenser 2 #ch# : Gagnez 1 #scenario_point#.",
      "logistic": 25
-     },
+     }, 
      {
-     "leadername": "Darth Vader",
-     "leaderfaction": ["Bounty_Hunters_Guild","Imperial_Academy" ,""],
-     "leaderid": 6,
-     "charge": [3,"0"],
-     "leaderability": "1 fois par ronde, lorsque vous attaquez un vaisseau, vous pouvez dépenser 1 #ch# pour améliorer un dé d'attaque.",
-     "logistic": 15
-     },
+        
+        "leadername": "##Général Grievous",
+        "leaderfaction": ["Separatist_Government","",""],
+        "leaderid": 6,
+        "numberOfFactions": 1,
+        "leaderability":"",
+        "charge": [0],
+        "logistic": 20
+     }, 
      {
-     "leadername": "Admiral Ackbar",
-     "leaderfaction": ["Pirates_and_Smugglers", "Rebel_Alliance", ""],
-     "leaderid": 7,
-     "charge": [2,"0"],
-     "leaderability": "Lorsqu'un de vos vaisseaux est déclaré défenseur lors d'un attaque, vous pouvez dépenser 1 #ch#. Dans ce cas, il peut effectuer un tonneau ou une accélération puis il reçoit un marqueur de stress. Si le vaisseau n'a pas l'action utilisée dans sa barre d'action ou qu'il était déjà stressé, il prend 1 dégat ou expose une carte de dégat. Ce mouvement peut annuler l'attaque en cours.",
-     "logistic": 15
-     },
+        
+        "leadername": "##Reine Amidala",
+        "leaderfaction": ["Naboo_Defense_Force","",""],
+        "leaderid": 7,
+        "numberOfFactions": 1,
+        "leaderability":"",
+        "charge": [0],
+        "logistic": 20
+     },   
      {
      "leadername": "Jun Sato",
      "leaderfaction": ["Phoenix_Cell","",""],
      "leaderid": 8,
+     "numberOfFactions": 1,
      "leaderability": "Après avoir défendu à portée 0-1, si vous n'avez pas subi de dégat, vous pouvez récupérer 1 #ch#.<br>Après avoir attaqué à portée 0-1, si vous avez détruit un vaisseau, vous pouvez récupérer 1#ch#.<br>En phase de fin, vous pouvez dépenser 2 #ch# pour gagner 1 #scenario_point.",
      "charge": [2,"Red"],
      "logistic": 15
@@ -75,14 +86,16 @@
      "leadername": "##Saw Gerrera",
      "leaderfaction": ["Partisans","",""],
      "leaderid": 9,
+     "numberOfFactions": 1,
      "leaderability": "",
      "charge": [0],
      "logistic": 15
      },
      {
      "leadername": "##Moff Jerjerrod",
-     "leaderfaction": ["Imperial_Elite_Forces","",""],
+     "leaderfaction": ["Imperial_Elite_Squadrons","",""],
      "leaderid": 10,
+     "numberOfFactions": 1,
      "leaderability": "",
      "charge": [0],
      "logistic": 25
@@ -91,22 +104,25 @@
      "leadername": "##Amilyn Holdo",
      "leaderfaction": ["Resistance","",""],
      "leaderid": 11,
+     "numberOfFactions": 1,
      "leaderability": "",
      "charge": [0],
      "logistic": 15
      },
      {
-     "leadername": "General Hux",
+     "leadername": "Général Hux",
      "leaderfaction": ["First_Order","",""],
      "leaderid": 12,
+     "numberOfFactions": 1,
      "leaderability": "Lorsqu'un de vos vaisseaux est détruit, vous pouvez dépenser 1 #ch#. Dans ce cas, il peut effectuer un 'tir revanche' même s'il n'a pas la bonne initiative. Lorsque vous effectuez un 'tir revanche', vous pouvez améliorer 1 dé d'attaque. Si vous détruisez un vaisseau ainsi, gagnez 2 #scenario_point#.",
      "charge": [3],
      "logistic": 25
      },
      {
-     "leadername": "##Anakin Skywalker",
+     "leadername": "##Général Skywalker",
      "leaderfaction": ["Jedi_Order","",""],
      "leaderid": 13,
+     "numberOfFactions": 1,
      "leaderability": "",
      "charge": [0],
      "logistic": 25
@@ -115,54 +131,61 @@
      "leadername": "##Bib Fortuna",
      "leaderfaction": ["Hutt_Cartel","",""],
      "leaderid": 14,
+     "numberOfFactions": 1,
      "leaderability": "",
      "charge": [0],
      "logistic": 35
      },
      {
-     "leadername": "##Count Dooku",
+     "leadername": "##Dark Tyranus",
      "leaderfaction": ["Agents_of_Chaos","",""],
      "leaderid": 15,
+     "numberOfFactions": 1,
      "leaderability": "",
      "charge": [0],
      "logistic": 15
      },
      {
-     "leadername": "Nute Gunray",
-     "leaderfaction": ["C.I.S","",""],
+     "leadername": "##Viceroi Nute Gunray",
+     "leaderfaction": ["Trade_Federation","",""],
      "leaderid": 16,
+     "numberOfFactions": 1,
      "leaderability": "A la fin de la partie, si vous avez un vaisseau encore en jeu équipé d'une amélioration #tactical_droid#, gagnez 2 #scenario_point#.",
      "charge": [0],
      "logistic": 35
      },
      {
-     "leadername": "##Padme Amidala",
-     "leaderfaction": ["Galactic_Senate","",""],
+     "leadername": "##Commandant Clone Cody",
+     "leaderfaction": ["Clone_Army","",""],
      "leaderid": 17,
+     "numberOfFactions": 1,
      "leaderability": "",
      "charge": [0],
      "logistic": 35
      },
      {
-     "leadername": "##General Syndulla",
+     "leadername": "##Générale Syndulla",
      "leaderfaction": ["New_Republic","",""],
      "leaderid": 18,
+     "numberOfFactions": 1,
      "leaderability": "",
      "charge": [0],
      "logistic": 25
      },
      {
-     "leadername": "##Captain Doza",
+     "leadername": "##Capitaine Doza",
      "leaderfaction": ["Colossus","",""],
      "leaderid": 19,
+     "numberOfFactions": 1,
      "leaderability": "",
      "charge": [0],
      "logistic": 15
      },
      {
-     "leadername": "##General Pryde",
+     "leadername": "##Général Pryde",
      "leaderfaction": ["Shadow_Specialists","",""],
      "leaderid": 20,
+     "numberOfFactions": 1,
      "leaderability": "",
      "charge": [0],
      "logistic": 25
@@ -171,6 +194,7 @@
      "leadername": "##Moff Gideon",
      "leaderfaction": ["Imperial_Remnants","",""],
      "leaderid": 21,
+     "numberOfFactions": 1,
      "leaderability": "",
      "charge": [0],
      "logistic": 15
@@ -179,6 +203,7 @@
      "leadername": "##Qi'Ra (C.D.)",
      "leaderfaction": ["Crime_Syndicates","",""],
      "leaderid": 22,
+     "numberOfFactions": 1,
      "leaderabilityENG": "During End Phase, if only 'Crimson Dawn' ships have been attacked this round, lose 1 #ch#.<br>During End Phase, if no 'Crimson Dawn' ships have been attacked this round, or a 'Pyke Syndicates' ship has been destroyed, recover 1 #ch# ",
      "charge": [0],
      "logistic": 35
@@ -187,6 +212,7 @@
      "leadername": "##Lom Pyke (P.S.)",
      "leaderfaction": ["Crime_Syndicates","",""],
      "leaderid": 23,
+     "numberOfFactions": 1,
      "leaderabilityENG": "During End Phase, if only 'Pyke Syndicates' ships have been attacked this round, lose 1 #ch#.<br>During End Phase, if no 'Pyke Syndicates' ships have been attacked this round, or a 'Crimson Dawn' ship has been destroyed, recover 1 #ch# ",
      "charge": [1,"0"],
      "logistic": 35
@@ -195,6 +221,7 @@
      "leadername": "##Prince Xizor",
      "leaderfaction": ["Black_Sun","",""],
      "leaderid": 24,
+     "numberOfFactions": 1,
      "leaderability": "",
      "charge": [0],
      "logistic": 35
@@ -203,18 +230,146 @@
         "leadername": "##Colonel Yularen",
         "leaderfaction": ["ISB","",""],
         "leaderid": 25,
+        "numberOfFactions": 1,
         "leaderability":"",
         "charge": [0],
         "logistic": 25
      },
      {
-        
-        "leadername": "##General Grievous",
-        "leaderfaction": ["C.I.S","Agents_of_Chaos",""],
-        "leaderid": 26,
+     "leadername": "Dark Vador",
+     "leaderfaction": ["Bounty_Hunters_Guild","Imperial_Academy" ,""],
+     "leaderid": 26,
+     "charge": [3,"0"],
+     "numberOfFactions": 2,
+     "leaderability": "1 fois par ronde, lorsque vous attaquez un vaisseau, vous pouvez dépenser 1 #ch# pour améliorer un dé d'attaque.",
+     "logistic": 15
+     },
+     {
+     "leadername": "Amiral Ackbar",
+     "leaderfaction": ["Pirates_and_Smugglers", "Rebel_Alliance", ""],
+     "leaderid": 27,
+     "charge": [2,"0"],
+     "numberOfFactions": 2,
+     "leaderability": "Lorsqu'un de vos vaisseaux est déclaré défenseur lors d'un attaque, vous pouvez dépenser 1 #ch#. Dans ce cas, il peut effectuer un tonneau ou une accélération puis il reçoit un marqueur de stress. Si le vaisseau n'a pas l'action utilisée dans sa barre d'action ou qu'il était déjà stressé, il prend 1 dégat ou expose une carte de dégat. Ce mouvement peut annuler l'attaque en cours.",
+     "logistic": 15
+     },
+     {
+        "leadername": "##Assaj Ventress",
+        "leaderfaction": ["Crime_Syndicates","Jedi_Order",""],
+        "leaderid": 28,
+        "numberOfFactions": 2,
         "leaderability":"",
         "charge": [0],
-        "logistic": 20
+        "logistic": 25
+     },
+     {
+        "leadername": "##Commandant Pyre",
+        "leaderfaction": ["Shadow_Specialists","Colossus",""],
+        "leaderid": 29,
+        "numberOfFactions": 2,
+        "leaderability":"",
+        "charge": [0],
+        "logistic": 25
+     },
+     {
+        "leadername": "##Gar Saxon",
+        "leaderfaction": ["Mandalorian_Clans","Separatist_Government",""],
+        "leaderid": 30,
+        "numberOfFactions": 2,
+        "leaderability":"",
+        "charge": [0],
+        "logistic": 25
+     },
+      {
+        "leadername": "##'GENERAL' KALANI",
+        "leaderfaction": ["Phoenix_Cell","Trade_Federation",""],
+        "leaderid": 31,
+        "numberOfFactions": 2,
+        "leaderability":"",
+        "charge": [0],
+        "logistic": 25
+     },
+      {
+        "leadername": "##Grand Amiral Thrawn",
+        "leaderfaction": ["Imperial_Elite_Squadrons","Imperial_Remnants",""],
+        "leaderid": 32,
+        "numberOfFactions": 2,
+        "leaderability":"",
+        "charge": [0],
+        "logistic": 25
+     },
+      {
+        "leadername": "##Chancelier Suprême Palpatine",
+        "leaderfaction": ["Jedi_Order","Clone_Army","Naboo_Defense_Force"],
+        "leaderid": 33,
+        "numberOfFactions": 3,
+        "leaderability":"",
+        "charge": [0],
+        "logistic": 25
+     },
+      {
+        "leadername": "##Maul",
+        "leaderfaction": ["Crime_Syndicates","Black_Sun","Mandalorian_Clans"],
+        "leaderid": 34,
+        "numberOfFactions": 3,
+        "leaderability":"",
+        "charge": [0],
+        "logistic": 25
+     },
+      {
+        "leadername": "##Jabba le Hutt",
+        "leaderfaction": ["Hutt_Cartel","Pirates_and_Smugglers","Bounty_Hunters_Guild"],
+        "leaderid": 35,
+        "numberOfFactions": 3,
+        "leaderability":"",
+        "charge": [0],
+        "logistic": 25
+     },
+      {
+        "leadername": "##Générale Organa",
+        "leaderfaction": ["New_Republic","Colossus","Resistance"],
+        "leaderid": 36,
+        "numberOfFactions": 3,
+        "leaderability":"",
+        "charge": [0],
+        "logistic": 25
+     },
+      {
+        "leadername": "##Suprême Leader Snoke",
+        "leaderfaction": ["First_Order","Shadow_Specialists","Imperial_Remnants"],
+        "leaderid": 37,
+        "numberOfFactions": 3,
+        "leaderability":"",
+        "charge": [0],
+        "logistic": 25
+     },
+      {
+        "leadername": "##Empereur Palpatine",
+        "leaderfaction": ["Imperial_Academy","ISB","Imperial_Elite_Squadrons"],
+        "leaderid": 38,
+        "numberOfFactions": 3,
+        "leaderability":"",
+        "charge": [0],
+        "logistic": 25
+     },
+      {
+        "leadername": "##Mon Mothma",
+        "leaderfaction": ["Rebel_Alliance","Partisans","Phoenix_Cell"],
+        "leaderid": 39,
+        "numberOfFactions": 3,
+        "leaderability":"",
+        "charge": [0],
+        "logistic": 25
+     },
+      {
+        "leadername": "##Comte Dooku",
+        "leaderfaction": ["Trade_Federation","Separatist_Government","Agents_of_Chaos"],
+        "leaderid": 40,
+        "numberOfFactions": 3,
+        "leaderability":"",
+        "charge": [0],
+        "logistic": 25
      }
+     
      
      ]
