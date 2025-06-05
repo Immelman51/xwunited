@@ -96,7 +96,7 @@
      "leaderfaction": ["Imperial_Elite_Squadrons","",""],
      "leaderid": 10,
      "numberOfFactions": 1,
-     "leaderability": "A la fin de la phase de fin, un vaisseau allié peut s'occulter en dépensant 1 #ch#, OU vous pouvez récupérer 1 #ch# et votre adversaire peut renforcer 1 de ses vaisseaux. En phase Système, vous pouvez dépenser 2 #ch# pour gagner 1 #scenario_point#.",,
+     "leaderability": "A la fin de la phase de fin, un vaisseau allié peut s'occulter en dépensant 1 #ch#, OU vous pouvez récupérer 1 #ch# et votre adversaire peut renforcer 1 de ses vaisseaux. En phase Système, vous pouvez dépenser 2 #ch# pour gagner 1 #scenario_point#.",
      "charge": [0],
      "logistic": 25
      },
@@ -165,7 +165,6 @@
      },
      {
      "leadername": "##Générale Syndulla",
-     "leadername": "##Générale Syndulla",
      "leaderfaction": ["New_Republic","",""],
      "leaderid": 18,
      "numberOfFactions": 1,
@@ -175,7 +174,7 @@
      },
      {
      "leadername": "##Capitaine Doza",
-     "leadername": "##Capitaine Doza",
+     "leadernameENG": "##Captain Doza",
      "leaderfaction": ["Colossus","",""],
      "leaderid": 19,
      "numberOfFactions": 1,
@@ -185,7 +184,7 @@
      },
      {
      "leadername": "##Général Pryde",
-     "leadername": "##Général Pryde",
+      "leadernameENG": "##General Pryde",
      "leaderfaction": ["Shadow_Specialists","",""],
      "leaderid": 20,
      "numberOfFactions": 1,
