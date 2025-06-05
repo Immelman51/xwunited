@@ -4726,7 +4726,7 @@
             "points": 0,
             "effect": "Si votre charge est active, vous ne pouvez pas être ciblé par une attaque. Si vous attaquez, ou si vous êtes le dernier vaisseau en jeu de votre escadron, dépensez 1#ch#.",
             "effect_ENG": "If your charge is active, you cannot be targeted by attack. If you perform an attack, or if you are the last ship of your squadron in battle, lose 1 #ch#.",
-            "faction": ["Black_Sun"],
+            "faction": ["Black_Sun","Partisans"],
             "restrictions": [1,"upgrade", "Modification",""],
             "modifier_func": [
                 [3,"Modification",271]
@@ -5784,23 +5784,21 @@
              
          },
          {
-            "name": "Module NS-9 Starpath",
-             "name_ENG": "Starpath NS-9 Module",
+            "name": "",
+             "name_ENG": "",
              "id":328,
              "max_per_squad":1,
              "available":true,
-             "modify":true,
-             "slot": "Illicit",
+             "modify": false,
+             "slot": "",
              "add_Data": [0],
              "force": 0,
-             "charge": [1,"0"],
-             "points": 8,
+             "charge": [0],
+             "points": 0,
              "effect": "",
-             "effect_ENG": "As long as your #ch# is active, you cannot be targeted by attack. If you shoot, or if you are the last ship of your squadron in battle, lose 1 #ch#.",
-             "faction": ["Partisans","Black_Sun"],
-             "modifier_func":[
-                [3,"Modification",328]
-             ]
+             "effect_ENG": "",
+	     "faction": [""]
+             
                          
              
          },

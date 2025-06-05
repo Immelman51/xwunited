@@ -1,2692 +1,2695 @@
-[
-
-    {
-            "name": "T-65 X-wing",
-            "factions": [ "Rebel_Alliance", "Partisans", "New_Republic" ],
-            "chassis": [3],
-            "id": 0,
-            "attack": [["F",3]],
-            "agility": 2,
-            "hull": 4,
-            "shields": 2,
-            "actions": [
-                [0,"Fo W"], 
-                [0,"Lo W"],
-                [0,"Br W"]
-            ],
-            
-            "maneuvers": [
-                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-                [ 0, 1, 1, 1, 0, 0, 0, 0, 0, 0],
-                [ 2, 1, 1, 1, 2, 0, 0, 0, 0, 0],
-                [ 2, 2, 2, 2, 2, 0, 0, 0, 3, 3],
-                [ 0, 0, 2, 0, 0, 3, 0, 0, 0, 0]
-            ],
-            "slots": ["Torpedo", "Astromech", "Modification"],
-            "base": ["Small"]
-        },
-        {    
-            
-            "name": "BTL-A4 Y-wing",
-            "factions": [ "Rebel_Alliance", "Hutt_Cartel", "Shadow_Specialists" ],            
-            "chassis":[0],
-            "id": 1,
-            "attack": [["F",2]],
-            "agility": 1,
-            "hull": 6,
-            "shields": 2,
-            "actions": [
-                [0,"Fo W"],
-                [0,"Lo W"],
-                [0,"Br R"], 
-                [0,"Rd R"]
-            ],
-            "maneuvers": [
-                [ 0, 0, 0, 0, 0, 0],
-                [ 0, 1, 1, 1, 0, 0],
-                [ 2, 2, 1, 2, 2, 0],
-                [ 3, 2, 2, 2, 3, 0],
-                [ 0, 0, 3, 0, 0, 3]
-            ],
-            "base": ["Small"],
-            "slots": ["Torpedo", "Turret", "Payload", "Astromech", "Modification"]
-        },
-        {
-        
-            "name": "RZ-1 A-wing",
-            "factions": [ "Rebel_Alliance", "Phoenix_Cell" ],
-            "attack": [["F",2]],
-            "id":2,
-            "agility": 3,
-            "hull": 2,
-            "shields": 2,
-            "chassis": [5],
-            "actions": [
-                [0,"Fo W"],
-                [0,"Ev W"],
-                [0,"Lo W"],
-                [0,"Br W"],
-                [0,"Bo W"]
-            ],
-            "maneuvers": [
-                [ 0, 0, 0, 0, 0, 0, 0, 0],
-                [ 2, 0, 0, 0, 2, 0, 0, 0],
-                [ 1, 1, 1, 1, 1, 0, 0, 0],
-                [ 2, 2, 1, 2, 2, 0, 3, 3],
-                [ 0, 0, 1, 0, 0, 0, 0, 0],
-                [ 0, 0, 1, 0, 0, 3, 0, 0]
-            ],
-            "base": ["Small"],
-            "slots": ["Missile", "Modification"]
-        },
-        {
-        
-            "name": "YT-1300 Light Freighter",
-            "factions": [ "Pirates_and_Smugglers", "Resistance" ],
-            "id": 3,
-            "attack": [["T",3]],
-            "agility": 1,
-            "hull": 8,
-            "shields": 5,
-            "chassis": [16],
-            "actions": [
-                [0,"Fo W"],
-                [0,"Lo W"],
-                [0,"Ro W"],
-                [0,"Bo R"]
-            ],
-            "maneuvers": [
-                [ 0, 0, 0, 0, 0, 0, 0, 0],
-                [ 0, 2, 1, 2, 0, 0, 0, 0],
-                [ 2, 1, 1, 1, 2, 0, 0, 0],
-                [ 2, 2, 1, 2, 2, 0, 3, 3],
-                [ 0, 0, 2, 0, 0, 3, 0, 0]
-            ],
-            "base": ["Large"],
-            "slots": ["Missile", "Crew", "Crew", "Gunner", "Modification","Calculator"]
-        },
-        {
-        
-            "name": "TIE/ln Fighter",
-            "factions": ["Phoenix_Cell", "Imperial_Academy", "Imperial_Elite_Forces", "Imperial_Remnants"],
-            "chassis":[0],
-            "id": 4,
-            "attack": [["F",2]],
-            "agility": 3,
-            "hull": 3,
-            "shields": 0,
-            "actions": [
-                [0,"Fo W"],
-                [0,"Br W"],
-                [0,"Ev W"]
-            ],
-            "maneuvers": [
-                [ 0, 0, 0, 0, 0, 0],
-                [ 2, 0, 0, 0, 2, 0],
-                [ 2, 1, 1, 1, 2, 0],
-                [ 2, 2, 1, 2, 2, 3],
-                [ 0, 0, 2, 0, 0, 3],
-                [ 0, 0, 2, 0, 0, 0]
-            ],
-            "base": ["Small"],
-            "slots": ["Tie mod"]
-        },
-        {
+    [
     
-            "name": "TIE Advanced x1",
-            "factions": [ "Imperial_Academy" ],
-            "id": 5,
-            "attack": [["F",2]],
-            "agility": 3,
-            "hull": 3,
-            "shields": 2,
-            "chassis": [7],
-            "actions": [
-                [1,"Fo W", "Br R"],
-                [0,"Lo W"],
-                [0,"Br W"]
-            ],
-            "maneuvers": [
-                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-                [ 0, 1, 2, 1, 0, 0, 0, 0, 0, 0],
-                [ 2, 1, 1, 1, 2, 0, 0, 0, 0, 0],
-                [ 2, 2, 1, 2, 2, 0, 0, 0, 3, 3],
-                [ 0, 0, 2, 0, 0, 3, 0, 0, 0, 0],
-                [ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0]
-            ],
-            "base": ["Small"],
-            "slots": ["Tech", "Missile", "Sensor", "Tie mod"]
-        },
         {
-        
-            "name": "TIE/in Interceptor",
-            "factions": [ "Imperial_Academy", "Imperial_Elite_Forces", "Imperial_Remnants" ],
-            "id": 6,
-            "attack": [["F",3]],
-            "agility": 3,
-            "hull": 3,
-            "shields": 0,
-            "chassis": [10],
-            "actions": [
-                [0,"Fo W"],
-                [0,"Br W"],
-                [0,"Bo W"],
-                [0,"Ev W"]
-            ],
-            "base": ["Small"],
-            "maneuvers": [
-                [ 0, 0, 0, 0, 0, 0, 0, 0],
-                [ 2, 0, 0, 0, 2, 0, 0, 0],
-                [ 1, 1, 1, 1, 1, 0, 0, 0],
-                [ 2, 2, 1, 2, 2, 0, 3, 3],
-                [ 0, 0, 1, 0, 0, 3, 0, 0],
-                [ 0, 0, 2, 0, 0, 0, 0, 0]
-            ],
-            "slots": ["Tie mod"]
-        },
-        {
-        
-            "name": "Firespray-class Patrol Craft",
-            "factions": [ "Pirates_and_Smugglers", "Bounty_Hunters_Guild", "Agents_of_Chaos"],
-            "chassis":[0],
-            "id": 7,
-            "attack": [["F",3],["B",3]],
-            "agility": 2,
-            "hull": 6,
-            "shields": 4,
-            "base": ["Medium"],
-            "actions": [
-                [0,"Fo W"],
-                [0,"Lo W"],
-                [0,"Bo W"],
-                [0,"Re R"]
-            ],
-            "maneuvers": [
-                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-                [ 2, 1, 1, 1, 2, 0, 0, 0, 0, 0],
-                [ 2, 2, 1, 2, 2, 0, 0, 0, 0, 0],
-                [ 0, 2, 1, 2, 0, 0, 0, 0, 3, 3],
-                [ 0, 0, 2, 0, 0, 3, 0, 0, 0, 0]
-            ],
-            "slots": ["Crew", "Torpedo", "Payload", "Modification"]
-        },
-        {
-        
-            "name": "HWK-290 Light Freighter",
-            "factions": [ "Rebel_Alliance", "Pirates_and_Smugglers", "Hutt_Cartel" ],
-            "chassis":[0],
-            "id": 8,
-            "attack": [["F",1]],
-            "agility": 2,
-            "hull": 3,
-            "shields": 2,
-            "actions": [
-                [1,"Fo W", "Ro R"],
-                [1,"Lo W", "Ro R"],
-                [0,"Bo R"],
-                [0,"Ja R"]
+                "name": "T-65 X-wing",
+                "factions": [ "Rebel_Alliance", "Partisans", "New_Republic" ],
+                "chassis": [3],
+                "id": 0,
+                "attack": [["F",3]],
+                "agility": 2,
+                "hull": 4,
+                "shields": 2,
+                "actions": [
+                    [0,"Fo W"], 
+                    [0,"Lo W"],
+                    [0,"Br W"]
+                ],
                 
-            ],
-            "maneuvers": [
-                [ 0, 0, 3, 0, 0],
-                [ 0, 1, 1, 1, 0],
-                [ 2, 2, 1, 2, 2],
-                [ 3, 2, 1, 2, 3],
-                [ 0, 0, 2, 0, 0]
-            ],
-            "base": ["Small"],
-            "slots": ["Crew", "Payload", "Turret", "Modification","Calculator"]
-        },
-        {
-        
-            "name": "Lambda-class T-4a Shuttle",
-            "factions": [ "Imperial_Academy", "ISB", "Colossus" ],
-            "id": 9,
-            "attack": [["F",3]],
-            "agility": 1,
-            "hull": 6,
-            "shields": 4,
-            "chassis": [18],
-            "actions": [
-                [0,"Fo W"],
-                [0,"Co W"],
-                [0,"Re W"],
-                [0,"Ja R"]
-              
-            ],
-            "maneuvers": [
-                [ 0, 0, 3, 0, 0],
-                [ 0, 1, 1, 1, 0],
-                [ 3, 2, 1, 2, 3],
-                [ 0, 3, 2, 3, 0]
-            ],
-            "base": ["Large"],
-            "slots": ["Sensor", "Crew", "Gunner", "Cannon", "Modification", "Modification"]
-
-        },
-        {
-   
-            "name": "A/SF-01 B-wing",
-            "factions": [ "Rebel_Alliance" ],
-            "id": 10,
-            "attack": [["F",3]],
-            "agility": 1,
-            "hull": 4,
-            "shields": 4,
-            "chassis": [6],
-            "actions": [
-                [1,"Fo W", "Br R"],
-                [0,"Lo W"],
-                [0,"Br W"]         
-
-            ],
-            "maneuvers": [
-                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-                [ 3, 1, 1, 1, 3, 0, 0, 0, 3, 3],
-                [ 2, 2, 1, 2, 2, 3, 0, 0, 0, 0],
-                [ 0, 3, 1, 3, 0, 0, 0, 0, 0, 0],
-                [ 0, 0, 3, 0, 0, 0, 0, 0, 0, 0]
-            ],
-            "base": ["Small"],
-            "slots": ["Sensor", "Cannon", "Cannon", "Torpedo", "Gunner", "Modification"]
-        },
-        {
+                "maneuvers": [
+                    [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                    [ 0, 1, 1, 1, 0, 0, 0, 0, 0, 0],
+                    [ 2, 1, 1, 1, 2, 0, 0, 0, 0, 0],
+                    [ 2, 2, 2, 2, 2, 0, 0, 0, 3, 3],
+                    [ 0, 0, 2, 0, 0, 3, 0, 0, 0, 0]
+                ],
+                "slots": ["Torpedo", "Astromech", "Modification"],
+                "base": ["Small"]
+            },
+            {    
+                
+                "name": "BTL-A4 Y-wing",
+                "factions": [ "Rebel_Alliance", "Hutt_Cartel", "Shadow_Specialists" ],            
+                "chassis":[0],
+                "id": 1,
+                "attack": [["F",2]],
+                "agility": 1,
+                "hull": 6,
+                "shields": 2,
+                "actions": [
+                    [0,"Fo W"],
+                    [0,"Lo W"],
+                    [0,"Br R"], 
+                    [0,"Rd R"]
+                ],
+                "maneuvers": [
+                    [ 0, 0, 0, 0, 0, 0],
+                    [ 0, 1, 1, 1, 0, 0],
+                    [ 2, 2, 1, 2, 2, 0],
+                    [ 3, 2, 2, 2, 3, 0],
+                    [ 0, 0, 3, 0, 0, 3]
+                ],
+                "base": ["Small"],
+                "slots": ["Torpedo", "Turret", "Payload", "Astromech", "Modification"]
+            },
+            {
             
-            "name": "TIE/sa Bomber",
-            "factions": [ "Imperial_Academy" ],
-            "id": 11,
-            "attack": [["F",2]],
-            "base": ["Small"],
-            "agility": 2,
-            "hull": 6,
-            "shields": 0,
-            "chassis": [8],
-            "actions": [
-                [0,"Fo W"],
-                [0,"Lo W"],
-                [1,"Br W", "Lo R"],
-                [0,"Rl R"]
+                "name": "RZ-1 A-wing",
+                "factions": [ "Rebel_Alliance", "Phoenix_Cell" ],
+                "attack": [["F",2]],
+                "id":2,
+                "agility": 3,
+                "hull": 2,
+                "shields": 2,
+                "chassis": [5],
+                "actions": [
+                    [0,"Fo W"],
+                    [0,"Ev W"],
+                    [0,"Lo W"],
+                    [0,"Br W"],
+                    [0,"Bo W"]
+                ],
+                "maneuvers": [
+                    [ 0, 0, 0, 0, 0, 0, 0, 0],
+                    [ 2, 0, 0, 0, 2, 0, 0, 0],
+                    [ 1, 1, 1, 1, 1, 0, 0, 0],
+                    [ 2, 2, 1, 2, 2, 0, 3, 3],
+                    [ 0, 0, 1, 0, 0, 0, 0, 0],
+                    [ 0, 0, 1, 0, 0, 3, 0, 0]
+                ],
+                "base": ["Small"],
+                "slots": ["Missile", "Modification"]
+            },
+            {
             
-            ],
-            "maneuvers": [
-                [ 0, 0, 0, 0, 0, 0],
-                [ 0, 2, 1, 2, 0, 0],
-                [ 2, 1, 1, 1, 2, 0],
-                [ 2, 2, 1, 2, 2, 3],
-                [ 0, 0, 2, 0, 0, 0],
-                [ 0, 0, 0, 0, 0, 3]
-            ],
-            "slots": ["Torpedo", "Missile", "Payload", "Gunner", "Tie mod"]
-        },
-        {
-      
+                "name": "YT-1300 Light Freighter",
+                "factions": [ "Pirates_and_Smugglers", "Resistance" ],
+                "id": 3,
+                "attack": [["T",3]],
+                "agility": 1,
+                "hull": 8,
+                "shields": 5,
+                "chassis": [16],
+                "actions": [
+                    [0,"Fo W"],
+                    [0,"Lo W"],
+                    [0,"Ro W"],
+                    [0,"Bo R"]
+                ],
+                "maneuvers": [
+                    [ 0, 0, 0, 0, 0, 0, 0, 0],
+                    [ 0, 2, 1, 2, 0, 0, 0, 0],
+                    [ 2, 1, 1, 1, 2, 0, 0, 0],
+                    [ 2, 2, 1, 2, 2, 0, 3, 3],
+                    [ 0, 0, 2, 0, 0, 3, 0, 0]
+                ],
+                "base": ["Large"],
+                "slots": ["Missile", "Crew", "Crew", "Gunner", "Modification","Calculator"]
+            },
+            {
+            
+                "name": "TIE/ln Fighter",
+                "factions": ["Phoenix_Cell", "Imperial_Academy", "Imperial_Elite_Forces", "Imperial_Remnants"],
+                "chassis":[0],
+                "id": 4,
+                "attack": [["F",2]],
+                "agility": 3,
+                "hull": 3,
+                "shields": 0,
+                "actions": [
+                    [0,"Fo W"],
+                    [0,"Br W"],
+                    [0,"Ev W"]
+                ],
+                "maneuvers": [
+                    [ 0, 0, 0, 0, 0, 0],
+                    [ 2, 0, 0, 0, 2, 0],
+                    [ 2, 1, 1, 1, 2, 0],
+                    [ 2, 2, 1, 2, 2, 3],
+                    [ 0, 0, 2, 0, 0, 3],
+                    [ 0, 0, 2, 0, 0, 0]
+                ],
+                "base": ["Small"],
+                "slots": ["Tie mod"]
+            },
+            {
         
-            "name": "Z-95-AF4 Headhunter",
-            "factions": [ "Partisans", "Bounty_Hunters_Guild", "Black_Sun", "Pirates_and_Smugglers"  ],
-            "chassis":[0],
-            "id": 12,
-            "attack": [["F",2]],
-            "base": ["Small"],
-            "agility": 2,
-            "hull": 2,
-            "shields": 2,
-            "actions": [
-                [0,"Fo W"],
-                [0,"Lo W"],
-                [0,"Br R"]
-                
-            ],
-            "maneuvers": [
-                [ 0, 0, 0, 0, 0, 0],
-                [ 0, 2, 1, 2, 0, 0],
-                [ 2, 1, 1, 1, 2, 0],
-                [ 2, 2, 1, 2, 2, 3],
-                [ 0, 0, 2, 0, 0, 3]
-            ],
-            "slots": ["Missile", "Illicit"]
-        },
-        {
+                "name": "TIE Advanced x1",
+                "factions": [ "Imperial_Academy" ],
+                "id": 5,
+                "attack": [["F",2]],
+                "agility": 3,
+                "hull": 3,
+                "shields": 2,
+                "chassis": [7],
+                "actions": [
+                    [1,"Fo W", "Br R"],
+                    [0,"Lo W"],
+                    [0,"Br W"]
+                ],
+                "maneuvers": [
+                    [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                    [ 0, 1, 2, 1, 0, 0, 0, 0, 0, 0],
+                    [ 2, 1, 1, 1, 2, 0, 0, 0, 0, 0],
+                    [ 2, 2, 1, 2, 2, 0, 0, 0, 3, 3],
+                    [ 0, 0, 2, 0, 0, 3, 0, 0, 0, 0],
+                    [ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0]
+                ],
+                "base": ["Small"],
+                "slots": ["Tech", "Missile", "Sensor", "Tie mod"]
+            },
+            {
+            
+                "name": "TIE/in Interceptor",
+                "factions": [ "Imperial_Academy", "Imperial_Elite_Forces", "Imperial_Remnants" ],
+                "id": 6,
+                "attack": [["F",3]],
+                "agility": 3,
+                "hull": 3,
+                "shields": 0,
+                "chassis": [10],
+                "actions": [
+                    [0,"Fo W"],
+                    [0,"Br W"],
+                    [0,"Bo W"],
+                    [0,"Ev W"]
+                ],
+                "base": ["Small"],
+                "maneuvers": [
+                    [ 0, 0, 0, 0, 0, 0, 0, 0],
+                    [ 2, 0, 0, 0, 2, 0, 0, 0],
+                    [ 1, 1, 1, 1, 1, 0, 0, 0],
+                    [ 2, 2, 1, 2, 2, 0, 3, 3],
+                    [ 0, 0, 1, 0, 0, 3, 0, 0],
+                    [ 0, 0, 2, 0, 0, 0, 0, 0]
+                ],
+                "slots": ["Tie mod"]
+            },
+            {
+            
+                "name": "Firespray-class Patrol Craft",
+                "factions": [ "Pirates_and_Smugglers", "Bounty_Hunters_Guild", "Agents_of_Chaos"],
+                "chassis":[0],
+                "id": 7,
+                "attack": [["F",3],["B",3]],
+                "agility": 2,
+                "hull": 6,
+                "shields": 4,
+                "base": ["Medium"],
+                "actions": [
+                    [0,"Fo W"],
+                    [0,"Lo W"],
+                    [0,"Bo W"],
+                    [0,"Re R"]
+                ],
+                "maneuvers": [
+                    [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                    [ 2, 1, 1, 1, 2, 0, 0, 0, 0, 0],
+                    [ 2, 2, 1, 2, 2, 0, 0, 0, 0, 0],
+                    [ 0, 2, 1, 2, 0, 0, 0, 0, 3, 3],
+                    [ 0, 0, 2, 0, 0, 3, 0, 0, 0, 0]
+                ],
+                "slots": ["Crew", "Torpedo", "Payload", "Modification"]
+            },
+            {
+            
+                "name": "HWK-290 Light Freighter",
+                "factions": [ "Rebel_Alliance", "Pirates_and_Smugglers", "Hutt_Cartel" ],
+                "chassis":[0],
+                "id": 8,
+                "attack": [["F",1]],
+                "agility": 2,
+                "hull": 3,
+                "shields": 2,
+                "actions": [
+                    [1,"Fo W", "Ro R"],
+                    [1,"Lo W", "Ro R"],
+                    [0,"Bo R"],
+                    [0,"Ja R"]
+                    
+                ],
+                "maneuvers": [
+                    [ 0, 0, 3, 0, 0],
+                    [ 0, 1, 1, 1, 0],
+                    [ 2, 2, 1, 2, 2],
+                    [ 3, 2, 1, 2, 3],
+                    [ 0, 0, 2, 0, 0]
+                ],
+                "base": ["Small"],
+                "slots": ["Crew", "Payload", "Turret", "Modification","Calculator"]
+            },
+            {
+            
+                "name": "Lambda-class T-4a Shuttle",
+                "factions": [ "Imperial_Academy", "ISB", "Colossus" ],
+                "id": 9,
+                "attack": [["F",3]],
+                "agility": 1,
+                "hull": 6,
+                "shields": 4,
+                "chassis": [18],
+                "actions": [
+                    [0,"Fo W"],
+                    [0,"Co W"],
+                    [0,"Re W"],
+                    [0,"Ja R"]
+                  
+                ],
+                "maneuvers": [
+                    [ 0, 0, 3, 0, 0],
+                    [ 0, 1, 1, 1, 0],
+                    [ 3, 2, 1, 2, 3],
+                    [ 0, 3, 2, 3, 0]
+                ],
+                "base": ["Large"],
+                "slots": ["Sensor", "Crew", "Gunner", "Cannon", "Modification", "Modification"]
     
-        
-            "name": "TIE/d Defender",
-            "factions": [ "Imperial_Elite_Forces" ],
-            "id": 13,
-            "attack": [["F",3]],
-            "agility": 3,
-            "hull": 3,
-            "shields": 4,
-            "base": ["Small"],
-            "chassis": [11],
-            "actions": [
-                [0,"Fo W"],
-                [0,"Lo W"],
-                [0,"Ev W"],
-                [0,"Bo W"],
-                [0,"Br W"]
-               
-            ],
-            "maneuvers": [
-                [ 0, 0, 0, 0, 0, 0],
-                [ 3, 1, 0, 1, 3, 0],
-                [ 3, 2, 1, 2, 3, 3],
-                [ 2, 2, 1, 2, 2, 0],
-                [ 0, 0, 1, 0, 0, 2],
-                [ 0, 0, 1, 0, 0, 0]
-            ],
-            "slots": ["Tech","Missile","Cannon","Tie mod","Sensor"]
-        },
-        {
-     
-    
-            "name": "E-wing",
-            "factions": [ "New_Republic" ],
-            "chassis":[0],
-            "id": 14,
-            "attack": [["F",3]],
-            "agility": 3,
-            "hull": 3,
-            "shields": 3,
-            "base": ["Small"],
-            "actions": [
-                [0,"Fo W"],
-                [0,"Ev W"],
-                [0,"Lo W"],
-                [1,"Br W", "Lo R"],
-                [1,"Bo W", "Lo R"]
-               
-            ],
-            "maneuvers": [
-                [ 0, 0, 0, 0, 0, 0, 0, 0 ],
-                [ 3, 1, 1, 1, 3, 0, 0, 0 ],
-                [ 2, 2, 1, 2, 2, 0, 0, 0 ],
-                [ 2, 2, 1, 2, 2, 0, 3, 3 ],
-                [ 0, 0, 1, 0, 0, 3, 0, 0 ],
-                [ 0, 0, 2, 0, 0, 0, 0, 0 ]
-            ],
-            "slots": ["Tech","Torpedo","Modification","Astromech","Sensor","Sensor"]
-
-        },
-        {
-    
-            "name": "TIE/ph Phantom",
-            "id": 15,
-            "factions": [ "ISB" ],
-            "attack": [["F",3]],
-            "agility": 2,
-            "hull": 3,
-            "shields": 2,
-            "base": ["Small"],
-            "chassis": [19],
-            "actions": [
-                [0,"Fo W"],
-                [0,"Ev W"],
-                [0,"Br W"],
-                [0,"Ck W"]
-                
-            ],
-            "maneuvers": [
-                [ 0, 0, 0, 0, 0, 0],
-                [ 2, 2, 0, 2, 2, 0],
-                [ 2, 1, 1, 1, 2, 0],
-                [ 2, 2, 1, 2, 2, 3],
-                [ 0, 0, 2, 0, 0, 3]
-            ],
-            "slots": ["Tech","Gunner","Tie mod","Calculator"]
-
-        },
-        {
-    
-        
-            "name": "YT-2400 Light Freighter",
-            "factions": [ "Phoenix_Cell", "Pirates_and_Smugglers" ],
-            "id": 16,
-            "attack": [["0",0]],
-            "agility": 2,
-            "hull": 6,
-            "shields": 4,
-            "chassis": [2],
-            "actions": [
-                [0,"Fo W"],
-                [0,"Lo W"],
-                [0,"Br R"]
-                
-               
-            ],
-            "base": ["Large"],
-            "maneuvers": [
-                [ 0, 0, 0, 0, 0, 0],
-                [ 2, 1, 1, 1, 2, 0],
-                [ 2, 2, 1, 2, 2, 0],
-                [ 2, 2, 2, 2, 2, 0],
-                [ 0, 0, 2, 0, 0, 3]
-            ],
-            "slots": ["Crew", "Gunner", "Cannon", "Turret", "Illicit", "Modification"]
-        },
-        {
+            },
+            {
        
-            "name": "VT-49 Decimator",
-            "factions": [ "Imperial_Elite_Forces" ],
-            "chassis":[0],
-            "id": 17,
-            "attack": [["T",3]],
-            "agility": 0,
-            "hull": 12,
-            "shields": 4,
-            "actions": [
-                [0,"Fo W"],
-                [0,"Lo W"],
-                [0,"Re W"],
-                [0,"Ro W"],
-                [0,"Co R"]
-                
-            ],
-            "base": ["Large"],
-            "maneuvers": [
-                [ 0, 0, 0, 0, 0],
-                [ 3, 1, 1, 1, 3],
-                [ 2, 2, 1, 2, 2],
-                [ 2, 2, 2, 2, 2],
-                [ 0, 0, 2, 0, 0]
-            ],
-            "slots": ["Crew","Crew","Gunner","Gunner","Missile","Cannon","Turret","Modification"]
-
-        },
-        {
-     
-        
-            "name": "StarViper-class Attack Platform",
-            "factions": ["Black_Sun"],
-            "id": 18,
-            "attack": [["F",3]],
-            "agility": 3,
-            "hull": 4,
-            "shields": 1,
-            "chassis": [20],
-            "actions": [
-                [0,"Fo W"],
-                [0,"Lo W"],
-                [1,"Br W", "Fo R"],
-                [1,"Bo W", "Fo R"]
-            
-            ],
-            "base": ["Small"],
-            "maneuvers": [
-                [ 0, 0, 0, 0, 0, 0, 0, 0],
-                [ 2, 1, 1, 1, 2, 0, 0, 0],
-                [ 2, 1, 1, 1, 2, 0, 0, 0],
-                [ 0, 2, 1, 2, 0, 0, 3, 3],
-                [ 0, 0, 2, 0, 0, 0, 0, 0]
-            ],
-            "slots": ["Tech","Torpedo","Modification"]
-
-        },
-        {
-     
-        
-            "name": "M3-A Interceptor",
-            "factions": [ "Hutt_Cartel", "Pirates_and_Smugglers" ],
-            "id": 19,
-            "attack": [["F",2]],
-            "agility": 3,
-            "hull": 3,
-            "shields": 1,
-            "chassis": [21],
-            "actions": [
-                [0,"Fo W"],
-                [0,"Lo W"],
-                [0,"Ev W"],
-                [0,"Br W"]
-               
-            ],
-            "maneuvers": [
-                [ 0, 0, 0, 0, 0, 0 ],
-                [ 2, 1, 0, 1, 2, 0 ],
-                [ 2, 2, 1, 2, 2, 0 ],
-                [ 0, 2, 1, 2, 0, 3 ],
-                [ 0, 0, 2, 0, 0, 0 ],
-                [ 0, 0, 2, 0, 0, 3 ]
-            ],
-            "base": ["Small"],
-            "slots": ["Modification","Weapon Hardpoint"]
-        },
-        {
+                "name": "A/SF-01 B-wing",
+                "factions": [ "Rebel_Alliance" ],
+                "id": 10,
+                "attack": [["F",3]],
+                "agility": 1,
+                "hull": 4,
+                "shields": 4,
+                "chassis": [6],
+                "actions": [
+                    [1,"Fo W", "Br R"],
+                    [0,"Lo W"],
+                    [0,"Br W"]         
     
-       
-            "name": "Aggressor Assault Fighter",
-            "factions": [ "Bounty_Hunters_Guild", "Mandalorian_Clans" ],
-            "chassis":[0],
-            "id": 20,
-            "attack": [["F",3]],
-            "agility": 3,
-            "hull": 5,
-            "shields": 3,
-            "actions": [
-                [0,"Fo W"],
-                [0,"Lo W"],
-                [0,"Ev W"],
-                [0,"Bo W"]
-        
-            ],
-            "base": ["Medium"],
-            "maneuvers": [
-                [ 0, 0, 0, 0, 0, 0, 0, 0 ],
-                [ 2, 1, 1, 1, 2, 0, 0, 0 ],
-                [ 2, 1, 1, 1, 2, 0, 0, 0 ],
-                [ 0, 1, 1, 1, 0, 0, 3, 3 ],
-                [ 0, 0, 2, 0, 0, 3, 0, 0 ]
-            ],
-            "slots": ["Sensor", "Cannon", "Cannon", "Modification"]
-        },
-        {
-    
-            "name": "YV-666 Light Freighter",
-            "factions": [ "Hutt_Cartel", "Crime_Syndicates", "Bounty_Hunters_Guild" ],
-            "chassis":[0],
-            "id": 21,
-            "attack": [["180",3]],
-            "agility": 1,
-            "hull": 9,
-            "shields": 3,
-            "base": ["Large"],
-            "actions": [
-                [0,"Fo W"],
-                [0,"Lo W"],
-                [0,"Re W"]
-               
-            ],
-            "maneuvers": [
-                [ 0, 0, 3, 0, 0],
-                [ 0, 1, 1, 1, 0],
-                [ 3, 2, 1, 2, 3],
-                [ 2, 2, 1, 2, 2],
-                [ 0, 0, 2, 0, 0]
-            ],
-            "slots": ["Crew", "Crew", "Illicit", "Illicit", "Modification"]
-        },
-        {
-    
-       
-            "name": "Kihraxz Fighter",
-            "factions": ["Black_Sun", "Hutt_Cartel", "Bounty_Hunters_Guild"],
-            "chassis":[0],
-            "id": 22,
-            "attack": [["F",3]],
-            "agility": 2,
-            "hull": 5,
-            "shields": 1,
-            "actions": [
-                [0,"Fo W"],
-                [0,"Lo W"],
-                [0,"Br W"]
-           
-            ],
-            "maneuvers": [
-                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-                [ 2, 1, 0, 1, 2, 0, 0, 0, 0, 0 ],
-                [ 2, 1, 1, 1, 2, 0, 0, 0, 3, 3 ],
-                [ 0, 2, 1, 2, 0, 0, 0, 0, 0, 0 ],
-                [ 0, 0, 2, 0, 0, 3, 0, 0, 0, 0 ]
-            ],
-            "base": ["Small"],
-            "slots": ["Missile", "Illicit", "Modification"]
-        },
-        {
-  
-            "name": "BTL-S8 K-wing",
-            "factions": ["New_Republic"],
-            "chassis":[0],
-            "id": 23,
-            "attack": [["T",2]],
-            "agility": 1,
-            "hull": 6,
-            "shields": 3,
-            "base": ["Medium"],
-            "actions": [
-                [0,"Fo W"],
-                [0,"Lo W"],
-                [0,"Sl W"],
-                [0,"Ro W"],
-                [0,"Rd W"]
+                ],
+                "maneuvers": [
+                    [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                    [ 3, 1, 1, 1, 3, 0, 0, 0, 3, 3],
+                    [ 2, 2, 1, 2, 2, 3, 0, 0, 0, 0],
+                    [ 0, 3, 1, 3, 0, 0, 0, 0, 0, 0],
+                    [ 0, 0, 3, 0, 0, 0, 0, 0, 0, 0]
+                ],
+                "base": ["Small"],
+                "slots": ["Sensor", "Cannon", "Cannon", "Torpedo", "Gunner", "Modification"]
+            },
+            {
                 
-            ],
-            "maneuvers": [
-                [ 0, 0, 0, 0, 0],
-                [ 0, 1, 1, 1, 0],
-                [ 2, 2, 1, 2, 2],
-                [ 0, 2, 2, 2, 0]
-            ],
-            "slots": ["Gunner","Gunner","Missile","Payload","Payload","Turret","Modification"]
-
-        },
-        {
-    
-    
-            "name": "TIE/ca Punisher",
-            "factions": ["Imperial_Elite_Forces"],
-            "chassis":[0],
-            "id": 24,
-            "attack": [["F",2]],
-            "agility": 1,
-            "hull": 6,
-            "shields": 3,
-            "base": ["Medium"],
-            "actions": [
-                [0,"Fo W"],
-                [1,"Lo W", "Br R"],
-                [0,"Bo W", "Lo R"],
-                [0,"Rd W"]
+                "name": "TIE/sa Bomber",
+                "factions": [ "Imperial_Academy" ],
+                "id": 11,
+                "attack": [["F",2]],
+                "base": ["Small"],
+                "agility": 2,
+                "hull": 6,
+                "shields": 0,
+                "chassis": [8],
+                "actions": [
+                    [0,"Fo W"],
+                    [0,"Lo W"],
+                    [1,"Br W", "Lo R"],
+                    [0,"Rl R"]
                 
-            ],
-            "maneuvers": [
-                [ 0, 0, 3, 0, 0, 0 ],
-                [ 0, 1, 1, 1, 0, 0 ],
-                [ 2, 2, 1, 2, 2, 0 ],
-                [ 3, 2, 2, 2, 3, 0 ],
-                [ 0, 0, 0, 0, 0, 3 ]
-            ],
-            "slots": ["Tech","Gunner","Missile","Torpedo","Payload","Payload","Tie mod"]
-
-        },
-        {
-   
-        
-            "name": "VCX-100 Light Freighter",
-            "factions": ["Phoenix_Cell", "New_Republic"],
-            "id": 25,
-            "attack": [["F",4]],
-            "agility": 0,
-            "hull": 10,
-            "shields": 4,
-            "base": ["Large"],
-            "chassis": [22],
-            "actions": [
-                [0,"Fo W"],
-                [0,"Lo W"],
-                [0,"Re W"]
-                
-            ],
-            "maneuvers": [
-                [ 0, 0, 0, 0, 0, 0 ],
-                [ 3, 2, 1, 2, 3, 0 ],
-                [ 2, 1, 1, 1, 2, 0 ],
-                [ 3, 2, 2, 2, 3, 0 ],
-                [ 0, 0, 2, 0, 0, 3 ]
-            ],
-            "slots": ["Crew","Crew","Gunner","Torpedo","Turret","Modification","Sensor"]
-        },
-        {
-     
-      
-            "name": "Attack Shuttle",
-            "factions": ["Phoenix_Cell"],
-            "id": 26,
-            "attack": [["F",3]],
-            "agility": 2,
-            "hull": 3,
-            "shields": 1,
-            "chassis": [23],
-            "actions": [
-                [0,"Fo W"],
-                [0,"Ev W"],
-                [1,"Br W", "Ev R"]
-               
-            ],
-            "base": ["Small"],
-            "maneuvers": [
-                [ 0, 0, 0, 0, 0, 0 ],
-                [ 3, 1, 1, 1, 3, 0 ],
-                [ 2, 2, 1, 2, 2, 0 ],
-                [ 3, 2, 2, 2, 3, 0 ],
-                [ 0, 0, 2, 0, 0, 3 ]
-            ],
-            "slots": ["Crew","Turret","Modification"]
-        },
-        {
-  
-            "name": "TIE Advanced v1",
-            "factions": ["Imperial_Elite_Forces"],
-            "chassis":[0],
-            "id": 27,
-            "attack": [["F",2]],
-            "agility": 3,
-            "hull": 2,
-            "shields": 2,
-            "actions": [
-                [0,"Fo W"],
-                [0,"Ev W"],
-                [0,"Lo W"],
-                [1,"Br W", "Fo R"],
-                [1,"Bo W", "Fo R"]
-               
-            ],
-            "base": ["Small"],
-            "maneuvers": [
-                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-                [ 1, 1, 0, 1, 1, 0, 0, 0, 0, 0 ],
-                [ 2, 2, 1, 2, 2, 0, 0, 0, 3, 3 ],
-                [ 2, 2, 1, 2, 2, 0, 0, 0, 0, 0 ],
-                [ 0, 0, 2, 0, 0, 3, 0, 0, 0, 0 ],
-                [ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0 ]
-            ],
-            "slots": ["Sensor","Missile","Tie mod"]
-
-        },
-        {
-    
-       
-            "name": "G-1A Starfighter",
-            "factions": ["Bounty_Hunters_Guild"],
-            "chassis":[0],
-            "id": 28,
-            "attack": [["F",3]],
-            "agility": 1,
-            "hull": 5,
-            "shields": 4,
-            "base": ["Medium"],
-            "actions": [
-                [0,"Fo W"],
-                [0,"Lo W"],
-                [0,"Ja W"]
-              
-            ],
-            "maneuvers": [
-                [ 0, 0, 3, 0, 0, 0 ],
-                [ 3, 1, 1, 1, 3, 0 ],
-                [ 2, 2, 1, 2, 2, 3 ],
-                [ 0, 3, 2, 3, 0, 0 ],
-                [ 0, 0, 3, 0, 0, 3 ]
-            ],
-            "slots": ["Sensor", "Sensor", "Crew", "Illicit", "Modification", "Calculator"]
-        },
-        {
-    
-            "name": "JumpMaster 5000",
-            "factions": ["Bounty_Hunters_Guild"],
-            "chassis":[0],
-            "id": 29,
-            "base": ["Large"],
-            "attack": [["T",2]],
-            "agility": 2,
-            "hull": 6,
-            "shields": 3,
-            "actions": [
-                [1,"Fo W", "Ro R"],
-                [1,"Lo W", "Ro R"],
-                [0,"Br R"]
-              
-            ],
-            "maneuvers": [
-                [ 0, 0, 0, 0, 0, 0, 0],
-                [ 2, 1, 1, 2, 3, 0, 0],
-                [ 2, 1, 1, 2, 3, 0, 0],
-                [ 0, 1, 1, 2, 0, 0, 3],
-                [ 0, 0, 2, 0, 0, 3, 0]
-            ],
-            "slots": ["Torpedo", "Crew", "Gunner", "Illicit", "Modification"]
-        },
-        {
- 
-            "name": "ARC-170 Starfighter",
-            "factions": ["Rebel_Alliance","Galactic_Senate"],
-            "chassis":[0],
-            "id": 30,
-            "attack": [["F",3]],
-            "attackb": 2,
-            "agility": 1,
-            "hull": 6,
-            "shields": 3,
-            "base": ["Medium"],
-            "actions": [
-                [0,"Fo W"],
-                [0,"Lo W"],
-                [0,"Br R"]
-                
-            ],
-            "maneuvers": [
-                [ 0, 0, 0, 0, 0, 0 ],
-                [ 0, 1, 1, 1, 0, 0 ],
-                [ 2, 1, 1, 1, 2, 0 ],
-                [ 3, 2, 2, 2, 3, 0 ],
-                [ 0, 0, 3, 0, 0, 3 ]
-            ],
-            "slots": ["Crew", "Gunner", "Torpedo", "Astromech", "Modification"]
-        },
-        {
-   
-      
-            "name": "Fang Fighter",
-            "factions": ["Mandalorian_Clans"],
-            "id": 31,
-            "attack": [["F",3]],
-            "agility": 3,
-            "hull": 4,
-            "shields": 0,
-            "chassis": [24],
-            "actions": [
-                [0,"Fo W"],
-                [0,"Lo W"],
-                [1,"Br W", "Fo R"],
-                [1,"Bo W", "Fo R"]
-               
-            ],
-            "maneuvers": [
-                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-                [ 2, 0, 0, 0, 2, 0, 0, 0, 0, 0 ],
-                [ 1, 1, 1, 1, 1, 0, 0, 0, 3, 3 ],
-                [ 2, 2, 1, 2, 2, 0, 0, 0, 0, 0 ],
-                [ 0, 0, 2, 0, 0, 3, 0, 0, 0, 0 ],
-                [ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0 ]
-            ],
-            "base": ["Small"],
-            "slots": ["Torpedo", "Modification", "Modification"]
-        },
-        {
-    
-            "name": "Lancer-Class Pursuit Craft",
-            "factions": ["Black_Sun", "Crime_Syndicates"],
-            "chassis":[0],
-            "id": 32,
-            "base": ["Large"],
-            "attack": [["F",3],["T",2]],
-            "agility": 2,
-            "hull": 8,
-            "shields": 2,
-            "actions": [
-                [0,"Fo W"],
-                [0,"Lo W"],
-                [0,"Ev W"],
-                [0,"Ro W"]
-                
-            ],
-            "maneuvers": [
-                [ 0, 0, 0, 0, 0, 0],
-                [ 0, 2, 2, 2, 0, 0],
-                [ 2, 2, 1, 2, 2, 0],
-                [ 1, 1, 1, 1, 1, 0],
-                [ 0, 0, 1, 0, 0, 0],
-                [ 0, 0, 2, 0, 0, 3]
-            ],
-            "slots": ["Crew","Illicit","Illicit","Modification","Modification"]
-
-        },
-        {
-      
-     
-            "name": "BTL-A4 Y-wing",
-            "id": 33,
-            "factions": ["Hutt_Cartel","Rebel_Alliance"],
-            "attack": [["F",2]],
-            "agility": 2,
-            "hull": 5,
-            "shields": 0,
-            "chassis": [25],
-            "actions": [
-                [0,"Fo W"],
-                [0,"Lo W"],
-                [0,"Br W"],
-                [0,"Rd W"]
-               
-            ],
-            "base": ["Small"],
-            "maneuvers": [
-                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-                [ 2, 2, 2, 2, 2, 0, 0, 0, 0, 0, 3, 0, 3 ],
-                [ 2, 1, 1, 1, 2, 0, 3, 3, 0, 0, 0, 3, 0 ],
-                [ 0, 2, 1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
-            ],
-            "slots": ["Turret","Torpedo","Astromech","Payload","Modification"]
-
-        },
-        {
-     
- 
-            "name": "UT-60D U-wing",
-            "factions": ["Rebel_Alliance", "Partisans"],
-            "id": 34,
-            "base": ["Medium"],
-            "attack": [["F",3]],
-            "agility": 2,
-            "hull": 5,
-            "shields": 3,
-            "chassis": [4],
-            "actions": [
-                [0,"Fo W"],
-                [0,"Lo W"],
-                [0,"Co R"]
-             
-            ],
-            "maneuvers": [
-                [ 0, 0, 3, 0, 0 ],
-                [ 0, 1, 1, 1, 0 ],
-                [ 2, 1, 1, 1, 2 ],
-                [ 0, 2, 2, 2, 0 ],
-                [ 0, 0, 2, 0, 0 ]
-            ],
-            "slots": ["Sensor", "Crew", "Crew", "Modification"]
-        },
-        {
-           
-    
-            "name": "TIE/sk Striker",
-            "id": 35,
-            "factions": ["ISB"],
-            "attack": [["F",3]],
-            "agility": 2,
-            "hull": 4,
-            "shields": 0,
-            "base": ["Small"],
-            "chassis": [14],
-            "actions": [
-                [0,"Fo W"],
-                [0,"Ev W"],
-                [0,"Br W"]
-                
-            ],
-            "maneuvers": [
-                [ 0, 0, 0, 0, 0, 0, 0, 0 ],
-                [ 2, 1, 1, 1, 2, 3, 0, 0 ],
-                [ 2, 1, 1, 1, 2, 0, 3, 3 ],
-                [ 0, 2, 1, 2, 0, 0, 0, 0 ]
-            ],
-            "slots": ["Payload","Tie mod"]
-
-        },
-        {
-    
-
-            "name": "Auzituck Gunship",
-            "factions": ["Partisans"],
-            "chassis":[0],
-            "id": 36,
-            "attack": [["180",3]],
-            "agility": 1,
-            "hull": 4,
-            "shields": 1,
-            "base": ["Small"],
-            "actions": [
-                [0,"Fo W"],
-                [0,"Br R"],
-                [0,"Re W"]
-
-            ],
-            "maneuvers": [
-                [ 0, 0, 3, 0, 0],
-                [ 0, 1, 1, 1, 0],
-                [ 2, 2, 1, 2, 2],
-                [ 2, 2, 1, 2, 2],
-                [ 0, 0, 2, 0, 0]
-            ],
-            "slots": ["Gunner"]
-
-        },
-        {
-    
-
-            "name": "Scurrg H-6 Bomber",
-            "factions": ["Pirates_and_Smugglers"],
-            "chassis":[0],
-            "id": 37,
-            "attack": [["F",3]],
-            "agility": 1,
-            "hull": 6,
-            "shields": 4,
-            "base": ["Medium"],
-            "actions": [
-                [0,"Fo W"],
-                [0,"Lo W"],
-                [0,"Br R"]
-              
-            ],
-            "maneuvers": [
-                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-                [ 0, 1, 1, 1, 0, 0, 0, 0, 0, 0 ],
-                [ 2, 2, 1, 2, 2, 0, 0, 0, 0, 0 ],
-                [ 3, 2, 2, 2, 3, 0, 0, 0, 3, 3 ],
-                [ 0, 0, 3, 0, 0, 0, 0, 0, 0, 0 ]
-            ],
-            "slots": ["Turret", "Crew", "Gunner", "Payload", "Payload", "Modification"]
-        },
-        {
-  
- 
-            "name": "TIE/ag Aggressor",
-            "chassis":[0],
-            "id": 38,
-            "factions": ["ISB"],
-            "attack": [["F",2]],
-            "agility": 2,
-            "hull": 4,
-            "base": ["Small"],
-            "shields": 1,
-            "actions": [
-                [0,"Fo W"],
-                [0,"Lo W"],
-                [1,"Br W", "Ev R"]
-               
-            ],
-            "maneuvers": [
-                [ 0, 0, 0, 0, 0, 0],
-                [ 0, 2, 1, 2, 0, 0],
-                [ 2, 1, 1, 1, 2, 0],
-                [ 2, 2, 1, 2, 2, 0],
-                [ 0, 0, 2, 0, 0, 3]
-            ],
-            "slots": ["Gunner","Missile","Turret","Tie mod","Calculator"]
-
-        },
-        {
-     
-   
-            "name": "Alpha-Class Star Wing",
-            "id": 39,
-            "factions": ["ISB"],
-            "attack": [["F",2]],
-            "agility": 2,
-            "hull": 4,
-            "shields": 3,
-            "base": ["Small"],
-            "chassis": [0],
-            "actions": [
-                [0,"Fo W"],
-                [0,"Lo W"],
-                [0,"Sl W"],
-                [0,"Rd W"]
-                
-            ],
-            "maneuvers": [
-                [ 0, 0, 0, 0, 0],
-                [ 0, 2, 1, 2, 0],
-                [ 2, 1, 1, 1, 2],
-                [ 2, 2, 2, 2, 2],
-                [ 0, 0, 3, 0, 0]
-            ],
-            "slots": ["Missile","Missile","Torpedo","Torpedo","Modification","Sensor"]
-
-        },
-        {
-
-            "name": "M12-L Kimogila Fighter",
-            "id": 40,
-            "factions": ["Hutt_Cartel"],
-            "attack": [["F",3]],
-            "agility": 1,
-            "hull": 7,
-            "shields": 2,
-            "base": ["Medium"],
-            "chassis": [26],
-            "actions": [
-                [0,"Fo W"],
-                [0,"Lo W"],
-                [0,"Br R"],
-                [1,"Rd W"]
-              
-            ],
-            "maneuvers": [
-                [ 0, 0, 0, 0, 0, 0],
-                [ 3, 2, 1, 2, 3, 0],
-                [ 2, 1, 1, 1, 2, 0],
-                [ 2, 2, 1, 2, 2, 0],
-                [ 0, 0, 0, 0, 0, 3]
-            ],
-            "slots": ["Missile","Torpedo","Illicit","Modification","Astromech"]
-
-        },
-        {
- 
-            "name": "Sheathipede-Class Shuttle",
-            "factions": ["Phoenix_Cell", "C.I.S"],
-            "id": 41,
-            "attack": [["F",2],["B",2]],
-            "agility": 2,
-            "hull": 4,
-            "shields": 1,
-            "base": ["Small"],
-            "chassis": [27],
-            "actions": [
-                [0,"Fo W"],
-                [0,"Co W"]
-                
-            ],
-            "maneuvers": [
-                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-                [ 0, 2, 1, 2, 0, 0, 0, 0, 0, 0, 0, 3],
-                [ 2, 1, 1, 1, 2, 0, 0, 0, 0, 0, 0, 0],
-                [ 3, 2, 1, 2, 3, 3, 0, 0, 0, 0, 0, 0],
-                [ 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-            ],
-            "slots": ["Crew","Modification","Astromech","Calculator"]
-        },
-        {
-    
-
-            "name": "TIE Reaper",
-            "id": 42,
-            "factions": ["ISB"],
-            "attack": [["F",3]],
-            "agility": 1,
-            "hull": 6,
-            "shields": 2,
-            "base": ["Medium"],
-            "chassis": [12],
-            "actions": [
-                [0,"Fo W"],
-                [0,"Ev W"],
-                [0,"Ja W"],
-                [0,"Co R"]
-               
-            ],
-            "maneuvers": [
-                [ 0, 0, 3, 0, 0, 0, 0, 0 ],
-                [ 3, 1, 1, 1, 3, 0, 3, 3 ],
-                [ 3, 2, 1, 2, 3, 0, 0, 0 ],
-                [ 0, 2, 1, 2, 0, 0, 0, 0 ]
-            ],
-            "slots": ["Crew","Crew","Tie mod"]
-
-        },
-        {
-     
-  
-            "name": "Escape Craft",
-            "factions": ["Pirates_and_Smugglers"],
-            "id": 43,
-            "attack": [["F",1]],
-            "agility": 2,
-            "hull": 2,
-            "shields": 2,
-            "chassis": [1],
-            "base": ["Small"],
-            "actions": [
-                [0,"Fo W"],
-                [0,"Br W"],
-                [0,"Co R"]
-            ],
-            "maneuvers": [
-                [ 0, 0, 3, 0, 0, 0],
-                [ 0, 1, 1, 1, 0, 0],
-                [ 3, 2, 1, 2, 3, 0],
-                [ 0, 2, 2, 2, 0, 3]
-            ],
-            "slots": ["Crew", "Illicit"]
-        },
-        {
-  
-
-            "name": "T-70 X-wing",
-            "factions": [ "Resistance", "Colossus"],
-            "id": 44,
-            "attack": [["F",3]],
-            "agility": 2,
-            "hull": 4,
-            "shields": 3,
-            "base": ["Small"],
-            "chassis": [28,21],
-            "actions": [
-                [0,"Fo W"],
-                [0,"Lo W"],
-                [0,"Bo W"]
-            ],
-            "maneuvers": [
-                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-                [ 0, 1, 1, 1, 0, 0, 0, 0, 0, 0],
-                [ 2, 1, 1, 1, 2, 0, 0, 0, 0, 0],
-                [ 2, 2, 1, 2, 2, 0, 0, 0, 3, 3],
-                [ 0, 0, 2, 0, 0, 3, 0, 0, 0, 0]
-            ],
-            "slots": ["Tech","Modification","Astromech","Weapon Hardpoint"]
-        },
-        {
-           
-
-            "name": "RZ-2 A-wing",
-            "factions": ["Resistance", "New_Republic"],
-            "id": 45,
-            "attack": [["T",2]],
-            "agility": 3,
-            "hull": 2,
-            "shields": 2,
-            "base": ["Small"],
-            "chassis": [29],
-            "actions": [
-                [0,"Fo W"],
-                [0,"Lo W"],
-                [0,"Ev W"],
-                [0,"Br W"],
-                [0,"Bo W"]
-                
-            ],
-            "maneuvers": [
-                [ 0, 0, 0, 0, 0, 0, 0, 0],
-                [ 2, 0, 0, 0, 2, 0, 0, 0],
-                [ 1, 1, 1, 1, 1, 0, 0, 0],
-                [ 2, 1, 1, 1, 2, 0, 3, 3],
-                [ 0, 0, 1, 0, 0, 0, 0, 0],
-                [ 0, 0, 1, 0, 0, 3, 0, 0]
-            ],
-            "slots": ["Tech","Missile","Modification"]
-        },
-        {
-      
-
-            "name": "TIE/fo Fighter",
-            "factions": ["First_Order", "Shadow_Specialists"],
-            "chassis":[0],
-            "id": 46,
-            "attack": [["F",2]],
-            "agility": 3,
-            "hull": 3,
-            "shields": 1,
-            "base": ["Small"],
-            "slots": ["Tech","Tie mod"],
-            "actions": [
-                [0,"Fo W"],
-                [0,"Lo W"],
-                [0,"Ev W"],
-                [0,"Br W"]
-                
-            ],
-            "maneuvers": [
-                [ 0, 0, 0, 0, 0, 0, 0, 0],
-                [ 2, 0, 0, 0, 2, 0, 0, 0],
-                [ 1, 1, 1, 1, 1, 0, 3, 3],
-                [ 2, 2, 1, 2, 2, 0, 0, 0],
-                [ 0, 0, 2, 0, 0, 3, 0, 0],
-                [ 0, 0, 2, 0, 0, 0, 0, 0]
-            ]
-        },
-        {
-    
-
-            "name": "TIE/vn Silencer",
-            "factions": ["First_Order"],
-            "id": 47,
-            "attack": [["F",3]],
-            "agility": 3,
-            "hull": 4,
-            "shields": 2,
-            "base": ["Small"],
-            "chassis": [10],
-            "slots": ["Tech","Torpedo","Tie mod","Sensor"],
-            "actions": [
-                [0,"Fo W"],
-                [0,"Lo W"],
-                [0,"Br W"],
-                [0,"Bo W"]
-             
-            ],
-            "maneuvers": [
-                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-                [ 2, 0, 0, 0, 2, 0, 0, 0, 0, 0],
-                [ 1, 1, 1, 1, 1, 0, 0, 0, 0, 0],
-                [ 2, 2, 1, 2, 2, 0, 0, 0, 3, 3],
-                [ 0, 0, 1, 0, 0, 3, 0, 0, 0, 0],
-                [ 0, 0, 1, 0, 0, 0, 0, 0, 0, 0]
-            ]
-        },
-        {
-     
-            "name": "TIE/sf Fighter",
-            "factions": ["First_Order"],
-            "id": 48,
-            "attack": [["F",2],["T",2]],
-            "agility": 2,
-            "hull": 3,
-            "shields": 3,
-            "base": ["Small"],
-            "slots": ["Gunner","Tech","Missile","Tie mod"],
-            "chassis": [30],
-            "actions": [
-                [1,"Fo W", "Ro W"],
-                [1,"Ev W", "Ro W"],
-                [1,"Br W", "Ro W"],
-                [1,"Bo W", "Ro W"]
-             
-            ],
-            "maneuvers": [
-                [ 0, 0, 0, 0, 0, 0, 0, 0],
-                [ 3, 1, 1, 1, 3, 0, 0, 0],
-                [ 2, 1, 1, 1, 2, 0, 0, 0],
-                [ 2, 2, 1, 2, 2, 0, 3, 3],
-                [ 0, 0, 2, 0, 0, 0, 0, 0],
-                [ 0, 0, 2, 0, 0, 0, 0, 0]
-            ]
-        },
-        {
-     
- 
-            "name": "Upsilon-Class Command Shuttle",
-            "id": 49,
-            "factions": ["First_Order"],
-            "attack": [["F",4]],
-            "agility": 1,
-            "hull": 6,
-            "shields": 6,
-            "chassis": [0],
-            "slots": ["Crew","Crew","Modification","Modification","Sensor","Calculator","Calculator"],
-            "actions": [
-                [0,"Fo W"],
-                [0,"Lo W"],
-                [0,"Re W"],
-                [0,"Co W"],
-                [0,"Ja W"]
-                
-            ],
-            "maneuvers": [
-                [ 0, 0, 3, 0, 0],
-                [ 3, 2, 1, 2, 3],
-                [ 2, 1, 1, 1, 2],
-                [ 3, 2, 2, 2, 3],
-                [ 0, 0, 0, 0, 0],
-                [ 0, 0, 0, 0, 0]
-            ],
-            "base": ["Large"]
-        },
-        {
-    
-   
-            "name": "MG-100 StarFortress",
-            "chassis":[0],
-            "id": 50,
-            "factions": ["Resistance"],
-            "attack": [["F",3],["T",2]],
-            "agility": 1,
-            "hull": 9,
-            "shields": 3,
-            "actions": [
-                [0,"Fo W"],
-                [0,"Lo W"],
-                [0,"Ro W"],
-                [0,"Rd W"]
-               
-            ],
-            "maneuvers": [
-                [ 0, 0, 3, 0, 0],
-                [ 3, 1, 1, 1, 3],
-                [ 2, 2, 1, 2, 2],
-                [ 0, 3, 2, 3, 0],
-                [ 0, 0, 0, 0, 0],
-                [ 0, 0, 0, 0, 0]
-            ],
-            "base": ["Large"],
-            "slots": ["Crew","Gunner","Tech","Tech","Payload","Payload","Turret","Modification"]
-        },
-        {
-      
- 
-            "name": "Modified TIE/ln Fighter",
-            "factions": ["Crime_Syndicates"],
-            "id": 51,
-            "attack": [["F",2]],
-            "agility": 3,
-            "hull": 3,
-            "shields": 0,
-            "base": ["Small"],
-            "chassis": [31],
-            "actions": [
-                [0,"Fo W"],
-                [0,"Ev W"],
-                [0,"Br W"]
-                
-            ],
-            "maneuvers": [
-                [ 0, 0, 0, 0, 0, 0],
-                [ 2, 0, 0, 0, 2, 0],
-                [ 2, 1, 1, 1, 2, 0],
-                [ 2, 2, 1, 2, 2, 3],
-                [ 0, 0, 2, 0, 0, 0],
-                [ 0, 0, 3, 0, 0, 0]
-            ],
-            "slots": ["Illicit","Tie mod"]
-
-        },
-        {
-       
-
-            "name": "V-19 Torrent Starfighter",
-            "factions": ["Galactic_Senate"],
-            "chassis":[0],
-            "id": 52,
-            "attack": [["F",2]],
-            "agility": 2,
-            "hull": 5,
-            "shields": 0,
-            "base": ["Small"],
-            "actions": [
-                [0,"Fo W"],
-                [0,"Lo W"],                
-                [0,"Ev W"],
-                [1,"Br W", "Ev R"]
-               
-            ],
-            "maneuvers": [
-                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-                [ 3, 1, 1, 1, 3, 0, 0, 0, 0, 0],
-                [ 2, 2, 1, 2, 2, 0, 0, 0, 3, 3],
-                [ 0, 3, 1, 3, 0, 3, 0, 0, 0, 0],
-                [ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0],
-                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-            ],
-            "slots": ["Missile","Torpedo","Modification"]
-
-        },
-        {
-
-            "name": "Delta-7 Aethersprite",
-            "factions": ["Jedi_Order"],
-            "id": 53,
-            "attack": [["F",2]],
-            "agility": 3,
-            "hull": 3,
-            "shields": 1,
-            "base": ["Small"],
-            "chassis": [32,33],
-            "actions": [
-                [0,"Fo W"],
-                [0,"Lo W"],                
-                [0,"Ev F"],
-                [0,"Br W"],
-                [0,"Bo W"]
-            ],
-            "maneuvers": [
-                [ 0, 0, 0, 0, 0, 0, 0, 0],
-                [ 2, 1, 0, 1, 2, 0, 0, 0],
-                [ 2, 1, 1, 1, 2, 0, 3, 3],
-                [ 0, 2, 1, 2, 0, 0, 0, 0],
-                [ 0, 0, 2, 0, 0, 3, 0, 0],
-                [ 0, 0, 2, 0, 0, 3, 0, 0]
-            ],
-            "slots": ["Astromech","Modification","Hyperspace Ring"]
-
-           
-        },
-        {
-      
-    
-            "name": "Delta-7b Aethersprite",
-            "factions": ["Jedi_Order"],
-            "id": 54,
-            "attack": [["F",3]],
-            "agility": 2,
-            "hull": 3,
-            "shields": 3,
-            "base": ["Small"],
-            "chassis": [32],
-            "actions": [
-                [0,"Fo W"],
-                [0,"Lo W"],                
-                [0,"Ev F"],
-                [0,"Br W"],
-                [0,"Bo W"]
-            ],
-            "maneuvers": [
-                [ 0, 0, 0, 0, 0, 0, 0, 0],
-                [ 2, 1, 0, 1, 2, 0, 0, 0],
-                [ 2, 1, 1, 1, 2, 0, 3, 3],
-                [ 0, 2, 1, 2, 0, 0, 0, 0],
-                [ 0, 0, 2, 0, 0, 3, 0, 0],
-                [ 0, 0, 2, 0, 0, 3, 0, 0]
-            ],
-            "slots": ["Astromech","Modification","Hyperspace Ring"]
-
-        },
-        {
-    
-            "name": "Sith Infiltrator",
-            "factions": ["Agents_of_Chaos"],
-            "chassis":[0],
-            "id": 55,
-            "attack": [["F",3]],
-            "agility": 1,
-            "hull": 6,
-            "base": ["Large"], 
-            "shields": 4,
-            "actions": [
-                [0,"Fo W"],
-                [0,"Lo W"],                
-                [0,"Ck R"],
-                [0,"Br R"],
-                [0,"Ja W"]
-                
-            ],
-            "maneuvers": [
-                [ 0, 0, 0, 0, 0, 0, 0, 0],
-                [ 3, 1, 1, 1, 3, 0, 0, 0],
-                [ 2, 1, 1, 1, 2, 0, 3, 3],
-                [ 2, 2, 1, 2, 2, 0, 0, 0],
-                [ 0, 0, 2, 0, 0, 0, 0, 0],
-                [ 0, 0, 0, 0, 0, 3, 0, 0]
-            ],
-            "slots": ["Crew","Crew","Torpedo","Payload","Cannon","Modification","Calculator"]
-
-        },
-        {
-     
-  
-            "name": "Vulture-class Droid Fighter",
-            "factions": ["C.I.S", "Agents_of_Chaos"],
-            "id": 56,
-            "attack": [["F",2]],
-            "agility": 2,
-            "hull": 3,
-            "shields": 0,
-            "base": ["Small"],
-            "chassis": [34],
-            "slots": ["Missile"],
-            "actions": [
-                [0,"Cc W"],
-                [0,"Lo W"],                
-                [1,"Br W", "Cc R"]
-               
-            ],
-            "maneuvers": [
-                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-                [ 2, 0, 0, 0, 2, 3, 0, 0, 0, 0],
-                [ 1, 2, 1, 2, 1, 0, 0, 0, 3, 3],
-                [ 2, 3, 1, 3, 2, 0, 0, 0, 0, 0],
-                [ 0, 0, 1, 0, 0, 0, 0, 0, 0, 0],
-                [ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0]
-            ]
-        },
-        {
-            "name": "Belbullab-22 Starfighter",
-            "chassis":[0],
-            "id":57,
-            "factions": ["C.I.S"],
-            "attack": [["F",3]],
-            "agility": 2,
-            "hull": 3,
-            "shields": 2,
-            "base": ["Small"],
-            "slots": ["Modification","Modification","Calculator"],
-            "actions": [
-                [0,"Fo W"],
-                [0,"Lo W"],                
-                [1,"Br W", "Fo R"],
-                [1,"Bo W", "Fo R"]
-              
-            ],
-            "maneuvers": [
-                [ 0, 0, 0, 0, 0, 0, 0, 0],
-                [ 2, 2, 0, 2, 2, 0, 0, 0],
-                [ 2, 1, 1, 1, 2, 0, 0, 0],
-                [ 3, 2, 1, 2, 3, 0, 3, 3],
-                [ 0, 0, 2, 0, 0, 0, 0, 0],
-                [ 0, 0, 2, 0, 0, 0, 0, 0]
-            ]
-        },
-        {
-      
- 
-            "name": "Naboo Royal N-1 Starfighter",
-            "factions": ["Galactic_Senate", "Mandalorian_Clans"],
-            "id":58,
-            "attack": [["F",2]],
-            "agility": 2,
-            "hull": 3,
-            "shields": 2,
-            "chassis": [11],
-            "base": ["Small"],
-            "actions": [
-                [0,"Fo W"],
-                [0,"Lo W"],                
-                [0,"Br W"],
-                [0,"Bo W"]
-                
-            ],
-            "maneuvers": [
-                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-                [ 0, 2, 2, 2, 0, 0, 0, 0, 0, 0],
-                [ 2, 1, 1, 1, 2, 0, 0, 0, 0, 0],
-                [ 2, 1, 1, 1, 2, 0, 0, 0, 3, 3],
-                [ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0],
-                [ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0]
-            ],
-            "slots": ["Torpedo", "Astromech", "Sensor"]
-        },
-        {
-
-            "name": "Hyena-class Droid Bomber",
-            "id": 59,
-            "factions": ["C.I.S"],
-            "attack": [["F",2]],
-            "agility": 2,
-            "hull": 5,
-            "shields": 0,
-            "base": ["Small"],
-            "chassis": [34],
-            "slots": ["Missile","Torpedo","Payload","Modification","Sensor"],
-            "actions": [
-                [0,"Cc W"],
-                [0,"Lo W"],                
-                [1,"Br W", "Lo R"],
-                [0,"Rd R"]
-             
-            ],
-            "maneuvers": [
-                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-                [ 2, 3, 2, 3, 2, 0, 0, 0, 0, 0],
-                [ 1, 2, 1, 2, 1, 3, 0, 0, 3, 3],
-                [ 2, 0, 1, 0, 2, 0, 0, 0, 0, 0],
-                [ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0],
-                [ 0, 0, 3, 0, 0, 0, 0, 0, 0, 0]
-            ]
-        },
-        {
- 
-            "name": "Resistance Transport Pod",
-            "factions": ["Resistance"],
-            "id": 60,
-            "attack": [["F",1]],
-            "agility": 2,
-            "hull": 3,
-            "shields": 1,
-            "base": ["Small"],
-            "chassis": [1],
-            "actions": [
-                [0,"Fo W"],
-                [0,"Lo R"],                
-                [0,"Br R"],
-                [0,"Ja R"]
-               
-            ],
-            "maneuvers": [
-                [ 0, 0, 0, 0, 0, 0],
-                [ 3, 1, 1, 1, 3, 0],
-                [ 2, 2, 1, 2, 2, 0],
-                [ 0, 3, 2, 3, 0, 3],
-                [ 0, 0, 3, 0, 0, 0]
-            ],
-            "slots": ["Crew","Tech","Modification"]
-        },
-        {
-     
- 
-            "name": "Resistance Transport",
-            "factions": ["Resistance"],
-            "id": 61,
-            "attack": [["F",2]],
-            "agility": 1,
-            "hull": 5,
-            "shields": 3,
-            "base": ["Small"],
-            "chassis": [16],
-            "actions": [
-                [0,"Fo W"],
-                [0,"Lo W"],                
-                [0,"Co W"],
-                [0,"Ja R"]
-                
-            ],
-            "maneuvers": [
-                [ 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-                [ 3, 1, 1, 1, 3, 0, 0, 0, 0, 0, 3, 0, 3 ],
-                [ 2, 2, 1, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0 ],
-                [ 0, 3, 2, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-                [ 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
-            ],
-            "slots": ["Crew","Crew","Tech","Cannon","Modification","Astromech"]
-        },
-        {
-    
-            "name": "Nantex-Class Starfighter",
-            "factions": ["Agents_of_Chaos"],
-            "id": 62,
-            "attack": [["BULL",3],["T",2]],
-            "agility": 3,
-            "hull": 4,
-            "shields": 0,
-            "base": ["Small"],
-            "chassis": [35],
-            "actions": [
-                [0,"Fo W"],
-                [0,"Ev W"]
-                
-            ],
-            "maneuvers": [
-                [ 0, 0, 0, 0, 0, 0, 0, 0],
-                [ 2, 1, 0, 1, 2, 0, 0, 0],
-                [ 2, 1, 1, 1, 2, 0, 0, 0],
-                [ 2, 1, 1, 1, 2, 0, 3, 3],
-                [ 0, 0, 2, 0, 0, 0, 0, 0],
-                [ 0, 0, 2, 0, 0, 3, 0, 0]
-            ],
-            "slots": []
-
-        },
-        {
-    
-  
-            "name": "BTL-B Y-wing",
-            "factions": ["Jedi_Order"],
-            "id": 63,
-            "attack": [["F",2]],
-            "agility": 1,
-            "hull": 5,
-            "shields": 3,
-            "base": ["Small"],
-            "chassis": [36],
-            "actions": [
-                [0,"Fo W"],
-                [0,"Lo W"],                
-                [0,"Br R"],
-                [0,"Rd R"]
-              
-            ],
-            "maneuvers": [
-                [ 0, 0, 0, 0, 0, 0],
-                [ 0, 2, 1, 2, 0, 0],
-                [ 2, 2, 1, 2, 2, 0],
-                [ 3, 2, 2, 2, 3, 0],
-                [ 0, 0, 3, 0, 0, 3],
-                [ 0, 0, 0, 0, 0, 0]
-            ],
-            "slots": ["Gunner","Torpedo","Payload","Turret","Astromech","Modification"]
-
-        },
-        {
-
-            "name": "Fireball",
-            "factions": ["Colossus"],
-            "id": 64,
-            "attack": [["F",2]],
-            "agility": 2,
-            "hull": 6,
-            "shields": 0,
-            "base": ["Small"],
-            "chassis": [37],
-            "actions": [
-                [0,"Fo W"],
-                [0,"Ev W"],                
-                [0,"Br W"],
-                [0,"Sl W"]
-               
-            ],
-            "maneuvers": [
-                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-                [ 2, 1, 1, 1, 2, 0, 0, 0, 0, 0 ],
-                [ 2, 2, 1, 2, 2, 0, 0, 0, 0, 0 ],
-                [ 3, 2, 2, 2, 3, 0, 0, 0, 3, 3 ],
-                [ 0, 0, 3, 0, 0, 0, 0, 0, 0, 0 ],
-                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
-            ],
-            "slots": ["Missile","Illicit","Modification","Modification","Astromech"]
-
-        },
-        {
-
-            "name": "TIE/ba Interceptor",
-            "factions": ["Shadow_Specialists"],
-            "id": 65,
-            "attack": [["F",3]],
-            "agility": 3,
-            "hull": 2,
-            "shields": 2,
-            "base": ["Small"],
-            "chassis": [38],
-            "actions": [
-                [0,"Fo W"],
-                [0,"Lo W"],                
-                [0,"Ev W"],
-                [0,"Br W"],
-                [0,"Bo W"]
-               
-            ],
-            "maneuvers": [
-                [ 0, 0, 0, 0, 0, 0, 0, 0],
-                [ 1, 1, 0, 1, 1, 0, 0, 0],
-                [ 2, 1, 1, 1, 2, 0, 3, 3],
-                [ 2, 2, 1, 2, 2, 0, 0, 0],
-                [ 0, 0, 1, 0, 0, 0, 0, 0],
-                [ 0, 0, 2, 0, 0, 3, 0, 0]
-            ],
-            "slots": ["Tech","Missile","Tie mod","Tie mod"]
-
-        },
-        {
-
-            "name": "Xi-class Light Shuttle",
-            "factions": ["Shadow_Specialists"],
-            "chassis":[0],
-            "id": 66,
-            "attack": [["F",2]],
-            "agility": 2,
-            "hull": 5,
-            "shields": 2,
-            "base": ["Medium"],
-            "actions": [
-                [0,"Fo W"],
-                [0,"Lo R"],                
-                [0,"Co R"],
-                [0,"Ja W"]
-                
-            ],
-            "maneuvers": [
-                [ 0, 0, 3, 0, 0],
-                [ 0, 1, 1, 1, 0],
-                [ 2, 1, 1, 1, 2],
-                [ 3, 2, 2, 2, 3],
-                [ 0, 0, 2, 0, 0],
-                [ 0, 0, 0, 0, 0]
-            ],
-            "slots": ["Crew","Crew","Tech","Modification","Modification","Calculator"]
-
-        },
-        {
-
-            "name": "HMP Droid Gunship",
-            "factions": ["C.I.S"],
-            "id": 67,
-            "attack": [["180",2]],
-            "agility": 1,
-            "hull": 5,
-            "shields": 3,
-            "base": ["Small"],
-            "chassis": [39],
-            "slots": ["Crew","Missile","Missile","Payload","Modification","Calculator"],
-            "actions": [
-                [0,"Cc W"],
-                [0,"Lo W"],                
-                [0,"Br R"],
-                [1,"Rd W", "Cc R"]
-            ],
-            "maneuvers": [
-                [ 0, 0, 3, 0, 0],
-                [ 0, 3, 1, 3, 0],
-                [ 1, 2, 1, 2, 1],
-                [ 2, 3, 2, 3, 2],
-                [ 0, 0, 3, 0, 0],
-                [ 0, 0, 3, 0, 0]
-            ]
-            
-        },
-        {
-
-            "name": "LAAT/i Gunship",
-            "factions": ["Galactic_Senate","Partisans"],
-            "id": 68,
-            "attack": [["T",1]],
-            "agility": 1,
-            "hull": 8,
-            "shields": 2,
-            "base": ["Medium"],
-            "chassis": [40],
-            "actions": [
-                [0,"Fo W"],
-                [0,"Lo W"],                
-                [0,"Ro W"],
-                [0,"Re R"],
-                [0,"Rd W"]
-               
-            ],
-            "maneuvers": [
-                [ 0, 0, 3, 0, 0],
-                [ 0, 2, 1, 2, 0],
-                [ 2, 2, 1, 2, 2],
-                [ 3, 2, 2, 2, 3],
-                [ 0, 0, 3, 0, 0],
-                [ 0, 0, 0, 0, 0]
-            ],
-            "slots": ["Crew","Crew","Gunner","Gunner","Missile","Torpedo","Turret","Modification"]
-
-        },
-        {
-
-            "name": "TIE/rb Heavy",
-            "factions": ["Imperial_Academy"],
-            "id": 69,
-            "attack": [["T",2]],
-            "agility": 1,
-            "hull": 8,
-            "shields": 0,
-            "base": ["Medium"],
-            "chassis": [13],
-            "actions": [
-                [0,"Fo W"],
-                [0,"Re W"],                
-                [0,"Lo W"],
-                [0,"Br R"],
-                [1,"Ro W", "Cc R"]
-                
-            ],
-            "maneuvers": [
-                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-                [ 3, 2, 1, 2, 3, 0, 0, 0, 0, 0 ],
-                [ 2, 1, 1, 1, 2, 0, 0, 0, 0, 0 ],
-                [ 3, 2, 2, 2, 3, 0, 0, 0, 3, 3 ],
-                [ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0 ],
-                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
-            ],
-            "slots": ["Cannon", "Cannon", "Tie mod", "Calculator"]
-        },
-        {
-     
-            "name": "Droid Tri-fighter",
-            "id": 70,
-            "factions": ["C.I.S"],
-            "attack": [["F",3]],
-            "agility": 3,
-            "hull": 3,
-            "shields": 0,
-            "base": ["Small"],
-            "chassis": [17],
-            "slots": ["Modification","Sensor","Calculator","Calculator"],
-            "actions": [
-                [0,"Cc W"],
-                [0,"Ev W"],                
-                [0,"Lo W"],
-                [1,"Br W", "Ev R"],
-                [1,"Bo W", "Cc R"]
-                
-            ],
-            "maneuvers": [
-                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-                [ 2, 0, 0, 0, 2, 0, 0, 0, 3, 3 ],
-                [ 1, 2, 1, 2, 1, 0, 0, 0, 0, 0 ],
-                [ 1, 2, 1, 2, 1, 3, 0, 0, 0, 0 ],
-                [ 0, 0, 1, 0, 0, 0, 0, 0, 0, 0 ],
-                [ 0, 0, 2, 0, 0, 3, 0, 0, 0, 0 ]
-            ]
-        },
-        {
-      
-      
-            "name": "Nimbus-class V-wing",
-            "factions": ["Galactic_Senate"],
-            "id": 71,
-            "attack": [["F",2]],
-            "agility": 3,
-            "hull": 2,
-            "shields": 2,
-            "base": ["Small"],
-            "chassis": [41],
-            "actions": [
-                [0,"Fo W"],             
-                [0,"Lo W"],
-                [0,"Br R"],
-                [1,"Bo W", "Lo R"]
-                
-            ],
-            "maneuvers": [
-                [ 0, 0, 0, 0, 0, 0],
-                [ 2, 3, 0, 3, 2, 0],
-                [ 1, 1, 1, 1, 1, 3],
-                [ 2, 2, 1, 2, 2, 0],
-                [ 0, 0, 2, 0, 0, 3],
-                [ 0, 0, 2, 0, 0, 0]
-            ],
-            "slots": ["Payload","Astromech","Tie mod","Hyperspace Ring"]
-
-        },
-        {
-     
-            "name": "Eta-2 Actis",
-            "factions": ["Jedi_Order"],
-            "id": 72,
-            "attack": [["BULL",3],["F",2]],
-            "agility": 3,
-            "hull": 3,
-            "shields": 0,
-            "base": ["Small"],
-            "chassis": [42],
-            "actions": [
-                [0,"Fo W"],
-                [0,"Ev W"],                
-                [0,"Lo F"],
-                [0,"Br W"],
-                [0,"Bo W"]
-               
-            ],
-            "maneuvers": [
-                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-                [ 2, 0, 0, 0, 2, 0, 0, 0, 0, 0 ],
-                [ 2, 1, 1, 1, 2, 0, 0, 0, 4, 4 ],
-                [ 2, 1, 1, 1, 2, 0, 0, 0, 0, 0 ],
-                [ 0, 0, 1, 0, 0, 3, 0, 0, 0, 0 ],
-                [ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0 ]
-            ],
-            "slots": ["Cannon","Astromech","Hyperspace Ring"]
-
-        },
-        {
-    
-            "name": "Syliure-class Hyperspace Ring",
-            "chassis":[0],
-            "id": 73,
-            "factions": ["Jedi_Order","Galactic_Senate"],
-            "agility": 0,
-            "hull": 1,
-            "shields": 0,
-            "base": ["Small"],
-            "actions": [
-            ],
-            "maneuvers": [
-                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
-            ]
-        },
-        {
-     
-            "name": "BTA-NR2 Y-wing",
-            "factions": ["Resistance"],
-            "id": 74,
-            "attack": [["F",2]],
-            "agility": 1,
-            "hull": 4,
-            "shields": 3,
-            "base": ["Small"],
-            "chassis": [43],
-            "actions": [
-                [0,"Fo W"],
-                [0,"Bo R"],                
-                [0,"Lo R"],
-                [0,"Br R"]
-            
-            ],
-            "maneuvers": [
-                [ 0, 0, 0, 0, 0, 0],
-                [ 0, 1, 1, 1, 0, 0],
-                [ 2, 2, 1, 2, 2, 0],
-                [ 3, 2, 1, 2, 3, 0],
-                [ 0, 0, 3, 0, 0, 0],
-                [ 0, 0, 0, 0, 0, 3]
-            ],
-            "slots": ["Tech","Torpedo","Payload","Turret","Illicit","Modification","Astromech"]
-        },
-        {
-     
- 
-            "name": "TIE/wi Whisper Modified Interceptor",
-            "id": 75,
-            "factions": ["Shadow_Specialists"],
-            "attackbull": [["BULL",3],["F",2]],
-            "agility": 2,
-            "hull": 3,
-            "shields": 2,
-            "base": ["Small"],
-            "chassis": [44],
-            "actions": [
-                [1,"Fo W", "Ja W"],
-                [0,"Ev W"],                
-                [0,"Lo W"],
-                [1,"Br W", "Ja W"],
-                [1,"Bo W", "Ja W"]
-              
-            ],
-            "maneuvers": [
-                [ 0, 0, 0, 0, 0, 0, 0, 0],
-                [ 2, 0, 0, 0, 2, 0, 0, 0],
-                [ 2, 1, 1, 1, 2, 0, 0, 0],
-                [ 2, 1, 1, 1, 2, 0, 3, 3],
-                [ 0, 0, 1, 0, 0, 3, 0, 0],
-                [ 0, 0, 1, 0, 0, 3, 0, 0]
-            ],
-            "slots": ["Tech","Tech","Missile","Tie mod"]
-
-        },
-        {
- 
-            "name": "TIE/se Bomber",
-            "factions": ["First_Order"],
-            "id": 76,
-            "attack": [["F",2]],
-            "agility": 2,
-            "hull": 4,
-            "shields": 2,
-            "base": ["Small"],
-            "chassis": [45],
-            "slots": ["Gunner","Missile","Torpedo","Payload","Payload","Tie mod"],
-            "actions": [
-                [0,"Fo W"],               
-                [0,"Lo W"],
-                [0,"Bo R"],
-                [1,"Br W", "Lo R"],
-                [1,"Rd W", "Ev R"]
-                
-            ],
-            "maneuvers": [
-                [ 0, 0, 0, 0, 0, 0, 0, 0],
-                [ 3, 2, 1, 2, 3, 0, 0, 0],
-                [ 2, 2, 1, 2, 2, 0, 0, 0],
-                [ 2, 2, 1, 2, 2, 0, 3, 3],
-                [ 0, 0, 2, 0, 0, 0, 0, 0],
-                [ 0, 0, 0, 0, 0, 0, 0, 0]
-            ]
-        },
-        {
-    
-    
-            "name": "Gauntlet Fighter",
-            "factions": ["Mandalorian_Clans","Phoenix_Cell"],
-            "id": 77,
-            "attack": [["F",3],["B",2]],
-            "agility": 2,
-            "hull": 9,
-            "shields": 2,
-            "base": ["Large"],
-            "chassis": [ 9, 46] ,
-            "actions": [
-                [0,"Fo W"],               
-                [0,"Re R"],
-                [0,"Lo W"],
-                [0,"Co R"]
-              
-            ],
+                ],
+                "maneuvers": [
+                    [ 0, 0, 0, 0, 0, 0],
+                    [ 0, 2, 1, 2, 0, 0],
+                    [ 2, 1, 1, 1, 2, 0],
+                    [ 2, 2, 1, 2, 2, 3],
+                    [ 0, 0, 2, 0, 0, 0],
+                    [ 0, 0, 0, 0, 0, 3]
+                ],
+                "slots": ["Torpedo", "Missile", "Payload", "Gunner", "Tie mod"]
+            },
+            {
           
-            "maneuvers": [
-                [ 0, 0, 3, 0, 0],
-                [ 0, 1, 0, 1, 0],
-                [ 2, 1, 1, 1, 2],
-                [ 3, 2, 2, 2, 3],
-                [ 0, 0, 2, 0, 0],
-                [ 0, 0, 0, 0, 0]
-            ],
-            "slots": ["Crew", "Gunner", "Payload", "Modification"]
-        },
-        {
+            
+                "name": "Z-95-AF4 Headhunter",
+                "factions": [ "Partisans", "Bounty_Hunters_Guild", "Black_Sun", "Pirates_and_Smugglers"  ],
+                "chassis":[0],
+                "id": 12,
+                "attack": [["F",2]],
+                "base": ["Small"],
+                "agility": 2,
+                "hull": 2,
+                "shields": 2,
+                "actions": [
+                    [0,"Fo W"],
+                    [0,"Lo W"],
+                    [0,"Br R"]
+                    
+                ],
+                "maneuvers": [
+                    [ 0, 0, 0, 0, 0, 0],
+                    [ 0, 2, 1, 2, 0, 0],
+                    [ 2, 1, 1, 1, 2, 0],
+                    [ 2, 2, 1, 2, 2, 3],
+                    [ 0, 0, 2, 0, 0, 3]
+                ],
+                "slots": ["Missile", "Illicit"]
+            },
+            {
+        
+            
+                "name": "TIE/d Defender",
+                "factions": [ "Imperial_Elite_Forces" ],
+                "id": 13,
+                "attack": [["F",3]],
+                "agility": 3,
+                "hull": 3,
+                "shields": 4,
+                "base": ["Small"],
+                "chassis": [11],
+                "actions": [
+                    [0,"Fo W"],
+                    [0,"Lo W"],
+                    [0,"Ev W"],
+                    [0,"Bo W"],
+                    [0,"Br W"]
+                   
+                ],
+                "maneuvers": [
+                    [ 0, 0, 0, 0, 0, 0],
+                    [ 3, 1, 0, 1, 3, 0],
+                    [ 3, 2, 1, 2, 3, 3],
+                    [ 2, 2, 1, 2, 2, 0],
+                    [ 0, 0, 1, 0, 0, 2],
+                    [ 0, 0, 1, 0, 0, 0]
+                ],
+                "slots": ["Tech","Missile","Cannon","Tie mod","Sensor"]
+            },
+            {
+         
+        
+                "name": "E-wing",
+                "factions": [ "New_Republic" ],
+                "chassis":[0],
+                "id": 14,
+                "attack": [["F",3]],
+                "agility": 3,
+                "hull": 3,
+                "shields": 3,
+                "base": ["Small"],
+                "actions": [
+                    [0,"Fo W"],
+                    [0,"Ev W"],
+                    [0,"Lo W"],
+                    [1,"Br W", "Lo R"],
+                    [1,"Bo W", "Lo R"]
+                   
+                ],
+                "maneuvers": [
+                    [ 0, 0, 0, 0, 0, 0, 0, 0 ],
+                    [ 3, 1, 1, 1, 3, 0, 0, 0 ],
+                    [ 2, 2, 1, 2, 2, 0, 0, 0 ],
+                    [ 2, 2, 1, 2, 2, 0, 3, 3 ],
+                    [ 0, 0, 1, 0, 0, 3, 0, 0 ],
+                    [ 0, 0, 2, 0, 0, 0, 0, 0 ]
+                ],
+                "slots": ["Tech","Torpedo","Modification","Astromech","Sensor","Sensor"]
     
-            "name": "ST-70 Assault Ship",
-            "factions": ["Bounty_Hunters_Guild", "Mandalorian_Clans"],
-            "id": 78,
-            "attack": [["F",3]],
-            "agility": 2,
-            "hull": 7,
-            "shields": 2,
-            "base": ["Medium"],
-            "chassis": [47],
-            "actions": [
-                [0,"Fo W"],               
-                [0,"Lo W"],
-                [0,"Ev W"],
-                [0,"Br R"]
+            },
+            {
+        
+                "name": "TIE/ph Phantom",
+                "id": 15,
+                "factions": [ "ISB" ],
+                "attack": [["F",3]],
+                "agility": 2,
+                "hull": 3,
+                "shields": 2,
+                "base": ["Small"],
+                "chassis": [19],
+                "actions": [
+                    [0,"Fo W"],
+                    [0,"Ev W"],
+                    [0,"Br W"],
+                    [0,"Ck W"]
+                    
+                ],
+                "maneuvers": [
+                    [ 0, 0, 0, 0, 0, 0],
+                    [ 2, 2, 0, 2, 2, 0],
+                    [ 2, 1, 1, 1, 2, 0],
+                    [ 2, 2, 1, 2, 2, 3],
+                    [ 0, 0, 2, 0, 0, 3]
+                ],
+                "slots": ["Tech","Gunner","Tie mod","Calculator"]
+    
+            },
+            {
+        
+            
+                "name": "YT-2400 Light Freighter",
+                "factions": [ "Phoenix_Cell", "Pirates_and_Smugglers" ],
+                "id": 16,
+                "attack": [["0",0]],
+                "agility": 2,
+                "hull": 6,
+                "shields": 4,
+                "chassis": [2],
+                "actions": [
+                    [0,"Fo W"],
+                    [0,"Lo W"],
+                    [0,"Br R"]
+                    
+                   
+                ],
+                "base": ["Large"],
+                "maneuvers": [
+                    [ 0, 0, 0, 0, 0, 0],
+                    [ 2, 1, 1, 1, 2, 0],
+                    [ 2, 2, 1, 2, 2, 0],
+                    [ 2, 2, 2, 2, 2, 0],
+                    [ 0, 0, 2, 0, 0, 3]
+                ],
+                "slots": ["Crew", "Gunner", "Cannon", "Turret", "Illicit", "Modification"]
+            },
+            {
+           
+                "name": "VT-49 Decimator",
+                "factions": [ "Imperial_Elite_Forces" ],
+                "chassis":[0],
+                "id": 17,
+                "attack": [["T",3]],
+                "agility": 0,
+                "hull": 12,
+                "shields": 4,
+                "actions": [
+                    [0,"Fo W"],
+                    [0,"Lo W"],
+                    [0,"Re W"],
+                    [0,"Ro W"],
+                    [0,"Co R"]
+                    
+                ],
+                "base": ["Large"],
+                "maneuvers": [
+                    [ 0, 0, 0, 0, 0],
+                    [ 3, 1, 1, 1, 3],
+                    [ 2, 2, 1, 2, 2],
+                    [ 2, 2, 2, 2, 2],
+                    [ 0, 0, 2, 0, 0]
+                ],
+                "slots": ["Crew","Crew","Gunner","Gunner","Missile","Cannon","Turret","Modification"]
+    
+            },
+            {
+         
+            
+                "name": "StarViper-class Attack Platform",
+                "factions": ["Black_Sun"],
+                "id": 18,
+                "attack": [["F",3]],
+                "agility": 3,
+                "hull": 4,
+                "shields": 1,
+                "chassis": [20],
+                "actions": [
+                    [0,"Fo W"],
+                    [0,"Lo W"],
+                    [1,"Br W", "Fo R"],
+                    [1,"Bo W", "Fo R"]
                 
-            ],
-            "maneuvers": [
-                [ 0, 0, 3, 0, 0, 0, 0, 0, 0, 0 ],
-                [ 3, 2, 1, 2, 3, 0, 0, 0, 0, 0 ],
-                [ 2, 2, 1, 2, 2, 0, 0, 0, 3, 3 ],
-                [ 3, 2, 1, 2, 3, 0, 0, 0, 0, 0 ],
-                [ 0, 0, 1, 0, 0, 0, 0, 0, 0, 0 ],
-                [ 0, 0, 0, 0, 0, 3, 0, 0, 0, 0 ]
-            ],
-            "slots": ["Crew", "Tech", "Illicit", "Illicit", "Modification", "Modification"]
-        },
-        {
-  
-            "name": "Clone Z-95 Headhunter",
-            "factions": [ "Jedi_Order" ],
-            "id": 79,
-            "attack": [["F",2]],
-            "agility": 2,
-            "base": ["Small"],
-            "hull": 2,
-            "shields": 2,
-            "chassis": [48],
-            "actions": [
-                [0,"Fo W"],               
-                [0,"Lo W"],
-                [0,"Br R"]
-            ],
-            "maneuvers": [
-                [ 0, 0, 0, 0, 0, 0],
-                [ 0, 2, 1, 2, 0, 0],
-                [ 2, 1, 1, 1, 2, 0],
-                [ 2, 2, 1, 2, 2, 3],
-                [ 0, 0, 2, 0, 0, 3]
-            ],
-            "slots": ["Missile","Modification","Sensor"]
-
-        },
-        {
-
-            "name": "Rogue-class Starfighter",
-            "factions": [ "Bounty_Hunters_Guild", "Agents_of_Chaos" ],
-            "id": 80,
-            "attack": [["F",2]],
-            "agility": 2,
-            "base": ["Small"],
-            "hull": 5,
-            "shields": 2,
-            "chassis": [26],
-            "actions": [
-                [1,"Fo W", "Bo R"],
-                [1,"Fo W", "Br R"],
-                [1,"Ev W", "Br R"],               
-                [0,"Lo W"],
-                [0,"Bo R"]
-            ],
-            "maneuvers": [
-                [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-                [ 2, 1, 0, 1, 2, 0, 0, 0, 0, 0 ],
-                [ 2, 1, 1, 1, 2, 0, 0, 0, 3, 3 ],
-                [ 3, 2, 1, 2, 3, 0, 0, 0, 0, 0 ],
-                [ 0, 0, 1, 0, 0, 0, 0, 0, 0, 0 ],
-                [ 0, 0, 2, 0, 0, 3, 0, 0, 0, 0 ]
-            ],
-            "slots": ["Cannon", "Cannon", "Illicit", "Illicit", "Modification"]
-        },
-        {
-
-   
-            "name": "Commando Team",
-            "factions": [ "Mandalorian_Clans", "Imperial_Remnants" ],
-            "id": 81,
-            "attack": [["F",2]],
-            "agility": 2,
-            "base": ["Small"],
-            "hull": 2,
-            "shields": 0,
-            "chassis": [49,50],
-            "actions": [
-                [0,"Fo W"],               
-                [0,"Ev W"],
-                [1,"Bo W", "Ev R"]
-                
-            ],
-            "maneuvers": [
-                [ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-                [ 2, 1, 1, 1, 2, 2, 0, 0, 0, 0, 2, 2, 2 ],
-                [ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
-            ],
-            "slots": []
-        },
-        {
-        	"name": "T6 Shuttle",
-            "factions": [ "Partisans", "Jedi_Order", "New_Republic" ],
-            "chassis":[0],
-            "id": 82,
-            "attack": [["F",2],["B",2]],
-            "agility": 3,
-            "base": ["Large"],
-            "hull": 6,
-            "shields": 2,
-            "actions": [
-                [0,"Fo W"],               
-                [0,"Ev W"],
-                [0,"Co R"]
+                ],
+                "base": ["Small"],
+                "maneuvers": [
+                    [ 0, 0, 0, 0, 0, 0, 0, 0],
+                    [ 2, 1, 1, 1, 2, 0, 0, 0],
+                    [ 2, 1, 1, 1, 2, 0, 0, 0],
+                    [ 0, 2, 1, 2, 0, 0, 3, 3],
+                    [ 0, 0, 2, 0, 0, 0, 0, 0]
+                ],
+                "slots": ["Tech","Torpedo","Modification"]
+    
+            },
+            {
+         
+            
+                "name": "M3-A Interceptor",
+                "factions": [ "Hutt_Cartel", "Pirates_and_Smugglers" ],
+                "id": 19,
+                "attack": [["F",2]],
+                "agility": 3,
+                "hull": 3,
+                "shields": 1,
+                "chassis": [21],
+                "actions": [
+                    [0,"Fo W"],
+                    [0,"Lo W"],
+                    [0,"Ev W"],
+                    [0,"Br W"]
+                   
+                ],
+                "maneuvers": [
+                    [ 0, 0, 0, 0, 0, 0 ],
+                    [ 2, 1, 0, 1, 2, 0 ],
+                    [ 2, 2, 1, 2, 2, 0 ],
+                    [ 0, 2, 1, 2, 0, 3 ],
+                    [ 0, 0, 2, 0, 0, 0 ],
+                    [ 0, 0, 2, 0, 0, 3 ]
+                ],
+                "base": ["Small"],
+                "slots": ["Modification","Weapon Hardpoint"]
+            },
+            {
+        
+           
+                "name": "Aggressor Assault Fighter",
+                "factions": [ "Bounty_Hunters_Guild", "Mandalorian_Clans" ],
+                "chassis":[0],
+                "id": 20,
+                "attack": [["F",3]],
+                "agility": 3,
+                "hull": 5,
+                "shields": 3,
+                "actions": [
+                    [0,"Fo W"],
+                    [0,"Lo W"],
+                    [0,"Ev W"],
+                    [0,"Bo W"]
+            
+                ],
+                "base": ["Medium"],
+                "maneuvers": [
+                    [ 0, 0, 0, 0, 0, 0, 0, 0 ],
+                    [ 2, 1, 1, 1, 2, 0, 0, 0 ],
+                    [ 2, 1, 1, 1, 2, 0, 0, 0 ],
+                    [ 0, 1, 1, 1, 0, 0, 3, 3 ],
+                    [ 0, 0, 2, 0, 0, 3, 0, 0 ]
+                ],
+                "slots": ["Sensor", "Cannon", "Cannon", "Modification"]
+            },
+            {
+        
+                "name": "YV-666 Light Freighter",
+                "factions": [ "Hutt_Cartel", "Crime_Syndicates", "Bounty_Hunters_Guild" ],
+                "chassis":[0],
+                "id": 21,
+                "attack": [["180",3]],
+                "agility": 1,
+                "hull": 9,
+                "shields": 3,
+                "base": ["Large"],
+                "actions": [
+                    [0,"Fo W"],
+                    [0,"Lo W"],
+                    [0,"Re W"]
+                   
+                ],
+                "maneuvers": [
+                    [ 0, 0, 3, 0, 0],
+                    [ 0, 1, 1, 1, 0],
+                    [ 3, 2, 1, 2, 3],
+                    [ 2, 2, 1, 2, 2],
+                    [ 0, 0, 2, 0, 0]
+                ],
+                "slots": ["Crew", "Crew", "Illicit", "Illicit", "Modification"]
+            },
+            {
+        
+           
+                "name": "Kihraxz Fighter",
+                "factions": ["Black_Sun", "Hutt_Cartel", "Bounty_Hunters_Guild"],
+                "chassis":[0],
+                "id": 22,
+                "attack": [["F",3]],
+                "agility": 2,
+                "hull": 5,
+                "shields": 1,
+                "actions": [
+                    [0,"Fo W"],
+                    [0,"Lo W"],
+                    [0,"Br W"]
                
-            ],
-            "maneuvers": [
-                [ 0, 0, 0, 0, 0, 0, 0, 0],
-                [ 2, 1, 1, 1, 2, 0, 0, 0],
-                [ 2, 2, 1, 2, 2, 0, 0, 0],
-                [ 0, 2, 1, 2, 0, 0, 3, 3],
-                [ 0, 0, 2, 0, 0, 0, 0, 0]
-            ],
-            "slots": ["Crew","Gunner","Modification","Astromech","Calculator"]
-        },
-        {
-        	"name": "Supa Starfighter",
-            "factions": [ "Crime_Syndicates", "Black_Sun"],
-            "id": 83,
-            "attack": [["F",3]],
-            "agility": 1,
-            "base": ["Medium"],
-            "hull": 7,
-            "shields": 1,
-            "chassis": [36],
-            "actions": [
-                [0,"Fo W"],               
-                [1,"Lo W", "Rd R"],
-                [0,"Re W"]
-                
-            ],
-            "maneuvers": [
-                [ 0, 0, 0, 0, 0, 0],
-                [ 0, 2, 1, 2, 0, 0],
-                [ 2, 2, 1, 2, 2, 0],
-                [ 0, 2, 1, 2, 0, 0],
-                [ 0, 0, 3, 0, 0, 3]
-            ],
-            "slots": ["Torpedo","Modification","Modification"]
-        },
-        {
-        	"name": "Crimson Starfighter",
-            "factions": [ "Crime_Syndicates" ],
-            "id": 84,
-            "attack": [["F",2]],
-            "agility": 2,
-            "base": ["Small"],
-            "hull": 2,
-            "shields": 1,
-            "chassis": [51],
-            "actions": [
-                [1,"Fo W", "Ck R"],               
-                [0,"Ck W"],
-                [0,"Ev W"],
-                [1,"Br W", "Ev R"],
-                [1,"Bo W", "Ev R"]
-                
-            ],
-            "maneuvers": [
-                [ 0, 0, 0, 0, 0, 0, 0, 0],
-                [ 2, 2, 0, 2, 2, 0, 0, 0],
-                [ 2, 1, 1, 1, 2, 0, 0, 0],
-                [ 1, 1, 1, 1, 1, 0, 3, 3],
-                [ 0, 0, 1, 0, 0, 0, 0, 0],
-                [ 0, 0, 1, 0, 0, 3, 0, 0]
-            ],
-            "slots": ["Illicit","Modification"]
-        },
-        {
-        	"name": "Sarissa-Class Gunship",
-            "factions": [ "Crime_Syndicates" ],
-            "id": 85,
-            "attack": [["F",3]],
-            "agility": 1,
-            "base": ["Medium"],
-            "hull": 5,
-            "shields": 2,
-            "chassis": [0],
-            "actions": [
-                [0,"Fo W"],               
-                [0,"Lo W"],
-                [0,"Br W"],
-                [0,"Re R"]
-              
-            ],
-            "maneuvers": [
-                [ 0, 0, 3, 0, 0, 0, 0, 0],
-                [ 0, 1, 1, 1, 0, 0, 0, 0],
-                [ 2, 2, 1, 2, 2, 0, 0, 0],
-                [ 3, 2, 1, 2, 3, 3, 3, 3],
-                [ 0, 0, 2, 0, 0, 0, 0, 0],
-                [ 0, 0, 0, 0, 0, 0, 0, 0]
-            ],
-            "slots": ["Gunner","Missile","Cannon","Modification","Sensor"]
-        },
-        {
-        	"name": "Rihkxyrk Attack Ship",
-            "factions": ["Black_Sun"],
-            "id": 86,
-            "attack": [["0",0]],
-            "agility": 0,
-            "base": ["Medium"],
-            "hull": 9,
-            "shields": 3,
-            "chassis": [53],
-            "actions": [
-                [1,"Fo W", "Rd R"],               
-                [1,"Lo W", "Rd R"],
-                [0,"Rd W"],
-                [0,"Bo R"]
-                
-            ],
-            "maneuvers": [
-                [ 0, 0, 3, 0, 0, 0],
-                [ 0, 2, 1, 2, 0, 0],
-                [ 3, 2, 1, 2, 3, 3],
-                [ 3, 2, 1, 2, 3, 0]
-
-            ],
-            "slots": ["Tech","Missile","Torpedo","Payload","Payload"]
-        },
-        {
-        	"name": "Blue Ace",
-            "factions": [ "Colossus" ],
-            "id": 87,
-            "attack": [["F",2]],
-            "agility": 3,
-            "base": ["Small"],
-            "hull": 4,
-            "shields": 0,
-            "chassis": [11,54],
-            "actions": [
-                [0,"Fo W"],               
-                [0,"Br W"],
-                [0,"Bo W"]
-                
-            ],
-            "maneuvers": [
-                [ 0, 0, 0, 0, 0, 0,0,0],
-                [ 2, 2, 0, 2, 2, 0,0,0],
-                [ 2, 1, 1, 1, 2, 0,0,0],
-                [ 1, 1, 1, 1, 1, 0,3,3],
-                [ 0, 0, 1, 0, 0, 0,0,0],
-                [ 0, 0, 1, 0, 0, 3,0,0]
-            ],
-            "slots": ["Astromech","Modification"]
-        },
-        {
-        	"name": "Red Ace",
-            "factions": [ "Colossus" ],
-            "id": 88,
-            "attack": [["F",2]],
-            "agility": 3,
-            "base": ["Small"],
-            "hull": 5,
-            "shields": 0,
-            "chassis": [33,38],
-            "actions": [
-                [0,"Fo W"],               
-                [0,"Br W"],
-                [0,"Bo W"]
-            ],
-            "maneuvers": [
-                [ 0, 0, 0, 0, 0, 0,0,0],
-                [ 2, 2, 0, 2, 2, 0,0,0],
-                [ 2, 1, 1, 1, 2, 0,0,0],
-                [ 1, 1, 1, 1, 1, 0,3,3],
-                [ 0, 0, 1, 0, 0, 0,0,0],
-                [ 0, 0, 1, 0, 0, 3,0,0]
-            ],
-            "slots": ["Astromech","Calculator"]
-        },
-        {
-        	"name": "Yellow Ace",
-            "factions": [ "Colossus" ],
-            "id": 89,
-            "attack": [["F",1],["T",1]],
-            "agility": 2,
-            "base": ["Small"],
-            "hull": 5,
-            "shields": 0,
-            "chassis": [20,35],
-            "actions": [
-                [0,"Fo W"],               
-                [0,"Br W"],
-                [0,"Bo W"]
-            ],
-            "maneuvers": [
-                [ 0, 0, 0, 0, 0, 0,0,0],
-                [ 2, 2, 0, 2, 2, 0,0,0],
-                [ 2, 1, 1, 1, 2, 0,0,0],
-                [ 1, 1, 1, 1, 1, 0,3,3],
-                [ 0, 0, 1, 0, 0, 0,0,0],
-                [ 0, 0, 1, 0, 0, 3,0,0]
-            ],
-            "slots": ["Astromech","Sensor"]
-        },
-        {
-        	"name": "Green Ace",
-            "factions": [ "Colossus" ],
-            "id": 90,
-            "attack": [["F",2]],
-            "agility": 3,
-            "base": ["Small"],
-            "hull": 4,
-            "shields": 0,
-            "chassis": [10,43],
-            "actions": [
-                [0,"Fo W"],               
-                [0,"Br W"],
-                [0,"Bo W"]
-            ],
-            "maneuvers": [
-                [ 0, 0, 0, 0, 0, 0,0,0],
-                [ 2, 2, 0, 2, 2, 0,0,0],
-                [ 2, 1, 1, 1, 2, 0,0,0],
-                [ 1, 1, 1, 1, 1, 0,3,3],
-                [ 0, 0, 1, 0, 0, 0,0,0],
-                [ 0, 0, 1, 0, 0, 3,0,0]
-            ],
-            "slots": ["Astromech","Illicit"]
-        },
-        {
-        	"name": "Black Ace",
-            "factions": [ "Colossus" ],
-            "id": 91,
-            "attack": [["F",3]],
-            "agility": 2,
-            "base": ["Small"],
-            "hull": 4,
-            "shields": 0,
-            "chassis": [12,45],
-            "actions": [
-                [0,"Fo W"],               
-                [0,"Br W"],
-                [0,"Bo W"]
-            ],
-            "maneuvers": [
-                [ 0, 0, 0, 0, 0, 0,0,0],
-                [ 2, 2, 0, 2, 2, 0,0,0],
-                [ 2, 1, 1, 1, 2, 0,0,0],
-                [ 1, 1, 1, 1, 1, 0,3,3],
-                [ 0, 0, 1, 0, 0, 0,0,0],
-                [ 0, 0, 1, 0, 0, 3,0,0]
-            ],
-            "slots": ["Astromech","Tech"]
-        },
-        {
-        	"name": "Fanblade Starfighter",
-            "factions": [ "Agents_of_Chaos" ],
-            "id": 92,
-            "attack": [["BULL",3]],
-            "agility": 3,
-            "base": ["Small"],
-            "hull": 2,
-            "shields": 2,
-            "chassis": [55,56],
-            "actions": [
-                
-            ],
-            "maneuvers": [
-                [ 0, 0, 0, 0, 0, 0,0,0],
-                [ 2, 2, 0, 2, 2, 0,0,0],
-                [ 2, 1, 1, 1, 2, 0,0,0],
-                [ 1, 1, 1, 1, 1, 0,3,3],
-                [ 0, 0, 1, 0, 0, 0,0,0],
-                [ 0, 0, 1, 0, 0, 3,0,0]
-            ],
-            "slots": ["Modification"]
-        },
-        {
-        	"name": "TIE Echelon",
-            "factions": [ "First_Order" ],
-            "id": 93,
-            "attack": [["F",3]],
-            "agility": 1,
-            "base": ["Medium"],
-            "hull": 5,
-            "shields": 1,
-            "chassis": [0],
-            "actions": [
-                [1,"Fo W", "Br R"],               
-                [1,"Lo W", "Bo R"]
-                
-            ],
-            "maneuvers": [
-                [ 0, 0, 0, 0, 0, 0,0,0],
-                [ 2, 2, 0, 2, 2, 0,0,0],
-                [ 2, 1, 1, 1, 2, 0,0,0],
-                [ 1, 1, 1, 1, 1, 0,3,3],
-                [ 0, 0, 1, 0, 0, 0,0,0],
-                [ 0, 0, 1, 0, 0, 3,0,0]
-            ],
-            "slots": ["Crew","Gunner","Tech","Turret","Sensor","Tie mod"]
-        },
-        {
-        	"name": "Oubliette Class Transport",
-            "factions": [ "Shadow_Specialists" ],
-            "id": 94,
-            "attack": [["F",3]],
-            "agility": 2,
-            "base": ["Large"],
-            "hull": 7,
-            "shields": 3,
-            "chassis": [57],
-            "actions": [
-                
-            ],
-            "maneuvers": [
-                [ 0, 0, 0, 0, 0, 0,0,0],
-                [ 2, 2, 0, 2, 2, 0,0,0],
-                [ 2, 1, 1, 1, 2, 0,0,0],
-                [ 1, 1, 1, 1, 1, 0,3,3],
-                [ 0, 0, 1, 0, 0, 0,0,0],
-                [ 0, 0, 1, 0, 0, 3,0,0]
-            ],
-            "slots": ["Crew","Gunner","Turret","Cannon","Modification"]
-        },
-        {
-        	"name": "Omicron Class Shuttle",
-            "factions": [ "Imperial_Remnants","Galactic_Senate" ],
-            "id": 95,
-            "attack": [["F",2]],
-            "agility": 1,
-            "base": ["Large"],
-            "hull": 6,
-            "shields": 5,
-            "chassis": [58],
-            "actions": [
-               
-            ],
-            "maneuvers": [
-                [ 0, 0, 0, 0, 0, 0,0,0],
-                [ 2, 2, 0, 2, 2, 0,0,0],
-                [ 2, 1, 1, 1, 2, 0,0,0],
-                [ 1, 1, 1, 1, 1, 0,3,3],
-                [ 0, 0, 1, 0, 0, 0,0,0],
-                [ 0, 0, 1, 0, 0, 3,0,0]
-            ],
-            "slots": ["Crew","Crew","Gunner","Payload","Turret","Modification","Calculator"]
-        },
-        {
-        	"name": "RP82 Fighter",
-            "factions": [ "Imperial_Remanants" ],
-            "id": 96,
-            "attack": [["F",2]],
-            "attackbull": 3,
-            "agility": 3,
-            "base": ["Small"],
-            "hull": 3,
-            "shields": 1,
-            "chassis": [54],
-            "actions": [
-                
-            ],
-            "maneuvers": [
-                [ 0, 0, 0, 0, 0, 0,0,0],
-                [ 2, 2, 0, 2, 2, 0,0,0],
-                [ 2, 1, 1, 1, 2, 0,0,0],
-                [ 1, 1, 1, 1, 1, 0,3,3],
-                [ 0, 0, 1, 0, 0, 0,0,0],
-                [ 0, 0, 1, 0, 0, 3,0,0]
-            ],
-            "slots": ["Tech"]
-        },
-        {
-        	"name": "Laat/Le Patrol Gunship",
-            "factions": [ "Imperial_Remnants" ],
-            "id": 97,
-            "attack": [["T",2]],
-            "agility": 2,
-            "base": ["Medium"],
-            "hull": 6,
-            "shields": 2,
-            "chassis": [46],
-            "actions": [
-                
-            ],
-            "maneuvers": [
-                [ 0, 0, 0, 0, 0, 0,0,0],
-                [ 2, 2, 0, 2, 2, 0,0,0],
-                [ 2, 1, 1, 1, 2, 0,0,0],
-                [ 1, 1, 1, 1, 1, 0,3,3],
-                [ 0, 0, 1, 0, 0, 0,0,0],
-                [ 0, 0, 1, 0, 0, 3,0,0]
-            ],
-            "slots": ["Crew","Gunner","Gunner","Missile","Turret","Modification"]
-        }
+                ],
+                "maneuvers": [
+                    [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+                    [ 2, 1, 0, 1, 2, 0, 0, 0, 0, 0 ],
+                    [ 2, 1, 1, 1, 2, 0, 0, 0, 3, 3 ],
+                    [ 0, 2, 1, 2, 0, 0, 0, 0, 0, 0 ],
+                    [ 0, 0, 2, 0, 0, 3, 0, 0, 0, 0 ]
+                ],
+                "base": ["Small"],
+                "slots": ["Missile", "Illicit", "Modification"]
+            },
+            {
       
+                "name": "BTL-S8 K-wing",
+                "factions": ["New_Republic"],
+                "chassis":[0],
+                "id": 23,
+                "attack": [["T",2]],
+                "agility": 1,
+                "hull": 6,
+                "shields": 3,
+                "base": ["Medium"],
+                "actions": [
+                    [0,"Fo W"],
+                    [0,"Lo W"],
+                    [0,"Sl W"],
+                    [0,"Ro W"],
+                    [0,"Rd W"]
+                    
+                ],
+                "maneuvers": [
+                    [ 0, 0, 0, 0, 0],
+                    [ 0, 1, 1, 1, 0],
+                    [ 2, 2, 1, 2, 2],
+                    [ 0, 2, 2, 2, 0]
+                ],
+                "slots": ["Gunner","Gunner","Missile","Payload","Payload","Turret","Modification"]
+    
+            },
+            {
         
         
-    ]
+                "name": "TIE/ca Punisher",
+                "factions": ["Imperial_Elite_Forces"],
+                "chassis":[0],
+                "id": 24,
+                "attack": [["F",2]],
+                "agility": 1,
+                "hull": 6,
+                "shields": 3,
+                "base": ["Medium"],
+                "actions": [
+                    [0,"Fo W"],
+                    [1,"Lo W", "Br R"],
+                    [0,"Bo W", "Lo R"],
+                    [0,"Rd W"]
+                    
+                ],
+                "maneuvers": [
+                    [ 0, 0, 3, 0, 0, 0 ],
+                    [ 0, 1, 1, 1, 0, 0 ],
+                    [ 2, 2, 1, 2, 2, 0 ],
+                    [ 3, 2, 2, 2, 3, 0 ],
+                    [ 0, 0, 0, 0, 0, 3 ]
+                ],
+                "slots": ["Tech","Gunner","Missile","Torpedo","Payload","Payload","Tie mod"]
+    
+            },
+            {
+       
+            
+                "name": "VCX-100 Light Freighter",
+                "factions": ["Phoenix_Cell", "New_Republic"],
+                "id": 25,
+                "attack": [["F",4]],
+                "agility": 0,
+                "hull": 10,
+                "shields": 4,
+                "base": ["Large"],
+                "chassis": [22],
+                "actions": [
+                    [0,"Fo W"],
+                    [0,"Lo W"],
+                    [0,"Re W"]
+                    
+                ],
+                "maneuvers": [
+                    [ 0, 0, 0, 0, 0, 0 ],
+                    [ 3, 2, 1, 2, 3, 0 ],
+                    [ 2, 1, 1, 1, 2, 0 ],
+                    [ 3, 2, 2, 2, 3, 0 ],
+                    [ 0, 0, 2, 0, 0, 3 ]
+                ],
+                "slots": ["Crew","Crew","Gunner","Torpedo","Turret","Modification","Sensor"]
+            },
+            {
+         
+          
+                "name": "Attack Shuttle",
+                "factions": ["Phoenix_Cell"],
+                "id": 26,
+                "attack": [["F",3]],
+                "agility": 2,
+                "hull": 3,
+                "shields": 1,
+                "chassis": [23],
+                "actions": [
+                    [0,"Fo W"],
+                    [0,"Ev W"],
+                    [1,"Br W", "Ev R"]
+                   
+                ],
+                "base": ["Small"],
+                "maneuvers": [
+                    [ 0, 0, 0, 0, 0, 0 ],
+                    [ 3, 1, 1, 1, 3, 0 ],
+                    [ 2, 2, 1, 2, 2, 0 ],
+                    [ 3, 2, 2, 2, 3, 0 ],
+                    [ 0, 0, 2, 0, 0, 3 ]
+                ],
+                "slots": ["Crew","Turret","Modification"]
+            },
+            {
+      
+                "name": "TIE Advanced v1",
+                "factions": ["Imperial_Elite_Forces"],
+                "chassis":[0],
+                "id": 27,
+                "attack": [["F",2]],
+                "agility": 3,
+                "hull": 2,
+                "shields": 2,
+                "actions": [
+                    [0,"Fo W"],
+                    [0,"Ev W"],
+                    [0,"Lo W"],
+                    [1,"Br W", "Fo R"],
+                    [1,"Bo W", "Fo R"]
+                   
+                ],
+                "base": ["Small"],
+                "maneuvers": [
+                    [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+                    [ 1, 1, 0, 1, 1, 0, 0, 0, 0, 0 ],
+                    [ 2, 2, 1, 2, 2, 0, 0, 0, 3, 3 ],
+                    [ 2, 2, 1, 2, 2, 0, 0, 0, 0, 0 ],
+                    [ 0, 0, 2, 0, 0, 3, 0, 0, 0, 0 ],
+                    [ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0 ]
+                ],
+                "slots": ["Sensor","Missile","Tie mod"]
+    
+            },
+            {
+        
+           
+                "name": "G-1A Starfighter",
+                "factions": ["Bounty_Hunters_Guild"],
+                "chassis":[0],
+                "id": 28,
+                "attack": [["F",3]],
+                "agility": 1,
+                "hull": 5,
+                "shields": 4,
+                "base": ["Medium"],
+                "actions": [
+                    [0,"Fo W"],
+                    [0,"Lo W"],
+                    [0,"Ja W"]
+                  
+                ],
+                "maneuvers": [
+                    [ 0, 0, 3, 0, 0, 0 ],
+                    [ 3, 1, 1, 1, 3, 0 ],
+                    [ 2, 2, 1, 2, 2, 3 ],
+                    [ 0, 3, 2, 3, 0, 0 ],
+                    [ 0, 0, 3, 0, 0, 3 ]
+                ],
+                "slots": ["Sensor", "Sensor", "Crew", "Illicit", "Modification", "Calculator"]
+            },
+            {
+        
+                "name": "JumpMaster 5000",
+                "factions": ["Bounty_Hunters_Guild"],
+                "chassis":[0],
+                "id": 29,
+                "base": ["Large"],
+                "attack": [["T",2]],
+                "agility": 2,
+                "hull": 6,
+                "shields": 3,
+                "actions": [
+                    [1,"Fo W", "Ro R"],
+                    [1,"Lo W", "Ro R"],
+                    [0,"Br R"]
+                  
+                ],
+                "maneuvers": [
+                    [ 0, 0, 0, 0, 0, 0, 0],
+                    [ 2, 1, 1, 2, 3, 0, 0],
+                    [ 2, 1, 1, 2, 3, 0, 0],
+                    [ 0, 1, 1, 2, 0, 0, 3],
+                    [ 0, 0, 2, 0, 0, 3, 0]
+                ],
+                "slots": ["Torpedo", "Crew", "Gunner", "Illicit", "Modification"]
+            },
+            {
+     
+                "name": "ARC-170 Starfighter",
+                "factions": ["Rebel_Alliance","Galactic_Senate"],
+                "chassis":[0],
+                "id": 30,
+                "attack": [["F",3]],
+                "attackb": 2,
+                "agility": 1,
+                "hull": 6,
+                "shields": 3,
+                "base": ["Medium"],
+                "actions": [
+                    [0,"Fo W"],
+                    [0,"Lo W"],
+                    [0,"Br R"]
+                    
+                ],
+                "maneuvers": [
+                    [ 0, 0, 0, 0, 0, 0 ],
+                    [ 0, 1, 1, 1, 0, 0 ],
+                    [ 2, 1, 1, 1, 2, 0 ],
+                    [ 3, 2, 2, 2, 3, 0 ],
+                    [ 0, 0, 3, 0, 0, 3 ]
+                ],
+                "slots": ["Crew", "Gunner", "Torpedo", "Astromech", "Modification"]
+            },
+            {
+       
+          
+                "name": "Fang Fighter",
+                "factions": ["Mandalorian_Clans"],
+                "id": 31,
+                "attack": [["F",3]],
+                "agility": 3,
+                "hull": 4,
+                "shields": 0,
+                "chassis": [24],
+                "actions": [
+                    [0,"Fo W"],
+                    [0,"Lo W"],
+                    [1,"Br W", "Fo R"],
+                    [1,"Bo W", "Fo R"]
+                   
+                ],
+                "maneuvers": [
+                    [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+                    [ 2, 0, 0, 0, 2, 0, 0, 0, 0, 0 ],
+                    [ 1, 1, 1, 1, 1, 0, 0, 0, 3, 3 ],
+                    [ 2, 2, 1, 2, 2, 0, 0, 0, 0, 0 ],
+                    [ 0, 0, 2, 0, 0, 3, 0, 0, 0, 0 ],
+                    [ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0 ]
+                ],
+                "base": ["Small"],
+                "slots": ["Torpedo", "Modification", "Modification"]
+            },
+            {
+        
+                "name": "Lancer-Class Pursuit Craft",
+                "factions": ["Black_Sun", "Crime_Syndicates"],
+                "chassis":[0],
+                "id": 32,
+                "base": ["Large"],
+                "attack": [["F",3],["T",2]],
+                "agility": 2,
+                "hull": 8,
+                "shields": 2,
+                "actions": [
+                    [0,"Fo W"],
+                    [0,"Lo W"],
+                    [0,"Ev W"],
+                    [0,"Ro W"]
+                    
+                ],
+                "maneuvers": [
+                    [ 0, 0, 0, 0, 0, 0],
+                    [ 0, 2, 2, 2, 0, 0],
+                    [ 2, 2, 1, 2, 2, 0],
+                    [ 1, 1, 1, 1, 1, 0],
+                    [ 0, 0, 1, 0, 0, 0],
+                    [ 0, 0, 2, 0, 0, 3]
+                ],
+                "slots": ["Crew","Illicit","Illicit","Modification","Modification"]
+    
+            },
+            {
+          
+         
+                "name": "Quadrijet Transfer Spacetug",
+                "id": 33,
+                "factions": ["Hutt_Cartel"],
+                "attack": [["F",2]],
+                "agility": 2,
+                "hull": 5,
+                "shields": 0,
+                "chassis": [25],
+                "actions": [
+                    [0,"Fo W"],
+                    [0,"Ev R"],
+                    [0,"Br W"]
+                   
+                ],
+                "base": ["Small"],
+                "maneuvers": [
+                    [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+                    [ 2, 2, 2, 2, 2, 0, 0, 0, 0, 0, 3, 0, 3 ],
+                    [ 2, 1, 1, 1, 2, 0, 3, 3, 0, 0, 0, 3, 0 ],
+                    [ 0, 2, 1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+                ],
+                "slots": ["Crew","Tech","Payload","Modification"]
+    
+            },
+            {
+         
+     
+                "name": "UT-60D U-wing",
+                "factions": ["Rebel_Alliance", "Partisans"],
+                "id": 34,
+                "base": ["Medium"],
+                "attack": [["F",3]],
+                "agility": 2,
+                "hull": 5,
+                "shields": 3,
+                "chassis": [4],
+                "actions": [
+                    [0,"Fo W"],
+                    [0,"Lo W"],
+                    [0,"Co R"]
+                 
+                ],
+                "maneuvers": [
+                    [ 0, 0, 3, 0, 0 ],
+                    [ 0, 1, 1, 1, 0 ],
+                    [ 2, 1, 1, 1, 2 ],
+                    [ 0, 2, 2, 2, 0 ],
+                    [ 0, 0, 2, 0, 0 ]
+                ],
+                "slots": ["Sensor", "Crew", "Crew", "Modification"]
+            },
+            {
+               
+        
+                "name": "TIE/sk Striker",
+                "id": 35,
+                "factions": ["ISB"],
+                "attack": [["F",3]],
+                "agility": 2,
+                "hull": 4,
+                "shields": 0,
+                "base": ["Small"],
+                "chassis": [14],
+                "actions": [
+                    [0,"Fo W"],
+                    [0,"Ev W"],
+                    [0,"Br W"]
+                    
+                ],
+                "maneuvers": [
+                    [ 0, 0, 0, 0, 0, 0, 0, 0 ],
+                    [ 2, 1, 1, 1, 2, 3, 0, 0 ],
+                    [ 2, 1, 1, 1, 2, 0, 3, 3 ],
+                    [ 0, 2, 1, 2, 0, 0, 0, 0 ]
+                ],
+                "slots": ["Payload","Tie mod"]
+    
+            },
+            {
+        
+    
+                "name": "Auzituck Gunship",
+                "factions": ["Partisans"],
+                "chassis":[0],
+                "id": 36,
+                "attack": [["180",3]],
+                "agility": 1,
+                "hull": 4,
+                "shields": 1,
+                "base": ["Small"],
+                "actions": [
+                    [0,"Fo W"],
+                    [0,"Br R"],
+                    [0,"Re W"]
+    
+                ],
+                "maneuvers": [
+                    [ 0, 0, 3, 0, 0],
+                    [ 0, 1, 1, 1, 0],
+                    [ 2, 2, 1, 2, 2],
+                    [ 2, 2, 1, 2, 2],
+                    [ 0, 0, 2, 0, 0]
+                ],
+                "slots": ["Gunner"]
+    
+            },
+            {
+        
+    
+                "name": "Scurrg H-6 Bomber",
+                "factions": ["Pirates_and_Smugglers"],
+                "chassis":[0],
+                "id": 37,
+                "attack": [["F",3]],
+                "agility": 1,
+                "hull": 6,
+                "shields": 4,
+                "base": ["Medium"],
+                "actions": [
+                    [0,"Fo W"],
+                    [0,"Lo W"],
+                    [0,"Br R"]
+                  
+                ],
+                "maneuvers": [
+                    [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+                    [ 0, 1, 1, 1, 0, 0, 0, 0, 0, 0 ],
+                    [ 2, 2, 1, 2, 2, 0, 0, 0, 0, 0 ],
+                    [ 3, 2, 2, 2, 3, 0, 0, 0, 3, 3 ],
+                    [ 0, 0, 3, 0, 0, 0, 0, 0, 0, 0 ]
+                ],
+                "slots": ["Turret", "Crew", "Gunner", "Payload", "Payload", "Modification"]
+            },
+            {
+      
+     
+                "name": "TIE/ag Aggressor",
+                "chassis":[0],
+                "id": 38,
+                "factions": ["ISB"],
+                "attack": [["F",2]],
+                "agility": 2,
+                "hull": 4,
+                "base": ["Small"],
+                "shields": 1,
+                "actions": [
+                    [0,"Fo W"],
+                    [0,"Lo W"],
+                    [1,"Br W", "Ev R"]
+                   
+                ],
+                "maneuvers": [
+                    [ 0, 0, 0, 0, 0, 0],
+                    [ 0, 2, 1, 2, 0, 0],
+                    [ 2, 1, 1, 1, 2, 0],
+                    [ 2, 2, 1, 2, 2, 0],
+                    [ 0, 0, 2, 0, 0, 3]
+                ],
+                "slots": ["Gunner","Missile","Turret","Tie mod","Calculator"]
+    
+            },
+            {
+         
+       
+                "name": "Alpha-Class Star Wing",
+                "id": 39,
+                "factions": ["ISB"],
+                "attack": [["F",2]],
+                "agility": 2,
+                "hull": 4,
+                "shields": 3,
+                "base": ["Small"],
+                "chassis": [0],
+                "actions": [
+                    [0,"Fo W"],
+                    [0,"Lo W"],
+                    [0,"Sl W"],
+                    [0,"Rd W"]
+                    
+                ],
+                "maneuvers": [
+                    [ 0, 0, 0, 0, 0],
+                    [ 0, 2, 1, 2, 0],
+                    [ 2, 1, 1, 1, 2],
+                    [ 2, 2, 2, 2, 2],
+                    [ 0, 0, 3, 0, 0]
+                ],
+                "slots": ["Missile","Missile","Torpedo","Torpedo","Modification","Sensor"]
+    
+            },
+            {
+    
+                "name": "M12-L Kimogila Fighter",
+                "id": 40,
+                "factions": ["Hutt_Cartel"],
+                "attack": [["F",3]],
+                "agility": 1,
+                "hull": 7,
+                "shields": 2,
+                "base": ["Medium"],
+                "chassis": [26],
+                "actions": [
+                    [0,"Fo W"],
+                    [0,"Lo W"],
+                    [0,"Br R"],
+                    [1,"Rd W"]
+                  
+                ],
+                "maneuvers": [
+                    [ 0, 0, 0, 0, 0, 0],
+                    [ 3, 2, 1, 2, 3, 0],
+                    [ 2, 1, 1, 1, 2, 0],
+                    [ 2, 2, 1, 2, 2, 0],
+                    [ 0, 0, 0, 0, 0, 3]
+                ],
+                "slots": ["Missile","Torpedo","Illicit","Modification","Astromech"]
+    
+            },
+            {
+     
+                "name": "Sheathipede-Class Shuttle",
+                "factions": ["Phoenix_Cell", "C.I.S"],
+                "id": 41,
+                "attack": [["F",2],["B",2]],
+                "agility": 2,
+                "hull": 4,
+                "shields": 1,
+                "base": ["Small"],
+                "chassis": [27],
+                "actions": [
+                    [0,"Fo W"],
+                    [0,"Co W"]
+                    
+                ],
+                "maneuvers": [
+                    [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                    [ 0, 2, 1, 2, 0, 0, 0, 0, 0, 0, 0, 3],
+                    [ 2, 1, 1, 1, 2, 0, 0, 0, 0, 0, 0, 0],
+                    [ 3, 2, 1, 2, 3, 3, 0, 0, 0, 0, 0, 0],
+                    [ 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+                ],
+                "slots": ["Crew","Modification","Astromech","Calculator"]
+            },
+            {
+        
+    
+                "name": "TIE Reaper",
+                "id": 42,
+                "factions": ["ISB"],
+                "attack": [["F",3]],
+                "agility": 1,
+                "hull": 6,
+                "shields": 2,
+                "base": ["Medium"],
+                "chassis": [12],
+                "actions": [
+                    [0,"Fo W"],
+                    [0,"Ev W"],
+                    [0,"Ja W"],
+                    [0,"Co R"]
+                   
+                ],
+                "maneuvers": [
+                    [ 0, 0, 3, 0, 0, 0, 0, 0 ],
+                    [ 3, 1, 1, 1, 3, 0, 3, 3 ],
+                    [ 3, 2, 1, 2, 3, 0, 0, 0 ],
+                    [ 0, 2, 1, 2, 0, 0, 0, 0 ]
+                ],
+                "slots": ["Crew","Crew","Tie mod"]
+    
+            },
+            {
+         
+      
+                "name": "Escape Craft",
+                "factions": ["Pirates_and_Smugglers"],
+                "id": 43,
+                "attack": [["F",1]],
+                "agility": 2,
+                "hull": 2,
+                "shields": 2,
+                "chassis": [1],
+                "base": ["Small"],
+                "actions": [
+                    [0,"Fo W"],
+                    [0,"Br W"],
+                    [0,"Co R"]
+                ],
+                "maneuvers": [
+                    [ 0, 0, 3, 0, 0, 0],
+                    [ 0, 1, 1, 1, 0, 0],
+                    [ 3, 2, 1, 2, 3, 0],
+                    [ 0, 2, 2, 2, 0, 3]
+                ],
+                "slots": ["Crew", "Illicit"]
+            },
+            {
+      
+    
+                "name": "T-70 X-wing",
+                "factions": [ "Resistance", "Colossus"],
+                "id": 44,
+                "attack": [["F",3]],
+                "agility": 2,
+                "hull": 4,
+                "shields": 3,
+                "base": ["Small"],
+                "chassis": [28,21],
+                "actions": [
+                    [0,"Fo W"],
+                    [0,"Lo W"],
+                    [0,"Bo W"]
+                ],
+                "maneuvers": [
+                    [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                    [ 0, 1, 1, 1, 0, 0, 0, 0, 0, 0],
+                    [ 2, 1, 1, 1, 2, 0, 0, 0, 0, 0],
+                    [ 2, 2, 1, 2, 2, 0, 0, 0, 3, 3],
+                    [ 0, 0, 2, 0, 0, 3, 0, 0, 0, 0]
+                ],
+                "slots": ["Tech","Modification","Astromech","Weapon Hardpoint"]
+            },
+            {
+               
+    
+                "name": "RZ-2 A-wing",
+                "factions": ["Resistance", "New_Republic"],
+                "id": 45,
+                "attack": [["T",2]],
+                "agility": 3,
+                "hull": 2,
+                "shields": 2,
+                "base": ["Small"],
+                "chassis": [29],
+                "actions": [
+                    [0,"Fo W"],
+                    [0,"Lo W"],
+                    [0,"Ev W"],
+                    [0,"Br W"],
+                    [0,"Bo W"]
+                    
+                ],
+                "maneuvers": [
+                    [ 0, 0, 0, 0, 0, 0, 0, 0],
+                    [ 2, 0, 0, 0, 2, 0, 0, 0],
+                    [ 1, 1, 1, 1, 1, 0, 0, 0],
+                    [ 2, 1, 1, 1, 2, 0, 3, 3],
+                    [ 0, 0, 1, 0, 0, 0, 0, 0],
+                    [ 0, 0, 1, 0, 0, 3, 0, 0]
+                ],
+                "slots": ["Tech","Missile","Modification"]
+            },
+            {
+          
+    
+                "name": "TIE/fo Fighter",
+                "factions": ["First_Order", "Shadow_Specialists"],
+                "chassis":[0],
+                "id": 46,
+                "attack": [["F",2]],
+                "agility": 3,
+                "hull": 3,
+                "shields": 1,
+                "base": ["Small"],
+                "slots": ["Tech","Tie mod"],
+                "actions": [
+                    [0,"Fo W"],
+                    [0,"Lo W"],
+                    [0,"Ev W"],
+                    [0,"Br W"]
+                    
+                ],
+                "maneuvers": [
+                    [ 0, 0, 0, 0, 0, 0, 0, 0],
+                    [ 2, 0, 0, 0, 2, 0, 0, 0],
+                    [ 1, 1, 1, 1, 1, 0, 3, 3],
+                    [ 2, 2, 1, 2, 2, 0, 0, 0],
+                    [ 0, 0, 2, 0, 0, 3, 0, 0],
+                    [ 0, 0, 2, 0, 0, 0, 0, 0]
+                ]
+            },
+            {
+        
+    
+                "name": "TIE/vn Silencer",
+                "factions": ["First_Order"],
+                "id": 47,
+                "attack": [["F",3]],
+                "agility": 3,
+                "hull": 4,
+                "shields": 2,
+                "base": ["Small"],
+                "chassis": [10],
+                "slots": ["Tech","Torpedo","Tie mod","Sensor"],
+                "actions": [
+                    [0,"Fo W"],
+                    [0,"Lo W"],
+                    [0,"Br W"],
+                    [0,"Bo W"]
+                 
+                ],
+                "maneuvers": [
+                    [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                    [ 2, 0, 0, 0, 2, 0, 0, 0, 0, 0],
+                    [ 1, 1, 1, 1, 1, 0, 0, 0, 0, 0],
+                    [ 2, 2, 1, 2, 2, 0, 0, 0, 3, 3],
+                    [ 0, 0, 1, 0, 0, 3, 0, 0, 0, 0],
+                    [ 0, 0, 1, 0, 0, 0, 0, 0, 0, 0]
+                ]
+            },
+            {
+         
+                "name": "TIE/sf Fighter",
+                "factions": ["First_Order"],
+                "id": 48,
+                "attack": [["F",2],["T",2]],
+                "agility": 2,
+                "hull": 3,
+                "shields": 3,
+                "base": ["Small"],
+                "slots": ["Gunner","Tech","Missile","Tie mod"],
+                "chassis": [30],
+                "actions": [
+                    [1,"Fo W", "Ro W"],
+                    [1,"Ev W", "Ro W"],
+                    [1,"Br W", "Ro W"],
+                    [1,"Bo W", "Ro W"]
+                 
+                ],
+                "maneuvers": [
+                    [ 0, 0, 0, 0, 0, 0, 0, 0],
+                    [ 3, 1, 1, 1, 3, 0, 0, 0],
+                    [ 2, 1, 1, 1, 2, 0, 0, 0],
+                    [ 2, 2, 1, 2, 2, 0, 3, 3],
+                    [ 0, 0, 2, 0, 0, 0, 0, 0],
+                    [ 0, 0, 2, 0, 0, 0, 0, 0]
+                ]
+            },
+            {
+         
+     
+                "name": "Upsilon-Class Command Shuttle",
+                "id": 49,
+                "factions": ["First_Order"],
+                "attack": [["F",4]],
+                "agility": 1,
+                "hull": 6,
+                "shields": 6,
+                "chassis": [0],
+                "slots": ["Crew","Crew","Modification","Modification","Sensor","Calculator","Calculator"],
+                "actions": [
+                    [0,"Fo W"],
+                    [0,"Lo W"],
+                    [0,"Re W"],
+                    [0,"Co W"],
+                    [0,"Ja W"]
+                    
+                ],
+                "maneuvers": [
+                    [ 0, 0, 3, 0, 0],
+                    [ 3, 2, 1, 2, 3],
+                    [ 2, 1, 1, 1, 2],
+                    [ 3, 2, 2, 2, 3],
+                    [ 0, 0, 0, 0, 0],
+                    [ 0, 0, 0, 0, 0]
+                ],
+                "base": ["Large"]
+            },
+            {
+        
+       
+                "name": "MG-100 StarFortress",
+                "chassis":[0],
+                "id": 50,
+                "factions": ["Resistance"],
+                "attack": [["F",3],["T",2]],
+                "agility": 1,
+                "hull": 9,
+                "shields": 3,
+                "actions": [
+                    [0,"Fo W"],
+                    [0,"Lo W"],
+                    [0,"Ro W"],
+                    [0,"Rd W"]
+                   
+                ],
+                "maneuvers": [
+                    [ 0, 0, 3, 0, 0],
+                    [ 3, 1, 1, 1, 3],
+                    [ 2, 2, 1, 2, 2],
+                    [ 0, 3, 2, 3, 0],
+                    [ 0, 0, 0, 0, 0],
+                    [ 0, 0, 0, 0, 0]
+                ],
+                "base": ["Large"],
+                "slots": ["Crew","Gunner","Tech","Tech","Payload","Payload","Turret","Modification"]
+            },
+            {
+          
+     
+                "name": "Modified TIE/ln Fighter",
+                "factions": ["Crime_Syndicates"],
+                "id": 51,
+                "attack": [["F",2]],
+                "agility": 3,
+                "hull": 3,
+                "shields": 0,
+                "base": ["Small"],
+                "chassis": [31],
+                "actions": [
+                    [0,"Fo W"],
+                    [0,"Ev W"],
+                    [0,"Br W"]
+                    
+                ],
+                "maneuvers": [
+                    [ 0, 0, 0, 0, 0, 0],
+                    [ 2, 0, 0, 0, 2, 0],
+                    [ 2, 1, 1, 1, 2, 0],
+                    [ 2, 2, 1, 2, 2, 3],
+                    [ 0, 0, 2, 0, 0, 0],
+                    [ 0, 0, 3, 0, 0, 0]
+                ],
+                "slots": ["Illicit","Tie mod"]
+    
+            },
+            {
+           
+    
+                "name": "V-19 Torrent Starfighter",
+                "factions": ["Galactic_Senate"],
+                "chassis":[0],
+                "id": 52,
+                "attack": [["F",2]],
+                "agility": 2,
+                "hull": 5,
+                "shields": 0,
+                "base": ["Small"],
+                "actions": [
+                    [0,"Fo W"],
+                    [0,"Lo W"],                
+                    [0,"Ev W"],
+                    [1,"Br W", "Ev R"]
+                   
+                ],
+                "maneuvers": [
+                    [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                    [ 3, 1, 1, 1, 3, 0, 0, 0, 0, 0],
+                    [ 2, 2, 1, 2, 2, 0, 0, 0, 3, 3],
+                    [ 0, 3, 1, 3, 0, 3, 0, 0, 0, 0],
+                    [ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0],
+                    [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+                ],
+                "slots": ["Missile","Torpedo","Modification"]
+    
+            },
+            {
+    
+                "name": "Delta-7 Aethersprite",
+                "factions": ["Jedi_Order"],
+                "id": 53,
+                "attack": [["F",2]],
+                "agility": 3,
+                "hull": 3,
+                "shields": 1,
+                "base": ["Small"],
+                "chassis": [32,33],
+                "actions": [
+                    [0,"Fo W"],
+                    [0,"Lo W"],                
+                    [0,"Ev F"],
+                    [0,"Br W"],
+                    [0,"Bo W"]
+                ],
+                "maneuvers": [
+                    [ 0, 0, 0, 0, 0, 0, 0, 0],
+                    [ 2, 1, 0, 1, 2, 0, 0, 0],
+                    [ 2, 1, 1, 1, 2, 0, 3, 3],
+                    [ 0, 2, 1, 2, 0, 0, 0, 0],
+                    [ 0, 0, 2, 0, 0, 3, 0, 0],
+                    [ 0, 0, 2, 0, 0, 3, 0, 0]
+                ],
+                "slots": ["Astromech","Modification","Hyperspace Ring"]
+    
+               
+            },
+            {
+          
+        
+                "name": "Delta-7b Aethersprite",
+                "factions": ["Jedi_Order"],
+                "id": 54,
+                "attack": [["F",3]],
+                "agility": 2,
+                "hull": 3,
+                "shields": 3,
+                "base": ["Small"],
+                "chassis": [32],
+                "actions": [
+                    [0,"Fo W"],
+                    [0,"Lo W"],                
+                    [0,"Ev F"],
+                    [0,"Br W"],
+                    [0,"Bo W"]
+                ],
+                "maneuvers": [
+                    [ 0, 0, 0, 0, 0, 0, 0, 0],
+                    [ 2, 1, 0, 1, 2, 0, 0, 0],
+                    [ 2, 1, 1, 1, 2, 0, 3, 3],
+                    [ 0, 2, 1, 2, 0, 0, 0, 0],
+                    [ 0, 0, 2, 0, 0, 3, 0, 0],
+                    [ 0, 0, 2, 0, 0, 3, 0, 0]
+                ],
+                "slots": ["Astromech","Modification","Hyperspace Ring"]
+    
+            },
+            {
+        
+                "name": "Sith Infiltrator",
+                "factions": ["Agents_of_Chaos"],
+                "chassis":[0],
+                "id": 55,
+                "attack": [["F",3]],
+                "agility": 1,
+                "hull": 6,
+                "base": ["Large"], 
+                "shields": 4,
+                "actions": [
+                    [0,"Fo W"],
+                    [0,"Lo W"],                
+                    [0,"Ck R"],
+                    [0,"Br R"],
+                    [0,"Ja W"]
+                    
+                ],
+                "maneuvers": [
+                    [ 0, 0, 0, 0, 0, 0, 0, 0],
+                    [ 3, 1, 1, 1, 3, 0, 0, 0],
+                    [ 2, 1, 1, 1, 2, 0, 3, 3],
+                    [ 2, 2, 1, 2, 2, 0, 0, 0],
+                    [ 0, 0, 2, 0, 0, 0, 0, 0],
+                    [ 0, 0, 0, 0, 0, 3, 0, 0]
+                ],
+                "slots": ["Crew","Crew","Torpedo","Payload","Cannon","Modification","Calculator"]
+    
+            },
+            {
+         
+      
+                "name": "Vulture-class Droid Fighter",
+                "factions": ["C.I.S", "Agents_of_Chaos"],
+                "id": 56,
+                "attack": [["F",2]],
+                "agility": 2,
+                "hull": 3,
+                "shields": 0,
+                "base": ["Small"],
+                "chassis": [17,34],
+                "slots": ["Missile"],
+                "actions": [
+                    [0,"Cc W"],
+                    [0,"Lo W"],                
+                    [1,"Br W", "Cc R"]
+                   
+                ],
+                "maneuvers": [
+                    [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                    [ 2, 0, 0, 0, 2, 3, 0, 0, 0, 0],
+                    [ 1, 2, 1, 2, 1, 0, 0, 0, 3, 3],
+                    [ 2, 3, 1, 3, 2, 0, 0, 0, 0, 0],
+                    [ 0, 0, 1, 0, 0, 0, 0, 0, 0, 0],
+                    [ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0]
+                ]
+            },
+            {
+                "name": "Belbullab-22 Starfighter",
+                "chassis":[0],
+                "id":57,
+                "factions": ["C.I.S"],
+                "attack": [["F",3]],
+                "agility": 2,
+                "hull": 3,
+                "shields": 2,
+                "base": ["Small"],
+                "slots": ["Modification","Modification","Calculator"],
+                "actions": [
+                    [0,"Fo W"],
+                    [0,"Lo W"],                
+                    [1,"Br W", "Fo R"],
+                    [1,"Bo W", "Fo R"]
+                  
+                ],
+                "maneuvers": [
+                    [ 0, 0, 0, 0, 0, 0, 0, 0],
+                    [ 2, 2, 0, 2, 2, 0, 0, 0],
+                    [ 2, 1, 1, 1, 2, 0, 0, 0],
+                    [ 3, 2, 1, 2, 3, 0, 3, 3],
+                    [ 0, 0, 2, 0, 0, 0, 0, 0],
+                    [ 0, 0, 2, 0, 0, 0, 0, 0]
+                ]
+            },
+            {
+          
+     
+                "name": "Naboo Royal N-1 Starfighter",
+                "factions": ["Galactic_Senate", "Mandalorian_Clans"],
+                "id":58,
+                "attack": [["F",2]],
+                "agility": 2,
+                "hull": 3,
+                "shields": 2,
+                "chassis": [11],
+                "base": ["Small"],
+                "actions": [
+                    [0,"Fo W"],
+                    [0,"Lo W"],                
+                    [0,"Br W"],
+                    [0,"Bo W"]
+                    
+                ],
+                "maneuvers": [
+                    [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                    [ 0, 2, 2, 2, 0, 0, 0, 0, 0, 0],
+                    [ 2, 1, 1, 1, 2, 0, 0, 0, 0, 0],
+                    [ 2, 1, 1, 1, 2, 0, 0, 0, 3, 3],
+                    [ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0],
+                    [ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0]
+                ],
+                "slots": ["Torpedo", "Astromech", "Sensor"]
+            },
+            {
+    
+                "name": "Hyena-class Droid Bomber",
+                "id": 59,
+                "factions": ["C.I.S"],
+                "attack": [["F",2]],
+                "agility": 2,
+                "hull": 5,
+                "shields": 0,
+                "base": ["Small"],
+                "chassis": [17,34],
+                "slots": ["Missile","Torpedo","Payload","Modification","Sensor"],
+                "actions": [
+                    [0,"Cc W"],
+                    [0,"Lo W"],                
+                    [1,"Br W", "Lo R"],
+                    [0,"Rd R"]
+                 
+                ],
+                "maneuvers": [
+                    [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                    [ 2, 3, 2, 3, 2, 0, 0, 0, 0, 0],
+                    [ 1, 2, 1, 2, 1, 3, 0, 0, 3, 3],
+                    [ 2, 0, 1, 0, 2, 0, 0, 0, 0, 0],
+                    [ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0],
+                    [ 0, 0, 3, 0, 0, 0, 0, 0, 0, 0]
+                ]
+            },
+            {
+     
+                "name": "Resistance Transport Pod",
+                "factions": ["Resistance"],
+                "id": 60,
+                "attack": [["F",1]],
+                "agility": 2,
+                "hull": 3,
+                "shields": 1,
+                "base": ["Small"],
+                "chassis": [1],
+                "actions": [
+                    [0,"Fo W"],
+                    [0,"Lo R"],                
+                    [0,"Br R"],
+                    [0,"Ja R"]
+                   
+                ],
+                "maneuvers": [
+                    [ 0, 0, 0, 0, 0, 0],
+                    [ 3, 1, 1, 1, 3, 0],
+                    [ 2, 2, 1, 2, 2, 0],
+                    [ 0, 3, 2, 3, 0, 3],
+                    [ 0, 0, 3, 0, 0, 0]
+                ],
+                "slots": ["Crew","Tech","Modification"]
+            },
+            {
+         
+     
+                "name": "Resistance Transport",
+                "factions": ["Resistance"],
+                "id": 61,
+                "attack": [["F",2]],
+                "agility": 1,
+                "hull": 5,
+                "shields": 3,
+                "base": ["Small"],
+                "chassis": [16],
+                "actions": [
+                    [0,"Fo W"],
+                    [0,"Lo W"],                
+                    [0,"Co W"],
+                    [0,"Ja R"]
+                    
+                ],
+                "maneuvers": [
+                    [ 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+                    [ 3, 1, 1, 1, 3, 0, 0, 0, 0, 0, 3, 0, 3 ],
+                    [ 2, 2, 1, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0 ],
+                    [ 0, 3, 2, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+                    [ 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+                ],
+                "slots": ["Crew","Crew","Tech","Cannon","Modification","Astromech"]
+            },
+            {
+        
+                "name": "Nantex-Class Starfighter",
+                "factions": ["Agents_of_Chaos"],
+                "id": 62,
+                "attack": [["BULL",3],["T",2]],
+                "agility": 3,
+                "hull": 4,
+                "shields": 0,
+                "base": ["Small"],
+                "chassis": [35],
+                "actions": [
+                    [0,"Fo W"],
+                    [0,"Ev W"]
+                    
+                ],
+                "maneuvers": [
+                    [ 0, 0, 0, 0, 0, 0, 0, 0],
+                    [ 2, 1, 0, 1, 2, 0, 0, 0],
+                    [ 2, 1, 1, 1, 2, 0, 0, 0],
+                    [ 2, 1, 1, 1, 2, 0, 3, 3],
+                    [ 0, 0, 2, 0, 0, 0, 0, 0],
+                    [ 0, 0, 2, 0, 0, 3, 0, 0]
+                ],
+                "slots": []
+    
+            },
+            {
+        
+      
+                "name": "BTL-B Y-wing",
+                "factions": ["Jedi_Order"],
+                "id": 63,
+                "attack": [["F",2]],
+                "agility": 1,
+                "hull": 5,
+                "shields": 3,
+                "base": ["Small"],
+                "chassis": [36],
+                "actions": [
+                    [0,"Fo W"],
+                    [0,"Lo W"],                
+                    [0,"Br R"],
+                    [0,"Rd R"]
+                  
+                ],
+                "maneuvers": [
+                    [ 0, 0, 0, 0, 0, 0],
+                    [ 0, 2, 1, 2, 0, 0],
+                    [ 2, 2, 1, 2, 2, 0],
+                    [ 3, 2, 2, 2, 3, 0],
+                    [ 0, 0, 3, 0, 0, 3],
+                    [ 0, 0, 0, 0, 0, 0]
+                ],
+                "slots": ["Gunner","Torpedo","Payload","Turret","Astromech","Modification"]
+    
+            },
+            {
+    
+                "name": "Fireball",
+                "factions": ["Colossus"],
+                "id": 64,
+                "attack": [["F",2]],
+                "agility": 2,
+                "hull": 6,
+                "shields": 0,
+                "base": ["Small"],
+                "chassis": [37],
+                "actions": [
+                    [0,"Fo W"],
+                    [0,"Ev W"],                
+                    [0,"Br W"],
+                    [0,"Sl W"]
+                   
+                ],
+                "maneuvers": [
+                    [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+                    [ 2, 1, 1, 1, 2, 0, 0, 0, 0, 0 ],
+                    [ 2, 2, 1, 2, 2, 0, 0, 0, 0, 0 ],
+                    [ 3, 2, 2, 2, 3, 0, 0, 0, 3, 3 ],
+                    [ 0, 0, 3, 0, 0, 0, 0, 0, 0, 0 ],
+                    [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+                ],
+                "slots": ["Missile","Illicit","Modification","Modification","Astromech"]
+    
+            },
+            {
+    
+                "name": "TIE/ba Interceptor",
+                "factions": ["Shadow_Specialists"],
+                "id": 65,
+                "attack": [["F",3]],
+                "agility": 3,
+                "hull": 2,
+                "shields": 2,
+                "base": ["Small"],
+                "chassis": [38],
+                "actions": [
+                    [0,"Fo W"],
+                    [0,"Lo W"],                
+                    [0,"Ev W"],
+                    [0,"Br W"],
+                    [0,"Bo W"]
+                   
+                ],
+                "maneuvers": [
+                    [ 0, 0, 0, 0, 0, 0, 0, 0],
+                    [ 1, 1, 0, 1, 1, 0, 0, 0],
+                    [ 2, 1, 1, 1, 2, 0, 3, 3],
+                    [ 2, 2, 1, 2, 2, 0, 0, 0],
+                    [ 0, 0, 1, 0, 0, 0, 0, 0],
+                    [ 0, 0, 2, 0, 0, 3, 0, 0]
+                ],
+                "slots": ["Tech","Missile","Tie mod","Tie mod"]
+    
+            },
+            {
+    
+                "name": "Xi-class Light Shuttle",
+                "factions": ["Shadow_Specialists"],
+                "chassis":[0],
+                "id": 66,
+                "attack": [["F",2]],
+                "agility": 2,
+                "hull": 5,
+                "shields": 2,
+                "base": ["Medium"],
+                "actions": [
+                    [0,"Fo W"],
+                    [0,"Lo R"],                
+                    [0,"Co R"],
+                    [0,"Ja W"]
+                    
+                ],
+                "maneuvers": [
+                    [ 0, 0, 3, 0, 0],
+                    [ 0, 1, 1, 1, 0],
+                    [ 2, 1, 1, 1, 2],
+                    [ 3, 2, 2, 2, 3],
+                    [ 0, 0, 2, 0, 0],
+                    [ 0, 0, 0, 0, 0]
+                ],
+                "slots": ["Crew","Crew","Tech","Modification","Modification","Calculator"]
+    
+            },
+            {
+    
+                "name": "HMP Droid Gunship",
+                "factions": ["C.I.S"],
+                "id": 67,
+                "attack": [["180",2]],
+                "agility": 1,
+                "hull": 5,
+                "shields": 3,
+                "base": ["Small"],
+                "chassis": [39],
+                "slots": ["Crew","Missile","Missile","Payload","Modification","Calculator"],
+                "actions": [
+                    [0,"Cc W"],
+                    [0,"Lo W"],                
+                    [0,"Br R"],
+                    [1,"Rd W", "Cc R"]
+                ],
+                "maneuvers": [
+                    [ 0, 0, 3, 0, 0],
+                    [ 0, 3, 1, 3, 0],
+                    [ 1, 2, 1, 2, 1],
+                    [ 2, 3, 2, 3, 2],
+                    [ 0, 0, 3, 0, 0],
+                    [ 0, 0, 3, 0, 0]
+                ]
+                
+            },
+            {
+    
+                "name": "LAAT/i Gunship",
+                "factions": ["Galactic_Senate","Partisans"],
+                "id": 68,
+                "attack": [["T",1]],
+                "agility": 1,
+                "hull": 8,
+                "shields": 2,
+                "base": ["Medium"],
+                "chassis": [40],
+                "actions": [
+                    [0,"Fo W"],
+                    [0,"Lo W"],                
+                    [0,"Ro W"],
+                    [0,"Re R"],
+                    [0,"Rd W"]
+                   
+                ],
+                "maneuvers": [
+                    [ 0, 0, 3, 0, 0],
+                    [ 0, 2, 1, 2, 0],
+                    [ 2, 2, 1, 2, 2],
+                    [ 3, 2, 2, 2, 3],
+                    [ 0, 0, 3, 0, 0],
+                    [ 0, 0, 0, 0, 0]
+                ],
+                "slots": ["Crew","Crew","Gunner","Gunner","Missile","Torpedo","Turret","Modification"]
+    
+            },
+            {
+    
+                "name": "TIE/rb Heavy",
+                "factions": ["Imperial_Academy"],
+                "id": 69,
+                "attack": [["T",2]],
+                "agility": 1,
+                "hull": 8,
+                "shields": 0,
+                "base": ["Medium"],
+                "chassis": [13],
+                "actions": [
+                    [0,"Fo W"],
+                    [0,"Re W"],                
+                    [0,"Lo W"],
+                    [0,"Br R"],
+                    [1,"Ro W", "Cc R"]
+                    
+                ],
+                "maneuvers": [
+                    [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+                    [ 3, 2, 1, 2, 3, 0, 0, 0, 0, 0 ],
+                    [ 2, 1, 1, 1, 2, 0, 0, 0, 0, 0 ],
+                    [ 3, 2, 2, 2, 3, 0, 0, 0, 3, 3 ],
+                    [ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0 ],
+                    [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+                ],
+                "slots": ["Cannon", "Cannon", "Tie mod", "Calculator"]
+            },
+            {
+         
+                "name": "Droid Tri-fighter",
+                "id": 70,
+                "factions": ["C.I.S"],
+                "attack": [["F",3]],
+                "agility": 3,
+                "hull": 3,
+                "shields": 0,
+                "base": ["Small"],
+                "chassis": [17],
+                "slots": ["Modification","Sensor","Calculator","Calculator"],
+                "actions": [
+                    [0,"Cc W"],
+                    [0,"Ev W"],                
+                    [0,"Lo W"],
+                    [1,"Br W", "Ev R"],
+                    [1,"Bo W", "Cc R"]
+                    
+                ],
+                "maneuvers": [
+                    [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+                    [ 2, 0, 0, 0, 2, 0, 0, 0, 3, 3 ],
+                    [ 1, 2, 1, 2, 1, 0, 0, 0, 0, 0 ],
+                    [ 1, 2, 1, 2, 1, 3, 0, 0, 0, 0 ],
+                    [ 0, 0, 1, 0, 0, 0, 0, 0, 0, 0 ],
+                    [ 0, 0, 2, 0, 0, 3, 0, 0, 0, 0 ]
+                ]
+            },
+            {
+          
+          
+                "name": "Nimbus-class V-wing",
+                "factions": ["Galactic_Senate"],
+                "id": 71,
+                "attack": [["F",2]],
+                "agility": 3,
+                "hull": 2,
+                "shields": 2,
+                "base": ["Small"],
+                "chassis": [41],
+                "actions": [
+                    [0,"Fo W"],             
+                    [0,"Lo W"],
+                    [0,"Br R"],
+                    [1,"Bo W", "Lo R"]
+                    
+                ],
+                "maneuvers": [
+                    [ 0, 0, 0, 0, 0, 0],
+                    [ 2, 3, 0, 3, 2, 0],
+                    [ 1, 1, 1, 1, 1, 3],
+                    [ 2, 2, 1, 2, 2, 0],
+                    [ 0, 0, 2, 0, 0, 3],
+                    [ 0, 0, 2, 0, 0, 0]
+                ],
+                "slots": ["Payload","Astromech","Tie mod","Hyperspace Ring"]
+    
+            },
+            {
+         
+                "name": "Eta-2 Actis",
+                "factions": ["Jedi_Order"],
+                "id": 72,
+                "attack": [["BULL",3],["F",2]],
+                "agility": 3,
+                "hull": 3,
+                "shields": 0,
+                "base": ["Small"],
+                "chassis": [42],
+                "actions": [
+                    [0,"Fo W"],
+                    [0,"Ev W"],                
+                    [0,"Lo F"],
+                    [0,"Br W"],
+                    [0,"Bo W"]
+                   
+                ],
+                "maneuvers": [
+                    [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+                    [ 2, 0, 0, 0, 2, 0, 0, 0, 0, 0 ],
+                    [ 2, 1, 1, 1, 2, 0, 0, 0, 4, 4 ],
+                    [ 2, 1, 1, 1, 2, 0, 0, 0, 0, 0 ],
+                    [ 0, 0, 1, 0, 0, 3, 0, 0, 0, 0 ],
+                    [ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0 ]
+                ],
+                "slots": ["Cannon","Astromech","Hyperspace Ring"]
+    
+            },
+            {
+        
+                "name": "Syliure-class Hyperspace Ring",
+                "chassis":[0],
+                "id": 73,
+                "factions": ["Jedi_Order","Galactic_Senate"],
+                "agility": 0,
+                "hull": 1,
+                "shields": 0,
+                "base": ["Small"],
+                "actions": [
+                ],
+                "maneuvers": [
+                    [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+                	[ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+                	[ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+                    [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+                ]
+            },
+            {
+         
+                "name": "BTA-NR2 Y-wing",
+                "factions": ["Resistance"],
+                "id": 74,
+                "attack": [["F",2]],
+                "agility": 1,
+                "hull": 4,
+                "shields": 3,
+                "base": ["Small"],
+                "chassis": [43],
+                "actions": [
+                    [0,"Fo W"],
+                    [0,"Bo R"],                
+                    [0,"Lo R"],
+                    [0,"Br R"]
+                
+                ],
+                "maneuvers": [
+                    [ 0, 0, 0, 0, 0, 0],
+                    [ 0, 1, 1, 1, 0, 0],
+                    [ 2, 2, 1, 2, 2, 0],
+                    [ 3, 2, 1, 2, 3, 0],
+                    [ 0, 0, 3, 0, 0, 0],
+                    [ 0, 0, 0, 0, 0, 3]
+                ],
+                "slots": ["Tech","Torpedo","Payload","Turret","Illicit","Modification","Astromech"]
+            },
+            {
+         
+     
+                "name": "TIE/wi Whisper Modified Interceptor",
+                "id": 75,
+                "factions": ["Shadow_Specialists"],
+                "attackbull": [["BULL",3],["F",2]],
+                "agility": 2,
+                "hull": 3,
+                "shields": 2,
+                "base": ["Small"],
+                "chassis": [44],
+                "actions": [
+                    [1,"Fo W", "Ja W"],
+                    [0,"Ev W"],                
+                    [0,"Lo W"],
+                    [1,"Br W", "Ja W"],
+                    [1,"Bo W", "Ja W"]
+                  
+                ],
+                "maneuvers": [
+                    [ 0, 0, 0, 0, 0, 0, 0, 0],
+                    [ 2, 0, 0, 0, 2, 0, 0, 0],
+                    [ 2, 1, 1, 1, 2, 0, 0, 0],
+                    [ 2, 1, 1, 1, 2, 0, 3, 3],
+                    [ 0, 0, 1, 0, 0, 3, 0, 0],
+                    [ 0, 0, 1, 0, 0, 3, 0, 0]
+                ],
+                "slots": ["Tech","Tech","Missile","Tie mod"]
+    
+            },
+            {
+     
+                "name": "TIE/se Bomber",
+                "factions": ["First_Order"],
+                "id": 76,
+                "attack": [["F",2]],
+                "agility": 2,
+                "hull": 4,
+                "shields": 2,
+                "base": ["Small"],
+                "chassis": [45],
+                "slots": ["Gunner","Missile","Torpedo","Payload","Payload","Tie mod"],
+                "actions": [
+                    [0,"Fo W"],               
+                    [0,"Lo W"],
+                    [0,"Bo R"],
+                    [1,"Br W", "Lo R"],
+                    [1,"Rd W", "Ev R"]
+                    
+                ],
+                "maneuvers": [
+                    [ 0, 0, 0, 0, 0, 0, 0, 0],
+                    [ 3, 2, 1, 2, 3, 0, 0, 0],
+                    [ 2, 2, 1, 2, 2, 0, 0, 0],
+                    [ 2, 2, 1, 2, 2, 0, 3, 3],
+                    [ 0, 0, 2, 0, 0, 0, 0, 0],
+                    [ 0, 0, 0, 0, 0, 0, 0, 0]
+                ]
+            },
+            {
+        
+        
+                "name": "Gauntlet Fighter",
+                "factions": ["Mandalorian_Clans","Phoenix_Cell"],
+                "id": 77,
+                "attack": [["F",3],["B",2]],
+                "agility": 2,
+                "hull": 9,
+                "shields": 2,
+                "base": ["Large"],
+                "chassis": [ 9, 46] ,
+                "actions": [
+                    [0,"Fo W"],               
+                    [0,"Re R"],
+                    [0,"Lo W"],
+                    [0,"Co R"]
+                  
+                ],
+              
+                "maneuvers": [
+                    [ 0, 0, 3, 0, 0],
+                    [ 0, 1, 0, 1, 0],
+                    [ 2, 1, 1, 1, 2],
+                    [ 3, 2, 2, 2, 3],
+                    [ 0, 0, 2, 0, 0],
+                    [ 0, 0, 0, 0, 0]
+                ],
+                "slots": ["Crew", "Gunner", "Payload", "Modification"]
+            },
+            {
+        
+                "name": "ST-70 Assault Ship",
+                "factions": ["Bounty_Hunters_Guild", "Mandalorian_Clans"],
+                "id": 78,
+                "attack": [["F",3]],
+                "agility": 2,
+                "hull": 7,
+                "shields": 2,
+                "base": ["Medium"],
+                "chassis": [47],
+                "actions": [
+                    [0,"Fo W"],               
+                    [0,"Lo W"],
+                    [0,"Ev W"],
+                    [0,"Br R"]
+                    
+                ],
+                "maneuvers": [
+                    [ 0, 0, 3, 0, 0, 0, 0, 0, 0, 0 ],
+                    [ 3, 2, 1, 2, 3, 0, 0, 0, 0, 0 ],
+                    [ 2, 2, 1, 2, 2, 0, 0, 0, 3, 3 ],
+                    [ 3, 2, 1, 2, 3, 0, 0, 0, 0, 0 ],
+                    [ 0, 0, 1, 0, 0, 0, 0, 0, 0, 0 ],
+                    [ 0, 0, 0, 0, 0, 3, 0, 0, 0, 0 ]
+                ],
+                "slots": ["Crew", "Tech", "Illicit", "Illicit", "Modification", "Modification"]
+            },
+            {
+      
+                "name": "Clone Z-95 Headhunter",
+                "factions": [ "Jedi_Order" ],
+                "id": 79,
+                "attack": [["F",2]],
+                "agility": 2,
+                "base": ["Small"],
+                "hull": 2,
+                "shields": 2,
+                "chassis": [48],
+                "actions": [
+                    [0,"Fo W"],               
+                    [0,"Lo W"],
+                    [0,"Br R"]
+                ],
+                "maneuvers": [
+                    [ 0, 0, 0, 0, 0, 0],
+                    [ 0, 2, 1, 2, 0, 0],
+                    [ 2, 1, 1, 1, 2, 0],
+                    [ 2, 2, 1, 2, 2, 3],
+                    [ 0, 0, 2, 0, 0, 3]
+                ],
+                "slots": ["Missile","Modification","Sensor"]
+    
+            },
+            {
+    
+                "name": "Rogue-class Starfighter",
+                "factions": [ "Bounty_Hunters_Guild", "Agents_of_Chaos" ],
+                "id": 80,
+                "attack": [["F",2]],
+                "agility": 2,
+                "base": ["Small"],
+                "hull": 5,
+                "shields": 2,
+                "chassis": [26],
+                "actions": [
+                    [1,"Fo W", "Bo R"],
+                    [1,"Fo W", "Br R"],
+                    [1,"Ev W", "Br R"],               
+                    [0,"Lo W"],
+                    [0,"Bo R"]
+                ],
+                "maneuvers": [
+                    [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+                    [ 2, 1, 0, 1, 2, 0, 0, 0, 0, 0 ],
+                    [ 2, 1, 1, 1, 2, 0, 0, 0, 3, 3 ],
+                    [ 3, 2, 1, 2, 3, 0, 0, 0, 0, 0 ],
+                    [ 0, 0, 1, 0, 0, 0, 0, 0, 0, 0 ],
+                    [ 0, 0, 2, 0, 0, 3, 0, 0, 0, 0 ]
+                ],
+                "slots": ["Cannon", "Cannon", "Illicit", "Illicit", "Modification"]
+            },
+            {
+    
+       
+                "name": "Commando Team",
+                "factions": [ "Mandalorian_Clans", "Imperial_Remnants" ],
+                "id": 81,
+                "attack": [["F",2]],
+                "agility": 2,
+                "base": ["Small"],
+                "hull": 2,
+                "shields": 0,
+                "chassis": [49,50],
+                "actions": [
+                    [0,"Fo W"],               
+                    [0,"Ev W"],
+                    [1,"Bo W", "Ev R"]
+                    
+                ],
+                "maneuvers": [
+                    [ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+                    [ 2, 1, 1, 1, 2, 2, 0, 0, 0, 0, 2, 2, 2 ],
+                    [ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
+                    [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+                ],
+                "slots": []
+            },
+            {
+            	"name": "T6 Shuttle",
+                "factions": [ "Partisans", "Jedi_Order", "New_Republic" ],
+                "chassis":[0],
+                "id": 82,
+                "attack": [["F",2],["B",2]],
+                "agility": 3,
+                "base": ["Large"],
+                "hull": 6,
+                "shields": 2,
+                "actions": [
+                    [0,"Fo W"],               
+                    [0,"Ev W"],
+                    [0,"Co R"]
+                   
+                ],
+                "maneuvers": [
+                    [ 0, 0, 0, 0, 0, 0, 0, 0],
+                    [ 2, 1, 1, 1, 2, 0, 0, 0],
+                    [ 2, 2, 1, 2, 2, 0, 0, 0],
+                    [ 0, 2, 1, 2, 0, 0, 3, 3],
+                    [ 0, 0, 2, 0, 0, 0, 0, 0]
+                ],
+                "slots": ["Crew","Gunner","Modification","Astromech","Calculator"]
+            },
+            {
+            	"name": "Supa Starfighter",
+                "factions": [ "Crime_Syndicates", "Black_Sun"],
+                "id": 83,
+                "attack": [["F",3]],
+                "agility": 1,
+                "base": ["Medium"],
+                "hull": 7,
+                "shields": 1,
+                "chassis": [36],
+                "actions": [
+                    [0,"Fo W"],               
+                    [1,"Lo W", "Rd R"],
+                    [0,"Re W"]
+                    
+                ],
+                "maneuvers": [
+                    [ 0, 0, 0, 0, 0, 0],
+                    [ 0, 2, 1, 2, 0, 0],
+                    [ 2, 2, 1, 2, 2, 0],
+                    [ 0, 2, 1, 2, 0, 0],
+                    [ 0, 0, 3, 0, 0, 3]
+                ],
+                "slots": ["Torpedo","Modification","Modification"]
+            },
+            {
+            	"name": "Crimson Starfighter",
+                "factions": [ "Crime_Syndicates" ],
+                "id": 84,
+                "attack": [["F",2]],
+                "agility": 2,
+                "base": ["Small"],
+                "hull": 2,
+                "shields": 1,
+                "chassis": [51],
+                "actions": [
+                    [1,"Fo W", "Ck R"],               
+                    [0,"Ck W"],
+                    [0,"Ev W"],
+                    [1,"Br W", "Ev R"],
+                    [1,"Bo W", "Ev R"]
+                    
+                ],
+                "maneuvers": [
+                    [ 0, 0, 0, 0, 0, 0, 0, 0],
+                    [ 2, 2, 0, 2, 2, 0, 0, 0],
+                    [ 2, 1, 1, 1, 2, 0, 0, 0],
+                    [ 1, 1, 1, 1, 1, 0, 3, 3],
+                    [ 0, 0, 1, 0, 0, 0, 0, 0],
+                    [ 0, 0, 1, 0, 0, 3, 0, 0]
+                ],
+                "slots": ["Illicit","Modification"]
+            },
+            {
+            	"name": "Sarissa-Class Gunship",
+                "factions": [ "Crime_Syndicates" ],
+                "id": 85,
+                "attack": [["F",3]],
+                "agility": 1,
+                "base": ["Medium"],
+                "hull": 5,
+                "shields": 2,
+                "chassis": [0],
+                "actions": [
+                    [0,"Fo W"],               
+                    [0,"Lo W"],
+                    [0,"Br W"],
+                    [0,"Re R"]
+                  
+                ],
+                "maneuvers": [
+                    [ 0, 0, 3, 0, 0, 0, 0, 0],
+                    [ 0, 1, 1, 1, 0, 0, 0, 0],
+                    [ 2, 2, 1, 2, 2, 0, 0, 0],
+                    [ 3, 2, 1, 2, 3, 3, 3, 3],
+                    [ 0, 0, 2, 0, 0, 0, 0, 0],
+                    [ 0, 0, 0, 0, 0, 0, 0, 0]
+                ],
+                "slots": ["Gunner","Missile","Cannon","Modification","Sensor"]
+            },
+            {
+            	"name": "Rihkxyrk Attack Ship",
+                "factions": ["Black_Sun"],
+                "id": 86,
+                "attack": [["0",0]],
+                "agility": 0,
+                "base": ["Medium"],
+                "hull": 9,
+                "shields": 3,
+                "chassis": [53],
+                "actions": [
+                    [1,"Fo W", "Rd R"],               
+                    [1,"Lo W", "Rd R"],
+                    [0,"Rd W"],
+                    [0,"Bo R"]
+                    
+                ],
+                "maneuvers": [
+                    [ 0, 0, 3, 0, 0, 0],
+                    [ 0, 2, 1, 2, 0, 0],
+                    [ 3, 2, 1, 2, 3, 3],
+                    [ 3, 2, 1, 2, 3, 0]
+    
+                ],
+                "slots": ["Tech","Missile","Torpedo","Payload","Payload"]
+            },
+            {
+            	"name": "Blue Ace",
+                "factions": [ "Colossus" ],
+                "id": 87,
+                "attack": [["F",2]],
+                "agility": 3,
+                "base": ["Small"],
+                "hull": 4,
+                "shields": 0,
+                "chassis": [11,54],
+                "actions": [
+                    [0,"Fo W"],               
+                    [0,"Br W"],
+                    [0,"Bo W"]
+                    
+                ],
+                "maneuvers": [
+                    [ 0, 0, 0, 0, 0, 0,0,0],
+                    [ 2, 2, 0, 2, 2, 0,0,0],
+                    [ 2, 1, 1, 1, 2, 0,0,0],
+                    [ 1, 1, 1, 1, 1, 0,3,3],
+                    [ 0, 0, 1, 0, 0, 0,0,0],
+                    [ 0, 0, 1, 0, 0, 3,0,0]
+                ],
+                "slots": ["Astromech","Modification"]
+            },
+            {
+            	"name": "Red Ace",
+                "factions": [ "Colossus" ],
+                "id": 88,
+                "attack": [["F",2]],
+                "agility": 3,
+                "base": ["Small"],
+                "hull": 5,
+                "shields": 0,
+                "chassis": [33,38],
+                "actions": [
+                    [0,"Fo W"],               
+                    [0,"Br W"],
+                    [0,"Bo W"]
+                ],
+                "maneuvers": [
+                    [ 0, 0, 0, 0, 0, 0,0,0],
+                    [ 2, 2, 0, 2, 2, 0,0,0],
+                    [ 2, 1, 1, 1, 2, 0,0,0],
+                    [ 1, 1, 1, 1, 1, 0,3,3],
+                    [ 0, 0, 1, 0, 0, 0,0,0],
+                    [ 0, 0, 1, 0, 0, 3,0,0]
+                ],
+                "slots": ["Astromech","Calculator"]
+            },
+            {
+            	"name": "Yellow Ace",
+                "factions": [ "Colossus" ],
+                "id": 89,
+                "attack": [["F",1],["T",1]],
+                "agility": 2,
+                "base": ["Small"],
+                "hull": 5,
+                "shields": 0,
+                "chassis": [20,35],
+                "actions": [
+                    [0,"Fo W"],               
+                    [0,"Br W"],
+                    [0,"Bo W"]
+                ],
+                "maneuvers": [
+                    [ 0, 0, 0, 0, 0, 0,0,0],
+                    [ 2, 2, 0, 2, 2, 0,0,0],
+                    [ 2, 1, 1, 1, 2, 0,0,0],
+                    [ 1, 1, 1, 1, 1, 0,3,3],
+                    [ 0, 0, 1, 0, 0, 0,0,0],
+                    [ 0, 0, 1, 0, 0, 3,0,0]
+                ],
+                "slots": ["Astromech","Sensor"]
+            },
+            {
+            	"name": "Green Ace",
+                "factions": [ "Colossus" ],
+                "id": 90,
+                "attack": [["F",2]],
+                "agility": 3,
+                "base": ["Small"],
+                "hull": 4,
+                "shields": 0,
+                "chassis": [10,43],
+                "actions": [
+                    [0,"Fo W"],               
+                    [0,"Br W"],
+                    [0,"Bo W"]
+                ],
+                "maneuvers": [
+                    [ 0, 0, 0, 0, 0, 0,0,0],
+                    [ 2, 2, 0, 2, 2, 0,0,0],
+                    [ 2, 1, 1, 1, 2, 0,0,0],
+                    [ 1, 1, 1, 1, 1, 0,3,3],
+                    [ 0, 0, 1, 0, 0, 0,0,0],
+                    [ 0, 0, 1, 0, 0, 3,0,0]
+                ],
+                "slots": ["Astromech","Illicit"]
+            },
+            {
+            	"name": "Black Ace",
+                "factions": [ "Colossus" ],
+                "id": 91,
+                "attack": [["F",3]],
+                "agility": 2,
+                "base": ["Small"],
+                "hull": 4,
+                "shields": 0,
+                "chassis": [12,45],
+                "actions": [
+                    [0,"Fo W"],               
+                    [0,"Br W"],
+                    [0,"Bo W"]
+                ],
+                "maneuvers": [
+                    [ 0, 0, 0, 0, 0, 0,0,0],
+                    [ 2, 2, 0, 2, 2, 0,0,0],
+                    [ 2, 1, 1, 1, 2, 0,0,0],
+                    [ 1, 1, 1, 1, 1, 0,3,3],
+                    [ 0, 0, 1, 0, 0, 0,0,0],
+                    [ 0, 0, 1, 0, 0, 3,0,0]
+                ],
+                "slots": ["Astromech","Tech"]
+            },
+            {
+            	"name": "Fanblade Starfighter",
+                "factions": [ "Agents_of_Chaos" ],
+                "id": 92,
+                "attack": [["BULL",3]],
+                "agility": 3,
+                "base": ["Small"],
+                "hull": 2,
+                "shields": 2,
+                "chassis": [55,56],
+                "actions": [
+                    
+                ],
+                "maneuvers": [
+                    [ 0, 0, 0, 0, 0, 0,0,0],
+                    [ 2, 2, 0, 2, 2, 0,0,0],
+                    [ 2, 1, 1, 1, 2, 0,0,0],
+                    [ 1, 1, 1, 1, 1, 0,3,3],
+                    [ 0, 0, 1, 0, 0, 0,0,0],
+                    [ 0, 0, 1, 0, 0, 3,0,0]
+                ],
+                "slots": ["Modification"]
+            },
+            {
+            	"name": "TIE Echelon",
+                "factions": [ "First_Order" ],
+                "id": 93,
+                "attack": [["F",3]],
+                "agility": 1,
+                "base": ["Medium"],
+                "hull": 5,
+                "shields": 1,
+                "chassis": [0],
+                "actions": [
+                    [1,"Fo W", "Br R"],               
+                    [1,"Lo W", "Bo R"]
+                    
+                ],
+                "maneuvers": [
+                    [ 0, 0, 0, 0, 0, 0,0,0],
+                    [ 2, 2, 0, 2, 2, 0,0,0],
+                    [ 2, 1, 1, 1, 2, 0,0,0],
+                    [ 1, 1, 1, 1, 1, 0,3,3],
+                    [ 0, 0, 1, 0, 0, 0,0,0],
+                    [ 0, 0, 1, 0, 0, 3,0,0]
+                ],
+                "slots": ["Crew","Gunner","Tech","Turret","Sensor","Tie mod"]
+            },
+            {
+            	"name": "Oubliette Class Transport",
+                "factions": [ "Shadow_Specialists" ],
+                "id": 94,
+                "attack": [["F",3]],
+                "agility": 2,
+                "base": ["Large"],
+                "hull": 7,
+                "shields": 3,
+                "chassis": [57],
+                "actions": [
+                    
+                ],
+                "maneuvers": [
+                    [ 0, 0, 0, 0, 0, 0,0,0],
+                    [ 2, 2, 0, 2, 2, 0,0,0],
+                    [ 2, 1, 1, 1, 2, 0,0,0],
+                    [ 1, 1, 1, 1, 1, 0,3,3],
+                    [ 0, 0, 1, 0, 0, 0,0,0],
+                    [ 0, 0, 1, 0, 0, 3,0,0]
+                ],
+                "slots": ["Crew","Gunner","Turret","Cannon","Modification"]
+            },
+            {
+            	"name": "Omicron Class Shuttle",
+                "factions": [ "Imperial_Remnants","Galactic_Senate" ],
+                "id": 95,
+                "attack": [["F",2]],
+                "agility": 1,
+                "base": ["Large"],
+                "hull": 6,
+                "shields": 5,
+                "chassis": [58],
+                "actions": [
+                   
+                ],
+                "maneuvers": [
+                    [ 0, 0, 0, 0, 0, 0,0,0],
+                    [ 2, 2, 0, 2, 2, 0,0,0],
+                    [ 2, 1, 1, 1, 2, 0,0,0],
+                    [ 1, 1, 1, 1, 1, 0,3,3],
+                    [ 0, 0, 1, 0, 0, 0,0,0],
+                    [ 0, 0, 1, 0, 0, 3,0,0]
+                ],
+                "slots": ["Crew","Crew","Gunner","Payload","Turret","Modification","Calculator"]
+            },
+            {
+            	"name": "RP82 Fighter",
+                "factions": [ "Imperial_Remnants" ],
+                "id": 96,
+                "attack": [["F",2]],
+                "attackbull": 3,
+                "agility": 3,
+                "base": ["Small"],
+                "hull": 3,
+                "shields": 1,
+                "chassis": [54],
+                "actions": [
+                    
+                ],
+                "maneuvers": [
+                    [ 0, 0, 0, 0, 0, 0,0,0],
+                    [ 2, 2, 0, 2, 2, 0,0,0],
+                    [ 2, 1, 1, 1, 2, 0,0,0],
+                    [ 1, 1, 1, 1, 1, 0,3,3],
+                    [ 0, 0, 1, 0, 0, 0,0,0],
+                    [ 0, 0, 1, 0, 0, 3,0,0]
+                ],
+                "slots": ["Tech"]
+            },
+            {
+            	"name": "Laat/Le Patrol Gunship",
+                "factions": [ "Imperial_Remnants" ],
+                "id": 97,
+                "attack": [["T",2]],
+                "agility": 2,
+                "base": ["Medium"],
+                "hull": 6,
+                "shields": 2,
+                "chassis": [46],
+                "actions": [
+                    
+                ],
+                "maneuvers": [
+                    [ 0, 0, 0, 0, 0, 0,0,0],
+                    [ 2, 2, 0, 2, 2, 0,0,0],
+                    [ 2, 1, 1, 1, 2, 0,0,0],
+                    [ 1, 1, 1, 1, 1, 0,3,3],
+                    [ 0, 0, 1, 0, 0, 0,0,0],
+                    [ 0, 0, 1, 0, 0, 3,0,0]
+                ],
+                "slots": ["Crew","Gunner","Gunner","Missile","Turret","Modification"]
+            }
+          
+            
+            
+        ]
