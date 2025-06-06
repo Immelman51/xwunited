@@ -779,7 +779,7 @@ function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'acti
     let newdiv = document.createElement('div');
     let newship = document.createElement('select');
     let newpilot = document.createElement('select');
-    let newzone = document.getElementById('div');
+    let newzone = document.createElement('div');
     let newchassis = document.createElement('div');
     let newtitle = document.createElement('div');
     let newpoints = document.createElement('div');
