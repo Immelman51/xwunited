@@ -827,7 +827,7 @@
             {
      
                 "name": "ARC-170 Starfighter",
-                "factions": ["Rebel_Alliance","Galactic_Senate"],
+                "factions": ["Rebel_Alliance","Clone_Army"],
                 "chassis":[0],
                 "id": 30,
                 "attack": [["F",3]],
@@ -1442,7 +1442,7 @@
            
     
                 "name": "V-19 Torrent Starfighter",
-                "factions": ["Galactic_Senate"],
+                "factions": ["Clone_Army"],
                 "chassis":[0],
                 "id": 52,
                 "attack": [["F",2]],
@@ -1617,7 +1617,7 @@
           
      
                 "name": "Naboo Royal N-1 Starfighter",
-                "factions": ["Galactic_Senate", "Mandalorian_Clans"],
+                "factions": ["Clone_Army", "Mandalorian_Clans"],
                 "id":58,
                 "attack": [["F",2]],
                 "agility": 2,
@@ -1901,7 +1901,7 @@
             {
     
                 "name": "LAAT/i Gunship",
-                "factions": ["Galactic_Senate","Partisans"],
+                "factions": ["Clone_Army","Partisans"],
                 "id": 68,
                 "attack": [["T",1]],
                 "agility": 1,
@@ -1990,7 +1990,7 @@
           
           
                 "name": "Nimbus-class V-wing",
-                "factions": ["Galactic_Senate"],
+                "factions": ["Clone_Army"],
                 "id": 71,
                 "attack": [["F",2]],
                 "agility": 3,
@@ -2051,7 +2051,7 @@
                 "name": "Syliure-class Hyperspace Ring",
                 "chassis":[0],
                 "id": 73,
-                "factions": ["Jedi_Order","Galactic_Senate"],
+                "factions": ["Jedi_Order","Clone_Army"],
                 "agility": 0,
                 "hull": 1,
                 "shields": 0,
@@ -2621,7 +2621,7 @@
             },
             {
             	"name": "Omicron Class Shuttle",
-                "factions": [ "Imperial_Remnants","Galactic_Senate" ],
+                "factions": [ "Imperial_Remnants","Clone_Army" ],
                 "id": 95,
                 "attack": [["F",2]],
                 "agility": 1,
@@ -2670,6 +2670,29 @@
             	"name": "Laat/Le Patrol Gunship",
                 "factions": [ "Imperial_Remnants" ],
                 "id": 97,
+                "attack": [["T",2]],
+                "agility": 2,
+                "base": ["Medium"],
+                "hull": 6,
+                "shields": 2,
+                "chassis": [46],
+                "actions": [
+                    
+                ],
+                "maneuvers": [
+                    [ 0, 0, 0, 0, 0, 0,0,0],
+                    [ 2, 2, 0, 2, 2, 0,0,0],
+                    [ 2, 1, 1, 1, 2, 0,0,0],
+                    [ 1, 1, 1, 1, 1, 0,3,3],
+                    [ 0, 0, 1, 0, 0, 0,0,0],
+                    [ 0, 0, 1, 0, 0, 3,0,0]
+                ],
+                "slots": ["Crew","Gunner","Gunner","Missile","Turret","Modification"]
+            },
+            {
+            	"name": "ETA Class Shuttle",
+                "factions": [ "Imperial_Remnants", "Jedi_Order", "Naboo_Defense_Force" ],
+                "id": 98,
                 "attack": [["T",2]],
                 "agility": 2,
                 "base": ["Medium"],

@@ -2611,7 +2611,7 @@
             "force": 0,
             "charge": [2,"0"],
             "points": 3,
-            "faction": ["Phoenix_Cell","Galactic_Senate","Jedi_Order"],
+            "faction": ["Phoenix_Cell","Clone_Army","Jedi_Order"],
             "effect": "Mise en place : Equipez cette carte face normale. Après que vous exécutez entièrement une manoeuvre, vous pouvez dépenser 1 #ch# pour effectuer une action rouge, même stressé.<br>(Erratique): Après avoir entièrement exécuté une manoeuvre, vous devez choisir un vaisseau à portée 0-1. Il gagne 1 jeton brouillage.",
             "effect_ENG": "Setup: Equip this side faceup. After you fully execute a maneuver, you may spend 1 #ch# to perform a red action, even while stressed.<br>(Erratic): After you fully execute a maneuver, you must choose a ship at range 0-1. It gains 1 jam token."
         },
@@ -2715,7 +2715,7 @@
             "force": 0,
             "charge": [0],
             "points": "*2*",
-            "faction": ["C.I.S"],
+            "faction": ["Trade_Federation"],
             "effect": "Lorsque vous recevez 1 jeton rouge (non-Acquisition), vous pouvez le placer sur cette carte à la place pour l'ignorer (1 max par carte). Lorsque vous exécutez une manoeuvre bleue, vous ne pouvez retirer qu'un seul marqueur rouge. Vous pouvez retirer le marqueur présent sur la carte.",
             "effect_ENG": "When you would receive 1 red token (non Lock), you may place it on this card instead to ignore it (1 max per card). When you execute a blue maneuver, you may remove only one red token. You may remove the red token on this card."
             
@@ -2732,7 +2732,7 @@
             "force": 0,
             "charge": [0],
             "points": 5,
-            "faction": ["C.I.S"],
+            "faction": ["Trade_Federation"],
             "effect": "A la fin de la partie, si votre vaisseau est toujours en jeu, gagnez 2 points de scénario.",
             "effect_ENG": "At the end of the game, if your ship is still in the play area, win 2 scenario points."
         },
@@ -2748,7 +2748,7 @@
             "force": 0,
             "charge": [0],
             "points": 0,
-            "faction": ["Agents_of_Chaos"],
+            "faction": ["Separatist_Government"],
             "effect": "ACTION : Si vous êtes à portée 0-1 d'un élément de scénario, vous pouvez le déplacer en utilisant le gabarit 1 #straight#.",
             "effect_ENG": ""
         },
@@ -2764,7 +2764,7 @@
             "force": 0,
             "charge": [0],
             "points": 3,
-            "faction": ["C.I.S","Agents_of_Chaos"],
+            "faction": ["Trade_Federation","Agents_of_Chaos","Separatist_Government"],
             "effect": "Au début de la phase d’engagement, vous pouvez dépenser 1 marqueur de calcul et 1 #ch# pour lancer 1 nuée de droïdes buzz en utilisant le gabarit 3 #Lbank#, #straight# ou #Rbank#.<br>La #ch# de cette carte ne peut pas être récupérée",
             "effect_ENG": ""
         },
@@ -2780,7 +2780,7 @@
             "force": 0,
             "charge": [0],
             "points": 2,
-            "faction": ["C.I.S","Agents_of_Chaos"],
+            "faction": ["Trade_Federation","Agents_of_Chaos","Separatist_Government"],
             "effect": "Pendant la phase de dénouement, vous pouvez dépenser 1 #ch# pour larguer ou lancer 1 droïde sonde DRK-1 en utilisant un gabarit de vitesse 3. Les #ch# de cette carte ne peuvent pas être récupérées.",
             "effect_ENG": ""
         },
@@ -2798,7 +2798,7 @@
             "points": 4,
             "attack": ["F", 3],
             "range": [2,3],
-            "faction": ["C.I.S","Agents_of_Chaos"],
+            "faction": ["Trade_Federation","Agents_of_Chaos","Separatist_Government"],
             "effect": "Attaque #CA# : dépensez 1 #ch#. Tant que vous effectuez cette attaque, vous pouvez dépenser 1 marqueur de calcul pour changer 1 résultat #eye# en un résultat #crit#.<br>Action : rechargez cette carte.",
             "effect_ENG": ""
         },
@@ -2814,7 +2814,7 @@
             "force": 0,
             "charge": [0],
             "points": 2,
-            "faction": ["C.I.S","Agents_of_Chaos"],
+            "faction": ["Trade_Federation","Agents_of_Chaos","Separatist_Government"],
             "effect": "Remplacez votre capacité de vaisseau Calculs en Réseau par la suivante : Calculs Indépendants : tant que vous effectuez une action blanche , vous pouvez la considérer comme rouge pour gagner 1 marqueur de calcul supplémentaire. Les autres vaisseaux ne peuvent pas dépenser vos marqueurs de calcul en utilisant la capacité de vaisseau Calculs en Réseau.",
             "effect_ENG": "",
             "restrictions": [1,"chassis","Networked Calculations",""]
@@ -2831,7 +2831,7 @@
             "force": 0,
             "charge": [0],
             "points": 5,
-            "faction": ["C.I.S"],
+            "faction": ["Trade_Federation","Separatist_Government"],
             "effect": "Après qu’un vaisseau ennemi a exécuté une manœuvre, s’il est dans le d’un vaisseau allié à portée 0–3, vous pouvez dépenser 1 . Dans ce cas, ce vaisseau allié verrouille ce vaisseau ennemi, puis gagne 1 marqueur de stress.",
             "effect_ENG": "",
             "modifier_func": [
@@ -2851,7 +2851,7 @@
             "charge": [0],
             "points": 10,
             "max_per_squad": 1,
-            "faction": ["C.I.S"],
+            "faction": ["Trade_Federation","Separatist_Government"],
             "effect": "Pendant la phase de dénouement, vous pouvez choisir jusqu’à 3 vaisseaux alliés à portée 0-3. Dans ce cas, chacun de ces vaisseaux ne retire pas 1 marqueur de calcul.",
             "effect_ENG": "",
             "modifier_func": [
@@ -2871,7 +2871,7 @@
             "force": 0,
             "charge": [0],
             "points": 3,
-            "faction": ["C.I.S"],
+            "faction": ["Trade_Federation","Separatist_Government"],
             "effect": "Avant de vous engager, vous pouvez transférer un jeton calcul à un vaisseau calculateur à portée 0-3. Dans ce cas, ce vaisseau effectue une attaque bonus. Vous gagnez 1 jeton désarmé.",
             "effect_ENG": "",
             "modifier_func": [
@@ -2891,7 +2891,7 @@
             "force": 0,
             "charge": [0],
             "points": 5,
-            "faction": ["C.I.S"],
+            "faction": ["Trade_Federation","Separatist_Government"],
             "effect": "Vous gagnez la capacité 'Calculs en Réseau'. Après qu'un vaisseau allié à portée 0-3 avec #CA# dans sa barre d'action a été détruit, chaque vaisseau allié à portée 0-3 avec #CA# dans sa barre d'action gagne 1 marqueur de calcul.",
             "effect_ENG": "You gain the 'Networked Calculation' ship ability. After a friendly ship at range 0-3 with #CA# in its action bar has been destroyed, each friendly ship at range 0-3 with #CA# in its action bar receives 1 calculate token.",
             "modifier_func": [
@@ -2912,7 +2912,7 @@
             "force": 0,
             "charge": [0],
             "points": 5,
-            "faction": ["C.I.S","Agents_of_Chaos"],
+            "faction": ["Trade_Federation","Agents_of_Chaos","Separatist_Government"],
             "effect": "Tant que vous défendez, après l’étape « Neutraliser les résultats », s’il y a au moins 2 résultats #hit#/#crit#, vous pouvez dépenser 1 #ch# pour annuler 1 résultat #hit# ou #crit#.<br>Après qu’un vaisseau allié a été détruit, récupérez 1 #ch#.",
             "effect_ENG": ""
         },
@@ -3548,7 +3548,7 @@
 "points": 0,
 "max_per_squad": 1,
 "effect_ENG": "",
-"faction": ["C.I.S"],
+"faction": ["Trade_Federation"],
 "ship": "Belbullab-22 Starfighter",
 "effect": "Ajoute 1 emplacement #sensor#."    
 },
@@ -4153,7 +4153,7 @@
              "points":0,
              "effect": "",
              "effect_ENG": "",
-             "faction": ["Galactic_Senate"] 
+             "faction": ["Clone_Army"] 
          },
          {
             "name": "Hyperspace Ring",
@@ -4201,7 +4201,7 @@
              "points":2,
              "effect": "Tant qu’un autre vaisseau allié situé dans votre #Larc# ou #Rarc# à portée 0-2 défend, s’il est limité ou possède l’amélioration Dévoué et que vous n’êtes pas contraint, vous pouvez gagner 1 marqueur de contrainte. Dans ce cas, le défenseur relance 1 de ses résultats vierges.",
              "effect_ENG": "While another friendly ship in your #Larc# or #Rarc# at range 0-2 defends, if it is limited or has the Dedicated upgrade and you are not strained, you may gain 1 strain token. If you do, the defender rerolls 1 of their blank results.",
-             "faction": ["Galactic_Senate"] 
+             "faction": ["Clone_Army"] 
          },
          {
             "name": "Capitaine Clone Rex",
@@ -4217,7 +4217,7 @@
              "points":3,
              "effect": "Début de la Mise en Place : Votre adversaire assigne la condition 'Mission Sauvetage d'Otage' à l'un de ses vaisseaux.<br>Mission Sauvetage d'Otage : A la fin du jeu, gagnez 3 points de scénario. Lorsque vous êtes détruit, larguez une 'Capsule de l'Otage' à portée 1 de vous et perdez la condition 'MSO'.<br>Capsule de l'Otage : (Satellite) Quand un vaisseau est à portée 0-1, il peut effectuer une action de sauvetage : (ACTION SCENARIO) : Assignez la condition 'MSO' à votre vaisseau, et remettez la capsule de l'otage en réserve.",
              "effect_ENG": "Beginning of Setup : Your opponent assign the 'Hostage Rescue Mission' condition to one of his ships.<br>Hostage Rescue Mission : At the end of the game, gain 3 Scenario Points. When you are destroyed, drop a 'Hostage Capsule' at range 1 of you and lose the 'HRM' condition.<br>Hostage Capsule : (Remote) When a ship is at range 0-1, it can do a rescue action : (SCENARIO ACTION) : assign the 'HRM' condition to your ship, and put the Hostage Capsule into Reserve.",
-             "faction": ["Galactic_Senate"] 
+             "faction": ["Clone_Army"] 
          },
          {
             "name": "Omega",
@@ -4233,7 +4233,7 @@
              "points":5,
              "effect": "Fin de Partie : Si vous n'êtes pas détruit, gagnez 3 points de scenario.<br>ACTION : Choisissez un vaisseau ennemi à portée 1-2 dans votre arc de tir. Il gagne 2 jetons épuisement.",
              "effect_ENG": "End Game : If you are not destroyed, gain 3 Scenario Points.<br>ACTION : Choose an enemy ship at range 1-2 in your firing arc. It gains 2 deplete tokens.",
-             "faction": ["Galactic_Senate"] 
+             "faction": ["Clone_Army"] 
          },
          {
             "name": "Artilleur de la 7ème Flotte",
@@ -4249,7 +4249,7 @@
              "points":8,
              "effect": "",
              "effect_ENG": "",
-             "faction": ["Galactic_Senate"] 
+             "faction": ["Clone_Army"] 
          },
          {
             "name": "Commandant Clone Cody",
@@ -4265,7 +4265,7 @@
              "points":3,
              "effect": "",
              "effect_ENG": "",
-             "faction": ["Galactic_Senate"] 
+             "faction": ["Clone_Army"] 
          },
          {
             "name": "'Fives''",
@@ -4281,7 +4281,7 @@
              "points":2,
              "effect": "",
              "effect_ENG": "",
-             "faction": ["Galactic_Senate"] 
+             "faction": ["Clone_Army"] 
          },
          {
             "name": "R2-C4",
@@ -4297,7 +4297,7 @@
              "points":2,
              "effect": "",
              "effect_ENG": "",
-             "faction": ["Galactic_Senate","Colossus"] 
+             "faction": ["Clone_Army","Colossus"] 
          },
          {
             "name": "Message Prioritaire",
@@ -4313,7 +4313,7 @@
              "points":4,
              "effect": "",
              "effect_ENG": "",
-             "faction": ["Galactic_Senate"] 
+             "faction": ["Clone_Army"] 
          },
          {
             "name": "Console Synchronisée",
@@ -4329,7 +4329,7 @@
              "points":1,
              "effect": "",
              "effect_ENG": "",
-             "faction": ["Galactic_Senate","Jedi_Order"] 
+             "faction": ["Clone_Army","Jedi_Order"] 
          },
          {
             "name": "Chancellor Palpatine",
@@ -4345,7 +4345,7 @@
              "points":8,
              "effect": "",
              "effect_ENG": "",
-             "faction": ["Galactic_Senate","Jedi_Order"] 
+             "faction": ["Clone_Army","Jedi_Order"] 
          },
          {
             "name": "Kit Fisto",
@@ -5578,7 +5578,7 @@
              "points": 4,
              "effect": "",
              "effect_ENG": "",
-             "faction": ["Agents_of_Chaos"],
+             "faction": ["Separatist_Government"],
              "restrictions": [1,"ship", "Nantex-Class Starfighter",""]
              
          },

@@ -65,7 +65,7 @@ let shipquantity = -1; //compteur qui ne sert pas à compter mais à numéroter 
 let x= "0"; //valeur qui indique l'index du menu d'amélioration sélectionné (sloty_x)
  let restrict = false;
 let restricted_List = [[0],[1],[2],[3],[4],[5],[6],[7],[8]]; //va contenir les noms des upgrades (8 premiers sous tableaux) et pilotes uniques (9eme sous tableau)
-
+let chassis_selected = [[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0]]; //va contenir les chassis du pilote (2 chassis max)
 let shipObject_available = []; //comme ship_available, mais contient les objets au lieu des noms
 let hash = "";
 let faction_hash = "";
@@ -409,6 +409,9 @@ function checkPilotModifier() { //va checker s'il existe des fonctions dans modi
                 case 3 : 
                     also_Occupies(pilot_list[y]['modifier_func'][m][1]); //, pilot_list[y]['modifier_func'][m][2]);
                     break;
+                case 4 : //on va ajouter une fonction qui permet de changer le chassis du pilote
+                    change_chassis(pilot_list[y]['modifier_func'][m][1],pilot_list[y]['modifier_func'][m][2]);
+                    break;
                 case 10 :
                     may_remove_slots(pilot_list[y]['modifier_func'][m][1]);
                     break;   
@@ -421,21 +424,31 @@ function checkPilotModifier() { //va checker s'il existe des fonctions dans modi
     }
 }
 
+function display_Pilot_Chassis_Title_Points() { //affiche les infos du pilote, du chassis et du titre
+let chassiszone1 = document.getElementById("chassis1"+y);
+let chassiszone2 = document.getElementById("chassis2"+y);
+let titlezone = document.getElementById("title"+y);
+let pointszone = document.getElementById("points"+y);
+
+let sID = pilot_list[y]['shipId']; 
+chassiszone1.textContent = ships[sID]['chassis'][0];
+if (ships[sID]['chassis'].length>1) {
+    chassiszone2.textContent = ships[sID]['chassis'][1];
+}
+
+tID = pilot_list[y]['titleId'];
+if (tID === 0) {
+    titlezone.textContent = "";
+}else{
+titlezone.textContent = upgrade[tID]['name'];
+}
+
+pointszone.textContent = pilot_list[y]['points'];
+}
+
 function checkUpgradeModifier() { //va checker s'il existe une fonction modify liée à l'upgrade, et va lancer les modifs éventuelles type add_slots ou change_stat
    fillUpgradesSelected(y);
-    /*let field = e.target.id; // "slotyy_i"
-    let pilnbr = field.substring(4, 5);
-    let upgnbr = field.substring(6, 7);
-    let slotlist = upgrades_Objects[pilnbr][upgnbr];
-    for (let k=0; k<slotlist.length;k++) {
-        if (e.target.value.slice(0, -4)===slotlist[k]['name']) {
-            if (slotlist[k]['modify']===true) {
-                for (let m=0; m<slotlist[k]['modifier_func'].length ; m++){
-                    slotlist[k]['modifier_func'][m](); //va executer chaque fonction qui se trouve dans modifier_func
-               }
-            }
-        }
-    }*/
+    
    let upgradeID = upgradesSelected_ID[y][x];
    if (upgradeID>-1){
         if (upgrades[upgradeID]["modify"] === true){
@@ -451,16 +464,7 @@ function checkUpgradeModifier() { //va checker s'il existe une fonction modify l
                 break;
             case 3 : 
                 also_Occupies(upgrades[upgradeID]['modifier_func'][m][1]);//, upgrades[upgradeID]['modifier_func'][m][2]);
-                break;
-            /*case 4 :
-                free_upg(upgrades[upgradeID]['modifier_func'][m][1]);
-                break;
-           */
-            /*case 6 : 
-                weapon_Hardpoint();
-                break;*/
-            
-        
+                break;       
          
             case 10 :
                 may_remove_slots(upgrades[upgradeID]['modifier_func'][m][1]);
@@ -698,6 +702,16 @@ if (upgslot) {
 } 
 }
 
+function change_chassis(chassisID1,chassisID2) { //Action n°4 : permet de changer le chassis du pilote
+    let chassiszone1 = document.getElementById("chassis1"+y);
+    let chassiszone2 = document.getElementById("chassis2"+y);
+    chassiszone1.textContent = chassis[chassisID1]['name'];
+    chassiszone2.textContent = chassis[chassisID2]['name'];
+    chassis_selected[y][0] = chassisID1;
+    chassis_selected[y][1] = chassisID2;
+
+}
+
 function may_remove_slots(slot){ //Action n°10 : permet de retirer des slots
         //WARNING ! The order of the slots to remove is very important. You have to start removing the last slot, and keep on removing them starting from the last one. Or Else the function 'may_remove_slot' will fail. The reason is a bit tricky, but to make it simple, this function will remove (splice) elements in the array upgrades_Objets and upgrades_Type thinking the position is the last digit of the slotmenu.id. 
        
@@ -780,7 +794,8 @@ function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'acti
     let newship = document.createElement('select');
     let newpilot = document.createElement('select');
     let newzone = document.createElement('div');
-    let newchassis = document.createElement('div');
+    let newchassis1 = document.createElement('div');
+    let newchassis2 = document.createElement('div');
     let newtitle = document.createElement('div');
     let newpoints = document.createElement('div');
     let newslots = document.createElement('div');
@@ -797,8 +812,10 @@ function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'acti
     newpilot.setAttribute('class','menu shipmenu pilotmenu');
     newzone.setAttribute('id','zone'+numero);
     newzone.setAttribute('class','zone');
-    newchassis.setAttribute('id','chassis'+numero);
-    newchassis.setAttribute('class','chassis');
+    newchassis1.setAttribute('id','chassis1'+numero);
+    newchassis1.setAttribute('class','chassis');
+    newchassis2.setAttribute('id','chassis2'+numero);
+    newchassis2.setAttribute('class','chassis');
     newtitle.setAttribute('id','title'+numero);
     newtitle.setAttribute('class','title');
     newpoints.setAttribute('id','points'+numero);
@@ -817,7 +834,8 @@ function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'acti
     newpara.appendChild(newzone)
     newdiv.appendChild(newship);
     newdiv.appendChild(newpilot);
-    newzone.appendChild(newchassis);
+    newzone.appendChild(newchassis1);
+    newzone.appendChild(newchassis2);
     newzone.appendChild(newtitle);
     newzone.appendChild(newpoints);
     newpara.appendChild(newslots);
@@ -858,6 +876,7 @@ function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'acti
         dataGetFromPilot(numero);
         displayslots(numero)  ;
         upgradeListGet(numero);
+        display_Pilot_Chassis_Title_Points();
         checkUpgRestriction(numero);
         check_restricted_List(event);
         displayDescriptionPilot(numero);
@@ -939,7 +958,7 @@ function remove_ship(n) { //fonction qui permet de retirer le dernier vaisseau. 
     restricted_List[n] = [n]; //retrait des upgrades du dernier vaisseau
     restricted_List[8][n] = "";  //retrait du nom du pilote du dernier vaisseau
     pilot_list[n] = {name:"",points:0};
-   
+    chassis_selected[n] = [0,0]; //on remet le chassis à 0
     if (shipquantity>0){
         shipquantity--;
     }
@@ -1021,6 +1040,7 @@ leaderselect.addEventListener("input", function() {
     pilot_objects = [[],[],[],[],[],[],[],[]];
     restricted_List = [[0],[1],[2],[3],[4],[5],[6],[7],[8]];
     pilot_list = [{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0}];
+    chassis_selected = [[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0]];
     updateTotalCost();
 }); 
 
