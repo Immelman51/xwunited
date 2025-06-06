@@ -440,7 +440,7 @@ tID = pilot_list[y]['titleId'];
 if (tID === 0) {
     titlezone.textContent = "";
 }else{
-titlezone.textContent = upgrade[tID]['name'];
+titlezone.textContent = upgrades[tID]['name'];
 }
 
 pointszone.textContent = pilot_list[y]['points'];
