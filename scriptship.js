@@ -814,6 +814,7 @@ function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'acti
 
     squad.appendChild(newpara);
     newpara.appendChild(newdiv);
+    newpara.appendChild(newzone)
     newdiv.appendChild(newship);
     newdiv.appendChild(newpilot);
     newzone.appendChild(newchassis);
