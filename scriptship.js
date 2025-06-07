@@ -435,8 +435,8 @@ chassiszone1.textContent = ships[sID]['chassis'][0];
 if (ships[sID]['chassis'].length>1) {
     chassiszone2.textContent = ships[sID]['chassis'][1];
 }
-console.log('pilot_list : '+pilot_list);
-console.log('y : '+y);
+console.log('pilot_list[y] : '+pilot_list[y]);
+
 tID = pilot_list[y]['titleId'];
 console.log('tID :'+tID);
 if (tID === 0) {
