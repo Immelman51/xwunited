@@ -328,7 +328,7 @@
                 "Talent",
                 "Talent",
                 "Illicit",
-                "Cannon"
+                "Turret"         
                          
             ],
             "modifier_func": [
@@ -382,7 +382,7 @@
                 "Title",
                 "Talent",
                 "Illicit",
-                "Cannon"
+                "Turret"         
                
                 
             ],
@@ -413,7 +413,7 @@
                 "Title",
                 "Talent",
                 "Illicit",
-                "Cannon"
+                "Turret"         
                 
             ],
             "modifier_func": [
@@ -2485,7 +2485,7 @@
             "name_ENG": "Kaa'to Leeachos",
             "id": 108,
             "max_per_squad": 1,
-            "faction": "Pirates_and_Smugglers",
+            "faction": "Bounty_Hunters_Guild",
             "ship": "Z-95-AF4 Headhunter",
             "charge":[0],
             "force": 0,
@@ -9204,7 +9204,7 @@
                 "Title", 
                 "Talent",
                 "Illicit",
-                "Cannon"         
+                "Turret"         
            ],
            "modifier_func": [
             	[1,"Title",147],

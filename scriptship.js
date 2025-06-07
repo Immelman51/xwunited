@@ -141,17 +141,17 @@ function select_pilot_list(x){ //permet de remplir la liste des pilotes disponib
 }
 }
 
-function dataGetFromPilot(yy) { //On prend le pilote et on recopie l'objet pilote dans pilot_list, et on va incrémenter le totalcost
-    pilot_selected_list[yy] = document.getElementById("menu_pilot_"+yy).value;
-    skillLvl = document.getElementById("initiative"+yy);
+function dataGetFromPilot() { //On prend le pilote et on recopie l'objet pilote dans pilot_list, et on va incrémenter le totalcost
+    pilot_selected_list[y] = document.getElementById("menu_pilot_"+y).value;
+    skillLvl = document.getElementById("initiative"+y);
   
     totalcount= document.getElementById("totalcost");
     totalcostvalue = 0; //remise à 0 sinon il s'incrémente à chaque saisie de pilote
    
-            pilot_list[yy] = pilot_objects[yy][z-1];
-            skillLvl.textContent = "*I"+pilot_list[yy]["skill"]+"*"; //we display the initiative and the force fo the pilot selected
-            if (pilot_list[yy]['force']>0){
-                skillLvl.textContent = skillLvl.textContent + " #F"+pilot_list[yy]['force']+"#";
+            pilot_list[y] = pilot_objects[y][z-1];
+            skillLvl.textContent = "*I"+pilot_list[y]["skill"]+"*"; //we display the initiative and the force fo the pilot selected
+            if (pilot_list[y]['force']>0){
+                skillLvl.textContent = skillLvl.textContent + " #F"+pilot_list[y]['force']+"#";
             }
             for (j=0; j<8 ;j++) {
                 totalcostvalue = totalcostvalue + pilot_list[j]["points"];
@@ -227,9 +227,15 @@ function displayslots(yy) { //crée les menus de slot et contient l'écoute des 
         })
        
     }
-    upgradeButton.addEventListener('click', () => { //on va afficher ou masquer les upgrades
-        
-        const elements = shipslot.querySelectorAll('.slotElement'+yy);
+   
+    upgradeButton.addEventListener('click', (event) => { //on va afficher ou masquer les upgrades
+        //If a Delete button is clicked, every slotElement number will be reduced by 1, so we need to get the current yy from the button id
+        const buttonId = event.target.id;
+        const number = buttonId.replace('upgradeButton', '');
+        const actualShipslot = document.getElementById('shipslots'+number);
+
+          
+        const elements = actualShipslot.querySelectorAll('.slotElement'+number);
         upgradeButton.classList.toggle('active'); //on va changer la couleur bouton
     
         elements.forEach(el => {
@@ -240,6 +246,7 @@ function displayslots(yy) { //crée les menus de slot et contient l'écoute des 
     })  
    
     
+
 }
 
 function fillUpgradesSelected(yy){ //fills the array UpgradesSelected (used when an input of upgrade is made)
@@ -896,7 +903,7 @@ function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'acti
 
     newpilot.addEventListener('input', function(event) {
         identifyElement(event);
-        dataGetFromPilot(numero);
+        dataGetFromPilot();
         display_Pilot_Chassis_Title_Points();        
         displayslots(numero)  ;       
         upgradeListGet(numero);        
@@ -940,6 +947,9 @@ function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'acti
     div_shipxB1.setAttribute('id','ship'+yB);
     div_shipslotsxB1 = document.getElementById('shipslots'+(yB+1));
     div_shipslotsxB1.setAttribute('id', 'shipslots'+yB);
+    div_shipslotsxB1.setAttribute('class', 'slot '+yB);
+    div_upgradeButtonxB1 = document.getElementById('upgradeButton'+(yB+1));
+    div_upgradeButtonxB1.setAttribute('id', 'upgradeButton'+yB);
     
     menu_shipxB1 = document.getElementById('menu_ship_'+(yB+1));
     menu_shipxB1.setAttribute('id','menu_ship_'+yB);

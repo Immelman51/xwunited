@@ -235,12 +235,12 @@
                     [ 0, 0, 2, 0, 0]
                 ],
                 "base": ["Small"],
-                "slots": ["Crew", "Payload", "Turret", "Modification","Calculator"]
+                "slots": ["Crew", "Payload", "Cannon", "Modification","Calculator"]
             },
             {
             
                 "name": "Lambda-class T-4a Shuttle",
-                "factions": [ "Imperial_Academy", "ISB", "Colossus" ],
+                "factions": [ "Imperial_Academy", "ISB" ],
                 "id": 9,
                 "attack": [["F",3]],
                 "agility": 1,
@@ -322,7 +322,7 @@
           
             
                 "name": "Z-95-AF4 Headhunter",
-                "factions": [ "Partisans", "Bounty_Hunters_Guild", "Black_Sun", "Pirates_and_Smugglers"  ],
+                "factions": [ "Partisans", "Bounty_Hunters_Guild", "Black_Sun", "Pirates_and_Smugglers" ],
                 "chassis":[0],
                 "id": 12,
                 "attack": [["F",2]],
@@ -607,7 +607,7 @@
         
            
                 "name": "Kihraxz Fighter",
-                "factions": ["Black_Sun", "Hutt_Cartel", "Bounty_Hunters_Guild"],
+                "factions": ["Black_Sun", "Bounty_Hunters_Guild"],
                 "chassis":[0],
                 "id": 22,
                 "attack": [["F",3]],
@@ -1022,7 +1022,7 @@
         
     
                 "name": "Scurrg H-6 Bomber",
-                "factions": ["Pirates_and_Smugglers"],
+                "factions": ["Pirates_and_Smugglers","Naboo_Defense_Force"],
                 "chassis":[0],
                 "id": 37,
                 "attack": [["F",3]],
@@ -1133,7 +1133,7 @@
             {
      
                 "name": "Sheathipede-Class Shuttle",
-                "factions": ["Phoenix_Cell", "C.I.S"],
+                "factions": ["Phoenix_Cell", "Trade_Federation","Separatist_Government"],
                 "id": 41,
                 "attack": [["F",2],["B",2]],
                 "agility": 2,
@@ -1407,7 +1407,7 @@
                     [ 0, 0, 0, 0, 0]
                 ],
                 "base": ["Large"],
-                "slots": ["Crew","Gunner","Tech","Tech","Payload","Payload","Turret","Modification"]
+                "slots": ["Crew","Gunner","Tech","Tech","Payload","Payload","Payload","Modification"]
             },
             {
           
@@ -1562,7 +1562,7 @@
          
       
                 "name": "Vulture-class Droid Fighter",
-                "factions": ["C.I.S", "Agents_of_Chaos"],
+                "factions": ["Trade_Federation", "Separatist_Government"],
                 "id": 56,
                 "attack": [["F",2]],
                 "agility": 2,
@@ -1590,7 +1590,7 @@
                 "name": "Belbullab-22 Starfighter",
                 "chassis":[0],
                 "id":57,
-                "factions": ["C.I.S"],
+                "factions": ["Separatist_Government"],
                 "attack": [["F",3]],
                 "agility": 2,
                 "hull": 3,
@@ -1617,7 +1617,7 @@
           
      
                 "name": "Naboo Royal N-1 Starfighter",
-                "factions": ["Clone_Army", "Mandalorian_Clans"],
+                "factions": ["Naboo_Defense_Force", "Mandalorian_Clans"],
                 "id":58,
                 "attack": [["F",2]],
                 "agility": 2,
@@ -1646,7 +1646,7 @@
     
                 "name": "Hyena-class Droid Bomber",
                 "id": 59,
-                "factions": ["C.I.S"],
+                "factions": ["Trade_Federation"],
                 "attack": [["F",2]],
                 "agility": 2,
                 "hull": 5,
@@ -1728,7 +1728,7 @@
             {
         
                 "name": "Nantex-Class Starfighter",
-                "factions": ["Agents_of_Chaos"],
+                "factions": ["Separatist_Government"],
                 "id": 62,
                 "attack": [["BULL",3],["T",2]],
                 "agility": 3,
@@ -1756,7 +1756,7 @@
         
       
                 "name": "BTL-B Y-wing",
-                "factions": ["Jedi_Order"],
+                "factions": ["Jedi_Order","Clone_Army"],
                 "id": 63,
                 "attack": [["F",2]],
                 "agility": 1,
@@ -1873,7 +1873,7 @@
             {
     
                 "name": "HMP Droid Gunship",
-                "factions": ["C.I.S"],
+                "factions": ["Trade_Federation"],
                 "id": 67,
                 "attack": [["180",2]],
                 "agility": 1,
@@ -1961,7 +1961,7 @@
          
                 "name": "Droid Tri-fighter",
                 "id": 70,
-                "factions": ["C.I.S"],
+                "factions": ["Trade_Federation"],
                 "attack": [["F",3]],
                 "agility": 3,
                 "hull": 3,
@@ -2292,7 +2292,7 @@
                 "slots": []
             },
             {
-            	"name": "T6 Shuttle",
+            	"name": "T-6 Shuttle",
                 "factions": [ "Partisans", "Jedi_Order", "New_Republic" ],
                 "chassis":[0],
                 "id": 82,
@@ -2549,7 +2549,7 @@
                 "slots": ["Astromech","Tech"]
             },
             {
-            	"name": "Fanblade Starfighter",
+            	"name": "Ginivex-class Fanblade Starfighter",
                 "factions": [ "Agents_of_Chaos" ],
                 "id": 92,
                 "attack": [["BULL",3]],
@@ -2621,7 +2621,7 @@
             },
             {
             	"name": "Omicron Class Shuttle",
-                "factions": [ "Imperial_Remnants","Clone_Army" ],
+                "factions": [ "Colossus","Clone_Army" ],
                 "id": 95,
                 "attack": [["F",2]],
                 "agility": 1,
@@ -2695,10 +2695,10 @@
                 "id": 98,
                 "attack": [["T",2]],
                 "agility": 2,
-                "base": ["Medium"],
+                "base": ["Large"],
                 "hull": 6,
                 "shields": 2,
-                "chassis": [46],
+                "chassis": [0],
                 "actions": [
                     
                 ],
@@ -2710,7 +2710,197 @@
                     [ 0, 0, 1, 0, 0, 0,0,0],
                     [ 0, 0, 1, 0, 0, 3,0,0]
                 ],
-                "slots": ["Crew","Gunner","Gunner","Missile","Turret","Modification"]
+                "slots": []
+            },
+            {
+            	"name": "J-Type Star Skiff",
+                "factions": [ "Naboo_Defense_Force" ],
+                "id": 99,
+                "attack": [["0"]],
+                "agility": 1,
+                "base": ["Large"],
+                "hull": 6,
+                "shields": 8,
+                "chassis": [0],
+                "actions": [
+                    
+                ],
+                "maneuvers": [
+                    [ 0, 0, 0, 0, 0, 0,0,0],
+                    [ 2, 2, 0, 2, 2, 0,0,0],
+                    [ 2, 1, 1, 1, 2, 0,0,0],
+                    [ 1, 1, 1, 1, 1, 0,3,3],
+                    [ 0, 0, 1, 0, 0, 0,0,0],
+                    [ 0, 0, 1, 0, 0, 3,0,0]
+                ],
+                "slots": []
+            },
+            {
+            	"name": "NB-1S Royal Bomber",
+                "factions": [ "Naboo_Defense_Force" ],
+                "id": 100,
+                "attack": [["F",2]],
+                "agility": 2,
+                "base": ["Small"],
+                "hull": 3,
+                "shields": 2,
+                "chassis": [8],
+                "actions": [
+                    
+                ],
+                "maneuvers": [
+                    [ 0, 0, 0, 0, 0, 0,0,0],
+                    [ 2, 2, 0, 2, 2, 0,0,0],
+                    [ 2, 1, 1, 1, 2, 0,0,0],
+                    [ 1, 1, 1, 1, 1, 0,3,3],
+                    [ 0, 0, 1, 0, 0, 0,0,0],
+                    [ 0, 0, 1, 0, 0, 3,0,0]
+                ],
+                "slots": ["Astromech","Payload","Sensor"]
+            },
+            {
+            	"name": "Chasseur Caméléon",
+                "name_ENG": "CloakShape Fighter",
+                "factions": [ "Naboo_Defense_Force" ],
+                "id": 101,
+                "attack": [["F",2]],
+                "agility": 1,
+                "base": ["Small"],
+                "hull": 6,
+                "shields": 8,
+                "chassis": [0],
+                "actions": [
+                    
+                ],
+                "maneuvers": [
+                    [ 0, 0, 0, 0, 0, 0,0,0],
+                    [ 2, 2, 0, 2, 2, 0,0,0],
+                    [ 2, 1, 1, 1, 2, 0,0,0],
+                    [ 1, 1, 1, 1, 1, 0,3,3],
+                    [ 0, 0, 1, 0, 0, 0,0,0],
+                    [ 0, 0, 1, 0, 0, 3,0,0]
+                ],
+                "slots": ["Astromech","Missile","Modification","Modification"]
+            },
+            {
+            	"name": "Scarab-Class Starfighter",
+                "name_ENG": "Scarab-Class Starfighter",
+                "factions": [ "Trade_Federation" ],
+                "id": 102,
+                "attack": [["F",1]],
+                "agility": 2,
+                "base": ["Small"],
+                "hull": 1,
+                "shields": 3,
+                "chassis": [0],
+                "actions": [
+                    
+                ],
+                "maneuvers": [
+                    [ 0, 0, 0, 0, 0, 0,0,0],
+                    [ 2, 2, 0, 2, 2, 0,0,0],
+                    [ 2, 1, 1, 1, 2, 0,0,0],
+                    [ 1, 1, 1, 1, 1, 0,3,3],
+                    [ 0, 0, 1, 0, 0, 0,0,0],
+                    [ 0, 0, 1, 0, 0, 3,0,0]
+                ],
+                "slots": ["Modification"]
+            },
+            {
+            	"name": "Zenuas 33 Umbaran Starfighter",
+                "name_ENG": "Zenuas 33 Umbaran Starfighter",
+                "factions": [ "Separatist_Government" ],
+                "id": 103,
+                "attack": [["F",2]],
+                "agility": 3,
+                "base": ["Small"],
+                "hull": 2,
+                "shields": 2,
+                "chassis": [0],
+                "actions": [
+                    
+                ],
+                "maneuvers": [
+                    [ 0, 0, 0, 0, 0, 0,0,0],
+                    [ 2, 2, 0, 2, 2, 0,0,0],
+                    [ 2, 1, 1, 1, 2, 0,0,0],
+                    [ 1, 1, 1, 1, 1, 0,3,3],
+                    [ 0, 0, 1, 0, 0, 0,0,0],
+                    [ 0, 0, 1, 0, 0, 3,0,0]
+                ],
+                "slots": ["Missile","Missile","Modification"]
+            },
+            {
+            	"name": "Vaisseau d'Abordage de classe Droch",
+                "name_ENG": "Droch-class Boarding Ship",
+                "factions": [ "Separatist_Government" ],
+                "id": 104,
+                "attack": [["T",1]],
+                "agility": 2,
+                "base": ["Small"],
+                "hull": 3,
+                "shields": 1,
+                "chassis": [0],
+                "actions": [
+                    
+                ],
+                "maneuvers": [
+                    [ 0, 0, 0, 0, 0, 0,0,0],
+                    [ 2, 2, 0, 2, 2, 0,0,0],
+                    [ 2, 1, 1, 1, 2, 0,0,0],
+                    [ 1, 1, 1, 1, 1, 0,3,3],
+                    [ 0, 0, 1, 0, 0, 0,0,0],
+                    [ 0, 0, 1, 0, 0, 3,0,0]
+                ],
+                "slots": ["Sensor","Modification"]
+            },
+            {
+            	"name": "Sabaoth Starfighter",
+                "name_ENG": "Sabaoth Starfighter",
+                "factions": [ "Agents_of_Chaos" ],
+                "id": 105,
+                "attack": [["F",3]],
+                "agility": 2,
+                "base": ["Small"],
+                "hull": 3,
+                "shields": 1,
+                "chassis": [0],
+                "actions": [
+                    
+                ],
+                "maneuvers": [
+                    [ 0, 0, 0, 0, 0, 0,0,0],
+                    [ 2, 2, 0, 2, 2, 0,0,0],
+                    [ 2, 1, 1, 1, 2, 0,0,0],
+                    [ 1, 1, 1, 1, 1, 0,3,3],
+                    [ 0, 0, 1, 0, 0, 0,0,0],
+                    [ 0, 0, 1, 0, 0, 3,0,0]
+                ],
+                "slots": []
+            },
+             {
+            	"name": "HH-87 Starhopper",
+                "name_ENG": "HH_87 Starhopper",
+                "factions": [ "Hutt_Cartel","Agents_of_Chaos" ],
+                "id": 106,
+                "attack": [["F",2]],
+                "agility": 2,
+                "base": ["Small"],
+                "hull": 3,
+                "shields": 1,
+                "chassis": [0],
+                "actions": [
+                    
+                ],
+                "maneuvers": [
+                    [ 0, 0, 0, 0, 0, 0,0,0],
+                    [ 2, 2, 0, 2, 2, 0,0,0],
+                    [ 2, 1, 1, 1, 2, 0,0,0],
+                    [ 1, 1, 1, 1, 1, 0,3,3],
+                    [ 0, 0, 1, 0, 0, 0,0,0],
+                    [ 0, 0, 1, 0, 0, 3,0,0]
+                ],
+                "slots": []
             }
           
             

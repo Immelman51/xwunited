@@ -106,6 +106,9 @@ header {
     text-align: center;
     color: rgb(130, 169, 202);
      cursor: pointer;
+     border-color: rgb(130, 169, 202);
+    border-style: solid;
+    border-width: 2px;
 }
 
 .title {
@@ -116,6 +119,9 @@ header {
     overflow: hidden;
     text-align: center;
     cursor: pointer;
+     border-color: rgb(189, 97, 197);
+    border-style: solid;
+    border-width: 2px;
 }
 
 .points {
