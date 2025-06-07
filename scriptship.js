@@ -437,7 +437,9 @@ if (ships[sID]['chassis'].length>1) {
 }
 
 let tID = pilot_list[y]['titleId'];
-if (tID === 0) {
+console.log('tID :', tID);
+console.log('upgrades[tID] :', upgrades[tID]);
+if (tID === 0 || !upgrades[tID]) {
     titlezone.textContent = "";
 }else{
 titlezone.textContent = upgrades[tID]['name'];
