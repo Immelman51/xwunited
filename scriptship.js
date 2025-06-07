@@ -426,7 +426,7 @@ function checkPilotModifier() { //va checker s'il existe des fonctions dans modi
                     break;
                 case 1: 
                     auto_equip(pilot_list[y]['modifier_func'][m][1], pilot_list[y]['modifier_func'][m][2], pilot_list[y]['modifier_func'][m][3]);
-                    
+
                     break;
                 case 2 :
                     add_slots(pilot_list[y]['modifier_func'][m][1]);
@@ -966,7 +966,7 @@ function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'acti
     for(h=0 ; h<upgrades_Objects[yB].length ; h++){
         slotxB1 = document.getElementById('slot'+(yB+1)+'_'+h);
         slotxB1.setAttribute('id','slot'+yB+'_'+h);
-        slotxB1.setAttribute('class','slotElement'+yB);
+        slotxB1.setAttribute('class','slotElement'+yB+" hidden");
     }
         yB++;
     }
