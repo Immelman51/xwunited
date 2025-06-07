@@ -431,9 +431,9 @@ let titlezone = document.getElementById("title"+y);
 let pointszone = document.getElementById("points"+y);
 
 let sID = pilot_list[y]['shipId']; 
-chassiszone1.textContent = ships[sID]['chassis'][0];
+chassiszone1.textContent = chassis[ships[sID]['chassis'][0]]['name'];
 if (ships[sID]['chassis'].length>1) {
-    chassiszone2.textContent = ships[sID]['chassis'][1];
+    chassiszone2.textContent = chassis[ships[sID]['chassis'][1]]['name'];
 }
 
 let tID = pilot_list[y]['titleID'];
