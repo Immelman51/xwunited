@@ -436,9 +436,8 @@ if (ships[sID]['chassis'].length>1) {
     chassiszone2.textContent = ships[sID]['chassis'][1];
 }
 
-let tID = pilot_list[y]['titleId'];
-console.log('tID :', tID);
-console.log('upgrades[tID] :', upgrades[tID]);
+let tID = pilot_list[y]['titleID'];
+
 if (tID === 0 || !upgrades[tID]) {
     titlezone.textContent = "";
 }else{
