@@ -426,6 +426,7 @@ function checkPilotModifier() { //va checker s'il existe des fonctions dans modi
                     break;
                 case 1: 
                     auto_equip(pilot_list[y]['modifier_func'][m][1], pilot_list[y]['modifier_func'][m][2], pilot_list[y]['modifier_func'][m][3]);
+                    
                     break;
                 case 2 :
                     add_slots(pilot_list[y]['modifier_func'][m][1]);
@@ -814,6 +815,7 @@ function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'acti
     shipquantity++;
     let numero = String(shipquantity);
     const squad = document.getElementById("squad");
+    
     let newpara = document.createElement('p');
     let newdiv = document.createElement('div');
     let newship = document.createElement('select');

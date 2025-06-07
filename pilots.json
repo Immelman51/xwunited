@@ -1986,7 +1986,7 @@
             "force": 0,
             "titleID": 135,
             "shipId": 3,
-		    "modify": false,
+		    "modify": true,
             "skill": 4,
             "charge": [1,"+"],
             "points": 7,

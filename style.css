@@ -64,6 +64,9 @@ header {
     
 }
 /* ##################"BODY ##############################*/
+.new {
+    margin: 20px 0 ;
+}
 
 .ship {
     background-color: black;
