@@ -12,7 +12,7 @@
      "leadername":  "Greef Carga",
      "leaderfaction": ["Bounty_Hunters_Guild","",""],
      "numberOfFactions": 1,
-     "leaderability": "Si vous avez au moins un capteur de positionnement, vous choisissez à qui vous attribuez la condition au lieu de votre adversaire. Si la cible est détruite, gagnez 2 #scenario_point#",
+     "leaderability": "Si vous avez au moins un capteur de positionnement, si la cible 'désignée pour mourir' est détruite, gagnez 2 #scenario_point#",
      "leaderid": 1,
      "charge": [0],
      "logistic": 15

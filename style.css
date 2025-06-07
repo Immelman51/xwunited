@@ -90,9 +90,55 @@ header {
     color: rgb(76, 173, 101)
 }
 
+.zone {
+    background-color: black;
+    max-width: 750px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.chassis {
+    min-width: 0;
+    flex-shrink: 1;
+    flex-grow: 4;
+    overflow: hidden;
+    text-align: center;
+    color: rgb(130, 169, 202);
+     cursor: pointer;
+}
+
+.title {
+    color:rgb(189, 97, 197);
+    min-width: 0;
+    flex-shrink: 1;
+    flex-grow: 4;
+    overflow: hidden;
+    text-align: center;
+    cursor: pointer;
+}
+
+.points {
+    color: rgb(255, 255, 0);
+    font-size: x-large;
+    align-self: center;
+    justify-self: center;
+    text-align: right;
+    flex-grow: 1;
+}
+
+.chassis:empty{
+    flex: 0 0 0;
+}
+
+.title:empty{
+    flex: 0 0 0;
+}
+
 .slot {
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 2px;
     max-width: 750px; 
     justify-content: center;
     align-content: center;
@@ -168,4 +214,20 @@ color: aliceblue;
     height: 15px;
     width: 15px;
     resize: both;
+}
+
+.hidden {
+  display: none;
+}
+
+.toggle-button {
+  background-color: #bdeebe; /* vert par exemple */
+  color: black;
+  cursor: pointer
+}
+.toggle-button.active {
+  background-color: #f0acac; /* gris clair par exemple */
+  color: black;
+  border: none;
+  cursor: pointer;
 }

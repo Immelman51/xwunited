@@ -160,7 +160,7 @@ function dataGetFromPilot(yy) { //On prend le pilote et on recopie l'objet pilot
          return
 }
     
-function displayslots(yy) { //crée les menus de slot et contient l'écoute des "modification" des slots
+function displayslots(yy) { //crée les menus de slot et contient l'écoute des "modification" des slots. Les éléments s'affichent masqués (hidden) par défaut, mais sont afficher via le bouton upgradeButton dont la fonction est décrite à la fin.
      // Get the parent element
     shipslot = document.getElementById('shipslots'+yy);
      // Clear any existing child elements
@@ -168,6 +168,12 @@ function displayslots(yy) { //crée les menus de slot et contient l'écoute des 
       // Create and append new select elements
       let index = 0;
     upgrades_Type[yy] = [];    
+    let upgradeButton = document.createElement('button');
+        upgradeButton.setAttribute('id','upgradeButton'+yy);
+        upgradeButton.setAttribute('class','toggle-button');
+        upgradeButton.setAttribute('type','button');
+        upgradeButton.textContent = 'Améliorations '+0;
+        shipslot.appendChild(upgradeButton);
       try{  //permet de supprimer les risques d'erreur lorsqu'il n'y a pas de slots pour le pilote (undefined)
         if  (typeof pilot_list[yy]["slots"][0] === 'undefined') {
             console.log("no display slots");
@@ -176,7 +182,7 @@ function displayslots(yy) { //crée les menus de slot et contient l'écoute des 
         upgrades_Type[yy].push(pilot_list[yy]["slots"][i]);
     slotmenu = document.createElement('select');
     slotmenu.setAttribute('id', 'slot'+yy+"_"+i);
-    slotmenu.setAttribute('class', 'slotElement'+yy);//+' '+pilot_list[yy]["slots"][i]);
+    slotmenu.setAttribute('class', 'slotElement'+yy+' hidden');//+' '+pilot_list[yy]["slots"][i]);
     shipslot.appendChild(slotmenu);
     slotmenu.addEventListener("input", function(event) {//cette fonction décrit le calcul des mises à jour des points pour le loadout et le cout du pilote
             identifyElement(event);
@@ -186,9 +192,8 @@ function displayslots(yy) { //crée les menus de slot et contient l'écoute des 
             updateTotalCost();
             displayDescriptionUpgrade(event);
             fillUpgradesSelected(y);
-	    
-
             })
+
     slotmenu.addEventListener("mouseover", function(event){
         
         displayDescriptionUpgrade(event);
@@ -205,7 +210,7 @@ function displayslots(yy) { //crée les menus de slot et contient l'écoute des 
         upgrades_Type[yy].push(ships[pilot_list[yy]["shipId"]]["slots"][j]);
         slotmenu = document.createElement('select');
         slotmenu.setAttribute('id', 'slot'+yy+"_"+(j+index));
-        slotmenu.setAttribute('class', 'slotElement'+y+' '+ships[pilot_list[yy]["shipId"]]["slots"][j] );
+        slotmenu.setAttribute('class', 'slotElement'+y+' '+ships[pilot_list[yy]["shipId"]]["slots"][j]+' hidden' );
         shipslot.appendChild(slotmenu);
         slotmenu.addEventListener("input", function(event) {//cette faction décrit le calcul des mises à jour des points pour le loadout et le cout du pilote
             identifyElement(event); 
@@ -221,7 +226,18 @@ function displayslots(yy) { //crée les menus de slot et contient l'écoute des 
             displayDescriptionUpgrade(event)
         })
        
-    }  
+    }
+    upgradeButton.addEventListener('click', () => { //on va afficher ou masquer les upgrades
+        
+        const elements = shipslot.querySelectorAll('.slotElement'+yy);
+        upgradeButton.classList.toggle('active'); //on va changer la couleur bouton
+    
+        elements.forEach(el => {
+            el.classList.toggle('hidden');
+
+        })
+        
+    })  
    
     
 }
@@ -287,7 +303,8 @@ function updateUpgradeCount(yy) { //update the table logistic_Equipped
     }
     
 }
-
+let upgradeButton = document.getElementById('upgradeButton'+yy);
+upgradeButton.textContent = 'Améliorations '+logisticEquipped[yy];
 }
 
 function testRestriction (yy,tableRestrictions){//va vérifier si les restrictions sont true, et renvoie la valeur restrict=true si c'est bon
@@ -822,6 +839,7 @@ function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'acti
     newpoints.setAttribute('id','points'+numero);
     newpoints.setAttribute('class','points');
     
+    
     newslots.setAttribute('id','shipslots'+numero);
     newslots.setAttribute('class','slot '+numero);
     newinitiative.setAttribute('id','initiative'+numero);
@@ -879,9 +897,9 @@ function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'acti
     newpilot.addEventListener('input', function(event) {
         identifyElement(event);
         dataGetFromPilot(numero);
-        displayslots(numero)  ;
-        upgradeListGet(numero);
-        display_Pilot_Chassis_Title_Points();
+        display_Pilot_Chassis_Title_Points();        
+        displayslots(numero)  ;       
+        upgradeListGet(numero);        
         checkUpgRestriction(numero);
         check_restricted_List(event);
         displayDescriptionPilot(numero);
@@ -889,7 +907,13 @@ function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'acti
         checkUpgRestriction(numero); //on le refait car il peut y avoir des upgrades disponibles suite à check pilot modfier (exemple : Emon gagne 2 slot de payload ce qui lui permet d'équiper les générateurs de sous munitions)
         upgrade_restricted_List(y);
         updateTotalCost();
-    });  
+    }); 
+    
+   
+        
+    
+
+
     newremovebutton.textContent = 'Delete';
    newremovebutton.addEventListener('click', function(event){ //we code the remove button located on the same line as the pilot and ship
     let buttonID = event.target.id;
@@ -979,7 +1003,7 @@ function displayDescriptionPilot(i) { //permet d'afficher la capacité du pilote
 
 }
 
-function displayDescriptionShip(event){ //displays ship'stats and chassis abilities (and maneuvers ?)
+function displayDescriptionShip(event){ //displays ship stats (and actions and maneuvers ?)
     description_upg_pil_Field=document.getElementById("descript_upg");
     description_upg_pil_Field.innerHTML="";
     
@@ -993,14 +1017,14 @@ function displayDescriptionShip(event){ //displays ship'stats and chassis abilit
             description_upg_pil_Field.innerHTML =  description_upg_pil_Field.innerHTML+'<span style="color: yellow">' +ships[k]["hull"] + '<span class="logo"/>';
             description_upg_pil_Field.innerHTML =  description_upg_pil_Field.innerHTML+'<span style="color: skyblue">' +ships[k]["shields"] + '<span class="logo"/><br>';
             
-            let chassisEq = ships[k]['chassis'];
+           /* let chassisEq = ships[k]['chassis'];
             for(ch=0;ch<chassisEq.length;ch++){
                 description_upg_pil_Field.innerHTML +=  chassis[chassisEq[ch]]['effect1']+'<br>';
                 description_upg_pil_Field.innerHTML +=  chassis[chassisEq[ch]]['effect2']+'<br>';
                 description_upg_pil_Field.innerHTML +=  chassis[chassisEq[ch]]['effect3']+'<br>';
             }
             
-
+*/
 
    
             return;
@@ -1066,6 +1090,8 @@ factionCards.addEventListener('click', function() {
     // Navigate to the URL
     window.location.href = fullUrl;
 });
+
+
 
 
 function hasher(){ //on inscrit dans hash le nombre de vaisseaux (shipquantity+1) on va transformer tous les ids du ship pilote et upgrades séparés par la lettre "z", chaque info différente (pilot, upgrades, modifiers) est séparée par des x, puis chaque vaisseaux différents séparés par ",".
