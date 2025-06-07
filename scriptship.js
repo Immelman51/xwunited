@@ -860,7 +860,11 @@ function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'acti
       upgrades_Objects_Val[numero] = []; //Il faut nettoyer toutes les infos du ship/pilot/slots précédent
       upgrades_Type[numero] = []; //Il faut nettoyer toutes les infos du ship/pilot/slots précédent
       pilot_list[numero]= {name:"",points:0}; //Il faut nettoyer toutes les infos du ship/pilot/slots précédent
-      
+      chassis_selected[numero] = [0,0];
+      document.getElementById("chassis1"+y).textContent = "";
+      document.getElementById("chassis2"+y).textContent = "";
+      document.getElementById("title"+y).textContent = "";
+      document.getElementById("points"+y).textContent = "";
       
     }) ;
     newship.addEventListener('mouseover', function(event){
