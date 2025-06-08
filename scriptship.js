@@ -59,7 +59,6 @@ let shipquantity = -1; //compteur qui ne sert pas à compter mais à numéroter 
  let upgrades_Objects_Val= [[],[],[],[],[],[],[],[]]; // va contenir la liste des contenus des menus slots après validation mais sous forme d'objet
  let upgradesSelected = [[],[],[],[],[],[],[],[]]; //va contenir les nom des upgrades sélectionnées
  let upgradesSelected_ID = [[],[],[],[],[],[],[],[]]; //va contenir les id des upgrades sélectionnées (si rien n'est sélectionné, alors la valeur est -1)
- //let overCostTab = [0,0,0,0,0,0,0,0]; //Cette variable va stocker les augmentations des couts des pilotes dûs aux emports d'upgrade supérieurs au loadout de base
  let y= "0"; //valeur qui indique l'index du pilote podifié
  let z= "0"; //valeur qui indique l'index dans le menu de l'élément sélectionné
 let x= "0"; //valeur qui indique l'index du menu d'amélioration sélectionné (sloty_x)
@@ -428,19 +427,26 @@ function checkPilotModifier() { //va checker s'il existe des fonctions dans modi
                     break;
                 case 1: 
                     auto_equip(pilot_list[y]['modifier_func'][m][1], pilot_list[y]['modifier_func'][m][2], pilot_list[y]['modifier_func'][m][3]);
-
+                    console.log('checkPilotModifier : modifier_func n°'+1 );
                     break;
                 case 2 :
                     add_slots(pilot_list[y]['modifier_func'][m][1]);
+                    console.log('checkPilotModifier : modifier_func n°'+2 );
+
                     break;
                 case 3 : 
                     also_Occupies(pilot_list[y]['modifier_func'][m][1]); //, pilot_list[y]['modifier_func'][m][2]);
+                    console.log('checkPilotModifier : modifier_func n°'+3 );
+
                     break;
                 case 4 : //on va ajouter une fonction qui permet de changer le chassis du pilote
                     change_chassis(pilot_list[y]['modifier_func'][m][1],pilot_list[y]['modifier_func'][m][2]);
+                    console.log('checkPilotModifier : modifier_func n°'+4 );
+
                     break;
                 case 10 :
                     may_remove_slots(pilot_list[y]['modifier_func'][m][1]);
+                 console.log('checkPilotModifier : modifier_func n°'+10 );
                     break;   
                 default :
                     alert("There's a bug that should be reported");
@@ -459,8 +465,11 @@ let pointszone = document.getElementById("points"+y);
 
 let sID = pilot_list[y]['shipId']; 
 chassiszone1.textContent = chassis[ships[sID]['chassis'][0]]['name'];
+chassis_selected[y][0]=ships[sID]['chassis'][0];
 if (ships[sID]['chassis'].length>1) {
     chassiszone2.textContent = chassis[ships[sID]['chassis'][1]]['name'];
+    chassis_selected[y][1]=ships[sID]['chassis'][1];
+
 }
 
 let tID = pilot_list[y]['titleID'];
@@ -1090,22 +1099,45 @@ function displayDescriptionUpgrade(event){ //permet d'afficher l'effet de l'amé
 function display_chassis_title_window(event) { //allows to display the chassis window when the user clicks on the chassis name
     chassistarget = event.target.id;
     n = chassistarget.slice(-2,-1); //n= 1 or 2 depending on the chassis clicked
-    targettype = chassistarget.slice(0,-2); //targettype = chassis or title
+    targettype = chassistarget.slice(0,-1); //targettype = chassis or title
     let chassisOverlay = document.createElement("div");
     chassisOverlay.setAttribute("id", "overlay");
     chassisOverlay.setAttribute("class","overlay");
     let chassisWindow = document.createElement("div");
     chassisWindow.setAttribute("id", "popup");
     chassisWindow.setAttribute("class", "chassisTitleWindow");
-    chassisWindow.innerHTML = 'Test Fenetre Chassis <br>Display Chassis'+n+y;
+    
+    console.log(targettype);
+    let chSel = chassis_selected[y];
+    switch (targettype) {
+        case 'chassis1' :
+        chassisWindow.innerHTML = '<div id="effect1" class="effect1">'+chassis[chSel[0]]['effect1']+ '</div><div id="effect2" class="effect2">' + chassis[chSel[0]]['effect2'] + '</div><div id="effect3" class="effect3">' + chassis[chSel[0]]['effect3'] +'</div>';  
+        break;
+        case 'chassis2' : 
+        chassisWindow.innerHTML = '<div id="effect1" class="effect1">'+chassis[chSel[1]]['effect1']+ '</div><div id="effect2" class="effect2">' + chassis[chSel[1]]['effect2'] + '</div><div id="effect3" class="effect3">' + chassis[chSel[1]]['effect3'] +'</div>';    
+        break;
+        case 'title' :
+        chassisWindow.innerHTML = '<div id="effect1" class="effect1">'+upgrades[pilot_list[y]['titleID']]['name']+ '</div><div id="effect2" class="effect2">' + upgrades[pilot_list[y]['titleID']]['effect'] +'</div>';  
+        break;
+        default :
+        chassisWindow.innerHTML = "Element Not Defined. Submit Error to complete the Database";
+        break;
+    };
+
+    
+    
+    
     document.body.appendChild(chassisOverlay);
     chassisOverlay.appendChild(chassisWindow);
 
-    chassisWindow.addEventListener("click", function() { //We close the window when the user clicks on the chassis window or the main window
+    chassisWindow.addEventListener("click", function(e) { //We close the window when the user clicks on the chassis window or the main window
+        e.stopPropagation();
         document.body.removeChild(chassisOverlay);
     })
     chassisOverlay.addEventListener("click", function() { //We close the window when the user clicks on the chassis window or the main window
-        document.body.removeChild(chassisOverlay);
+        if (document.body.contains(chassisOverlay)) {
+            document.body.removeChild(chassisOverlay);
+        }
     })
 
 }
