@@ -126,16 +126,16 @@ function removeElementsByClass(classname) {//permet de supprimer tous les élém
             
 }       
 
-function select_pilot_list(x){ //permet de remplir la liste des pilotes disponibles correspondant au vaisseau sélectionné
+function select_pilot_list(){ //permet de remplir la liste des pilotes disponibles correspondant au vaisseau sélectionné
     factionnameget();
     let pilot_available = ["<Select Pilot>"];
-    ship_selected_list[x] = document.getElementById("menu_ship_"+ x).value;
+    ship_selected_list[x] = document.getElementById("menu_ship_"+ y).value;
     for (let i= 0; i< pilots.length; i++) {
     if ((pilots[i]["faction"]===factionno1 || pilots[i]["faction"]===factionno2 || pilots[i]["faction"]===factionno3) && (pilots[i]["ship"]===ship_selected_list[x])) {
         pilot_available.push(pilots[i]["name"] + ' (' + pilots[i]["points"] + ')' );//on ajoute dans la liste le nom des pilotes avec leur cout
-        pilot_objects[x].push(pilots[i]);
+        pilot_objects[y].push(pilots[i]);
    } 
-   populateMenu("menu_pilot_" + x, pilot_available);
+   populateMenu("menu_pilot_" + y, pilot_available);
   
   
 }
@@ -268,18 +268,22 @@ function fillUpgradesSelected(yy){ //fills the array UpgradesSelected (used when
 
 function identifyElement(event){ //sloty_x & index z de l'élément sélectionné, ou pilote dans ce cas x=-1
     let slotMe = event.target.id;
+    console.log("identifyElement : slotMe = "+slotMe);
     if (slotMe.indexOf("pilot")>0){ //si l'id contient la chaine "pilot"
         z = event.target.selectedIndex;
-        y = slotMe.substring(11);
+        y = slotMe.slice(-1);
         x = -1;
-    }else{
-        if (slotMe.indexOf("slot")===0)
+    }else if (slotMe.indexOf("menu_ship")===0){ //si l'id contient la chaine "menu_ship"
+        z = event.target.selectedIndex;
+        y = slotMe.slice(-1);
+        x = -2;
+    }else if (slotMe.indexOf("slot")===0){ //si l'id contient la chaine "slot"
         z = event.target.selectedIndex;
         y = slotMe.substring(4,5);
-        x = slotMe.substring(6);
+        x = slotMe.slice(-1);
     }
    
-     
+console.log("identifyElement : y = "+y+" x = "+x+" z = "+z); 
 }
 
 function updateTotalCost() { //update total cost AND logistic value
@@ -837,6 +841,13 @@ function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'acti
     newship.setAttribute('class','menu shipmenu' );
     newpilot.setAttribute('id','menu_pilot_'+numero);
     newpilot.setAttribute('class','menu shipmenu pilotmenu');
+    newinitiative.setAttribute('id','initiative'+numero);
+    newinitiative.setAttribute('class','initiative');
+    newremovebutton.setAttribute('id','removeB'+numero);
+    newremovebutton.setAttribute('class','bouton removeB');
+    newpoints.setAttribute('id','points'+numero);
+    newpoints.setAttribute('class','points');
+
     newzone.setAttribute('id','zone'+numero);
     newzone.setAttribute('class','zone');
     newchassis1.setAttribute('id','chassis1'+numero);
@@ -845,30 +856,27 @@ function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'acti
     newchassis2.setAttribute('class','chassis');
     newtitle.setAttribute('id','title'+numero);
     newtitle.setAttribute('class','title');
-    newpoints.setAttribute('id','points'+numero);
-    newpoints.setAttribute('class','points');
     
     
     newslots.setAttribute('id','shipslots'+numero);
     newslots.setAttribute('class','slot '+numero);
-    newinitiative.setAttribute('id','initiative'+numero);
-    newinitiative.setAttribute('class','initiative');
-    newremovebutton.setAttribute('id','removeB'+numero);
-    newremovebutton.setAttribute('class','bouton removeB'+numero);
     
+      
 
     squad.appendChild(newpara);
     newpara.appendChild(newdiv);
     newpara.appendChild(newzone)
     newdiv.appendChild(newship);
     newdiv.appendChild(newpilot);
+    newdiv.appendChild(newinitiative);
+    newdiv.appendChild(newremovebutton);
+    newdiv.appendChild(newpoints);
     newzone.appendChild(newchassis1);
     newzone.appendChild(newchassis2);
     newzone.appendChild(newtitle);
-    newzone.appendChild(newpoints);
+    
     newpara.appendChild(newslots);
-    newdiv.appendChild(newinitiative);
-    newdiv.appendChild(newremovebutton);
+   
    
     
     populateMenu("menu_ship_"+numero, ship_available);
@@ -876,18 +884,18 @@ function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'acti
     newship.addEventListener('input', function(event) {
        //y = event.target.id.slice(10,11);  
        identifyElement(event);
-       pilot_objects[numero] = []; //Il faut nettoyer toutes les infos du ship/pilot/slots précédent
-       select_pilot_list(numero);
+       pilot_objects[y] = []; //Il faut nettoyer toutes les infos du ship/pilot/slots précédent
+       select_pilot_list();
        displayDescriptionShip(event);
-       removeElementsByClass("slotElement"+numero);
-      restricted_List[numero] = []; //Il faut nettoyer toutes les infos du ship/pilot/slots précédent
-      restricted_List[8][numero] = ""; //Il faut aussi retirer le nom du pilote
-      upgradesSelected[numero] = []; //Il faut nettoyer toutes les infos du ship/pilot/slots précédent
-      upgrades_Objects[numero] = []; //Il faut nettoyer toutes les infos du ship/pilot/slots précédent
-      upgrades_Objects_Val[numero] = []; //Il faut nettoyer toutes les infos du ship/pilot/slots précédent
-      upgrades_Type[numero] = []; //Il faut nettoyer toutes les infos du ship/pilot/slots précédent
-      pilot_list[numero]= {name:"",points:0}; //Il faut nettoyer toutes les infos du ship/pilot/slots précédent
-      chassis_selected[numero] = [0,0];
+       removeElementsByClass("slotElement"+y);
+      restricted_List[y] = []; //Il faut nettoyer toutes les infos du ship/pilot/slots précédent
+      restricted_List[8][y] = ""; //Il faut aussi retirer le nom du pilote
+      upgradesSelected[y] = []; //Il faut nettoyer toutes les infos du ship/pilot/slots précédent
+      upgrades_Objects[y] = []; //Il faut nettoyer toutes les infos du ship/pilot/slots précédent
+      upgrades_Objects_Val[y] = []; //Il faut nettoyer toutes les infos du ship/pilot/slots précédent
+      upgrades_Type[y] = []; //Il faut nettoyer toutes les infos du ship/pilot/slots précédent
+      pilot_list[y]= {name:"",points:0}; //Il faut nettoyer toutes les infos du ship/pilot/slots précédent
+      chassis_selected[y] = [0,0];
       document.getElementById("chassis1"+numero).textContent = "";
       document.getElementById("chassis2"+numero).textContent = "";
       document.getElementById("title"+numero).textContent = "";
@@ -917,18 +925,26 @@ function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'acti
         upgrade_restricted_List(y);
         updateTotalCost();
     }); 
-    
-   
-        
+
+    newchassis1.addEventListener('click', function(event){
+        display_chassis_title_window(event);
+    })
+    newchassis2.addEventListener('click', function(event){
+        display_chassis_title_window(event);
+    })
+    newtitle.addEventListener('click', function(event){
+        display_chassis_title_window(event);
+    })       
     
 
 
-    newremovebutton.textContent = 'Delete';
+    newremovebutton.textContent = 'Del';
    newremovebutton.addEventListener('click', function(event){ //we code the remove button located on the same line as the pilot and ship
     let buttonID = event.target.id;
     xB = buttonID.slice(-1);
     yB = Number(xB);
     sQ = shipquantity;
+    
     remove_ship(xB);
     
     while (yB < sQ){
@@ -941,6 +957,8 @@ function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'acti
     restricted_List[yB] = restricted_List[yB+1]; 
     restricted_List[8][yB] = restricted_List[8][yB+1];  
     pilot_list[yB] = pilot_list[yB+1];
+    chassis_selected[yB] = chassis_selected[yB+1];
+
 
     div_pxB1 = document.getElementById("p"+(yB+1));
     div_pxB1.setAttribute('class', 'new '+yB);
@@ -952,6 +970,18 @@ function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'acti
     div_shipslotsxB1.setAttribute('class', 'slot '+yB);
     div_upgradeButtonxB1 = document.getElementById('upgradeButton'+(yB+1));
     div_upgradeButtonxB1.setAttribute('id', 'upgradeButton'+yB);
+    div_zonexB1 = document.getElementById('zone'+(yB+1));
+    div_zonexB1.setAttribute('id', 'zone'+yB);
+    div_chassis1xB1 = document.getElementById('chassis1'+(yB+1));
+    div_chassis1xB1.setAttribute('id', 'chassis1'+yB);
+    div_chassis2xB1 = document.getElementById('chassis2'+(yB+1));
+    div_chassis2xB1.setAttribute('id', 'chassis2'+yB);
+    div_titlexB1 = document.getElementById('title'+(yB+1));
+    div_titlexB1.setAttribute('id', 'title'+yB);
+    div_pointsxB1 = document.getElementById('points'+(yB+1));
+    div_pointsxB1.setAttribute('id', 'points'+yB);
+    div_removeButtonxB1 = document.getElementById('removeB'+(yB+1));
+    div_removeButtonxB1.setAttribute('id', 'removeB'+yB);
     
     menu_shipxB1 = document.getElementById('menu_ship_'+(yB+1));
     menu_shipxB1.setAttribute('id','menu_ship_'+yB);
@@ -1005,6 +1035,7 @@ function remove_ship(n) { //fonction qui permet de retirer le dernier vaisseau. 
     }
         
     updateTotalCost();
+
     
 }       
 
@@ -1056,6 +1087,29 @@ function displayDescriptionUpgrade(event){ //permet d'afficher l'effet de l'amé
             return
         }
 }
+}
+
+function display_chassis_title_window(event) { //allows to display the chassis window when the user clicks on the chassis name
+    chassistarget = event.target.id;
+    n = chassistarget.slice(-2,-1); //n= 1 or 2 depending on the chassis clicked
+    targettype = chassistarget.slice(0,-2); //targettype = chassis or title
+    let chassisOverlay = document.createElement("div");
+    chassisOverlay.setAttribute("id", "overlay");
+    chassisOverlay.setAttribute("class","overlay");
+    let chassisWindow = document.createElement("div");
+    chassisWindow.setAttribute("id", "popup");
+    chassisWindow.setAttribute("class", "chassisTitleWindow");
+    chassisWindow.innerHTML = 'Test Fenetre Chassis <br>Display Chassis'+n+y;
+    document.body.appendChild(chassisOverlay);
+    chassisOverlay.appendChild(chassisWindow);
+
+    chassisWindow.addEventListener("click", function() { //We close the window when the user clicks on the chassis window or the main window
+        document.body.removeChild(chassisOverlay);
+    })
+    chassisOverlay.addEventListener("click", function() { //We close the window when the user clicks on the chassis window or the main window
+        document.body.removeChild(chassisOverlay);
+    })
+
 }
 
 

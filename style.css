@@ -60,19 +60,40 @@ header {
     height: 100%;
     object-fit: cover;
     
+}
 
+#menu_leader {
+    
+    text-align: center;
     
 }
+#menu_faction {
+    
+    text-align: center;
+    
+}
+
+.logo {
+    height: 15px;
+
+}
+.chargeforceimg{
+    height: 15px;
+    width: 15px;
+    resize: both;
+}
+
 /* ##################"BODY ##############################*/
 .new {
     margin: 20px 0 ;
 }
 
+/*######### First Line##########" */
 .ship {
     background-color: black;
     padding: 5px;
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 4fr 4fr 2fr 1fr 1fr;
     gap: 2px;
     max-width: 750px;
     justify-content: center;
@@ -81,17 +102,37 @@ header {
 }
 
 .shipmenu {
-    grid-column: span 2;
+    grid-column: 1;
     justify-content: center;
     align-content: center;
       
 }
-
-
-
-.loadout {
-    color: rgb(76, 173, 101)
+.pilotmenu {
+    grid-column: 2;
 }
+
+.initiative {
+    grid-column: 3;
+    color: aliceblue;
+}
+
+
+.removeB {
+    grid-column: 4; 
+    background-color: brown;
+    color: white
+}
+
+.points {
+    grid-column: 5;
+    color: rgb(255, 255, 0);
+    font-size: x-large;
+    align-self: center;
+    justify-self: center;
+    text-align: right;
+}
+
+/* ###### Second Line ######### */
 
 .zone {
     background-color: black;
@@ -99,6 +140,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-content: center;
+    padding-bottom: 5px;
 }
 
 .chassis {
@@ -122,108 +164,44 @@ header {
     overflow: hidden;
     text-align: center;
     cursor: pointer;
-     border-color: rgb(189, 97, 197);
+    border-color: rgb(189, 97, 197);
     border-style: solid;
     border-width: 2px;
 }
 
-.points {
-    color: rgb(255, 255, 0);
-    font-size: x-large;
-    align-self: center;
-    justify-self: center;
-    text-align: right;
-    flex-grow: 1;
-}
-
 .chassis:empty{
-    flex: 0 0 0;
+    /*flex: 0 0 0;*/
+    display: none;
 }
 
 .title:empty{
-    flex: 0 0 0;
+     /*flex: 0 0 0;*/
+    display: none;
 }
 
-.slot {
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 2px;
-    max-width: 750px; 
-    justify-content: center;
-    align-content: center;
-    }
-
-
-
-
-#menu_leader {
-    
-    text-align: center;
-    
+.overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5); /* assombrissement */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
 }
-#menu_faction {
-    
-    text-align: center;
-    
-}
-
-select {
-    overflow: auto;
+.chassisTitleWindow {
+  padding: 30px;
+  max-width: 80%;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  cursor: pointer;
 }
 
-
-
-.descriptionUpg {
-    padding:5px;
-    min-height: 50px;
-    background-color: black;
-    color:antiquewhite;
-    position: sticky;
-    bottom:0;
-    display: grid;
-    grid-template-columns: 1fr 30px 30px;
-    max-width: 750px;
-}
-.total {
-    font-size: x-large;
-    align-self: center;
-    justify-self: center;
-}
-.count {
-    color:aliceblue;
-}
-.logistic {
-    color:rgb(188, 226, 81);
-}
-.initiative {
-color: aliceblue;
-}
-
-.printing_option {
-    padding:20px;
-    background-color: azure;
-    max-width: 750px;
-    display: flex;
-    
-
-}
-.printing_option div {
-    padding: 3px;
-    width : 25%; 
-}
-
-.removeB {
-    background-color: brown;
-}
-.logo {
-    height: 15px;
-
-}
-.chargeforceimg{
-    height: 15px;
-    width: 15px;
-    resize: both;
-}
+/* ###### Third Line ######### */
 
 .hidden {
   display: none;
@@ -240,3 +218,81 @@ color: aliceblue;
   border: none;
   cursor: pointer;
 }
+
+
+/* ## Beyond the third line ## */
+.slot {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2px;
+    max-width: 750px; 
+    justify-content: center;
+    align-content: center;
+    }
+
+/* #### Description Zone ######### */
+
+.descriptionUpg {
+    padding:5px;
+    min-height: 50px;
+    background-color: black;
+    color:antiquewhite;
+    position: sticky;
+    bottom:0;
+    display: grid;
+    grid-template-columns: 1fr 30px 30px;
+    max-width: 750px;
+}
+
+.loadout {
+    color: rgb(76, 173, 101)
+}
+
+.total {
+    font-size: x-large;
+    align-self: center;
+    justify-self: center;
+}
+.count {
+    color:aliceblue;
+}
+.logistic {
+    color:rgb(188, 226, 81);
+}
+
+select {
+    overflow: auto;
+}
+
+
+
+/* ## Bottom of the page ##*/
+.printing_option {
+    padding:20px;
+    background-color: azure;
+    max-width: 750px;
+    display: flex;
+    
+
+}
+.printing_option div {
+    padding: 3px;
+    width : 25%; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -42,20 +42,22 @@ ships :
   //ne pas mettre de parenthèses ( ou ) dans les noms de pilotes car elles sont utilisées pour les cout dans les menus pilote
 
   About modifier_func :
-  () => auto_equip("Title",1), //le chiffre correspond à l'index de l'upgrade dans le menu
+  // little functions in the pilots JSON. 
+  To be triggered when the pilot is selected, its 'modify' key has to be 'true'. 
+  In the 'modifier_func' key, functions has to be coded this way :
+  "modifier_func": [
+    ["function identification number (see below)","function parameter(s)"],
+    ["function identification number (see below)","function parameter(s)"]
+  ]
+  
 
-  keys to function :
+ function identification number :
   0 : () => multiple functions that triggers when you print your squad : "droid" "add_action" "add_condition" "changeChassis"
-  1 : () => auto_equip("Title",1,147),
-  2 : () => add_slots("Illicit"),
-  3 : () => also_Occupies("Modification")
-  // 4 : () => free_upg("Modification")
-  // 5 : () => change_chassis([10])    id du chassis
-  // 6 : () => weapon_Hardpoint()
-  // 7 : () => change_stat("attackt",1),
-  // 8 : () => add_action([0,"Co R"])
-  // 9 : () => add_condition(3)     id de la condition
-  10 : () => may_remove_slots("Astromech") //WARNING ! The order of the "slot"s to remove is very important. You have to start removing the last "slot", and keep on removing them starting from the last one. Or Else the function 'may_remove_"slot"' will fail. The reason is a bit tricky, but to make it simple, this function will remove (splice) elements in the array upgrades_Objets and upgrades_Type thinking the position is the last digit of the "slot"menu."id". 
+  1 : () => auto_equip("Title Name", "Title ID"),
+  2 : () => add_slots("Slot Type"),
+  3 : () => also_Occupies("Slot type to be occupied")
+  4 : () => change_chassis("chassis ID 1","chassis ID 2"), // this replaces the chassis key in the ships JSON in the same order. Write a parameter 0 if there's no change, or if there's no second chassis.
+  10 : () => may_remove_slots("Slot Type") //Has to be there if there's a 'add-slot' function in case the upgrade is unequipped. WARNING ! The order of the "slot"s to remove is very important. You have to start removing the last "slot", and keep on removing them starting from the last one. Or Else the function 'may_remove_"slot"' will fail. The reason is a bit tricky, but to make it simple, this function will remove (splice) elements in the array upgrades_Objets and upgrades_Type thinking the position is the last digit of the "slot"menu."id". 
 
   Example : {
             "name": "Gooti Terez",
@@ -69,7 +71,8 @@ ships :
             "skill": 1,
             "points": 8,
             "modify": true,
-		      "title": ["Sato's Hammer"],            
+		        "title": ["Sato's Hammer"],
+            "titleID": 200,           
             "ability": "Après avoir défendu contre une attaque portée 1, l'attaquant reçoit 1 jeton de contrainte.",
             "ability_ENG": "After you defend against a Range 1 attack, the attacker gains 1 strain token.",
             "slots": [
@@ -78,27 +81,25 @@ ships :
                 "Illicit"                               
             ],
             "modifier_func": [
-            	[1,"Title",1,200],
+            	[1,"Title",200],
                [3,"Modification"]
              ]
         },
 
 #########################################################################################################################################################################
 Upgrades :
-If 'available' is false, there's a 'restrictions' aray to fill.
+If 'available' is false, there's a 'restrictions' key (array) to fill : 
 "restrictions":[n,"where to look","target required 1","target required 2]
 n:number of target needed to be available
 where to look : - 'title'
                 - 'upgrade'
-                - 'base'
-                - 'keyword' (used for 'TIE' ships)
                 - 'action'
                 - 'ship'
 target required : just write the name of the restricted upgrade
 
 Exemples:
 - Purge Troopers is a crew upgrade but need to occupy also a Gunner Slot.
-We add modify=true and the "modifier_func" at the end to auto equip this upgrade in the gunner slot as well.
+We select modify=true and the "modifier_func" at the end to auto equip this upgrade in the gunner slot as well.
 {
             "name": "Purge Troopers",
              "name_ENG": "Purge Troopers",
@@ -121,27 +122,26 @@ We add modify=true and the "modifier_func" at the end to auto equip this upgrade
                                      
              
          } 
-- Night Sisters is a Crew upgrade that occupies a second Crew Slot. That's why  n=2 in "restrictions". Same as above, we modify = true, and auto equip this upgrade in the second Crew slot.
+- Bomblet Generator is a Payload  upgrade that occupies a second payload Slot. That's why n=2. Same as above, we select 'modify' = true, and auto equip this upgrade in the second Payload slot.
 {
-            "name": "Soeurs de la Nuit",
-             "name_ENG": "Night Sisters",
-             "id":358,
-             "max_per_squad":1,
-             "available":false,
-             "modify":true,
-             "slot":"Crew",
-             "add_Data": [0],
-             "charge": [0],
-             "force":1,
-             "points": 0,
-             "effect": "??",
-             "effect_ENG": "??",
-             "faction": ["Imperial_Remnants"],
-             "restrictions":[2,"upgrade","Crew",""],
-             "modifier_func":[
-                [3,"Crew",358],
-                [0,"change_stat","force",1]
-             ]
+            "name": "Générateur de Sous-Munitions",
+            "name_ENG": "Bomblet Generator",
+            "id": 40,
+            "max_per_squad": 8,
+            "available":false,
+            "modify":true,
+            "slot": "Payload",
+            "points": 2,
+            "add_Data": [0],
+            "force": 0,
+            "charge": [2,"0"],
+            "effect": "Pendant la phase de système, vous pouvez dépenser 1 #ch# pour larguer une sous-munition avec le gabarit 1#straight#. Au début de la phase d’activation, vous pouvez dépenser 1 bouclier pour récupérer 2 #ch#.",
+            "effect_ENG": "",
+            "restrictions": [2,"upgrade", "Payload",""],
+            "faction": "",
+            "modifier_func": [
+                [3,"Payload",40]
+            ]
                                      
              
          }, 
@@ -220,7 +220,8 @@ Because those menus are listened thanks to displayslots(y) function, when you se
 
 
 # Thanks to the identifyElement(event) function, we know everytime you click on a menu what menu it is. It records 3 coordinates :
-- x = -1 if a pilot menu has been selected. Else, it is an upgrade menu, and x is equal to the number of the upgrade menu in the html page. (cf example below)
+
+- x = -1 if a pilot menu has been selected or x=-2 if a ship has been selected. Else, it is an upgrade menu, and x is equal to the number of the upgrade menu in the html page between 0 and 11. (cf example below)
 - y indicates which ship number is modified (pilot or its upgrades) between 0 and 7.
 - z is the index of the menu element you selected. (if the menu displays Element 0, Element 1, Element 2, in this order, z is equal to 0 1 or 2).
 

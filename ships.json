@@ -2214,7 +2214,7 @@
             {
       
                 "name": "Clone Z-95 Headhunter",
-                "factions": [ "Jedi_Order" ],
+                "factions": [ "Clone_Army" ],
                 "id": 79,
                 "attack": [["F",2]],
                 "agility": 2,
