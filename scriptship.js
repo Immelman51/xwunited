@@ -268,7 +268,6 @@ function fillUpgradesSelected(yy){ //fills the array UpgradesSelected (used when
 
 function identifyElement(event){ //sloty_x & index z de l'élément sélectionné, ou pilote dans ce cas x=-1
     let slotMe = event.target.id;
-    console.log("identifyElement : slotMe = "+slotMe);
     if (slotMe.indexOf("pilot")>0){ //si l'id contient la chaine "pilot"
         z = event.target.selectedIndex;
         y = slotMe.slice(-1);
@@ -283,7 +282,6 @@ function identifyElement(event){ //sloty_x & index z de l'élément sélectionn�
         x = slotMe.slice(-1);
     }
    
-console.log("identifyElement : y = "+y+" x = "+x+" z = "+z); 
 }
 
 function updateTotalCost() { //update total cost AND logistic value
