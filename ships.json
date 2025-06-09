@@ -2720,7 +2720,7 @@
                 "agility": 1,
                 "base": ["Large"],
                 "hull": 6,
-                "shields": 6,
+                "shields": 7,
                 "chassis": [60],
                 "actions": [
                     

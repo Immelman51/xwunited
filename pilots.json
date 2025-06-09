@@ -12627,6 +12627,27 @@
             "modifier_func": [
                 [5,"Crew"]
             ]
+        },
+         {
+            "name": "Qui-Gon Jinn",
+            "name_ENG": "Qui-Gon Jinn",
+            "id": 558,
+            "max_per_squad":1,
+            "modify": false,
+            "faction": "Naboo_Defense_Force",
+            "ship": "ETA Class Shuttle",
+            "charge":[0],
+            "force": 3,
+            "titleID": 0,
+            "shipId": 98,
+            "skill": 4,
+            "points": 10,                        
+            "ability": "",
+            "ability_ENG": "",
+            "slots": [ 
+                "Force",
+                "Force"    
+            ]
         }
 
 

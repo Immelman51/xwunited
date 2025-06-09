@@ -59,6 +59,7 @@ let shipquantity = -1; //compteur qui ne sert pas à compter mais à numéroter 
  let upgrades_Objects_Val= [[],[],[],[],[],[],[],[]]; // va contenir la liste des contenus des menus slots après validation mais sous forme d'objet
  let upgradesSelected = [[],[],[],[],[],[],[],[]]; //va contenir les nom des upgrades sélectionnées
  let upgradesSelected_ID = [[],[],[],[],[],[],[],[]]; //va contenir les id des upgrades sélectionnées (si rien n'est sélectionné, alors la valeur est -1)
+ let upgradesSelected_Objects = [[],[],[],[],[],[],[],[]];
  let y= "0"; //valeur qui indique l'index du pilote podifié
  let z= "0"; //valeur qui indique l'index dans le menu de l'élément sélectionné
 let x= "0"; //valeur qui indique l'index du menu d'amélioration sélectionné (sloty_x)
@@ -248,9 +249,10 @@ function displayslots(yy) { //crée les menus de slot et contient l'écoute des 
 
 }
 
-function fillUpgradesSelected(yy){ //fills the array UpgradesSelected (used when an input of upgrade is made)
+function fillUpgradesSelected(yy){ //fills the array UpgradesSelected and upgradesSelected_Objects (used when an input of upgrade is made)
     upgradesSelected[yy] = [];
     upgradesSelected_ID[yy] = [];
+    upgradesSelected_Objects[yy] = [];
     
     for (let i=0; i<upgrades_Type[y].length ; i++){
         slotM = document.getElementById("slot"+yy+"_"+i);
@@ -258,8 +260,10 @@ function fillUpgradesSelected(yy){ //fills the array UpgradesSelected (used when
         
         if (slotM.selectedIndex>0){
             upgradesSelected_ID[yy].push(upgrades_Objects_Val[yy][i][slotM.selectedIndex-1]['id']); // on met les id des upgrades si elles sont sélectionnées, sinon on va mettre -1
+            upgradesSelected_Objects[yy].push(upgrades_Objects_Val[yy][i][slotM.selectedIndex-1]);
         }else{
             upgradesSelected_ID[yy].push(-1); // comme écrit au dessus, si aucune upgrade n'est sélectionnée (e.g : <Talent>, selectedIndex 0 du menu), alors on met -1
+            upgradesSelected_Objects[yy].push(-1);
         }
             
     }
@@ -304,7 +308,7 @@ function updateUpgradeCount(yy) { //update the table logistic_Equipped
         
         if (upgradesSelected_ID[yy][j]>-1) {
             if ((upgrades[upgradesSelected_ID[yy][j]]["slot"]!=="Talent") && (upgrades[upgradesSelected_ID[yy][j]]["slot"]!=="Force")) { //cette condition permet de ne pas compter les couts des talents et force
-                logisticEquipped[yy]= logisticEquipped[yy] + upgrades[upgradesSelected_ID[yy][j]]["points"];
+                logisticEquipped[yy]= logisticEquipped[yy] + upgradesSelected_Objects[yy][j]["points"];
                 
             }
         
@@ -444,7 +448,7 @@ function checkPilotModifier() { //va checker s'il existe des fonctions dans modi
                     
                     break;
                 case 5 : //This function is for J-Type Star Skiff chassis ability 'Luxury Cruiser'. It reduces the logistic cost of upgrade parameter by 1.
-                    reduce_logistic_cost(slotType);
+                    reduce_logistic_cost(pilot_list[y]['modifier_func'][m][1]);
                     console.log('checkPilotModifier : modifier_func n°'+5 );
                     break;
                 case 10 :
@@ -761,13 +765,23 @@ function reduce_logistic_cost(slotType) { //Action n°5
     }
 
     for (k=0 ; k<menu_slotType.length ; k++) {
-        let slotID = document.getElementById('slot'+y+'_'+k);
+        let slotID = document.getElementById('slot'+y+'_'+menu_slotType[k]);
         slotID.addEventListener('input', function() {
             let actualSlotID = slotID.id; //the id can change beacause of the delete function
-            let number = actualSlotID.slice(-3,-2); 
-            logisticEquipped[number] = logisticEquipped[number] - 1;
-        })
-    }
+            let numberY = actualSlotID.slice(-3,-2); 
+            let numberX = actualSlotID.slice(-1);
+            let slottarget = document.getElementById(actualSlotID);
+            let numberZ = slottarget.selectedIndex;
+            if (z>0) {
+            upgradesSelected_Objects[numberY][numberX]["points"] =  upgradesSelected_Objects[numberY][numberX]["points"] - 1;
+            updateUpgradeCount(numberY);
+            }
+        }
+    )
+  
+}
+ updateTotalCost();     
+    
 }
 
 function may_remove_slots(slot){ //Action n°10 : permet de retirer des slots
