@@ -57,6 +57,7 @@ ships :
   2 : () => add_slots("Slot Type"),
   3 : () => also_Occupies("Slot type to be occupied")
   4 : () => change_chassis("chassis ID 1","chassis ID 2"), // this replaces the chassis key in the ships JSON in the same order. Write a parameter 0 if there's no change, or if there's no second chassis.
+  5 : () => reduce_logistic_cost(slotType), // reduce the logistic cost of slot parameter upgrade by 1.
   10 : () => may_remove_slots("Slot Type") //Has to be there if there's a 'add-slot' function in case the upgrade is unequipped. WARNING ! The order of the "slot"s to remove is very important. You have to start removing the last "slot", and keep on removing them starting from the last one. Or Else the function 'may_remove_"slot"' will fail. The reason is a bit tricky, but to make it simple, this function will remove (splice) elements in the array upgrades_Objets and upgrades_Type thinking the position is the last digit of the "slot"menu."id". 
 
   Example : {

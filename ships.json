@@ -2640,7 +2640,7 @@
                     [ 0, 0, 1, 0, 0, 0,0,0],
                     [ 0, 0, 1, 0, 0, 3,0,0]
                 ],
-                "slots": ["Crew","Crew","Gunner","Payload","Turret","Modification","Calculator"]
+                "slots": ["Crew","Gunner","Payload","Turret","Modification","Calculator"]
             },
             {
             	"name": "RP82 Fighter",
@@ -2693,9 +2693,9 @@
             	"name": "ETA Class Shuttle",
                 "factions": [ "Imperial_Remnants", "Jedi_Order", "Naboo_Defense_Force" ],
                 "id": 98,
-                "attack": [["T",2]],
+                "attack": [["F",2]],
                 "agility": 2,
-                "base": ["Large"],
+                "base": ["Medium"],
                 "hull": 6,
                 "shields": 2,
                 "chassis": [0],
@@ -2710,18 +2710,18 @@
                     [ 0, 0, 1, 0, 0, 0,0,0],
                     [ 0, 0, 1, 0, 0, 3,0,0]
                 ],
-                "slots": []
+                "slots": ["Crew","Sensor","Modification","Calculator"]
             },
             {
             	"name": "J-Type Star Skiff",
                 "factions": [ "Naboo_Defense_Force" ],
                 "id": 99,
-                "attack": [["0"]],
+                "attack": [["F",3]],
                 "agility": 1,
                 "base": ["Large"],
                 "hull": 6,
-                "shields": 8,
-                "chassis": [0],
+                "shields": 6,
+                "chassis": [60],
                 "actions": [
                     
                 ],
@@ -2733,7 +2733,7 @@
                     [ 0, 0, 1, 0, 0, 0,0,0],
                     [ 0, 0, 1, 0, 0, 3,0,0]
                 ],
-                "slots": []
+                "slots": ["Crew","Crew","Crew","Sensor","Modification"]
             },
             {
             	"name": "NB-1S Royal Bomber",
@@ -2811,7 +2811,7 @@
                 "name_ENG": "Zenuas 33 Umbaran Starfighter",
                 "factions": [ "Separatist_Government" ],
                 "id": 103,
-                "attack": [["F",2]],
+                "attack": [["F",3]],
                 "agility": 3,
                 "base": ["Small"],
                 "hull": 2,

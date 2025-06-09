@@ -4037,7 +4037,8 @@
             "points": 5,
             
             "slots": [ 
-                "Droid"              
+                "Droid",
+                "Crew"              
             ],
             "modifier_func": [
                 [1,"Droid",237]
@@ -12602,6 +12603,30 @@
             "slots": [     
             
             ] 
+        },
+        {
+            "name": "Ric Ollié",
+            "name_ENG": "Ric Ollié",
+            "id": 557,
+            "max_per_squad":1,
+            "modify": true,
+            "faction": "Naboo_Defense_Force",
+            "ship": "J-Type Star Skiff",
+            "charge":[0],
+            "force": 0,
+            "titleID": 0,
+            "shipId": 99,
+            "skill": 5,
+            "points": 10,                        
+            "ability": "",
+            "ability_ENG": "",
+            "slots": [ 
+                "Talent",
+                "Talent"    
+            ],
+            "modifier_func": [
+                [5,"Crew"]
+            ]
         }
 
 

@@ -489,6 +489,14 @@
  "effect1":"<em><strong>Propulseur d'Interception : </strong></em>",
  "effect2": "<img class='chargeforceimg' src='img/chargestat.png'><img class='chargeforceimg' src='img/chargestat.png'><img class='chargeforceimg' src='img/chargeminus.png'> <em>(Accroché) </em>Tant que vous avez 1 #ch# active, pendant la phase système, recevez 1 jeton de désarmement. <img class='action' src='interceptbooster.png>",
  "effect3": "<em>(Détaché) </em>Vous ne pouvez pas changer de configuration"
+},
+{
+ "name":"Luxury Cruiser",
+ "id":60,
+ "nbrOfEffects":1,
+ "effect1":"<em><strong>Croiseur Luxueux : </strong></em> Chaque amélioration #crew# sur ce vaisseau coûtent 1 point de logistique de moins.",
+ "effect2": "",
+ "effect3": ""
 }
   
 

@@ -427,22 +427,25 @@ function checkPilotModifier() { //va checker s'il existe des fonctions dans modi
                     break;
                 case 1: 
                     auto_equip(pilot_list[y]['modifier_func'][m][1], pilot_list[y]['modifier_func'][m][2], pilot_list[y]['modifier_func'][m][3]);
-                    console.log('checkPilotModifier : modifier_func n°'+1 );
+                    
                     break;
                 case 2 :
                     add_slots(pilot_list[y]['modifier_func'][m][1]);
-                    console.log('checkPilotModifier : modifier_func n°'+2 );
+                
 
                     break;
                 case 3 : 
                     also_Occupies(pilot_list[y]['modifier_func'][m][1]); //, pilot_list[y]['modifier_func'][m][2]);
-                    console.log('checkPilotModifier : modifier_func n°'+3 );
+                    
 
                     break;
                 case 4 : //on va ajouter une fonction qui permet de changer le chassis du pilote
                     change_chassis(pilot_list[y]['modifier_func'][m][1],pilot_list[y]['modifier_func'][m][2]);
-                    console.log('checkPilotModifier : modifier_func n°'+4 );
-
+                    
+                    break;
+                case 5 : //This function is for J-Type Star Skiff chassis ability 'Luxury Cruiser'. It reduces the logistic cost of upgrade parameter by 1.
+                    reduce_logistic_cost(slotType);
+                    console.log('checkPilotModifier : modifier_func n°'+5 );
                     break;
                 case 10 :
                     may_remove_slots(pilot_list[y]['modifier_func'][m][1]);
@@ -747,6 +750,24 @@ function change_chassis(chassisID1,chassisID2) { //Action n°4 : permet de chang
     chassis_selected[y][0] = chassisID1;
     chassis_selected[y][1] = chassisID2;
 
+}
+
+function reduce_logistic_cost(slotType) { //Action n°5
+    let menu_slotType = [];
+    for (k=0 ; k<upgrades_Type[y].length ; k++) {
+        if (upgrades_Type[y][k]===slotType) {
+            menu_slotType.push(k);
+        }
+    }
+
+    for (k=0 ; k<menu_slotType.length ; k++) {
+        let slotID = document.getElementById('slot'+y+'_'+k);
+        slotID.addEventListener('input', function() {
+            let actualSlotID = slotID.id; //the id can change beacause of the delete function
+            let number = actualSlotID.slice(-3,-2); 
+            logisticEquipped[number] = logisticEquipped[number] - 1;
+        })
+    }
 }
 
 function may_remove_slots(slot){ //Action n°10 : permet de retirer des slots
