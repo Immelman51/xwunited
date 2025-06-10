@@ -212,6 +212,7 @@ function displayslots(yy) { //crée les menus de slot et contient l'écoute des 
         slotmenu.setAttribute('id', 'slot'+yy+"_"+(j+index));
         slotmenu.setAttribute('class', 'slotElement'+y+' '+ships[pilot_list[yy]["shipId"]]["slots"][j]+' hidden' );
         shipslot.appendChild(slotmenu);
+
         slotmenu.addEventListener("input", function(event) {//cette faction décrit le calcul des mises à jour des points pour le loadout et le cout du pilote
             identifyElement(event); 
             check_restricted_List(event);    
@@ -346,6 +347,9 @@ switch (list) {
         break;
     case 'ship' :
         varlist = ships[pilot_list[yy]['shipId']]['name'];
+        break;
+    case 'size' :
+        varlist = ships[pilot_list[yy]['shipId']]['size'];
         break;
     default :
         console.log('error testRestriction and varlist'); 
@@ -774,6 +778,7 @@ function reduce_logistic_cost(slotType) { //Action n°5
             let numberZ = slottarget.selectedIndex;
             if (z>0) {
             upgradesSelected_Objects[numberY][numberX]["points"] =  upgradesSelected_Objects[numberY][numberX]["points"] - 1;
+            console.log('crew 2 points  : '+upgradesSelected_Objects[numberY][numberX]['points']);
             updateUpgradeCount(numberY);
             }
         }
