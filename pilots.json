@@ -12628,10 +12628,79 @@
                 [5,"Crew"]
             ]
         },
+	{
+            "name": "Gregar Typho",
+            "name_ENG": "Gregar Typho",
+            "id": 558,
+            "max_per_squad":1,
+            "modify": true,
+            "faction": "Naboo_Defense_Force",
+            "ship": "J-Type Star Skiff",
+            "charge":[0],
+            "force": 0,
+            "titleID": 0,
+            "shipId": 99,
+            "skill": 3,
+            "points": 10,                        
+            "ability": "",
+            "ability_ENG": "",
+            "slots": [ 
+                "Talent"  
+            ],
+            "modifier_func": [
+                [5,"Crew"]
+            ]
+        },
+	{
+            "name": "Porro Dolphe",
+            "name_ENG": "Porro Dolphe",
+            "id": 559,
+            "max_per_squad":1,
+            "modify": true,
+            "faction": "Naboo_Defense_Force",
+            "ship": "J-Type Star Skiff",
+            "charge":[0],
+            "force": 0,
+            "titleID": 0,
+            "shipId": 99,
+            "skill": 3,
+            "points": 10,                        
+            "ability": "",
+            "ability_ENG": "",
+            "slots": [ 
+                "Talent"  
+            ],
+            "modifier_func": [
+                [5,"Crew"]
+            ]
+        },
+	{
+            "name": "Padme Amidala",
+            "name_ENG": "",
+            "id": 560,
+            "max_per_squad":1,
+            "modify": true,
+            "faction": "Naboo_Defense_Force",
+            "ship": "J-Type Star Skiff",
+            "charge":[0],
+            "force": 0,
+            "titleID": 0,
+            "shipId": 99,
+            "skill": 3,
+            "points": 10,                        
+            "ability": "",
+            "ability_ENG": "",
+            "slots": [ 
+                "Talent"  
+            ],
+            "modifier_func": [
+                [5,"Crew"]
+            ]
+        },
          {
             "name": "Qui-Gon Jinn",
             "name_ENG": "Qui-Gon Jinn",
-            "id": 558,
+            "id": 561,
             "max_per_squad":1,
             "modify": false,
             "faction": "Naboo_Defense_Force",
@@ -12648,7 +12717,150 @@
                 "Force",
                 "Force"    
             ]
+        },
+	{
+            "name": "Anakin Skywalker",
+            "name_ENG": "Anakin Skywalker",
+            "id": 562,
+            "max_per_squad":1,
+            "modify": false,
+            "faction": "Naboo_Defense_Force",
+            "ship": "ETA Class Shuttle",
+            "charge":[0],
+            "force": 3,
+            "titleID": 0,
+            "shipId": 98,
+            "skill": 6,
+            "points": 10,                        
+            "ability": "",
+            "ability_ENG": "",
+            "slots": [ 
+                "Force",
+                "Force"    
+            ]
+        },
+	{
+            "name": "Obiwan Kenobi",
+            "name_ENG": "Obiwan Kenobi",
+            "id": 563,
+            "max_per_squad":1,
+            "modify": false,
+            "faction": "Naboo_Defense_Force",
+            "ship": "ETA Class Shuttle",
+            "charge":[0],
+            "force": 3,
+            "titleID": 0,
+            "shipId": 98,
+            "skill": 5,
+            "points": 10,                        
+            "ability": "",
+            "ability_ENG": "",
+            "slots": [ 
+                "Force",
+                "Force"    
+            ]
+        },
+	{
+            "name": "Jar-Jar Binks",
+            "name_ENG": "Jar-Jar Binks",
+            "id": 564,
+            "max_per_squad":1,
+            "modify": false,
+            "faction": "Naboo_Defense_Force",
+            "ship": "ETA Class Shuttle",
+            "charge":[0],
+            "force": 0,
+            "titleID": 0,
+            "shipId": 98,
+            "skill": 5,
+            "points": 10,                        
+            "ability": "",
+            "ability_ENG": "",
+            "slots": [ 
+                "Talent"   
+            ]
+        },
+	{
+            "name": "Rhys Dallows",
+            "name_ENG": "Rhys Dallows",
+            "id": 565,
+            "max_per_squad":1,
+            "modify": false,
+            "faction": "Naboo_Defense_Force",
+            "ship": "NB-1S Royal Bomber",
+            "charge":[0],
+            "force": 0,
+            "titleID": 0,
+            "shipId": 0,
+            "skill": 5,
+            "points": 10,                        
+            "ability": "",
+            "ability_ENG": "",
+            "slots": [ 
+                "Talent"   
+            ]
+        },
+	{
+            "name": "Essara Till",
+            "name_ENG": "Essara Till",
+            "id": 566,
+            "max_per_squad":1,
+            "modify": false,
+            "faction": "Naboo_Defense_Force",
+            "ship": "NB-1S Royal Bomber",
+            "charge":[0],
+            "force": 0,
+            "titleID": 0,
+            "shipId": 0,
+            "skill": 5,
+            "points": 10,                        
+            "ability": "",
+            "ability_ENG": "",
+            "slots": [ 
+                "Talent"   
+            ]
+        },
+	{
+            "name": "Arven Wendik",
+            "name_ENG": "Arven Wendik",
+            "id": 567,
+            "max_per_squad":1,
+            "modify": false,
+            "faction": "Naboo_Defense_Force",
+            "ship": "NB-1S Royal Bomber",
+            "charge":[0],
+            "force": 0,
+            "titleID": 0,
+            "shipId": 0,
+            "skill": 5,
+            "points": 10,                        
+            "ability": "",
+            "ability_ENG": "",
+            "slots": [ 
+                "Talent"   
+            ]
+        },
+	{
+            "name": "Rya Kirsch",
+            "name_ENG": "Rya Kirsch",
+            "id": 568,
+            "max_per_squad":1,
+            "modify": false,
+            "faction": "Naboo_Defense_Force",
+            "ship": "NB-1S Royal Bomber",
+            "charge":[0],
+            "force": 0,
+            "titleID": 0,
+            "shipId": 0,
+            "skill": 5,
+            "points": 10,                        
+            "ability": "",
+            "ability_ENG": "",
+            "slots": [ 
+                "Talent"   
+            ]
         }
+
 
 
 
