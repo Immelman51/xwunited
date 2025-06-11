@@ -11429,7 +11429,7 @@
             "faction": "Shadow_Specialists",
             "title": ["Night Buzzard"],
             "ship": "Oubliette Class Transport",
-            "charge":[1,"+"],
+            "charge":[1,"0"],
             "force": 1,
             "titleID": 318,
             "shipId": 94,
@@ -11454,7 +11454,7 @@
             "faction": "Shadow_Specialists",
             "title": ["Night Buzzard"],
             "ship": "Oubliette Class Transport",
-            "charge":[1,"+"],
+            "charge":[1,"0"],
             "force": 1,
             "titleID": 318,
             "shipId": 94,
@@ -11479,7 +11479,7 @@
             "faction": "Shadow_Specialists",
             "title": ["Night Buzzard"],
             "ship": "Oubliette Class Transport",
-            "charge":[1,"+"],
+            "charge":[1,"0"],
             "force": 1,
             "titleID": 318,
             "shipId": 94,
@@ -11504,7 +11504,7 @@
             "faction": "Shadow_Specialists",
             "title": ["Night Buzzard"],
             "ship": "Oubliette Class Transport",
-            "charge":[1,"+"],
+            "charge":[1,"0"],
             "force": 1,
             "titleID": 318,
             "shipId": 94,
@@ -12652,8 +12652,8 @@
             ]
         },
 	{
-            "name": "Capitaine Kael",
-            "name_ENG": "Captain Kael",
+            "name": "C-3PO",
+            "name_ENG": "C-3PO",
             "id": 559,
             "max_per_squad":1,
             "modify": true,
@@ -12668,10 +12668,13 @@
             "ability": "",
             "ability_ENG": "",
             "slots": [ 
+                "Droid",
                 "Talent"  
             ],
             "modifier_func": [
+                [1, "Droid",237],
                 [5,"Crew"]
+
             ]
         },
 	{

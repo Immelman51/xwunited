@@ -401,7 +401,7 @@
     "name":"Boarding",
     "id":49,
     "nbrOfEffects": 1,
-    "effect1":"<em><strong>Abordage : </strong></em>Vous pouvez attaquer à portée 0. Dans ce cas, les dés de défense ne peuvent pas être modifiés.",
+    "effect1":"<em><strong>Abordage : </strong></em>Vous pouvez attaquer à portée 0. Dans ce cas, le défenseur ne lance pas de dés de défense.",
     "effect2": "",
     "effect3": "" 
 },
@@ -470,7 +470,7 @@
     "name":"Night Buzzard",
     "id":57,
     "nbrOfEffects": 1,
-    "effect1":"<em><strong>Night Buzzard : </strong></em>Après avoir effectué une manoeuvre, vous pouvez augmenter sa difficulté, vous pouvez récupérer 1 #ch# de votre capacité de pilote.",
+    "effect1":"<em><strong>Night Buzzard : </strong></em>Lorsque vous effectuez une manoeuvre, vous pouvez augmenter sa difficulté. Dans ce cas, vous pouvez récupérer 1 #ch# de votre capacité de pilote.",
     "effect2": "",
     "effect3": "" 
 },
