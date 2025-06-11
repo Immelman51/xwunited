@@ -2164,7 +2164,7 @@
                 "hull": 9,
                 "shields": 2,
                 "base": ["Large"],
-                "chassis": [ 9, 46] ,
+                "chassis": [ 4, 46] ,
                 "actions": [
                     [0,"Fo W"],               
                     [0,"Re R"],
@@ -2733,7 +2733,7 @@
                     [ 0, 0, 1, 0, 0, 0,0,0],
                     [ 0, 0, 1, 0, 0, 3,0,0]
                 ],
-                "slots": ["Crew","Crew","Crew","Sensor","Modification"]
+                "slots": ["Crew","Crew","Crew","Modification"]
             },
             {
             	"name": "NB-1S Royal Bomber",
@@ -2766,8 +2766,8 @@
                 "attack": [["F",2]],
                 "agility": 1,
                 "base": ["Small"],
-                "hull": 6,
-                "shields": 8,
+                "hull": 7,
+                "shields": 0,
                 "chassis": [0],
                 "actions": [
                     
@@ -2783,52 +2783,55 @@
                 "slots": ["Astromech","Missile","Modification","Modification"]
             },
             {
-            	"name": "Scarab-Class Starfighter",
-                "name_ENG": "Scarab-Class Starfighter",
+            	"name": "Scarab-Class Droid Fighter",
+                "name_ENG": "Scarab-Class Droid Fighter",
                 "factions": [ "Trade_Federation" ],
                 "id": 102,
                 "attack": [["F",1]],
                 "agility": 2,
                 "base": ["Small"],
                 "hull": 1,
-                "shields": 3,
-                "chassis": [0],
+                "shields": 2,
+                "chassis": [17,61],
                 "actions": [
                     
                 ],
                 "maneuvers": [
-                    [ 0, 0, 0, 0, 0, 0,0,0],
-                    [ 2, 2, 0, 2, 2, 0,0,0],
-                    [ 2, 1, 1, 1, 2, 0,0,0],
-                    [ 1, 1, 1, 1, 1, 0,3,3],
-                    [ 0, 0, 1, 0, 0, 0,0,0],
-                    [ 0, 0, 1, 0, 0, 3,0,0]
+                    [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                    [ 2, 2, 0, 2, 2, 0, 0, 0, 0, 0],
+                    [ 1, 1, 1, 1, 1, 0, 0, 0, 0, 0],
+                    [ 2, 0, 1, 0, 2, 0, 0, 0, 3, 3],
+                    [ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0]
+                    
                 ],
-                "slots": ["Modification"]
+                "slots": ["Modification","Calculator"]
             },
             {
             	"name": "Zenuas 33 Umbaran Starfighter",
                 "name_ENG": "Zenuas 33 Umbaran Starfighter",
                 "factions": [ "Separatist_Government" ],
                 "id": 103,
-                "attack": [["F",3]],
+                "attack": [["F",2]],
                 "agility": 3,
                 "base": ["Small"],
                 "hull": 2,
                 "shields": 2,
-                "chassis": [0],
+                "chassis": [9],
                 "actions": [
-                    
+                    [0,"Fo W"],  
+                    [0,"Lo W"],   
+                    [1,"Br W", "Lo R"], 
+                    [1,"Bo W", "Lo R"] 
                 ],
                 "maneuvers": [
-                    [ 0, 0, 0, 0, 0, 0,0,0],
-                    [ 2, 2, 0, 2, 2, 0,0,0],
-                    [ 2, 1, 1, 1, 2, 0,0,0],
-                    [ 1, 1, 1, 1, 1, 0,3,3],
-                    [ 0, 0, 1, 0, 0, 0,0,0],
-                    [ 0, 0, 1, 0, 0, 3,0,0]
+                    [ 0, 0, 3, 0, 0, 0 ,0, 0],
+                    [ 2, 1, 1, 1, 2, 0, 3, 3],
+                    [ 2, 1, 1, 1, 2, 0, 0, 0],
+                    [ 2, 1, 1, 1, 2, 0, 0, 0],
+                    [ 0, 0, 1, 0, 0, 0, 0, 0]
+                    
                 ],
-                "slots": ["Missile","Missile","Modification"]
+                "slots": ["Missile","Missile","Tech"]
             },
             {
             	"name": "Vaisseau d'Abordage de classe Droch",
@@ -2855,18 +2858,22 @@
                 "slots": ["Sensor","Modification"]
             },
             {
-            	"name": "Sabaoth Starfighter",
-                "name_ENG": "Sabaoth Starfighter",
+            	"name": "Mankvim-814 Light Interceptor",
+                "name_ENG": "Mankvim-814 Light Interceptor",
                 "factions": [ "Agents_of_Chaos" ],
                 "id": 105,
-                "attack": [["F",3]],
-                "agility": 2,
+                "attack": [["F",2]],
+                "agility": 3,
                 "base": ["Small"],
-                "hull": 3,
+                "hull": 2,
                 "shields": 1,
-                "chassis": [0],
+                "chassis": [62,63],
                 "actions": [
-                    
+                    [0,"Fo W"],  
+                    [1,"Ev W", "Br R"],  
+                    [1,"Ev W", "Bo R"], 
+                    [1,"Br W", "Fo R"], 
+                    [1,"Bo W", "Fo R"] 
                 ],
                 "maneuvers": [
                     [ 0, 0, 0, 0, 0, 0,0,0],
@@ -2876,7 +2883,7 @@
                     [ 0, 0, 1, 0, 0, 0,0,0],
                     [ 0, 0, 1, 0, 0, 3,0,0]
                 ],
-                "slots": []
+                "slots": ["Modification"]
             },
              {
             	"name": "HH-87 Starhopper",

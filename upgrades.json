@@ -2789,7 +2789,7 @@
             "attack": ["F", 3],
             "range": [2,3],
             "faction": ["Trade_Federation","Agents_of_Chaos","Separatist_Government"],
-            "effect": "Attaque #CA# : dépensez 1 #ch#. Tant que vous effectuez cette attaque, vous pouvez dépenser 1 marqueur de calcul pour changer 1 résultat #eye# en un résultat #crit#.<br>Action : rechargez cette carte.",
+            "effect": "Attaque #CC# : dépensez 1 #ch#. Tant que vous effectuez cette attaque, vous pouvez dépenser 1 marqueur de calcul pour changer 1 résultat #eye# en un résultat #crit#.<br>Action : rechargez cette carte.",
             "effect_ENG": ""
         },
         {

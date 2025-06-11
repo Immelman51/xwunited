@@ -34,7 +34,12 @@ ships :
                 [ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ], => Speed 0
                 [ 2, 1, 1, 1, 2, 2, 0, 0, 0, 0, 2, 2, 2 ], => Speed 1
                 [ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ] => Speed 2
-  ]             
+  ]   
+  0 : not available
+  1 : Blue maneuver available
+  2 : White maneuver available
+  3 : Red Maneuver available
+  4 : Purple Maneuver Available          
   Column Description : [L-Turn, L-Bank, Straight, R-Bank, R-Turn, K-Turn, S-Loop L, S-Loop R, T-Roll L, T-Roll R, L-Reverse, Straight Reverse, R-Reverse]
 
 ########################################################################################################################################################################

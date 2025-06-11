@@ -37,7 +37,7 @@
         "id": 4,
         "nbrOfEffects": 2,
         "effect1": "<em><strong>Aile Pivot :</strong></em>",
-        "effect2": "<img class='chargeforceimg' src='img/chargestatRed.png'> <em>(Relevée) </em>Après avoir executé une manoeuvre [0#stop#], vous pouvez pivoter votre vaisseau de 90° ou 180°. Tant que vous défendez, lancez 1 dé de défense en moins.",
+        "effect2": "<img class='chargeforceimg' src='img/chargestatRed.png'> <em>(Relevée) </em>Après avoir executé une manoeuvre 0#stop#, vous pouvez pivoter votre vaisseau de 90° ou 180°. Tant que vous défendez, lancez 1 dé de défense en moins.",
         "effect3": "<img class='chargeforceimg' src='img/chargestat.png'> <em>(Baissée)</em>"
     },
     {
@@ -73,12 +73,12 @@
         "effect3": "" 
     },
     {
-    "name": "Swivel Wing",
+    "name": "Ion Repulsorlifts",
     "id": 9,   
     "nbrOfEffects": 2,
-    "effect1": "<em><strong>Aile Basculante</strong></em>",
-    "effect2": "<img class='chargeforceimg' src='img/chargestatRed.png'> <em> (Baissée) </em> Après avoir executé une manoeuvre [0#stop#], vous pouvez pivoter votre vaisseau de 90° ou 180°. Tant que vous défendez, lancez 1 dé de défense en moins.",
-    "effect3": "<img class='chargeforceimg' src='img/chargestat.png'> <em>(Relevée) </em>"
+    "effect1": "<em><strong>Rétropropulseurs Ioniques</strong></em> : Lorsque vous effectuez une manoeuvre rouge, vous pouvez prendre un jeton ion au lieu d'un jeton stress. Dans ce cas, vous pouvez pivoter votre vaisseau de 90°.",
+    "effect2": "",
+    "effect3": ""
     },
     {
         "name": "Autothrusters",
@@ -464,7 +464,7 @@
     "nbrOfEffects": 2,
     "effect1":"<em><strong>Ailes Repliantes : </strong></em>",
     "effect2": "<img class='chargeforceimg' src='img/chargestatRed.png'><em>(Pliées) </em>Vous pouvez attaquer uniquement dans votre #bulls#.<br>Lorsque vous défendez, lancez 1 dé de défense en plus.",
-    "effect3": "<img class='chargeforceimg' src='img/chargestat.png'><em>(Dépliées) </em>Cosidérez vos attaque #Farc# comme des attaques #bulls#.<br>En phase de fin, récupérez 1 #ch# sur vos 'Turbo-Propulseurs'." 
+    "effect3": "<img class='chargeforceimg' src='img/chargestat.png'><em>(Dépliées) </em>Considérez vos attaques #Farc# comme des attaques #bulls#.<br>En phase de fin, récupérez 1 #ch# sur vos 'Turbo-Propulseurs'." 
 },
 {
     "name":"Night Buzzard",
@@ -497,7 +497,36 @@
  "effect1":"<em><strong>Croiseur Luxueux : </strong></em> Chaque amélioration #crew# sur ce vaisseau coûtent 1 point de logistique de moins.",
  "effect2": "",
  "effect3": ""
+},
+{
+ "name":"Shield Struts",
+ "id":61,
+ "nbrOfEffects":2,
+ "effect1":"<em><strong>Boucliers Rétractables : </strong></em>",
+ "effect2": "<img class='chargeforceimg' src='img/chargestatRed.png'><em>(Repliés) </em> En phase système, vous pouvez changer de configuration. Lorsque vous défendez, considérez que vous êtes renforcé. Vous ne pouvez plus faire de #BR#.",
+ "effect3": "<img class='chargeforceimg' src='img/chargestat.png'> <em>(Dépliés) </em> En phase système, vous pouvez changer de configuration. Lorsque vous attaquez, lancez 2 dés supplémentaires. ",
+ "effect1ENG":"<em><strong>Shield Struts : </strong></em>",
+ "effect2ENG":  "<img class='chargeforceimg' src='img/chargestatRed.png'><em>(Retracted) </em>  During system Phase, you may switch configuration. When you defend, consider yourself as reinforced. You cannot perform #BR#.",
+ "effect3ENG": "<img class='chargeforceimg' src='img/chargestat.png'> <em>(Deployed) </em> During system Phase, you may switch configuration. When you attack, roll 2 additional dice."
+
+},
+{
+ "name":"Rapid-Fire",
+ "id":62,
+ "nbrOfEffects":1,
+ "effect1":"<em><strong>Tir à Répétition : </strong></em> Lorsque vous effectuez une attaque principale, vous ne bénéficiez pas du bonus de portée 1. Après avoir effectué une attaque principale, vous pouvez effectuer une attaque principale bonus.",
+ "effect2": "",
+ "effect3": ""
+},
+{
+ "name":"Maneuvering Side Thrusters",
+ "id":63,
+ "nbrOfEffects":1,
+ "effect1":"<em><strong>Propulsion Latérale : </strong></em> Lorsque vous révélez une manoeuvre #bank# ou #turn#, vous pouvez recevoir un jeton épuisement. Dans ce cas, vous pouvez effectuer cette maneouvre en dérapage.",
+ "effect2": "",
+ "effect3": ""
 }
+
   
 
 

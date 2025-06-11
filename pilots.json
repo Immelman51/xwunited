@@ -12652,8 +12652,8 @@
             ]
         },
 	{
-            "name": "Porro Dolphe",
-            "name_ENG": "Porro Dolphe",
+            "name": "Capitaine Kael",
+            "name_ENG": "Captain Kael",
             "id": 559,
             "max_per_squad":1,
             "modify": true,
@@ -12709,7 +12709,7 @@
             "force": 3,
             "titleID": 0,
             "shipId": 98,
-            "skill": 4,
+            "skill": 3,
             "points": 10,                        
             "ability": "",
             "ability_ENG": "",
@@ -12791,7 +12791,7 @@
             "charge":[0],
             "force": 0,
             "titleID": 0,
-            "shipId": 0,
+            "shipId": 100,
             "skill": 5,
             "points": 10,                        
             "ability": "",
@@ -12811,7 +12811,7 @@
             "charge":[0],
             "force": 0,
             "titleID": 0,
-            "shipId": 0,
+            "shipId": 100,
             "skill": 5,
             "points": 10,                        
             "ability": "",
@@ -12831,7 +12831,7 @@
             "charge":[0],
             "force": 0,
             "titleID": 0,
-            "shipId": 0,
+            "shipId": 100,
             "skill": 5,
             "points": 10,                        
             "ability": "",
@@ -12851,7 +12851,7 @@
             "charge":[0],
             "force": 0,
             "titleID": 0,
-            "shipId": 0,
+            "shipId": 100,
             "skill": 5,
             "points": 10,                        
             "ability": "",
@@ -12859,6 +12859,310 @@
             "slots": [ 
                 "Talent"   
             ]
+        },
+       {
+            "name": "Vana Sage",
+            "name_ENG": "Vana Sage",
+            "id": 569,
+            "max_per_squad":1,
+            "modify": false,
+            "faction": "Naboo_Defense_Force",
+            "ship": "CloakShape Fighter",
+            "charge":[0],
+            "force": 0,
+            "titleID": 0,
+            "shipId": 101,
+            "skill": 5,
+            "points": 10,                        
+            "ability": "",
+            "ability_ENG": "",
+            "slots": [ 
+                "Talent"   
+            ]
+        }, 
+        {
+            "name": "Reti",
+            "name_ENG": "Reti",
+            "id": 570,
+            "max_per_squad":1,
+            "modify": false,
+            "faction": "Naboo_Defense_Force",
+            "ship": "CloakShape Fighter",
+            "charge":[0],
+            "force": 0,
+            "titleID": 0,
+            "shipId": 101,
+            "skill": 2,
+            "points": 10,                        
+            "ability": "",
+            "ability_ENG": "",
+            "slots": [ 
+                "Talent"   
+            ]
+        }, 
+        {
+            "name": "Adela Tyché",
+            "name_ENG": "Adela Tyché",
+            "id": 571,
+            "max_per_squad":1,
+            "modify": false,
+            "faction": "Naboo_Defense_Force",
+            "ship": "CloakShape Fighter",
+            "charge":[0],
+            "force": 0,
+            "titleID": 0,
+            "shipId": 101,
+            "skill": 5,
+            "points": 10,                        
+            "ability": "",
+            "ability_ENG": "",
+            "slots": [ 
+                "Talent"   
+            ]
+        }, 
+        {
+            "name": "Sergent Bragg",
+            "name_ENG": "Sergeant Bragg",
+            "id": 572,
+            "max_per_squad":1,
+            "modify": false,
+            "faction": "Naboo_Defense_Force",
+            "ship": "CloakShape Fighter",
+            "charge":[0],
+            "force": 0,
+            "titleID": 0,
+            "shipId": 101,
+            "skill": 5,
+            "points": 10,                        
+            "ability": "",
+            "ability_ENG": "",
+            "slots": [ 
+                "Talent"   
+            ]
+        },
+        {
+            "name": "Capitaine Nym",
+            "name_ENG": "Captain Nym",
+            "id": 573,
+            "max_per_squad": 1,
+            "faction": "Naboo_Defense_Force",
+            "ship": "Scurrg H-6 Bomber",
+            "title": ["Havoc"],
+            "force": 0,
+            "titleID": 130,
+            "shipId": 37,
+		    "modify": true,
+            "skill": 5,
+            "charge": [1,"+"],
+            "points": 9,
+            
+            "ability": "Avant qu’un engin allié n’explose, vous pouvez dépenser 1 #ch# pour l’empêcher d’exploser.<br>Lorsque vous vous défendez contre une attaque obstruée par une bombe ou une mine, lancez 1 dé de défense supplémentaire.",
+            "ability_ENG": "Before a friendly device detonates, you may spend 1 #ch# to prevent its detonation.<br>While you defend against an attack obstructed by a device, roll 1 additional defense die.", 
+            "slots": [
+                "Title",
+                "Talent",
+                "Talent",
+                "Tech",
+                "Astromech"             
+                
+            ],
+            "modifier_func": [
+            	[1,"Title",130],
+                [3,"Crew"]
+                
+                    ]
+        },
+        {
+            "name": "Sol Sixxa",
+            "name_ENG": "Sol Sixxa",
+            "id": 574,
+            "max_per_squad": 1,
+            "faction": "Naboo_Defense_Force",
+            "ship": "Scurrg H-6 Bomber",
+            "charge":[0],
+            "force": 0,
+            "titleID": 0,
+            "shipId": 37,
+		    "modify": false,
+            "skill": 3,
+            "points": 8,
+            
+            "ability": "Lorsque vous devez larguer un engin avec le gabarit 1#straight#, vous pouvez le larguer en utilisant n’importe lequel des gabarit de vitesse 1.",
+            "ability_ENG": "When you would drop a device with the 1#straight# template, you may drop it using any speed 1 template instead",
+            "slots": [
+                "Talent"
+                  ]
+        },
+        {
+            "name": "Revenant de Lok",
+            "name_ENG": "Lok Revenant",
+            "id": 575,
+            "faction": "Naboo_Defense_Force",
+            "max_per_squad": 8,
+            "ship": "Scurrg H-6 Bomber",
+          
+            "charge":[0],
+            "force": 0,
+            "titleID": 0,
+            "shipId": 37,
+		    "modify": false,
+            "skill": 2,
+            "points": 7,
+            "slots": [
+                
+            ]
+        },
+        {
+            "name": "Jinkins",
+            "name_ENG": "Jinkins",
+            "id": 576,
+            "max_per_squad": 1,
+            "faction": "Naboo_Defense_Force",
+            "ship": "Scurrg H-6 Bomber",
+            "title": ["Havoc"],
+            "force": 0,
+            "titleID": 130,
+            "shipId": 37,
+		    "modify": true,
+            "skill": 1,
+            "charge": [1,"+"],
+           
+            "points": 9,
+            
+            "ability": "Lorsque vous larguez ou lancez une bombe, placez un marqueur « Puissance » dessus. Lorsqu’elle explose, augmentez la portée de l’explosion de 1.", 
+            "ability_ENG": "While you drop or launch a bomb, place a 'power' token on it. When a bomb with a 'power' token detonates, increase its effect range by 1.",
+            "slots": [
+                "Title",
+                "Talent" ,
+                "Tech",
+                "Astromech"               
+                
+            ],
+            "modifier_func": [
+            	[1,"Title",130],
+                [3,"Crew"]
+                
+                    ]
+        },
+        {
+            "name": "",
+            "name_ENG": "",
+            "id": 0,
+            "max_per_squad": 1,
+            "faction": "Trade_Federation",
+            "ship": "Scarab-Class Droid Fighter",
+            "title": "",
+            "force": 0,
+            "titleID": 0,
+            "shipId": 102,
+		    "modify": false,
+            "skill": 0,
+            "charge": [0],           
+            "points": 0,            
+            "ability": "", 
+            "ability_ENG": "",
+            "slots": [      
+                
+            ],
+            "modifier_func": [
+            	
+                    ]
+        },
+        {
+            "name": "",
+            "name_ENG": "",
+            "id": 0,
+            "max_per_squad": 1,
+            "faction": "",
+            "ship": "",
+            "title": "",
+            "force": 0,
+            "titleID": 0,
+            "shipId": 0,
+		    "modify": false,
+            "skill": 0,
+            "charge": [0],           
+            "points": 0,            
+            "ability": "", 
+            "ability_ENG": "",
+            "slots": [      
+                
+            ],
+            "modifier_func": [
+            	
+                    ]
+        },
+        {
+            "name": "",
+            "name_ENG": "",
+            "id": 0,
+            "max_per_squad": 1,
+            "faction": "",
+            "ship": "",
+            "title": "",
+            "force": 0,
+            "titleID": 0,
+            "shipId": 0,
+		    "modify": false,
+            "skill": 0,
+            "charge": [0],           
+            "points": 0,            
+            "ability": "", 
+            "ability_ENG": "",
+            "slots": [      
+                
+            ],
+            "modifier_func": [
+            	
+                    ]
+        },
+        {
+            "name": "",
+            "name_ENG": "",
+            "id": 0,
+            "max_per_squad": 1,
+            "faction": "",
+            "ship": "",
+            "title": "",
+            "force": 0,
+            "titleID": 0,
+            "shipId": 0,
+		    "modify": false,
+            "skill": 0,
+            "charge": [0],           
+            "points": 0,            
+            "ability": "", 
+            "ability_ENG": "",
+            "slots": [      
+                
+            ],
+            "modifier_func": [
+            	
+                    ]
+        },
+        {
+            "name": "",
+            "name_ENG": "",
+            "id": 0,
+            "max_per_squad": 1,
+            "faction": "",
+            "ship": "",
+            "title": "",
+            "force": 0,
+            "titleID": 0,
+            "shipId": 0,
+		    "modify": false,
+            "skill": 0,
+            "charge": [0],           
+            "points": 0,            
+            "ability": "", 
+            "ability_ENG": "",
+            "slots": [      
+                
+            ],
+            "modifier_func": [
+            	
+                    ]
         }
 
 
