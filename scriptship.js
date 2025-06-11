@@ -321,7 +321,7 @@ upgradeButton.textContent = 'Améliorations '+logisticEquipped[yy];
 }
 
 function testRestriction (yy,tableRestrictions){//va vérifier si les restrictions sont true, et renvoie la valeur restrict=true si c'est bon
-console.log(tableRestrictions);
+// console.log(tableRestrictions);
 let testR = 0;
 let varlist = [];
 let nbr = tableRestrictions[0];
@@ -457,7 +457,7 @@ function checkPilotModifier() { //va checker s'il existe des fonctions dans modi
                     break;
                 case 10 :
                     may_remove_slots(pilot_list[y]['modifier_func'][m][1]);
-                 console.log('checkPilotModifier : modifier_func n°'+10 );
+                 
                     break;   
                 default :
                     alert("There's a bug that should be reported");
@@ -631,11 +631,11 @@ function auto_equip(Slot, indexUpgrade){ //action n°1
     slotToEquip.setAttribute("disabled","");
     fillUpgradesSelected(y);
     upgrade_restricted_List(y);
-    console.log(slotToEquip.value);
+    
 }
 
 function  add_slots (targetSlot){ //Action n°2 : A utiliser si une upgrade rajoute des slots
-    console.log('adding '+targetSlot);
+   
     let nbrSlots = upgrades_Type[y].length;
     shipslot = document.getElementById('shipslots'+y);
     slotmenu = document.createElement('select');
@@ -767,25 +767,15 @@ function reduce_logistic_cost(slotType) { //Action n°5
             menu_slotType.push(k);
         }
     }
+    console.log('menu_slotType : '+menu_slotType);
 
     for (k=0 ; k<menu_slotType.length ; k++) {
-        let slotID = document.getElementById('slot'+y+'_'+menu_slotType[k]);
-        slotID.addEventListener('input', function() {
-            let actualSlotID = slotID.id; //the id can change beacause of the delete function
-            let numberY = actualSlotID.slice(-3,-2); 
-            let numberX = actualSlotID.slice(-1);
-            let slottarget = document.getElementById(actualSlotID);
-            let numberZ = slottarget.selectedIndex;
-            if (z>0) {
-            upgradesSelected_Objects[numberY][numberX]["points"] =  upgradesSelected_Objects[numberY][numberX]["points"] - 1;
-            console.log('crew 2 points  : '+upgradesSelected_Objects[numberY][numberX]['points']);
-            updateUpgradeCount(numberY);
-            }
+        for (l=0 ; l<upgrades_Objects_Val[y][menu_slotType[k]].length ; l++) {
+            upgrades_Objects_Val[y][menu_slotType[k]][l]['points'] = upgrades_Objects_Val[y][menu_slotType[k]][l]['points'] - 1 ;
+       console.log(upgrades_Objects_Val[y][menu_slotType[k]][l]['name']+' '+upgrades_Objects_Val[y][menu_slotType[k]][l]['points']);
+       
         }
-    )
-  
-}
- updateTotalCost();     
+    }
     
 }
 
@@ -807,7 +797,7 @@ function may_remove_slots(slot){ //Action n°10 : permet de retirer des slots
                 upgrades_Objects_Val[y].splice(positionfield, 1);
                 fieldtoremove[fieldtoremove.length-1].parentNode.removeChild(fieldtoremove[fieldtoremove.length-1]);
                 fillUpgradesSelected(y);
-                console.log('removing'+slot); 
+               
                 upgslot.removeEventListener('input', listenfunction);
                 upgradesSelected_ID[y].pop(); //On va retirer la dernière valeur de upgradesSelected_ID car il n'y a plus d'élément à cet endroit
                 updateUpgradeCount(y);
@@ -848,7 +838,7 @@ try { //Si on ne met pas ça, le fait d'avoir une valeur non définie fait plant
         console.log("no slots"+index)
     } 
       
-  console.log('entre 2 boucles'+index)  
+ 
   for (let i=0 ; i<ships[pilot_list[yy]["shipId"]]["slots"].length;i++) {
     upgObjList = [];   
     
@@ -858,7 +848,7 @@ try { //Si on ne met pas ça, le fait d'avoir une valeur non définie fait plant
             upgObjList.push(upgrades[k]); //on va prendre tous les objets et les mettre dedans
     }   
 }
-upgrades_Objects[yy].push(upgObjList); //Ainsi, ce tableau aura cette structure : [[[Objets talent pil 1][objets torpille pil 1][objets modifications pil 1]][[objets talent pil 2][objets modification pil 2]]....] 
+upgrades_Objects[yy].push(upgObjList); //Ainsi, ce tableau aura cette structure : [ [ [Objets talent pil 1],[objets torpille pil 1],[objets modifications pil 1] ], [ [objets talent pil 2 ], [objets modification pil 2] ], ....] 
 }
 }
 
@@ -960,16 +950,28 @@ function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'acti
 
     newpilot.addEventListener('input', function(event) {
         identifyElement(event);
+        
+        logisticEquipped[y] = 0 ;
+        upgrades_Type[y] = [] ;
+        upgrades_Objects[y] = [];
+        upgrades_Objects_Val = [];
+        upgradesSelected[y] = [];
+        upgradesSelected_ID[y] = [];
+        upgradesSelected_Objects[y] = [];
+        
+        check_restricted_List(event);
+        upgrade_restricted_List(y);
+        
         dataGetFromPilot();
         display_Pilot_Chassis_Title_Points();        
         displayslots(numero)  ;       
         upgradeListGet(numero);        
         checkUpgRestriction(numero);
-        check_restricted_List(event);
+        
         displayDescriptionPilot(numero);
 	    checkPilotModifier(event);
         checkUpgRestriction(numero); //on le refait car il peut y avoir des upgrades disponibles suite à check pilot modfier (exemple : Emon gagne 2 slot de payload ce qui lui permet d'équiper les générateurs de sous munitions)
-        upgrade_restricted_List(y);
+        
         updateTotalCost();
     }); 
 
@@ -1147,7 +1149,7 @@ function display_chassis_title_window(event) { //allows to display the chassis w
     chassisWindow.setAttribute("id", "popup");
     chassisWindow.setAttribute("class", "chassisTitleWindow");
     
-    console.log(targettype);
+    
     let chSel = chassis_selected[y];
     switch (targettype) {
         case 'chassis1' :
@@ -1188,8 +1190,7 @@ function display_chassis_title_window(event) { //allows to display the chassis w
 leaderselect = document.getElementById("menu_leader");
 leaderselect.addEventListener("input", function() {
     removeElementsByClass("new")
-    select_ship_list();
-    leader_ID = leaderselect.selectedIndex ; 
+     
     
     document.getElementById("descript_upg").innerHTML="";
     shipquantity = -1;
@@ -1202,10 +1203,17 @@ leaderselect.addEventListener("input", function() {
     upgrades_Objects= [[],[],[],[],[],[],[],[]];
     upgradesSelected = [[],[],[],[],[],[],[],[]];
     upgrades_Objects_Val= [[],[],[],[],[],[],[],[]];
+    upgradesSelected_ID = [[],[],[],[],[],[],[],[]];
+    upgradesSelected_Objects = [[],[],[],[],[],[],[],[]];
     pilot_objects = [[],[],[],[],[],[],[],[]];
     restricted_List = [[0],[1],[2],[3],[4],[5],[6],[7],[8]];
     pilot_list = [{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0}];
     chassis_selected = [[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0]];
+    restrict = false ;
+
+    select_ship_list();
+    leader_ID = leaderselect.selectedIndex ;
+    
     updateTotalCost();
 }); 
 

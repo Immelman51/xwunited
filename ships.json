@@ -2571,29 +2571,28 @@
                 "slots": ["Modification"]
             },
             {
-            	"name": "TIE Echelon",
+            	"name": "TIE/es Echelon",
                 "factions": [ "First_Order" ],
                 "id": 93,
-                "attack": [["F",3]],
+                "attack": [["F",4]],
                 "agility": 1,
-                "base": ["Medium"],
+                "base": ["Small"],
                 "hull": 5,
                 "shields": 1,
-                "chassis": [0],
+                "chassis": [64],
                 "actions": [
                     [1,"Fo W", "Br R"],               
                     [1,"Lo W", "Bo R"]
                     
                 ],
                 "maneuvers": [
-                    [ 0, 0, 0, 0, 0, 0,0,0],
-                    [ 2, 2, 0, 2, 2, 0,0,0],
-                    [ 2, 1, 1, 1, 2, 0,0,0],
-                    [ 1, 1, 1, 1, 1, 0,3,3],
-                    [ 0, 0, 1, 0, 0, 0,0,0],
-                    [ 0, 0, 1, 0, 0, 3,0,0]
+                    [ 0, 0, 0, 0, 0, 0],
+                    [ 0, 1, 1, 1, 0, 0],
+                    [ 2, 2, 2, 2, 2, 0],
+                    [ 0, 2, 2, 2, 0, 0],
+                    [ 0, 0, 2, 0, 0, 3]
                 ],
-                "slots": ["Crew","Gunner","Tech","Turret","Sensor","Tie mod"]
+                "slots": ["Crew","Gunner","Turret","Sensor","Tie mod"]
             },
             {
             	"name": "Oubliette Class Transport",

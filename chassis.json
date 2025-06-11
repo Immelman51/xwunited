@@ -525,7 +525,16 @@
  "effect1":"<em><strong>Propulsion Latérale : </strong></em> Lorsque vous révélez une manoeuvre #bank# ou #turn#, vous pouvez recevoir un jeton épuisement. Dans ce cas, vous pouvez effectuer cette maneouvre en dérapage.",
  "effect2": "",
  "effect3": ""
+},
+{
+ "name":"Cannons Cooldown",
+ "id":64,
+ "nbrOfEffects":1,
+ "effect1":"<img class='chargeforceimg' src='img/chargestat.png'><img class='chargeforceimg' src='img/chargestat.png'><img class='chargeforceimg' src='img/chargeplus.png'><em><strong>Refroidisement des Canons : </strong></em> Lorsque vous vous engagez, si vous voulez effectuez une attaque principale, vous devez dépenser 2 #ch#.",
+ "effect2": "",
+ "effect3": ""
 }
+
 
   
 
