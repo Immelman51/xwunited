@@ -261,7 +261,7 @@ function fillUpgradesSelected(yy){ //fills the array UpgradesSelected and upgrad
         
         if (slotM.selectedIndex>0){
             upgradesSelected_ID[yy].push(upgrades_Objects_Val[yy][i][slotM.selectedIndex-1]['id']); // on met les id des upgrades si elles sont sélectionnées, sinon on va mettre -1
-            upgradesSelected_Objects[yy].push(upgrades_Objects_Val[yy][i][slotM.selectedIndex-1]);
+            upgradesSelected_Objects[yy].push(structuredClone(upgrades_Objects_Val[yy][i][slotM.selectedIndex-1]));
         }else{
             upgradesSelected_ID[yy].push(-1); // comme écrit au dessus, si aucune upgrade n'est sélectionnée (e.g : <Talent>, selectedIndex 0 du menu), alors on met -1
             upgradesSelected_Objects[yy].push(-1);
@@ -315,21 +315,21 @@ function updateUpgradeCount(yy) { //update the table logistic_Equipped
         
     }
     
-}
-let upgradeButton = document.getElementById('upgradeButton'+yy);
-upgradeButton.textContent = 'Améliorations '+logisticEquipped[yy];
+    }
+    let upgradeButton = document.getElementById('upgradeButton'+yy);
+    upgradeButton.textContent = 'Améliorations '+logisticEquipped[yy];
 }
 
 function testRestriction (yy,tableRestrictions){//va vérifier si les restrictions sont true, et renvoie la valeur restrict=true si c'est bon
-// console.log(tableRestrictions);
-let testR = 0;
-let varlist = [];
-let nbr = tableRestrictions[0];
-let list = tableRestrictions[1];
-let target1 = tableRestrictions[2];
-let target2 = tableRestrictions[3];
+    // console.log(tableRestrictions);
+    let testR = 0;
+    let varlist = [];
+    let nbr = tableRestrictions[0];
+    let list = tableRestrictions[1];
+    let target1 = tableRestrictions[2];
+    let target2 = tableRestrictions[3];
 
-switch (list) {
+    switch (list) {
     case 'title':
         varlist = pilot_list[yy]["title"];
         break;
@@ -355,7 +355,7 @@ switch (list) {
         console.log('error testRestriction and varlist'); 
         break;
         
-}
+    }
     
     for (i=0; i<varlist.length; i++) {
             
@@ -364,11 +364,11 @@ switch (list) {
     }
     }
     
-if (testR>=nbr){
+    if (testR>=nbr){
     restrict = true;
-}else{
+    }else{
     restrict = false;
-}
+    }   
 
 }
 
@@ -406,11 +406,11 @@ function checkUpgRestriction(yy){ //populate les menus slots avec les bonnes upg
                         case 'Talent' :
                         case 'Force' :
                             slotmenucontent.push(upgrades_Objects[yy][i][j]['name']+" "+upgrades_Objects[yy][i][j]['points']);
-                            slotmenuobjects.push(upgrades_Objects[yy][i][j]);
+                            slotmenuobjects.push(structuredClone(upgrades_Objects[yy][i][j]));
                             break;
                         default :    
                             slotmenucontent.push(upgrades_Objects[yy][i][j]['name']+" ("+upgrades_Objects[yy][i][j]['points']+")");
-                            slotmenuobjects.push(upgrades_Objects[yy][i][j]);
+                            slotmenuobjects.push(structuredClone(upgrades_Objects[yy][i][j]));
                     break
                     }
             }
@@ -522,16 +522,16 @@ function checkUpgradeModifier() { //va checker s'il existe une fonction modify l
                 break;
                 }
             }
-}
+    }
 
-}
+    }
 }
 
 function check_restricted_List(event){ //check si l'upgrade ou le pilote est déjà utilisé par un(e) autre du même nom
     let newname = '';
     let maxnbr = 8;
     if (z===0){ //si on séléctionne la valeur vide d'un menu (la ligne 0), il faut arrêter la vérif et mettre à jour les menus
-        upgrade_restricted_List(y);
+        update_restricted_List(y);
         return;
     }
     if (x === -1){ //si c'est un pilote
@@ -566,12 +566,12 @@ function check_restricted_List(event){ //check si l'upgrade ou le pilote est dé
         }
         return; //va arrêter tout processus par exemple le check_upgrade_validation qui va lancer des modifs de menus
     }else{
-        upgrade_restricted_List(y); //l'upgrade ou le pilote est accepté donc on peut mettre à jour cette restricted_List
+        update_restricted_List(y); //l'upgrade ou le pilote est accepté donc on peut mettre à jour cette restricted_List
     }
     
 }
      
-function upgrade_restricted_List(yy){ //va mettre à jour la restricted_List. les pilotes sont mis dans une 9 ème table, sinon les upgrades sont mises dans les 7 premières tables
+function update_restricted_List(yy){ //va mettre à jour la restricted_List. les pilotes sont mis dans une 9 ème table, sinon les upgrades sont mises dans les 7 premières tables
     
     let namepil = "menu_pilot"+yy;
     if (pilot_list[yy]['max_per_squad'] < 8){
@@ -608,7 +608,7 @@ function auto_equip(Slot, indexUpgrade){ //action n°1
     if (maxNbrUpgrade <= 0) {
         alert(nameUpgrade +' is no more available in your squad');
         document.getElementById('menu_pilot_'+y).selectedIndex = 0; //on refuse la prise en compte du pilote
-        upgrade_restricted_List(y);
+        update_restricted_List(y);
         return;
     }
     // fin du check
@@ -630,7 +630,7 @@ function auto_equip(Slot, indexUpgrade){ //action n°1
     slotToEquip.selectedIndex = indexSlot+1;
     slotToEquip.setAttribute("disabled","");
     fillUpgradesSelected(y);
-    upgrade_restricted_List(y);
+    update_restricted_List(y);
     
 }
 
@@ -655,8 +655,8 @@ function  add_slots (targetSlot){ //Action n°2 : A utiliser si une upgrade rajo
         upgrades_Type[y].push(targetSlot);
         let slotmenucontent = ['<'+targetSlot+'>'];
         let slotmenuobjects = [];
-//on reprend une partie du code checkUpgRestriction(). On n'appelle pas la fonction car le slotmenu est réinitialisé entièrement, ce qui fait perdre toutes les upgrades sélectionnées
-for (let j=0; j<upgrades_Objects[y][nbrSlots].length; j++){
+    //on reprend une partie du code checkUpgRestriction(). On n'appelle pas la fonction car le slotmenu est réinitialisé entièrement, ce qui fait perdre toutes les upgrades sélectionnées
+    for (let j=0; j<upgrades_Objects[y][nbrSlots].length; j++){
             
     if (upgrades_Objects[y][nbrSlots][j]['available']===true){
         switch (upgrades_Objects[y][i][j]['slot']) {
@@ -689,13 +689,13 @@ for (let j=0; j<upgrades_Objects[y][nbrSlots].length; j++){
     }
     }
     fillUpgradesSelected(y);
-}
-upgrades_Objects_Val[y].push(slotmenuobjects);
-populateMenu('slot'+y+'_'+nbrSlots,slotmenucontent);
+    }
+    upgrades_Objects_Val[y].push(structuredClone(slotmenuobjects));
+    populateMenu('slot'+y+'_'+nbrSlots,slotmenucontent);
 
-//fin de la recopie du code
-//On va rajouter 1 index à upgradesSelected_ID[y]. On rajoute un '-1' qui correspond à un menu où on n'a pas sélectionné d'upgrade
-upgradesSelected_ID[y].push(-1);
+    //fin de la recopie du code
+    //On va rajouter 1 index à upgradesSelected_ID[y]. On rajoute un '-1' qui correspond à un menu où on n'a pas sélectionné d'upgrade
+    upgradesSelected_ID[y].push(-1);
 
         slotmenu.addEventListener("mouseover", function(event){
             displayDescriptionUpgrade(event);
@@ -735,19 +735,19 @@ function also_Occupies(targetSlot){ //Action n°3 : A utiliser lorsqu'une upgrad
         if (upgslot) {
             upgslot.selectedIndex = 0;
         }
-    return;
-}
+        return;
+        }
 
-let listenfunction = function () {
+    let listenfunction = function () {
     field.removeAttribute('disabled');
     fillUpgradesSelected(y);
     
     upgslot.removeEventListener('input', listenfunction);
-};
+    };
 
-if (upgslot) {
+    if (upgslot) {
     upgslot.addEventListener('input', listenfunction);
-} 
+    } 
 }
 
 function change_chassis(chassisID1,chassisID2) { //Action n°4 : permet de changer le chassis du pilote
@@ -767,9 +767,9 @@ function reduce_logistic_cost(slotType) { //Action n°5
             menu_slotType.push(k);
         }
     }
-    console.log('menu_slotType : '+menu_slotType);
+    
 
-    for (k=0 ; k<menu_slotType.length ; k++) {
+   for (k=0 ; k<menu_slotType.length ; k++) {
         for (l=0 ; l<upgrades_Objects_Val[y][menu_slotType[k]].length ; l++) {
             upgrades_Objects_Val[y][menu_slotType[k]][l]['points'] = upgrades_Objects_Val[y][menu_slotType[k]][l]['points'] - 1 ;
        console.log(upgrades_Objects_Val[y][menu_slotType[k]][l]['name']+' '+upgrades_Objects_Val[y][menu_slotType[k]][l]['points']);
@@ -777,6 +777,7 @@ function reduce_logistic_cost(slotType) { //Action n°5
         }
     }
     
+
 }
 
 function may_remove_slots(slot){ //Action n°10 : permet de retirer des slots
@@ -814,11 +815,11 @@ function may_remove_slots(slot){ //Action n°10 : permet de retirer des slots
  
 function upgradeListGet(yy) { //va chercher les options pour populate les menus de slots crées avec displaylots(), et remplit la var upgrades_Objects
   
-  let index = 0; 
-  upgrades_Objects[yy] = [];
-  upgrades_Objects_Val[yy] = [];
+    let index = 0; 
+    upgrades_Objects[yy] = [];
+    upgrades_Objects_Val[yy] = [];
   
-try { //Si on ne met pas ça, le fait d'avoir une valeur non définie fait planter la fonction
+    try { //Si on ne met pas ça, le fait d'avoir une valeur non définie fait planter la fonction
     if  (typeof pilot_list[yy]["slots"][0] === 'undefined') { //la valeur 0 a été mise dans tous endroits où il n'y avait pas de slot (exemple: les pilotes génériques)
         console.log('no slots')
         }
@@ -827,29 +828,29 @@ try { //Si on ne met pas ça, le fait d'avoir une valeur non définie fait plant
         let upgObjList = [];
         for (let k=0 ; k<upgrades.length ; k++) {
             if ((pilot_list[yy]["slots"][i]===upgrades[k]["slot"]) && ((upgrades[k]["faction"]==="")||(upgrades[k]["faction"].includes(factionno1))||(upgrades[k]["faction"].includes(factionno2))||(upgrades[k]["faction"].includes(factionno3)))) {
-                     upgObjList.push(upgrades[k]); //on va prendre tous les objets et les mettre dedans
+                     upgObjList.push(structuredClone(upgrades[k])); //on va prendre tous les objets et les mettre dedans
               }
             }
         upgrades_Objects[yy].push(upgObjList); //Ainsi, ce tableau aura cette structure : [['pilote1' [Objets talent][objets torpille][objets modifications]]['pilote2' [objets talent][objets modification]]....] 
         index++;
     }
     }
-} catch (error) {
+    } catch (error) {
         console.log("no slots"+index)
     } 
       
  
-  for (let i=0 ; i<ships[pilot_list[yy]["shipId"]]["slots"].length;i++) {
+    for (let i=0 ; i<ships[pilot_list[yy]["shipId"]]["slots"].length;i++) {
     upgObjList = [];   
     
         for (let k=0 ; k<upgrades.length ; k++) {
         if ((ships[pilot_list[yy]["shipId"]]["slots"][i]===upgrades[k]["slot"]) && ((upgrades[k]["faction"]==="")||(upgrades[k]["faction"].includes(factionno1))||(upgrades[k]["faction"].includes(factionno2))||(upgrades[k]["faction"].includes(factionno3)))) {
                       
-            upgObjList.push(upgrades[k]); //on va prendre tous les objets et les mettre dedans
+            upgObjList.push(structuredClone(upgrades[k])); //on va prendre tous les objets et les mettre dedans
     }   
-}
-upgrades_Objects[yy].push(upgObjList); //Ainsi, ce tableau aura cette structure : [ [ [Objets talent pil 1],[objets torpille pil 1],[objets modifications pil 1] ], [ [objets talent pil 2 ], [objets modification pil 2] ], ....] 
-}
+    }
+    upgrades_Objects[yy].push(upgObjList); //Ainsi, ce tableau aura cette structure : [ [ [Objets talent pil 1],[objets torpille pil 1],[objets modifications pil 1] ], [ [objets talent pil 2 ], [objets modification pil 2] ], ....] 
+    }
 }
 
 function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'active via le bouton Addship
@@ -960,7 +961,7 @@ function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'acti
         upgradesSelected_Objects[y] = [];
         
         check_restricted_List(event);
-        upgrade_restricted_List(y);
+        update_restricted_List(y);
         
         dataGetFromPilot();
         display_Pilot_Chassis_Title_Points();        
@@ -1116,13 +1117,13 @@ function displayDescriptionShip(event){ //displays ship stats (and actions and m
                 description_upg_pil_Field.innerHTML +=  chassis[chassisEq[ch]]['effect3']+'<br>';
             }
             
-*/
+    */
 
    
             return;
         
     }
-}
+    }
 }
 
 function displayDescriptionUpgrade(event){ //permet d'afficher l'effet de l'amélioration sélectionée
@@ -1135,7 +1136,7 @@ function displayDescriptionUpgrade(event){ //permet d'afficher l'effet de l'amé
                   
             return
         }
-}
+    }
 }
 
 function display_chassis_title_window(event) { //allows to display the chassis window when the user clicks on the chassis name
