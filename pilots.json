@@ -13048,9 +13048,9 @@
                     ]
         },
         {
-            "name": "",
-            "name_ENG": "",
-            "id": 0,
+            "name": "Protoype Arakyd",
+            "name_ENG": "Arakyd Prototype",
+            "id": 577,
             "max_per_squad": 1,
             "faction": "Trade_Federation",
             "ship": "Scarab-Class Droid Fighter",
@@ -13059,7 +13059,7 @@
             "titleID": 0,
             "shipId": 102,
 		    "modify": false,
-            "skill": 0,
+            "skill": 3,
             "charge": [0],           
             "points": 0,            
             "ability": "", 
