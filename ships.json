@@ -2776,8 +2776,7 @@
                 "slots": ["Astromech","Payload","Sensor"]
             },
             {
-            	"name": "Chasseur Caméléon",
-                "name_ENG": "CloakShape Fighter",
+                "name": "CloakShape Fighter",
                 "factions": [ "Naboo_Defense_Force" ],
                 "id": 101,
                 "attack": [["F",2]],
