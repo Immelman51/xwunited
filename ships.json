@@ -2634,7 +2634,7 @@
                 "actions": [
                     [0,"Fo W"],
                     [0,"Lo W"],
-                    [0,"Re R"],
+                    [0,"Re W"],
                     [0,"Ja R"]
                 ],
                 "maneuvers": [
@@ -2652,7 +2652,7 @@
                 "factions": [ "Imperial_Remnants" ],
                 "id": 96,
                 "attack": [["F",2],["BULL",3]],
-                "agility": 3,
+                "agility": 2,
                 "base": ["Small"],
                 "hull": 3,
                 "shields": 1,
