@@ -4,18 +4,17 @@ header {
     padding: 3px;
     flex-wrap: wrap;
     background-color: aquamarine;
+    position: sticky;
+    justify-content: space-around;
     
 }
-header div{
-    min-width: 75px;
-    max-width: 100px;
-    padding-bottom: 3px;
+.title{
+    display: flex;
+
 }
 
-h1 {
-    color: brown;
-}
-h2 {
-    color:blue;
-    font-size: medium;
+.card{
+    width: 6.2cm;
+    height: 8.7cm;
+    border: solid;
 }
