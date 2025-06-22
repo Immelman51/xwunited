@@ -76,7 +76,7 @@
     "name": "Ion Repulsorlifts",
     "id": 9,   
     "nbrOfEffects": 2,
-    "effect1": "<em><strong>Rétropropulseurs Ioniques</strong></em> : Lorsque vous effectuez une manoeuvre rouge, vous pouvez prendre un jeton ion au lieu d'un jeton stress. Dans ce cas, vous pouvez pivoter votre vaisseau de 90°.",
+    "effect1": "<em><strong>Rétropropulseurs Ioniques</strong></em> : Lorsque vous effectuez une manoeuvre rouge, vous pouvez prendre 3 jetons ion au lieu d'un jeton stress. Dans ce cas, vous pouvez pivoter votre vaisseau de 90° ou 180°.",
     "effect2": "",
     "effect3": ""
     },
@@ -108,7 +108,7 @@
         "name": "Rotating Cannons",
         "id": 13,
         "nbrOfEffects": 1,
-        "effect1": "<em><strong>Canons Rotatifs :</strong></em> Vous pouvez pivoter votre indicateur #tur# uniquement, vers votre #Farc# ou #Barc#. Vous <strong>devez</strong> considérer le prérequis #Farc# de cos améliorations #can# équipées comme étant #tur#.",
+        "effect1": "<em><strong>Canons Rotatifs :</strong></em> Vous pouvez pivoter votre indicateur #tur# uniquement vers votre #Farc# ou #Barc#. Vous <strong>devez</strong> considérer le prérequis #Farc# de vos améliorations #can# équipées comme étant #tur#.",
         "effect2": "",
         "effect3": "" 
     },
@@ -140,7 +140,7 @@
     "name": "Networked Calculations",
     "id":17,
     "nbrOfEffects": 1,
-    "effect1":"<em><strong>Calculs en Réseau : </strong></em> Lorsque vous défendez ou attaquez, you pouvez dépenser 1 jeton #Cc# d'un vaisseau allié à portée 0-1 pour modifier 1 résultat #eye# en résultat #hit# ou #evd#.",
+    "effect1":"<em><strong>Calculs en Réseau : </strong></em> Lorsque vous défendez ou attaquez, you pouvez dépenser 1 jeton calcul d'un vaisseau allié à portée 0-1 pour modifier 1 résultat #eye# en résultat #hit# ou #evd#.",
     "effect2": "",
     "effect3": "" 
 },
@@ -204,7 +204,7 @@
     "name":"Spacetug Tractor Array",
     "id":25,
     "nbrOfEffects": 1,
-    "effect1":"",
+    "effect1": "<em><strong>Remorquage par Faisceau Tractant : </strong></em>ACTION : choisissez un vaisseau à portée 1 dans votre #Farc#. Ce vaisseau reçoit 1 jeton tracté, ou 2 s'il se trouve dans votre #bulls#.",
     "effect2": "",
     "effect3": "" 
 },
@@ -220,7 +220,7 @@
     "name":"Comms Shuttle",
     "id":27,
     "nbrOfEffects": 1,
-    "effect1":"<em><strong>Navette de Communication :</strong></em>Tant que vous êtes arrimé, votre vaisseau porteur gagne #Co#. Avant que votre vaisseau porteur ne s’active, il peut effectuer une action #Co#.",
+    "effect1":"<em><strong>Navette de Communication :</strong></em>Tant que vous êtes arrimé, votre vaisseau porteur gagne #CO#. Avant que votre vaisseau porteur ne s’active, il peut effectuer une action #CO#.",
     "effect2": "",
     "effect3": "" 
 },
@@ -242,11 +242,11 @@
     "effect3": "" 
 },
 {
-    "name":"Heavy Weapon Turret",
+    "name":"Rotating Launcher",
     "id":30,
     "nbrOfEffects": 1,
-    "effect1ENG":"<em><strong>Heavy Weapon Turret : </strong></em>You can rotate your #tur# indicator only to your #Farc# or #Barc#. You must treat the #Farc# requirement of your equipped #mis# upgrades as #tur#.",
-    "effect1":"<em><strong>Tourelle D’arme Lourde : </strong></em>Vous pouvez pivoter votre indicateur #tur# uniquement vers votre #Farc# ou #Barc#. Vous devez considérer le prérequis #Farc# de vos améliorations #mis# équipées comme étant #tur#.",
+    "effect1ENG":"<em><strong>Rotating Launcher : </strong></em>You can rotate your #tur# indicator only to your #Farc# or #Barc#. You must treat the #Farc# requirement of your equipped #mis# upgrades as #tur#.",
+    "effect1":"<em><strong>Lanceur Rotatif : </strong></em>Vous pouvez pivoter votre indicateur #tur# uniquement vers votre #Farc# ou #Barc#. Vous devez considérer le prérequis #Farc# de vos améliorations #mis# et #tpd# équipées comme étant #tur#.",
     "effect2": "",
     "effect3": "" 
 },
@@ -280,7 +280,7 @@
     "nbrOfEffects": 2,
     "effect1":"<em><strong>Support d'Ancrage : </strong></em>",
     "effect2": "<img class='chargeforceimg' src='img/chargestatRed.png'> <em>(Replié) </em>Après un mouvement, si vous chevauchez un astéroïde/débris, ignorez ses effets et changez de configuration.",
-    "effect3": "<img class='chargeforceimg' src='img/chargestat.png'> <em>(Déplié) </em>Ignorez l'astéroïde/débris que vous chevauchez. Si vous révélez un virage, tournez de 90° dans la direction sélectionnée et ignorez la manoeuvre. Si vous révélez toute autre manoeuvre, ne vous déplacez pas et ignorez la manoeuvre." 
+    "effect3": "<img class='chargeforceimg' src='img/chargestat.png'> <em>(Déplié) </em>Ignorez l'astéroïde/débris que vous chevauchez. Si vous révélez un virage, tournez de 90° dans la direction sélectionnée et ignorez la manoeuvre. Si vous révélez une manoeuvre #straight#2, executez là puis changez de configuration. Si vous révélez toute autre manoeuvre, ne vous déplacez pas et ignorez la manoeuvre." 
 },
 {
     "name":"Pinpoint Tractor Array",
