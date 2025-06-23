@@ -1,13 +1,38 @@
+body{
+    max-width: 29cm;
+}
 header {
-    display: flex;
+    
     top:0;
     padding: 3px;
-    flex-wrap: wrap;
-    background-color: aquamarine;
+    z-index: 1000;
     position: sticky;
-    justify-content: space-around;
+    transition: top 0.3s ease;
+    
     
 }
+header.hide {
+    top: -100px;
+}
+
+.scenario, .environment, .wildcard{
+    display: flex;
+    justify-content: space-around;
+}
+.scenario{
+    background-color: rgb(140, 140, 236);
+}
+.environment{
+    background-color: rgb(16, 134, 89);
+}
+.wildcard{
+    background-color: rgb(216, 38, 38);
+}
+.wildcardbody{
+    display:flex;
+    flex-wrap: wrap;
+}
+
 .title{
     display: flex;
 

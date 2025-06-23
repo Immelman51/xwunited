@@ -41,11 +41,11 @@ for(i=1; i<3 ; i++){
     document.getElementById('planetaryring'+i).setAttribute('src','img/scenario/Env_PlanetaryRing'+i+'_'+language+'.png');
 }
 
-document.getElementById('cosmicanomaly').setAttribute('src','img/scenario/Wild_CosmicAnomaly_'+language+'.png');
-document.getElementById('fracturedsensors').setAttribute('src','img/scenario/Wild_FracturedSensors_'+language+'.png');
-document.getElementById('outpost').setAttribute('src','img/scenario/Wild_Outpost_'+language+'.png');
-document.getElementById('solarwinds').setAttribute('src','img/scenario/Wild_SolarWinds_'+language+'.png');
-document.getElementById('theyexplodenow').setAttribute('src','img/scenario/Wild_TheyExplodeNow_'+language+'.png');
+document.getElementById('cosmicanomaly1').setAttribute('src','img/scenario/Wild_CosmicAnomaly_'+language+'.png');
+document.getElementById('fracturedsensors1').setAttribute('src','img/scenario/Wild_FracturedSensors_'+language+'.png');
+document.getElementById('outpost1').setAttribute('src','img/scenario/Wild_Outpost_'+language+'.png');
+document.getElementById('solarwinds1').setAttribute('src','img/scenario/Wild_SolarWinds_'+language+'.png');
+document.getElementById('theyexplodenow1').setAttribute('src','img/scenario/Wild_TheyExplodeNow_'+language+'.png');
 
 }
 
@@ -56,3 +56,18 @@ document.getElementById('language').addEventListener('input',update_language);
 update_language();
 
 
+let lastScrollY = window.scrollY;
+
+window.addEventListener('scroll', () => {
+  const header = document.querySelector('header');
+
+  if (window.scrollY > lastScrollY) {
+    // Scroll vers le bas
+    header.classList.add('hide');
+  } else {
+    // Scroll vers le haut
+    header.classList.remove('hide');
+  }
+
+  lastScrollY = window.scrollY;
+});
