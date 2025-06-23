@@ -248,7 +248,7 @@
             "force": 0,
             "titleID": 0,
             "shipId": 34,
-            "skill": 3,
+            "skill": 5,
             "points": 8,
             
             "ability": "Au début de la phase d’activation, vous pouvez choisir 1 vaisseau allié à portée 1–3. Dans ce cas, ce vaisseau allié retire 1 marqueur de stress.",
