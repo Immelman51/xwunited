@@ -352,7 +352,7 @@ function testRestriction (yy,tableRestrictions){//va vérifier si les restrictio
         varlist = ships[pilot_list[yy]['shipId']]['size'];
         break;
     default :
-        console.log('error testRestriction and varlist'); 
+        console.log(tableRestrictions[0] + ' error testRestriction and varlist'); 
         break;
         
     }
@@ -378,7 +378,9 @@ function checkUpgRestriction(yy){ //populate les menus slots avec les bonnes upg
            
             continue;
         }
+        
         upgrades_Objects_Val[yy][i]= []; //on le réinitialise car checkUpgRestriction est exécutée 2 fois (Cf add_ship function)
+        
         let slotmenucontent = [];
         let slotmenuobjects = [];
         slotmenucontent.push("<"+upgrades_Type[yy][i]+">");
@@ -417,8 +419,9 @@ function checkUpgRestriction(yy){ //populate les menus slots avec les bonnes upg
             }
             
         }
-        
+
         upgrades_Objects_Val[yy][i] = slotmenuobjects;
+        
         populateMenu('slot'+yy+'_'+i,slotmenucontent);
         
     }
@@ -661,8 +664,11 @@ function  add_slots (targetSlot){ //Action n°2 : A utiliser si une upgrade rajo
     if (upgrades_Objects[y][nbrSlots][j]['available']===true){
         switch (upgrades_Objects[y][i][j]['slot']) {
             case 'Talent' :
+                slotmenucontent.push(upgrades_Objects[y][i][j]['name']+" *"+upgrades_Objects[y][i][j]['points']+"*");
+                slotmenuobjects.push(upgrades_Objects[yy][i][j]);
+                break;
             case 'Force' :
-                slotmenucontent.push(upgrades_Objects[y][i][j]['name']+" "+upgrades_Objects[y][i][j]['points']);
+                slotmenucontent.push(upgrades_Objects[y][i][j]['name']+" #"+upgrades_Objects[y][i][j]['points']+"#");
                 slotmenuobjects.push(upgrades_Objects[yy][i][j]);
                 break;
             default :    
@@ -690,7 +696,9 @@ function  add_slots (targetSlot){ //Action n°2 : A utiliser si une upgrade rajo
     }
     fillUpgradesSelected(y);
     }
+    
     upgrades_Objects_Val[y].push(structuredClone(slotmenuobjects));
+   
     populateMenu('slot'+y+'_'+nbrSlots,slotmenucontent);
 
     //fin de la recopie du code
@@ -772,7 +780,7 @@ function reduce_logistic_cost(slotType) { //Action n°5
    for (k=0 ; k<menu_slotType.length ; k++) {
         for (l=0 ; l<upgrades_Objects_Val[y][menu_slotType[k]].length ; l++) {
             upgrades_Objects_Val[y][menu_slotType[k]][l]['points'] = upgrades_Objects_Val[y][menu_slotType[k]][l]['points'] - 1 ;
-       console.log(upgrades_Objects_Val[y][menu_slotType[k]][l]['name']+' '+upgrades_Objects_Val[y][menu_slotType[k]][l]['points']);
+      
        
         }
     }
@@ -817,8 +825,10 @@ function upgradeListGet(yy) { //va chercher les options pour populate les menus 
   
     let index = 0; 
     upgrades_Objects[yy] = [];
+    
     upgrades_Objects_Val[yy] = [];
-  
+    
+    
     try { //Si on ne met pas ça, le fait d'avoir une valeur non définie fait planter la fonction
     if  (typeof pilot_list[yy]["slots"][0] === 'undefined') { //la valeur 0 a été mise dans tous endroits où il n'y avait pas de slot (exemple: les pilotes génériques)
         console.log('no slots')
@@ -955,7 +965,7 @@ function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'acti
         logisticEquipped[y] = 0 ;
         upgrades_Type[y] = [] ;
         upgrades_Objects[y] = [];
-        upgrades_Objects_Val = [];
+        upgrades_Objects_Val[y] = [];
         upgradesSelected[y] = [];
         upgradesSelected_ID[y] = [];
         upgradesSelected_Objects[y] = [];
@@ -1083,7 +1093,7 @@ function remove_ship(n) { //fonction qui permet de retirer le dernier vaisseau. 
     if (shipquantity>0){
         shipquantity--;
     }
-        
+    updateUpgradeCount(n);
     updateTotalCost();
 
     

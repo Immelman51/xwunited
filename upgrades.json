@@ -1355,9 +1355,9 @@
             "effect": "Après avoir révélé votre cadran, vous pouvez dépenser 3 #fo# pour effectuer une action #BR# ou #BO#. Puis, si vous avez effectué une action qui n’est pas sur votre barre d’action, recevez 2 marqueurs de contrainte. Dans ce cas, vous ne pouvez pas effectuer une autre action pendant votre activation.",
             "effect_ENG": "After you reveal your dial, you may spend 3 #fo# to perform a #BR# or #BO# action. Then, if you have performed an action which is not on your action bar, receive 2 strain tokens. In this case, you cannot perform an other action during your activation.",
             "faction": "",
-            "restrictions": [
+            "restrictions":
                     [1, "size", "small", ""]
-            ]
+            
         },
 {
             "name": "As de la Manoeuvre",
