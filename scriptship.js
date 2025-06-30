@@ -339,24 +339,19 @@ function testRestriction (yy,tableRestrictions){//va vérifier si les restrictio
     case 'base':
         varlist = ships[pilot_list[yy]['shipId']]['base'];
         break;
-    case 'keyword' :
-        varlist =  ships[pilot_list[yy]['shipId']]['keyword']; 
-        break;
     case 'action' :
         varlist = ships[pilot_list[yy]['shipId']]['actions'];
         break;
     case 'ship' :
         varlist = ships[pilot_list[yy]['shipId']]['name'];
         break;
-    case 'size' :
-        varlist = ships[pilot_list[yy]['shipId']]['size'];
-        break;
     default :
         console.log(tableRestrictions[0] + ' error testRestriction and varlist'); 
         break;
         
     }
-    
+    console.log(nbr + ' ' + list + ' ' +target1+ ' ' + target2);
+    console.log(varlist);
     for (i=0; i<varlist.length; i++) {
             
     if ((varlist[i]===target1)||(varlist[i]===target2)) {
@@ -1278,3 +1273,42 @@ linkToPrintSquad.addEventListener('click', function(e){
     hasher();
 window.location.href =  `print_squad.html?#${hash}`
 })
+
+// we code the code function to display a popupwindow to get the squad code.
+const linkToDisplayCode = document.getElementById('code');
+const popupOverlay = document.getElementById('popupOverlay');
+  const showPopupLink = document.getElementById('showPopupLink');
+const closeBtn = document.getElementById('closeBtn');
+  const copyBtn = document.getElementById('copyBtn');
+let codeText = document.getElementById('codeText');
+
+linkToDisplayCode.addEventListener('click', (e) => {
+    e.preventDefault();
+    popupOverlay.style.display = 'flex';
+    hasher();
+    codeText.innerHTML = hash;
+  });
+
+  closeBtn.addEventListener('click', () => {
+    popupOverlay.style.display = 'none';
+  });
+
+  copyBtn.addEventListener('click', () => {
+    navigator.clipboard.writeText(codeText.innerText).then(() => {
+      copyBtn.innerText = "Copié !";
+      setTimeout(() => {
+        copyBtn.innerText = "Copier";
+      }, 2000);
+    }).catch(err => {
+      alert("Erreur de copie : " + err);
+    });
+  });
+
+  // Permet de fermer la popup en cliquant hors de la fenêtre
+  popupOverlay.addEventListener('click', (e) => {
+    if (e.target === popupOverlay) {
+      popupOverlay.style.display = 'none';
+    }
+  });
+
+

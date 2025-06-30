@@ -464,6 +464,20 @@ linkToPrintUpgrades.addEventListener('click', function(e){
     window.location.href =  `print_upgrades.html?#${hash2}`
 })
 
+const linkToPrintDials = document.getElementById('print_dials');
+linkToPrintDials.addEventListener('click', function(e){
+    e.preventDefault();
+    hasher();
+    window.location.href =  `print_dials.html?#${hash2}`
+})
+
+const linkToPrintBases = document.getElementById('print_bases');
+linkToPrintBases.addEventListener('click', function(e){
+    e.preventDefault();
+    hasher();
+    window.location.href =  `print_bases.html?#${hash2}`
+})
+
 
 
 

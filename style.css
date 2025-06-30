@@ -288,7 +288,49 @@ select {
     text-align: center;
 }
 
+.popup-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 999;
+    }
 
+    .popupCode {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 400px;
+      text-align: center;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+
+    #codeText {
+      background: #f0f0f0;
+      padding: 10px;
+      margin-bottom: 15px;
+      font-family: monospace;
+      word-break: break-word;
+    }
+.btn {
+      padding: 8px 12px;
+      margin: 5px;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      background-color: #3498db;
+      color: white;
+      font-weight: bold;
+    }
+
+    .btn:hover {
+      background-color: #2980b9;
+    }
 
 
 

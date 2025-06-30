@@ -3687,7 +3687,7 @@
             "force": 0,
             "titleID": 202,
             "shipId": 77,
-            "skill": 3,
+            "skill": 2,
             "points": 10,
             "title": ["Nightbrother"],
             "modify": true,
