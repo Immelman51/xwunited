@@ -4247,7 +4247,7 @@
             "titleID": 0,
             "shipId": 67,
 		    "modify": false,
-            "skill": 1,
+            "skill": 3,
             "points": 6,
             
             "slots": [                
@@ -4369,7 +4369,7 @@
             "shipId": 59,
             "max_per_squad": 8,
             "modify": false,
-            "skill": 1,
+            "skill": 2,
             "points": 5,
             "slots": [
                             
@@ -4469,7 +4469,7 @@
             "titleID": 0,
             "shipId": 46,
 			"modify": false,
-            "skill": 3,
+            "skill": 4,
             "points": 5,
             
             "ability": "Lorsqu'un autre vaisseau allié attaque, si vous êtes à portée 0-1 du défenseur, vous pouvez subir 1 dégat #hit# pour changer 1 des résultats de l'attaquant en #crit#.",
@@ -4489,7 +4489,7 @@
             "titleID": 0,
             "shipId": 46,
 		    "modify": false,
-            "skill": 3,
+            "skill": 5,
             "points": 5,
             
             "ability": "Après qu'un autre vaisseau allié à portée 0-2 a été détruit, vous pouvez effectuer une action #CD#, même stressé. Lorsque vous coordonnez, le vaisseau que vous choississez peut effectuer uniquement une action qui se trouve aussi sur votre barre d'action.",
@@ -4509,7 +4509,7 @@
             "titleID": 0,
             "shipId": 46,
 		    "modify": false,
-            "skill": 3,
+            "skill": 2,
             "points": 5,
             
             "ability": "Au début de la phase d'engagement, vous pouvez choisir un vaisseau allié à portée 0-1. Dans ce cas, ce vaisseau retire 1 jeton stress",
@@ -4649,7 +4649,7 @@
             "titleID": 0,
             "shipId": 76,
 		    "modify": false,
-            "skill": 3,
+            "skill": 5,
             "points": 6,
             
             "ability": "Après avoir entièremement effectué une manoeuvre ou effectué une action, si vous vous êtes déplacé à travers un vaisseau ennemi, vous pouvez vérouiller le vaisseau,",
@@ -4669,7 +4669,7 @@
             "titleID": 0,
             "shipId": 76,
 		    "modify": false,
-            "skill": 3,
+            "skill": 4,
             "points": 6,
             
             "ability": "Après avoir effectué une action #BO#, vous pouvez retirer 1 jeton rouge ou orange.",
@@ -4729,7 +4729,7 @@
             "titleID": 0,
             "shipId": 49,
 		    "modify": false,
-            "skill": 3,
+            "skill": 4,
             "charge": [2,"0"],
             "points": 9,
             
@@ -4771,7 +4771,7 @@
             "titleID": 0,
             "shipId": 49,
 		    "modify": false,
-            "skill": 3,
+            "skill": 2,
             "points": 9,
             
             "ability": "Mise en place : Après vous être déployé, les autres petits vaisseaux peuvent être placés n'importe où dans l'aire de jeu à portée 0-2 de vous.",
@@ -4791,7 +4791,7 @@
             "titleID": 0,
             "shipId": 49,
 		    "modify": false,
-            "skill": 3,
+            "skill": 4,
             "points": 9,
             
             "ability": "Lorsque vous coordonnez ou résolvez l'effet de l'une de vos améliorations, vous pouvez traiter vos vaisseaux alliés à portée 2-3 comme étant à portée 0 ou 1.",
@@ -4811,7 +4811,7 @@
             "titleID": 0,
             "shipId": 47,
 			"modify": false,
-            "skill": 3,
+            "skill": 5,
             "points": 12,
             
             "ability": "Lorsque vous attaquez, si l'attaque est obstruée par un obstacle, le défenseur lance 2 dés de défense en moins.",
@@ -4831,7 +4831,7 @@
             "titleID": 0,
             "shipId": 47,
 		    "modify": false,
-            "skill": 3,
+            "skill": 4,
             "points": 11,
             
             "ability": "Tant que vous êtes stressé, vous pouvez considérer les vaisseaux ennemis dans votre #Farc# comme étant dans votre #bulls#",
@@ -4851,7 +4851,7 @@
             "titleID": 0,
             "shipId": 47,
 		    "modify": false,
-            "skill": 3,
+            "skill": 0,
             "points": 11,
             
             "ability": "Tant que vous êtes endommagé, considérez votre initiative étant à 6.",
@@ -4871,13 +4871,14 @@
 		    "modify": false,
             "charge":[0],
             "force": 2,
-            "skill": 3,
+            "skill": 5,
             "points": 13,
             
             "ability": "Avant qu'un vaisseau ennemi dans votre #bulls# ne reçoive une carte de dégat face cachée, vous pouvez dépenser 1 #fo#. Dans ce cas, cette carte de dégat est reçue face révélée à la place.",
             "ability_ENG": "Before an enemy ship in your #bulls# is dealt a facedown damage card, you may spend 1 #fo#. If you do, that damage card is dealt face up instead.",
             "slots": [
-                "Talent"            
+                "Talent",
+                "Force"
             ]
         },
         {

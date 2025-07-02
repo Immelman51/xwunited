@@ -1284,6 +1284,7 @@ let codeText = document.getElementById('codeText');
 
 linkToDisplayCode.addEventListener('click', (e) => {
     e.preventDefault();
+    popupOverlay.setAttribute('class','overlay');
     popupOverlay.style.display = 'flex';
     hasher();
     codeText.innerHTML = hash;
