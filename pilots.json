@@ -6032,7 +6032,7 @@
             "force": 0,
             "titleID": 0,
             "shipId": 13,
-            "skill": 5,
+            "skill": 3,
             "points": 11,
             
             "ability": "Lorsqu'un autre vaisseau à portée 0-1 défend, avant l'étape 'Neutralisez les Résultats', si vous êtes dans l'arc de tir et que vous n'êtes pas ionisé, vous pouvez gagnez 1 jeton ion pour annuler 1 résultat #hit#.",
@@ -7396,7 +7396,7 @@
             "titleID": 0,
             "shipId": 38,
             "skill": 2,
-            "points": 5,                        
+            "points": 5,
             "ability": "Après avoir effectuer une attaque spéciale qui a manqué, vous pouvez effectuer une attaque bonus en utilisant une arme différente.",
             "ability_ENG": "After you perform a special attack that misses, you may perform a bonus attack using a different weapon.",
             "slots": [
@@ -7415,7 +7415,7 @@
             "force": 0,
             "titleID": 0,
             "shipId": 38,
-            "skill": 2,
+            "skill": 4,
             "points": 5,                        
             "ability": "Lorsque vous attaquez, après que le défenseur a lancé ses dés de défense, vous pouvez dépenser 1 jeton de concentration pour anuler tous les résultats vierge/#eye#.",
             "ability_ENG": "While you perform an attack, after the defender rolls defense dice, you may spend 1 focus token to cancel all of the defender's blank/#eye# results.",

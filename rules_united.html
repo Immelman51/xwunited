@@ -24,10 +24,11 @@
             <div><a href="#squadbuilding1">Squad Building</a></div>
             <div><a href="#faction">Faction</a></div>
             <div><a href="#leader">Leader</a></div>
-            <div><a href="#logistic">Logistic</a></div>
             <div><a href="#upgrades">Upgrades</a></div>
+            <div><a href="#logistic">Logistic</a></div>
             <div><a href="#scenario">Scenario</a></div>
-            <div><a href="#environement">Logistic</a></div>
+            <div><a href="#environement">Environnement</a></div>
+            <div><a href="#event">Evênement</a></div>
         </div>
         <div id='planningPhase' class="planningphase">
             <div><a href="#tacticpoint">Tactic Points</a></div>
@@ -55,6 +56,7 @@
             <div><a href="#rollingdefensedice">Roll Defense Dice</a></div>
             <div><a href="#cancelresults">Cancel Results</a></div>
             <div><a href="#bonusattack">Bonus Attack</a></div>
+            <div><a href="#range0">Portée 0</a></div>
             <div><a href="#destroyedships">Destroyed Ships</a></div>
 
         </div>
@@ -67,44 +69,172 @@
     </header>
 <p>
     <div id='squadbuilding1' class="title">Préparation de partie/Squadbuilding</div>
-    <div class="txt">Etape 1 : Choisir un Leader. Les Leaders donnent accès aux pilotes/améliorations des factions indiquées sur sa carte. Chaque Leader dispose également d'une capacité utilisable durant la partie. Enfin, chaque leader dispose d'une valeur de logistique qui permet d'intégrer des améliorations Vaisseau dans l'escadron.<br>Etape 2 : Construire son escadron en 30 points en utilisant des vaisseaux / pilotes de factions autorisés par votre Leader.<br>Chaque pilote coûte un certain nombre de points d'escadron. Vous pouvez l'équiper avec des améliorations Pilote et Vaisseau en respectant les restrictions indiquées.<br>Etape 3 : Imprimer la liste et préparer les vaisseaux.<br>Etape 4 : Choisir un Scénario et l'installer.
-    </div> 
+    <div class="txt">Etape 1 : Choisir un Leader. Les Leaders donnent accès aux vaisseaux/ pilotes/ améliorations des factions indiquées. Chaque Leader peut disposer également d'une capacité utilisable durant la partie. Enfin, chaque leader dispose d'une valeur de logistique qui permet d'intégrer plus ou moins des améliorations de vaisseau dans l'escadron.<br>Etape 2 : Construire son escadron en 30 points en utilisant des vaisseaux / pilotes de factions autorisés par votre Leader.<br>Chaque pilote coûte un certain nombre de points d'escadron. Vous pouvez l'équiper avec des améliorations Pilote et Vaisseau en respectant les restrictions indiquées, et en de dépassant pas la valeur de logistique du leader.<br>Etape 3 : Imprimer la liste et préparer les vaisseaux.<br>Etape 4 : Choisir un Scénario et l'installer.
+    </div>
 </p>
 <p>
     <div id='faction' class="title">Factions</div>
-    <div class="txt">Chaque faction dispose de certains chassis, qui disposent de certains pilotes, et aussi de certaines améliorations. Elles sont au nombre de 24.<br>Pour le moment les factions disponibles sont : Alliance Rebelle, Académie Impériale, Clans Mandaloriens, Pirates & Contrebandiers, Guilde des Chasseurs de Primes, Cellule Phénix, Fédération du Commerce, Résistance, Premier Ordre.<br>Futures Factions : Escadrons d'Elite Impériaux, Partisans, Spécialistes de l'Ombre (Premier Ordre Elite), Conseil Jedi, Nouvelle République, Cartel Hutt, Agents du Chaos (C.I.S Sith), Armée Clone, Résidus de l'Empire, Soleil Noir, Syndicats du Crime, B.S.I, Colossus, Forces de Défense Naboo, Gouvernement Séparatiste</div>
+    <div class="txt">Chaque faction dispose de certains chassis, qui disposent de certains pilotes, et aussi de certaines améliorations. Elles sont au nombre de 24.<br>Pour le moment les factions disponibles sont : Alliance Rebelle, Académie Impériale, Clans Mandaloriens, Pirates & Contrebandiers, Guilde des Chasseurs de Primes, Cellule Phénix, Fédération du Commerce, Résistance, Premier Ordre, Conseil Jedi.<br>Futures Factions : Escadrons d'Elite Impériaux, Partisans, Spécialistes de l'Ombre (Premier Ordre Elite), Nouvelle République, Cartel Hutt, Agents du Chaos (C.I.S Sith), Armée Clone, Résidus de l'Empire, Soleil Noir, Syndicats du Crime, B.S.I, Colossus, Forces de Défense Naboo, Gouvernement Séparatiste</div>
 </p>
+<p>
+    <div id='leader' class="title">Leaders</div>
+    <div class="txt">Les leaders sont la base de votre escadron. Pour chacune des factions, il existe un leader dédié (on l'appellera leader monofaction). Il existe aussi des leaders qui donne accès à 2 factions (leader bifaction), voire 3 factions (leader trifaction). Les leaders trifaction donnent accès à peu près aux factions qui existaient dans les versions offcielles du jeu depuis la 2.0 (Rebelles, Empire, Racailles, Séparatiste, République, Résistance, Premier Ordre), mais ajoute 1 nouvelle grande famille : le Collectif de l'Ombre mené par Maul (en rajoutant des vaisseaux et en divisant la faction racailles qui disposait de plus de vaisseaux que les autres factions). Les familles de la prélogie et de la postlogie ont aussi été étoffées.<br>Tous les leaders monofaction disposent d'une capacité qui leur permettent de gagner des points de scénario (objectifs pour gagner une partie), alors que celle des autres leaders, qui disposeront de plus de choix pour le squad building auront des capacités plus orientées tactique.<br>Si vous choisissez un leader multifaction, il est possible d'utiliser des améliorations réservées à une faction (comme le talent unique d'une faction) sur des vaisseaux ou pilotes d'une autre faction disponible. Par exemple, si je choisis le leader Amiral Ackbar qui me permet de piocher dans les factions 'Alliance Rebelle' et 'Pirates et Contrebandiers', je peux choisir Han Solo dans son faucon, et placer le canonnier 'Luke Skywalker' à l'intérieur, et lui donner le talent 'Altruisme'.</div>
+</p>
+
 <p>
     <div id='upgrades' class="title">Améliorations</div>
     <div class="txt">Il faut distinguer 2 catégories d'amélioration :<br>
         - Les améliorations 'Talent' et 'Force' que l'on peut qualifier d'<span style= "text-decoration: underline; ">amélioration Pilote,</span><br>
         - Les autres améliorations que l'on peut qualifier de d'<span style= "text-decoration: underline; ">amélioration Vaisseau.</span><br>
-Les améliorations Vaisseau ont un coût. Chaque fois qu'on équipe un pilote d'une amélioration Vaisseau (ex : Missile, Senseur, Illicit, Modification...), il faut additionner son cout aux coûts des autres améliorations Vaisseau équipées. Cette somme ne doit pas dépasser la valeur de logistique du leader.<br>
-Les améliorations Pilote n'ont pas de coût mais possède un niveau. Tous les talents peuvent être équippés tant que le pilote possède un emplacement Talent ; MAIS un talent n'est utilisable que si un pilote a une valeur d'initiative supérieure ou égale au niveau du talent. <span style= "text-decoration: underline; ">Il n'est pas possible d'équiper plusieurs talent de même niveau.</span><br>
+Les améliorations Vaisseau ont un coût. Chaque fois qu'on équipe un pilote d'une amélioration Vaisseau (ex : Missile, Senseur, Illicit, Modification...), il faut dépenser de la logistique. La valeur de logistique ne doit pas descendre sous 0.<br>
+Les améliorations Pilote n'ont pas de coût mais possède un niveau. Tous les talents peuvent être équippés tant que le pilote possède un emplacement Talent, MAIS :<br>- un talent n'est utilisable que si un pilote a une valeur d'initiative supérieure ou égale au niveau du talent.<br>- <span style= "text-decoration: underline; ">Il n'est pas possible d'équiper plusieurs talents de même niveau.</span><br>
 Concernant les améliorations 'Force', elles suivent une logique similaire. Il n'y a aucune restriction en revanche. Le niveau des améliorations 'Force' correspond uniquement aux points de force nécessaires pour déclencher son effet.
     </div>
 </p>
 <p>
-    <div id='firstplayer' class="title">Gestion du premier joueur / Points Tactiques</div>
-    <div class="txt">En début de partie, chaque joueur met place une pile de 3 jetons tactiques lui appartenant. Chaque jeton tactique doit avoir une face joueur - représentant son propriétaire (couleur, logo faction, image leader...) et une face neutre. Tous les jetons sont d'abord retournés sur leur face neutre. Le joueur qui a le plus de pilotes à initiative 6 (joueur A) retourne un jeton tactique sur sa face joueur. En cas d'égalité, on compare les pilotes à initiative 5 etc... Le joueur dont on voit le jeton tactique sur sa face joueur décide qui sera le premier joueur pour le tour 0 et tour 1. Au début de chaque tour, cette opération doit être réalisée à nouveau. Si la situation n'a pas changé, alors il n'y a pas de manipulation de jeton tactique. Si c'est l'autre joueur (joueur B) qui dispose du plus grand nombre de pilotes de plus haute initiative, alors joueur A perd 1 point tactique, et joueur B gagne 1 point tactique.<br>En pratique, dire que joueur A perd 1 point tactique ou que joueur B gagne 1 point tactique est équivalent. Si le(s) jeton(s) tactique(s) étaient retourné(s) sur la face joueur A, alors il retourne un de ses jetons sur sa face neutre.<br>Si tous les jetons sont face neutre, alors joueur B retourne un de ses jetons sur sa face joueur.<br>Si 1 ou plusieurs jetons sont retournés vers la face joueur B, alors joueur B retourne un autre de ses jetons sur sa face joueur.<br>En plus de la vérification du nombre de pilote de plus haute initiative, d'autres évênements peuvent ammener des pertes/gains de points tactiques:<br>- survoler/chevaucher un obstacle : -1 point tactique<br>- bumper dans un vaisseau : -1 point tactique<br>- gagner 1 ou plusieurs points de scénario par une action: +1 point tactique<br>
-    </div> 
+    <div id='logistic' class="title">Logistique</div>
+    <div class="txt">La logistique est la valeur maximale d'emport d'améliorations que votre escadron peut emporter. Elle est fixée par le leader que vous sélectionnez. Certaines améliorations peuvent rajouter des points de logistique supplémentaire. Toutes les améliorations pilote ('Talent' et 'Force') ne nécessitent pas de dépenser de logistique. La valeur de logistique ne doit pas descendre sous 0.</div>
 </p>
 <p>
-    <div id='declareAttack' class="title">Attaque</div>
-    <div class="subtitle">Attaque Principale et Attaque Spéciale</div>
-    <div class="txt">La valeur d'attaque imprimée sur la carte du pilote correspond à l'attaque principale de ce vaisseau. Lorsqu'un vaisseau effectue une attaque principale à portée 1, il dispose d'un bonus de portée et peut lancer 1 dé d'attaque supplémentaire. Lorsqu'un vaisseau effectue une attaque à portée 3, la cible dispose d'un bonus de portée et peut lancer 1 dé de défense supplémentaire.<br>Lorsqu'un vaisseau effectue une attaque spéciale (Amélioration Tourelle, Amélioration Cannon, Torpille, Missile), aucun bonus de portée n'est appliqué.</div>
-    <div class="subtitle">Portée 0</div>
-    <div class="txt">Il est impossible de tirer à portée 0, sauf si une carte ne précise le contraire. Une attaque à portée 0 est alors considérée comme une attaque à portée 1.
+    <div id='scenario' class="title">Scénario</div>
+    <div class="txt">Avant de mettre en place une partie, et une fois que les escadrons ont été choisis, il faut sélectionner un scénario parmi les 5 disponibles. Il suffit de mélanger les 5 cartes scénario et d'en prendre une au hasard. Une fois le scénario choisi, on met en place les éléments de scénario si possible. Les scenarii demandent aux joueurs de réaliser certains objectifs pour gagner des points de scenario. A la fin de la partie, le joueur qui a le plus de point de scenario remporte la partie. En cas d'égalité, c'est le joueur qui a le plus de points tactique qui remporte la partie.<br>Après avoir sélectionné le scénario, il faut sélectionner une carte environnement.</div>
+</p>
+<p>
+    <div id='environment' class="title">Environnement</div>
+    <div class="txt">Une fois que le scenario a été sélectionné, il faut choisir une carte environnement parmi les 5 disponibles. Elle est tirée au hasard. Une fois la carte tirée, les joueurs suivent les instructions de la carte pour placer les obstacles sur l'aire de jeu. Il faut ensuite sélectionner une carte évênement.</div>
+</p>
+<p>
+    <div id='event' class="title">Evênement</div>
+    <div class="txt">Une fois que l'environnement a été sélectionné et mis en place, il faut choisir une carte évênement parmi les 5 disponibles. Elle est tirée au hasard. Une fois la carte tirée, les joueurs suivent les instructions de la carte et placer éventuellement les éléments de scénario. On passe alors à la phase 'placer les forces' (placer les vaisseaux sur l'aire de jeu).</div>
+</p>
+
+
+<p>
+    <div id='tacticpoint' class="title">Points Tactique</div>
+    <div class="txt">Placez un dé 6 à côté de l'aire de jeu, et placez le sur sa face 3. Les points tactique permettent de déterminer quel joueur a 'l'ascendant tactique' sur l'autre joueur. Le joueur qui a l'ascendant tactique peut déterminer à la fin de chaque tour qui sera le premier joueur au tour suivant. En cas d'égalité en fin de partie, le joueur qui a l'ascendant tactique remporte la partie.<br>Lorsque le joueur 1 gagne un point tactique, il baisse la valeur du dé 6 de 1. Si le dé est déjà sur sa face 1, il ne se passe rien. Lorsque le joueur 2 gagne 1 point tactique, il augmente la valeur du dé 6 de 1 ; si le dé est déjà sur sa valeur 6, il ne se passe rien. Ainsi, tant que le dé 6 indique les valeurs 1, 2, ou 3, le joueur 1 a l'ascendant tactique. Tant que le dé 6 indique les valeurs 4, 5 ou 6, le joueur 2 a l'ascendant tactique.</div>
+</p>
+<p>
+    <div id='firstplayer' class="title">Gestion du premier joueur</div>
+    <div class="txt">En début de partie, le joueur qui a le plus de pilotes à initiative 6 devient le joueur 1 (voir points tactique) et prend l'ascendant tactique. En cas d'égalité, on compare le nombre de pilotes à initiative 5 etc... <br>Des évênements peuvent ammener des pertes/gains de points tactiques en cours de partie:<br>- Survoler/chevaucher un obstacle : -1 point tactique<br>- Chevaucher un vaisseau : -1 point tactique<br>- Gagner 1 ou plusieurs points de scénario par une action ou un fait de jeu: +1 point tactique<br>En phase de fin, le joueur qui a l'ascendant décide pour la ronde suivante qui sera le premier joueur (A initiative égale, il se déplace en premier, et tire en premier).
     </div>
-    <div id='rollingattackdice' class="subtitle">Modifier des dés</div>
-    <div class="txt">Un dé d'attaque peut être modifié de plusieurs façons différentes : ajouter un résultat, changer un résultat de dé, relancer un dé, dépenser un résultat de dé.<br>
-    Il n'est pas possible de relancer plus d'une fois un dé.<br>
-    Annuler/retirer/ajouter des dés n'est pas considéré comme une modification de dé.<br>
-    </div>
-    <div class="subtitle">Améliorer un dé</div>
-    <div class="txt">Lorsqu'une capacité vous demande d'améliorer un dé d'attaque, vous pouvez modifier le résultat de ce dé:<br>•un résultat vierge devient un résultat #eye#<br>•un résultat #eye# devient un résultat #hit#<br>•un résultat #hit# devient un résultat #crit#<br>Lorsqu'une capacité vous demande d'améliorer un dé de défense, vous pouvez modifier le résultat de ce dé:<br>•un résultat vierge devient un résultat #eye#<br>•un résultat #eye# devient un résultat #evd#<br></div>
-    <div class="subtitle">Dégrader un dé</div>
-    <div class="txt">Lorsqu'une capacité vous demande de dégrader un dé d'attaque, vous devez modifier le résultat de ce dé:<br>•un résultat vierge est annulé<br>•un résultat #eye# devient un résultat vierge<br>•un résultat #hit# devient un résultat #eye#<br>•Un résultat #crit# devient un résultat #hit#<br>Lorsqu'une capacité vous demande de dégrader un dé de défense, vous devez modifier le résultat de ce dé:<br>•un résultat vierge est annulé<br>•un résultat #eye# devient un résultat vierge<br>•un résultat #evd# devient un résultat #eye#</div>
+</p>
+
+
+<p>
+    <div id='dialsAndManeuvers' class="title">Planification des maneouvres</div>
+    <div class="txt"></div>
+</p>
+
+
+<p>
+    <div id='system_order' class="title">Ordre en phase système</div>
+    <div class="txt"></div>
+</p>
+<p>
+    <div id='decloaking' class="title">Désoccultation</div>
+    <div class="txt"></div>
+</p>
+<p>
+    <div id='payload' class="title">Engins</div>
+    <div class="txt"></div>
+</p>
+<p>
+    <div id='relocate' class="title">Relocalisation</div>
+    <div class="txt"></div>
+</p>
+
+
+
+<p>
+    <div id='activation_order' class="title">Ordre d'activation</div>
+    <div class="txt"></div>
+</p>
+<p>
+    <div id='bumpingships' class="title">Chevaucher un vaisseau</div>
+    <div class="txt"></div>
+</p>
+<p>
+    <div id='actions' class="title">Effectuer une action</div>
+    <div class="txt"></div>
+</p>
+<p>
+<div id='obstacles' class="title">Obstacles</div>
+<div class="txt"></div>
+</p>
+
+<div id='engagementPhase' class="engagementphase">
+<div><a href="#engagement_order">Engagement Order</a></div>
+<div><a href="#declareAttack">Declare an Attack</a></div>
+<div><a href="#upgradeDie">Améliorer un dé</a></div>
+<div><a href="#downgradeDie">Dégrader un dé</a></div>
+<div><a href="#rollingattackdice">Roll Attack Dice</a></div>
+<div><a href="#rollingdefensedice">Roll Defense Dice</a></div>
+<div><a href="#cancelresults">Cancel Results</a></div>
+<div><a href="#bonusattack">Bonus Attack</a></div>
+<div><a href="#destroyedships">Destroyed Ships</a></div>
+
+</div>
+<div id='endPhase' class="endphase">
+<div><a href="#end_effects">End Effects</a></div>
+<div><a href="#scenariopoints">Scenario Points</a></div>
+<div><a href="#clearing_tokens">Clearing Tokens</a></div>
+</div>
+
+<p>
+    <div id='engagement_order' class="title">Ordre d'engagement</div>
+    <div class="txt"></div>
+</p>
+<p>
+<div id='declareAttack' class="title">Attaque</div>
+<div class="subtitle">Attaque Principale et Attaque Spéciale</div>
+<div class="txt">La valeur d'attaque imprimée sur la carte du pilote correspond à l'attaque principale de ce vaisseau. Lorsqu'un vaisseau effectue une attaque principale à portée 1, il dispose d'un bonus de portée et peut lancer 1 dé d'attaque supplémentaire. Lorsqu'un vaisseau effectue une attaque à portée 3, la cible dispose d'un bonus de portée et peut lancer 1 dé de défense supplémentaire.<br>Lorsqu'un vaisseau effectue une attaque spéciale (Amélioration Tourelle, Amélioration Cannon, Torpille, Missile), aucun bonus de portée n'est appliqué.</div>
+</p>
+<p>
+<div id='upgradeDie' class="subtitle">Améliorer un dé</div>
+<div class="txt">Lorsqu'une capacité vous demande d'améliorer un dé d'attaque, vous pouvez modifier le résultat de ce dé:<br>•un résultat vierge devient un résultat #eye#<br>•un résultat #eye# devient un résultat #hit#<br>•un résultat #hit# devient un résultat #crit#<br>Lorsqu'une capacité vous demande d'améliorer un dé de défense, vous pouvez modifier le résultat de ce dé:<br>•un résultat vierge devient un résultat #eye#<br>•un résultat #eye# devient un résultat #evd#<br></div>
+</p>
+<p>
+<div id='degradeDie' class="subtitle">Dégrader un dé</div>
+<div class="txt">Lorsqu'une capacité vous demande de dégrader un dé d'attaque, vous devez modifier le résultat de ce dé:<br>•un résultat vierge est annulé<br>•un résultat #eye# devient un résultat vierge<br>•un résultat #hit# devient un résultat #eye#<br>•Un résultat #crit# devient un résultat #hit#<br>Lorsqu'une capacité vous demande de dégrader un dé de défense, vous devez modifier le résultat de ce dé:<br>•un résultat vierge est annulé<br>•un résultat #eye# devient un résultat vierge<br>•un résultat #evd# devient un résultat #eye#</div>
+</p>
+<p>
+<div id='rollingattackdice' class="subtitle">Modifier des dés d'attaque</div>
+<div class="txt">Un dé d'attaque peut être modifié de plusieurs façons différentes : ajouter un résultat, changer un résultat de dé, relancer un dé, dépenser un résultat de dé.<br>
+Il n'est pas possible de relancer plus d'une fois un dé.<br>
+Annuler/retirer/ajouter des dés n'est pas considéré comme une modification de dé.<br>
+</div>
+</p>
+<p>
+    <div id='rollingdefensedice' class="title">Modifier des dés de défense</div>
+    <div class="txt"></div>
+</p>
+<p>
+    <div id='cancelresults' class="title">Annuler des résultats</div>
+    <div class="txt"></div>
+</p>
+<p>
+    <div id='bonusattack' class="title">Attaque Bonus</div>
+    <div class="txt"></div>
+</p>
+<p>
+<div class="subtitle">Portée 0</div>
+<div class="txt">Il est impossible de tirer à portée 0, sauf si une carte ne précise le contraire. Une attaque à portée 0 est alors considérée comme une attaque à portée 1.
+</div>
+</p>
+<p>
+    <div id='engagement_order' class="title">Ordre d'engagement</div>
+    <div class="txt"></div>
+</p>
+<p>
+    <div id='engagement_order' class="title">Ordre d'engagement</div>
+    <div class="txt"></div>
+</p>
+<p>
+    
+   
+    
+    
+    
     <div class="subtitle">Attaque Précise ou Imprécise</div>
     <div class="txt">Lorsqu'une attaque est "Précise", vous devez améliorer tous les dés d'attaque avant tout autre modification.<br>Lorsqu'une attaque est "Imprécise", vous devez dégrader tous les dés avant toute autre modification. </div>
     
