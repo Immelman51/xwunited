@@ -28,8 +28,10 @@ function displaybases() { //This is the function that will display all the ship 
             newbase.setAttribute('class','ship');
             newbase.setAttribute('src','img/pilots/base/'+indexes[i][0]+'.png');
             bases.appendChild(newbase);
-        
+            
+        }
     }
+}
 
 function executeFunctions(){ //on crée une fonction asynchrone pour que tout se lance dans l'ordre
        
