@@ -538,7 +538,7 @@
  "name":"Hyperspace Jump",
  "id":65,
  "nbrOfEffects":1,
- "effect1":"<em><strong>Saut Hyperespace : </strong></em> Mise en Place : Vous et votre vaisseau-mère commencez dans la réserve. Au début de la phase de fin du tour 1, placez vous dans la portée 1 d'un bord au delà de la portée 3 d'un vaisseau adverse.
+ "effect1":"<em><strong>Saut Hyperespace : </strong></em> Mise en Place : Vous et votre vaisseau-mère commencez dans la réserve. Au début de la phase de fin du tour 1, placez vous dans la portée 1 d'un bord au delà de la portée 3 d'un vaisseau adverse.",
  "effect2": "",
  "effect3": "",
  "effect1_ENG": "Setup : You and your mother ship begin in reserve. At the beginning of the first end phase, place yourself within range 1 of a border, beyond range 3 of an enemy ship."
