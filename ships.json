@@ -1470,7 +1470,7 @@
             {
     
                 "name": "Delta-7 Aethersprite",
-                "factions": ["Jedi_Order"],
+                "factions": ["Jedi_Council"],
                 "id": 53,
                 "attack": [["F",2]],
                 "agility": 3,
@@ -1501,7 +1501,7 @@
           
         
                 "name": "Delta-7b Aethersprite",
-                "factions": ["Jedi_Order"],
+                "factions": ["Jedi_Council"],
                 "id": 54,
                 "attack": [["F",3]],
                 "agility": 2,
@@ -1755,7 +1755,7 @@
         
       
                 "name": "BTL-B Y-wing",
-                "factions": ["Jedi_Order","Clone_Army"],
+                "factions": ["Jedi_Council","Clone_Army"],
                 "id": 63,
                 "attack": [["F",2]],
                 "agility": 1,
@@ -2018,7 +2018,7 @@
             {
          
                 "name": "Eta-2 Actis",
-                "factions": ["Jedi_Order"],
+                "factions": ["Jedi_Council"],
                 "id": 72,
                 "attack": [["BULL",3],["F",2]],
                 "agility": 3,
@@ -2048,9 +2048,9 @@
             {
         
                 "name": "Syliure-class Hyperspace Ring",
-                "chassis":[0],
+                "chassis":[65],
                 "id": 73,
-                "factions": ["Jedi_Order","Clone_Army"],
+                "factions": ["Jedi_Council","Clone_Army"],
                 "agility": 0,
                 "hull": 1,
                 "shields": 0,
@@ -2292,7 +2292,7 @@
             },
             {
             	"name": "T-6 Shuttle",
-                "factions": [ "Partisans", "Jedi_Order", "New_Republic" ],
+                "factions": [ "Partisans", "Jedi_Council", "New_Republic" ],
                 "chassis":[0],
                 "id": 82,
                 "attack": [["F",2],["B",2]],
@@ -2333,10 +2333,10 @@
                 ],
                 "maneuvers": [
                     [ 0, 0, 0, 0, 0, 0],
-                    [ 0, 2, 1, 2, 0, 0],
-                    [ 2, 2, 1, 2, 2, 0],
-                    [ 0, 2, 1, 2, 0, 0],
-                    [ 0, 0, 3, 0, 0, 3]
+                    [ 0, 2, 1, 1, 0, 0],
+                    [ 3, 2, 1, 1, 2, 0],
+                    [ 0, 3, 2, 2, 3, 0],
+                    [ 0, 0, 2, 0, 0, 3]
                 ],
                 "slots": ["Torpedo","Modification","Modification"]
             },
@@ -2700,7 +2700,7 @@
             },
             {
             	"name": "ETA Class Shuttle",
-                "factions": [ "Imperial_Remnants", "Jedi_Order", "Naboo_Defense_Force" ],
+                "factions": [ "Imperial_Remnants", "Jedi_Council", "Naboo_Defense_Force" ],
                 "id": 98,
                 "attack": [["F",2]],
                 "agility": 2,

@@ -4142,8 +4142,8 @@
              "force": 0,
              "charge": [1,"0"],
              "points": 2,
-             "effect": "Mise en Place : Vous commencez dans la réserve, avec un Syliure-class Hyperspace Ring arrimé à vous. Au début de la phase de fin du tour 1, placez vous dans la portée 1 d'un bord au delà de la portée 3 d'un vaisseau adverse.<br>Tant que votre charge est active, augmentez la difficulté de vos virages sur l'aile. Lorsque vous devriez prendre 1 dégat, vous pouvez dépenser 1 #ch# pour l'annuler, et placer une carte de dégat sur l'anneau qui est arrimé.",
-             "effect_ENG": "Setup : You begin in reserve with a Syliure-class Hyperspace Ring docked with you. At the beginning of the first end phase, place yourself within range 1 of a border, beyond range 3 of an enemy ship.<br>While your charge is active, increase the difficulty of your turn maneuvers. When you would take a damage, you may spend 1 #ch# to cancel it, and place a damage card on the ring docked with you.",
+             "effect": "Mise en Place : Vous devez arrimer un Syliure-class Hyperspace Ring avec vous.<br>Tant que votre charge est active, augmentez la difficulté de vos virages sur l'aile. Lorsque vous devriez prendre 1 dégat, vous pouvez dépenser 1 #ch# pour l'annuler, et placer une carte de dégat sur l'anneau qui est arrimé. Dans ce cas, larguez et retirez du jeu le Hyperspace Ring arrimé avec vous.",
+             "effect_ENG": "Setup : You MUST dock a Syliure-class Hyperspace Ring with you.<br>While your charge is active, increase the difficulty of your turn maneuvers. When you would take a damage, you may spend 1 #ch# to cancel it, and place a damage card on the ring docked with you. Then, undock and remove your docked ring from the game.",
              "faction": ["Jedi_Order","Clone_Army"]
          },
          {

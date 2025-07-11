@@ -8880,7 +8880,7 @@
         },
         {
             "name": "Deva Lompop",
-            "name_ENG": "Khel Tanna",
+            "name_ENG": "Deva Lompop",
             "id": 393,
             "max_per_squad": 1,
             "modify": false,
@@ -8901,7 +8901,7 @@
         },
         {
             "name": "Exécuteur du Cartel",
-            "name_ENG": "Cartel Executionner",
+            "name_ENG": "Cartel Executioner",
             "id": 394,
             "max_per_squad": 8,
             "modify": false,
@@ -8996,8 +8996,8 @@
             "force": 0,
             "titleID": 0,
             "shipId": 19,
-            "skill": 5,
-            "points": 7,                        
+            "skill": 4,
+            "points": 7,
             "ability": "Après avoir vérouillé un vaisseau, recevez le même nombre de jeton concentration et évasion que possède ce vaisseau.",
             "ability_ENG": "After you acquire a lock, gain the same number of focus and evade tokens that the locked ship has.",
             "slots": [
@@ -10225,8 +10225,8 @@
             "force": 0,
             "titleID": 293,
             "shipId": 95,
-            "skill": 5,
-            "points": 8,                        
+            "skill": 4,
+            "points": 8,
             "ability": "??",
             "ability_ENG": "??",
             "slots": [     
@@ -10292,7 +10292,7 @@
         },
         {
             "name": "Griff Haloran",
-            "name_ENG": "Torra Doza",
+            "name_ENG": "Griff Haloran",
             "id": 453,
             "max_per_squad": 1,
             "modify": true,
@@ -11240,8 +11240,8 @@
             "force": 0,
             "titleID": 0,
             "shipId": 75,
-            "skill": 5,
-            "points": 7,                        
+            "skill": 4,
+            "points": 7,
             "ability": "Après avoir entièrement exécuté une manœuvre ou effectué une action #BO#, chaque vaisseau que vous avez traversé gagne 2 jetons brouillage.",
             "ability_ENG": "After you fully execute a maneuver or perform a #BO# action, each ship you moved through gains 2 jam tokens.",
             "slots": [     
@@ -11360,7 +11360,7 @@
         },
         {
             "name": "Holo",
-            "name_ENG": "Major Vonreg",
+            "name_ENG": "Holo",
             "id": 499,
             "max_per_squad": 1,
             "modify": false,
@@ -11754,7 +11754,7 @@
             "max_per_squad":1,
             "modify": false,
             "faction": "Imperial_Remnants",
-            "ship": "Omicron Class Shuttle",
+            "ship": "ETA Class Shuttle",
             "charge":[0],
             "force": 0,
             "titleID": 0,
@@ -11774,7 +11774,7 @@
             "max_per_squad":1,
             "modify": false,
             "faction": "Imperial_Remnants",
-            "ship": "Omicron Class Shuttle",
+            "ship": "ETA Class Shuttle",
             "charge":[0],
             "force": 2,
             "titleID": 0,
@@ -11947,8 +11947,8 @@
             "force": 1,
             "titleID": 0,
             "shipId": 96,
-            "skill": 4,
-            "points": 6,                        
+            "skill": 3,
+            "points": 6,
             "ability": "Lorsque vous utilisez votre capacité 'Surcharge des Propulseurs', vous pouvez dépenser 1 #fo# pour ignorer les obstacles. Puis, si vous avez effectué complètement ou partiellement une manoeuvre à travers un obstacle, recevez 1 jeton évasion.",
             "ability_ENG": "While you use your overdrive thruster ability, you may spend 1 #fo# to ignore obstacles. Then, if you completely or partially moved through an obstacle, gain 1 evade token.",
             "slots": [   
@@ -11957,8 +11957,8 @@
             ]   
         },
         {
-            "name": "Eclaireurs d'Elsbeth",
-            "name_ENG": "Elsbeth' Scouts",
+            "name": "Eclaireur d'Elsbeth",
+            "name_ENG": "Elsbeth' Scout",
             "id": 526,
             "max_per_squad":8,
             "modify": false,
@@ -12169,7 +12169,7 @@
             "force": 0,
             "titleID": 0,
             "shipId": 0,
-            "skill": 2,
+            "skill": 3,
             "points": 6,                        
             "ability": "Après avoir effectué une action #BR# ou BO#, vous pouvez recevoir un jeton évasion.",
             "ability_ENG": "After you perform a #BR# or #BO# action, you may receive an evade token.",
@@ -12579,9 +12579,9 @@
             "shipId": 73,
             "skill": 0,
             "points": 1,                        
-            "ability": "Mise en Place : Vous devez être arrimé à un vaisseau qui équipe l'amélioration 'Hyperspace Ring'. Pendant la phase système, votre vaisseau-mère peut vous larguer avec un gabarit 1#straight#. Ignorez la phase de planification.",
-            "ability_ENG": "Setup : You must be docked to a ship with the 'Hyperspace Ring' upgrade equipped. During System Phase, your mother ship may drop you with a 1#straight# template. Ignore Planification Phase.",
-            "slots": [     
+            "ability": "Mise en Place : Vous devez être arrimé à un vaisseau qui équipe l'amélioration 'Hyperspace Ring'.<br>Pendant la phase système, votre vaisseau-mère peut vous larguer avec un gabarit 1#straight#. Ignorez la phase de planification.",
+            "ability_ENG": "Setup : You must be docked to a ship with the 'Hyperspace Ring' upgrade equipped.<br> During System Phase, your mother ship may drop you with a 1#straight# template. Ignore Planification Phase.",
+            "slots": [
             
             ] 
         },
@@ -12664,8 +12664,8 @@
             "force": 0,
             "titleID": 0,
             "shipId": 99,
-            "skill": 3,
-            "points": 10,                        
+            "skill": 1,
+            "points": 10,
             "ability": "",
             "ability_ENG": "",
             "slots": [ 
@@ -12690,8 +12690,8 @@
             "force": 0,
             "titleID": 0,
             "shipId": 99,
-            "skill": 3,
-            "points": 10,                        
+            "skill": 4,
+            "points": 10,
             "ability": "",
             "ability_ENG": "",
             "slots": [ 
@@ -12776,8 +12776,8 @@
             "force": 0,
             "titleID": 0,
             "shipId": 98,
-            "skill": 5,
-            "points": 10,                        
+            "skill": 1,
+            "points": 10,
             "ability": "",
             "ability_ENG": "",
             "slots": [ 
@@ -12816,8 +12816,8 @@
             "force": 0,
             "titleID": 0,
             "shipId": 100,
-            "skill": 5,
-            "points": 10,                        
+            "skill": 4,
+            "points": 10,
             "ability": "",
             "ability_ENG": "",
             "slots": [ 
@@ -12836,8 +12836,8 @@
             "force": 0,
             "titleID": 0,
             "shipId": 100,
-            "skill": 5,
-            "points": 10,                        
+            "skill": 3,
+            "points": 10,
             "ability": "",
             "ability_ENG": "",
             "slots": [ 
@@ -12856,8 +12856,8 @@
             "force": 0,
             "titleID": 0,
             "shipId": 100,
-            "skill": 5,
-            "points": 10,                        
+            "skill": 4,
+            "points": 10,
             "ability": "",
             "ability_ENG": "",
             "slots": [ 
@@ -12916,8 +12916,8 @@
             "force": 0,
             "titleID": 0,
             "shipId": 101,
-            "skill": 5,
-            "points": 10,                        
+            "skill": 2,
+            "points": 10,
             "ability": "",
             "ability_ENG": "",
             "slots": [ 
@@ -12936,8 +12936,8 @@
             "force": 0,
             "titleID": 0,
             "shipId": 101,
-            "skill": 5,
-            "points": 10,                        
+            "skill": 3,
+            "points": 10,
             "ability": "",
             "ability_ENG": "",
             "slots": [ 
@@ -13061,11 +13061,11 @@
             "shipId": 102,
 		    "modify": false,
             "skill": 3,
-            "charge": [0],           
-            "points": 0,            
-            "ability": "", 
-            "ability_ENG": "",
-            "slots": [      
+            "charge": [1,"0"],
+            "points": 5,
+            "ability": "Pendant la phase système, vous pouvez dépenser ou récupérer votre charge.<br>#ch#Active : Lorque vous prenez 1 dégat, recevez 1 jeton calcul.<br>#ch#Inactive : Lorsque vous attaquez, vous pouvez dépenser 1 jeton calcul pour modifier un résultat vierge en #hit#.",
+            "ability_ENG": "During System Phase, you may spend or recover your charge.<br>#ch#Active : When you receive a damage, gain 1 calculate token.<br>#ch#Inactive : While you attack, you may spend 1 calculate token to modify 1 blank result into a #hit# result.",
+            "slots": [
                 
             ],
             "modifier_func": [
@@ -13073,16 +13073,64 @@
                     ]
         },
         {
-            "name": "",
-            "name_ENG": "",
+            "name": "Chasseur de la Fédération du Commerce",
+            "name_ENG": "Trade Federation Hunter",
             "id": 578,
-            "max_per_squad": 1,
-            "faction": "",
-            "ship": "",
+            "max_per_squad": 8,
+            "faction": "Trade_Federation",
+            "ship": "Scarab-Class Droid Fighter",
             "title": "",
             "force": 0,
             "titleID": 0,
-            "shipId": 0,
+            "shipId": 102,
+		    "modify": false,
+            "skill": 2,
+            "charge": [0],
+            "points": 4,
+            "ability": "",
+            "ability_ENG": "",
+            "slots": [      
+                
+            ],
+            "modifier_func": [
+            	
+                    ]
+        },
+        {
+            "name": "Poggle le Bref",
+            "name_ENG": "Poggle the Lesser",
+            "id": 579,
+            "max_per_squad": 1,
+            "faction": "Separatist_Government",
+            "ship": "Sheathipede-Class Shuttle",
+            "title": "",
+            "force": 0,
+            "titleID": 0,
+            "shipId": 41,
+		    "modify": false,
+            "skill": 4,
+            "charge": [0],
+            "points": 0,            
+            "ability": "", 
+            "ability_ENG": "",
+            "slots": [      
+                
+            ],
+            "modifier_func": [
+            	
+                    ]
+        },
+        {
+            "name": "--",
+            "name_ENG": "--",
+            "id": 580,
+            "max_per_squad": 1,
+            "faction": "Separatist_Government",
+            "ship": "Sheathipede-Class Shuttle",
+            "title": "",
+            "force": 0,
+            "titleID": 0,
+            "shipId": 41,
 		    "modify": false,
             "skill": 0,
             "charge": [0],           
@@ -13097,16 +13145,64 @@
                     ]
         },
         {
-            "name": "",
-            "name_ENG": "",
-            "id": 0,
+            "name": "--",
+            "name_ENG": "--",
+            "id": 581,
             "max_per_squad": 1,
-            "faction": "",
-            "ship": "",
+            "faction": "Separatist_Government",
+            "ship": "Sheathipede-Class Shuttle",
             "title": "",
             "force": 0,
             "titleID": 0,
-            "shipId": 0,
+            "shipId": 41,
+            "modify": false,
+            "skill": 0,
+            "charge": [0],
+            "points": 0,
+            "ability": "",
+            "ability_ENG": "",
+            "slots": [
+                
+            ],
+            "modifier_func": [
+                
+                    ]
+        },
+        {
+            "name": "--",
+            "name_ENG": "--",
+            "id": 582,
+            "max_per_squad": 8,
+            "faction": "Separatist_Government",
+            "ship": "Sheathipede-Class Shuttle",
+            "title": "",
+            "force": 0,
+            "titleID": 0,
+            "shipId": 41,
+            "modify": false,
+            "skill": 0,
+            "charge": [0],
+            "points": 0,
+            "ability": "",
+            "ability_ENG": "",
+            "slots": [
+                
+            ],
+            "modifier_func": [
+                
+                    ]
+        },
+        {
+            "name": "--",
+            "name_ENG": "--",
+            "id": 583,
+            "max_per_squad": 1,
+            "faction": "Separatist_Government",
+            "ship": "Zenuas 33 Umbaran Starfighter",
+            "title": "",
+            "force": 0,
+            "titleID": 0,
+            "shipId": 103,
 		    "modify": false,
             "skill": 0,
             "charge": [0],           
@@ -13121,53 +13217,487 @@
                     ]
         },
         {
-            "name": "",
-            "name_ENG": "",
-            "id": 0,
+            "name": "--",
+            "name_ENG": "--",
+            "id": 584,
             "max_per_squad": 1,
-            "faction": "",
-            "ship": "",
+            "faction": "Separatist_Government",
+            "ship": "Zenuas 33 Umbaran Starfighter",
             "title": "",
             "force": 0,
             "titleID": 0,
-            "shipId": 0,
-		    "modify": false,
+            "shipId": 103,
+            "modify": false,
             "skill": 0,
-            "charge": [0],           
-            "points": 0,            
-            "ability": "", 
+            "charge": [0],
+            "points": 0,
+            "ability": "",
             "ability_ENG": "",
-            "slots": [      
+            "slots": [
                 
             ],
             "modifier_func": [
-            	
+                
                     ]
         },
         {
-            "name": "",
-            "name_ENG": "",
-            "id": 0,
+            "name": "--",
+            "name_ENG": "--",
+            "id": 585,
             "max_per_squad": 1,
-            "faction": "",
-            "ship": "",
+            "faction": "Separatist_Government",
+            "ship": "Zenuas 33 Umbaran Starfighter",
             "title": "",
             "force": 0,
             "titleID": 0,
-            "shipId": 0,
-		    "modify": false,
+            "shipId": 103,
+            "modify": false,
             "skill": 0,
-            "charge": [0],           
-            "points": 0,            
-            "ability": "", 
+            "charge": [0],
+            "points": 0,
+            "ability": "",
             "ability_ENG": "",
-            "slots": [      
+            "slots": [
                 
             ],
             "modifier_func": [
-            	
+                
                     ]
-        }
+        },
+        {
+            "name": "--",
+            "name_ENG": "--",
+            "id": 586,
+            "max_per_squad": 1,
+            "faction": "Separatist_Government",
+            "ship": "Zenuas 33 Umbaran Starfighter",
+            "title": "",
+            "force": 0,
+            "titleID": 0,
+            "shipId": 103,
+            "modify": false,
+            "skill": 0,
+            "charge": [0],
+            "points": 0,
+            "ability": "",
+            "ability_ENG": "",
+            "slots": [
+                
+            ],
+            "modifier_func": [
+                
+                    ]
+        },
+        {
+            "name": "--",
+            "name_ENG": "--",
+            "id": 587,
+            "max_per_squad": 8,
+            "faction": "Separatist_Government",
+            "ship": "Zenuas 33 Umbaran Starfighter",
+            "title": "",
+            "force": 0,
+            "titleID": 0,
+            "shipId": 103,
+            "modify": false,
+            "skill": 0,
+            "charge": [0],
+            "points": 0,
+            "ability": "",
+            "ability_ENG": "",
+            "slots": [
+                
+            ],
+            "modifier_func": [
+                
+                    ]
+        },
+        {
+            "name": "--",
+            "name_ENG": "--",
+            "id": 588,
+            "max_per_squad": 1,
+            "faction": "Separatist_Government",
+            "ship": "Droch-class Boarding Ship",
+            "title": "",
+            "force": 0,
+            "titleID": 0,
+            "shipId": 104,
+            "modify": false,
+            "skill": 0,
+            "charge": [0],
+            "points": 0,
+            "ability": "",
+            "ability_ENG": "",
+            "slots": [
+                
+            ],
+            "modifier_func": [
+                
+                    ]
+        },
+        {
+            "name": "--",
+            "name_ENG": "--",
+            "id": 589,
+            "max_per_squad": 1,
+            "faction": "Separatist_Government",
+            "ship": "Droch-class Boarding Ship",
+            "title": "",
+            "force": 0,
+            "titleID": 0,
+            "shipId": 104,
+            "modify": false,
+            "skill": 0,
+            "charge": [0],
+            "points": 0,
+            "ability": "",
+            "ability_ENG": "",
+            "slots": [
+                
+            ],
+            "modifier_func": [
+                
+                    ]
+        },
+        {
+            "name": "--",
+            "name_ENG": "--",
+            "id": 590,
+            "max_per_squad": 1,
+            "faction": "Separatist_Government",
+            "ship": "Droch-class Boarding Ship",
+            "title": "",
+            "force": 0,
+            "titleID": 0,
+            "shipId": 104,
+            "modify": false,
+            "skill": 0,
+            "charge": [0],
+            "points": 0,
+            "ability": "",
+            "ability_ENG": "",
+            "slots": [
+                
+            ],
+            "modifier_func": [
+                
+                    ]
+        },
+        {
+            "name": "--",
+            "name_ENG": "--",
+            "id": 591,
+            "max_per_squad": 8,
+            "faction": "Separatist_Government",
+            "ship": "Droch-class Boarding Ship",
+            "title": "",
+            "force": 0,
+            "titleID": 0,
+            "shipId": 104,
+            "modify": false,
+            "skill": 0,
+            "charge": [0],
+            "points": 0,
+            "ability": "",
+            "ability_ENG": "",
+            "slots": [
+                
+            ],
+            "modifier_func": [
+                
+                    ]
+        },
+        {
+            "name": "--",
+            "name_ENG": "--",
+            "id": 592,
+            "max_per_squad": 1,
+            "faction": "Agents_of_Chaos",
+            "ship": "Mankvim-814 Light Interceptor",
+            "title": "",
+            "force": 0,
+            "titleID": 0,
+            "shipId": 105,
+            "modify": false,
+            "skill": 0,
+            "charge": [0],
+            "points": 0,
+            "ability": "",
+            "ability_ENG": "",
+            "slots": [
+                
+            ],
+            "modifier_func": [
+                
+                    ]
+        },
+        {
+            "name": "--",
+            "name_ENG": "--",
+            "id": 593,
+            "max_per_squad": 1,
+            "faction": "Agents_of_Chaos",
+            "ship": "Mankvim-814 Light Interceptor",
+            "title": "",
+            "force": 0,
+            "titleID": 0,
+            "shipId": 105,
+            "modify": false,
+            "skill": 0,
+            "charge": [0],
+            "points": 0,
+            "ability": "",
+            "ability_ENG": "",
+            "slots": [
+                
+            ],
+            "modifier_func": [
+                
+                    ]
+        },
+        {
+            "name": "--",
+            "name_ENG": "--",
+            "id": 594,
+            "max_per_squad": 1,
+            "faction": "Agents_of_Chaos",
+            "ship": "Mankvim-814 Light Interceptor",
+            "title": "",
+            "force": 0,
+            "titleID": 0,
+            "shipId": 105,
+            "modify": false,
+            "skill": 0,
+            "charge": [0],
+            "points": 0,
+            "ability": "",
+            "ability_ENG": "",
+            "slots": [
+                
+            ],
+            "modifier_func": [
+                
+                    ]
+        },
+        {
+            "name": "--",
+            "name_ENG": "--",
+            "id": 595,
+            "max_per_squad": 8,
+            "faction": "Agents_of_Chaos",
+            "ship": "Mankvim-814 Light Interceptor",
+            "title": "",
+            "force": 0,
+            "titleID": 0,
+            "shipId": 105,
+            "modify": false,
+            "skill": 0,
+            "charge": [0],
+            "points": 0,
+            "ability": "",
+            "ability_ENG": "",
+            "slots": [
+                
+            ],
+            "modifier_func": [
+                
+                    ]
+        },
+        {
+            "name": "--",
+            "name_ENG": "--",
+            "id": 596,
+            "max_per_squad": 1,
+            "faction": "Agents_of_Chaos",
+            "ship": "HH-87 Starhopper",
+            "title": "",
+            "force": 0,
+            "titleID": 0,
+            "shipId": 106,
+            "modify": false,
+            "skill": 0,
+            "charge": [0],
+            "points": 0,
+            "ability": "",
+            "ability_ENG": "",
+            "slots": [
+                
+            ],
+            "modifier_func": [
+                
+                    ]
+        },
+        {
+            "name": "--",
+            "name_ENG": "--",
+            "id": 597,
+            "max_per_squad": 1,
+            "faction": "Agents_of_Chaos",
+            "ship": "HH-87 Starhopper",
+            "title": "",
+            "force": 0,
+            "titleID": 0,
+            "shipId": 106,
+            "modify": false,
+            "skill": 0,
+            "charge": [0],
+            "points": 0,
+            "ability": "",
+            "ability_ENG": "",
+            "slots": [
+                
+            ],
+            "modifier_func": [
+                
+                    ]
+        },
+        {
+            "name": "--",
+            "name_ENG": "--",
+            "id": 598,
+            "max_per_squad": 1,
+            "faction": "Agents_of_Chaos",
+            "ship": "HH-87 Starhopper",
+            "title": "",
+            "force": 0,
+            "titleID": 0,
+            "shipId": 106,
+            "modify": false,
+            "skill": 0,
+            "charge": [0],
+            "points": 0,
+            "ability": "",
+            "ability_ENG": "",
+            "slots": [
+                
+            ],
+            "modifier_func": [
+                
+                    ]
+        },
+        {
+            "name": "--",
+            "name_ENG": "--",
+            "id": 599,
+            "max_per_squad": 8,
+            "faction": "Agents_of_Chaos",
+            "ship": "HH-87 Starhopper",
+            "title": "",
+            "force": 0,
+            "titleID": 0,
+            "shipId": 106,
+            "modify": false,
+            "skill": 0,
+            "charge": [0],
+            "points": 0,
+            "ability": "",
+            "ability_ENG": "",
+            "slots": [
+                
+            ],
+            "modifier_func": [
+                
+                    ]
+        },
+        {
+            "name": "--",
+            "name_ENG": "--",
+            "id": 600,
+            "max_per_squad": 1,
+            "faction": "Hutt_Cartel",
+            "ship": "HH-87 Starhopper",
+            "title": "",
+            "force": 0,
+            "titleID": 0,
+            "shipId": 106,
+            "modify": false,
+            "skill": 0,
+            "charge": [0],
+            "points": 0,
+            "ability": "",
+            "ability_ENG": "",
+            "slots": [
+                
+            ],
+            "modifier_func": [
+                
+                    ]
+        },
+        {
+            "name": "--",
+            "name_ENG": "--",
+            "id": 601,
+            "max_per_squad": 1,
+            "faction": "Hutt_Cartel",
+            "ship": "HH-87 Starhopper",
+            "title": "",
+            "force": 0,
+            "titleID": 0,
+            "shipId": 106,
+            "modify": false,
+            "skill": 0,
+            "charge": [0],
+            "points": 0,
+            "ability": "",
+            "ability_ENG": "",
+            "slots": [
+                
+            ],
+            "modifier_func": [
+                
+                    ]
+        },
+        {
+            "name": "--",
+            "name_ENG": "--",
+            "id": 602,
+            "max_per_squad": 1,
+            "faction": "Hutt_Cartel",
+            "ship": "HH-87 Starhopper",
+            "title": "",
+            "force": 0,
+            "titleID": 0,
+            "shipId": 106,
+            "modify": false,
+            "skill": 0,
+            "charge": [0],
+            "points": 0,
+            "ability": "",
+            "ability_ENG": "",
+            "slots": [
+                
+            ],
+            "modifier_func": [
+                
+                    ]
+        },
+        {
+            "name": "--",
+            "name_ENG": "--",
+            "id": 603,
+            "max_per_squad": 8,
+            "faction": "Hutt_Cartel",
+            "ship": "HH-87 Starhopper",
+            "title": "",
+            "force": 0,
+            "titleID": 0,
+            "shipId": 106,
+            "modify": false,
+            "skill": 0,
+            "charge": [0],
+            "points": 0,
+            "ability": "",
+            "ability_ENG": "",
+            "slots": [
+                
+            ],
+            "modifier_func": [
+                
+                    ]
+        },
+
+
 
 
 
