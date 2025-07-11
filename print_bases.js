@@ -45,13 +45,13 @@ async function getUpgradeData(){ //we fill upgradeData with all the upgrades Id
 
 
 
-async function displayUpgradeDescription() { //This is the function that will display all the updates selected in the squad
-    descriptions = document.getElementById('descriptions');
+async function displaybases() { //This is the function that will display all the ship bases needed in the squad
+    bases = document.getElementById('bases');
     for (i=0 ; i<indexes.length ; i++){
         if(indexes[i]!==""){
-            newpilot = document.createElement('div');
-            newpilot.setAttribute('class','pilot');
-            newpilot.innerHTML = "<font size='20'>"+pilots[upgradeData[i][0]]['name']+"</font><br>";
+            newbase = document.createElement('img');
+            newbase.setAttribute('class','ship');
+            newbase.innerHTML = "<font size='20'>"+pilots[upgradeData[i][0]]['name']+"</font><br>";
             for ( j=1 ; j<upgradeData[i].length ; j++){ //we begin at 1 because the entry 0 is the pilotID
                 upg = upgrades[upgradeData[i][j]]
                 console.log(upgradeData);
