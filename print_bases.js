@@ -6,23 +6,25 @@ function getIndexesFromHash() { // Function to get the indexes from the URL hash
     const hash = window.location.hash.substring(1);
 
     // Split the hash into an array
-    indexes = hash.split('p');
+    indexes = hash.split(',');
 
     return indexes; // The array 'indexes' contains ! ["upgrade1ID,upgrade2ID",...]
 }
 
 function getUpgradeData(){ //we fill upgradeData with all the upgrades Id
+    
     for (j=0 ; j<indexes.length ; j++){
-    const upgradex = indexes[j].split(',');
-    upgradeData.push(upgradex);
+    const upgradex = indexes[j].split('u');
+    indexes[j]=upgradex;
     }
+    
 }
 
 
 
 function displaybases() { //This is the function that will display all the ship bases needed in the squad
     bases = document.getElementById('bases');
-    for (i=0 ; i<indexes.length ; i++){
+    for (i=1 ; i<indexes.length ; i++){
         if(indexes[i]!==""){
             newbase = document.createElement('img');
             newbase.setAttribute('class','ship');
