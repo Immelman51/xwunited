@@ -16,8 +16,8 @@ header.hide {
 }
 
 .scenario, .environment, .wildcard{
-    display: flex;
-    justify-content: space-around;
+    display: flex;`
+    flex-wrap: wrap;
 }
 .scenario{
     background-color: rgb(140, 140, 236);

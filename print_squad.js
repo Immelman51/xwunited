@@ -1,6 +1,7 @@
 let pilotdata = [[],[],[],[],[],[],[],[]];
 let indexes = [];
 let hash2 = '';
+let hash = "";
 
 
 let requestURLships = "https://raw.githubusercontent.com/Immelman51/xwunited/main/ships.json";
@@ -39,7 +40,7 @@ async function fetchData(url) {
 
 async function getIndexesFromHash() { // Function to get the indexes from the URL hash
     // Get the hash from the URL
-    const hash = window.location.hash.substring(1);
+    hash = window.location.hash.substring(1);
 
     // Split the hash into an array
     indexes = hash.split(',');
@@ -459,23 +460,21 @@ for (i=1 ; i<indexes.length ; i++){
 //we define now the button to print upgrades
 const linkToPrintUpgrades = document.getElementById('print_upgrades');
 linkToPrintUpgrades.addEventListener('click', function(e){
-    e.preventDefault(); 
-    hasher();   
+    e.preventDefault();
+    hasher();
     window.location.href =  `print_upgrades.html?#${hash2}`
 })
 
 const linkToPrintDials = document.getElementById('print_dials');
 linkToPrintDials.addEventListener('click', function(e){
     e.preventDefault();
-    hasher();
-    window.location.href =  `print_dials.html?#${hash2}`
+    window.location.href =  `print_dials.html?#${hash}`
 })
 
 const linkToPrintBases = document.getElementById('print_bases');
 linkToPrintBases.addEventListener('click', function(e){
     e.preventDefault();
-    hasher();
-    window.location.href =  `print_bases.html?#${hash2}`
+    window.location.href =  `print_bases.html?#${hash}`
 })
 
 

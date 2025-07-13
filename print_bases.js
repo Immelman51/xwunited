@@ -14,10 +14,11 @@ function getIndexesFromHash() { // Function to get the indexes from the URL hash
 function getUpgradeData(){ //we fill upgradeData with all the upgrades Id
     
     for (j=0 ; j<indexes.length ; j++){
-    const upgradex = indexes[j].split('p');
+    const upgradex = indexes[j].split('u');
     indexes[j]=upgradex;
+    console.log('upgradex : '+upgradex);
     }
-    
+  console.log('indexes : '+indexes)
 }
 
 
