@@ -23,7 +23,7 @@
                     [ 0, 0, 2, 0, 0, 3, 0, 0, 0, 0]
                 ],
                 "slots": ["Torpedo", "Astromech", "Modification"],
-                "base": ["Small"]
+                "base": "small"
             },
             {    
                 
@@ -48,7 +48,7 @@
                     [ 3, 2, 2, 2, 3, 0],
                     [ 0, 0, 3, 0, 0, 3]
                 ],
-                "base": ["Small"],
+                "base": "small",
                 "slots": ["Torpedo", "Turret", "Payload", "Astromech", "Modification"]
             },
             {
@@ -76,7 +76,7 @@
                     [ 0, 0, 1, 0, 0, 0, 0, 0],
                     [ 0, 0, 1, 0, 0, 3, 0, 0]
                 ],
-                "base": ["Small"],
+                "base": "small",
                 "slots": ["Missile", "Modification"]
             },
             {
@@ -102,7 +102,7 @@
                     [ 2, 2, 1, 2, 2, 0, 3, 3],
                     [ 0, 0, 2, 0, 0, 3, 0, 0]
                 ],
-                "base": ["Large"],
+                "base": "large",
                 "slots": ["Missile", "Crew", "Crew", "Gunner", "Modification","Calculator"]
             },
             {
@@ -128,7 +128,7 @@
                     [ 0, 0, 2, 0, 0, 3],
                     [ 0, 0, 2, 0, 0, 0]
                 ],
-                "base": ["Small"],
+                "base": "small",
                 "slots": ["Tie mod"]
             },
             {
@@ -154,7 +154,7 @@
                     [ 0, 0, 2, 0, 0, 3, 0, 0, 0, 0],
                     [ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0]
                 ],
-                "base": ["Small"],
+                "base": "small",
                 "slots": ["Tech", "Missile", "Sensor", "Tie mod"]
             },
             {
@@ -173,7 +173,7 @@
                     [0,"Bo W"],
                     [0,"Ev W"]
                 ],
-                "base": ["Small"],
+                "base": "small",
                 "maneuvers": [
                     [ 0, 0, 0, 0, 0, 0, 0, 0],
                     [ 2, 0, 0, 0, 2, 0, 0, 0],
@@ -194,7 +194,7 @@
                 "agility": 2,
                 "hull": 6,
                 "shields": 4,
-                "base": ["Medium"],
+                "base": "medium",
                 "actions": [
                     [0,"Fo W"],
                     [0,"Lo W"],
@@ -234,7 +234,7 @@
                     [ 3, 2, 1, 2, 3],
                     [ 0, 0, 2, 0, 0]
                 ],
-                "base": ["Small"],
+                "base": "small",
                 "slots": ["Crew", "Payload", "Cannon", "Modification","Calculator"]
             },
             {
@@ -260,7 +260,7 @@
                     [ 3, 2, 1, 2, 3],
                     [ 0, 3, 2, 3, 0]
                 ],
-                "base": ["Large"],
+                "base": "large",
                 "slots": ["Sensor", "Crew", "Gunner", "Cannon", "Modification", "Modification"]
     
             },
@@ -287,7 +287,7 @@
                     [ 0, 3, 1, 3, 0, 0, 0, 0, 0, 0],
                     [ 0, 0, 3, 0, 0, 0, 0, 0, 0, 0]
                 ],
-                "base": ["Small"],
+                "base": "small",
                 "slots": ["Sensor", "Cannon", "Cannon", "Torpedo", "Gunner", "Modification"]
             },
             {
@@ -296,7 +296,7 @@
                 "factions": [ "Imperial_Academy" ],
                 "id": 11,
                 "attack": [["F",2]],
-                "base": ["Small"],
+                "base": "small",
                 "agility": 2,
                 "hull": 6,
                 "shields": 0,
@@ -326,7 +326,7 @@
                 "chassis":[0],
                 "id": 12,
                 "attack": [["F",2]],
-                "base": ["Small"],
+                "base": "small",
                 "agility": 2,
                 "hull": 2,
                 "shields": 2,
@@ -355,7 +355,7 @@
                 "agility": 3,
                 "hull": 3,
                 "shields": 4,
-                "base": ["Small"],
+                "base": "small",
                 "chassis": [11],
                 "actions": [
                     [0,"Fo W"],
@@ -386,7 +386,7 @@
                 "agility": 3,
                 "hull": 3,
                 "shields": 3,
-                "base": ["Small"],
+                "base": "small",
                 "actions": [
                     [0,"Fo W"],
                     [0,"Ev W"],
@@ -415,7 +415,7 @@
                 "agility": 2,
                 "hull": 3,
                 "shields": 2,
-                "base": ["Small"],
+                "base": "small",
                 "chassis": [19],
                 "actions": [
                     [0,"Fo W"],
@@ -452,7 +452,7 @@
                     
                    
                 ],
-                "base": ["Large"],
+                "base": "large",
                 "maneuvers": [
                     [ 0, 0, 0, 0, 0, 0],
                     [ 2, 1, 1, 1, 2, 0],
@@ -480,7 +480,7 @@
                     [0,"Co R"]
                     
                 ],
-                "base": ["Large"],
+                "base": "large",
                 "maneuvers": [
                     [ 0, 0, 0, 0, 0],
                     [ 3, 1, 1, 1, 3],
@@ -509,7 +509,7 @@
                     [1,"Bo W", "Fo R"]
                 
                 ],
-                "base": ["Small"],
+                "base": "small",
                 "maneuvers": [
                     [ 0, 0, 0, 0, 0, 0, 0, 0],
                     [ 2, 1, 1, 1, 2, 0, 0, 0],
@@ -546,7 +546,7 @@
                     [ 0, 0, 2, 0, 0, 0 ],
                     [ 0, 0, 2, 0, 0, 3 ]
                 ],
-                "base": ["Small"],
+                "base": "small",
                 "slots": ["Modification","Weapon Hardpoint"]
             },
             {
@@ -567,7 +567,7 @@
                     [0,"Bo W"]
             
                 ],
-                "base": ["Medium"],
+                "base": "medium",
                 "maneuvers": [
                     [ 0, 0, 0, 0, 0, 0, 0, 0 ],
                     [ 2, 1, 1, 1, 2, 0, 0, 0 ],
@@ -587,7 +587,7 @@
                 "agility": 1,
                 "hull": 9,
                 "shields": 3,
-                "base": ["Large"],
+                "base": "large",
                 "actions": [
                     [0,"Fo W"],
                     [0,"Lo W"],
@@ -627,7 +627,7 @@
                     [ 0, 2, 1, 2, 0, 0, 0, 0, 0, 0 ],
                     [ 0, 0, 2, 0, 0, 3, 0, 0, 0, 0 ]
                 ],
-                "base": ["Small"],
+                "base": "small",
                 "slots": ["Missile", "Illicit", "Modification"]
             },
             {
@@ -640,7 +640,7 @@
                 "agility": 1,
                 "hull": 6,
                 "shields": 3,
-                "base": ["Medium"],
+                "base": "medium",
                 "actions": [
                     [0,"Fo W"],
                     [0,"Lo W"],
@@ -669,7 +669,7 @@
                 "agility": 1,
                 "hull": 6,
                 "shields": 3,
-                "base": ["Medium"],
+                "base": "medium",
                 "actions": [
                     [0,"Fo W"],
                     [1,"Lo W", "Br R"],
@@ -697,7 +697,7 @@
                 "agility": 0,
                 "hull": 10,
                 "shields": 4,
-                "base": ["Large"],
+                "base": "large",
                 "chassis": [22],
                 "actions": [
                     [0,"Fo W"],
@@ -731,7 +731,7 @@
                     [1,"Br W", "Ev R"]
                    
                 ],
-                "base": ["Small"],
+                "base": "small",
                 "maneuvers": [
                     [ 0, 0, 0, 0, 0, 0 ],
                     [ 3, 1, 1, 1, 3, 0 ],
@@ -759,7 +759,7 @@
                     [1,"Bo W", "Fo R"]
                    
                 ],
-                "base": ["Small"],
+                "base": "small",
                 "maneuvers": [
                     [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
                     [ 1, 1, 0, 1, 1, 0, 0, 0, 0, 0 ],
@@ -782,7 +782,7 @@
                 "agility": 1,
                 "hull": 5,
                 "shields": 4,
-                "base": ["Medium"],
+                "base": "medium",
                 "actions": [
                     [0,"Fo W"],
                     [0,"Lo W"],
@@ -804,7 +804,7 @@
                 "factions": ["Bounty_Hunters_Guild"],
                 "chassis":[0],
                 "id": 29,
-                "base": ["Large"],
+                "base": "large",
                 "attack": [["T",2]],
                 "agility": 2,
                 "hull": 6,
@@ -834,7 +834,7 @@
                 "agility": 1,
                 "hull": 6,
                 "shields": 3,
-                "base": ["Medium"],
+                "base": "medium",
                 "actions": [
                     [0,"Fo W"],
                     [0,"Lo W"],
@@ -876,7 +876,7 @@
                     [ 0, 0, 2, 0, 0, 3, 0, 0, 0, 0 ],
                     [ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0 ]
                 ],
-                "base": ["Small"],
+                "base": "small",
                 "slots": ["Torpedo", "Modification", "Modification"]
             },
             {
@@ -885,7 +885,7 @@
                 "factions": ["Black_Sun", "Crime_Syndicates"],
                 "chassis":[0],
                 "id": 32,
-                "base": ["Large"],
+                "base": "large",
                 "attack": [["F",3],["T",2]],
                 "agility": 2,
                 "hull": 8,
@@ -925,7 +925,7 @@
                     [0,"Br W"]
                    
                 ],
-                "base": ["Small"],
+                "base": "small",
                 "maneuvers": [
                     [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
                     [ 2, 2, 2, 2, 2, 0, 0, 0, 0, 0, 3, 0, 3 ],
@@ -941,7 +941,7 @@
                 "name": "UT-60D U-wing",
                 "factions": ["Rebel_Alliance", "Partisans"],
                 "id": 34,
-                "base": ["Medium"],
+                "base": "medium",
                 "attack": [["F",3]],
                 "agility": 2,
                 "hull": 5,
@@ -972,7 +972,7 @@
                 "agility": 2,
                 "hull": 4,
                 "shields": 0,
-                "base": ["Small"],
+                "base": "small",
                 "chassis": [14],
                 "actions": [
                     [0,"Fo W"],
@@ -1000,7 +1000,7 @@
                 "agility": 1,
                 "hull": 4,
                 "shields": 1,
-                "base": ["Small"],
+                "base": "small",
                 "actions": [
                     [0,"Fo W"],
                     [0,"Br R"],
@@ -1028,7 +1028,7 @@
                 "agility": 1,
                 "hull": 6,
                 "shields": 4,
-                "base": ["Medium"],
+                "base": "medium",
                 "actions": [
                     [0,"Fo W"],
                     [0,"Lo W"],
@@ -1054,7 +1054,7 @@
                 "attack": [["F",2]],
                 "agility": 2,
                 "hull": 4,
-                "base": ["Small"],
+                "base": "small",
                 "shields": 1,
                 "actions": [
                     [0,"Fo W"],
@@ -1082,7 +1082,7 @@
                 "agility": 2,
                 "hull": 4,
                 "shields": 3,
-                "base": ["Small"],
+                "base": "small",
                 "chassis": [0],
                 "actions": [
                     [0,"Fo W"],
@@ -1110,7 +1110,7 @@
                 "agility": 1,
                 "hull": 7,
                 "shields": 2,
-                "base": ["Medium"],
+                "base": "medium",
                 "chassis": [26],
                 "actions": [
                     [0,"Fo W"],
@@ -1138,7 +1138,7 @@
                 "agility": 2,
                 "hull": 4,
                 "shields": 1,
-                "base": ["Small"],
+                "base": "small",
                 "chassis": [27],
                 "actions": [
                     [0,"Fo W"],
@@ -1164,7 +1164,7 @@
                 "agility": 1,
                 "hull": 6,
                 "shields": 2,
-                "base": ["Medium"],
+                "base": "medium",
                 "chassis": [12],
                 "actions": [
                     [0,"Fo W"],
@@ -1193,7 +1193,7 @@
                 "hull": 2,
                 "shields": 2,
                 "chassis": [1],
-                "base": ["Small"],
+                "base": "small",
                 "actions": [
                     [0,"Fo W"],
                     [0,"Br W"],
@@ -1217,7 +1217,7 @@
                 "agility": 2,
                 "hull": 4,
                 "shields": 3,
-                "base": ["Small"],
+                "base": "small",
                 "chassis": [28,21],
                 "actions": [
                     [0,"Fo W"],
@@ -1243,7 +1243,7 @@
                 "agility": 3,
                 "hull": 2,
                 "shields": 2,
-                "base": ["Small"],
+                "base": "small",
                 "chassis": [29],
                 "actions": [
                     [0,"Fo W"],
@@ -1274,7 +1274,7 @@
                 "agility": 3,
                 "hull": 3,
                 "shields": 1,
-                "base": ["Small"],
+                "base": "small",
                 "slots": ["Tech","Tie mod"],
                 "actions": [
                     [0,"Fo W"],
@@ -1302,7 +1302,7 @@
                 "agility": 3,
                 "hull": 4,
                 "shields": 2,
-                "base": ["Small"],
+                "base": "small",
                 "chassis": [10],
                 "slots": ["Tech","Torpedo","Tie mod","Sensor"],
                 "actions": [
@@ -1330,7 +1330,7 @@
                 "agility": 2,
                 "hull": 3,
                 "shields": 3,
-                "base": ["Small"],
+                "base": "small",
                 "slots": ["Gunner","Tech","Missile","Tie mod"],
                 "chassis": [30],
                 "actions": [
@@ -1377,7 +1377,7 @@
                     [ 0, 0, 0, 0, 0],
                     [ 0, 0, 0, 0, 0]
                 ],
-                "base": ["Large"]
+                "base": "large"
             },
             {
         
@@ -1405,7 +1405,7 @@
                     [ 0, 0, 0, 0, 0],
                     [ 0, 0, 0, 0, 0]
                 ],
-                "base": ["Large"],
+                "base": "large",
                 "slots": ["Crew","Gunner","Tech","Tech","Payload","Payload","Payload","Modification"]
             },
             {
@@ -1418,7 +1418,7 @@
                 "agility": 3,
                 "hull": 3,
                 "shields": 0,
-                "base": ["Small"],
+                "base": "small",
                 "chassis": [31],
                 "actions": [
                     [0,"Fo W"],
@@ -1448,7 +1448,7 @@
                 "agility": 2,
                 "hull": 5,
                 "shields": 0,
-                "base": ["Small"],
+                "base": "small",
                 "actions": [
                     [0,"Fo W"],
                     [0,"Lo W"],                
@@ -1476,7 +1476,7 @@
                 "agility": 3,
                 "hull": 3,
                 "shields": 1,
-                "base": ["Small"],
+                "base": "small",
                 "chassis": [32,33],
                 "actions": [
                     [0,"Fo W"],
@@ -1507,7 +1507,7 @@
                 "agility": 2,
                 "hull": 3,
                 "shields": 3,
-                "base": ["Small"],
+                "base": "small",
                 "chassis": [32],
                 "actions": [
                     [0,"Fo W"],
@@ -1536,7 +1536,7 @@
                 "attack": [["F",3]],
                 "agility": 1,
                 "hull": 6,
-                "base": ["Large"], 
+                "base": "large", 
                 "shields": 4,
                 "actions": [
                     [0,"Fo W"],
@@ -1567,7 +1567,7 @@
                 "agility": 2,
                 "hull": 3,
                 "shields": 0,
-                "base": ["Small"],
+                "base": "small",
                 "chassis": [17,34],
                 "slots": ["Missile"],
                 "actions": [
@@ -1594,7 +1594,7 @@
                 "agility": 2,
                 "hull": 3,
                 "shields": 2,
-                "base": ["Small"],
+                "base": "small",
                 "slots": ["Modification","Modification","Calculator"],
                 "actions": [
                     [0,"Fo W"],
@@ -1623,7 +1623,7 @@
                 "hull": 3,
                 "shields": 2,
                 "chassis": [11],
-                "base": ["Small"],
+                "base": "small",
                 "actions": [
                     [0,"Fo W"],
                     [0,"Lo W"],                
@@ -1650,7 +1650,7 @@
                 "agility": 2,
                 "hull": 5,
                 "shields": 0,
-                "base": ["Small"],
+                "base": "small",
                 "chassis": [17,34],
                 "slots": ["Missile","Torpedo","Payload","Modification","Sensor"],
                 "actions": [
@@ -1678,7 +1678,7 @@
                 "agility": 2,
                 "hull": 3,
                 "shields": 1,
-                "base": ["Small"],
+                "base": "small",
                 "chassis": [1],
                 "actions": [
                     [0,"Fo W"],
@@ -1706,7 +1706,7 @@
                 "agility": 1,
                 "hull": 5,
                 "shields": 3,
-                "base": ["Small"],
+                "base": "small",
                 "chassis": [16],
                 "actions": [
                     [0,"Fo W"],
@@ -1733,7 +1733,7 @@
                 "agility": 3,
                 "hull": 4,
                 "shields": 0,
-                "base": ["Small"],
+                "base": "small",
                 "chassis": [35],
                 "actions": [
                     [0,"Fo W"],
@@ -1761,7 +1761,7 @@
                 "agility": 1,
                 "hull": 5,
                 "shields": 3,
-                "base": ["Small"],
+                "base": "small",
                 "chassis": [36],
                 "actions": [
                     [0,"Fo W"],
@@ -1790,7 +1790,7 @@
                 "agility": 2,
                 "hull": 6,
                 "shields": 0,
-                "base": ["Small"],
+                "base": "small",
                 "chassis": [37],
                 "actions": [
                     [0,"Fo W"],
@@ -1819,7 +1819,7 @@
                 "agility": 3,
                 "hull": 2,
                 "shields": 2,
-                "base": ["Small"],
+                "base": "small",
                 "chassis": [38],
                 "actions": [
                     [0,"Fo W"],
@@ -1850,7 +1850,7 @@
                 "agility": 2,
                 "hull": 5,
                 "shields": 2,
-                "base": ["Medium"],
+                "base": "medium",
                 "actions": [
                     [0,"Fo W"],
                     [0,"Lo R"],                
@@ -1878,7 +1878,7 @@
                 "agility": 1,
                 "hull": 5,
                 "shields": 3,
-                "base": ["Small"],
+                "base": "small",
                 "chassis": [39],
                 "slots": ["Crew","Missile","Missile","Payload","Modification","Calculator"],
                 "actions": [
@@ -1906,7 +1906,7 @@
                 "agility": 1,
                 "hull": 8,
                 "shields": 2,
-                "base": ["Medium"],
+                "base": "medium",
                 "chassis": [40],
                 "actions": [
                     [0,"Fo W"],
@@ -1936,7 +1936,7 @@
                 "agility": 1,
                 "hull": 8,
                 "shields": 0,
-                "base": ["Medium"],
+                "base": "medium",
                 "chassis": [13],
                 "actions": [
                     [0,"Fo W"],
@@ -1965,7 +1965,7 @@
                 "agility": 3,
                 "hull": 3,
                 "shields": 0,
-                "base": ["Small"],
+                "base": "small",
                 "chassis": [17],
                 "slots": ["Modification","Sensor","Calculator","Calculator"],
                 "actions": [
@@ -1995,7 +1995,7 @@
                 "agility": 3,
                 "hull": 2,
                 "shields": 2,
-                "base": ["Small"],
+                "base": "small",
                 "chassis": [41],
                 "actions": [
                     [0,"Fo W"],             
@@ -2024,7 +2024,7 @@
                 "agility": 3,
                 "hull": 3,
                 "shields": 0,
-                "base": ["Small"],
+                "base": "small",
                 "chassis": [42],
                 "actions": [
                     [0,"Fo W"],
@@ -2054,7 +2054,7 @@
                 "agility": 0,
                 "hull": 1,
                 "shields": 0,
-                "base": ["Small"],
+                "base": "small",
                 "actions": [
                 ],
                 "maneuvers": [
@@ -2073,7 +2073,7 @@
                 "agility": 1,
                 "hull": 4,
                 "shields": 3,
-                "base": ["Small"],
+                "base": "small",
                 "chassis": [43],
                 "actions": [
                     [0,"Fo W"],
@@ -2102,7 +2102,7 @@
                 "agility": 2,
                 "hull": 3,
                 "shields": 2,
-                "base": ["Small"],
+                "base": "small",
                 "chassis": [44],
                 "actions": [
                     [1,"Fo W", "Ja W"],
@@ -2132,7 +2132,7 @@
                 "agility": 2,
                 "hull": 4,
                 "shields": 2,
-                "base": ["Small"],
+                "base": "small",
                 "chassis": [45],
                 "slots": ["Gunner","Missile","Torpedo","Payload","Payload","Tie mod"],
                 "actions": [
@@ -2162,7 +2162,7 @@
                 "agility": 2,
                 "hull": 9,
                 "shields": 2,
-                "base": ["Large"],
+                "base": "large",
                 "chassis": [ 4, 46] ,
                 "actions": [
                     [0,"Fo W"],               
@@ -2191,7 +2191,7 @@
                 "agility": 2,
                 "hull": 7,
                 "shields": 2,
-                "base": ["Medium"],
+                "base": "medium",
                 "chassis": [47],
                 "actions": [
                     [0,"Fo W"],               
@@ -2217,7 +2217,7 @@
                 "id": 79,
                 "attack": [["F",2]],
                 "agility": 2,
-                "base": ["Small"],
+                "base": "small",
                 "hull": 2,
                 "shields": 2,
                 "chassis": [48],
@@ -2243,7 +2243,7 @@
                 "id": 80,
                 "attack": [["F",2]],
                 "agility": 2,
-                "base": ["Small"],
+                "base": "small",
                 "hull": 5,
                 "shields": 2,
                 "chassis": [26],
@@ -2272,7 +2272,7 @@
                 "id": 81,
                 "attack": [["F",2]],
                 "agility": 2,
-                "base": ["Small"],
+                "base": "small",
                 "hull": 2,
                 "shields": 0,
                 "chassis": [49,50],
@@ -2297,7 +2297,7 @@
                 "id": 82,
                 "attack": [["F",2],["B",2]],
                 "agility": 3,
-                "base": ["Large"],
+                "base": "large",
                 "hull": 6,
                 "shields": 2,
                 "actions": [
@@ -2321,7 +2321,7 @@
                 "id": 83,
                 "attack": [["F",3]],
                 "agility": 1,
-                "base": ["Medium"],
+                "base": "medium",
                 "hull": 7,
                 "shields": 1,
                 "chassis": [36],
@@ -2346,7 +2346,7 @@
                 "id": 84,
                 "attack": [["F",2]],
                 "agility": 2,
-                "base": ["Small"],
+                "base": "small",
                 "hull": 2,
                 "shields": 1,
                 "chassis": [51],
@@ -2374,7 +2374,7 @@
                 "id": 85,
                 "attack": [["F",3]],
                 "agility": 1,
-                "base": ["Medium"],
+                "base": "medium",
                 "hull": 5,
                 "shields": 2,
                 "chassis": [0],
@@ -2401,7 +2401,7 @@
                 "id": 86,
                 "attack": [["0",0]],
                 "agility": 0,
-                "base": ["Medium"],
+                "base": "medium",
                 "hull": 9,
                 "shields": 3,
                 "chassis": [53],
@@ -2427,7 +2427,7 @@
                 "id": 87,
                 "attack": [["F",2]],
                 "agility": 3,
-                "base": ["Small"],
+                "base": "small",
                 "hull": 4,
                 "shields": 0,
                 "chassis": [11,54],
@@ -2453,7 +2453,7 @@
                 "id": 88,
                 "attack": [["F",2]],
                 "agility": 3,
-                "base": ["Small"],
+                "base": "small",
                 "hull": 5,
                 "shields": 0,
                 "chassis": [33,38],
@@ -2478,7 +2478,7 @@
                 "id": 89,
                 "attack": [["F",1],["T",1]],
                 "agility": 2,
-                "base": ["Small"],
+                "base": "small",
                 "hull": 5,
                 "shields": 0,
                 "chassis": [20,35],
@@ -2503,7 +2503,7 @@
                 "id": 90,
                 "attack": [["F",2]],
                 "agility": 3,
-                "base": ["Small"],
+                "base": "small",
                 "hull": 4,
                 "shields": 0,
                 "chassis": [10,43],
@@ -2528,7 +2528,7 @@
                 "id": 91,
                 "attack": [["F",3]],
                 "agility": 2,
-                "base": ["Small"],
+                "base": "small",
                 "hull": 4,
                 "shields": 0,
                 "chassis": [12,45],
@@ -2553,7 +2553,7 @@
                 "id": 92,
                 "attack": [["BULL",3]],
                 "agility": 3,
-                "base": ["Small"],
+                "base": "small",
                 "hull": 2,
                 "shields": 2,
                 "chassis": [55,56],
@@ -2576,7 +2576,7 @@
                 "id": 93,
                 "attack": [["F",4]],
                 "agility": 1,
-                "base": ["Small"],
+                "base": "small",
                 "hull": 5,
                 "shields": 1,
                 "chassis": [64],
@@ -2600,7 +2600,7 @@
                 "id": 94,
                 "attack": [["T",3]],
                 "agility": 0,
-                "base": ["Large"],
+                "base": "large",
                 "hull": 12,
                 "shields": 0,
                 "chassis": [57],
@@ -2627,7 +2627,7 @@
                 "id": 95,
                 "attack": [["F",2]],
                 "agility": 1,
-                "base": ["Large"],
+                "base": "large",
                 "hull": 6,
                 "shields": 5,
                 "chassis": [58],
@@ -2653,7 +2653,7 @@
                 "id": 96,
                 "attack": [["F",2],["BULL",3]],
                 "agility": 2,
-                "base": ["Small"],
+                "base": "small",
                 "hull": 3,
                 "shields": 1,
                 "chassis": [54],
@@ -2679,7 +2679,7 @@
                 "id": 97,
                 "attack": [["B",2]],
                 "agility": 2,
-                "base": ["Small"],
+                "base": "small",
                 "hull": 6,
                 "shields": 1,
                 "chassis": [46],
@@ -2704,7 +2704,7 @@
                 "id": 98,
                 "attack": [["F",2]],
                 "agility": 2,
-                "base": ["Medium"],
+                "base": "medium",
                 "hull": 6,
                 "shields": 2,
                 "chassis": [0],
@@ -2730,7 +2730,7 @@
                 "id": 99,
                 "attack": [["F",3]],
                 "agility": 1,
-                "base": ["Large"],
+                "base": "large",
                 "hull": 6,
                 "shields": 7,
                 "chassis": [60],
@@ -2755,7 +2755,7 @@
                 "id": 100,
                 "attack": [["F",2]],
                 "agility": 2,
-                "base": ["Small"],
+                "base": "small",
                 "hull": 4,
                 "shields": 2,
                 "chassis": [8],
@@ -2781,7 +2781,7 @@
                 "id": 101,
                 "attack": [["F",2]],
                 "agility": 1,
-                "base": ["Small"],
+                "base": "small",
                 "hull": 7,
                 "shields": 0,
                 "chassis": [0],
@@ -2807,7 +2807,7 @@
                 "id": 102,
                 "attack": [["F",1]],
                 "agility": 2,
-                "base": ["Small"],
+                "base": "small",
                 "hull": 1,
                 "shields": 2,
                 "chassis": [17,61],
@@ -2831,7 +2831,7 @@
                 "id": 103,
                 "attack": [["F",2]],
                 "agility": 3,
-                "base": ["Small"],
+                "base": "small",
                 "hull": 2,
                 "shields": 2,
                 "chassis": [9],
@@ -2858,7 +2858,7 @@
                 "id": 104,
                 "attack": [["T",2]],
                 "agility": 2,
-                "base": ["Small"],
+                "base": "small",
                 "hull": 3,
                 "shields": 1,
                 "chassis": [49,39],
@@ -2885,7 +2885,7 @@
                 "id": 105,
                 "attack": [["F",2]],
                 "agility": 3,
-                "base": ["Small"],
+                "base": "small",
                 "hull": 2,
                 "shields": 1,
                 "chassis": [62,63],
@@ -2913,7 +2913,7 @@
                 "id": 106,
                 "attack": [["F",2]],
                 "agility": 2,
-                "base": ["Small"],
+                "base": "small",
                 "hull": 3,
                 "shields": 2,
                 "chassis": [43],

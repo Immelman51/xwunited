@@ -13108,7 +13108,7 @@
             "titleID": 0,
             "shipId": 41,
 		    "modify": false,
-            "skill": 4,
+            "skill": 5,
             "charge": [0],
             "points": 0,            
             "ability": "", 
@@ -13121,8 +13121,8 @@
                     ]
         },
         {
-            "name": "--",
-            "name_ENG": "--",
+            "name": "Shu Mai",
+            "name_ENG": "Shu Mai",
             "id": 580,
             "max_per_squad": 1,
             "faction": "Separatist_Government",
@@ -13132,8 +13132,8 @@
             "titleID": 0,
             "shipId": 41,
 		    "modify": false,
-            "skill": 0,
-            "charge": [0],           
+            "skill": 3,
+            "charge": [0],
             "points": 0,            
             "ability": "", 
             "ability_ENG": "",
@@ -13145,8 +13145,8 @@
                     ]
         },
         {
-            "name": "--",
-            "name_ENG": "--",
+            "name": "San Hill",
+            "name_ENG": "San Hill",
             "id": 581,
             "max_per_squad": 1,
             "faction": "Separatist_Government",
@@ -13156,7 +13156,7 @@
             "titleID": 0,
             "shipId": 41,
             "modify": false,
-            "skill": 0,
+            "skill": 4,
             "charge": [0],
             "points": 0,
             "ability": "",
@@ -13169,8 +13169,8 @@
                     ]
         },
         {
-            "name": "--",
-            "name_ENG": "--",
+            "name": "Pilote de l'Alliance Intercorporations",
+            "name_ENG": "Intercorporation Alliance Pilot",
             "id": 582,
             "max_per_squad": 8,
             "faction": "Separatist_Government",
@@ -13180,7 +13180,7 @@
             "titleID": 0,
             "shipId": 41,
             "modify": false,
-            "skill": 0,
+            "skill": 1,
             "charge": [0],
             "points": 0,
             "ability": "",
@@ -13193,32 +13193,32 @@
                     ]
         },
         {
-            "name": "--",
-            "name_ENG": "--",
+            "name": "Passel Argente",
+            "name_ENG": "Passel Argente",
             "id": 583,
             "max_per_squad": 1,
             "faction": "Separatist_Government",
-            "ship": "Zenuas 33 Umbaran Starfighter",
+            "ship": "Sheathipede-Class Shuttle",
             "title": "",
             "force": 0,
             "titleID": 0,
-            "shipId": 103,
-		    "modify": false,
-            "skill": 0,
-            "charge": [0],           
-            "points": 0,            
-            "ability": "", 
+            "shipId": 41,
+            "modify": false,
+            "skill": 4,
+            "charge": [0],
+            "points": 0,
+            "ability": "",
             "ability_ENG": "",
-            "slots": [      
+            "slots": [
                 
             ],
             "modifier_func": [
-            	
+                
                     ]
         },
         {
-            "name": "--",
-            "name_ENG": "--",
+            "name": "Farr-Nees",
+            "name_ENG": "Farr-Nees",
             "id": 584,
             "max_per_squad": 1,
             "faction": "Separatist_Government",
@@ -13228,7 +13228,7 @@
             "titleID": 0,
             "shipId": 103,
             "modify": false,
-            "skill": 0,
+            "skill": 5,
             "charge": [0],
             "points": 0,
             "ability": "",
@@ -13241,8 +13241,8 @@
                     ]
         },
         {
-            "name": "--",
-            "name_ENG": "--",
+            "name": "Mee Deechi",
+            "name_ENG": "Mee Deechi",
             "id": 585,
             "max_per_squad": 1,
             "faction": "Separatist_Government",
@@ -13252,7 +13252,7 @@
             "titleID": 0,
             "shipId": 103,
             "modify": false,
-            "skill": 0,
+            "skill": 2,
             "charge": [0],
             "points": 0,
             "ability": "",
@@ -13265,8 +13265,8 @@
                     ]
         },
         {
-            "name": "--",
-            "name_ENG": "--",
+            "name": "Ennodius",
+            "name_ENG": "Ennodius",
             "id": 586,
             "max_per_squad": 1,
             "faction": "Separatist_Government",
@@ -13276,7 +13276,7 @@
             "titleID": 0,
             "shipId": 103,
             "modify": false,
-            "skill": 0,
+            "skill": 5,
             "charge": [0],
             "points": 0,
             "ability": "",
@@ -13289,8 +13289,8 @@
                     ]
         },
         {
-            "name": "--",
-            "name_ENG": "--",
+            "name": "Pilote de la Milice d'Umbara",
+            "name_ENG": "Umbaran Militia Pilot",
             "id": 587,
             "max_per_squad": 8,
             "faction": "Separatist_Government",
@@ -13300,7 +13300,7 @@
             "titleID": 0,
             "shipId": 103,
             "modify": false,
-            "skill": 0,
+            "skill": 4,
             "charge": [0],
             "points": 0,
             "ability": "",
@@ -13313,8 +13313,8 @@
                     ]
         },
         {
-            "name": "--",
-            "name_ENG": "--",
+            "name": "Osi Sobeck",
+            "name_ENG": "Osi Sobeck",
             "id": 588,
             "max_per_squad": 1,
             "faction": "Separatist_Government",
@@ -13337,8 +13337,8 @@
                     ]
         },
         {
-            "name": "--",
-            "name_ENG": "--",
+            "name": "BX-24",
+            "name_ENG": "BX-24",
             "id": 589,
             "max_per_squad": 1,
             "faction": "Separatist_Government",
@@ -13361,8 +13361,8 @@
                     ]
         },
         {
-            "name": "--",
-            "name_ENG": "--",
+            "name": "BX-51",
+            "name_ENG": "BX-51",
             "id": 590,
             "max_per_squad": 1,
             "faction": "Separatist_Government",
@@ -13385,8 +13385,8 @@
                     ]
         },
         {
-            "name": "--",
-            "name_ENG": "--",
+            "name": "Droïde Extracteur",
+            "name_ENG": "Juicer Droïd",
             "id": 591,
             "max_per_squad": 8,
             "faction": "Separatist_Government",
@@ -13409,8 +13409,8 @@
                     ]
         },
         {
-            "name": "--",
-            "name_ENG": "--",
+            "name": "Kul Teska",
+            "name_ENG": "Kul Teska",
             "id": 592,
             "max_per_squad": 1,
             "faction": "Agents_of_Chaos",
@@ -13420,7 +13420,7 @@
             "titleID": 0,
             "shipId": 105,
             "modify": false,
-            "skill": 0,
+            "skill": 3,
             "charge": [0],
             "points": 0,
             "ability": "",
@@ -13433,8 +13433,8 @@
                     ]
         },
         {
-            "name": "--",
-            "name_ENG": "--",
+            "name": "Tendir Blue",
+            "name_ENG": "Tendir Blue",
             "id": 593,
             "max_per_squad": 1,
             "faction": "Agents_of_Chaos",
@@ -13444,7 +13444,7 @@
             "titleID": 0,
             "shipId": 105,
             "modify": false,
-            "skill": 0,
+            "skill": 5,
             "charge": [0],
             "points": 0,
             "ability": "",
@@ -13457,8 +13457,8 @@
                     ]
         },
         {
-            "name": "--",
-            "name_ENG": "--",
+            "name": "Bunt Dantor",
+            "name_ENG": "Bunt Dantor",
             "id": 594,
             "max_per_squad": 1,
             "faction": "Agents_of_Chaos",
@@ -13468,7 +13468,7 @@
             "titleID": 0,
             "shipId": 105,
             "modify": false,
-            "skill": 0,
+            "skill": 3,
             "charge": [0],
             "points": 0,
             "ability": "",
@@ -13481,8 +13481,8 @@
                     ]
         },
         {
-            "name": "--",
-            "name_ENG": "--",
+            "name": "Droïde Chasseur",
+            "name_ENG": "Hunter Droid",
             "id": 595,
             "max_per_squad": 8,
             "faction": "Agents_of_Chaos",
@@ -13492,7 +13492,7 @@
             "titleID": 0,
             "shipId": 105,
             "modify": false,
-            "skill": 0,
+            "skill": 3,
             "charge": [0],
             "points": 0,
             "ability": "",

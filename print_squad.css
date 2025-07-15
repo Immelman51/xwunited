@@ -9,6 +9,7 @@
     align-items: center;
     border: dotted;
     background-color: antiquewhite;
+    z-index: 1000;
 }
 .container {
     width: 25cm;
