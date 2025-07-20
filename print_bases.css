@@ -1,41 +1,73 @@
-.bases{
-    width: 19cm;
-   display: flex;
-   flex-wrap: wrap;
-   
+
+.bases {
+  width: 19cm;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 1px;
 }
 
-@media print {
-  img {
-    width: auto;
-    height: auto;
-    max-width: none;
-    max-height: none;
-    display: block;
-  }
+/* Chaque image est dans un wrapper de taille fixe */
+.wrapper {
+  display: inline-block;
 }
 
-img {
-  max-width: 100%;
+.wrapper.large {
+  width: 7.2cm;
+}
+
+.wrapper.medium {
+  width: 5.4cm;
+}
+
+.wrapper.small {
+  width: 3.4cm;
+}
+
+.wrapper img {
+  width: 100%;
   height: auto;
+  display: block;
 }
 
+/* Impression */
+@media print {
+  @page {
+    size: A4;
+    margin: 1cm;
+  }
 
-.bases img {
-  object-fit: none; /* ou contain si tu veux garder tout visible */
-  flex-shrink: 0;
-  flex-grow: 0;
-  align-self: flex-start; /* ou baseline, si tu veux aligner le bas de l’image */
-}
-.small {
-    width: 3,4cm;
-    height: 4cm;
-}
-.medium {
-    width: 5,4cm;
-    height: 6cm;
-}
-.large{
-    width: 7,2cm;
-    height: 8,1cm;
-}
+  body {
+    margin: 1cm;
+    padding: 1cm;
+  }
+
+  .bases {
+    width: 19cm !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 1px;
+   
+  }
+
+  .wrapper.large {
+    width: 7.2cm !important;
+  }
+
+  .wrapper.medium {
+    width: 5.4cm !important;
+  }
+
+  .wrapper.small {
+    width: 3.4cm !important;
+  }
+
+  .wrapper img {
+    width: 100% !important;
+    height: auto !important;
+    display: block !important;
+    max-width: none !important;
+    max-height: none !important;
+  }
+
+

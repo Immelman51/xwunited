@@ -119,7 +119,7 @@ async function displaybases() {
             let sid = pilots[pid]['shipId'];
             let sSize = ships[sid]['base'];
             let newbase = document.createElement('img');
-            newbase.setAttribute('class', sSize);
+            newbase.setAttribute('class', 'wrapper '+sSize);
             newbase.setAttribute('src', 'img/pilots/base/' + pid + '.png');
             bases.appendChild(newbase);
         }

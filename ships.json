@@ -22,6 +22,7 @@
                     [ 2, 2, 2, 2, 2, 0, 0, 0, 3, 3],
                     [ 0, 0, 2, 0, 0, 3, 0, 0, 0, 0]
                 ],
+                "nbrmaneuvers": 16,
                 "slots": ["Torpedo", "Astromech", "Modification"],
                 "base": "small"
             },
