@@ -49,6 +49,7 @@
                     [ 3, 2, 2, 2, 3, 0],
                     [ 0, 0, 3, 0, 0, 3]
                 ],
+                "nbrmaneuvers": 15,
                 "base": "small",
                 "slots": ["Torpedo", "Turret", "Payload", "Astromech", "Modification"]
             },
@@ -77,6 +78,7 @@
                     [ 0, 0, 1, 0, 0, 0, 0, 0],
                     [ 0, 0, 1, 0, 0, 3, 0, 0]
                 ],
+                "nbrmaneuvers": 17,
                 "base": "small",
                 "slots": ["Missile", "Modification"]
             },
@@ -103,6 +105,7 @@
                     [ 2, 2, 1, 2, 2, 0, 3, 3],
                     [ 0, 0, 2, 0, 0, 3, 0, 0]
                 ],
+                "nbrmaneuvers": 17,
                 "base": "large",
                 "slots": ["Missile", "Crew", "Crew", "Gunner", "Modification","Calculator"]
             },
@@ -2287,7 +2290,7 @@
                     [ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
                     [ 2, 1, 1, 1, 2, 2, 0, 0, 0, 0, 2, 2, 2 ],
                     [ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
-                    [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+                    [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
                 ],
                 "slots": []
             },
@@ -2314,6 +2317,7 @@
                     [ 0, 2, 1, 2, 0, 0, 3, 3],
                     [ 0, 0, 2, 0, 0, 0, 0, 0]
                 ],
+                nbrmaneuvers: 16,
                 "slots": ["Crew","Gunner","Modification","Astromech","Calculator"]
             },
             {
@@ -2335,10 +2339,11 @@
                 "maneuvers": [
                     [ 0, 0, 0, 0, 0, 0],
                     [ 0, 2, 1, 1, 0, 0],
-                    [ 3, 2, 1, 1, 2, 0],
+                    [ 2, 2, 1, 1, 2, 0],
                     [ 0, 3, 2, 2, 3, 0],
                     [ 0, 0, 2, 0, 0, 3]
                 ],
+                nbrmaneuvers: 14
                 "slots": ["Torpedo","Modification","Modification"]
             },
             {
@@ -2367,6 +2372,7 @@
                     [ 0, 0, 1, 0, 0, 0, 0, 0],
                     [ 0, 0, 1, 0, 0, 3, 0, 0]
                 ],
+                nbrmaneuvers: 19,
                 "slots": ["Illicit","Modification"]
             },
             {
@@ -2389,11 +2395,12 @@
                 "maneuvers": [
                     [ 0, 0, 3, 0, 0, 0, 0, 0],
                     [ 0, 1, 1, 1, 0, 0, 0, 0],
-                    [ 2, 2, 1, 2, 2, 0, 0, 0],
-                    [ 3, 2, 1, 2, 3, 3, 3, 3],
+                    [ 2, 2, 1, 2, 2, 0, 3, 3],
+                    [ 3, 2, 1, 2, 3, 3, 0, 0],
                     [ 0, 0, 2, 0, 0, 0, 0, 0],
                     [ 0, 0, 0, 0, 0, 0, 0, 0]
                 ],
+                nbrmaneuvers: 18,
                 "slots": ["Gunner","Missile","Cannon","Modification","Sensor"]
             },
             {
