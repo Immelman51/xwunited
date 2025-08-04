@@ -16,7 +16,7 @@ async function fetchData(url) {
 
 (async () => {
     try {
-        
+        console.log("Début du chargement...");
         ships = await fetchData(requestURLships);
         chassis = await fetchData(requestURLchassis);
         pilots = await fetchData(requestURLpilots);

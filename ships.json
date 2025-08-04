@@ -2317,7 +2317,7 @@
                     [ 0, 2, 1, 2, 0, 0, 3, 3],
                     [ 0, 0, 2, 0, 0, 0, 0, 0]
                 ],
-                nbrmaneuvers: 16,
+                "nbrmaneuvers": 16,
                 "slots": ["Crew","Gunner","Modification","Astromech","Calculator"]
             },
             {
@@ -2343,7 +2343,7 @@
                     [ 0, 3, 2, 2, 3, 0],
                     [ 0, 0, 2, 0, 0, 3]
                 ],
-                nbrmaneuvers: 14
+                "nbrmaneuvers": 14,
                 "slots": ["Torpedo","Modification","Modification"]
             },
             {
@@ -2372,7 +2372,7 @@
                     [ 0, 0, 1, 0, 0, 0, 0, 0],
                     [ 0, 0, 1, 0, 0, 3, 0, 0]
                 ],
-                nbrmaneuvers: 19,
+                "nbrmaneuvers": 19,
                 "slots": ["Illicit","Modification"]
             },
             {
@@ -2400,7 +2400,7 @@
                     [ 0, 0, 2, 0, 0, 0, 0, 0],
                     [ 0, 0, 0, 0, 0, 0, 0, 0]
                 ],
-                nbrmaneuvers: 18,
+                "nbrmaneuvers": 18,
                 "slots": ["Gunner","Missile","Cannon","Modification","Sensor"]
             },
             {
@@ -2427,7 +2427,7 @@
                     [ 3, 2, 1, 2, 3, 0]
     
                 ],
-                nbrmaneuvers: 15,
+                "nbrmaneuvers": 15,
                 "slots": ["Tech","Missile","Torpedo","Payload","Payload"]
             },
             {
@@ -2454,8 +2454,8 @@
                     [ 0, 0, 1, 0, 0, 0, 0, 0],
                     [ 0, 0, 1, 0, 0, 3, 0, 0]
                 ],
-                nbrmaneuvers: 17,
-                clone : "RZ2-Awing",
+                "nbrmaneuvers": 17,
+                "clone" : "RZ2-Awing",
                 "slots": ["Astromech","Modification"]
             },
             {
@@ -2481,8 +2481,8 @@
                     [ 0, 0, 1, 0, 0, 0, 0, 0],
                     [ 0, 0, 2, 0, 0, 3, 0, 0]
                 ],
-                nbrmaneuvers: 19,
-                clone: "Tie/ba Interceptor",
+                "nbrmaneuvers": 19,
+                "clone": "Tie/ba Interceptor",
                 "slots": ["Astromech","Calculator"]
             },
             {
@@ -2508,8 +2508,8 @@
                     [ 0, 0, 1, 0, 0, 3, 0, 0 ],
                     [ 0, 0, 2, 0, 0, 0, 0, 0 ]
                 ],
-                nbrmaneuvers: 20,
-                clone: "E-Wing",
+                "nbrmaneuvers": 20,
+                "clone": "E-Wing",
                 "slots": ["Astromech","Sensor"]
             },
             {
@@ -2535,8 +2535,8 @@
                     [ 0, 0, 2, 0, 0, 3, 0, 0],
                     [ 0, 0, 2, 0, 0, 3, 0, 0]
                 ],
-                nbrmaneuvers: 16,
-                clone: "Delta7",
+                "nbrmaneuvers": 16,
+                "clone": "Delta7",
                 "slots": ["Astromech","Illicit"]
             },
             {
@@ -2561,8 +2561,8 @@
                     [ 0, 2, 1, 2, 0, 0, 3, 3],
                     [ 0, 0, 2, 0, 0, 0, 0, 0]
                 ],
-                nbrmaneuvers: 16,
-                clone: "Starviper",
+                "nbrmaneuvers": 16,
+                "clone": "Starviper",
                 "slots": ["Astromech","Tech"]
             },
             {
@@ -2586,7 +2586,7 @@
                     [ 0, 0, 1, 0, 0, 0, 0, 0],
                     [ 0, 0, 1, 0, 0, 3, 0, 0]
                 ],
-                nbrmaneuvers: 19,
+                "nbrmaneuvers": 19,
                 "slots": ["Modification"]
             },
             {
