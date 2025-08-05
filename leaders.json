@@ -277,7 +277,7 @@
      },
      {
         "leadername": "##Gar Saxon",
-        "leaderfaction": ["Mandalorian_Clans","Separatist_Government",""],
+        "leaderfaction": ["Mandalorian_Clans","Agents_of_Chaos",""],
         "leaderid": 30,
         "numberOfFactions": 2,
         "leaderability":"",
@@ -379,6 +379,78 @@
         "leaderfaction": ["Trade_Federation","Separatist_Government","Agents_of_Chaos"],
         "leaderid": 41,
         "numberOfFactions": 3,
+        "leaderability":"",
+        "charge": [0],
+        "logistic": 25
+     },
+      {
+        "leadername": "##Poe Dameron",
+        "leaderfaction": ["Resistance","Colossus",""],
+        "leaderid": 42,
+        "numberOfFactions": 2,
+        "leaderability":"",
+        "charge": [0],
+        "logistic": 25
+     },
+      {
+        "leadername": "##Luthen Rael",
+        "leaderfaction": ["Rebel_Alliance","Partisans",""],
+        "leaderid": 43,
+        "numberOfFactions": 2,
+        "leaderability":"",
+        "charge": [0],
+        "logistic": 25
+     },
+      {
+        "leadername": "##Kylo Ren",
+        "leaderfaction": ["First_Order","Shadow_Specialists",""],
+        "leaderid": 44,
+        "numberOfFactions": 2,
+        "leaderability":"",
+        "charge": [0],
+        "logistic": 25
+     },
+      {
+        "leadername": "##Directeur Krennic",
+        "leaderfaction": ["I.S.B","Imperial_Elite_Squadrons",""],
+        "leaderid": 45,
+        "numberOfFactions": 2,
+        "leaderability":"",
+        "charge": [0],
+        "logistic": 25
+     },
+      {
+        "leadername": "##Daimyo Fett",
+        "leaderfaction": ["Hutt_Cartel","Bounty_Hunters_Guild",""],
+        "leaderid": 46,
+        "numberOfFactions": 2,
+        "leaderability":"",
+        "charge": [0],
+        "logistic": 25
+     },
+      {
+        "leadername": "##Ziton Moj",
+        "leaderfaction": ["Black_Sun","Mandalorian_Clans",""],
+        "leaderid": 47,
+        "numberOfFactions": 2,
+        "leaderability":"",
+        "charge": [0],
+        "logistic": 25
+     },
+      {
+        "leadername": "##Mace Windu",
+        "leaderfaction": ["Jedi_Council","Clone_Army",""],
+        "leaderid": 48,
+        "numberOfFactions": 2,
+        "leaderability":"",
+        "charge": [0],
+        "logistic": 25
+     },
+      {
+        "leadername": "##TAxxx",
+        "leaderfaction": ["Trade_Federation","Separatist_Government",""],
+        "leaderid": 49,
+        "numberOfFactions": 2,
         "leaderability":"",
         "charge": [0],
         "logistic": 25
