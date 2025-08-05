@@ -568,3 +568,8 @@ width: calc(25%);
     background-color: white;
     justify-content: center;
 }
+.chargeforceimg{
+    height: 15px;
+    width: 15px;
+    resize: both;
+}
