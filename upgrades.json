@@ -1735,9 +1735,9 @@
             "slot": "Tie mod",
             "add_Data": [0],
             "force": 0,
-            "charge": [0],
+            "charge": [2,"0"],
             "points": 2,
-            "effect": "Après avoir effectué une manœuvre rouge, vous pouvez dépenser 1 #ch# pour effectuer un tonneau.",
+            "effect": "<img class='chargeforceimg' src='img/chargestat.png'> <img class='chargeforceimg' src='img/chargestat.png'> Après avoir effectué une manœuvre rouge, vous pouvez dépenser 1 #ch# pour effectuer un tonneau.",
             "effect_ENG": "",
             "faction": ""
         },
