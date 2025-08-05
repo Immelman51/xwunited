@@ -3491,13 +3491,12 @@
             "shipId": 41,
             "skill": 5,
             "charge":[0],
-            "force": 3,
+            "force": 2,
             "modify": true,
             "title": ["Phantom 2"],
             "points": 6,
-            
-            "ability": "Après avoir entièrement effectué une manoeuvre, vous pouvez choisir un vaisseau allié à portée 1-2 et dépenser 2 #fo#. Ce vaisseau peut effectuer une action, même stressé.",
-            "ability_ENG": "After you fully execute a maneuver, you may choose a friendly ship at range 1-2 and spend 2 #fo# . That ship may perform an action, even while stressed.",
+            "ability": "<img class='chargeforceimg' src='img/forcestat.png'> <img class='chargeforceimg' src='img/forcestat.png'> Après avoir entièrement effectué une manoeuvre, vous pouvez choisir un vaisseau allié à portée 1-2 et dépenser 2 #fo#. Ce vaisseau peut effectuer une action, même stressé.",
+            "ability_ENG": "<img class='chargeforceimg' src='img/forcestat.png'> <img class='chargeforceimg' src='img/forcestat.png'> After you fully execute a maneuver, you may choose a friendly ship at range 1-2 and spend 2 #fo# . That ship may perform an action, even while stressed.",
             "slots": [
                 "Title" ,
                 "Talent",
@@ -3578,9 +3577,8 @@
             "modify": true,
             "points": 4,
             "title": ["Sabine's Masterpiece"],
-            
-            "ability": "Lorsque vous défendez ou attaquez, si vous êtes stressé, vous pouvez dépenser 1 #fo# pour modifier jusqu'à 2 de vos résultats #eye# en #hit# ou #evd#.",
-            "ability_ENG": "While you defend or perform an attack, if you are stressed, you may spend 1 #fo# to change up to 2 of your #eye# results to #hit# or #evd# results.",
+            "ability": "<img class='chargeforceimg' src='img/forcestat.png'> Lorsque vous défendez ou attaquez, si vous êtes stressé, vous pouvez dépenser 1 #fo# pour modifier jusqu'à 2 de vos résultats #eye# en #hit# ou #evd#.",
+            "ability_ENG": "<img class='chargeforceimg' src='img/forcestat.png'> While you defend or perform an attack, if you are stressed, you may spend 1 #fo# to change up to 2 of your #eye# results to #hit# or #evd# results.",
             "slots": [
                 "Title",
                 "Talent",
@@ -3662,9 +3660,8 @@
             "force": 1,
             "modify": true, 
             "title": ["Nightbrother"],
-            
-            "ability": "Lorsque vous défendez ou attaquez, si vous êtes stressé, vous pouvez dépenser 1 #fo# pour modifier jusqu'à 2 de vos résultats #eye# en #hit# ou #evd#.",
-            "ability_ENG": "While you defend or perform an attack, if you are stressed, you may spend 1 #fo# to change up to 2 of your #eye# results to #hit# or #evd# results.",
+            "ability": "<img class='chargeforceimg' src='img/forcestat.png'> Lorsque vous défendez ou attaquez, si vous êtes stressé, vous pouvez dépenser 1 #fo# pour modifier jusqu'à 2 de vos résultats #eye# en #hit# ou #evd#.",
+            "ability_ENG": "<img class='chargeforceimg' src='img/forcestat.png'> While you defend or perform an attack, if you are stressed, you may spend 1 #fo# to change up to 2 of your #eye# results to #hit# or #evd# results.",
             "slots": [
                 "Title",
                 "Talent",
@@ -3834,12 +3831,11 @@
             "shipId": 2,
             "skill": 5,
             "charge":[0],
-            "force": 3,
+            "force": 2,
             "modify": false,
             "points": 8,
-            
-            "ability": "Après avoir entièrement effectué une manoeuvre, vous pouvez choisir un vaisseau allié à portée 1-2 et dépenser 2 #fo#. Ce vaisseau peut effectuer une action, même stressé.",
-            "ability_ENG": "After you fully execute a maneuver, you may choose a friendly ship at range 1-2 and spend 2 #fo# . That ship may perform an action, even while stressed.",
+            "ability": "<img class='chargeforceimg' src='img/forcestat.png'> <img class='chargeforceimg' src='img/forcestat.png'> Après avoir entièrement effectué une manoeuvre, vous pouvez choisir un vaisseau allié à portée 1-2 et dépenser 2 #fo#. Ce vaisseau peut effectuer une action, même stressé.",
+            "ability_ENG": "<img class='chargeforceimg' src='img/forcestat.png'> <img class='chargeforceimg' src='img/forcestat.png'> After you fully execute a maneuver, you may choose a friendly ship at range 1-2 and spend 2 #fo# . That ship may perform an action, even while stressed.",
             "slots": [
                 "Talent",
                 "Talent",
@@ -4905,7 +4901,7 @@
             "id": 210,
             "max_per_squad": 1,
             "faction": "First_Order",
-            "ship": "TIE Echelon",
+            "ship": "TIE/es Echelon",
             "charge":[0],
             "force": 0,
             "titleID": 0,
@@ -4925,7 +4921,7 @@
             "id": 211,
             "max_per_squad": 1,
             "faction": "First_Order",
-            "ship": "TIE Echelon",
+            "ship": "TIE/es Echelon",
             "charge":[0],
             "force": 0,
             "titleID": 0,
@@ -4946,7 +4942,7 @@
             "id": 212,
             "max_per_squad": 1,
             "faction": "First_Order",
-            "ship": "TIE Echelon",
+            "ship": "TIE/es Echelon",
             "force": 0,
             "titleID": 0,
             "shipId": 93,
@@ -4967,7 +4963,7 @@
 		    "modify": false,
             "max_per_squad": 8,
             "faction": "First_Order",
-            "ship": "TIE Echelon",
+            "ship": "TIE/es Echelon",
             "charge":[0],
             "force": 0,
             "titleID": 0,
@@ -6200,8 +6196,8 @@
             "shipId": 53,
             "skill": 3,
             "points": 6,            
-            "ability": "Après avoir entièrement exécuté une manoeuvre, vous pouvez choisir un vaisseau allié à portée 0-1 et dépenser 1 #fo#. Ce vaisseau peut effectuer une action, même s'il est stressé.",
-            "ability_ENG": "After you fully execute a maneuver, you may choose a friendly ship at range 0-1 and spend 1 #fo#. That ship may perform an action, even if it is stressed.",
+            "ability": "<img class='chargeforceimg' src='img/forcestat.png'> Après avoir entièrement exécuté une manoeuvre, vous pouvez choisir un vaisseau allié à portée 0-1 et dépenser 1 #fo#. Ce vaisseau peut effectuer une action, même s'il est stressé.",
+            "ability_ENG": "<img class='chargeforceimg' src='img/forcestat.png'> After you fully execute a maneuver, you may choose a friendly ship at range 0-1 and spend 1 #fo#. That ship may perform an action, even if it is stressed.",
             "slots": [
                 "Talent",
                 "Force"
@@ -9616,9 +9612,9 @@
             "shipId": 82,
             "skill": 5,
             "points": 12,                        
-            "ability": "??",
-            "ability_ENG": "??",
-            "slots": [     
+            "ability": "<img class='chargeforceimg' src='img/forcestat.png'> <img class='chargeforceimg' src='img/forcestat.png'> <img class='chargeforceimg' src='img/forcestat.png'>??",
+            "ability_ENG": "<img class='chargeforceimg' src='img/forcestat.png'> <img class='chargeforceimg' src='img/forcestat.png'> <img class='chargeforceimg' src='img/forcestat.png'>??",
+            "slots": [
                 "Title",
                 "Force",
                 "Talent"        
