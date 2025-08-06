@@ -2871,7 +2871,7 @@
                 "slots": ["Missile","Missile","Tech"]
             },
             {
-            	"name": "Vaisseau d'Abordage de classe Droch",
+            	"name": "Droch-class Boarding Ship",
                 "name_ENG": "Droch-class Boarding Ship",
                 "factions": [ "Separatist_Government" ],
                 "id": 104,
