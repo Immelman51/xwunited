@@ -2768,10 +2768,10 @@
             "max_per_squad": 2,
             "add_Data": [0],
             "force": 0,
-            "charge": [0],
+            "charge": [2,"0"],
             "points": 2,
             "faction": ["Trade_Federation","Agents_of_Chaos","Separatist_Government"],
-            "effect": "Pendant la phase de dénouement, vous pouvez dépenser 1 #ch# pour larguer ou lancer 1 droïde sonde DRK-1 en utilisant un gabarit de vitesse 3. Les #ch# de cette carte ne peuvent pas être récupérées.",
+            "effect": "<img class='chargeforceimg' src='img/chargestat.png'> <img class='chargeforceimg' src='img/chargestat.png'> Pendant la phase de fin, vous pouvez dépenser 1 #ch# pour larguer ou lancer 1 droïde sonde DRK-1 en utilisant un gabarit de vitesse 3. Les #ch# de cette carte ne peuvent pas être récupérées.",
             "effect_ENG": ""
         },
         {
@@ -3000,8 +3000,8 @@
             "charge": [0],
             "points": 11,
             "faction": ["Resistance"],
-            "effect": "Lorsque vous défendez ou attaquez, si le vaisseau ennemi est dans votre #tur#, vous pouvez dépenser 1 #fo# pour modifier l'un de vos résultats vierges en #hit# ou #evd#.",
-            "effect_ENG": "While you defend or perform an attack, if the enemy ship is in your #tur#, you may spend 1 #fo# to change 1 of your blank results to a #hit# or #evd# result."
+            "effect": "<img class='chargeforceimg' src='img/forcestat.png'> Lorsque vous défendez ou attaquez, si le vaisseau ennemi est dans votre #tur#, vous pouvez dépenser 1 #fo# pour modifier l'un de vos résultats vierges en #hit# ou #evd#.",
+            "effect_ENG": "<img class='chargeforceimg' src='img/forcestat.png'> While you defend or perform an attack, if the enemy ship is in your #tur#, you may spend 1 #fo# to change 1 of your blank results to a #hit# or #evd# result."
         },
         {
             "name": "M9-G8",
@@ -3413,7 +3413,7 @@
 "effect_ENG": "",
 "faction": ["Phoenix_Cell"],
 "ship": "Attack Shuttle",
-"effect": ""
+"effect": "Tant que vous êtes arrimé au 'Ghost', celui ci peut effecter une attaque #Barc# bonus après avoir attaqué."
 
 },
 {
@@ -3431,7 +3431,7 @@
 "effect_ENG": "",
 "faction": ["Phoenix_Cell"],
 "ship": "Sheathipede-Class Shuttle",
-"effect": ""
+"effect": "Tant que vous êtes arrimé au 'Ghost', celui ci peut coordonner un vaisseau lorsqu'il s'active."
 
 
 },
@@ -3506,7 +3506,7 @@
 "effect_ENG": "",
 "faction": ["Phoenix_Cell","New_Republic"],
 "ship": "VCX-100 Light Freighter",
-"effect": ""
+"effect": "Un vaisseau avec le titre 'Phantom 1' ou 'Phantom 2' peut s'arrimer avec vous."
 
        
 },
@@ -3847,7 +3847,7 @@
     "charge": [0],
     "points": "*5*",
     "max_per_squad": 1,
-    "effect": "Tant que vous coordonnez, le vaisseau que vous avez choisi peut effectuer une action seulement si celle-ci est également dans votre barre d’action.<br>Ajoute l'action (CO)",
+    "effect": "Tant que vous coordonnez, le vaisseau que vous avez choisi peut effectuer une action seulement si celle-ci est également dans votre barre d’action.<br>Ajoute l'action #CO#",
     "effect_ENG": "",
     "faction": "",
     "modifier_func": [
@@ -4142,8 +4142,8 @@
              "force": 0,
              "charge": [1,"0"],
              "points": 2,
-             "effect": "Mise en Place : Vous devez arrimer un Syliure-class Hyperspace Ring avec vous.<br>Tant que votre charge est active, augmentez la difficulté de vos virages sur l'aile. Lorsque vous devriez prendre 1 dégat, vous pouvez dépenser 1 #ch# pour l'annuler, et placer une carte de dégat sur l'anneau qui est arrimé. Dans ce cas, larguez et retirez du jeu le Hyperspace Ring arrimé avec vous.",
-             "effect_ENG": "Setup : You MUST dock a Syliure-class Hyperspace Ring with you.<br>While your charge is active, increase the difficulty of your turn maneuvers. When you would take a damage, you may spend 1 #ch# to cancel it, and place a damage card on the ring docked with you. Then, undock and remove your docked ring from the game.",
+             "effect": "<img class='chargeforceimg' src='img/chargestat.png'> Mise en Place : Vous devez arrimer un Syliure-class Hyperspace Ring avec vous.<br>Tant que votre charge est active, augmentez la difficulté de vos virages sur l'aile. Lorsque vous devriez prendre 1 dégat, vous pouvez dépenser 1 #ch# pour l'annuler, et placer une carte de dégat sur l'anneau qui est arrimé. Dans ce cas, larguez et retirez du jeu le Hyperspace Ring arrimé avec vous.",
+             "effect_ENG": "<img class='chargeforceimg' src='img/chargestat.png'> Setup : You MUST dock a Syliure-class Hyperspace Ring with you.<br>While your charge is active, increase the difficulty of your turn maneuvers. When you would take a damage, you may spend 1 #ch# to cancel it, and place a damage card on the ring docked with you. Then, undock and remove your docked ring from the game.",
              "faction": ["Jedi_Order","Clone_Army"]
          },
          {
@@ -4158,9 +4158,9 @@
              "force": 0,
              "charge": [1,"0"],
              "points":"*2*",
-             "effect": "Lorsque vous recevez 1 jeton orange ou rouge, vous pouvez dépenser 1 #ch# pour le retirer.",
-             "effect_ENG": "When you receive 1 red or orange token, you can spend 1 #ch# to remove it.",
-             "faction": ["Jedi_Order"] 
+             "effect": "<img class='chargeforceimg' src='img/chargestat.png'> Lorsque vous recevez 1 jeton orange ou rouge, vous pouvez dépenser 1 #ch# pour le retirer.",
+             "effect_ENG": "<img class='chargeforceimg' src='img/chargestat.png'> When you receive 1 red or orange token, you can spend 1 #ch# to remove it.",
+             "faction": ["Jedi_Order"]
          },
          {
             "name": "*Dévoué",
@@ -4286,7 +4286,7 @@
              "force": 0,
              "charge": [0],
              "points":4,
-             "effect": "",
+             "effect": "ACTION : Ajoutez 1 #ch# à 'Message Prioritaire'. Si vous recevez votre 5ème #ch#, gagnez 2 #scenario_points#, et vous pouvez retirez votre vaisseau de la partie, sans que l'adversaire ne remporte de #scenario_points#.",
              "effect_ENG": "",
              "faction": ["Clone_Army","Jedi_Order","Naboo_Defense_Force"] 
          },
@@ -4302,23 +4302,23 @@
              "force": 0,
              "charge": [0],
              "points":1,
-             "effect": "",
+             "effect": "Après avoir effectué une attaque, vous pouvez choisir un vaisseau allié à portée 1 ou un vaisseau allié qui possède l’amélioration Console Synchronisée à portée 1-3 et dépenser un verrouillage que vous avez sur le défenseur. Dans ce cas, le vaisseau allié que vous avez choisi peut verrouiller le défenseur.",
              "effect_ENG": "",
              "faction": ["Clone_Army","Jedi_Order"] 
          },
          {
-            "name": "Chancellor Palpatine",
-             "name_ENG": "Chancellier Palpatine",
+            "name": "Chancellier Palpatine",
+             "name_ENG": "Chancellor Palpatine",
              "id":250,
              "max_per_squad":1,
              "available":true,
              "modify":false,
              "slot": "Crew",
              "add_Data": [0],
-             "force": 0,
+             "force": 1,
              "charge": [0],
              "points":8,
-             "effect": "",
+             "effect": "<img class='chargeforceimg' src='img/forcestat.png'> Après avoir défendu, si l’attaquant est à portée 0-2, vous pouvez dépenser 1 . Dans ce cas, l’attaquant gagne 1 marqueur de stress.<br> Ajoute l'action #CD# violette.",
              "effect_ENG": "",
              "faction": ["Clone_Army","Jedi_Order", "Naboo_Defense_Force"] 
          },
@@ -4334,7 +4334,7 @@
              "force": 1,
              "charge": [0],
              "points":8,
-             "effect": "",
+             "effect": "<img class='chargeforceimg' src='img/forcestat.png'> Au début de la phase d’engagement, vous pouvez choisir 1 vaisseau allié à portée 0–1 et dépenser 1#fo# . Dans ce cas, il peut effectuer une action #EV# rouge.",
              "effect_ENG": "",
              "faction": ["Jedi_Order"]
              
