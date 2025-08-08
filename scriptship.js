@@ -964,9 +964,9 @@ function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'acti
         upgradesSelected[y] = [];
         upgradesSelected_ID[y] = [];
         upgradesSelected_Objects[y] = [];
-        
-        check_restricted_List(event);
         update_restricted_List(y);
+        check_restricted_List(event);
+        
         
         dataGetFromPilot();
         display_Pilot_Chassis_Title_Points();        
