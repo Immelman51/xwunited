@@ -11737,7 +11737,7 @@
             "shipId": 98,
             "skill": 3,
             "points": 6,                        
-            "ability": "Après avoir largué un lancé une bombe, vous pouvez effectuer une action #CO#.",
+            "ability": "Après avoir largué ou lancé une bombe, vous pouvez effectuer une action #CO#.",
             "ability_ENG": "After you drop or launch a bomb, you may perform a #CO# action.",
             "slots": [   
                 "Talent"    

@@ -3413,7 +3413,7 @@
 "effect_ENG": "",
 "faction": ["Phoenix_Cell"],
 "ship": "Attack Shuttle",
-"effect": "Tant que vous êtes arrimé au 'Ghost', celui ci peut effecter une attaque #Barc# bonus après avoir attaqué."
+"effect": "Vous pouvez vous arrimer au 'Ghost'."
 
 },
 {
@@ -3431,7 +3431,7 @@
 "effect_ENG": "",
 "faction": ["Phoenix_Cell"],
 "ship": "Sheathipede-Class Shuttle",
-"effect": "Tant que vous êtes arrimé au 'Ghost', celui ci peut coordonner un vaisseau lorsqu'il s'active."
+"effect": "Vous pouvez vous arrimer au 'Ghost'."
 
 
 },

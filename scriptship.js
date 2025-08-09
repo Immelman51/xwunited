@@ -1026,6 +1026,7 @@ function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'acti
       
     }) ;
     newship.addEventListener('mouseover', function(event){
+        identifyElement(event);
         displayDescriptionShip(event);
 
     })
@@ -1202,20 +1203,55 @@ function displayDescriptionShip(event){ //displays ship stats (and actions and m
             description_upg_pil_Field.innerHTML =  description_upg_pil_Field.innerHTML+'<span style="color: yellow">' +ships[k]["hull"] + '<span class="logo"/>';
             description_upg_pil_Field.innerHTML =  description_upg_pil_Field.innerHTML+'<span style="color: skyblue">' +ships[k]["shields"] + '<span class="logo"/><br>';
             
-           /* let chassisEq = ships[k]['chassis'];
-            for(ch=0;ch<chassisEq.length;ch++){
-                description_upg_pil_Field.innerHTML +=  chassis[chassisEq[ch]]['effect1']+'<br>';
-                description_upg_pil_Field.innerHTML +=  chassis[chassisEq[ch]]['effect2']+'<br>';
-                description_upg_pil_Field.innerHTML +=  chassis[chassisEq[ch]]['effect3']+'<br>';
-            }
-            
-    */
+            //display ship actions
+            const actionsArray = ships[k]['actions'];
+                let actionlist = document.createElement('div');
+                actionlist.setAttribute('id','action'+y);
+                actionlist.setAttribute("class","container actionBar");
+                for(g=0 ; g<actionsArray.length ; g++){
+                    console.log('display actions');
+                    switch(actionsArray[g][0]){
+                        case 0 : //if 0 is the first value, it is a simple action
+                        newaction = document.createElement('img');
+                        newaction.setAttribute('class','logo '+k+''+actionsArray[g][1]);
+                        newaction.setAttribute('src', 'img/'+actionsArray[g][1]+'.jpg');
+                        actionlist.appendChild(newaction);
+                        break;
+                        case 1 : //if 1 is the first value, then it is a linked action
+                        newaction = document.createElement('div');
+                        newaction.setAttribute('class','linkedcontainer');
+                        
+                        newaction1 = document.createElement('img');
+                        newaction1.setAttribute('src', 'img/'+actionsArray[g][1]+'.jpg');
+                        newaction1.setAttribute('class','linkedimg '+k+''+actionsArray[g][1]);
+                        
+                        newlink = document.createElement('img');
+                        newlink.setAttribute('src', 'img/fleche.jpg');
+                        newlink.setAttribute('class','linkedimgarrow');
+                        
+                        newaction2 = document.createElement('img');
+                        newaction2.setAttribute('src', 'img/'+actionsArray[g][2]+'.jpg');
+                        newaction2.setAttribute('class','linkedimg '+k+''+actionsArray[g][2]);
 
-   
-            return;
+                        newaction.appendChild(newaction1);
+                        newaction.appendChild(newlink);
+                        newaction.appendChild(newaction2);
+                        actionlist.appendChild(newaction);
+                        break;
+                        default :
+                        console.log('there is a mistake in ships.json for ship ID n°'+k);
+                        break;
+                    }
+                }
+            description_upg_pil_Field.appendChild(actionlist);
+            console.log('append child action description')
+        //return;
         
     }
     }
+    
+   
+
 }
 
 function displayDescriptionUpgrade(event){ //permet d'afficher l'effet de l'amélioration sélectionée

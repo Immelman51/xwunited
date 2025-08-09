@@ -321,6 +321,37 @@ select {
       background-color: #2980b9;
     }
 
+.container.actionBar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    max-height: 80px;
+    min-height: 20px;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+    
+   }
+
+
+.linkedimg {
+    max-height: 15px; /* Ajuste la largeur maximale pour tenir dans la grille */
+    object-fit: contain; /* Assure que les images ne sont pas déformées */
+    width:calc(20%);
+}
+.linkedcontainer {
+    display: flex;
+    flex-wrap: nowrap;
+    max-height: 15px;
+    align-items: center;
+    width:calc(30%);
+}
+.linkedimgarrow{
+    max-height: 15px; /* Ajuste la largeur maximale pour tenir dans la grille */
+    object-fit: contain; /* Assure que les images ne sont pas déformées */
+    width:calc(5%);
+}
+
 
 
 
