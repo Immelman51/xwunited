@@ -633,7 +633,7 @@ function check_restricted_List(event){ //check si l'upgrade ou le pilote est dé
 function update_restricted_List(yy){ //va mettre à jour la restricted_List. les pilotes sont mis dans une 9 ème table, sinon les upgrades sont mises dans les 8 premières tables
     
     //First we study the case of a pilot modification
-    if (x==-1){
+    if (x===-1){
         let namepil = "menu_pilot"+yy;
         if (pilot_list[yy]['max_per_squad'] < 8){
             namepil = pilot_list[yy]['name'];
@@ -1049,11 +1049,12 @@ function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'acti
         upgradesSelected[y] = [];
         upgradesSelected_ID[y] = [];
         upgradesSelected_Objects[y] = [];
-        
-        
-        check_restricted_List(event);
+        restricted_List[y]=[y];
         
         dataGetFromPilot();
+        check_restricted_List(event);
+        
+        
         display_Pilot_Chassis_Title_Points();        
         displayslots(numero)  ;       
         upgradeListGet(numero);        
