@@ -215,7 +215,9 @@ function displayslots(yy) { //crée les menus de slot et contient l'écoute des 
 
         slotmenu.addEventListener("input", function(event) {//cette faction décrit le calcul des mises à jour des points pour le loadout et le cout du pilote
             identifyElement(event); 
-            check_restricted_List(event);    
+            
+            check_restricted_List(event);
+            
             checkUpgradeModifier(event);
             updateUpgradeCount(y);
             updateTotalCost();
@@ -321,7 +323,7 @@ function updateUpgradeCount(yy) { //update the table logistic_Equipped
 }
 
 function testRestriction (yy,tableRestrictions){//va vérifier si les restrictions sont true, et renvoie la valeur restrict=true si c'est bon
-    // console.log(tableRestrictions);
+  
     let testR = 0;
     let varlist = [];
     let nbr = tableRestrictions[0];
@@ -350,8 +352,7 @@ function testRestriction (yy,tableRestrictions){//va vérifier si les restrictio
         break;
         
     }
-    console.log(nbr + ' ' + list + ' ' +target1+ ' ' + target2);
-    console.log(varlist);
+   
     for (i=0; i<varlist.length; i++) {
             
     if ((varlist[i]===target1)||(varlist[i]===target2)) {
@@ -528,10 +529,10 @@ function checkUpgradeModifier() { //va checker s'il existe une fonction modify l
 function check_restricted_List(event){ //check si l'upgrade ou le pilote est déjà utilisé par un(e) autre du même nom
     let newname = '';
     let maxnbr = 8;
-    if (z===0){ //si on séléctionne la valeur vide d'un menu (la ligne 0), il faut arrêter la vérif et mettre à jour les menus
-        update_restricted_List(y);
+    if (z===0){ //si on séléctionne la valeur vide d'un menu (la ligne 0), il faut arrêter la vérif
         return;
     }
+    
     if (x === -1){ //si c'est un pilote
         newname = pilot_list[y]['name'];
         maxnbr = pilot_list[y]['max_per_squad']
@@ -539,7 +540,9 @@ function check_restricted_List(event){ //check si l'upgrade ou le pilote est dé
         newname = upgrades_Objects_Val[y][x][z-1]['name'];
         maxnbr = upgrades_Objects_Val[y][x][z-1]['max_per_squad'];
     }
+    
     if (maxnbr === 8){
+        update_restricted_List(y);
         return; // si il n'y a pas de limitation on arrête
     }
 
@@ -559,8 +562,19 @@ function check_restricted_List(event){ //check si l'upgrade ou le pilote est dé
         event.target.selectedIndex = 0;
         if (x=== -1){ //il faut remettre à jour certaines listes
             pilot_selected_list[y] =  { name: "", points: 0 };
+            //We remove all selected upgrades for this pilot. Allows to remove an eventual title upgrade.
+            removeElementsByClass('slotElement'+y);
+            restricted_List[y] = [y];
+            fillUpgradesSelected(y);
+            restricted_List[8][y] = 'pilot'+y;
+            console.log('restrictedPilots : '+restricted_List[8]);
+            console.log('restrictedupgrades : '+restricted_List[y]);
+
         }else{
             upgradesSelected[y][x] = event.target.value;
+            fillUpgradesSelected(y);
+            update_restricted_List(y);
+            console.log('restrictedupgrades : '+restricted_List[y]);
         }
         return; //va arrêter tout processus par exemple le check_upgrade_validation qui va lancer des modifs de menus
     }else{
@@ -569,23 +583,36 @@ function check_restricted_List(event){ //check si l'upgrade ou le pilote est dé
     
 }
      
-function update_restricted_List(yy){ //va mettre à jour la restricted_List. les pilotes sont mis dans une 9 ème table, sinon les upgrades sont mises dans les 7 premières tables
+function update_restricted_List(yy){ //va mettre à jour la restricted_List. les pilotes sont mis dans une 9 ème table, sinon les upgrades sont mises dans les 8 premières tables
     
-    let namepil = "menu_pilot"+yy;
-    if (pilot_list[yy]['max_per_squad'] < 8){
-        namepil = pilot_list[yy]['name'];
+    //First we study the case of a pilot modification
+    if (x==-1){
+        let namepil = "menu_pilot"+yy;
+        if (pilot_list[yy]['max_per_squad'] < 8){
+            namepil = pilot_list[yy]['name'];
+        }else{
+            namepil = 'pilot'+y;
+        }
+        restricted_List[8][yy]= namepil;
+        console.log('restrictedPilots : '+restricted_List[8]);
     }
-    restricted_List[8][yy]= namepil;
-    
-    for (let i=0 ; i<upgradesSelected[yy].length ; i++){
-        slotmenu = document.getElementById('slot'+yy+'_'+i);
-        z = slotmenu.selectedIndex;
-        let nameupg = 'slot'+yy+'_'+i;
-        if ((z > 0) && (upgrades_Objects_Val[yy][i][z-1]['max_per_squad'] < 8)) { // si ce n'est pas une upgrade limitée, alors max per squad = 8 et il n'y a pas besoin de renseigner la restrited List
-            nameupg = upgrades_Objects_Val[yy][i][z-1]['name'];
+
+    //Then we study the case of an upgrade modification
+    if (x>=0){
+        for (let i=0 ; i<upgradesSelected[yy].length ; i++){
+            slotmenu = document.getElementById('slot'+yy+'_'+i);
+            z = slotmenu.selectedIndex;
+            let nameupg = 'slot'+yy+'_'+i;
+            if ((z > 0) && (upgrades_Objects_Val[yy][i][z-1]['max_per_squad'] < 8)) { // si ce n'est pas une upgrade limitée, alors max per squad = 8 et il faut remettre une valeur standard dans la restricted_List
+                nameupg = upgrades_Objects_Val[yy][i][z-1]['name'];
+            }else{
+                nameupg = 'slot'+y+'_'+i;
+            }
+            restricted_List[yy][i]= nameupg;
+            
         }
-        restricted_List[yy][i]= nameupg;
-        }
+        console.log('restrictedupgrades : '+restricted_List[y]);
+    }
 }
     
 function auto_equip(Slot, indexUpgrade){ //action n°1
@@ -964,9 +991,9 @@ function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'acti
         upgradesSelected[y] = [];
         upgradesSelected_ID[y] = [];
         upgradesSelected_Objects[y] = [];
-        update_restricted_List(y);
-        check_restricted_List(event);
         
+        
+        check_restricted_List(event);
         
         dataGetFromPilot();
         display_Pilot_Chassis_Title_Points();        
