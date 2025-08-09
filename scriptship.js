@@ -298,6 +298,15 @@ function identifyElement(event){ //sloty_x & index z de l'élément sélectionn�
         z = event.target.selectedIndex;
         y = slotMe.substring(4,5);
         x = slotMe.slice(-1);
+    }else if (slotMe.indexOf("chassis")===0){ //if the id contains the string "chassis"
+        z = 0;
+        y = slotMe.slice(-1);
+        x = -3;
+        
+    }else if (slotMe.indexOf("title")===0){ //if the id contains the string "title"
+        z = 0;
+        y = slotMe.slice(-1);
+        x = -4;
     }
    
 }
@@ -566,14 +575,13 @@ function check_restricted_List(event){ //check si l'upgrade ou le pilote est dé
             restricted_List[y] = [y];
             fillUpgradesSelected(y);
             restricted_List[8][y] = 'pilot'+y;
-            console.log('test0 z=0 x=-1 : '+restricted_List[8]);
-            console.log('test1 z=0 x=-1 : '+restricted_List[y]);
+            
 
         }else{ //it's an upgrade
             upgradesSelected[y][x] = event.target.value;
             fillUpgradesSelected(y);
             update_restricted_List(y);
-            console.log('test2 z=0 x>0 : '+restricted_List[y]);
+         
         }
         return;
     }
@@ -588,7 +596,6 @@ function check_restricted_List(event){ //check si l'upgrade ou le pilote est dé
     
     if (maxnbr === 8){
         update_restricted_List(y);
-        console.log('test3 z>0 non limited '+restricted_List);
         return; // si il n'y a pas de limitation on arrête
     }
 
@@ -613,19 +620,14 @@ function check_restricted_List(event){ //check si l'upgrade ou le pilote est dé
             restricted_List[y] = [y];
             fillUpgradesSelected(y);
             restricted_List[8][y] = 'pilot'+y;
-            console.log('test4 z>0 x=-1 : '+restricted_List[8]);
 
         }else{
             upgradesSelected[y][x] = event.target.value;
             fillUpgradesSelected(y);
             update_restricted_List(y);
-            console.log('test5 z>0 x>-1  : '+restricted_List[y]);
         }
-        //console.log('return');
-        //return; //va arrêter tout processus par exemple le check_upgrade_validation qui va lancer des modifs de menus
     }else{
         update_restricted_List(y); //l'upgrade ou le pilote est accepté donc on peut mettre à jour cette restricted_List
-        console.log('test6 z>0 no restriction YET '+restricted_List);
     }
     
 }
@@ -637,9 +639,7 @@ function update_restricted_List(yy){ //va mettre à jour la restricted_List. les
         let namepil = "menu_pilot"+yy;
         if (pilot_list[yy]['max_per_squad'] < 8){
             namepil = pilot_list[yy]['name'];
-            console.log('test33 upd rest list');
         }else{
-            console.log('test44 upd rest list');
             namepil = 'pilot'+y;
         }
         restricted_List[8][yy]= namepil;
@@ -660,8 +660,6 @@ function update_restricted_List(yy){ //va mettre à jour la restricted_List. les
             
         }
     }
-    console.log('test55 update_restricted_List')
-    console.log(restricted_List[8]);
 }
     
 function auto_equip(Slot, indexUpgrade){ //action n°1
@@ -685,8 +683,6 @@ function auto_equip(Slot, indexUpgrade){ //action n°1
         restricted_List[8][y] = 'pilot'+y;
         restricted_List[y] = [y];
         removeElementsByClass('slotElement'+y);
-        console.log('test11 auto_equip');
-        //update_restricted_List(y);
         return;
     }
     // fin du check
@@ -709,7 +705,6 @@ function auto_equip(Slot, indexUpgrade){ //action n°1
     slotToEquip.setAttribute("disabled","");
     fillUpgradesSelected(y);
     restricted_List[y][numero_slot]=nameUpgrade;
-    console.log('test22 autoequip');
     
 }
 
@@ -1068,14 +1063,17 @@ function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'acti
     }); 
 
     newchassis1.addEventListener('click', function(event){
+        identifyElement(event);
         display_chassis_title_window(event);
     })
     newchassis2.addEventListener('click', function(event){
+        identifyElement(event);
         display_chassis_title_window(event);
     })
     newtitle.addEventListener('click', function(event){
+        identifyElement(event);
         display_chassis_title_window(event);
-    })       
+    })
     
 
 
