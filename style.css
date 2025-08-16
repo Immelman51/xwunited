@@ -18,9 +18,8 @@ header {
 }
 
 .descriptleader {
-    display: grid ;
-    grid-template-columns: 30px 1fr 30px 1fr;
-    grid-template-rows: 30px 30px;
+    display: flex ;
+    flex-wrap: nowrap;
     gap: 2px;
     background-color: black;
     justify-content: center;
@@ -30,18 +29,17 @@ header {
       
 }
 
-.seven {
-    grid-column-start: 3;
-    grid-column-end: 5;
-
+.box{
+    align-content: left;
+    height: 26px;
 }
-.eight {
-    grid-column-start: 1;
-    grid-column-end: 5;
-    max-height: 25%;
+
+.description {
     justify-content: center;
     align-content: center;
     font-size: clamp(11px, 2vw, 26px);
+    background-color: black;
+    color: white;
 
 }
 
@@ -49,14 +47,9 @@ header {
     justify-items:right;
     align-items: center;
     font-size: small;
+    max-width: 150px;
 }
 
-.descriptionleader {
-   
-   justify-items: center;
-   align-items: center;
-   
-}
 .descriptleader img {
     height: 100%;
     object-fit: cover;
@@ -92,7 +85,7 @@ header {
     background-color: black;
     padding-top: 10px;
     padding-bottom: 10px;
-    border: double white;
+    border: double red;
     width: auto;
     
 }

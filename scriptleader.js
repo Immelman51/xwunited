@@ -116,7 +116,7 @@ populateMenu("menu_leader",listeleader);
 }
 
 function description_leader() {
-    descriptionLeaderField = document.querySelector(".eight"); //eight est le nom de la classe où se trouve le champ description leader
+    descriptionLeaderField = document.querySelector(".description"); //description est le nom de la classe où se trouve le champ description leader
     descriptionLeaderField.innerHTML=""; 
     descriptionLeaderField.innerHTML = leaders[indexleader]["leaderability"];
 }
