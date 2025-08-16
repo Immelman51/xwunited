@@ -168,7 +168,7 @@ function dataGetFromPilot() { //On prend le pilote et on recopie l'objet pilote 
     }
 
     
-function displayslots(yy) { //crée les menus de slot et contient l'écoute des "modification" des slots. Les éléments s'affichent masqués (hidden) par défaut, mais sont afficher via le bouton upgradeButton dont la fonction est décrite à la fin.
+function displayslots(yy) { //crée les menus de slot et contient l'écoute des "modification" des slots. Les éléments s'affichent masqués par défaut, mais peuvent être cachés via le bouton upgradeButton dont la fonction est décrite à la fin.
      // Get the parent element
     shipslot = document.getElementById('shipslots'+yy);
      // Clear any existing child elements
@@ -178,7 +178,7 @@ function displayslots(yy) { //crée les menus de slot et contient l'écoute des 
     upgrades_Type[yy] = [];    
     let upgradeButton = document.createElement('button');
         upgradeButton.setAttribute('id','upgradeButton'+yy);
-        upgradeButton.setAttribute('class','toggle-button');
+        upgradeButton.setAttribute('class','toggle-button active');
         upgradeButton.setAttribute('type','button');
         upgradeButton.textContent = 'Améliorations '+0;
         shipslot.appendChild(upgradeButton);
@@ -194,7 +194,7 @@ function displayslots(yy) { //crée les menus de slot et contient l'écoute des 
         upgrades_Type[yy].push(pilot_list[yy]["slots"][i]);
     slotmenu = document.createElement('select');
     slotmenu.setAttribute('id', 'slot'+yy+"_"+i);
-    slotmenu.setAttribute('class', 'slotElement'+yy+' hidden');//+' '+pilot_list[yy]["slots"][i]);
+    slotmenu.setAttribute('class', 'slotElement'+yy);//+' '+pilot_list[yy]["slots"][i]);
     shipslot.appendChild(slotmenu);
     slotmenu.addEventListener("input", function(event) {//cette fonction décrit le calcul des mises à jour des points pour le loadout et le cout du pilote
             identifyElement(event);
@@ -222,7 +222,7 @@ function displayslots(yy) { //crée les menus de slot et contient l'écoute des 
         upgrades_Type[yy].push(ships[pilot_list[yy]["shipId"]]["slots"][j]);
         slotmenu = document.createElement('select');
         slotmenu.setAttribute('id', 'slot'+yy+"_"+(j+index));
-        slotmenu.setAttribute('class', 'slotElement'+y+' '+ships[pilot_list[yy]["shipId"]]["slots"][j]+' hidden' );
+        slotmenu.setAttribute('class', 'slotElement'+y+' '+ships[pilot_list[yy]["shipId"]]["slots"][j]);
         shipslot.appendChild(slotmenu);
 
         slotmenu.addEventListener("input", function(event) {//cette faction décrit le calcul des mises à jour des points pour le loadout et le cout du pilote
@@ -319,9 +319,9 @@ function updateTotalCost() { //update total cost AND logistic value
         logisticvalue = logisticvalue - logisticEquipped[j]; 
     }
     totalcount= document.getElementById("totalcost");
-    totalcount.textContent = totalcostvalue; 
+    totalcount.textContent = 'SQD '+totalcostvalue+'/30'; 
     totallogistic = document.getElementById("logistic_value");
-    totallogistic.textContent = logisticvalue;
+    totallogistic.textContent = 'LOG '+logisticvalue;
 }
 
 function updateUpgradeCount(yy) { //update the table logistic_Equipped
@@ -943,7 +943,7 @@ function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'acti
     let numero = String(shipquantity);
     const squad = document.getElementById("squad");
     
-    let newpara = document.createElement('p');
+    let newpara = document.createElement('div');
     let newdiv = document.createElement('div');
     let newship = document.createElement('select');
     let newpilot = document.createElement('select');
