@@ -38,8 +38,8 @@ header {
     justify-content: center;
     align-content: center;
     font-size: clamp(11px, 2vw, 26px);
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
 
 }
 
@@ -248,7 +248,7 @@ header {
     position: sticky;
     bottom:0;
     display: grid;
-    grid-template-columns: 1fr 56px 56px;
+    grid-template-columns: 1fr 60px;
 }
 
 .loadout {
@@ -264,9 +264,7 @@ header {
 .count {
     color:aliceblue;
 }
-.logistic {
-    color:rgb(188, 226, 81);
-}
+
 
 select {
     overflow: auto;
@@ -292,7 +290,7 @@ select {
 
 
 
-    .popupCode {
+.popupCode {
       background: white;
       padding: 20px;
       border-radius: 10px;
@@ -345,7 +343,7 @@ select {
     flex-wrap: nowrap;
     max-height: 15px;
     align-items: center;
-    width:calc(30%);
+    width:calc(20%);
 }
 .linkedimgarrow{
     max-height: 15px; /* Ajuste la largeur maximale pour tenir dans la grille */

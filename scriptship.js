@@ -47,7 +47,6 @@ let shipquantity = -1; //compteur qui ne sert pas à compter mais à numéroter 
  let factionno2 = "";
  let factionno3 = "";
  let totalcostvalue = 0;
- let logisticvalue = 0; 
  let logisticEquipped = [0,0,0,0,0,0,0,0];
  let leader_ID = 0; 
 
@@ -179,7 +178,7 @@ function displayslots(yy) { //crée les menus de slot et contient l'écoute des 
         upgradeButton.setAttribute('id','upgradeButton'+yy);
         upgradeButton.setAttribute('class','toggle-button active');
         upgradeButton.setAttribute('type','button');
-        upgradeButton.textContent = 'Améliorations '+0;
+        upgradeButton.textContent = 'Améliorations ('+0+'/'+leaders[leader_ID]["logistic"]+')';
         shipslot.appendChild(upgradeButton);
       try{  //permet de supprimer les risques d'erreur lorsqu'il n'y a pas de slots pour le pilote (undefined)
         if  (typeof pilot_list[yy]["slots"][0] === 'undefined') {
@@ -318,10 +317,10 @@ function updateTotalCost() { //update total cost
     
 }
 
-function updateUpgradeCount(yy) { //update the table logistic_Equipped and the logisticvalue
+function updateUpgradeCount(yy) { //update the table logistic_Equipped and display the sum of all of them in sumLogisiticEquipped. That way, you can keep count of how many uprgade points you have left to equip your squad
     
     logisticEquipped[yy] = 0;
-    logisticvalue = leaders[leader_ID]["logistic"];
+    sumLogisticEquipped = 0;
     
     for (j=0; j<upgradesSelected_Objects[yy].length ; j++){
         
@@ -335,13 +334,12 @@ function updateUpgradeCount(yy) { //update the table logistic_Equipped and the l
     
     }
     for (j=0; j<8; j++){
-        logisticvalue = logisticvalue - logisticEquipped[j];
+        sumLogisticEquipped = sumLogisticEquipped + logisticEquipped[j];
     }
-    //totallogistic = document.getElementById("logistic_value");
-    //totallogistic.textContent = 'LOG '+logisticvalue;
+    
     for (j=0; j<shipquantity+1 ; j++){
         let upgradeButton = document.getElementById('upgradeButton'+j);
-        upgradeButton.textContent = 'Améliorations '+'('+logisticvalue+'/'+leaders[leader_ID]["logistic"]+') '+logisticEquipped[j];
+        upgradeButton.textContent = 'Améliorations '+'('+sumLogisticEquipped+'/'+leaders[leader_ID]["logistic"]+') '+logisticEquipped[j];
     }
 }
 
@@ -1156,7 +1154,7 @@ function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'acti
             //We update logisticequipped, the logistic total and the total cost
             for (h=0 ; h<shipquantity+1 ; h++){
                 updateUpgradeCount(h);
-                console.log('update upgrades pilot '+h);
+                
             }
             updateTotalCost();
             
@@ -1211,8 +1209,8 @@ function displayDescriptionShip(event){ //displays ship stats (and actions and m
                 description_upg_pil_Field.innerHTML =  description_upg_pil_Field.innerHTML+'<span style="color: red">' +ships[k]["attack"][1][1] + '</span> <img src="img/attack'+ships[k]["attack"][1][0] +'.jpg" class="logo"/>';     
             }
             description_upg_pil_Field.innerHTML =  description_upg_pil_Field.innerHTML+'<span style="color: green">' +ships[k]["agility"] + '<span class="logo"/>';
-            description_upg_pil_Field.innerHTML =  description_upg_pil_Field.innerHTML+'<span style="color: yellow">' +ships[k]["hull"] + '<span class="logo"/>';
-            description_upg_pil_Field.innerHTML =  description_upg_pil_Field.innerHTML+'<span style="color: skyblue">' +ships[k]["shields"] + '<span class="logo"/><br>';
+            description_upg_pil_Field.innerHTML =  description_upg_pil_Field.innerHTML+'<span style="color: orange">' +ships[k]["hull"] + '<span class="logo"/>';
+            description_upg_pil_Field.innerHTML =  description_upg_pil_Field.innerHTML+'<span style="color: blue">' +ships[k]["shields"] + '<span class="logo"/><br>';
             
             //display ship actions
             const actionsArray = ships[k]['actions'];
@@ -1220,12 +1218,15 @@ function displayDescriptionShip(event){ //displays ship stats (and actions and m
                 actionlist.setAttribute('id','action'+y);
                 actionlist.setAttribute("class","container actionBar");
                 for(g=0 ; g<actionsArray.length ; g++){
-                    console.log('display actions');
+                    
                     switch(actionsArray[g][0]){
                         case 0 : //if 0 is the first value, it is a simple action
-                        newaction = document.createElement('img');
-                        newaction.setAttribute('class','logo '+k+''+actionsArray[g][1]);
-                        newaction.setAttribute('src', 'img/'+actionsArray[g][1]+'.jpg');
+                        newaction = document.createElement('div');
+                        newaction.setAttribute('class','linkedcontainer');
+                        newaction1 = document.createElement('img');
+                        newaction1.setAttribute('class','logo '+k+''+actionsArray[g][1]);
+                        newaction1.setAttribute('src', 'img/'+actionsArray[g][1]+'.jpg');
+                        newaction.appendChild(newaction1);
                         actionlist.appendChild(newaction);
                         break;
                         case 1 : //if 1 is the first value, then it is a linked action
@@ -1255,7 +1256,7 @@ function displayDescriptionShip(event){ //displays ship stats (and actions and m
                     }
                 }
             description_upg_pil_Field.appendChild(actionlist);
-            console.log('append child action description')
+            
         //return;
         
     }

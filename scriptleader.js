@@ -2,6 +2,7 @@ let requestURLleaders = "https://raw.githubusercontent.com/Immelman51/xwunited/m
 
 let leaders =[];
 let menuLeader = [];
+let indexleader = 0;
 
 async function fetchData(url) {
     let response = await fetch(url);
@@ -16,7 +17,7 @@ async function initializeData() {
         leaders = await fetchData(requestURLleaders);
         console.log(leaders);
         for (let i = 0; i < leaders.length; i++) {
-            menuLeader.push(leaders[i]["leadername"]);
+            menuLeader.push(leaders[i]["leadername"]+' ('+leaders[i]["logistic"]+')');
         }
     } catch (error) {
         console.error("Failed to fetch data: ", error);
@@ -68,13 +69,10 @@ let leaderID = 0;
 
 /*fonction qui permet de modifier les noms et logos des faction appartenant au leader sélectionné*/
 function selection_leader () {
-let leadervalue = leaderselect.value;
-for (j=0; j<leaders.length; j++) {
-    if (leaders[j]["leadername"]===leadervalue) {
-        indexleader = j;
-        break;
-    }
-}
+indexleader = leaderselect.selectedIndex;
+
+    
+
 
     let factionval1 = leaders[indexleader]["leaderfaction"][0];
     let factionval2 = leaders[indexleader]["leaderfaction"][1];
@@ -116,8 +114,7 @@ populateMenu("menu_leader",listeleader);
 }
 
 function description_leader() {
-    descriptionLeaderField = document.querySelector(".description"); //description est le nom de la classe où se trouve le champ description leader
-    descriptionLeaderField.innerHTML=""; 
+    descriptionLeaderField = document.querySelector(".abilityLeader"); //description est le nom de la classe où se trouve le champ description leader
     descriptionLeaderField.innerHTML = leaders[indexleader]["leaderability"];
 }
 

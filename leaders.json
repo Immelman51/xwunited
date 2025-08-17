@@ -307,8 +307,8 @@
         "leaderfaction": ["New_Republic","Naboo_Defense_Force",""],
         "leaderid": 33,
         "numberOfFactions": 2,
-        "leaderability":"",
-        "charge": [0],
+        "leaderability":"Lorsqu'un de vos vaisseaux détruit un vaisseau adverse, vous pouvez dépenser 1 #ch#. Dans ce cas, ce vaisseau gagne l'un de ces bonus jusqu'à la fin de la partie : <Initiative +1>, <Action #CD# et la possibilité de donner votre initiative à un vaisseau allié à portée 1 au début de la phase d'activation jusqu'à la fin du tour>, <Les vaisseaux alliés à portée 1-3 peuvent utiliser vos verrouillages comme si c'était les leurs>.",
+        "charge": [3,"0"],
         "logistic": 25
      },
       {
