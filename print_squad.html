@@ -6,12 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>"xw-United-print-squad"</title>
     <link rel="stylesheet" href="print_squad.css">
+        <!--this script loads the library that permits to convert this page into a pdf to print it cleanly-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js">
+    </script>
    
    
 </head>
 
 <body>
-
+<div id='content'>
 <div id="leader" class="container"><div id="leaderfaction" class="leaderfaction"></div><div id="lname" class="leadername">
 </div><div id="lcharge" class="leadercharge"></div><div id="lability" class="leaderability"></div></div>
 
@@ -33,6 +36,7 @@
 <div id='pilot6' class="squad 6"> <div class="row1-background"></div> <div id="pskill6" class="pskill 6"></div> <img id="plogo6" class="factionpilot 6" src=""/> <div id="name6" class="name 6"></div> <div id="ship6" class="ship 6"></div> <div id="cost6" class="cost 6"></div> <div id="stat6" class="stat 6"></div> <div id="ability6" class="ability 6"></div> <div id="actions6" class="actions 6"></div> <div id="upgrade6_0" class="upg0 6"></div><div id="upgrade6_1" class="upg1 6"></div> <div id="upgrade6_2" class="upg2 6"></div> <div id="upgrade6_3" class="upg3 6"></div> <div id="upgrade6_4" class="upg4 6"></div> <div id="upgrade6_5"class="upg5 6"></div> <div class="upg6 6" id="upgrade6_6"></div> <div class="upg7 6" id="upgrade6_7"></div> <div class="upg8 6" id="upgrade6_8"></div> <div class="upg9 6" id="upgrade6_9"></div> <div class="upg10 6" id="upgrade6_10"></div> <div id="chassis6_1" class="chassis chs1 6"></div><div id="chassis6_2" class="chassis chs2 6"></div><div id="chassis6_3" class="chassis chs3 6"></div></div><br>
 <div id='pilot7' class="squad 7"> <div class="row1-background"></div> <div id="pskill7" class="pskill 7"></div> <img id="plogo7" class="factionpilot 7" src=""/> <div id="name7" class="name 7"></div> <div id="ship7" class="ship 7"></div> <div id="cost7" class="cost 7"></div> <div id="stat7" class="stat 7"></div> <div id="ability7" class="ability 7"></div> <div id="actions7" class="actions 7"></div> <div id="upgrade7_0" class="upg0 7"></div><div id="upgrade7_1" class="upg1 7"></div> <div id="upgrade7_2" class="upg2 7"></div> <div id="upgrade7_3" class="upg3 7"></div> <div id="upgrade7_4" class="upg4 7"></div> <div id="upgrade7_5"class="upg5 7"></div> <div class="upg6 7" id="upgrade7_6"></div> <div class="upg7 7" id="upgrade7_7"></div> <div class="upg8 7" id="upgrade7_8"></div> <div class="upg9 7" id="upgrade7_9"></div> <div class="upg10 7" id="upgrade7_10"></div> <div id="chassis7_1" class="chassis chs1 7"></div><div id="chassis7_2" class="chassis chs2 7"></div><div id="chassis7_3" class="chassis chs3 7"></div></div><br>
 <div id='pilot8' class="squad 8"> <div class="row1-background"></div> <div id="pskill8" class="pskill 8"></div> <img id="plogo8" class="factionpilot 8" src=""/> <div id="name8" class="name 8"></div> <div id="ship8" class="ship 8"></div> <div id="cost8" class="cost 8"></div> <div id="stat8" class="stat 8"></div> <div id="ability8" class="ability 8"></div> <div id="actions8" class="actions 8"></div> <div id="upgrade8_0" class="upg0 8"></div><div id="upgrade8_1" class="upg1 8"></div> <div id="upgrade8_2" class="upg2 8"></div> <div id="upgrade8_3" class="upg3 8"></div> <div id="upgrade8_4" class="upg4 8"></div> <div id="upgrade8_5"class="upg5 8"></div> <div class="upg6 8" id="upgrade8_6"></div> <div class="upg7 8" id="upgrade8_7"></div> <div class="upg8 8" id="upgrade8_8"></div> <div class="upg9 8" id="upgrade8_9"></div> <div class="upg10 8" id="upgrade8_10"></div> <div id="chassis8_1" class="chassis chs1 8"></div><div id="chassis8_2" class="chassis chs2 8"></div><div id="chassis8_3" class="chassis chs3 8"></div></div><br>
+</div>
 
 <footer class="footer">
     <div><button id="print_upgrades" class="bouton" type="button" target="_blank">Print Upgrades</button></div>
@@ -41,6 +45,22 @@
     <div><button id="back" class="bouton" type="button" onclick="history.back()">Back</button></div>
 </footer>
 
-<script src="print_squad.js"></script>    
+<script src="print_squad.js"></script>
+<!-- Your JavaScript code goes here
+  <script>
+    window.onload = function() {
+      const element = document.getElementById('content');
+      const options = {
+        margin: 1,
+        filename: 'my-document.pdf',
+        image: { type: 'jpeg', quality: 0.98 },
+        html2canvas: { scale: 2 },
+        jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' }
+      };
+
+
+      // Promise-based usage:
+      html2pdf().set(options).from(element).save();
+-->
 </body>
 </html>

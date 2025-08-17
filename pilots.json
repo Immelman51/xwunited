@@ -328,7 +328,7 @@
                 "Talent",
                 "Talent",
                 "Illicit",
-                "Turret"         
+                "Cannon"
                          
             ],
             "modifier_func": [
@@ -382,7 +382,7 @@
                 "Title",
                 "Talent",
                 "Illicit",
-                "Turret"         
+                "Cannon"
                
                 
             ],
@@ -413,7 +413,7 @@
                 "Title",
                 "Talent",
                 "Illicit",
-                "Turret"         
+                "Cannon"
                 
             ],
             "modifier_func": [
@@ -9215,7 +9215,7 @@
                 "Title", 
                 "Talent",
                 "Illicit",
-                "Turret"         
+                "Cannon"         
            ],
            "modifier_func": [
             	[1,"Title",147],

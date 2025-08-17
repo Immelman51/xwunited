@@ -1,11 +1,12 @@
 body {
     background-color: rgb(52, 43, 63);
     justify-content: center;
+    width: auto;
 }
 
 header {
     display: table;
-    width: 100%;
+    width: auto;
     background-color: black;
     color:aliceblue ; 
    
@@ -13,35 +14,32 @@ header {
     flex-wrap: nowrap;
     justify-content: space-evenly;
     align-content: center;
-    max-width: 750px;
+    
 }
 
 .descriptleader {
-    display: grid ;
-    grid-template-columns: 30px 1fr 30px 1fr;
-    grid-template-rows: 30px 30px;
+    display: flex ;
+    flex-wrap: nowrap;
     gap: 2px;
     background-color: black;
     justify-content: center;
     align-content: center;
     color:antiquewhite;
-    max-width: 750px;
    
       
 }
 
-.seven {
-    grid-column-start: 3;
-    grid-column-end: 5;
-
+.box{
+    align-content: left;
+    height: 26px;
 }
-.eight {
-    grid-column-start: 1;
-    grid-column-end: 5;
-    max-height: 25%;
+
+.description {
     justify-content: center;
     align-content: center;
     font-size: clamp(11px, 2vw, 26px);
+    background-color: white;
+    color: black;
 
 }
 
@@ -49,14 +47,9 @@ header {
     justify-items:right;
     align-items: center;
     font-size: small;
+    max-width: 150px;
 }
 
-.descriptionleader {
-   
-   justify-items: center;
-   align-items: center;
-   
-}
 .descriptleader img {
     height: 100%;
     object-fit: cover;
@@ -78,7 +71,6 @@ header {
 
 .logo {
     height: 15px;
-    max-width: 750px;
 
 }
 .chargeforceimg{
@@ -90,17 +82,20 @@ header {
 /* ##################"BODY ##############################*/
 .new {
     margin: 20px 0 ;
+    background-color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: double red;
+    width: auto;
+    
 }
 
 /*######### First Line##########" */
 .ship {
-    background-color: black;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    
     display:grid;
     grid-template-columns: 4fr 4fr 2fr 1fr 1fr;
     gap: 2px;
-    max-width: 750px;
     justify-content: center;
     align-content: center;
      
@@ -141,7 +136,6 @@ header {
 
 .zone {
     background-color: black;
-    max-width: 750px;
     display: flex;
     justify-content: space-evenly;
     align-content: center;
@@ -218,8 +212,8 @@ header {
   cursor: pointer
 }
 .toggle-button.active {
-  background-color: #f0acac; /* gris clair par exemple */
-  color: black;
+  background-color: grey; /* gris clair par exemple */
+  color: white;
   border: none;
   cursor: pointer;
 }
@@ -228,12 +222,20 @@ header {
 /* ## Beyond the third line ## */
 .slot {
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 2px;
-    max-width: 750px; 
+    width: 100%;
+    box-sizing: border-box;
     justify-content: center;
     align-content: center;
     }
+.slot button,
+.slot select {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
 
 /* #### Description Zone ######### */
 
@@ -246,8 +248,7 @@ header {
     position: sticky;
     bottom:0;
     display: grid;
-    grid-template-columns: 1fr 30px 30px;
-    max-width: 750px;
+    grid-template-columns: 1fr 60px;
 }
 
 .loadout {
@@ -258,13 +259,12 @@ header {
     font-size: x-large;
     align-self: center;
     justify-self: center;
+    width
 }
 .count {
     color:aliceblue;
 }
-.logistic {
-    color:rgb(188, 226, 81);
-}
+
 
 select {
     overflow: auto;
@@ -277,7 +277,6 @@ select {
     padding-top:20px;
     padding-bottom: 20px;
     background-color: azure;
-    max-width: 750px;
     display: flex;
     justify-content: space-evenly;
     
@@ -291,7 +290,7 @@ select {
 
 
 
-    .popupCode {
+.popupCode {
       background: white;
       padding: 20px;
       border-radius: 10px;
@@ -344,7 +343,7 @@ select {
     flex-wrap: nowrap;
     max-height: 15px;
     align-items: center;
-    width:calc(30%);
+    width:calc(20%);
 }
 .linkedimgarrow{
     max-height: 15px; /* Ajuste la largeur maximale pour tenir dans la grille */
