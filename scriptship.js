@@ -318,7 +318,6 @@ function updateTotalCost() { //update total cost
 }
 
 function updateUpgradeCount(yy) { //update the table logistic_Equipped and display the sum of all of them in sumLogisiticEquipped. That way, you can keep count of how many uprgade points you have left to equip your squad
-    
     logisticEquipped[yy] = 0;
     sumLogisticEquipped = 0;
     
@@ -337,10 +336,13 @@ function updateUpgradeCount(yy) { //update the table logistic_Equipped and displ
         sumLogisticEquipped = sumLogisticEquipped + logisticEquipped[j];
     }
     
+    
     for (j=0; j<shipquantity+1 ; j++){
         let upgradeButton = document.getElementById('upgradeButton'+j);
         upgradeButton.textContent = 'Améliorations '+'('+sumLogisticEquipped+'/'+leaders[leader_ID]["logistic"]+') '+logisticEquipped[j];
     }
+    
+
 }
 
 function testRestriction (yy,tableRestrictions){//va vérifier si les restrictions sont true, et renvoie la valeur restrict=true si c'est bon
@@ -1086,88 +1088,84 @@ function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'acti
         
         remove_ship(xB);
         
-        while (yB < sQ){
-            pilot_objects[yB]=pilot_objects[yB+1];
-            pilot_selected_list[yB]=pilot_selected_list[yB+1];
-            upgrades_Type[yB] = upgrades_Type[yB+1];
-            upgrades_Objects[yB]= upgrades_Objects[yB+1];
-            upgradesSelected[yB] = upgradesSelected[yB+1];
-            upgradesSelected_Objects[yB] = upgradesSelected_Objects[yB+1];
-            upgrades_Objects_Val[yB]= upgrades_Objects_Val[yB+1];
-            restricted_List[yB] = restricted_List[yB+1];
-            restricted_List[8][yB] = restricted_List[8][yB+1];
-            pilot_list[yB] = pilot_list[yB+1];
-            chassis_selected[yB] = chassis_selected[yB+1];
-            logisticEquipped[yB] = logisticEquipped[yB+1];
-            updateUpgradeCount(yB);
-            
-            div_pxB1 = document.getElementById("p"+(yB+1));
-            div_pxB1.setAttribute('class', 'new '+yB);
-            div_pxB1.setAttribute('id', 'p'+yB);
-            div_shipxB1 = document.getElementById("ship"+(yB+1));
-            div_shipxB1.setAttribute('id','ship'+yB);
-            div_shipslotsxB1 = document.getElementById('shipslots'+(yB+1));
-            div_shipslotsxB1.setAttribute('id', 'shipslots'+yB);
-            div_shipslotsxB1.setAttribute('class', 'slot '+yB);
-            div_upgradeButtonxB1 = document.getElementById('upgradeButton'+(yB+1));
-            div_upgradeButtonxB1.setAttribute('id', 'upgradeButton'+yB);
-            div_zonexB1 = document.getElementById('zone'+(yB+1));
-            div_zonexB1.setAttribute('id', 'zone'+yB);
-            div_chassis1xB1 = document.getElementById('chassis1'+(yB+1));
-            div_chassis1xB1.setAttribute('id', 'chassis1'+yB);
-            div_chassis2xB1 = document.getElementById('chassis2'+(yB+1));
-            div_chassis2xB1.setAttribute('id', 'chassis2'+yB);
-            div_titlexB1 = document.getElementById('title'+(yB+1));
-            div_titlexB1.setAttribute('id', 'title'+yB);
-            div_pointsxB1 = document.getElementById('points'+(yB+1));
-            div_pointsxB1.setAttribute('id', 'points'+yB);
-            div_removeButtonxB1 = document.getElementById('removeB'+(yB+1));
-            div_removeButtonxB1.setAttribute('id', 'removeB'+yB);
-            
-            menu_shipxB1 = document.getElementById('menu_ship_'+(yB+1));
-            menu_shipxB1.setAttribute('id','menu_ship_'+yB);
+        for (w=yB ; w<(sQ) ; w++) {
+            console.log('boucle for : '+w+'<'+(sQ));
+            pilot_objects[w]=pilot_objects[w+1];
+            pilot_selected_list[w]=pilot_selected_list[w+1];
+            upgrades_Type[w] = upgrades_Type[w+1];
+            upgrades_Objects[w]= upgrades_Objects[w+1];
+            console.log('upgrade_Objects'+(w+1)+' devient '+'upgrade_Objects'+w);
+            upgradesSelected[w] = upgradesSelected[w+1];
+            upgradesSelected_Objects[w] = upgradesSelected_Objects[w+1];
+            upgrades_Objects_Val[w]= upgrades_Objects_Val[w+1];
+            restricted_List[w] = restricted_List[w+1];
+            restricted_List[8][w] = restricted_List[8][w+1];
+            pilot_list[w] = pilot_list[w+1];
+            chassis_selected[w] = chassis_selected[w+1];
+            logisticEquipped[w] = logisticEquipped[w+1];
             
             
-            menu_pilotxB1 = document.getElementById('menu_pilot_'+(yB+1));
-            menu_pilotxB1.setAttribute('id','menu_pilot_'+yB);
+            div_pxB1 = document.getElementById("p"+(w+1));
+            div_pxB1.setAttribute('class', 'new '+w);
+            div_pxB1.setAttribute('id', 'p'+w);
+            div_shipxB1 = document.getElementById("ship"+(w+1));
+            div_shipxB1.setAttribute('id','ship'+w);
+            div_shipslotsxB1 = document.getElementById('shipslots'+(w+1));
+            div_shipslotsxB1.setAttribute('id', 'shipslots'+w);
+            div_shipslotsxB1.setAttribute('class', 'slot '+w);
             
-            initiativexB1 =document.getElementById('initiative'+(yB+1));
-            initiativexB1.setAttribute('id','initiative'+yB);
             
-            for(h=0 ; h<upgrades_Objects[yB].length ; h++){
-                slotxB1 = document.getElementById('slot'+(yB+1)+'_'+h);
-                // if the slots were hidden, it'll remain hidden. We have to search if the string 'hidden' is contained in the class
-                let slotclass = slotxB1.getAttribute('class');
-                let hiddenStatus= false;
-                if (slotclass.search("hidden")>-1){ //if hidden is in the class
-                    hiddenStatus = true;
-                }
-                //Now we change the ID and the class of the element (decrement)
-                slotxB1.setAttribute('id','slot'+yB+'_'+h);
-                if (hiddenStatus===false){
-                    slotxB1.setAttribute('class','slotElement'+yB);
-                }else{
-                    slotxB1.setAttribute('class','slotElement'+yB+' hidden');
-                }
-                yB++;
-            }
-            //We update logisticequipped, the logistic total and the total cost
-            for (h=0 ; h<shipquantity+1 ; h++){
-                updateUpgradeCount(h);
+            div_upgradeButtonxB1 = document.getElementById('upgradeButton'+(w+1));
+            div_upgradeButtonxB1.setAttribute('id', 'upgradeButton'+w);
+            div_zonexB1 = document.getElementById('zone'+(w+1));
+            div_zonexB1.setAttribute('id', 'zone'+w);
+            div_chassis1xB1 = document.getElementById('chassis1'+(w+1));
+            div_chassis1xB1.setAttribute('id', 'chassis1'+w);
+            div_chassis2xB1 = document.getElementById('chassis2'+(w+1));
+            div_chassis2xB1.setAttribute('id', 'chassis2'+w);
+            div_titlexB1 = document.getElementById('title'+(w+1));
+            div_titlexB1.setAttribute('id', 'title'+w);
+            div_pointsxB1 = document.getElementById('points'+(w+1));
+            div_pointsxB1.setAttribute('id', 'points'+w);
+            div_removeButtonxB1 = document.getElementById('removeB'+(w+1));
+            div_removeButtonxB1.setAttribute('id', 'removeB'+w);
+            
+            menu_shipxB1 = document.getElementById('menu_ship_'+(w+1));
+            menu_shipxB1.setAttribute('id','menu_ship_'+w);
+            
+            
+            menu_pilotxB1 = document.getElementById('menu_pilot_'+(w+1));
+            menu_pilotxB1.setAttribute('id','menu_pilot_'+w);
+            
+            initiativexB1 =document.getElementById('initiative'+(w+1));
+            initiativexB1.setAttribute('id','initiative'+w);
+            
+            //We modify all the id and classes of the upgrade slots
+            for(h=0 ; h<upgrades_Objects[w].length ; h++){
+                slotxB1 = document.getElementById('slot'+(w+1)+'_'+h);
+                slotxB1.setAttribute('id','slot'+w+' '+h);
+                //For the classes, it's a bit more difficult. it looks like 'slotElement1 Turret (hidden)'. We have to extract the beginning without changing the end.
+                classElement = slotxB1.getAttribute('class');
+                classElementType = classElement.slice(13);
+                slotxB1.setAttribute('class','slotElement'+w+' '+classElementType);
                 
-            }
-            updateTotalCost();
-            
+                }
+                }
+        //We update logisticequipped, the logistic total and the total cost
+        for (h=0 ; h<shipquantity+1 ; h++){
+            updateUpgradeCount(h);
             
         }
-        
-    }
+        updateTotalCost();
+            }
+            
+    
     )
 }
 
 function remove_ship(n) { //fonction qui permet de retirer le dernier vaisseau. S'active via le bouton Removeship
     
-    
+    console.log('début de remove ship');
     removeElementsByClass("new "+n); //retire la balise <p> qui contient tous les éléments
     
     pilot_objects[n]=[];
@@ -1185,8 +1183,8 @@ function remove_ship(n) { //fonction qui permet de retirer le dernier vaisseau. 
         shipquantity--;
     }
 
-    
-}       
+    console.log('fin de remove ship');
+}
 
 function displayDescriptionPilot(i) { //permet d'afficher la capacité du pilote en bas de page
     description_upg_pil_Field=document.getElementById("descript_upg");
