@@ -60,6 +60,23 @@
         <button class="btn" id="closeBtn">Fermer</button>
       </div>
     </div>
+    
+    <div class='hidden' id="popupOverlayPrint">
+    <div class="popupCode">
+        <form id="printform">Select the elements you want to print :
+            <div>
+            <input type="checkbox" id="squadInput" name="printSquad" checked />
+            <label for="squadInput">Escadron</label>
+            </div>
+            <div>
+            <input type="checkbox" id="upgradeInput" name="printUpgrade" checked />
+            <label for="upgradeInput">Détails des Améliorations</label>
+            </div>
+        </form>
+        <button class="btn" id="printBtn">Print</button>
+        <button class="btn" id="cancelBtn">Cancel</button>
+    </div>
+    </div>
 
     <script src="scriptleader.js"> 
     </script>
