@@ -1403,6 +1403,7 @@ hash = hash.slice(0,-1); //on retire la virgule finale
 // we code the code function to display a popupwindow to get the squad code.
 const linkToDisplayCode = document.getElementById('code');
 const popupOverlay = document.getElementById('popupOverlay');
+const linkToPrintSquad = document.getElementById('printsquad');
   const showPopupLink = document.getElementById('showPopupLink');
 const closeBtn = document.getElementById('closeBtn');
   const copyBtn = document.getElementById('copyBtn');
@@ -1442,82 +1443,12 @@ linkToDisplayCode.addEventListener('click', (e) => {
   }
 )
 
-//We code the print link that opens a pop up window to select elements to print. Those elements will be sent to a printable pdf.
-const popupOverlayPrint = document.getElementById('popupOverlayPrint');
-const printBtn = document.getElementById('printBtn');
-const cancelBtn = document.getElementById('cancelBtn');
 
-
-function addBaseAndDialsToPrint() {
-    
-    console.log('function addBaseAndDialsToPrint');
-    for (i=0 ; i<shipquantity+1 ; i++) {
-        let divInput = document.createElement('div');
-        let baseInput = document.createElement('input');
-        baseInput.setAttribute('id','baseInput'+i);
-        baseInput.setAttribute('type','checkbox');
-        baseInput.setAttribute('name','PrintBase');
-        baseInput.setAttribute('value',pilot_list[i]['id']); //we get the data baseInput:48
-        let baseInputLabel = document.createElement('label');
-        baseInputLabel.setAttribute('for','baseInput'+i);
-        baseInputLabel.innerHTML="BASE de "+pilot_list[i]['name'];
-        divInput.appendChild(baseInput);
-        divInput.appendChild(baseInputLabel);
-        printform.appendChild(divInput);
-    }
-
-
-    for (i=0 ; i<shipquantity+1 ; i++) {
-        let divInput = document.createElement('div');
-        let dialInput = document.createElement('input');
-        dialInput.setAttribute('id','dialInput'+i);
-        dialInput.setAttribute('type','checkbox');
-        dialInput.setAttribute('name','PrintDial');
-        dialInput.setAttribute('value',pilot_list[i]['id']);
-        let dialInputLabel = document.createElement('label');
-        dialInputLabel.setAttribute('for','dialInput'+i);
-        dialInputLabel.innerHTML="DIAL de "+pilot_list[i]['ship'];
-        divInput.appendChild(dialInput);
-        divInput.appendChild(dialInputLabel);
-        printform.appendChild(divInput);
-
-    }
-}
-
-//Voici le lien de printsquad avec le hash à sa suite (qui permettra de savoir quoi imprimer)
-const linkToPrintSquad = document.getElementById('printsquad');
 
 linkToPrintSquad.addEventListener('click', function(e){
-console.log('clic sur Print');
-    e.preventDefault();
-addBaseAndDialsToPrint();
-popupOverlayPrint.setAttribute('class','overlay');
-popupOverlayPrint.style.display = 'flex';
-});
-
-cancelBtn.addEventListener('click', () => {
-popupOverlayPrint.style.display = 'none';
-});
-
-printBtn.addEventListener('click', (e) => {
-e.preventDefault();
-    hasher();
-    window.location.href =  `print_squad.html?#${hash}`
-
-
-});
-
-// Permet de fermer la popup en cliquant hors de la fenêtre
-popupOverlayPrint.addEventListener('click', (e) => {
-if (e.target === popupOverlayPrint) {
-  popupOverlayPrint.style.display = 'none';
-}
-}
-)
-/*linkToPrintSquad.addEventListener('click', function(e){
     e.preventDefault();
     hasher();
 window.location.href =  `print_squad.html?#${hash}`
-})*/
+})
 
 

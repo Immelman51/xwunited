@@ -2,6 +2,9 @@ let pilotdata = [[],[],[],[],[],[],[],[]];
 let indexes = [];
 let hash2 = '';
 let hash = "";
+let elementsToPrintArray = [false,false,[],[]];
+
+
 
 
 let requestURLships = "https://raw.githubusercontent.com/Immelman51/xwunited/main/ships.json";
@@ -424,6 +427,7 @@ async function executeFunctions(){ //on crée une fonction asynchrone pour que t
          
         
         }
+    addBaseAndDialsToPrint();
     
     }
 
@@ -457,27 +461,124 @@ for (i=1 ; i<indexes.length ; i++){
 }
 
 
-//we define now the button to print upgrades
-const linkToPrintUpgrades = document.getElementById('print_upgrades');
-linkToPrintUpgrades.addEventListener('click', function(e){
+
+
+/////////////////////////////////////////////////////////
+//We create the PopMenu to select the elements to print
+//////////////////////////////////////////////////////////
+
+
+//We code the print link that opens a pop up window to select elements to print. Those elements will be sent to a printable pdf.
+const popupOverlayPrint = document.getElementById('popupOverlayPrint');
+const printBtn = document.getElementById('printBtn');
+const cancelBtn = document.getElementById('cancelBtn');
+const printform = document.getElementById('printform');
+
+
+function addBaseAndDialsToPrint() {
+    
+    console.log('function addBaseAndDialsToPrint');
+    for (i=1 ; i<indexes.length ; i++) {
+        let divInput = document.createElement('div');
+        let baseInput = document.createElement('input');
+        baseInput.setAttribute('id','baseInput'+i);
+        baseInput.setAttribute('type','checkbox');
+        baseInput.setAttribute('name','PrintBase'+i);
+        baseInput.setAttribute('value',pilotdata[i][0]); //we get the data baseInput:48
+        let baseInputLabel = document.createElement('label');
+        baseInputLabel.setAttribute('for','baseInput'+i);
+        baseInputLabel.innerHTML="BASE de "+pilots[pilotdata[i][0]]['name'];
+        divInput.appendChild(baseInput);
+        divInput.appendChild(baseInputLabel);
+        printform.appendChild(divInput);
+    }
+
+
+    for (i=1 ; i<indexes.length ; i++) {
+        let divInput = document.createElement('div');
+        let dialInput = document.createElement('input');
+        dialInput.setAttribute('id','dialInput'+i);
+        dialInput.setAttribute('type','checkbox');
+        dialInput.setAttribute('name','PrintDial');
+        dialInput.setAttribute('value',pilotdata[i][0]);
+        let dialInputLabel = document.createElement('label');
+        dialInputLabel.setAttribute('for','dialInput'+i);
+        dialInputLabel.innerHTML="DIAL de "+pilots[pilotdata[i][0]]['ship'];
+        divInput.appendChild(dialInput);
+        divInput.appendChild(dialInputLabel);
+        printform.appendChild(divInput);
+
+    }
+}
+
+const squadInput = document.getElementById('squadInput');
+const upgradeInput = document.getElementById('upgradeInput');
+
+printButton.addEventListener('click', function(e){
+console.log('clic sur Print');
     e.preventDefault();
-    hasher();
-    window.location.href =  `print_upgrades.html?#${hash2}`
-})
+popupOverlayPrint.setAttribute('class','overlay');
+popupOverlayPrint.style.display = 'flex';
+});
 
-const linkToPrintDials = document.getElementById('print_dials');
-linkToPrintDials.addEventListener('click', function(e){
-    e.preventDefault();
-   window.location.href =  `print_dials.html?#${hash}`
+cancelBtn.addEventListener('click', () => {
+popupOverlayPrint.style.display = 'none';
+});
 
-})
 
-const linkToPrintBases = document.getElementById('print_bases');
-linkToPrintBases.addEventListener('click', function(e){
-    e.preventDefault();
-    window.location.href =  `print_bases.html?#${hash}`
-})
 
+printBtn.addEventListener('click', () => {
+    if(squadInput.checked === true){
+        elementsToPrintArray[0]=true;
+    }
+    
+    if(upgradeInput.checked === true){
+        elementsToPrintArray[1]=true;
+    }
+    
+    for (i=0 ; i<indexes.length ; i++){
+        const dial = document.getElementById('dialInput'+i);
+        if (dial.checked === true) {
+            elementsToPrintArray[3].push(dial.value); //the value of the checkbox is equal to the ID of the pilot
+        }
+        const base = document.getElementById('baseInput'+i);
+        if (base.checked === true) {
+            elementsToPrintArray[2].push(base.value) //the value of the checkbox is equal to the ID of the pilot
+        }
+    }
+    
+    // Now we have to add the HTML code and CSS code that displays the dials and bases. Let's a create the addHTMLandCSSforDialsAndBases function
+    addHTMLandCSSforDialsAndBases();
+    
+    const element = document.getElementById("content");
+          const opt = {
+            margin:       0.5,
+            filename:     'mon_escadron.pdf',
+            image:        { type: 'png', quality: 1 },
+            html2canvas:  { scale: 2 },
+            jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' }
+          };
+          html2pdf().set(opt).from(element).save();
+});
+    
+function addHTMLandCSSforDialsAndBases() {
+    /*
+     We analyse elementsToPrintArray.
+     [Ø] : print squad : true or false. if true there's nothing to do, if false, then we have to remove the innerHTML of the current 'content' div.
+     [1] : print upgrades : true or false. if false, there's nothing to do. if true, then we have to add the print upgrade html
+     [2] : print bases : [x,y...] : contains the ids of the pilots whom we want to print their bases
+     [3] : print dials : [w,z...] : containes the ids of the pilots whom we want to print their dials
+     */
+}
+
+
+// Permet de fermer la popup en cliquant hors de la fenêtre
+popupOverlayPrint.addEventListener('click', (e) => {
+if (e.target === popupOverlayPrint) {
+  popupOverlayPrint.style.display = 'none';
+}
+}
+)
 
 
 
