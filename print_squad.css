@@ -363,6 +363,19 @@ justify-content: center;
   z-index: 1000;
 }
 
+.page-break {
+  page-break-before: always; /* ou page-break-after */
+  break-before: page;
+}
 
+.content {
+    max-width: 800px; /* environ la largeur utile d'une page A4 */
+      margin: auto;
+}
 
+.bloc,
+img {
+  page-break-inside: avoid;  /* ancienne syntaxe */
+  break-inside: avoid;       /* standard */
+}
 

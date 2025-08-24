@@ -501,7 +501,7 @@ function addBaseAndDialsToPrint() {
         dialInput.setAttribute('id','dialInput'+i);
         dialInput.setAttribute('type','checkbox');
         dialInput.setAttribute('name','PrintDial');
-        dialInput.setAttribute('value',pilotdata[i][0]);
+        dialInput.setAttribute('value',pilots[pilotdata[i][0]]['shipId']);
         let dialInputLabel = document.createElement('label');
         dialInputLabel.setAttribute('for','dialInput'+i);
         dialInputLabel.innerHTML="DIAL de "+pilots[pilotdata[i][0]]['ship'];
@@ -562,6 +562,15 @@ printBtn.addEventListener('click', () => {
             jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' }
           };
           html2pdf().set(opt).from(element).save();
+    /*html2pdf().set(opt).from(element).toPdf().get('pdf').then(pdf => {
+          try {
+            pdf.save(opt.filename);
+          } catch (e) {
+            const blob = pdf.output('blob');
+            const url = URL.createObjectURL(blob);
+            window.open(url); // ouvre le PDF si le téléchargement est bloqué
+          }
+        }).catch(console.error);*/
 });
     
 function addHTMLandCSSforDialsAndBases() {
@@ -596,9 +605,10 @@ function addHTMLandCSSforDialsAndBases() {
                             newupgrade.innerHTML +=  'Portée : ' + upg['range'][0]+'/'+upg['range'][1] + ' - ';
                             newupgrade.innerHTML += '<img src="img/attack'+ upg['attack'][0] +'.jpg" class="logo"/> ' + upg['attack'][1] + '<br>';
                         default :*/
-                            newupgrade.innerHTML += upg['effect'];
+                        newupgrade.innerHTML += upg['effect'];
+                        newpilot.appendChild(newupgrade);
                     }
-                    newpilot.appendChild(newupgrade);
+                    
                 }
                 element.appendChild(newpilot);
             }
@@ -610,8 +620,9 @@ function addHTMLandCSSforDialsAndBases() {
             newbase = document.createElement('img');
             newbase.setAttribute('src','img/pilots/base/'+elementsToPrintArray[2][j]+'.png');
             baseToPrint.appendChild(newbase);
+            element.appendChild(baseToPrint);
         }
-        element.appendChild(baseToPrint);
+        
     }
     
     if (elementsToPrintArray[3].length > 0){
@@ -620,8 +631,9 @@ function addHTMLandCSSforDialsAndBases() {
             newdial = document.createElement('img');
             newdial.setAttribute('src','img/dial/'+elementsToPrintArray[3][j]+'.png');
             dialToPrint.appendChild(newdial);
+            element.appendChild(dialToPrint);
         }
-        element.appendChild(dialToPrint);
+        
     }
     
 }
