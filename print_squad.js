@@ -2,7 +2,7 @@ let pilotdata = [[],[],[],[],[],[],[],[]];
 let indexes = [];
 let hash2 = '';
 let hash = "";
-let elementsToPrintArray = [false,false,[],[]];
+let elementsToPrintArray = [false,false,[[],[],[],[],[],[],[],[]],[]];
 let element = document.getElementById("content");
 
 
@@ -538,14 +538,19 @@ printBtn.addEventListener('click', () => {
     }else{elementsToPrintArray[1]=false;}
     
     for (i=1 ; i<indexes.length ; i++){
-        const dial = document.getElementById('dialInput'+i);
-        if (dial.checked) {
-            elementsToPrintArray[3].push(dial.value); //the value of the checkbox is equal to the ID of the pilot
-        }
         const base = document.getElementById('baseInput'+i);
         if (base.checked) {
-            elementsToPrintArray[2].push(base.value) //the value of the checkbox is equal to the ID of the pilot
+            elementsToPrintArray[2][i-1].push(base.value) //the value of the checkbox is equal to the ID of the pilot. Objective, elementsToPrintArray[3] will be : [[shipId1,"large"],[shipId2,"small"],[shipId3,"medium"],[],[],[],[],[]]
+            elementsToPrintArray[2][i-1].push(ships[pilots[pilotdata[i][0]]['shipId']]['base'])
         }
+        
+        
+        const dial = document.getElementById('dialInput'+i);
+        if (dial.checked) {
+            elementsToPrintArray[3].push(dial.value); //the value of the checkbox is equal to the ID of the pilot.
+            
+        }
+        
     }
     
     // Now we have to add the HTML code and CSS code that displays the dials and bases. Let's a create the addHTMLandCSSforDialsAndBases function
@@ -553,11 +558,17 @@ printBtn.addEventListener('click', () => {
     
     addHTMLandCSSforDialsAndBases();
     
-    
+    let pilotsID='';
+    for(j=1 ; j<pilotdata.length ; j++){
+        if(pilotdata[j].length===0){
+            break;
+        }
+        pilotsID += pilotdata[j][0] + 'p';
+    }
           const opt = {
             margin:       0.5,
-            filename:     'mon_escadron.pdf',
-            image:        { type: 'png', quality: 1 },
+              filename:     leaders[indexes[0]]['leadername']+pilotsID+'.pdf',
+              image:        { type: 'jpeg', quality: 0.98 },
             html2canvas:  { scale: 2 },
             jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' }
           };
@@ -585,6 +596,8 @@ function addHTMLandCSSforDialsAndBases() {
         element.innerHTML = "";
     }
     
+    const upgradeContainer = document.getElementById('upgrade-container');
+    upgradeContainer.innerHTML = ""; //we re-initialize this div in case you click several time on print. (without this it's going to write again the upgrades descriptions.
     if (elementsToPrintArray[1]===true){
         for (j=1 ; j<indexes.length ; j++){
             if(indexes[j].length > 1){
@@ -610,28 +623,34 @@ function addHTMLandCSSforDialsAndBases() {
                     }
                     
                 }
-                element.appendChild(newpilot);
+                upgradeContainer.appendChild(newpilot);
             }
         }
     
+    const baseContainer = document.getElementById('base-container');
+    baseContainer.innerHTML = ""; //we re-initialize this div in case you click several time on print. (without this it's going to write again the bases png.
     if (elementsToPrintArray[2].length > 0){
         baseToPrint = document.createElement('div');
         for (j=0 ; j<elementsToPrintArray[2].length ; j++){
             newbase = document.createElement('img');
-            newbase.setAttribute('src','img/pilots/base/'+elementsToPrintArray[2][j]+'.png');
+            newbase.setAttribute('src','img/pilots/base/'+elementsToPrintArray[2][j][0]+'.png');
+            newbase.setAttribute('class','base '+elementsToPrintArray[2][j][1]);
             baseToPrint.appendChild(newbase);
-            element.appendChild(baseToPrint);
+            baseContainer.appendChild(baseToPrint);
         }
         
     }
     
+    const dialContainer = document.getElementById('dial-container');
+    dialContainer.innerHTML = ""; //we re-initialize this div in case you click several time on print. (without this it's going to write again the bases png.
     if (elementsToPrintArray[3].length > 0){
         dialToPrint = document.createElement('div');
         for (j=0 ; j<elementsToPrintArray[3].length ; j++){
             newdial = document.createElement('img');
             newdial.setAttribute('src','img/dial/'+elementsToPrintArray[3][j]+'.png');
+            newdial.setAttribute('class','dial');
             dialToPrint.appendChild(newdial);
-            element.appendChild(dialToPrint);
+            dialContainer.appendChild(dialToPrint);
         }
         
     }

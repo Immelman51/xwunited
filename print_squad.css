@@ -4,7 +4,7 @@
     position: sticky;
     bottom: 0;
     left: 0;
-    width: 25cm;
+    width: 19cm;
     justify-content: center;
     align-items: center;
     border: dotted;
@@ -12,10 +12,10 @@
     z-index: 1000;
 }
 .container {
-    width: 25cm;
+    width: 19cm;
     height: 4cm;
     display: grid;
-    grid-template-columns: 1.5cm 1.5cm 1.5cm 20.5cm ;
+    grid-template-columns: 1.5cm 1.5cm 1.5cm 14.5cm ;
     grid-template-rows: 1.5cm auto 1.5cm;
     border: thick double;
     margin-bottom: 15px;
@@ -55,9 +55,9 @@
 
 .squad {
     position: relative;
-    width: 25cm;
+    width: 19cm;
     display: grid;
-    grid-template-columns: 1cm 1.5cm 5.8cm 4.2cm 4.2cm 5.3cm 2cm 1cm ;
+    grid-template-columns: 1cm 1.5cm 3.7cm 3.2cm 3.2cm 3.3cm 2cm 1cm ;
     grid-template-rows: 1.5cm 0.2cm 1.5cm 1.5cm 0.2cm 0.2cm 1.5cm auto auto auto auto auto auto auto;
     margin-bottom: 15px;
     overflow: hidden;
@@ -87,7 +87,10 @@
     position: relative;
   }
   
-
+.content{
+    margin-left: 1cm;
+    margin-right: 1cm;
+}
   
   
 
@@ -363,15 +366,15 @@ justify-content: center;
   z-index: 1000;
 }
 
+/*
+ options to calibrate the PDF
+ */
 .page-break {
   page-break-before: always; /* ou page-break-after */
   break-before: page;
 }
 
-.content {
-    max-width: 800px; /* environ la largeur utile d'une page A4 */
-      margin: auto;
-}
+
 
 .bloc,
 img {
@@ -379,3 +382,30 @@ img {
   break-inside: avoid;       /* standard */
 }
 
+.upgrade-container{
+    max-width: 19cm;
+}
+
+.base-container{
+    max-width: 19cm;
+}
+
+.dial-container{
+    max-width: 19cm;
+}
+
+.large {
+  width: 7.2cm;
+}
+
+.medium {
+  width: 5.4cm;
+}
+
+.small {
+  width: 3.4cm;
+}
+
+.dial{
+    height: 5.67cm;
+}
