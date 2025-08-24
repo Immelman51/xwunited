@@ -3,6 +3,7 @@ let indexes = [];
 let hash2 = '';
 let hash = "";
 let elementsToPrintArray = [false,false,[],[]];
+let element = document.getElementById("content");
 
 
 
@@ -448,7 +449,7 @@ async function executeFunctions(){ //on crée une fonction asynchrone pour que t
 })();
 
 // prepare the hash to add at the end of the web adress for Print_upgrades
-function hasher(){
+/*function hasher(){
 hash2 = "";
 for (i=1 ; i<indexes.length ; i++){
     for ( j=0 ; j<pilotdata[i].length ; j++){
@@ -459,7 +460,7 @@ for (i=1 ; i<indexes.length ; i++){
     }
     hash2 = hash2.slice(0,-1); //on retire le ',p' final
 }
-
+*/
 
 
 
@@ -528,29 +529,31 @@ popupOverlayPrint.style.display = 'none';
 
 
 printBtn.addEventListener('click', () => {
-    if(squadInput.checked === true){
+    if(squadInput.checked){
         elementsToPrintArray[0]=true;
-    }
+    }else{ elementsToPrintArray[0]=false;}
     
-    if(upgradeInput.checked === true){
+    if(upgradeInput.checked){
         elementsToPrintArray[1]=true;
-    }
+    }else{elementsToPrintArray[1]=false;}
     
-    for (i=0 ; i<indexes.length ; i++){
+    for (i=1 ; i<indexes.length ; i++){
         const dial = document.getElementById('dialInput'+i);
-        if (dial.checked === true) {
+        if (dial.checked) {
             elementsToPrintArray[3].push(dial.value); //the value of the checkbox is equal to the ID of the pilot
         }
         const base = document.getElementById('baseInput'+i);
-        if (base.checked === true) {
+        if (base.checked) {
             elementsToPrintArray[2].push(base.value) //the value of the checkbox is equal to the ID of the pilot
         }
     }
     
     // Now we have to add the HTML code and CSS code that displays the dials and bases. Let's a create the addHTMLandCSSforDialsAndBases function
+
+    
     addHTMLandCSSforDialsAndBases();
     
-    const element = document.getElementById("content");
+    
           const opt = {
             margin:       0.5,
             filename:     'mon_escadron.pdf',
@@ -569,6 +572,58 @@ function addHTMLandCSSforDialsAndBases() {
      [2] : print bases : [x,y...] : contains the ids of the pilots whom we want to print their bases
      [3] : print dials : [w,z...] : containes the ids of the pilots whom we want to print their dials
      */
+    if (elementsToPrintArray[0]===false){
+        element.innerHTML = "";
+    }
+    
+    if (elementsToPrintArray[1]===true){
+        for (j=1 ; j<indexes.length ; j++){
+            if(indexes[j].length > 1){
+                newpilot = document.createElement('div');
+                newpilot.setAttribute('class','pilot');
+                newpilot.innerHTML = "<font size='20'>"+pilots[pilotdata[j][0]]['name']+"</font><br>";
+                for ( k=1 ; k<pilotdata[j].length ; k++){ //we begin at 1 because the entry 0 is the pilotID
+                    upg = upgrades[pilotdata[j][k]]
+                    newupgrade = document.createElement('div');
+                    newupgrade.setAttribute('class', 'upgradeText');
+                    newupgrade.innerHTML = '<b>' + upg['name'] +'</b>' + ' (' + upg['slot'] + ') - ';
+                    /*switch (upg['slot']) {
+                        case 'Canon' :
+                        case 'Turret' :
+                        case 'Torpedo' :
+                        case 'Missile' :
+                        case 'Weapon Hardpoint' :
+                            newupgrade.innerHTML +=  'Portée : ' + upg['range'][0]+'/'+upg['range'][1] + ' - ';
+                            newupgrade.innerHTML += '<img src="img/attack'+ upg['attack'][0] +'.jpg" class="logo"/> ' + upg['attack'][1] + '<br>';
+                        default :*/
+                            newupgrade.innerHTML += upg['effect'];
+                    }
+                    newpilot.appendChild(newupgrade);
+                }
+                element.appendChild(newpilot);
+            }
+        }
+    
+    if (elementsToPrintArray[2].length > 0){
+        baseToPrint = document.createElement('div');
+        for (j=0 ; j<elementsToPrintArray[2].length ; j++){
+            newbase = document.createElement('img');
+            newbase.setAttribute('src','img/pilots/base/'+elementsToPrintArray[2][j]+'.png');
+            baseToPrint.appendChild(newbase);
+        }
+        element.appendChild(baseToPrint);
+    }
+    
+    if (elementsToPrintArray[3].length > 0){
+        dialToPrint = document.createElement('div');
+        for (j=0 ; j<elementsToPrintArray[3].length ; j++){
+            newdial = document.createElement('img');
+            newdial.setAttribute('src','img/dial/'+elementsToPrintArray[3][j]+'.png');
+            dialToPrint.appendChild(newdial);
+        }
+        element.appendChild(dialToPrint);
+    }
+    
 }
 
 
