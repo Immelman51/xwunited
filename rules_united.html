@@ -111,7 +111,7 @@ Concernant les améliorations 'Force', elles suivent une logique similaire. Il n
 
 <p>
     <div id='tacticpoint' class="title">Points Tactique</div>
-    <div class="txt">Placez un dé 6 à côté de l'aire de jeu, et placez le sur sa face 3. Les points tactique permettent de déterminer quel joueur a 'l'ascendant tactique' sur l'autre joueur. Le joueur qui a l'ascendant tactique peut déterminer à la fin de chaque tour qui sera le premier joueur au tour suivant. En cas d'égalité en fin de partie, le joueur qui a l'ascendant tactique remporte la partie.<br>Lorsque le joueur 1 gagne un point tactique, il baisse la valeur du dé 6 de 1. Si le dé est déjà sur sa face 1, il ne se passe rien. Lorsque le joueur 2 gagne 1 point tactique, il augmente la valeur du dé 6 de 1 ; si le dé est déjà sur sa valeur 6, il ne se passe rien. Ainsi, tant que le dé 6 indique les valeurs 1, 2, ou 3, le joueur 1 a l'ascendant tactique. Tant que le dé 6 indique les valeurs 4, 5 ou 6, le joueur 2 a l'ascendant tactique.</div>
+    <div class="txt">Placez un dé 6 à côté de l'aire de jeu, et placez le sur sa face 3. Les points tactique permettent de déterminer quel joueur a 'l'ascendant tactique' sur l'autre joueur. Le joueur qui a l'ascendant tactique (aussi appelé joueur 'Tacticien') peut déterminer au début de chaque tour qui sera le premier joueur sur le tour en cours. En cas d'égalité en fin de partie, le joueur qui a l'ascendant tactique remporte la partie.<br>Lorsque le joueur 1 gagne un point tactique, il baisse la valeur du dé 6 de 1. Si le dé est déjà sur sa face 1, il ne se passe rien. Lorsque le joueur 2 gagne 1 point tactique, il augmente la valeur du dé 6 de 1 ; si le dé est déjà sur sa valeur 6, il ne se passe rien. Ainsi, tant que le dé 6 indique les valeurs 1, 2, ou 3, le joueur 1 a l'ascendant tactique. Tant que le dé 6 indique les valeurs 4, 5 ou 6, le joueur 2 a l'ascendant tactique.</div>
 </p>
 <p>
     <div id='firstplayer' class="title">Gestion du premier joueur</div>
@@ -159,26 +159,27 @@ Concernant les améliorations 'Force', elles suivent une logique similaire. Il n
 </p>
 <p>
 <div id='obstacles' class="title">Obstacles</div>
-<div class="txt"></div>
+<div class="txt">Lorsque le gabarit ou le socle d'un vaisseau touche un obstacle, le vaisseau va subir des effets négatifs décrits ci-dessous.<br>
+    Si un vaisseau se trouve sur un obstacle au début de sa phase d'activation, et qu'une manoeuvre l'ammène à traverser ce même obstacle, alors il l'ignore (il n'est pas ignoré si manoeuvre l'ammène à re-chevaucher cet obstacle).<br>
+    Lorsqu'un obstacle obstrue une attaque, le défenseur lance 1 dé de défense supplémentaire pour chaque obstacle qui obstrue l'attaque.</div>
+<div class="subtitle">Astéroïdes</div>
+<div class="txt">Phase d'Activation : Lorsqu'un vaisseau traverse ou chevauche un astéroïde, il lance 2 dés rouges et subit les résultats de ces dés. S'il chevauche un astéroïde il ignore également sa phase exécuter une action. <br>
+    Phase d'Engagement : Si un vaisseau chevauche un astéroïde lorsqu'il s'engage, alors il reçoit un jeton désarmement.</div>
+<div class="subtitle">Débris</div>
+<div class="txt">Phase d'Activation : Lorsqu'un vaisseau traverse ou chevauche un débris, il reçoit un jeton stress, puis il lance un dé rouge et subit le résultat du dé : sur un résultat #eye#, il reçoit un jeton épuisement.<br>
+    Phase d'Engagement : Si un vaisseau chevauche un débris (est à portée 0 d'un débris) lorsqu'il s'engage, alors il reçoit un jeton désarmement.</div>
+<div class="subtitle">Nuage de Gaz</div>
+<div class="txt">Phase d'Activation : Lorsqu'un vaisseau traverse ou chevauche un nuage de gaz, il retire tous ses jetons bleus et casse tous les verrouillages qui le ciblent, puis il lance un dé rouge et un dé vert:<br>
+    - sur un résultat #hit#, il reçoit un jeton ion<br>
+    - sur un résultat #crit#, il reçoit un jeton ion, un jeton épuisement, un jeton contrainte, et un jeton brouillage.<br>
+    - sur un résultat #eye# rouge ou vert, il reçoit un jeton contrainte<br>
+    - sur un résultat #blank# rouge,il reçoit un jeton brouillage<br>
+    - sur un résultat #evd#, rien de spécial<br>
+    - sur un résultat #blank# vert, les jetons reçus sont multipliés par 3<br>
+    Tant qu'un vaisseau chevauche un nuage de gaz, il ne peut gagner aucun jeton bleu, et aucun vaisseau ne peut l'acquisitionner.<br>
+    Phase d'Engagement : Tant qu'un vaisseau chevauche un nuage de gaz, il ne peut gagner aucun jeton bleu, et aucun vaisseau ne peut l'acquisitionner.</div>
 </p>
 
-<div id='engagementPhase' class="engagementphase">
-<div><a href="#engagement_order">Engagement Order</a></div>
-<div><a href="#declareAttack">Declare an Attack</a></div>
-<div><a href="#upgradeDie">Améliorer un dé</a></div>
-<div><a href="#downgradeDie">Dégrader un dé</a></div>
-<div><a href="#rollingattackdice">Roll Attack Dice</a></div>
-<div><a href="#rollingdefensedice">Roll Defense Dice</a></div>
-<div><a href="#cancelresults">Cancel Results</a></div>
-<div><a href="#bonusattack">Bonus Attack</a></div>
-<div><a href="#destroyedships">Destroyed Ships</a></div>
-
-</div>
-<div id='endPhase' class="endphase">
-<div><a href="#end_effects">End Effects</a></div>
-<div><a href="#scenariopoints">Scenario Points</a></div>
-<div><a href="#clearing_tokens">Clearing Tokens</a></div>
-</div>
 
 <p>
     <div id='engagement_order' class="title">Ordre d'engagement</div>
@@ -187,7 +188,7 @@ Concernant les améliorations 'Force', elles suivent une logique similaire. Il n
 <p>
 <div id='declareAttack' class="title">Attaque</div>
 <div class="subtitle">Attaque Principale et Attaque Spéciale</div>
-<div class="txt">La valeur d'attaque imprimée sur la carte du pilote correspond à l'attaque principale de ce vaisseau. Lorsqu'un vaisseau effectue une attaque principale à portée 1, il dispose d'un bonus de portée et peut lancer 1 dé d'attaque supplémentaire. Lorsqu'un vaisseau effectue une attaque à portée 3, la cible dispose d'un bonus de portée et peut lancer 1 dé de défense supplémentaire.<br>Lorsqu'un vaisseau effectue une attaque spéciale (Amélioration Tourelle, Amélioration Cannon, Torpille, Missile), aucun bonus de portée n'est appliqué.</div>
+<div class="txt">La valeur d'attaque imprimée sur la carte du pilote correspond à l'attaque principale de ce vaisseau. Lorsqu'un vaisseau effectue une attaque PRINCIPALE à portée 1, il dispose d'un bonus de portée et peut lancer 1 dé d'attaque supplémentaire. Lorsqu'un vaisseau effectue une attaque PRINCIPALE à portée 3, la cible dispose d'un bonus de portée et peut lancer 1 dé de défense supplémentaire.<br>Lorsqu'un vaisseau effectue une attaque SPECIALE (Amélioration Tourelle, Amélioration Cannon, Torpille, Missile), aucun bonus de portée n'est appliqué.</div>
 </p>
 <p>
 <div id='upgradeDie' class="subtitle">Améliorer un dé</div>
@@ -247,24 +248,43 @@ Annuler/retirer/ajouter des dés n'est pas considéré comme une modification de
 <p>
     <div class="title">Jetons</div>
     <div class="subtitle">Jetons rouges</div>
-    <div class="txt">Jetons Stress #stress# : <br>Jetons Contrainte #strain# :<br>Jetons Epuisement #deplete# :<br></div>
+    <div class="txt">Jetons Stress #stress# : <br>Jetons Contrainte #strain# :<br>Jetons Epuisement #deplete# :<br>Jetons Ionisation #ion# :</div>
     <div class="subtitle">Jetons oranges</div>
     <div class="txt">Jetons Brouillage #jam# :<br>Jetons Tractage #tractored# :<br>Jetons Désarmement #disarmed# :<br></div>
     <div class="subtitle">Jetons bleus</div>
-    <div class="txt">Jetons Occultation #cloak# :<br>Jetons Acquisition #targetlock# :<br>Jetons Renforcement #reinforce# :<br></div>
+    <div class="txt">Jetons Occultation #cloak# :<br>Jetons Renforcement #reinforce# :<br>Jetons Acquisition #targetlock# : Les jetons acquisition rouges ne sont pas considérés comme étant des jetons rouges ou bleus, et ne servent qu'à indiquer la cible d'une acquisition.</div>
     <div class="subtitle">Jetons verts</div>
     <div class="txt">Jetons Concentration #focus# :<br>Jetons Evasion #evade# :<br>Jetons Calcul #calculate# :<br></div>
 </p>
 <p>
-    <div class="title">Renforcement</div>
-    <div class="txt">Les pilotes peuvent renforcer pour incliner leurs boucliers déflecteurs et augmenter leur défense sur une partie de leur vaisseau. Lorsqu’un vaisseau effectue l’action #RF#, il gagne un marqueur de renforcement avec soit le côté proue, soit le côté poupe visible.Un vaisseau est renforcé tant qu’il a un marqueur de renforcement sur lui. Les marqueurs de renforcement sont des marqueurs circulaires bleus. Lorsqu’un vaisseau renforcé défend, si l’attaquant est situé dans l’arc entier spécifié par le marqueur de renforcement et pas dans l’autre arc entier, le marqueur produit un effet. L’attaquant doit être dans l’arc #F180# du défenseur pour le marqueur de renforcement de proue et il doit être dans l’arc #B180# du défenseur pour le marqueur de renforcement de poupe<br>Durant l’étape « Neutraliser les résultats », si l’attaque est censée toucher et qu’il y a plus d’un résultat #hit#/#crit# restant, un résultat #evd# est ajouté pour annuler un résultat.<br>•Un vaisseau ne peut pas avoir plusieurs marqueurs de renforcement. Si un vaisseau venait à avoir un deuxième jeton renforcement, celui ci doit en choisir un des deux et défausser l'autre.<br>•Lorsqu’un vaisseau gagne un marqueur de renforcement, sauf précision contraire, le joueur qui contrôle le vaisseau choisit s’il gagne un marqueur de renforcement de proue ou de poupe.<br>•Un vaisseau ne dépense pas le marqueur de renforcement quand son effet est appliqué.<br>•Si une capacité indique à un vaisseau de gagner un marqueur de renforcement, ceci est différent d’effectuer une action #RF#. Un vaisseau qui gagne le marqueur sans effectuer l’action peut toujours effectuer l’action #RF# à ce round.<br>•En fin de tour, les marqueurs de renforcement (comme les autres jetons bleus) ne sont pas défaussés.<br>•En phase système, vous devez décider si vous arrêtez votre renforcement ou si vous le conservez. Si vous l'arrêtez, défausser votre jeton renforcement. Si vous le conservez, assignez au vaisseau renforcé un jeton d'épuisement.<br>•Tant que vous êtes renforcé, vous ne pouvez pas effectuer d'attaque bonus.</div>   
+    <div class="title">Jeton Stress</div>
+    <div class="txt"></div>
+    <div class="title">Jeton Contrainte</div>
+    <div class="txt">Un vaisseau est 'contraint' lorsqu'il possède au moins un jeton contrainte. Lorsqu'un vaisseau contraint défend, l'attaquant DOIT dépenser au moins un de ces jetons contraintes pour dégrader un dé de défense par jeton dépensé (il est donc possible de dépenser plusieurs jetons contrainte en une seule fois, autant qu'il y a de dés de défense). S'il n'y a pas de dé de défense, alors un jeton contrainte doit être dépensé pour rien.</div>
+    <div class="title">Jeton Epuisement</div>
+    <div class="txt">Un vaisseau est 'épuisé' lorsqu'il possède au moins un jeton épuisement. Lorsqu'un vaisseau épuisé attaque, le défenseur DOIT dépenser au moins un de ces jetons épuisement pour dégrader un dé d'attaque par jeton dépensé (il est donc possible de dépenser plusieurs jetons épuisement en une seule fois, autant qu'il y a de dés d'attaque).</div>
+    <div class="title">Jeton Ionisation</div>
+    <div class="txt"></div>
+    <div class="title">Jeton/Action Brouillage</div>
+    <div class="txt">Lorsqu'un vaisseau est à portée 0-1 d'un autre vaisseau ou à portée 2 dans son #bulls#, il peut effectuer une action de brouillage #jam#. Le joueur qui effectue l'action choisit : <br>- Il peut retirer un jeton vert ou bleu de son choix appartenent au vaisseau ciblé.<br>- Il peut lui attribuer un jeton brouillage. Dans ce cas, le vaisseau ciblé ne peut pas être coordonné et son initiative est diminuée de 1. On dit alors que ce vaisseau est brouillé.</div>
+    <div class="title">Jeton Tractage</div>
+    <div class="txt"></div>
+    <div class="title">Jeton Désarmement</div>
+    <div class="txt"></div>
+    <div class="title">Jeton/Action Occultation</div>
+    <div class="txt"></div>
+    <div class="title">Jeton/Action Renforcement</div>
+    <div class="txt">Les pilotes peuvent renforcer pour incliner leurs boucliers déflecteurs et augmenter leur défense sur une partie de leur vaisseau. Lorsqu’un vaisseau effectue l’action #RF#, il gagne un marqueur de renforcement avec soit le côté proue, soit le côté poupe visible.Un vaisseau est renforcé tant qu’il a un marqueur de renforcement sur lui. Les marqueurs de renforcement sont des marqueurs circulaires bleus. Lorsqu’un vaisseau renforcé défend, si l’attaquant est situé dans l’arc entier spécifié par le marqueur de renforcement et pas dans l’autre arc entier, le marqueur produit un effet. L’attaquant doit être dans l’arc #F180# du défenseur pour le marqueur de renforcement de proue et il doit être dans l’arc #B180# du défenseur pour le marqueur de renforcement de poupe<br>Durant l’étape « Neutraliser les résultats », si l’attaque est censée toucher et qu’il y a plus d’un résultat #hit#/#crit# restant, un résultat #evd# est ajouté pour annuler un résultat.<br>•Un vaisseau ne peut pas avoir plusieurs marqueurs de renforcement. Si un vaisseau venait à avoir un deuxième jeton renforcement, celui ci doit en choisir un des deux et défausser l'autre.<br>•Lorsqu’un vaisseau gagne un marqueur de renforcement, sauf précision contraire, le joueur qui contrôle le vaisseau choisit s’il gagne un marqueur de renforcement de proue ou de poupe.<br>•Un vaisseau ne dépense pas le marqueur de renforcement quand son effet est appliqué.<br>•Si une capacité indique à un vaisseau de gagner un marqueur de renforcement, ceci est différent d’effectuer une action #RF#. Un vaisseau qui gagne le marqueur sans effectuer l’action peut toujours effectuer l’action #RF# à ce round.<br>•En fin de tour, les marqueurs de renforcement (comme les autres jetons bleus) ne sont pas défaussés.<br>•En phase système, vous devez décider si vous arrêtez votre renforcement ou si vous le conservez. Si vous l'arrêtez, défausser votre jeton renforcement. Si vous le conservez, assignez au vaisseau renforcé un jeton d'épuisement.<br>•Tant que vous êtes renforcé, vous ne pouvez pas effectuer d'attaque bonus.</div>
+    <div class="title">Jeton/Action Acquisition/Verrouillage</div>
+    <div class="txt"></div>
+    <div class="title">Jeton/Action Concentration</div>
+    <div class="txt"></div>
+    <div class="title">Jeton/Action Evasion</div>
+    <div class="txt"></div>
+    <div class="title">Jeton/Action Calcul</div>
+    <div class="txt"></div>
 </p>
-<p>
-    <div class="title">Brouillage</div>
-    <div class="txt">Lorsqu'un vaisseau est à portée 0-1 d'un autre vaisseau ou à portée 2 dans son #bulls#, il peut effectuer une action de brouillage #jam#. Le joueur qui effectue l'action choisit : <br>- Il peut retirer un jeton vert ou bleu de son choix appartenent au vaisseau ciblé.<br>- Il peut lui attribuer un jeton brouillage. Dans ce cas, le vaisseau ciblé ne peut pas être coordonné et sa compétence (skill) est diminuée de 1. On dit alors ce vaisseau est brouillé.</div>
-</p>
-<p>
-    </p>
+
 <p>
     <div class="title">Tournois</div>
     <div class="subtitle">Points de Tournoi</div>
@@ -273,40 +293,42 @@ Annuler/retirer/ajouter des dés n'est pas considéré comme une modification de
     Sous conditions particulières dépendant du scénario, il est possible de gagner des points de tournoi. Pour chaque scénario, le perdant a l'opportunité de gagner 1 point de tournoi si la condition "Bonus de Combativité" est remplie.<br>
     Le gagnant a l'opportunité de gagner 1 point de tournoi suplémentaire si la condition "bonus de domination" est remplie.</div>
 </p>
-<p>
-    <div id='obstacles' class="title">Obstacles</div>
-    <div class="txt">Lorsque le gabarit ou le socle d'un vaisseau touche un obstacle, le vaisseau va subir des effets négatifs décrits ci-dessous.<br>
-    Tant qu'un vaisseau se trouve sur un obstacle, il ne peut pas effecter d'attaque (sauf effet contraire d'une carte)<br>
-    Si un vaisseau s'arrête sur un obstacle, il passe l'étape "effectuer une action" lors de la phase d'activation. Si le vaisseau ne fait que traverser l'obstacle et que la position finale du vaisseau est en dehors de l'obstacle, il subit alors normalement les effets de l'obstacle, mais il ne passe pas l'étape "effectuer une action".<br>
-    Avant qu'un vaisseau ne bouge, s'il est à portée 0 d'un obstacle, il ne subit pas les effet de l'obstacle sur lequel il se trouve lors de son déplacement.<br>
-    If an obstacle is placed such that one or more ships overlap it, those ship resolve any effects of overlapping it.<br>
-    </div>
-    <div class="subtitle">Astéroïdes</div>
-    <div class="txt">Le vaisseau subit un dégat #hit#. Lancez 1 dé d'attaque: sur un résultat #hit# ou #crit#, le vaisseau subit un dégat #hit# additionnel.</div>
-    <div class="subtitle">Nuage de Débris</div>
-    <div class="txt">Le vaisseau reçoit un stress. Lancez 1 dé d'attaque. Sur un résultat #hit#, le vaisseau subit un #hit#. Sur un résultat #crit#, le vaisseau subit un #crit#.</div>
-    <div class="subtitle">Nuage de Gaz</div>
-    <div class="txt">Le vaisseau retire tous les marqueurs "acquisition de cible" qu'il possède (bleus ou rouges), et reçoit un jeton contrainte.<br>
-    Lancez 1 dé d'attaque. Sur un résultat #hit#, le vaisseau reçoit un jeton ionique. Sur un résultat #crit#, le vaisseau reçoit 3 jetons ioniques<br>
-    Tant qu'un vaisseau est à portée 0 d'un nuage de gaz, il ne peut pas être ciblé pour acquisition, et ne pas acquisitionner de vaisseau.</div>
-</p>
+
 <p>
     <div class="title">Phases et Déroulement d'un tour</div>
     <div class="subtitle">Phase de début</div>
-    <div class="txt">Etape de vérification des hautes initiatives (voir "Gestion du Premier Joueur")</div>
+    <div class="txt">Désignation du premier joueur par le joueur 'Tacticien'</div>
     <div class="subtitle">Phase de Planification</div>
+    <div class="txt">Planification secrète des manoeuvres des vaisseaux via la préparation des cadrans</div>
     <div class="subtitle">Phase Système</div>
     <div class="txt">Le premier joueur déclenche d'abord tous ses effets qui se déclenchent en phase système (ex: largage d'engin, désoccultation...), puis c'est ensuite au tour du deuxième joueur.</div>
     <div class="subtitle">Phase d'Activation</div>
-    <div class="txt">Les vaisseaux s'activent de la plus faible initiative à la plus haute initiative. En cas d'initiatives identiques, le premier joueur active d'abord ses vaisseaux, puis l'autre joueur les active.<br>
+    <div class="txt">Les vaisseaux s'activent de la plus faible initiative à la plus haute initiative. En cas d'initiatives identiques, le premier joueur active d'abord ses vaisseaux, puis l'autre joueur active les siens.<br>
     1. Etape "révéler la roue de maneuvre<br>
-    2. Etape "excecuter une manoeuvre<br>
+    2. Etape "exécuter une manoeuvre<br>
     3. Etape "effectuer une action"<br><br>
     Si un vaisseau stressé devrait effectuer une manoeuvre rouge, il effectue une manoeuvre blanche 2 #straight# à la place.<br>
     Si un vaisseau sans #force# active devrait effectuer une manoeuvre violette, il effectue sa manoeuvre et reçoit un stress.
     </div>
     <div class="subtitle">Phase d'Engagement</div>
+    <div class="txt">Les vaisseaux s'engagent de la plus haute initiative à la plus faible initiative. En cas d'initiatives identiques, le premier joueur engage d'abord ses vaisseaux, puis l'autre joueur engage les siens.<br>
+    1. Etape Déclarer un attaquant<br>
+    2. Etape Choisir une Arme<br>
+    3. Etape Déclarer une cible<br>
+    4. Etape Lancer les dés d'attaque<br>
+    5. Etape Modification des dés d'attaque par le défenseur<br>
+    6. Etape Modification des dés d'attaque par l'attaquant<br>
+    7. Etape Lancer les dés de défense<br>
+    8. Etape Modification des dés de défense par l'attaquant<br>
+    9. Etape Modification des dés de défense par le défenseur<br>
+    10.Etape Annuler les dés d'attaque<br>
+    11.Etape Attribution des dégats<br>
+    12.Etape Vérification de l'intégrité du vaisseau défenseur<br>
+    </div>
     <div class="subtitle">Phase de fin</div>
-</p>    
+    1. Etape Début de phase de fin
+    2. Etape Vérification des conditions de victoire
+    3. Etape Nettoyage des jetons
+</p>
 </body>
 </html>

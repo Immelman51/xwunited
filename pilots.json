@@ -4688,8 +4688,8 @@
             "skill": 3,
             "points": 6,
             
-            "ability": "Après avoir rechargé, chaque vaisseau ennemi dans votre #Farc# à portée 1-2 reçoit un jeton épuisement, et s'ils sont dans votre #bulls#, ils gagnent 1 jeton épuisement supplémentaire.",
-            "ability_ENG": "After you reload, each enemy ship in your #Farc# at range 1-2 gains 1 deplete token, and they are in your #bulls#, they gain 1 additional deplete token",
+            "ability": "Après avoir rechargé, chaque vaisseau ennemi dans votre #Farc# à portée 1 ou dans votre #bulls# reçoit un jeton épuisement.",
+            "ability_ENG": "After you reload, each enemy ship in your #Farc# at range 1-2 or your #bulls# gains 1 deplete token.",
             "slots": [
                 "Talent"            
             ]

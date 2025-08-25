@@ -201,10 +201,11 @@ function displayPilot(x){
     const pid = pilotdata[x][0] //We store the PilotID we got from indexes and stored into pilotdata thanks with pilotdata()
 
     //let's display the pilot jpg
-    newimage = document.createElement('img');
+    newimage = document.createElement('div');
     newimage.setAttribute('class','pilotImg');
-    newimage.setAttribute('src', 'img/pilots/'+pid+'.jpg');
-    imgPilot.insertBefore(newimage, imgPilot.firstChild);
+    newimage.setAttribute('style', "background-image: url('img/pilots/"+pid+".jpg');");
+    //imgPilot.insertBefore(newimage, imgPilot.firstChild);
+    imgPilot.appendChild(newimage);
 
 
     pilotSkill.textContent = pilots[pid]['skill'];

@@ -68,10 +68,12 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 19cm;
     height: 100%;
-    object-fit: cover; /* Remplit la zone sans déformation, rogne si nécessaire */
-    z-index: 0; 
+    /*object-fit: cover;*/ /* ne fonctionne pas lors du passage en pdf */
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
     pointer-events: none; /* pour ne pas gêner les clics */
     
 }
@@ -201,7 +203,7 @@
     flex-shrink: 4;
 }
 
-.chargeforceimg{
+.squad img.chargeforceimg{
     height: 1.5cm;
     width: 1.5cm;
     resize: both;
@@ -408,4 +410,10 @@ img {
 
 .dial{
     height: 5.67cm;
+}
+
+.upgrade-container img.chargeforceimg{
+    height: 15px;
+    width: 15px;
+    resize: both;
 }
