@@ -171,13 +171,16 @@ a {
     display: flex;
     flex-wrap: wrap;
     grid-area: 3 / 1 / 4 / 3;
-    height: 22px;
+    max-height: 80px;
+    min-height: 22px;
     justify-content: space-around;
     flex: 1 1 calc(25% - 2px);
     object-fit: contain;
 }
-.pilot.slots{
+.slotpilot{
    justify-content: right;
+   object-fit: contain;
+   height: 22px;
 }
 .container.actionBar{
     grid-area: 3 / 3 / 4 / 5;

@@ -445,7 +445,7 @@ document.body.appendChild(newship);
             
             }
             newpilotslots = document.createElement('div');
-            newpilotslots.setAttribute("class", "pilot slots");
+            newpilotslots.setAttribute("class", "slotpilot");
             for (let k=0; k<pilots[j]["slots"].length; k++){ //on va développer tous les slots du pilote
                 newpilotslotslogo = document.createElement('img');                            
                 newpilotslotslogo.setAttribute("src", 'img/'+pilots[j]["slots"][k]+'.png');
