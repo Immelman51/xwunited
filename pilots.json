@@ -52,7 +52,7 @@
             "titleID": 0,
             "shipId": 0,
             "skill": 6,
-            "points": 8,
+            "points": 9,
             
             "ability": "Tant que vous effectuez une attaque, le défenseur lance 1 dé de défense en moins.",
             "ability_ENG": "While you perform an attack, the defender rolls 1 less attack die.",
@@ -97,7 +97,7 @@
             "shipId": 0,
             "skill": 5,
             "charge": [1,"+"],
-            "points": 5,
+            "points": 8,
             
             "ability": "Après avoir effectué une attaque, vous pouvez dépenser 1 #ch# pour assigner au défenseur 1 marqueur de brouillage. Après avoir défendu, vous pouvez dépenser 1 #ch# pour assigner à l'attaquant 1 marqueur de brouillage.",
             "ability_ENG": "After performing an attack, you may spend 1 #ch# to assign 1 jam token to the defender. After defending, you may spend 1 #ch# to assign 1 jam token to the defender.",

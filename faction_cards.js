@@ -393,30 +393,43 @@ document.body.appendChild(newship);
             newpilotname.innerHTML = limitNumber+" "+pilots[j]["name"]+ " ("+pilots[j]["skill"]+")";   // on écrit le limitNumber = Max_per_Squad avant le nom du pilote  , puis le skill entre parenthèses   
             newpilot.appendChild(newpilotname);
 
-            let newpilotChargeForce = document.createElement('div');
-            newpilotChargeForce.setAttribute('class','pilot force');
+            
+         
             if (pilots[j]["force"]>0){
-                let newpilotforcelogo = document.createElement('div');
-                let newpilotforce = document.createElement('div');
-                newpilotforce.setAttribute("class", "pilot force");
-                newpilotforcelogo.setAttribute("src", 'img/forcestat.jpg');
-                newpilotforcelogo.setAttribute("class", 'chargeimg');
-                newpilotforce.innerHTML = pilots[j]["force"];
-                newpilotforce.appendChild(newpilotforcelogo);
-                newpilotChargeForce.appendChild(newpilotforce);
+                for(k=0 ; k<pilots[j]["force"] ; k++){
+                    let newpilotForce = document.createElement('img')
+                    newpilotForce.setAttribute("class", "chargeforceimg");
+                    newpilotForce.setAttribute("src", 'img/forcestat.png');
+                    newpilotname.appendChild(newpilotForce);
+                }
             }
-            if (pilots[j]["charge"]>0){
-                let newpilotchargelogo = document.createElement('div');
-                let newpilotcharge = document.createElement('div');
-                newpilotcharge.setAttribute("class", "pilot force");
-                newpilotchargelogo.setAttribute("class", 'pilot chargeimg');
-                newpilotchargelogo.setAttribute("src", 'img/chargestat.jpg');
-
-                newpilotcharge.innerHTML = pilots[j]["charge"];
-                newpilotcharge.appendChild(newpilotchargelogo);
-                newpilotChargeForce.appendChild(newpilotcharge);
+            
+            if (pilots[j]["charge"][0]>0){
+                for(k=0 ; k<pilots[j]["charge"][0] ; k++){
+                    let newpilotCharge = document.createElement('img');
+                    newpilotCharge.setAttribute("class", "chargeforceimg");
+                    newpilotCharge.setAttribute("src", 'img/chargestat.png');
+                    newpilotname.appendChild(newpilotCharge);
+                }
+                
+                let newpilotChargeLogo = document.createElement('img');
+                switch(pilots[j]["charge"][1]){
+                        case "0":
+                        break;
+                        case "+":
+                        newpilotChargeLogo.setAttribute("class","chargeforceimg");
+                        newpilotChargeLogo.setAttribute('src', 'img/chargeplus.png');
+                        break;
+                        case "-":
+                        newpilotChargeLogo.setAttribute("class","chargeforceimg");
+                        newpilotChargeLogo.setAttribute('src', 'img/chargeminus.png');
+                        break;
+                        default:
+                        break;
+                }
+                newpilotname.appendChild(newpilotChargeLogo);
+                    
             }
-            newpilot.appendChild(newpilotChargeForce);
 
             let newpilotvalue = document.createElement('div');
             newpilotvalue.setAttribute("class", "pilot points");
@@ -435,7 +448,7 @@ document.body.appendChild(newship);
             newpilotslots.setAttribute("class", "pilot slots");
             for (let k=0; k<pilots[j]["slots"].length; k++){ //on va développer tous les slots du pilote
                 newpilotslotslogo = document.createElement('img');                            
-                newpilotslotslogo.setAttribute("src", 'img/'+pilots[j]["slots"][k]+'.jpg');
+                newpilotslotslogo.setAttribute("src", 'img/'+pilots[j]["slots"][k]+'.png');
                 newpilotslots.appendChild(newpilotslotslogo);
                 
             } 
@@ -520,58 +533,7 @@ function displayUpgrades() {
         
         }
     }
-   /* let pUpgradesGen = document.createElement("div");
-    pUpgradesGen.setAttribute("id", "upgradesgen");
-    document.body.appendChild(pUpgradesGen);
-    
-    for (let j = 0; j<upgrades.length; j++) { //on va maintenant afficher les upgrades génériques
-        if (upgrades[j]["faction"]===""){
-            let newupgrade = document.createElement('p');
-            newupgrade.setAttribute("class", "upgrade generic");
-        
-
-            let limitNumber = "";
-            switch(upgrades[j]['max_per_squad']){
-                case 1 : 
-                limitNumber = "*";
-                break;
-                case 2 :
-                limitNumber = "**";
-                break; 
-                case 3 :
-                limitNumber = "***";
-                break; 
-                default : 
-                break;  
-            }
-        
-            let newupgradename = document.createElement('div');
-        newupgradename.setAttribute("class", "upgrade name");
-        newupgradename.innerHTML = limitNumber+" "+upgrades[j]["name"];        
-        newupgrade.appendChild(newupgradename);
-
-        
-        let newupgradetype = document.createElement('div');
-        let newupgradetypelogo = document.createElement('div');
-        newupgradetype.setAttribute("class", "upgrade type");
-        newupgradetype.innerHTML = upgrades[j]["slot"]; 
-        newupgradetypelogo.setAttribute('src',  'img/'+upgrades[j]["slot"]+'.jpg')       
-        newupgrade.appendChild(newupgradetype);
-        newupgrade.appendChild(newupgradetypelogo);
-
-        let newupgradepoints = document.createElement('div');
-        newupgradepoints.setAttribute("class", "upgrade points");
-        newupgradepoints.innerHTML = upgrades[j]["points"];        
-        newupgrade.appendChild(newupgradepoints);
-
-        let newupgradeeffect = document.createElement('div');
-        newupgradeeffect.setAttribute("class", "upgrade ability");
-        newupgradeeffect.innerHTML = upgrades[j]["effect"];        
-        newupgrade.appendChild(newupgradeeffect);
-
-        document.body.appendChild(newupgrade);
-        }
-}*/
+  
 }
 
 
