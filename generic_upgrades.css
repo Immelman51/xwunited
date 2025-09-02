@@ -94,3 +94,8 @@ a {
     border: 1px solid black; /* Border to visualize the grid item */
     background-color: white;
 }
+.chargeforceimg{
+    height: 15px;
+    width: 15px;
+    resize: both;
+}

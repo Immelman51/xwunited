@@ -64,7 +64,7 @@ let pUpgradesGen = document.createElement("div");
         let newupgradetypelogo = document.createElement('div');
         newupgradetype.setAttribute("class", "upgrade type");
         newupgradetype.innerHTML = upgrades[j]["slot"]; 
-        newupgradetypelogo.setAttribute('src',  'img/'+upgrades[j]["slot"]+'.jpg')       
+        newupgradetypelogo.setAttribute('src',  'img/'+upgrades[j]["slot"]+'.png')       
         newupgrade.appendChild(newupgradetype);
         newupgrade.appendChild(newupgradetypelogo);
 

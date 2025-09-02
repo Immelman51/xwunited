@@ -247,7 +247,7 @@ newship.appendChild(actionlist);
         for (let m=0; m<ships[i]["slots"].length; m++){ //on va développer tous les slots associés au vaisseau
             newshipslots = document.createElement('img');            
             newshipslots.setAttribute("class", "slot");
-            newshipslots.setAttribute("src", 'img/'+ships[i]["slots"][m]+'.jpg');
+            newshipslots.setAttribute("src", 'img/'+ships[i]["slots"][m]+'.png');
             shipSlots.appendChild(newshipslots);
         } 
 newship.appendChild(shipSlots);
@@ -499,7 +499,7 @@ function displayUpgrades() {
         let newupgradetypelogo = document.createElement('div');
         newupgradetype.setAttribute("class", "upgrade type");
         newupgradetype.innerHTML = upgrades[i]["slot"]; 
-        newupgradetypelogo.setAttribute('src',  'img/'+upgrades[i]["slot"]+'.jpg')       
+        newupgradetypelogo.setAttribute('src',  'img/'+upgrades[i]["slot"]+'.png')       
         newupgrade.appendChild(newupgradetype);
         newupgrade.appendChild(newupgradetypelogo);
 
