@@ -6,16 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>"xw-United"</title>
     <link rel="stylesheet" href="faction_cards.css">
+     <!--this script loads the library that permits to convert this page into a pdf to print it cleanly-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js">
+    </script>
    
    
 </head>
 
 <body>
 <header>
-    <div class="link"><a href="#leaders">Leaders</a></div>
-    <div class="link"><a href="#upgradesfaction">Upgrades Faction</a></div>
+    <button id="printButton" class="btn" type="button">PRINT</button>
     <div class="link"><a href="generic_upgrades.html">Generic Upgrades</a></div>
-    <div class="link"><a href="https://immelman51.github.io/xwunited/">Back</a></div>
+    <div><button id="back" class="bouton link" type="button" onclick="history.back()">Back</button></div>
 </header>
 <script src="faction_cards.js"> 
 </script>   

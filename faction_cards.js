@@ -543,3 +543,19 @@ function displayUpgrades() {
 
 // Load all data and then execute the rest
     loadAllData();
+
+
+    const printBtn = document.getElementById('printButton');
+    const element = document.getElementById('content');
+
+    printBtn.addEventListener('click', () => {
+          const opt = {
+            margin:       0.5,
+              filename:     factionSelected+'.pdf',
+              image:        { type: 'jpeg', quality: 0.98 },
+            html2canvas:  { scale: 2 },
+            jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' }
+          };
+          html2pdf().set(opt).from(element).save();
+        });
+
