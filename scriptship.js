@@ -48,6 +48,7 @@ let shipquantity = -1; //compteur qui ne sert pas à compter mais à numéroter 
  let factionno3 = "";
  let totalcostvalue = 0;
  let logisticEquipped = [0,0,0,0,0,0,0,0];
+ let talentEquipped = [0,0,0,0,0,0,0,0];
  let leader_ID = 0; 
 
  let pilot_selected_list = ["","","","","","","",""]; // Dans ce tableau, on va stocker la valeur sélectée de chaque menu_pilot
@@ -178,7 +179,7 @@ function displayslots(yy) { //crée les menus de slot et contient l'écoute des 
         upgradeButton.setAttribute('id','upgradeButton'+yy);
         upgradeButton.setAttribute('class','toggle-button active');
         upgradeButton.setAttribute('type','button');
-        upgradeButton.textContent = 'Améliorations ('+0+'/'+leaders[leader_ID]["logistic"]+')';
+        upgradeButton.textContent = 'TAL('+0+'/'+pilot_list[yy]["skill"]+')LOG('+0+'/'+leaders[leader_ID]["logistic"]+')';
         shipslot.appendChild(upgradeButton);
       try{  //permet de supprimer les risques d'erreur lorsqu'il n'y a pas de slots pour le pilote (undefined)
         if  (typeof pilot_list[yy]["slots"][0] === 'undefined') {
@@ -317,18 +318,19 @@ function updateTotalCost() { //update total cost
     
 }
 
-function updateUpgradeCount(yy) { //update the table logistic_Equipped and display the sum of all of them in sumLogisiticEquipped. That way, you can keep count of how many uprgade points you have left to equip your squad
+function updateUpgradeCount(yy) { //update the table logistic_Equipped and talentEquipped and display the sum of all of them in sumLogisiticEquipped. That way, you can keep count of how many uprgade points you have left to equip your squad
     logisticEquipped[yy] = 0;
     sumLogisticEquipped = 0;
+    talentEquipped[yy] = 0;
     
     for (j=0; j<upgradesSelected_Objects[yy].length ; j++){
         
         if (typeof upgradesSelected_Objects[yy][j] === "object") {
-            if ((upgrades[upgradesSelected_Objects[yy][j]["id"]]["slot"]!=="Talent") && (upgrades[upgradesSelected_Objects[yy][j]["id"]]["slot"]!=="Force")) { //cette condition permet de ne pas compter les couts des talents et force
-                logisticEquipped[yy]= logisticEquipped[yy] + upgradesSelected_Objects[yy][j]["points"];
+            if ((upgrades[upgradesSelected_Objects[yy][j]["id"]]["slot"]!=="Talent") && (upgrades[upgradesSelected_Objects[yy][j]["id"]]["slot"]!=="Force")) { //useful to modify the content of the upgradeButton
+                talentEquipped[yy]= talentEquipped[yy] + upgradesSelected_Objects[yy][j]["talent_points"];
                 
             }
-        
+        logisticEquipped[yy]= logisticEquipped[yy] + upgradesSelected_Objects[yy][j]["points"];
     }
     
     }
@@ -339,7 +341,7 @@ function updateUpgradeCount(yy) { //update the table logistic_Equipped and displ
     
     for (j=0; j<shipquantity+1 ; j++){
         let upgradeButton = document.getElementById('upgradeButton'+j);
-        upgradeButton.textContent = 'Améliorations '+'('+sumLogisticEquipped+'/'+leaders[leader_ID]["logistic"]+') '+logisticEquipped[j];
+        upgradeButton.textContent = 'TAL('+talentEquipped[yy]+'/'+pilot_list[yy]["skill"]+')LOG('+logisticEquipped[j]+'/'+leaders[leader_ID]["logistic"]+')';
     }
     
 
@@ -410,7 +412,7 @@ function checkUpgRestriction(yy){ //populate les menus slots avec les bonnes upg
                 switch (upgrades_Objects[yy][i][j]['slot']) {
                     case 'Talent' :
                     case 'Force' :
-                        slotmenucontent.push(upgrades_Objects[yy][i][j]['name']+" "+upgrades_Objects[yy][i][j]['points']);
+                        slotmenucontent.push(upgrades_Objects[yy][i][j]['name']+" *"+upgrades_Objects[yy][i][j]['talent_points']+"*");
                         slotmenuobjects.push(upgrades_Objects[yy][i][j]);
                         break;
                     default :    

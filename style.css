@@ -248,7 +248,7 @@ header {
     position: sticky;
     bottom:0;
     display: grid;
-    grid-template-columns: 1fr 60px;
+    grid-template-columns: 1fr 40px 40px;
 }
 
 .loadout {
@@ -259,10 +259,14 @@ header {
     font-size: x-large;
     align-self: center;
     justify-self: center;
-    width
+    
+   
 }
 .count {
     color:aliceblue;
+}
+.logistic{
+    color: orange;
 }
 
 
