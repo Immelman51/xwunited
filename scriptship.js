@@ -68,6 +68,7 @@ let chassis_selected = [[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0]]; //va c
 let shipObject_available = []; //comme ship_available, mais contient les objets au lieu des noms
 let hash = "";
 let faction_hash = "";
+const logisticCounter = document.getElementById("logisticCounter");
 
 
 function populateMenu(menuId, options) {//fonction qui permet de remplir un menu avec un tableau d'options
@@ -179,7 +180,7 @@ function displayslots(yy) { //crée les menus de slot et contient l'écoute des 
         upgradeButton.setAttribute('id','upgradeButton'+yy);
         upgradeButton.setAttribute('class','toggle-button active');
         upgradeButton.setAttribute('type','button');
-        upgradeButton.textContent = 'TAL('+0+'/'+pilot_list[yy]["skill"]+')LOG('+0+'/'+leaders[leader_ID]["logistic"]+')';
+        upgradeButton.textContent = 'TAL('+0+'/'+pilot_list[yy]["skill"]+') LOG(0)';
         shipslot.appendChild(upgradeButton);
       try{  //permet de supprimer les risques d'erreur lorsqu'il n'y a pas de slots pour le pilote (undefined)
         if  (typeof pilot_list[yy]["slots"][0] === 'undefined') {
@@ -326,7 +327,7 @@ function updateUpgradeCount(yy) { //update the table logistic_Equipped and talen
     for (j=0; j<upgradesSelected_Objects[yy].length ; j++){
         
         if (typeof upgradesSelected_Objects[yy][j] === "object") {
-            if ((upgrades[upgradesSelected_Objects[yy][j]["id"]]["slot"]!=="Talent") && (upgrades[upgradesSelected_Objects[yy][j]["id"]]["slot"]!=="Force")) { //useful to modify the content of the upgradeButton
+            if ((upgrades[upgradesSelected_Objects[yy][j]["id"]]["slot"]==="Talent") || (upgrades[upgradesSelected_Objects[yy][j]["id"]]["slot"]==="Force")) { //useful to modify the content of the upgradeButton
                 talentEquipped[yy]= talentEquipped[yy] + upgradesSelected_Objects[yy][j]["talent_points"];
                 
             }
@@ -339,10 +340,14 @@ function updateUpgradeCount(yy) { //update the table logistic_Equipped and talen
     }
     
     
-    for (j=0; j<shipquantity+1 ; j++){
+    /*for (j=0; j<shipquantity+1 ; j++){
         let upgradeButton = document.getElementById('upgradeButton'+j);
-        upgradeButton.textContent = 'TAL('+talentEquipped[yy]+'/'+pilot_list[yy]["skill"]+')LOG('+logisticEquipped[j]+'/'+leaders[leader_ID]["logistic"]+')';
-    }
+        upgradeButton.textContent = 'TAL('+talentEquipped[yy]+'/'+pilot_list[yy]["skill"]+') LOG('+logisticEquipped[j]+')';
+    }*/
+    let upgradeButton = document.getElementById('upgradeButton'+yy);
+    upgradeButton.textContent = 'TAL('+talentEquipped[yy]+'/'+pilot_list[yy]["skill"]+') LOG('+logisticEquipped[yy]+')';
+
+    logisticCounter.innerHTML = 'LOG<br>'+sumLogisticEquipped+'/'+leaders[leader_ID]["logistic"];
     
 
 }

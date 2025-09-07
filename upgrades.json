@@ -6514,7 +6514,7 @@
              "id":365,
              "max_per_squad":8,
              "available":true,
-             "modify":true,
+             "modify":false,
              "add_Data": [0],
              "slot": "Talent",
              "talent_type": "elite",
