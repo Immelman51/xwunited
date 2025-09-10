@@ -5780,7 +5780,7 @@
              "force": 0,
              "charge": [1,"0"],
              "points": 2,
-             "effect": "",
+             "effect": "Considérez le comme un engin de type Mine. Vous pouvez le larguer pendant la phase système. Lorsqu'un vaisseau se déplace à travers ou le chevauche, il expose une carte de dégat, et vous pouvez retourner l'une de ses #ch# située sur son pilote ou une de ses améliorations.",
              "effect_ENG": "Consider it as a Mine. You may drop it during System Phase. When a ship moves through, it exposes a damage card, and you may flip off 1 of its #ch# located on its pilot card or upgrade.",
              "faction": ["Partisans"]
                          
