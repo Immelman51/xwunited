@@ -1671,8 +1671,7 @@
             "titleID": 0,
             "shipId": 20,
             "skill": 4,
-            "points": 12,
-            
+            "points": 12,            
             "ability": "Après avoir effectué une attaque #can#, vous pouvez dépenser le marqueur bleu d’un vaisseau allié à portée 0-1 de vous pour effectuer une attaque principale bonus.",
             "ability_ENG": "After you perform a #can# attack, you may spend a blue token from a friendly ship at range 0-1 of you to perform a bonus primary attack.",
             "slots": [
@@ -1692,8 +1691,7 @@
             "titleID": 0,
             "shipId": 20,
             "skill": 3,
-            "points": 12,
-            
+            "points": 12,            
             "ability_ENG": "While you perform a #can# attack, you may reroll an attack die.",
             "ability": "Lorsque vous effectuez une attaque #can# , vous pouvez relancer un dé d’attaque.",
             "slots": [
@@ -1715,8 +1713,7 @@
             "titleID": 0,
             "shipId": 20,
             "skill": 5,
-            "points": 13,
-            
+            "points": 13,            
             "ability": "Après avoir effectué une manœuvre (même partiellement), vous pouvez recevoir un marqueur de contrainte. Dans ce cas, vous pouvez effectuer une action #BR# et passer votre phase « effectuer une action ».",
             "ability_ENG": "After you execute a maneuver (even partially), you may receive a strain token. If you do, youmay perform a #BR# action and skip your 'Perform an action' step.",
             "slots": [
@@ -1737,8 +1734,7 @@
             "shipId": 20,
             "skill": 2,
             "charge": [1,"+"],
-            "points": 12,
-            
+            "points": 12,            
             "ability": "Après avoir défendu contre un vaisseau dans votre #Farc# , vous pouvez dépenser 1 #ch#. Dans ce cas, vous pouvez verrouiller l’attaquant et effectuer une attaque bonus de #can# contre lui.",
             "ability_ENG": "After you defend against a ship in your #Farc#, you may spend 1 #ch#. If you do, you may lock the attacker and perform a bonus #can# attack against him.",
             "slots": [
@@ -1759,8 +1755,7 @@
             "titleID": 0,
             "shipId": 81,
             "skill": 2,
-            "points": 2,
-            
+            "points": 2,            
             "ability": "Lorsque vous attaquez un vaisseau stressé, lancez 1 dé supplémentaire.",
             "ability_ENG": "While you attack a stressed ship, roll 1 additional attack die.",
             "slots": [
@@ -1781,8 +1776,7 @@
             "titleID": 0,
             "shipId": 81,
             "skill": 1,
-            "points": 2,
-            
+            "points": 2,            
             "ability": "Lorsqu’un vaisseau allié à portée 0-3 attaque un vaisseau à portée 0, ce vaisseau peut modifier jusqu’à 2 de ses résultats #hit# en résultats #crit# .",
             "ability_ENG": "While a friendly ship at range 0-3 attacks a ship at range 0, this ship may modify up to 2 of your #hit# results into #crit# results.",
             "slots": [
