@@ -78,6 +78,8 @@ a {
     justify-content: center;
     align-content: center;    
     overflow: hidden;
+    page-break-inside: avoid;  /* ancienne syntaxe */
+    break-inside: avoid;       /* standard */
      
 }
 
@@ -93,7 +95,13 @@ a {
     justify-content: center;
     align-content: center;
     color:rgb(0, 0, 0) ; 
+    page-break-inside: avoid;  /* ancienne syntaxe */
+    break-inside: avoid;       /* standard */
      
+}
+.upgrade{
+    page-break-inside: avoid;  /* ancienne syntaxe */
+  break-inside: avoid;       /* standard */
 }
 
 .upgrade.faction {
@@ -574,4 +582,10 @@ width: calc(25%);
     height: 15px;
     width: 15px;
     resize: both;
+}
+.bloc,
+.squad,
+img {
+  page-break-inside: avoid;  /* ancienne syntaxe */
+  break-inside: avoid;       /* standard */
 }
