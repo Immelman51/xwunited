@@ -814,7 +814,7 @@
             "add_Data": [0],
             "force": 0,
             "charge": [0],
-            "points": 1,
+            "points": 0,
             "attack": ["F",3],
             "range": [1,2],
             "effect": "Portée 1-2 #Farc# 3 dés Attaque : si cette attaque touche, tous les résultats #hit#/#crit# infligent des marqueurs de brouillage au lieu des dégâts.",
@@ -6493,7 +6493,25 @@
              "effect_ENG": "Gain 2 Logistics points",
              "faction": ""
 
-         }
+         },
+          {
+            "name": "Canon Blaster",
+            "name_ENG": "Blaster Cannon",
+            "id": 366,
+            "max_per_squad": 8,
+            "available": true,
+            "modify": false,
+            "slot": "Cannon",
+            "add_Data": [0],
+            "force": 0,
+            "charge": [0],
+            "points": 1,
+            "attack": ["F",2],
+            "range": [1,3],
+            "effect": "Portée 1-3 #Farc# 2 dés Attaque.",
+            "effect_ENG": "",
+            "faction": ""
+        }
 
 
 
