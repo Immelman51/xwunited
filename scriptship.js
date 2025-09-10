@@ -325,7 +325,7 @@ function updateUpgradeCount(yy) { //update the table logistic_Equipped and talen
     for (j=0; j<upgradesSelected_Objects[yy].length ; j++){
         
         if (typeof upgradesSelected_Objects[yy][j] === "object") {
-            if ((upgrades[upgradesSelected_Objects[yy][j]["id"]]["slot"]==="Talent:shooting") || (upgrades[upgradesSelected_Objects[yy][j]["id"]]["slot"]==="Talent:piloting") || (upgrades[upgradesSelected_Objects[yy][j]["id"]]["slot"]==="Talent:leadership") || (upgrades[upgradesSelected_Objects[yy][j]["id"]]["slot"]==="Talent:elite") || (upgrades[upgradesSelected_Objects[yy][j]["id"]]["slot"]==="Talent:special") || (upgrades[upgradesSelected_Objects[yy][j]["id"]]["slot"]==="Force")) { //useful to modify the content of the upgradeButton
+            if ((upgrades[upgradesSelected_Objects[yy][j]["id"]]["slot"]==="Talent-shooting") || (upgrades[upgradesSelected_Objects[yy][j]["id"]]["slot"]==="Talent-piloting") || (upgrades[upgradesSelected_Objects[yy][j]["id"]]["slot"]==="Talent-leadership") || (upgrades[upgradesSelected_Objects[yy][j]["id"]]["slot"]==="Talent-elite") || (upgrades[upgradesSelected_Objects[yy][j]["id"]]["slot"]==="Talent-special") || (upgrades[upgradesSelected_Objects[yy][j]["id"]]["slot"]==="Force")) { //useful to modify the content of the upgradeButton
                 talentEquipped[yy]= talentEquipped[yy] + upgradesSelected_Objects[yy][j]["talent_points"];
                 
             }
@@ -413,11 +413,11 @@ function checkUpgRestriction(yy){ //populate les menus slots avec les bonnes upg
             
             if (upgrades_Objects[yy][i][j]['available']===true){
                 switch (upgrades_Objects[yy][i][j]['slot']) {
-                    case 'Talent:shooting' :
-                        case 'Talent:piloting' :
-                            case 'Talent:leadership' :
-                                case 'Talent:elite' :
-                                    case 'Talent:special' :
+                    case 'Talent-shooting' :
+                        case 'Talent-piloting' :
+                            case 'Talent-leadership' :
+                                case 'Talent-elite' :
+                                    case 'Talent-special' :
                     case 'Force' :
                         slotmenucontent.push(upgrades_Objects[yy][i][j]['name']+" *"+upgrades_Objects[yy][i][j]['talent_points']+"*");
                         slotmenuobjects.push(upgrades_Objects[yy][i][j]);
@@ -433,11 +433,11 @@ function checkUpgRestriction(yy){ //populate les menus slots avec les bonnes upg
                 
                 if (restrict===true) {
                     switch (upgrades_Objects[yy][i][j]['slot']) {
-                        case 'Talent:shooting' :
-                        case 'Talent:piloting' :
-                            case 'Talent:leadership' :
-                                case 'Talent:elite' :
-                                    case 'Talent:special' :
+                        case 'Talent-shooting' :
+                        case 'Talent-piloting' :
+                            case 'Talent-leadership' :
+                                case 'Talent-elite' :
+                                    case 'Talent-special' :
                         case 'Force' :
                             slotmenucontent.push(upgrades_Objects[yy][i][j]['name']+" "+upgrades_Objects[yy][i][j]['talent_points']);
                             slotmenuobjects.push(structuredClone(upgrades_Objects[yy][i][j]));
@@ -735,8 +735,8 @@ function  add_slots (targetSlot){ //Action n°2 : A utiliser si une upgrade rajo
     let upgObjList = [];
     
         for (let k=0 ; k<upgrades.length ; k++) {
-            //First, we write a rule that says that Talent:special whiche are the faction talents can be selected in every talent menu
-            if (((targetSlot==="Talent:shooting") || (targetSlot==="Talent:piloting") || (targetSlot==="Talent:leadership") || (targetSlot==="Talent:elite")) && (upgrades[k]["slot"]==="Talent:special") && ((upgrades[k]["faction"].includes(factionno1))||(upgrades[k]["faction"].includes(factionno2))||(upgrades[k]["faction"].includes(factionno3)))){
+            //First, we write a rule that says that Talent-special whiche are the faction talents can be selected in every talent menu
+            if (((targetSlot==="Talent-shooting") || (targetSlot==="Talent-piloting") || (targetSlot==="Talent-leadership") || (targetSlot==="Talent-elite")) && (upgrades[k]["slot"]==="Talent-special") && ((upgrades[k]["faction"].includes(factionno1))||(upgrades[k]["faction"].includes(factionno2))||(upgrades[k]["faction"].includes(factionno3)))){
                 upgObjList.push(upgrades[k]); 
                   }
             //We'll have to write here later a rule to segregate Dark Forces talents and Light Forces talents, but not today ...
@@ -756,11 +756,11 @@ function  add_slots (targetSlot){ //Action n°2 : A utiliser si une upgrade rajo
             
     if (upgrades_Objects[y][nbrSlots][j]['available']===true){
         switch (upgrades_Objects[y][i][j]['slot']) {
-            case 'Talent:shooting' :
-                        case 'Talent:piloting' :
-                            case 'Talent:leadership' :
-                                case 'Talent:elite' :
-                                    case 'Talent:special' :
+            case 'Talent-shooting' :
+                        case 'Talent-piloting' :
+                            case 'Talent-leadership' :
+                                case 'Talent-elite' :
+                                    case 'Talent-special' :
                 slotmenucontent.push(upgrades_Objects[y][i][j]['name']+" *"+upgrades_Objects[y][i][j]['talent_points']+"*");
                 slotmenuobjects.push(upgrades_Objects[yy][i][j]);
                 break;
@@ -779,11 +779,11 @@ function  add_slots (targetSlot){ //Action n°2 : A utiliser si une upgrade rajo
         
         if (restrict===true) {
             switch (upgrades_Objects[y][i][j]['slot']) {
-                case 'Talent:shooting' :
-                        case 'Talent:piloting' :
-                            case 'Talent:leadership' :
-                                case 'Talent:elite' :
-                                    case 'Talent:special' :
+                case 'Talent-shooting' :
+                        case 'Talent-piloting' :
+                            case 'Talent-leadership' :
+                                case 'Talent-elite' :
+                                    case 'Talent-special' :
                 case 'Force' :
                     slotmenucontent.push(upgrades_Objects[y][i][j]['name']+" *"+upgrades_Objects[y][i][j]['talent_points']+"*");
                     slotmenuobjects.push(upgrades_Objects[y][i][j]);
