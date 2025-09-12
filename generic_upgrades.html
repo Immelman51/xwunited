@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>"xw-United"</title>
     <link rel="stylesheet" href="generic_upgrades.css">
+     <!--this script loads the library that permits to convert this page into a pdf to print it cleanly-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js">
+    </script>
    
    
 </head>
@@ -13,9 +16,14 @@
 <body>
     
 <header>
-<div><button id="back" class="bouton link" type="button" onclick="history.back()">Back</button></div>
+    <button id="printButton" class="btn" type="button">PRINT</button>
+    <button id="back" class="bouton link" type="button" onclick="history.back()">Back</button>
 
 </header>
+
+<div id="content">
+    <!-- Content to be printed goes here -->
+</div>
 
 <script src="generic_upgrades.js"> </script>
 </body>

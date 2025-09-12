@@ -54,13 +54,20 @@ if(window.location.hash) {
 } else {
     // Aucun hash n'est trouvé
 }
+
+
+
+const element = document.getElementById('content');
+
+
+
 function displayLeaders() { //on va d'abord faire afficher les leaders de la faction sélectionnée
     
     
 
     let pLeader = document.createElement('div'); //permet d'accéder à la section leaders via le menu du header
     pLeader.setAttribute("id", "leaders");
-    document.body.appendChild(pLeader);
+    element.appendChild(pLeader);
     
 for (let i = 0; i<leaders.length; i++){ 
     if (leaders[i]["leaderfaction"].includes(factionSelected)){
@@ -92,7 +99,7 @@ for (let i = 0; i<leaders.length; i++){
         newleaderability.setAttribute("class", "leader ability");
         newleader.appendChild(newleaderability);
 
-        document.body.appendChild(newleader);
+        element.appendChild(newleader);
 
     
         
@@ -105,7 +112,7 @@ function displayShipsandPilots() { //on va d'abord faire afficher les ships et l
     
     let pPilots = document.createElement('div'); //permet d'accéder à la section pilots via le menu du header
     pPilots.setAttribute("id", "pilots");
-    document.body.appendChild(pPilots);
+    element.appendChild(pPilots);
 
 for (let i=0 ; i<ships.length; i++){ //on va afficher d'abord le vaisseau/chassis.... puis après les pilotes associés
     if (ships[i]["factions"].includes(factionSelected)){
@@ -360,7 +367,7 @@ for(c=0;c<ships[i]['chassis'].length;c++){
 newship.appendChild(chassisShip);
 
    
-document.body.appendChild(newship);
+element.appendChild(newship);
 
 // On a fini de décrire le ship   
 // Maintenant on va afficher les pilotes !! Grosse boucle for ! et en voilà une autre qui l'est tout autant
@@ -463,7 +470,7 @@ document.body.appendChild(newship);
             newpilotability.innerHTML = pilots[j]["ability"];
             }
 
-            document.body.appendChild(newpilot);
+            element.appendChild(newpilot);
             
 
         }
@@ -479,7 +486,7 @@ document.body.appendChild(newship);
 function displayUpgrades() {
     let pUpgradesfaction = document.createElement('div'); //permet d'accéder à la section upgrades via le menu du header
     pUpgradesfaction.setAttribute("id", "upgradesfaction");
-    document.body.appendChild(pUpgradesfaction);
+    element.appendChild(pUpgradesfaction);
 
     for (let i = 0; i<upgrades.length; i++){
         if (upgrades[i]["faction"].includes(factionSelected)){
@@ -526,7 +533,7 @@ function displayUpgrades() {
         newupgradeeffect.innerHTML = upgrades[i]["effect"];        
         newupgrade.appendChild(newupgradeeffect);
 
-        document.body.appendChild(newupgrade);
+        element.appendChild(newupgrade);
 
 
 
@@ -543,3 +550,19 @@ function displayUpgrades() {
 
 // Load all data and then execute the rest
     loadAllData();
+
+
+    const printBtn = document.getElementById('printButton');
+    
+
+    printBtn.addEventListener('click', () => {
+          const opt = {
+            margin:       0.5,
+              filename:     factionSelected+'.pdf',
+              image:        { type: 'jpeg', quality: 0.98 },
+            html2canvas:  { scale: 2 },
+            jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' }
+          };
+          html2pdf().set(opt).from(element).save();
+        });
+

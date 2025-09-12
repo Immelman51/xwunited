@@ -48,6 +48,7 @@ let shipquantity = -1; //compteur qui ne sert pas à compter mais à numéroter 
  let factionno3 = "";
  let totalcostvalue = 0;
  let logisticEquipped = [0,0,0,0,0,0,0,0];
+ let talentEquipped = [0,0,0,0,0,0,0,0];
  let leader_ID = 0; 
 
  let pilot_selected_list = ["","","","","","","",""]; // Dans ce tableau, on va stocker la valeur sélectée de chaque menu_pilot
@@ -67,6 +68,7 @@ let chassis_selected = [[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0]]; //va c
 let shipObject_available = []; //comme ship_available, mais contient les objets au lieu des noms
 let hash = "";
 let faction_hash = "";
+const logisticCounter = document.getElementById("logisticCounter");
 
 
 function populateMenu(menuId, options) {//fonction qui permet de remplir un menu avec un tableau d'options
@@ -178,7 +180,7 @@ function displayslots(yy) { //crée les menus de slot et contient l'écoute des 
         upgradeButton.setAttribute('id','upgradeButton'+yy);
         upgradeButton.setAttribute('class','toggle-button active');
         upgradeButton.setAttribute('type','button');
-        upgradeButton.textContent = 'Améliorations ('+0+'/'+leaders[leader_ID]["logistic"]+')';
+        upgradeButton.textContent = 'TAL('+0+'/'+pilot_list[yy]["skill"]+') LOG(0)';
         shipslot.appendChild(upgradeButton);
       try{  //permet de supprimer les risques d'erreur lorsqu'il n'y a pas de slots pour le pilote (undefined)
         if  (typeof pilot_list[yy]["slots"][0] === 'undefined') {
@@ -225,10 +227,8 @@ function displayslots(yy) { //crée les menus de slot et contient l'écoute des 
         shipslot.appendChild(slotmenu);
 
         slotmenu.addEventListener("input", function(event) {//cette faction décrit le calcul des mises à jour des points pour le loadout et le cout du pilote
-            identifyElement(event); 
-            
-            check_restricted_List(event);
-            
+            identifyElement(event);             
+            check_restricted_List(event);            
             checkUpgradeModifier(event);
             updateUpgradeCount(y);
             updateTotalCost();
@@ -317,18 +317,19 @@ function updateTotalCost() { //update total cost
     
 }
 
-function updateUpgradeCount(yy) { //update the table logistic_Equipped and display the sum of all of them in sumLogisiticEquipped. That way, you can keep count of how many uprgade points you have left to equip your squad
+function updateUpgradeCount(yy) { //update the table logistic_Equipped and talentEquipped and display the sum of all of them in sumLogisiticEquipped. That way, you can keep count of how many uprgade points you have left to equip your squad
     logisticEquipped[yy] = 0;
     sumLogisticEquipped = 0;
+    talentEquipped[yy] = 0;
     
     for (j=0; j<upgradesSelected_Objects[yy].length ; j++){
         
         if (typeof upgradesSelected_Objects[yy][j] === "object") {
-            if ((upgrades[upgradesSelected_Objects[yy][j]["id"]]["slot"]!=="Talent") && (upgrades[upgradesSelected_Objects[yy][j]["id"]]["slot"]!=="Force")) { //cette condition permet de ne pas compter les couts des talents et force
-                logisticEquipped[yy]= logisticEquipped[yy] + upgradesSelected_Objects[yy][j]["points"];
+            if ((upgrades[upgradesSelected_Objects[yy][j]["id"]]["slot"]==="Talent-shooting") || (upgrades[upgradesSelected_Objects[yy][j]["id"]]["slot"]==="Talent-piloting") || (upgrades[upgradesSelected_Objects[yy][j]["id"]]["slot"]==="Talent-leadership") || (upgrades[upgradesSelected_Objects[yy][j]["id"]]["slot"]==="Talent-elite") || (upgrades[upgradesSelected_Objects[yy][j]["id"]]["slot"]==="Talent-special") || (upgrades[upgradesSelected_Objects[yy][j]["id"]]["slot"]==="Force")) { //useful to modify the content of the upgradeButton
+                talentEquipped[yy]= talentEquipped[yy] + upgradesSelected_Objects[yy][j]["talent_points"];
                 
             }
-        
+        logisticEquipped[yy]= logisticEquipped[yy] + upgradesSelected_Objects[yy][j]["points"];
     }
     
     }
@@ -337,10 +338,14 @@ function updateUpgradeCount(yy) { //update the table logistic_Equipped and displ
     }
     
     
-    for (j=0; j<shipquantity+1 ; j++){
+    /*for (j=0; j<shipquantity+1 ; j++){
         let upgradeButton = document.getElementById('upgradeButton'+j);
-        upgradeButton.textContent = 'Améliorations '+'('+sumLogisticEquipped+'/'+leaders[leader_ID]["logistic"]+') '+logisticEquipped[j];
-    }
+        upgradeButton.textContent = 'TAL('+talentEquipped[yy]+'/'+pilot_list[yy]["skill"]+') LOG('+logisticEquipped[j]+')';
+    }*/
+    let upgradeButton = document.getElementById('upgradeButton'+yy);
+    upgradeButton.textContent = 'TAL('+talentEquipped[yy]+'/'+pilot_list[yy]["skill"]+') LOG('+logisticEquipped[yy]+')';
+
+    logisticCounter.innerHTML = 'LOG<br>'+sumLogisticEquipped+'/'+leaders[leader_ID]["logistic"];
     
 
 }
@@ -408,9 +413,13 @@ function checkUpgRestriction(yy){ //populate les menus slots avec les bonnes upg
             
             if (upgrades_Objects[yy][i][j]['available']===true){
                 switch (upgrades_Objects[yy][i][j]['slot']) {
-                    case 'Talent' :
+                    case 'Talent-shooting' :
+                        case 'Talent-piloting' :
+                            case 'Talent-leadership' :
+                                case 'Talent-elite' :
+                                    case 'Talent-special' :
                     case 'Force' :
-                        slotmenucontent.push(upgrades_Objects[yy][i][j]['name']+" "+upgrades_Objects[yy][i][j]['points']);
+                        slotmenucontent.push(upgrades_Objects[yy][i][j]['name']+" *"+upgrades_Objects[yy][i][j]['talent_points']+"*");
                         slotmenuobjects.push(upgrades_Objects[yy][i][j]);
                         break;
                     default :    
@@ -424,9 +433,13 @@ function checkUpgRestriction(yy){ //populate les menus slots avec les bonnes upg
                 
                 if (restrict===true) {
                     switch (upgrades_Objects[yy][i][j]['slot']) {
-                        case 'Talent' :
+                        case 'Talent-shooting' :
+                        case 'Talent-piloting' :
+                            case 'Talent-leadership' :
+                                case 'Talent-elite' :
+                                    case 'Talent-special' :
                         case 'Force' :
-                            slotmenucontent.push(upgrades_Objects[yy][i][j]['name']+" "+upgrades_Objects[yy][i][j]['points']);
+                            slotmenucontent.push(upgrades_Objects[yy][i][j]['name']+" "+upgrades_Objects[yy][i][j]['talent_points']);
                             slotmenuobjects.push(structuredClone(upgrades_Objects[yy][i][j]));
                             break;
                         default :    
@@ -722,6 +735,13 @@ function  add_slots (targetSlot){ //Action n°2 : A utiliser si une upgrade rajo
     let upgObjList = [];
     
         for (let k=0 ; k<upgrades.length ; k++) {
+            //First, we write a rule that says that Talent-special whiche are the faction talents can be selected in every talent menu
+            if (((targetSlot==="Talent-shooting") || (targetSlot==="Talent-piloting") || (targetSlot==="Talent-leadership") || (targetSlot==="Talent-elite")) && (upgrades[k]["slot"]==="Talent-special") && ((upgrades[k]["faction"].includes(factionno1))||(upgrades[k]["faction"].includes(factionno2))||(upgrades[k]["faction"].includes(factionno3)))){
+                upgObjList.push(upgrades[k]); 
+                  }
+            //We'll have to write here later a rule to segregate Dark Forces talents and Light Forces talents, but not today ...
+
+            //Then we write the global natural rule to populate the slot menus with the right slot objects
             if ((targetSlot===upgrades[k]["slot"]) && ((upgrades[k]["faction"]==="")||(upgrades[k]["faction"].includes(factionno1))||(upgrades[k]["faction"].includes(factionno2))||(upgrades[k]["faction"].includes(factionno3)))) {
                 upgObjList.push(upgrades[k]); //on va prendre tous les objets et les mettre dedans
                   }
@@ -736,12 +756,16 @@ function  add_slots (targetSlot){ //Action n°2 : A utiliser si une upgrade rajo
             
     if (upgrades_Objects[y][nbrSlots][j]['available']===true){
         switch (upgrades_Objects[y][i][j]['slot']) {
-            case 'Talent' :
-                slotmenucontent.push(upgrades_Objects[y][i][j]['name']+" *"+upgrades_Objects[y][i][j]['points']+"*");
+            case 'Talent-shooting' :
+                        case 'Talent-piloting' :
+                            case 'Talent-leadership' :
+                                case 'Talent-elite' :
+                                    case 'Talent-special' :
+                slotmenucontent.push(upgrades_Objects[y][i][j]['name']+" *"+upgrades_Objects[y][i][j]['talent_points']+"*");
                 slotmenuobjects.push(upgrades_Objects[yy][i][j]);
                 break;
             case 'Force' :
-                slotmenucontent.push(upgrades_Objects[y][i][j]['name']+" #"+upgrades_Objects[y][i][j]['points']+"#");
+                slotmenucontent.push(upgrades_Objects[y][i][j]['name']+" #"+upgrades_Objects[y][i][j]['talent_points']+"#");
                 slotmenuobjects.push(upgrades_Objects[yy][i][j]);
                 break;
             default :    
@@ -755,9 +779,13 @@ function  add_slots (targetSlot){ //Action n°2 : A utiliser si une upgrade rajo
         
         if (restrict===true) {
             switch (upgrades_Objects[y][i][j]['slot']) {
-                case 'Talent' :
+                case 'Talent-shooting' :
+                        case 'Talent-piloting' :
+                            case 'Talent-leadership' :
+                                case 'Talent-elite' :
+                                    case 'Talent-special' :
                 case 'Force' :
-                    slotmenucontent.push(upgrades_Objects[y][i][j]['name']+" "+upgrades_Objects[y][i][j]['points']);
+                    slotmenucontent.push(upgrades_Objects[y][i][j]['name']+" *"+upgrades_Objects[y][i][j]['talent_points']+"*");
                     slotmenuobjects.push(upgrades_Objects[y][i][j]);
                     break;
                 default :    

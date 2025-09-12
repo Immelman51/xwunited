@@ -27,11 +27,12 @@ async function loadAllData() {
     }
 };
 
+const element = document.getElementById('content');
 
 function displayUpgrades(){
 let pUpgradesGen = document.createElement("div");
     pUpgradesGen.setAttribute("id", "upgradesgen");
-    document.body.appendChild(pUpgradesGen);
+    element.appendChild(pUpgradesGen);
     
     for (let j = 0; j<upgrades.length; j++) { //on va maintenant afficher les upgrades génériques
         if (upgrades[j]["faction"]===""){
@@ -78,9 +79,24 @@ let pUpgradesGen = document.createElement("div");
         newupgradeeffect.innerHTML = upgrades[j]["effect"];        
         newupgrade.appendChild(newupgradeeffect);
 
-        document.body.appendChild(newupgrade);
+        element.appendChild(newupgrade);
         }
 }
 }
 
 loadAllData() ;
+
+
+ const printBtn = document.getElementById('printButton');
+   
+
+    printBtn.addEventListener('click', () => {
+          const opt = {
+            margin:       0.5,
+              filename:     'GenericUpgrades.pdf',
+              image:        { type: 'jpeg', quality: 0.98 },
+            html2canvas:  { scale: 2 },
+            jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' }
+          };
+          html2pdf().set(opt).from(element).save();
+        });
