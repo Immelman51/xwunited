@@ -32,7 +32,7 @@ a {
 }
 
 
-.upgrade.generic {
+.upgrade.generic.other {
     background-color: rgb(160, 165, 236);
     padding: 5px;
     display:grid;
@@ -42,6 +42,19 @@ a {
     justify-content: center;
     align-content: center;
     color:rgb(0, 0, 0) ; 
+     
+}
+
+.upgrade.generic.talent {
+    background-color: rgb(151, 255, 137);
+    padding: 5px;
+    display:grid;
+    grid-template-columns: 1fr 5fr 3fr  ;
+    gap: 2px;
+    max-width: 21cm;
+    justify-content: center;
+    align-content: center;
+    color:rgb(0, 0, 0) ;
      
 }
 

@@ -19,8 +19,26 @@ async function loadAllData() {
         console.log(upgrades);
 
         
-        displayUpgrades();
-      
+        displayUpgrades("Talent-shooting","talent");
+        displayUpgrades("Talent-piloting","talent");
+        displayUpgrades("Talent-leadership","talent");
+        displayUpgrades("Talent-elite","talent");
+        displayUpgrades("Force","talent");
+        displayUpgrades("Crew","");
+        displayUpgrades("Gunner","");
+        displayUpgrades("Tech","");
+        displayUpgrades("Astromech","");
+        displayUpgrades("Sensor","");
+        displayUpgrades("Illicit","");
+        displayUpgrades("Payload","");
+        displayUpgrades("Missile","");
+        displayUpgrades("Torpedo","");
+        displayUpgrades("Cannon","");
+        displayUpgrades("Turret","");
+        displayUpgrades("Calculator","");
+        displayUpgrades("Modification","");
+        displayUpgrades("Tie mod","");
+
 
     } catch (error) {
         console.error("Failed to fetch data: ", error);
@@ -29,15 +47,21 @@ async function loadAllData() {
 
 const element = document.getElementById('content');
 
-function displayUpgrades(){
+function displayUpgrades(slotName,slotType,){
 let pUpgradesGen = document.createElement("div");
     pUpgradesGen.setAttribute("id", "upgradesgen");
     element.appendChild(pUpgradesGen);
     
     for (let j = 0; j<upgrades.length; j++) { //on va maintenant afficher les upgrades génériques
-        if (upgrades[j]["faction"]===""){
+        if ((upgrades[j]["faction"]==="") && (upgrades[j]['slot']===slotName)){
             let newupgrade = document.createElement('p');
-            newupgrade.setAttribute("class", "upgrade generic");
+            if(slotType==="talent"){
+                newupgrade.setAttribute("class", "upgrade generic talent");
+            }else{
+                newupgrade.setAttribute("class", "upgrade generic other");
+
+            }
+            
         
 
             let limitNumber = "";
@@ -71,9 +95,12 @@ let pUpgradesGen = document.createElement("div");
 
         let newupgradepoints = document.createElement('div');
         newupgradepoints.setAttribute("class", "upgrade points");
-        newupgradepoints.innerHTML = upgrades[j]["points"];        
+            if(slotType==="talent"){
+                newupgradepoints.innerHTML = upgrades[j]["points"]+" ("+upgrades[j]["talent_points"]+")";
+            }else{
+                newupgradepoints.innerHTML = upgrades[j]["points"];
+                            }
         newupgrade.appendChild(newupgradepoints);
-
         let newupgradeeffect = document.createElement('div');
         newupgradeeffect.setAttribute("class", "upgrade ability");
         newupgradeeffect.innerHTML = upgrades[j]["effect"];        

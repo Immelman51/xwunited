@@ -583,6 +583,9 @@ width: calc(25%);
     width: 15px;
     resize: both;
 }
+.pilot,
+.ship,
+.upgrade,
 .bloc,
 .squad,
 img {
