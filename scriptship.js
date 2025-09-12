@@ -735,7 +735,7 @@ function  add_slots (targetSlot){ //Action n°2 : A utiliser si une upgrade rajo
     let upgObjList = [];
     
         for (let k=0 ; k<upgrades.length ; k++) {
-            //First, we write a rule that says that Talent-special whiche are the faction talents can be selected in every talent menu
+            //First, we write a rule that says that Talent-special which are the faction talents can be selected in every talent menu
             if (((targetSlot==="Talent-shooting") || (targetSlot==="Talent-piloting") || (targetSlot==="Talent-leadership") || (targetSlot==="Talent-elite")) && (upgrades[k]["slot"]==="Talent-special") && ((upgrades[k]["faction"].includes(factionno1))||(upgrades[k]["faction"].includes(factionno2))||(upgrades[k]["faction"].includes(factionno3)))){
                 upgObjList.push(upgrades[k]); 
                   }
@@ -942,6 +942,12 @@ function upgradeListGet(yy) { //va chercher les options pour populate les menus 
             for (let i=0 ; i<pilot_list[yy]["slots"].length;i++) {
                 let upgObjList = [];
                 for (let k=0 ; k<upgrades.length ; k++) {
+                    //first we take care of the talent-special to be selectable in the other talent menus
+                    if (((pilot_list[yy]["slots"][i]==="Talent-shooting") || (pilot_list[yy]["slots"][i]==="Talent-piloting") || (pilot_list[yy]["slots"][i]==="Talent-leadership") || (pilot_list[yy]["slots"][i]==="Talent-elite")) && (upgrades[k]["slot"]==="Talent-special") && ((upgrades[k]["faction"].includes(factionno1))||(upgrades[k]["faction"].includes(factionno2))||(upgrades[k]["faction"].includes(factionno3)))){
+                        upgObjList.push(structuredClone(upgrades[k]));
+                          }
+                     
+                    //then it's the normal algorythm
                     if ((pilot_list[yy]["slots"][i]===upgrades[k]["slot"]) && ((upgrades[k]["faction"]==="")||(upgrades[k]["faction"].includes(factionno1))||(upgrades[k]["faction"].includes(factionno2))||(upgrades[k]["faction"].includes(factionno3)))) {
                      upgObjList.push(structuredClone(upgrades[k])); //on va prendre tous les objets et les mettre dedans
               }
