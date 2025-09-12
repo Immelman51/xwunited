@@ -3822,9 +3822,9 @@
             "ability": "<img class='chargeforceimg' src='img/forcestat.png'> <img class='chargeforceimg' src='img/forcestat.png'> Après avoir entièrement effectué une manoeuvre, vous pouvez choisir un vaisseau allié à portée 1-2 et dépenser 2 #fo#. Ce vaisseau peut effectuer une action, même stressé.",
             "ability_ENG": "<img class='chargeforceimg' src='img/forcestat.png'> <img class='chargeforceimg' src='img/forcestat.png'> After you fully execute a maneuver, you may choose a friendly ship at range 1-2 and spend 2 #fo# . That ship may perform an action, even while stressed.",
             "slots": [
-                "Talent",
                 "Talent-elite",
-                "Force"              
+                "Force",
+                "Force"
             ]
         },
         {
@@ -4898,7 +4898,7 @@
             "ability": "Lorsqu'un vaisseau allié à portée 0-3 avec 1 seul point de coque attaque ou défend, il peut relancer 1 dé.",
             "ability_ENG": "When a friendly ship at range 0-3 with only 1 hull left attacks or defends, it can reroll 1 die.",
             "slots": [
-                "Talent"            
+                "Talent-elite"            
             ]
         },
         {
