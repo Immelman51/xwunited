@@ -521,12 +521,12 @@
             "available": true,
             "modify": false,
             "slot": "Missile",
-            "points": 4,
+            "points": 2,
             "attack": ["F",3],
             "range": [2,3],
             "add_Data": [0],
             "force": 0,
-            "charge": [3,"0"],
+            "charge": [2,"0"],
             "effect": "<img class='chargeforceimg' src='img/chargestat.png'> <img class='chargeforceimg' src='img/chargestat.png'> <img class='chargeforceimg' src='img/chargestat.png'> Attaque (#TL#): 3#Farc# portée 2-3 : dépensez 1 #ch#. Si cette attaque touche, dépensez 1 résultat #hit# ou #crit# pour faire subir 1 dégât #hit# au défenseur. Tous les résultats #hit#/#crit# restants infligent des marqueurs ioniques au lieu des dégâts.",
             "effect_ENG": "",
             "faction": ""
@@ -539,7 +539,7 @@
             "available": true,
             "modify": false,
             "slot": "Missile",
-            "points": 4,
+            "points": 3,
             "attack": ["F",4],
             "range": [2,3],
             "add_Data": [0],
@@ -575,12 +575,12 @@
             "available":false,
             "modify":true,
             "slot": "Missile",
-            "points": 7,
+            "points": 6,
             "attack": ["F",3],
             "range": [2,3],
             "add_Data": [0],
             "force": 0,
-            "charge": [5,"0"],
+            "charge": [3,"0"],
             "effect": "<img class='chargeforceimg' src='img/chargestat.png'> <img class='chargeforceimg' src='img/chargestat.png'> <img class='chargeforceimg' src='img/chargestat.png'> <img class='chargeforceimg' src='img/chargestat.png'> <img class='chargeforceimg' src='img/chargestat.png'> Attaque (#FS#): 3#Farc# Portée 2-3 : Dépensez 1 #ch#. Si le défenseur est dans votre #bulls#, vous pouvez dépenser 1 ou plusieurs #ch# pour relancer autant de dés d’attaque.",
             "effect_ENG": "",
             "restrictions": [1,"upgrade", "Torpedo",""],
@@ -602,7 +602,7 @@
             "add_Data": [0],
             "force": 0,
             "charge": [2,"0"],
-            "points": 3,
+            "points": 2,
             "effect": "<img class='chargeforceimg' src='img/chargestat.png'> <img class='chargeforceimg' src='img/chargestat.png'> Attaque (#CA#, #FS# ou #TL#) : 3#Farc# Portée 1-3 : dépensez 1 #ch#. Si cette attaque touche, chaque vaisseau allié à portée 1–3 du défenseur peut verrouiller le défenseur. Puis annulez tous les résultats des dés.",
             "effect_ENG": "",
             "faction": ""
@@ -619,7 +619,7 @@
             "add_Data": [0],
             "force": 0,
             "charge": [1,"0"],
-            "points": 4,
+            "points": 3,
             "effect": "<img class='chargeforceimg' src='img/chargestat.png'> Attaque (#FS#) : 3#Farc# Portée 1-2 : Si l’attaque touche, annulez tous les dés. Puis le défenseur reçoit une carte de dégât face cachée et marqueur de Rayon Tracteur.",
             "effect_ENG": "",
             "faction": ""
@@ -656,7 +656,7 @@
             "add_Data": [0],
             "force": 0,
             "charge": [1,"0"],
-            "effect": "<img class='chargeforceimg' src='img/chargestat.png'> Attaque (#TL#) : 4#Farc# Portée 1 : dépensez 1 #ch#. ATTAQUE PRECISE",
+            "effect": "<img class='chargeforceimg' src='img/chargestat.png'> Attaque (#TL#) : 4#Farc# Portée 1 : dépensez 1 #ch#. Améliorez 1 dé d'attaque.",
             "effect_ENG": "",
             "faction": ""
         },
@@ -777,7 +777,7 @@
             "available": true,
             "modify": false,
             "slot": "Payload",
-            "points": 3,
+            "points": 2,
             "add_Data": [0],
             "force": 0,
             "charge": [2,"0"],
@@ -794,7 +794,7 @@
             "available": true,
             "modify": false,
             "slot": "Payload",
-            "points": 3,
+            "points": 2,
             "add_Data": [0],
             "force": 0,
             "charge": [2,"0"],
@@ -832,7 +832,7 @@
             "add_Data": [0],
             "force": 0,
             "charge": [0],
-            "points": 4,
+            "points": 3,
             "attack": ["F",3],
             "range": [1,3],
             "effect": "Portée 1-3 #Farc# 3 dés, Attaque : si cette attaque touche, tous les résultats #hit#/#crit# infligent des marqueurs de rayon tracteur au lieu des dégâts.",
@@ -953,7 +953,7 @@
             "points": 4,
             "attack": ["T",2],
             "range": [0,1],
-            "effect": "Portée 0-1 #tur# 2 dés. ATTAQUE PRECISE",
+            "effect": "Portée 0-1 #tur# 2 dés. Améliorez 2 dés d'attaque.",
             "effect_ENG": "",
             "faction": "",
             "modifier_func": [
@@ -974,7 +974,7 @@
             "points": 4,
             "attack": ["T",3],
             "range": [2,3],
-            "effect": "Portée 2-3 #tur# 3 dés Attaque : attaque IMPRECISE<br>puis Attaque: attaque IMPRECISE.",
+            "effect": "Portée 2-3 #tur# 3 dés Attaque : dégradez 2 dés d'attaque<br>puis Attaque: dégradez 2 dés d'attaque.",
             "effect_ENG": "",
             "faction": "",
             "modifier_func": [
@@ -1014,7 +1014,7 @@
             "charge": [2,"0"],
             "effect": "Action : Dépensez 1 #ch# pour effectuer une action #CK#.<br>Au début de la phase de préparation, lancez 1 dé d’attaque. Sur un résultat #eye#, désoccultez-vous ou défaussez votre marqueur d’occultation.",
             "effect_ENG": "",
-            "restrictions": [1,"base","Small", "Medium"],
+            "restrictions": [1,"base","small", "medium"],
             "faction": ""
         },
         {
@@ -1097,7 +1097,7 @@
             "effect": "<img class='chargeforceimg' src='img/chargestat.png'> <img class='chargeforceimg' src='img/chargestat.png'> Avant de subir des dégâts à cause d’un obstacle ou de l’explosion d’une bombe alliée, vous pouvez dépenser 1 #ch#. Dans ce cas, prévenez 1 dégât.",
             "effect_ENG": "",
             "restrictions": 
-                [1,"base", "Medium", "Large"],
+                [1,"base", "medium", "large"],
                 "faction": ""
         },
 {
@@ -1114,7 +1114,7 @@
             "effect": "<img class='chargeforceimg' src='img/chargestat.png'> <img class='chargeforceimg' src='img/chargestat.png'> Après avoir entièrement exécuté une manœuvre à vitesse 3–5, vous pouvez dépenser 1 #ch# pour effectuer une action #BO#, même tant que vous êtes stressé.",
             "effect_ENG": "",
             "restrictions": 
-                [1, "base", "Small",""],
+                [1, "base", "small",""],
                 "faction": ""
         },
 {
@@ -1127,7 +1127,7 @@
             "add_Data": [0],
             "force": 0,
             "charge": [0],
-            "points": 3,
+            "points": 2,
             "effect": "Nécessite que votre vaisseau dispose de l'action #BO# rouge. Donne l'action #BO# blanche",
             "effect_ENG": "",
             "faction": "",
@@ -1166,7 +1166,7 @@
             "points": 2,
             "effect": "Tant que vous gênez l’attaque d’un vaisseau ennemi, le défenseur lance 1 dé de défense supplémentaire.",
             "effect_ENG": "",
-            "restrictions": [1,"base", "Medium", "Large"],
+            "restrictions": [1,"base", "medium", "large"],
             "faction": ""
         },
 {
@@ -1246,7 +1246,7 @@
             "add_Data": [0],
             "force": 0,
             "charge": [0],
-            "points": 2,
+            "points": 1,
             "effect": "Donne accès l'action #TL#",
             "effect_ENG": "",
             "faction": "",
@@ -1371,7 +1371,7 @@
             "effect_ENG": "After you reveal your dial, you may spend 3 #fo# to perform a #BR# or #BO# action. Then, if you have performed an action which is not on your action bar, receive 2 strain tokens. In this case, you cannot perform an other action during your activation.",
             "faction": "",
             "restrictions":
-                    [1, "base", "Small", ""]
+                    [1, "base", "small", ""]
             
         },
 {
@@ -1516,7 +1516,7 @@
             "modify": false,
             "max_per_squad": 1,
             "slot": "Astromech",
-            "points": 8,
+            "points": 7,
             "add_Data": [0],
             "force": 0,
             "charge": [2,"0"],
@@ -1532,7 +1532,7 @@
             "modify": false,
             "max_per_squad": 1,
             "slot": "Astromech",
-            "points": 6,
+            "points": 5,
             "add_Data": [0],
             "force": 0,
             "charge": [3,"0"],
@@ -1550,7 +1550,7 @@
             "add_Data": [0],
             "force": 0,
             "charge": [0],
-            "points": 7,
+            "points": 6,
             "max_per_squad": 1,
             "effect": "Avant de lancer les dés de défense, vous pouvez dépenser 1 marqueur de calcul pour dire à voix haute un nombre supérieur ou égal à 1. Dans ce cas et si vous obtenez exactement cette quantité de résultats #evd# sur votre lancer, ajoutez 1 résultat #evd#.",
             "effect_ENG": "",
@@ -1601,7 +1601,7 @@
             "add_Data": [0],
             "force": 0,
             "charge": [0],
-            "points": 8,
+            "points": 7,
             "max_per_squad": 1,
             "effect": "Pendant la phase de dénouement, si vous êtes endommagé et n’êtes pas protégé, vous pouvez lancer 1 dé d’attaque pour récupérer 1 bouclier. Sur un résultat #hit#, exposez 1 de vos cartes de dégât.",
             "effect_ENG": "",
@@ -1617,7 +1617,7 @@
             "add_Data": [0],
             "force": 0,
             "charge": [0],
-            "points": 7,
+            "points": 6,
             "max_per_squad": 1,
             "effect": "Après avoir effectué une attaque principale, si vous êtes concentré, vous pouvez gagner 1 marqueur d’épuisement pour effectuer une attaque bonus.",
             "effect_ENG": "",
@@ -1632,7 +1632,7 @@
             "slot": "Gunner",
             "add_Data": [0],
             "charge": [0],
-            "points": 8,
+            "points": 7,
             "force": 1,
             "max_per_squad": 1,
             "effect": "Tant que vous effectuez une attaque qui n’est pas une attaque #Farc#, vous pouvez dépenser 1 #fo#. Si vous le faites, lancez 1 dé d’attaque supplémentaire.",
@@ -2248,7 +2248,7 @@
             "effect": "Action : dépensez 1 #ch#. Larguez 1 cargaison égarée en utilisant le gabarit 1#straight#.",
             "effect_ENG": "",
             "faction": ["Pirates_and_Smugglers","Hutt_Cartel","Crime_Syndicates"],
-            "restrictions": [1,"base", "Medium", "Large"]
+            "restrictions": [1,"base", "medium", "large"]
             
         },
 {
@@ -2317,7 +2317,7 @@
             "effect_ENG": "",
             "faction": ["Pirates_and_Smugglers"],
             "effect": "Gagnez 1 autre emplacement #ill#",
-            "restrictions": [1,"base", "Medium", "Large"],
+            "restrictions": [1,"base", "medium", "large"],
             "modifier_func": [
                 [2,"Illicit"],
                 [10,"Illicit"]
