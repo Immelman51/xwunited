@@ -1469,6 +1469,14 @@ linkToDisplayCode.addEventListener('click', (e) => {
     });
   });
 
+loadBtn.addEventListener('click', function(e) {
+    e.preventDefault();
+    loadingCode = document.getElementById('loadingCode');
+    hash = loadingCode.value;
+    console.log('hash');
+    window.location.href = `print_squad.html?#${hash}`
+})
+
   // Permet de fermer la popup en cliquant hors de la fenêtre
   popupOverlay.addEventListener('click', (e) => {
     if (e.target === popupOverlay) {
