@@ -211,6 +211,11 @@ header {
   color: black;
   cursor: pointer
 }
+.toggle-button.unvalid {
+  background-color: red;
+  color: black;
+  cursor: pointer
+}
 .toggle-button.active {
   background-color: grey; /* gris clair par exemple */
   color: white;

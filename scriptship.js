@@ -1481,6 +1481,7 @@ factionCards.addEventListener('click', function() {
 
 function hasher(){ //on inscrit dans hash le nombre de vaisseaux (shipquantity+1) on va transformer tous les ids du ship pilote et upgrades séparés par la lettre "z", chaque info différente (pilot, upgrades, modifiers) est séparée par des x, puis chaque vaisseaux différents séparés par ",".
     hash = String(leaderID) + ',';
+    hash = hash + listValidity + ',';
     
     
     for(i = 0; i<shipquantity+1; i++) {

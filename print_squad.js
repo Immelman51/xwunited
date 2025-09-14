@@ -49,25 +49,29 @@ async function getIndexesFromHash() { // Function to get the indexes from the UR
     // Split the hash into an array
     indexes = hash.split(',');
 
-    //If there are any undefined values (for example no Pilot ID), we'll extract the value undefined from the aray indexes
+    //If there are any undefined values (for example no Pilot ID), we'll extract the value undefined from the array indexes
     for (k=0 ; k<indexes.length ; k++){
         if(indexes[k]==='undefined'){
             indexes.splice(k, 1);
         }
     }
 
-    return indexes; // The array 'indexes' contains ! ["leaderID","pilotID+u+upgrade1ID+u+upgrade2ID","pilotID"....]
+    return indexes; // The array 'indexes' contains ! ["leaderID","listValidity(true or false)","pilotID+u+upgrade1ID+u+upgrade2ID","pilotID"....]
 }
 
 
 async function displayLeader(){
 const lID = indexes[0];
+const listValidity = indexes[1];
 
 const leaderName = document.getElementById('lname');
 const faction = document.getElementById('leaderfaction');
 const leaderAbility = document.getElementById('lability');
 const leaderCharge = document.getElementById('lcharge');
 leaderName.textContent = leaders[lID]['leadername'];
+    if(listValidity==="false"){
+        leaderName.textContent += ' (NOT VALID)';
+    }
 for(i=0; i<3; i++){
     if(leaders[lID]['leaderfaction'][i] !== ""){
     let factionimg = document.createElement('img');
@@ -139,7 +143,7 @@ function displayPilotActions(x){
     const pilotID = pilotdata[x][0];
     const shipID = pilots[pilotID]['shipId'];
     const actionsArray = ships[shipID]['actions'];
-    actionlist = document.getElementById('actions'+x);
+    actionlist = document.getElementById('actions'+(x-1));
     for(g=0 ; g<actionsArray.length ; g++){
         switch(actionsArray[g][0]){
             case 0 : //if 0 is the first value, it is a simple action
@@ -181,20 +185,20 @@ function displayPilotActions(x){
 
 function displayPilot(x){ 
     console.log(`Displaying pilot for index ${x}`);
-    const imgPilot = document.getElementById('pilot'+x);
-    const pilotSkill = document.getElementById('pskill'+x);
-    const pilotFaction = document.getElementById('plogo'+x);
-    const pilotName = document.getElementById('name'+x);
-    const pilotShip = document.getElementById('ship'+x);
-    const pilotCost = document.getElementById('cost'+x);    
-    const pilotstat = document.getElementById('stat'+x);
+    const imgPilot = document.getElementById('pilot'+(x-1)); //x-1 because the pilots begins after indexes 2. Example indexes 2, we have pilot number 1 (in the html page)
+    const pilotSkill = document.getElementById('pskill'+(x-1));
+    const pilotFaction = document.getElementById('plogo'+(x-1));
+    const pilotName = document.getElementById('name'+(x-1));
+    const pilotShip = document.getElementById('ship'+(x-1));
+    const pilotCost = document.getElementById('cost'+(x-1));
+    const pilotstat = document.getElementById('stat'+(x-1));
 
     //const pilotAttack1 = document.getElementById('attack1'+x);
     //const pilotAttack2 = document.getElementById('attack2'+x);
     //const pilotAgility = document.getElementById('agility'+x);
     //const pilotHull = document.getElementById('hull'+x);
     //const pilotShield = document.getElementById('shield'+x);
-    const pilotAbility = document.getElementById('ability'+x);
+    const pilotAbility = document.getElementById('ability'+(x-1));
     //const pilotActions = document.getElementById('actions'+x);
     
     getPilotData(x);
@@ -288,40 +292,40 @@ function displayPilot(x){
         
         case 1 : //if there is only 1 chassis ability or no chassis ability : it can be simple, or it can be more complex such as 2 configurations.
             if(chassis[cid[0]]["nbrOfEffects"]===0){
-            removeElementById("chassis"+x+"_1");    
-            removeElementById("chassis"+x+"_2");
-            removeElementById("chassis"+x+"_3");
+            removeElementById("chassis"+(x-1)+"_1");
+            removeElementById("chassis"+(x-1)+"_2");
+            removeElementById("chassis"+(x-1)+"_3");
             }
 
             if(chassis[cid[0]]["nbrOfEffects"]===1){
-            document.getElementById('chassis'+x+'_'+1).innerHTML = chassis[cid[0]]['effect1'];
-            document.getElementById('chassis'+x+'_'+1).setAttribute('class','chassis C'+cid[0]+' chs1'); //We change the class of this chassis, so we can remove it with functions contained in title such as Millenium Falcon.
-            removeElementById("chassis"+x+"_2");
-            removeElementById("chassis"+x+"_3");            
+            document.getElementById('chassis'+(x-1)+'_'+1).innerHTML = chassis[cid[0]]['effect1'];
+            document.getElementById('chassis'+(x-1)+'_'+1).setAttribute('class','chassis C'+cid[0]+' chs1'); //We change the class of this chassis, so we can remove it with functions contained in title such as Millenium Falcon.
+            removeElementById("chassis"+(x-1)+"_2");
+            removeElementById("chassis"+(x-1)+"_3");
             }
             
             if(chassis[cid[0]]["nbrOfEffects"]===2){
-            document.getElementById('chassis'+x+'_'+1).innerHTML = chassis[cid[0]]['effect1'];
-            document.getElementById('chassis'+x+'_'+2).innerHTML = chassis[cid[0]]['effect2'];
-            document.getElementById('chassis'+x+'_'+3).innerHTML = chassis[cid[0]]['effect3'];    
+            document.getElementById('chassis'+(x-1)+'_'+1).innerHTML = chassis[cid[0]]['effect1'];
+            document.getElementById('chassis'+(x-1)+'_'+2).innerHTML = chassis[cid[0]]['effect2'];
+            document.getElementById('chassis'+(x-1)+'_'+3).innerHTML = chassis[cid[0]]['effect3'];
             }
             break;
         case 2 : 
             if(chassis[cid[0]]["nbrOfEffects"]===2){ //rules to display several chassis on 1 ship. We have to take in account the case where we need more than 3 div to display thoses abilities. In that case, we display 2 chassis ability in chassis0
-                document.getElementById('chassis'+x+'_'+1).innerHTML = chassis[cid[1]]['effect1']+'<br>'+chassis[cid[0]]['effect1']; 
-                document.getElementById('chassis'+x+'_'+1).setAttribute('class','chassis C'+cid[1]+' chs1'); //We change the class of this chassis, so we can remove it with functions contained in title such as Millenium Falcon.
-                document.getElementById('chassis'+x+'_'+2).innerHTML = chassis[cid[0]]['effect2']; 
-                document.getElementById('chassis'+x+'_'+3).innerHTML = chassis[cid[0]]['effect3']; 
+                document.getElementById('chassis'+(x-1)+'_'+1).innerHTML = chassis[cid[1]]['effect1']+'<br>'+chassis[cid[0]]['effect1'];
+                document.getElementById('chassis'+(x-1)+'_'+1).setAttribute('class','chassis C'+cid[1]+' chs1'); //We change the class of this chassis, so we can remove it with functions contained in title such as Millenium Falcon.
+                document.getElementById('chassis'+(x-1)+'_'+2).innerHTML = chassis[cid[0]]['effect2'];
+                document.getElementById('chassis'+(x-1)+'_'+3).innerHTML = chassis[cid[0]]['effect3'];
             }
             if(chassis[cid[1]]["nbrOfEffects"]===2){ //rules to display several chassis on 1 ship. We have to take in account the case where we need more than 3 div to display thoses abilities. In that case, we display 2 chassis ability in chassis0
-                document.getElementById('chassis'+x+'_'+1).innerHTML = chassis[cid[0]]['effect1']+'<br>'+chassis[cid[1]]['effect1']; 
-                document.getElementById('chassis'+x+'_'+2).innerHTML = chassis[cid[1]]['effect2']; 
-                document.getElementById('chassis'+x+'_'+3).innerHTML = chassis[cid[1]]['effect3']; 
+                document.getElementById('chassis'+(x-1)+'_'+1).innerHTML = chassis[cid[0]]['effect1']+'<br>'+chassis[cid[1]]['effect1'];
+                document.getElementById('chassis'+(x-1)+'_'+2).innerHTML = chassis[cid[1]]['effect2'];
+                document.getElementById('chassis'+(x-1)+'_'+3).innerHTML = chassis[cid[1]]['effect3'];
             }
             if((chassis[cid[0]]["nbrOfEffects"]===1) && (chassis[cid[1]]["nbrOfEffects"]===1)){ //if the 2 chassis abilities has 1 effect, then we display then into chassis2 and chassis3 and we leave chassis1 blank
-                document.getElementById('chassis'+x+'_'+2).innerHTML = chassis[cid[0]]['effect1'];
-                document.getElementById('chassis'+x+'_'+3).innerHTML = chassis[cid[1]]['effect1'];
-                removeElementById("chassis"+x+"_1");
+                document.getElementById('chassis'+(x-1)+'_'+2).innerHTML = chassis[cid[0]]['effect1'];
+                document.getElementById('chassis'+(x-1)+'_'+3).innerHTML = chassis[cid[1]]['effect1'];
+                removeElementById("chassis"+(x-1)+"_1");
 
             }
             break;
@@ -334,7 +338,7 @@ function displayPilot(x){
     for(i=0; i< pilotdata[x].length-1 ; i++){ 
         
         let uid = pilotdata[x][i+1] //we start i+1 because at 0, there's the pilotID
-        mdiv = document.getElementById('upgrade'+x+'_'+i);
+        mdiv = document.getElementById('upgrade'+(x-1)+'_'+i);
         mdivupg = document.createElement('div');
         mdivupg.setAttribute('class','upgrade');
         /*upglogo = document.createElement('img');
@@ -407,7 +411,7 @@ function displayPilot(x){
         mdiv.appendChild(mdivupg);
     }
     for(i=pilotdata[x].length; i<11 ; i++){ //we remove the upgrade divs that aer empty
-        removeElementById("upgrade"+x+"_"+i);
+        removeElementById("upgrade"+(x-1)+"_"+i);
     }
 }
 
@@ -423,9 +427,9 @@ async function executeFunctions(){ //on crée une fonction asynchrone pour que t
     await getIndexesFromHash();
     await displayLeader();
     
-    for(k=1; k<indexes.length; k++){
-        
-            await displayPilot(k); 
+    for(k=2; k<indexes.length; k++){
+        console.log('displayPilot '+k+'  '+indexes[k]);
+            await displayPilot(k);
          
         
         }
@@ -439,7 +443,7 @@ async function executeFunctions(){ //on crée une fonction asynchrone pour que t
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
     
         executeFunctions(); // on execute la fonction ultime!!!!!!!!!
-        for (k=indexes.length ; k<9 ; k++ ){ //on va supprimer les éléments des pilotes qui n'ont pas été sélectionnés
+        for (k=indexes.length-1 ; k<9 ; k++ ){ //on va supprimer les éléments des pilotes qui n'ont pas été sélectionnés
             removeElementsByClass(k);
         }
         
@@ -448,20 +452,6 @@ async function executeFunctions(){ //on crée une fonction asynchrone pour que t
         console.error("Failed to fetch data: ", error);
     }
 })();
-
-// prepare the hash to add at the end of the web adress for Print_upgrades
-/*function hasher(){
-hash2 = "";
-for (i=1 ; i<indexes.length ; i++){
-    for ( j=0 ; j<pilotdata[i].length ; j++){
-            hash2 += pilotdata[i][j] + ',';
-       }
-       hash2 = hash2.slice(0,-1) ; //removing the additionnal coma
-       hash2 += 'p';
-    }
-    hash2 = hash2.slice(0,-1); //on retire le ',p' final
-}
-*/
 
 
 
@@ -480,7 +470,7 @@ const printform = document.getElementById('printform');
 function addBaseAndDialsToPrint() {
     
     console.log('function addBaseAndDialsToPrint');
-    for (i=1 ; i<indexes.length ; i++) {
+    for (i=2 ; i<indexes.length ; i++) {
         let divInput = document.createElement('div');
         let baseInput = document.createElement('input');
         baseInput.setAttribute('id','baseInput'+i);
@@ -496,7 +486,7 @@ function addBaseAndDialsToPrint() {
     }
 
 
-    for (i=1 ; i<indexes.length ; i++) {
+    for (i=2 ; i<indexes.length ; i++) {
         let divInput = document.createElement('div');
         let dialInput = document.createElement('input');
         dialInput.setAttribute('id','dialInput'+i);
@@ -538,7 +528,7 @@ printBtn.addEventListener('click', () => {
         elementsToPrintArray[1]=true;
     }else{elementsToPrintArray[1]=false;}
     
-    for (i=1 ; i<indexes.length ; i++){
+    for (i=2 ; i<indexes.length ; i++){
         const base = document.getElementById('baseInput'+i);
         if (base.checked) {
             elementsToPrintArray[2][i-1].push(base.value) //the value of the checkbox is equal to the ID of the pilot. Objective, elementsToPrintArray[3] will be : [[shipId1,"large"],[shipId2,"small"],[shipId3,"medium"],[],[],[],[],[]]
@@ -600,7 +590,7 @@ function addHTMLandCSSforDialsAndBases() {
     const upgradeContainer = document.getElementById('upgrade-container');
     upgradeContainer.innerHTML = ""; //we re-initialize this div in case you click several time on print. (without this it's going to write again the upgrades descriptions.
     if (elementsToPrintArray[1]===true){
-        for (j=1 ; j<indexes.length ; j++){
+        for (j=2 ; j<indexes.length ; j++){
             if(indexes[j].length > 1){
                 newpilot = document.createElement('div');
                 newpilot.setAttribute('class','pilot');
