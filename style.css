@@ -217,6 +217,12 @@ header {
   border: none;
   cursor: pointer;
 }
+.toggle-button.active.unvalid{
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
 
 
 /* ## Beyond the third line ## */
@@ -269,6 +275,9 @@ header {
     color: orange;
 }
 
+.unvalid{
+    background-color: red;
+}
 
 select {
     overflow: auto;

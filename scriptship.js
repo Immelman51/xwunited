@@ -41,6 +41,7 @@ async function fetchData(url) {
 
 let shipquantity = -1; //compteur qui ne sert pas à compter mais à numéroter les id des menus
  let ship_available = [];
+ let listValidity = true;
  let ship_selected_list = ["","","","","","","",""]; // Dans ce tableau, on va stocker la valeur sélectée de chaque menu_ship
  let pilot_id_available =[];
  let factionno1 = "";
@@ -49,7 +50,8 @@ let shipquantity = -1; //compteur qui ne sert pas à compter mais à numéroter 
  let totalcostvalue = 0;
  let logisticEquipped = [0,0,0,0,0,0,0,0];
  let talentEquipped = [0,0,0,0,0,0,0,0];
- let leader_ID = 0; 
+ let sumLogisticEquipped = 0;
+ let leader_ID = 0;
 
  let pilot_selected_list = ["","","","","","","",""]; // Dans ce tableau, on va stocker la valeur sélectée de chaque menu_pilot
  let pilot_list = [{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0}]; //Dans ce tableau, on stocker les objets pilotes
@@ -205,6 +207,7 @@ function displayslots(yy) { //crée les menus de slot et contient l'écoute des 
             displayDescriptionUpgrade(event);
             fillUpgradesSelected(y);
             updateUpgradeCount(y);
+           
             })
 
     slotmenu.addEventListener("mouseover", function(event){
@@ -232,6 +235,7 @@ function displayslots(yy) { //crée les menus de slot et contient l'écoute des 
             checkUpgradeModifier(event);
             updateUpgradeCount(y);
             updateTotalCost();
+           
             displayDescriptionUpgrade(event);
             fillUpgradesSelected(y);
 	    
@@ -261,6 +265,28 @@ function displayslots(yy) { //crée les menus de slot et contient l'écoute des 
    
     
 
+}
+
+function testListValidity() {
+    //Test if the pilots talent slots exceed the skill of the pilot (TAL)
+    for (k=0;k<shipquantity+1;k++){
+        if(talentEquipped[k]>pilot_list[k]['skill']){
+            listValidity=false;
+            return;
+        }
+    }
+   //Test if the number of upgrades equipped points exceed the logistic value of the leader
+    if(sumLogisticEquipped>leaders[leader_ID]["logistic"]){
+        listValidity=false;
+        return;
+    }
+    //Test if the cost of all ships exceed 30, the limit for a squad
+    if(totalcostvalue>30){
+        listValidity=false;
+        return;
+    }
+    //If all test are false, and we avoid all return instructions, then the list is valid
+    listValidity=true
 }
 
 function fillUpgradesSelected(yy){ //fills the array UpgradesSelected and upgradesSelected_Objects (used when an input of upgrade is made)
@@ -314,7 +340,13 @@ function updateTotalCost() { //update total cost
     }
     totalcount= document.getElementById("totalcost");
     totalcount.textContent = totalcostvalue+'/30';
-    
+    //We are going to test the List validity, and if it's unvalid, we add the class unvalid that paints the background in red
+    testListValidity();
+    if(listValidity===false){
+        totalcount.setAttribute("class","count total unvalid");
+    }else{ //If it's valid, we remove eventually the unvalid class
+        totalcount.setAttribute("class","count total");
+    }
 }
 
 function updateUpgradeCount(yy) { //update the table logistic_Equipped and talentEquipped and display the sum of all of them in sumLogisiticEquipped. That way, you can keep count of how many uprgade points you have left to equip your squad
@@ -338,15 +370,51 @@ function updateUpgradeCount(yy) { //update the table logistic_Equipped and talen
     }
     
     
-    /*for (j=0; j<shipquantity+1 ; j++){
-        let upgradeButton = document.getElementById('upgradeButton'+j);
-        upgradeButton.textContent = 'TAL('+talentEquipped[yy]+'/'+pilot_list[yy]["skill"]+') LOG('+logisticEquipped[j]+')';
-    }*/
+    //for (j=0; j<shipquantity+1 ; j++){
+    //    let upgradeButton = document.getElementById('upgradeButton'+j);
+    //    upgradeButton.textContent = 'TAL('+talentEquipped[yy]+'/'+pilot_list[yy]["skill"]+') LOG('+logisticEquipped[j]+')';
+    //}
     let upgradeButton = document.getElementById('upgradeButton'+yy);
     upgradeButton.textContent = 'TAL('+talentEquipped[yy]+'/'+pilot_list[yy]["skill"]+') LOG('+logisticEquipped[yy]+')';
+    testListValidity();
+    
+    if(talentEquipped[yy]>pilot_list[yy]["skill"]){
+        upgradeButtonClass= upgradeButton.getAttribute('class');
+        switch(upgradeButtonClass){
+            case 'toggle-button':
+                upgradeButton.setAttribute("class","toggle-button unvalid");
+                break;
+            case 'toggle-button active':
+                upgradeButton.setAttribute("class","toggle-button active unvalid");
+                break;
+            default:
+                break;
+        }
+    }else{
+        upgradeButtonClass= upgradeButton.getAttribute('class');
+        switch(upgradeButtonClass){
+                    case 'toggle-button unvalid':
+                    upgradeButton.setAttribute("class","toggle-button");
+                    break;
+                    case 'toggle-button active unvalid':
+                    upgradeButton.setAttribute("class","toggle-button active");
+                    break;
+                    case 'toggle-button unvalid active':
+                    upgradeButton.setAttribute("class","toggle-button active");
+                    break;
+                    default:
+                    break;
+        }
+    }
 
     logisticCounter.innerHTML = 'LOG<br>'+sumLogisticEquipped+'/'+leaders[leader_ID]["logistic"];
-    
+    //We test the list Validity, and if it's not valid, we paint the logistic in red
+   
+    if(sumLogisticEquipped>leaders[leader_ID]["logistic"]){
+        logisticCounter.setAttribute("class","logistic total unvalid");
+    }else{
+        logisticCounter.setAttribute("class","logistic total");
+    }
 
 }
 
@@ -1387,7 +1455,8 @@ leaderselect.addEventListener("input", function() {
     leader_ID = leaderselect.selectedIndex ;
     
     updateTotalCost();
-}); 
+
+});
 
     
 
