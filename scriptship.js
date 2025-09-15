@@ -196,7 +196,11 @@ function displayslots(yy) { //crée les menus de slot et contient l'écoute des 
         upgrades_Type[yy].push(pilot_list[yy]["slots"][i]);
     slotmenu = document.createElement('select');
     slotmenu.setAttribute('id', 'slot'+yy+"_"+i);
-    slotmenu.setAttribute('class', 'slotElement'+yy);//+' '+pilot_list[yy]["slots"][i]);
+                if((pilot_list[yy]["slots"][i]==="Talent-elite")||(pilot_list[yy]["slots"][i]==="Talent-shooting")||(pilot_list[yy]["slots"][i]==="Talent-piloting")||(pilot_list[yy]["slots"][i]==="Talent-leadership")||(pilot_list[yy]["slots"][i]==="Force")){
+                    slotmenu.setAttribute('class', 'slotElement'+yy+' '+'talent');//+' '+pilot_list[yy]["slots"][i]);
+                }else{
+                    slotmenu.setAttribute('class', 'slotElement'+yy);
+                }
     shipslot.appendChild(slotmenu);
     slotmenu.addEventListener("input", function(event) {//cette fonction décrit le calcul des mises à jour des points pour le loadout et le cout du pilote
             identifyElement(event);
@@ -339,7 +343,7 @@ function updateTotalCost() { //update total cost
         totalcostvalue = totalcostvalue + pilot_list[j]["points"];
     }
     totalcount= document.getElementById("totalcost");
-    totalcount.textContent = totalcostvalue+'/30';
+    totalcount.innerHTML = "TOT<br><span style='font-size:x-large'>"+totalcostvalue+"</span>";
     //We are going to test the List validity, and if it's unvalid, we add the class unvalid that paints the background in red
     testListValidity();
     if(listValidity===false){
@@ -407,7 +411,7 @@ function updateUpgradeCount(yy) { //update the table logistic_Equipped and talen
         }
     }
 
-    logisticCounter.innerHTML = 'LOG<br>'+sumLogisticEquipped+'/'+leaders[leader_ID]["logistic"];
+    logisticCounter.innerHTML = 'LOG<br><span style="font-size:x-large">'+sumLogisticEquipped+'</span>';
     //We test the list Validity, and if it's not valid, we paint the logistic in red
    
     if(sumLogisticEquipped>leaders[leader_ID]["logistic"]){

@@ -168,6 +168,7 @@ header {
     border-width: 2px;
 }
 
+
 .chassis:empty{
     /*flex: 0 0 0;*/
     display: none;
@@ -231,6 +232,7 @@ header {
 
 
 /* ## Beyond the third line ## */
+
 .slot {
     display:grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -246,7 +248,9 @@ header {
     box-sizing: border-box;
 }
 
-
+select.talent{
+    background-color:lightblue;
+}
 
 /* #### Description Zone ######### */
 
@@ -259,7 +263,7 @@ header {
     position: sticky;
     bottom:0;
     display: grid;
-    grid-template-columns: auto 60px 60px;
+    grid-template-columns: auto 40px 40px;
 }
 
 .loadout {
@@ -267,14 +271,14 @@ header {
 }
 
 .total {
-    font-size: x-large;
+  
     align-self: center;
     justify-self: center;
     
    
 }
 .count {
-    color:aliceblue;
+    color:yellow;
 }
 .logistic{
     color: orange;
