@@ -53,8 +53,8 @@
         "id": 6,
         "nbrOfEffects": 2,
         "effect1": "(S-Foils Stabilisés) :",
-        "effect2": "<img class='chargeforceimg' src='img/chargestatRed.png'> (Repliés) Lorsque vous attaquez, si la cible n'est pas dans votre #bulls#, lancez 1 dé de moins.<br><img class='action' src='img/confBwingR1.png'><br><img class='action' src='img/Rd R.png'>",
-        "effect3": "<img class='chargeforceimg' src='img/chargestat.png'> (Dépliés) Après avoir effectué une attaque, vous pouvez dépenser votre verrouillage sur le défenseur pour effectuer une attaque bonus #canon# contre ce vaisseau en utilisant une amélioration #canon# avec laquelle vous n’avez pas attaqué à ce round.<br><img class='action' src='img/confBwingD.png'>"
+        "effect2": "<img class='chargeforceimg' src='img/chargestat.png'> (Dépliés) Après avoir effectué une attaque principale, vous pouvez dépenser votre verrouillage sur le défenseur pour effectuer une attaque secondaire bonus contre ce vaisseau.",
+        "effect3": "<img class='chargeforceimg' src='img/chargestatRed.png'> (Repliés) Lorsque vous attaquez, si la cible n'est pas dans votre #bulls#, lancez 1 dé de moins.<br><img class='action' src='img/confBwingR1.png'><br><img class='action' src='img/Rd R.png'>"
     },
     {
         "name": "Advanced Targetting Computer",
@@ -353,7 +353,7 @@
     "name":"Intuitive Interface",
     "id":43,
     "nbrOfEffects": 1,
-    "effect1":"(Interface Intuitive) : Après avoir effectué une action ajoutée à votre barre d'action par une amélioration #talent#, #ill#, #mod#, vous pouvez effectuer une action #CC#",
+    "effect1":"(Interface Intuitive) : Après avoir effectué une action ajoutée à votre barre d'action par une amélioration, vous pouvez effectuer une action #CC#",
     "effect2": "",
     "effect3": "" 
 },

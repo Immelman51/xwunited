@@ -222,18 +222,18 @@ function displayPilot(x){
     pilotShip.textContent = ships[sid]['name'];
     
     //Attack 1 and Attack 2
-    pilotstat.innerHTML = '<span class="attack">' +ships[sid]["attack"][0][1] + '</span> <img src="img/attack'+ships[sid]["attack"][0][0] +'.jpg" class="logo"/>' ;
+    pilotstat.innerHTML = '<div><span class="attack">' +ships[sid]["attack"][0][1] + '</span> <img src="img/attack'+ships[sid]["attack"][0][0] +'.jpg" class="logo"/></div>' ;
     if(ships[sid]["attack"].length === 2){
-    pilotstat.innerHTML = pilotstat.innerHTML + '<br><span class="attack">' + ships[sid]["attack"][1][1] + '</span> <img src="img/attack'+ships[sid]["attack"][1][0] +'.jpg" class="logo"/>' ;
+    pilotstat.innerHTML = pilotstat.innerHTML + '<div><span class="attack">' + ships[sid]["attack"][1][1] + '</span> <img src="img/attack'+ships[sid]["attack"][1][0] +'.jpg" class="logo"/></div>' ;
     }
     //Agility
-    pilotstat.innerHTML = pilotstat.innerHTML + '<br><span class="agility">' + ships[sid]["agility"] + '</span> <img src="img/agility.jpg" class="logo"/>' ;
+    pilotstat.innerHTML = pilotstat.innerHTML + '<div><span class="agility">' + ships[sid]["agility"] + '</span> <img src="img/agility.jpg" class="logo"/></div>' ;
 
     //Hull
-    pilotstat.innerHTML = pilotstat.innerHTML + '<br><span class="hull">' + ships[sid]["hull"] + '</span> <img src="img/hull.jpg" class="logo"/>' ;
+    pilotstat.innerHTML = pilotstat.innerHTML + '<div><span class="hull">' + ships[sid]["hull"] + '</span> <img src="img/hull.jpg" class="logo"/></div>' ;
 
     //shield
-    pilotstat.innerHTML = pilotstat.innerHTML + '<br><span class="shield">' + ships[sid]["shields"] + '</span> <img src="img/shield.jpg" class="logo"/>' ;
+    pilotstat.innerHTML = pilotstat.innerHTML + '<div><span class="shield">' + ships[sid]["shields"] + '</span> <img src="img/shield.jpg" class="logo"/></div>' ;
 
     
     displayPilotActions(x);
@@ -305,20 +305,20 @@ function displayPilot(x){
             }
             
             if(chassis[cid[0]]["nbrOfEffects"]===2){
-            document.getElementById('chassis'+(x-1)+'_'+1).innerHTML = chassis[cid[0]]['effect1'];
             document.getElementById('chassis'+(x-1)+'_'+2).innerHTML = chassis[cid[0]]['effect2'];
             document.getElementById('chassis'+(x-1)+'_'+3).innerHTML = chassis[cid[0]]['effect3'];
+            removeElementById("chassis"+(x-1)+"_1");
             }
             break;
         case 2 : 
             if(chassis[cid[0]]["nbrOfEffects"]===2){ //rules to display several chassis on 1 ship. We have to take in account the case where we need more than 3 div to display thoses abilities. In that case, we display 2 chassis ability in chassis0
-                document.getElementById('chassis'+(x-1)+'_'+1).innerHTML = chassis[cid[1]]['effect1']+'<br>'+chassis[cid[0]]['effect1'];
+                document.getElementById('chassis'+(x-1)+'_'+1).innerHTML = chassis[cid[1]]['effect1']
                 document.getElementById('chassis'+(x-1)+'_'+1).setAttribute('class','chassis C'+cid[1]+' chs1'); //We change the class of this chassis, so we can remove it with functions contained in title such as Millenium Falcon.
                 document.getElementById('chassis'+(x-1)+'_'+2).innerHTML = chassis[cid[0]]['effect2'];
                 document.getElementById('chassis'+(x-1)+'_'+3).innerHTML = chassis[cid[0]]['effect3'];
             }
             if(chassis[cid[1]]["nbrOfEffects"]===2){ //rules to display several chassis on 1 ship. We have to take in account the case where we need more than 3 div to display thoses abilities. In that case, we display 2 chassis ability in chassis0
-                document.getElementById('chassis'+(x-1)+'_'+1).innerHTML = chassis[cid[0]]['effect1']+'<br>'+chassis[cid[1]]['effect1'];
+                document.getElementById('chassis'+(x-1)+'_'+1).innerHTML = chassis[cid[0]]['effect1'];
                 document.getElementById('chassis'+(x-1)+'_'+2).innerHTML = chassis[cid[1]]['effect2'];
                 document.getElementById('chassis'+(x-1)+'_'+3).innerHTML = chassis[cid[1]]['effect3'];
             }
