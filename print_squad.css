@@ -199,7 +199,7 @@ padding: 2px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: solid;
+    border: 2px solid;
     background-color: white;
 }
 
