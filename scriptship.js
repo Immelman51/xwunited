@@ -59,7 +59,7 @@ let shipquantity = -1; //compteur qui ne sert pas à compter mais à numéroter 
  let upgrades_Type = [[],[],[],[],[],[],[],[]]; //va contenir tous les slots pour chaque pilote
  let upgrades_Objects= [[],[],[],[],[],[],[],[]]; // va contenir la liste des contenus des menus slots mais sous forme d'objet
  let upgrades_Objects_Val= [[],[],[],[],[],[],[],[]]; // va contenir la liste des contenus des menus slots après validation mais sous forme d'objet
- let upgradesSelected = [[],[],[],[],[],[],[],[]]; //va contenir les nom des upgrades sélectionnées
+ //let upgradesSelected = [[],[],[],[],[],[],[],[]]; //va contenir les nom des upgrades sélectionnées
  let upgradesSelected_Objects = [[],[],[],[],[],[],[],[]]; //va contenir les objets des upgrades sélectionnées (si rien n'est sélectionné, alors la valeur est -1)
  let y= "0"; //valeur qui indique l'index du pilote podifié
  let z= "0"; //valeur qui indique l'index dans le menu de l'élément sélectionné
@@ -204,7 +204,7 @@ function displayslots(yy) { //crée les menus de slot et contient l'écoute des 
     shipslot.appendChild(slotmenu);
     slotmenu.addEventListener("input", function(event) {//cette fonction décrit le calcul des mises à jour des points pour le loadout et le cout du pilote
             identifyElement(event);
-            check_restricted_List(event);
+            check_restricted_List();
             checkUpgradeModifier(event);
             //updateUpgradeCount(y);
             //updateTotalCost();
@@ -235,7 +235,7 @@ function displayslots(yy) { //crée les menus de slot et contient l'écoute des 
 
         slotmenu.addEventListener("input", function(event) {//cette faction décrit le calcul des mises à jour des points pour le loadout et le cout du pilote
             identifyElement(event);             
-            check_restricted_List(event);            
+            check_restricted_List();            
             checkUpgradeModifier(event);
             updateUpgradeCount(y);
             updateTotalCost();
@@ -294,12 +294,12 @@ function testListValidity() {
 }
 
 function fillUpgradesSelected(yy){ //fills the array UpgradesSelected and upgradesSelected_Objects (used when an input of upgrade is made)
-    upgradesSelected[yy] = [];
+    //upgradesSelected[yy] = [];
     upgradesSelected_Objects[yy] = [];
     
     for (let i=0; i<upgrades_Type[y].length ; i++){
         slotM = document.getElementById("slot"+yy+"_"+i);
-        upgradesSelected[yy].push(slotM.value);
+        //upgradesSelected[yy].push(slotM.value);
         
         if (slotM.selectedIndex>0){
             upgradesSelected_Objects[yy].push(structuredClone(upgrades_Objects_Val[yy][i][slotM.selectedIndex-1])); // We copy the objects by cloning them
@@ -651,7 +651,7 @@ function checkUpgradeModifier() { //va checker s'il existe une fonction modify l
     }
 }
 
-function check_restricted_List(event){ //check si l'upgrade ou le pilote est déjà utilisé par un(e) autre du même nom
+function check_restricted_List(){ //check si l'upgrade ou le pilote est déjà utilisé par un(e) autre du même nom
     let newname = '';
     let maxnbr = 8;
     if (z===0){ //si on séléctionne la valeur vide d'un menu (la ligne 0), il faut arrêter la vérif
@@ -665,7 +665,8 @@ function check_restricted_List(event){ //check si l'upgrade ou le pilote est dé
             
 
         }else{ //it's an upgrade
-            upgradesSelected[y][x] = event.target.value;
+            //upgradesSelected[y][x] = event.target.value;
+            upgradesSelected_Objects[y][x] = -1;
             fillUpgradesSelected(y);
             update_restricted_List(y);
          
@@ -699,8 +700,10 @@ function check_restricted_List(event){ //check si l'upgrade ou le pilote est dé
     
     if (maxnbr <= 0) { // cela arrive si on a excédé le nombre d'exemplaires de l'upgrade/pilote
         alert(newname +' is no more available in your squad');
-        event.target.selectedIndex = 0;
+        //event.target.selectedIndex = 0;
         if (x=== -1){ //il faut remettre à jour certaines listes
+            let pilotMenuToReset = document.getElementById('menu_pilot_'+y);
+            pilotMenuToReset.selectedIndex = 0;
             pilot_selected_list[y] =  { name: "", points: 0 };
             //We remove all selected upgrades for this pilot. Allows to remove an eventual title upgrade.
             removeElementsByClass('slotElement'+y);
@@ -709,7 +712,8 @@ function check_restricted_List(event){ //check si l'upgrade ou le pilote est dé
             restricted_List[8][y] = 'pilot'+y;
 
         }else{
-            upgradesSelected[y][x] = event.target.value;
+            //upgradesSelected[y][x] = event.target.value;
+            upgradesSelected_Objects[y][x] = -1;
             fillUpgradesSelected(y);
             update_restricted_List(y);
         }
@@ -734,7 +738,7 @@ function update_restricted_List(yy){ //va mettre à jour la restricted_List. les
 
     //Then we study the case of an upgrade modification
     if (x>=0){
-        for (let i=0 ; i<upgradesSelected[yy].length ; i++){
+        for (let i=0 ; i<upgradesSelected_Objects[yy].length ; i++){
             slotmenu = document.getElementById('slot'+yy+'_'+i);
             z = slotmenu.selectedIndex;
             let nameupg = 'slot'+yy+'_'+i;
@@ -884,7 +888,7 @@ function  add_slots (targetSlot){ //Action n°2 : A utiliser si une upgrade rajo
 
         slotmenu.addEventListener("input", function(event) {//cette faction décrit le calcul des mises à jour des points pour le loadout et le cout du pilote
             identifyElement(event);
-            check_restricted_List(event);
+            check_restricted_List();
             fillUpgradesSelected(y)
             updateUpgradeCount(y);
             updateTotalCost();
@@ -899,8 +903,8 @@ function also_Occupies(targetSlot){ //Action n°3 : A utiliser lorsqu'une upgrad
     
     fillUpgradesSelected(y);
     let field = null;
-    for (let i = 0; i < upgradesSelected[y].length; i++) {
-        if (upgradesSelected[y][i] === '<' + targetSlot + '>') {
+    for (let i = 0; i < upgradesSelected_Objects[y].length; i++) {
+        if (upgradesSelected_Objects[y][i] === -1) {
             field = document.getElementById('slot' + y + '_' + i);
             field.value = '<' + targetSlot + '>';
             field.setAttribute('disabled', '');
@@ -1059,7 +1063,7 @@ function leaderSelection(){
     pilot_selected_list=[];
     upgrades_Type = [[],[],[],[],[],[],[],[]];
     upgrades_Objects= [[],[],[],[],[],[],[],[]];
-    upgradesSelected = [[],[],[],[],[],[],[],[]];
+    //upgradesSelected = [[],[],[],[],[],[],[],[]];
     upgrades_Objects_Val= [[],[],[],[],[],[],[],[]];
     upgradesSelected_Objects = [[],[],[],[],[],[],[],[]];
     pilot_objects = [[],[],[],[],[],[],[],[]];
@@ -1073,16 +1077,13 @@ function leaderSelection(){
     
     updateTotalCost();
 }
-function shipSelection(event,numero){
-//y = event.target.id.slice(10,11);
-        identifyElement(event);
-        pilot_objects[y] = []; //Il faut nettoyer toutes les infos du ship/pilot/slots précédent
-        select_pilot_list();
-        displayDescriptionShip(event);
-        removeElementsByClass("slotElement"+y);
+function shipSelection(numero){
+
+        
         restricted_List[y] = []; //Il faut nettoyer toutes les infos du ship/pilot/slots précédent
         restricted_List[8][y] = ""; //Il faut aussi retirer le nom du pilote
-        upgradesSelected[y] = []; //Il faut nettoyer toutes les infos du ship/pilot/slots précédent
+        upgradesSelected_Objects[y] = [];
+        //upgradesSelected[y] = []; //Il faut nettoyer toutes les infos du ship/pilot/slots précédent
         upgrades_Objects[y] = []; //Il faut nettoyer toutes les infos du ship/pilot/slots précédent
         upgrades_Objects_Val[y] = []; //Il faut nettoyer toutes les infos du ship/pilot/slots précédent
         upgrades_Type[y] = []; //Il faut nettoyer toutes les infos du ship/pilot/slots précédent
@@ -1093,19 +1094,19 @@ function shipSelection(event,numero){
         document.getElementById("title"+numero).textContent = "";
         document.getElementById("points"+numero).textContent = "";
 }
-function pilotSelection(event,numero){
-     identifyElement(event);
+function pilotSelection(numero){
+     
         
         logisticEquipped[y] = 0 ;
         upgrades_Type[y] = [] ;
         upgrades_Objects[y] = [];
         upgrades_Objects_Val[y] = [];
-        upgradesSelected[y] = [];
+        //upgradesSelected[y] = [];
         upgradesSelected_Objects[y] = [];
         restricted_List[y]=[y];
         
         dataGetFromPilot();
-        check_restricted_List(event);
+        check_restricted_List();
         
         
         display_Pilot_Chassis_Title_Points();
@@ -1114,7 +1115,7 @@ function pilotSelection(event,numero){
         checkUpgRestriction(numero);
         
         displayDescriptionPilot(numero);
-        checkPilotModifier(event);
+        checkPilotModifier();
         checkUpgRestriction(numero); //on le refait car il peut y avoir des upgrades disponibles suite à check pilot modfier (exemple : Emon gagne 2 slot de payload ce qui lui permet d'équiper les générateurs de sous munitions)
         
         updateTotalCost();
@@ -1187,7 +1188,12 @@ function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'acti
     populateMenu("menu_ship_"+numero, ship_available);
     //ajout de l'écoute d'un input sur le nouveau menu newship
     newship.addEventListener('input', function(event) {
-        shipSelection(event,numero);
+        identifyElement(event);
+        pilot_objects[y] = []; //Il faut nettoyer toutes les infos du ship/pilot/slots précédent
+        select_pilot_list();
+        displayDescriptionShip(event);
+        removeElementsByClass("slotElement"+y);
+        shipSelection(numero);
                
     }) ;
 
@@ -1202,7 +1208,8 @@ function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'acti
     })
     
     newpilot.addEventListener('input', function(event) {
-        pilotSelection(event,numero);
+        identifyElement(event);
+        pilotSelection(numero);
        
     });
     
@@ -1237,7 +1244,7 @@ function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'acti
             upgrades_Type[w] = upgrades_Type[w+1];
             upgrades_Objects[w]= upgrades_Objects[w+1];
             console.log('upgrade_Objects'+(w+1)+' devient '+'upgrade_Objects'+w);
-            upgradesSelected[w] = upgradesSelected[w+1];
+            //upgradesSelected[w] = upgradesSelected[w+1];
             upgradesSelected_Objects[w] = upgradesSelected_Objects[w+1];
             upgrades_Objects_Val[w]= upgrades_Objects_Val[w+1];
             restricted_List[w] = restricted_List[w+1];
@@ -1314,7 +1321,8 @@ function remove_ship(n) { //fonction qui permet de retirer le dernier vaisseau. 
     pilot_selected_list[n]="";
     upgrades_Type[n] = [];
     upgrades_Objects[n]= [];
-    upgradesSelected[n] = [];
+    upgradesSelected_Objects[n] = [];
+    //upgradesSelected[n] = [];
     logisticEquipped[n] = 0;
     upgrades_Objects_Val[n]= [];
     restricted_List[n] = [n]; //retrait des upgrades du dernier vaisseau
@@ -1531,7 +1539,71 @@ const closeBtn = document.getElementById('closeBtn');
 let codeText = document.getElementById('codeText');
 
 
+function loadSquadwithCode(e) {
+    e.preventDefault();
+    loadingCode = document.getElementById('loadingCode');
+    //we get the code and we turn it into an array (indexes)
+    hash = loadingCode.value;
+    indexes = hash.split(',');
+    for (k=0 ; k<indexes.length ; k++){
+        if(indexes[k]==='undefined'){
+            indexes.splice(k, 1);
+        }
+    }
+    
+    //we select the leader in the menu, then we add the first ship
+    leaderselect = document.getElementById("menu_leader");
+    leaderselect.selectedIndex = indexes[0] ;
+    leaderSelection();
+    console.log('leader selected');
+    add_ship();
 
+    //then we take each entry in indexes which correspond to pilot ID and the upgrades equipped ID. 
+    //First We select the ship
+    for(l=1 ; l<indexes.length ; l++){
+        const pilotL = indexes[l].split('u');
+        const shipSelected = pilots[pilotL[0]]['ship'];
+        let shipMenu = document.getElementById('menu_ship_'+(l-1));    
+        for (m=1 ; m<shipMenu.length ; m++){
+            if(shipSelected === shipMenu.options[m].value){
+                shipMenu.selectedIndex = m;
+                break;
+            }  
+        }
+        select_pilot_list();
+        shipSelection(l-1);
+        console.log("ship "+(l-1)+" selected");
+
+        //then we select the pilot 
+        let pilotMenu = document.getElementById('menu_pilot_'+(l-1));
+        for (m=0 ; m<pilot_objects[l-1].length ; m++){
+            if(pilotL[0] === pilot_objects[l-1][m]['id']){ 
+                pilotMenu.selectedIndex = m+1;
+                break;
+            }
+        }
+        pilotSelection(l-1);
+        console.log("pilot "+(l-1)+" selected");
+        
+        //then we select the upgrades
+        for (m=1 ; m<pilotL.length ; m++){
+            
+            //We'll look for the upgrade id in upgrade_ObjectsVal
+            for (n=0 ; n<upgrades_Objects_Val[l-1].length ; n++){
+                for(p=0 ; p<upgrades_Objects_Val[l-1][n].length ; p++){
+                    if (pilotL === upgrades_Objects_Val[l-1][n][p]['id']){
+                        const menuToModify = document.getElementById('slot'+(l-1)+'_'+n);
+                        menuToModify.selectedIndex = p+1;
+                        upgradesSelected_Objects[l-1][n] = upgrades_Objects_Val[l-1][n][p];
+                        break;
+                    }
+                }
+                
+            }
+           
+            }
+        }
+    }
 
 linkToDisplayCode.addEventListener('click', (e) => {
     e.preventDefault();
@@ -1557,11 +1629,13 @@ linkToDisplayCode.addEventListener('click', (e) => {
   });
 
 loadBtn.addEventListener('click', function(e) {
-    e.preventDefault();
+  /*  e.preventDefault();
     loadingCode = document.getElementById('loadingCode');
     hash = loadingCode.value;
     console.log('hash');
     window.location.href = `print_squad.html?#${hash}`
+    */
+   loadSquadwithCode(e);
 })
 
   // Permet de fermer la popup en cliquant hors de la fenêtre
