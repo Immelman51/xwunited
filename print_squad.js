@@ -465,7 +465,7 @@ function displayPilot(x){
         }
         mdiv.appendChild(mdivupg);
     }
-    for(i=pilotdata[x].length; i<11 ; i++){ //we remove the upgrade divs that aer empty
+    for(i=pilotdata[x].length; i<10 ; i++){ //we remove the upgrade divs that aer empty
         removeElementById("upgrade"+(x)+"_"+i);
     }
 }
@@ -482,7 +482,7 @@ async function executeFunctions(){ //on crée une fonction asynchrone pour que t
     await getIndexesFromHash();
     await displayLeader();
     
-    for(k=2; k<indexes.length; k++){
+    for(k=1; k<indexes.length; k++){
         console.log('displayPilot '+k+'  '+indexes[k]);
             await displayPilot(k);
          
@@ -498,7 +498,7 @@ async function executeFunctions(){ //on crée une fonction asynchrone pour que t
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
     
         executeFunctions(); // on execute la fonction ultime!!!!!!!!!
-        for (k=indexes.length-1 ; k<9 ; k++ ){ //on va supprimer les éléments des pilotes qui n'ont pas été sélectionnés
+        for (k=indexes.length ; k<9 ; k++ ){ //on va supprimer les éléments des pilotes qui n'ont pas été sélectionnés
             removeElementsByClass(k);
         }
         
