@@ -1046,6 +1046,80 @@ function upgradeListGet(yy) { //va chercher les options pour populate les menus 
     }
 }
 
+function leaderSelection(){
+    removeElementsByClass("new")
+     
+    
+    document.getElementById("descript_upg").innerHTML="";
+    shipquantity = -1;
+
+    y= 0;
+    x=0;
+    z=0;
+    pilot_selected_list=[];
+    upgrades_Type = [[],[],[],[],[],[],[],[]];
+    upgrades_Objects= [[],[],[],[],[],[],[],[]];
+    upgradesSelected = [[],[],[],[],[],[],[],[]];
+    upgrades_Objects_Val= [[],[],[],[],[],[],[],[]];
+    upgradesSelected_Objects = [[],[],[],[],[],[],[],[]];
+    pilot_objects = [[],[],[],[],[],[],[],[]];
+    restricted_List = [[0],[1],[2],[3],[4],[5],[6],[7],[8]];
+    pilot_list = [{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0}];
+    chassis_selected = [[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0]];
+    restrict = false ;
+
+    select_ship_list();
+    leader_ID = leaderselect.selectedIndex ;
+    
+    updateTotalCost();
+}
+function shipSelection(event){
+//y = event.target.id.slice(10,11);
+        identifyElement(event);
+        pilot_objects[y] = []; //Il faut nettoyer toutes les infos du ship/pilot/slots précédent
+        select_pilot_list();
+        displayDescriptionShip(event);
+        removeElementsByClass("slotElement"+y);
+        restricted_List[y] = []; //Il faut nettoyer toutes les infos du ship/pilot/slots précédent
+        restricted_List[8][y] = ""; //Il faut aussi retirer le nom du pilote
+        upgradesSelected[y] = []; //Il faut nettoyer toutes les infos du ship/pilot/slots précédent
+        upgrades_Objects[y] = []; //Il faut nettoyer toutes les infos du ship/pilot/slots précédent
+        upgrades_Objects_Val[y] = []; //Il faut nettoyer toutes les infos du ship/pilot/slots précédent
+        upgrades_Type[y] = []; //Il faut nettoyer toutes les infos du ship/pilot/slots précédent
+        pilot_list[y]= {name:"",points:0}; //Il faut nettoyer toutes les infos du ship/pilot/slots précédent
+        chassis_selected[y] = [0,0];
+        document.getElementById("chassis1"+numero).textContent = "";
+        document.getElementById("chassis2"+numero).textContent = "";
+        document.getElementById("title"+numero).textContent = "";
+        document.getElementById("points"+numero).textContent = "";
+}
+function pilotSelection(event){
+     identifyElement(event);
+        
+        logisticEquipped[y] = 0 ;
+        upgrades_Type[y] = [] ;
+        upgrades_Objects[y] = [];
+        upgrades_Objects_Val[y] = [];
+        upgradesSelected[y] = [];
+        upgradesSelected_Objects[y] = [];
+        restricted_List[y]=[y];
+        
+        dataGetFromPilot();
+        check_restricted_List(event);
+        
+        
+        display_Pilot_Chassis_Title_Points();
+        displayslots(numero)  ;
+        upgradeListGet(numero);
+        checkUpgRestriction(numero);
+        
+        displayDescriptionPilot(numero);
+        checkPilotModifier(event);
+        checkUpgRestriction(numero); //on le refait car il peut y avoir des upgrades disponibles suite à check pilot modfier (exemple : Emon gagne 2 slot de payload ce qui lui permet d'équiper les générateurs de sous munitions)
+        
+        updateTotalCost();
+}
+
 function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'active via le bouton Addship
     shipquantity++;
     let numero = String(shipquantity);
@@ -1113,26 +1187,10 @@ function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'acti
     populateMenu("menu_ship_"+numero, ship_available);
     //ajout de l'écoute d'un input sur le nouveau menu newship
     newship.addEventListener('input', function(event) {
-        //y = event.target.id.slice(10,11);
-        identifyElement(event);
-        pilot_objects[y] = []; //Il faut nettoyer toutes les infos du ship/pilot/slots précédent
-        select_pilot_list();
-        displayDescriptionShip(event);
-        removeElementsByClass("slotElement"+y);
-        restricted_List[y] = []; //Il faut nettoyer toutes les infos du ship/pilot/slots précédent
-        restricted_List[8][y] = ""; //Il faut aussi retirer le nom du pilote
-        upgradesSelected[y] = []; //Il faut nettoyer toutes les infos du ship/pilot/slots précédent
-        upgrades_Objects[y] = []; //Il faut nettoyer toutes les infos du ship/pilot/slots précédent
-        upgrades_Objects_Val[y] = []; //Il faut nettoyer toutes les infos du ship/pilot/slots précédent
-        upgrades_Type[y] = []; //Il faut nettoyer toutes les infos du ship/pilot/slots précédent
-        pilot_list[y]= {name:"",points:0}; //Il faut nettoyer toutes les infos du ship/pilot/slots précédent
-        chassis_selected[y] = [0,0];
-        document.getElementById("chassis1"+numero).textContent = "";
-        document.getElementById("chassis2"+numero).textContent = "";
-        document.getElementById("title"+numero).textContent = "";
-        document.getElementById("points"+numero).textContent = "";
-        
+        shipSelection(event);
+               
     }) ;
+
     newship.addEventListener('mouseover', function(event){
         identifyElement(event);
         displayDescriptionShip(event);
@@ -1144,30 +1202,8 @@ function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'acti
     })
     
     newpilot.addEventListener('input', function(event) {
-        identifyElement(event);
-        
-        logisticEquipped[y] = 0 ;
-        upgrades_Type[y] = [] ;
-        upgrades_Objects[y] = [];
-        upgrades_Objects_Val[y] = [];
-        upgradesSelected[y] = [];
-        upgradesSelected_Objects[y] = [];
-        restricted_List[y]=[y];
-        
-        dataGetFromPilot();
-        check_restricted_List(event);
-        
-        
-        display_Pilot_Chassis_Title_Points();
-        displayslots(numero)  ;
-        upgradeListGet(numero);
-        checkUpgRestriction(numero);
-        
-        displayDescriptionPilot(numero);
-        checkPilotModifier(event);
-        checkUpgRestriction(numero); //on le refait car il peut y avoir des upgrades disponibles suite à check pilot modfier (exemple : Emon gagne 2 slot de payload ce qui lui permet d'équiper les générateurs de sous munitions)
-        
-        updateTotalCost();
+        pilotSelection(event);
+       
     });
     
     newchassis1.addEventListener('click', function(event){
@@ -1434,31 +1470,8 @@ function display_chassis_title_window(event) { //allows to display the chassis w
 //On écoute les changements sur selection leader pour "populate" préparer réinitialiser les valeurs
 leaderselect = document.getElementById("menu_leader");
 leaderselect.addEventListener("input", function() {
-    removeElementsByClass("new")
-     
+    leaderSelection();
     
-    document.getElementById("descript_upg").innerHTML="";
-    shipquantity = -1;
-
-    y= 0;
-    x=0;
-    z=0;
-    pilot_selected_list=[];
-    upgrades_Type = [[],[],[],[],[],[],[],[]];
-    upgrades_Objects= [[],[],[],[],[],[],[],[]];
-    upgradesSelected = [[],[],[],[],[],[],[],[]];
-    upgrades_Objects_Val= [[],[],[],[],[],[],[],[]];
-    upgradesSelected_Objects = [[],[],[],[],[],[],[],[]];
-    pilot_objects = [[],[],[],[],[],[],[],[]];
-    restricted_List = [[0],[1],[2],[3],[4],[5],[6],[7],[8]];
-    pilot_list = [{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0}];
-    chassis_selected = [[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0]];
-    restrict = false ;
-
-    select_ship_list();
-    leader_ID = leaderselect.selectedIndex ;
-    
-    updateTotalCost();
 
 });
 
@@ -1485,7 +1498,7 @@ factionCards.addEventListener('click', function() {
 
 function hasher(){ //on inscrit dans hash le nombre de vaisseaux (shipquantity+1) on va transformer tous les ids du ship pilote et upgrades séparés par la lettre "z", chaque info différente (pilot, upgrades, modifiers) est séparée par des x, puis chaque vaisseaux différents séparés par ",".
     hash = String(leaderID) + ',';
-    hash = hash + listValidity + ',';
+    
     
     
     for(i = 0; i<shipquantity+1; i++) {

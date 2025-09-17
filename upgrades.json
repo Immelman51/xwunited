@@ -159,7 +159,7 @@
             "points": 0,
             "talent_points": 0,
             "effect": "<img class='chargeforceimg' src='img/chargestat.png'> <img class='chargeforceimg' src='img/chargeplus.png'>Lorsqu’une action échoue, vous pouvez dépenser 1 #ch# pour effectuer une autre action.",
-            "effect_ENG": "<img class='chargeforceimg' src='img/chargestat.png'> <img class='chargeforceimg' src='img/chargeplus.png'> When you perform an action that fails, you may spend 1 #ch# to perform another maneuver.",
+            "effect_ENG": "<img class='chargeforceimg' src='img/chargestat.png'> <img class='chargeforceimg' src='img/chargeplus.png'> When you perform an action that fails, you may spend 1 #ch# to perform another action.",
             "faction": "",
             "add_Data": [0],
             "force": 0,
@@ -1348,7 +1348,7 @@
             "charge": [0],
             "points": 0,
             "talent_points": 0,
-            "effect": "En phase système, vous pouvez gagner 1 marqueur d’épuisement pour récupérer 1 #fo#.",
+            "effect": "<img class='chargeforceimg' src='img/chargestat.png'> Vous pouvez dépenser 1 #ch# à la place d'une #fo#. Au début de la phase d'engagement, vous pouvez gagner 1 marqueur d’épuisement pour récupérer 1 #ch#.",
             "effect_ENG": "",
             "faction": ""           
             
