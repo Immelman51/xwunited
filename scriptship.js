@@ -1073,7 +1073,7 @@ function leaderSelection(){
     
     updateTotalCost();
 }
-function shipSelection(event){
+function shipSelection(event,numero){
 //y = event.target.id.slice(10,11);
         identifyElement(event);
         pilot_objects[y] = []; //Il faut nettoyer toutes les infos du ship/pilot/slots précédent
@@ -1093,7 +1093,7 @@ function shipSelection(event){
         document.getElementById("title"+numero).textContent = "";
         document.getElementById("points"+numero).textContent = "";
 }
-function pilotSelection(event){
+function pilotSelection(event,numero){
      identifyElement(event);
         
         logisticEquipped[y] = 0 ;
@@ -1187,7 +1187,7 @@ function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'acti
     populateMenu("menu_ship_"+numero, ship_available);
     //ajout de l'écoute d'un input sur le nouveau menu newship
     newship.addEventListener('input', function(event) {
-        shipSelection(event);
+        shipSelection(event,numero);
                
     }) ;
 
@@ -1202,7 +1202,7 @@ function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'acti
     })
     
     newpilot.addEventListener('input', function(event) {
-        pilotSelection(event);
+        pilotSelection(event,numero);
        
     });
     

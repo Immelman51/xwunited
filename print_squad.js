@@ -60,23 +60,22 @@ async function getIndexesFromHash() { // Function to get the indexes from the UR
     return indexes; // The array 'indexes' contains ! ["leaderID","pilotID+u+upgrade1ID+u+upgrade2ID","pilotID"....]
 }
 
-function getPilotData(x){ //we take indexes[x], and we are going to extract all datas from pilot x
+async function getPilotData(x){ //we take indexes[x], and we are going to extract all datas from pilot x
     const pilotx = indexes[x].split('u');
     
     pilotdata[x] = pilotx;
 }
 
-function testListValidity() {
+async function testListValidity() {
     //Test if the pilots talent slots exceed the skill of the pilot (TAL)
     let totalcostvalue = 0;
-    for (k=1;k<indexes;k++){
+    for (k=1;k<indexes.length;k++){
         let talentTotalValue = 0;
         let logisticTotalValue = 0;
         getPilotData(k); 
         //Test if the cost of all ships exceed 30, the limit for a squad
         const pid = pilotdata[k][0]; 
         totalcostvalue += pilots[pid]["points"];
-
         //Test if the number of upgrades equipped points exceed the logistic value of the leader
         //we are going to seperate (Talents and forces), and other upgrades.
         for (l=1;l<pilotdata[k].length;l++){
@@ -88,11 +87,13 @@ function testListValidity() {
             case "Talent-special":
             case "Talent-leadership":
             case "Force":
-                talentTotalValue += upgrades[uid]["talent-points"];
+                talentTotalValue += upgrades[uid]["talent_points"];
                 break;
-            default : 
+            default :                 
                 logisticTotalValue += upgrades[uid]["points"];
+                break;
         }
+
         if (logisticTotalValue > leaders[indexes[0]]["logistic"]){
             listValidity=false;
             return;
@@ -122,7 +123,8 @@ const faction = document.getElementById('leaderfaction');
 const leaderAbility = document.getElementById('lability');
 const leaderCharge = document.getElementById('lcharge');
 leaderName.textContent = leaders[lID]['leadername'];
-    if(listValidity==="false"){
+    
+    if(listValidity===false){
         leaderName.textContent += ' (NOT VALID)';
     }
 for(i=0; i<3; i++){
@@ -233,7 +235,6 @@ function displayPilotActions(x){
 
 
 function displayPilot(x){ 
-    console.log(`Displaying pilot for index ${x}`);
     const imgPilot = document.getElementById('pilot'+(x)); //x because the pilots begins after indexes 2. Example indexes 2, we have pilot number 1 (in the html page)
     const pilotSkill = document.getElementById('pskill'+(x));
     const pilotFaction = document.getElementById('plogo'+(x));
@@ -465,7 +466,7 @@ function displayPilot(x){
         }
         mdiv.appendChild(mdivupg);
     }
-    for(i=pilotdata[x].length; i<10 ; i++){ //we remove the upgrade divs that aer empty
+    for(i=pilotdata[x].length; i<10 ; i++){ //we remove the upgrade divs that are empty
         removeElementById("upgrade"+(x)+"_"+i);
     }
 }
@@ -483,7 +484,6 @@ async function executeFunctions(){ //on crée une fonction asynchrone pour que t
     await displayLeader();
     
     for(k=1; k<indexes.length; k++){
-        console.log('displayPilot '+k+'  '+indexes[k]);
             await displayPilot(k);
          
         
