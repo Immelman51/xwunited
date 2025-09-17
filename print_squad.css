@@ -12,11 +12,11 @@
     z-index: 1000;
 }
 .container {
-    width: 19cm;
+    width: 18.9cm;
     height: 4cm;
     display: grid;
-    grid-template-columns: 1.5cm 1.5cm 1.5cm 14.5cm ;
-    grid-template-rows: 1.5cm auto 1.5cm;
+    grid-template-columns: 1cm 1.5cm 1.5cm 14.4cm ;
+    grid-template-rows: 1cm auto 1.5cm;
     border: thick double;
 margin: 2px;
 padding: 2px;
@@ -24,13 +24,13 @@ padding: 2px;
   
 .leaderfaction {
     grid-area: 1 / 1 / 2 / 4;
-    max-height: 1.5cm;
+    max-height: 1cm;
     display: flex;
 
 }
 .factionimg{
-    height: 1.5cm;
-    width: 1.5cm;
+    height: 1cm;
+    width: 1cm;
 }
 .leadername {
     grid-area: 1 / 1 / 2 / 5 ;
@@ -53,23 +53,28 @@ padding: 2px;
     padding-bottom: 1.5cm;
 }
 
+/*FIN DU LEADER, DEBUT DES PILOTES
+*/
+
+
 .squad {
     position: relative;
     width: 19cm;
     display: grid;
-    grid-template-columns: 1cm 1.5cm 3.7cm 3.2cm 3.2cm 3.3cm 2cm 1cm ;
-    grid-template-rows: 1.5cm 0.2cm 1.5cm 0,5cm 0.2cm 1,5cm 1.5cm auto auto auto auto auto auto auto;
+    grid-template-columns: 1cm 0.5cm 4.8cm 2.6cm 3.7cm 3.8cm 2cm 0.6cm ;
+    grid-template-rows: 1.5cm 0.2cm 1.5cm 0.5cm 0.2cm 1.5cm 1.5cm auto auto auto auto auto auto auto;
     overflow: hidden;
     border: solid rgb(13, 0, 128);
     margin: 2px;
-    padding: 2px
+    padding: 2px;
+    justify-content: center;
     
 }
 .pilotImg{
     position: absolute;
     top: 0;
     left: 0;
-    width: 19cm;
+    width: 100%;
     height: 100%;
     /*object-fit: cover;*/ /* ne fonctionne pas lors du passage en pdf */
     background-size: cover;
@@ -98,18 +103,18 @@ padding: 2px;
   
 
 .pskill{
-    grid-area: 1 / 1 / 2 / 2;
+    grid-area: 1 / 2 / 2 / 3;
     font-size: x-large;
     font-weight: bolder;
     color: chocolate;
     text-align: center;
-    padding: 10px;
+    margin: auto;
+    
 }
 
 .factionpilot {
-    grid-area: 1 / 2 / 2 / 3;
-    height: 1.5cm;
-    width: 1.5cm;
+    grid-area: 1 / 1 / 2 / 2;
+    margin: auto;
     
 
 }
@@ -132,9 +137,10 @@ padding: 2px;
     grid-area: 1 / 8 / 2 / 9;
     font-size: x-large;
     font-weight: bolder;
-    color: rgb(29, 214, 183);
+    color: rgb(17, 110, 95);
     text-align: center;
-    padding: 10px;
+    margin: auto;
+    
  }
  .stat{
     grid-area: 2 / 1 / 8 / 3;

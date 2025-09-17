@@ -213,7 +213,13 @@ function displayPilot(x){
 
 
     pilotSkill.textContent = pilots[pid]['skill'];
-    pilotFaction.setAttribute("src",'img/'+pilots[pid]['faction']+'mini.jpg');
+    
+    //we load the faction image
+    let factionlogo = document.createElement('img');
+    factionlogo.setAttribute("src",'img/'+pilots[pid]['faction']+'mini.jpg');
+    factionlogo.setAttribute("class",'factionimg');
+    pilotFaction.appendChild(factionlogo);
+
     pilotName.textContent = pilots[pid]['name'];
     pilotAbility.textContent = pilots[pid]['ability']; 
     pilotCost.textContent = pilots[pid]['points'];
