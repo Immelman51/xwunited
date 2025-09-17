@@ -1076,7 +1076,7 @@
             "ability": "Tant que vous effectuez une attaque principale, si un allié Dark Vador ou 'Backstabber' est dans votre arc #Larc# ou #Rarc# à portée 0-1, lancez 1 dé d'attaque supplémentaire.",
             "ability_ENG": "While you perform a primary attack, if a friendly Darth Vader or 'Backstabber' is in your #Larc# or #Rarc# at range 0-1, roll 1 additional 1 attack die.",
             "slots": [
-                "Talent-shooting"
+                "Talent-piloting"
             ]
         },
  {
@@ -1113,12 +1113,12 @@
             "titleID": 0,
             "shipId": 4,
             "skill": 6,
-            "points": 4,
+            "points": 5,
             
             "ability": "Tant que vous défendez, les dés de l’attaquant ne peuvent pas être modifiés.",
             "ability_ENG": "While you defend, the attacker's dice cannot be modified.",
             "slots": [
-                "Talent-elite"
+                "Talent-piloting"
             ]
         },
 {
