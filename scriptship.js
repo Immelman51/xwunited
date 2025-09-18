@@ -338,6 +338,7 @@ function identifyElement(event){ //sloty_x & index z de l'élément sélectionn�
 }
 
 function updateTotalCost() { //update total cost
+    console.log('updateTotalCost');
     totalcostvalue = 0 ;
     for (j=0; j<8; j++){
         totalcostvalue = totalcostvalue + pilot_list[j]["points"];
@@ -1292,7 +1293,7 @@ function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'acti
             //We modify all the id and classes of the upgrade slots
             for(h=0 ; h<upgrades_Objects[w].length ; h++){
                 slotxB1 = document.getElementById('slot'+(w+1)+'_'+h);
-                slotxB1.setAttribute('id','slot'+w+' '+h);
+                slotxB1.setAttribute('id','slot'+w+'_'+h);
                 //For the classes, it's a bit more difficult. it looks like 'slotElement1 Turret (hidden)'. We have to extract the beginning without changing the end.
                 classElement = slotxB1.getAttribute('class');
                 classElementType = classElement.slice(13);
@@ -1300,6 +1301,20 @@ function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'acti
                 
                 }
                 }
+        //If the ship that was removed was not the last one, we have to delete the 'last ship in the list' datas that are still present in its former place number (which is now the actual shipquantity. For example, we have ship0 ship1 and ship2, so sQ=3. we remove ship2. the remove_ship(1) executes, and then sQ=2. The 'for' loop above excutes from 1, to sQ=2 excluded. So we have now ship0, newship1=oldship2, AND we haven't erased the data of oldship2. We just have copied them)
+        pilot_objects[sQ]= [];
+        pilot_selected_list[sQ]= [];
+        upgrades_Type[sQ] = [];
+        upgrades_Objects[sQ]= [];
+        console.log('erasing upgrade_Objects['+sQ+']');
+        upgradesSelected_Objects[sQ] = [];
+        upgrades_Objects_Val[sQ]= [];
+        restricted_List[sQ] = [];
+        restricted_List[8][sQ] = "";
+        pilot_list[sQ] = {name:"",points:0};
+        chassis_selected[sQ] = [0,0];
+        logisticEquipped[sQ] = 0;
+        talentEquipped[sQ]= 0;
         //We update logisticequipped, the logistic total and the total cost
         for (h=0 ; h<shipquantity+1 ; h++){
             updateUpgradeCount(h);
