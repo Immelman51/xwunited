@@ -2,7 +2,7 @@ let requestURLleaders = "https://raw.githubusercontent.com/Immelman51/xwunited/m
 
 let leaders =[];
 let menuLeader = [];
-let indexleader = 0;
+let leaderSelected_id = 0;
 
 async function fetchData(url) {
     let response = await fetch(url);
@@ -64,23 +64,31 @@ window.addEventListener("DOMContentLoaded", function() {
 /*on écoute les saisies dans les menus pour délcencher les fonctions*/
 leaderselect = document.getElementById("menu_leader");
 factionselect = document.getElementById("menu_faction");
+let factionIndex = factionselect.selectedIndex;
+//let leaderID = 0;
 
-let leaderID = 0;
+//This function is going to find the id of the leader selected based on the value of the select menu.
+function getLeaderObject(){
+    let leaderSelected = leaderselect.value;
+    for(j=0 ; j<leaders.length ; j++){
+        if(leaderSelected.includes(leaders[j]['leadername'])){
+            leaderSelected_id = j;
+            return;
+        }
+        
+    }
+}
 
 /*fonction qui permet de modifier les noms et logos des faction appartenant au leader sélectionné*/
 function selection_leader () {
-indexleader = leaderselect.selectedIndex;
 
     
+    let factionval1 = leaders[leaderSelected_id]["leaderfaction"][0];
+    let factionval2 = leaders[leaderSelected_id]["leaderfaction"][1];
+    let factionval3 = leaders[leaderSelected_id]["leaderfaction"][2];
 
-
-    let factionval1 = leaders[indexleader]["leaderfaction"][0];
-    let factionval2 = leaders[indexleader]["leaderfaction"][1];
-    let factionval3 = leaders[indexleader]["leaderfaction"][2];
-
-    leaderID = leaders[indexleader]["leaderid"];
     
-    factionvalue="Select Faction"; /*on remet à 0 le deuxième menu car il est inutile*/
+    factionIndex = 0; /*on remet à 0 le deuxième menu car il est inutile*/
 document.querySelector(".faction1").textContent = factionval1;
 document.getElementById("faction1logo").setAttribute("src",'img/'+factionval1+'mini.jpg') ;
 document.querySelector(".faction2").textContent = factionval2;
@@ -96,8 +104,8 @@ document.getElementById("faction3logo").setAttribute("src",'img/'+factionval3+'m
 
 function selection_faction () {
 let factionbutton = document.getElementById("faction");    
-let factionvalue = factionselect.value;
-if (factionvalue === "<Select Faction>") {
+
+if (factionIndex === 0) {
     populateMenu("menu_leader", menuLeader);
     factionbutton.setAttribute("disabled","");
     return; // Exit the function early
@@ -105,8 +113,8 @@ if (factionvalue === "<Select Faction>") {
 
 var listeleader= ["<Select Leader>"];
 for (let i = 0; i < leaders.length; i++) {
-if (leaders[i]["leaderfaction"].includes(factionvalue)) {
-listeleader.push(leaders[i]["leadername"]) ;
+if (leaders[i]["leaderfaction"].includes(factionselect.value)) {
+listeleader.push(leaders[i]["leadername"]+" ("+leaders[i]["logistic"]+')') ;
 }
 }
 factionbutton.removeAttribute("disabled");
@@ -115,13 +123,14 @@ populateMenu("menu_leader",listeleader);
 
 function description_leader() {
     descriptionLeaderField = document.querySelector(".abilityLeader"); //description est le nom de la classe où se trouve le champ description leader
-    descriptionLeaderField.innerHTML = leaders[indexleader]["leaderability"];
+    descriptionLeaderField.innerHTML = leaders[leaderSelected_id]["leaderability"];
 }
 
 
 
 
 leaderselect.addEventListener("input", function() {
+    getLeaderObject();
     selection_leader();
     description_leader()
 })
