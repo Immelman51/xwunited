@@ -1569,6 +1569,19 @@ function loadSquadwithCode(e) {
     //we select the leader in the menu, then we add the first ship
     leaderselect = document.getElementById("menu_leader");
     leaderselect.selectedIndex = indexes[0] ;
+    
+    //we have to select the faction manually because, the function to do this is in scriptleader.js
+    let factionval1 = leaders[leaderSelected_id]["leaderfaction"][0];
+    let factionval2 = leaders[leaderSelected_id]["leaderfaction"][1];
+    let factionval3 = leaders[leaderSelected_id]["leaderfaction"][2];
+    document.querySelector(".faction1").textContent = factionval1;
+    document.getElementById("faction1logo").setAttribute("src",'img/'+factionval1+'mini.jpg') ;
+    document.querySelector(".faction2").textContent = factionval2;
+    document.getElementById("faction2logo").setAttribute("src",'img/'+factionval2+'mini.jpg') ;
+    document.querySelector(".faction3").textContent = factionval3;
+    document.getElementById("faction3logo").setAttribute("src",'img/'+factionval3+'mini.jpg') ;
+
+
     leaderSelection();
     
     add_ship();
