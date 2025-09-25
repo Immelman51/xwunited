@@ -51,7 +51,7 @@ let shipquantity = -1; //compteur qui ne sert pas à compter mais à numéroter 
  let logisticEquipped = [0,0,0,0,0,0,0,0];
  let talentEquipped = [0,0,0,0,0,0,0,0];
  let sumLogisticEquipped = 0;
- let leader_ID = 0;
+ 
 
  let pilot_selected_list = ["","","","","","","",""]; // Dans ce tableau, on va stocker la valeur sélectée de chaque menu_pilot
  let pilot_list = [{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0}]; //Dans ce tableau, on stocker les objets pilotes
@@ -280,7 +280,7 @@ function testListValidity() {
         }
     }
    //Test if the number of upgrades equipped points exceed the logistic value of the leader
-    if(sumLogisticEquipped>leaders[leader_ID]["logistic"]){
+    if(sumLogisticEquipped>leaders[leaderSelected_id]["logistic"]){
         listValidity=false;
         return;
     }
@@ -415,7 +415,7 @@ function updateUpgradeCount(yy) { //update the table logistic_Equipped and talen
     logisticCounter.innerHTML = 'LOG<br><span style="font-size:x-large">'+sumLogisticEquipped+'</span>';
     //We test the list Validity, and if it's not valid, we paint the logistic in red
    
-    if(sumLogisticEquipped>leaders[leader_ID]["logistic"]){
+    if(sumLogisticEquipped>leaders[leaderSelected_id]["logistic"]){
         logisticCounter.setAttribute("class","logistic total unvalid");
     }else{
         logisticCounter.setAttribute("class","logistic total");
@@ -1074,7 +1074,7 @@ function leaderSelection(){
     restrict = false ;
 
     select_ship_list();
-    leader_ID = leaderselect.selectedIndex ;
+    
     
     updateTotalCost();
 }
@@ -1520,7 +1520,7 @@ factionCards.addEventListener('click', function() {
 
 
 function hasher(){ //on inscrit dans hash le nombre de vaisseaux (shipquantity+1) on va transformer tous les ids du ship pilote et upgrades séparés par la lettre "z", chaque info différente (pilot, upgrades, modifiers) est séparée par des x, puis chaque vaisseaux différents séparés par ",".
-    hash = String(leaderID) + ',';
+    hash = String(leaderSelected_id) + ',';
     
     
     
@@ -1570,10 +1570,10 @@ function loadSquadwithCode(e) {
     leaderselect = document.getElementById("menu_leader");
     leaderselect.selectedIndex = indexes[0] ;
     leaderSelection();
-    console.log('leader selected');
+    
     add_ship();
-
-    //then we take each entry in indexes which correspond to pilot ID and the upgrades equipped ID. 
+    
+    //then we take each entry in indexes which correspond to pilot ID and the upgrades equipped ID.
     //First We select the ship
     for(l=1 ; l<indexes.length ; l++){
         const pilotL = indexes[l].split('u');
