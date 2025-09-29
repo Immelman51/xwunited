@@ -163,7 +163,7 @@ Concernant les améliorations 'Force', elles suivent une logique similaire. Il n
     Si un vaisseau se trouve sur un obstacle au début de sa phase d'activation, et qu'une manoeuvre l'ammène à traverser ce même obstacle, alors il l'ignore (il n'est pas ignoré si manoeuvre l'ammène à re-chevaucher cet obstacle).<br>
     Lorsqu'un obstacle obstrue une attaque, le défenseur lance 1 dé de défense supplémentaire pour chaque obstacle qui obstrue l'attaque.</div>
 <div class="subtitle">Astéroïdes</div>
-<div class="txt">Phase d'Activation : Lorsqu'un vaisseau traverse ou chevauche un astéroïde, il lance 2 dés rouges et subit les résultats de ces dés. S'il chevauche un astéroïde il ignore également sa phase exécuter une action. <br>
+<div class="txt">Phase d'Activation : Lorsqu'un vaisseau traverse ou chevauche un astéroïde, il lance 2 dés rouges et subit les résultats de ces dés : sur un résultat #eye#, il reçoit un jeton contrainte. S'il chevauche un astéroïde il ignore également sa phase exécuter une action. <br>
     Phase d'Engagement : Si un vaisseau chevauche un astéroïde lorsqu'il s'engage, alors il reçoit un jeton désarmement.</div>
 <div class="subtitle">Débris</div>
 <div class="txt">Phase d'Activation : Lorsqu'un vaisseau traverse ou chevauche un débris, il reçoit un jeton stress, puis il lance un dé rouge et subit le résultat du dé : sur un résultat #eye#, il reçoit un jeton épuisement.<br>
@@ -173,11 +173,11 @@ Concernant les améliorations 'Force', elles suivent une logique similaire. Il n
     - sur un résultat #hit#, il reçoit un jeton ion<br>
     - sur un résultat #crit#, il reçoit un jeton ion, un jeton épuisement, un jeton contrainte, et un jeton brouillage.<br>
     - sur un résultat #eye# rouge ou vert, il reçoit un jeton contrainte<br>
-    - sur un résultat #blank# rouge,il reçoit un jeton brouillage<br>
+    - sur un résultat #blank# rouge,il reçoit un jeton brouillage (l'adversation choisit l'effet)<br>
     - sur un résultat #evd#, rien de spécial<br>
     - sur un résultat #blank# vert, les jetons reçus sont multipliés par 3<br>
-    Tant qu'un vaisseau chevauche un nuage de gaz, il ne peut gagner aucun jeton bleu, et aucun vaisseau ne peut l'acquisitionner.<br>
-    Phase d'Engagement : Tant qu'un vaisseau chevauche un nuage de gaz, il ne peut gagner aucun jeton bleu, et aucun vaisseau ne peut l'acquisitionner.</div>
+    Tant qu'un vaisseau chevauche un nuage de gaz, il ne peut gagner aucun jeton bleu, et aucun vaisseau ne peut l'acquisitionner.
+    </div>
 </p>
 
 
@@ -215,21 +215,18 @@ Annuler/retirer/ajouter des dés n'est pas considéré comme une modification de
 </p>
 <p>
     <div id='bonusattack' class="title">Attaque Bonus</div>
-    <div class="txt"></div>
+    <div class="txt">Certaines capacité ou améliorations permettent d'effectuer des attaques bonus. Chaque vaisseau peut effectuer une attaque bonus maximum. Sauf si le contraire est spécifié, il n'est pas possible d'effectuer une attaque avec la même arme 2 fois dans un tour.</div>
 </p>
 <p>
 <div class="subtitle">Portée 0</div>
-<div class="txt">Il est impossible de tirer à portée 0, sauf si une carte ne précise le contraire. Une attaque à portée 0 est alors considérée comme une attaque à portée 1.
+<div class="txt">Il est impossible de tirer à portée 0, sauf si une compétence ne précise le contraire. Une attaque à portée 0 est alors considérée comme une attaque à portée 1.
 </div>
 </p>
 <p>
     <div id='engagement_order' class="title">Ordre d'engagement</div>
-    <div class="txt"></div>
+    <div class="txt">Les vaisseaux s'engagent dans l'ordre des initiatives décroissantes. En cas d'égalité, ce sont les vaisseaux du premier joueur qui s'engage en premier. Si ce joueur possède plusieurs vaisseaux de même initiative, il choisit l'ordre d'engagement.</div>
 </p>
-<p>
-    <div id='engagement_order' class="title">Ordre d'engagement</div>
-    <div class="txt"></div>
-</p>
+
 <p>
     
    
@@ -268,15 +265,15 @@ Annuler/retirer/ajouter des dés n'est pas considéré comme une modification de
     <div class="title">Jeton/Action Brouillage</div>
     <div class="txt">Lorsqu'un vaisseau est à portée 0-1 d'un autre vaisseau ou à portée 2 dans son #bulls#, il peut effectuer une action de brouillage #jam#. Le joueur qui effectue l'action choisit : <br>- Il peut retirer un jeton vert ou bleu de son choix appartenent au vaisseau ciblé.<br>- Il peut lui attribuer un jeton brouillage. Dans ce cas, le vaisseau ciblé ne peut pas être coordonné et son initiative est diminuée de 1. On dit alors que ce vaisseau est brouillé.</div>
     <div class="title">Jeton Tractage</div>
-    <div class="txt"></div>
+    <div class="txt">Lorsqu'un vaisseau reçoit 1 ou plusieurs jetons tractage, on dit que ce vaisseau est tracté si :<br>•C'est un petit vaisseau et il a au moins 1 jeton tractage<br>•C'est un vaisseau moyen et il a au moins 2 jetons tractage<br>•C'est un gros vaisseau, et il a au moins 3 jetons tractage.<br>Les vaisseaux énormes ne peuvent pas être tractés.<br>Lorsqu'un vaisseau est tracté, le joueur qui a infligé les jetons peut lui faire effectuer un tonneau ou une accélération avec le gabarit droit de vitesse 1 ; s'il ne le fait pas, il aura à nouveau l'opportunité de le faire si ce vaisseau tracté reçoit à nouveau des jetons tractage ; il est possible pour ce joueur de dépenser les jetons tractage supplémentaires à son tractage pour lui faire effectuer ces mêmes mouvements mais sur des obstacles (par exemple, un petit vaisseau reçoit 2 jetons tractage, le joueur peut alors dépenser 1 jeton tractage de ce vaisseau pour lui faire faire un tonneau sur un astéroïde).<br>Un vaisseau tracté lance un dé de moins lorsqu'il défend.</div>
     <div class="title">Jeton Désarmement</div>
-    <div class="txt"></div>
+    <div class="txt">Lorsqu'un vaisseau reçoit un jeton désarmement, on dit que ce vaisseau est désarmé. Ce vaisseau ne peut pas effectuer d'attaque ce tour.</div>
     <div class="title">Jeton/Action Occultation</div>
-    <div class="txt"></div>
+    <div class="txt">Lorsqu'un vaisseau reçoit un jeton occultation, on dit qu'il est occulté. Lorsqu'un vaisseau s'occulte, il casse tous les verrouillages qu'il a sur lui, et il ne peut pas être verrouillé tant qu'il est occulté.<br>Un vaisseau occulté ne peut pas attaquer.<br>Un vaisseau occulté lance 2 dés de défense spplémentaires lorsqu'il défend.<br>En phase système, un vaisseau peut dépenser son jeton d'occultation : dans ce cas :<br>•Si c'est un petit vaisseau, il peut effectuer un tonneau ou une accélération avec le gabarit droit de vitesse 2<br>•Si c'est un vaisseau moyen ou gros, il peut effectuer une accélération avec le gabarit droit de vitesse 1, ou il peut effectuer un tonneau avec le gabarit droit de vitesse 1 mais avec le petit côté du gabarit (comme lorsqu'un petit vaisseau fait un tonneau).</div>
     <div class="title">Jeton/Action Renforcement</div>
     <div class="txt">Les pilotes peuvent renforcer pour incliner leurs boucliers déflecteurs et augmenter leur défense sur une partie de leur vaisseau. Lorsqu’un vaisseau effectue l’action #RF#, il gagne un marqueur de renforcement avec soit le côté proue, soit le côté poupe visible.Un vaisseau est renforcé tant qu’il a un marqueur de renforcement sur lui. Les marqueurs de renforcement sont des marqueurs circulaires bleus. Lorsqu’un vaisseau renforcé défend, si l’attaquant est situé dans l’arc entier spécifié par le marqueur de renforcement et pas dans l’autre arc entier, le marqueur produit un effet. L’attaquant doit être dans l’arc #F180# du défenseur pour le marqueur de renforcement de proue et il doit être dans l’arc #B180# du défenseur pour le marqueur de renforcement de poupe<br>Durant l’étape « Neutraliser les résultats », si l’attaque est censée toucher et qu’il y a plus d’un résultat #hit#/#crit# restant, un résultat #evd# est ajouté pour annuler un résultat.<br>•Un vaisseau ne peut pas avoir plusieurs marqueurs de renforcement. Si un vaisseau venait à avoir un deuxième jeton renforcement, celui ci doit en choisir un des deux et défausser l'autre.<br>•Lorsqu’un vaisseau gagne un marqueur de renforcement, sauf précision contraire, le joueur qui contrôle le vaisseau choisit s’il gagne un marqueur de renforcement de proue ou de poupe.<br>•Un vaisseau ne dépense pas le marqueur de renforcement quand son effet est appliqué.<br>•Si une capacité indique à un vaisseau de gagner un marqueur de renforcement, ceci est différent d’effectuer une action #RF#. Un vaisseau qui gagne le marqueur sans effectuer l’action peut toujours effectuer l’action #RF# à ce round.<br>•En fin de tour, les marqueurs de renforcement (comme les autres jetons bleus) ne sont pas défaussés.<br>•En phase système, vous devez décider si vous arrêtez votre renforcement ou si vous le conservez. Si vous l'arrêtez, défausser votre jeton renforcement. Si vous le conservez, assignez au vaisseau renforcé un jeton d'épuisement.<br>•Tant que vous êtes renforcé, vous ne pouvez pas effectuer d'attaque bonus.</div>
     <div class="title">Jeton/Action Acquisition/Verrouillage</div>
-    <div class="txt"></div>
+    <div class="txt">Lorsqu'un vaisseau doit verrouiller un vaisseau, il doit suivre ces étapes :<br>•Déclarer sans mesurer la cible du verrouillage<br>•Il vérifie si le vaisseau ciblé se trouve à portée 3 ou moins. A cette occasion, il peut vérifier la portée avec tous les objets l'entourant<br>•Si la cible se trouve à portée 3 ou moins, le vaisseau qui verrouille reçoit un jeton bleu verrouillage ; il faut que ce jeton permette d'identifier clairement quel est le vaisseau verrouillé (par exemple en plaçant un jeton avec le même identifiant à côté du vaisseau verrouillé).<br>•Si la cible se trouve au delà de la portée 3, alors le verrouillage échoue (si c'était via une action de verrouillage, alors l'action échoue).<br>Lorsqu'un vaisseau attaque un vaisseau qu'il a verrouillé, il peut à l'étape 'modifier les dés d'attaque' dépenser son jeton verrouillage : dans ce cas, il peut relancer en 1 fois autant de dés d'attaque qu'il le souhaite.<br>Certaines armes secondaires nécessitent que le vaisseau soit verrouillé pour pouvoir être utilisées.</div>
     <div class="title">Jeton/Action Concentration</div>
     <div class="txt"></div>
     <div class="title">Jeton/Action Evasion</div>
@@ -301,29 +298,30 @@ Annuler/retirer/ajouter des dés n'est pas considéré comme une modification de
     <div class="subtitle">Phase de Planification</div>
     <div class="txt">Planification secrète des manoeuvres des vaisseaux via la préparation des cadrans</div>
     <div class="subtitle">Phase Système</div>
-    <div class="txt">Le premier joueur déclenche d'abord tous ses effets qui se déclenchent en phase système (ex: largage d'engin, désoccultation...), puis c'est ensuite au tour du deuxième joueur.</div>
+    <div class="txt">Le premier joueur déclenche d'abord tous ses effets qui se déclenchent en phase système dans le sens croissant des initiatives (ex: largage d'engin, désoccultation...), puis c'est ensuite au tour du deuxième joueur.</div>
     <div class="subtitle">Phase d'Activation</div>
     <div class="txt">Les vaisseaux s'activent de la plus faible initiative à la plus haute initiative. En cas d'initiatives identiques, le premier joueur active d'abord ses vaisseaux, puis l'autre joueur active les siens.<br>
     1. Etape "révéler la roue de maneuvre<br>
     2. Etape "exécuter une manoeuvre<br>
+    2.1 Sous-Etape "déplacer le vaisseau"*<br>
+    2.2 Sous-Etape "vérifier la difficulté de la manoeuvre"<br>
     3. Etape "effectuer une action"<br><br>
-    Si un vaisseau stressé devrait effectuer une manoeuvre rouge, il effectue une manoeuvre blanche 2 #straight# à la place.<br>
+    *Si un vaisseau stressé devrait effectuer une manoeuvre rouge, il effectue une manoeuvre blanche 2 #straight# à la place.<br>
     Si un vaisseau sans #force# active devrait effectuer une manoeuvre violette, il effectue sa manoeuvre et reçoit un stress.
     </div>
     <div class="subtitle">Phase d'Engagement</div>
     <div class="txt">Les vaisseaux s'engagent de la plus haute initiative à la plus faible initiative. En cas d'initiatives identiques, le premier joueur engage d'abord ses vaisseaux, puis l'autre joueur engage les siens.<br>
     1. Etape Déclarer un attaquant<br>
     2. Etape Choisir une Arme<br>
-    3. Etape Déclarer une cible<br>
-    4. Etape Lancer les dés d'attaque<br>
-    5. Etape Modification des dés d'attaque par le défenseur<br>
-    6. Etape Modification des dés d'attaque par l'attaquant<br>
-    7. Etape Lancer les dés de défense<br>
-    8. Etape Modification des dés de défense par l'attaquant<br>
-    9. Etape Modification des dés de défense par le défenseur<br>
-    10.Etape Annuler les dés d'attaque<br>
-    11.Etape Attribution des dégats<br>
-    12.Etape Vérification de l'intégrité du vaisseau défenseur<br>
+    3. Etape Lancer les dés d'attaque<br>
+    4. Etape Modification des dés d'attaque par le défenseur<br>
+    5. Etape Modification des dés d'attaque par l'attaquant<br>
+    6. Etape Lancer les dés de défense<br>
+    7. Etape Modification des dés de défense par l'attaquant<br>
+    8. Etape Modification des dés de défense par le défenseur<br>
+    9.Etape Annuler les dés d'attaque<br>
+    10.Etape Attribution des dégats<br>
+    11.Etape Vérification de l'intégrité du vaisseau défenseur<br>
     </div>
     <div class="subtitle">Phase de fin</div>
     1. Etape Début de phase de fin

@@ -1569,6 +1569,7 @@ function loadSquadwithCode(e) {
     //we select the leader in the menu, then we add the first ship
     leaderselect = document.getElementById("menu_leader");
     leaderselect.selectedIndex = indexes[0] ;
+    leaderSelected_id = indexes[0];
     
     //we have to select the faction manually because, the function to do this is in scriptleader.js
     let factionval1 = leaders[leaderSelected_id]["leaderfaction"][0];
@@ -1599,7 +1600,7 @@ function loadSquadwithCode(e) {
             }  
         }
         select_pilot_list();
-        shipSelection(l-1);
+        //shipSelection(l-1);
         console.log("ship "+(l-1)+" selected");
 
         //then we select the pilot 
