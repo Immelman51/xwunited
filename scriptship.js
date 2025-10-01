@@ -1590,39 +1590,46 @@ function loadSquadwithCode(e) {
     //then we take each entry in indexes which correspond to pilot ID and the upgrades equipped ID.
     //First We select the ship
     for(l=1 ; l<indexes.length ; l++){
+        y=l-1;
         const pilotL = indexes[l].split('u');
         const shipSelected = pilots[pilotL[0]]['ship'];
-        let shipMenu = document.getElementById('menu_ship_'+(l-1));    
+        let shipMenu = document.getElementById('menu_ship_'+(l-1));
         for (m=1 ; m<shipMenu.length ; m++){
             if(shipSelected === shipMenu.options[m].value){
                 shipMenu.selectedIndex = m;
+                
                 break;
             }  
         }
+        if(l<indexes.length-1){ //We have to add a new ship if it's not the last of the list
+            add_ship();
+        }
         select_pilot_list();
         //shipSelection(l-1);
-        console.log("ship "+(l-1)+" selected");
 
         //then we select the pilot 
         let pilotMenu = document.getElementById('menu_pilot_'+(l-1));
         for (m=0 ; m<pilot_objects[l-1].length ; m++){
-            if(pilotL[0] === pilot_objects[l-1][m]['id']){ 
+                if(parseInt(pilotL[0]) === pilot_objects[l-1][m]['id']){
                 pilotMenu.selectedIndex = m+1;
+                z=m+1; //we simulate the click by selecting x/y/z values. they are used in most of the functions
+                x=-1;
                 break;
             }
         }
         pilotSelection(l-1);
-        console.log("pilot "+(l-1)+" selected");
         
         //then we select the upgrades
         for (m=1 ; m<pilotL.length ; m++){
             
             //We'll look for the upgrade id in upgrade_ObjectsVal
             for (n=0 ; n<upgrades_Objects_Val[l-1].length ; n++){
+                x=n;
                 for(p=0 ; p<upgrades_Objects_Val[l-1][n].length ; p++){
-                    if (pilotL === upgrades_Objects_Val[l-1][n][p]['id']){
+                    if (parseInt(pilotL[m]) === upgrades_Objects_Val[l-1][n][p]['id']){
                         const menuToModify = document.getElementById('slot'+(l-1)+'_'+n);
                         menuToModify.selectedIndex = p+1;
+                        z=p+1;
                         upgradesSelected_Objects[l-1][n] = upgrades_Objects_Val[l-1][n][p];
                         break;
                     }
