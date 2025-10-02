@@ -65,7 +65,7 @@ ships :
   5 : () => reduce_logistic_cost(slotType), // reduce the logistic cost of slot parameter upgrade by 1.
   10 : () => may_remove_slots("Slot Type") //Has to be there if there's a 'add-slot' function in case the upgrade is unequipped. WARNING ! The order of the "slot"s to remove is very important. You have to start removing the last "slot", and keep on removing them starting from the last one. Or Else the function 'may_remove_"slot"' will fail. The reason is a bit tricky, but to make it simple, this function will remove (splice) elements in the array upgrades_Objets and upgrades_Type thinking the position is the last digit of the "slot"menu."id". 
 
-  Example : {
+  Exemple : {
             "name": "Gooti Terez",
             "id": 155,
             "max_per_squad": 1,
@@ -105,7 +105,10 @@ target required : just write the name of the restricted upgrade
 
 Exemples:
 - Purge Troopers is a crew upgrade but need to occupy also a Gunner Slot.
-We select modify=true and the "modifier_func" at the end to auto equip this upgrade in the gunner slot as well.
+We select :
+available:false (to show there's a restriction to look for)
+modify:true (to show there's a function to execute when you select this upgrade) 
+modifier_func" at the end to auto equip this upgrade in the gunner slot as well (globally this is the function(s) to execute when modify=true)
 {
             "name": "Purge Troopers",
              "name_ENG": "Purge Troopers",

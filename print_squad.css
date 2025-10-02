@@ -189,6 +189,8 @@ padding: 2px;
     justify-content: center;
     background-color: rgba(255, 255, 255, 0.5);
     border: 1px solid black;
+    font-size: medium;
+
 
 
 
@@ -312,22 +314,30 @@ display: flex;
 text-align: center;
 align-items: center;
 justify-content: center;
+font-size: medium;
+
 
 }
 .chs1{
     grid-area: 12 / 1 / 13 / 9;
     padding-bottom: 10px;
     text-align: center;
+    font-size: medium;
+
     
 }
 .chs2{
     grid-area: 13 / 1 / 14 / 5;
     border-bottom: 3px black;
+     font-size: medium;
+
 
 }
 .chs3{
     grid-area: 13 / 5 / 14 / 9;
     border-bottom: 3px black;
+    font-size: medium;
+
     
 }
 
