@@ -901,15 +901,18 @@ function  add_slots (targetSlot){ //Action n°2 : A utiliser si une upgrade rajo
 }
 
 function also_Occupies(targetSlot){ //Action n°3 : A utiliser lorsqu'une upgrade utilise un slot de plus. On va en plus écouter le menu qui a été rempli pour inverser l'opération si l'upg est retirée.
-    
+    console.log('also occupies : '+targetSlot);
     fillUpgradesSelected(y);
     let field = null;
     for (let i = 0; i < upgradesSelected_Objects[y].length; i++) {
         if (upgradesSelected_Objects[y][i] === -1) {
             field = document.getElementById('slot' + y + '_' + i);
-            field.value = '<' + targetSlot + '>';
-            field.setAttribute('disabled', '');
-            break;
+            console.log('field value'+field.value);
+            if(field.value === '<' + targetSlot + '>'){
+                field.setAttribute('disabled', '');
+                break;
+            }
+                
         }
     }
    
