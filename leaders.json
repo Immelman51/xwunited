@@ -32,7 +32,7 @@
      "leaderid": 3,
      "charge": [3,"Red"],
      "numberOfFactions": 1,
-     "leaderability": "A chaque fois qu'un de vos vaisseaux esquive parfaitement une attaque, récupérez 1 #ch# sur votre leader. En phase système, vous pouvez dépenser 3 #ch# : gagnez 1 #scenario_point#",
+     "leaderability": "A chaque fois qu'un de vos vaisseaux esquive parfaitement une attaque, récupérez 1 #ch#. En phase système, vous pouvez dépenser 3 #ch# : gagnez 1 #scenario_point#",
      "logistic": 20
      },
      {
@@ -41,7 +41,7 @@
      "leaderid": 4,
      "charge": [1,"Red"],
      "numberOfFactions": 1,
-     "leaderability": "Au début de la phase de programmation, lancez 1 dé rouge.<br><<'vierge' : brouillez un de vos vaisseaux>> ; <<#eye# : brouillez 1 vaisseau allié, assignez 1 calcul à un vaisseau.>> ; <<#hit#: récupérez 1 #ch#.>> ; <<#crit# : récupérez 1 #ch# et réparez une carte de dégat face ouverte.>><br>Lorsque vous détruisez un vaisseau adverse, vous pouvez dépenser 1 #ch# pour gagner 1 #scenario_point#",
+     "leaderability": "Au début de la phase de programmation, lancez 1 dé vert.<br><<'vierge' : brouillez un de vos vaisseaux>> ; <<#eye# : brouillez 1 vaisseau allié, assignez 1 calcul à un vaisseau.>> ; <<#evd#: récupérez 1 #ch#.>><br>Lorsque vous détruisez un vaisseau adverse, vous pouvez dépenser 1 #ch# pour gagner 1 #scenario_point#",
      "logistic": 25
      },
      {
@@ -69,7 +69,7 @@
         "leaderfaction": ["Naboo_Defense_Force","",""],
         "leaderid": 7,
         "numberOfFactions": 1,
-        "leaderability":"",
+        "leaderability":"En phase système, vous pouvez dépensez 1 #ch#. Dans ce cas, tous les vaisseaux reçoivent un jeton désarmement. A la fin de la partie, si votre charge est active, gagnez 1 #scenario_point#, sinon perdez 1 #scenario_point#.",
         "charge": [0],
         "logistic": 20
      },   
@@ -87,8 +87,8 @@
      "leaderfaction": ["Partisans","",""],
      "leaderid": 9,
      "numberOfFactions": 1,
-     "leaderability": "Chaque fois qu'un vaisseau allié est détruit, récupérez 1 #ch#. A tout moment, vous pouvez dépenser 2 #ch#. Dans ce cas, gagnez 1 #scenario_point# et exposez jusqu'à 2 cartes de dégat sur des vaisseaux ennemis.",
-     "charge": [2,"Red"],
+     "leaderability": "Chaque fois qu'un vaisseau allié est détruit, récupérez 1 #ch#. A tout moment, vous pouvez dépenser 1 #ch#. Dans ce cas, choisissez 1 :<br>- Gagnez 1 #scenario_point# et exposez ou recevez 1 carte de dégat face cachée sur un vaisseau allié.<br>- Exposez jusqu'à 2 cartes de dégat sur des vaisseaux ennemis.",
+     "charge": [1,"Red"],
      "logistic": 15
      },
      {
@@ -123,7 +123,7 @@
      "leaderfaction": ["Jedi_Order","",""],
      "leaderid": 13,
      "numberOfFactions": 1,
-     "leaderability": "ACTION : Choisissez un vaisseau allié avec de la force. Ce vaisseau peut coordonner jusqu'à 2 vaisseaux alliés qui ne disposent pas de force. Ils doivent effectuer la même action. <br>ACTION : Dépensez 1 #ch# et choisissez un vaisseau allié avec de la force. Il reçoit 2 jetons contrainte et gagnez 1 #scenario_point#.",
+     "leaderability": "ACTION : Choisissez un vaisseau allié avec de la force. Ce vaisseau peut coordonner jusqu'à 2 vaisseaux alliés qui ne disposent pas de force. Ils doivent effectuer la même action. <br>ACTION : Dépensez 1 #ch# et choisissez un vaisseau allié avec de la force qui est dans le #Farc# d'un vaisseau ennemi. Il reçoit 2 jetons contrainte et gagnez 1 #scenario_point#.",
      "charge": [2,"0"],
      "logistic": 20
      },
@@ -141,7 +141,7 @@
      "leaderfaction": ["Agents_of_Chaos","",""],
      "leaderid": 15,
      "numberOfFactions": 1,
-     "leaderability": "ACTION : Choisissez un vaisseau ennemi avec de la force. Il perd 1 point de force et un vaisseau allié en regagne 1. <br>ACTION : (1 fois par ronde) Dépensez 1 #ch# et choisissez un vaisseau ennemi sans force. Il gagne 1 point de force qu'il peut utiliser comme un calcul en defense. Gagnez 1 #scenario_point#.",
+     "leaderability": "ACTION : Choisissez un vaisseau ennemi avec de la force. Il perd 1 point de force et un vaisseau allié en regagne 1. <br>ACTION : Dépensez 1 #ch# et choisissez un vaisseau ennemi sans force. Il gagne 1 point de force qu'il peut utiliser comme un calcul en defense. Gagnez 1 #scenario_point#.",
      "charge": [3,"0"],
      "logistic": 18
      },
@@ -159,7 +159,7 @@
      "leaderfaction": ["Clone_Army","",""],
      "leaderid": 17,
      "numberOfFactions": 1,
-     "leaderability": "En phase système, vous pouvez dépensez 1 #ch#. Dans ce cas, tous les vaisseaux reçoivent un jeton désarmement. A la fin de la partie, si votre charge est active, gagnez 1 #scenario_point#, sinon perdez 1 #scenario_point#.",
+     "leaderability": "",
      "charge": [1,"0"],
      "logistic": 25
      },
@@ -243,7 +243,7 @@
      "leadername": "Dark Vador",
      "leaderfaction": ["Bounty_Hunters_Guild","Imperial_Academy" ,""],
      "leaderid": 26,
-     "charge": [3,"0"],
+     "charge": [2,"0"],
      "numberOfFactions": 2,
      "leaderability": "1 fois par ronde, lorsque vous attaquez un vaisseau, vous pouvez dépenser 1 #ch# pour améliorer un dé d'attaque.",
      "logistic": 15
@@ -307,7 +307,7 @@
         "leaderfaction": ["New_Republic","Naboo_Defense_Force",""],
         "leaderid": 33,
         "numberOfFactions": 2,
-        "leaderability":"Lorsqu'un de vos vaisseaux détruit un vaisseau adverse, vous pouvez dépenser 1 #ch#. Dans ce cas, ce vaisseau gagne l'un de ces bonus jusqu'à la fin de la partie : <Initiative +1>, <Action #CD# et la possibilité de donner votre initiative à un vaisseau allié à portée 1 au début de la phase d'activation jusqu'à la fin du tour>, <Les vaisseaux alliés à portée 1-3 peuvent utiliser vos verrouillages comme si c'était les leurs>.",
+        "leaderability":"Lorsqu'un de vos vaisseaux détruit un vaisseau adverse, vous pouvez dépenser 1 #ch#. Dans ce cas, ce vaisseau gagne l'un de ces bonus jusqu'à la fin de la partie : <Initiative +1>, <Action #CD#>, <Début phase Activation : vous pouvez choisir un vaisseau allié à portée 1. Dans ce cas, il gagne votre initiative jusqu'à la fin du tour>",
         "charge": [3,"0"],
         "logistic": 15
      },

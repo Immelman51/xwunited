@@ -124,8 +124,9 @@ populateMenu("menu_leader",listeleader);
 function description_leader() {
     descriptionLeaderField = document.querySelector(".abilityLeader"); //description est le nom de la classe où se trouve le champ description leader
     //We are going to create a variable that will containe the charge logos
+    descriptionLeaderField.innerHTML = ""; // Clear previous content
     for(let i=0; i<leaders[leaderSelected_id]["charge"][0]; i++){
-        console.log("Charge : "+leaders[leaderSelected_id]["charge"][0]);
+        
         if(leaders[leaderSelected_id]["charge"][1] === "0"){
             descriptionLeaderField.innerHTML += "<img class='chargeforceimg' src='img/chargestat.png'>";
         } else if (leaders[leaderSelected_id]["charge"][1] === "Red"){
@@ -133,7 +134,7 @@ function description_leader() {
         }
     }
     descriptionLeaderField.innerHTML += leaders[leaderSelected_id]["leaderability"];
-    console.log("Test reussi2");
+    
 }
 
 

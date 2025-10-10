@@ -36,7 +36,7 @@
             <div><a href="#dialsAndManeuvers">Dials & Maneuvers</a></div>
         </div>
         <div id='systemPhase' class="systemphase">
-            <div><a href="#system_order">Order</a></div>
+            <div><a href="#system_order">System Order</a></div>
             <div><a href="#decloaking">Decloaking</a></div>
             <div><a href="#payload">Payload</a></div>
             <div><a href="#relocate">Relocate</a></div>
@@ -47,6 +47,7 @@
             <div><a href="#executing_maneuvers">Execute a Maneuver</a></div>
             <div><a href="#bumpingships">Bumping into ships</a></div>
             <div><a href="#actions">Perform an action</a></div>
+            <div><a href="#leader_actions">Leader Actions</a></div>
             <div><a href="#obstacles">Obstacles</a></div>
         </div>
         <div id='engagementPhase' class="engagementphase">
@@ -56,16 +57,19 @@
             <div><a href="#rollingdefensedice">Roll Defense Dice</a></div>
             <div><a href="#cancelresults">Cancel Results</a></div>
             <div><a href="#bonusattack">Bonus Attack</a></div>
-            <div><a href="#range0">Portée 0</a></div>
+            <div><a href="#range0">Range 0</a></div>
             <div><a href="#destroyedships">Destroyed Ships</a></div>
 
         </div>
         <div id='endPhase' class="endphase">
             <div><a href="#end_effects">End Effects</a></div>
-            <div><a href="#scenariopoints">Scenario Points</a></div>
+            <div><a href="#check_victory">Check Victory Conditions</a></div>
             <div><a href="#clearing_tokens">Clearing Tokens</a></div>
         </div>
-
+        
+        <div id='general_information' class="general_information"></div>
+            <div><a href="#tournaments">Tournaments</a></div>
+            <div><a href="#turn_phases">Turn Phases</a></div>
     </header>
 <p>
     <div id='squadbuilding1' class="title">Préparation de partie/Squadbuilding</div>
@@ -84,12 +88,11 @@
 <p>
     <div id='upgrades' class="title">Améliorations</div>
     <div class="txt">Il faut distinguer 2 catégories d'amélioration :<br>
-        - Les améliorations 'Talent' et 'Force' que l'on peut qualifier d'<span style= "text-decoration: underline; ">amélioration Pilote,</span><br>
+        - Les améliorations 'Talent' (Tir, Pilotage, Commandement, Elite) et 'Force' que l'on peut qualifier d'<span style= "text-decoration: underline; ">amélioration Pilote,</span><br>
         - Les autres améliorations que l'on peut qualifier de d'<span style= "text-decoration: underline; ">amélioration Vaisseau.</span><br>
-Les améliorations Vaisseau ont un coût. Chaque fois qu'on équipe un pilote d'une amélioration Vaisseau (ex : Missile, Senseur, Illicit, Modification...), il faut dépenser de la logistique. La valeur de logistique ne doit pas descendre sous 0.<br>
-Les améliorations Pilote n'ont pas de coût mais possède un niveau. Tous les talents peuvent être équippés tant que le pilote possède un emplacement Talent, MAIS :<br>- un talent n'est utilisable que si un pilote a une valeur d'initiative supérieure ou égale au niveau du talent.<br>- <span style= "text-decoration: underline; ">Il n'est pas possible d'équiper plusieurs talents de même niveau.</span><br>
-Concernant les améliorations 'Force', elles suivent une logique similaire. Il n'y a aucune restriction en revanche. Le niveau des améliorations 'Force' correspond uniquement aux points de force nécessaires pour déclencher son effet.
-    </div>
+Les améliorations Vaisseau ont un coût de Logistique. Chaque fois qu'on équipe un pilote d'une amélioration Vaisseau (ex : Missile, Senseur, Illicit, Modification...), il faut dépenser de la logistique. La valeur de logistique ne doit pas descendre sous 0.<br>
+Les améliorations Pilote ont un coût de Talent. La somme des coûts des Talents/Force ne doit pas dépasser la valeur d'initiative du pilote. Il n'est pas possible d'équiper plusieurs fois le même Talent/Force sur un même pilote.
+   </div>
 </p>
 <p>
     <div id='logistic' class="title">Logistique</div>
@@ -108,14 +111,14 @@ Concernant les améliorations 'Force', elles suivent une logique similaire. Il n
     <div class="txt">Une fois que l'environnement a été sélectionné et mis en place, il faut choisir une carte évênement parmi les 5 disponibles. Elle est tirée au hasard. Une fois la carte tirée, les joueurs suivent les instructions de la carte et placer éventuellement les éléments de scénario. On passe alors à la phase 'placer les forces' (placer les vaisseaux sur l'aire de jeu).</div>
 </p>
 
-
+<!--PHASE DE PLANNIFICATION-->
 <p>
     <div id='tacticpoint' class="title">Points Tactique</div>
-    <div class="txt">Placez un dé 6 à côté de l'aire de jeu, et placez le sur sa face 3. Les points tactique permettent de déterminer quel joueur a 'l'ascendant tactique' sur l'autre joueur. Le joueur qui a l'ascendant tactique (aussi appelé joueur 'Tacticien') peut déterminer au début de chaque tour qui sera le premier joueur sur le tour en cours. En cas d'égalité en fin de partie, le joueur qui a l'ascendant tactique remporte la partie.<br>Lorsque le joueur 1 gagne un point tactique, il baisse la valeur du dé 6 de 1. Si le dé est déjà sur sa face 1, il ne se passe rien. Lorsque le joueur 2 gagne 1 point tactique, il augmente la valeur du dé 6 de 1 ; si le dé est déjà sur sa valeur 6, il ne se passe rien. Ainsi, tant que le dé 6 indique les valeurs 1, 2, ou 3, le joueur 1 a l'ascendant tactique. Tant que le dé 6 indique les valeurs 4, 5 ou 6, le joueur 2 a l'ascendant tactique.</div>
+    <div class="txt">Placez un dé 6 à côté de l'aire de jeu, et placez le sur sa face 3. Les points tactique permettent de déterminer quel joueur a 'l'ascendant tactique' sur l'autre joueur. Le joueur qui a l'ascendant tactique (aussi appelé joueur 'Tacticien') peut déterminer au début de chaque phase de Planification qui sera le premier joueur sur le tour en cours. En cas d'égalité en fin de partie, le joueur qui a l'ascendant tactique remporte la partie.<br>Lorsque le joueur 1 gagne un point tactique, il baisse la valeur du dé 6 de 1. Si le dé est déjà sur sa face 1, il ne se passe rien. Lorsque le joueur 2 gagne 1 point tactique, il augmente la valeur du dé 6 de 1 ; si le dé est déjà sur sa valeur 6, il ne se passe rien.<br>Ainsi, tant que le dé 6 indique les valeurs 1, 2, ou 3, le joueur 1 a l'ascendant tactique. Tant que le dé 6 indique les valeurs 4, 5 ou 6, le joueur 2 a l'ascendant tactique.</div>
 </p>
 <p>
     <div id='firstplayer' class="title">Gestion du premier joueur</div>
-    <div class="txt">En début de partie, le joueur qui a le plus de pilotes à initiative 6 devient le joueur 1 (voir points tactique) et prend l'ascendant tactique. En cas d'égalité, on compare le nombre de pilotes à initiative 5 etc... <br>Des évênements peuvent ammener des pertes/gains de points tactiques en cours de partie:<br>- Survoler/chevaucher un obstacle : -1 point tactique<br>- Chevaucher un vaisseau : -1 point tactique<br>- Gagner 1 ou plusieurs points de scénario par une action ou un fait de jeu: +1 point tactique<br>En phase de fin, le joueur qui a l'ascendant décide pour la ronde suivante qui sera le premier joueur (A initiative égale, il se déplace en premier, et tire en premier).
+    <div class="txt">En début de partie, le joueur qui a le plus de pilotes à initiative 6 devient le joueur 1 (voir points tactique) et prend l'ascendant tactique. En cas d'égalité, on compare le nombre de pilotes à initiative 5 etc... <br>Des évênements peuvent ammener des pertes/gains de points tactiques en cours de partie:<br>- Survoler/chevaucher un obstacle : -1 point tactique<br>- Chevaucher un vaisseau : -1 point tactique<br>- Gagner 1 ou plusieurs points de scénario par une action ou un fait de jeu: +1 point tactique<br>Au début de la phase de Planification, le joueur qui a l'ascendant décide qui sera le premier joueur pour le tour en cours (A initiative égale, il se déplace en premier, et tire en premier).
     </div>
 </p>
 
@@ -125,7 +128,7 @@ Concernant les améliorations 'Force', elles suivent une logique similaire. Il n
     <div class="txt"></div>
 </p>
 
-
+<!--PHASE SYSTEME-->
 <p>
     <div id='system_order' class="title">Ordre en phase système</div>
     <div class="txt"></div>
@@ -144,7 +147,7 @@ Concernant les améliorations 'Force', elles suivent une logique similaire. Il n
 </p>
 
 
-
+<!--PHASE D'ACTIVATION-->
 <p>
     <div id='activation_order' class="title">Ordre d'activation</div>
     <div class="txt"></div>
@@ -156,6 +159,10 @@ Concernant les améliorations 'Force', elles suivent une logique similaire. Il n
 <p>
     <div id='actions' class="title">Effectuer une action</div>
     <div class="txt"></div>
+</p>
+<p>
+    <div id='leader_actions' class="title">Actions de Leader</div>
+    <div class="txt">Certains Leaders proposent des ACTIONS. Chaque vaisseau allié peut effectuer ces actions de leader durant sa phase 'effectuer une action' à la place d'une action de sa barre d'action.<br>Il n'est pas possible d'effectuer une action de leader plus d'une fois par ronde.</div>
 </p>
 <p>
 <div id='obstacles' class="title">Obstacles</div>
@@ -180,7 +187,7 @@ Concernant les améliorations 'Force', elles suivent une logique similaire. Il n
     </div>
 </p>
 
-
+<!--PHASE D'ENGAGEMENT-->
 <p>
     <div id='engagement_order' class="title">Ordre d'engagement</div>
     <div class="txt"></div>
@@ -282,8 +289,29 @@ Annuler/retirer/ajouter des dés n'est pas considéré comme une modification de
     <div class="txt"></div>
 </p>
 
+<!--PHASE DE FIN-->
+
 <p>
-    <div class="title">Tournois</div>
+    <div class="title" id="end_effects">Effets de Fin</div>
+    <div class="txt"></div>
+</p>
+
+<p>
+    <div class="title" id="check_victory">Vérification des conditions de victoire</div>
+    <div class="txt"></div>
+</p>
+
+<p>
+    <div class="title" id="clearing_tokens">Nettoyage des Jetons</div>
+    <div class="txt">A la fin de chaque tour, tous les jetons verts et oranges sont retirés des vaisseaux. Tous les jetons rouges et bleus restent sur les vaisseaux.</div>
+
+
+
+
+<!-- General Information -->
+
+<p>
+    <div class="title" id="tournaments">Tournois</div>
     <div class="subtitle">Points de Tournoi</div>
     <div class="txt">Lors d'un tournoi, les joueurs vont gagner des points de tournoi à l'issue de leurs matchs.<br>
     Une victoire rapporte 2 points de tournoi.<br>
@@ -292,7 +320,7 @@ Annuler/retirer/ajouter des dés n'est pas considéré comme une modification de
 </p>
 
 <p>
-    <div class="title">Phases et Déroulement d'un tour</div>
+    <div class="title" id="turn_phases">Phases et Déroulement d'un tour</div>
     <div class="subtitle">Phase de début</div>
     <div class="txt">Désignation du premier joueur par le joueur 'Tacticien'</div>
     <div class="subtitle">Phase de Planification</div>
