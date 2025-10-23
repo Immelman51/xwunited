@@ -2,7 +2,7 @@
     
         {
                 "name": "T-65 X-wing",
-                "factions": [ "Rebel_Alliance", "Partisans", "New_Republic" ],
+                "factions": [ "Rebel_Alliance", "Partisans", "New_Republic_Patrol" ],
                 "chassis": [3],
                 "id": 0,
                 "attack": [["F",3]],
@@ -85,7 +85,7 @@
             {
             
                 "name": "YT-1300 Light Freighter",
-                "factions": [ "Pirates_and_Smugglers", "Resistance" ],
+                "factions": [ "Pirates_and_Smugglers", "Heroes_of_the_Resistance" ],
                 "id": 3,
                 "attack": [["T",3]],
                 "agility": 1,
@@ -112,7 +112,7 @@
             {
             
                 "name": "TIE/ln Fighter",
-                "factions": ["Phoenix_Cell", "Imperial_Academy", "Imperial_Elite_Forces", "Imperial_Remnants"],
+                "factions": ["Phoenix_Cell", "Imperial_Academy", "Imperial_Elite_Squadrons", "Imperial_Remnants"],
                 "chassis":[0],
                 "id": 4,
                 "attack": [["F",2]],
@@ -164,7 +164,7 @@
             {
             
                 "name": "TIE/in Interceptor",
-                "factions": [ "Imperial_Academy", "Imperial_Elite_Forces", "Imperial_Remnants" ],
+                "factions": [ "Imperial_Academy", "Imperial_Elite_Squadrons", "Imperial_Remnants" ],
                 "id": 6,
                 "attack": [["F",3]],
                 "agility": 3,
@@ -353,7 +353,7 @@
         
             
                 "name": "TIE/d Defender",
-                "factions": [ "Imperial_Elite_Forces" ],
+                "factions": [ "Imperial_Elite_Squadrons" ],
                 "id": 13,
                 "attack": [["F",3]],
                 "agility": 3,
@@ -383,7 +383,7 @@
          
         
                 "name": "E-wing",
-                "factions": [ "New_Republic" ],
+                "factions": [ "New_Republic_Patrol" ],
                 "chassis":[0],
                 "id": 14,
                 "attack": [["F",3]],
@@ -469,7 +469,7 @@
             {
            
                 "name": "VT-49 Decimator",
-                "factions": [ "Imperial_Elite_Forces" ],
+                "factions": [ "Imperial_Elite_Squadrons" ],
                 "chassis":[0],
                 "id": 17,
                 "attack": [["T",3]],
@@ -637,7 +637,7 @@
             {
       
                 "name": "BTL-S8 K-wing",
-                "factions": ["New_Republic"],
+                "factions": ["New_Republic_Patrol"],
                 "chassis":[0],
                 "id": 23,
                 "attack": [["T",2]],
@@ -666,7 +666,7 @@
         
         
                 "name": "TIE/ca Punisher",
-                "factions": ["Imperial_Elite_Forces"],
+                "factions": ["Imperial_Elite_Squadrons"],
                 "chassis":[0],
                 "id": 24,
                 "attack": [["F",2]],
@@ -695,7 +695,7 @@
        
             
                 "name": "VCX-100 Light Freighter",
-                "factions": ["Phoenix_Cell", "New_Republic"],
+                "factions": ["Phoenix_Cell", "New_Republic_Patrol"],
                 "id": 25,
                 "attack": [["F",4]],
                 "agility": 0,
@@ -748,7 +748,7 @@
             {
       
                 "name": "TIE Advanced v1",
-                "factions": ["Imperial_Elite_Forces"],
+                "factions": ["Imperial_Elite_Squadrons"],
                 "chassis":[0],
                 "id": 27,
                 "attack": [["F",2]],
@@ -1216,7 +1216,7 @@
       
     
                 "name": "T-70 X-wing",
-                "factions": [ "Resistance", "Colossus"],
+                "factions": [ "Heroes_of_the_Resistance", "Colossus"],
                 "id": 44,
                 "attack": [["F",3]],
                 "agility": 2,
@@ -1242,7 +1242,7 @@
                
     
                 "name": "RZ-2 A-wing",
-                "factions": ["Resistance", "New_Republic"],
+                "factions": ["Heroes_of_the_Resistance", "New_Republic_Patrol"],
                 "id": 45,
                 "attack": [["T",2]],
                 "agility": 3,
@@ -1272,7 +1272,7 @@
           
     
                 "name": "TIE/fo Fighter",
-                "factions": ["First_Order", "Shadow_Specialists"],
+                "factions": ["First_Order_Vanguard", "Shadow_Specialists"],
                 "chassis":[0],
                 "id": 46,
                 "attack": [["F",2]],
@@ -1301,7 +1301,7 @@
         
     
                 "name": "TIE/vn Silencer",
-                "factions": ["First_Order"],
+                "factions": ["First_Order_Vanguard"],
                 "id": 47,
                 "attack": [["F",3]],
                 "agility": 3,
@@ -1329,7 +1329,7 @@
             {
          
                 "name": "TIE/sf Fighter",
-                "factions": ["First_Order"],
+                "factions": ["First_Order_Vanguard"],
                 "id": 48,
                 "attack": [["F",2],["T",2]],
                 "agility": 2,
@@ -1359,7 +1359,7 @@
      
                 "name": "Upsilon-Class Command Shuttle",
                 "id": 49,
-                "factions": ["First_Order"],
+                "factions": ["First_Order_Vanguard"],
                 "attack": [["F",4]],
                 "agility": 1,
                 "hull": 6,
@@ -1390,7 +1390,7 @@
                 "name": "MG-100 StarFortress",
                 "chassis":[0],
                 "id": 50,
-                "factions": ["Resistance"],
+                "factions": ["Heroes_of_the_Resistance"],
                 "attack": [["F",3],["T",2]],
                 "agility": 1,
                 "hull": 9,
@@ -1475,7 +1475,7 @@
             {
     
                 "name": "Delta-7 Aethersprite",
-                "factions": ["Jedi_Council"],
+                "factions": ["Jedi_Order"],
                 "id": 53,
                 "attack": [["F",2]],
                 "agility": 3,
@@ -1506,7 +1506,7 @@
           
         
                 "name": "Delta-7b Aethersprite",
-                "factions": ["Jedi_Council"],
+                "factions": ["Jedi_Order"],
                 "id": 54,
                 "attack": [["F",3]],
                 "agility": 2,
@@ -1676,8 +1676,8 @@
             },
             {
      
-                "name": "Resistance Transport Pod",
-                "factions": ["Resistance"],
+                "name": "Heroes_of_the_Resistance Transport Pod",
+                "factions": ["Heroes_of_the_Resistance"],
                 "id": 60,
                 "attack": [["F",1]],
                 "agility": 2,
@@ -1704,8 +1704,8 @@
             {
          
      
-                "name": "Resistance Transport",
-                "factions": ["Resistance"],
+                "name": "Heroes_of_the_Resistance Transport",
+                "factions": ["Heroes_of_the_Resistance"],
                 "id": 61,
                 "attack": [["F",2]],
                 "agility": 1,
@@ -1760,7 +1760,7 @@
         
       
                 "name": "BTL-B Y-wing",
-                "factions": ["Jedi_Council","Clone_Army"],
+                "factions": ["Jedi_Order","Clone_Army"],
                 "id": 63,
                 "attack": [["F",2]],
                 "agility": 1,
@@ -2023,7 +2023,7 @@
             {
          
                 "name": "Eta-2 Actis",
-                "factions": ["Jedi_Council"],
+                "factions": ["Jedi_Order"],
                 "id": 72,
                 "attack": [["BULL",3],["F",2]],
                 "agility": 3,
@@ -2055,7 +2055,7 @@
                 "name": "Syliure-class Hyperspace Ring",
                 "chassis":[65],
                 "id": 73,
-                "factions": ["Jedi_Council","Clone_Army"],
+                "factions": ["Jedi_Order","Clone_Army"],
                 "agility": 0,
                 "hull": 1,
                 "shields": 0,
@@ -2072,7 +2072,7 @@
             {
          
                 "name": "BTA-NR2 Y-wing",
-                "factions": ["Resistance"],
+                "factions": ["Heroes_of_the_Resistance"],
                 "id": 74,
                 "attack": [["F",2]],
                 "agility": 1,
@@ -2131,7 +2131,7 @@
             {
      
                 "name": "TIE/se Bomber",
-                "factions": ["First_Order"],
+                "factions": ["First_Order_Vanguard"],
                 "id": 76,
                 "attack": [["F",2]],
                 "agility": 2,
@@ -2297,7 +2297,7 @@
             },
             {
             	"name": "T-6 Shuttle",
-                "factions": [ "Partisans", "Jedi_Council", "New_Republic" ],
+                "factions": [ "Partisans", "Jedi_Order", "New_Republic_Patrol" ],
                 "chassis":[0],
                 "id": 82,
                 "attack": [["F",2],["B",2]],
@@ -2592,7 +2592,7 @@
             },
             {
             	"name": "TIE/es Echelon",
-                "factions": [ "First_Order" ],
+                "factions": [ "First_Order_Vanguard" ],
                 "id": 93,
                 "attack": [["F",4]],
                 "agility": 1,
@@ -2720,7 +2720,7 @@
             },
             {
             	"name": "ETA Class Shuttle",
-                "factions": [ "Imperial_Remnants", "Jedi_Council", "Naboo_Defense_Force" ],
+                "factions": [ "Imperial_Remnants", "Jedi_Order", "Naboo_Defense_Force" ],
                 "id": 98,
                 "attack": [["F",2]],
                 "agility": 2,
