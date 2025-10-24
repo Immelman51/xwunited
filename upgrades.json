@@ -633,12 +633,12 @@
             "modify": false,
             "slot": "Torpedo",
             "points": 4,
-            "attack": ["F",3],
-            "range": [2,3],
+            "attack": ["BULL",3],
+            "range": [1,2],
             "add_Data": [0],
             "force": 0,
             "charge": [1,"0"],
-            "effect": "<img class='chargeforceimg' src='img/chargestat.png'> Attaque (#TL#) : 3#Farc# portée 2-3: dépensez 1 #ch#. Lors de l’étape « Neutraliser les résultats », les résultats #crit# sont annulés avant les résultats #hit#. Après que cette attaque a touché, le défenseur perd 1 bouclier.",
+            "effect": "<img class='chargeforceimg' src='img/chargestat.png'> 3#BULLS# portée 1-2: dépensez 1 #ch#. Lors de l’étape « Neutraliser les résultats », les résultats #crit# sont annulés avant les résultats #hit#. Après que cette attaque a touché, le défenseur perd 1 bouclier. Gagnez un jeton désarmement.",
             "effect_ENG": "",
             "faction": ""
         },
@@ -651,12 +651,12 @@
             "modify": false,
             "slot": "Torpedo",
             "points": 4,
-            "attack": ["F",4],
+            "attack": ["BULL",4],
             "range": [1],
             "add_Data": [0],
             "force": 0,
             "charge": [1,"0"],
-            "effect": "<img class='chargeforceimg' src='img/chargestat.png'> Attaque (#TL#) : 4#Farc# Portée 1 : dépensez 1 #ch#. Améliorez 1 dé d'attaque.",
+            "effect": "<img class='chargeforceimg' src='img/chargestat.png'> 4#BULLS# Portée 1 : dépensez 1 #ch#. Vous pouvez modifier 1 résultat #hit# en #crit#. Gagnez un jeton désarmement.",
             "effect_ENG": "",
             "faction": ""
         },
@@ -669,12 +669,12 @@
             "modify": false,
             "slot": "Torpedo",
             "points": 3,
-            "attack": ["F",3],
-            "range": [2,3],
+            "attack": ["BULL",3],
+            "range": [3],
             "add_Data": [0],
             "force": 0,
             "charge": [1,"0"],
-            "effect": "<img class='chargeforceimg' src='img/chargestat.png'>Attaque (TL) : 3#Farc# Portée 2-3 : dépensez 1 #ch#. Après que cette attaque a touché, chaque vaisseau à portée 0–1 du défenseur expose 1 de ses cartes de dégât.",
+            "effect": "<img class='chargeforceimg' src='img/chargestat.png'>3#Bulls# Portée 3 : dépensez 1 #ch#. Après que cette attaque a touché, chaque vaisseau à portée 0–1 du défenseur expose 1 de ses cartes de dégât. Gagnez un jeton désarmement.",
             "effect_ENG": "",
             "faction": ""
         },
@@ -690,11 +690,11 @@
             "slot": "Torpedo",
             "points": 5,
             "attack": ["BULL",5],
-            "range": [1,2],
+            "range": [1],
             "add_Data": [0],
             "force": 0,
             "charge": [1,"0"],
-            "effect": "<img class='chargeforceimg' src='img/chargestat.png'> Attaque (#FS#) : 5#BULLS# Portée 1-2 : dépensez 1 #ch#.",
+            "effect": "<img class='chargeforceimg' src='img/chargestat.png'> 5#BULLS# Portée 1 : dépensez 1 #ch#. Gagnez un jeton désarmement.",
             "effect_ENG": "",
             "faction": ""
         },
@@ -1522,7 +1522,7 @@
             "charge": [2,"0"],
             "effect": "<img class='chargeforceimg' src='img/chargestat.png'> <img class='chargeforceimg' src='img/chargestat.png'> Après votre activation, vous pouvez dépenser 1 #ch# et gagner 1 marqueur d’épuisement pour réparer 1 carte de dégât, récupérer 1 bouclier ou retirer 1 engin à portée 0–1.",
             "effect_ENG": "",
-            "faction": ["Rebel_Alliance","Jedi_Order","Resistance"]
+            "faction": ["Rebel_Alliance","Jedi_Order","Heroes_of_the_Resistance"]
         },
          {
             "name": "R5-D8",
@@ -1554,7 +1554,7 @@
             "max_per_squad": 1,
             "effect": "Avant de lancer les dés de défense, vous pouvez dépenser 1 marqueur de calcul pour dire à voix haute un nombre supérieur ou égal à 1. Dans ce cas et si vous obtenez exactement cette quantité de résultats #evd# sur votre lancer, ajoutez 1 résultat #evd#.",
             "effect_ENG": "",
-            "faction": ["Rebel_Alliance","New_Republic","Resistance"],
+            "faction": ["Rebel_Alliance","New_Republic_Patrol","Heroes_of_the_Resistance"],
             "modifier_func": [
                 [0,"add_action",[0,"Cc W"]]
             ]
@@ -1807,7 +1807,7 @@
             "slot": "Gunner",
             "effect": "Après avoir effectué une attaque qui a échoué, le défenseur gagne un marqueur d’épuisement.",
             "effect_ENG": "",
-            "faction": ["Imperial_Academy","ISB","Imperial_Elite_Forces"]
+            "faction": ["Imperial_Academy","ISB","Imperial_Elite_Squadrons"]
         },
 
 
@@ -2354,7 +2354,7 @@
             "points": 0,
             "max_per_squad": 1,
             "effect_ENG": "",
-            "faction": ["Pirates_and_Smugglers", "Resistance"],
+            "faction": ["Pirates_and_Smugglers", "Heroes_of_the_Resistance"],
             "ship": "YT-1300 Light Freighter",
             "effect": "Retire un emplacement #calculator# et la capacité 'Vaisseau-Mère'. Ajoute #sensor#."
           
@@ -2371,12 +2371,12 @@
             "points": 5,
             "effect_ENG": "",
             "faction": "",
-            "effect": "<img class='chargeforceimg' src='img/chargestat.png'> 4#Farc# portée 2-3, Attaque #TL#: Dépensez 1 #ch#. Changez 1 résultat #hit# en un résultat #crit#.",
+            "effect": "<img class='chargeforceimg' src='img/chargestat.png'> 4#BULLS# portée 2, Dépensez 1 #ch#. Changez 1 résultat #hit# en un résultat #crit#. Gagnez un jeton désarmement.",
             "add_Data": [0],
             "force": 0,
             "charge": [1,"0"],
-            "attack": ["F",4],
-            "range": [2,3]
+            "attack": ["BULL",4],
+            "range": [2]
         },
         {
             "name": "Xanadu Blood",
@@ -2681,7 +2681,7 @@
             "force": 0,
             "charge": [0],
             "points": 4,
-            "faction": ["Phoenix_Cell","New_Republic"],
+            "faction": ["Phoenix_Cell","New_Republic_Patrol"],
             "effect": "Vous pouvez exécuter des manoeuvres rouges même stressé. Après avoir entièrement exécuté une manoeuvre rouge, si vous avez 3 jetons stress ou plus, retirez 1 jeton stress et subissez 1 dégat.",
             "effect_ENG": "You can execute red maneuvers even while stressed. After you fully execute a red maneuver, if you have 3 or more stress tokens, remove 1 stress token and suffer 1 damage."
         },
@@ -2713,7 +2713,7 @@
             "force": 0,
             "charge": [0],
             "points": 5,
-            "faction": ["Phoenix_Cell","New_Republic"],
+            "faction": ["Phoenix_Cell","New_Republic_Patrol"],
             "effect": "Lorsque vous effectuez une attaque #tur#, si l'attaque touche, chaque vaisseau allié à portée 0-2 du défenseur retire 1 jeton rouge.",
             "effect_ENG": "When you perform a #tur# attack, if the attack hits, each ally ships at range 0-2 of the defender loses 1 red Token."
         },
@@ -2945,7 +2945,7 @@
             "charge": [0],
             "points": 0,
             "talent_points": 2,
-            "faction": ["Resistance"],
+            "faction": ["Heroes_of_the_Resistance"],
             "effect": "Tant que vous défendez ou effectuez une attaque, si vous n'avez que des résultats vierges et au moins 2 résultats, vous pouvez relancer n'importe quel nombre de vos dés.",
             "effect_ENG": "When you defend or perform an attack, if all of your results are blank and there are at least 2 results, you may reroll any number of your dice."
         },
@@ -2961,7 +2961,7 @@
             "force": 0,
             "charge": [0],
             "points": 5,
-            "faction": ["Resistance"],
+            "faction": ["Heroes_of_the_Resistance"],
             "effect": "Après avoir révélé votre cadran, vous pouvez régler votre cadran sur une manoeuvre basique de vitesse +1. Lorsque vous exécutez cette manoeuvre, augmentez sa difficulté.",
             "effect_ENG": "After you reveal your dial, you may set your dial to a basic maneuver of the next higher speed. While you execute that maneuver, increase its difficulty."
         },
@@ -2977,7 +2977,7 @@
             "force": 0,
             "charge": [0],
             "points": 9,
-            "faction": ["Resistance"],
+            "faction": ["Heroes_of_the_Resistance"],
             "effect": "Lorsque vous défendez ou attaquez, vous pouvez dépenser 1 de vos résultats pour verrouiller l'adversaire.",
             "effect_ENG": "While you defend or perform an attack, you may spend 1 of your results to acquire a lock on the enemy ship."
         },
@@ -2993,7 +2993,7 @@
             "force": 0,
             "charge": [0],
             "points": 2,
-            "faction": ["Resistance"],
+            "faction": ["Heroes_of_the_Resistance"],
             "effect": "Après qu'un ennemi vous a verrouillé, si vous n'êtes pas dans le #bulls# de ce vaisseau, alors il choisit de gagner un jeton stress ou de retirer son verrouillage.",
             "effect_ENG": "After an enemy ship locks you, if you are not in that ship's #bulls#, that ship gains 1 stress token unless it chooses to break its lock."
         },
@@ -3009,7 +3009,7 @@
             "force": 0,
             "charge": [0],
             "points": 7,
-            "faction": ["Resistance"],
+            "faction": ["Heroes_of_the_Resistance"],
             "effect": "Lorsque vous attaquez ou effectuez une attaque principale, si le vaisseau ennemi est dans votre #Farc#, vous pouvez ajouter 1 résultat vierge (ce dé peut être relancé ou modifié)",
             "effect_ENG": "While you defend or perform a primary attack, if the enemy ship is in your #Farc#, you may add 1 blank result to your roll (this die can be rerolled or otherwise modified)"
         },
@@ -3025,7 +3025,7 @@
             "add_Data": [0],
             "charge": [0],
             "points": 11,
-            "faction": ["Resistance"],
+            "faction": ["Heroes_of_the_Resistance"],
             "effect": "<img class='chargeforceimg' src='img/forcestat.png'> Lorsque vous défendez ou attaquez, si le vaisseau ennemi est dans votre #tur#, vous pouvez dépenser 1 #fo# pour modifier l'un de vos résultats vierges en #hit# ou #evd#.",
             "effect_ENG": "<img class='chargeforceimg' src='img/forcestat.png'> While you defend or perform an attack, if the enemy ship is in your #tur#, you may spend 1 #fo# to change 1 of your blank results to a #hit# or #evd# result."
         },
@@ -3041,7 +3041,7 @@
             "force": 0,
             "charge": [0],
             "points": 4,
-            "faction": ["Resistance"],
+            "faction": ["Heroes_of_the_Resistance"],
             "effect": "Lorsqu'un vaisseau que vous avez verrouillé attaque, vous pouvez choisir 1 dé d'attaque. Dans ce cas, l'attaquant relance ce dé.",
             "effect_ENG": "While a ship you are locking performs an attack, you may choose 1 attack die. If you do, the attacker rerolls that die."
         },
@@ -3056,7 +3056,7 @@
             "force": 0,
             "charge": [2,"0"],
             "points": 2,
-            "faction": ["Resistance"],
+            "faction": ["Heroes_of_the_Resistance"],
             "effect": "<img class='chargeforceimg' src='img/chargestat.png'> <img class='chargeforceimg' src='img/chargestat.png'> Pendant la phase de système, vous pouvez dépenser 1 #ch# pour effectuer une action #BR#.",
             "effect_ENG": "<img class='chargeforceimg' src='img/chargestat.png'> <img class='chargeforceimg' src='img/chargestat.png'> During System Phase, you may spend 1 #ch# to perform a #BR# action."
         },
@@ -3072,7 +3072,7 @@
             "force": 0,
             "charge": [2,"0"],
             "points": 6,
-            "faction": ["Resistance"],
+            "faction": ["Heroes_of_the_Resistance"],
             "effect": "<img class='chargeforceimg' src='img/chargestat.png'> <img class='chargeforceimg' src='img/chargestat.png'> Avant d'excuter une manoeuvre, vous pouvez dépenser 1 #ch# pour effectuer une action #BR# ou #BO#",
             "effect_ENG": "<img class='chargeforceimg' src='img/chargestat.png'> <img class='chargeforceimg' src='img/chargestat.png'> Before executing a maneuver, you may spend 1 #ch# to perform a #BR# or #BO# action"
         },
@@ -3088,7 +3088,7 @@
             "force": 0,
             "charge": [0],
             "points": 4,
-            "faction": ["Resistance"],
+            "faction": ["Heroes_of_the_Resistance"],
             "effect": "Tant que vous effectuez une attaque, vous pouvez relancer un nombre de dés d’attaque inférieur ou égal au nombre de vaisseaux alliés à portée 0–3 qui ont le défenseur dans leur #bulls#.",
             "effect_ENG": "While you perform an attack, you may reroll as many attack dice as the number of friendly ships which has the defender in their #bulls# at range 0-3."
         },
@@ -3104,7 +3104,7 @@
             "force": 0,
             "charge": [2,"0"],
             "points": 4,
-            "faction": ["Resistance"],
+            "faction": ["Heroes_of_the_Resistance"],
             "effect": "<img class='chargeforceimg' src='img/chargestat.png'> <img class='chargeforceimg' src='img/chargestat.png'> Avant votre activation ou avant de vous engager, vous pouvez dépenser 1 #ch# pour ignorer les obstacles jusqu’à la fin de cette phase.",
             "effect_ENG": "<img class='chargeforceimg' src='img/chargestat.png'> <img class='chargeforceimg' src='img/chargestat.png'> Before you activate or engage, you may spend 1 #ch# to ignore obstacles until the end of this phase."
         },
@@ -3122,7 +3122,7 @@
             "charge": [0],
             "points": 0,
             "talent_points": 1,
-            "faction": ["First_Order","Imperial_Remnants"],
+            "faction": ["First_Order_Vanguard","Imperial_Remnants"],
             "effect": "Lorsque vous effectuez une attaque principale, si vous n'êtes pas protégé, vous pouvez modifier 1 résultat #eye# en #hit#",
             "effect_ENG": "While you perform a primary attack, if you are not shielded, you may change 1 #eye# result to a #hit# result."
         },
@@ -3138,7 +3138,7 @@
             "force": 0,
             "charge": [0],
             "points": 3,
-            "faction": ["First_Order"],
+            "faction": ["First_Order_Vanguard"],
             "effect": "Lorsque vous effectuez une action blanche #CD#, vous pouvez la traiter comme rouge. Dans ce cas, vous pouvez coordonner jusqu'à 2 vaisseaux supplémentaires du même type, et chaque vaisseau coordonné doit effectuer la même action en la considérant comme rouge.",
             "effect_ENG": "While you perform a white #CD# action, you may treat it as red. If you do, you may coordinate up to 2 additional ships of the same ship type, and each ship you coordinate must perform the same action, treating that action as red."
         },
@@ -3154,7 +3154,7 @@
             "force": 0,
             "charge": [0],
             "points": 3,
-            "faction": ["First_Order"],
+            "faction": ["First_Order_Vanguard"],
             "effect": "Au début de la phase d'engagement, vous pouvez choisir un vaisseau allié dans votre arc de tir. Dans ce cas, ce vaisseau gagne 1 jeton contrainte.<br>Lorsque vous attaquez, vous pouvez relancer jusqu'à 1 dé pour chaque vaisseau dans votre arc de tir avec 1 ou plusieurs jeton rouge ou orange (non lock).",
             "effect_ENG": "At the start of the Engagement Phase, you may choose a friendly ship in your firing arc. If you do, that ship gains 1 strain token.<br>While you perform an attack, you may reroll up to 1 die for each ship in the attack arc with 1 or more non-lock red or orange tokens."
         },
@@ -3170,7 +3170,7 @@
             "force": 0,
             "charge": [0],
             "points": 2,
-            "faction": ["First_Order"],
+            "faction": ["First_Order_Vanguard"],
             "effect": "ajoute #RL# -> #TL#",
             "effect_ENG": "Adds #RL# -> #TL#",
             "modifier_func": [
@@ -3189,7 +3189,7 @@
             "force": 0,
             "charge": [0],
             "points": 2,
-            "faction": ["First_Order"],
+            "faction": ["First_Order_Vanguard"],
             "effect": "Lorsque vous effectuez une attaque principale #Farc#, si votre #tur# est dans votre #Farc#, vous pouvez relancez 1 dé d'attaque supplémentaire.<br>Après avoir effectué une attaque principale #Farc#, si votre #tur# est dans votre #Barc#, vous pouvez effectuer une attaque bonus principale #tur#",
             "effect_ENG": "While you perform a primary #Farc# attack, if your #tur# is in your #Farc# , you may roll 1 additional attack die.<br>After you perform a primary #Farc# attack, if your #tur# is in your #Barc#, you may perform a bonus primary #tur# attack.",
             "restrictions": [1,"ship","TIE/sf Fighter",""]
@@ -3207,7 +3207,7 @@
             "add_Data": [0],
             "charge": [0],
             "points": 8,
-            "faction": ["First_Order"],
+            "faction": ["First_Order_Vanguard"],
             "effect": "<img class='chargeforceimg' src='img/forcestat.png'> Action: Choisissez 1 vaisseau ennemi à portée 1-3. Dans ce cas, dépensez 1 #fo# pour assigner la condition 'Je vais te montrer le côté obscur' à ce vaisseau",
             "effect_ENG": "<img class='chargeforceimg' src='img/forcestat.png'> Action: Choose 1 enemy ship at range 1-3. If you do, spend 1 #fo# to assign the I'll Show You The Dark Side condition to the ship."
             
@@ -3224,7 +3224,7 @@
             "force": 0,
             "charge": [2,"0"],
             "points": 6,
-            "faction": ["First_Order","Shadow_Specialists"],
+            "faction": ["First_Order_Vanguard","Shadow_Specialists"],
             "effect": "<img class='chargeforceimg' src='img/chargestat.png'> <img class='chargeforceimg' src='img/chargestat.png'> Pendant la phase système, vous pouvez dépenser 1 #ch# et gagner 1 jeton désarmé pour récupérer 1 bouclier.<br>Lorsque vous devriez recevoir 1 jeton non lock, si vous n'êtes pas stressé, vous pouvez dépenser 1 #ch# pour gagner 1 jeton stress à la place.",
             "effect_ENG": "<img class='chargeforceimg' src='img/chargestat.png'> <img class='chargeforceimg' src='img/chargestat.png'> During the System Phase, you may spend 1 #ch# and gain 1 disarm token to recover 1 shield.<br>Before you would gain 1 non-lock token, if you are not stressed, you may spend 1 #ch# to gain 1 stress token instead.",
             "modifier_func": [
@@ -3244,7 +3244,7 @@
             "force": 0,
             "charge": [0],
             "points": 1,
-            "faction": ["First_Order","Shadow_Specialists"],
+            "faction": ["First_Order_Vanguard","Shadow_Specialists"],
             "effect": "Lorsque vous coordonnez ou brouillez, si vous avez un verrouillage sur un vaisseau, vous pouvez choisir ce vaisseau en ignorant les restrictions de portée.",
             "effect_ENG": "While you coordinate or jam, if you have a lock on a ship, you may choose that ship, ignoring range restrictions."
     
@@ -3261,7 +3261,7 @@
             "force": 0,
             "charge": [0],
             "points": 4,
-            "faction": ["First_Order"],
+            "faction": ["First_Order_Vanguard"],
             "effect": "A la fin de la phase d'engagement, chaque vaisseau ennemi à portée 0-1 qui n'est pas stressé reçoit un jeton stress",
             "effect_ENG": "At the end of the Engagement Phase, each enemy ship at range 0-1 that is not stressed gains 1 stress token."
     
@@ -3278,7 +3278,7 @@
             "force": 0,
             "charge": [0],
             "points": 2,
-            "faction": ["First_Order"],
+            "faction": ["First_Order_Vanguard"],
             "effect": "Pendant la phase d'activation ou d'engagement, après qu'un vaisseau ennemi dans votre #Farc# à portée 0-1 reçoit 1 jeton rouge ou orange, si vous n'êtes pas stressé, vous pouvez recevoir 1 jeton stress. Dans ce cas, ce vaisseau reçoit 1 jeton supplémentaire du même type.",
             "effect_ENG": "During the Activation or Engagement Phase, after an enemy ship in your #Farc# at range 0-1 gains a red or orange token, if you are not stressed, you may gain 1 stress token. If you do, that ship gains 1 additional token of the type that it gained."
     
@@ -3297,7 +3297,7 @@
             "charge": [0],
             "points": 0,
             "talent_points": 0,
-            "faction": ["Imperial_Elite_Forces","Imperial_Remnants"],
+            "faction": ["Imperial_Elite_Squadrons","Imperial_Remnants"],
             "effect": "Lorsque vous détruisez un vaisseau ennemi après l'avoir attaqué, vous pouvez retirer un jeton orange ou rouge, puis vous pouvez effectuer une action.",
             "effect_ENG": "When you destroy an enemy ship, you may remove an orange or red token from yourself, then perform an action."
     
@@ -3314,7 +3314,7 @@
             "force": 0,
             "charge": [0],
             "points": 6,
-            "faction": ["Imperial_Elite_Forces"],
+            "faction": ["Imperial_Elite_Squadrons"],
             "effect": "Mise en place : Assignez la condition 'Proie' à un vaisseau. A la fin de la phase d'activation, si vous êtes à portée 0-1 du vaisseau avec la condition 'Proie', il gagne 1 jeton épuisement et 1 jeton contrainte. Lorsque ce vaisseau est détruit, vous devez assigner la condition 'Proie' à un vaisseau au delà de la portée 3 de vous. S'il n'y en a pas, assignez la à un vaisseau à portée 3. Répétez cette opération en réduisant la portée jusqu'à trouver une cible potentielle.",
             "effect_ENG": "SETUP : assign the 'Prey' condition to a ship. At the end of activation phase, if you are at range 0-1 of the ship with the prey condition, it gains 1 deplete and 1 strain token. When the ship is destroyed, you MUST assign the prey condition to a ship beyond range 3 of you. If there's none, assign it to a ship at range 3. Continue this operation by reducing the range until there's a suitable target."
     
@@ -3331,7 +3331,7 @@
             "add_Data": [0],
             "charge": [0],
             "points": 12,
-            "faction": ["Imperial_Elite_Forces"],
+            "faction": ["Imperial_Elite_Squadrons"],
             "effect": "Après qu'un vaisseau ennemi à portée 0-2 a révélé son cadran, vous pouvez dépenser 1 #fo# pour effectuer 1 action blanche de votre barre d'action, en considérant cette action comme rouge.",
             "effect_ENG": "After an enemy ship at range 0-2 revealed its dial, you may spend 1 #fo# to perform a white action of your action bar, considering it as red."
 
@@ -3349,7 +3349,7 @@
             "force": 0,
             "charge": [0],
             "points": 4,
-            "faction": ["Imperial_Elite_Forces"],
+            "faction": ["Imperial_Elite_Squadrons"],
             "effect": "Après avoir attaqué, vous pouvez derrouiller le défenseur",
             "effect_ENG": "After you perform an attack, you can acquire a lock on the defender"
     
@@ -3366,7 +3366,7 @@
             "add_Data": [0],
             "charge": [0],
             "points": 8,
-            "faction": ["Imperial_Elite_Forces"],
+            "faction": ["Imperial_Elite_Squadrons"],
             "effect": "Si un vaisseau ennemi à portée 0-1 est censé gagner un marqueur de stress, vous pouvez dépenser 1 #fo# pour qu'il gagne 1 jeton brouillage ou tracté à la place.",
             "effect_ENG": "When an enemy ship at range 0-1 would receive a stress token, you may spend 1 #fo# so that it receives 1 jam or tractored token instead."
     
@@ -3383,7 +3383,7 @@
             "charge": [0],
             "points": 9,
             "force": 1,
-            "faction": ["Imperial_Elite_Forces"],
+            "faction": ["Imperial_Elite_Squadrons"],
             "effect": "Tant que vous effectuez une attaque, vous pouvez dépenser 1 #fo# pour changer 1 de vos résultats #eye# en #crit#.",
             "effect_ENG": "When you perform an attack, you may spend 1 #fo# to change 1 #eye# result into 1 #crit## result."
     
@@ -3421,7 +3421,7 @@
 "points": 0,
 "max_per_squad": 1,
 "effect_ENG": "",
-"faction": ["Resistance"],
+"faction": ["Heroes_of_the_Resistance"],
 "ship": "T-70 X-Wing",
 "effect": "Ajoute 1 emplacement #tur#."       
 
@@ -3532,7 +3532,7 @@
 "points": 0,
 "max_per_squad": 1,
 "effect_ENG": "",
-"faction": ["Phoenix_Cell","New_Republic"],
+"faction": ["Phoenix_Cell","New_Republic_Patrol"],
 "ship": "VCX-100 Light Freighter",
 "effect": "Un vaisseau avec le titre 'Phantom 1' ou 'Phantom 2' peut s'arrimer avec vous."
 
@@ -3674,12 +3674,12 @@
     "modify": false,
     "slot": "Weapon Hardpoint",
     "points": 4,
-    "attack": ["F",3],
-    "range": [2,3],
+    "attack": ["BULL",3],
+    "range": [1,2],
     "add_Data": [0],
     "force": 0,
     "charge": [1,"0"],
-    "effect": "<img class='chargeforceimg' src='img/chargestat.png'> Attaque (#TL#) 3#Farc# portée 2-3: dépensez 1 #ch#. Lors de l’étape « Neutraliser les résultats », les résultats #crit# sont annulés avant les résultats #hit#. Après que cette attaque a touché, le défenseur perd 1 bouclier.",
+    "effect": "<img class='chargeforceimg' src='img/chargestat.png'> 3#Bulls# portée 1-2: dépensez 1 #ch#. Lors de l’étape « Neutraliser les résultats », les résultats #crit# sont annulés avant les résultats #hit#. Après que cette attaque a touché, le défenseur perd 1 bouclier. Gagnez un jeton de désarmement.",
     "effect_ENG": "",
     "faction": ""
 },
@@ -3692,12 +3692,12 @@
     "modify": false,
     "slot": "Weapon Hardpoint",
     "points": 4,
-    "attack": ["F",4],
+    "attack": ["BULL",4],
     "range": [1],
     "add_Data": [0],
     "force": 0,
     "charge": [1,"0"],
-    "effect": "<img class='chargeforceimg' src='img/chargestat.png'> Attaque (#TL#) : 4#Farc# Portée 1 : dépensez 1 #ch#. Améliorez 1 dé.",
+    "effect": "<img class='chargeforceimg' src='img/chargestat.png'> 4#BULL# Portée 1 : dépensez 1 #ch#. Modifiez un #hit# en #crit#. Gagnez un marqueur d'épuisement.",
     "effect_ENG": "",
     "faction": ""
 },
@@ -3710,12 +3710,12 @@
     "modify": false,
     "slot": "Weapon Hardpoint",
     "points": 3,
-    "attack": ["F",3],
-    "range": [2,3],
+    "attack": ["BULL",2],
+    "range": [2-3],
     "add_Data": [0],
     "force": 0,
     "charge": [1,"0"],
-    "effect": "<img class='chargeforceimg' src='img/chargestat.png'> Attaque (TL) : 3#Farc# Portée 2-3 : dépensez 1 #ch#. Après que cette attaque a touché, chaque vaisseau à portée 0–1 du défenseur expose 1 de ses cartes de dégât.",
+    "effect": "<img class='chargeforceimg' src='img/chargestat.png'> 2#BULLS# Portée 2-3 : dépensez 1 #ch#. Après que cette attaque a touché, chaque vaisseau à portée 0–1 du défenseur expose 1 de ses cartes de dégât. Gagnez un marqueur épuisement.",
     "effect_ENG": "",
     "faction": ""
 },
@@ -4458,7 +4458,7 @@
              "points":8,
              "effect": "<img class='chargeforceimg' src='img/forcestat.png'> Après avoir exécuté une manœuvre, vous pouvez dépenser 1 #fo# et choisir un vaisseau allié dans votre arc de tir à portée 1-3. Dans ce cas, il peut effectuer une action #FS# rouge, même s’il est stressé.",
              "effect_ENG": "<img class='chargeforceimg' src='img/forcestat.png'> Après avoir exécuté une manœuvre, vous pouvez dépenser 1 #fo# et choisir un vaisseau allié dans votre arc de tir à portée 1-3. Dans ce cas, il peut effectuer une action #FS# rouge, même s’il est stressé.",
-             "faction": ["Jedi_Order","New_Republic","Phoenix_Cell"]
+             "faction": ["Jedi_Order","New_Republic_Patrol","Phoenix_Cell"]
              
          },
          {
@@ -4961,7 +4961,7 @@
              "points": 0,
              "effect": "??",
              "effect_ENG": "??",
-             "faction": ["New_Republic"],
+             "faction": ["New_Republic_Patrol"],
              "modifier_func": [
                 
              ]
@@ -4980,7 +4980,7 @@
              "points": 0,
              "effect": "",
              "effect_ENG": "When you remove a stress token, receive a strain or deplete token of your choice.",
-             "faction": ["New_Republic"],
+             "faction": ["New_Republic_Patrol"],
              "modifier_func": [
                 
              ]
@@ -4999,7 +4999,7 @@
              "points": 0,
              "effect": "Les bombes alliées ne vous infligent pas de dégats. Vous ne déclenchez pas les Mines alliées lorsque vous vous déplacez à travers.",
              "effect_ENG": "Friendly bombs don't inflict damage on you. You don't trigger friendly Mines when you move through them",
-             "faction": ["New_Republic"],
+             "faction": ["New_Republic_Patrol"],
              "modifier_func": [
                 
              ]
@@ -5018,7 +5018,7 @@
              "points": 0,
              "effect": "Si la #ch# est active, au début de la phase d'engagement, vous recevez 1 jeton désarmement. Vous ne pouvez pas être attaqué. Pendant la phase de fin, vous pouvez dépenser 1 #ch#. Si vous êtes le dernier vaisseau allié en jeu, perdez 1 #ch#.<br>Si la #ch# est inactive, pendant la phase système, tous les vaisseau ennemis à portée 0-3 peuvent vous verrouiller.",
              "effect_ENG": "If the #ch# is active, at the beginning of engagement phase, you receive a weapon disabled token. You cannot be attacked. During end phase you may spend 1#ch#. If you are the last friendly ship alive, lose 1 #ch#.<br>If the #ch# is inactive, during system phase, all enemy ships at range 0-3 can acquire locks on you.",
-             "faction": ["New_Republic"],
+             "faction": ["New_Republic_Patrol"],
              "modifier_func": [
                 
              ]
@@ -5037,7 +5037,7 @@
              "points": 0,
              "effect": "Lorsque Jacen Syndulla essaie de deviner votre manoeuvre, s'il a deviné juste votre direction, vous recevez 1 jeton épuisement. Si Jacen Syndulla devine en plus votre vitesse exacte, il récupère 1 #fo#.",
              "effect_ENG": "When Jacen Syndulla tries to guess your maneuver, if he guessed the right direction, you receive 1 deplete token. If Jacen Syndulla guessed also the exact speed, he recovers 1 #fo#.",
-             "faction": ["New_Republic"],
+             "faction": ["New_Republic_Patrol"],
              "modifier_func": [
                 
              ]
@@ -5056,7 +5056,7 @@
              "points": 0,
              "effect": "Lorsque vous subissez 1 dégat #crit#, recevez 1 jeton contrainte.",
              "effect_ENG": "When you suffer 1 #crit# damage, receive 1 strain token.",
-             "faction": ["New_Republic"],
+             "faction": ["New_Republic_Patrol"],
              "modifier_func": [
                 
              ]
@@ -5075,7 +5075,7 @@
              "points": 0,
              "effect": "",
              "effect_ENG": "",
-             "faction": ["New_Republic"]
+             "faction": ["New_Republic_Patrol"]
              
          },
          {
@@ -5092,7 +5092,7 @@
              "points": 0,
              "effect": "Lorsque vous subissez 1 dégat #crit#, recevez 1 jeton contrainte.",
              "effect_ENG": "When you suffer 1 #crit# damage, receive 1 strain token.",
-             "faction": ["New_Republic"],
+             "faction": ["New_Republic_Patrol"],
              "modifier_func": [
                 
              ]
@@ -5111,7 +5111,7 @@
              "points": 0,
              "effect": "",
              "effect_ENG": "",
-             "faction": ["New_Republic"],
+             "faction": ["New_Republic_Patrol"],
              "modifier_func": [
                 
              ]
@@ -5995,7 +5995,7 @@
              "points": 0,
              "effect": "Pendant la phase de système, vous pouvez dépenser 2 #ch#. Dans ce cas, choisissez le gabarit 1#Lbank#, 1#straight# ou 1#Rbank#. Chaque vaisseau allié peut effectuer une action #BO# rouge en utilisant ce gabarit.",
              "effect_ENG": "During the System Phase, you may spend 2 #ch#. If you do, choose the 1#Lbank#, 1#straight# ou 1#Rbank# template. Each friendly ship may perform a red #BO# action using that template.",
-             "faction": ["Imperial_Elite_Forces"]
+             "faction": ["Imperial_Elite_Squadrons"]
                                      
              
          },
@@ -6013,7 +6013,7 @@
              "points": 3,
              "effect": "Tant que vous avez 2 marqueurs de stress ou moins, vous pouvez effectuer des actions #RE#, #CO# et #JA#.<br>Tant que vous effectuez une action blanche #RE#, #CO# ou #JA#, si vous êtes stressé, gagnez 1 jeton épuisement.",
              "effect_ENG": "??",
-             "faction": ["Resistance"]
+             "faction": ["Heroes_of_the_Resistance"]
                                      
              
          },
@@ -6031,7 +6031,7 @@
              "points": 3,
              "effect": "Après avoir entièrement exécuté une manœuvre bleue, retirez tous vos marqueurs de stress.",
              "effect_ENG": "??",
-             "faction": ["Resistance"]
+             "faction": ["Heroes_of_the_Resistance"]
                                      
              
          },
@@ -6049,7 +6049,7 @@
              "points": 10,
              "effect": "After a friendly ship reveals a non-0#stop# maneuver, you may spend 1 #fo#. If you do, the chosen ship reduces the difficulty of that maneuver.",
              "effect_ENG": "After a friendly ship reveals a non-0#stop# maneuver, you may spend 1 #fo#. If you do, the chosen ship reduces the difficulty of that maneuver.",
-             "faction": ["Resistance","New_Republic"]
+             "faction": ["Heroes_of_the_Resistance","New_Republic_Patrol"]
                                   
              
          },
@@ -6067,7 +6067,7 @@
              "points": 5,
              "effect": "Before you engage, you may choose another friendly ship at range 1-2. You may transfer to that ship 1 token of a type that ship does not have. That ship may transfer 1 token to you of a type you do not have.",
             "effect_ENG": "Before you engage, you may choose another friendly ship at range 1-2. You may transfer to that ship 1 token of a type that ship does not have. That ship may transfer 1 token to you of a type you do not have.",
-             "faction": ["Resistance"]
+             "faction": ["Heroes_of_the_Resistance"]
                                      
              
          },
@@ -6087,7 +6087,7 @@
              "talent_points": 0,
              "effect": "Après qu'un autre vaisseau allié à portée 0-3 a été détruit, si ce vaisseau était limité ou qu'il avait l'amélioration Optimiste, vous pouvez effectuer une action #FO# ou #BO#.",
              "effect_ENG": "After another friendly ship at range 0-3 is destroyed, if that ship is limited or has the Hopeful upgrade, you may perform a #FO# or #BO# action.",
-             "faction": ["New_Republic"]
+             "faction": ["New_Republic_Patrol"]
                                      
              
          },
@@ -6105,7 +6105,7 @@
              "points": 0,
              "effect": "??",
              "effect_ENG": "??",
-             "faction": ["New_Republic"]
+             "faction": ["New_Republic_Patrol"]
                                      
              
          },
@@ -6123,7 +6123,7 @@
              "points": 0,
              "effect": "??",
              "effect_ENG": "??",
-             "faction": ["New_Republic"]
+             "faction": ["New_Republic_Patrol"]
                                      
              
          },
@@ -6141,7 +6141,7 @@
              "points": 0,
              "effect": "??",
              "effect_ENG": "??",
-             "faction": ["New_Republic"]
+             "faction": ["New_Republic_Patrol"]
                                      
              
          },
@@ -6159,7 +6159,7 @@
              "points": 0,
              "effect": "??",
              "effect_ENG": "??",
-             "faction": ["New_Republic"]
+             "faction": ["New_Republic_Patrol"]
                                      
              
          },
@@ -6177,7 +6177,7 @@
              "points": 0,
              "effect": "??",
              "effect_ENG": "??",
-             "faction": ["New_Republic"]
+             "faction": ["New_Republic_Patrol"]
                                      
              
          },
@@ -6195,7 +6195,7 @@
              "points": 0,
              "effect": "??",
              "effect_ENG": "??",
-             "faction": ["New_Republic"]
+             "faction": ["New_Republic_Patrol"]
                                      
              
          },
