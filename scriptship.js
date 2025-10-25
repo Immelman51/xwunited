@@ -632,17 +632,17 @@ function checkUpgradeModifier() { //va checker s'il existe une fonction modify l
                 switch (upgrades[upgradeID]['modifier_func'][m][0]) { //on va vérifier le numéro à l'index 0 de chaque table dans modifier_func. Ce numéro indique une fonction à exectuer
             case 0 :
                 break;
-            case 1: 
+            case "auto_equip":
                 auto_equip(upgrades[upgradeID]['modifier_func'][m][1], upgrades[upgradeID]['modifier_func'][m][2], upgrades[upgradeID]['modifier_func'][m][3]);
                 break;
-            case 2 :
+            case "add_slots" :
                 add_slots(upgrades[upgradeID]['modifier_func'][m][1]);
                 break;
-            case 3 : 
+            case "also_Occupies" :
                 also_Occupies(upgrades[upgradeID]['modifier_func'][m][1]);//, upgrades[upgradeID]['modifier_func'][m][2]);
                 break;       
          
-            case 10 :
+            case "may_remove_slots" :
                 may_remove_slots(upgrades[upgradeID]['modifier_func'][m][1]);
                 break;
             default :
