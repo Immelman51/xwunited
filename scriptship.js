@@ -7,11 +7,14 @@ let requestURLupgrades = "https://raw.githubusercontent.com/Immelman51/xwunited/
 let ships, chassis, pilots, upgrades;
 
 async function fetchData(url) {
+    console.log("Tentative de chargement depuis :", url); // 👈 ajoute ça
     let response = await fetch(url);
     if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
     }
     return await response.json();
+
+
 }
 
 (async () => {

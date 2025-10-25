@@ -3711,7 +3711,7 @@
     "slot": "Weapon Hardpoint",
     "points": 3,
     "attack": ["BULL",2],
-    "range": [2-3],
+    "range": [2,3],
     "add_Data": [0],
     "force": 0,
     "charge": [1,"0"],
@@ -6638,7 +6638,8 @@
             "effect": "",
             "effect_ENG": "",
             "faction": ""
-        }, {
+        },
+        {
             "name": "",
             "name_ENG": "",
             "id": 367,
