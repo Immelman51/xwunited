@@ -86,7 +86,7 @@
             {
             
                 "name": "YT-1300 Light Freighter",
-                "factions": [ "Pirates_and_Smugglers", "Heroes_of_the_Resistance" ],
+                "factions": [ "Pirates_and_Smugglers", "Rebel_Alliance", "Heroes_of_the_Resistance" ],
                 "id": 3,
                 "attack": [["T",3]],
                 "agility": 1,
