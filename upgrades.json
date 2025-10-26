@@ -3863,7 +3863,7 @@
     "slot": "Talent-piloting",
     "points": 0,
     "talent_points": 3,
-    "effect": "Lorsque vous défendez contre une attaque à portée 3 ou contre une attaque de #tur#, vous pouvez dépenser 1#ch# pour améliorer un dé de défense.",
+    "effect": "<img class='chargeforceimg' src='img/chargestat.png'><img class='chargeforceimg' src='img/chargestat.png'><img class='chargeforceimg' src='img/chargeplus.png'>Lorsque vous défendez contre une attaque à portée 3 ou contre une attaque de #tur#, vous pouvez dépenser 1#ch# pour améliorer un dé de défense.",
     "effect_ENG": "",
     "faction": "",
     "add_Data": [0],
