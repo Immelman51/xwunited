@@ -548,29 +548,29 @@ function checkPilotModifier() { //va checker s'il existe des fonctions dans modi
             switch (pilot_list[y]['modifier_func'][m][0]) { //on va vérifier le numéro à l'index 0 de chaque table dans modifier_func. Ce numéro indique une fonction à exectuer
                 case 0 :
                     break;
-                case 1: 
+                case "auto_equip" : 
                     auto_equip(pilot_list[y]['modifier_func'][m][1], pilot_list[y]['modifier_func'][m][2], pilot_list[y]['modifier_func'][m][3]);
                     
                     break;
-                case 2 :
+                case "add_slots" :
                     add_slots(pilot_list[y]['modifier_func'][m][1]);
                 
 
                     break;
-                case 3 : 
+                case "remove" :
                     also_Occupies(pilot_list[y]['modifier_func'][m][1]); //, pilot_list[y]['modifier_func'][m][2]);
                     
 
                     break;
-                case 4 : //on va ajouter une fonction qui permet de changer le chassis du pilote
+                case "change_chassis" : //on va ajouter une fonction qui permet de changer le chassis du pilote
                     change_chassis(pilot_list[y]['modifier_func'][m][1],pilot_list[y]['modifier_func'][m][2]);
                     
                     break;
-                case 5 : //This function is for J-Type Star Skiff chassis ability 'Luxury Cruiser'. It reduces the logistic cost of upgrade parameter by 1.
+                case "reduce_logistic_cost" : //This function is for J-Type Star Skiff chassis ability 'Luxury Cruiser'. It reduces the logistic cost of upgrade parameter by 1.
                     reduce_logistic_cost(pilot_list[y]['modifier_func'][m][1]);
                     console.log('checkPilotModifier : modifier_func n°'+5 );
                     break;
-                case 10 :
+                case "may_remove_slots" :
                     may_remove_slots(pilot_list[y]['modifier_func'][m][1]);
                  
                     break;   

@@ -300,7 +300,7 @@
                 "Droid"
             ],
 	        "modifier_func": [
-                [1, "Droid",237]
+                ["auto_equip", "Droid",237]
 		]
         },
         {
@@ -330,8 +330,8 @@
                          
             ],
             "modifier_func": [
-            	[1,"Title",147],
-                [3,"Modification"]
+            	["auto_equip","Title",147],
+                ["remove","Modification"]
                 
                     ]
         },
@@ -385,8 +385,8 @@
                 
             ],
             "modifier_func": [
-            	[1,"Title",147],
-                [3,"Modification",147]
+            	["auto_equip","Title",147],
+                ["remove","Modification"]
                     ]
         },
         {
@@ -415,8 +415,8 @@
                 
             ],
             "modifier_func": [
-            	[1,"Title",147],
-                [3,"Modification"]
+            	["auto_equip","Title",147],
+                ["remove","Modification"]
                     ]
         },
         {
@@ -1452,8 +1452,8 @@
                 
                 ],
             "modifier_func": [
-            	[1,"Title",202],
-                [4,9,0]
+            	["auto_equip","Title",202],
+                ["change_chassis",9,0]
                 
                     ]
         },
@@ -1482,7 +1482,7 @@
             
             ],
             "modifier_func": [
-            	[1,"Title",146]
+            	["auto_equip","Title",146]
                
                     ]
         },
@@ -1509,7 +1509,7 @@
                 "Talent-leadership"
             ],
             "modifier_func": [
-            	[1,"Title",146]
+            	["auto_equip","Title",146]
     
                 
                     ]
@@ -1537,7 +1537,7 @@
                 "Talent-shooting"
             ],
             "modifier_func": [
-            	[1,"Title",146]
+            	["auto_equip","Title",146]
                     ]
         },
         {
@@ -1563,14 +1563,13 @@
                 "Talent-elite",
                 "Talent-shooting",
                 "Crew",
-                "Tech",
                 "Illicit"
                 
             ],
             "modifier_func": [
-            	[1,"Title",145],
-                [3,"Astromech"],
-                [3,"Torpedo"]
+            	["auto_equip","Title",145],
+                ["remove","Astromech"],
+                ["remove","Torpedo"]
                     ]
         },
         {
@@ -1595,13 +1594,12 @@
                 "Title",
                 "Force",                
                 "Crew",
-                "Tech",
                 "Illicit"
             ],
             "modifier_func": [
-            	[1,"Title",145],
-                [3,"Astromech"],
-                [3,"Torpedo"]
+            	["auto_equip","Title",145],
+                ["remove","Astromech"],
+                ["remove","Torpedo"]
                     ]
         },
         {
@@ -1647,15 +1645,14 @@
                 "Title",
                 "Droid",
                 "Crew",
-                "Tech",
                 "Illicit"
 
             ],
             "modifier_func": [
-            	[1,"Title",145],
-                [3,"Astromech"],
-                [3,"Torpedo"],
-                [1, "Droid",237]
+            	["auto_equip","Title",145],
+                ["remove","Astromech"],
+                ["remove","Torpedo"],
+                ["auto_equip", "Droid",237]
                     ]
         },
         {
@@ -1855,7 +1852,7 @@
                 
             ],
             "modifier_func": [
-            	[1,"Title",141]
+            	["auto_equip","Title",141]
                     ]            
         },
         {
@@ -1885,8 +1882,8 @@
                 
             ],
             "modifier_func": [
-            	[1,"Title",141],
-                [1, "Droid",237]
+            	["auto_equip","Title",141],
+                ["auto_equip", "Droid",237]
                     ]
         },
         {
@@ -1930,14 +1927,14 @@
                 "Talent-elite",
                 "Talent-piloting",
                 "Talent-shooting",
-                "Sensor"
+                "Crew"
                                          
                 
             ],
             "modifier_func": [
-            	[1,"Title",135],
-                [3,"Calculator"],
-                [4,0,0]            
+            	["auto_equip","Title",135],
+                ["remove","Calculator"],
+                ["change_chassis",0,0]            
                
 
             ]
@@ -1985,13 +1982,13 @@
             "slots": [
                 "Title",
                 "Talent-shooting",
-                "Sensor"
+                "Crew"
                 
                 
             ],
             "modifier_func": [
-            	[1,"Title",135],
-                [3,"Calculator"]
+            	["auto_equip","Title",135],
+                ["remove","Calculator"]
                
                 
             ]
@@ -2009,7 +2006,7 @@
             "force": 0,
             "titleID": 0,
             "shipId": 3,
-		    "modify": false,
+		    "modify": true,
             "skill": 2,
             "points": 7,
             
@@ -2020,7 +2017,7 @@
                 "Talent-piloting"               
             ],
             "modifier_func": [
-                [1, "Droid",237]
+                ["auto_equip", "Droid",237]
                 ]
         },
         {
@@ -2105,7 +2102,7 @@
                 "Talent-piloting"
             ],
             "modifier_func": [
-                [1, "Droid",237]
+                ["auto_equip", "Droid",237]
                 ]
         },
         {
@@ -2120,13 +2117,13 @@
             "titleID": 0,
             "shipId": 43,
             "skill": 1,
-            "charge": [3,"0"],
+            "charge": ["remove","0"],
             "points": 2,
             "ability": "Cellules Énergétiques Bidouillées : À la fin de la phase d’activation, si vous n'êtes pas arrimé perdez 1 #ch#. Vous êtes détruit si vous avez 0 #ch#. Avant de retirer votre figurine, chaque vaisseau à porté 0–1 subit 1 dégât #crit#.",
             "ability_ENG": "",
             "modifier_func": [
                 [1, "Special",236] ,
-                [1, "Droid",237]
+                ["auto_equip", "Droid",237]
                 ],
             "slots": [
                 "Droid",
@@ -2182,7 +2179,7 @@
                 
             ],
             "modifier_func": [
-            	[1,"Title",139]
+            	["auto_equip","Title",139]
                 
                     ]
         },
@@ -2212,7 +2209,7 @@
                 "Illicit"
             ],
             "modifier_func": [
-            	[1,"Title",140]
+            	["auto_equip","Title",140]
                 
                     ]
         },
@@ -2371,8 +2368,8 @@
                 
             ],
             "modifier_func": [
-            	[1,"Title",130],
-                [3,"Crew"]
+            	["auto_equip","Title",130],
+                ["remove","Crew"]
                 
                     ]
         },
@@ -2442,8 +2439,8 @@
                 "Astromech"
             ],
             "modifier_func": [
-            	[1,"Title",130],
-                [3,"Crew"]
+            	["auto_equip","Title",130],
+                ["remove","Crew"]
                 
                     ]
         },
@@ -2579,9 +2576,9 @@
                 
             ],
             "modifier_func": [
-            	[1,"Title",144],
-                [1, "Droid",237],
-                [3,"Modification",144]
+            	["auto_equip","Title",144],
+                ["auto_equip", "Droid",237],
+                ["remove","Modification"]
                     ]
         },
         {
@@ -2610,9 +2607,9 @@
                               
             ],
             "modifier_func": [
-            	[1,"Title",144],
-                [1, "Droid",237],
-                [3,"Modification",144]
+            	["auto_equip","Title",144],
+                ["auto_equip", "Droid",237],
+                ["remove","Modification"]
                     ]
         },
         {
@@ -2641,9 +2638,9 @@
                 
             ],
             "modifier_func": [
-                [1,"Title",144],
-                [1, "Droid",237],
-                [3,"Modification",144]
+                ["auto_equip","Title",144],
+                ["auto_equip", "Droid",237],
+                ["remove","Modification"]
                     ]
         },
         {
@@ -2672,9 +2669,9 @@
                 
             ],
             "modifier_func": [
-            	[1,"Title",144],
-                [1, "Droid",237],
-                [3,"Modification",144]
+            	["auto_equip","Title",144],
+                ["auto_equip", "Droid",237],
+                ["remove","Modification"]
                     ]
         },
         {
@@ -2702,7 +2699,7 @@
                 
             ],
             "modifier_func": [
-            	[1,"Title",146]
+            	["auto_equip","Title",146]
                     ]
         },
         {
@@ -2730,8 +2727,8 @@
                 
             ],
             "modifier_func": [
-            	[1,"Title",146],
-                [1, "Droid",237]
+            	["auto_equip","Title",146],
+                ["auto_equip", "Droid",237]
                     ]
         },
         {
@@ -2759,8 +2756,8 @@
                 
             ],
             "modifier_func": [
-            	[1, "Droid",237],
-                [1,"Title",142]
+            	["auto_equip", "Droid",237],
+                ["auto_equip","Title",142]
                     ]
         },
 {
@@ -2786,7 +2783,7 @@
                 "Talent-shooting"
             ],
             "modifier_func": [
-            	[1,"Title",142]
+            	["auto_equip","Title",142]
                     ]
         },
         {
@@ -2816,8 +2813,8 @@
                 
             ],
             "modifier_func": [
-            	[1,"Title",143],
-                [3,"Crew"]
+            	["auto_equip","Title",143],
+                ["remove","Crew"]
                     ]
         },
         {
@@ -2867,8 +2864,8 @@
                 
             ],
             "modifier_func": [
-            	[1,"Title",143],
-                [3,"Crew"]
+            	["auto_equip","Title",143],
+                ["remove","Crew"]
                     ]
         },
         {
@@ -2984,8 +2981,8 @@
                 
             ],
             "modifier_func": [
-            	[1,"Title",138],
-                [3,"Illicit"]
+            	["auto_equip","Title",138],
+                ["remove","Illicit"]
                     ]
         },
 {
@@ -3060,7 +3057,7 @@
                 
             ],
             "modifier_func": [
-            	[1,"Title",137]
+            	["auto_equip","Title",137]
                     ]
         },
 {
@@ -3133,7 +3130,7 @@
                 
             ],
             "modifier_func": [
-            	[1,"Title",139]
+            	["auto_equip","Title",139]
                     ]
         },
          {
@@ -3164,7 +3161,7 @@
                 
             ],
             "modifier_func": [
-            	[1,"Title",139]
+            	["auto_equip","Title",139]
                
                     ]
         },
@@ -3214,7 +3211,7 @@
                                
             ],
             "modifier_func": [
-            	[1,"Title",203]
+            	["auto_equip","Title",203]
                     ]
         },
         {
@@ -3242,7 +3239,7 @@
                                 
             ],
             "modifier_func": [
-            	[1,"Title",203]
+            	["auto_equip","Title",203]
                     ]
         },
         {
@@ -3269,8 +3266,8 @@
                               
             ],
             "modifier_func": [
-            	[1,"Title",203],
-		        [1,"Droid",237]
+            	["auto_equip","Title",203],
+		        ["auto_equip","Droid",237]
                     ]
         },
         {
@@ -3296,7 +3293,7 @@
                 "Talent-leadership"
             ],
             "modifier_func": [
-            	[1,"Title",203]
+            	["auto_equip","Title",203]
                     ]
         },
         {
@@ -3323,7 +3320,7 @@
                 "Talent-elite"
             ],
             "modifier_func": [
-            	[1,"Title",198]
+            	["auto_equip","Title",198]
                     ]
         },
         {
@@ -3350,7 +3347,7 @@
                                 
             ],
             "modifier_func": [
-            	[1,"Title",198]
+            	["auto_equip","Title",198]
                     ]
         },
         {
@@ -3377,7 +3374,7 @@
                                
             ],
             "modifier_func": [
-            	[1,"Title",198]
+            	["auto_equip","Title",198]
                     ]
         },
         {
@@ -3403,7 +3400,7 @@
                                
             ],
             "modifier_func": [
-            	[1,"Title",198]
+            	["auto_equip","Title",198]
                     ]
         },
         {
@@ -3430,8 +3427,8 @@
                                
             ],
             "modifier_func": [
-            	[1,"Title",199],
-                [1,"Droid",237]
+            	["auto_equip","Title",199],
+                ["auto_equip","Droid",237]
                     ]
         },
         {
@@ -3458,7 +3455,7 @@
                                
             ],
             "modifier_func": [
-            	[1,"Title",199]
+            	["auto_equip","Title",199]
                     ]
         },
         
@@ -3486,7 +3483,7 @@
                                
             ],
             "modifier_func": [
-            	[1,"Title",199]
+            	["auto_equip","Title",199]
                     ]
         },
         {
@@ -3515,7 +3512,7 @@
                                
             ],
             "modifier_func": [
-            	[1,"Title",199]
+            	["auto_equip","Title",199]
                     ]
         },
         {
@@ -3543,7 +3540,7 @@
                                 
             ],
             "modifier_func": [
-            	[1,"Title",196]
+            	["auto_equip","Title",196]
                     ]
         },
         {
@@ -3571,7 +3568,7 @@
                                 
             ],
             "modifier_func": [
-            	[1,"Title",196]
+            	["auto_equip","Title",196]
                     ]
         },
         {
@@ -3601,7 +3598,7 @@
                                 
             ],
             "modifier_func": [
-            	[1,"Title",196]
+            	["auto_equip","Title",196]
                     ]
         },
         {
@@ -3628,7 +3625,7 @@
                                 
             ],
             "modifier_func": [
-            	[1,"Title",196]
+            	["auto_equip","Title",196]
                     ]
         },
         {
@@ -3656,8 +3653,8 @@
                                 
             ],
             "modifier_func": [
-            	[1,"Title",202],
-                [4,9,0]
+            	["auto_equip","Title",202],
+                ["change_chassis",9,0]
                     ]
         },
         {
@@ -3685,9 +3682,9 @@
                                
             ],
             "modifier_func": [
-            	[1,"Title",202],
-                [1,"Droid",237],
-                [4,9,0]
+            	["auto_equip","Title",202],
+                ["auto_equip","Droid",237],
+                ["change_chassis",9,0]
 
                     ]
         },
@@ -3715,8 +3712,8 @@
                                 
             ],
             "modifier_func": [
-            	[1,"Title",200],
-                [3,"Modification"]
+            	["auto_equip","Title",200],
+                ["remove","Modification"]
 
                     ]
         },
@@ -3744,8 +3741,8 @@
                                
             ],
             "modifier_func": [
-            	[1,"Title",200],
-                [3,"Modification"]
+            	["auto_equip","Title",200],
+                ["remove","Modification"]
 
                     ]
         },
@@ -3773,8 +3770,8 @@
                                
             ],
             "modifier_func": [
-            	[1,"Title",201],
-                [3,"Modification"]
+            	["auto_equip","Title",201],
+                ["remove","Modification"]
                     ]
         },
         {
@@ -3802,8 +3799,8 @@
                                 
             ],
             "modifier_func": [
-            	[1,"Title",201],
-                [3,"Modification"]
+            	["auto_equip","Title",201],
+                ["remove","Modification"]
 
                     ]
         },
@@ -3939,7 +3936,7 @@
                                
             ],
             "modifier_func": [
-            	[1,"Title",204]
+            	["auto_equip","Title",204]
                     ]
         },
         {
@@ -4024,7 +4021,7 @@
                 "Crew"              
             ],
             "modifier_func": [
-                [1,"Droid",237]
+                ["auto_equip","Droid",237]
                 ]
         },
   		
@@ -4050,7 +4047,7 @@
                                 
             ],
 		"modifier_func": [
-			[1,"Droid",237]
+			["auto_equip","Droid",237]
             
 			]
         },
@@ -4132,7 +4129,7 @@
                 "Droid"             
             ],
             "modifier_func": [
-                [1, "Droid",237]
+                ["auto_equip", "Droid",237]
                 ]
         },
   
@@ -4991,7 +4988,7 @@
                             
             ],
 			"modifier_func": [
-				[1,"Title",197]
+				["auto_equip","Title",197]
 				]
         },
         {
@@ -5263,9 +5260,9 @@
                             
             ],
             "modifier_func": [
-            	[1,"Title",135],
-                [3,"Calculator"],
-                [4,0,0]
+            	["auto_equip","Title",135],
+                ["remove","Calculator"],
+                ["change_chassis",0,0]
         
                     ]
         },
@@ -5295,9 +5292,9 @@
                            
             ],
             "modifier_func": [
-            	[1,"Title",135],
-                [3,"Calculator"],
-                [4,0,0]
+            	["auto_equip","Title",135],
+                ["remove","Calculator"],
+                ["change_chassis",0,0]
 
                     ]            
         },
@@ -5326,9 +5323,9 @@
                             
             ],
             "modifier_func": [
-            	[1,"Title",135],
-                [3,"Calculator"],
-                [4,0,0]
+            	["auto_equip","Title",135],
+                ["remove","Calculator"],
+                ["change_chassis",0,0]
 
 
                     ]            
@@ -5359,9 +5356,9 @@
                             
             ],
             "modifier_func": [
-            	[1,"Title",135],
-                [3,"Calculator"],                                
-                [4,0,0]
+            	["auto_equip","Title",135],
+                ["remove","Calculator"],                                
+                ["change_chassis",0,0]
 
                     ]            
         },
@@ -5513,7 +5510,7 @@
                 "Droid"
             ],
 		"modifier_func": [
-            [1,"Droid",237]
+            ["auto_equip","Droid",237]
 			]
         },
         {
@@ -7045,7 +7042,7 @@
                 "Talent-piloting"
             ],
             "modifier_func":[
-                [1,"Title",238]
+                ["auto_equip","Title",238]
             ]
         },
         {
@@ -7069,7 +7066,7 @@
                 "Talent-elite"
             ],
             "modifier_func":[
-                [1,"Title",238]
+                ["auto_equip","Title",238]
             ]
         },
         {
@@ -7094,7 +7091,7 @@
 
             ],
             "modifier_func": [
-            	[1,"Title",238]
+            	["auto_equip","Title",238]
                 
             ]
 
@@ -7120,7 +7117,7 @@
 
             ],
             "modifier_func":[
-                [1,"Title",238]
+                ["auto_equip","Title",238]
             ]
         },
         {
@@ -7642,9 +7639,9 @@
                 "Sensor"
            ],
            "modifier_func":[
-                [1,"Special",364],
-                [1,"Title",268],
-                [3,"Modification"]
+                ["auto_equip","Special",364],
+                ["auto_equip","Title",268],
+                ["remove","Modification"]
             ]
         },
         {
@@ -7668,7 +7665,7 @@
                 "Talent-shooting"
            ],
            "modifier_func":[
-                [1,"Special",364]
+                ["auto_equip","Special",364]
            ]
         },
         {
@@ -7692,7 +7689,7 @@
                 "Talent-piloting"
            ],
            "modifier_func":[
-                [1,"Special",364]
+                ["auto_equip","Special",364]
            ]
         },
         {
@@ -7715,7 +7712,7 @@
                 "Special"
            ],
            "modifier_func":[
-                [1,"Special",364]
+                ["auto_equip","Special",364]
            ]
         },
         {
@@ -7739,7 +7736,7 @@
                 "Talent-leadership"
            ],
            "modifier_func":[
-                [1,"Special",363]
+                ["auto_equip","Special",363]
            ]
         },
         {
@@ -7763,7 +7760,7 @@
                 "Talent-piloting"
            ],
            "modifier_func":[
-                [1,"Special",363]
+                ["auto_equip","Special",363]
            ]
         },
         {
@@ -7787,7 +7784,7 @@
                 "Talent-shooting"
            ],
            "modifier_func":[
-                [1,"Special",363]
+                ["auto_equip","Special",363]
            ]
         },
         {
@@ -7811,7 +7808,7 @@
                 "Talent-shooting"
            ],
            "modifier_func":[
-                [1,"Special",363]
+                ["auto_equip","Special",363]
            ]
         },
         {
@@ -7834,7 +7831,7 @@
                 "Special"
                        ],
            "modifier_func":[
-                [1,"Special",363]
+                ["auto_equip","Special",363]
            ]
         },
         {
@@ -7859,7 +7856,7 @@
                 "Talent-piloting"
            ],
            "modifier_func":[
-                [1,"Special",364]
+                ["auto_equip","Special",364]
            ]
         },
         {
@@ -7883,7 +7880,7 @@
                 "Talent-piloting"
            ],
            "modifier_func":[
-                [1,"Special",364]
+                ["auto_equip","Special",364]
            ]
         },
         {
@@ -7907,7 +7904,7 @@
                 "Talent-shooting"
            ],
            "modifier_func":[
-                [1,"Special",364]
+                ["auto_equip","Special",364]
            ]
         },
         {
@@ -7931,7 +7928,7 @@
                 "Talent-shooting"
            ],
            "modifier_func":[
-                [1,"Special",364]
+                ["auto_equip","Special",364]
            ]
         },
         {
@@ -7955,7 +7952,7 @@
                 "Talent-piloting"
            ],
            "modifier_func":[
-                [1,"Special",364]
+                ["auto_equip","Special",364]
            ]
         },
         {
@@ -7979,7 +7976,7 @@
                 "Talent-leadership"
            ],
            "modifier_func":[
-                [1,"Special",364]
+                ["auto_equip","Special",364]
            ]
         },
         {
@@ -8004,7 +8001,7 @@
                 "Talent-shooting"
            ],
            "modifier_func":[
-                [1,"Special",364]
+                ["auto_equip","Special",364]
            ]
         },
         {
@@ -8028,7 +8025,7 @@
                 "Talent-shooting"
            ],
            "modifier_func":[
-                [1,"Special",364]
+                ["auto_equip","Special",364]
            ]
         },
         {
@@ -8052,7 +8049,7 @@
                 "Talent-piloting"
            ],
            "modifier_func":[
-                [1,"Special",364]
+                ["auto_equip","Special",364]
            ]
         },
         {
@@ -8075,7 +8072,7 @@
                 "Special"
                        ],
            "modifier_func":[
-                [1,"Special",364]
+                ["auto_equip","Special",364]
            ]
         },
         {
@@ -8099,7 +8096,7 @@
                 "Talent-shooting"
            ],
            "modifier_func":[
-                [1,"Special",363]
+                ["auto_equip","Special",363]
            ]
         },
         {
@@ -8123,7 +8120,7 @@
                 "Talent-shooting"
            ],
            "modifier_func":[
-                [1,"Special",363]
+                ["auto_equip","Special",363]
            ]
         },
         {
@@ -8147,7 +8144,7 @@
                 "Talent-piloting"
            ],
            "modifier_func":[
-                [1,"Special",363]
+                ["auto_equip","Special",363]
            ]
         },
         {
@@ -8170,7 +8167,7 @@
                 "Special"
            ],
            "modifier_func":[
-                [1,"Special",363]
+                ["auto_equip","Special",363]
            ]
         },
         {
@@ -8194,7 +8191,7 @@
                 "Talent-leadership"
            ],
            "modifier_func":[
-                [1,"Special",363]
+                ["auto_equip","Special",363]
            ]
         },
         {
@@ -8218,7 +8215,7 @@
                 "Talent-piloting"
            ],
            "modifier_func":[
-                [1,"Special",363]
+                ["auto_equip","Special",363]
            ]
         },
         {
@@ -8242,7 +8239,7 @@
                 "Talent-shooting"
            ],
            "modifier_func":[
-                [1,"Special",363]
+                ["auto_equip","Special",363]
            ]
         },
         {
@@ -8266,7 +8263,7 @@
                 "Talent-shooting"
            ],
            "modifier_func":[
-                [1,"Special",363]
+                ["auto_equip","Special",363]
            ]
         },
         {
@@ -8316,7 +8313,7 @@
 
            ],
            "modifier_func":[
-                [1,"Title",269]
+                ["auto_equip","Title",269]
             ]
         },
         {
@@ -8405,7 +8402,7 @@
                 "Illicit"
            ],
            "modifier_func":[
-                [1,"Title",275]
+                ["auto_equip","Title",275]
             ]
         },
         {
@@ -8434,7 +8431,7 @@
                 
            ],
            "modifier_func":[
-                [1,"Title",275]
+                ["auto_equip","Title",275]
             ]
         },
         {
@@ -8463,7 +8460,7 @@
                 
            ],
            "modifier_func":[
-                [1,"Title",275]
+                ["auto_equip","Title",275]
             ]
         },
         {
@@ -8492,7 +8489,7 @@
                 
            ],
            "modifier_func":[
-                [1,"Title",275]
+                ["auto_equip","Title",275]
             ]
         },
         {
@@ -8520,7 +8517,7 @@
                                
            ],
            "modifier_func":[
-                [1,"Title",275]
+                ["auto_equip","Title",275]
             ]
         },
         {
@@ -8612,8 +8609,8 @@
                                
            ],
            "modifier_func":[
-                [1,"Title",282],
-                [3,"Modification"]
+                ["auto_equip","Title",282],
+                ["remove","Modification"]
             ]
         },
         {
@@ -8931,7 +8928,7 @@
                       "Droid"                      
            ],
            "modifier_func": [
-                [1, "Droid",237]
+                ["auto_equip", "Droid",237]
            ]
         },
         {
@@ -9081,7 +9078,7 @@
                 "Talent-piloting"           
            ],
            "modifier_func": [
-                [1, "Droid",237]
+                ["auto_equip", "Droid",237]
            ]
            
         },
@@ -9093,7 +9090,7 @@
             "modify": true,
 		    "faction": "Hutt_Cartel",
             "ship": "YV-666 Light Freighter",
-            "charge":[3,"0"],
+            "charge":["remove","0"],
             "force": 0,
             "titleID": 0,
             "shipId": 21,
@@ -9214,8 +9211,8 @@
                 "Cannon"         
            ],
            "modifier_func": [
-            	[1,"Title",147],
-                [3,"Modification"]
+            	["auto_equip","Title",147],
+                ["remove","Modification"]
                 
                     ]
            
@@ -9409,7 +9406,7 @@
                 "Talent-leadership"                
            ],
            "modifier_func": [
-            	[1,"Condition",283]                              
+            	["auto_equip","Condition",283]                              
             ]
            
         },
@@ -9434,7 +9431,7 @@
                 "Talent-shooting"
            ],
            "modifier_func": [
-            	[1,"Condition",283]                              
+            	["auto_equip","Condition",283]                              
             ]
            
         },
@@ -9481,7 +9478,7 @@
                 "Talent-piloting"                
            ],
            "modifier_func": [
-            	[1,"Condition",284]                              
+            	["auto_equip","Condition",284]                              
             ]
            
         },
@@ -9569,7 +9566,7 @@
                 "Talent-piloting"                
            ],
            "modifier_func": [
-            	[1,"Condition","??"]                              
+            	["auto_equip","Condition","??"]                              
             ]
            
         },
@@ -9617,8 +9614,8 @@
                 "Talent-elite"        
            ],
            "modifier_func": [
-            	[1,"Condition","??"],
-                [1,"Title",289]
+            	["auto_equip","Condition","??"],
+                ["auto_equip","Title",289]
                                             
             ]
          
@@ -9647,9 +9644,9 @@
                        
            ],
            "modifier_func": [
-            	[1,"Condition","??"],
-                [1,"Title",289],
-                [1,"Droid",237]                              
+            	["auto_equip","Condition","??"],
+                ["auto_equip","Title",289],
+                ["auto_equip","Droid",237]                              
             ]
          
         },
@@ -9679,7 +9676,7 @@
            ],
            "modifier_func": [
             	
-                [1,"Title",289]
+                ["auto_equip","Title",289]
                                            
             ]
          
@@ -9710,7 +9707,7 @@
            ],
            "modifier_func": [
             	
-                [1,"Title",289]
+                ["auto_equip","Title",289]
                                            
             ]
          
@@ -9740,8 +9737,8 @@
             "Talent-piloting"
            ],
            "modifier_func": [
-                [1,"Title",203],
-                [1,"Condition",286]                       
+                ["auto_equip","Title",203],
+                ["auto_equip","Condition",286]                       
             ]
          
         },
@@ -9769,9 +9766,9 @@
                                  
            ],
            "modifier_func": [
-                [1,"Title",203],
-                [1,"Droid",237],
-                [1,"Condition","??"]                       
+                ["auto_equip","Title",203],
+                ["auto_equip","Droid",237],
+                ["auto_equip","Condition","??"]                       
             ]
          
         },
@@ -9800,8 +9797,8 @@
                                  
            ],
            "modifier_func": [
-                [1,"Title",203],
-                [1,"Condition",287]                       
+                ["auto_equip","Title",203],
+                ["auto_equip","Condition",287]                       
             ]
          
         },
@@ -9941,7 +9938,7 @@
             "Talent-shooting"                              
            ],
            "modifier_func": [
-                [1,"Condition",288]                       
+                ["auto_equip","Condition",288]                       
             ]
          
         },
@@ -10011,7 +10008,7 @@
             "Talent-leadership"                              
            ],
            "modifier_func": [
-                [1,"Condition",291]                       
+                ["auto_equip","Condition",291]                       
             ]
            
         },
@@ -10039,7 +10036,7 @@
             "Talent-piloting"                              
            ],
            "modifier_func": [
-                [1,"Title",292]                       
+                ["auto_equip","Title",292]                       
             ]
            
         },
@@ -10066,7 +10063,7 @@
             "Talent-shooting"                             
            ],
            "modifier_func": [
-                [1,"Title",292]                       
+                ["auto_equip","Title",292]                       
             ]
            
         },
@@ -10094,9 +10091,9 @@
                                    
            ],
            "modifier_func": [
-            [1, "Droid",237],
-            [3,"Astromech"],
-            [1,"Title",292]                       
+            ["auto_equip", "Droid",237],
+            ["remove","Astromech"],
+            ["auto_equip","Title",292]                       
             ]
            
         },
@@ -10205,7 +10202,7 @@
             "Talent-shooting"           
         ],
         "modifier_func": [
-                [1,"Title",293]                       
+                ["auto_equip","Title",293]                       
             ]
         },
         {
@@ -10231,7 +10228,7 @@
             "Talent-leadership"           
         ],
         "modifier_func": [
-                [1,"Title",293]                       
+                ["auto_equip","Title",293]                       
             ]
         },
         {
@@ -10256,7 +10253,7 @@
             "Talent-shooting"                  
         ],
         "modifier_func": [
-                [1,"Title",293]                       
+                ["auto_equip","Title",293]                       
             ]
         },
         {
@@ -10283,7 +10280,7 @@
             "Talent-leadership"                  
         ],
         "modifier_func": [
-                [1,"Title",294]                       
+                ["auto_equip","Title",294]                       
             ]
         },
         {
@@ -10309,7 +10306,7 @@
             "Talent-shooting"                  
         ],
         "modifier_func": [
-                [1,"Title",294]                       
+                ["auto_equip","Title",294]                       
             ]
         },
         {
@@ -10336,7 +10333,7 @@
             "Talent-piloting"                  
         ],
         "modifier_func": [
-                [1,"Title",295]                       
+                ["auto_equip","Title",295]                       
             ]
         },
         {
@@ -10362,7 +10359,7 @@
             "Talent-piloting"                 
         ],
         "modifier_func": [
-                [1,"Title",295]                       
+                ["auto_equip","Title",295]                       
             ]
         },
         {
@@ -10389,7 +10386,7 @@
             "Talent-shooting"                 
         ],
         "modifier_func": [
-                [1,"Title",296]                       
+                ["auto_equip","Title",296]                       
             ]
         },
         {
@@ -10415,7 +10412,7 @@
             "Talent-piloting"             
         ],
         "modifier_func": [
-                [1,"Title",296]                       
+                ["auto_equip","Title",296]                       
             ]
         },
         {
@@ -10442,7 +10439,7 @@
             "Talent-piloting"                 
         ],
         "modifier_func": [
-                [1,"Title",297]                       
+                ["auto_equip","Title",297]                       
             ]
         },
         {
@@ -10468,7 +10465,7 @@
             "Talent-piloting"               
         ],
         "modifier_func": [
-                [1,"Title",297]                       
+                ["auto_equip","Title",297]                       
             ]
         },
         {
@@ -10495,7 +10492,7 @@
             "Talent-shooting"               
         ],
         "modifier_func": [
-                [1,"Title",298]                       
+                ["auto_equip","Title",298]                       
             ]
         },
         {
@@ -10521,7 +10518,7 @@
             "Talent-shooting"             
         ],
         "modifier_func": [
-                [1,"Title",298]                       
+                ["auto_equip","Title",298]                       
             ]
         },
         {
@@ -10548,7 +10545,7 @@
             "Force"             
         ],
         "modifier_func": [
-                [1,"Title",305]                       
+                ["auto_equip","Title",305]                       
             ]
         },
         {
@@ -10575,7 +10572,7 @@
             "Force"             
         ],
         "modifier_func": [
-                [1,"Title",305]                       
+                ["auto_equip","Title",305]                       
             ]
         },
         {
@@ -10600,7 +10597,7 @@
             "Talent-piloting"             
         ],
         "modifier_func": [
-                [1,"Title",305]                       
+                ["auto_equip","Title",305]                       
             ]
         },
         {
@@ -10735,7 +10732,7 @@
                       
           ],
           "modifier_func": [
-                [1,"Title",137]                       
+                ["auto_equip","Title",137]                       
             ]  
           },
           {
@@ -10761,8 +10758,8 @@
                     
         ],
         "modifier_func": [
-            [1, "Droid",237],
-            [1, "Condition",306]                                 
+            ["auto_equip", "Droid",237],
+            ["auto_equip","Condition",306]                                 
             ]  
         },
         {
@@ -10830,7 +10827,7 @@
             "Talent-shooting"
         ],
         "modifier_func": [
-                [1,"Title",139]                       
+                ["auto_equip","Title",139]                       
             ]  
         },
         {
@@ -10856,7 +10853,7 @@
             "Talent-shooting"                   
         ],
         "modifier_func": [
-                [1,"Title",139]                       
+                ["auto_equip","Title",139]                       
             ]  
         },
         {
@@ -10882,7 +10879,7 @@
             "Talent-shooting"                   
         ],
         "modifier_func": [
-                [1,"Title",139]                       
+                ["auto_equip","Title",139]                       
             ]  
         },
         {
@@ -10912,7 +10909,7 @@
             "Illicit"                   
         ],
         "modifier_func": [
-                [1,"Title",139]                       
+                ["auto_equip","Title",139]                       
             ]  
         },
         {
@@ -11272,7 +11269,7 @@
             "Talent-shooting"                 
         ],
         "modifier_func": [
-            [1, "Condition",317]                                 
+            ["auto_equip","Condition",317]                                 
             ]         
         },
         {
@@ -11446,7 +11443,7 @@
             "Force"
         ],
             "modifier_func": [
-            [1, "Title",318]                                 
+            ["auto_equip","Title",318]                                 
             ]           
         },
         {
@@ -11472,8 +11469,8 @@
             "Force"
         ],
             "modifier_func": [
-            [1, "Title",318]                                 
-            ]           
+            ["auto_equip", "Title",318]
+            ]
         },
         {
             "name": "Vikrul",
@@ -11498,8 +11495,8 @@
             "Force"
         ],
             "modifier_func": [
-            [1, "Title",318]                                 
-            ]           
+            ["auto_equip", "Title",318]
+            ]
         },
         {
             "name": "Kuruk",
@@ -11524,8 +11521,8 @@
             "Force"
         ],
             "modifier_func": [
-            [1, "Title",318]                                 
-            ]           
+            ["auto_equip", "Title",318]
+            ]
         },
         {
             "name": "Arliz Hadrassian",
@@ -11633,8 +11630,8 @@
             "Tech"
         ],
             "modifier_func": [
-            [1, "Title",319]                                 
-            ]         
+            ["auto_equip", "Title",319]
+            ]
         },
         {
             "name": "Va-t-en-guerre du BSI",
@@ -11659,8 +11656,8 @@
             "Tech"
         ],
             "modifier_func": [
-            [1, "Title",319]                                 
-            ]         
+            ["auto_equip", "Title",319]
+            ]
         },
         {
             "name": "Yrica Quell",
@@ -11685,8 +11682,8 @@
             "Tech"
         ],
             "modifier_func": [
-            [1, "Title",319]                                 
-            ]         
+            ["auto_equip", "Title",319]
+            ]
         },
         {
             "name": "Soran Keize",
@@ -11711,8 +11708,8 @@
             "Tech"
         ],
             "modifier_func": [
-            [1, "Title",319]                                 
-            ]         
+            ["auto_equip", "Title",319]
+            ]
         },
         {
             "name": "Fidèle de l'Empire",
@@ -11866,7 +11863,7 @@
             "modify": false,
             "faction": "Imperial_Remnants",
             "ship": "TIE/in Interceptor",
-            "charge":[3,"0"],
+            "charge":["remove","0"],
             "force": 0,
             "titleID": 0,
             "shipId": 6,
@@ -12429,8 +12426,8 @@
                 "Talent-leadership"
             ],
             "modifier_func": [
-            [1, "Title",320]                                 
-            ]   
+            ["auto_equip", "Title",320]
+            ]
                
         },
         {
@@ -12456,8 +12453,8 @@
             "Talent-shooting"
             ],
             "modifier_func": [
-            [1, "Title",320]                                 
-            ]       
+            ["auto_equip", "Title",320]
+            ]
         },
         {
             "name": "Merrin",
@@ -12482,8 +12479,8 @@
             "Talent-piloting"
             ],
             "modifier_func": [
-            [1, "Title",320]                                 
-            ]       
+            ["auto_equip", "Title",320]
+            ]
         },
         {
             "name": "Jyn Erso",
@@ -12571,8 +12568,8 @@
             "Calculator"
             ],
             "modifier_func": [
-            [1, "Title",321]                                 
-            ]   
+            ["auto_equip", "Title",321]
+            ]
         },
         {
             "name": "Hyperspace Ring",
@@ -12635,7 +12632,7 @@
                 "Talent-piloting"    
             ],
             "modifier_func": [
-                [5,"Crew"]
+                ["reduce_logistic_cost","Crew"]
             ]
         },
 	{
@@ -12658,7 +12655,7 @@
                 "Talent-piloting"  
             ],
             "modifier_func": [
-                [5,"Crew"]
+                ["reduce_logistic_cost","Crew"]
             ]
         },
 	{
@@ -12682,8 +12679,8 @@
                 "Talent-piloting"  
             ],
             "modifier_func": [
-                [1, "Droid",237],
-                [5,"Crew"]
+                ["auto_equip", "Droid",237],
+                ["reduce_logistic_cost","Crew"]
 
             ]
         },
@@ -12707,7 +12704,7 @@
                 "Talent-leadership"  
             ],
             "modifier_func": [
-                [5,"Crew"]
+                ["reduce_logistic_cost","Crew"]
             ]
         },
          {
@@ -12980,8 +12977,8 @@
                 
             ],
             "modifier_func": [
-            	[1,"Title",130],
-                [3,"Crew"]
+            	["auto_equip","Title",130],
+                ["remove","Crew"]
                 
                     ]
         },
@@ -13049,8 +13046,8 @@
                 
             ],
             "modifier_func": [
-            	[1,"Title",130],
-                [3,"Crew"]
+            	["auto_equip","Title",130],
+                ["remove","Crew"]
                 
                     ]
         },
@@ -13073,10 +13070,7 @@
             "ability_ENG": "During System Phase, you may spend or recover your charge.<br>#ch#Active : When you receive a damage, gain 1 calculate token.<br>#ch#Inactive : While you attack, you may spend 1 calculate token to modify 1 blank result into a #hit# result.",
             "slots": [
                 
-            ],
-            "modifier_func": [
-            	
-                    ]
+            ]
         },
         {
             "name": "Chasseur de la Fédération du Commerce",
@@ -13097,10 +13091,7 @@
             "ability_ENG": "",
             "slots": [      
                 
-            ],
-            "modifier_func": [
-            	
-                    ]
+            ]
         },
         {
             "name": "Poggle le Bref",
@@ -13121,10 +13112,7 @@
             "ability_ENG": "",
             "slots": [      
                 
-            ],
-            "modifier_func": [
-            	
-                    ]
+            ]
         },
         {
             "name": "Shu Mai",
@@ -13145,10 +13133,7 @@
             "ability_ENG": "",
             "slots": [      
                 
-            ],
-            "modifier_func": [
-            	
-                    ]
+            ]
         },
         {
             "name": "San Hill",
@@ -13169,10 +13154,7 @@
             "ability_ENG": "",
             "slots": [
                 
-            ],
-            "modifier_func": [
-                
-                    ]
+            ]
         },
         {
             "name": "Pilote de l'Alliance Intercorporations",
@@ -13193,10 +13175,7 @@
             "ability_ENG": "",
             "slots": [
                 
-            ],
-            "modifier_func": [
-                
-                    ]
+            ]
         },
         {
             "name": "Passel Argente",
@@ -13217,10 +13196,7 @@
             "ability_ENG": "",
             "slots": [
                 
-            ],
-            "modifier_func": [
-                
-                    ]
+            ]
         },
         {
             "name": "Farr-Nees",
@@ -13241,10 +13217,7 @@
             "ability_ENG": "",
             "slots": [
                 
-            ],
-            "modifier_func": [
-                
-                    ]
+            ]
         },
         {
             "name": "Mee Deechi",
@@ -13265,10 +13238,7 @@
             "ability_ENG": "",
             "slots": [
                 
-            ],
-            "modifier_func": [
-                
-                    ]
+            ]
         },
         {
             "name": "Ennodius",
@@ -13289,10 +13259,7 @@
             "ability_ENG": "",
             "slots": [
                 
-            ],
-            "modifier_func": [
-                
-                    ]
+            ]
         },
         {
             "name": "Pilote de la Milice d'Umbara",
@@ -13313,10 +13280,7 @@
             "ability_ENG": "",
             "slots": [
                 
-            ],
-            "modifier_func": [
-                
-                    ]
+            ]
         },
         {
             "name": "Osi Sobeck",
@@ -13337,10 +13301,7 @@
             "ability_ENG": "",
             "slots": [
                 
-            ],
-            "modifier_func": [
-                
-                    ]
+            ]
         },
         {
             "name": "BX-24",
@@ -13361,10 +13322,7 @@
             "ability_ENG": "",
             "slots": [
                 
-            ],
-            "modifier_func": [
-                
-                    ]
+            ]
         },
         {
             "name": "BX-51",
@@ -13385,10 +13343,7 @@
             "ability_ENG": "",
             "slots": [
                 
-            ],
-            "modifier_func": [
-                
-                    ]
+            ]
         },
         {
             "name": "Droïde Extracteur",
@@ -13401,17 +13356,17 @@
             "force": 0,
             "titleID": 0,
             "shipId": 104,
-            "modify": false,
+            "modify": true,
             "skill": 0,
             "charge": [0],
             "points": 0,
             "ability": "",
             "ability_ENG": "",
             "slots": [
-                
+                "Droid"
             ],
             "modifier_func": [
-                
+                ["auto_equip", "Droid",237]
                     ]
         },
         {
@@ -13433,10 +13388,7 @@
             "ability_ENG": "",
             "slots": [
                 
-            ],
-            "modifier_func": [
-                
-                    ]
+            ]
         },
         {
             "name": "Tendir Blue",
@@ -13457,10 +13409,7 @@
             "ability_ENG": "",
             "slots": [
                 
-            ],
-            "modifier_func": [
-                
-                    ]
+            ]
         },
         {
             "name": "Bunt Dantor",
@@ -13481,10 +13430,7 @@
             "ability_ENG": "",
             "slots": [
                 
-            ],
-            "modifier_func": [
-                
-                    ]
+            ]
         },
         {
             "name": "Droïde Chasseur",
@@ -13497,17 +13443,17 @@
             "force": 0,
             "titleID": 0,
             "shipId": 105,
-            "modify": false,
+            "modify": true,
             "skill": 3,
             "charge": [0],
             "points": 0,
             "ability": "",
             "ability_ENG": "",
             "slots": [
-                
+                "Droid"
             ],
             "modifier_func": [
-                
+                ["auto_equip", "Droid",237]
                     ]
         },
         {
@@ -13701,9 +13647,74 @@
             "modifier_func": [
                 
                     ]
+        },
+        {
+            "name": "Han Solo",
+            "name_ENG": "Han Solo",
+            "id": 604,
+            "max_per_squad": 1,
+            "faction": "Rebel_Alliance",
+            "ship": "YT-1300 Light Freighter",
+            "title": ["Millenium Falcon"],
+            "modify": true,
+            "charge":[0],
+            "force": 0,
+            "titleID": 135,
+            "shipId": 3,
+            "skill": 6,
+            "points": 9,
+            
+            "ability": "Tant que vous attaquez ou défendez, si l’attaque est obstruée par un obstacle, vous pouvez lancer un dé supplémentaire.<br>Si vous défendez ou attaquez en étant à portée 0 d'un obstacle, vous pouvez lancer 1 dé supplémentaire",
+            "ability_ENG": "While you defend or perform an attack, if the attack is obstructed by an obstacle, you may roll 1 additional die.<br>If you defend or perform an attack while being at range 0 of an obstacle, you may roll 1 additional die.",
+            "slots": [
+                "Title",
+                "Talent-elite",
+                "Talent-piloting",
+                "Talent-shooting",
+                "Crew"
+                                         
+                
+            ],
+            "modifier_func": [
+                ["auto_equip","Title",135],
+                ["remove","Calculator"],
+                ["change_chassis",0,0]
+               
+
+            ]
+        },
+        {
+            "name": "Chewbacca",
+            "name_ENG": "Chewbacca",
+            "id": 605,
+            "max_per_squad": 1,
+            "faction": "Rebel_Alliance",
+            "ship": "YT-1300 Light Freighter",
+            "title": ["Millenium Falcon"],
+            "force": 0,
+            "titleID": 135,
+            "shipId": 3,
+            "modify": true,
+            "skill": 4,
+            "charge": [1,"+"],
+            "points": 7,
+            
+            "ability": "Lorsque vous devriez recevoir une carte de dégât face visible, vous pouvez dépenser 1 #ch# pour la recevoir face cachée à la place.",
+            "ability_ENG": "When you would receive a face up damage card, you may spend 1 #ch# to receive it facedown instead.",
+            "slots": [
+                "Title",
+                "Talent-shooting",
+                "Crew"
+                
+                
+            ],
+            "modifier_func": [
+                ["auto_equip","Title",135],
+                ["remove","Calculator"]
+               
+                
+            ]
         }
-
-
 
 
 

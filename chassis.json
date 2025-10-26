@@ -17,10 +17,10 @@
         "effect3": "" 
     },
     {
-        "name": "Sensor Blindspot",
+        "name": "Customized Weapons",
         "id": 2,
         "nbrOfEffects": 1,
-        "effect1": "(Angle-Mort des Senseurs) : Tant que vous effectuez une attaque à portée 0-1, lancez 1 dé d'attaque en moins. Tant que vous défendez à portée 1, lancez 1 dé de défense en moins",
+        "effect1": "(Armes Personnalisées) : Les #tur# et #can# que vous équippez sont considérées comme votre arme principale, et sont toujours considérées comme des armes secondaires. Lorsque vous attaquez avec, vous choisissez si vous les utilisez comme arme principale (bonus de portée actif) ou secondaire.",
         "effect2": "",
         "effect3": "" 
     },
