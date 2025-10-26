@@ -945,7 +945,7 @@
             "modify":true,
             "max_per_squad": 8,
             "slot": "Turret",
-            "add_Data": [0],
+            "add_Data": ["add_action",[0,"Ra W"]],
             "force": 0,
             "charge": [0],
             "points": 4,

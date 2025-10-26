@@ -428,6 +428,42 @@ function displayPilot(x){
                 }
                 break;
             
+            case 'add_action' :
+                actionlist = document.getElementById('actions'+(x));
+                const actionToAdd = upgrades[uid]['add_Data'][1];
+                    switch(actionToAdd[0]){
+                        case 0 : //if 0 is the first value, it is a simple action
+                        newaction = document.createElement('img');
+                        newaction.setAttribute('class','action '+x+''+actionToAdd[1]);
+                        newaction.setAttribute('src', 'img/'+actionToAdd[1]+'.jpg');
+                        actionlist.appendChild(newaction);
+                        break;
+                        case 1 : //if 1 is the first value, then it is a linked action
+                        newaction = document.createElement('div');
+                        newaction.setAttribute('class','action');
+                        
+                        newaction1 = document.createElement('img');
+                        newaction1.setAttribute('src', 'img/'+actionToAdd[1]+'.jpg');
+                        newaction1.setAttribute('class','linked action '+x+''+actionToAdd[1]);
+                        
+                        newlink = document.createElement('img');
+                        newlink.setAttribute('src', 'img/fleche.jpg');
+                        newlink.setAttribute('class','linked action');
+                        
+                        newaction2 = document.createElement('img');
+                        newaction2.setAttribute('src', 'img/'+actionToAdd[2]+'.jpg');
+                        newaction2.setAttribute('class','linked action '+x+''+actionToAdd[2]);
+
+                        newaction.appendChild(newaction1);
+                        newaction.appendChild(newlink);
+                        newaction.appendChild(newaction2);
+                        actionlist.appendChild(newaction);
+                        break;
+                        default :
+                        console.log('there is a mistake in add_data in pilots.json') ;
+                        break;
+                    }
+                break;
 
             default :
                 break;
