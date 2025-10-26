@@ -5256,7 +5256,7 @@
                 "Talent-elite",
                 "Talent-piloting",
                 "Talent-shooting",
-                "Sensor"
+                "Crew"
                             
             ],
             "modifier_func": [
@@ -5288,7 +5288,7 @@
                 "Title" ,
                 "Talent-piloting",
                 "Force",
-                "Sensor"
+                "Crew"
                            
             ],
             "modifier_func": [
@@ -5319,7 +5319,7 @@
             "slots": [
                 "Title",
                 "Talent-shooting",
-                "Sensor"
+                "Crew"
                             
             ],
             "modifier_func": [
@@ -5352,7 +5352,7 @@
                 "Title",
                 "Talent-elite",
                 "Talent-leadership",
-                "Sensor"
+                "Crew"
                             
             ],
             "modifier_func": [

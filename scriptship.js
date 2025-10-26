@@ -447,6 +447,7 @@ function testRestriction (yy,tableRestrictions){//va vérifier si les restrictio
         break;
     case 'action' :
         varlist = ships[pilot_list[yy]['shipId']]['actions'];
+            
         break;
     case 'ship' :
         varlist = ships[pilot_list[yy]['shipId']]['name'];
@@ -458,8 +459,8 @@ function testRestriction (yy,tableRestrictions){//va vérifier si les restrictio
     }
    
     for (i=0; i<varlist.length; i++) {
-            
-    if ((varlist[i]===target1)||(varlist[i]===target2)) {
+        
+    if ((JSON.stringify(varlist[i])===JSON.stringify(target1))||(JSON.stringify(varlist[i])===JSON.stringify(target2))) { //Json.stringify allows to compare to arrays together such as the actions arrays. It works as well on strings and values.
         testR++;
     }
     }
@@ -468,7 +469,8 @@ function testRestriction (yy,tableRestrictions){//va vérifier si les restrictio
     restrict = true;
     }else{
     restrict = false;
-    }   
+       
+    }
 
 }
 
@@ -910,7 +912,7 @@ function also_Occupies(targetSlot){ //Action n°3 : A utiliser lorsqu'une upgrad
     for (let i = 0; i < upgradesSelected_Objects[y].length; i++) {
         if (upgradesSelected_Objects[y][i] === -1) {
             field = document.getElementById('slot' + y + '_' + i);
-            console.log('field value'+field.value);
+            
             if(field.value === '<' + targetSlot + '>'){
                 field.setAttribute('disabled', '');
                 break;
