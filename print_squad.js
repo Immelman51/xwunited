@@ -429,7 +429,8 @@ function displayPilot(x){
                 break;
             
             case 'add_action' :
-                actionlist = document.getElementById('actions'+(x));
+                console.log("add_action");
+                const actionlist = document.getElementById('actions'+(x));
                 const actionToAdd = upgrades[uid]['add_Data'][1];
                     switch(actionToAdd[0]){
                         case 0 : //if 0 is the first value, it is a simple action
