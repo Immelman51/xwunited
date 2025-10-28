@@ -52,7 +52,7 @@
                 ],
                 "nbrmaneuvers": 15,
                 "base": "small",
-                "slots": ["Torpedo", "Turret", "Payload", "Astromech", "Modification"]
+                "slots": ["Torpedo","Torpedo", "Turret", "Payload", "Astromech", "Modification","Illicit"]
             },
             {
             
@@ -1790,7 +1790,7 @@
                     [ 0, 0, 3, 0, 0, 3],
                     [ 0, 0, 0, 0, 0, 0]
                 ],
-                "slots": ["Gunner","Torpedo","Torpedo","Payload","Turret","Astromech","Modification"]
+                "slots": ["Gunner","Torpedo","Payload","Payload","Turret","Astromech","Modification"]
     
             },
             {
@@ -2087,11 +2087,10 @@
                 "base": "small",
                 "chassis": [43],
                 "actions": [
-                    [0,"Fo W"],
-                    [0,"Bo R"],                
+                    [1,"Fo W","Un R"],
+                    [0,"Bo R"],
                     [0,"Lo R"],
-                    [0,"Br R"],
-                    [0,"Un R"]
+                    [0,"Br R"]
                     
                 
                 ],
@@ -2103,7 +2102,7 @@
                     [ 0, 0, 3, 0, 0, 0],
                     [ 0, 0, 0, 0, 0, 3]
                 ],
-                "slots": ["Tech","Missile","Missile","Payload","Turret","Astromech","Modification","Modification"]
+                "slots": ["Tech","Missile","Torpedo","Turret","Astromech","Modification","Modification"]
             },
             {
          
