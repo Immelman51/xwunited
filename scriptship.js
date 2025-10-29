@@ -414,11 +414,11 @@ function updateUpgradeCount(yy) { //update the table logistic_Equipped and talen
                     break;
         }
     }
-
-    logisticCounter.innerHTML = 'LOG<br><span style="font-size:x-large">'+sumLogisticEquipped+'</span>';
+    let logisticLeaderValue = leaders[leaderSelected_id]["logistic"];
+    logisticCounter.innerHTML = 'LOG<br><span style="font-size:x-large">'+(logisticLeaderValue-sumLogisticEquipped)+'</span>';
     //We test the list Validity, and if it's not valid, we paint the logistic in red
    
-    if(sumLogisticEquipped>leaders[leaderSelected_id]["logistic"]){
+    if(logisticLeaderValue-sumLogisticEquipped<0){
         logisticCounter.setAttribute("class","logistic total unvalid");
     }else{
         logisticCounter.setAttribute("class","logistic total");
