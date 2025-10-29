@@ -144,6 +144,8 @@ leaderselect.addEventListener("input", function() {
     getLeaderObject();
     selection_leader();
     description_leader()
+    let logisticvalue = document.getElementById("logisticCounter");
+    logisticvalue.innerHTML = leaders[leaderSelected_id]['logistic'];
 })
 factionselect.addEventListener("input", selection_faction);
 
