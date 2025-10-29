@@ -1077,6 +1077,7 @@ function leaderSelection(){
     upgradesSelected_Objects = [[],[],[],[],[],[],[],[]];
     pilot_objects = [[],[],[],[],[],[],[],[]];
     restricted_List = [[0],[1],[2],[3],[4],[5],[6],[7],[8]];
+    logisticEquipped = [0,0,0,0,0,0,0,0];
     pilot_list = [{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0}];
     chassis_selected = [[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0]];
     restrict = false ;

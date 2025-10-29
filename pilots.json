@@ -455,7 +455,7 @@
             "titleID": 0,
             "shipId": 2,
             "skill": 3,
-            "points": 10,
+            "points": 9,
             
             "ability": "Vous pouvez effectuer des attaques principales à portée 0. Si vous deviez échouer une action #BO# qui vous amènerait à chevaucher un autre vaisseau, résolvez-la comme si vous exécutiez partiellement une manœuvre à la place.",
             "ability_ENG": "You may perform primary attacks at range 0. If you would fail a #BO# action because you would overlap an other ship, perform it as you would execute partially a maneuver instead.",
@@ -500,7 +500,7 @@
             "titleID": 0,
             "shipId": 2,
             "skill": 3,
-            "points": 10,
+            "points": 8,
             
             "ability": "Tant que vous êtes à portée 1 d’un vaisseau ennemi, augmentez votre agilité de 1.",
             "ability_ENG": "While you are at range 1 of an enemy ship, increase your agility by 1.",
@@ -524,7 +524,7 @@
             "titleID": 0,
             "shipId": 2,
             "skill": 3,
-            "points": 9,
+            "points": 7,
             
             "slots": [
                 "Talent-piloting"
