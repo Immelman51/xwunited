@@ -316,7 +316,7 @@
             "titleID": 147,
             "shipId": 8,
             "skill": 5,
-            "points": 12,
+            "points": 10,
             
             "title": ["Moldy Crow"],
             "ability": "Tant qu’un vaisseau allié situé dans votre arc de tir effectue une attaque principale, si vous n’êtes pas stressé, vous pouvez gagner 1 marqueur de stress. Dans ce cas, ce vaisseau peut lancer 1 dé d’attaque supplémentaire.",
@@ -348,7 +348,7 @@
             "titleID": 0,
             "shipId": 8,
             "skill": 4,
-            "points": 10,
+            "points": 9,
             
             "ability": "Au début de la phase d’engagement, vous pouvez choisir 1 vaisseau situé dans votre arc de tir. Dans ce cas, pendant cette phase, il s’engage à l’initiative 7 au lieu de le faire à sa valeur d’initiative standard.",
             "ability_ENG": "At the beginning of Engagement phase, you may choose 1 ship in your firing arc. If you do, during this phase, it engages at initiative 7 instead engaging at its original initiative.",
@@ -371,7 +371,7 @@
             "titleID": 147,
             "shipId": 8,
             "skill": 3,
-            "points": 10,
+            "points": 9,
             
             "title": ["Moldy Crow"],
             "ability": "Au début de la phase d’engagement, vous pouvez transférer 1 de vos marqueurs de concentration à un vaisseau allié situé dans votre arc de tir.",
@@ -402,7 +402,7 @@
             "titleID": 147,
             "shipId": 8,
             "skill": 3,
-            "points": 11,
+            "points": 9,
             
             "title": ["Moldy Crow"],
             "ability": "Au début de la phase d’engagement, vous pouvez transférer un marqueur de stress de votre vaisseau vers un vaisseau allié dans votre arc de tir. Lorsque vous retirez un marqueur de stress de votre vaisseau, vous pouvez effectuer une action.",
@@ -2512,7 +2512,7 @@
             "skill": 3,
             "charge":[0],
             "force": 1,
-            "points": 9,
+            "points": 8,
             "force_side": "light",
             "ability": "Lorsque vous ou un vaisseau dans votre #tur# défend, vous pouvez dépenser 1#fo#. Dans ce cas, l’attaquant lance 1 dé d’attaque de moins.",
             "ability_ENG": "While you or a friendly ship in your #tur# defends, you may spend 1 #fo#. If you do, the attacker roll 1 attack die less",
@@ -2534,7 +2534,7 @@
             "skill": 5,
             "charge": "2+",
         
-            "points": 8,
+            "points": 7,
             
             "ability": "Au début de la phase de fin, vous pouvez dépenser 2 #ch# pour vous choisir ou un vaisseau dans votre #tur# avec 1 ou plusieurs jetons circulaires. Pendant la phase de fin, ces jetons circulaires ne sont pas retirés.",
             "ability_ENG": "At the beginning of End Phase, you may spend 2 #ch# to choose yourself or a ship in your #tur# with 1 circular token or more. During End Phase, those circular tokens are not removed.",
@@ -6644,7 +6644,7 @@
             "titleID": 0,
             "shipId": 68,
             "skill": 2,
-            "points": 10,
+            "points": 9,
             "ability": "Après qu'un petit vaisseau allié dans votre #Tarc# reçoit un jeton de contrainte ou d'épuisement, si vous n'avez pas de jeton de ce type, vous pouvez transférer ce jeton depuis ce vaisseau vers le votre.",
             "ability_ENG": "After a friendly small ship in your #Tarc# gains a deplete or strain token, if you have no tokens of that type, you may transfer that token to yourself.",
             "slots": [
@@ -6663,7 +6663,7 @@
             "titleID": 0,
             "shipId": 68,
             "skill": 3,
-            "points": 13,
+            "points": 11,
             "ability": "Après que vous ou un vaisseau allié non-limité à portée 0-2 est détruit pendant la phase d'engagement, ce vaisseau n'est pas retiré de la partie avant la fin de cette phase.",
             "ability_ENG": "After you or a friendly non-limited ship at range 0-2 are destroyed during the Engagement Phase, that ship is not removed until the end of that phase.",
             "slots": [
@@ -6682,7 +6682,7 @@
             "titleID": 0,
             "shipId": 68,
             "skill": 4,
-            "points": 12,
+            "points": 10,
             "ability": "Au début de la phase de fin, chaque vaisseau allié à portée 0-1 qui a une manoeuvre révélée de vitesse 3-5 peut gagner 1 jeton de contrainte pour effectuer une action #BR# ou #BO#",
             "ability_ENG": "At the start of the End Phase, each friendly ship at range 0-1 that has a revealed maneuver of speed 3-5 may gain 1 strain token to perform a #BR# or #BO# action.",
             "slots": [
@@ -6701,7 +6701,7 @@
             "titleID": 0,
             "shipId": 68,
             "skill": 2,
-            "points": 12,
+            "points": 10,
             "ability": "Après avoir executé une manoeuvre basique, vous pouvez assigner à votre vaisseau la condition 'Manoeuvre Malaisante'.",
             "ability_ENG": "After you execute a basic maneuver, you may assign the 'Sickening Maneuver' condition to yourself.",
             "slots": [
@@ -9134,7 +9134,7 @@
             "titleID": 0,
             "shipId": 8,
             "skill": 3,
-            "points": 8,
+            "points": 7,
             "ability": "Pendant la phase de Fin, avant qu'un vaisseau ennemi dans votre #tur# récupère 1 charge ou 1 force récurrente, vous pouvez dépenser 2#ch#. Dans ce cas, ce vaisseau ne récupère pas cette charge ou cette force.",
             "ability_ENG": "During the End Phase, before an enemy ship in your (tur) recovers 1 recurring charge or force, you may spend 2 charge. If you do, that ship does not recover that charge or force",
             "slots": [
@@ -9155,7 +9155,7 @@
             "titleID": 0,
             "shipId": 8,
             "skill": 3,
-            "points": 9,
+            "points": 8,
             "ability": "Au début de la phase d'engagement, vous pouvez choisir 1 vaisseau dans votre arc de tir. Dans ce cas, ce vaisseau s'engage à initiative 0 au lieu de son initiative normale cette ronde.",
             "ability_ENG": "At the start of engagement phase, you may choose 1 ship in your firing arc. If you do, that ship engages at initiative 0 instead of its normal initiative value this round.",
             "slots": [
@@ -9176,7 +9176,7 @@
             "titleID": 0,
             "shipId": 8,
             "skill": 3,
-            "points": 11,
+            "points": 10,
             "ability": "Au début de la phase d'engagement, vous pouvez choisir 1 vaisseau dans votre arc de tir à portée 0-2. Dans ce cas, transférez 1 jeton concentration ou évasion de ce vaisseau vers vous.",
             "ability_ENG": "At the start of the engagement phase, you may choose 1 enemy ship in your firing arc at range 0-2. If you do, transfer 1 focus or evade token from that ship to yourself.",
             "slots": [
@@ -9198,7 +9198,7 @@
             "titleID": 147,
             "shipId": 8,
             "skill": 4,
-            "points": 11,
+            "points": 8,
             "ability": "Après qu'un vaisseau ennemi à portée 0-3 reçoit au moins 1 jeton ion, vous pouvez dépenser 2 #ch#. Dans ce cas, ce vaisseau reçoit 2 jetons ion additionnels",
             "ability_ENG": "After an enemy ship at range 0-3 receives at least 1 ion token, you may spend 2 #ch#. If you do, that ship gains 2 additional ion tokens.",
             "slots": [
@@ -9227,7 +9227,7 @@
             "titleID": 0,
             "shipId": 8,
             "skill": 1,
-            "points": 7,
+            "points": 6,
             "ability": "",
             "ability_ENG": "",
             "slots": [
@@ -10373,7 +10373,7 @@
             "titleID": 296,
             "shipId": 89,
             "skill": 5,
-            "points": 12,
+            "points": 10,
             "ability": "Après avoir effectué un #BR#, s'il y a un vaisseau ennemi dans votre #bulls#, vous pouvez vérouiller ce vaisseau.",
             "ability_ENG": "After you perform a #BR#, if there is an enemy ship in your #bulls#, you may acquire a lock on that ship.",
             "slots": [     
@@ -10400,7 +10400,7 @@
             "titleID": 296,
             "shipId": 89,
             "skill": 4,
-            "points": 10,
+            "points": 8,
             "ability": "Si un vaisseau vous attaque, perdez 1 #ch#. A la fin de la phase d'activation, vous pouvez dépenser 1 #ch# pour effectuer une attaque bonus (à initiative 0).",
             "ability_ENG": "If a ship shoots at you, you lose 1 #ch#. At the end of activation phase, you may spend 1 #ch# to perform a bonus attack (at initiative 0).",
             "slots": [     
@@ -12350,7 +12350,7 @@
             "titleID": 0,
             "shipId": 68,
             "skill": 2,
-            "points": 12,
+            "points": 10,
             "ability": "Lorsqu'un vaisseau ennemi dans votre arc de tir attaque à portée 1-2, vous pouvez dépenser 1 de vos #ch# <em>'Convergence des Tirs'</em>. Dans ce cas, vous pouvez dégrader jusqu'à 2 dés d'attaque.",
             "ability_ENG": "When an enemy ship in your firing arc is attacking at range 1-2, you can spend 1 of your <em>'Fire Convergence'</em> charge. If you do, you may downgrade up to 2 attack dice.",
             "slots": [
@@ -12370,7 +12370,7 @@
             "titleID": 0,
             "shipId": 68,
             "skill": 2,
-            "points": 11,
+            "points": 9,
             "ability": "Après avoir entièrement effectué une manoeuvre blanche, vous pouvez dépenser 1 de vos #ch# <em>'Convergence des Tirs'</em> pour vous enlever 1 jeton stress.",
             "ability_ENG": "After you completely excute a white maneuver, you can spend 1 of your <em>'Fire Convergence'</em> charge to remove a stress token from you.",
             "slots": [   
@@ -12390,7 +12390,7 @@
             "titleID": 0,
             "shipId": 68,
             "skill": 2,
-            "points": 12,
+            "points": 10,
             "ability": "Après avoir effectué une action #FO#, vous pouvez transférer 1 de vos jetons concentration à un vaisseau allé à portée 1-2.",
             "ability_ENG": "After you perform a #FO# action, you may transfer 1 of your focus tokens to a friendly ship at range 1-2.",
             "slots": [   
