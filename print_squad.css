@@ -44,6 +44,7 @@ padding: 2px;
     grid-area: 2 / 1 / 3 / 5 ;
     justify-content: center;
     text-align: center;
+    font-size : small;
 
 }
 .leadercharge {
@@ -51,6 +52,12 @@ padding: 2px;
     display: flex;
     justify-content: center;
     padding-bottom: 1.5cm;
+}
+
+.leadercharge img.chargeforceimg {
+    height: 1.5cm;
+    width: 1.5cm;
+    resize: both;
 }
 
 /*FIN DU LEADER, DEBUT DES PILOTES
@@ -135,7 +142,7 @@ padding: 2px;
 }
 .cost{
     grid-area: 1 / 8 / 2 / 9;
-    font-size: x-large;
+    font-size: larger;
     font-weight: bolder;
     color: rgb(12, 85, 73);
     text-align: center;
@@ -189,7 +196,7 @@ padding: 2px;
     justify-content: center;
     background-color: rgba(255, 255, 255, 0.5);
     border: 1px solid black;
-    font-size: medium;
+    font-size: small;
 
 
 
@@ -314,7 +321,7 @@ display: flex;
 text-align: center;
 align-items: center;
 justify-content: center;
-font-size: medium;
+font-size: small;
 
 
 }
@@ -322,21 +329,21 @@ font-size: medium;
     grid-area: 12 / 1 / 13 / 9;
     padding-bottom: 10px;
     text-align: center;
-    font-size: medium;
+    font-size: small;
 
     
 }
 .chs2{
     grid-area: 13 / 1 / 14 / 5;
     border-bottom: 3px black;
-     font-size: medium;
+     font-size: small;
 
 
 }
 .chs3{
     grid-area: 13 / 5 / 14 / 9;
     border-bottom: 3px black;
-    font-size: medium;
+    font-size: small;
 
     
 }

@@ -686,7 +686,7 @@ function addHTMLandCSSforDialsAndBases() {
             if(indexes[j].length > 1){
                 newpilot = document.createElement('div');
                 newpilot.setAttribute('class','pilot');
-                newpilot.innerHTML = "<font size='20'>"+pilots[pilotdata[j][0]]['name']+"</font><br>";
+                newpilot.innerHTML = "<font size='15'>"+pilots[pilotdata[j][0]]['name']+"</font><br>";
                 for ( k=1 ; k<pilotdata[j].length ; k++){ //we begin at 1 because the entry 0 is the pilotID
                     upg = upgrades[pilotdata[j][k]]
                     newupgrade = document.createElement('div');
