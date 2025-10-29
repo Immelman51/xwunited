@@ -272,7 +272,7 @@ function displayPilot(x){
 
     pilotName.textContent = pilots[pid]['name'];
     pilotAbility.textContent = pilots[pid]['ability']; 
-    pilotCost.textContent = pilots[pid]['points'];
+    pilotCost.innerHTML = "<span>"+pilots[pid]['points']+"<span>"; //allows to have a white background on the cost. Sometimes, the background image makes the number unreadable.
         
     const sid = pilots[pid]['shipId']; //We store the ship ID
     pilotShip.textContent = ships[sid]['name'];

@@ -77,6 +77,11 @@ padding: 2px;
     justify-content: center;
     
 }
+
+span {
+    background-color : white;
+}
+
 .pilotImg{
     position: absolute;
     top: 0;
