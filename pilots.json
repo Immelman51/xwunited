@@ -6563,7 +6563,7 @@
             "titleID": 0,
             "shipId": 82,
             "skill": 4,
-            "points": 16,
+            "points": 14,
             "ability": "Après avoir entièrement exécuté une manoeuvre rouge, récupérez 1 #fo#.",
             "ability_ENG": "After you fully execute a red maneuver, recover 1 #fo#.",
             "slots": [
@@ -6584,7 +6584,7 @@
             "titleID": 0,
             "shipId": 82,
             "skill": 3,
-            "points": 16,
+            "points": 14,
             "ability": "Après avoir coordonné, vous pouvez dépenser 1 #fo#. Dans ce cas, un autre vaisseau à portée 1-2 de vous peut effectuer la même action. Puis recevez 1 jeton contrainte et épuisement.",
             "ability_ENG": "After you coordinate, you may spend 1 #fo#. If you do, another ship at range 1-2 of you may perform the same action. Then receive 1 strain and 1 deplete token.",
             "slots": [
@@ -6604,7 +6604,7 @@
             "titleID": 0,
             "shipId": 82,
             "skill": 2,
-            "points": 18,
+            "points": 16,
             "ability": "Pendant la phase système, vous pouvez dépenser 1 #fo#. Dans ce cas, jusqu'à la fin du tour,vous lancez 1 dé supplémentaire lorsque attaquez, et vous lancez 1 dé de moins lorsque vous défendez.",
             "ability_ENG": "During the System phase, you may spend 1 #fo#. If you do, until the end of the round, when you attack, you roll 1 additional die, and when you defend, you roll 1 less die.",
             "slots": [
@@ -6624,7 +6624,7 @@
             "titleID": 0,
             "shipId": 82,
             "skill": 4,
-            "points": 15,
+            "points": 13,
             "ability": "Après avoir effectué une attaque qui a manqué, si au moins 1 résultat #hit#/#crit# ont été neutralisés, le défenseur reçoit 1 jeton contrainte ou épuisement de votre choix.",
             "ability_ENG": "After you perform an attack that missed, if 1 or more #hit#/#crit# results were neutralized, the defender gains 1 strain token or 1 deplete token.",
             "slots": [
@@ -9602,7 +9602,7 @@
             "titleID": 289,
             "shipId": 82,
             "skill": 5,
-            "points": 17,
+            "points": 15,
             "ability": "<img class='chargeforceimg' src='img/forcestat.png'> <img class='chargeforceimg' src='img/forcestat.png'> <img class='chargeforceimg' src='img/forcestat.png'>??",
             "ability_ENG": "<img class='chargeforceimg' src='img/forcestat.png'> <img class='chargeforceimg' src='img/forcestat.png'> <img class='chargeforceimg' src='img/forcestat.png'>??",
             "slots": [
@@ -9662,7 +9662,7 @@
             "titleID": 289,
             "shipId": 82,
             "skill": 3,
-            "points": 16,
+            "points": 14,
             "ability": "??",
             "ability_ENG": "??",
             "slots": [     
@@ -9693,7 +9693,7 @@
             "titleID": 289,
             "shipId": 82,
             "skill": 3,
-            "points": 16,
+            "points": 14,
             "ability": "??",
             "ability_ENG": "??",
             "slots": [     
@@ -12411,7 +12411,7 @@
             "titleID": 320,
             "shipId": 82,
             "skill": 4,
-            "points": 16,
+            "points": 14,
             "ability": "Après avoir effectué une action, vous pouvez effectuer une action de scénario gratuite en la considérant rouge.",
             "ability_ENG": "After you perform an action, you may perform a free scenario action treating it as a red action.",
             "slots": [ 
@@ -12437,7 +12437,7 @@
             "titleID": 320,
             "shipId": 82,
             "skill": 2,
-            "points": 17,
+            "points": 15,
             "ability": "Lorsque vous obstruez une attaque, les vaisseaux alliés peuvent utiliser vos jetons pour modifier leurs dés de défense ou d'attaque.",
             "ability_ENG": "While you obstruct an attack, friendly ships can use your tokens to modify their defense or attack dice.",
             "slots": [   
@@ -12463,7 +12463,7 @@
             "titleID": 320,
             "shipId": 82,
             "skill": 1,
-            "points": 16,
+            "points": 14,
             "ability": "Au début de la phase d'engagement, vous pouvez dépenser 1 fo#. Dans ce cas, vous pouvez choisir un vaiseeau dans votre arc de tir à portée 1-2. Ce vaisseau dépense 1 jeton vert ou reçoit 1 jeton contrainte.",
             "ability_ENG": "At the start of engagement phase, you may spend 1 #fo#. If you do, you may choose a ship in your firing arc at range 1-2. That ship spends 1 green token or takes 1 strain token.",
             "slots": [
