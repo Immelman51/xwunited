@@ -104,7 +104,7 @@ async function testListValidity() {
         }
     }   
     }
-     if(totalcostvalue>30){
+     if(totalcostvalue>50){
         listValidity=false;
         return;
         }

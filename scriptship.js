@@ -288,7 +288,7 @@ function testListValidity() {
         return;
     }
     //Test if the cost of all ships exceed 30, the limit for a squad
-    if(totalcostvalue>30){
+    if(totalcostvalue>50){
         listValidity=false;
         return;
     }
@@ -347,7 +347,7 @@ function updateTotalCost() { //update total cost
         totalcostvalue = totalcostvalue + pilot_list[j]["points"];
     }
     totalcount= document.getElementById("totalcost");
-    totalcount.innerHTML = "TOT<br><span style='font-size:x-large'>"+totalcostvalue+"</span>";
+    totalcount.innerHTML = "TOT<br>"+(50-totalcostvalue);
     //We are going to test the List validity, and if it's unvalid, we add the class unvalid that paints the background in red
     testListValidity();
     if(listValidity===false){
@@ -415,7 +415,7 @@ function updateUpgradeCount(yy) { //update the table logistic_Equipped and talen
         }
     }
     let logisticLeaderValue = leaders[leaderSelected_id]["logistic"];
-    logisticCounter.innerHTML = 'LOG<br><span style="font-size:x-large">'+(logisticLeaderValue-sumLogisticEquipped)+'</span>';
+    logisticCounter.innerHTML = 'LOG<br>'+(logisticLeaderValue-sumLogisticEquipped);
     //We test the list Validity, and if it's not valid, we paint the logistic in red
    
     if(logisticLeaderValue-sumLogisticEquipped<0){
@@ -1644,8 +1644,10 @@ function loadSquadwithCode(e) {
                 }
                 
             }
-           
+           updateUpgradeCount(m-1);
+            update_restricted_List(m-1);
             }
+        
         }
     }
 
