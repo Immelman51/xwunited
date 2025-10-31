@@ -5988,9 +5988,9 @@
              "add_Data": [0],
              "force": 0,
              "charge": [0],
-             "points": 5,
-             "effect": "Before you engage, you may choose another friendly ship at range 1-2. You may transfer to that ship 1 token of a type that ship does not have. That ship may transfer 1 token to you of a type you do not have.",
-            "effect_ENG": "Before you engage, you may choose another friendly ship at range 1-2. You may transfer to that ship 1 token of a type that ship does not have. That ship may transfer 1 token to you of a type you do not have.",
+             "points": 3,
+             "effect": "ACTION : Execute a 5#straight# forward maneuver. If your final position overlaps another ship, this ship suffers 1/2/3/4 damage if you are a small/medium/large/huge ship. Then your ship is destroyed.",
+            "effect_ENG": "ACTION : Exécutez une maneuvre 5#straight# vers l'avant. Si votre position finale recouvre celle d'un autre vaisseau, ce vaisseau subit 1/2/3/4 dégats si vous êtes un vaisseau petit/moyen/grand/énorme. Puis votre vaisseau est détruit.",
              "faction": ["Heroes_of_the_Resistance"]
                                      
              
