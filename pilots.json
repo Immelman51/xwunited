@@ -5556,29 +5556,30 @@
             ]
         },
         {
-            "name": "Aftab Ackbar",
-            "name_ENG": "Aftab Ackbar",
+            "name": "Corus Kapellim",
+            "name_ENG": "Corus Kapellim",
             "id": 239,
             "max_per_squad": 1,
             "faction": "Heroes_of_the_Resistance",
             "ship": "BTA-NR2 Y-wing",
             "modify": false,
-		    "charge":[0],
+            "charge":[0],
             "force": 0,
             "titleID": 0,
             "shipId": 74,
-            "skill": 2,
-            "points": 10,
+            "skill": 1,
+            "points": 9,
             
-            "ability": "Après avoir executé une manoeuvre basique rouge ou effectué une action rouge, si vous avez exactement 1 jeton stress, vous pouvez gagner 1 jeton contrainte pour retirer ce jeton stress.",
-            "ability_ENG": "After you execute a red basic maneuver or perform a red action, if you have exactly 1 stress token, you may gain 1 strain token to remove that stress token.",
+            "ability": "",
+            "ability_ENG": "Before you engage, you may choose 1 ship in your firing arc at range 0-1. If you do, transfer 1 green token from that ship to yourself.",
             "slots": [
-                "Talent-piloting"            
+                "Talent-piloting"
             ]
         },
+        
         {
-            "name": "Lega Fossang",
-            "name_ENG": "Lega Fossang",
+            "name": "Wilsa Teshlo",
+            "name_ENG": "Wilsa Teshlo",
             "id": 240,
             "max_per_squad": 1,
             "faction": "Heroes_of_the_Resistance",
@@ -13716,10 +13717,92 @@
                
                 
             ]
+        },
+        {
+            "name": "Lega Fossang",
+            "name_ENG": "Lega Fossang",
+            "id": 606,
+            "max_per_squad": 1,
+            "faction": "Heroes_of_the_Resistance",
+            "ship": "BTA-NR2-W Y-wing",
+            "modify": false,
+            "charge":[0],
+            "force": 0,
+            "titleID": 0,
+            "shipId": 107,
+            "skill": 4,
+            "points": 11,
+            
+            "ability": "",
+            "ability_ENG": "After you perform an attack, if the defender was dealt a faceup damage card, the defender gains 1 strain token unless it chooses 1 non-recurring #ch# from 1 of its equipped upgrades and loses that #ch#.",
+            "slots": [
+                "Talent-shooting"
+            ]
+        },
+        {
+            "name": "Shasa Zaro",
+            "name_ENG": "Shasa Zaro",
+            "id": 607,
+            "max_per_squad": 1,
+            "faction": "Heroes_of_the_Resistance",
+            "ship": "BTA-NR2-W Y-wing",
+            "modify": false,
+            "charge":[0],
+            "force": 0,
+            "titleID": 0,
+            "shipId": 107,
+            "skill": 3,
+            "points": 11,
+            
+            "ability": "",
+            "ability_ENG": "After you defend, you may choose a friendly ship in your #B180# at range 0-2 and 1 of your green tokens. If you do, that ship gains a matching token.",
+            "slots": [
+                "Talent-leadership"
+            ]
+        },
+        {
+            "name": "Aftab Ackbar",
+            "name_ENG": "Aftab Ackbar",
+            "id": 608,
+            "max_per_squad": 1,
+            "faction": "Heroes_of_the_Resistance",
+            "ship": "BTA-NR2-W Y-wing",
+            "modify": false,
+            "charge":[0],
+            "force": 0,
+            "titleID": 0,
+            "shipId": 107,
+            "skill": 2,
+            "points": 10,
+            
+            "ability": "Après avoir executé une manoeuvre basique rouge ou effectué une action rouge, si vous avez exactement 1 jeton stress, vous pouvez gagner 1 jeton contrainte pour retirer ce jeton stress.",
+            "ability_ENG": "After you execute a red basic maneuver or perform a red action, if you have exactly 1 stress token, you may gain 1 strain token to remove that stress token.",
+            "slots": [
+                "Talent-piloting"
+            ]
+        },
+        
+        {
+            "name": "C'ai Threnalli",
+            "name_ENG": "C'ai Threnalli",
+            "id": 609,
+            "max_per_squad": 1,
+            "faction": "Heroes_of_the_Resistance",
+            "ship": "BTA-NR2-W Y-wing",
+            "modify": false,
+            "charge":[0],
+            "force": 0,
+            "titleID": 0,
+            "shipId": 107,
+            "skill": 2,
+            "points": 10,
+            
+            "ability": "",
+            "ability_ENG": "After you fully execute a maneuver, if you moved through a friendly ship, you may perform an #EV# action.",
+            "slots": [
+                "Talent-piloting"
+            ]
         }
-
-
-
 
    
     ]

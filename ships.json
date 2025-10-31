@@ -2959,7 +2959,36 @@
                     [ 0, 0, 3, 0, 0, 0]
                 ],
                 "slots": ["Illicit","Modification"]
-            }
+            },
+             {
+          
+                 "name": "BTA-NR2-W Y-wing",
+                 "factions": ["Heroes_of_the_Resistance"],
+                 "id": 107,
+                 "attack": [["F",2]],
+                 "agility": 1,
+                 "hull": 4,
+                 "shields": 5,
+                 "base": "small",
+                 "chassis": [66],
+                 "actions": [
+                     [1,"Fo W","Un R"],
+                     [0,"Bo R"],
+                     [0,"Lo R"],
+                     [0,"Br R"]
+                     
+                 
+                 ],
+                 "maneuvers": [
+                     [ 0, 0, 0, 0, 0, 0],
+                     [ 0, 1, 1, 1, 0, 0],
+                     [ 2, 2, 1, 2, 2, 0],
+                     [ 3, 2, 1, 2, 3, 0],
+                     [ 0, 0, 3, 0, 0, 0],
+                     [ 0, 0, 0, 0, 0, 3]
+                 ],
+                 "slots": ["Tech","Missile","Torpedo","Missile","Astromech","Modification","Modification"]
+             }
           
             
             

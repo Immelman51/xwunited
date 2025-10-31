@@ -542,7 +542,17 @@
  "effect2": "",
  "effect3": "",
  "effect1_ENG": "(Hyperspace Jump) : You and your mother ship begin in reserve. At the beginning of the first end phase, place yourself within range 1 of a border, beyond range 3 of an enemy ship."
+},
+{
+ "name":"Devastating Barrage",
+ "id":66,
+ "nbrOfEffects":1,
+ "effect1":"(Tir de Barrage Dévastateur) : tant que vous effectuez une attaque #tpd# ou #mis#, si le défenseur est dans votre #BULLS#, vos résultats #crit# ne peuvent pas être annulés par des résultats #evd#.",
+ "effect2": "",
+ "effect3": "",
+ "effect1_ENG": "(Devastating Barrage) : while you perform a #tpd# and #mis# attack, if the defender is in your #BULLS#, your #crit# results cannot be canceled by #evd# results."
 }
+
 
   
 
