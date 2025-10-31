@@ -435,7 +435,7 @@
     "name":"Optimized Launching Tubes",
     "id":53,
     "nbrOfEffects": 1,
-    "effect1ENG":"(Optimized Launching Tubes) : You may launch device instead of dropping them, using the same template. When you perform an #UN# action, you may suffer 1 #crit# damage or expose a damage card to recover the #ch# you've just spent."
+    "effect1ENG":"(Optimized Launching Tubes) : You may launch device instead of dropping them, using the same template. When you perform an #UN# action, you may suffer 1 #crit# damage or expose a damage card to recover the #ch# you've just spent.",
     "effect1":"(Tubes de lancement optimisés) : Vous pouvez lancer des engins au lieu de les larguer, en utilisant le même gabarit. Lorsque vous effectuez une action #UN#, vous pouvez subir un dégat #crit# ou exposer une carte de dégat pour récupérer la #ch# que vous venez d'utiliser",
     "effect2": "",
     "effect3": "" 

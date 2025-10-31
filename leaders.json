@@ -197,7 +197,7 @@
      "leaderfaction": ["Imperial_Remnants","",""],
      "leaderid": 21,
      "numberOfFactions": 1,
-     "leaderability": "ACTION : (cette action peut être effectuée plusieurs fois parr ronde) Si vous êtes au delà de la portée 4 de votre bord, récupérez 1 #ch#. En phase Système, vous pouvez dépenser 3 #ch# pour gagnez 1 #scenario_point# et réparer jusqu'à 1 carte de dégat face cachée et jusqu'à 1 carte de dégat face ouverte.",
+     "leaderability": "ACTION : (cette action peut être effectuée plusieurs fois par ronde) Si vous êtes au delà de la portée 4 de votre bord, récupérez 1 #ch#. En phase Système, vous pouvez dépenser 3 #ch# pour gagnez 1 #scenario_point# et réparer jusqu'à 1 carte de dégat face cachée et jusqu'à 1 carte de dégat face ouverte.",
      "charge": [3,"Red"],
      "logistic": 18
      },
