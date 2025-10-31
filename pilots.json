@@ -5471,7 +5471,7 @@
             "id": 235,
             "max_per_squad": 1,
             "faction": "Heroes_of_the_Resistance",
-            "ship": "Heroes_of_the_Resistance Transport Pod",
+            "ship": "Resistance Transport u",
             "charge":[0],
             "force": 0,
             "titleID": 0,
@@ -5492,7 +5492,7 @@
             "id": 236,
             "max_per_squad": 1,
             "faction": "Heroes_of_the_Resistance",
-            "ship": "Heroes_of_the_Resistance Transport Pod",
+            "ship": "Resistance Transport Pod",
             "charge":[0],
             "force": 0,
             "titleID": 0,
@@ -5516,7 +5516,7 @@
             "id": 237,
             "max_per_squad": 1,
             "faction": "Heroes_of_the_Resistance",
-            "ship": "Heroes_of_the_Resistance Transport Pod",
+            "ship": "Resistance Transport Pod",
             "modify": false,
 		    "charge":[0],
             "force": 0,
@@ -5570,7 +5570,7 @@
             "skill": 1,
             "points": 9,
             
-            "ability": "",
+            "ability": "Avant de vous engager, vous pouvez choisir un vaisseau dans votre arc de tir à portée 0-1. Dans ce cas, transférez 1 jeton vert de ce vaisseau vers votre vaisseau.",
             "ability_ENG": "Before you engage, you may choose 1 ship in your firing arc at range 0-1. If you do, transfer 1 green token from that ship to yourself.",
             "slots": [
                 "Talent-piloting"
@@ -13733,7 +13733,7 @@
             "skill": 4,
             "points": 11,
             
-            "ability": "",
+            "ability": "Après avoir effectué une attaque, si le défenseur a reçu une carte de dégat face ouverte, le défenseur reçoit 1 jeton contrainte à moins qu'il ne choisisse 1 #ch# non récupérable de l'une des améliorations et qu'il la perde.",
             "ability_ENG": "After you perform an attack, if the defender was dealt a faceup damage card, the defender gains 1 strain token unless it chooses 1 non-recurring #ch# from 1 of its equipped upgrades and loses that #ch#.",
             "slots": [
                 "Talent-shooting"
@@ -13754,7 +13754,7 @@
             "skill": 3,
             "points": 11,
             
-            "ability": "",
+            "ability": "Après avoir défendu, vous pouvez choisir un vaisseau allié dans votre #B180# à portée 0-2 et 1 de vos jetons verts. Dans ce cas, ce vaisseau gagne un jeton équivalent.",
             "ability_ENG": "After you defend, you may choose a friendly ship in your #B180# at range 0-2 and 1 of your green tokens. If you do, that ship gains a matching token.",
             "slots": [
                 "Talent-leadership"
@@ -13797,7 +13797,7 @@
             "skill": 2,
             "points": 10,
             
-            "ability": "",
+            "ability": "Après avoir entièrement excuté une manoeuvre, si vous vous êtes déplacé à travers un vaisseau allié, vous pouvez effectuer une action #EV#.",
             "ability_ENG": "After you fully execute a maneuver, if you moved through a friendly ship, you may perform an #EV# action.",
             "slots": [
                 "Talent-piloting"

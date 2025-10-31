@@ -5989,8 +5989,8 @@
              "force": 0,
              "charge": [0],
              "points": 3,
-             "effect": "ACTION : Execute a 5#straight# forward maneuver. If your final position overlaps another ship, this ship suffers 1/2/3/4 damage if you are a small/medium/large/huge ship. Then your ship is destroyed.",
-            "effect_ENG": "ACTION : Exécutez une maneuvre 5#straight# vers l'avant. Si votre position finale recouvre celle d'un autre vaisseau, ce vaisseau subit 1/2/3/4 dégats si vous êtes un vaisseau petit/moyen/grand/énorme. Puis votre vaisseau est détruit.",
+             "effect": "ACTION : Exécutez une maneuvre 5#straight# vers l'avant. Si votre position finale recouvre celle d'un autre vaisseau, ce vaisseau subit 1/2/3/4 dégats si vous êtes un vaisseau petit/moyen/grand/énorme. Puis votre vaisseau est détruit.",
+            "effect_ENG": "ACTION : Execute a 5#straight# forward maneuver. If your final position overlaps another ship, this ship suffers 1/2/3/4 damage if you are a small/medium/large/huge ship. Then your ship is destroyed.",
              "faction": ["Heroes_of_the_Resistance"]
                                      
              
