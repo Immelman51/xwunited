@@ -682,7 +682,7 @@ function addHTMLandCSSforDialsAndBases() {
     const upgradeContainer = document.getElementById('upgrade-container');
     upgradeContainer.innerHTML = ""; //we re-initialize this div in case you click several time on print. (without this it's going to write again the upgrades descriptions.
     if (elementsToPrintArray[1]===true){
-        for (j=2 ; j<indexes.length ; j++){
+        for (j=1 ; j<indexes.length ; j++){
             if(indexes[j].length > 1){
                 newpilot = document.createElement('div');
                 newpilot.setAttribute('class','pilot');
