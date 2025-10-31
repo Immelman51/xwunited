@@ -692,7 +692,7 @@
             "add_Data": [0],
             "force": 0,
             "charge": [1,"0"],
-            "effect": "<img class='chargeforceimg' src='img/chargestat.png'> 3#BULLS# Portée 1 : dépensez 1 #ch#. Si le défenseur est dans votre #BULLS#, vous pouvez améliorer 1 résultat #hit# en #crit#. Gagnez un jeton épuisement.",
+            "effect": "<img class='chargeforceimg' src='img/chargestat.png'> 3#Farc# Portée 1 : dépensez 1 #ch#. Si le défenseur est dans votre #BULLS#, vous pouvez améliorer 1 résultat #hit# en #crit#. Gagnez un jeton épuisement.",
             "effect_ENG": "",
             "faction": ""
         },

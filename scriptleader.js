@@ -127,7 +127,7 @@ function description_leader() {
     descriptionLeaderField.innerHTML = ""; // Clear previous content
     for(let i=0; i<leaders[leaderSelected_id]["charge"][0]; i++){
         
-        if(leaders[leaderSelected_id]["charge"][1] === "0"){
+        if(leaders[leaderSelected_id]["charge"][1] === "Yellow"){
             descriptionLeaderField.innerHTML += "<img class='chargeforceimg' src='img/chargestat.png'>";
         } else if (leaders[leaderSelected_id]["charge"][1] === "Red"){
             descriptionLeaderField.innerHTML += "<img class='chargeforceimg' src='img/chargestatRed.png'>";

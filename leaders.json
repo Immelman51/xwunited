@@ -41,7 +41,7 @@
      "leaderid": 4,
      "charge": [1,"Red"],
      "numberOfFactions": 1,
-     "leaderability": "Au début de la phase de programmation, lancez 1 dé vert. <br><<'vierge' : brouillez un de vos vaisseaux>> ; <<#eye# : brouillez 1 vaisseau allié, assignez 1 calcul à un vaisseau.>> ; <br><<#evd#: récupérez 1 #ch#.>><br>Lorsque vous détruisez un vaisseau adverse, vous pouvez dépenser 1 #ch# pour gagner 2 #scenario_point#",
+     "leaderability": "Au début de la phase de programmation, lancez 1 dé vert. <<'vierge' : brouillez un de vos vaisseaux>> ; <<#eye# : brouillez 1 vaisseau allié, assignez 1 calcul à un vaisseau.>> ; <<#evd#: récupérez 1 #ch#.>><br>Lorsque vous détruisez un vaisseau adverse, vous pouvez dépenser 1 #ch# pour gagner 2 #scenario_point#",
      "logistic": 25
      },
      {
