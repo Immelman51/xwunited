@@ -141,7 +141,7 @@
      "leaderfaction": ["Agents_of_Chaos","",""],
      "leaderid": 15,
      "numberOfFactions": 1,
-     "leaderability": "ACTION : Choisissez un vaisseau ennemi avec de la force. Il perd 1 point de force et un vaisseau allié en regagne 1. <br>ACTION : Dépensez 1 #ch# et choisissez un vaisseau ennemi sans force à porter 0-3. Il gagne 1 point de force qu'il peut utiliser comme un calcul en defense. Gagnez 2 #scenario_point#.",
+     "leaderability": "ACTION : Choisissez un vaisseau ennemi avec de la force. Il perd 1 point de force et un vaisseau allié en regagne 1. <br>ACTION : Dépensez 1 #ch# et choisissez un vaisseau ennemi sans force à portée 0-3. Il gagne 1 point de force qu'il peut utiliser comme un calcul en defense. Gagnez 2 #scenario_point#.",
      "charge": [3,"Yellow"],
      "logistic": 18
      },
