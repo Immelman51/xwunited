@@ -148,7 +148,7 @@ for(j=0; j<nbrOfLeaderCharges ;j++){ //We display as many charge logos as the nu
             newcharge.setAttribute("src","img/chargestatRed.png");
             leaderCharge.appendChild(newcharge);
             break;
-        case "0" :
+        case "Yellow" :
             newcharge = document.createElement('img');
             newcharge.setAttribute("class","chargeforceimg");
             newcharge.setAttribute("src","img/chargestat.png");

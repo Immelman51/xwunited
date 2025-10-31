@@ -10821,7 +10821,10 @@
             "Title",
             "Talent-elite",
             "Talent-piloting",
-            "Talent-shooting"
+            "Talent-shooting",
+            "Gunner",
+            "Cannon",
+            "Illicit"
         ],
         "modifier_func": [
                 ["auto_equip","Title",139]                       
@@ -10847,7 +10850,10 @@
             "slots": [     
             "Title",
             "Talent-shooting",
-            "Talent-shooting"                   
+            "Talent-shooting",
+            "Gunner",
+            "Cannon",
+            "Illicit"
         ],
         "modifier_func": [
                 ["auto_equip","Title",139]                       
@@ -10873,7 +10879,10 @@
             "slots": [     
             "Title",
             "Talent-piloting",
-            "Talent-shooting"                   
+            "Talent-shooting",
+            "Gunner",
+            "Cannon",
+            "Illicit"
         ],
         "modifier_func": [
                 ["auto_equip","Title",139]                       
