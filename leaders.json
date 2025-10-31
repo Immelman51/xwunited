@@ -412,7 +412,7 @@
      },
       {
         "leadername": "##Directeur Krennic",
-        "leaderfaction": ["I.S.B","Imperial_Elite_Squadrons",""],
+        "leaderfaction": ["ISB","Imperial_Elite_Squadrons",""],
         "leaderid": 45,
         "numberOfFactions": 2,
         "leaderability":"",
