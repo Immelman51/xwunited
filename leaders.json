@@ -243,7 +243,7 @@
      "leadername": "Dark Vador",
      "leaderfaction": ["Bounty_Hunters_Guild","Imperial_Academy" ,""],
      "leaderid": 26,
-     "charge": [2,"0"],
+     "charge": [2,"Yellow"],
      "numberOfFactions": 2,
      "leaderability": "1 fois par ronde, lorsque vous attaquez un vaisseau, vous pouvez dépenser 1 #ch# pour améliorer un dé d'attaque.",
      "logistic": 15
@@ -252,7 +252,7 @@
      "leadername": "Amiral Ackbar",
      "leaderfaction": ["Pirates_and_Smugglers", "Rebel_Alliance", ""],
      "leaderid": 27,
-     "charge": [2,"0"],
+     "charge": [2,"Yellow"],
      "numberOfFactions": 2,
      "leaderability": "Lorsqu'un de vos vaisseaux est déclaré défenseur lors d'un attaque, vous pouvez dépenser 1 #ch#. Dans ce cas, il peut effectuer un tonneau ou une accélération puis il reçoit un marqueur de stress. Si le vaisseau n'a pas l'action utilisée dans sa barre d'action ou qu'il était déjà stressé, il prend 1 dégat ou expose une carte de dégat. Ce mouvement peut annuler l'attaque en cours.",
      "logistic": 15

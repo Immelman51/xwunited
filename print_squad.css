@@ -13,10 +13,10 @@
 }
 .container {
     width: 18.9cm;
-    height: 4cm;
+    height: auto;
     display: grid;
-    grid-template-columns: 1cm 1.5cm 1.5cm 14.4cm ;
-    grid-template-rows: 1cm auto 1.5cm;
+    grid-template-columns: 1cm 1.5cm 1.5cm auto auto ;
+    grid-template-rows: 1cm auto;
     border: thick double;
 margin: 2px;
 padding: 2px;
@@ -48,7 +48,7 @@ padding: 2px;
 
 }
 .leadercharge {
-    grid-area: 3 / 1 / 4 / 6 ;
+    grid-area: 2 / 5 / 3 / 6 ;
     display: flex;
     justify-content: center;
     padding-bottom: 1.5cm;
