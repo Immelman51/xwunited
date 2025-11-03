@@ -2630,7 +2630,8 @@
             "slots": [
                 "Droid",
                 "Title",
-                "Talent-piloting"
+                "Talent-piloting",
+                "Calculator"
                 
                 
             ],
@@ -2661,7 +2662,8 @@
             "slots": [
                 "Droid",
                 "Title",
-                "Talent-elite"
+                "Talent-elite",
+                "Calcultator"
                 
                 
             ],
