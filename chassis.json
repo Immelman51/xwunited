@@ -246,7 +246,7 @@
     "id":30,
     "nbrOfEffects": 1,
     "effect1ENG":"(Rotating Launcher) : You can rotate your #tur# indicator only to your #Farc# or #Barc#. You must treat the #Farc# requirement of your equipped #mis# upgrades as #tur#.",
-    "effect1":"(Lanceur Rotatif) : Vous pouvez pivoter votre indicateur #tur# uniquement vers votre #Farc# ou #Barc#. Vous devez considérer le prérequis #Farc# de vos améliorations #mis# et #tpd# équipées comme étant #tur#.",
+    "effect1":"(Lanceur Rotatif) : Vous pouvez pivoter votre indicateur #tur# uniquement vers votre #Farc# ou #Barc#. Vous devez considérer le prérequis #Farc# de vos améliorations #mis# équipées comme étant #tur#.",
     "effect2": "",
     "effect3": "" 
 },
