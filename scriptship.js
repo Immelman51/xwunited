@@ -1645,8 +1645,8 @@ function loadSquadwithCode(e) {
                 }
                 
             }
-           updateUpgradeCount(m-1);
-            update_restricted_List(m-1);
+        updateUpgradeCount(l-1);
+        update_restricted_List(l-1);
             }
         
         }

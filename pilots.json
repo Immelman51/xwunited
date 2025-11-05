@@ -1583,7 +1583,7 @@
             "charge":[0],
             "force": 2,
             "modify": true,
-		    "skill": 0,
+		    "skill": 1,
             "points": 8,
             "force_side": "light",
             "max_per_squad": 1,
@@ -4832,7 +4832,7 @@
             "titleID": 0,
             "shipId": 47,
 		    "modify": false,
-            "skill": 0,
+            "skill": 1,
             "points": 13,
             
             "ability": "Tant que vous êtes endommagé, considérez votre initiative étant à 6.",

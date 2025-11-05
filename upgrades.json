@@ -1736,11 +1736,11 @@
             "modify": false,
             "slot": "Tie mod",
             "points": 2,
-            "effect": "<img class='chargeforceimg' src='img/chargestat.png'> <img class='chargeforceimg' src='img/chargestat.png'> Avant d’exécuter une manœuvre de Virage Koiogran à vitesse 1–3, vous pouvez dépenser 1 #ch# pour exécuter cette manœuvre en tant que #Sleft# ou #Sright# de même vitesse à la place, et vice-versa.",
+            "effect": "Avant d’exécuter une manœuvre de Virage Koiogran à vitesse 1–3, vous pouvez dépenser 1 #ch# pour exécuter cette manœuvre en tant que #Sleft# ou #Sright# de même vitesse à la place, et vice-versa.",
             "effect_ENG": "",
             "add_Data": [0],
             "force": 0,
-            "charge": [2,"0"],
+            "charge": [0],
             "faction": ""
         },
         {
@@ -1753,9 +1753,9 @@
             "slot": "Tie mod",
             "add_Data": [0],
             "force": 0,
-            "charge": [2,"0"],
+            "charge": [0],
             "points": 2,
-            "effect": "<img class='chargeforceimg' src='img/chargestat.png'> <img class='chargeforceimg' src='img/chargestat.png'> Après avoir effectué une manœuvre rouge, vous pouvez dépenser 1 #ch# pour effectuer un tonneau.",
+            "effect": "Après avoir effectué une manœuvre rouge, vous pouvez dépenser 1 #ch# pour effectuer un tonneau.",
             "effect_ENG": "",
             "faction": ""
         },

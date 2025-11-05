@@ -42,10 +42,10 @@ for(i=1; i<3 ; i++){
 }
 
 document.getElementById('cosmicanomaly1').setAttribute('src','img/scenario/Wild_CosmicAnomaly_'+language+'.png');
-document.getElementById('fracturedsensors1').setAttribute('src','img/scenario/Wild_FracturedSensors_'+language+'.png');
+document.getElementById('avoidTheWreckage').setAttribute('src','img/scenario/Wild_AvoidTheWreckage_'+language+'.png');
 document.getElementById('outpost1').setAttribute('src','img/scenario/Wild_Outpost_'+language+'.png');
 document.getElementById('solarwinds1').setAttribute('src','img/scenario/Wild_SolarWinds_'+language+'.png');
-document.getElementById('theyexplodenow1').setAttribute('src','img/scenario/Wild_TheyExplodeNow_'+language+'.png');
+document.getElementById('supply').setAttribute('src','img/scenario/Wild_Supply_'+language+'.png');
 
 }
 
