@@ -1959,7 +1959,7 @@
             "faction": ["Bounty_Hunters_Guild"],
             "modifier_func": [
                 ["add_slots","Condition"],
-                ["auto_equip","Condition",268],
+                ["auto_equip","Condition",368],
                 ["may_remove_slots","Condition"]
                 
             ]
