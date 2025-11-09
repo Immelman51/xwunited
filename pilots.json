@@ -2010,8 +2010,8 @@
             "skill": 2,
             "points": 16,
             
-            "ability": "Si vous n’êtes pas protégé, réduisez la difficulté de vos virages légers.",
-            "ability_ENG": "If you are not protected, reduce the difficulty of your bank turns.",
+            "ability": "Réduisez la difficulté de vos virages légers.",
+            "ability_ENG": "Reduce the difficulty of your bank turns.",
             "slots": [
                 "Droid",
                 "Talent-piloting"               
@@ -2095,8 +2095,8 @@
             "skill": 2,
             "points": 3,
             
-            "ability": "Si vous n’êtes pas protégé, réduisez la difficulté de vos virages légers.",
-            "ability_ENG": "If you are not protected, reduce the difficulty of your bank turns.",
+            "ability": "Réduisez la difficulté de vos virages légers.",
+            "ability_ENG": "Reduce the difficulty of your bank turns.",
             "slots": [
                 "Droid",
                 "Talent-piloting"
