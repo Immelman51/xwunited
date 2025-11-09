@@ -2765,8 +2765,8 @@
             "charge": [0],
             "points": 0,
             "faction": ["Separatist_Government"],
-            "effect": "ACTION : Si vous êtes à portée 0-1 d'un élément de scénario, vous pouvez le déplacer en utilisant le gabarit 1 #straight#.",
-            "effect_ENG": ""
+            "effect": "ACTION : Si vous êtes à portée 0-1 d'un élément de scénario, vous pouvez le déplacer ou le relocaliser en utilisant le gabarit 2 #straight#.",
+            "effect_ENG": "ACTION : If you are at range 0-1 of a scenario element, you may move it or relocate it using a 2#straight# template."
         },
         {
             "name": "Missile Discorde",
@@ -2781,8 +2781,8 @@
             "charge": [0],
             "points": 2,
             "faction": ["Trade_Federation","Agents_of_Chaos","Separatist_Government"],
-            "effect": "Au début de la phase d’engagement, vous pouvez dépenser 1 marqueur de calcul et 1 #ch# pour lancer 1 nuée de droïdes buzz en utilisant le gabarit 3 #Lbank#, #straight# ou #Rbank#.<br>La #ch# de cette carte ne peut pas être récupérée",
-            "effect_ENG": ""
+            "effect": "Au début de la phase d’engagement, vous pouvez dépenser 1 marqueur de calcul et 1 #ch# pour lancer 1 nuée de droïdes buzz (Agilité : 1, Coque : 1) en utilisant le gabarit 3 #Lbank#, #straight# ou #Rbank#.<br>Après qu'un vaisseau ennemi traverse ou chevauche une nuée de droïdes buzz, relocalisez la dans la glissière avant ou arrière de ce vaisseau (il est à portée 0). La nuée de droides buzz ne peut pas chevaucher un objet de cette façon. Si la nuée ne peut pas être placée dans une glissière, la nuée et le vaisseau subissent 1 #hit#.<br>Phase d'Engagement : à initiative 0, chaque vaisseau ennemi à portée 0 subit 1 #crit# damage.",
+            "effect_ENG": "At the start of engagement phase, you may spend 1 calculate token and 1#ch# to launch 1 buzz droid swarm (Agility : 1, Hull  : 1) using the 3 #Lbank#, #straight# or #Rbank# template.<br>After an enemy ship moves through or overlaps the buzz droid swarm, relocate to its front or rear guides (you are at range 0 of this ship). The buzz droid swarm cannot overlap an object this way. If the swarm cannot be placed at either set of guides, the swarm and that ship each suffer 1 #hit#.<br>Engagement Phase: At initiative 0, each enemy ship at range 0 of the swarm suffers 1 #crit# damage."
         },
         {
             "name": "Droïde Sonde DRK1",
@@ -2797,8 +2797,8 @@
             "charge": [2,"0"],
             "points": 2,
             "faction": ["Trade_Federation","Agents_of_Chaos","Separatist_Government"],
-            "effect": "<img class='chargeforceimg' src='img/chargestat.png'> <img class='chargeforceimg' src='img/chargestat.png'> Pendant la phase de fin, vous pouvez dépenser 1 #ch# pour larguer ou lancer 1 droïde sonde DRK-1 en utilisant un gabarit de vitesse 3.",
-            "effect_ENG": ""
+            "effect": "<img class='chargeforceimg' src='img/chargestat.png'> <img class='chargeforceimg' src='img/chargestat.png'> Pendant la phase de fin, vous pouvez dépenser 1 #ch# pour larguer ou lancer 1 droïde sonde DRK1 (Agilité : 3, Coque : 1) en utilisant un gabarit de vitesse 3.<br>Lorsqu'un vaisseau allié verrouille un objet ou brouille un vaisseau, il peut mesurer la portée depuis le Droïde sonde DRK1.<br> Phase système : A initiative 0, vous pouvez vous relocaliser en utilisant 2#Lbank#, 2#straight#, or #1Rbank#.",
+            "effect_ENG": "<img class='chargeforceimg' src='img/chargestat.png'> <img class='chargeforceimg' src='img/chargestat.png'> During End Phase, you may spend 1#ch# to launch or drop 1 DRK1 Probe Droid (Agility : 3, Hull : 1) using the 3#straight# template.<br>While a friendly ship locks an object or jams an enemy ship, it may measure range from DRK1 probe droid.<br>System Phase : At initiative 0, you may relocate using a 2#Lbank#, 2 #straight#, or 2#Rbank#."
         },
         {
             "name": "Obus Energétiques",
