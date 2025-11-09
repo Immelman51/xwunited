@@ -76,8 +76,8 @@
             "force": 0,
             "charge": [0],
             "points": 2,
-            "effect": "Après avoir effectué une action #RA# ou #UN#, si vous êtes dans l'arc de tir d'un vaisseau ennemi, vous pouvez effectuer une action #CA# rouge.",
-            "effect_ENG": "After you perform a #RA# or #UN# action, if you are in an enemy ship firing arc, you may perform a red #CA# action.",
+            "effect": "Après avoir effectué une action #RA# ou #UN#, si vous êtes dans l'arc de tir d'un vaisseau ennemi, vous pouvez effectuer une action #CC# rouge.",
+            "effect_ENG": "After you perform a #RA# or #UN# action, if you are in an enemy ship firing arc, you may perform a red #CC# action.",
             "faction": ""
         },
         {
@@ -506,8 +506,8 @@
             "force": 0,
             "charge": [0],
             "points": 2,
-            "effect": "Tant qu’un vaisseau allié à portée 1–3 effectue une attaque contre une cible que vous avez verrouillée, ce vaisseau allié ignore le prérequis d’attaque #TL#, #FS# ou #CA#.",
-            "effect_ENG": "While a friendly ship at range 1-3 perform an attack against a target you have locked, this friendly ship ignore the #TL#, #FS# or #CA# attack condition",
+            "effect": "Tant qu’un vaisseau allié à portée 1–3 effectue une attaque contre une cible que vous avez verrouillée, ce vaisseau allié ignore le prérequis d’attaque #TL#, #FS# ou #CC#.",
+            "effect_ENG": "While a friendly ship at range 1-3 perform an attack against a target you have locked, this friendly ship ignore the #TL#, #FS# or #CC# attack condition",
             "faction": ""
 
         },
@@ -601,8 +601,8 @@
             "force": 0,
             "charge": [2,"0"],
             "points": 2,
-            "effect": "<img class='chargeforceimg' src='img/chargestat.png'> <img class='chargeforceimg' src='img/chargestat.png'> Attaque (#CA#, #FS# ou #TL#) : 3#Farc# Portée 1-3 : dépensez 1 #ch#. Si cette attaque touche, chaque vaisseau allié à portée 1–3 du défenseur peut verrouiller le défenseur. Puis annulez tous les résultats.",
-            "effect_ENG": "<img class='chargeforceimg' src='img/chargestat.png'> <img class='chargeforceimg' src='img/chargestat.png'> Attack (#CA#, #FS# ou #TL#) : 3#Farc# range 1-3 : spend 1 #ch#. If this attack hits, each friendly ships at range 1-3 of the defender may lock the defender. Then Cancel all results.",
+            "effect": "<img class='chargeforceimg' src='img/chargestat.png'> <img class='chargeforceimg' src='img/chargestat.png'> Attaque (#CC#, #FS# ou #TL#) : 3#Farc# Portée 1-3 : dépensez 1 #ch#. Si cette attaque touche, chaque vaisseau allié à portée 1–3 du défenseur peut verrouiller le défenseur. Puis annulez tous les résultats.",
+            "effect_ENG": "<img class='chargeforceimg' src='img/chargestat.png'> <img class='chargeforceimg' src='img/chargestat.png'> Attack (#CC#, #FS# ou #TL#) : 3#Farc# range 1-3 : spend 1 #ch#. If this attack hits, each friendly ships at range 1-3 of the defender may lock the defender. Then Cancel all results.",
             "faction": ""
         },
         {
@@ -1535,7 +1535,7 @@
             "force": 0,
             "charge": [3,"0"],
             "effect": "<img class='chargeforceimg' src='img/chargestat.png'> <img class='chargeforceimg' src='img/chargestat.png'> <img class='chargeforceimg' src='img/chargestat.png'> Action : dépensez 1 #ch# pour réparer 1 carte de dégât face cachée.<br>Action : réparez 1 carte de dégât Vaisseau face visible.",
-            "effect_ENG": "",
+            "effect_ENG": "<img class='chargeforceimg' src='img/chargestat.png'> <img class='chargeforceimg' src='img/chargestat.png'> <img class='chargeforceimg' src='img/chargestat.png'> ACTION : Spend 1 #ch# to repair 1 facedown damage card.<br>ACTION : repair 1 faceup ship damage card.",
             "faction": ["Rebel_Alliance"]
         },
          {
@@ -1551,7 +1551,7 @@
             "points": 6,
             "max_per_squad": 1,
             "effect": "Avant de lancer les dés de défense, vous pouvez dépenser 1 marqueur de calcul pour dire à voix haute un nombre supérieur ou égal à 1. Dans ce cas et si vous obtenez exactement cette quantité de résultats #evd# sur votre lancer, ajoutez 1 résultat #evd#.",
-            "effect_ENG": "",
+            "effect_ENG": "Before rolling defense dice, you may spend 1 calculate token to guess aloud a number 1 or higher. If you do and you roll exactly that many #evd# results, add 1 #evd# result.<br>After you perform the #CC# action, gain 1 calculate token.",
             "faction": ["Rebel_Alliance","New_Republic_Patrol","Heroes_of_the_Resistance"],
             "modifier_func": [
                 [0,"add_action",[0,"Cc W"]]
@@ -1569,8 +1569,8 @@
             "charge": [0],
             "points": 5,
             "max_per_squad": 1,
-            "effect": "Pendant la phase de système, vous pouvez choisir 1 vaisseau ennemi à portée 1–2, dire à voix haute une direction et une vitesse. Votre adversaire vous confirme si la direction puis la vitesse sont correctes. Si les 2 sont correctes, vous pouvez modifier votre cadran de manœuvre.",
-            "effect_ENG": "",
+            "effect": "Pendant la phase de système, vous pouvez choisir 1 vaisseau ennemi à portée 1–2, et deviner à voix haute sa direction et sa vitesse. Votre adversaire vous confirme si la direction puis la vitesse sont correctes. Si les 2 sont correctes, vous pouvez modifier votre manœuvre.",
+            "effect_ENG": "During System Phase, you may choose 1 enemy ship at range 1-2, and guess aloud its direction and its speed. Your opponent confirms if the direction then the speed are correct. If both are correct, you may modify you maneuver.",
             "faction": ["Rebel_Alliance"]
         },
         {
@@ -1580,14 +1580,14 @@
             "available": true,
             "modify": false,
             "slot": "Crew",
-            "points": 6,
+            "points": 5,
             "max_per_squad": 1,
             "faction": ["Rebel_Alliance"],
             "add_Data": [0],
             "force": 0,
             "charge": [3,"+"],
             "effect": "<img class='chargeforceimg' src='img/chargestat.png'> <img class='chargeforceimg' src='img/chargestat.png'> <img class='chargeforceimg' src='img/chargestat.png'> <img class='chargeforceimg' src='img/chargeplus.png'> Au début de la phase de fin, vous pouvez dépenser 3 #ch#. Chaque vaisseau allié peut retirer 1 marqueur de stress.",
-            "effect_ENG": ""
+            "effect_ENG": "<img class='chargeforceimg' src='img/chargestat.png'> <img class='chargeforceimg' src='img/chargestat.png'> <img class='chargeforceimg' src='img/chargestat.png'> <img class='chargeforceimg' src='img/chargeplus.png'> At the beginning of End Phase, you may spend 3 #ch#. Each friendly ships may remove 1 stress token."
         },
         {
             "name": "R2-D2",
@@ -1601,8 +1601,8 @@
             "charge": [0],
             "points": 7,
             "max_per_squad": 1,
-            "effect": "Pendant la phase de dénouement, si vous êtes endommagé et n’êtes pas protégé, vous pouvez lancer 1 dé d’attaque pour récupérer 1 bouclier. Sur un résultat #hit#, exposez 1 de vos cartes de dégât.",
-            "effect_ENG": "",
+            "effect": "Pendant la phase de fin, si vous êtes endommagé et n’êtes pas protégé, vous pouvez lancer 1 dé d’attaque pour récupérer 1 bouclier. Sur un résultat #hit#, exposez 1 de vos cartes de dégât.",
+            "effect_ENG": "During End Phase, if you are damaged and not protected, you may roll 1 attack die to recover 1 shield. On a #hit# result, expose 1 damage card.",
             "faction": ["Rebel_Alliance"]
         },
         {
@@ -1618,7 +1618,7 @@
             "points": 6,
             "max_per_squad": 1,
             "effect": "Après avoir effectué une attaque principale, si vous êtes concentré, vous pouvez gagner 1 marqueur d’épuisement pour effectuer une attaque bonus.",
-            "effect_ENG": "",
+            "effect_ENG": "After you perform a primary attack, if you are focused, you may receive 1 deplete token to perform a bonus attack.",
             "faction": ["Rebel_Alliance"]
         },
 {
@@ -1634,7 +1634,7 @@
             "force": 1,
             "max_per_squad": 1,
             "effect": "Avant de vous engager, vous pouvez dépenser 1 #fo# pour pivoter votre indicateur de #tur#",
-            "effect_ENG": "",
+            "effect_ENG": "Before you engage, you may spend 1 #fo# to rotate your #tur# indicator.",
             "faction": ["Rebel_Alliance"]
             
         },
@@ -1652,7 +1652,7 @@
             "points": 0,
             "talent_points": 0,
             "effect": "Tant qu’un autre vaisseau allié à portée 0–1 défend, avant l’étape « Neutraliser les résultats », si vous êtes dans l’arc de l’attaque, vous pouvez subir 1 dégât #crit# pour annuler 1 résultat #crit#.",
-            "effect_ENG": "",
+            "effect_ENG": "While an other friendly ship at range 0-1 defends, before the 'Neutralize results' step, if you are in the attack arc, you may suffer 1 #crit# damage to cancel 1 #crit# result.",
             "faction": ["Rebel_Alliance"]
         },
  {
@@ -1663,8 +1663,8 @@
             "modify":true,
             "slot": "Crew",
             "faction": ["Rebel_Alliance"],
-            "effect": "Pendant la phase de système, vous pouvez choisir un vaisseau allié à portée 0–3. Ce vaisseau gagne 1 marqueur de calcul et 1 marqueur de stress.<br>Ajoute l’action #CA# et #JM#",
-            "effect_ENG": "",
+            "effect": "Pendant la phase de système, vous pouvez choisir un vaisseau allié à portée 0–3. Ce vaisseau gagne 1 marqueur de calcul et 1 marqueur de stress.<br>Ajoute les actions #CC# et #JA#",
+            "effect_ENG": "During System Phase, you may choose a friendly ship at range 0-3. This ship receives 1 calculate token and 1 stress token.<br>Adds the #CC# action and #JA# action.",
             "max_per_squad": 1,
             "add_Data": [0],
             "force": 0,
@@ -1690,7 +1690,7 @@
             "force": 1,
             "max_per_squad": 1,
             "effect": "<img class='chargeforceimg' src='img/forcestat.png'> Au début de la phase d’engagement, vous pouvez choisir 1 vaisseau dans votre arc de tir à portée 0–2 et dépenser 1 #fo#. Dans ce cas, ce vaisseau subit 1 dégât #hit# sauf s’il choisit de retirer 1 marqueur vert.",
-            "effect_ENG": "",
+            "effect_ENG": "<img class='chargeforceimg' src='img/forcestat.png'> At the start of engagement phase, you may choosea ship in your firing arc at range 0-2 and spend 1 #fo#. If you do, this ship suffers 1 #hit# damage except if it chooses to remove 1 green token.",
             "faction": ["Imperial_Academy"]
            
         },
@@ -1705,7 +1705,7 @@
             "max_per_squad": 1,
             "faction": ["Imperial_Academy"],
             "effect": "Pendant la phase de système, vous pouvez dépenser 2 #ch#. Dans ce cas, chaque vaisseau allié peut verrouiller un vaisseau que vous avez verrouillé.",
-            "effect_ENG": "",
+            "effect_ENG": "During System Phase, you may spend 2 #ch#. If you do, each friendly ships may lock a ship you have locked.",
             "add_Data": [0],
             "force": 0,
             "charge": [2,"+"]
@@ -1719,13 +1719,13 @@
             "modify": false,
             "slot": "Talent-special",
             "effect": "Tant que vous effectuez une attaque, vous pouvez choisir un autre vaisseau allié à portée 0–1 du défenseur. Dans ce cas, le vaisseau choisi subit 1 dégât #hit# et vous pouvez changer 1 de vos résultats de dé en un résultat #hit#.",
-            "effect_ENG": "",
+            "effect_ENG": "While you attack, you may choose an other friendly ship at range 0-1 of the defender. If you do, this friendly ship suffers 1 #hit#, and you may modify 1 of your dice results into a #hit# result.",
             "add_Data": [0],
             "force": 0,
             "charge": [0],
             "points": 0,
             "talent_points": 0,
-            "faction": ["Imperial_Academy","Imperial_Remnants"]
+            "faction": ["Imperial_Academy"]
         },
 {
             "name": "Moteurs Ioniques de Précision",
@@ -1737,7 +1737,7 @@
             "slot": "Tie mod",
             "points": 2,
             "effect": "Avant d’exécuter une manœuvre de Virage Koiogran à vitesse 1–3, vous pouvez dépenser 1 #ch# pour exécuter cette manœuvre en tant que #Sleft# ou #Sright# de même vitesse à la place, et vice-versa.",
-            "effect_ENG": "",
+            "effect_ENG": "Before you execute a speed 1-3 Koyogran turn, you may spend 1#ch# to execute this maneuver as a #Sleft# or #Sright# at the same speed instead, and vice versa.",
             "add_Data": [0],
             "force": 0,
             "charge": [0],
@@ -1754,9 +1754,9 @@
             "add_Data": [0],
             "force": 0,
             "charge": [0],
-            "points": 2,
+            "points": 1,
             "effect": "Après avoir effectué une manœuvre rouge, vous pouvez dépenser 1 #ch# pour effectuer un tonneau.",
-            "effect_ENG": "",
+            "effect_ENG": "After you execute a red maneuver, you may spend 1#ch# to perform a barrel roll.",
             "faction": ""
         },
         {
@@ -1869,7 +1869,7 @@
             "charge": [0],
             "points": 4,
             "max_per_squad": 1,
-            "effect": "Vous avez la capacité de pilote de chaque autre vaisseau allié qui possède le titre IG-2000.<br>Après avoir effectué une action #CA#, gagnez 1 marqueur de calcul.",
+            "effect": "Vous avez la capacité de pilote de chaque autre vaisseau allié qui possède le titre IG-2000.<br>Après avoir effectué une action #CC#, gagnez 1 marqueur de calcul.",
             "effect_ENG": "",
             "faction": ["Bounty_Hunters_Guild"],
             "modifier_func": [
@@ -2911,8 +2911,8 @@
             "charge": [0],
             "points": 5,
             "faction": ["Trade_Federation","Separatist_Government"],
-            "effect": "Vous gagnez la capacité 'Calculs en Réseau'. Après qu'un vaisseau allié à portée 0-3 avec #CA# dans sa barre d'action a été détruit, chaque vaisseau allié à portée 0-3 avec #CA# dans sa barre d'action gagne 1 marqueur de calcul.",
-            "effect_ENG": "You gain the 'Networked Calculation' ship ability. After a friendly ship at range 0-3 with #CA# in its action bar has been destroyed, each friendly ship at range 0-3 with #CA# in its action bar receives 1 calculate token.",
+            "effect": "Vous gagnez la capacité 'Calculs en Réseau'. Après qu'un vaisseau allié à portée 0-3 avec #CC# dans sa barre d'action a été détruit, chaque vaisseau allié à portée 0-3 avec #CC# dans sa barre d'action gagne 1 marqueur de calcul.",
+            "effect_ENG": "You gain the 'Networked Calculation' ship ability. After a friendly ship at range 0-3 with #CC# in its action bar has been destroyed, each friendly ship at range 0-3 with #CC# in its action bar receives 1 calculate token.",
             "modifier_func": [
                 ["also_Occupies","Calculator"],
                 [0,"add_action",[0,"Cc W"]],
@@ -3303,7 +3303,7 @@
             "charge": [0],
             "points": 0,
             "talent_points": 0,
-            "faction": ["Imperial_Elite_Squadrons","Imperial_Remnants"],
+            "faction": ["Imperial_Elite_Squadrons"],
             "effect": "Lorsque vous détruisez un vaisseau ennemi après l'avoir attaqué, vous pouvez retirer un jeton orange ou rouge, puis vous pouvez effectuer une action.",
             "effect_ENG": "When you destroy an enemy ship, you may remove an orange or red token from yourself, then perform an action."
     
@@ -3650,7 +3650,7 @@
     "force": 0,
     "charge": [2,"0"],
     "points": 2,
-    "effect": "<img class='chargeforceimg' src='img/chargestat.png'> <img class='chargeforceimg' src='img/chargestat.png'> Attaque (#CA#, #FS# ou #TL#) : 3#Farc# Portée 1-3 : dépensez 1 #ch#. Si cette attaque touche, chaque vaisseau allié à portée 1–3 du défenseur peut verrouiller le défenseur. Puis annulez tous les résultats des dés.",
+    "effect": "<img class='chargeforceimg' src='img/chargestat.png'> <img class='chargeforceimg' src='img/chargestat.png'> Attaque (#CC#, #FS# ou #TL#) : 3#Farc# Portée 1-3 : dépensez 1 #ch#. Si cette attaque touche, chaque vaisseau allié à portée 1–3 du défenseur peut verrouiller le défenseur. Puis annulez tous les résultats des dés.",
     "effect_ENG": "",
     "faction": ""
 },
@@ -4041,7 +4041,7 @@
     "talent_points": 0,
     "effect": "Après qu'un vaisseau allié à portée 0-3 est détruit, si ce vaisseau est limité or possède le talent <i>Discipliné</i>, vous pouvez effectuer une action #TL# ou #BR#.",
     "effect_ENG": "After another friendly ship at range 0-3 is destroyed, if that ship is limited or has the Disciplined upgrade, you may perform a #TL# or #BR# action.",
-    "faction": ["ISB","Imperial_Remnants"]
+    "faction": ["ISB"]
 },
 {
     "name": "*Extrémiste",
@@ -4164,8 +4164,8 @@
              "force": 0,
              "charge": [0],
              "points":0,
-             "effect": "Toute action #FS# devient #CA#",
-             "effect_ENG": "#FS# actions become #CA#",
+             "effect": "Toute action #FS# devient #CC#",
+             "effect_ENG": "#FS# actions become #CC#",
              "faction": "" 
          },
          {
@@ -5934,7 +5934,7 @@
              "add_Data": [0],
              "force": 0,
              "charge": [0],
-             "points": 3,
+             "points": 1,
              "effect": "Tant que vous avez 2 marqueurs de stress ou moins, vous pouvez effectuer des actions #RE#, #CO# et #JA#.<br>Tant que vous effectuez une action blanche #RE#, #CO# ou #JA#, si vous êtes stressé, gagnez 1 jeton épuisement.",
              "effect_ENG": "??",
              "faction": ["Heroes_of_the_Resistance"]
@@ -6474,20 +6474,20 @@
             "faction": ""
         },
           {
-            "name": "",
-            "name_ENG": "",
-            "id": 367,
+            "name": "Focalisé",
+            "name_ENG": "Enthralled",
+            "id": 369,
             "max_per_squad": 8,
             "available": true,
             "modify": false,
-            "slot": "Condition",
+            "slot": "Talent-special",
             "add_Data": [0],
             "force": 0,
             "charge": [0],
-            "points": 2,
-            "effect": "",
-            "effect_ENG": "",
-            "faction": ""
+            "points": 1,
+            "effect": "Lorsque vous effectuez une action de scénario, gagnez 1 jeton calcul.",
+            "effect_ENG": "While you perform a scenario action, gain 1 calculate token.",
+            "faction": ["Imperial_Remnants"]
         },
           {
             "name": "",
