@@ -2246,8 +2246,8 @@
             "add_Data": [0],
             "force": 0,
             "charge": [1,"0"],
-            "effect": "Action : dépensez 1 #ch#. Larguez 1 cargaison égarée en utilisant le gabarit 1#straight#.",
-            "effect_ENG": "ACTION : spend 1 #ch#. Drop 1 cargo chute using the 1#straight# template.",
+            "effect": "Action : dépensez 1 #ch#. Larguez 1 cargaison égarée en utilisant le gabarit 1#straight#. Le cargaison égarée est considérée comme un obstacle débris.",
+            "effect_ENG": "ACTION : spend 1 #ch#. Drop 1 cargo chute using the 1#straight# template. The cargo chute is considered as a debris obstacle.",
             "faction": ["Pirates_and_Smugglers","Hutt_Cartel","Crime_Syndicates"],
             "restrictions": [1,"base", "medium", "large"]
             
@@ -2715,8 +2715,8 @@
             "charge": [0],
             "points": 5,
             "faction": ["Phoenix_Cell","New_Republic_Patrol"],
-            "effect": "Lorsque vous effectuez une attaque #tur#, si l'attaque touche, chaque vaisseau allié à portée 0-2 du défenseur retire 1 jeton rouge.",
-            "effect_ENG": "When you perform a #tur# attack, if the attack hits, each ally ship at range 0-2 of the defender loses 1 red Token."
+            "effect": "Lorsque vous effectuez une attaque #tur#, si l'attaque touche, chaque vaisseau allié à portée 0-2 du défenseur retire 1 jeton rouge ou orange.",
+            "effect_ENG": "When you perform a #tur# attack, if the attack hits, each ally ship at range 0-2 of the defender loses 1 red or orange Token."
         },
 
         {
@@ -2747,10 +2747,10 @@
             "add_Data": [0],
             "force": 0,
             "charge": [0],
-            "points": 5,
+            "points": 4,
             "faction": ["Trade_Federation"],
-            "effect": "A la fin de la partie, si votre vaisseau est toujours en jeu, gagnez 2 points de scénario.",
-            "effect_ENG": "At the end of the game, if your ship is still in the play area, win 2 scenario points."
+            "effect": "A la fin de la partie, si votre vaisseau est toujours en jeu, gagnez 3 points de scénario.",
+            "effect_ENG": "At the end of the game, if your ship is still in the play area, win 3 scenario points."
         },
         {
             "name": "Poggle le Bref",
@@ -2763,7 +2763,7 @@
             "add_Data": [0],
             "force": 0,
             "charge": [0],
-            "points": 0,
+            "points": 1,
             "faction": ["Separatist_Government"],
             "effect": "ACTION : Si vous êtes à portée 0-1 d'un élément de scénario, vous pouvez le déplacer ou le relocaliser en utilisant le gabarit 2 #straight#.",
             "effect_ENG": "ACTION : If you are at range 0-1 of a scenario element, you may move it or relocate it using a 2#straight# template."
@@ -2815,8 +2815,8 @@
             "attack": ["F", 3],
             "range": [2,3],
             "faction": ["Trade_Federation","Agents_of_Chaos","Separatist_Government"],
-            "effect": "<img class='chargeforceimg' src='img/chargestat.png'> Attaque #CC# : 3#Farc# Portée 2-3 : dépensez 1 #ch#. Tant que vous effectuez cette attaque, vous pouvez dépenser 1 marqueur de calcul pour changer 1 résultat #eye# en un résultat #crit#.<br>Action : rechargez cette carte.",
-            "effect_ENG": ""
+            "effect": "<img class='chargeforceimg' src='img/chargestat.png'> Attaque #CC# : 3#Farc# Portée 2-3 : dépensez 1 #ch#. Tant que vous effectuez cette attaque, vous pouvez dépenser 1 marqueur de calcul pour changer 1 résultat #eye# en un résultat #crit#.<br>Action : récupérez la #ch#.",
+            "effect_ENG": "<img class='chargeforceimg' src='img/chargestat.png'> Attack #CC# : 3#Farc# Range 2-3 : spend 1#ch#. During this attack, you may spend 1 calculate token to modify 1 #eye# result into a #crit# result.<br>ACTION : recover the #ch#."
         },
         {
             "name": "Calculs Indépendants",
@@ -2831,8 +2831,8 @@
             "charge": [0],
             "points": 2,
             "faction": ["Trade_Federation","Agents_of_Chaos","Separatist_Government"],
-            "effect": "Remplacez votre capacité de vaisseau Calculs en Réseau par la suivante : Calculs Indépendants : tant que vous effectuez une action blanche , vous pouvez la considérer comme rouge pour gagner 1 marqueur de calcul supplémentaire. Les autres vaisseaux ne peuvent pas dépenser vos marqueurs de calcul en utilisant la capacité de vaisseau Calculs en Réseau.",
-            "effect_ENG": "",
+            "effect": "Remplacez votre capacité de vaisseau Calculs en Réseau par la suivante : tant que vous effectuez une action blanche #CC#, vous pouvez la considérer comme rouge pour gagner 1 marqueur de calcul supplémentaire. Les autres vaisseaux ne peuvent pas dépenser vos marqueurs de calcul en utilisant la capacité de vaisseau Calculs en Réseau.",
+            "effect_ENG": "Replace yout ship ability 'Networked Calculations' by this : while you perform a white #CC# action, you may consider it as red to gain 1 additional calculate token. Other ships cannot spend your calculate tokens using their ship ability 'Networked Calculations'.",
             "restrictions": [1,"chassis","Networked Calculations",""]
         },
         {
@@ -2846,10 +2846,10 @@
             "add_Data": [0],
             "force": 0,
             "charge": [0],
-            "points": 5,
+            "points": 3,
             "faction": ["Trade_Federation","Separatist_Government"],
-            "effect": "Après qu’un vaisseau ennemi a exécuté une manœuvre, s’il est dans le d’un vaisseau allié à portée 0–3, vous pouvez dépenser 1 . Dans ce cas, ce vaisseau allié verrouille ce vaisseau ennemi, puis gagne 1 marqueur de stress.",
-            "effect_ENG": "",
+            "effect": "Après qu’un vaisseau ennemi a exécuté une manœuvre, s’il est dans le #bulls# d’un vaisseau allié à portée 0–3, vous pouvez dépenser 1 #ch#. Dans ce cas, ce vaisseau allié verrouille ce vaisseau ennemi, puis gagne 1 marqueur de stress.",
+            "effect_ENG": "After an enemy ship executes a maneuver, if it is in the #bulls# of a friendly ship at range 0-3, you may spend 1 #ch#. If you do, this friendly ship locks this enemy ship, then receive 1 stress token.",
             "modifier_func": [
             ["also_Occupies","Calculator"],
             [0,"add_action",[0,"Cc W"]]
@@ -2866,11 +2866,11 @@
             "add_Data": [0],
             "force": 0,
             "charge": [0],
-            "points": 10,
+            "points": 8,
             "max_per_squad": 1,
             "faction": ["Trade_Federation","Separatist_Government"],
-            "effect": "Pendant la phase de dénouement, vous pouvez choisir jusqu’à 3 vaisseaux alliés à portée 0-3. Dans ce cas, chacun de ces vaisseaux ne retire pas 1 marqueur de calcul.",
-            "effect_ENG": "",
+            "effect": "Pendant la phase de fin, vous pouvez choisir jusqu’à 3 vaisseaux alliés à portée 0-3. Dans ce cas, chacun de ces vaisseaux ne retire pas 1 marqueur de calcul.",
+            "effect_ENG": "During End Phase, you may choose up to 3 friendly ships at range 0-3. If you do, each of these ships don't remove 1 calculate token.",
             "modifier_func": [
                 ["also_Occupies","Calculator"],
                 [0,"add_action",[0,"Cc W"]]
@@ -2891,7 +2891,7 @@
             "points": 3,
             "faction": ["Trade_Federation","Separatist_Government"],
             "effect": "Avant de vous engager, vous pouvez transférer un jeton calcul à un vaisseau calculateur à portée 0-3. Dans ce cas, ce vaisseau effectue une attaque bonus. Vous gagnez 1 jeton désarmé.",
-            "effect_ENG": "",
+            "effect_ENG": "Before you engage, you may transfer 1 calculate token to a calculating ship at range 0-3. If you do, this ship performs a bonus attack. Receive 1 disarm token.",
             "modifier_func": [
                 ["also_Occupies","Calculator"],
                 [0,"add_action",[0,"Cc W"]]
@@ -2934,7 +2934,7 @@
             "points": 5,
             "faction": ["Trade_Federation","Agents_of_Chaos","Separatist_Government"],
             "effect": "Tant que vous défendez, après l’étape « Neutraliser les résultats », s’il y a au moins 2 résultats #hit#/#crit#, vous pouvez dépenser 1 #ch# pour annuler 1 résultat #hit# ou #crit#.<br>Après qu’un vaisseau allié a été détruit, récupérez 1 #ch#.",
-            "effect_ENG": ""
+            "effect_ENG": "While you defend, after the 'Neutralize Results' step, if there are at least 2 results #hit/#crit#, you may spend 1 #ch# to cancel 1 #hit# or #crit# result.<br>After a friendly ship is destroyed, recover 1 #ch#."
         },
 
         {
@@ -2948,7 +2948,7 @@
             "add_Data": [0],
             "force": 0,
             "charge": [0],
-            "points": 0,
+            "points": 1,
             "talent_points": 2,
             "faction": ["Heroes_of_the_Resistance"],
             "effect": "Tant que vous défendez ou effectuez une attaque, si vous n'avez que des résultats vierges et au moins 2 résultats, vous pouvez relancer n'importe quel nombre de vos dés.",
@@ -2981,7 +2981,7 @@
             "add_Data": [0],
             "force": 0,
             "charge": [0],
-            "points": 9,
+            "points": 8,
             "faction": ["Heroes_of_the_Resistance"],
             "effect": "Lorsque vous défendez ou attaquez, vous pouvez dépenser 1 de vos résultats pour verrouiller l'adversaire.",
             "effect_ENG": "While you defend or perform an attack, you may spend 1 of your results to acquire a lock on the enemy ship."
@@ -3013,7 +3013,7 @@
             "add_Data": [0],
             "force": 0,
             "charge": [0],
-            "points": 7,
+            "points": 6,
             "faction": ["Heroes_of_the_Resistance"],
             "effect": "Lorsque vous attaquez ou effectuez une attaque principale, si le vaisseau ennemi est dans votre #Farc#, vous pouvez ajouter 1 résultat vierge (ce dé peut être relancé ou modifié)",
             "effect_ENG": "While you defend or perform a primary attack, if the enemy ship is in your #Farc#, you may add 1 blank result to your roll (this die can be rerolled or otherwise modified)"
@@ -3076,7 +3076,7 @@
             "add_Data": [0],
             "force": 0,
             "charge": [2,"0"],
-            "points": 6,
+            "points": 4,
             "faction": ["Heroes_of_the_Resistance"],
             "effect": "<img class='chargeforceimg' src='img/chargestat.png'> <img class='chargeforceimg' src='img/chargestat.png'> Avant d'excuter une manoeuvre, vous pouvez dépenser 1 #ch# pour effectuer une action #BR# ou #BO#",
             "effect_ENG": "<img class='chargeforceimg' src='img/chargestat.png'> <img class='chargeforceimg' src='img/chargestat.png'> Before executing a maneuver, you may spend 1 #ch# to perform a #BR# or #BO# action"
@@ -3092,7 +3092,7 @@
             "add_Data": [0],
             "force": 0,
             "charge": [0],
-            "points": 4,
+            "points": 3,
             "faction": ["Heroes_of_the_Resistance"],
             "effect": "Tant que vous effectuez une attaque, vous pouvez relancer un nombre de dés d’attaque inférieur ou égal au nombre de vaisseaux alliés à portée 0–3 qui ont le défenseur dans leur #bulls#.",
             "effect_ENG": "While you perform an attack, you may reroll as many attack dice as the number of friendly ships which has the defender in their #bulls# at range 0-3."
@@ -3125,7 +3125,7 @@
             "add_Data": [0],
             "force": 0,
             "charge": [0],
-            "points": 0,
+            "points": 1,
             "talent_points": 1,
             "faction": ["First_Order_Vanguard","Imperial_Remnants"],
             "effect": "Lorsque vous effectuez une attaque principale, si vous n'êtes pas protégé, vous pouvez modifier 1 résultat #eye# en #hit#",
@@ -3314,7 +3314,7 @@
             "id": 191,
             "available": true, 
             "max_per_squad": 1,
-            "modify": false,
+            "modify": true,
             "slot": "Crew",
             "add_Data": [0],
             "force": 0,
@@ -3322,7 +3322,11 @@
             "points": 6,
             "faction": ["Imperial_Elite_Squadrons"],
             "effect": "Mise en place : Assignez la condition 'Proie' à un vaisseau. A la fin de la phase d'activation, si vous êtes à portée 0-1 du vaisseau avec la condition 'Proie', il gagne 1 jeton épuisement et 1 jeton contrainte. Lorsque ce vaisseau est détruit, vous devez assigner la condition 'Proie' à un vaisseau au delà de la portée 3 de vous. S'il n'y en a pas, assignez la à un vaisseau à portée 3. Répétez cette opération en réduisant la portée jusqu'à trouver une cible potentielle.",
-            "effect_ENG": "SETUP : assign the 'Prey' condition to a ship. At the end of activation phase, if you are at range 0-1 of the ship with the prey condition, it gains 1 deplete and 1 strain token. When the ship is destroyed, you MUST assign the prey condition to a ship beyond range 3 of you. If there's none, assign it to a ship at range 3. Continue this operation by reducing the range until there's a suitable target."
+            "effect_ENG": "SETUP : assign the 'Prey' condition to a ship. At the end of activation phase, if you are at range 0-1 of the ship with the prey condition, it gains 1 deplete and 1 strain token. When the ship is destroyed, you MUST assign the prey condition to a ship beyond range 3 of you. If there's none, assign it to a ship at range 3. Continue this operation by reducing the range until there's a suitable target.",
+            "modifier_func": [
+                ["add_slot","Condition"]
+                ["auto_equip","Condition",370]
+            ],
     
         },
         {
@@ -3356,7 +3360,7 @@
             "charge": [0],
             "points": 4,
             "faction": ["Imperial_Elite_Squadrons"],
-            "effect": "Après avoir attaqué, vous pouvez derrouiller le défenseur",
+            "effect": "Après avoir attaqué, vous pouvez verrouiller le défenseur",
             "effect_ENG": "After you perform an attack, you can acquire a lock on the defender"
     
         },
@@ -3373,7 +3377,7 @@
             "charge": [0],
             "points": 8,
             "faction": ["Imperial_Elite_Squadrons"],
-            "effect": "Si un vaisseau ennemi à portée 0-1 est censé gagner un marqueur de stress, vous pouvez dépenser 1 #fo# pour qu'il gagne 1 jeton brouillage ou tracté à la place.",
+            "effect": "Si un vaisseau ennemi à portée 0-1 est censé gagner un marqueur de stress, vous pouvez dépenser 1 #fo# pour qu'il gagne 1 jeton brouillage ou tractage à la place.",
             "effect_ENG": "When an enemy ship at range 0-1 would receive a stress token, you may spend 1 #fo# so that it receives 1 jam or tractored token instead."
     
         },
@@ -3407,7 +3411,7 @@
 "charge": [0],
 "points": 0,
 "max_per_squad": 1,
-"effect_ENG": "",
+"effect_ENG": "Add a #ill# slot.",
 "faction": ["Phoenix_Cell"],
 "ship": "TIE/ln Fighter",
 "effect": "Ajoute un emplacement #ill#."
@@ -3426,7 +3430,7 @@
 "charge": [0],
 "points": 0,
 "max_per_squad": 1,
-"effect_ENG": "",
+"effect_ENG": "Add a #tur# slot.",
 "faction": ["Heroes_of_the_Resistance"],
 "ship": "T-70 X-Wing",
 "effect": "Ajoute 1 emplacement #tur#."       
@@ -3444,7 +3448,7 @@
 "charge": [0],
 "points": 0,
 "max_per_squad": 1,
-"effect_ENG": "",
+"effect_ENG": "You may Dock to the 'Ghost'.",
 "faction": ["Phoenix_Cell"],
 "ship": "Attack Shuttle",
 "effect": "Vous pouvez vous arrimer au 'Ghost'."
@@ -3462,7 +3466,7 @@
 "charge": [0],
 "points": 0,
 "max_per_squad": 1,
-"effect_ENG": "",
+"effect_ENG": "You may Dock to the 'Ghost'.",
 "faction": ["Phoenix_Cell"],
 "ship": "Sheathipede-Class Shuttle",
 "effect": "Vous pouvez vous arrimer au 'Ghost'."
@@ -3481,7 +3485,7 @@
 "charge": [0],
 "points": 0,
 "max_per_squad": 1,
-"effect_ENG": "",
+"effect_ENG": "Add 1 #ill# slot. Remove 1 #mod# slot.",
 "faction": ["Phoenix_Cell"],
 "ship": "YT-2400 Light Freighter",
 "effect": "Ajoute 1 emplacement #ill#, retire un emplacement #mod#."
@@ -6490,10 +6494,10 @@
             "faction": ["Imperial_Remnants"]
         },
           {
-            "name": "",
-            "name_ENG": "",
-            "id": 367,
-            "max_per_squad": 8,
+            "name": "Proie",
+            "name_ENG": "Prey",
+            "id": 370,
+            "max_per_squad": 1,
             "available": true,
             "modify": false,
             "slot": "Condition",
