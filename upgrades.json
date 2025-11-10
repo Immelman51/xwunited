@@ -992,7 +992,7 @@
             "charge": [0],
             "points": 1,
             "effect": "Choisissez une amélioration #can# équipée et placez un marqueur canon rotatif dessus. La restriction #Farc# de votre #can# devient #tur#. Vous pouvez tourner l’arc de votre #can# avec l’action #RA#.",
-            "effect_ENG": "Choose an equipped #can# upgrade and place a cannon turret token on it. The #Farc# restriction of your #can# becomes a #tur# restriction. You may rotate the arc of your #can# with the #RA# action."
+            "effect_ENG": "Choose an equipped #can# upgrade and place a cannon turret token on it. The #Farc# restriction of your #can# becomes a #tur# restriction. You may rotate the arc of your #can# with the #RA# action.",
             "faction": "",
             "modifier_func": [
                 [0,"add_action",[0,"Ra W"]]
