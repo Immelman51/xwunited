@@ -3557,8 +3557,8 @@
             "modify": true,
             "points": 8,
             "title": ["Sabine's Masterpiece"],
-            "ability": "<img class='chargeforceimg' src='img/forcestat.png'> Lorsque vous défendez ou attaquez, si vous êtes stressé, vous pouvez dépenser 1 #fo# pour modifier jusqu'à 2 de vos résultats #eye# en #hit# ou #evd#.",
-            "ability_ENG": "<img class='chargeforceimg' src='img/forcestat.png'> While you defend or perform an attack, if you are stressed, you may spend 1 #fo# to change up to 2 of your #eye# results to #hit# or #evd# results.",
+            "ability": "Lorsque vous défendez ou attaquez, si vous êtes stressé, vous pouvez dépenser 1 #fo# pour modifier jusqu'à 2 de vos résultats #eye# en #hit# ou #evd#.",
+            "ability_ENG": "While you defend or perform an attack, if you are stressed, you may spend 1 #fo# to change up to 2 of your #eye# results to #hit# or #evd# results.",
             "slots": [
                 "Title",
                 "Talent-leadership",
@@ -3642,8 +3642,8 @@
             "force_side": "light",
             "modify": true, 
             "title": ["Nightbrother"],
-            "ability": "<img class='chargeforceimg' src='img/forcestat.png'> Lorsque vous défendez ou attaquez, si vous êtes stressé, vous pouvez dépenser 1 #fo# pour modifier jusqu'à 2 de vos résultats #eye# en #hit# ou #evd#.",
-            "ability_ENG": "<img class='chargeforceimg' src='img/forcestat.png'> While you defend or perform an attack, if you are stressed, you may spend 1 #fo# to change up to 2 of your #eye# results to #hit# or #evd# results.",
+            "ability": "Lorsque vous défendez ou attaquez, si vous êtes stressé, vous pouvez dépenser 1 #fo# pour modifier jusqu'à 2 de vos résultats #eye# en #hit# ou #evd#.",
+            "ability_ENG": "While you defend or perform an attack, if you are stressed, you may spend 1 #fo# to change up to 2 of your #eye# results to #hit# or #evd# results.",
             "slots": [
                 "Title",
                 "Talent-leadership",

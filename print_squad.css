@@ -69,7 +69,7 @@ padding: 2px;
     width: 19cm;
     display: grid;
     grid-template-columns: 1cm 0.5cm 4.8cm 2.6cm 3.7cm 3.8cm 2cm 0.6cm ;
-    grid-template-rows: auto 0.2cm 1.5cm 0.5cm 0.2cm auto auto auto auto auto auto auto auto auto;
+    grid-template-rows: auto 0.2cm auto 0.2cm auto auto auto auto auto auto auto auto auto;
     overflow: hidden;
     border: solid rgb(13, 0, 128);
     margin: 2px;
@@ -155,7 +155,7 @@ span {
     
  }
  .stat{
-    grid-area: 2 / 1 / 8 / 3;
+    grid-area: 2 / 1 / 7 / 3;
     display:flex;
     flex-direction:column;
     /*padding-top: 25px;*/
@@ -194,7 +194,7 @@ span {
  
  
 .ability{
-    grid-area: 3 / 3 / 5 / 7;
+    grid-area: 3 / 3 / 4 / 7;
     display: flex;
     text-align: center;
     align-items: center;
@@ -208,7 +208,7 @@ span {
 
 }
 .actions{
-    grid-area: 2 / 7 / 8 / 9;
+    grid-area: 2 / 7 / 7 / 9;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -265,56 +265,56 @@ span {
 }
 
 .upg0{
-    grid-area: 6 / 3 / 7 / 5;
+    grid-area: 5 / 3 / 6 / 5;
 
 }
 
 .upg1{
    
-    grid-area: 6 / 5 / 7 / 7;
+    grid-area: 5 / 5 / 6 / 7;
     
 }
 .upg2{
-    grid-area: 7 / 3 / 8 / 5;
+    grid-area: 6 / 3 / 7 / 5;
     
 
 }
 
 .upg3{
-    grid-area: 7 / 5 / 8 / 7;
+    grid-area: 6 / 5 / 7 / 7;
    
 
 }
 .upg4{
-    grid-area: 8 / 1 / 9 / 4;
+    grid-area: 7 / 1 / 8 / 4;
     
 
 
 }
 
 .upg5{
-    grid-area: 8 / 4 / 9 / 6;
+    grid-area: 7 / 4 / 8 / 6;
     
 
 
 }
 .upg6{
-    grid-area: 8 / 6 / 9 / 9;
+    grid-area: 7 / 6 / 8 / 9;
 
 }
 
 .upg7{
-    grid-area: 9 / 1 / 10 / 4;
+    grid-area: 8 / 1 / 9 / 4;
    
 
 }
 .upg8{
-    grid-area: 9 / 4 / 10 / 6;
+    grid-area: 8 / 4 / 9 / 6;
     
 
 }
 .upg9{
-    grid-area: 9 / 6 / 10 / 9;
+    grid-area: 8 / 6 / 9 / 9;
     
 
 }
@@ -331,7 +331,7 @@ font-size: small;
 
 }
 .chs1{
-    grid-area: 12 / 1 / 13 / 9;
+    grid-area: 11 / 1 / 12 / 9;
     padding-bottom: 10px;
     text-align: center;
     font-size: small;
@@ -339,14 +339,14 @@ font-size: small;
     
 }
 .chs2{
-    grid-area: 13 / 1 / 14 / 5;
+    grid-area: 12 / 1 / 13 / 5;
     border-bottom: 3px black;
      font-size: small;
 
 
 }
 .chs3{
-    grid-area: 13 / 5 / 14 / 9;
+    grid-area: 12 / 5 / 13 / 9;
     border-bottom: 3px black;
     font-size: small;
 
