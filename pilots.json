@@ -3511,7 +3511,8 @@
                                
             ],
             "modifier_func": [
-            	["auto_equip","Title",199]
+            	["auto_equip","Title",199],
+                ["auto_equip","Condition",371]
                     ]
         },
         {
@@ -3597,7 +3598,8 @@
                                 
             ],
             "modifier_func": [
-            	["auto_equip","Title",196]
+            	["auto_equip","Title",196],
+                ["auto_equip","Condition",371]
                     ]
         },
         {

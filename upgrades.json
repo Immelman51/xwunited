@@ -6504,15 +6504,15 @@
             "add_Data": [0],
             "force": 0,
             "charge": [0],
-            "points": 2,
+            "points": 0,
             "effect": "",
             "effect_ENG": "",
             "faction": ""
         },
           {
-            "name": "",
-            "name_ENG": "",
-            "id": 367,
+            "name": "Tir de Suppression",
+            "name_ENG": "Suppressive Fire",
+            "id": 371,
             "max_per_squad": 8,
             "available": true,
             "modify": false,
@@ -6520,9 +6520,9 @@
             "add_Data": [0],
             "force": 0,
             "charge": [0],
-            "points": 2,
-            "effect": "",
-            "effect_ENG": "",
+            "points": 0,
+            "effect": "Tant que vous effectuez une attaque contre un vaisseau autre que le Capitaine Rex, lancez 1 dé d'attaque an moins. Après que le Capitaine Rex a défendu, retirez cette condition. A la fin de la phase d’engagement, si le Capitaine Rex n'a pas effectué d'attaque à cette phase, retirez cette condition. Après que le Capitaine Rex a été détruit, retirez cette condition.",
+            "effect_ENG": "While you perform an attack against a ship that is not Captain Rex, roll 1 less attack die. After Captain Rex defends, remove this condition. At the end of engagement phase, if Captain Rex hasn't attacked this phase, remove this condition. After Captain Rex is destroyed, remove this condition.",
             "faction": ""
         },
           {
