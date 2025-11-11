@@ -3342,8 +3342,8 @@
             "charge": [0],
             "points": 12,
             "faction": ["Imperial_Elite_Squadrons"],
-            "effect": "Après qu'un vaisseau ennemi à portée 0-2 a révélé son cadran, vous pouvez dépenser 1 #fo# pour effectuer 1 action blanche de votre barre d'action, en considérant cette action comme rouge.",
-            "effect_ENG": "After an enemy ship at range 0-2 revealed its dial, you may spend 1 #fo# to perform a white action of your action bar, considering it as red."
+            "effect": "<img class='chargeforceimg' src='img/forcestat.png'> Après qu'un vaisseau ennemi à portée 0-2 a révélé son cadran, vous pouvez dépenser 1 #fo# pour effectuer 1 action blanche de votre barre d'action, en considérant cette action comme rouge.",
+            "effect_ENG": "<img class='chargeforceimg' src='img/forcestat.png'>After an enemy ship at range 0-2 revealed its dial, you may spend 1 #fo# to perform a white action of your action bar, considering it as red."
 
     
         },
@@ -3377,8 +3377,8 @@
             "charge": [0],
             "points": 8,
             "faction": ["Imperial_Elite_Squadrons"],
-            "effect": "Si un vaisseau ennemi à portée 0-1 est censé gagner un marqueur de stress, vous pouvez dépenser 1 #fo# pour qu'il gagne 1 jeton brouillage ou tractage à la place.",
-            "effect_ENG": "When an enemy ship at range 0-1 would receive a stress token, you may spend 1 #fo# so that it receives 1 jam or tractored token instead."
+            "effect": "<img class='chargeforceimg' src='img/forcestat.png'> Si un vaisseau ennemi à portée 0-1 est censé gagner un marqueur de stress, vous pouvez dépenser 1 #fo# pour qu'il gagne 1 jeton brouillage ou tractage à la place.",
+            "effect_ENG": "<img class='chargeforceimg' src='img/forcestat.png'> When an enemy ship at range 0-1 would receive a stress token, you may spend 1 #fo# so that it receives 1 jam or tractored token instead."
     
         },
         {
@@ -3394,8 +3394,8 @@
             "points": 9,
             "force": 1,
             "faction": ["Imperial_Elite_Squadrons"],
-            "effect": "Tant que vous effectuez une attaque, vous pouvez dépenser 1 #fo# pour changer 1 de vos résultats #eye# en #crit#.",
-            "effect_ENG": "When you perform an attack, you may spend 1 #fo# to change 1 #eye# result into 1 #crit## result."
+            "effect": "<img class='chargeforceimg' src='img/forcestat.png'> Tant que vous effectuez une attaque, vous pouvez dépenser 1 #fo# pour changer 1 de vos résultats #eye# en #crit#.",
+            "effect_ENG": "<img class='chargeforceimg' src='img/forcestat.png'> When you perform an attack, you may spend 1 #fo# to change 1 #eye# result into 1 #crit## result."
     
         },
     
@@ -3504,7 +3504,7 @@
 "charge": [0],
 "points": 0,
 "max_per_squad": 1,
-"effect_ENG": "",
+"effect_ENG": "Add 1 #gunner# slot, and remove 1 #mod# slot.",
 "faction": ["Phoenix_Cell"],
 "ship": "YT-2400 Light Freighter",
 "effect": "Ajoute 1 emplacement #gunner#, retire un emplacement #mod#."
@@ -3601,7 +3601,7 @@
     "force": 0,
     "charge": [1,"0"],
     "effect": "<img class='chargeforceimg' src='img/chargestat.png'> Attaque (#TL#) : 3#Farc# portée 2-3  : dépensez 1 #ch#. Si cette attaque touche, dépensez 1 résultat #hit# ou #crit# pour faire subir 1 dégât #hit# au défenseur. Tous les résultats #hit#/#crit# restants infligent des marqueurs ioniques au lieu des dégâts.",
-    "effect_ENG": "",
+    "effect_ENG": "<img class='chargeforceimg' src='img/chargestat.png'> Attack (#TL#): 3#Farc# range 2-3: spend 1 #ch#. If this attack hits, spend 1 #hit# or #crit# result to deal 1 #hit# damage to the defender. All remaining #hit#/#crit# results deal ion tokens instead of damage.",
     "faction": ""
 },
 {
@@ -3619,7 +3619,7 @@
     "force": 0,
     "charge": [1,"0"],
     "effect": "<img class='chargeforceimg' src='img/chargestat.png'> Attaque (#TL#) : 2#Farc# Portée 2-3 : dépensez 1 #ch#. Après avoir lancé les dés d'attaque, annulez tous les résultats, et ajoutez 2 résultats #hit#.",
-    "effect_ENG": "",
+    "effect_ENG": "<img class='chargeforceimg' src='img/chargestat.png'> Attack (#TL#): 2#Farc# Range 2-3: spend 1 #ch#. After rolling attack dice, cancel all results and add 2 #hit# results.",
     "faction": ""
 },
 {
@@ -3637,7 +3637,7 @@
     "force": 0,
     "charge": [1,"0"],
     "effect": "<img class='chargeforceimg' src='img/chargestat.png'> Attaque (#TL#) : 3#Farc# Portée 1-2 : Après avoir résolu l’attaque, vous pouvez choisir un autre vaisseau à portée 0-1 du défenseur. Lancez 3 dés d’attaque : assignez autant de marqueurs de contrainte que de résultats #eye#, puis le vaisseau ciblé doit se défendre en considérant les autres résultats comme un jet d’attaque.",
-    "effect_ENG": "",
+    "effect_ENG": "<img class='chargeforceimg' src='img/chargestat.png'> Attack (#TL#): 3#Farc# Range 1-2: After the attack is resolved, you may choose another ship at range 0-1 of the defender. Roll 3 attack dice: assign as many strain tokens as #eye# results, then the targeted ship defends considering the other results as an attack roll.",
     "faction": ""
 },
 {
@@ -3655,7 +3655,7 @@
     "charge": [2,"0"],
     "points": 2,
     "effect": "<img class='chargeforceimg' src='img/chargestat.png'> <img class='chargeforceimg' src='img/chargestat.png'> Attaque (#CC#, #FS# ou #TL#) : 3#Farc# Portée 1-3 : dépensez 1 #ch#. Si cette attaque touche, chaque vaisseau allié à portée 1–3 du défenseur peut verrouiller le défenseur. Puis annulez tous les résultats des dés.",
-    "effect_ENG": "",
+    "effect_ENG": "<img class='chargeforceimg' src='img/chargestat.png'> <img class='chargeforceimg' src='img/chargestat.png'> Attack (#CC#, #FS# or #TL#): 3#Farc# Range 1-3: spend 1 #ch#. If this attack hits, each friendly ship at range 1-3 of the defender may acquire a lock on the defender. Then cancel all dice results.",
     "faction": ""
 },
 {
@@ -3672,7 +3672,7 @@
     "charge": [1,"0"],
     "points": 3,
     "effect": "<img class='chargeforceimg' src='img/chargestat.png'> Attaque (#FS#) : 3#Farc# Portée 1-2 : Si l’attaque touche, annulez tous les dés. Puis le défenseur reçoit une carte de dégât face cachée et autant de jetons tractage qu'il faudrait pour tracter votre vaisseau. (ex: si vous êtes un gros vaisseau, vous infligez 3 jetons tractage)",
-    "effect_ENG": "",
+    "effect_ENG": "<img class='chargeforceimg' src='img/chargestat.png'> Attack (#FS#): 3#Farc# Range 1-2: If the attack hits, cancel all dice. Then the defender receives 1 face-down damage card and as many tractor tokens as needed to tractor your ship. (ex: if you are a large ship, you deal 3 tractor tokens)",
     "faction": ""
 },
 {
@@ -3690,7 +3690,7 @@
     "force": 0,
     "charge": [1,"0"],
     "effect": "<img class='chargeforceimg' src='img/chargestat.png'> 3#Bulls# portée 1-2: dépensez 1 #ch#. Lors de l’étape « Neutraliser les résultats », les résultats #crit# sont annulés avant les résultats #hit#. Après que cette attaque a touché, le défenseur perd 1 bouclier. Gagnez un jeton de désarmement.",
-    "effect_ENG": "",
+    "effect_ENG": "<img class='chargeforceimg' src='img/chargestat.png'> 3#Bulls# range 1-2: spend 1 #ch#. During the 'Neutralize Results' step, #crit# results are canceled before #hit# results. After this attack hits, the defender loses 1 shield. Gain 1 disarm token.",
     "faction": ""
 },
 {
@@ -3708,7 +3708,7 @@
     "force": 0,
     "charge": [1,"0"],
     "effect": "<img class='chargeforceimg' src='img/chargestat.png'> 4#BULL# Portée 1 : dépensez 1 #ch#. Modifiez un #hit# en #crit#. Gagnez un marqueur désarmement.",
-    "effect_ENG": "",
+    "effect_ENG": "<img class='chargeforceimg' src='img/chargestat.png'> 4#BULL# Range 1: spend 1 #ch#. Change 1 #hit# to #crit#. Gain 1 disarm token.",
     "faction": ""
 },
  {
@@ -3726,7 +3726,7 @@
     "force": 0,
     "charge": [1,"0"],
     "effect": "<img class='chargeforceimg' src='img/chargestat.png'> 2#BULLS# Portée 2-3 : dépensez 1 #ch#. Après que cette attaque a touché, chaque vaisseau à portée 0–1 du défenseur expose 1 de ses cartes de dégât. Gagnez un jeton désarmement.",
-    "effect_ENG": "",
+    "effect_ENG": "<img class='chargeforceimg' src='img/chargestat.png'> 2#BULLS# Range 2-3: spend 1 #ch#. After this attack hits, each ship at range 0-1 of the defender reveals 1 of its damage cards. Gain 1 disarm token.",
     "faction": ""
 },
 
@@ -3745,8 +3745,8 @@
     "add_Data": [0],
     "force": 0,
     "charge": [1,"0"],
-    "effect": "Portée 1 #Farc# 3 dés: dépensez 1 Ch. Si le défenseur est dans votre #BULLS#, vous pouvez améliorer 1 résultat #hit# en #crit#. Gagnez un jeton épuisement.",
-    "effect_ENG": "",
+    "effect": "<img class='chargeforceimg' src='img/chargestat.png'> Attaque :  3#Farc# Portée 1: dépensez 1 #ch#. Si le défenseur est dans votre #BULLS#, vous pouvez améliorer 1 résultat #hit# en #crit#. Gagnez un jeton épuisement.",
+    "effect_ENG": "<img class='chargeforceimg' src='img/chargestat.png'> Attack (#TL#): 3#Farc# Range 1: spend 1 #ch#. If the defender is in your #BULLS#, you may upgrade 1 #hit# result to a #crit#. Gain 1 deplete token.",
     "faction": ""
 },
 {
@@ -3763,8 +3763,8 @@
     "points": 1,
     "attack": ["F",3],
     "range": [1,2],
-    "effect": "Portée 1-2 #Farc# 3 dés Attaque : si cette attaque touche, tous les résultats #hit#/#crit# infligent des marqueurs de brouillage au lieu des dégâts.",
-    "effect_ENG": "",
+    "effect": " 3#Farc# Portée 1-2, Attaque : si cette attaque touche, tous les résultats #hit#/#crit# infligent des marqueurs de brouillage au lieu des dégâts.",
+    "effect_ENG": "3#Farc# Range 1-2, Attack: if this attack hits, all #hit#/#crit# results deal jam tokens instead of damage.",
     "faction": ""
 },
 {
@@ -3778,11 +3778,11 @@
     "add_Data": [0],
     "force": 0,
     "charge": [0],
-    "points": 4,
+    "points": 3,
     "attack": ["F",3],
     "range": [1,3],
-    "effect": "Portée 1-3 #Farc# 3 dés, Attaque : si cette attaque touche, tous les résultats #hit#/#crit# infligent des marqueurs de rayon tracteur au lieu des dégâts.",
-    "effect_ENG": "",
+    "effect": " 3#Farc# Portée 1-3, Attaque : si cette attaque touche, tous les résultats #hit#/#crit# infligent des marqueurs de rayon tracteur au lieu des dégâts.",
+    "effect_ENG": "3#Farc# Range 1-3, Attack: if this attack hits, all #hit#/#crit# results deal tractor beam tokens instead of damage.",
     "faction": ""
 },
 {
@@ -3799,8 +3799,8 @@
     "points": 5,
     "attack": ["F",3],
     "range": [1,3],
-    "effect": "Portée 1-3 #Farc# 3 dés Attaque : si cette attaque touche, dépensez 1 résultat #hit# ou #crit# pour faire subir 1 dégât au défenseur. Tous les résultats #hit#/#crit# restants infligent des marqueurs ioniques au lieu des dégâts.",
-    "effect_ENG": "",
+    "effect": "3#Farc# Portée 1-3 , Attaque : si cette attaque touche, dépensez 1 résultat #hit# ou #crit# pour faire subir 1 dégât au défenseur. Tous les résultats #hit#/#crit# restants infligent des marqueurs ioniques au lieu des dégâts.",
+    "effect_ENG": "3#Farc# Range 1-3, Attack: if this attack hits, spend 1 #hit# or #crit# result to deal 1 damage to the defender. All remaining #hit#/#crit# results deal ion tokens instead of damage.",
     "faction": ""
 },
 {
@@ -3817,8 +3817,8 @@
     "points": 4,
     "attack": ["BULL",4],
     "range": [2,3],
-    "effect": "Portée 2-3 #Farc# 4 dés. Si le défenseur n’est pas dans le #bulls#, alors l’attaque devient IMPRECISE.",
-    "effect_ENG": "",
+    "effect": "4#Farc# Portée 2-3, Attaque : Si le défenseur n’est pas dans le #bulls#, alors dégradez 4 dés d'attaque.",
+    "effect_ENG": "4#Farc# Range 2-3, Attack: If the defender is not in the #bulls#, then downgrade 4 attack dice.",
     "faction": ""
 },
 {
@@ -3835,7 +3835,7 @@
     "points": 0,
     "talent_points": 1,
     "effect": "Lorsque vous attaquez, si l'attaque qui est obstruée par un obstacle ou si la cible est à portée 0 d'un obstacle, lancez 1 dé d’attaque supplémentaire.",
-    "effect_ENG": "",
+    "effect_ENG": "While you attack, if the attack is obstructed by an obstacle or if the target is at range 0 of an obstacle, roll 1 additional attack die.",
     "faction": ""
 },
 {
@@ -3868,7 +3868,7 @@
     "points": 0,
     "talent_points": 3,
     "effect": "<img class='chargeforceimg' src='img/chargestat.png'><img class='chargeforceimg' src='img/chargestat.png'><img class='chargeforceimg' src='img/chargeplus.png'>Lorsque vous défendez contre une attaque à portée 3 ou contre une attaque de #tur#, vous pouvez dépenser 1#ch# pour améliorer un dé de défense.",
-    "effect_ENG": "",
+    "effect_ENG": "<img class='chargeforceimg' src='img/chargestat.png'><img class='chargeforceimg' src='img/chargestat.png'><img class='chargeforceimg' src='img/chargeplus.png'> While you defend against an attack at range 3 or against a #tur# attack, you may spend 1 #ch# to upgrade a defense die.",
     "faction": "",
     "add_Data": [0],
     "force": 0,
@@ -3889,7 +3889,7 @@
     "talent_points": 3,
     "max_per_squad": 1,
     "effect": "Tant que vous coordonnez, le vaisseau que vous avez choisi peut effectuer une action seulement si celle-ci est également dans votre barre d’action.<br>Ajoute l'action #CO#",
-    "effect_ENG": "",
+    "effect_ENG": "While you coordinate, the ship you chose may perform an action only if it is also on your action bar.<br>Add the #CO# action.",
     "faction": "",
     "modifier_func": [
         [0, "add_action", [0,"Co R"]]
@@ -3928,7 +3928,7 @@
     "points": 0,
     "talent_points": 5,
     "effect": "Tant que vous effectuez une attaque #Farc#, si vous n’êtes pas dans l’arc de tir du défenseur, il lance 1 dé de défense en moins.",
-    "effect_ENG": "",
+    "effect_ENG": "While you perform a #Farc# attack, if you are not in the defender's firing arc, it rolls 1 fewer defense die.",
     "faction": ""
 },
 {
@@ -4135,8 +4135,8 @@
             "charge": [0],
             "points": 0,
             "talent_points": 3,
-            "effect": "Lorsque vous attaquez, vous pouvez dépenser 3#fo#. Dans ce cas, améliorez 3 de vos résultats.",
-            "effect_ENG": "While you perform an attack, you may spend 3#fo#. If you do, upgrade 3 of your attack results.",
+            "effect": "Lorsque vous attaquez, vous pouvez dépenser jusqu'à 3#fo#. Dans ce cas, améliorez autant de vos résultats.",
+            "effect_ENG": "While you perform an attack, you may spend up to 3#fo#. If you do, upgrade that many of your attack results.",
             "faction": ""
         },
         {
@@ -4152,7 +4152,7 @@
             "charge": [0],
             "points":0,
             "effect": "À la fin de la phase d’activation, si vous n'êtes pas arrimé perdez 1 #ch#. Vous êtes détruit si vous avez 0 #ch#. Avant de retirer votre figurine, chaque vaisseau à porté 0–1 subit 1 dégât #crit# ",
-            "effect_ENG": "",
+            "effect_ENG": "At the end of Activation phase, if you are not docked, lose 1 #ch#. You are destroyed if you have 0 #ch#. Before removing your ship, each ship at range 0-1 suffers 1 #crit# damage.",
             "faction": ["Pirates_and_Smugglers"],
             "restrictions":[1,"ship", "Escape Craft",""]
         },
@@ -4284,8 +4284,8 @@
              "force": 0,
              "charge": [0],
              "points":8,
-             "effect": "",
-             "effect_ENG": "",
+             "effect": "Tant qu’un autre vaisseau allié effectue une attaque principale, si le défenseur est dans votre arc de tir, vous pouvez dépenser 1 #ch#. Dans ce cas, l’attaquant lance 1 dé supplémentaire, pour un maximum de 4. Pendant la phase de système, vous pouvez gagner 1 marqueur de désarmement pour récupérer 1 #ch#.",
+             "effect_ENG": "While another allied ship performs a primary attack, if the defender is in your firing arc, you may spend 1 #ch#. If you do, the attacker rolls 1 additional die, up to a maximum of 4. During the system phase, you may gain 1 disarm token to recover 1 #ch#.",
              "faction": ["Clone_Army"] 
          },
          {
@@ -4300,8 +4300,8 @@
              "force": 0,
              "charge": [0],
              "points":3,
-             "effect": "",
-             "effect_ENG": "",
+             "effect": "Après avoir effectué une attaque qui a raté, si au moins 1 résultat #hit#/#crit# a été neutralisé, le défenseur gagne 1 marqueur de contrainte.",
+             "effect_ENG": "After you perform an attack that missed, if at least 1 #hit#/#crit# result was canceled, the defender gains 1 strain token.",
              "faction": ["Clone_Army"] 
          },
          {
@@ -4316,8 +4316,8 @@
              "force": 0,
              "charge": [0],
              "points":2,
-             "effect": "",
-             "effect_ENG": "",
+             "effect": "Après que vous avez effectué une attaque ratée, si l’initiative du défenseur est supérieure ou égale à votre initiative, placez 1 marqueur d’évasion ou de concentration sur cette carte.<br>Avant de vous engager, vous pouvez retirer 1 marqueur de cette carte pour gagner 1 marqueur correspondant.",
+             "effect_ENG": "After you perform a missed attack, if the defender's initiative is greater than or equal to your initiative, place 1 evade or focus token on this card.<br>Before you engage, you may remove 1 token from this card to gain 1 matching token.",
              "faction": ["Clone_Army"] 
          },
          {
@@ -4332,8 +4332,8 @@
              "force": 0,
              "charge": [0],
              "points":2,
-             "effect": "",
-             "effect_ENG": "",
+             "effect": "Tant que vous effectuez une attaque, vous pouvez dépenser 1 marqueur d’évasion pour changer 1 résultat #eye# en un résultat #hit#.",
+             "effect_ENG": "While you perform an attack, you may spend 1 evade token to change 1 #eye# result to a #hit# result.",
              "faction": ["Clone_Army","Colossus"] 
          },
          {
@@ -4349,7 +4349,7 @@
              "charge": [0],
              "points":4,
              "effect": "ACTION : Ajoutez 1 #ch# à 'Message Prioritaire'. Si vous recevez votre 5ème #ch#, gagnez 2 #scenario_points#, et vous pouvez retirez votre vaisseau de la partie, sans que l'adversaire ne remporte de #scenario_points#.",
-             "effect_ENG": "",
+             "effect_ENG": "ACTION: Add 1 #ch# to 'Priority Message'. If you receive your 5th #ch#, gain 2 #scenario_points#, and you may remove your ship from the game without the opponent gaining #scenario_points#.",
              "faction": ["Clone_Army","Jedi_Order","Naboo_Defense_Force"] 
          },
          {
@@ -4365,7 +4365,7 @@
              "charge": [0],
              "points":1,
              "effect": "Après avoir effectué une attaque, vous pouvez choisir un vaisseau allié à portée 1 ou un vaisseau allié qui possède l’amélioration Console Synchronisée à portée 1-3 et dépenser un verrouillage que vous avez sur le défenseur. Dans ce cas, le vaisseau allié que vous avez choisi peut verrouiller le défenseur.",
-             "effect_ENG": "",
+             "effect_ENG": "After you perform an attack, you may choose a friendly ship at range 1 or a friendly ship that has the Synchronised Console upgrade at range 1-3 and spend a lock you have on the defender. If you do, the friendly ship you chose may lock the defender.",
              "faction": ["Clone_Army","Jedi_Order","Naboo_Defense_Force"]
          },
          {
@@ -4380,8 +4380,8 @@
              "force": 1,
              "charge": [0],
              "points":8,
-             "effect": "<img class='chargeforceimg' src='img/forcestat.png'> Après avoir défendu, si l’attaquant est à portée 0-2, vous pouvez dépenser 1 . Dans ce cas, l’attaquant gagne 1 marqueur de stress.<br> Ajoute l'action #CD# violette.",
-             "effect_ENG": "",
+             "effect": "<img class='chargeforceimg' src='img/forcestat.png'> Après avoir défendu, si l’attaquant est à portée 0-2, vous pouvez dépenser 1 #ch#. Dans ce cas, l’attaquant gagne 1 marqueur de stress.<br> Ajoute l'action #CO# violette.",
+             "effect_ENG": "<img class='chargeforceimg' src='img/forcestat.png'> After you defend, if the attacker is at range 0-2, you may spend 1 #ch#. If you do, the attacker gains 1 stress token.<br> Add the purple #CO# action.",
              "faction": ["Clone_Army","Jedi_Order", "Naboo_Defense_Force"] 
          },
          {
@@ -4397,7 +4397,7 @@
              "charge": [0],
              "points":8,
              "effect": "<img class='chargeforceimg' src='img/forcestat.png'> Au début de la phase d’engagement, vous pouvez choisir 1 vaisseau allié à portée 0–1 et dépenser 1#fo# . Dans ce cas, il peut effectuer une action #EV# rouge.",
-             "effect_ENG": "",
+             "effect_ENG": "<img class='chargeforceimg' src='img/forcestat.png'> At the start of the engagement phase, you may choose 1 friendly ship at range 0-1 and spend 1 #fo#. If you do, it may perform a red #EV# action.",
              "faction": ["Jedi_Order"]
              
          },
@@ -4413,8 +4413,8 @@
              "force": 0,
              "charge": [0],
              "points":8,
-             "effect": "",
-             "effect_ENG": "",
+             "effect": "Après qu’un vaisseau allié à portée 0–3 a défendu, si l’attaquant est dans votre arc de tir, le défenseur peut gagner 1 marqueur de contrainte pour verrouiller l’attaquant.",
+             "effect_ENG": "After a friendly ship at range 0-3 defends, if the attacker is in your firing arc, the defender may gain 1 stress token to lock the attacker.",
              "faction": ["Clone_Army"],
              "restrictions": [1,"upgrade", "Crew",""],
              "modifier_func": [
@@ -4433,8 +4433,8 @@
              "force": 1,
              "charge": [0],
              "points":8,
-             "effect": "",
-             "effect_ENG": "",
+             "effect": "<img class='chargeforceimg' src='img/forcestat.png'>Au début de la phase de dénouement, si vous êtes renforcé, vous pouvez choisir 1 vaisseau allié à portée 0 ou qui est situé dans votre #Larc# ou #Rarc# à portée 1. Ce vaisseau retire 1 marqueur d’épuisement ou de contrainte ou répare 1 carte de dégât face visible.",
+             "effect_ENG": "<img class='chargeforceimg' src='img/forcestat.png'>At the start of the end phase, if you are reinforced, you may choose 1 friendly ship at range 0 or in your #Larc# or #Rarc# at range 1. That ship removes 1 deplete or strain token or repairs 1 faceup damage card.",
              "faction": ["Jedi_Order"]
            
          },
@@ -4450,8 +4450,8 @@
              "force": 2,
              "charge": [0],
              "points":8,
-             "effect": "",
-             "effect_ENG": "",
+             "effect": "<img class='chargeforceimg' src='img/forcestat.png'><img class='chargeforceimg' src='img/forcestat.png'>Après qu’un autre vaisseau allié à portée 0–2 a entièrement exécuté une manœuvre violette ou effectué une action violette, vous pouvez dépenser 1 #fo#. Dans ce cas, cet autre vaisseau allié récupère 1 #fo#.",
+             "effect_ENG": "<img class='chargeforceimg' src='img/forcestat.png'><img class='chargeforceimg' src='img/forcestat.png'>After another friendly ship at range 0-2 has fully executed a purple maneuver or performed a purple action, you may spend 1 #fo#. If you do, that other friendly ship recovers 1 #fo#.",
              "faction": ["Jedi_Order"]
          },
          {
@@ -4482,9 +4482,9 @@
              "add_Data": [0],
              "force": 0,
              "charge": [0],
-             "points":2,
-             "effect": "",
-             "effect_ENG": "",
+             "points":1,
+             "effect": "Tant que vous effectuez un tonneau ou accélérez, vous pouvez vous déplacer à travers les obstacles et les chevaucher.",
+             "effect_ENG": "While you perform a barrel roll or boost, you may move through and overlap obstacles.",
              "faction": ["Jedi_Order"]
          },
          {
@@ -4499,12 +4499,12 @@
              "force": 0,
              "charge": [0],
              "points":2,
-             "effect": "",
-             "effect_ENG": "",
+             "effect": "Après avoir entièrement exécuté une manœuvre rouge, s’il y a un vaisseau ennemi dans votre #bulls#, gagnez 1 marqueur de calcul.",
+             "effect_ENG": "After you fully execute a red maneuver, if there is an enemy ship in your #bulls#, gain 1 calculate token.",
              "faction": ["Jedi_Order"]
          },
          {
-            "name": "R4-P Astromech",
+            "name": "Astromech R4-P",
              "name_ENG": "R4-P Astromech",
              "id":258,
              "max_per_squad":8,
@@ -4513,10 +4513,10 @@
              "slot": "Astromech",
              "add_Data": [0],
              "force": 0,
-             "charge": [0],
+             "charge": [2,"0"],
              "points":2,
-             "effect": "",
-             "effect_ENG": "",
+             "effect": "Avant d’exécuter une manœuvre de base, vous pouvez dépenser 1 #ch#. Dans ce cas, tant que vous exécutez cette manœuvre, diminuez sa difficulté.",
+             "effect_ENG": "Before you execute a basic maneuver, you may spend 1 #ch#. If you do, while you execute that maneuver, reduce its difficulty.",
              "faction": ["Jedi_Order"]
          },
          {
@@ -4529,10 +4529,10 @@
              "slot": "Astromech",
              "add_Data": [0],
              "force": 0,
-             "charge": [0],
-             "points":2,
-             "effect": "",
-             "effect_ENG": "",
+             "charge": [3,"0"],
+             "points":3,
+             "effect": "Tant que vous effectuez une attaque, vous pouvez dépenser 1 #ch# pour changer 1 résultat #hit# en un résultat #crit#.",
+             "effect_ENG": "While you perform an attack, you may spend 1 #ch# to change 1 #hit# result to a #crit# result.",
              "faction": ["Jedi_Order"]
          },
          {
@@ -4545,26 +4545,26 @@
              "slot": "Astromech",
              "add_Data": [0],
              "force": 0,
-             "charge": [0],
+             "charge": [2,"0"],
              "points":2,
-             "effect": "",
-             "effect_ENG": "",
+             "effect": "Après avoir entièrement exécuté une manœuvre rouge, vous pouvez dépenser 1 #ch# pour effectuer une action, même si vous êtes stressé.",
+             "effect_ENG": "After you fully execute a red maneuver, you may spend 1 #ch# to perform an action, even if you are stressed.",
              "faction": ["Jedi_Order"]
          },
          {
-            "name": "Ghost Company",
+            "name": "Compagnie Fantôme",
              "name_ENG": "Ghost Company",
              "id":261,
              "max_per_squad":1,
              "available":true,
              "modify":true,
              "slot": "Gunner",
-             "add_Data": [0],
+             "add_Data": ["add_action", [1,"Ra W","Fs R"]],
              "force": 0,
              "charge": [0],
              "points":5,
-             "effect": "??",
-             "effect_ENG": "??",
+             "effect": "Après avoir effectué une attaque principale, si vous êtes concentré, vous pouvez effectuer une attaque #tur#, en tant qu’attaque bonus, contre un vaisseau que vous n’avez pas attaqué à ce round. Ajoute #RA# -> #FS# rouge",
+             "effect_ENG": "After you perform a primary attack, if you are focused, you may perform a #tur# attack as a bonus attack against a ship you have not attacked this round. Adds #RA# -> red #FS#",
              "faction": ["Clone_Army"],
              "modifier_func": [
                 ["also_Occupies","Crew"]
@@ -4578,12 +4578,12 @@
              "available":true,
              "modify":false,
              "slot": "Crew",
-             "add_Data": [0],
+             "add_Data": ["add_action", [1,"Fs W","Co P"]],
              "force": 1,
              "charge": [0],
              "points":8,
-             "effect": "??",
-             "effect_ENG": "??",
+             "effect": "<img class='chargeforceimg' src='img/forcestat.png'>Tant qu’un vaisseau ennemi dans votre #bulls# effectue une attaque, si le défenseur est allié et à portée 0–2, ce dernier peut changer 1 résultat vierge en un résultat #eye#. Ajoute #FS# -> #CO# violet",
+             "effect_ENG": "<img class='chargeforceimg' src='img/forcestat.png'>While an enemy ship in your #bulls# performs an attack, if the defender is an ally and at range 0-2, the defender may change 1 blank result to a #eye# result. Adds #FS# -> purple #CO#",
              "faction": ["Jedi_Order"]
          },
          {
@@ -4597,9 +4597,9 @@
              "add_Data": [0],
              "force": 0,
              "charge": [0],
-             "points": 0,
-             "effect": "??",
-             "effect_ENG": "??",
+             "points": 2,
+             "effect": "Tant que vous vous déplacez et effectuez des attaques, vous ignorez les obstacles que vous verrouillez.",
+             "effect_ENG": "While you move and perform attacks, you ignore obstacles you have locked.",
              "faction": ["Crime_Syndicates"]
             
          },
@@ -4614,9 +4614,9 @@
              "add_Data": [0],
              "force": 0,
              "charge": [0],
-             "points": 0,
-             "effect": "??",
-             "effect_ENG": "??",
+             "points": 3,
+             "effect": "Mise en Place : après avoir placé les forces, vous pouvez choisir 1 obstacle dans la zone de jeu. Dans ce cas, placez-le n’importe où dans la zone de jeu au-delà de la portée 2 de tout bord ou vaisseau et au-delà de la portée 1 de tout autre obstacle.",
+             "effect_ENG": "Setup: After placing forces, you may choose 1 obstacle in the play area. If you do, place it anywhere in the play area beyond range 2 of any edge or ship and beyond range 1 of any other obstacle.",
              "faction": ["Crime_Syndicates"]
             
          },
@@ -4799,15 +4799,19 @@
              "id":275,
              "max_per_squad":2,
              "available":true,
-             "modify":false,
+             "modify":true,
              "slot": "Title",
              "add_Data": [0],
              "force": 0,
              "charge": [0],
              "points": 0,
-             "effect": "ajoute 1 emplacement #tech#, #modification# et #illicit#.",
-             "effect_ENG": "add 1 #tech# slot, #modification# slot and #illicit# slot.",
-             "faction": ["Black_Sun"]
+             "effect": "ajoute 1 emplacement, #modification# et #illicit#. Les améliorations Modification et Illicit équipées coûtent -1 point chacune.",
+             "effect_ENG": "add 1 #modification# slot and #illicit# slot. Equipped Modification and Illicit upgrades cost 1 less point each.",
+             "faction": ["Black_Sun"],
+             "modifier_func": [
+                ["reduce_logistic_cost","Modification"],
+                ["reduce_logistic_cost","Illicit"]
+             ]
              
          },
          {
@@ -4958,7 +4962,7 @@
              "force": 0,
              "charge": [0],
              "points": 0,
-             "effect": "",
+             "effect": "Lorsque vous retirez un jeton de stress, recevez 1 jeton contrainte ou épuisement de votre choix.",
              "effect_ENG": "When you remove a stress token, receive a strain or deplete token of your choice.",
              "faction": ["New_Republic_Patrol"]
              
