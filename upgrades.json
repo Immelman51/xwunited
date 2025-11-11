@@ -6463,7 +6463,7 @@
           },
           {
             "name": "Désigné pour mourir",
-            "name_ENG": "",
+            "name_ENG": "Marked for Elimination",
             "id": 368,
             "max_per_squad": 8,
             "available": true,
