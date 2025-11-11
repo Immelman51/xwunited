@@ -3541,7 +3541,7 @@
 "charge": [0],
 "points": 0,
 "max_per_squad": 1,
-"effect_ENG": "",
+"effect_ENG": "A ship with the 'Phantom 1' or 'Phantom 2' title may dock with you.",
 "faction": ["Phoenix_Cell","New_Republic_Patrol"],
 "ship": "VCX-100 Light Freighter",
 "effect": "Un vaisseau avec le titre 'Phantom 1' ou 'Phantom 2' peut s'arrimer avec vous."
@@ -3560,7 +3560,7 @@
 "charge": [0],
 "points": 0,
 "max_per_squad": 1,
-"effect_ENG": "",
+"effect_ENG": "Add 1 #sensor# slot.",
 "faction": ["Trade_Federation"],
 "ship": "Belbullab-22 Starfighter",
 "effect": "Ajoute 1 emplacement #sensor#."    
@@ -3580,7 +3580,7 @@
     "faction":["Pirates_and_Smugglers"],
     "ship": "YT-1300 Light Freighter",
     "effect": "Ajoute la capacité de chassis 'Vaisseau-Mère'. Vous pouvez arrimer une Navette de Secours à votre vaisseau.",
-    "effect_ENG": "Add the 'Docking Ship' chassis ability. You may dock an Escape Craft to your ship",
+    "effect_ENG": "This upgrade is not implemented. Add the 'Docking Ship' chassis ability. You may dock an Escape Craft to your ship",
     "restrictions":[1,"ship","YT-1300 Light Freighter",""],
     "modifier_func": [
         [0, "changeChassis", 16]
