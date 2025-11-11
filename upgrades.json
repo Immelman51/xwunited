@@ -3324,9 +3324,9 @@
             "effect": "Mise en place : Assignez la condition 'Proie' à un vaisseau. A la fin de la phase d'activation, si vous êtes à portée 0-1 du vaisseau avec la condition 'Proie', il gagne 1 jeton épuisement et 1 jeton contrainte. Lorsque ce vaisseau est détruit, vous devez assigner la condition 'Proie' à un vaisseau au delà de la portée 3 de vous. S'il n'y en a pas, assignez la à un vaisseau à portée 3. Répétez cette opération en réduisant la portée jusqu'à trouver une cible potentielle.",
             "effect_ENG": "SETUP : assign the 'Prey' condition to a ship. At the end of activation phase, if you are at range 0-1 of the ship with the prey condition, it gains 1 deplete and 1 strain token. When the ship is destroyed, you MUST assign the prey condition to a ship beyond range 3 of you. If there's none, assign it to a ship at range 3. Continue this operation by reducing the range until there's a suitable target.",
             "modifier_func": [
-                ["add_slot","Condition"]
+                ["add_slot","Condition"],
                 ["auto_equip","Condition",370]
-            ],
+            ]
     
         },
         {
