@@ -551,7 +551,7 @@ function checkPilotModifier() { //va checker s'il existe des fonctions dans modi
                 case 0 :
                     break;
                 case "auto_equip" : 
-                    auto_equip(pilot_list[y]['modifier_func'][m][1], pilot_list[y]['modifier_func'][m][2], pilot_list[y]['modifier_func'][m][3]);
+                    auto_equip(pilot_list[y]['modifier_func'][m][1], pilot_list[y]['modifier_func'][m][2]);
                     
                     break;
                 case "add_slots" :
@@ -635,7 +635,7 @@ function checkUpgradeModifier() { //va checker s'il existe une fonction modify l
             case 0 :
                 break;
             case "auto_equip":
-                auto_equip(upgrades[upgradeID]['modifier_func'][m][1], upgrades[upgradeID]['modifier_func'][m][2], upgrades[upgradeID]['modifier_func'][m][3]);
+                auto_equip(upgrades[upgradeID]['modifier_func'][m][1], upgrades[upgradeID]['modifier_func'][m][2]);
                 break;
             case "add_slots" :
                 add_slots(upgrades[upgradeID]['modifier_func'][m][1]);
@@ -837,22 +837,22 @@ function  add_slots (targetSlot){ //Action n°2 : A utiliser si une upgrade rajo
     for (let j=0; j<upgrades_Objects[y][nbrSlots].length; j++){
             
     if (upgrades_Objects[y][nbrSlots][j]['available']===true){
-        switch (upgrades_Objects[y][i][j]['slot']) {
+        switch (upgrades_Objects[y][nbrSlots][j]['slot']) {
             case 'Talent-shooting' :
                         case 'Talent-piloting' :
                             case 'Talent-leadership' :
                                 case 'Talent-elite' :
                                     case 'Talent-special' :
-                slotmenucontent.push(upgrades_Objects[y][i][j]['name']+" *"+upgrades_Objects[y][i][j]['talent_points']+"*");
-                slotmenuobjects.push(upgrades_Objects[yy][i][j]);
+                slotmenucontent.push(upgrades_Objects[y][nbrSlots][j]['name']+" *"+upgrades_Objects[y][nbrSlots][j]['talent_points']+"*");
+                slotmenuobjects.push(upgrades_Objects[y][nbrSlots][j]);
                 break;
             case 'Force' :
-                slotmenucontent.push(upgrades_Objects[y][i][j]['name']+" #"+upgrades_Objects[y][i][j]['talent_points']+"#");
-                slotmenuobjects.push(upgrades_Objects[yy][i][j]);
+                slotmenucontent.push(upgrades_Objects[y][nbrSlots][j]['name']+" #"+upgrades_Objects[y][nbrSlots][j]['talent_points']+"#");
+                slotmenuobjects.push(upgrades_Objects[y][nbrSlots][j]);
                 break;
             default :    
-                slotmenucontent.push(upgrades_Objects[y][i][j]['name']+" ("+upgrades_Objects[y][i][j]['points']+")");
-                slotmenuobjects.push(upgrades_Objects[y][i][j]);
+                slotmenucontent.push(upgrades_Objects[y][nbrSlots][j]['name']+" ("+upgrades_Objects[y][nbrSlots][j]['points']+")");
+                slotmenuobjects.push(upgrades_Objects[y][nbrSlots][j]);
         break
         }
     }else{
@@ -867,12 +867,12 @@ function  add_slots (targetSlot){ //Action n°2 : A utiliser si une upgrade rajo
                                 case 'Talent-elite' :
                                     case 'Talent-special' :
                 case 'Force' :
-                    slotmenucontent.push(upgrades_Objects[y][i][j]['name']+" *"+upgrades_Objects[y][i][j]['talent_points']+"*");
-                    slotmenuobjects.push(upgrades_Objects[y][i][j]);
+                    slotmenucontent.push(upgrades_Objects[y][nbrSlots][j]['name']+" *"+upgrades_Objects[y][nbrSlots][j]['talent_points']+"*");
+                    slotmenuobjects.push(upgrades_Objects[y][nbrSlots][j]);
                     break;
                 default :    
-                    slotmenucontent.push(upgrades_Objects[y][i][j]['name']+" ("+upgrades_Objects[y][i][j]['points']+")");
-                    slotmenuobjects.push(upgrades_Objects[y][i][j]);
+                    slotmenucontent.push(upgrades_Objects[y][nbrSlots][j]['name']+" ("+upgrades_Objects[y][nbrSlots][j]['points']+")");
+                    slotmenuobjects.push(upgrades_Objects[y][nbrSlots][j]);
             break
             }
     }
