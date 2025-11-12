@@ -286,7 +286,7 @@
     "name":"Pinpoint Tractor Array",
     "id":35,
     "nbrOfEffects": 1,
-    "effect1":"(Dispositif Tracteur De Précision) : vous ne pouvez pas faire pivoter votre #tur# vers votre #Barc#. Après avoir exécuté une manœuvre, vous pouvez gagner 1 marqueur de rayon tracteur pour effectuer une action #RO#.",
+    "effect1":"(Dispositif Tracteur De Précision) : vous ne pouvez pas faire pivoter votre #tur# vers votre #Barc#. Après avoir entièrement exécuté une manœuvre, vous pouvez gagner 1 jeton tractage pour effectuer une action #RA#.<br>Lorsque vous vous engagez, vous pouvez choisir un vaisseau dans votre #tur# à portée 0-1. Dans ce cas, vous pouvez lui transférer 1 jeton tractage.",
     "effect2": "",
     "effect3": "" 
 },
@@ -310,7 +310,7 @@
     "name":"Fine-Tuned Thrusters",
     "id":38,
     "nbrOfEffects": 1,
-    "effect1":"(Propulseurs Réactifs) : Après avoir entièrement exécuté une manœuvre, si vous n’êtes pas épuisé ou contraint, vous pouvez gagner 1 marqueur d’épuisement ou de contrainte pour effectuer une action #LO# ou #BR#.",
+    "effect1":"(Propulseurs Réactifs) : Après avoir entièrement exécuté une manœuvre, si vous n’êtes pas épuisé ou contraint, vous pouvez gagner 1 marqueur d’épuisement ou de contrainte pour effectuer une action #TL# ou #BR#.",
     "effect2": "",
     "effect3": "" 
 },

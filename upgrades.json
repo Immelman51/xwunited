@@ -5391,8 +5391,8 @@
              "charge": [0],
              "points": 0,
              "talent_points": 1,
-             "effect": "",
-             "effect_ENG": "",
+             "effect": "Tant que vous défendez, vous pouvez choisir un vaisseau gênant l’attaque et dépenser 1 #ch#. Dans ce cas, annulez 1 résultat #hit# ou #crit# et le vaisseau que vous avez choisi gagne 1 marqueur de contrainte.<br>Après qu’un vaisseau à portée 0-3 a été détruit, récupérez 1 #ch#.",
+             "effect_ENG": "While you defend, you may choose a ship obstructing the attack and spend 1 #ch#. If you do, cancel 1 #hit# or #crit# result and the ship you chose gains 1 strain token.<br>After a ship at range 0-3 is destroyed, recover 1 #ch#.",
              "faction": ["Agents_of_Chaos"]
              
          },
@@ -5407,9 +5407,9 @@
              "add_Data": [0],
              "force": 0,
              "charge": [0],
-             "points": 0,
-             "effect": "",
-             "effect_ENG": "",
+             "points": 3,
+             "effect": "Tant que vous effectuez une attaque, s’il n’y a aucun autre vaisseau dans l’arc d’attaque, vous pouvez changer 1 de vos résultats #eye# en un résultat #hit#.",
+             "effect_ENG": "While you perform an attack, if there are no other ships in the attack arc, you may change 1 of your #eye# results to a #hit# result.",
              "faction": ["Agents_of_Chaos"]
             
          },
@@ -5421,13 +5421,13 @@
              "available":true,
              "modify":false,
              "slot": "Crew",
-             "add_Data": [0],
+             "add_Data": ["add_action",[0,"Co P"]],
              "charge": [0],
-             "points": 0,
-             "effect": "??",
-             "effect_ENG": "??",
+             "points": 9,
+             "effect": "Après avoir effectué une action #CO# violette, le vaisseau que vous avez coordonné gagne 1 marqueur de stress. Puis il gagne 1 marqueur de concentration ou récupère 1 #fo#. Ajoute l'action #CO# violette.",
+             "effect_ENG": "After you perform a purple #CO# action, the ship you coordinated gains 1 stress token. Then it gains 1 focus token or recovers 1 #fo#. Adds the purple #CO# action.",
              "faction": ["Agents_of_Chaos"],
-             "force": 2
+             "force": 1
          },
          {
             "name": "Assaj Ventress",
@@ -5439,10 +5439,10 @@
              "slot": "Crew",
              "add_Data": [0],
              "charge": [0],
-             "points": 0,
-             "effect": "",
-             "effect_ENG": "",
-             "faction": ["Agents_of_Chaos"],
+             "points": 5,
+             "effect": "Pendant la phase de système, vous pouvez dépenser 1 #fo#. Dans ce cas, chaque vaisseau ennemi dans votre #Farc# à portée 0-1 gagne 1 marqueur de contrainte sauf s'il choisit de gagner 1 marqueur de brouillage. ",
+             "effect_ENG": "During the System Phase, you may spend 1 #fo#. If you do, each enemy ship in your #Farc# at range 0-1 gains 1 strain token unless it chooses to gain 1 jam token.",
+             "faction": ["Agents_of_Chaos","Crime_Syndicates"],
              "force": 1
              
          },
@@ -5457,9 +5457,9 @@
              "add_Data": [0],
              "force": 0,
              "charge": [0],
-             "points": 0,
-             "effect": "",
-             "effect_ENG": "",
+             "points": 2,
+             "effect": "Tant que vous défendez ou effectuez une attaque, vous pouvez dépenser votre verrouillage sur le vaisseau ennemi pour dégrader un de ses dés.",
+             "effect_ENG": "While you defend or perform an attack, you may spend your lock on the enemy ship to downgrade one of its dice.",
              "faction": ["Agents_of_Chaos"]
              
          },
@@ -5474,9 +5474,9 @@
              "add_Data": [0],
              "charge": [0],
              "force":1,
-             "points": 0,
-             "effect": "??",
-             "effect_ENG": "??",
+             "points": 9,
+             "effect": "Durant une attaque, avant qu’un vaisseau à portée 0-2 ne lance des dés d’attaque ou de défense, si toutes vos #fo# sont actives, vous pouvez dépenser 1 #fo# et nommer un résultat. Si le lancer ne contient pas le résultat nommé, le vaisseau doit changer 1 dé pour ce résultat. ",
+             "effect_ENG": "During an attack, before a ship at range 0-2 rolls attack or defense dice, if all your #fo# are active, you may spend 1 #fo# and name a result. If the roll does not contain the named result, the ship must change 1 die to that result.",
              "faction": ["Agents_of_Chaos"]
                                    
              
@@ -5493,8 +5493,8 @@
              "force": 0,
              "charge": [0],
              "points": 0,
-             "effect": "",
-             "effect_ENG": "",
+             "effect": "Après qu'un vaisseau allié dans votre à portée 1-2 a gagné un marqueur de stress ou de contrainte, vous pouvez dépenser 1 #fo#. Dans ce cas, ce vaisseau allié gagne 1 marqueur de concentration.",
+             "effect_ENG": "After an allied ship at range 1-2 gains a stress or strain token, you may spend 1 #fo#. If you do, that allied ship gains 1 focus token.",
              "faction": ["Agents_of_Chaos"]
              
          },
@@ -5505,15 +5505,15 @@
              "max_per_squad":1,
              "available":false,
              "modify":false,
-             "slot": "Talent",
+             "slot": "Special",
              "talent_type": "special",
              "add_Data": [0],
              "force": 0,
              "charge": [0],
              "points": 0,
              "talent_points": 3,
-             "effect": "",
-             "effect_ENG": "",
+             "effect": "Cet amélioration a été intégrée au chassis n°35 pinpoint tractor array, et est inutilisée en l'état",
+             "effect_ENG": " This upgrade has been integrated into the n°35 pinpoint tractor array chassis, and is unused as is",
              "faction": ["Separatist_Government"],
              "restrictions": [1,"ship", "Nantex-Class Starfighter",""]
              
@@ -5566,7 +5566,7 @@
              "force": 0,
              "charge": [1,"0"],
              "points": 0,
-             "effect": "",
+             "effect": "Après avoir effectué une action, vous pouvez dépenser 1 #ch#. Dans ce cas, vous pouvez effectuer une action #BO# ou #EV#.",
              "effect_ENG": "After you perform an action, you may spend 1#ch#. If you do, you may perform a #BO# action, or #EV# action.",
              "faction": ["Imperial_Remnants"]
                          
@@ -5602,15 +5602,15 @@
              "force": 0,
              "charge": [0],
              "points": 0,
-             "effect": "",
+             "effect": "Ajoute un emplacement #ill# et un emplacement #calc#",
              "effect_ENG": "Add 1 #ill# slot and 1 #calc# slot",
              "faction": ["Partisans"]
                          
              
          },
          {
-            "name": "Espion",
-             "name_ENG": "Spy",
+            "name": "Agent Double",
+             "name_ENG": "Double Agent",
              "id":322,
              "max_per_squad":2,
              "available":true,
@@ -5620,8 +5620,8 @@
              "force": 0,
              "charge": [0],
              "points": 0,
-             "effect": "",
-             "effect_ENG": "",
+             "effect": "Pendant la phase système, vous pouvez dépenser 1#ch#. Dans ce cas, vous pouvez regarder le cadran d'un vaisseau ennemi à portée 0-1 du vaisseau avec la condition 'Agent Double'. De plus, vous bénéficiez ce tour ci de la capacité du pilote ou du #crew# concerné par 'Agent Double' à la place du vaisseau adverse.",
+             "effect_ENG": "During the system phase, you may spend 1 #ch#. If you do, you may look at the dial of an enemy ship at range 0-1 of the ship with the 'Double Agent' condition. Additionally, you gain the ability of the pilot or #crew# associated with 'Double Agent' instead of the enemy ship for this round.",
              "faction": ["Partisans"]
                          
              
@@ -5638,7 +5638,7 @@
              "add_Data": [0],
              "charge": [0],
              "points": 7,
-             "effect": "",
+             "effect": "Pendant que vous effectuez une attaque, vous pouvez utiliser 1 #fo# et gagner 1 jeton épuisement pour modifier 1 résultat #eye# en un résultat #hit#.<br>Pendant que vous défendez, vous pouvez dépenser 1 #fo# et gagner 1 jeton contrainte pour modifier 1 résultat #eye# en un résultat #evd#.",
              "effect_ENG": "While you perform an attack, you may use 1 #fo# and gain 1 deplete token to modify 1 #eye# result into a #hit# result.<br>While you defend, you may spend 1 #fo# and gain 1 strain token to modify 1 #eye# result into a #evd# result.",
              "faction": ["Partisans"]
              
@@ -5657,8 +5657,8 @@
              "force": 0,
              "charge": [1,"+"],
              "points": 4,
-             "effect": "",
-             "effect_ENG": "When an enemy ship executes a maneuver at range 0-1 in your #F180#, you may spend 1 #ch#. If you do, roll a die.<br>#Crit# : inflict a damage; #hit#/#eye# : expose a damage card or a inflict a strain token.",
+             "effect": "Lorsque un vaisseau ennemi effectue une manœuvre à portée 0-1 dans votre #F180#, vous pouvez dépenser 1 #ch#. Dans ce cas, lancez 1 dé.<br>#Crit# : infligez 1 dégât ; #hit#/#eye# : exposez 1 carte de dégât ou infligez 1 jeton contrainte.",
+             "effect_ENG": "When an enemy ship executes a maneuver at range 0-1 in your #F180#, you may spend 1 #ch#. If you do, roll a die.<br>#Crit# : deal a damage; #hit#/#eye# : expose a damage card or deal a strain token.",
              "faction": ["Partisans"]
                          
              
@@ -5675,7 +5675,7 @@
              "force": 0,
              "charge": [0],
              "points": 5,
-             "effect": "",
+             "effect": "Après avoir effectué une attaque, vous pouvez effectuer une attaque bonus avec une arme différente. Vous pouvez modifier un résultat #hit# en un résultat #crit# pour cette attaque bonus.",
              "effect_ENG": "After you perform an attack, you may perform a bonus attack with a different weapon. You may modify a #hit# result into a #crit# result for this bonus attack.",
              "faction": ["Partisans"]
                          
@@ -5693,7 +5693,7 @@
              "force": 0,
              "charge": [0],
              "points": 7,
-             "effect": "",
+             "effect": "Lorsque un vaisseau ennemi dans votre arc de tir effectue une attaque, il ne peut pas relancer plus d'1 dé. Après que vous avez effectué une attaque, vous pouvez effectuer une attaque depuis un arc différent.",
              "effect_ENG": "When an enemy ship in your firing arc performs an attack, it cannot reroll more then 1 dice. After you perform an attack, you may perform an attack from a different arc.",
              "faction": ["Partisans"]
                          
@@ -5748,8 +5748,8 @@
              "force": 0,
              "charge": [0],
              "points": 6,
-             "effect": "",
-             "effect_ENG": "Add #JA# Action link to Red#CO# Action",
+             "effect": "Ajoute l'action #JA# -> #CO# rouge",
+             "effect_ENG": "Add action #JA# -> Red #CO#",
              "faction": ["Partisans"],
              "modifier_func":[
                 [0, "add_action", [1,"Ja W","Co R"]]
@@ -5769,7 +5769,7 @@
              "force": 0,
              "charge": [0],
              "points": 4,
-             "effect": "",
+             "effect": "Fin de la mise en place : assignez la condition 'Traqué' à un vaisseau ennemi.",
              "effect_ENG": "END OF SETUP : assign the 'Hunted' condition to an enemy ship.",
              "faction": ["ISB"],
              "modifier_func":[
@@ -5792,8 +5792,8 @@
              "force": 0,
              "charge": [0],
              "points": 0,
-             "effect": "",
-             "effect_ENG": "When you are attacked by a ship with the Agent Kallus upgrade, it may modify an #eye# result to a #hit# result. When you are destroyed, your opponent gains 1 Scenario Point",
+             "effect": "Lorsque vous êtes attaqué par un vaisseau avec l'amélioration 'Agent Kallus', il peut modifier un résultat #eye# en un résultat #hit#. Lorsque vous êtes détruit, votre adversaire gagne 1 point de scénario (cela déclenche aussi le gain de point Tactique).",
+             "effect_ENG": "When you are attacked by a ship with the Agent Kallus upgrade, it may modify an #eye# result to a #hit# result. When you are destroyed, your opponent gains 1 Scenario Point (it triggers also the gain of Tactic point)",
              "faction": ["ISB"]
                                      
              
@@ -5810,7 +5810,7 @@
              "force": 0,
              "charge": [0],
              "points": 1,
-             "effect": "",
+             "effect": "À la fin de la phase, les vaisseaux ennemis à portée 0-2 ne peuvent pas retirer leur marqueur de brouillage.",
              "effect_ENG": "Enemy ships at range 0-2 don't remove their jam token during end phase.",
              "faction": ["ISB"]
                                      
@@ -5850,8 +5850,8 @@
              "force": 0,
              "charge": [0],
              "points": 5,
-             "effect": "",
-             "effect_ENG": "When you gain a blue token, if there's an enemy ship in your bullseye arc, you may jam that ship.",
+             "effect": "Lorsque vous gagnez un jeton bleu, s'il y a un vaisseau ennemi dans votre #bulls#, vous pouvez brouiller ce vaisseau.",
+             "effect_ENG": "When you gain a blue token, if there's an enemy ship in your #bulls#, you may jam that ship.",
              "faction": ["ISB"]          
              
          },
@@ -5866,8 +5866,8 @@
              "add_Data": [0],
              "force": 0,
              "charge": [0],
-             "points": 5,
-             "effect": "",
+             "points": 3,
+             "effect": "Au début de la phase d'engagement, s'il y a un vaisseau ennemi brouillé à portée 0-1, gagnez 1 jeton de calcul.",
              "effect_ENG": "At the start of Engagement Phase, if there is a jammed enemy ship at range 0-1, gain 1 calculate token",
              "faction": ["ISB"]          
              
@@ -5884,7 +5884,7 @@
              "force": 0,
              "charge": [0],
              "points": 4,
-             "effect": "",
+             "effect": "Mise en place : avant de placer les forces, assignez la condition 'Prototype Optimisé' à un autre vaisseau allié.",
              "effect_ENG": "Setup: Before placing forces, assign the 'Optimized Prototype' condition to another friendly ship.",
              "faction": ["ISB"],
              "modifier_func":[
@@ -5907,8 +5907,8 @@
              "force": 0,
              "charge": [0],
              "points": 0,
-             "effect": "",
-             "effect_ENG": "While you perform a primary attack against a ship locked by a friendly ship with the Director Krennic upgrade, you may spend 1 result. If you do, choose one: the defender loses 1 shield or the defender exposes a damage card.",
+             "effect": "Lorsque vous effectuez une attaque principale contre un vaisseau verrouillé par un vaisseau allié avec l'amélioration 'Directeur Krennic', vous pouvez dépenser 1 résultat non vierge. Dans ce cas, choisissez l'un des effets suivants : le défenseur perd 1 bouclier ou le défenseur expose une carte de dégât.",
+             "effect_ENG": "While you perform a primary attack against a ship locked by a friendly ship with the Director Krennic upgrade, you may spend 1 non-blank result. If you do, choose one: the defender loses 1 shield or the defender exposes a damage card.",
              "faction": ["ISB"]
                                      
              
@@ -5944,7 +5944,7 @@
              "charge": [0],
              "points": 1,
              "effect": "Tant que vous avez 2 marqueurs de stress ou moins, vous pouvez effectuer des actions #RE#, #CO# et #JA#.<br>Tant que vous effectuez une action blanche #RE#, #CO# ou #JA#, si vous êtes stressé, gagnez 1 jeton épuisement.",
-             "effect_ENG": "??",
+             "effect_ENG": "While you have 2 or fewer stress tokens, you may perform #RE#, #CO# and #JA# actions.<br>While you perform a white #RE#, #CO# or #JA# action, if you are stressed, gain 1 deplete token.",
              "faction": ["Heroes_of_the_Resistance"]
                                      
              
@@ -5962,7 +5962,7 @@
              "charge": [0],
              "points": 3,
              "effect": "Après avoir entièrement exécuté une manœuvre bleue, retirez tous vos marqueurs de stress.",
-             "effect_ENG": "??",
+             "effect_ENG": "After you fully execute a blue maneuver, remove all your stress tokens.",
              "faction": ["Heroes_of_the_Resistance"]
                                      
              
@@ -6029,15 +6029,20 @@
              "id":344,
              "max_per_squad":1,
              "available":true,
-             "modify":false,
+             "modify":true,
              "slot": "Crew",
              "add_Data": [0],
              "force": 0,
              "charge": [0],
              "points": 0,
-             "effect": "??",
-             "effect_ENG": "??",
-             "faction": ["New_Republic_Patrol"]
+             "effect": "Mise en place : avant de placer les forces, assignez la condition 'Visions' à un vaisseau ennemi. En phase système, si le vaisseau avec 'Visions' est à portée 0-2, vous pouvez tenter de deviner sa manoeuvre.",
+             "effect_ENG": "Setup: Before placing forces, assign the 'Visions' condition to an enemy ship. During System Phase, if the ship with 'Visions' is at range 0-2, you may attempt to guess its maneuver.",
+             "faction": ["New_Republic_Patrol"],
+             "modifier_func":[
+                    ["add_slots", "Condition"],
+                    ["auto_equip", "Condition", 287],
+                    ["may_remove_slots", "Condition"]
+                ]
                                      
              
          },
@@ -6162,9 +6167,9 @@
              "charge": [0],
              "points": 0,
              "talent_points": 1,
-             "effect": "??",
-             "effect_ENG": "??",
-             "faction": ["Shadow_Specialists","Imperial_Remnants"]
+             "effect": "Tant que vous avez 2 marqueurs de stress ou moins, vous pouvez effectuer des actions #FS#, même si vous êtes stressé. Après que vous avez effectué une attaque, si vous êtes stressé, le défenseur peut dépenser 1 marqueur de concentration ou subir 1 dégât #crit#. Dans ce cas, votre action #FS# dans votre barre d'action devient rouge.",
+             "effect_ENG": "While you have 2 or fewer stress tokens, you may perform #FS# actions, even if you are stressed. After you perform an attack, if you are stressed, the defender may spend 1 focus token or suffer 1 #crit# damage. If it does, your #FS# action in your action bar becomes red.",
+             "faction": ["Shadow_Specialists"]
                                      
              
          },
@@ -6439,8 +6444,8 @@
             "points": 2,
             "attack": ["F",2],
             "range": [2,3],
-            "effect": "Portée 2-3 #Farc# 2 dés Attaque.",
-            "effect_ENG": "",
+            "effect": "2#Farc# portée 2-3",
+            "effect_ENG": "2#Farc# Range 2-3",
             "faction": ""
         },
           {
@@ -6458,7 +6463,7 @@
               "force": 0,
               "charge": [2,"0"],
               "effect": "<img class='chargeforceimg' src='img/chargestat.png'><img class='chargeforceimg' src='img/chargestat.png'> Attaque (#TL#) : 4#Farc# portée 2-3  : dépensez 1 #ch#. Si cette attaque touche, après avoir attribué les dégats, exposez une carte de dégat du défenseur.",
-              "effect_ENG": "",
+              "effect_ENG": "<img class='chargeforceimg' src='img/chargestat.png'><img class='chargeforceimg' src='img/chargestat.png'> Attack (#TL#) : 4#Farc# Range 2-3 : spend 1 #ch#. If this attack hits, after assigning damage, expose 1 damage card from the defender.",
               "faction": "",
               "restrictions": [2,"upgrade", "Missile",""],
               "modifier_func": [
