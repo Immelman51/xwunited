@@ -570,7 +570,7 @@ const printform = document.getElementById('printform');
 function addBaseAndDialsToPrint() {
     
     console.log('function addBaseAndDialsToPrint');
-    for (i=2 ; i<indexes.length ; i++) {
+    for (i=2 ; i<indexes.length-1 ; i++) {
         let divInput = document.createElement('div');
         let baseInput = document.createElement('input');
         baseInput.setAttribute('id','baseInput'+i);
@@ -586,7 +586,7 @@ function addBaseAndDialsToPrint() {
     }
 
 
-    for (i=2 ; i<indexes.length ; i++) {
+    for (i=2 ; i<indexes.length-1 ; i++) {
         let divInput = document.createElement('div');
         let dialInput = document.createElement('input');
         dialInput.setAttribute('id','dialInput'+i);
@@ -628,7 +628,7 @@ printBtn.addEventListener('click', () => {
         elementsToPrintArray[1]=true;
     }else{elementsToPrintArray[1]=false;}
     
-    for (i=2 ; i<indexes.length ; i++){
+    for (i=2 ; i<indexes.length-1 ; i++){
         const base = document.getElementById('baseInput'+i);
         if (base.checked) {
             elementsToPrintArray[2][i-1].push(base.value) //the value of the checkbox is equal to the ID of the pilot. Objective, elementsToPrintArray[3] will be : [[shipId1,"large"],[shipId2,"small"],[shipId3,"medium"],[],[],[],[],[]]
@@ -690,8 +690,8 @@ function addHTMLandCSSforDialsAndBases() {
     const upgradeContainer = document.getElementById('upgrade-container');
     upgradeContainer.innerHTML = ""; //we re-initialize this div in case you click several time on print. (without this it's going to write again the upgrades descriptions.
     if (elementsToPrintArray[1]===true){
-        for (j=1 ; j<indexes.length ; j++){
-            if(indexes[j].length > 1){
+        for (j=1 ; j<indexes.length-1 ; j++){
+            if(indexes[j].length > 2){ //if the length is >2, it means that there's at least 1 upgrade equipped (pilotID + u + upgradeID = min length 3)
                 newpilot = document.createElement('div');
                 newpilot.setAttribute('class','pilot');
                 newpilot.innerHTML = "<font size='15'>"+pilots[pilotdata[j][0]]['name_'+language]+"</font><br>";
