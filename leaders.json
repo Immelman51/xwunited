@@ -134,7 +134,7 @@
      },
      {
      "leadername_FRA": "Général Hux",
-       "leadername_ENG": "General Hux",
+    "leadername_ENG": "General Hux",
      "leaderfaction": ["First_Order_Vanguard","",""],
      "leaderid": 12,
      "numberOfFactions": 1,

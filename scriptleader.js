@@ -4,11 +4,28 @@ let leaders =[];
 let menuLeader = [];
 let leaderSelected_id = 0;
 
+/*on écoute les saisies dans les menus pour délcencher les fonctions*/
+leaderselect = document.getElementById("menu_leader");
+factionselect = document.getElementById("menu_faction");
+let factionIndex = factionselect.selectedIndex;
+//let leaderID = 0;
+
 //We get the language selected
 let languageMenu = document.getElementById("language");
 let language = languageMenu.value;
 languageMenu.addEventListener("input", function(){
+console.log("Language Input");
 language = languageMenu.value;
+//We reinitialize the leader menu
+    menuLeader = [];
+    for (let i = 0; i < leaders.length; i++) {
+        menuLeader.push(leaders[i]["leadername_"+language]+' ('+leaders[i]["logistic"]+')');
+    }
+populateMenu("menu_leader",menuLeader);
+leaderselect.selectedIndex = leaderSelected_id;
+selection_leader();
+description_leader();
+
 });
 
 async function fetchData(url) {
@@ -68,11 +85,7 @@ window.addEventListener("DOMContentLoaded", function() {
 });
 
 
-/*on écoute les saisies dans les menus pour délcencher les fonctions*/
-leaderselect = document.getElementById("menu_leader");
-factionselect = document.getElementById("menu_faction");
-let factionIndex = factionselect.selectedIndex;
-//let leaderID = 0;
+
 
 //This function is going to find the id of the leader selected based on the value of the select menu.
 function getLeaderObject(){
