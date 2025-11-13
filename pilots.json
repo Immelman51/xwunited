@@ -525,7 +525,8 @@
             "shipId": 2,
             "skill": 3,
             "points": 7,
-            
+            "ability_FRA": "",
+            "ability_ENG": "",
             "slots": [
                 "Talent-piloting"
             ]
@@ -630,7 +631,8 @@
             "shipId": 10,
             "skill": 2,
             "points": 10,
-            
+            "ability_FRA": "",
+            "ability_ENG": "",
             "slots": []
         },
         {
@@ -840,7 +842,8 @@
             "shipId": 6,
             "skill": 1,
             "points": 8,
-            
+             "ability_FRA": "",
+            "ability_ENG": "",
             "slots": [
                 "Talent-piloting"
             ]
@@ -1033,7 +1036,8 @@
             "shipId": 11,
             "skill": 2,
             "points": 9,
-            
+             "ability_FRA": "",
+            "ability_ENG": "",
             "slots": []
         },
         {
@@ -1135,7 +1139,8 @@
             "shipId": 4,
             "skill": 1,
             "points": 5,
-            
+             "ability_FRA": "",
+            "ability_ENG": "",
             "slots": []
         },
 {
@@ -1303,6 +1308,8 @@
             "shipId": 31,
             "skill": 4,
             "points": 10,
+             "ability_FRA": "",
+            "ability_ENG": "",
             "slots": []
         },
         {
@@ -1424,7 +1431,8 @@
             "shipId": 77,
             "skill": 2,
             "points": 14,
-            
+             "ability_FRA": "",
+            "ability_ENG": "",
             "slots": []
         },
         {
@@ -1900,7 +1908,8 @@
             "shipId": 16,
             "skill": 1,
             "points": 13,
-            
+             "ability_FRA": "",
+            "ability_ENG": "",
             "slots": []
         
         },
@@ -2293,7 +2302,8 @@
 	        "modify": false,
             "skill": 3,
             "points": 7,
-            
+             "ability_FRA": "",
+            "ability_ENG": "",
             "slots": [
 
             ]
@@ -2408,8 +2418,9 @@
 		    "modify": false,
             "skill": 2,
             "points": 11,
-            "slots": [
-                
+             "ability_FRA": "",
+            "ability_ENG": "",
+            "slots": [                
             ]
         },
         {
@@ -2496,7 +2507,8 @@
 	        "modify": false,
             "skill": 1,
             "points": 6,
-            
+             "ability_FRA": "",
+            "ability_ENG": "",
             "slots": []
         },
         {
@@ -3187,6 +3199,7 @@
 
 {
             "name_FRA": "Hera Syndulla",
+            "name_ENG": "Hera Syndulla",
             "id": 136,
             "max_per_squad": 1,
             "faction": "Phoenix_Cell",
@@ -3215,6 +3228,7 @@
         },
         {
             "name_FRA": "Kanan Jarrus",
+            "name_ENG": "Kanan Jarrus",
             "id": 137,
             "max_per_squad": 1,
             "faction": "Phoenix_Cell",
@@ -3243,6 +3257,7 @@
         },
         {
             "name_FRA": "Chopper",
+            "name_ENG": "Chopper",
             "id": 138,
             "max_per_squad": 1,
 		    "modify": true,
@@ -3271,6 +3286,7 @@
         },
         {
             "name_FRA": "Alexsandr Kallus",
+            "name_ENG": "Alexsandr Kallus",
             "id": 139,
             "max_per_squad": 1,
             "faction": "Phoenix_Cell",
@@ -3297,6 +3313,7 @@
         },
         {
             "name_FRA": "Hera Syndulla",
+            "name_ENG": "Hera Syndulla",
             "id": 140,
             "max_per_squad": 1,
             "faction": "Phoenix_Cell",
@@ -3324,6 +3341,7 @@
         },
         {
             "name_FRA": "Sabine Wren",
+            "name_ENG": "Sabine Wren",
             "id": 141,
             "max_per_squad": 1,
             "faction": "Phoenix_Cell",
@@ -3351,6 +3369,7 @@
         },
         {
             "name_FRA": "Kanan Jarrus",
+            "name_ENG": "Kanan Jarrus",
             "id": 142,
             "max_per_squad": 1,
             "faction": "Phoenix_Cell",
@@ -3378,6 +3397,7 @@
         },
         {
             "name_FRA": "Zeb Orellios",
+            "name_ENG": "Zeb Orellios",
             "id": 143,
             "max_per_squad": 1,
             "faction": "Phoenix_Cell",
@@ -3404,6 +3424,7 @@
         },
         {
             "name_FRA": "AP5",
+            "name_ENG": "AP5",
             "id": 144,
             "max_per_squad": 1,
             "faction": "Phoenix_Cell",
@@ -3432,6 +3453,7 @@
         },
         {
             "name_FRA": "Alexsandr Kallus",
+            "name_ENG": "Alexsandr Kallus",
             "id": 145,
             "max_per_squad": 1,
             "faction": "Phoenix_Cell",
@@ -3460,6 +3482,7 @@
         
         {
             "name_FRA": "Ahsoka Tano",
+            "name_ENG": "Ahsoka Tano",
             "id": 146,
             "max_per_squad": 1,
             "faction": "Phoenix_Cell",
@@ -3517,6 +3540,7 @@
         },
         {
             "name_FRA": "Sabine Wren",
+            "name_ENG": "Sabine Wren",
             "id": 148,
             "max_per_squad": 1,
             "faction": "Phoenix_Cell",
@@ -3545,6 +3569,7 @@
         },
         {
             "name_FRA": "Ezra Bridger",
+            "name_ENG": "Ezra Bridger",
             "id": 149,
             "max_per_squad": 1,
             "faction": "Phoenix_Cell",
@@ -3604,6 +3629,7 @@
         },
         {
             "name_FRA": "Zeb Orellios",
+            "name_ENG": "Zeb Orellios",
             "id": 151,
             "max_per_squad": 1,
             "faction": "Phoenix_Cell",
@@ -3631,6 +3657,7 @@
         },
         {
             "name_FRA": "Ezra Bridger",
+            "name_ENG": "Ezra Bridger",
             "id": 152,
             "max_per_squad": 1,
             "faction": "Phoenix_Cell",
@@ -3660,6 +3687,7 @@
         },
         {
             "name_FRA": "Chopper",
+            "name_ENG": "Chopper",
             "id": 153,
             "max_per_squad": 1,
             "faction": "Phoenix_Cell",
@@ -3691,6 +3719,7 @@
         },
         {
             "name_FRA": "Mart Mattin",
+            "name_ENG": "Mart Mattin",
             "id": 154,
             "max_per_squad": 1,
             "faction": "Phoenix_Cell",
@@ -3720,6 +3749,7 @@
         },
         {
             "name_FRA": "Gooti Terez",
+            "name_ENG": "Gooti Terez",
             "id": 155,
             "max_per_squad": 1,
             "faction": "Phoenix_Cell",
@@ -3749,6 +3779,7 @@
         },
         {
             "name_FRA": "Lohgarra",
+            "name_ENG": "Lohgarra",
             "id": 156,
             "max_per_squad": 1,
             "faction": "Phoenix_Cell",
@@ -3777,6 +3808,7 @@
         },
         {
             "name_FRA": "Thane Kyrell",
+            "name_ENG": "Thane Kyrell",
             "id": 157,
             "max_per_squad": 1,
             "faction": "Phoenix_Cell",
@@ -3807,6 +3839,7 @@
         },
         {
             "name_FRA": "Ahsoka Tano",
+            "name_ENG": "Ahsoka Tano",
             "id": 158,
             "max_per_squad": 1,
             "faction": "Phoenix_Cell",
@@ -3829,6 +3862,7 @@
         },
         {
             "name_FRA": "Lieutenant Dicer",
+            "name_ENG": "Lieutenant Dicer",
             "id": 159,
             "max_per_squad": 1,
             "faction": "Phoenix_Cell",
@@ -3850,6 +3884,7 @@
         },
         {
             "name_FRA": "Fenn Rau",
+            "name_ENG": "Fenn Rau",
             "id": 160,
             "max_per_squad": 1,
             "faction": "Phoenix_Cell",
@@ -3872,6 +3907,7 @@
         },
         {
             "name_FRA": "Derek Klivian",
+            "name_ENG": "Derek Klivian",
             "id": 161,
             "max_per_squad": 1,
             "faction": "Phoenix_Cell",
@@ -3905,7 +3941,8 @@
             "shipId": 2,
             "skill": 1,
             "points": 7,
-            
+             "ability_FRA": "",
+            "ability_ENG": "",
             "slots": [
                 "Talent-piloting"
             ]
@@ -3914,6 +3951,7 @@
 
 		{
             "name_FRA": "General Grievous",
+            "name_ENG": "General Grievous",
             "id": 163,
             "max_per_squad": 1,
             "faction": "Separatist_Government",
@@ -3963,6 +4001,7 @@
         },
 		{
             "name_FRA": "Wat Tambor",
+            "name_ENG": "Wat Tambor",
             "id": 165,
             "max_per_squad": 1,
             "faction": "Separatist_Government",
@@ -3983,6 +4022,7 @@
         },
   		{
             "name_FRA": "General Kleeve",
+            "name_ENG": "General Kleeve",
             "id": 166,
             "max_per_squad": 1,
             "faction": "Separatist_Government",
@@ -4016,7 +4056,8 @@
 		    "modify": true,
             "skill": 1,
             "points": 9,
-            
+             "ability_FRA": "",
+            "ability_ENG": "",
             "slots": [ 
                 "Droid",
                 "Crew"              
@@ -4028,6 +4069,7 @@
   		
   		{
             "name_FRA": "AP5",
+            "name_ENG": "AP5",
             "id": 168,
             "max_per_squad": 1,
             "faction": "Trade_Federation",
@@ -4054,6 +4096,7 @@
         },
 		{
             "name_FRA": "Rune Haako",
+            "name_ENG": "Rune Haako",
             "id": 169,
             "max_per_squad": 1,
             "faction": "Trade_Federation",
@@ -4074,6 +4117,7 @@
         },
         {
             "name_FRA": "Nute Gunray",
+            "name_ENG": "Nute Gunray",
             "id": 170,
             "max_per_squad": 1,
             "faction": "Trade_Federation",
@@ -4094,6 +4138,7 @@
         },
 		{
             "name_FRA": "Riff Tamson",
+            "name_ENG": "Riff Tamson",
             "id": 171,
             "max_per_squad": 1,
             "faction": "Trade_Federation",
@@ -4126,6 +4171,8 @@
 		    "modify": true,
             "skill": 1,
             "points": 7,
+             "ability_FRA": "",
+            "ability_ENG": "",
             "slots": [
                 "Droid"             
             ],
@@ -4178,6 +4225,7 @@
         },
   		{
             "name_FRA": "DGS-286",
+            "name_ENG": "DGS-286",
             "id": 175,
             "max_per_squad": 1,
             "faction": "Trade_Federation",
@@ -4198,6 +4246,7 @@
         },
     	{
             "name_FRA": "DGS-047",
+            "name_ENG": "DGS-047",
             "id": 176,
             "max_per_squad": 1,
             "faction": "Trade_Federation",
@@ -4230,7 +4279,8 @@
 		    "modify": false,
             "skill": 3,
             "points": 9,
-            
+             "ability_FRA": "",
+            "ability_ENG": "",
             "slots": [                
             ]
         },
@@ -4353,6 +4403,8 @@
             "modify": false,
             "skill": 2,
             "points": 8,
+             "ability_FRA": "",
+            "ability_ENG": "",
             "slots": [
                             
             ]
@@ -4371,7 +4423,8 @@
             "modify": false,
             "skill": 1,
             "points": 5,
-            
+             "ability_FRA": "",
+            "ability_ENG": "",
             "slots": [
                             
             ]
@@ -4422,6 +4475,7 @@
 
         {
             "name_FRA": "Lin Gaava",
+            "name_ENG": "Lin Gaava",
             "id": 187,
             "max_per_squad": 1,
             "faction": "First_Order_Vanguard",
@@ -4443,6 +4497,7 @@
         },
 		{
             "name_FRA": "Jace Rucklin",
+            "name_ENG": "Jace Rucklin",
             "id": 188,
             "max_per_squad": 1,
             "faction": "First_Order_Vanguard",
@@ -4463,6 +4518,7 @@
         },
         {
             "name_FRA": "Lieutenant Galek",
+            "name_ENG": "Lieutenant Galek",
             "id": 189,
             "max_per_squad": 1,
             "faction": "First_Order_Vanguard",
@@ -4483,6 +4539,7 @@
         },
         {
             "name_FRA": "Muse",
+            "name_ENG": "Muse",
             "id": 190,
             "max_per_squad": 1,
             "faction": "First_Order_Vanguard",
@@ -4515,7 +4572,8 @@
 		    "modify": false,
             "skill": 1,
             "points": 6,
-            
+             "ability_FRA": "",
+            "ability_ENG": "",
             "slots": [            
             ]
         },
@@ -4542,6 +4600,7 @@
         },
 		{
             "name_FRA": "Backdraft",
+            "name_ENG": "Backdraft",
             "id": 193,
             "max_per_squad": 1,
             "faction": "First_Order_Vanguard",
@@ -4562,6 +4621,7 @@
         },
         {
             "name_FRA": "Quickdraw",
+            "name_ENG": "Quickdraw",
             "id": 194,
             "max_per_squad": 1,
             "faction": "First_Order_Vanguard",
@@ -4585,6 +4645,7 @@
         },
         {
             "name_FRA": "Lieutenant LeHuse",
+            "name_ENG": "Lieutenant LeHuse",
             "id": 195,
             "max_per_squad": 1,
             "faction": "First_Order_Vanguard",
@@ -4617,12 +4678,14 @@
             "shipId": 48,
             "skill": 3,
             "points": 10,
-            
+             "ability_FRA": "",
+            "ability_ENG": "",
             "slots": [            
             ]
         },
         {
             "name_FRA": "Breach",
+            "name_ENG": "Breach",
             "id": 197,
             "max_per_squad": 1,
             "faction": "First_Order_Vanguard",
@@ -4643,6 +4706,7 @@
         },
         {
             "name_FRA": "Jul Jerjerrod",
+            "name_ENG": "Jul Jerjerrod",
             "id": 198,
             "max_per_squad": 1,
             "faction": "First_Order_Vanguard",
@@ -4663,6 +4727,7 @@
         },
         {
             "name_FRA": "'Dread'",
+            "name_ENG": "'Dread'",
             "id": 199,
             "max_per_squad": 1,
             "faction": "First_Order_Vanguard",
@@ -4683,6 +4748,7 @@
         },
         {
             "name_FRA": "'Grudge'",
+            "name_ENG": "'Grudge'",
             "id": 200,
             "max_per_squad": 1,
             "faction": "First_Order_Vanguard",
@@ -4724,6 +4790,7 @@
         },
          {
             "name_FRA": "Lieutenant Tavson",
+            "name_ENG": "Lieutenant Tavson",
             "id": 202,
             "max_per_squad": 1,
             "faction": "First_Order_Vanguard",
@@ -4745,6 +4812,7 @@
         },
         {
             "name_FRA": "Lieutenant Dormitz",
+            "name_ENG": "Lieutenant Dormitz",
             "id": 203,
             "max_per_squad": 1,
             "faction": "First_Order_Vanguard",
@@ -4765,6 +4833,7 @@
         },
         {
             "name_FRA": "Major Stridan",
+            "name_ENG": "Major Stridan",
             "id": 204,
             "max_per_squad": 1,
             "faction": "First_Order_Vanguard",
@@ -4785,6 +4854,7 @@
         },
 		{
             "name_FRA": "Blackout",
+            "name_ENG": "Blackout",
             "id": 205,
             "max_per_squad": 1,
             "faction": "First_Order_Vanguard",
@@ -4805,6 +4875,7 @@
         },
         {
             "name_FRA": "Recoil",
+            "name_ENG": "Recoil",
             "id": 206,
             "max_per_squad": 1,
             "faction": "First_Order_Vanguard",
@@ -4825,6 +4896,7 @@
         },
         {
             "name_FRA": "Rush",
+            "name_ENG": "Rush",
             "id": 207,
             "max_per_squad": 1,
             "faction": "First_Order_Vanguard",
@@ -4845,6 +4917,7 @@
         },
         {
             "name_FRA": "Kylo Ren",
+            "name_ENG": "Kylo Ren",
             "id": 208,
             "max_per_squad": 1,
             "faction": "First_Order_Vanguard",
@@ -4878,7 +4951,8 @@
 		    "modify": false,
             "skill": 1,
             "points": 12,
-            
+             "ability_FRA": "",
+            "ability_ENG": "",
             "slots": [            
             ]
         },
@@ -4905,6 +4979,7 @@
         },
         {
             "name_FRA": "Lieutenant Shakel",
+            "name_ENG": "Lieutenant Shakel",
             "id": 211,
             "max_per_squad": 1,
             "faction": "First_Order_Vanguard",
@@ -4957,6 +5032,8 @@
             "shipId": 93,
             "skill": 2,
             "points": 10,
+             "ability_FRA": "",
+            "ability_ENG": "",
             "slots": [
             ]
         },
@@ -5638,13 +5715,16 @@
             "shipId": 74,
             "skill": 2,
             "points": 8,
+             "ability_FRA": "",
+            "ability_ENG": "",
             "slots": [
             ]
         },
 
 
 		{
-            "name_FRA": "Rear Admiral Chiraneau",
+            "name_FRA": "Vice Amiral Chiraneau",
+            "name_ENG": "Rear Admiral Chiraneau",
             "id": 243,
             "max_per_squad": 1,
             "faction": "Imperial_Elite_Squadrons",
@@ -5687,6 +5767,7 @@
         },
         {
             "name_FRA": "Morna Kee",
+            "name_ENG": "Morna Kee",
             "id": 245,
             "max_per_squad": 1,
             "modify": false,
@@ -5708,6 +5789,7 @@
         },
         {
             "name_FRA": "Iden Versio",
+            "name_ENG": "Iden Versio",
             "id": 246,
             "max_per_squad": 1,
             "faction": "Imperial_Elite_Squadrons",
@@ -5730,6 +5812,7 @@
         },
         {
             "name_FRA": "Gideon Hask",
+            "name_ENG": "Gideon Hask",
             "id": 247,
             "max_per_squad": 1,
             "faction": "Imperial_Elite_Squadrons",
@@ -5751,6 +5834,7 @@
         },
         {
             "name_FRA": "Del Meeko",
+            "name_ENG": "Del Meeko",
             "id": 248,
             "max_per_squad": 1,
             "faction": "Imperial_Elite_Squadrons",
@@ -5772,6 +5856,7 @@
         },
         {
             "name_FRA": "Seyn Marana",
+            "name_ENG": "Seyn Marana",
             "id": 249,
             "max_per_squad": 1,
             "faction": "Imperial_Elite_Squadrons",
@@ -5793,6 +5878,7 @@
         },
         {
             "name_FRA": "Soontir Fel",
+            "name_ENG": "Soontir Fel",
             "id": 250,
             "max_per_squad": 1,
             "faction": "Imperial_Elite_Squadrons",
@@ -5815,6 +5901,7 @@
         },
         {
             "name_FRA": "Ciena Ree",
+            "name_ENG": "Ciena Ree",
             "id": 251,
             "max_per_squad": 1,
             "faction": "Imperial_Elite_Squadrons",
@@ -5860,6 +5947,7 @@
         },
         {
             "name_FRA": "Turr Phenir",
+            "name_ENG": "Turr Phenir",
             "id": 253,
             "max_per_squad": 1,
             "faction": "Imperial_Elite_Squadrons",
@@ -5904,6 +5992,7 @@
         },
         {
             "name_FRA": "Deathrain",
+            "name_ENG": "Deathrain",
             "id": 255,
             "max_per_squad": 1,
             "faction": "Imperial_Elite_Squadrons",
@@ -5923,6 +6012,7 @@
         },
         {
             "name_FRA": "Redline",
+            "name_ENG": "Redline",
             "id": 256,
             "max_per_squad": 1,
             "faction": "Imperial_Elite_Squadrons",
@@ -5942,6 +6032,7 @@
         },
         {
             "name_FRA": "Rexler Brath",
+            "name_ENG": "Rexler Brath",
             "id": 257,
             "max_per_squad": 1,
             "faction": "Imperial_Elite_Squadrons",
@@ -5962,6 +6053,7 @@
         },
         {
             "name_FRA": "Colonel Vessery",
+            "name_ENG": "Colonel Vessery",
             "id": 258,
             "max_per_squad": 1,
             "faction": "Imperial_Elite_Squadrons",
@@ -6085,6 +6177,7 @@
         },
         {
             "name_FRA": "Valen Rudor",
+            "name_ENG": "Valen Rudor",
             "id": 264,
             "max_per_squad": 1,
             "modify": false,
@@ -6106,6 +6199,7 @@
         },
         {
             "name_FRA": "Anakin Skywalker",
+            "name_ENG": "Anakin Skywalker",
             "id": 265,
             "max_per_squad": 1,
             "modify": false,
@@ -6128,6 +6222,7 @@
         },
         {
             "name_FRA": "Obi-Wan Kenobi",
+            "name_ENG": "Obi-Wan Kenobi",
             "id": 266,
             "max_per_squad": 1,
             "modify": false,
@@ -6149,6 +6244,7 @@
         },
         {
             "name_FRA": "Plo Koon",
+            "name_ENG": "Plo Koon",
             "id": 267,
             "max_per_squad": 1,
             "modify": false,
@@ -6170,6 +6266,7 @@
         },
         {
             "name_FRA": "Ahsoka Tano",
+            "name_ENG": "Ahsoka Tano",
             "id": 268,
             "max_per_squad": 1,
             "modify": false,
@@ -6192,6 +6289,7 @@
 
         {
             "name_FRA": "Mace Windu",
+            "name_ENG": "Mace Windu",
             "id": 269,
             "max_per_squad": 1,
             "modify": false,
@@ -6214,6 +6312,7 @@
         },
         {
             "name_FRA": "Luminara Unduli",
+            "name_ENG": "Luminara Unduli",
             "id": 270,
             "max_per_squad": 1,
             "modify": false,
@@ -6235,6 +6334,7 @@
         },
         {
             "name_FRA": "Bariss Offee",
+            "name_ENG": "Barriss Offee",
             "id": 271,
             "max_per_squad": 1,
             "modify": false,
@@ -6256,6 +6356,7 @@
         },
         {
             "name_FRA": "Adi Gallia",
+            "name_ENG": "Adi Gallia",
             "id": 272,
             "max_per_squad": 1,
             "modify": false,
@@ -6277,6 +6378,7 @@
         },
         {
             "name_FRA": "Yoda",
+            "name_ENG": "Yoda",
             "id": 273,
             "max_per_squad": 1,
             "modify": false,
@@ -6299,6 +6401,7 @@
         },
         {
             "name_FRA": "Aayla Secura",
+            "name_ENG": "Aayla Secura",
             "id": 274,
             "max_per_squad": 1,
             "modify": false,
@@ -6321,6 +6424,7 @@
         },
         {
             "name_FRA": "Shaak Ti",
+            "name_ENG": "Shaak Ti",
             "id": 275,
             "max_per_squad": 1,
             "modify": false,
@@ -6342,6 +6446,7 @@
         },
         {
             "name_FRA": "Kit Fisto",
+            "name_ENG": "Kit Fisto",
             "id": 276,
             "max_per_squad": 1,
             "modify": false,
@@ -6364,6 +6469,7 @@
 
         {
             "name_FRA": "Drift",
+            "name_ENG": "Drift",
             "id": 277,
             "max_per_squad": 1,
             "modify": false,
@@ -6383,6 +6489,7 @@
         },
         {
             "name_FRA": "Stub",
+            "name_ENG": "Stub",
             "id": 278,
             "max_per_squad": 1,
             "modify": false,
@@ -6402,6 +6509,7 @@
         },
         {
             "name_FRA": "Boost",
+            "name_ENG": "Boost",
             "id": 279,
             "max_per_squad": 1,
             "modify": false,
@@ -6421,6 +6529,7 @@
         },
         {
             "name_FRA": "Killer",
+            "name_ENG": "Killer",
             "id": 280,
             "max_per_squad": 1,
             "modify": false,
@@ -6440,6 +6549,7 @@
         },
         {
             "name_FRA": "Eclaireur de l'Escadron Ombre",
+            "name_ENG": "Shadow Squadron Scout",
             "id": 281,
             "max_per_squad": 8,
             "modify": false,
@@ -6459,6 +6569,7 @@
         },
         {
             "name_FRA":"Anakin Skywalker",
+            "name_ENG": "Anakin Skywalker",
             "id": 282,
             "max_per_squad": 1,
             "modify": false,
@@ -6483,6 +6594,7 @@
         },
         {
             "name_FRA":"Goji",
+            "name_ENG": "Goji",
             "id": 283,
             "max_per_squad": 1,
             "modify": false,
@@ -6502,6 +6614,7 @@
         },
         {
             "name_FRA":"Broadside",
+            "name_ENG": "Broadside",
             "id": 284,
             "max_per_squad": 1,
             "modify": false,
@@ -6521,6 +6634,7 @@
         },
         {
             "name_FRA":"Matchstick",
+            "name_ENG": "Matchstick",
             "id": 285,
             "max_per_squad": 1,
             "modify": false,
@@ -6540,6 +6654,7 @@
         },
         {
             "name_FRA":"Bombardier de l'Escadron Ombre",
+            "name_ENG": "Shadow Squadron Bomber",
             "id": 286,
             "max_per_squad": 8,
             "modify": false,
@@ -6558,6 +6673,7 @@
         },
        {
             "name_FRA":"Mace Windu",
+            "name_ENG": "Mace Windu",
             "id": 287,
             "max_per_squad": 1,
             "modify": false,
@@ -6579,6 +6695,7 @@
         },
         {
             "name_FRA":"Sifo Dyas",
+            "name_ENG": "Sifo Dyas",
             "id": 288,
             "max_per_squad": 1,
             "modify": false,
@@ -6599,6 +6716,7 @@
         },
         {
             "name_FRA":"Quinlan Vos",
+            "name_ENG": "Quinlan Vos",
             "id": 289,
             "max_per_squad": 1,
             "modify": false,
@@ -6619,6 +6737,7 @@
         },
         {
             "name_FRA":"Commander Cody",
+            "name_ENG": "Commander Cody",
             "id": 290,
             "max_per_squad": 1,
             "modify": false,
@@ -6639,6 +6758,7 @@
 
         {
             "name_FRA": "Hound",
+            "name_ENG": "Hound",
             "id": 291,
             "max_per_squad": 1,
             "modify": false,
@@ -6658,6 +6778,7 @@
         },
         {
             "name_FRA": "Warthog",
+            "name_ENG": "Warthog",
             "id": 292,
             "max_per_squad": 1,
             "modify": false,
@@ -6677,6 +6798,7 @@
         },
         {
             "name_FRA": "Hawk",
+            "name_ENG": "Hawk",
             "id": 293,
             "max_per_squad": 1,
             "modify": false,
@@ -6696,6 +6818,7 @@
         },
         {
             "name_FRA": "Sicko",
+            "name_ENG": "Sicko",
             "id": 294,
             "max_per_squad": 1,
             "modify": false,
@@ -6716,6 +6839,7 @@
         },
         {
             "name_FRA": "Odd Ball",
+            "name_ENG": "Odd Ball",
             "id": 295,
             "max_per_squad": 1,
             "modify": false,
@@ -6736,6 +6860,7 @@
         },
         {
             "name_FRA": "Kickback",
+            "name_ENG": "Kickback",
             "id": 296,
             "max_per_squad": 1,
             "modify": false,
@@ -6755,6 +6880,7 @@
         },
         {
             "name_FRA": "Axe",
+            "name_ENG": "Axe",
             "id": 297,
             "max_per_squad": 1,
             "modify": false,
@@ -6774,6 +6900,7 @@
         },
         {
             "name_FRA": "Tucker",
+            "name_ENG": "Tucker",
             "id": 298,
             "max_per_squad": 1,
             "modify": false,
@@ -6793,6 +6920,7 @@
         },
         {
             "name_FRA": "Protecteur de l'Escadron Bleu",
+            "name_ENG": "Blue Squadron Protector",
             "id": 299,
             "max_per_squad": 8,
             "modify": false,
@@ -6812,6 +6940,7 @@
         },
         {
             "name_FRA": "Escorte de l'Escadron Ombre",
+            "name_ENG": "Shadow Squadron Escort",
             "id": 300,
             "max_per_squad": 8,
             "modify": false,
@@ -6830,6 +6959,7 @@
         },
         {
             "name_FRA": "Contrail",
+            "name_ENG": "Contrail",
             "id": 301,
             "max_per_squad": 1,
             "modify": false,
@@ -6850,6 +6980,7 @@
         },
         {
             "name_FRA": "Klick",
+            "name_ENG": "Klick",
             "id": 302,
             "max_per_squad": 1,
             "modify": false,
@@ -6869,6 +7000,7 @@
         },
         {
             "name_FRA": "Wilhuff Tarkin",
+            "name_ENG": "Wilhuff Tarkin",
             "id": 303,
             "max_per_squad": 1,
             "modify": false,
@@ -6888,6 +7020,7 @@
         },
         {
             "name_FRA": "Crosshair",
+            "name_ENG": "Crosshair",
             "id": 304,
             "max_per_squad": 1,
             "modify": false,
@@ -6908,6 +7041,7 @@
         },
         {
             "name_FRA": "Pilote du 104ème Bataillon",
+            "name_ENG": "104th Battalion Pilot",
             "id": 305,
             "max_per_squad": 8,
             "modify": false,
@@ -6926,6 +7060,7 @@
         },
         {
             "name_FRA": "Wolffe",
+            "name_ENG": "Wolffe",
             "id": 306,
             "max_per_squad": 1,
             "modify": false,
@@ -6946,6 +7081,7 @@
         },
         {
             "name_FRA": "Odd Ball",
+            "name_ENG": "Odd Ball",
             "id": 307,
             "max_per_squad": 1,
             "modify": false,
@@ -6966,6 +7102,7 @@
         },
         {
             "name_FRA": "Sinker",
+            "name_ENG": "Sinker",
             "id": 308,
             "max_per_squad": 1,
             "modify": false,
@@ -6986,6 +7123,7 @@
         },
         {
             "name_FRA": "Jag",
+            "name_ENG": "Jag",
             "id": 309,
             "max_per_squad": 1,
             "modify": false,
@@ -7006,6 +7144,7 @@
         },
         {
             "name_FRA": "Pilote de Navette d'Escorte",
+            "name_ENG": "Escort Shuttle Pilot",
             "id": 310,
             "max_per_squad": 8,
             "modify": false,
@@ -7025,6 +7164,7 @@
         },
         {
             "name_FRA": "Echo",
+            "name_ENG": "Echo",
             "id": 311,
             "max_per_squad": 1,
             "modify": true,
@@ -7049,6 +7189,7 @@
         },
         {
             "name_FRA": "Tech",
+            "name_ENG": "Tech",
             "id": 312,
             "max_per_squad": 1,
             "modify": true,
@@ -7073,6 +7214,7 @@
         },
         {
             "name_FRA": "Hunter",
+            "name_ENG": "Hunter",
             "id": 313,
             "max_per_squad": 1,
             "modify": true,
@@ -7100,6 +7242,7 @@
         },
         {
             "name_FRA": "Wrecker",
+            "name_ENG": "Wrecker",
             "id": 314,
             "max_per_squad": 1,
             "modify": true,
@@ -7124,6 +7267,7 @@
         },
         {
             "name_FRA": "Officier de l'Escadron Bravo",
+            "name_ENG": "Bravo Squadron Officer",
             "id": 315,
             "max_per_squad": 8,
             "modify": false,
@@ -7142,6 +7286,7 @@
         },
         {
             "name_FRA": "Ric Ollié",
+            "name_ENG": "Ric Ollié",
             "id": 316,
             "max_per_squad": 1,
             "modify": false,
@@ -7162,6 +7307,7 @@
         },
         {
             "name_FRA": "Gavyn Sykes",
+            "name_ENG": "Gavyn Sykes",
             "id": 317,
             "max_per_squad": 1,
             "modify": false,
@@ -7181,6 +7327,7 @@
         },
         {
             "name_FRA": "Dinée Ellberger",
+            "name_ENG": "Dinée Ellberger",
             "id": 318,
             "max_per_squad": 1,
             "modify": false,
@@ -7200,6 +7347,7 @@
         },
         {
             "name_FRA": "Anakin Skywalker",
+            "name_ENG": "Anakin Skywalker",
             "id": 319,
             "max_per_squad": 1,
             "modify": false,
@@ -7220,6 +7368,7 @@
         },
         {
             "name_FRA": "'Duchess'",
+            "name_ENG": "'Duchess'",
             "id": 320,
             "max_per_squad": 1,
             "modify": false,
@@ -7240,6 +7389,7 @@
         },
         {
             "name_FRA": "'Countdown'",
+            "name_ENG": "'Countdown'",
             "id": 321,
             "max_per_squad": 1,
             "modify": false,
@@ -7259,6 +7409,7 @@
         },
         {
             "name_FRA": "'Pure Sabacc'",
+            "name_ENG": "'Pure Sabacc'",
             "id": 322,
             "max_per_squad": 1,
             "modify": false,
@@ -7278,6 +7429,7 @@
         },
         {
             "name_FRA": "'Vagabond'",
+            "name_ENG": "'Vagabond'",
             "id": 323,
             "max_per_squad": 1,
             "modify": false,
@@ -12695,7 +12847,7 @@
         },
 	{
             "name_FRA": "Padme Amidala",
-            "name_ENG": "",
+            "name_ENG": "Padme Amidala",
             "id": 560,
             "max_per_squad":1,
             "modify": true,
