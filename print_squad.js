@@ -57,7 +57,7 @@ async function getIndexesFromHash() { // Function to get the indexes from the UR
         }
     }
 
-    return indexes; // The array 'indexes' contains ! ["leaderID","pilotID+u+upgrade1ID+u+upgrade2ID","pilotID"....]
+    return indexes; // The array 'indexes' contains ! ["leaderID","pilotID+u+upgrade1ID+u+upgrade2ID","pilotID"....,language]
 }
 
 async function getPilotData(x){ //we take indexes[x], and we are going to extract all datas from pilot x
@@ -66,10 +66,16 @@ async function getPilotData(x){ //we take indexes[x], and we are going to extrac
     pilotdata[x] = pilotx;
 }
 
+
+//We get the language selected
+let language = indexes[indexes.length - 1];
+
+
+
 async function testListValidity() {
     //Test if the pilots talent slots exceed the skill of the pilot (TAL)
     let totalcostvalue = 0;
-    for (k=1;k<indexes.length;k++){
+    for (k=1;k<indexes.length-1;k++){ //we don't take in account the leader (index 0) and the language (last index)
         let talentTotalValue = 0;
         let logisticTotalValue = 0;
         getPilotData(k); 
@@ -122,7 +128,7 @@ const leaderName = document.getElementById('lname');
 const faction = document.getElementById('leaderfaction');
 const leaderAbility = document.getElementById('lability');
 const leaderCharge = document.getElementById('lcharge');
-leaderName.textContent = leaders[lID]['leadername'];
+leaderName.textContent = leaders[lID]['leadername_'+language];
     
     if(listValidity===false){
         leaderName.textContent += ' (NOT VALID)';
@@ -136,7 +142,7 @@ for(i=0; i<3; i++){
     }
 }
 
-leaderAbility.innerHTML = leaders[lID]['leaderability'];
+leaderAbility.innerHTML = leaders[lID]['leaderability_'+language];
 const nbrOfLeaderCharges = leaders[lID]['charge'][0];
 console.log(nbrOfLeaderCharges);
 
@@ -270,8 +276,8 @@ function displayPilot(x){
     factionlogo.setAttribute("class",'factionimg');
     pilotFaction.appendChild(factionlogo);
 
-    pilotName.textContent = pilots[pid]['name'];
-    pilotAbility.textContent = pilots[pid]['ability']; 
+    pilotName.textContent = pilots[pid]['name_'+language];
+    pilotAbility.textContent = pilots[pid]['ability_'+language]; 
     pilotCost.innerHTML = "<span>"+pilots[pid]['points']+"<span>"; //allows to have a white background on the cost. Sometimes, the background image makes the number unreadable.
         
     const sid = pilots[pid]['shipId']; //We store the ship ID
@@ -354,33 +360,33 @@ function displayPilot(x){
             }
 
             if(chassis[cid[0]]["nbrOfEffects"]===1){
-            document.getElementById('chassis'+(x)+'_'+1).innerHTML = chassis[cid[0]]['effect1'];
+            document.getElementById('chassis'+(x)+'_'+1).innerHTML = chassis[cid[0]]['effect1_'+language];
             document.getElementById('chassis'+(x)+'_'+1).setAttribute('class','chassis C'+cid[0]+' chs1'); //We change the class of this chassis, so we can remove it with functions contained in title such as Millenium Falcon.
             removeElementById("chassis"+(x)+"_2");
             removeElementById("chassis"+(x)+"_3");
             }
             
             if(chassis[cid[0]]["nbrOfEffects"]===2){
-            document.getElementById('chassis'+(x)+'_'+2).innerHTML = chassis[cid[0]]['effect2'];
-            document.getElementById('chassis'+(x)+'_'+3).innerHTML = chassis[cid[0]]['effect3'];
+            document.getElementById('chassis'+(x)+'_'+2).innerHTML = chassis[cid[0]]['effect2_'+language];
+            document.getElementById('chassis'+(x)+'_'+3).innerHTML = chassis[cid[0]]['effect3_'+language];
             removeElementById("chassis"+(x)+"_1");
             }
             break;
         case 2 : 
             if(chassis[cid[0]]["nbrOfEffects"]===2){ //rules to display several chassis on 1 ship. We have to take in account the case where we need more than 3 div to display thoses abilities. In that case, we display 2 chassis ability in chassis0
-                document.getElementById('chassis'+(x)+'_'+1).innerHTML = chassis[cid[1]]['effect1']
+                document.getElementById('chassis'+(x)+'_'+1).innerHTML = chassis[cid[1]]['effect1_'+language];
                 document.getElementById('chassis'+(x)+'_'+1).setAttribute('class','chassis C'+cid[1]+' chs1'); //We change the class of this chassis, so we can remove it with functions contained in title such as Millenium Falcon.
-                document.getElementById('chassis'+(x)+'_'+2).innerHTML = chassis[cid[0]]['effect2'];
-                document.getElementById('chassis'+(x)+'_'+3).innerHTML = chassis[cid[0]]['effect3'];
+                document.getElementById('chassis'+(x)+'_'+2).innerHTML = chassis[cid[0]]['effect2_'+language];
+                document.getElementById('chassis'+(x)+'_'+3).innerHTML = chassis[cid[0]]['effect3_'+language];
             }
             if(chassis[cid[1]]["nbrOfEffects"]===2){ //rules to display several chassis on 1 ship. We have to take in account the case where we need more than 3 div to display thoses abilities. In that case, we display 2 chassis ability in chassis0
-                document.getElementById('chassis'+(x)+'_'+1).innerHTML = chassis[cid[0]]['effect1'];
-                document.getElementById('chassis'+(x)+'_'+2).innerHTML = chassis[cid[1]]['effect2'];
-                document.getElementById('chassis'+(x)+'_'+3).innerHTML = chassis[cid[1]]['effect3'];
+                document.getElementById('chassis'+(x)+'_'+1).innerHTML = chassis[cid[0]]['effect1_'+language];
+                document.getElementById('chassis'+(x)+'_'+2).innerHTML = chassis[cid[1]]['effect2_'+language];
+                document.getElementById('chassis'+(x)+'_'+3).innerHTML = chassis[cid[1]]['effect3_'+language];
             }
             if((chassis[cid[0]]["nbrOfEffects"]===1) && (chassis[cid[1]]["nbrOfEffects"]===1)){ //if the 2 chassis abilities has 1 effect, then we display then into chassis2 and chassis3 and we leave chassis1 blank
-                document.getElementById('chassis'+(x)+'_'+2).innerHTML = chassis[cid[0]]['effect1'];
-                document.getElementById('chassis'+(x)+'_'+3).innerHTML = chassis[cid[1]]['effect1'];
+                document.getElementById('chassis'+(x)+'_'+2).innerHTML = chassis[cid[0]]['effect1_'+language];
+                document.getElementById('chassis'+(x)+'_'+3).innerHTML = chassis[cid[1]]['effect1_'+language];
                 removeElementById("chassis"+(x)+"_1");
 
             }
@@ -402,7 +408,7 @@ function displayPilot(x){
         upglogo.setAttribute("src","img/"+upgrades[uid]['slot']+".png");
         mdivupg.appendChild(upglogo);
         mdivupg.textContent = upgrades[uid]['name'];*/
-        mdivupg.innerHTML = '<img src="img/'+upgrades[uid]["slot"]+'.png" class="logo"/> '+'<span>'+upgrades[uid]["name"]+'</span>'; 
+        mdivupg.innerHTML = '<img src="img/'+upgrades[uid]["slot"]+'.png" class="logo"/> '+'<span>'+upgrades[uid]["name_"+language]+'</span>'; 
         
         
         switch (upgrades[uid]['add_Data'][0]) { //we are going to process the data in add_data entry. Those may add a small picture to remind the player some specific effect of the upgrade, or remove some HTML elements such as the millenium falcon that removes a chassis ability
@@ -571,7 +577,7 @@ function addBaseAndDialsToPrint() {
         baseInput.setAttribute('value',pilotdata[i][0]); //we get the data baseInput:48
         let baseInputLabel = document.createElement('label');
         baseInputLabel.setAttribute('for','baseInput'+i);
-        baseInputLabel.innerHTML="BASE de "+pilots[pilotdata[i][0]]['name'];
+        baseInputLabel.innerHTML="BASE de "+pilots[pilotdata[i][0]]['name_'+language];
         divInput.appendChild(baseInput);
         divInput.appendChild(baseInputLabel);
         printform.appendChild(divInput);
@@ -650,7 +656,7 @@ printBtn.addEventListener('click', () => {
     }
           const opt = {
             margin:       0.5,
-              filename:     leaders[indexes[0]]['leadername']+pilotsID+'.pdf',
+              filename:     leaders[indexes[0]]['leadername_'+language]+pilotsID+'.pdf',
               image:        { type: 'jpeg', quality: 0.98 },
             html2canvas:  { scale: 2 },
             jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' }
@@ -686,12 +692,12 @@ function addHTMLandCSSforDialsAndBases() {
             if(indexes[j].length > 1){
                 newpilot = document.createElement('div');
                 newpilot.setAttribute('class','pilot');
-                newpilot.innerHTML = "<font size='15'>"+pilots[pilotdata[j][0]]['name']+"</font><br>";
+                newpilot.innerHTML = "<font size='15'>"+pilots[pilotdata[j][0]]['name_'+language]+"</font><br>";
                 for ( k=1 ; k<pilotdata[j].length ; k++){ //we begin at 1 because the entry 0 is the pilotID
                     upg = upgrades[pilotdata[j][k]]
                     newupgrade = document.createElement('div');
                     newupgrade.setAttribute('class', 'upgradeText');
-                    newupgrade.innerHTML = '<b>' + upg['name'] +'</b>' + ' (' + upg['slot'] + ') - ';
+                    newupgrade.innerHTML = '<b>' + upg['name_'+language] +'</b>' + ' (' + upg['slot'] + ') - ';
                     /*switch (upg['slot']) {
                         case 'Canon' :
                         case 'Turret' :
@@ -701,7 +707,7 @@ function addHTMLandCSSforDialsAndBases() {
                             newupgrade.innerHTML +=  'Portée : ' + upg['range'][0]+'/'+upg['range'][1] + ' - ';
                             newupgrade.innerHTML += '<img src="img/attack'+ upg['attack'][0] +'.jpg" class="logo"/> ' + upg['attack'][1] + '<br>';
                         default :*/
-                        newupgrade.innerHTML += upg['effect'];
+                        newupgrade.innerHTML += upg['effect_'+language];
                         newpilot.appendChild(newupgrade);
                     }
                     

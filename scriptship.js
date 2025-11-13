@@ -108,7 +108,7 @@ function select_ship_list() {//permet de remplir la liste des vaisseaux disponib
     shipObject_available = [];
     for (let i = 0; i < ships.length; i++) {
         if (ships[i]["factions"].includes(factionno1) || ships[i]["factions"].includes(factionno2) || ships[i]["factions"].includes(factionno3)) {
-        ship_available.push(ships[i]["name_"+language]) ;
+        ship_available.push(ships[i]["name"]) ;
         shipObject_available.push(ships[i]);
         }
        
@@ -1547,7 +1547,7 @@ function hasher(){ //on inscrit dans hash le nombre de vaisseaux (shipquantity+1
     }
     
 
-hash = hash.slice(0,-1); //on retire la virgule finale
+hash = hash+language; //on ajoute la langue à la fin du code
 }
 
 
