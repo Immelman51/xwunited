@@ -1374,7 +1374,7 @@ function displayDescriptionShip(event){ //displays ship stats (and actions and m
     description_upg_pil_Field.innerHTML="";
     
     for (k=0; k<ships.length; k++){
-        if (event.target.value === ships[k]["name_"+language]) { //il faut pas oublier de virer les (x) dans les menus
+        if (event.target.value === ships[k]["name"]) { //il faut pas oublier de virer les (x) dans les menus
             description_upg_pil_Field.innerHTML = '<span style="color: red">' +ships[k]["attack"][0][1] + '</span> <img src="img/attack'+ships[k]["attack"][0][0] +'.jpg" class="logo"/>';
             if (ships[k]['attack'].length>1){
                 description_upg_pil_Field.innerHTML =  description_upg_pil_Field.innerHTML+'<span style="color: red">' +ships[k]["attack"][1][1] + '</span> <img src="img/attack'+ships[k]["attack"][1][0] +'.jpg" class="logo"/>';     
