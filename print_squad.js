@@ -528,7 +528,7 @@ async function executeFunctions(){ //on crée une fonction asynchrone pour que t
     language = indexes[indexes.length - 1]; //the language is the last element of indexes array
     await displayLeader();
     
-    for(k=1; k<indexes.length; k++){
+    for(k=1; k<indexes.length-1; k++){
             await displayPilot(k);
          
         
