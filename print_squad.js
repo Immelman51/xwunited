@@ -5,6 +5,7 @@ let hash = "";
 let elementsToPrintArray = [false,false,[[],[],[],[],[],[],[],[]],[]];
 let element = document.getElementById("content");
 let listValidity = true;
+let language = ""; // Initialize language variable
 
 
 
@@ -67,8 +68,7 @@ async function getPilotData(x){ //we take indexes[x], and we are going to extrac
 }
 
 
-//We get the language selected
-let language = indexes[indexes.length - 1];
+
 
 
 
@@ -524,6 +524,8 @@ async function executeFunctions(){ //on crée une fonction asynchrone pour que t
     console.log(upgrades);
     console.log(leaders);    
     await getIndexesFromHash();
+    //We get the language selected
+    language = indexes[indexes.length - 1]; //the language is the last element of indexes array
     await displayLeader();
     
     for(k=1; k<indexes.length; k++){
