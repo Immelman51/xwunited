@@ -41,7 +41,6 @@ async function fetchData(url) {
 
 
 
-
 let shipquantity = -1; //compteur qui ne sert pas à compter mais à numéroter les id des menus
  let ship_available = [];
  let listValidity = true;
@@ -109,7 +108,7 @@ function select_ship_list() {//permet de remplir la liste des vaisseaux disponib
     shipObject_available = [];
     for (let i = 0; i < ships.length; i++) {
         if (ships[i]["factions"].includes(factionno1) || ships[i]["factions"].includes(factionno2) || ships[i]["factions"].includes(factionno3)) {
-        ship_available.push(ships[i]["name"]) ;
+        ship_available.push(ships[i]["name_"+language]) ;
         shipObject_available.push(ships[i]);
         }
        
@@ -137,7 +136,7 @@ function select_pilot_list(){ //permet de remplir la liste des pilotes disponibl
     ship_selected_list[x] = document.getElementById("menu_ship_"+ y).value;
     for (let i= 0; i< pilots.length; i++) {
     if ((pilots[i]["faction"]===factionno1 || pilots[i]["faction"]===factionno2 || pilots[i]["faction"]===factionno3) && (pilots[i]["ship"]===ship_selected_list[x])) {
-        pilot_available.push(pilots[i]["name"] + ' (' + pilots[i]["points"] + ')' );//on ajoute dans la liste le nom des pilotes avec leur cout
+        pilot_available.push(pilots[i]["name_"+language] + ' (' + pilots[i]["points"] + ')' );//on ajoute dans la liste le nom des pilotes avec leur cout
         pilot_objects[y].push(pilots[i]);
    } 
    populateMenu("menu_pilot_" + y, pilot_available);
@@ -497,11 +496,11 @@ function checkUpgRestriction(yy){ //populate les menus slots avec les bonnes upg
                                 case 'Talent-elite' :
                                     case 'Talent-special' :
                     case 'Force' :
-                        slotmenucontent.push(upgrades_Objects[yy][i][j]['name']+" *"+upgrades_Objects[yy][i][j]['talent_points']+"*");
+                        slotmenucontent.push(upgrades_Objects[yy][i][j]['name_'+language]+" *"+upgrades_Objects[yy][i][j]['talent_points']+"*");
                         slotmenuobjects.push(upgrades_Objects[yy][i][j]);
                         break;
                     default :    
-                        slotmenucontent.push(upgrades_Objects[yy][i][j]['name']+" ("+upgrades_Objects[yy][i][j]['points']+")");
+                        slotmenucontent.push(upgrades_Objects[yy][i][j]['name_'+language]+" ("+upgrades_Objects[yy][i][j]['points']+")");
                         slotmenuobjects.push(upgrades_Objects[yy][i][j]);
                 break
                 }
@@ -517,11 +516,11 @@ function checkUpgRestriction(yy){ //populate les menus slots avec les bonnes upg
                                 case 'Talent-elite' :
                                     case 'Talent-special' :
                         case 'Force' :
-                            slotmenucontent.push(upgrades_Objects[yy][i][j]['name']+" "+upgrades_Objects[yy][i][j]['talent_points']);
+                            slotmenucontent.push(upgrades_Objects[yy][i][j]['name_'+language]+" "+upgrades_Objects[yy][i][j]['talent_points']);
                             slotmenuobjects.push(structuredClone(upgrades_Objects[yy][i][j]));
                             break;
                         default :    
-                            slotmenucontent.push(upgrades_Objects[yy][i][j]['name']+" ("+upgrades_Objects[yy][i][j]['points']+")");
+                            slotmenucontent.push(upgrades_Objects[yy][i][j]['name_'+language]+" ("+upgrades_Objects[yy][i][j]['points']+")");
                             slotmenuobjects.push(structuredClone(upgrades_Objects[yy][i][j]));
                     break
                     }
@@ -618,7 +617,7 @@ let tID = pilot_list[y]['titleID'];
 if (tID === 0 || !upgrades[tID]) {
     titlezone.textContent = "";
 }else{
-titlezone.textContent = upgrades[tID]['name'];
+titlezone.textContent = upgrades[tID]['name_'+language];
 }
 
 pointszone.textContent = pilot_list[y]['points'];
@@ -681,10 +680,10 @@ function check_restricted_List(){ //check si l'upgrade ou le pilote est déjà u
     }
     
     if (x === -1){ //si c'est un pilote
-        newname = pilot_list[y]['name'];
+        newname = pilot_list[y]['name_'+language];
         maxnbr = pilot_list[y]['max_per_squad']
     }else{ // si c'est une upgrade
-        newname = upgrades_Objects_Val[y][x][z-1]['name'];
+        newname = upgrades_Objects_Val[y][x][z-1]['name_'+language];
         maxnbr = upgrades_Objects_Val[y][x][z-1]['max_per_squad'];
     }
     
@@ -735,7 +734,7 @@ function update_restricted_List(yy){ //va mettre à jour la restricted_List. les
     if (x===-1){
         let namepil = "menu_pilot"+yy;
         if (pilot_list[yy]['max_per_squad'] < 8){
-            namepil = pilot_list[yy]['name'];
+            namepil = pilot_list[yy]['name_'+language];
         }else{
             namepil = 'pilot'+y;
         }
@@ -749,7 +748,7 @@ function update_restricted_List(yy){ //va mettre à jour la restricted_List. les
             z = slotmenu.selectedIndex;
             let nameupg = 'slot'+yy+'_'+i;
             if ((z > 0) && (upgrades_Objects_Val[yy][i][z-1]['max_per_squad'] < 8)) { // si ce n'est pas une upgrade limitée, alors max per squad = 8 et il faut remettre une valeur standard dans la restricted_List
-                nameupg = upgrades_Objects_Val[yy][i][z-1]['name'];
+                nameupg = upgrades_Objects_Val[yy][i][z-1]['name_'+language];
             }else{
                 nameupg = 'slot'+y+'_'+i;
             }
@@ -761,7 +760,7 @@ function update_restricted_List(yy){ //va mettre à jour la restricted_List. les
     
 function auto_equip(Slot, indexUpgrade){ //action n°1
     // on va faire un check si l'upgrade est limitée. On ne peut pas se servir de la fonction check_restricted_List car le champ visé par l'event est celui du pilote et non de l'upgrade. On va donc recopier une partie de son code et l'adapter
-    nameUpgrade = upgrades[indexUpgrade]['name']; 
+    nameUpgrade = upgrades[indexUpgrade]['name_'+language]; 
     maxNbrUpgrade = upgrades[indexUpgrade]['max_per_squad'];
     while (maxNbrUpgrade>0) {
         for (let i=0 ; i<9 ; i++){
@@ -792,7 +791,7 @@ function auto_equip(Slot, indexUpgrade){ //action n°1
     let slotToEquip = document.getElementById('slot'+y+'_'+numero_slot);
     let indexSlot = 0 // We have to look for the index in the menu that match with our upgrade we want to equip
     for(let k=0 ; k<upgrades_Objects_Val[y][numero_slot].length ; k++){
-        if (upgrades_Objects_Val[y][numero_slot][k]['name'] === nameUpgrade) {
+        if (upgrades_Objects_Val[y][numero_slot][k]['name_'+language] === nameUpgrade) {
             indexSlot=k;
             break;
         }
@@ -843,15 +842,15 @@ function  add_slots (targetSlot){ //Action n°2 : A utiliser si une upgrade rajo
                             case 'Talent-leadership' :
                                 case 'Talent-elite' :
                                     case 'Talent-special' :
-                slotmenucontent.push(upgrades_Objects[y][nbrSlots][j]['name']+" *"+upgrades_Objects[y][nbrSlots][j]['talent_points']+"*");
+                slotmenucontent.push(upgrades_Objects[y][nbrSlots][j]['name_'+language]+" *"+upgrades_Objects[y][nbrSlots][j]['talent_points']+"*");
                 slotmenuobjects.push(upgrades_Objects[y][nbrSlots][j]);
                 break;
             case 'Force' :
-                slotmenucontent.push(upgrades_Objects[y][nbrSlots][j]['name']+" #"+upgrades_Objects[y][nbrSlots][j]['talent_points']+"#");
+                slotmenucontent.push(upgrades_Objects[y][nbrSlots][j]['name_'+language]+" #"+upgrades_Objects[y][nbrSlots][j]['talent_points']+"#");
                 slotmenuobjects.push(upgrades_Objects[y][nbrSlots][j]);
                 break;
             default :    
-                slotmenucontent.push(upgrades_Objects[y][nbrSlots][j]['name']+" ("+upgrades_Objects[y][nbrSlots][j]['points']+")");
+                slotmenucontent.push(upgrades_Objects[y][nbrSlots][j]['name_'+language]+" ("+upgrades_Objects[y][nbrSlots][j]['points']+")");
                 slotmenuobjects.push(upgrades_Objects[y][nbrSlots][j]);
         break
         }
@@ -867,11 +866,11 @@ function  add_slots (targetSlot){ //Action n°2 : A utiliser si une upgrade rajo
                                 case 'Talent-elite' :
                                     case 'Talent-special' :
                 case 'Force' :
-                    slotmenucontent.push(upgrades_Objects[y][nbrSlots][j]['name']+" *"+upgrades_Objects[y][nbrSlots][j]['talent_points']+"*");
+                    slotmenucontent.push(upgrades_Objects[y][nbrSlots][j]['name_'+language]+" *"+upgrades_Objects[y][nbrSlots][j]['talent_points']+"*");
                     slotmenuobjects.push(upgrades_Objects[y][nbrSlots][j]);
                     break;
                 default :    
-                    slotmenucontent.push(upgrades_Objects[y][nbrSlots][j]['name']+" ("+upgrades_Objects[y][nbrSlots][j]['points']+")");
+                    slotmenucontent.push(upgrades_Objects[y][nbrSlots][j]['name_'+language]+" ("+upgrades_Objects[y][nbrSlots][j]['points']+")");
                     slotmenuobjects.push(upgrades_Objects[y][nbrSlots][j]);
             break
             }
@@ -1366,7 +1365,7 @@ function displayDescriptionPilot(i) { //permet d'afficher la capacité du pilote
     if (pilot_selected_list[y]==='<Select Pilot>'){
         description_upg_pil_Field.innerHTML = "";
     }else{
-        description_upg_pil_Field.innerHTML = pilot_list[i]["ability"];
+        description_upg_pil_Field.innerHTML = pilot_list[i]["ability_"+language];
     }
 }
 
@@ -1375,7 +1374,7 @@ function displayDescriptionShip(event){ //displays ship stats (and actions and m
     description_upg_pil_Field.innerHTML="";
     
     for (k=0; k<ships.length; k++){
-        if (event.target.value === ships[k]["name"]) { //il faut pas oublier de virer les (x) dans les menus
+        if (event.target.value === ships[k]["name_"+language]) { //il faut pas oublier de virer les (x) dans les menus
             description_upg_pil_Field.innerHTML = '<span style="color: red">' +ships[k]["attack"][0][1] + '</span> <img src="img/attack'+ships[k]["attack"][0][0] +'.jpg" class="logo"/>';
             if (ships[k]['attack'].length>1){
                 description_upg_pil_Field.innerHTML =  description_upg_pil_Field.innerHTML+'<span style="color: red">' +ships[k]["attack"][1][1] + '</span> <img src="img/attack'+ships[k]["attack"][1][0] +'.jpg" class="logo"/>';     
@@ -1443,8 +1442,8 @@ function displayDescriptionUpgrade(event){ //permet d'afficher l'effet de l'amé
     description_upg_pil_Field.innerHTML="";
     
     for (k=0; k<upgrades.length; k++){
-        if (event.target.value.slice(0, -4) === upgrades[k]["name"]) { //il faut pas oublier de virer les (x) dans les menus
-            description_upg_pil_Field.innerHTML = upgrades[k]["effect"];
+        if (event.target.value.slice(0, -4) === upgrades[k]["name_"+language]) { //il faut pas oublier de virer les (x) dans les menus
+            description_upg_pil_Field.innerHTML = upgrades[k]["effect_"+language];
                   
             return
         }
@@ -1466,13 +1465,13 @@ function display_chassis_title_window(event) { //allows to display the chassis w
     let chSel = chassis_selected[y];
     switch (targettype) {
         case 'chassis1' :
-        chassisWindow.innerHTML = '<div id="effect1" class="effect1">'+chassis[chSel[0]]['effect1']+ '</div><div id="effect2" class="effect2">' + chassis[chSel[0]]['effect2'] + '</div><div id="effect3" class="effect3">' + chassis[chSel[0]]['effect3'] +'</div>';  
+        chassisWindow.innerHTML = '<div id="effect1" class="effect1">'+chassis[chSel[0]]['effect1_'+language]+ '</div><div id="effect2" class="effect2">' + chassis[chSel[0]]['effect2_'+language] + '</div><div id="effect3" class="effect3">' + chassis[chSel[0]]['effect3_'+language] +'</div>';  
         break;
         case 'chassis2' : 
-        chassisWindow.innerHTML = '<div id="effect1" class="effect1">'+chassis[chSel[1]]['effect1']+ '</div><div id="effect2" class="effect2">' + chassis[chSel[1]]['effect2'] + '</div><div id="effect3" class="effect3">' + chassis[chSel[1]]['effect3'] +'</div>';    
+        chassisWindow.innerHTML = '<div id="effect1" class="effect1">'+chassis[chSel[1]]['effect1_'+language]+ '</div><div id="effect2" class="effect2">' + chassis[chSel[1]]['effect2_'+language] + '</div><div id="effect3" class="effect3">' + chassis[chSel[1]]['effect3_'+language] +'</div>';    
         break;
         case 'title' :
-        chassisWindow.innerHTML = '<div id="effect1" class="effect1">'+upgrades[pilot_list[y]['titleID']]['name']+ '</div><div id="effect2" class="effect2">' + upgrades[pilot_list[y]['titleID']]['effect'] +'</div>';  
+        chassisWindow.innerHTML = '<div id="effect1" class="effect1">'+upgrades[pilot_list[y]['titleID']]['name_'+language]+ '</div><div id="effect2" class="effect2">' + upgrades[pilot_list[y]['titleID']]['effect_'+language] +'</div>';  
         break;
         default :
         chassisWindow.innerHTML = "Element Not Defined. Submit Error to complete the Database";

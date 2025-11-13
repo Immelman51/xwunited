@@ -4,6 +4,13 @@ let leaders =[];
 let menuLeader = [];
 let leaderSelected_id = 0;
 
+//We get the language selected
+let languageMenu = document.getElementById("language");
+let language = languageMenu.value;
+languageMenu.addEventListener("input", function(){
+language = languageMenu.value;
+});
+
 async function fetchData(url) {
     let response = await fetch(url);
     if (!response.ok) {
@@ -17,7 +24,7 @@ async function initializeData() {
         leaders = await fetchData(requestURLleaders);
         console.log(leaders);
         for (let i = 0; i < leaders.length; i++) {
-            menuLeader.push(leaders[i]["leadername"]+' ('+leaders[i]["logistic"]+')');
+            menuLeader.push(leaders[i]["leadername_"+language]+' ('+leaders[i]["logistic"]+')');
         }
     } catch (error) {
         console.error("Failed to fetch data: ", error);
@@ -71,7 +78,7 @@ let factionIndex = factionselect.selectedIndex;
 function getLeaderObject(){
     let leaderSelected = leaderselect.value;
     for(j=0 ; j<leaders.length ; j++){
-        if(leaderSelected.includes(leaders[j]['leadername'])){
+        if(leaderSelected.includes(leaders[j]['leadername_'+language])){
             leaderSelected_id = j;
             return;
         }
@@ -114,7 +121,7 @@ if (factionIndex === 0) {
 var listeleader= ["<Select Leader>"];
 for (let i = 0; i < leaders.length; i++) {
 if (leaders[i]["leaderfaction"].includes(factionselect.value)) {
-listeleader.push(leaders[i]["leadername"]+" ("+leaders[i]["logistic"]+')') ;
+listeleader.push(leaders[i]["leadername_"+language]+" ("+leaders[i]["logistic"]+')') ;
 }
 }
 factionbutton.removeAttribute("disabled");
@@ -133,7 +140,7 @@ function description_leader() {
             descriptionLeaderField.innerHTML += "<img class='chargeforceimg' src='img/chargestatRed.png'>";
         }
     }
-    descriptionLeaderField.innerHTML += leaders[leaderSelected_id]["leaderability"];
+    descriptionLeaderField.innerHTML += leaders[leaderSelected_id]["leaderability_"+language];
     
 }
 

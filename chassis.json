@@ -4,507 +4,507 @@
         "name": "",
         "id": 0,
         "nbrOfEffects": 0,
-        "effect1": "",
-        "effect2": "",
-        "effect3": "" 
+        "effect1_FRA": "",
+        "effect2_FRA": "",
+        "effect3_FRA": "" 
     },
     {
         "name": "Copilot",
         "id": 1,
         "nbrOfEffects": 1,
-        "effect1": "(Copilote) : Tant que vous êtes arrimé, votre Vaisseau-Mère considère aussi votre capacité de pilote comme étant la sienne.",
-        "effect2": "",
-        "effect3": "" 
+        "effect1_FRA": "(Copilote) : Tant que vous êtes arrimé, votre Vaisseau-Mère considère aussi votre capacité de pilote comme étant la sienne.",
+        "effect2_FRA": "",
+        "effect3_FRA": "" 
     },
     {
         "name": "Customized Weapons",
         "id": 2,
         "nbrOfEffects": 1,
-        "effect1": "(Armes Personnalisées) : Les #tur# et #can# que vous équippez sont considérées comme votre arme principale, et sont toujours considérées comme des armes secondaires. Lorsque vous attaquez avec, vous choisissez si vous les utilisez comme arme principale (bonus de portée actif) ou secondaire.",
-        "effect2": "",
-        "effect3": "" 
+        "effect1_FRA": "(Armes Personnalisées) : Les #tur# et #can# que vous équippez sont considérées comme votre arme principale, et sont toujours considérées comme des armes secondaires. Lorsque vous attaquez avec, vous choisissez si vous les utilisez comme arme principale (bonus de portée actif) ou secondaire.",
+        "effect2_FRA": "",
+        "effect3_FRA": "" 
     },
     {
         "name": "Servomotor S-Foils",
         "id": 3,
         "nbrOfEffects": 2,
-        "effect1": "(Servomoteurs S-Foils) :",
-        "effect2": "<img class='chargeforceimg' src='img/chargestatRed.png'> (Déplié)",
-        "effect3": "<img class='chargeforceimg' src='img/chargestat.png'> (Réplié) Tant que vous effectuez une attaque principale, lancez 1 dé en moins. <img class='action' src='img/T65Sfoils.png' alt='' />"
+        "effect1_FRA": "(Servomoteurs S-Foils) :",
+        "effect2_FRA": "<img class='chargeforceimg' src='img/chargestatRed.png'> (Déplié)",
+        "effect3_FRA": "<img class='chargeforceimg' src='img/chargestat.png'> (Réplié) Tant que vous effectuez une attaque principale, lancez 1 dé en moins. <img class='action' src='img/T65Sfoils.png' alt='' />"
     },
     {
         "name": "Pivot Wing",
         "id": 4,
         "nbrOfEffects": 2,
-        "effect1": "(Aile Pivot) :",
-        "effect2": "<img class='chargeforceimg' src='img/chargestatRed.png'>(Relevée) : Après avoir executé une manoeuvre 0#stop#, vous pouvez pivoter votre vaisseau de 90° ou 180°. Tant que vous défendez, lancez 1 dé de défense en moins.",
-        "effect3": "<img class='chargeforceimg' src='img/chargestat.png'>(Baissée)"
+        "effect1_FRA": "(Aile Pivot) :",
+        "effect2_FRA": "<img class='chargeforceimg' src='img/chargestatRed.png'>(Relevée) : Après avoir executé une manoeuvre 0#stop#, vous pouvez pivoter votre vaisseau de 90° ou 180°. Tant que vous défendez, lancez 1 dé de défense en moins.",
+        "effect3_FRA": "<img class='chargeforceimg' src='img/chargestat.png'>(Baissée)"
     },
     {
         "name": "Vectored Thrusters",
         "id": 5,
         "nbrOfEffects": 1,
-        "effect1": "(Propulseurs Vectorisés) : Après avoir effectué une action, vous pouvez effectuer une action #BO# rouge.",
-        "effect2": "",
-        "effect3": "" 
+        "effect1_FRA": "(Propulseurs Vectorisés) : Après avoir effectué une action, vous pouvez effectuer une action #BO# rouge.",
+        "effect2_FRA": "",
+        "effect3_FRA": "" 
     },
     {
         "name": "Stabilized S-Foils",
         "id": 6,
         "nbrOfEffects": 2,
-        "effect1": "(S-Foils Stabilisés) :",
-        "effect2": "<img class='chargeforceimg' src='img/chargestat.png'> (Dépliés) Après avoir effectué une attaque principale, vous pouvez dépenser votre verrouillage sur le défenseur pour effectuer une attaque secondaire bonus contre ce vaisseau.",
-        "effect3": "<img class='chargeforceimg' src='img/chargestatRed.png'> (Repliés) Lorsque vous attaquez, si la cible n'est pas dans votre #bulls#, lancez 1 dé de moins.<br><img class='action' src='img/confBwingR1.png'><br><img class='action' src='img/Rd R.png'>"
+        "effect1_FRA": "(S-Foils Stabilisés) :",
+        "effect2_FRA": "<img class='chargeforceimg' src='img/chargestat.png'> (Dépliés) Après avoir effectué une attaque principale, vous pouvez dépenser votre verrouillage sur le défenseur pour effectuer une attaque secondaire bonus contre ce vaisseau.",
+        "effect3_FRA": "<img class='chargeforceimg' src='img/chargestatRed.png'> (Repliés) Lorsque vous attaquez, si la cible n'est pas dans votre #bulls#, lancez 1 dé de moins.<br><img class='action' src='img/confBwingR1.png'><br><img class='action' src='img/Rd R.png'>"
     },
     {
         "name": "Advanced Targetting Computer",
         "id": 7,
         "nbrOfEffects": 1,
-        "effect1": "(Ordinateur de Visée Avancé) : Tant que vous effectuez une attaque principale contre un défenseur que vous avez vérouillé, lancez 1 dé d'attaque supplémentaire et changez 1 résultat #hit# en un résultat #crit#",
-        "effect2": "",
-        "effect3": "" 
+        "effect1_FRA": "(Ordinateur de Visée Avancé) : Tant que vous effectuez une attaque principale contre un défenseur que vous avez vérouillé, lancez 1 dé d'attaque supplémentaire et changez 1 résultat #hit# en un résultat #crit#",
+        "effect2_FRA": "",
+        "effect3_FRA": "" 
     },
     {
         "name": "Nimble Bomber",
         "id": 8,
         "nbrOfEffects": 1,
-        "effect1": "(Bombardier Agile) : Si vous devez utiliser un gabarit #straight# pour larguer un engin, vous pouvez utiliser un gabarit #Lbank# ou #Rbank# de même vitesse à la place.",
-        "effect2": "",
-        "effect3": "" 
+        "effect1_FRA": "(Bombardier Agile) : Si vous devez utiliser un gabarit #straight# pour larguer un engin, vous pouvez utiliser un gabarit #Lbank# ou #Rbank# de même vitesse à la place.",
+        "effect2_FRA": "",
+        "effect3_FRA": "" 
     },
     {
     "name": "Ion Repulsorlifts",
     "id": 9,   
     "nbrOfEffects": 2,
-    "effect1": "(Rétropropulseurs Ioniques) : Lorsque vous effectuez une manoeuvre rouge, vous pouvez prendre 3 jetons ion au lieu d'un jeton stress. Dans ce cas, vous pouvez pivoter votre vaisseau de 90° ou 180°.",
-    "effect2": "",
-    "effect3": ""
+    "effect1_FRA": "(Rétropropulseurs Ioniques) : Lorsque vous effectuez une manoeuvre rouge, vous pouvez prendre 3 jetons ion au lieu d'un jeton stress. Dans ce cas, vous pouvez pivoter votre vaisseau de 90° ou 180°.",
+    "effect2_FRA": "",
+    "effect3_FRA": ""
     },
     {
         "name": "Autothrusters",
         "id": 10,
         "nbrOfEffects": 1,
-        "effect1": "(Autopropulseurs) : Après avoir effectué une action, vous pouvez effectuer une action #BR# rouge ou #BO# rouge.",
-        "effect2": "",
-        "effect3": "" 
+        "effect1_FRA": "(Autopropulseurs) : Après avoir effectué une action, vous pouvez effectuer une action #BR# rouge ou #BO# rouge.",
+        "effect2_FRA": "",
+        "effect3_FRA": "" 
     },
     {
         "name": "Full Throttle",
         "id": 11,
         "nbrOfEffects": 1,
-        "effect1": "(Plein Gaz) : Après avoir entièrement executé une manoeuvre à vitesse 3-5, vous pouvez gagner un jeton évasion.",
-        "effect2": "",
-        "effect3": "" 
+        "effect1_FRA": "(Plein Gaz) : Après avoir entièrement executé une manoeuvre à vitesse 3-5, vous pouvez gagner un jeton évasion.",
+        "effect2_FRA": "",
+        "effect3_FRA": "" 
     },
     {
         "name": "Controlled Ailerons",
         "id": 12,
         "nbrOfEffects": 1,
-        "effect1": "(Ailerons Contrôlables) : Avant de révéler votre cadran, si vous n'êtes pas stressé, vous pouvez accélérer.",
-        "effect2": "",
-        "effect3": "" 
+        "effect1_FRA": "(Ailerons Contrôlables) : Avant de révéler votre cadran, si vous n'êtes pas stressé, vous pouvez accélérer.",
+        "effect2_FRA": "",
+        "effect3_FRA": "" 
     },
     {
         "name": "Rotating Cannons",
         "id": 13,
         "nbrOfEffects": 1,
-        "effect1": "(Canons Rotatifs) : Vous pouvez pivoter votre indicateur #tur# uniquement vers votre #Farc# ou #Barc#. Vous devez considérer le prérequis #Farc# de vos améliorations #can# équipées comme étant #tur#.",
-        "effect2": "",
-        "effect3": "" 
+        "effect1_FRA": "(Canons Rotatifs) : Vous pouvez pivoter votre indicateur #tur# uniquement vers votre #Farc# ou #Barc#. Vous devez considérer le prérequis #Farc# de vos améliorations #can# équipées comme étant #tur#.",
+        "effect2_FRA": "",
+        "effect3_FRA": "" 
     },
     {
         "name": "Adaptative Ailerons",
         "id": 14,
         "nbrOfEffects": 1,
-        "effect1": "(Ailerons Adaptables) : Avant de révéler votre cadran, si vous n'êtes pas stressé, vous devez accélérer.",
-        "effect2": "",
-        "effect3": "" 
+        "effect1_FRA": "(Ailerons Adaptables) : Avant de révéler votre cadran, si vous n'êtes pas stressé, vous devez accélérer.",
+        "effect2_FRA": "",
+        "effect3_FRA": "" 
     },
     {
         "name": "Rigged Energy Cells",
         "id": 15,
         "nbrOfEffects": 1,
-        "effect1": "(Cellules Énergétiques Bidouillées) : À la fin de la phase d’activation, si vous n'êtes pas arrimé perdez 1 #ch#. Vous êtes détruit si vous avez 0 #ch#. Avant de retirer votre figurine, chaque vaisseau à porté 0–1 subit 1 dégât #crit# <img class='chargeforceimg' src='img/chargestat.png'><img class='chargeforceimg' src='img/chargestat.png'><img class='chargeforceimg' src='img/chargestat.png'>",
-        "effect2": "",
-        "effect3": "" 
+        "effect1_FRA": "(Cellules Énergétiques Bidouillées) : À la fin de la phase d’activation, si vous n'êtes pas arrimé perdez 1 #ch#. Vous êtes détruit si vous avez 0 #ch#. Avant de retirer votre figurine, chaque vaisseau à porté 0–1 subit 1 dégât #crit# <img class='chargeforceimg' src='img/chargestat.png'><img class='chargeforceimg' src='img/chargestat.png'><img class='chargeforceimg' src='img/chargestat.png'>",
+        "effect2_FRA": "",
+        "effect3_FRA": "" 
     },
     {
         "name": "Docking Ship",
         "id": 16,
         "nbrOfEffects": 1,
-        "effect1": "(Vaisseau-Mère) : MISE EN PLACE: vous DEVEZ avoir un vaisseau arrimé avec vous avec la capacité Copilot. Considérez les boucliers de votre vaisseau arrimé comme les vôtres.",
-        "effect2": "",
-        "effect3": "" 
+        "effect1_FRA": "(Vaisseau-Mère) : MISE EN PLACE: vous DEVEZ avoir un vaisseau arrimé avec vous avec la capacité Copilot. Considérez les boucliers de votre vaisseau arrimé comme les vôtres.",
+        "effect2_FRA": "",
+        "effect3_FRA": "" 
     },
 {
     "name": "Networked Calculations",
     "id":17,
     "nbrOfEffects": 1,
-    "effect1":"(Calculs en Réseau) :  Lorsque vous défendez ou attaquez, you pouvez dépenser 1 jeton calcul d'un vaisseau allié à portée 0-1 pour modifier 1 résultat #eye# en résultat #hit# ou #evd#.",
-    "effect2": "",
-    "effect3": "" 
+    "effect1_FRA":"(Calculs en Réseau) :  Lorsque vous défendez ou attaquez, you pouvez dépenser 1 jeton calcul d'un vaisseau allié à portée 0-1 pour modifier 1 résultat #eye# en résultat #hit# ou #evd#.",
+    "effect2_FRA": "",
+    "effect3_FRA": "" 
 },
 {
     "name": "Tail Laser Cannon",
     "id":18,
     "nbrOfEffects": 1,
-    "effect1":"(Canon Laser de Poupe) : Considérez le #Farc# de vos attaques #canon# comme #Barc#.",
-    "effect2": "",
-    "effect3": "" 
+    "effect1_FRA":"(Canon Laser de Poupe) : Considérez le #Farc# de vos attaques #canon# comme #Barc#.",
+    "effect2_FRA": "",
+    "effect3_FRA": "" 
 },
 {
     "name": "Stygium Array",
     "id":19,
     "nbrOfEffects": 1,
-    "effect1": "(Réseau de Stygium) : après vous être désocculté, vous pouvez effectuer une action #EV#. Au début de la phase de dénouement, vous pouvez dépenser 1 marqueur d’évasion pour gagner 1 marqueur d’occultation.",
-    "effect2": "",
-    "effect3": "" 
+    "effect1_FRA": "(Réseau de Stygium) : après vous être désocculté, vous pouvez effectuer une action #EV#. Au début de la phase de dénouement, vous pouvez dépenser 1 marqueur d’évasion pour gagner 1 marqueur d’occultation.",
+    "effect2_FRA": "",
+    "effect3_FRA": "" 
 },
 {
     "name": "Microthrusters",
     "id":20,
     "nbrOfEffects": 1,
-    "effect1":"(Micropropulseurs) : Tant que vous effectuez un tonneau, vous devez utiliser le gabarit #LBank# ou #RBank à la place du gabarit #straight#.",
-    "effect2": "",
-    "effect3": "" 
+    "effect1_FRA":"(Micropropulseurs) : Tant que vous effectuez un tonneau, vous devez utiliser le gabarit #LBank# ou #RBank à la place du gabarit #straight#.",
+    "effect2_FRA": "",
+    "effect3_FRA": "" 
 },
 {
     "name": "Weapon Hardpoint",
     "id":21,
     "nbrOfEffects": 1,
-    "effect1":"(Emplacement d’Arme) : Vous pouvez vous équiper de 1 amélioration #can#, #tpd#, ou #mis#.",
-    "effect2": "",
-    "effect3": "" 
+    "effect1_FRA":"(Emplacement d’Arme) : Vous pouvez vous équiper de 1 amélioration #can#, #tpd#, ou #mis#.",
+    "effect2_FRA": "",
+    "effect3_FRA": "" 
 },
 {
     "name": "Tail Gun",
     "id":22,
     "nbrOfEffects": 1,
-    "effect1":"(Artillerie De Poupe) : tant que vous avez un vaisseau arrimé, vous bénéficiez d’une arme principale #Barc# avec une valeur d’attaque égale à celle de l’attaque principale #Farc# du vaisseau arrimé.",
-    "effect2": "",
-    "effect3": "" 
+    "effect1_FRA":"(Artillerie De Poupe) : tant que vous avez un vaisseau arrimé, vous bénéficiez d’une arme principale #Barc# avec une valeur d’attaque égale à celle de l’attaque principale #Farc# du vaisseau arrimé.",
+    "effect2_FRA": "",
+    "effect3_FRA": "" 
 },
 {
 "name":"Locked and Loaded",
 "id":23,
 "nbrOfEffects": 1,
-"effect1":"(Chargé et Prêt à Tirer) : Tant que vous êtes arrimé, après que votre vaisseau porteur a effectué une attaque principale #Farc# ou #tur#, il peut effectuer une attaque principale #Barc#.",
-"effect2": "",
-"effect3": "" 
+"effect1_FRA":"(Chargé et Prêt à Tirer) : Tant que vous êtes arrimé, après que votre vaisseau porteur a effectué une attaque principale #Farc# ou #tur#, il peut effectuer une attaque principale #Barc#.",
+"effect2_FRA": "",
+"effect3_FRA": "" 
 },
 {
     "name":"Concordia Faceoff",
     "id":24,
     "nbrOfEffects": 1,
-    "effect1":"(Opposition Concordia) : Tant que vous défendez, si la portée d’attaque est 1 et que vous êtes dans le #Farc# de l’attaquant, changez 1 résultat en un résultat #evd#.",
-    "effect2": "",
-    "effect3": "" 
+    "effect1_FRA":"(Opposition Concordia) : Tant que vous défendez, si la portée d’attaque est 1 et que vous êtes dans le #Farc# de l’attaquant, changez 1 résultat en un résultat #evd#.",
+    "effect2_FRA": "",
+    "effect3_FRA": "" 
 },
 {
     "name":"Spacetug Tractor Array",
     "id":25,
     "nbrOfEffects": 1,
-    "effect1": "(Remorquage par Faisceau Tractant) : ACTION : choisissez un vaisseau à portée 1 dans votre #Farc#. Ce vaisseau reçoit 1 jeton tracté, ou 2 s'il se trouve dans votre #bulls#.",
-    "effect2": "",
-    "effect3": "" 
+    "effect1_FRA": "(Remorquage par Faisceau Tractant) : ACTION : choisissez un vaisseau à portée 1 dans votre #Farc#. Ce vaisseau reçoit 1 jeton tracté, ou 2 s'il se trouve dans votre #bulls#.",
+    "effect2_FRA": "",
+    "effect3_FRA": "" 
 },
 {
     "name":"Dead to Rights",
     "id": 26,
     "nbrOfEffects": 1,
-    "effect1":"(Dans Le Mille) : Tant que vous effectuez une attaque, si le défenseur est dans votre #bulls#, les dés de défense ne peuvent pas être modifiés en utilisant des marqueurs verts.",
-    "effect2": "",
-    "effect3": "" 
+    "effect1_FRA":"(Dans Le Mille) : Tant que vous effectuez une attaque, si le défenseur est dans votre #bulls#, les dés de défense ne peuvent pas être modifiés en utilisant des marqueurs verts.",
+    "effect2_FRA": "",
+    "effect3_FRA": "" 
 },
 {
     "name":"Comms Shuttle",
     "id":27,
     "nbrOfEffects": 1,
-    "effect1":"(Navette de Communication) : Tant que vous êtes arrimé, votre vaisseau porteur gagne #CO#. Avant que votre vaisseau porteur ne s’active, il peut effectuer une action #CO#.",
-    "effect2": "",
-    "effect3": "" 
+    "effect1_FRA":"(Navette de Communication) : Tant que vous êtes arrimé, votre vaisseau porteur gagne #CO#. Avant que votre vaisseau porteur ne s’active, il peut effectuer une action #CO#.",
+    "effect2_FRA": "",
+    "effect3_FRA": "" 
 },
 {
     "name":"Integrated S-Foils",
     "id":28,
     "nbrOfEffects": 2,
-    "effect1":"(S-Foils Intégrés) : ",
-    "effect2": "<img class='chargeforceimg' src='img/chargestatRed.png'>(Repliés) Tant que vous effectuez une attaque principale, si le défenseur n’est pas dans votre #bulls#, lancez 1 dé d’attaque en moins.<br><img class='action' src='confT70.png>",
-    "effect3": "<img class='chargeforceimg' src='img/chargestat.png'>(Dépliés)" 
+    "effect1_FRA":"(S-Foils Intégrés) : ",
+    "effect2_FRA": "<img class='chargeforceimg' src='img/chargestatRed.png'>(Repliés) Tant que vous effectuez une attaque principale, si le défenseur n’est pas dans votre #bulls#, lancez 1 dé d’attaque en moins.<br><img class='action' src='confT70.png>",
+    "effect3_FRA": "<img class='chargeforceimg' src='img/chargestat.png'>(Dépliés)" 
 },
 {
     "name": "Refined Gyrostabilizers",
     "id":29,
     "nbrOfEffects": 1,
     "effect1ENG":"(Refined Gyrostabilizers) : You can rotate your Turret Arc indicator only to your Front Arc or Rear Arc. After you perform an action, you may perform a red Action: Boost or red Action: Rotate action.",
-    "effect1": "(Gyrostabilisateurs Perfectionnés) : vous pouvez pivoter votre #tur# uniquement vers votre #Farc# ou #Barc#. Après avoir effectué une action, vous pouvez effectuer une action rouge #BO# ou #RO# rouge.",
-    "effect2": "",
-    "effect3": "" 
+    "effect1_FRA": "(Gyrostabilisateurs Perfectionnés) : vous pouvez pivoter votre #tur# uniquement vers votre #Farc# ou #Barc#. Après avoir effectué une action, vous pouvez effectuer une action rouge #BO# ou #RO# rouge.",
+    "effect2_FRA": "",
+    "effect3_FRA": "" 
 },
 {
     "name":"Rotating Launcher",
     "id":30,
     "nbrOfEffects": 1,
     "effect1ENG":"(Rotating Launcher) : You can rotate your #tur# indicator only to your #Farc# or #Barc#. You must treat the #Farc# requirement of your equipped #mis# upgrades as #tur#.",
-    "effect1":"(Lanceur Rotatif) : Vous pouvez pivoter votre indicateur #tur# uniquement vers votre #Farc# ou #Barc#. Vous devez considérer le prérequis #Farc# de vos améliorations #mis# équipées comme étant #tur#.",
-    "effect2": "",
-    "effect3": "" 
+    "effect1_FRA":"(Lanceur Rotatif) : Vous pouvez pivoter votre indicateur #tur# uniquement vers votre #Farc# ou #Barc#. Vous devez considérer le prérequis #Farc# de vos améliorations #mis# équipées comme étant #tur#.",
+    "effect2_FRA": "",
+    "effect3_FRA": "" 
 },
 {
     "name":"Notched Stabilizers",
     "id":31,
     "nbrOfEffects": 1,
-    "effect1":"(Stabilisateurs Crantés) : Tant que vous vous déplacez, ignorez les astéroïdes et les débris.",
-    "effect2": "",
-    "effect3": "" 
+    "effect1_FRA":"(Stabilisateurs Crantés) : Tant que vous vous déplacez, ignorez les astéroïdes et les débris.",
+    "effect2_FRA": "",
+    "effect3_FRA": "" 
 },
 {
     "name":"Fine-Tuned Controls",
     "id":32,
     "nbrOfEffects": 1,
-    "effect1":"(Commandes Réactives) : Après avoir entièrement exécuté une manœuvre, vous pouvez dépenser 1 Force pour effectuer une action #BR# ou #BO#.",
-    "effect2": "",
-    "effect3": "" 
+    "effect1_FRA":"(Commandes Réactives) : Après avoir entièrement exécuté une manœuvre, vous pouvez dépenser 1 Force pour effectuer une action #BR# ou #BO#.",
+    "effect2_FRA": "",
+    "effect3_FRA": "" 
 },
 {
     "name":"Calibrated Laser Targeting",
     "id":33,
     "nbrOfEffects": 1,
-    "effect1":"(Visée Laser Calibrée) : Tant que vous effectuez une attaque principale, si le défenseur est dans votre #bulls#, ajoutez 1 résultat #eye#.",
-    "effect2": "",
-    "effect3": "" 
+    "effect1_FRA":"(Visée Laser Calibrée) : Tant que vous effectuez une attaque principale, si le défenseur est dans votre #bulls#, ajoutez 1 résultat #eye#.",
+    "effect2_FRA": "",
+    "effect3_FRA": "" 
 },
 {
     "name":"Grappling Struts",
     "id":34,
     "nbrOfEffects": 2,
-    "effect1":"(Support d'Ancrage) : ",
-    "effect2": "<img class='chargeforceimg' src='img/chargestatRed.png'> (Replié) Après un mouvement, si vous chevauchez un astéroïde/débris, ignorez ses effets et changez de configuration.",
-    "effect3": "<img class='chargeforceimg' src='img/chargestat.png'> (Déplié) Ignorez l'astéroïde/débris que vous chevauchez. Si vous révélez un virage, tournez de 90° dans la direction sélectionnée et ignorez la manoeuvre. Si vous révélez une manoeuvre #straight#2, executez là puis changez de configuration. Si vous révélez toute autre manoeuvre, ne vous déplacez pas et ignorez la manoeuvre." 
+    "effect1_FRA":"(Support d'Ancrage) : ",
+    "effect2_FRA": "<img class='chargeforceimg' src='img/chargestatRed.png'> (Replié) Après un mouvement, si vous chevauchez un astéroïde/débris, ignorez ses effets et changez de configuration.",
+    "effect3_FRA": "<img class='chargeforceimg' src='img/chargestat.png'> (Déplié) Ignorez l'astéroïde/débris que vous chevauchez. Si vous révélez un virage, tournez de 90° dans la direction sélectionnée et ignorez la manoeuvre. Si vous révélez une manoeuvre #straight#2, executez là puis changez de configuration. Si vous révélez toute autre manoeuvre, ne vous déplacez pas et ignorez la manoeuvre." 
 },
 {
     "name":"Pinpoint Tractor Array",
     "id":35,
     "nbrOfEffects": 1,
-    "effect1":"(Dispositif Tracteur De Précision) : vous ne pouvez pas faire pivoter votre #tur# vers votre #Barc#. Après avoir entièrement exécuté une manœuvre, vous pouvez gagner 1 jeton tractage pour effectuer une action #RA#.<br>Lorsque vous vous engagez, vous pouvez choisir un vaisseau dans votre #tur# à portée 0-1. Dans ce cas, vous pouvez lui transférer 1 jeton tractage.",
-    "effect2": "",
-    "effect3": "" 
+    "effect1_FRA":"(Dispositif Tracteur De Précision) : vous ne pouvez pas faire pivoter votre #tur# vers votre #Barc#. Après avoir entièrement exécuté une manœuvre, vous pouvez gagner 1 jeton tractage pour effectuer une action #RA#.<br>Lorsque vous vous engagez, vous pouvez choisir un vaisseau dans votre #tur# à portée 0-1. Dans ce cas, vous pouvez lui transférer 1 jeton tractage.",
+    "effect2_FRA": "",
+    "effect3_FRA": "" 
 },
 {
     "name":"Plated Hull",
     "id":36,
     "nbrOfEffects": 1,
-    "effect1":"(Coque Blindée) : Tant que vous défendez, si vous n’êtes pas critiquement endommagé, changez 1 résultat #crit# en un résultat #hit#.",
-    "effect2": "",
-    "effect3": "" 
+    "effect1_FRA":"(Coque Blindée) : Tant que vous défendez, si vous n’êtes pas critiquement endommagé, changez 1 résultat #crit# en un résultat #hit#.",
+    "effect2_FRA": "",
+    "effect3_FRA": "" 
 },
 {
     "name":"Explosion with Wings",
     "id":37,
     "nbrOfEffects": 1,
-    "effect1":"(Explosion en Vol) : Mise en Place : 1 carte de dégât face cachée vous est attribuée. Après avoir effectué une action #SL#, vous pouvez exposer 1 carte de dégât pour retirer 1 marqueur de désarmement.",
-    "effect2": "",
-    "effect3": "" 
+    "effect1_FRA":"(Explosion en Vol) : Mise en Place : 1 carte de dégât face cachée vous est attribuée. Après avoir effectué une action #SL#, vous pouvez exposer 1 carte de dégât pour retirer 1 marqueur de désarmement.",
+    "effect2_FRA": "",
+    "effect3_FRA": "" 
 },
 {
     "name":"Fine-Tuned Thrusters",
     "id":38,
     "nbrOfEffects": 1,
-    "effect1":"(Propulseurs Réactifs) : Après avoir entièrement exécuté une manœuvre, si vous n’êtes pas épuisé ou contraint, vous pouvez gagner 1 marqueur d’épuisement ou de contrainte pour effectuer une action #TL# ou #BR#.",
-    "effect2": "",
-    "effect3": "" 
+    "effect1_FRA":"(Propulseurs Réactifs) : Après avoir entièrement exécuté une manœuvre, si vous n’êtes pas épuisé ou contraint, vous pouvez gagner 1 marqueur d’épuisement ou de contrainte pour effectuer une action #TL# ou #BR#.",
+    "effect2_FRA": "",
+    "effect3_FRA": "" 
 },
 {
     "name":"Repulsorlift Stabilizers",
     "id":39,
     "nbrOfEffects": 2,
-    "effect1":"(Stabilisateurs de Répulseurs) : ",
-    "effect2": "<img class='chargeforceimg' src='img/chargestatRed.png'> (Inactifs) Reduisez la difficulté de vos manoeuvres #straight#.",
+    "effect1_FRA":"(Stabilisateurs de Répulseurs) : ",
+    "effect2_FRA": "<img class='chargeforceimg' src='img/chargestatRed.png'> (Inactifs) Reduisez la difficulté de vos manoeuvres #straight#.",
     "effect2ENG": "<img class='chargeforceimg' src='img/chargestatRed.png'> (Inactive) Reduce the difficulty of your #straight# maneuvers.",
     "effect3ENG": "<img class='chargeforceimg' src='img/chargestat.png'> (Active) After you reveal a #Lturn# / #Lbank# / #Rbank# / #Lturn# maneuver, you must perform that maneuver as a sideslip, increasing its difficulty.",
-    "effect3": "<img class='chargeforceimg' src='img/chargestat.png'> (Actifs) Après avoir révélé une manoeuvre #Lturn# / #Lbank# / #Rbank# / #Lturn#, vous devez effectuer cette manoeuvre comme, increasing its difficulty."
+    "effect3_FRA": "<img class='chargeforceimg' src='img/chargestat.png'> (Actifs) Après avoir révélé une manoeuvre #Lturn# / #Lbank# / #Rbank# / #Lturn#, vous devez effectuer cette manoeuvre comme, increasing its difficulty."
 
 },
 {
     "name":"Fire Convergence",
     "id":40,
     "nbrOfEffects": 1,
-    "effect1":"<img class='chargeforceimg' src='img/chargestat.png'><img class='chargeforceimg' src='img/chargestat.png'>(Convergence Des Tirs) : Tant qu’un vaisseau allié effectue une attaque non-#tur#, si le défenseur est dans votre #tur#, vous pouvez dépenser 1 #ch#. Dans ce cas, l’attaquant relance jusqu’à 2 dés d’attaque.",
-    "effect2": "",
-    "effect3": "" 
+    "effect1_FRA":"<img class='chargeforceimg' src='img/chargestat.png'><img class='chargeforceimg' src='img/chargestat.png'>(Convergence Des Tirs) : Tant qu’un vaisseau allié effectue une attaque non-#tur#, si le défenseur est dans votre #tur#, vous pouvez dépenser 1 #ch#. Dans ce cas, l’attaquant relance jusqu’à 2 dés d’attaque.",
+    "effect2_FRA": "",
+    "effect3_FRA": "" 
 },
 {
     "name":"Twin Ion Engines",
     "id":41,
     "nbrOfEffects": 1,
-    "effect1":"(Moteurs Ioniques Jumelés) : Vous pouvez équipper des améliorations réservées aux TIE.",
-    "effect2": "",
-    "effect3": "" 
+    "effect1_FRA":"(Moteurs Ioniques Jumelés) : Vous pouvez équipper des améliorations réservées aux TIE.",
+    "effect2_FRA": "",
+    "effect3_FRA": "" 
 },
 {
     "name":"Intuitive Controls",
     "id":42,
     "nbrOfEffects": 1,
-    "effect1":"(Contrôles Intuitifs) : Pendant la phase de système, vous pouvez effectuer une action #BR# violette ou #BO# violette.",
-    "effect2": "",
-    "effect3": "" 
+    "effect1_FRA":"(Contrôles Intuitifs) : Pendant la phase de système, vous pouvez effectuer une action #BR# violette ou #BO# violette.",
+    "effect2_FRA": "",
+    "effect3_FRA": "" 
 },
 {
     "name":"Intuitive Interface",
     "id":43,
     "nbrOfEffects": 1,
-    "effect1":"(Interface Intuitive) : Après avoir effectué une action ajoutée à votre barre d'action par une amélioration, vous pouvez effectuer une action #CC#",
-    "effect2": "",
-    "effect3": "" 
+    "effect1_FRA":"(Interface Intuitive) : Après avoir effectué une action ajoutée à votre barre d'action par une amélioration, vous pouvez effectuer une action #CC#",
+    "effect2_FRA": "",
+    "effect3_FRA": "" 
 },
 {
     "name":"Enhanced Jamming Suite",
     "id":44,
     "nbrOfEffects": 1,
-    "effect1":"(Brouilleurs Renforcés) : Tant que vous brouillez, vous pouvez vous choisir ou choisir un autre vaisseau allié.<br>Tant que vous défendez, si l'attaquant n'a pas de marqueur vert ou s'il y a un vaisseau brouillé dans l'arc d'attaque, vous pouvez lancer 1 dé de défense supplémentaire. ",
-    "effect2": "",
-    "effect3": "" 
+    "effect1_FRA":"(Brouilleurs Renforcés) : Tant que vous brouillez, vous pouvez vous choisir ou choisir un autre vaisseau allié.<br>Tant que vous défendez, si l'attaquant n'a pas de marqueur vert ou s'il y a un vaisseau brouillé dans l'arc d'attaque, vous pouvez lancer 1 dé de défense supplémentaire. ",
+    "effect2_FRA": "",
+    "effect3_FRA": "" 
 },
 {
     "name":"Pursuit Thrusters",
     "id": 45,
     "nbrOfEffects": 1,
-    "effect1":"(Propulseurs de Poursuite) : Pendant la Phase de Système, vous pouvez effectuer une action #BO#.",
-    "effect2": "",
-    "effect3": "" 
+    "effect1_FRA":"(Propulseurs de Poursuite) : Pendant la Phase de Système, vous pouvez effectuer une action #BO#.",
+    "effect2_FRA": "",
+    "effect3_FRA": "" 
 },
 {
     "name":"Troop Bay",
     "id":46,
     "nbrOfEffects": 1,
-    "effect1":"(Baie de Largage) : Un 'Super Commando' peut être arrimé avec vous.",
-    "effect2": "",
-    "effect3": "" 
+    "effect1_FRA":"(Baie de Largage) : Un 'Super Commando' peut être arrimé avec vous.",
+    "effect2_FRA": "",
+    "effect3_FRA": "" 
 },
 {
     "name":"Hidden Devices",
     "id":47,
     "nbrOfEffects": 1,
-    "effect1":"<img class='chargeforceimg' src='img/chargestat.png'> (Appareils Dissimulés) : Vous pouvez dépenser cette charge comme si elle se trouvait sur une de vos cartes #ill# équipées.",
-    "effect2": "",
-    "effect3": "" 
+    "effect1_FRA":"<img class='chargeforceimg' src='img/chargestat.png'> (Appareils Dissimulés) : Vous pouvez dépenser cette charge comme si elle se trouvait sur une de vos cartes #ill# équipées.",
+    "effect2_FRA": "",
+    "effect3_FRA": "" 
 },
 {
     "name":"Versatile Frame",
     "id":48,
     "nbrOfEffects": 1,
-    "effect1":"",
-    "effect2": "",
-    "effect3": "" 
+    "effect1_FRA":"",
+    "effect2_FRA": "",
+    "effect3_FRA": "" 
 },
 {
     "name":"Boarding",
     "id":49,
     "nbrOfEffects": 1,
-    "effect1":"(Abordage) : Vous pouvez attaquer à portée 0. Dans ce cas, le défenseur ne lance pas de dés de défense.",
-    "effect2": "",
-    "effect3": "" 
+    "effect1_FRA":"(Abordage) : Vous pouvez attaquer à portée 0. Dans ce cas, le défenseur ne lance pas de dés de défense.",
+    "effect2_FRA": "",
+    "effect3_FRA": "" 
 },
 {
     "name":"Multiple Targets",
     "id":50,
     "nbrOfEffects": 1,
-    "effect1":"(Cibles Multiples) : Lorsque vous subissez une attaque qui touche, annulez tous les résultats et prenez 1 dégat #hit#.",
-    "effect2": "",
-    "effect3": "" 
+    "effect1_FRA":"(Cibles Multiples) : Lorsque vous subissez une attaque qui touche, annulez tous les résultats et prenez 1 dégat #hit#.",
+    "effect2_FRA": "",
+    "effect3_FRA": "" 
 },
 {
     "name":"Hit & Run",
     "id":51,
     "nbrOfEffects": 1,
     "effect1ENG":"(Hit and Run) : When you attack or defend, if the speed of your revealed maneuver is higher than the one of the ship attacking you or defending against you, you can roll one additional die.",
-    "effect1":"(Fulgurance) : Lorsque vous attaquez ou défendez, si la vitesse de votre manoeuvre révélée est plus grande que celle du vaisseau vous attaquant ou se défendant contre vous, alors vous pouvez lancer un dé supplémentaire.",
-    "effect2": "",
-    "effect3": "" 
+    "effect1_FRA":"(Fulgurance) : Lorsque vous attaquez ou défendez, si la vitesse de votre manoeuvre révélée est plus grande que celle du vaisseau vous attaquant ou se défendant contre vous, alors vous pouvez lancer un dé supplémentaire.",
+    "effect2_FRA": "",
+    "effect3_FRA": "" 
 },
 {
     "name":"Constrictor",
     "id":52,
     "nbrOfEffects": 1,
     "effect1ENG":"(Constrictor) : Before you perform an attack, if an enemy ship is in your #bulls#, you may receive a deplete token to assign him 2 Tractor Tokens.",
-    "effect1":"(Constricteur) : Avant d'effectuer une attaque, si le vaisseau ennemi se trouve dans votre #bulls#, vous pouvez recevoir un jeton épuisement pour lui assigner 2 jetons rayon tracteur.",
-    "effect2": "",
-    "effect3": "" 
+    "effect1_FRA":"(Constricteur) : Avant d'effectuer une attaque, si le vaisseau ennemi se trouve dans votre #bulls#, vous pouvez recevoir un jeton épuisement pour lui assigner 2 jetons rayon tracteur.",
+    "effect2_FRA": "",
+    "effect3_FRA": "" 
 },
 {
     "name":"Optimized Launching Tubes",
     "id":53,
     "nbrOfEffects": 1,
     "effect1ENG":"(Optimized Launching Tubes) : You may launch device instead of dropping them, using the same template. When you perform an #UN# action, you may suffer 1 #crit# damage or expose a damage card to recover the #ch# you've just spent.",
-    "effect1":"(Tubes de lancement optimisés) : Vous pouvez lancer des engins au lieu de les larguer, en utilisant le même gabarit. Lorsque vous effectuez une action #UN#, vous pouvez subir un dégat #crit# ou exposer une carte de dégat pour récupérer la #ch# que vous venez d'utiliser",
-    "effect2": "",
-    "effect3": "" 
+    "effect1_FRA":"(Tubes de lancement optimisés) : Vous pouvez lancer des engins au lieu de les larguer, en utilisant le même gabarit. Lorsque vous effectuez une action #UN#, vous pouvez subir un dégat #crit# ou exposer une carte de dégat pour récupérer la #ch# que vous venez d'utiliser",
+    "effect2_FRA": "",
+    "effect3_FRA": "" 
 },
 {
     "name":"Surcharge des Propulseurs",
     "name_ENG":"Overdrive Thrusters",
     "id":54,
     "nbrOfEffects": 1,
-    "effect1":"(Surcharge des Propulseurs) : Lorsque vous effectuez un #BR# ou un #BO#, vous pouvez recevoir un jeton contrainte pour utiliser le gabarit de vitesse supérieure de même direction.",
-    "effect2": "",
-    "effect3": "" 
+    "effect1_FRA":"(Surcharge des Propulseurs) : Lorsque vous effectuez un #BR# ou un #BO#, vous pouvez recevoir un jeton contrainte pour utiliser le gabarit de vitesse supérieure de même direction.",
+    "effect2_FRA": "",
+    "effect3_FRA": "" 
 },
 {
     "name":"Turbo Thrusters",
     "id":55,
     "nbrOfEffects": 1,
     "effect1ENG":"<img class='chargeforceimg' src='img/chargestat.png'>(Turbo Thrusters) : After you execute a #SL# action, you can spend 1 #ch# or expose a damage card to remove a disable token.",
-    "effect1":"<img class='chargeforceimg' src='img/chargestat.png'>(Turbo-Propulseurs) : Après avoir exécuté une action #SL#, vous pouvez dépenser 1 #ch# ou exposer une carte de dégat pour retirer un marqueur de désarmement.",
-    "effect2": "",
-    "effect3": "" 
+    "effect1_FRA":"<img class='chargeforceimg' src='img/chargestat.png'>(Turbo-Propulseurs) : Après avoir exécuté une action #SL#, vous pouvez dépenser 1 #ch# ou exposer une carte de dégat pour retirer un marqueur de désarmement.",
+    "effect2_FRA": "",
+    "effect3_FRA": "" 
 },
 {
     "name": "Folding Wings",
     "id":56,
     "nbrOfEffects": 2,
-    "effect1":"(Ailes Repliantes) : ",
-    "effect2": "<img class='chargeforceimg' src='img/chargestatRed.png'>(Pliées) Vous pouvez attaquer uniquement dans votre #bulls#.<br>Lorsque vous défendez, lancez 1 dé de défense en plus.",
-    "effect3": "<img class='chargeforceimg' src='img/chargestat.png'>(Dépliées) Considérez vos attaques #Farc# comme des attaques #bulls#.<br>En phase de fin, récupérez 1 #ch# sur vos 'Turbo-Propulseurs'." 
+    "effect1_FRA":"(Ailes Repliantes) : ",
+    "effect2_FRA": "<img class='chargeforceimg' src='img/chargestatRed.png'>(Pliées) Vous pouvez attaquer uniquement dans votre #bulls#.<br>Lorsque vous défendez, lancez 1 dé de défense en plus.",
+    "effect3_FRA": "<img class='chargeforceimg' src='img/chargestat.png'>(Dépliées) Considérez vos attaques #Farc# comme des attaques #bulls#.<br>En phase de fin, récupérez 1 #ch# sur vos 'Turbo-Propulseurs'." 
 },
 {
     "name":"Night Buzzard",
     "id":57,
     "nbrOfEffects": 1,
-    "effect1":"(Night Buzzard) : Lorsque vous effectuez une manoeuvre, vous pouvez augmenter sa difficulté. Dans ce cas, vous pouvez récupérer 1 #ch# de votre capacité de pilote.",
-    "effect2": "",
-    "effect3": "" 
+    "effect1_FRA":"(Night Buzzard) : Lorsque vous effectuez une manoeuvre, vous pouvez augmenter sa difficulté. Dans ce cas, vous pouvez récupérer 1 #ch# de votre capacité de pilote.",
+    "effect2_FRA": "",
+    "effect3_FRA": "" 
 },
 {
     "name":"Tail Laser Turret",
     "id":58,
     "nbrOfEffects": 1,
-    "effect1":"(Tourelle Laser de Poupe) : Votre tourelle ne peut être tournée que vers l'arrière.",
-    "effect2": "",
-    "effect3": "" 
+    "effect1_FRA":"(Tourelle Laser de Poupe) : Votre tourelle ne peut être tournée que vers l'arrière.",
+    "effect2_FRA": "",
+    "effect3_FRA": "" 
 },
 {
  "name":"Intercept Booster",
  "id":59,
  "nbrOfEffects":1,
- "effect1":"(Propulseur d'Interception) : <img class='chargeforceimg' src='img/chargestat.png'><img class='chargeforceimg' src='img/chargestat.png'><img class='chargeforceimg' src='img/chargeminus.png'> Tant que vous avez une charge active, vous pouvez effectuer les actions : <img class='action' src='interceptbooster.png>",
- "effect2": "",
- "effect3": ""
+ "effect1_FRA":"(Propulseur d'Interception) : <img class='chargeforceimg' src='img/chargestat.png'><img class='chargeforceimg' src='img/chargestat.png'><img class='chargeforceimg' src='img/chargeminus.png'> Tant que vous avez une charge active, vous pouvez effectuer les actions : <img class='action' src='interceptbooster.png>",
+ "effect2_FRA": "",
+ "effect3_FRA": ""
 },
 {
  "name":"Luxury Cruiser",
  "id":60,
  "nbrOfEffects":1,
- "effect1":"(Croiseur Luxueux) :  Chaque amélioration #crew# sur ce vaisseau coûtent 1 point de logistique de moins.",
- "effect2": "",
- "effect3": ""
+ "effect1_FRA":"(Croiseur Luxueux) :  Chaque amélioration #crew# sur ce vaisseau coûtent 1 point de logistique de moins.",
+ "effect2_FRA": "",
+ "effect3_FRA": ""
 },
 {
  "name":"Shield Struts",
  "id":61,
  "nbrOfEffects":2,
- "effect1":"(Boucliers Rétractables) : ",
- "effect2": "<img class='chargeforceimg' src='img/chargestatRed.png'>(Repliés)  En phase système, vous pouvez changer de configuration. Lorsque vous défendez, considérez que vous êtes renforcé. Vous ne pouvez plus faire de #BR#.",
- "effect3": "<img class='chargeforceimg' src='img/chargestat.png'> (Dépliés)  En phase système, vous pouvez changer de configuration. Lorsque vous attaquez, lancez 2 dés supplémentaires. ",
+ "effect1_FRA":"(Boucliers Rétractables) : ",
+ "effect2_FRA": "<img class='chargeforceimg' src='img/chargestatRed.png'>(Repliés)  En phase système, vous pouvez changer de configuration. Lorsque vous défendez, considérez que vous êtes renforcé. Vous ne pouvez plus faire de #BR#.",
+ "effect3_FRA": "<img class='chargeforceimg' src='img/chargestat.png'> (Dépliés)  En phase système, vous pouvez changer de configuration. Lorsque vous attaquez, lancez 2 dés supplémentaires. ",
  "effect1ENG":"(Shield Struts) : ",
  "effect2ENG":  "<img class='chargeforceimg' src='img/chargestatRed.png'>(Retracted)   During system Phase, you may switch configuration. When you defend, consider yourself as reinforced. You cannot perform #BR#.",
  "effect3ENG": "<img class='chargeforceimg' src='img/chargestat.png'> (Deployed)  During system Phase, you may switch configuration. When you attack, roll 2 additional dice."
@@ -514,42 +514,42 @@
  "name":"Rapid-Fire",
  "id":62,
  "nbrOfEffects":1,
- "effect1":"(Tir à Répétition) :  Lorsque vous effectuez une attaque principale, vous ne bénéficiez pas du bonus de portée 1. Après avoir effectué une attaque principale, vous pouvez effectuer une attaque principale bonus.",
- "effect2": "",
- "effect3": ""
+ "effect1_FRA":"(Tir à Répétition) :  Lorsque vous effectuez une attaque principale, vous ne bénéficiez pas du bonus de portée 1. Après avoir effectué une attaque principale, vous pouvez effectuer une attaque principale bonus.",
+ "effect2_FRA": "",
+ "effect3_FRA": ""
 },
 {
  "name":"Maneuvering Side Thrusters",
  "id":63,
  "nbrOfEffects":1,
- "effect1":"(Propulsion Latérale) :  Lorsque vous révélez une manoeuvre #bank# ou #turn#, vous pouvez recevoir un jeton épuisement. Dans ce cas, vous pouvez effectuer cette maneouvre en dérapage.",
- "effect2": "",
- "effect3": ""
+ "effect1_FRA":"(Propulsion Latérale) :  Lorsque vous révélez une manoeuvre #bank# ou #turn#, vous pouvez recevoir un jeton épuisement. Dans ce cas, vous pouvez effectuer cette maneouvre en dérapage.",
+ "effect2_FRA": "",
+ "effect3_FRA": ""
 },
 {
  "name":"Cannons Cooldown",
  "id":64,
  "nbrOfEffects":1,
- "effect1":"<img class='chargeforceimg' src='img/chargestat.png'><img class='chargeforceimg' src='img/chargestat.png'><img class='chargeforceimg' src='img/chargeplus.png'>(Refroidissement des Canons) :  Lorsque vous vous engagez, si vous voulez effectuez une attaque principale, vous devez dépenser 2 #ch#.",
- "effect2": "",
- "effect3": ""
+ "effect1_FRA":"<img class='chargeforceimg' src='img/chargestat.png'><img class='chargeforceimg' src='img/chargestat.png'><img class='chargeforceimg' src='img/chargeplus.png'>(Refroidissement des Canons) :  Lorsque vous vous engagez, si vous voulez effectuez une attaque principale, vous devez dépenser 2 #ch#.",
+ "effect2_FRA": "",
+ "effect3_FRA": ""
 },
 {
  "name":"Hyperspace Jump",
  "id":65,
  "nbrOfEffects":1,
- "effect1":"(Saut Hyperespace) :  Mise en Place : Vous et votre vaisseau-mère commencez dans la réserve. Au début de la phase de fin du tour 1, placez vous dans la portée 1 d'un bord au delà de la portée 3 d'un vaisseau adverse.",
- "effect2": "",
- "effect3": "",
+ "effect1_FRA":"(Saut Hyperespace) :  Mise en Place : Vous et votre vaisseau-mère commencez dans la réserve. Au début de la phase de fin du tour 1, placez vous dans la portée 1 d'un bord au delà de la portée 3 d'un vaisseau adverse.",
+ "effect2_FRA": "",
+ "effect3_FRA": "",
  "effect1_ENG": "(Hyperspace Jump) : You and your mother ship begin in reserve. At the beginning of the first end phase, place yourself within range 1 of a border, beyond range 3 of an enemy ship."
 },
 {
  "name":"Devastating Barrage",
  "id":66,
  "nbrOfEffects":1,
- "effect1":"(Tir de Barrage Dévastateur) : tant que vous effectuez une attaque #tpd# ou #mis#, si le défenseur est dans votre #BULLS#, vos résultats #crit# ne peuvent pas être annulés par des résultats #evd#.",
- "effect2": "",
- "effect3": "",
+ "effect1_FRA":"(Tir de Barrage Dévastateur) : tant que vous effectuez une attaque #tpd# ou #mis#, si le défenseur est dans votre #BULLS#, vos résultats #crit# ne peuvent pas être annulés par des résultats #evd#.",
+ "effect2_FRA": "",
+ "effect3_FRA": "",
  "effect1_ENG": "(Devastating Barrage) : while you perform a #tpd# and #mis# attack, if the defender is in your #BULLS#, your #crit# results cannot be canceled by #evd# results."
 }
 
