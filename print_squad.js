@@ -52,7 +52,7 @@ async function getIndexesFromHash() { // Function to get the indexes from the UR
     indexes = hash.split(',');
 
     //If there are any undefined values (for example no Pilot ID), we'll extract the value undefined from the array indexes
-    for (k=0 ; k<indexes.length ; k++){
+    for (k=0 ; k<indexes.length-1 ; k++){
         if(indexes[k]==='undefined'){
             indexes.splice(k, 1);
         }
@@ -543,7 +543,7 @@ async function executeFunctions(){ //on crée une fonction asynchrone pour que t
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
     
         executeFunctions(); // on execute la fonction ultime!!!!!!!!!
-        for (k=indexes.length ; k<9 ; k++ ){ //on va supprimer les éléments des pilotes qui n'ont pas été sélectionnés
+        for (k=indexes.length-1 ; k<9 ; k++ ){ //on va supprimer les éléments des pilotes qui n'ont pas été sélectionnés
             removeElementsByClass(k);
         }
         
