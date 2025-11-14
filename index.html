@@ -12,8 +12,7 @@
 
 <body>
     
-    <!-- Bouton burger (visible sur mobile) -->
-    <div id="burgerButton">☰</div>
+    
 
     <!-- Menu latéral -->
     <nav id="sideMenu">
@@ -36,7 +35,11 @@
         <option value="ENG">English</option>
     </select>  
     </form>
-    <div><button id="faction" class="bouton" type="button" disabled>Faction</button></div>  
+    
+    <!-- Bouton burger (visible sur mobile) -->
+    <div id="burgerButton">☰</div>
+    
+    
 </header>
 
 
@@ -93,7 +96,22 @@
       </div>
     </div>
     
-    
+    <script>
+    document.getElementById("burgerButton").addEventListener("click", function () {
+        document.getElementById("sideMenu").classList.toggle("open");
+    });
+
+    /* Ces lignes permettent de garder le même comportement
+       que les éléments du footer */
+    document.getElementById("printsquadMenu").addEventListener("click", () => {
+        document.getElementById("printsquad").click();
+    });
+
+    document.getElementById("codeMenu").addEventListener("click", () => {
+        document.getElementById("code").click();
+    });
+    </script>
+
 
     <script src="scriptleader.js"> 
     </script>

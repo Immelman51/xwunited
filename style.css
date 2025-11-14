@@ -48,8 +48,8 @@ body {
 
 #burgerButton {
     position: fixed;
-    top: 15px;
-    left: 15px;
+    top: 10px;
+    left: 10px;
     font-size: 28px;
     cursor: pointer;
     z-index: 2500;
@@ -103,6 +103,14 @@ header {
     justify-content: space-evenly;
     align-content: center;
     
+}
+
+* Style du burger à l’intérieur du header */
+#burgerButton {
+    font-size: 28px;
+    cursor: pointer;
+    padding: 5px 10px;
+    display: none; /* visible uniquement sur petits écrans */
 }
 
 .descriptleader {
