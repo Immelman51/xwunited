@@ -3321,8 +3321,8 @@
             "charge": [0],
             "points": 6,
             "faction": ["Imperial_Elite_Squadrons"],
-            "effect_FRA": "Mise en place : Assignez la condition 'Proie' à un vaisseau. A la fin de la phase d'activation, si vous êtes à portée 0-1 du vaisseau avec la condition 'Proie', il gagne 1 jeton épuisement et 1 jeton contrainte. Lorsque ce vaisseau est détruit, vous devez assigner la condition 'Proie' à un vaisseau au delà de la portée 3 de vous. S'il n'y en a pas, assignez la à un vaisseau à portée 3. Répétez cette opération en réduisant la portée jusqu'à trouver une cible potentielle.",
-            "effect_ENG": "SETUP : assign the 'Prey' condition to a ship. At the end of activation phase, if you are at range 0-1 of the ship with the prey condition, it gains 1 deplete and 1 strain token. When the ship is destroyed, you MUST assign the prey condition to a ship beyond range 3 of you. If there's none, assign it to a ship at range 3. Continue this operation by reducing the range until there's a suitable target.",
+            "effect_FRA": "Mise en place : Assignez la condition 'Proie' à un vaisseau. A la fin de la phase d'activation, si vous êtes à portée 0-1 du vaisseau avec la condition 'Proie', il gagne 1 jeton épuisement et 1 jeton contrainte.",
+            "effect_ENG": "SETUP : assign the 'Prey' condition to a ship. At the end of activation phase, if you are at range 0-1 of the ship with the prey condition, it gains 1 deplete and 1 strain token.",
             "modifier_func": [
                 ["add_slot","Condition"],
                 ["auto_equip","Condition",370]
@@ -3984,9 +3984,9 @@
     "talent_points": 1,
     "add_Data": [0],
     "force": 0,
-    "charge":[1,"+"],
-    "effect_FRA": "Placez 1 jeton avec une valeur de 1 à 4 face cachée sur votre pilote, pour indiquer la capacité secrète disponible.<br>1 : Lorsque vous vous engagez, dépensez 1 #ch# pour effectuer une attaque à portée 0.<br>2 : Lorsque vous défendez contre une attaque #mi# ou #to#, vous pouvez dépenser 1 #ch# pour brouiller l'attaquant.<br>3 : Pendant la phase Système, dépensez 1 #ch# pour effectuer une action #BR# ou #BO# de votre barre d'action. La charge ne peut pas être récupérée.<br>4 : Lorsque vous révélez une manoeuvre rouge, dépensez 1 #ch# pour réduire la difficulté de la manoeuvre. Cette charge ne peut pas être récupérée.",
-    "effect_ENG": "Place 1 token with a value from 1 to 4 face down on your pilot, to remember the secret ability available.<br>1 : When you engage, spend 1 #ch# to perform an attack at range 0.<br>2 : When you defend against a #mi# or #to# attack, you may spend 1 #ch# to jam the attacker.<br>3 : During System Phase, spend 1 #ch# to perform a #BR# or #BO# action on your action bar. This charge cannot be recovered.<br>4 : When you reveal a red maneuver, spend 1 #ch# to reduce the maneuver difficulty. This charge cannot be recovered.",
+    "charge":[1,"0"],
+    "effect_FRA": "Placez 1 jeton avec une valeur de 1 à 4 face cachée sur votre pilote, pour indiquer la capacité secrète disponible.<br>1 : Lorsque vous vous engagez, dépensez 1 #ch# pour effectuer une attaque à portée 0.<br>2 : Lorsque vous défendez contre une attaque #mi# ou #to#, vous pouvez dépenser 1 #ch# pour brouiller l'attaquant.<br>3 : Pendant la phase Système, dépensez 1 #ch# pour effectuer une action #BR# ou #BO# de votre barre d'action.<br>4 : Lorsque vous révélez une manoeuvre rouge, dépensez 1 #ch# pour réduire la difficulté de la manoeuvre.",
+    "effect_ENG": "Place 1 token with a value from 1 to 4 face down on your pilot, to remember the secret ability available.<br>1 : When you engage, spend 1 #ch# to perform an attack at range 0.<br>2 : When you defend against a #mi# or #to# attack, you may spend 1 #ch# to jam the attacker.<br>3 : During System Phase, spend 1 #ch# to perform a #BR# or #BO# action on your action bar.<br>4 : When you reveal a red maneuver, spend 1 #ch# to reduce the maneuver difficulty.",
     "faction": ["Black_Sun"]
 },
 
@@ -6291,9 +6291,9 @@
              "slot": "Crew",
              "add_Data": [0],
              "charge": [0],
-             "force":1,
+             "force":3,
              "points": 0,
-             "effect_FRA": "??",
+             "effect_FRA": "Vous ne pouvez pas récupérer de la force en fin de tour. Lorsqu'un vaisseau allié à portée 3 est détruit, vous pouvez dépenser 1#fo#. Dans ce cas, ne le retirez pas de la partie. En début de tour, vous pouvez dépenser 1#fo# pour qu'un vaisseau allié détruit ne soit pas retiré de la partie pour le reste de ce tour.",
              "effect_ENG": "??",
              "faction": ["Imperial_Remnants"],
              "restrictions":[2,"upgrade","Crew",""],
@@ -6443,9 +6443,9 @@
             "charge": [0],
             "points": 2,
             "attack": ["F",2],
-            "range": [2,3],
-            "effect_FRA": "2#Farc# portée 2-3",
-            "effect_ENG": "2#Farc# Range 2-3",
+            "range": [1,3],
+            "effect_FRA": "2#Farc# portée 1-3",
+            "effect_ENG": "2#Farc# Range 1-3",
             "faction": ""
         },
           {
@@ -6482,8 +6482,8 @@
             "force": 0,
             "charge": [0],
             "points": 0,
-            "effect_FRA": "",
-            "effect_ENG": "",
+            "effect_FRA": "Lorsque vous défendez, si l'attaquant est équippé avec Capteur de Positionnement et a un verrouillage sur vous, vous ne pouvez pas dépenser des jetons verts.",
+            "effect_ENG": "While you defend, if the attacker is equipped with Tracking Fob and has a lock on you, you cannot spend green tokens.",
             "faction": ""
         },
           {
@@ -6515,8 +6515,8 @@
             "force": 0,
             "charge": [0],
             "points": 0,
-            "effect_FRA": "",
-            "effect_ENG": "",
+            "effect_FRA": "Lorsque vous êtes détruit, vous devez assigner la condition 'Proie' à un vaisseau allié au delà de la portée 3 de vous. S'il n'y en a pas, assignez la à un vaisseau à portée 3. Répétez cette opération en réduisant la portée jusqu'à trouver une cible potentielle.",
+            "effect_ENG": "When you are destroyed, you MUST assign the prey condition to a friendly ship beyond range 3 of you. If there's none, assign it to a ship at range 3. Continue this operation by reducing the range until there's a suitable target.",
             "faction": ""
         },
           {

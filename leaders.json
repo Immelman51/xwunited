@@ -193,7 +193,7 @@
      "leaderfaction": ["Clone_Army","",""],
      "leaderid": 17,
      "numberOfFactions": 1,
-     "leaderability_FRA": "",
+     "leaderability_FRA": "Au début de la phase de préparation, avant de déterminer le premier joueur, vous pouvez dépenser 1#ch#. Dans ce cas, gagnez 6 points tactique. A la fin de la partie, si la charge est active, ",
        "leaderability_ENG": "",
      "charge": [1,"Yellow"],
      "logistic": 25
