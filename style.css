@@ -48,9 +48,9 @@ body {
 
 #burgerButton {
     position: fixed;
-    top: 10px;
+    top: 2px;
     left: 10px;
-    font-size: 28px;
+    font-size: 35px;
     cursor: pointer;
     z-index: 2500;
     display: none; /* caché par défaut */
@@ -107,7 +107,7 @@ header {
 
 * Style du burger à l’intérieur du header */
 #burgerButton {
-    font-size: 28px;
+    font-size: 35px;
     cursor: pointer;
     padding: 5px 10px;
     display: none; /* visible uniquement sur petits écrans */
@@ -184,6 +184,14 @@ header {
     border: double rgb(236, 236, 241);
     width: auto;
     
+}
+
+.center{
+    text-align: center;
+}
+#addshipbutton{
+    margin-left: auto;
+      margin-right: auto;
 }
 
 /*######### First Line##########" */
