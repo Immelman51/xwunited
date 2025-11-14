@@ -5,6 +5,93 @@ body {
     max-width: 1000px;
 }
 
+/* ----- MENU LATÉRAL ----- */
+
+#sideMenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 220px;
+    height: 100%;
+    background-color: #222;
+    padding-top: 80px;
+    box-sizing: border-box;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    z-index: 2000;
+}
+
+#sideMenu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#sideMenu li {
+    margin: 20px 0;
+}
+
+#sideMenu a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    display: block;
+}
+
+/* Menu ouvert */
+#sideMenu.open {
+    transform: translateX(0);
+}
+
+/* ----- BOUTON BURGER ----- */
+
+#burgerButton {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    font-size: 28px;
+    cursor: pointer;
+    z-index: 2500;
+    display: none; /* caché par défaut */
+}
+
+/* ----- RESPONSIVE ----- */
+
+@media (max-width: 900px) {
+    /* Burger visible sur petit écran */
+    #burgerButton {
+        display: block;
+    }
+    
+    /* footer visible seulement sur mobile */
+    footer.printing_option {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media (min-width: 901px) {
+    /* Menu ouvert en permanence sur grand écran */
+    #sideMenu {
+        transform: translateX(0);
+    }
+
+    #burgerButton {
+        display: none;
+    }
+
+    /* footer masqué sur grand écran */
+    footer.printing_option {
+        display: none;
+    }
+
+    body {
+        margin-left: 220px; /* on décale le contenu */
+    }
+}
+
+
 header {
     display: table;
     width: auto;
