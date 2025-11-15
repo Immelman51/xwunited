@@ -1512,20 +1512,6 @@ leaderselect.addEventListener("input", function() {
 const addMenuButton = document.getElementById("addshipbutton");
 addMenuButton.addEventListener('click', add_ship);
 
-//permet d'associer la fonction faction_cards au bouton faction
-
-const factionCards = document.getElementById('faction');
-factionCards.addEventListener('click', function() {
-    let selected_faction = document.getElementById("menu_faction").value;
-    const pageURL = "https://github.com/Immelman51/xwunited/faction_cards.html";
-    // Construct the full URL with the hash
-    let fullUrl = `faction_cards.html#${selected_faction}`;
-    //let fullUrl = `${pageURL}#${selected_faction}`;
-    // Navigate to the URL
-    window.location.href = fullUrl;
-});
-
-
 
 
 function hasher(){ //on inscrit dans hash le nombre de vaisseaux (shipquantity+1) on va transformer tous les ids du ship pilote et upgrades séparés par la lettre "z", chaque info différente (pilot, upgrades, modifiers) est séparée par des x, puis chaque vaisseaux différents séparés par ",".

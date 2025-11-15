@@ -72,12 +72,6 @@ async function initializeData() {
 }
 
 
-
-
- 
-    
-/*const menuFaction = ["<Select Faction>","Rebel_Alliance","Imperial_Academy","Mandalorian_Clans","Pirates_and_Smugglers","Bounty_Hunters_Guild","Phoenix_Cell","Trade_Federation","Heroes_of_the_Resistance","Imperial_Elite_Squadrons","First_Order_Vanguard","Partisans","Shadow_Specialists","Jedi_Order","New_Republic_Patrol","Hutt_Cartel","Agents_of_Chaos","Clone_Army","Imperial_Remnants","Black_Sun","Crime_Syndicates","ISB","Colossus","Separatist_Government",];
- */
 let leader
 // Populate menus after initializing data
 async function populateMenus() {
@@ -174,7 +168,6 @@ leaderselect.addEventListener("input", function() {
     description_leader()
     let logisticvalue = document.getElementById("logisticCounter");
     logisticvalue.innerHTML = leaders[leaderSelected_id]['logistic'];
-})
-factionselect.addEventListener("input", selection_faction);
+});
 
 

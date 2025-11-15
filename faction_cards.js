@@ -55,7 +55,15 @@ if(window.location.hash) {
     // Aucun hash n'est trouvé
 }
 
-
+//We get the language selected
+let languageMenu = document.getElementById("language");
+let language = languageMenu.value;
+languageMenu.addEventListener("input", function(){
+    console.log("Language Input");
+    language = languageMenu.value;
+    element.innerHTML = "";
+    loadAllData();
+});
 
 const element = document.getElementById('content');
 
@@ -77,7 +85,7 @@ for (let i = 0; i<leaders.length; i++){
 
         let newleadername = document.createElement('div');
         newleadername.setAttribute("class", "leader name");
-        newleadername.innerHTML = leaders[i]["leadername"];        
+        newleadername.innerHTML = leaders[i]["leadername_"+language];
         newleader.appendChild(newleadername);
 
 
@@ -95,7 +103,7 @@ for (let i = 0; i<leaders.length; i++){
             newleader.appendChild(factionlogo);
         }
         let newleaderability = document.createElement("div");
-        newleaderability.innerHTML = leaders[i]["leaderability"];
+        newleaderability.innerHTML = leaders[i]["leaderability_"+language];
         newleaderability.setAttribute("class", "leader ability");
         newleader.appendChild(newleaderability);
 
@@ -153,6 +161,7 @@ for (let i=0 ; i<ships.length; i++){ //on va afficher d'abord le vaisseau/chassi
         
         let shipattackContainer = document.createElement('div');
         shipattackContainer.setAttribute("class","attack container");
+        console.log("i="+i);
         shipattackContainer.innerHTML = '<span style="color: black" class="attack value">' +ships[i]["attack"][0][1] + '</span> <img src="img/attack'+ships[i]["attack"][0][0] +'.jpg" class="attack logo"/>' ;
     if(ships[i]["attack"].length === 2){
         shipattackContainer.innerHTML +=  "<img class='attack logo' src='img/attack"+ships[i]["attack"][1][0] +".jpg'/><span style='color: black' class='attack value'>" + ships[i]["attack"][1][1] + "</span>"  ;
@@ -357,10 +366,10 @@ chassisShip.setAttribute('id','chassisShip'+i);
 chassisShip.setAttribute('class','chassisShip');
 if(ships[i]['chassis'][0]!==0){
 for(c=0;c<ships[i]['chassis'].length;c++){
-    chassisShip.innerHTML += chassis[ships[i]['chassis'][c]]['effect1']+'<br>';
+    chassisShip.innerHTML += chassis[ships[i]['chassis'][c]]['effect1_'+language]+'<br>';
     if(chassis[ships[i]['chassis'][c]]['nbrOfEffects']===2){
-    chassisShip.innerHTML += chassis[ships[i]['chassis'][c]]['effect2']+'<br>';  
-    chassisShip.innerHTML += chassis[ships[i]['chassis'][c]]['effect3']+'<br>';
+    chassisShip.innerHTML += chassis[ships[i]['chassis'][c]]['effect2_'+language]+'<br>';
+    chassisShip.innerHTML += chassis[ships[i]['chassis'][c]]['effect3_'+language]+'<br>';
     }
 }
 }
@@ -397,7 +406,7 @@ element.appendChild(newship);
 
             let newpilotname = document.createElement('div');
             newpilotname.setAttribute("class", "pilot name");
-            newpilotname.innerHTML = limitNumber+" "+pilots[j]["name"]+ " ("+pilots[j]["skill"]+")";   // on écrit le limitNumber = Max_per_Squad avant le nom du pilote  , puis le skill entre parenthèses   
+            newpilotname.innerHTML = limitNumber+" "+pilots[j]["name_"+language]+ " ("+pilots[j]["skill"]+")";   // on écrit le limitNumber = Max_per_Squad avant le nom du pilote  , puis le skill entre parenthèses
             newpilot.appendChild(newpilotname);
 
             
@@ -467,7 +476,7 @@ element.appendChild(newship);
             newpilotability.setAttribute("class", "pilot ability");
             newpilot.appendChild(newpilotability); 
             if (typeof pilots[j]["ability"] !== 'undefined'){ //certains pilotes n'ont pas d'ability (pilotes génériques)
-            newpilotability.innerHTML = pilots[j]["ability"];
+            newpilotability.innerHTML = pilots[j]["ability_"+language];
             }
 
             element.appendChild(newpilot);
@@ -511,7 +520,7 @@ function displayUpgrades() {
         
             let newupgradename = document.createElement('div');
         newupgradename.setAttribute("class", "upgrade name");
-        newupgradename.innerHTML = limitNumber+" "+upgrades[i]["name"];        
+        newupgradename.innerHTML = limitNumber+" "+upgrades[i]["name_"+language];
         newupgrade.appendChild(newupgradename);
 
         
@@ -530,7 +539,7 @@ function displayUpgrades() {
 
         let newupgradeeffect = document.createElement('div');
         newupgradeeffect.setAttribute("class", "upgrade ability");
-        newupgradeeffect.innerHTML = upgrades[i]["effect"];        
+        newupgradeeffect.innerHTML = upgrades[i]["effect_"+language];
         newupgrade.appendChild(newupgradeeffect);
 
         element.appendChild(newupgrade);

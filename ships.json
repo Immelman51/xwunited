@@ -2061,6 +2061,7 @@
                 "name": "Syliure-class Hyperspace Ring",
                 "chassis":[65],
                 "id": 73,
+                "attack": [["0",0]],
                 "factions": ["Jedi_Order","Clone_Army"],
                 "agility": 0,
                 "hull": 1,
