@@ -1,3 +1,5 @@
+
+
 /* Overlay invisible par défaut */
 #overlay {
     position: fixed;
@@ -13,6 +15,8 @@
 /* visible quand un menu est ouvert */
 #overlay.active {
     display: block;
+    z-index: 1997;
+
 }
 
 
@@ -29,18 +33,16 @@ body {
 #sideMenu {
     position: fixed;
     top: 0;
-    left: 0;
+    left: -160px;
     width: 160px;
     height: 100vh;
     background-color: #222;
     padding-top: 80px;
-    transform: translateX(-100%);
-    transition: transform 0.3s ease;
     z-index: 1999;
 }
 
 #sideMenu.open {
-    transform: translateX(0);
+    left: 0px;
 }
 
 #sideMenu ul {
@@ -65,7 +67,7 @@ body {
 #subMenuPanel {
     position: fixed;
     top: 0;
-    left: -100%;      /* caché hors écran */
+    left: -220px;      /* caché hors écran */
     width: 220px;       /* largeur du panneau */
     height: 100%;
     background: #111;
@@ -133,31 +135,53 @@ body {
 /* ----- RESPONSIVE ----- */
 
 @media (max-width: 900px) {
-    /* Burger visible sur petit écran */
     #burgerButton {
         display: block;
+        position: relative; /* important */
+        top: 0;
+        left: 0;
+        flex-shrink: 0;
     }
-    
-    /* footer visible seulement sur mobile */
+
     footer.printing_option {
         display: flex;
         justify-content: space-around;
     }
-    header {
-            gap: 10px; /* espace entre selects et burger */
-        }
 
-        header form {
-            flex: 1;
-        }
+    /* garde le comportement du header en mobile */
+    header {
+        gap: 10px;
     }
+
+    
+    #subMenuPanel {
+            left: -100%;
+        }
+    #subMenuPanel.open {
+            left: 0; /* slide depuis la gauche */
+        }
 }
 
+
 @media (min-width: 901px) {
-    /* Menu ouvert en permanence sur grand écran */
-    #sideMenu {
-        transform: translateX(0);
-    }
+        /* Menu ouvert en permanence sur grand écran */
+        #sideMenu {
+            left: 0;
+        }
+
+        #burgerButton {
+            display: none;
+        }
+
+        /* footer masqué sur grand écran */
+        footer.printing_option {
+            display: none;
+        }
+
+        /* Décale le contenu sur grand écran avec la largeur exacte du sideMenu */
+        body {
+            margin-left: 160px; /* fait correspondre au width:160px du sideMenu */
+        }
 
     #burgerButton {
         display: none;
@@ -169,58 +193,21 @@ body {
     }
 
     body {
-        margin-left: 220px; /* on décale le contenu */
+        margin-left: 160px; /* on décale le contenu */
     }
 }
-@media (max-width: 360px) {
-  header {
-    flex-wrap: wrap;
-    gap: 6px;
-  }
-  /* place le burger en premier visuellement si tu veux */
-  #burgerButton { order: 2; }
-  header form { order: 1; width: 100%; }
-  header form select { width: 48%; } /* ou 100% si tu veux une colonne */
-}
 
+
+/* ---------- header & selects (fix flex shrink) ---------- */
 header {
-    display: table;
-    width: auto;
-    background-color: black;
-    color:aliceblue ; 
-   
     display: flex;
-    flex-wrap: nowrap;
+    align-items: center;
     justify-content: space-between;
-    align-content: center;
+    gap: 10px;
     padding: 5px 10px;
-
+    background-color: black;
+    color: white;
 }
-header form {
-    display: flex;
-      gap: 6px;
-      flex: 1 1 auto;    /* prend l'espace disponible, mais peut shrink */
-      min-width: 0;      /* essentiel : autorise le shrink dans flexbox */
-      align-items: center;
-}
-/* Les selects se réduisent correctement */
-header form select {
-  flex: 1 1 auto;    /* grandissent et rétrécissent */
-  min-width: 0;      /* essentiel */
-  max-width: 100%;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 6px;
-}
-
-* Style du burger à l’intérieur du header */
-#burgerButton {
-    font-size: 35px;
-      flex: 0 0 auto;    /* taille fixe / ne shrink pas */
-      margin-left: 8px;
-      cursor: pointer;
-      z-index: 1001;
-    }
 
 
 .descriptleader {
@@ -327,7 +314,7 @@ header form select {
 
 
 .removeB {
-    grid-column: 4; 
+    grid-column: 4;
     background-color: brown;
     color: white
 }
@@ -519,7 +506,7 @@ select {
 }
 .printing_option div {
     padding: 3px;
-    width : 25%; 
+    width : 25%;
     text-align: center;
 }
 
@@ -593,14 +580,6 @@ select {
     margin-left: 2px;
 
 }
-
-
-
-
-
-
-
-
 
 
 
