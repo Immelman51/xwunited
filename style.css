@@ -343,7 +343,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1000;
+  z-index: 3000;
 }
 .chassisTitleWindow {
   padding: 30px;
@@ -353,6 +353,7 @@ header {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
   text-align: center;
   cursor: pointer;
+  z-index: 3001;
 }
 
 /* ###### Third Line ######### */

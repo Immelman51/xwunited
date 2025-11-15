@@ -460,7 +460,7 @@ element.appendChild(newship);
                 newpilottitle.innerHTML = pilots[j]["title"];
             
             }
-            newpilotslots = document.createElement('div');
+            let newpilotslots = document.createElement('div');
             newpilotslots.setAttribute("class", "slotpilot");
             for (let k=0; k<pilots[j]["slots"].length; k++){ //on va développer tous les slots du pilote
                 newpilotslotslogo = document.createElement('img');                            
@@ -474,10 +474,9 @@ element.appendChild(newship);
 
             let newpilotability = document.createElement('div');
             newpilotability.setAttribute("class", "pilot ability");
-            newpilot.appendChild(newpilotability); 
-            if (typeof pilots[j]["ability"] !== 'undefined'){ //certains pilotes n'ont pas d'ability (pilotes génériques)
             newpilotability.innerHTML = pilots[j]["ability_"+language];
-            }
+            newpilot.appendChild(newpilotability);
+            
 
             element.appendChild(newpilot);
             

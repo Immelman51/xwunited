@@ -45,6 +45,16 @@ async function loadAllData() {
     }
 };
 
+//We get the language selected
+let languageMenu = document.getElementById("language");
+let language = languageMenu.value;
+languageMenu.addEventListener("input", function(){
+    console.log("Language Input");
+    language = languageMenu.value;
+    element.innerHTML = "";
+    loadAllData();
+});
+
 const element = document.getElementById('content');
 
 function displayUpgrades(slotName,slotType,){
@@ -81,7 +91,7 @@ let pUpgradesGen = document.createElement("div");
         
             let newupgradename = document.createElement('div');
         newupgradename.setAttribute("class", "upgrade name");
-        newupgradename.innerHTML = limitNumber+" "+upgrades[j]["name"];        
+        newupgradename.innerHTML = limitNumber+" "+upgrades[j]["name_"+language];
         newupgrade.appendChild(newupgradename);
 
         
@@ -103,7 +113,7 @@ let pUpgradesGen = document.createElement("div");
         newupgrade.appendChild(newupgradepoints);
         let newupgradeeffect = document.createElement('div');
         newupgradeeffect.setAttribute("class", "upgrade ability");
-        newupgradeeffect.innerHTML = upgrades[j]["effect"];        
+        newupgradeeffect.innerHTML = upgrades[j]["effect_"+language];        
         newupgrade.appendChild(newupgradeeffect);
 
         element.appendChild(newupgrade);
