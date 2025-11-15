@@ -10,6 +10,8 @@
    
 </head>
 
+<div id="overlay"></div>
+
 <body>
     
     
@@ -133,10 +135,37 @@
     </div>
     
     <script>
-    document.getElementById("burgerButton").addEventListener("click", function () {
-        document.getElementById("sideMenu").classList.toggle("open");
+    const sideMenu = document.getElementById("sideMenu");
+    const subMenu = document.getElementById("subMenuPanel");
+    const burger = document.getElementById("burgerButton");
+    const overlay = document.getElementById("overlay");
+
+    // Ouvrir le menu principal
+    burger.addEventListener("click", () => {
+        sideMenu.classList.toggle("open");
+        overlay.classList.toggle("active", sideMenu.classList.contains("open"));
     });
 
+    // Ouvrir le sous-menu
+    document.getElementById("factionsButton").addEventListener("click", () => {
+        subMenu.classList.add("open");
+        overlay.classList.add("active");
+    });
+
+    // Bouton retour du sous-menu
+    document.getElementById("subMenuBack").addEventListener("click", () => {
+        subMenu.classList.remove("open");
+        overlay.classList.remove("active");
+    });
+
+    // Clic en dehors (sur overlay)
+    overlay.addEventListener("click", () => {
+        sideMenu.classList.remove("open");
+        subMenu.classList.remove("open");
+        overlay.classList.remove("active");
+    });
+    </script>
+    <script>
     /* Ces lignes permettent de garder le même comportement
        que les éléments du footer */
     document.getElementById("printsquadMenu").addEventListener("click", () => {
@@ -149,20 +178,10 @@
     </script>
     
   
-    <script>
-        // Ouvrir le panneau des factions
-        document.getElementById("factionsButton").addEventListener("click", () => {
-            document.getElementById("subMenuPanel").classList.add("open");
-        });
 
-        // Bouton retour
-        document.getElementById("subMenuBack").addEventListener("click", () => {
-            document.getElementById("subMenuPanel").classList.remove("open");
-        });
-
-    </script>
-
-    <script src="scriptleader.js"> 
+    
+    
+    <script src="scriptleader.js">
     </script>
     <script src="scriptship.js">
     </script>
