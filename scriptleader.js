@@ -6,8 +6,8 @@ let leaderSelected_id = 0;
 
 /*on écoute les saisies dans les menus pour délcencher les fonctions*/
 leaderselect = document.getElementById("menu_leader");
-factionselect = document.getElementById("menu_faction");
-let factionIndex = factionselect.selectedIndex;
+//factionselect = document.getElementById("menu_faction");
+//let factionIndex = factionselect.selectedIndex;
 //let leaderID = 0;
 
 //We get the language selected
@@ -41,7 +41,13 @@ async function initializeData() {
         leaders = await fetchData(requestURLleaders);
         console.log(leaders);
         for (let i = 0; i < leaders.length; i++) {
-            menuLeader.push(leaders[i]["leadername_"+language]+' ('+leaders[i]["logistic"]+')');
+            if(leaders[i]["leaderfaction"][1] === ""){
+                menuLeader.push(leaders[i]["leadername_"+language]+' ('+leaders[i]["logistic"]+') '+'['+leaders[i]["leaderfaction"][0]+"]");
+            }
+            if(leaders[i]["leaderfaction"][1] !== ""){
+                menuLeader.push(leaders[i]["leadername_"+language]+' ('+leaders[i]["logistic"]+') '+'['+leaders[i]["leaderfaction_mini"]+"]");
+            }
+            
         }
     } catch (error) {
         console.error("Failed to fetch data: ", error);
@@ -70,12 +76,13 @@ async function initializeData() {
 
  
     
-const menuFaction = ["<Select Faction>","Rebel_Alliance","Imperial_Academy","Mandalorian_Clans","Pirates_and_Smugglers","Bounty_Hunters_Guild","Phoenix_Cell","Trade_Federation","Heroes_of_the_Resistance","Imperial_Elite_Squadrons","First_Order_Vanguard","Partisans","Shadow_Specialists","Jedi_Order","New_Republic_Patrol","Hutt_Cartel","Agents_of_Chaos","Clone_Army","Imperial_Remnants","Black_Sun","Crime_Syndicates","ISB","Colossus","Separatist_Government",];
+/*const menuFaction = ["<Select Faction>","Rebel_Alliance","Imperial_Academy","Mandalorian_Clans","Pirates_and_Smugglers","Bounty_Hunters_Guild","Phoenix_Cell","Trade_Federation","Heroes_of_the_Resistance","Imperial_Elite_Squadrons","First_Order_Vanguard","Partisans","Shadow_Specialists","Jedi_Order","New_Republic_Patrol","Hutt_Cartel","Agents_of_Chaos","Clone_Army","Imperial_Remnants","Black_Sun","Crime_Syndicates","ISB","Colossus","Separatist_Government",];
+ */
 let leader
 // Populate menus after initializing data
 async function populateMenus() {
     await initializeData();
-    populateMenu("menu_faction", menuFaction);
+    //populateMenu("menu_faction", menuFaction);
     populateMenu("menu_leader", menuLeader);
 }
 
@@ -122,8 +129,8 @@ document.getElementById("faction3logo").setAttribute("src",'img/'+factionval3+'m
 
 /*rechecher les leaders qui appartiennent à la faction concernée et modifier le menu déroulant en fonction*/
 
-function selection_faction () {
-let factionbutton = document.getElementById("faction");    
+/*function selection_faction () {
+let factionbutton = document.getElementById("faction");
 
 if (factionIndex === 0) {
     populateMenu("menu_leader", menuLeader);
@@ -140,6 +147,7 @@ listeleader.push(leaders[i]["leadername_"+language]+" ("+leaders[i]["logistic"]+
 factionbutton.removeAttribute("disabled");
 populateMenu("menu_leader",listeleader);
 }
+*/
 
 function description_leader() {
     descriptionLeaderField = document.querySelector(".abilityLeader"); //description est le nom de la classe où se trouve le champ description leader
