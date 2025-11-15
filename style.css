@@ -30,7 +30,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    width: 220px;
+    width: 160px;
     height: 100vh;
     background-color: #222;
     padding-top: 80px;
@@ -79,7 +79,7 @@ body {
 
 /* ouvert */
 #subMenuPanel.open {
-    left: 220px;
+    left: 160px;
 }
 
 /* header du panneau */
