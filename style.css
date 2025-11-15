@@ -143,6 +143,14 @@ body {
         display: flex;
         justify-content: space-around;
     }
+    header {
+            gap: 10px; /* espace entre selects et burger */
+        }
+
+        header form {
+            flex: 1;
+        }
+    }
 }
 
 @media (min-width: 901px) {
@@ -174,9 +182,17 @@ header {
    
     display: flex;
     flex-wrap: nowrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-content: center;
-    
+    padding: 5px 10px;
+
+}
+header form {
+    flex: 1;
+}
+/* Les selects se réduisent correctement */
+header select {
+    max-width: 100%;
 }
 
 * Style du burger à l’intérieur du header */
@@ -185,6 +201,8 @@ header {
     cursor: pointer;
     padding: 5px 10px;
     display: none; /* visible uniquement sur petits écrans */
+    flex-shrink: 0; /* empêche le burger de se réduire ou d'être poussé */
+
 }
 
 .descriptleader {
