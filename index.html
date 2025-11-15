@@ -18,12 +18,50 @@
     <nav id="sideMenu">
         <ul>
             <li><a id='printsquadMenu'>Print</a></li>
-            <li><a href="rules_united.html">Règles</a></li>
-            <li><a href="scenario.html">Scénarios</a></li>
+            <li><a href="rules_united.html">Rules</a></li>
+            <li><a href="scenario.html">Scénarii</a></li>
+            
+            <!-- MENU A DEUX NIVEAUX -->
+                    <li id="factionsButton" class="submenu-title">Factions ▸</li>
+            
             <li><a href="https://github.com/Immelman51/xwunited">Report</a></li>
             <li><a id='codeMenu' href="#">Code</a></li>
         </ul>
+
     </nav>
+    <!-- panneau de niveau 2 -->
+    <nav id="subMenuPanel">
+        <div class="submenu-header">
+            <span id="subMenuBack">◂ Retour</span>
+            <span>Factions</span>
+        </div>
+
+        <ul class="submenu-list">
+            <li><a href=`faction_cards.html#${Agents_of_Chaos}`>Agents_of_Chaos</a></li>
+            <li><a href=`faction_cards.html#${Black_Sun}`>Black_Sun</a></li>
+            <li><a href=`faction_cards.html#${Bounty_Hunters_Guild}`>Bounty_Hunters_Guild</a></li>
+            <li><a href=`faction_cards.html#${Clone_Army}`>Clone_Army</a></li>
+            <li><a href=`faction_cards.html#${Colossus}`>Colossus</a></li>
+            <li><a href=`faction_cards.html#${Crime_Syndicates}`>Crime_Syndicates</a></li>
+            <li><a href=`faction_cards.html#${First_Order_Vanguard}`>First_Order_Vanguard</a></li>
+            <li><a href=`faction_cards.html#${Heroes_of_the_Resistance}`>Heroes_of_the_Resistance</a></li>
+            <li><a href=`faction_cards.html#${Hutt_Cartel}`>Hutt_Cartel</a></li>
+            <li><a href=`faction_cards.html#${Imperial_Academy}`>Imperial_Academy</a></li>
+            <li><a href=`faction_cards.html#${Imperial_Elite_Squadrons}`>Imperial_Elite_Squadrons</a></li>
+            <li><a href=`faction_cards.html#${Imperial_Remnants}`>Imperial_Remnants</a></li>
+            <li><a href=`faction_cards.html#${ISB}`>ISB</a></li>
+            <li><a href=`faction_cards.html#${Jedi_Order}`>Jedi_Order</a></li>
+            <li><a href=`faction_cards.html#${Mandalorian_Clans}`>Mandalorian_Clans</a></li>
+            <li><a href=`faction_cards.html#${New_Republic_Patrol}`>New_Republic_Patrol</a></li>
+            <li><a href=`faction_cards.html#${Partisans}`>Partisans</a></li>
+            <li><a href=`faction_cards.html#${Phoenix_Cell}`>Phoenix_Cell</a></li>
+            <li><a href=`faction_cards.html#${Pirates_and_Smugglers}`>Pirates_and_Smugglers</a></li>
+            <li><a href=`faction_cards.html#${Rebel_Alliance}`>Rebel_Alliance</a></li>
+            <li><a href=`faction_cards.html#${Separatist_Government}`>Separatist_Government</a></li>
+            <li><a href=`faction_cards.html#${Shadow_Specialists}`>Shadow_Specialists</a></li>
+
+        </ul>
+        </nav>
     
     
 <header>
@@ -108,7 +146,20 @@
         document.getElementById("code").click();
     });
     </script>
+    
+    /* Ouvrir / fermer le menu Factions*/
+    <script>
+        // Ouvrir le panneau des factions
+        document.getElementById("factionsButton").addEventListener("click", () => {
+            document.getElementById("subMenuPanel").classList.add("open");
+        });
 
+        // Bouton retour
+        document.getElementById("subMenuBack").addEventListener("click", () => {
+            document.getElementById("subMenuPanel").classList.remove("open");
+        });
+
+    </script>
 
     <script src="scriptleader.js"> 
     </script>

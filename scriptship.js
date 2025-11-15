@@ -1513,6 +1513,7 @@ const addMenuButton = document.getElementById("addshipbutton");
 addMenuButton.addEventListener('click', add_ship);
 
 //permet d'associer la fonction faction_cards au bouton faction
+
 const factionCards = document.getElementById('faction');
 factionCards.addEventListener('click', function() {
     let selected_faction = document.getElementById("menu_faction").value;
