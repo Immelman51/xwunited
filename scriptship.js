@@ -1455,7 +1455,7 @@ function display_chassis_title_window(event) { //allows to display the chassis w
     n = chassistarget.slice(-2,-1); //n= 1 or 2 depending on the chassis clicked
     targettype = chassistarget.slice(0,-1); //targettype = chassis or title
     let chassisOverlay = document.createElement("div");
-    chassisOverlay.setAttribute("id", "overlay");
+    chassisOverlay.setAttribute("id", "overlay1");
     chassisOverlay.setAttribute("class","overlay");
     let chassisWindow = document.createElement("div");
     chassisWindow.setAttribute("id", "popup");
