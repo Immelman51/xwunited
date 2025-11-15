@@ -172,7 +172,16 @@ body {
         margin-left: 220px; /* on décale le contenu */
     }
 }
-
+@media (max-width: 360px) {
+  header {
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  /* place le burger en premier visuellement si tu veux */
+  #burgerButton { order: 2; }
+  header form { order: 1; width: 100%; }
+  header form select { width: 48%; } /* ou 100% si tu veux une colonne */
+}
 
 header {
     display: table;
@@ -188,22 +197,31 @@ header {
 
 }
 header form {
-    flex: 1;
+    display: flex;
+      gap: 6px;
+      flex: 1 1 auto;    /* prend l'espace disponible, mais peut shrink */
+      min-width: 0;      /* essentiel : autorise le shrink dans flexbox */
+      align-items: center;
 }
 /* Les selects se réduisent correctement */
-header select {
-    max-width: 100%;
+header form select {
+  flex: 1 1 auto;    /* grandissent et rétrécissent */
+  min-width: 0;      /* essentiel */
+  max-width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 6px;
 }
 
 * Style du burger à l’intérieur du header */
 #burgerButton {
     font-size: 35px;
-    cursor: pointer;
-    padding: 5px 10px;
-    display: none; /* visible uniquement sur petits écrans */
-    flex-shrink: 0; /* empêche le burger de se réduire ou d'être poussé */
+      flex: 0 0 auto;    /* taille fixe / ne shrink pas */
+      margin-left: 8px;
+      cursor: pointer;
+      z-index: 1001;
+    }
 
-}
 
 .descriptleader {
     display: flex ;
