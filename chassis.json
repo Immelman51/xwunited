@@ -738,8 +738,18 @@
  "effect1_ENG": "(Devastating Barrage) : while you perform a #tpd# and #mis# attack, if the defender is in your #BULLS#, your #crit# results cannot be canceled by #evd# results.",
     "effect2_ENG": "",
     "effect3_ENG": ""
-}
-
+},
+{
+"name":"Emergency Extraction",
+"id":67,
+"nbrOfEffects":1,
+"effect1_FRA":"(Détachement d'urgence) : Vous ne pouvez pas déployer votre vaisseau arrimé tant que vous n'êtes pas détruit. Lorsque vous êtes détruit, effectuez un déploiement d'urgence (Déployez le vaisseau arrimé qui passe sa phase d'action, et reçoit un jeton désarmement).",
+"effect2_FRA": "",
+"effect3_FRA": "",
+"effect1_ENG": "(Emergency Extraction) : You cannot undock your docked ship while you are not destroyed. When you are destroyed, perform an emergency undocking (undock the docked ship whick skips its action phase, and receive a disarm token.",
+   "effect2_ENG": "",
+   "effect3_ENG": ""
+   }
 
   
 

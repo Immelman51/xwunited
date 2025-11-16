@@ -1719,7 +1719,7 @@
                 "hull": 5,
                 "shields": 3,
                 "base": "small",
-                "chassis": [16],
+                "chassis": [16,67],
                 "actions": [
                     [0,"Fo W"],
                     [0,"Lo W"],                

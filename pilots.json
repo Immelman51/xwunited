@@ -3011,8 +3011,8 @@
             "skill": 0,
             "points": 1,
             
-            "ability_FRA": "Ne peut être joué que si un YV666 avec le titre Hound’s Tooth est dans votre escadron. Vous ne pouvez vous déployez que lorsque le Hound's Tooth est détruit. Vous pouvez copier :<br>- Le texte de sa capacité de pilote ou<br>-  Le texte de l’une de ses améliorations #crew# ",
-            "ability_ENG": "Cannot be played if there's no YV666 with the Hound's Tooth title in your squad. You may deploy only when the Hound's Tooth is destroyed. You may copy :<br>- Its Pilot ability or<br>- The text of one of its #crew# upgrade",
+            "ability_FRA": "Ne peut être joué que si un YV666 avec le titre Hound’s Tooth est dans votre escadron. Vous commencez la partie en réserve, arrimé au Hound's Tooth. Vous ne pouvez vous déployez que lorsque le Hound's Tooth est détruit. Vous pouvez copier :<br>- Le texte de sa capacité de pilote ou<br>-  Le texte de l’une de ses améliorations #crew# ",
+            "ability_ENG": "Cannot be played if there's no YV666 with the Hound's Tooth title in your squad. You begin the game in reserve, docked to the Hound's Tooth. You may deploy only when the Hound's Tooth is destroyed. You may copy :<br>- Its Pilot ability or<br>- The text of one of its #crew# upgrade",
             "slots": [
             ]
             
