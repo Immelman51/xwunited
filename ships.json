@@ -2112,7 +2112,7 @@
                 "name": "TIE/wi Whisper Modified Interceptor",
                 "id": 75,
                 "factions": ["Shadow_Specialists"],
-                "attackbull": [["BULL",3],["F",2]],
+                "attack": [["BULL",3],["F",2]],
                 "agility": 2,
                 "hull": 3,
                 "shields": 2,
