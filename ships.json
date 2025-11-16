@@ -608,7 +608,7 @@
                     [ 2, 2, 1, 2, 2],
                     [ 0, 0, 2, 0, 0]
                 ],
-                "slots": ["Crew", "Crew", "Illicit", "Illicit", "Modification"]
+                "slots": ["Crew", "Crew", "Cannon", "Gunner", "Illicit", "Illicit", "Modification"]
             },
             {
         
@@ -2023,7 +2023,7 @@
                     [ 0, 0, 2, 0, 0, 3],
                     [ 0, 0, 2, 0, 0, 0]
                 ],
-                "slots": ["Payload","Astromech","Tie mod","Hyperspace Ring"]
+                "slots": ["Payload","Astromech","Tie mod","Modification","Hyperspace Ring"]
     
             },
             {
@@ -2074,7 +2074,8 @@
                 	[ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
                 	[ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
                     [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
-                ]
+                ],
+                "slots": []
             },
             {
          
@@ -2947,7 +2948,6 @@
                 "chassis": [43],
                 "actions": [
                       [0,"Fo W"],
-                      [0,"Lo W"],  
                       [0,"Ja R"]
 
                 ],
@@ -2959,7 +2959,7 @@
                     [ 0, 0, 1, 0, 0, 0],
                     [ 0, 0, 3, 0, 0, 0]
                 ],
-                "slots": ["Illicit","Modification"]
+                "slots": ["Illicit","Modification","Calculator"]
             },
              {
           

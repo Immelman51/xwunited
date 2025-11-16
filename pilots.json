@@ -2986,9 +2986,7 @@
             "ability_ENG": "While you perform a primary attack, after the 'Neutralize Results' step, you may spend 1 #crit# result to add 2 #hit# results.",
             "slots": [
                 "Title",
-                "Talent-elite",
-                "Gunner",
-                "Cannon"
+                "Talent-elite"
                 
             ],
             "modifier_func": [
