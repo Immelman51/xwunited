@@ -1093,7 +1093,7 @@
                 "hull": 4,
                 "shields": 3,
                 "base": "small",
-                "chassis": [0],
+                "chassis": [68],
                 "actions": [
                     [0,"Fo W"],
                     [0,"Lo W"],

@@ -749,6 +749,17 @@
 "effect1_ENG": "(Emergency Extraction) : You cannot undock your docked ship while you are not destroyed. When you are destroyed, perform an emergency undocking (undock the docked ship whick skips its action phase, and receive a disarm token.",
    "effect2_ENG": "",
    "effect3_ENG": ""
+   },
+{
+"name":"Xg-1 Assault Configuration",
+"id":68,
+"nbrOfEffects":1,
+"effect1_FRA":"(Configuration d'Assaut Xg-1) : Tant que vous avez exactement 1 marqueur de désarmement, vous pouvez toujours effectuer des attaques spéciales. Tant que vous effectuez une attaque spéciale alors que vous êtes désarmé, lancez 3 dés d’attaque au maximum.",
+"effect2_FRA": "",
+"effect3_FRA": "",
+"effect1_ENG": "(Xg-1 Assault Configuration) : While you have exactly 1 disarm token, you can still perform special attacks. While you perform a special attack while disarmed, roll a maximum of 3 attack dice.",
+   "effect2_ENG": "",
+   "effect3_ENG": ""
    }
 
   
