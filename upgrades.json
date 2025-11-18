@@ -196,9 +196,9 @@
             "talent_points": 2,
             "add_Data": [0],
             "force": 0,
-            "charge": [1,"0"],
-            "effect_FRA": "<img class='chargeforceimg' src='img/chargestat.png'> Tant que vous effectuez une attaque principale, si le défenseur est dans votre #bulls#, avant l’étape « Neutraliser les résultats », vous pouvez dépenser 1 #ch# pour annuler 1 résultat #hit#.",
-            "effect_ENG": "<img class='chargeforceimg' src='img/chargestat.png'> When you perform a primary attack, if the defender is in your #bulls#, before the 'Neutralize results' step, you may spend 1 #ch# to cancel 1 #hit# result.",
+            "charge": [2,"0"],
+            "effect_FRA": "<img class='chargeforceimg' src='img/chargestat.png'> <img class='chargeforceimg' src='img/chargestat.png'> Tant que vous effectuez une attaque principale, si le défenseur est dans votre #bulls#, avant l’étape « Neutraliser les résultats », vous pouvez dépenser 1 #ch# pour annuler 1 résultat #hit#.",
+            "effect_ENG": "<img class='chargeforceimg' src='img/chargestat.png'> <img class='chargeforceimg' src='img/chargestat.png'> When you perform a primary attack, if the defender is in your #bulls#, before the 'Neutralize results' step, you may spend 1 #ch# to cancel 1 #hit# result.",
             "faction": ""
             
         },
