@@ -4738,8 +4738,8 @@
             "skill": 3,
             "points": 10,
             
-            "ability_FRA": "Après avoir déchargé, chaque vaisseau ennemi dans votre #Farc# à portée 1 ou dans votre #bulls# reçoit un jeton épuisement.",
-            "ability_ENG": "After you reload, each enemy ship in your #Farc# at range 1-2 or your #bulls# gains 1 deplete token.",
+            "ability_FRA": "Après avoir déchargé, chaque vaisseau ennemi dans votre #bulls# reçoit un jeton épuisement.",
+            "ability_ENG": "After you unload, each enemy ship in your #bulls# gains 1 deplete token.",
             "slots": [
                 "Talent-shooting"
             ]
@@ -11719,8 +11719,8 @@
             "shipId": 1,
             "skill": 3,
             "points": 8,
-            "ability_FRA": "Après qu’un engin allié que vous avez verrouillé a explosé, chaque vaisseau ennemi à portée 0–1 de cet engin gagne 1 jeton contrainte.",
-            "ability_ENG": "After a friendly device that you have locked detonates, each enemy ship at range 0-1 of that device gains 1 strain token.",
+            "ability_FRA": "Après qu’un engin allié a explosé, chaque vaisseau ennemi à portée 0–1 de cet engin gagne 1 jeton contrainte.",
+            "ability_ENG": "After a friendly device detonates, each enemy ship at range 0-1 of that device gains 1 strain token.",
             "slots": [     
             "Talent-piloting"
         ]         
