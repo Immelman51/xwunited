@@ -442,7 +442,7 @@ function testRestriction (yy,tableRestrictions){//va vérifier si les restrictio
         varlist = upgrades_Type[yy];
         break;
     case 'base':
-        varlist = ships[pilot_list[yy]['shipId']]['base'];
+        varlist.push(ships[pilot_list[yy]['shipId']]['base']);
         break;
     case 'action' :
         varlist = ships[pilot_list[yy]['shipId']]['actions'];
