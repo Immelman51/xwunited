@@ -436,10 +436,10 @@ function testRestriction (yy,tableRestrictions){//va vérifier si les restrictio
 
     switch (list) {
     case 'title':
-        varlist = pilot_list[yy]["title"];
+        varlist.push(pilot_list[yy]["title"]);
         break;
     case 'upgrade':
-        varlist = upgrades_Type[yy];
+        varlist.push(upgrades_Type[yy]);
         break;
     case 'base':
         varlist.push(ships[pilot_list[yy]['shipId']]['base']);
@@ -449,7 +449,7 @@ function testRestriction (yy,tableRestrictions){//va vérifier si les restrictio
             
         break;
     case 'ship' :
-        varlist = ships[pilot_list[yy]['shipId']]['name'];
+        varlist.push(ships[pilot_list[yy]['shipId']]['name']);
         break;
     default :
         console.log(tableRestrictions[0] + ' error testRestriction and varlist'); 

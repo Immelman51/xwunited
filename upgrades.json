@@ -2444,7 +2444,7 @@
             "charge": [0],
             "points": 0,
             "max_per_squad": 1,
-            "effect_ENG": "Add a #payload#, #payload# and #ill# slot.",
+            "effect_ENG": "Add a #payload#, #payload# and #illicit# slot.",
             "faction": ["Pirates_and_Smugglers"],
             "ship": "Firespray-class Patrol Craft",
             "effect_FRA": "Ajoute un emplacement #payload#, #payload# et #illicit#."
@@ -2499,7 +2499,7 @@
             "effect_ENG": "Add a #astromech# and #mis# slot. Remove a #crew# slot.",
             "faction": ["Bounty_Hunters_Guild"],
             "ship": "JumpMaster 5000",           
-            "effect_FRA": "Ajoute un emplacement #astromech# et #mis#. Retire un emplacement #crew#"
+            "effect_FRA": "Ajoute un emplacement #astromech# et #missile#. Retire un emplacement #crew#"
         },
         {
             "name_FRA": "IG-2000",
@@ -2513,7 +2513,7 @@
             "charge": [0],
             "points": 0,
             "max_per_squad": 8,
-            "effect_ENG": "Add a #calc# slot. Remove a #mod# slot.",
+            "effect_ENG": "Add a #calculator# slot. Remove a #mod# slot.",
             "faction": ["Bounty_Hunters_Guild"],
             "ship": "Aggressor Assault Fighter",
             "effect_FRA": "Ajoute un emplacement #calc# et retire un emplacement #mod#."
@@ -2530,10 +2530,10 @@
             "charge": [0],
             "points": 0,
             "max_per_squad": 1,
-            "effect_ENG": "Add a #crew#, #tech#, #ill# slot. Remove a #astromech# and #tpd# slot.",
+            "effect_ENG": "Add a #crew#, #tech#, #illicit# slot. Remove a #astromech# and #torpedo# slot.",
             "faction": ["Mandalorian_Clans"],
             "ship": "Naboo Royal N-1 Starfighter",
-            "effect_FRA": "Ajoute un emplacement #crew#, #tech#, #ill#. Retire un emplacement #astromech# et #torpedo#."
+            "effect_FRA": "Ajoute un emplacement #crew#, #tech#, #illicit#. Retire un emplacement #astromech# et #torpedo#."
         },
         {
             "name_FRA": "Razor Crest",
@@ -2565,10 +2565,10 @@
             "charge": [0],
             "points": 0,
             "max_per_squad": 1,
-            "effect_ENG": "Add a #ill# and #canon# slot. Remove a #mod# slot.",
+            "effect_ENG": "Add a #illicit# and #canon# slot. Remove a #mod# slot.",
             "faction": ["Rebel_Alliance","Pirates_and_Smugglers"],
             "ship": "HWK-290 Light Freighter",
-            "effect_FRA": "Ajoute un emplacement #ill# et #canon#. Retire un emplacement #mod#."
+            "effect_FRA": "Ajoute un emplacement #illicit# et #canon#. Retire un emplacement #mod#."
         },
         {
             "name_FRA": "Simulateur de Trajectoire",
@@ -2651,8 +2651,8 @@
             "charge": [0],
             "points": 10,
             "faction": ["Phoenix_Cell"],           
-            "effect_FRA": "<img class='chargeforceimg' src='img/forcestat.png'> Après avoir attaqué, vous pouvez dépenser 1 #fo#. Dans ce cas, vous pouvez effectuer une attaque bonus PRECISE de tourelle.",
-            "effect_ENG": "<img class='chargeforceimg' src='img/forcestat.png'> After you perform an attack, you can spend 1 #fo#. If you do, you can perform a SHARPENED bonus Turret attack."
+            "effect_FRA": "<img class='chargeforceimg' src='img/forcestat.png'> Après avoir attaqué, vous pouvez dépenser 1 #fo#. Dans ce cas, vous pouvez effectuer une attaque bonus de tourelle et améliorer jusqu'à 3 dés.",
+            "effect_ENG": "<img class='chargeforceimg' src='img/forcestat.png'> After you perform an attack, you can spend 1 #fo#. If you do, you can perform a bonus Turret attack and upgrade up to 3 dice."
         },
         {
             "name_FRA": "Kanan Jarrus",
