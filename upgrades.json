@@ -1005,7 +1005,7 @@
             "available":false,
             "modify": false,
             "slot": "Illicit",
-            "points": 4,
+            "points": 3,
             "max_per_squad": 1,
             "add_Data": [0],
             "force": 0,
@@ -1023,7 +1023,7 @@
             "available": true,
             "modify": false,
             "slot": "Illicit",
-            "points": 3,
+            "points": 2,
             "add_Data": [0],
             "force": 0,
             "charge": [1,"0"],
@@ -1042,7 +1042,7 @@
             "add_Data": [0],
             "force": 0,
             "charge": [0],
-            "points": 2,
+            "points": 1,
             "effect_FRA": "Après que vous avez été détruit, chaque autre vaisseau à portée 0–1 subit 1 dégât #hit#.",
             "effect_ENG": "After you are destroyed, each other ship at range 0-1 suffers 1 #hit# damage.",
             "faction": ""
@@ -1071,13 +1071,13 @@
             "max_per_squad": 8,
             "available": true,
             "modify": false,
-            "points": 3,
+            "points": 2,
             "add_Data": [0],
             "force": 0,
             "charge": [1,"0"],
             "slot": "Illicit",
-            "effect_FRA": "Après avoir verrouillé un objet ou qu'un objet vous a verrouillé, si vous avez 1 #ch# active, perdez 1 #ch# et brouillez cet objet, en ignorant les restrictions de portée.",
-            "effect_ENG": "After you lock an object, or an object locks you, if this #ch# is active, lose 1#ch# and jam this object ignoring range restrictions.",
+            "effect_FRA": "Après avoir verrouillé un objet ou qu'un objet vous a verrouillé, vous pouvez dépenser 1 #ch# pour brouiller cet objet, en ignorant les restrictions de portée.",
+            "effect_ENG": "After you lock an object, or an object locks you, you may spend 1#ch# to jam this object ignoring range restrictions.",
             "faction": ""
         },
          {
@@ -1986,7 +1986,7 @@
             "name_ENG": "Hotshot Tail Blaster",
             "id": 114,
             "max_per_squad": 8,
-            "available": true,
+            "available": false,
             "modify": false,
             "points": 1,
             "attack": ["B",2],
@@ -1997,7 +1997,8 @@
             "slot": "Illicit",
             "effect_ENG": "<img class='chargeforceimg' src='img/chargestat.png'> <img class='chargeforceimg' src='img/chargestat.png'> 2#Barc# range 0-1 : spend 1 #ch#.",
             "faction": ["Bounty_Hunters_Guild","Hutt_Cartel","Crime_Syndicates"],
-            "effect_FRA": "<img class='chargeforceimg' src='img/chargestat.png'> <img class='chargeforceimg' src='img/chargestat.png'> 2#Barc# Portée 0-1 : dépensez 1 #ch#."
+            "effect_FRA": "<img class='chargeforceimg' src='img/chargestat.png'> <img class='chargeforceimg' src='img/chargestat.png'> 2#Barc# Portée 0-1 : dépensez 1 #ch#.",
+            "restrictions": [1,"size","medium","large"]
            
             
         },
@@ -4665,7 +4666,7 @@
              "add_Data": [0],
              "force": 0,
              "charge": [0],
-             "points": 4,
+             "points": 3,
              "effect_FRA": "Avant d’exécuter une manœuvre, vous pouvez dépenser 1 bouclier. Dans ce cas, exécutez une manœuvre 0#stop# blanche à la place de celle que vous avez révélée, puis gagnez 1 marqueur de stress.",
              "effect_ENG": "Before you would execute a maneuver, you may spend 1 shield. If you do, execute a white 0#stop# instead of the maneuver you revealed, then gain 1 stress token.",
              "faction": ["Crime_Syndicates"]
@@ -4770,7 +4771,7 @@
              "add_Data": [0],
              "force": 0,
              "charge": [0],
-             "points": 3,
+             "points": 2,
              "effect_FRA": "Pendant la phase Système, si vous n'êtes pas stressé, vous pouvez dépenser 1 #ch# pour recevoir 3 jetons calcul. Pendant la phase de fin, si votre #ch# est inactive, pour chaque jeton vert que vous retirez, recevez 1 jeton contrainte.",
              "effect_ENG": "During the System Phase, if you are not stressed, you may spend 1 #ch# to gain 3 calculate tokens. During the End Phase, if your #ch# is inactive, for each green token you remove, gain 1 strain token.",
              "faction": ["Black_Sun"]
