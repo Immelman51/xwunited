@@ -29,7 +29,7 @@ for(i=1; i<3 ; i++){
     document.getElementById('binarysuns'+i).setAttribute('src','img/scenario/Env_BinarySuns'+i+'_'+language+'.png');
 }
 for(i=1; i<3 ; i++){
-    document.getElementById('intergalacticvoid'+i).setAttribute('src','img/scenario/Env_Intergalacticvoid'+i+'_'+language+'.png');
+    document.getElementById('intergalacticvoid'+i).setAttribute('src','img/scenario/Env_IntergalacticVoid'+i+'_'+language+'.png');
 }
 for(i=1; i<3 ; i++){
     document.getElementById('junkyard'+i).setAttribute('src','img/scenario/Env_Junkyard'+i+'_'+language+'.png');
