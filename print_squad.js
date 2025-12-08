@@ -694,7 +694,7 @@ function addHTMLandCSSforDialsAndBases() {
             if(indexes[j].length > 2){ //if the length is >2, it means that there's at least 1 upgrade equipped (pilotID + u + upgradeID = min length 3)
                 newpilot = document.createElement('div');
                 newpilot.setAttribute('class','pilot');
-                newpilot.innerHTML = "<font size='15'>"+pilots[pilotdata[j][0]]['name_'+language]+"</font><br>";
+                newpilot.innerHTML = "<font size='13'>"+pilots[pilotdata[j][0]]['name_'+language]+"</font><br>";
                 for ( k=1 ; k<pilotdata[j].length ; k++){ //we begin at 1 because the entry 0 is the pilotID
                     upg = upgrades[pilotdata[j][k]]
                     newupgrade = document.createElement('div');
