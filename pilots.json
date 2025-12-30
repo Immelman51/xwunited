@@ -100,7 +100,7 @@
             "charge": [1,"+"],
             "points": 12,
             
-            "ability_FRA": "<img class='chargeforceimg' src='img/chargestat.png'> Après avoir effectué une attaque, vous pouvez dépenser 1 #ch# pour assigner au défenseur 1 marqueur de brouillage. Après avoir défendu, vous pouvez dépenser 1 #ch# pour assigner à l'attaquant 1 marqueur de brouillage.",
+            "ability_FRA": "Après avoir effectué une attaque, vous pouvez dépenser 1 #ch# pour assigner au défenseur 1 marqueur de brouillage. Après avoir défendu, vous pouvez dépenser 1 #ch# pour assigner à l'attaquant 1 marqueur de brouillage.",
             "ability_ENG": "After performing an attack, you may spend 1 #ch# to assign 1 jam token to the defender. After defending, you may spend 1 #ch# to assign 1 jam token to the defender.",
             "slots": [
                 "Talent-elite",
