@@ -267,7 +267,7 @@
             "modify": false,
             "slot": "Talent-elite",
             "points": 0,
-            "talent_points": 3,
+            "talent_points": 2,
             "add_Data": [0],
             "force": 0,
             "charge": [1,"+"],
@@ -3927,7 +3927,7 @@
     "force": 0,
     "charge": [0],
     "points": 0,
-    "talent_points": 5,
+    "talent_points": 4,
     "effect_FRA": "Tant que vous effectuez une attaque #Farc#, si vous n’êtes pas dans l’arc de tir du défenseur, il lance 1 dé de défense en moins.",
     "effect_ENG": "While you perform a #Farc# attack, if you are not in the defender's firing arc, it rolls 1 fewer defense die.",
     "faction": ""
@@ -3961,13 +3961,13 @@
     "modify": false,
     "slot": "Talent-elite",
     "points": 0,
-    "talent_points": 5,
-    "effect_FRA": "<img class='chargeforceimg' src='img/chargestat.png'> <img class='chargeforceimg' src='img/chargestat.png'> Lorsque vous lancez des dés, si vous n'êtes pas stressé, vous pouvez dépenser 1 #ch#. Si vous le faites, améliorez ou dégradez 1 dé. Durant la phase de fin, vous pouvez recevoir un jeton épuisement pour récupérer 1 #ch#.",
-    "effect_ENG": "When you roll any dice, if you are not stressed, you may spend 1 #ch#. If you do, upgrade or downgrade a die. During the end phase, you may receive 1 deplete token to recover 1 #ch#.",
+    "talent_points": 3,
+    "effect_FRA": "<img class='chargeforceimg' src='img/chargestat.png'> Lorsque vous lancez des dés, si vous n'êtes pas stressé, vous pouvez dépenser 1 #ch#. Si vous le faites, améliorez ou dégradez 1 dé. Durant la phase de fin, vous pouvez recevoir un jeton épuisement pour récupérer 1 #ch#.",
+    "effect_ENG": "<img class='chargeforceimg' src='img/chargestat.png'> When you roll any dice, if you are not stressed, you may spend 1 #ch#. If you do, upgrade or downgrade a die. During the end phase, you may receive 1 deplete token to recover 1 #ch#.",
     "faction": "",
     "add_Data": [0],
     "force": 0,
-    "charge": [2,"0"]
+    "charge": [1,"0"]
 },
 
 
