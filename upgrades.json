@@ -234,8 +234,8 @@
             "talent_points": 2,
             "attack": ["F",2],
             "range": [2],
-            "effect_FRA": "Après qu’un vaisseau ennemi a exécuté une manœuvre, vous pouvez effectuer cette attaque contre lui en tant qu’attaque bonus.<br>Attaque : vos dés ne peuvent pas être modifiés.",
-            "effect_ENG": "After an enemy ship executes a maneuver, you may perform this attack against him as a bonus attack.<br>Attack : your dice cannot be modified.",
+            "effect_FRA": "Après qu’un vaisseau ennemi a exécuté une manœuvre, vous pouvez effectuer cette attaque contre lui en tant qu’attaque bonus.<br>Attaque 2 #Farc#.",
+            "effect_ENG": "After an enemy ship executes a maneuver, you may perform this attack against him as a bonus attack.<br>Attack 2 #Farc#.",
             "faction": ""
         },
         {
