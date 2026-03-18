@@ -4579,7 +4579,7 @@
              "available":true,
              "modify":false,
              "slot": "Crew",
-             "add_Data": ["add_action", [1,"Fs W","Co P"]],
+             "add_Data": ["add_action", [1,"Fo W","Co F"]],
              "force": 1,
              "charge": [0],
              "points":8,
