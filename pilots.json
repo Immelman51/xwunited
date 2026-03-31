@@ -9940,8 +9940,8 @@
             "shipId": 25,
             "skill": 1,
             "points": 16,
-            "ability_FRA": "Fin de la Mise en Place : Assignez la condition 'Visions' à un vaisseau ennemi.<br>Pendant la phase Système, vous pouvez dépenser 1 #fo# pour deviner la manoeuvre du vaisseau avec la condition 'Chassé'.",
-            "ability_ENG": "End of SETUP : assign a 'Visions' condition to an enemy ship.<br>During System Phase, you may spend 1 #fo# to guess the maneuver of the ship with 'Hunted' condition.",
+            "ability_FRA": "Fin de la Mise en Place : Assignez la condition 'Visions' à un vaisseau ennemi.<br>Pendant la phase Système, vous pouvez dépenser 1 #fo# pour deviner la manoeuvre du vaisseau avec la condition 'Visions'.",
+            "ability_ENG": "End of SETUP : assign a 'Visions' condition to an enemy ship.<br>During System Phase, you may spend 1 #fo# to guess the maneuver of the ship with 'Visions' condition.",
             "slots": [     
             "Title",
             "Condition",
