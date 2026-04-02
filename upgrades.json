@@ -5628,8 +5628,8 @@
              
          },
          {
-            "name_FRA": "Cere Junda",
-             "name_ENG": "Cere Junda",
+            "name_FRA": "Merrin",
+             "name_ENG": "Merrin",
              "id":323,
              "max_per_squad":1,
              "available":true,
@@ -5639,8 +5639,8 @@
              "add_Data": [0],
              "charge": [0],
              "points": 7,
-             "effect_FRA": "Pendant que vous effectuez une attaque, vous pouvez utiliser 1 #fo# et gagner 1 jeton épuisement pour modifier 1 résultat #eye# en un résultat #hit#.<br>Pendant que vous défendez, vous pouvez dépenser 1 #fo# et gagner 1 jeton contrainte pour modifier 1 résultat #eye# en un résultat #evd#.",
-             "effect_ENG": "While you perform an attack, you may use 1 #fo# and gain 1 deplete token to modify 1 #eye# result into a #hit# result.<br>While you defend, you may spend 1 #fo# and gain 1 strain token to modify 1 #eye# result into a #evd# result.",
+             "effect_FRA": "Pendant la phase système, vous pouvez dépenser 1 #fo#. Dans ce cas, recevez 1 jeton épuisement et un jeton occultation.",
+             "effect_ENG": "During System phase, you may spend 1 #fo#. If you do, receive 1 deplete token and 1 cloak token.",
              "faction": ["Partisans"]
              
                          

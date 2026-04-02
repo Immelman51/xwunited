@@ -2306,7 +2306,7 @@
             },
             {
             	"name": "T-6 Shuttle",
-                "factions": [ "Partisans", "Jedi_Order", "New_Republic_Patrol" ],
+                "factions": [ "Jedi_Order", "New_Republic_Patrol" ],
                 "chassis":[0],
                 "id": 82,
                 "attack": [["F",2],["B",2]],
@@ -2677,7 +2677,7 @@
                 "slots": ["Crew", "Gunner","Turret", "Modification", "Calculator"]
             },
             {
-            	"name": "RP82 Fiend Fighter",
+            	"name": "RP82 Fighter",
                 "factions": [ "Imperial_Remnants" ],
                 "id": 96,
                 "attack": [["F",2],["BULL",3]],
@@ -2989,6 +2989,34 @@
                      [ 0, 0, 0, 0, 0, 3]
                  ],
                  "slots": ["Tech","Missile","Torpedo","Missile","Astromech","Modification","Modification"]
+             },
+              {
+          
+                 "name": "S-161 'Stinger' XL",
+                 "factions": ["Partisans"],
+                 "id": 108,
+                 "attack": [["F",2]],
+                 "agility": 1,
+                 "hull": 5,
+                 "shields": 5,
+                 "base": "large",
+                 "chassis": [0],
+                 "actions": [
+                     [1,"Fo W"],
+                     [0,"Bo R"],
+                     [0,"Lo W"],
+                     [0,"Br R"]                     
+                 
+                 ],
+                 "maneuvers": [
+                     [ 0, 0, 3, 0, 0, 0],
+                     [ 3, 1, 1, 1, 3, 0],
+                     [ 2, 2, 1, 2, 2, 0],
+                     [ 3, 2, 1, 2, 3, 0],
+                     [ 0, 0, 1, 0, 0, 0],
+                     [ 0, 0, 2, 0, 0, 3]
+                 ],
+                 "slots": ["Calculator","Crew","Crew","Modification"]
              }
           
             
