@@ -110,8 +110,8 @@
             "charge": [0],
             "points": 0,
             "talent_points": 1,
-            "effect_FRA": "Tant que vous effectuez une attaque, si le défenseur est dans votre #bulls#, vous pouvez changer 1 résultat #hit# en un résultat #crit#.",
-            "effect_ENG": "When you attack, if the defender is in your #bulls#, you may change 1 #hit# result into a #crit# result.",
+            "effect_FRA": "Tant que vous effectuez une attaque, si le défenseur est dans votre #bulls#, vous pouvez changer 1 résultat <img class='chargeforceimg' src='img/hit.jpg'> en un résultat <img class='chargeforceimg' src='img/crit.jpg'>.",
+            "effect_ENG": "When you attack, if the defender is in your #bulls#, you may change 1 <img class='chargeforceimg' src='img/hit.jpg'> result into a <img class='chargeforceimg' src='img/crit.jpg'> result.",
             "faction": ""
         }, 
         {
@@ -197,8 +197,8 @@
             "add_Data": [0],
             "force": 0,
             "charge": [2,"0"],
-            "effect_FRA": "<img class='chargeforceimg' src='img/chargestat.png'> <img class='chargeforceimg' src='img/chargestat.png'> Tant que vous effectuez une attaque principale, si le défenseur est dans votre #bulls#, avant l’étape « Neutraliser les résultats », vous pouvez dépenser 1 <img class='chargeforceimg' src='img/charge.jpg'> pour annuler 1 résultat #hit#.",
-            "effect_ENG": "<img class='chargeforceimg' src='img/chargestat.png'> <img class='chargeforceimg' src='img/chargestat.png'> When you perform a primary attack, if the defender is in your #bulls#, before the 'Neutralize results' step, you may spend 1 <img class='chargeforceimg' src='img/charge.jpg'> to cancel 1 #hit# result.",
+            "effect_FRA": "<img class='chargeforceimg' src='img/chargestat.png'> <img class='chargeforceimg' src='img/chargestat.png'> Tant que vous effectuez une attaque principale, si le défenseur est dans votre #bulls#, avant l’étape « Neutraliser les résultats », vous pouvez dépenser 1 <img class='chargeforceimg' src='img/charge.jpg'> pour annuler 1 résultat <img class='chargeforceimg' src='img/hit.jpg'>.",
+            "effect_ENG": "<img class='chargeforceimg' src='img/chargestat.png'> <img class='chargeforceimg' src='img/chargestat.png'> When you perform a primary attack, if the defender is in your #bulls#, before the 'Neutralize results' step, you may spend 1 <img class='chargeforceimg' src='img/charge.jpg'> to cancel 1 <img class='chargeforceimg' src='img/hit.jpg'> result.",
             "faction": ""
             
         },
@@ -360,8 +360,8 @@
             "force": 0,
             "charge": [0],
             "points": 2,
-            "effect_FRA": "Tant que vous défendez et avant que les dés d’attaque ne soient lancés, vous pouvez dépenser un marqueur de verrouillage que vous avez sur l’attaquant pour lancer 1 dé d’attaque. Dans ce cas, l’attaquant reçoit 1 jeton brouillage. Puis, sur un résultat #hit#, vous recevez 1 jeton brouillage.",
-            "effect_ENG": "While you defend and before dice are rolled, you may spend the lock token you have on the defender to roll 1 attack die. If you do, the attacker receives 1 jam token. Then, on a #hit# result, you receive 1 jam token.",
+            "effect_FRA": "Tant que vous défendez et avant que les dés d’attaque ne soient lancés, vous pouvez dépenser un marqueur de verrouillage que vous avez sur l’attaquant pour lancer 1 dé d’attaque. Dans ce cas, l’attaquant reçoit 1 jeton brouillage. Puis, sur un résultat <img class='chargeforceimg' src='img/hit.jpg'>, vous recevez 1 jeton brouillage.",
+            "effect_ENG": "While you defend and before dice are rolled, you may spend the lock token you have on the defender to roll 1 attack die. If you do, the attacker receives 1 jam token. Then, on a <img class='chargeforceimg' src='img/hit.jpg'> result, you receive 1 jam token.",
             "faction": ""
         },
  {
@@ -489,8 +489,8 @@
             "force": 0,
             "charge": [0],
             "points": 4,
-            "effect_FRA": "Tant que vous effectuez une attaque, vous pouvez dépenser 1 marqueur de concentration pour changer 1 de vos résultats vierges en un résultat #hit#.",
-            "effect_ENG": "While you attack, you may spend 1 focus token to modify 1 blank result into a #hit# result.",
+            "effect_FRA": "Tant que vous effectuez une attaque, vous pouvez dépenser 1 marqueur de concentration pour changer 1 de vos résultats vierges en un résultat <img class='chargeforceimg' src='img/hit.jpg'>.",
+            "effect_ENG": "While you attack, you may spend 1 focus token to modify 1 blank result into a <img class='chargeforceimg' src='img/hit.jpg'> result.",
             "faction": ""
         },
  
@@ -525,8 +525,8 @@
             "add_Data": [0],
             "force": 0,
             "charge": [1,"0"],
-            "effect_FRA": "<img class='chargeforceimg' src='img/chargestat.png'> Attaque (<img class='chargeforceimg' src='img/Lo W.jpg'>): 3<img class='chargeforceimg' src='img/attackF.jpg'> portée 2-3 : dépensez 1 <img class='chargeforceimg' src='img/charge.jpg'>. Si cette attaque touche, dépensez 1 résultat #hit# ou #crit# pour faire subir 1 dégât #hit# au défenseur. Tous les résultats #hit#/#crit# restants infligent des marqueurs ioniques au lieu des dégâts.",
-            "effect_ENG": "<img class='chargeforceimg' src='img/chargestat.png'> Attack (<img class='chargeforceimg' src='img/Lo W.jpg'>): 3<img class='chargeforceimg' src='img/attackF.jpg'> range 2-3 : spend 1 <img class='chargeforceimg' src='img/charge.jpg'>. If this attack hits, spend 1 #hit# or #crit# result to inflict 1 #hit# damage to the defender. All #hit#/#crit# remaining results inflict ion tokens instead of damage.",
+            "effect_FRA": "<img class='chargeforceimg' src='img/chargestat.png'> Attaque (<img class='chargeforceimg' src='img/Lo W.jpg'>): 3<img class='chargeforceimg' src='img/attackF.jpg'> portée 2-3 : dépensez 1 <img class='chargeforceimg' src='img/charge.jpg'>. Si cette attaque touche, dépensez 1 résultat <img class='chargeforceimg' src='img/hit.jpg'> ou <img class='chargeforceimg' src='img/crit.jpg'> pour faire subir 1 dégât <img class='chargeforceimg' src='img/hit.jpg'> au défenseur. Tous les résultats <img class='chargeforceimg' src='img/hit.jpg'>/<img class='chargeforceimg' src='img/crit.jpg'> restants infligent des marqueurs ioniques au lieu des dégâts.",
+            "effect_ENG": "<img class='chargeforceimg' src='img/chargestat.png'> Attack (<img class='chargeforceimg' src='img/Lo W.jpg'>): 3<img class='chargeforceimg' src='img/attackF.jpg'> range 2-3 : spend 1 <img class='chargeforceimg' src='img/charge.jpg'>. If this attack hits, spend 1 <img class='chargeforceimg' src='img/hit.jpg'> or <img class='chargeforceimg' src='img/crit.jpg'> result to inflict 1 <img class='chargeforceimg' src='img/hit.jpg'> damage to the defender. All <img class='chargeforceimg' src='img/hit.jpg'>/<img class='chargeforceimg' src='img/crit.jpg'> remaining results inflict ion tokens instead of damage.",
             "faction": ""
         },
 {
@@ -543,8 +543,8 @@
             "add_Data": [0],
             "force": 0,
             "charge": [1,"0"],
-            "effect_FRA": "<img class='chargeforceimg' src='img/chargestat.png'> Attaque (<img class='chargeforceimg' src='img/Lo W.jpg'>) : 2<img class='chargeforceimg' src='img/attackF.jpg'> Portée 2-3 : dépensez 1 <img class='chargeforceimg' src='img/charge.jpg'>. Après avoir lancé les dés d'attaque, annulez tous les résultats, et ajoutez 2 résultats #hit#.",
-            "effect_ENG": "<img class='chargeforceimg' src='img/chargestat.png'> Attack (<img class='chargeforceimg' src='img/Lo W.jpg'>): 2<img class='chargeforceimg' src='img/attackF.jpg'> range 2-3 : spend 1 <img class='chargeforceimg' src='img/charge.jpg'>. After attack dice are rolled, cancel all results, then add 2 #hit# results.",
+            "effect_FRA": "<img class='chargeforceimg' src='img/chargestat.png'> Attaque (<img class='chargeforceimg' src='img/Lo W.jpg'>) : 2<img class='chargeforceimg' src='img/attackF.jpg'> Portée 2-3 : dépensez 1 <img class='chargeforceimg' src='img/charge.jpg'>. Après avoir lancé les dés d'attaque, annulez tous les résultats, et ajoutez 2 résultats <img class='chargeforceimg' src='img/hit.jpg'>.",
+            "effect_ENG": "<img class='chargeforceimg' src='img/chargestat.png'> Attack (<img class='chargeforceimg' src='img/Lo W.jpg'>): 2<img class='chargeforceimg' src='img/attackF.jpg'> range 2-3 : spend 1 <img class='chargeforceimg' src='img/charge.jpg'>. After attack dice are rolled, cancel all results, then add 2 <img class='chargeforceimg' src='img/hit.jpg'> results.",
             "faction": ""
         },
 {
@@ -636,8 +636,8 @@
             "add_Data": [0],
             "force": 0,
             "charge": [1,"0"],
-            "effect_FRA": "<img class='chargeforceimg' src='img/chargestat.png'> 3#BULLS# portée 1-2: dépensez 1 <img class='chargeforceimg' src='img/charge.jpg'>. Lors de l’étape « Neutraliser les résultats », les résultats #crit# sont annulés avant les résultats #hit#. Après que cette attaque a touché, le défenseur perd 1 bouclier. Gagnez un jeton désarmement.",
-            "effect_ENG": "<img class='chargeforceimg' src='img/chargestat.png'> 3#BULLS# range 1-2: spend 1 <img class='chargeforceimg' src='img/charge.jpg'>. During the 'Neutralize results' step, #crit# results are canceled before #hit# results. After this attack hits, the defender lose 1 shield. Receive 1 disarm token.",
+            "effect_FRA": "<img class='chargeforceimg' src='img/chargestat.png'> 3#BULLS# portée 1-2: dépensez 1 <img class='chargeforceimg' src='img/charge.jpg'>. Lors de l’étape « Neutraliser les résultats », les résultats <img class='chargeforceimg' src='img/crit.jpg'> sont annulés avant les résultats <img class='chargeforceimg' src='img/hit.jpg'>. Après que cette attaque a touché, le défenseur perd 1 bouclier. Gagnez un jeton désarmement.",
+            "effect_ENG": "<img class='chargeforceimg' src='img/chargestat.png'> 3#BULLS# range 1-2: spend 1 <img class='chargeforceimg' src='img/charge.jpg'>. During the 'Neutralize results' step, <img class='chargeforceimg' src='img/crit.jpg'> results are canceled before <img class='chargeforceimg' src='img/hit.jpg'> results. After this attack hits, the defender lose 1 shield. Receive 1 disarm token.",
             "faction": ""
         },
  {
@@ -654,8 +654,8 @@
             "add_Data": [0],
             "force": 0,
             "charge": [1,"0"],
-            "effect_FRA": "<img class='chargeforceimg' src='img/chargestat.png'> 4#BULLS# Portée 1 : dépensez 1 <img class='chargeforceimg' src='img/charge.jpg'>. Vous pouvez modifier 1 résultat #hit# en #crit#. Gagnez un jeton désarmement.",
-            "effect_ENG": "<img class='chargeforceimg' src='img/chargestat.png'> 4#BULLS# range 1 : spend 1 <img class='chargeforceimg' src='img/charge.jpg'>. you may modify 1 #hit# result into a #crit# result. Receive # disarm token.",
+            "effect_FRA": "<img class='chargeforceimg' src='img/chargestat.png'> 4#BULLS# Portée 1 : dépensez 1 <img class='chargeforceimg' src='img/charge.jpg'>. Vous pouvez modifier 1 résultat <img class='chargeforceimg' src='img/hit.jpg'> en <img class='chargeforceimg' src='img/crit.jpg'>. Gagnez un jeton désarmement.",
+            "effect_ENG": "<img class='chargeforceimg' src='img/chargestat.png'> 4#BULLS# range 1 : spend 1 <img class='chargeforceimg' src='img/charge.jpg'>. you may modify 1 <img class='chargeforceimg' src='img/hit.jpg'> result into a <img class='chargeforceimg' src='img/crit.jpg'> result. Receive # disarm token.",
             "faction": ""
         },
          {
@@ -708,8 +708,8 @@
             "add_Data": [0],
             "force": 0,
             "charge": [2,"0"],
-            "effect_FRA": "<img class='chargeforceimg' src='img/chargestat.png'> <img class='chargeforceimg' src='img/chargestat.png'> Pendant la phase de système, vous pouvez dépenser 1 <img class='chargeforceimg' src='img/charge.jpg'> pour larguer une sous-munition avec le gabarit 1#straight#. Au début de la phase d’activation, vous pouvez dépenser 1 bouclier pour récupérer 2 <img class='chargeforceimg' src='img/charge.jpg'>.<br>A la fin de la phase d'activation, tous les vaisseaux à portée 0-1 de cet engin lancent 2 dés d'attaque. Ils subissent autant de dégats #hit# que de résultats #hit#/#crit#. Retirez ensuite cet engin.",
-            "effect_ENG": "<img class='chargeforceimg' src='img/chargestat.png'> <img class='chargeforceimg' src='img/chargestat.png'> During System phase, you may spend 1 <img class='chargeforceimg' src='img/charge.jpg'> to drop a bomblet with 1#straight# template. At the beginning of activation phase, you may spend 1 shield to recover 2<img class='chargeforceimg' src='img/charge.jpg'>.<br>At the end of activation phase, each ship at range 0-1 of this device rolls 2 attack dice. They suffer as many #hit# damage as the number of #hit#/#crit# results. Then remove this device.",
+            "effect_FRA": "<img class='chargeforceimg' src='img/chargestat.png'> <img class='chargeforceimg' src='img/chargestat.png'> Pendant la phase de système, vous pouvez dépenser 1 <img class='chargeforceimg' src='img/charge.jpg'> pour larguer une sous-munition avec le gabarit 1#straight#. Au début de la phase d’activation, vous pouvez dépenser 1 bouclier pour récupérer 2 <img class='chargeforceimg' src='img/charge.jpg'>.<br>A la fin de la phase d'activation, tous les vaisseaux à portée 0-1 de cet engin lancent 2 dés d'attaque. Ils subissent autant de dégats <img class='chargeforceimg' src='img/hit.jpg'> que de résultats <img class='chargeforceimg' src='img/hit.jpg'>/<img class='chargeforceimg' src='img/crit.jpg'>. Retirez ensuite cet engin.",
+            "effect_ENG": "<img class='chargeforceimg' src='img/chargestat.png'> <img class='chargeforceimg' src='img/chargestat.png'> During System phase, you may spend 1 <img class='chargeforceimg' src='img/charge.jpg'> to drop a bomblet with 1#straight# template. At the beginning of activation phase, you may spend 1 shield to recover 2<img class='chargeforceimg' src='img/charge.jpg'>.<br>At the end of activation phase, each ship at range 0-1 of this device rolls 2 attack dice. They suffer as many <img class='chargeforceimg' src='img/hit.jpg'> damage as the number of <img class='chargeforceimg' src='img/hit.jpg'>/<img class='chargeforceimg' src='img/crit.jpg'> results. Then remove this device.",
             "restrictions": [2,"upgrade", "Payload",""],
             "faction": "",
             "modifier_func": [
@@ -745,8 +745,8 @@
             "add_Data": [0],
             "force": 0,
             "charge": [1,"0"],
-            "effect_FRA": "<img class='chargeforceimg' src='img/chargestat.png'> Pendant la phase de système, vous pouvez dépenser 1 <img class='chargeforceimg' src='img/charge.jpg'> pour larguer une bombe à protons en utilisant le gabarit 1#straight#.<br>A la fin de la phase d'activation, tous les vaisseaux à portée 0-1 subissent 1 dégat #crit#, puis retirez le de la partie.",
-            "effect_ENG": "<img class='chargeforceimg' src='img/chargestat.png'> During System Phase, you may spend 1<img class='chargeforceimg' src='img/charge.jpg'> to drop a proton bomb with the 1#straight# template.<br>At the end of activation phase, each ship at range 0-1 suffers 1 #crit# result, then remove this device.",
+            "effect_FRA": "<img class='chargeforceimg' src='img/chargestat.png'> Pendant la phase de système, vous pouvez dépenser 1 <img class='chargeforceimg' src='img/charge.jpg'> pour larguer une bombe à protons en utilisant le gabarit 1#straight#.<br>A la fin de la phase d'activation, tous les vaisseaux à portée 0-1 subissent 1 dégat <img class='chargeforceimg' src='img/crit.jpg'>, puis retirez le de la partie.",
+            "effect_ENG": "<img class='chargeforceimg' src='img/chargestat.png'> During System Phase, you may spend 1<img class='chargeforceimg' src='img/charge.jpg'> to drop a proton bomb with the 1#straight# template.<br>At the end of activation phase, each ship at range 0-1 suffers 1 <img class='chargeforceimg' src='img/crit.jpg'> result, then remove this device.",
             "faction": ""
           
         },
@@ -762,8 +762,8 @@
             "add_Data": [0],
             "force": 0,
             "charge": [1,"0"],
-            "effect_FRA": "<img class='chargeforceimg' src='img/chargestat.png'>Pendant la phase de système, vous pouvez dépenser 1 <img class='chargeforceimg' src='img/charge.jpg'> pour larguer une mine de proximité en utilisant le gabarit 1#straight#.<br>Lorsqu'un vaisseau chevauche ou se déplace à travers cet engin, il subit 1 dégat et lance 2 dés d'attaque : il subit les dégats correspondant aux résultats #hit#/#crit#.",
-            "effect_ENG": "<img class='chargeforceimg' src='img/chargestat.png'> During System Phase, you may spend 1<img class='chargeforceimg' src='img/charge.jpg'> to drop a proximity mine using the 1#straight# template.<br>When a ship moves through or overlaps this device, it suffers 1 damage and rolls 2 attack dice : it suffers #hit#/#crit# damage matching the #hit#/#crit# results.",
+            "effect_FRA": "<img class='chargeforceimg' src='img/chargestat.png'>Pendant la phase de système, vous pouvez dépenser 1 <img class='chargeforceimg' src='img/charge.jpg'> pour larguer une mine de proximité en utilisant le gabarit 1#straight#.<br>Lorsqu'un vaisseau chevauche ou se déplace à travers cet engin, il subit 1 dégat et lance 2 dés d'attaque : il subit les dégats correspondant aux résultats <img class='chargeforceimg' src='img/hit.jpg'>/<img class='chargeforceimg' src='img/crit.jpg'>.",
+            "effect_ENG": "<img class='chargeforceimg' src='img/chargestat.png'> During System Phase, you may spend 1<img class='chargeforceimg' src='img/charge.jpg'> to drop a proximity mine using the 1#straight# template.<br>When a ship moves through or overlaps this device, it suffers 1 damage and rolls 2 attack dice : it suffers <img class='chargeforceimg' src='img/hit.jpg'>/<img class='chargeforceimg' src='img/crit.jpg'> damage matching the <img class='chargeforceimg' src='img/hit.jpg'>/<img class='chargeforceimg' src='img/crit.jpg'> results.",
             "faction": ""
         
         },
@@ -779,8 +779,8 @@
             "add_Data": [0],
             "force": 0,
             "charge": [1,"0"],
-            "effect_FRA": "<img class='chargeforceimg' src='img/chargestat.png'> Pendant la phase de système, vous pouvez dépenser 1 <img class='chargeforceimg' src='img/charge.jpg'> pour larguer une charge sismique en utilisant le gabarit 1#straight#.<br>A la fin de la phase d'activation, choisissez 1 obstacle à portée 0-1. Tous les vaisseaux à portée 0-1 de cet obstacle subissent 1 dégat #hit#, puis retirez cet obstacle et cet engin.",
-            "effect_ENG": "<img class='chargeforceimg' src='img/chargestat.png'> During System Phase, you may spend 1<img class='chargeforceimg' src='img/charge.jpg'> to drop a Seismic Charge with the 1#straight# template.<br>At the end of activation phase, choose an obstacle at range 0-1 of this device. Each ship at range 0-1 of this obstacle suffers 1 #crit# result, then remove this device and this obstacle.",
+            "effect_FRA": "<img class='chargeforceimg' src='img/chargestat.png'> Pendant la phase de système, vous pouvez dépenser 1 <img class='chargeforceimg' src='img/charge.jpg'> pour larguer une charge sismique en utilisant le gabarit 1#straight#.<br>A la fin de la phase d'activation, choisissez 1 obstacle à portée 0-1. Tous les vaisseaux à portée 0-1 de cet obstacle subissent 1 dégat <img class='chargeforceimg' src='img/hit.jpg'>, puis retirez cet obstacle et cet engin.",
+            "effect_ENG": "<img class='chargeforceimg' src='img/chargestat.png'> During System Phase, you may spend 1<img class='chargeforceimg' src='img/charge.jpg'> to drop a Seismic Charge with the 1#straight# template.<br>At the end of activation phase, choose an obstacle at range 0-1 of this device. Each ship at range 0-1 of this obstacle suffers 1 <img class='chargeforceimg' src='img/crit.jpg'> result, then remove this device and this obstacle.",
             "faction": ""
            
         },
@@ -815,8 +815,8 @@
             "points": 1,
             "attack": ["F",3],
             "range": [1,2],
-            "effect_FRA": "Portée 1-3 <img class='chargeforceimg' src='img/attackF.jpg'> 3 dés Attaque : si cette attaque touche, tous les résultats #hit#/#crit# infligent des marqueurs de brouillage au lieu des dégâts.",
-            "effect_ENG": "3<img class='chargeforceimg' src='img/attackF.jpg'> range 1-3 Attack : if this attack hits, all remaining #hit#/#crit# results inflict jam tokens instead of damage.",
+            "effect_FRA": "Portée 1-3 <img class='chargeforceimg' src='img/attackF.jpg'> 3 dés Attaque : si cette attaque touche, tous les résultats <img class='chargeforceimg' src='img/hit.jpg'>/<img class='chargeforceimg' src='img/crit.jpg'> infligent des marqueurs de brouillage au lieu des dégâts.",
+            "effect_ENG": "3<img class='chargeforceimg' src='img/attackF.jpg'> range 1-3 Attack : if this attack hits, all remaining <img class='chargeforceimg' src='img/hit.jpg'>/<img class='chargeforceimg' src='img/crit.jpg'> results inflict jam tokens instead of damage.",
             "faction": ""
         },
  {
@@ -833,8 +833,8 @@
             "points": 3,
             "attack": ["F",3],
             "range": [1,3],
-            "effect_FRA": "Portée 1-3 <img class='chargeforceimg' src='img/attackF.jpg'> 3 dés, Attaque : si cette attaque touche, tous les résultats #hit#/#crit# infligent des marqueurs de rayon tracteur au lieu des dégâts.",
-            "effect_ENG": "3<img class='chargeforceimg' src='img/attackF.jpg'> Range 1-3, Attack : If this attack hits, each remaining #hit#/#crit# result inflicts tractor tokens instead of damage.",
+            "effect_FRA": "Portée 1-3 <img class='chargeforceimg' src='img/attackF.jpg'> 3 dés, Attaque : si cette attaque touche, tous les résultats <img class='chargeforceimg' src='img/hit.jpg'>/<img class='chargeforceimg' src='img/crit.jpg'> infligent des marqueurs de rayon tracteur au lieu des dégâts.",
+            "effect_ENG": "3<img class='chargeforceimg' src='img/attackF.jpg'> Range 1-3, Attack : If this attack hits, each remaining <img class='chargeforceimg' src='img/hit.jpg'>/<img class='chargeforceimg' src='img/crit.jpg'> result inflicts tractor tokens instead of damage.",
             "faction": ""
         },
 {
@@ -851,8 +851,8 @@
             "points": 5,
             "attack": ["F",3],
             "range": [1,3],
-            "effect_FRA": "Portée 1-3 <img class='chargeforceimg' src='img/attackF.jpg'> 3 dés Attaque : si cette attaque touche, dépensez 1 résultat #hit# ou #crit# pour faire subir 1 dégât au défenseur. Tous les résultats #hit#/#crit# restants infligent des marqueurs ioniques au lieu des dégâts.",
-            "effect_ENG": "3<img class='chargeforceimg' src='img/attackF.jpg'> Range 1-3, Attack : If this attack hits, spend 1 #hit# or #crit# result to inflict 1 #hit# damage to the defender. All #hit#/#crit# remaining results inflict ion tokens instead of damage.",
+            "effect_FRA": "Portée 1-3 <img class='chargeforceimg' src='img/attackF.jpg'> 3 dés Attaque : si cette attaque touche, dépensez 1 résultat <img class='chargeforceimg' src='img/hit.jpg'> ou <img class='chargeforceimg' src='img/crit.jpg'> pour faire subir 1 dégât au défenseur. Tous les résultats <img class='chargeforceimg' src='img/hit.jpg'>/<img class='chargeforceimg' src='img/crit.jpg'> restants infligent des marqueurs ioniques au lieu des dégâts.",
+            "effect_ENG": "3<img class='chargeforceimg' src='img/attackF.jpg'> Range 1-3, Attack : If this attack hits, spend 1 <img class='chargeforceimg' src='img/hit.jpg'> or <img class='chargeforceimg' src='img/crit.jpg'> result to inflict 1 <img class='chargeforceimg' src='img/hit.jpg'> damage to the defender. All <img class='chargeforceimg' src='img/hit.jpg'>/<img class='chargeforceimg' src='img/crit.jpg'> remaining results inflict ion tokens instead of damage.",
             "faction": ""
         },
 {
@@ -908,8 +908,8 @@
             "points": 5,
             "attack": ["T",3],
             "range": [1,2],
-            "effect_FRA": "Portée 1-2 #tur# 3 dés Attaque : si cette attaque touche, dépensez 1 résultat #hit# ou #crit# pour faire subir 1 dégât #hit# au défenseur. Tous les résultats #hit#/#crit# restants infligent des marqueurs ioniques au lieu des dégâts.",
-            "effect_ENG": "3<img class='chargeforceimg' src='img/attackF.jpg'> range 1-2, Attack : If this attack hits, spend 1 #hit# or #crit# result to inflict 1 #hit# damage to the defender. All #hit#/#crit# remaining results inflict ion tokens instead of damage.",
+            "effect_FRA": "Portée 1-2 #tur# 3 dés Attaque : si cette attaque touche, dépensez 1 résultat <img class='chargeforceimg' src='img/hit.jpg'> ou <img class='chargeforceimg' src='img/crit.jpg'> pour faire subir 1 dégât <img class='chargeforceimg' src='img/hit.jpg'> au défenseur. Tous les résultats <img class='chargeforceimg' src='img/hit.jpg'>/<img class='chargeforceimg' src='img/crit.jpg'> restants infligent des marqueurs ioniques au lieu des dégâts.",
+            "effect_ENG": "3<img class='chargeforceimg' src='img/attackF.jpg'> range 1-2, Attack : If this attack hits, spend 1 <img class='chargeforceimg' src='img/hit.jpg'> or <img class='chargeforceimg' src='img/crit.jpg'> result to inflict 1 <img class='chargeforceimg' src='img/hit.jpg'> damage to the defender. All <img class='chargeforceimg' src='img/hit.jpg'>/<img class='chargeforceimg' src='img/crit.jpg'> remaining results inflict ion tokens instead of damage.",
             "faction": "",
             "modifier_func": [
                 [0,"add_action",[0,"Ra W"]]
@@ -1043,8 +1043,8 @@
             "force": 0,
             "charge": [0],
             "points": 1,
-            "effect_FRA": "Après que vous avez été détruit, chaque autre vaisseau à portée 0–1 subit 1 dégât #hit#.",
-            "effect_ENG": "After you are destroyed, each other ship at range 0-1 suffers 1 #hit# damage.",
+            "effect_FRA": "Après que vous avez été détruit, chaque autre vaisseau à portée 0–1 subit 1 dégât <img class='chargeforceimg' src='img/hit.jpg'>.",
+            "effect_ENG": "After you are destroyed, each other ship at range 0-1 suffers 1 <img class='chargeforceimg' src='img/hit.jpg'> damage.",
             "faction": ""
         },
  {
@@ -1060,7 +1060,7 @@
             "charge": [0],
             "points": 2,
             "effect_FRA": "ACTION : dépensez 1 <img class='chargeforceimg' src='img/charge.jpg'>. Vous pouvez effectuer une action #SLAM#. Vous pouvez effectuer cette action même après avoir partiellement effectué une manoeuvre ou sous l’effet du stress. Puis exposez 1 carte de dégât ou prenez 1 dégât critique.",
-            "effect_ENG": "ACTION : spend 1<img class='chargeforceimg' src='img/charge.jpg'>. You may perform a #SLAM# action. You may perform this action even after you partially exectute a maneuver or if you are stressed. Then expose a damage card or suffer 1 #crit# damage.",
+            "effect_ENG": "ACTION : spend 1<img class='chargeforceimg' src='img/charge.jpg'>. You may perform a #SLAM# action. You may perform this action even after you partially exectute a maneuver or if you are stressed. Then expose a damage card or suffer 1 <img class='chargeforceimg' src='img/crit.jpg'> damage.",
             "faction": ""
             
         },
@@ -1452,8 +1452,8 @@
             "force": 0,
             "charge": [0],
             "points": 2,
-            "effect_FRA": "Lorsque vous défendez ou attaquez, vous pouvez dépenser 1 marqueur de calcul d’un vaisseau allié à portée 0-2 pour changer 1 résultat #eye# en résultat #evd# ou #hit#.",
-            "effect_ENG": "While you attack  or defend, you may spend 1 calculate token from a friendly ship at range 0-2 to modifiy 1 #eye# result into an #evd# or #hit# result.",
+            "effect_FRA": "Lorsque vous défendez ou attaquez, vous pouvez dépenser 1 marqueur de calcul d’un vaisseau allié à portée 0-2 pour changer 1 résultat #eye# en résultat #evd# ou <img class='chargeforceimg' src='img/hit.jpg'>.",
+            "effect_ENG": "While you attack  or defend, you may spend 1 calculate token from a friendly ship at range 0-2 to modifiy 1 #eye# result into an #evd# or <img class='chargeforceimg' src='img/hit.jpg'> result.",
             "faction": ""
         },
          {
@@ -1601,8 +1601,8 @@
             "charge": [0],
             "points": 7,
             "max_per_squad": 1,
-            "effect_FRA": "Pendant la phase de fin, si vous êtes endommagé et n’êtes pas protégé, vous pouvez lancer 1 dé d’attaque pour récupérer 1 bouclier. Sur un résultat #hit#, exposez 1 de vos cartes de dégât.",
-            "effect_ENG": "During End Phase, if you are damaged and not protected, you may roll 1 attack die to recover 1 shield. On a #hit# result, expose 1 damage card.",
+            "effect_FRA": "Pendant la phase de fin, si vous êtes endommagé et n’êtes pas protégé, vous pouvez lancer 1 dé d’attaque pour récupérer 1 bouclier. Sur un résultat <img class='chargeforceimg' src='img/hit.jpg'>, exposez 1 de vos cartes de dégât.",
+            "effect_ENG": "During End Phase, if you are damaged and not protected, you may roll 1 attack die to recover 1 shield. On a <img class='chargeforceimg' src='img/hit.jpg'> result, expose 1 damage card.",
             "faction": ["Rebel_Alliance"]
         },
         {
@@ -1651,8 +1651,8 @@
             "charge": [0],
             "points": 0,
             "talent_points": 0,
-            "effect_FRA": "Tant qu’un autre vaisseau allié à portée 0–1 défend, avant l’étape « Neutraliser les résultats », si vous êtes dans l’arc de l’attaque, vous pouvez subir 1 dégât #crit# pour annuler 1 résultat #crit#.",
-            "effect_ENG": "While an other friendly ship at range 0-1 defends, before the 'Neutralize results' step, if you are in the attack arc, you may suffer 1 #crit# damage to cancel 1 #crit# result.",
+            "effect_FRA": "Tant qu’un autre vaisseau allié à portée 0–1 défend, avant l’étape « Neutraliser les résultats », si vous êtes dans l’arc de l’attaque, vous pouvez subir 1 dégât <img class='chargeforceimg' src='img/crit.jpg'> pour annuler 1 résultat <img class='chargeforceimg' src='img/crit.jpg'>.",
+            "effect_ENG": "While an other friendly ship at range 0-1 defends, before the 'Neutralize results' step, if you are in the attack arc, you may suffer 1 <img class='chargeforceimg' src='img/crit.jpg'> damage to cancel 1 <img class='chargeforceimg' src='img/crit.jpg'> result.",
             "faction": ["Rebel_Alliance"]
         },
  {
@@ -1689,8 +1689,8 @@
             "points": 10,
             "force": 1,
             "max_per_squad": 1,
-            "effect_FRA": "<img class='chargeforceimg' src='img/forcestat.png'> Au début de la phase d’engagement, vous pouvez choisir 1 vaisseau dans votre arc de tir à portée 0–2 et dépenser 1 #fo#. Dans ce cas, ce vaisseau subit 1 dégât #hit# sauf s’il choisit de retirer 1 marqueur vert.",
-            "effect_ENG": "<img class='chargeforceimg' src='img/forcestat.png'> At the start of engagement phase, you may choosea ship in your firing arc at range 0-2 and spend 1 #fo#. If you do, this ship suffers 1 #hit# damage except if it chooses to remove 1 green token.",
+            "effect_FRA": "<img class='chargeforceimg' src='img/forcestat.png'> Au début de la phase d’engagement, vous pouvez choisir 1 vaisseau dans votre arc de tir à portée 0–2 et dépenser 1 #fo#. Dans ce cas, ce vaisseau subit 1 dégât <img class='chargeforceimg' src='img/hit.jpg'> sauf s’il choisit de retirer 1 marqueur vert.",
+            "effect_ENG": "<img class='chargeforceimg' src='img/forcestat.png'> At the start of engagement phase, you may choosea ship in your firing arc at range 0-2 and spend 1 #fo#. If you do, this ship suffers 1 <img class='chargeforceimg' src='img/hit.jpg'> damage except if it chooses to remove 1 green token.",
             "faction": ["Imperial_Academy"]
            
         },
@@ -1718,8 +1718,8 @@
             "available": true,
             "modify": false,
             "slot": "Talent-special",
-            "effect_FRA": "Tant que vous effectuez une attaque, vous pouvez choisir un autre vaisseau allié à portée 0–1 du défenseur. Dans ce cas, le vaisseau choisi subit 1 dégât #hit# et vous pouvez changer 1 de vos résultats de dé en un résultat #hit#.",
-            "effect_ENG": "While you attack, you may choose an other friendly ship at range 0-1 of the defender. If you do, this friendly ship suffers 1 #hit#, and you may modify 1 of your dice results into a #hit# result.",
+            "effect_FRA": "Tant que vous effectuez une attaque, vous pouvez choisir un autre vaisseau allié à portée 0–1 du défenseur. Dans ce cas, le vaisseau choisi subit 1 dégât <img class='chargeforceimg' src='img/hit.jpg'> et vous pouvez changer 1 de vos résultats de dé en un résultat <img class='chargeforceimg' src='img/hit.jpg'>.",
+            "effect_ENG": "While you attack, you may choose an other friendly ship at range 0-1 of the defender. If you do, this friendly ship suffers 1 <img class='chargeforceimg' src='img/hit.jpg'>, and you may modify 1 of your dice results into a <img class='chargeforceimg' src='img/hit.jpg'> result.",
             "add_Data": [0],
             "force": 0,
             "charge": [0],
@@ -1771,7 +1771,7 @@
             "force": 0,
             "charge": [0],
             "points": 4,
-            "effect_FRA": "Lorsqu’un adversaire vous attaque, il peut modifier un résultat #hit# en #crit# . Si vous deviez lancer 3 dés de défense ou moins, vous pouvez lancer 1 dé de défense supplémentaire.",
+            "effect_FRA": "Lorsqu’un adversaire vous attaque, il peut modifier un résultat <img class='chargeforceimg' src='img/hit.jpg'> en <img class='chargeforceimg' src='img/crit.jpg'> . Si vous deviez lancer 3 dés de défense ou moins, vous pouvez lancer 1 dé de défense supplémentaire.",
             "effect_ENG": "",
             "faction": ""
         },
@@ -1918,9 +1918,9 @@
             "slot": "Gunner",
             "points": 6,
             "max_per_squad": 1,
-            "effect_ENG": "After you defend, if the attacker is in your firing arc, you may spend 1<img class='chargeforceimg' src='img/charge.jpg'>. If you do, roll 1 attack die except if the attacker chooses to remove 1 green token. On a #hit# or #crit# result, the attacker suffers 1 #hit# damage.",
+            "effect_ENG": "After you defend, if the attacker is in your firing arc, you may spend 1<img class='chargeforceimg' src='img/charge.jpg'>. If you do, roll 1 attack die except if the attacker chooses to remove 1 green token. On a <img class='chargeforceimg' src='img/hit.jpg'> or <img class='chargeforceimg' src='img/crit.jpg'> result, the attacker suffers 1 <img class='chargeforceimg' src='img/hit.jpg'> damage.",
             "faction": ["Bounty_Hunters_Guild"],
-            "effect_FRA": "Après avoir défendu, si l’attaquant est dans votre arc de tir, vous pouvez dépenser 1 <img class='chargeforceimg' src='img/charge.jpg'> . Dans ce cas, lancez 1 dé d’attaque sauf si l’attaquant choisit de retirer 1 marqueur vert. Sur un résultat #hit# ou #crit#, l’attaquant subit 1 dégât #hit#.",
+            "effect_FRA": "Après avoir défendu, si l’attaquant est dans votre arc de tir, vous pouvez dépenser 1 <img class='chargeforceimg' src='img/charge.jpg'> . Dans ce cas, lancez 1 dé d’attaque sauf si l’attaquant choisit de retirer 1 marqueur vert. Sur un résultat <img class='chargeforceimg' src='img/hit.jpg'> ou <img class='chargeforceimg' src='img/crit.jpg'>, l’attaquant subit 1 dégât <img class='chargeforceimg' src='img/hit.jpg'>.",
             "add_Data": [0],
             "force": 0,
             "charge": [1,"+"]
@@ -1935,12 +1935,12 @@
             "slot": "Gunner",
             "points": 1,
             "max_per_squad": 1,
-            "effect_ENG": "While you attack, you may spend 1<img class='chargeforceimg' src='img/charge.jpg'> to modify a #hit# result into a #crit# result.<br>While you defend, if the charge is active, the attacker may modifiy a #hit# result into a #crit# result. ",
+            "effect_ENG": "While you attack, you may spend 1<img class='chargeforceimg' src='img/charge.jpg'> to modify a <img class='chargeforceimg' src='img/hit.jpg'> result into a <img class='chargeforceimg' src='img/crit.jpg'> result.<br>While you defend, if the charge is active, the attacker may modifiy a <img class='chargeforceimg' src='img/hit.jpg'> result into a <img class='chargeforceimg' src='img/crit.jpg'> result. ",
             "faction": ["Bounty_Hunters_Guild"],
             "add_Data": [0],
             "force": 0,
             "charge": [1,"+"],
-            "effect_FRA": "Tant que vous attaquez, vous pouvez dépenser 1<img class='chargeforceimg' src='img/charge.jpg'> pour modifier un résultat #hit# en #crit#.<br>Tant que vous défendez, si la charge est active, l'attaquant peut modifier un résultat #hit# en #crit#."
+            "effect_FRA": "Tant que vous attaquez, vous pouvez dépenser 1<img class='chargeforceimg' src='img/charge.jpg'> pour modifier un résultat <img class='chargeforceimg' src='img/hit.jpg'> en <img class='chargeforceimg' src='img/crit.jpg'>.<br>Tant que vous défendez, si la charge est active, l'attaquant peut modifier un résultat <img class='chargeforceimg' src='img/hit.jpg'> en <img class='chargeforceimg' src='img/crit.jpg'>."
         },
  {
             "name_FRA": "Capteur de Positionnement",
@@ -2015,8 +2015,8 @@
             "charge": [0],
             "points": 0,
             "talent_points": 2,
-            "effect_FRA": "Lorsque vous effectuez une attaque principale <img class='chargeforceimg' src='img/attackF.jpg'>, si la portée de l’attaque est 1 et que vous êtes dans le <img class='chargeforceimg' src='img/attackF.jpg'> du défenseur, vous pouvez modifier l’un de vos résultats en #hit#.",
-            "effect_ENG": "While you perform a primary <img class='chargeforceimg' src='img/attackF.jpg'> attack, if the attack range is 1 and you are in the <img class='chargeforceimg' src='img/attackF.jpg'> of the defender, you may modify one of your results into a #hit# result. ",
+            "effect_FRA": "Lorsque vous effectuez une attaque principale <img class='chargeforceimg' src='img/attackF.jpg'>, si la portée de l’attaque est 1 et que vous êtes dans le <img class='chargeforceimg' src='img/attackF.jpg'> du défenseur, vous pouvez modifier l’un de vos résultats en <img class='chargeforceimg' src='img/hit.jpg'>.",
+            "effect_ENG": "While you perform a primary <img class='chargeforceimg' src='img/attackF.jpg'> attack, if the attack range is 1 and you are in the <img class='chargeforceimg' src='img/attackF.jpg'> of the defender, you may modify one of your results into a <img class='chargeforceimg' src='img/hit.jpg'> result. ",
             "faction": ["Mandalorian_Clans"]
         },
  {
@@ -2371,9 +2371,9 @@
             "modify": false,
             "slot": "Torpedo",
             "points": 5,
-            "effect_ENG": "<img class='chargeforceimg' src='img/chargestat.png'> 4#BULLS# range 2, Spend 1<img class='chargeforceimg' src='img/charge.jpg'>. Modify 1 #hit# result into a #crit# result. Receive a disarm token.",
+            "effect_ENG": "<img class='chargeforceimg' src='img/chargestat.png'> 4#BULLS# range 2, Spend 1<img class='chargeforceimg' src='img/charge.jpg'>. Modify 1 <img class='chargeforceimg' src='img/hit.jpg'> result into a <img class='chargeforceimg' src='img/crit.jpg'> result. Receive a disarm token.",
             "faction": "",
-            "effect_FRA": "<img class='chargeforceimg' src='img/chargestat.png'> 4#BULLS# portée 2, Dépensez 1 <img class='chargeforceimg' src='img/charge.jpg'>. Changez 1 résultat #hit# en un résultat #crit#. Gagnez un jeton désarmement.",
+            "effect_FRA": "<img class='chargeforceimg' src='img/chargestat.png'> 4#BULLS# portée 2, Dépensez 1 <img class='chargeforceimg' src='img/charge.jpg'>. Changez 1 résultat <img class='chargeforceimg' src='img/hit.jpg'> en un résultat <img class='chargeforceimg' src='img/crit.jpg'>. Gagnez un jeton désarmement.",
             "add_Data": [0],
             "force": 0,
             "charge": [1,"0"],
@@ -2782,8 +2782,8 @@
             "charge": [0],
             "points": 2,
             "faction": ["Trade_Federation","Agents_of_Chaos","Separatist_Government"],
-            "effect_FRA": "Au début de la phase d’engagement, vous pouvez dépenser 1 marqueur de calcul et 1 <img class='chargeforceimg' src='img/charge.jpg'> pour lancer 1 nuée de droïdes buzz (Agilité : 1, Coque : 1) en utilisant le gabarit 3 #Lbank#, #straight# ou #Rbank#.<br>Après qu'un vaisseau ennemi traverse ou chevauche une nuée de droïdes buzz, relocalisez la dans la glissière avant ou arrière de ce vaisseau (il est à portée 0). La nuée de droides buzz ne peut pas chevaucher un objet de cette façon. Si la nuée ne peut pas être placée dans une glissière, la nuée et le vaisseau subissent 1 #hit#.<br>Phase d'Engagement : à initiative 0, chaque vaisseau ennemi à portée 0 subit 1 #crit# damage.",
-            "effect_ENG": "At the start of engagement phase, you may spend 1 calculate token and 1<img class='chargeforceimg' src='img/charge.jpg'> to launch 1 buzz droid swarm (Agility : 1, Hull  : 1) using the 3 #Lbank#, #straight# or #Rbank# template.<br>After an enemy ship moves through or overlaps the buzz droid swarm, relocate to its front or rear guides (you are at range 0 of this ship). The buzz droid swarm cannot overlap an object this way. If the swarm cannot be placed at either set of guides, the swarm and that ship each suffer 1 #hit#.<br>Engagement Phase: At initiative 0, each enemy ship at range 0 of the swarm suffers 1 #crit# damage."
+            "effect_FRA": "Au début de la phase d’engagement, vous pouvez dépenser 1 marqueur de calcul et 1 <img class='chargeforceimg' src='img/charge.jpg'> pour lancer 1 nuée de droïdes buzz (Agilité : 1, Coque : 1) en utilisant le gabarit 3 #Lbank#, #straight# ou #Rbank#.<br>Après qu'un vaisseau ennemi traverse ou chevauche une nuée de droïdes buzz, relocalisez la dans la glissière avant ou arrière de ce vaisseau (il est à portée 0). La nuée de droides buzz ne peut pas chevaucher un objet de cette façon. Si la nuée ne peut pas être placée dans une glissière, la nuée et le vaisseau subissent 1 <img class='chargeforceimg' src='img/hit.jpg'>.<br>Phase d'Engagement : à initiative 0, chaque vaisseau ennemi à portée 0 subit 1 <img class='chargeforceimg' src='img/crit.jpg'> damage.",
+            "effect_ENG": "At the start of engagement phase, you may spend 1 calculate token and 1<img class='chargeforceimg' src='img/charge.jpg'> to launch 1 buzz droid swarm (Agility : 1, Hull  : 1) using the 3 #Lbank#, #straight# or #Rbank# template.<br>After an enemy ship moves through or overlaps the buzz droid swarm, relocate to its front or rear guides (you are at range 0 of this ship). The buzz droid swarm cannot overlap an object this way. If the swarm cannot be placed at either set of guides, the swarm and that ship each suffer 1 <img class='chargeforceimg' src='img/hit.jpg'>.<br>Engagement Phase: At initiative 0, each enemy ship at range 0 of the swarm suffers 1 <img class='chargeforceimg' src='img/crit.jpg'> damage."
         },
         {
             "name_FRA": "Droïde Sonde DRK1",
@@ -2816,8 +2816,8 @@
             "attack": ["F", 3],
             "range": [2,3],
             "faction": ["Trade_Federation","Agents_of_Chaos","Separatist_Government"],
-            "effect_FRA": "<img class='chargeforceimg' src='img/chargestat.png'> Attaque #CC# : 3<img class='chargeforceimg' src='img/attackF.jpg'> Portée 2-3 : dépensez 1 <img class='chargeforceimg' src='img/charge.jpg'>. Tant que vous effectuez cette attaque, vous pouvez dépenser 1 marqueur de calcul pour changer 1 résultat #eye# en un résultat #crit#.<br>Action : récupérez la <img class='chargeforceimg' src='img/charge.jpg'>.",
-            "effect_ENG": "<img class='chargeforceimg' src='img/chargestat.png'> Attack #CC# : 3<img class='chargeforceimg' src='img/attackF.jpg'> Range 2-3 : spend 1<img class='chargeforceimg' src='img/charge.jpg'>. During this attack, you may spend 1 calculate token to modify 1 #eye# result into a #crit# result.<br>ACTION : recover the <img class='chargeforceimg' src='img/charge.jpg'>."
+            "effect_FRA": "<img class='chargeforceimg' src='img/chargestat.png'> Attaque #CC# : 3<img class='chargeforceimg' src='img/attackF.jpg'> Portée 2-3 : dépensez 1 <img class='chargeforceimg' src='img/charge.jpg'>. Tant que vous effectuez cette attaque, vous pouvez dépenser 1 marqueur de calcul pour changer 1 résultat #eye# en un résultat <img class='chargeforceimg' src='img/crit.jpg'>.<br>Action : récupérez la <img class='chargeforceimg' src='img/charge.jpg'>.",
+            "effect_ENG": "<img class='chargeforceimg' src='img/chargestat.png'> Attack #CC# : 3<img class='chargeforceimg' src='img/attackF.jpg'> Range 2-3 : spend 1<img class='chargeforceimg' src='img/charge.jpg'>. During this attack, you may spend 1 calculate token to modify 1 #eye# result into a <img class='chargeforceimg' src='img/crit.jpg'> result.<br>ACTION : recover the <img class='chargeforceimg' src='img/charge.jpg'>."
         },
         {
             "name_FRA": "Calculs Indépendants",
@@ -2934,8 +2934,8 @@
             "charge": [0],
             "points": 5,
             "faction": ["Trade_Federation","Agents_of_Chaos","Separatist_Government"],
-            "effect_FRA": "Tant que vous défendez, après l’étape « Neutraliser les résultats », s’il y a au moins 2 résultats #hit#/#crit#, vous pouvez dépenser 1 <img class='chargeforceimg' src='img/charge.jpg'> pour annuler 1 résultat #hit# ou #crit#.<br>Après qu’un vaisseau allié a été détruit, récupérez 1 <img class='chargeforceimg' src='img/charge.jpg'>.",
-            "effect_ENG": "While you defend, after the 'Neutralize Results' step, if there are at least 2 results #hit/#crit#, you may spend 1 <img class='chargeforceimg' src='img/charge.jpg'> to cancel 1 #hit# or #crit# result.<br>After a friendly ship is destroyed, recover 1 <img class='chargeforceimg' src='img/charge.jpg'>."
+            "effect_FRA": "Tant que vous défendez, après l’étape « Neutraliser les résultats », s’il y a au moins 2 résultats <img class='chargeforceimg' src='img/hit.jpg'>/<img class='chargeforceimg' src='img/crit.jpg'>, vous pouvez dépenser 1 <img class='chargeforceimg' src='img/charge.jpg'> pour annuler 1 résultat <img class='chargeforceimg' src='img/hit.jpg'> ou <img class='chargeforceimg' src='img/crit.jpg'>.<br>Après qu’un vaisseau allié a été détruit, récupérez 1 <img class='chargeforceimg' src='img/charge.jpg'>.",
+            "effect_ENG": "While you defend, after the 'Neutralize Results' step, if there are at least 2 results #hit/<img class='chargeforceimg' src='img/crit.jpg'>, you may spend 1 <img class='chargeforceimg' src='img/charge.jpg'> to cancel 1 <img class='chargeforceimg' src='img/hit.jpg'> or <img class='chargeforceimg' src='img/crit.jpg'> result.<br>After a friendly ship is destroyed, recover 1 <img class='chargeforceimg' src='img/charge.jpg'>."
         },
 
         {
@@ -3032,8 +3032,8 @@
             "charge": [0],
             "points": 11,
             "faction": ["Heroes_of_the_Resistance"],
-            "effect_FRA": "<img class='chargeforceimg' src='img/forcestat.png'> Lorsque vous défendez ou attaquez, si le vaisseau ennemi est dans votre #tur#, vous pouvez dépenser 1 #fo# pour modifier l'un de vos résultats vierges en #hit# ou #evd#.",
-            "effect_ENG": "<img class='chargeforceimg' src='img/forcestat.png'> While you defend or perform an attack, if the enemy ship is in your #tur#, you may spend 1 #fo# to change 1 of your blank results to a #hit# or #evd# result."
+            "effect_FRA": "<img class='chargeforceimg' src='img/forcestat.png'> Lorsque vous défendez ou attaquez, si le vaisseau ennemi est dans votre #tur#, vous pouvez dépenser 1 #fo# pour modifier l'un de vos résultats vierges en <img class='chargeforceimg' src='img/hit.jpg'> ou #evd#.",
+            "effect_ENG": "<img class='chargeforceimg' src='img/forcestat.png'> While you defend or perform an attack, if the enemy ship is in your #tur#, you may spend 1 #fo# to change 1 of your blank results to a <img class='chargeforceimg' src='img/hit.jpg'> or #evd# result."
         },
         {
             "name_FRA": "M9-G8",
@@ -3129,8 +3129,8 @@
             "points": 1,
             "talent_points": 1,
             "faction": ["First_Order_Vanguard","Imperial_Remnants"],
-            "effect_FRA": "Lorsque vous effectuez une attaque principale, si vous n'êtes pas protégé, vous pouvez modifier 1 résultat #eye# en #hit#",
-            "effect_ENG": "While you perform a primary attack, if you are not shielded, you may change 1 #eye# result to a #hit# result."
+            "effect_FRA": "Lorsque vous effectuez une attaque principale, si vous n'êtes pas protégé, vous pouvez modifier 1 résultat #eye# en <img class='chargeforceimg' src='img/hit.jpg'>",
+            "effect_ENG": "While you perform a primary attack, if you are not shielded, you may change 1 #eye# result to a <img class='chargeforceimg' src='img/hit.jpg'> result."
         },
         {
             "name_FRA": "Général Hux",
@@ -3395,8 +3395,8 @@
             "points": 9,
             "force": 1,
             "faction": ["Imperial_Elite_Squadrons"],
-            "effect_FRA": "<img class='chargeforceimg' src='img/forcestat.png'> Tant que vous effectuez une attaque, vous pouvez dépenser 1 #fo# pour changer 1 de vos résultats #eye# en #crit#.",
-            "effect_ENG": "<img class='chargeforceimg' src='img/forcestat.png'> When you perform an attack, you may spend 1 #fo# to change 1 #eye# result into 1 #crit## result."
+            "effect_FRA": "<img class='chargeforceimg' src='img/forcestat.png'> Tant que vous effectuez une attaque, vous pouvez dépenser 1 #fo# pour changer 1 de vos résultats #eye# en <img class='chargeforceimg' src='img/crit.jpg'>.",
+            "effect_ENG": "<img class='chargeforceimg' src='img/forcestat.png'> When you perform an attack, you may spend 1 #fo# to change 1 #eye# result into 1 <img class='chargeforceimg' src='img/crit.jpg'># result."
     
         },
     
@@ -3601,8 +3601,8 @@
     "add_Data": [0],
     "force": 0,
     "charge": [1,"0"],
-    "effect_FRA": "<img class='chargeforceimg' src='img/chargestat.png'> Attaque (<img class='chargeforceimg' src='img/Lo W.jpg'>) : 3<img class='chargeforceimg' src='img/attackF.jpg'> portée 2-3  : dépensez 1 <img class='chargeforceimg' src='img/charge.jpg'>. Si cette attaque touche, dépensez 1 résultat #hit# ou #crit# pour faire subir 1 dégât #hit# au défenseur. Tous les résultats #hit#/#crit# restants infligent des marqueurs ioniques au lieu des dégâts.",
-    "effect_ENG": "<img class='chargeforceimg' src='img/chargestat.png'> Attack (<img class='chargeforceimg' src='img/Lo W.jpg'>): 3<img class='chargeforceimg' src='img/attackF.jpg'> range 2-3: spend 1 <img class='chargeforceimg' src='img/charge.jpg'>. If this attack hits, spend 1 #hit# or #crit# result to deal 1 #hit# damage to the defender. All remaining #hit#/#crit# results deal ion tokens instead of damage.",
+    "effect_FRA": "<img class='chargeforceimg' src='img/chargestat.png'> Attaque (<img class='chargeforceimg' src='img/Lo W.jpg'>) : 3<img class='chargeforceimg' src='img/attackF.jpg'> portée 2-3  : dépensez 1 <img class='chargeforceimg' src='img/charge.jpg'>. Si cette attaque touche, dépensez 1 résultat <img class='chargeforceimg' src='img/hit.jpg'> ou <img class='chargeforceimg' src='img/crit.jpg'> pour faire subir 1 dégât <img class='chargeforceimg' src='img/hit.jpg'> au défenseur. Tous les résultats <img class='chargeforceimg' src='img/hit.jpg'>/<img class='chargeforceimg' src='img/crit.jpg'> restants infligent des marqueurs ioniques au lieu des dégâts.",
+    "effect_ENG": "<img class='chargeforceimg' src='img/chargestat.png'> Attack (<img class='chargeforceimg' src='img/Lo W.jpg'>): 3<img class='chargeforceimg' src='img/attackF.jpg'> range 2-3: spend 1 <img class='chargeforceimg' src='img/charge.jpg'>. If this attack hits, spend 1 <img class='chargeforceimg' src='img/hit.jpg'> or <img class='chargeforceimg' src='img/crit.jpg'> result to deal 1 <img class='chargeforceimg' src='img/hit.jpg'> damage to the defender. All remaining <img class='chargeforceimg' src='img/hit.jpg'>/<img class='chargeforceimg' src='img/crit.jpg'> results deal ion tokens instead of damage.",
     "faction": ""
 },
 {
@@ -3619,8 +3619,8 @@
     "add_Data": [0],
     "force": 0,
     "charge": [1,"0"],
-    "effect_FRA": "<img class='chargeforceimg' src='img/chargestat.png'> Attaque (<img class='chargeforceimg' src='img/Lo W.jpg'>) : 2<img class='chargeforceimg' src='img/attackF.jpg'> Portée 2-3 : dépensez 1 <img class='chargeforceimg' src='img/charge.jpg'>. Après avoir lancé les dés d'attaque, annulez tous les résultats, et ajoutez 2 résultats #hit#.",
-    "effect_ENG": "<img class='chargeforceimg' src='img/chargestat.png'> Attack (<img class='chargeforceimg' src='img/Lo W.jpg'>): 2<img class='chargeforceimg' src='img/attackF.jpg'> Range 2-3: spend 1 <img class='chargeforceimg' src='img/charge.jpg'>. After rolling attack dice, cancel all results and add 2 #hit# results.",
+    "effect_FRA": "<img class='chargeforceimg' src='img/chargestat.png'> Attaque (<img class='chargeforceimg' src='img/Lo W.jpg'>) : 2<img class='chargeforceimg' src='img/attackF.jpg'> Portée 2-3 : dépensez 1 <img class='chargeforceimg' src='img/charge.jpg'>. Après avoir lancé les dés d'attaque, annulez tous les résultats, et ajoutez 2 résultats <img class='chargeforceimg' src='img/hit.jpg'>.",
+    "effect_ENG": "<img class='chargeforceimg' src='img/chargestat.png'> Attack (<img class='chargeforceimg' src='img/Lo W.jpg'>): 2<img class='chargeforceimg' src='img/attackF.jpg'> Range 2-3: spend 1 <img class='chargeforceimg' src='img/charge.jpg'>. After rolling attack dice, cancel all results and add 2 <img class='chargeforceimg' src='img/hit.jpg'> results.",
     "faction": ""
 },
 {
@@ -3690,8 +3690,8 @@
     "add_Data": [0],
     "force": 0,
     "charge": [1,"0"],
-    "effect_FRA": "<img class='chargeforceimg' src='img/chargestat.png'> 3#Bulls# portée 1-2: dépensez 1 <img class='chargeforceimg' src='img/charge.jpg'>. Lors de l’étape « Neutraliser les résultats », les résultats #crit# sont annulés avant les résultats #hit#. Après que cette attaque a touché, le défenseur perd 1 bouclier. Gagnez un jeton de désarmement.",
-    "effect_ENG": "<img class='chargeforceimg' src='img/chargestat.png'> 3#Bulls# range 1-2: spend 1 <img class='chargeforceimg' src='img/charge.jpg'>. During the 'Neutralize Results' step, #crit# results are canceled before #hit# results. After this attack hits, the defender loses 1 shield. Gain 1 disarm token.",
+    "effect_FRA": "<img class='chargeforceimg' src='img/chargestat.png'> 3#Bulls# portée 1-2: dépensez 1 <img class='chargeforceimg' src='img/charge.jpg'>. Lors de l’étape « Neutraliser les résultats », les résultats <img class='chargeforceimg' src='img/crit.jpg'> sont annulés avant les résultats <img class='chargeforceimg' src='img/hit.jpg'>. Après que cette attaque a touché, le défenseur perd 1 bouclier. Gagnez un jeton de désarmement.",
+    "effect_ENG": "<img class='chargeforceimg' src='img/chargestat.png'> 3#Bulls# range 1-2: spend 1 <img class='chargeforceimg' src='img/charge.jpg'>. During the 'Neutralize Results' step, <img class='chargeforceimg' src='img/crit.jpg'> results are canceled before <img class='chargeforceimg' src='img/hit.jpg'> results. After this attack hits, the defender loses 1 shield. Gain 1 disarm token.",
     "faction": ""
 },
 {
@@ -3708,8 +3708,8 @@
     "add_Data": [0],
     "force": 0,
     "charge": [1,"0"],
-    "effect_FRA": "<img class='chargeforceimg' src='img/chargestat.png'> 4#BULL# Portée 1 : dépensez 1 <img class='chargeforceimg' src='img/charge.jpg'>. Modifiez un #hit# en #crit#. Gagnez un marqueur désarmement.",
-    "effect_ENG": "<img class='chargeforceimg' src='img/chargestat.png'> 4#BULL# Range 1: spend 1 <img class='chargeforceimg' src='img/charge.jpg'>. Change 1 #hit# to #crit#. Gain 1 disarm token.",
+    "effect_FRA": "<img class='chargeforceimg' src='img/chargestat.png'> 4#BULL# Portée 1 : dépensez 1 <img class='chargeforceimg' src='img/charge.jpg'>. Modifiez un <img class='chargeforceimg' src='img/hit.jpg'> en <img class='chargeforceimg' src='img/crit.jpg'>. Gagnez un marqueur désarmement.",
+    "effect_ENG": "<img class='chargeforceimg' src='img/chargestat.png'> 4#BULL# Range 1: spend 1 <img class='chargeforceimg' src='img/charge.jpg'>. Change 1 <img class='chargeforceimg' src='img/hit.jpg'> to <img class='chargeforceimg' src='img/crit.jpg'>. Gain 1 disarm token.",
     "faction": ""
 },
  {
@@ -3746,8 +3746,8 @@
     "add_Data": [0],
     "force": 0,
     "charge": [1,"0"],
-    "effect_FRA": "<img class='chargeforceimg' src='img/chargestat.png'> Attaque :  3<img class='chargeforceimg' src='img/attackF.jpg'> Portée 1: dépensez 1 <img class='chargeforceimg' src='img/charge.jpg'>. Si le défenseur est dans votre #BULLS#, vous pouvez améliorer 1 résultat #hit# en #crit#. Gagnez un jeton épuisement.",
-    "effect_ENG": "<img class='chargeforceimg' src='img/chargestat.png'> Attack (<img class='chargeforceimg' src='img/Lo W.jpg'>): 3<img class='chargeforceimg' src='img/attackF.jpg'> Range 1: spend 1 <img class='chargeforceimg' src='img/charge.jpg'>. If the defender is in your #BULLS#, you may upgrade 1 #hit# result to a #crit#. Gain 1 deplete token.",
+    "effect_FRA": "<img class='chargeforceimg' src='img/chargestat.png'> Attaque :  3<img class='chargeforceimg' src='img/attackF.jpg'> Portée 1: dépensez 1 <img class='chargeforceimg' src='img/charge.jpg'>. Si le défenseur est dans votre #BULLS#, vous pouvez améliorer 1 résultat <img class='chargeforceimg' src='img/hit.jpg'> en <img class='chargeforceimg' src='img/crit.jpg'>. Gagnez un jeton épuisement.",
+    "effect_ENG": "<img class='chargeforceimg' src='img/chargestat.png'> Attack (<img class='chargeforceimg' src='img/Lo W.jpg'>): 3<img class='chargeforceimg' src='img/attackF.jpg'> Range 1: spend 1 <img class='chargeforceimg' src='img/charge.jpg'>. If the defender is in your #BULLS#, you may upgrade 1 <img class='chargeforceimg' src='img/hit.jpg'> result to a <img class='chargeforceimg' src='img/crit.jpg'>. Gain 1 deplete token.",
     "faction": ""
 },
 {
@@ -3764,8 +3764,8 @@
     "points": 1,
     "attack": ["F",3],
     "range": [1,2],
-    "effect_FRA": " 3<img class='chargeforceimg' src='img/attackF.jpg'> Portée 1-2, Attaque : si cette attaque touche, tous les résultats #hit#/#crit# infligent des marqueurs de brouillage au lieu des dégâts.",
-    "effect_ENG": "3<img class='chargeforceimg' src='img/attackF.jpg'> Range 1-2, Attack: if this attack hits, all #hit#/#crit# results deal jam tokens instead of damage.",
+    "effect_FRA": " 3<img class='chargeforceimg' src='img/attackF.jpg'> Portée 1-2, Attaque : si cette attaque touche, tous les résultats <img class='chargeforceimg' src='img/hit.jpg'>/<img class='chargeforceimg' src='img/crit.jpg'> infligent des marqueurs de brouillage au lieu des dégâts.",
+    "effect_ENG": "3<img class='chargeforceimg' src='img/attackF.jpg'> Range 1-2, Attack: if this attack hits, all <img class='chargeforceimg' src='img/hit.jpg'>/<img class='chargeforceimg' src='img/crit.jpg'> results deal jam tokens instead of damage.",
     "faction": ""
 },
 {
@@ -3782,8 +3782,8 @@
     "points": 3,
     "attack": ["F",3],
     "range": [1,3],
-    "effect_FRA": " 3<img class='chargeforceimg' src='img/attackF.jpg'> Portée 1-3, Attaque : si cette attaque touche, tous les résultats #hit#/#crit# infligent des marqueurs de rayon tracteur au lieu des dégâts.",
-    "effect_ENG": "3<img class='chargeforceimg' src='img/attackF.jpg'> Range 1-3, Attack: if this attack hits, all #hit#/#crit# results deal tractor beam tokens instead of damage.",
+    "effect_FRA": " 3<img class='chargeforceimg' src='img/attackF.jpg'> Portée 1-3, Attaque : si cette attaque touche, tous les résultats <img class='chargeforceimg' src='img/hit.jpg'>/<img class='chargeforceimg' src='img/crit.jpg'> infligent des marqueurs de rayon tracteur au lieu des dégâts.",
+    "effect_ENG": "3<img class='chargeforceimg' src='img/attackF.jpg'> Range 1-3, Attack: if this attack hits, all <img class='chargeforceimg' src='img/hit.jpg'>/<img class='chargeforceimg' src='img/crit.jpg'> results deal tractor beam tokens instead of damage.",
     "faction": ""
 },
 {
@@ -3800,8 +3800,8 @@
     "points": 5,
     "attack": ["F",3],
     "range": [1,3],
-    "effect_FRA": "3<img class='chargeforceimg' src='img/attackF.jpg'> Portée 1-3 , Attaque : si cette attaque touche, dépensez 1 résultat #hit# ou #crit# pour faire subir 1 dégât au défenseur. Tous les résultats #hit#/#crit# restants infligent des marqueurs ioniques au lieu des dégâts.",
-    "effect_ENG": "3<img class='chargeforceimg' src='img/attackF.jpg'> Range 1-3, Attack: if this attack hits, spend 1 #hit# or #crit# result to deal 1 damage to the defender. All remaining #hit#/#crit# results deal ion tokens instead of damage.",
+    "effect_FRA": "3<img class='chargeforceimg' src='img/attackF.jpg'> Portée 1-3 , Attaque : si cette attaque touche, dépensez 1 résultat <img class='chargeforceimg' src='img/hit.jpg'> ou <img class='chargeforceimg' src='img/crit.jpg'> pour faire subir 1 dégât au défenseur. Tous les résultats <img class='chargeforceimg' src='img/hit.jpg'>/<img class='chargeforceimg' src='img/crit.jpg'> restants infligent des marqueurs ioniques au lieu des dégâts.",
+    "effect_ENG": "3<img class='chargeforceimg' src='img/attackF.jpg'> Range 1-3, Attack: if this attack hits, spend 1 <img class='chargeforceimg' src='img/hit.jpg'> or <img class='chargeforceimg' src='img/crit.jpg'> result to deal 1 damage to the defender. All remaining <img class='chargeforceimg' src='img/hit.jpg'>/<img class='chargeforceimg' src='img/crit.jpg'> results deal ion tokens instead of damage.",
     "faction": ""
 },
 {
@@ -4025,8 +4025,8 @@
     "add_Data": [0],
     "force": 0,
     "charge": [1,"0"],
-    "effect_FRA": "CONFIANCE FRAGILE : Tant que la <img class='chargeforceimg' src='img/charge.jpg'> sur cette amélioration est active, lorsque vous attaquez ou défendez, vous pouvez changer un résultat #eye# en un résultat #hit# ou #evd#. <br> MEFIANCE : Si votre charge est inactive, durant la phase système, recevez 1 jeton contrainte. Lorsque vous effectuez une action #FS#, recevez 1 jeton de contrainte. <br>ACTION : récupérez 1 <img class='chargeforceimg' src='img/charge.jpg'>",
-    "effect_ENG": "FRAGILE TRUST : While the <img class='chargeforceimg' src='img/charge.jpg'> on this upgrade is active, when you attack or defend, you may change an #eye# result into a #hit# or #evd# result.<br>DISTRUST : If your charge is inactive, during System phase, gain 1 strain token. When you perform a #FS# action gain 1 strain token. <br>ACTION : recover 1 <img class='chargeforceimg' src='img/charge.jpg'>.",
+    "effect_FRA": "CONFIANCE FRAGILE : Tant que la <img class='chargeforceimg' src='img/charge.jpg'> sur cette amélioration est active, lorsque vous attaquez ou défendez, vous pouvez changer un résultat #eye# en un résultat <img class='chargeforceimg' src='img/hit.jpg'> ou #evd#. <br> MEFIANCE : Si votre charge est inactive, durant la phase système, recevez 1 jeton contrainte. Lorsque vous effectuez une action #FS#, recevez 1 jeton de contrainte. <br>ACTION : récupérez 1 <img class='chargeforceimg' src='img/charge.jpg'>",
+    "effect_ENG": "FRAGILE TRUST : While the <img class='chargeforceimg' src='img/charge.jpg'> on this upgrade is active, when you attack or defend, you may change an #eye# result into a <img class='chargeforceimg' src='img/hit.jpg'> or #evd# result.<br>DISTRUST : If your charge is inactive, during System phase, gain 1 strain token. When you perform a #FS# action gain 1 strain token. <br>ACTION : recover 1 <img class='chargeforceimg' src='img/charge.jpg'>.",
     "faction": ["Crime_Syndicates"]
 },
 
@@ -4058,8 +4058,8 @@
     "slot": "Talent-special",
     "points": 0,
     "talent_points": 0,
-    "effect_FRA": "Avant de lancer des dés d'attaque, vous pouvez subir un #hit# pour donner un marqueur de contrainte à votre cible.",
-    "effect_ENG": "Before you roll attack dice, you may suffer a #hit# to strain your target.",
+    "effect_FRA": "Avant de lancer des dés d'attaque, vous pouvez subir un <img class='chargeforceimg' src='img/hit.jpg'> pour donner un marqueur de contrainte à votre cible.",
+    "effect_ENG": "Before you roll attack dice, you may suffer a <img class='chargeforceimg' src='img/hit.jpg'> to strain your target.",
     "faction": ["Partisans"],
     "add_Data": [0],
     "force": 0,
@@ -4152,8 +4152,8 @@
             "force": 0,
             "charge": [0],
             "points":0,
-            "effect_FRA": "À la fin de la phase d’activation, si vous n'êtes pas arrimé perdez 1 <img class='chargeforceimg' src='img/charge.jpg'>. Vous êtes détruit si vous avez 0 <img class='chargeforceimg' src='img/charge.jpg'>. Avant de retirer votre figurine, chaque vaisseau à porté 0–1 subit 1 dégât #crit# ",
-            "effect_ENG": "At the end of Activation phase, if you are not docked, lose 1 <img class='chargeforceimg' src='img/charge.jpg'>. You are destroyed if you have 0 <img class='chargeforceimg' src='img/charge.jpg'>. Before removing your ship, each ship at range 0-1 suffers 1 #crit# damage.",
+            "effect_FRA": "À la fin de la phase d’activation, si vous n'êtes pas arrimé perdez 1 <img class='chargeforceimg' src='img/charge.jpg'>. Vous êtes détruit si vous avez 0 <img class='chargeforceimg' src='img/charge.jpg'>. Avant de retirer votre figurine, chaque vaisseau à porté 0–1 subit 1 dégât <img class='chargeforceimg' src='img/crit.jpg'> ",
+            "effect_ENG": "At the end of Activation phase, if you are not docked, lose 1 <img class='chargeforceimg' src='img/charge.jpg'>. You are destroyed if you have 0 <img class='chargeforceimg' src='img/charge.jpg'>. Before removing your ship, each ship at range 0-1 suffers 1 <img class='chargeforceimg' src='img/crit.jpg'> damage.",
             "faction": ["Pirates_and_Smugglers"],
             "restrictions":[1,"ship", "Escape Craft",""]
         },
@@ -4301,8 +4301,8 @@
              "force": 0,
              "charge": [0],
              "points":3,
-             "effect_FRA": "Après avoir effectué une attaque qui a raté, si au moins 1 résultat #hit#/#crit# a été neutralisé, le défenseur gagne 1 marqueur de contrainte.",
-             "effect_ENG": "After you perform an attack that missed, if at least 1 #hit#/#crit# result was canceled, the defender gains 1 strain token.",
+             "effect_FRA": "Après avoir effectué une attaque qui a raté, si au moins 1 résultat <img class='chargeforceimg' src='img/hit.jpg'>/<img class='chargeforceimg' src='img/crit.jpg'> a été neutralisé, le défenseur gagne 1 marqueur de contrainte.",
+             "effect_ENG": "After you perform an attack that missed, if at least 1 <img class='chargeforceimg' src='img/hit.jpg'>/<img class='chargeforceimg' src='img/crit.jpg'> result was canceled, the defender gains 1 strain token.",
              "faction": ["Clone_Army"] 
          },
          {
@@ -4333,8 +4333,8 @@
              "force": 0,
              "charge": [0],
              "points":2,
-             "effect_FRA": "Tant que vous effectuez une attaque, vous pouvez dépenser 1 marqueur d’évasion pour changer 1 résultat #eye# en un résultat #hit#.",
-             "effect_ENG": "While you perform an attack, you may spend 1 evade token to change 1 #eye# result to a #hit# result.",
+             "effect_FRA": "Tant que vous effectuez une attaque, vous pouvez dépenser 1 marqueur d’évasion pour changer 1 résultat #eye# en un résultat <img class='chargeforceimg' src='img/hit.jpg'>.",
+             "effect_ENG": "While you perform an attack, you may spend 1 evade token to change 1 #eye# result to a <img class='chargeforceimg' src='img/hit.jpg'> result.",
              "faction": ["Clone_Army","Colossus"] 
          },
          {
@@ -4532,8 +4532,8 @@
              "force": 0,
              "charge": [3,"0"],
              "points":3,
-             "effect_FRA": "Tant que vous effectuez une attaque, vous pouvez dépenser 1 <img class='chargeforceimg' src='img/charge.jpg'> pour changer 1 résultat #hit# en un résultat #crit#.",
-             "effect_ENG": "While you perform an attack, you may spend 1 <img class='chargeforceimg' src='img/charge.jpg'> to change 1 #hit# result to a #crit# result.",
+             "effect_FRA": "Tant que vous effectuez une attaque, vous pouvez dépenser 1 <img class='chargeforceimg' src='img/charge.jpg'> pour changer 1 résultat <img class='chargeforceimg' src='img/hit.jpg'> en un résultat <img class='chargeforceimg' src='img/crit.jpg'>.",
+             "effect_ENG": "While you perform an attack, you may spend 1 <img class='chargeforceimg' src='img/charge.jpg'> to change 1 <img class='chargeforceimg' src='img/hit.jpg'> result to a <img class='chargeforceimg' src='img/crit.jpg'> result.",
              "faction": ["Jedi_Order"]
          },
          {
@@ -4650,8 +4650,8 @@
              "force": 0,
              "charge": [0],
              "points": 2,
-             "effect_FRA": "Avant de vous engagez, vous pouvez recevoir 1 jeton ion et 1 jeton désarmement. Chaque autre vaisseau à portée 0 subit 1 dégat #hit#.",
-             "effect_ENG": "Before you engage, you may gain 1 ion token and 1 disarm token. Each other ship at range 0 suffers 1 #hit# damage.",
+             "effect_FRA": "Avant de vous engagez, vous pouvez recevoir 1 jeton ion et 1 jeton désarmement. Chaque autre vaisseau à portée 0 subit 1 dégat <img class='chargeforceimg' src='img/hit.jpg'>.",
+             "effect_ENG": "Before you engage, you may gain 1 ion token and 1 disarm token. Each other ship at range 0 suffers 1 <img class='chargeforceimg' src='img/hit.jpg'> damage.",
              "faction": ["Crime_Syndicates", "Hutt_Cartel"]
            
          },
@@ -4827,8 +4827,8 @@
              "force": 0,
              "charge": [0],
              "points": 2,
-             "effect_FRA": "Après avoir exécuté partiellement une manoeuvre, vous pouvez subir 1 dégat #hit# pour effectuer 1 action blanche.",
-             "effect_ENG": "After you partially execute a maneuver, you may suffer 1 #hit# damage to perform 1 white action.",
+             "effect_FRA": "Après avoir exécuté partiellement une manoeuvre, vous pouvez subir 1 dégat <img class='chargeforceimg' src='img/hit.jpg'> pour effectuer 1 action blanche.",
+             "effect_ENG": "After you partially execute a maneuver, you may suffer 1 <img class='chargeforceimg' src='img/hit.jpg'> damage to perform 1 white action.",
              "faction": ["Hutt_Cartel"]
              
          },
@@ -4861,8 +4861,8 @@
              "force": 0,
              "charge": [1,"+"],
              "points": 2,
-             "effect_FRA": "Lorsque vous attaquez, vous pouvez dépenser 1 <img class='chargeforceimg' src='img/charge.jpg'> pour modifier 1 résultat #hit# en #crit#. Lorsque vous défendez, si votre charge est active, l'attaquant peut modifier 1 résultat #hit# en #crit#.",
-             "effect_ENG": "While you perform an attack, you may spend 1 <img class='chargeforceimg' src='img/charge.jpg'> to change 1 #hit# result to a #crit# result. While you defend, if your <img class='chargeforceimg' src='img/charge.jpg'> is active, the attacker may change 1 #hit# result to a #crit# result.",
+             "effect_FRA": "Lorsque vous attaquez, vous pouvez dépenser 1 <img class='chargeforceimg' src='img/charge.jpg'> pour modifier 1 résultat <img class='chargeforceimg' src='img/hit.jpg'> en <img class='chargeforceimg' src='img/crit.jpg'>. Lorsque vous défendez, si votre charge est active, l'attaquant peut modifier 1 résultat <img class='chargeforceimg' src='img/hit.jpg'> en <img class='chargeforceimg' src='img/crit.jpg'>.",
+             "effect_ENG": "While you perform an attack, you may spend 1 <img class='chargeforceimg' src='img/charge.jpg'> to change 1 <img class='chargeforceimg' src='img/hit.jpg'> result to a <img class='chargeforceimg' src='img/crit.jpg'> result. While you defend, if your <img class='chargeforceimg' src='img/charge.jpg'> is active, the attacker may change 1 <img class='chargeforceimg' src='img/hit.jpg'> result to a <img class='chargeforceimg' src='img/crit.jpg'> result.",
              "faction": ["Hutt_Cartel"]
              
          },
@@ -4895,8 +4895,8 @@
              "force": 0,
              "charge": [0],
              "points": 2,
-             "effect_FRA": "Lorsque vous attaquez, vous pouvez modifier 1 résultat #hit# en #crit# pour chaque jeton stress que le défenseur possède.",
-             "effect_ENG": "While you perform an attack, you may change 1 #hit# result to a #crit# result for each stress token the defender has.",
+             "effect_FRA": "Lorsque vous attaquez, vous pouvez modifier 1 résultat <img class='chargeforceimg' src='img/hit.jpg'> en <img class='chargeforceimg' src='img/crit.jpg'> pour chaque jeton stress que le défenseur possède.",
+             "effect_ENG": "While you perform an attack, you may change 1 <img class='chargeforceimg' src='img/hit.jpg'> result to a <img class='chargeforceimg' src='img/crit.jpg'> result for each stress token the defender has.",
              "faction": ["Hutt_Cartel"]
              
          },
@@ -4912,8 +4912,8 @@
              "force": 0,
              "charge": [0],
              "points": 3,
-             "effect_FRA": "Pendant la phase Système, vous pouvez effectuer une action sur l'une de vos cartes de dégat, même stressé. Après avoir réparé une carte de dégat face visible, vous pouvez lancer 1 dé d'attaque. Sur un résultat #hit#, réparez une autre carte de dégat face visible. Sur un résultat #crit#, exposez 1 carte de dégat.",
-             "effect_ENG": "During the System Phase, you may perform an action on 1 of your damage cards, even while stressed. After you repair a faceup Ship damage card, you may roll 1 attack die. On a #hit# result, repair another faceup Ship damage card. On a #crit# result, expose 1 damage card.",
+             "effect_FRA": "Pendant la phase Système, vous pouvez effectuer une action sur l'une de vos cartes de dégat, même stressé. Après avoir réparé une carte de dégat face visible, vous pouvez lancer 1 dé d'attaque. Sur un résultat <img class='chargeforceimg' src='img/hit.jpg'>, réparez une autre carte de dégat face visible. Sur un résultat <img class='chargeforceimg' src='img/crit.jpg'>, exposez 1 carte de dégat.",
+             "effect_ENG": "During the System Phase, you may perform an action on 1 of your damage cards, even while stressed. After you repair a faceup Ship damage card, you may roll 1 attack die. On a <img class='chargeforceimg' src='img/hit.jpg'> result, repair another faceup Ship damage card. On a <img class='chargeforceimg' src='img/crit.jpg'> result, expose 1 damage card.",
              "faction": ["Hutt_Cartel"]
              
          },
@@ -5031,8 +5031,8 @@
              "force": 0,
              "charge": [0],
              "points": 0,
-             "effect_FRA": "Lorsque vous subissez 1 dégat #crit#, recevez 1 jeton contrainte.",
-             "effect_ENG": "When you suffer 1 #crit# damage, receive 1 strain token.",
+             "effect_FRA": "Lorsque vous subissez 1 dégat <img class='chargeforceimg' src='img/crit.jpg'>, recevez 1 jeton contrainte.",
+             "effect_ENG": "When you suffer 1 <img class='chargeforceimg' src='img/crit.jpg'> damage, receive 1 strain token.",
              "faction": ["New_Republic_Patrol"]
              
          },
@@ -5065,8 +5065,8 @@
              "force": 0,
              "charge": [0],
              "points": 0,
-             "effect_FRA": "Lorsque vous subissez 1 dégat #crit#, recevez 1 jeton contrainte.",
-             "effect_ENG": "When you suffer 1 #crit# damage, receive 1 strain token.",
+             "effect_FRA": "Lorsque vous subissez 1 dégat <img class='chargeforceimg' src='img/crit.jpg'>, recevez 1 jeton contrainte.",
+             "effect_ENG": "When you suffer 1 <img class='chargeforceimg' src='img/crit.jpg'> damage, receive 1 strain token.",
              "faction": ["New_Republic_Patrol"]
              
          },
@@ -5392,8 +5392,8 @@
              "charge": [0],
              "points": 0,
              "talent_points": 1,
-             "effect_FRA": "Tant que vous défendez, vous pouvez choisir un vaisseau gênant l’attaque et dépenser 1 <img class='chargeforceimg' src='img/charge.jpg'>. Dans ce cas, annulez 1 résultat #hit# ou #crit# et le vaisseau que vous avez choisi gagne 1 marqueur de contrainte.<br>Après qu’un vaisseau à portée 0-3 a été détruit, récupérez 1 <img class='chargeforceimg' src='img/charge.jpg'>.",
-             "effect_ENG": "While you defend, you may choose a ship obstructing the attack and spend 1 <img class='chargeforceimg' src='img/charge.jpg'>. If you do, cancel 1 #hit# or #crit# result and the ship you chose gains 1 strain token.<br>After a ship at range 0-3 is destroyed, recover 1 <img class='chargeforceimg' src='img/charge.jpg'>.",
+             "effect_FRA": "Tant que vous défendez, vous pouvez choisir un vaisseau gênant l’attaque et dépenser 1 <img class='chargeforceimg' src='img/charge.jpg'>. Dans ce cas, annulez 1 résultat <img class='chargeforceimg' src='img/hit.jpg'> ou <img class='chargeforceimg' src='img/crit.jpg'> et le vaisseau que vous avez choisi gagne 1 marqueur de contrainte.<br>Après qu’un vaisseau à portée 0-3 a été détruit, récupérez 1 <img class='chargeforceimg' src='img/charge.jpg'>.",
+             "effect_ENG": "While you defend, you may choose a ship obstructing the attack and spend 1 <img class='chargeforceimg' src='img/charge.jpg'>. If you do, cancel 1 <img class='chargeforceimg' src='img/hit.jpg'> or <img class='chargeforceimg' src='img/crit.jpg'> result and the ship you chose gains 1 strain token.<br>After a ship at range 0-3 is destroyed, recover 1 <img class='chargeforceimg' src='img/charge.jpg'>.",
              "faction": ["Agents_of_Chaos"]
              
          },
@@ -5409,8 +5409,8 @@
              "force": 0,
              "charge": [0],
              "points": 3,
-             "effect_FRA": "Tant que vous effectuez une attaque, s’il n’y a aucun autre vaisseau dans l’arc d’attaque, vous pouvez changer 1 de vos résultats #eye# en un résultat #hit#.",
-             "effect_ENG": "While you perform an attack, if there are no other ships in the attack arc, you may change 1 of your #eye# results to a #hit# result.",
+             "effect_FRA": "Tant que vous effectuez une attaque, s’il n’y a aucun autre vaisseau dans l’arc d’attaque, vous pouvez changer 1 de vos résultats #eye# en un résultat <img class='chargeforceimg' src='img/hit.jpg'>.",
+             "effect_ENG": "While you perform an attack, if there are no other ships in the attack arc, you may change 1 of your #eye# results to a <img class='chargeforceimg' src='img/hit.jpg'> result.",
              "faction": ["Agents_of_Chaos"]
             
          },
@@ -5658,8 +5658,8 @@
              "force": 0,
              "charge": [1,"+"],
              "points": 4,
-             "effect_FRA": "Lorsque un vaisseau ennemi effectue une manœuvre à portée 0-1 dans votre #F180#, vous pouvez dépenser 1 <img class='chargeforceimg' src='img/charge.jpg'>. Dans ce cas, lancez 1 dé.<br>#Crit# : infligez 1 dégât ; #hit#/#eye# : exposez 1 carte de dégât ou infligez 1 jeton contrainte.",
-             "effect_ENG": "When an enemy ship executes a maneuver at range 0-1 in your #F180#, you may spend 1 <img class='chargeforceimg' src='img/charge.jpg'>. If you do, roll a die.<br>#Crit# : deal a damage; #hit#/#eye# : expose a damage card or deal a strain token.",
+             "effect_FRA": "Lorsque un vaisseau ennemi effectue une manœuvre à portée 0-1 dans votre #F180#, vous pouvez dépenser 1 <img class='chargeforceimg' src='img/charge.jpg'>. Dans ce cas, lancez 1 dé.<br><img class='chargeforceimg' src='img/crit.jpg'> : infligez 1 dégât ; <img class='chargeforceimg' src='img/hit.jpg'>/#eye# : exposez 1 carte de dégât ou infligez 1 jeton contrainte.",
+             "effect_ENG": "When an enemy ship executes a maneuver at range 0-1 in your #F180#, you may spend 1 <img class='chargeforceimg' src='img/charge.jpg'>. If you do, roll a die.<br><img class='chargeforceimg' src='img/crit.jpg'> : deal a damage; <img class='chargeforceimg' src='img/hit.jpg'>/#eye# : expose a damage card or deal a strain token.",
              "faction": ["Partisans"]
                          
              
@@ -5676,8 +5676,8 @@
              "force": 0,
              "charge": [0],
              "points": 5,
-             "effect_FRA": "Après avoir effectué une attaque, vous pouvez effectuer une attaque bonus avec une arme différente. Vous pouvez modifier un résultat #hit# en un résultat #crit# pour cette attaque bonus.",
-             "effect_ENG": "After you perform an attack, you may perform a bonus attack with a different weapon. You may modify a #hit# result into a #crit# result for this bonus attack.",
+             "effect_FRA": "Après avoir effectué une attaque, vous pouvez effectuer une attaque bonus avec une arme différente. Vous pouvez modifier un résultat <img class='chargeforceimg' src='img/hit.jpg'> en un résultat <img class='chargeforceimg' src='img/crit.jpg'> pour cette attaque bonus.",
+             "effect_ENG": "After you perform an attack, you may perform a bonus attack with a different weapon. You may modify a <img class='chargeforceimg' src='img/hit.jpg'> result into a <img class='chargeforceimg' src='img/crit.jpg'> result for this bonus attack.",
              "faction": ["Partisans"]
                          
              
@@ -5793,8 +5793,8 @@
              "force": 0,
              "charge": [0],
              "points": 0,
-             "effect_FRA": "Lorsque vous êtes attaqué par un vaisseau avec l'amélioration 'Agent Kallus', il peut modifier un résultat #eye# en un résultat #hit#. Lorsque vous êtes détruit, votre adversaire gagne 1 point de scénario (cela déclenche aussi le gain de point Tactique).",
-             "effect_ENG": "When you are attacked by a ship with the Agent Kallus upgrade, it may modify an #eye# result to a #hit# result. When you are destroyed, your opponent gains 1 Scenario Point (it triggers also the gain of Tactic point)",
+             "effect_FRA": "Lorsque vous êtes attaqué par un vaisseau avec l'amélioration 'Agent Kallus', il peut modifier un résultat #eye# en un résultat <img class='chargeforceimg' src='img/hit.jpg'>. Lorsque vous êtes détruit, votre adversaire gagne 1 point de scénario (cela déclenche aussi le gain de point Tactique).",
+             "effect_ENG": "When you are attacked by a ship with the Agent Kallus upgrade, it may modify an #eye# result to a <img class='chargeforceimg' src='img/hit.jpg'> result. When you are destroyed, your opponent gains 1 Scenario Point (it triggers also the gain of Tactic point)",
              "faction": ["ISB"]
                                      
              
@@ -6168,8 +6168,8 @@
              "charge": [0],
              "points": 0,
              "talent_points": 1,
-             "effect_FRA": "Tant que vous avez 2 marqueurs de stress ou moins, vous pouvez effectuer des actions #FS#, même si vous êtes stressé. Après que vous avez effectué une attaque, si vous êtes stressé, le défenseur peut dépenser 1 marqueur de concentration ou subir 1 dégât #crit#. Dans ce cas, votre action #FS# dans votre barre d'action devient rouge.",
-             "effect_ENG": "While you have 2 or fewer stress tokens, you may perform #FS# actions, even if you are stressed. After you perform an attack, if you are stressed, the defender may spend 1 focus token or suffer 1 #crit# damage. If it does, your #FS# action in your action bar becomes red.",
+             "effect_FRA": "Tant que vous avez 2 marqueurs de stress ou moins, vous pouvez effectuer des actions #FS#, même si vous êtes stressé. Après que vous avez effectué une attaque, si vous êtes stressé, le défenseur peut dépenser 1 marqueur de concentration ou subir 1 dégât <img class='chargeforceimg' src='img/crit.jpg'>. Dans ce cas, votre action #FS# dans votre barre d'action devient rouge.",
+             "effect_ENG": "While you have 2 or fewer stress tokens, you may perform #FS# actions, even if you are stressed. After you perform an attack, if you are stressed, the defender may spend 1 focus token or suffer 1 <img class='chargeforceimg' src='img/crit.jpg'> damage. If it does, your #FS# action in your action bar becomes red.",
              "faction": ["Shadow_Specialists"]
                                      
              
