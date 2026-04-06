@@ -581,7 +581,14 @@ select {
 
 }
 
-
+.inline-img {
+  display: inline;
+  vertical-align: middle;
+  height: 15px;
+  width: 15px;
+  resize: both;
+  margin-left: 2px;
+}
 
 
 

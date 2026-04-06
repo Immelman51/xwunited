@@ -171,8 +171,8 @@
      "leaderfaction": ["Agents_of_Chaos","",""],
      "leaderid": 15,
      "numberOfFactions": 1,
-     "leaderability_FRA": "ACTION : Choisissez un vaisseau ennemi avec de la force. Il perd 1 point de force et un vaisseau allié en regagne 1. <br>ACTION : Dépensez 1 <img class='chargeforceimg' src='img/charge.png'> et choisissez un vaisseau ennemi sans force à portée 0-3. Il gagne 1 point de force qu'il peut utiliser comme un calcul en defense. Gagnez 2 <img class='chargeforceimg' src='img/scenario_point.png'>.",
-     "leaderability_ENG": "ACTION: Choose an enemy ship with force. It loses 1 force point and an allied ship regains 1. <br>ACTION: Spend 1 <img class='chargeforceimg' src='img/charge.png'> and choose an enemy ship without force at range 0-3. It gains 1 force point that it can use as a calculate token in defense. Gain 2 <img class='chargeforceimg' src='img/scenario_point.png'>.",
+     "leaderability_FRA": "<div class='text'>ACTION : Choisissez un vaisseau ennemi avec de la force. Il perd 1 point de force et un vaisseau allié en regagne 1.<br>ACTION : Dépensez 1 <img class='inline-img' src='img/charge.png'> et choisissez un vaisseau ennemi sans force à portée 0-3. Il gagne 1 point de force qu'il peut utiliser comme un calcul en defense. Gagnez 2 <img class='inline-img' src='img/scenario_point.png'>.</div>",
+     "leaderability_ENG": "<div class='text'>ACTION: Choose an enemy ship with force. It loses 1 force point and an allied ship regains 1. <br>ACTION: Spend 1 <img class='inline-img' src='img/charge.png'> and choose an enemy ship without force at range 0-3. It gains 1 force point that it can use as a calculate token in defense. Gain 2 <img class='inline-img' src='img/scenario_point.png'>.</div>",
      "charge": [3,"Yellow"],
      "logistic": 18
      },
