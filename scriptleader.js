@@ -112,10 +112,13 @@ function selection_leader () {
     factionIndex = 0; /*on remet à 0 le deuxième menu car il est inutile*/
 document.querySelector(".faction1").textContent = factionval1;
 document.getElementById("faction1logo").setAttribute("src",'img/'+factionval1+'mini.jpg') ;
+document.getElementById("faction1logo").setAttribute("class",'inline-img') ;
 document.querySelector(".faction2").textContent = factionval2;
 document.getElementById("faction2logo").setAttribute("src",'img/'+factionval2+'mini.jpg') ;
+document.getElementById("faction2logo").setAttribute("class",'inline-img') ;
 document.querySelector(".faction3").textContent = factionval3;
 document.getElementById("faction3logo").setAttribute("src",'img/'+factionval3+'mini.jpg') ;
+document.getElementById("faction3logo").setAttribute("class",'inline-img') ;
 
 };
 
