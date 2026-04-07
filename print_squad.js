@@ -277,7 +277,7 @@ function displayPilot(x){
     pilotFaction.appendChild(factionlogo);
 
     pilotName.textContent = pilots[pid]['name_'+language];
-    pilotAbility.textContent = pilots[pid]['ability_'+language]; 
+    pilotAbility.innerHTML = pilots[pid]['ability_'+language]; 
     pilotCost.innerHTML = "<span>"+pilots[pid]['points']+"<span>"; //allows to have a white background on the cost. Sometimes, the background image makes the number unreadable.
         
     const sid = pilots[pid]['shipId']; //We store the ship ID
