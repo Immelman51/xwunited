@@ -584,9 +584,9 @@ select {
 .inline-img {
   display: inline;
   vertical-align: middle;
-  height: 15px;
   width: 15px;
-  resize: both;
+  height: 15px;
+  object-fit: contain;
   margin-left: 2px;
 }
 
