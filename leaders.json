@@ -27,8 +27,8 @@
      "leaderid": 2,
      "charge": [2,"Red"],
      "numberOfFactions": 1,
-     "leaderability_FRA": "A chaque fois que vous effectuez une action de scénario, récupérez 1 <img class='chargeforceimg' src='img/charge.png'>. En phase système, vous pouvez dépenser 2 <img class='chargeforceimg' src='img/charge.png'> : gagnez 2 <img class='chargeforceimg' src='img/scenario_point.png'>",
-     "leaderability_ENG": "Each time you perform a scenario action, recover 1 <img class='chargeforceimg' src='img/charge.png'>. During the system phase, you can spend 2 <img class='chargeforceimg' src='img/charge.png'> to gain 2 <img class='chargeforceimg' src='img/scenario_point.png'>.",
+     "leaderability_FRA": "<div class='text'>A chaque fois que vous effectuez une action de scénario, récupérez 1 <img class='inline-img' src='img/charge.png'>. En phase système, vous pouvez dépenser 2 <img class='inline-img' src='img/charge.png'> : gagnez 2 <img class='inline-img' src='img/scenario_point.png'></div>",
+     "leaderability_ENG": "<div class='text'>Each time you perform a scenario action, recover 1 <img class='inline-img' src='img/charge.png'>. During the system phase, you can spend 2 <img class='inline-img' src='img/charge.png'> to gain 2 <img class='inline-img' src='img/scenario_point.png'>.</div>",
      "logistic": 18
      },
     {
@@ -38,8 +38,8 @@
     "leaderid": 3,
     "charge": [3,"Red"],
     "numberOfFactions": 1,
-    "leaderability_FRA": "A chaque fois qu'un de vos vaisseaux esquive parfaitement une attaque, récupérez 1 <img class='chargeforceimg' src='img/charge.png'>. En phase système, vous pouvez dépenser 3 <img class='chargeforceimg' src='img/charge.png'> : gagnez 3 <img class='chargeforceimg' src='img/scenario_point.png'>",
-    "leaderability_ENG": "Each time one of your ships perfectly evades an attack, recover 1 <img class='chargeforceimg' src='img/charge.png'>. During the system phase, you can spend 3 <img class='chargeforceimg' src='img/charge.png'> to gain 3 <img class='chargeforceimg' src='img/scenario_point.png'>.",
+    "leaderability_FRA": "<div class='text'>A chaque fois qu'un de vos vaisseaux esquive parfaitement une attaque, récupérez 1 <img class='inline-img' src='img/charge.png'>. En phase système, vous pouvez dépenser 3 <img class='inline-img' src='img/charge.png'> : gagnez 3 <img class='inline-img' src='img/scenario_point.png'></div>",
+    "leaderability_ENG": "<div class='text'>Each time one of your ships perfectly evades an attack, recover 1 <img class='inline-img' src='img/charge.png'>. During the system phase, you can spend 3 <img class='inline-img' src='img/charge.png'> to gain 3 <img class='inline-img' src='img/scenario_point.png'>.</div>",
      "logistic": 20
      },
      {
@@ -49,8 +49,8 @@
      "leaderid": 4,
      "charge": [1,"Red"],
      "numberOfFactions": 1,
-     "leaderability_FRA": "Au début de la phase de programmation, lancez 1 dé vert. <<'vierge' : brouillez un de vos vaisseaux>> ; <<<img class='chargeforceimg' src='img/eye.jpg> : brouillez 1 vaisseau allié, assignez 1 calcul à un vaisseau.>> ; <<<img class='chargeforceimg' src='img/evd.jpg>: récupérez 1 <img class='chargeforceimg' src='img/charge.png'>.>><br>Lorsque vous détruisez un vaisseau adverse, vous pouvez dépenser 1 <img class='chargeforceimg' src='img/charge.png'> pour gagner 2 <img class='chargeforceimg' src='img/scenario_point.png'>",
-     "leaderability_ENG": "At the start of the planning phase, roll 1 green die. <<'blank': jam one of your ships>>; <<<img class='chargeforceimg' src='img/eye.jpg>: jam 1 allied ship, assign 1 calculate to a ship.>>; <<<img class='chargeforceimg' src='img/evd.jpg>: recover 1 <img class='chargeforceimg' src='img/charge.png'>.>><br>When you destroy an enemy ship, you can spend 1 <img class='chargeforceimg' src='img/charge.png'> to gain 2 <img class='chargeforceimg' src='img/scenario_point.png'>",
+     "leaderability_FRA": "<div class='text'>Au début de la phase de programmation, lancez 1 dé vert. <<'vierge' : brouillez un de vos vaisseaux>> ; <<<img class='inline-img' src='img/eye.jpg> : brouillez 1 vaisseau allié, assignez 1 calcul à un vaisseau.>> ; <<<img class='inline-img' src='img/evd.jpg>: récupérez 1 <img class='inline-img' src='img/charge.png'>.>><br>Lorsque vous détruisez un vaisseau adverse, vous pouvez dépenser 1 <img class='inline-img' src='img/charge.png'> pour gagner 2 <img class='inline-img' src='img/scenario_point.png'></div>",
+     "leaderability_ENG": "<div class='text'>At the start of the planning phase, roll 1 green die. <<'blank': jam one of your ships>>; <<<img class='inline-img' src='img/eye.jpg>: jam 1 allied ship, assign 1 calculate to a ship.>>; <<<img class='inline-img' src='img/evd.jpg>: recover 1 <img class='inline-img' src='img/charge.png'>.>><br>When you destroy an enemy ship, you can spend 1 <img class='inline-img' src='img/charge.png'> to gain 2 <img class='inline-img' src='img/scenario_point.png'></div>",
      "logistic": 25
      },
      {
@@ -60,8 +60,8 @@
      "leaderid": 5,
      "charge": [2,"Red"],
      "numberOfFactions": 1,
-     "leaderability_FRA": "A chaque fois que vous utilisez l'effet du talent 'Impitoyable', récupérez 1 <img class='chargeforceimg' src='img/charge.png'>. En phase Système, vous pouvez dépenser 2 <img class='chargeforceimg' src='img/charge.png'> : Gagnez 2 <img class='chargeforceimg' src='img/scenario_point.png'>.",
-     "leaderability_ENG": "Each time you use the effect of the 'Ruthless' talent, recover 1 <img class='chargeforceimg' src='img/charge.png'>. During the System phase, you can spend 2 <img class='chargeforceimg' src='img/charge.png'> to gain 2 <img class='chargeforceimg' src='img/scenario_point.png'>.",
+     "leaderability_FRA": "<div class='text'>A chaque fois que vous utilisez l'effet du talent 'Impitoyable', récupérez 1 <img class='inline-img' src='img/charge.png'>. En phase Système, vous pouvez dépenser 2 <img class='inline-img' src='img/charge.png'> : Gagnez 2 <img class='inline-img' src='img/scenario_point.png'>.</div>",
+     "leaderability_ENG": "<div class='text'>Each time you use the effect of the 'Ruthless' talent, recover 1 <img class='inline-img' src='img/charge.png'>. During the System phase, you can spend 2 <img class='inline-img' src='img/charge.png'> to gain 2 <img class='inline-img' src='img/scenario_point.png'>.</div>",
      "logistic": 25
      }, 
      {

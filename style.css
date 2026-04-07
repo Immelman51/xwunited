@@ -584,6 +584,8 @@ select {
   height: 15px;
   object-fit: contain;
   margin-left: 2px;
+  margin-right: 2px;
+  
 }
 
 
