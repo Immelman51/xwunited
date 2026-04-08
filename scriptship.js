@@ -458,6 +458,7 @@ function testRestriction (yy,tableRestrictions){//va vérifier si les restrictio
     }
    
     for (i=0; i<varlist.length; i++) {
+        console.log(JSON.stringify(varlist[i])+' '+JSON.stringify(target1));
         
     if ((JSON.stringify(varlist[i])===JSON.stringify(target1))||(JSON.stringify(varlist[i])===JSON.stringify(target2))) { //Json.stringify allows to compare to arrays together such as the actions arrays. It works as well on strings and values.
         testR++;

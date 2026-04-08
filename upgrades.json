@@ -344,8 +344,8 @@
             "add_Data": [0],
             "force": 0,
             "charge": [1,"0"],
-            "effect_FRA": "Action : récupérez 1 <img class='chargeforceimg' src='img/charge.png'>.<br>Action : dépensez 1 <img class='chargeforceimg' src='img/charge.png'> pour récupérer 1 bouclier.",
-            "effect_ENG": "Action : recover  1 <img class='chargeforceimg' src='img/charge.png'>.<br>Action : spend 1 <img class='chargeforceimg' src='img/charge.png'> to recover 1 shield.",
+            "effect_FRA": "<img class='chargeforceimg' src='img/chargestatRed.png'> Action : récupérez 1 <img class='chargeforceimg' src='img/charge.png'>.<br>Action : dépensez 1 <img class='chargeforceimg' src='img/charge.png'> pour récupérer 1 bouclier.",
+            "effect_ENG": "<img class='chargeforceimg' src='img/chargestatRed.png'> Action : recover  1 <img class='chargeforceimg' src='img/charge.png'>.<br>Action : spend 1 <img class='chargeforceimg' src='img/charge.png'> to recover 1 shield.",
             "faction": ""
         },
 {
