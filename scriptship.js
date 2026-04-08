@@ -439,7 +439,7 @@ function testRestriction (yy,tableRestrictions){//va vérifier si les restrictio
         varlist.push(pilot_list[yy]["title"]);
         break;
     case 'upgrade':
-        varlist.push(upgrades_Type[yy]);
+        varlist = upgrades_Type[yy];
         break;
     case 'base':
         varlist.push(ships[pilot_list[yy]['shipId']]['base']);
@@ -457,10 +457,10 @@ function testRestriction (yy,tableRestrictions){//va vérifier si les restrictio
         
     }
    
-    for (i=0; i<varlist[0].length; i++) {
+    for (i=0; i<varlist.length; i++) {
         
         
-    if ((JSON.stringify(varlist[0][i])===JSON.stringify(target1))||(JSON.stringify(varlist[0][i])===JSON.stringify(target2))) { //Json.stringify allows to compare to arrays together such as the actions arrays. It works as well on strings and values.
+    if ((JSON.stringify(varlist[i])===JSON.stringify(target1))||(JSON.stringify(varlist[i])===JSON.stringify(target2))) { //Json.stringify allows to compare to arrays together such as the actions arrays. It works as well on strings and values.
         testR++;
     }
     }
