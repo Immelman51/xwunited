@@ -1367,7 +1367,7 @@ function displayDescriptionPilot(i) { //permet d'afficher la capacité du pilote
         description_upg_pil_Field.innerHTML = "";
     }else{
         if (pilot_list[i]["charge"][0] > 0) {
-            for (k=0;k<pilot_list[i]["charge"][0];k++{
+            for (k=0;k<pilot_list[i]["charge"][0];k++){
                 description_upg_pil_Field.innerHTML = description_upg_pil_Field.innerHTML + <img class="inline-img" src="img/chargestat.png">;
             }
             if (pilot_list[i]["charge"][1]==="+"){
