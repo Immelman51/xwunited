@@ -1366,7 +1366,15 @@ function displayDescriptionPilot(i) { //permet d'afficher la capacité du pilote
     if (pilot_selected_list[y]==='<Select Pilot>'){
         description_upg_pil_Field.innerHTML = "";
     }else{
-        description_upg_pil_Field.innerHTML = pilot_list[i]["ability_"+language];
+        if (pilot_list[i]["charge"][0] > 0) {
+            for (k=0;k<pilot_list[i]["charge"][0];k++{
+                description_upg_pil_Field.innerHTML = description_upg_pil_Field.innerHTML + <img class="inline-img" src="img/chargestat.png">;
+            }
+            if (pilot_list[i]["charge"][1]==="+"){
+                description_upg_pil_Field.innerHTML =description_upg_pil_Field.innerHTML + <img class="inline-img" src="img/chargeplus.png">;
+            }
+        }
+        description_upg_pil_Field.innerHTML = description_upg_pil_Field.innerHTML + pilot_list[i]["ability_"+language];
     }
 }
 

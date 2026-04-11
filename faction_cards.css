@@ -592,3 +592,13 @@ img {
   page-break-inside: avoid;  /* ancienne syntaxe */
   break-inside: avoid;       /* standard */
 }
+.inline-img {
+  display: inline;
+  vertical-align: middle;
+  width: 15px;
+  height: 15px;
+  object-fit: contain;
+  margin-left: 2px;
+  margin-right: 2px;
+  
+}
