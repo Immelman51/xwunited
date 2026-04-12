@@ -146,7 +146,9 @@ function select_pilot_list(){ //permet de remplir la liste des pilotes disponibl
 }
 
 function dataGetFromPilot() { //On prend le pilote et on recopie l'objet pilote dans pilot_list, et on va incrémenter le totalcost
+    console.log('dataGetFromPilot()');
     //pilot_selected_list[y] = document.getElementById("menu_pilot_"+y).value;
+    
     skillLvl = document.getElementById("initiative"+y);
     
     totalcount= document.getElementById("totalcost");
@@ -588,6 +590,8 @@ function checkPilotModifier() { //va checker s'il existe des fonctions dans modi
 }
 
 function display_Pilot_Chassis_Title_Points() { //affiche les infos du pilote, du chassis et du titre
+    console.log('display_Pilot_Chassis_Title_Points');
+    
 let chassiszone1 = document.getElementById("chassis1"+y);
 let chassiszone2 = document.getElementById("chassis2"+y);
 let titlezone = document.getElementById("title"+y);
@@ -661,6 +665,8 @@ function checkUpgradeModifier() { //va checker s'il existe une fonction modify l
 }
 
 function check_restricted_List(){ //check si l'upgrade ou le pilote est déjà utilisé par un(e) autre du même nom
+    console.log('check_restricted_List');
+    
     let newname = '';
     let maxnbr = 8;
     if (z===0){ //si on séléctionne la valeur vide d'un menu (la ligne 0), il faut arrêter la vérif
