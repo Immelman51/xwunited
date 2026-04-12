@@ -345,7 +345,7 @@ function identifyElement(event){ //sloty_x & index z de l'élément sélectionn�
 }
 
 function updateTotalCost() { //update total cost
-    console.log('updateTotalCost');
+    
     totalcostvalue = 0 ;
     for (j=0; j<8; j++){
         totalcostvalue = totalcostvalue + pilot_list[j]["points"];
@@ -592,7 +592,7 @@ function checkPilotModifier() { //va checker s'il existe des fonctions dans modi
 }
 
 function display_Pilot_Chassis_Title_Points() { //affiche les infos du pilote, du chassis et du titre
-    console.log('display_Pilot_Chassis_Title_Points');
+    
     
 let chassiszone1 = document.getElementById("chassis1"+y);
 let chassiszone2 = document.getElementById("chassis2"+y);
@@ -667,7 +667,7 @@ function checkUpgradeModifier() { //va checker s'il existe une fonction modify l
 }
 
 function check_restricted_List(){ //check si l'upgrade ou le pilote est déjà utilisé par un(e) autre du même nom
-    console.log('check_restricted_List');
+   
     
     let newname = '';
     let maxnbr = 8;
@@ -917,7 +917,7 @@ function  add_slots (targetSlot){ //Action n°2 : A utiliser si une upgrade rajo
 }
 
 function also_Occupies(targetSlot){ //Action n°3 : A utiliser lorsqu'une upgrade utilise un slot de plus. On va en plus écouter le menu qui a été rempli pour inverser l'opération si l'upg est retirée.
-    console.log('also occupies : '+targetSlot);
+   
     fillUpgradesSelected(y);
     let field = null;
     for (let i = 0; i < upgradesSelected_Objects[y].length; i++) {
@@ -1260,12 +1260,12 @@ function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'acti
         remove_ship(xB);
         
         for (w=yB ; w<(sQ) ; w++) {
-            console.log('boucle for : '+w+'<'+(sQ));
+            
             pilot_objects[w]=pilot_objects[w+1];
             //pilot_selected_list[w]=pilot_selected_list[w+1];
             upgrades_Type[w] = upgrades_Type[w+1];
             upgrades_Objects[w]= upgrades_Objects[w+1];
-            console.log('upgrade_Objects'+(w+1)+' devient '+'upgrade_Objects'+w);
+            
             //upgradesSelected[w] = upgradesSelected[w+1];
             upgradesSelected_Objects[w] = upgradesSelected_Objects[w+1];
             upgrades_Objects_Val[w]= upgrades_Objects_Val[w+1];
@@ -1327,7 +1327,7 @@ function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'acti
         //pilot_selected_list[sQ]= [];
         upgrades_Type[sQ] = [];
         upgrades_Objects[sQ]= [];
-        console.log('erasing upgrade_Objects['+sQ+']');
+        
         upgradesSelected_Objects[sQ] = [];
         upgrades_Objects_Val[sQ]= [];
         restricted_List[sQ] = [];
@@ -1349,8 +1349,7 @@ function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'acti
 }
 
 function remove_ship(n) { //fonction qui permet de retirer le dernier vaisseau. S'active via le bouton Removeship
-    
-    console.log('début de remove ship');
+   
     removeElementsByClass("new "+n); //retire la balise <p> qui contient tous les éléments
     
     pilot_objects[n]=[];
@@ -1369,7 +1368,7 @@ function remove_ship(n) { //fonction qui permet de retirer le dernier vaisseau. 
         shipquantity--;
     }
 
-    console.log('fin de remove ship');
+    
 }
 
 function displayDescriptionPilot(i) { //permet d'afficher la capacité du pilote en bas de page
@@ -1378,8 +1377,8 @@ function displayDescriptionPilot(i) { //permet d'afficher la capacité du pilote
     if (pilot_list[y]["name"]===''){
         description_upg_pil_Field.innerHTML = "";
     }else{
-        console.log("i="+i);
-        console.log(pilot_list[i]["charge"][0]);
+        
+     
         if (pilot_list[i]["charge"][0] > 0) {
             for (k=0;k<pilot_list[i]["charge"][0];k++){
                 description_upg_pil_Field.innerHTML = description_upg_pil_Field.innerHTML + '<img class="inline-img" src="img/chargestat.png">';
@@ -1685,12 +1684,7 @@ linkToDisplayCode.addEventListener('click', (e) => {
   });
 
 loadBtn.addEventListener('click', function(e) {
-  /*  e.preventDefault();
-    loadingCode = document.getElementById('loadingCode');
-    hash = loadingCode.value;
-    console.log('hash');
-    window.location.href = `print_squad.html?#${hash}`
-    */
+  
    loadSquadwithCode(e);
 })
 
