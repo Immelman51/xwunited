@@ -2355,10 +2355,10 @@
             "charge": [0],
             "points": 0,
             "max_per_squad": 1,
-            "effect_ENG": "Remove a <img class='chargeforceimg' src='img/Calculator.png'> slot and the 'Docking Ship' chassis ability. Add a <img class='chargeforceimg' src='img/Sensor.jpg'> slot.",
+            "effect_ENG": "Remove a <img class='chargeforceimg' src='img/Calculator.png'> slot and the 'Docking Ship' chassis ability. Add a <img class='chargeforceimg' src='img/Sensor.png'> slot.",
             "faction": ["Pirates_and_Smugglers","Rebel_Alliance","Heroes_of_the_Resistance"],
             "ship": "YT-1300 Light Freighter",
-            "effect_FRA": "Retire un emplacement <img class='chargeforceimg' src='img/Calculator.png'> et la capacité 'Vaisseau-Mère'. Ajoute <img class='chargeforceimg' src='img/Sensor.jpg'>."
+            "effect_FRA": "Retire un emplacement <img class='chargeforceimg' src='img/Calculator.png'> et la capacité 'Vaisseau-Mère'. Ajoute <img class='chargeforceimg' src='img/Sensor.png'>."
           
            
         },
