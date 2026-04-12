@@ -5413,7 +5413,7 @@
             "max_per_squad": 1,
             "faction": "Heroes_of_the_Resistance",
             "ship": "YT-1300 Light Freighter",
-            "charge":[0],
+            "charge":[2,"+"],
             "force": 0,
             "titleID": 135,
             "shipId": 3,
