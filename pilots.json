@@ -4215,8 +4215,8 @@
             "skill": 2,
             "points": 10,
             
-            "ability_FRA": "<div class='text'>Pendant la phase système, vous pouvez dépenser ou récupérer votre charge.<br><img class='inline-img' src='img/charge.png'>Active : Lorsque vous vous engagez, s'il y a un vaisseau avec un jeton tracté dans votre arc de tir, recevez 1 jeton calcul.<br><img class='inline-img' src='img/charge.png'>Inactive : Après avoir dérapé, si vous vous êtes déplacé à travers un vaisseau, il gagne un jeton tracté.</div>",
-            "ability_ENG": "<div class='text'>During System Phase, you may spend or recover your charge.<br><img class='inline-img' src='img/charge.png'>Active : When you engage, if there is a ship with a tractor token in your firing arc, gain 1 calculate token.<br><img class='inline-img' src='img/charge.png'>Inactive : After you sideslip, if you moved through a ship, it gains 1 tractor token.</div>",
+            "ability_FRA": "<div class='text'>Pendant la phase système, vous pouvez dépenser ou récupérer votre charge.<br><img class='inline-img' src='img/chargestat.png'> : Lorsque vous vous engagez, s'il y a un vaisseau avec un jeton tracté dans votre arc de tir, recevez 1 jeton calcul.<br><img class='inline-img' src='img/chargestatRed.png'> : Après avoir dérapé, si vous vous êtes déplacé à travers un vaisseau, il gagne un jeton tracté.</div>",
+            "ability_ENG": "<div class='text'>During System Phase, you may spend or recover your charge.<br><img class='inline-img' src='img/chargestat.png'> : When you engage, if there is a ship with a tractor token in your firing arc, gain 1 calculate token.<br><img class='inline-img' src='img/chargestatRed.png'> : After you sideslip, if you moved through a ship, it gains 1 tractor token.</div>",
             "slots": [
                 "Talent-piloting"                
             ]
@@ -4298,8 +4298,8 @@
             "skill": 5,
             "points": 11,
             
-            "ability_FRA": "<div class='text'>Pendant la phase système, vous pouvez dépenser ou récupérer votre charge.<br><img class='inline-img' src='img/charge.png'>Active : Pendant la phase Système, vous pouvez regarder le cadran d'un vaisseau que vous avez acquisitionné.<br><img class='inline-img' src='img/charge.png'>Inactive : Au début de la phase d'Engagement, s'il y a un vaisseau dans votre <img class='inline-img' src='img/bulls.jpg'>, recevez 1 jeton calcul.</div>",
-            "ability_ENG": "<div class='text'>During System Phase, you may spend or recover your charge.<br><img class='inline-img' src='img/charge.png'>Active : During System Phase, you may look at the dial of a ship you have a lock on.<br><img class='inline-img' src='img/charge.png'>Inactive : At the beginning of engagement phase, if there's an enemy ship in your <img class='inline-img' src='img/bulls.jpg'>, gain 1 calculate token.</div>",
+            "ability_FRA": "<div class='text'>Pendant la phase système, vous pouvez dépenser ou récupérer votre charge.<br><img class='inline-img' src='img/chargestat.png'> : Pendant la phase Système, vous pouvez regarder le cadran d'un vaisseau que vous avez acquisitionné.<br><img class='inline-img' src='img/chargestatRed.png'> : Au début de la phase d'Engagement, s'il y a un vaisseau dans votre <img class='inline-img' src='img/bulls.jpg'>, recevez 1 jeton calcul.</div>",
+            "ability_ENG": "<div class='text'>During System Phase, you may spend or recover your charge.<br><img class='inline-img' src='img/chargestat.png'> : During System Phase, you may look at the dial of a ship you have a lock on.<br><img class='inline-img' src='img/chargestatRed.png'> : At the beginning of engagement phase, if there's an enemy ship in your <img class='inline-img' src='img/bulls.jpg'>, gain 1 calculate token.</div>",
             "slots": [
                 "Talent-piloting"                
             ]
@@ -4381,8 +4381,8 @@
             "skill": 1,
             "points": 9,
             
-            "ability_FRA": "<div class='text'>Pendant la phase système, vous pouvez dépenser ou récupérer votre charge.<br><img class='inline-img' src='img/charge.png'>Active : Au début de la phase d'Engagement, vous pouvez dépenser 1 jeton calcul pour effectuer une action <img class='inline-img' src='img/CO.jpg'> sur un vaisseau avec la compétence 'Calculs en Réseau'.<br>Lorsque vous attaquez à portée 1, vous devez lancer 1 dé supplémentaire. Après que l'attaque touche, subissez 1 dégat <img class='inline-img' src='img/crit.jpg'>.</div>",
-            "ability_ENG": "<div class='text'>During System Phase, you may spend or recover your charge.<br><img class='inline-img' src='img/charge.png'>Active : At the start of the Engagement Phase, you may spend 1 calculate token to perform a <img class='inline-img' src='img/CO.jpg'> action. You cannot coordinate ships that do not have the Networked Calculations ship ability.<br><img class='inline-img' src='img/charge.png'>Inactive : While you perform an attack at range 1, you must roll 1 additional die. After the attack hits, suffer 1 <img class='inline-img' src='img/crit.jpg'> damage.</div>",
+            "ability_FRA": "<div class='text'>Pendant la phase système, vous pouvez dépenser ou récupérer votre charge.<br><img class='inline-img' src='img/chargestat.png'> : Au début de la phase d'Engagement, vous pouvez dépenser 1 jeton calcul pour effectuer une action <img class='inline-img' src='img/CO.jpg'> sur un vaisseau avec la compétence 'Calculs en Réseau'.<br><img class='inline-img' src='img/chargestatRed.png'>: Lorsque vous attaquez à portée 1, vous devez lancer 1 dé supplémentaire. Après que l'attaque touche, subissez 1 dégat <img class='inline-img' src='img/crit.jpg'>.</div>",
+            "ability_ENG": "<div class='text'>During System Phase, you may spend or recover your charge.<br><img class='inline-img' src='img/chargestat.png'>: At the start of the Engagement Phase, you may spend 1 calculate token to perform a <img class='inline-img' src='img/CO.jpg'> action. You cannot coordinate ships that do not have the Networked Calculations ship ability.<br><img class='inline-img' src='img/chargestatRed.png'> : While you perform an attack at range 1, you must roll 1 additional die. After the attack hits, suffer 1 <img class='inline-img' src='img/crit.jpg'> damage.</div>",
             "slots": [
                 "Talent-shooting"                
             ]
@@ -13225,7 +13225,7 @@
             "skill": 3,
             "charge": [1,"0"],
             "points": 7,
-            "ability_FRA": "<div class='text'>Pendant la phase système, vous pouvez dépenser ou récupérer votre charge.<br><img class='inline-img' src='img/charge.png'>Active : Lorque vous prenez 1 dégat, recevez 1 jeton calcul.<br><img class='inline-img' src='img/charge.png'>Inactive : Lorsque vous attaquez, vous pouvez dépenser 1 jeton calcul pour modifier un résultat vierge en <img class='inline-img' src='img/hit.jpg'>.</div>",
+            "ability_FRA": "<div class='text'>Pendant la phase système, vous pouvez dépenser ou récupérer votre charge.<br><img class='inline-img' src='img/chargestat.png'> : Lorque vous prenez 1 dégat, recevez 1 jeton calcul.<br><img class='inline-img' src='img/chargestatRed.png'> : Lorsque vous attaquez, vous pouvez dépenser 1 jeton calcul pour modifier un résultat vierge en <img class='inline-img' src='img/hit.jpg'>.</div>",
             "ability_ENG": "<div class='text'>During System Phase, you may spend or recover your charge.<br><img class='inline-img' src='img/charge.png'>Active : When you receive a damage, gain 1 calculate token.<br><img class='inline-img' src='img/charge.png'>Inactive : While you attack, you may spend 1 calculate token to modify 1 blank result into a <img class='inline-img' src='img/hit.jpg'> result.</div>",
             "slots": [
                 
