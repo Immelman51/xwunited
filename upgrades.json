@@ -457,7 +457,7 @@
             "force": 0,
             "charge": [0],
             "points": 1,
-            "effect_FRA": "Tant que vous effectuez une attaque, vous devez choisir un défenseur à la plus courte portée d’attaque valide.<br>Après avoir effectué une attaque qui a raté, placez 1 marqueur de calcul sur cette amélioration.<br>Avant de vous engager, vous pouvez retirer 1 marqueur de calcul de cette carte pour gagner le marqueur correspondant",
+            "effect_FRA": "Tant que vous effectuez une attaque, vous devez choisir un défenseur à la plus courte portée d’attaque valide.<br>Après avoir effectué une attaque qui a raté, placez 1 marqueur de calcul sur cette amélioration.<br>Avant de vous engager, vous pouvez retirer 1 marqueur de calcul de cette amélioration pour gagner le marqueur correspondant",
             "effect_ENG": "While you perform an attack, you must choose a defender within the shortest valid attack range.<br>After you perform an attack, if it missed, place 1 calculate token on this upgrade.<br>Before you engage, you may remove 1 calculate token from this upgrade to gain 1 matching token.",
             "faction": ""
         },
@@ -2634,8 +2634,8 @@
             "charge": [2,"0"],
             "points": 3,
             "faction": ["Phoenix_Cell","Clone_Army","Jedi_Order"],
-            "effect_FRA": "<img class='chargeforceimg' src='img/chargestat.png'> <img class='chargeforceimg' src='img/chargestat.png'> Mise en place : Equipez cette carte face normale. Après que vous exécutez entièrement une manoeuvre, vous pouvez dépenser 1 <img class='chargeforceimg' src='img/charge.png'> pour effectuer une action rouge, même stressé.<br>(Erratique): Après avoir entièrement exécuté une manoeuvre, vous devez choisir un vaisseau à portée 0-1. Il gagne 1 jeton brouillage.",
-            "effect_ENG": "<img class='chargeforceimg' src='img/chargestat.png'> <img class='chargeforceimg' src='img/chargestat.png'> Setup: Equip this side faceup. After you fully execute a maneuver, you may spend 1 <img class='chargeforceimg' src='img/charge.png'> to perform a red action, even while stressed.<br>(Erratic): After you fully execute a maneuver, you must choose a ship at range 0-1. It gains 1 jam token."
+            "effect_FRA": "<img class='chargeforceimg' src='img/chargestat.png'> <img class='chargeforceimg' src='img/chargestat.png'> Après que vous exécutez entièrement une manoeuvre, si vos toutes vos <img class='chargeforceimg' src='img/charge.png'> sont inactives, alors vous devez choisir un vaisseau à portée 0-1 qui gagne 1 jeton brouillage. Sinon, vous pouvez dépenser 1 <img class='chargeforceimg' src='img/charge.png'> pour effectuer une action <img class='chargeforceimg' src='img/evd.jpg'> rouge, même stressé. ",
+            "effect_ENG": "<img class='chargeforceimg' src='img/chargestat.png'> <img class='chargeforceimg' src='img/chargestat.png'> After you fully execute a maneuver, if all your <img class='chargeforceimg' src='img/charge.png'> are inactive, you must choose a ship at range 0-1 which gains 1 jam token. Otherwise, you may spend 1 <img class='chargeforceimg' src='img/charge.png'> to perform a red <img class='chargeforceimg' src='img/evd.jpg'> action, even while stressed."
         },
        
 
@@ -2733,8 +2733,8 @@
             "points": 0,
             "talent_points": 2,
             "faction": ["Trade_Federation"],
-            "effect_FRA": "Lorsque vous recevez 1 jeton rouge (non-Acquisition), vous pouvez le placer sur cette carte à la place pour l'ignorer (1 max par carte). Lorsque vous exécutez une manoeuvre bleue, vous ne pouvez retirer qu'un seul marqueur rouge. Vous pouvez retirer le marqueur présent sur la carte.",
-            "effect_ENG": "When you would receive 1 red token (non Lock), you may place it on this card instead to ignore it (1 max per card). When you execute a blue maneuver, you may remove only one red token. You may remove the red token on this card."
+            "effect_FRA": "Lorsque vous recevez 1 jeton rouge (non-Acquisition), vous pouvez le placer sur cette amélioration à la place pour l'ignorer (1 max). Lorsque vous exécutez une manoeuvre bleue, vous ne pouvez retirer qu'un seul marqueur rouge. Vous pouvez retirer le marqueur présent sur cette amélioration.",
+            "effect_ENG": "When you would receive 1 red token (non Lock), you may place it on this upgrade instead to ignore it (max 1)). When you execute a blue maneuver, you may remove only one red token. You may remove the red token on this upgrade."
             
         },
         {
@@ -4317,9 +4317,9 @@
              "force": 0,
              "charge": [0],
              "points":2,
-             "effect_FRA": "Après que vous avez effectué une attaque ratée, si l’initiative du défenseur est supérieure ou égale à votre initiative, placez 1 marqueur d’évasion ou de concentration sur cette carte.<br>Avant de vous engager, vous pouvez retirer 1 marqueur de cette carte pour gagner 1 marqueur correspondant.",
-             "effect_ENG": "After you perform a missed attack, if the defender's initiative is greater than or equal to your initiative, place 1 evade or focus token on this card.<br>Before you engage, you may remove 1 token from this card to gain 1 matching token.",
-             "faction": ["Clone_Army"] 
+             "effect_FRA": "Après que vous avez effectué une attaque ratée, si l’initiative du défenseur est supérieure ou égale à votre initiative, placez 1 marqueur d’évasion ou de concentration sur cette amélioration.<br>Avant de vous engager, vous pouvez retirer 1 marqueur de cette amélioration pour gagner 1 marqueur correspondant.",
+             "effect_ENG": "After you perform a missed attack, if the defender's initiative is greater than or equal to your initiative, place 1 evade or focus token on this upgrade.<br>Before you engage, you may remove 1 token from this upgrade to gain 1 matching token.",
+             "faction": ["Clone_Army"]
          },
          {
             "name_FRA": "R2-C4",
@@ -4789,7 +4789,7 @@
              "force": 0,
              "charge": [1,"0"],
              "points": 4,
-             "effect_FRA": "Après avoir partiellement exécuté une manoeuvre, vous pouvez dépenser 1 <img class='chargeforceimg' src='img/charge.png'>. Dans ce cas, chaque autre vaisseau à portée 0 recoivent 1 carte face visible.",
+             "effect_FRA": "Après avoir partiellement exécuté une manoeuvre, vous pouvez dépenser 1 <img class='chargeforceimg' src='img/charge.png'>. Dans ce cas, chaque autre vaisseau à portée 0 recoivent 1 carte de dégat face visible.",
              "effect_ENG": "After you partially execute a maneuver, you may spend 1 <img class='chargeforceimg' src='img/charge.png'>. If you do, every other ships at range 0 take 1 faceup damage card.",
              "faction": ["Black_Sun","Partisans"]
              

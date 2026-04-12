@@ -994,8 +994,8 @@
             "skill": 5,
             "points": 12,
             
-            "ability_FRA": "<div class='text'>Après avoir effectué une action <img class='inline-img' src='img/Un W.jpg'>, vous pouvez récupérer 1 <img class='inline-img' src='img/charge.png'> d’une de vos cartes améliorations.</div>",
-            "ability_ENG": "<div class='text'>After you perform a <img class='inline-img' src='img/Un W.jpg'> action, you may recover 1 <img class='inline-img' src='img/charge.png'> from 1 of you upgrade cards.</div>",
+            "ability_FRA": "<div class='text'>Après avoir effectué une action <img class='inline-img' src='img/Un W.jpg'>, vous pouvez récupérer 1 <img class='inline-img' src='img/charge.png'> d’une de vos améliorations.</div>",
+            "ability_ENG": "<div class='text'>After you perform a <img class='inline-img' src='img/Un W.jpg'> action, you may recover 1 <img class='inline-img' src='img/charge.png'> from 1 of your upgrades.</div>",
             "slots": [
                 "Talent-elite",
                 "Talent-shooting"
@@ -1538,8 +1538,8 @@
             
             "max_per_squad": 1,
             "title": ["Razor Crest"],
-            "ability_FRA": "<div class='text'>Lorsque vous attaquez vous pouvez dépenser 1<img class='inline-img' src='img/charge.png'> sur l’une de vos cartes <img class='inline-img' src='img/Illicit.png'>  pour lancer 1 dé d’attaque supplémentaire.</div>",
-            "ability_ENG": "<div class='text'>While you attack, you may spend 1 <img class='inline-img' src='img/charge.png'> from 1 of your <img class='inline-img' src='img/Illicit.png'> upgrade card. If you do, roll 1 additional attack die.</div>",
+            "ability_FRA": "<div class='text'>Lorsque vous attaquez vous pouvez dépenser 1<img class='inline-img' src='img/charge.png'> sur l’une de vos améliorations <img class='inline-img' src='img/Illicit.png'>  pour lancer 1 dé d’attaque supplémentaire.</div>",
+            "ability_ENG": "<div class='text'>While you attack, you may spend 1 <img class='inline-img' src='img/charge.png'> from 1 of your <img class='inline-img' src='img/Illicit.png'> upgrades. If you do, roll 1 additional attack die.</div>",
             "slots": [
                 "Title",
                 "Talent-shooting"
@@ -9012,8 +9012,8 @@
             "shipId": 40,
             "skill": 2,
             "points": 12,
-            "ability_FRA": "<div class='text'>Après avoir effectué une attaque qui touche dans votre <img class='inline-img' src='img/bulls.jpg'>, vous pouvez retirer une charge d'une amélioration équipée par le défenseur, ou sur carte du pilote défenseur.</div>",
-            "ability_ENG": "<div class='text'>After you perform an attack in your <img class='inline-img' src='img/bulls.jpg'> that hits, you may remove a charge on an upgrade equipped by the defender, or on the pilot card's defender.</div>",
+            "ability_FRA": "<div class='text'>Après avoir effectué une attaque qui touche dans votre <img class='inline-img' src='img/bulls.jpg'>, vous pouvez retirer une charge du pilote défenseur, ou d'une de ses améliorations.</div>",
+            "ability_ENG": "<div class='text'>After you perform an attack in your <img class='inline-img' src='img/bulls.jpg'> that hits, you may remove a charge from the defending pilot, or from one of its equipped upgrades.</div>",
             "slots": [
                 "Talent-shooting"
                                               
