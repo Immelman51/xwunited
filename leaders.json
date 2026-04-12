@@ -149,8 +149,8 @@
      "leaderfaction": ["Jedi_Order","",""],
      "leaderid": 13,
      "numberOfFactions": 1,
-     "leaderability_ENG": "<div class='text'>ACTION: Choose an allied ship with force. This ship can coordinate up to 2 allied ships. They must perform the same action. <br>ACTION: Spend 1 <img class='inline-img' src='img/charge.png'> and choose an allied ship with force that is in the <img class='inline-img' src='img/attackF.jpg> of an enemy ship. It receives 2 constraint tokens and you gain 2 <img class='inline-img' src='img/scenario_point.png'>.</div>",
-     "leaderability_FRA": "<div class='text'>ACTION : Choisissez un vaisseau allié avec de la force. Ce vaisseau peut coordonner jusqu'à 2 vaisseaux alliés. Ils doivent effectuer la même action. <br>ACTION : Dépensez 1 <img class='inline-img' src='img/charge.png'> et choisissez un vaisseau allié avec de la force qui est dans le <img class='inline-img' src='img/attackF.jpg> d'un vaisseau ennemi. Il reçoit 2 jetons contrainte et gagnez 2 <img class='inline-img' src='img/scenario_point.png'>.</div>",
+     "leaderability_ENG": "<div class='text'>ACTION: Choose an allied ship with force. This ship can coordinate up to 2 allied ships. They must perform the same action. <br>ACTION: Spend 1 <img class='inline-img' src='img/charge.png'> and choose an allied ship with force that is in the <img class='inline-img' src='img/attackF.jpg'> of an enemy ship. It receives 2 constraint tokens and you gain 2 <img class='inline-img' src='img/scenario_point.png'>.</div>",
+     "leaderability_FRA": "<div class='text'>ACTION : Choisissez un vaisseau allié avec de la force. Ce vaisseau peut coordonner jusqu'à 2 vaisseaux alliés. Ils doivent effectuer la même action. <br>ACTION : Dépensez 1 <img class='inline-img' src='img/charge.png'> et choisissez un vaisseau allié avec de la force qui est dans le <img class='inline-img' src='img/attackF.jpg'> d'un vaisseau ennemi. Il reçoit 2 jetons contrainte et gagnez 2 <img class='inline-img' src='img/scenario_point.png'>.</div>",
      "charge": [2,"Yellow"],
      "logistic": 20
      },

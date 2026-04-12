@@ -146,15 +146,16 @@ function select_pilot_list(){ //permet de remplir la liste des pilotes disponibl
 }
 
 function dataGetFromPilot() { //On prend le pilote et on recopie l'objet pilote dans pilot_list, et on va incrémenter le totalcost
-    console.log('dataGetFromPilot()');
-    //pilot_selected_list[y] = document.getElementById("menu_pilot_"+y).value;
+    
+    
+    pilot_selected_name = document.getElementById("menu_pilot_"+y).value;
     
     skillLvl = document.getElementById("initiative"+y);
     
     totalcount= document.getElementById("totalcost");
     totalcostvalue = 0; //remise à 0 sinon il s'incrémente à chaque saisie de pilote
     
-    if (pilot_list[y]["name"]===''){ //if no pilot is selected
+    if (pilot_selected_name ==='<Select Pilot>'){ //if no pilot is selected
         skillLvl.textContent = "";
         pilot_list[y] = {name:"",points:0};
         
@@ -165,12 +166,13 @@ function dataGetFromPilot() { //On prend le pilote et on recopie l'objet pilote 
             skillLvl.textContent = skillLvl.textContent + " #F"+pilot_list[y]['force']+"#";
         }
     }
-        
+       
     for (j=0; j<8 ;j++) {
             totalcostvalue = totalcostvalue + pilot_list[j]["points"];
         };
         totalcount.textContent = totalcostvalue;
         return
+
     }
 
     
