@@ -4391,7 +4391,7 @@
              "add_Data": [0],
              "force": 1,
              "charge": [0],
-             "points":8,
+             "points":7,
              "effect_FRA": "<img class='chargeforceimg' src='img/forcestat.png'> Après avoir défendu, si l’attaquant est à portée 0-2, vous pouvez dépenser 1 <img class='chargeforceimg' src='img/charge.png'>. Dans ce cas, l’attaquant gagne 1 marqueur de stress.<br> Ajoute l'action <img class='chargeforceimg' src='img/CO.jpg'> violette.",
              "effect_ENG": "<img class='chargeforceimg' src='img/forcestat.png'> After you defend, if the attacker is at range 0-2, you may spend 1 <img class='chargeforceimg' src='img/charge.png'>. If you do, the attacker gains 1 stress token.<br> Add the purple <img class='chargeforceimg' src='img/CO.jpg'> action.",
              "faction": ["Clone_Army","Jedi_Order", "Naboo_Defense_Force"] 
@@ -4407,7 +4407,7 @@
              "add_Data": [0],
              "force": 1,
              "charge": [0],
-             "points":8,
+             "points":7,
              "effect_FRA": "<img class='chargeforceimg' src='img/forcestat.png'> Au début de la phase d’engagement, vous pouvez choisir 1 vaisseau allié à portée 0–1 et dépenser 1<img class='chargeforceimg' src='img/fo.jpg'> . Dans ce cas, il peut effectuer une action <img class='chargeforceimg' src='img/evd.jpg'> rouge.",
              "effect_ENG": "<img class='chargeforceimg' src='img/forcestat.png'> At the start of the engagement phase, you may choose 1 friendly ship at range 0-1 and spend 1 <img class='chargeforceimg' src='img/fo.jpg'>. If you do, it may perform a red <img class='chargeforceimg' src='img/evd.jpg'> action.",
              "faction": ["Jedi_Order"]
@@ -4424,7 +4424,7 @@
              "add_Data": [0],
              "force": 0,
              "charge": [0],
-             "points":8,
+             "points":5,
              "effect_FRA": "Après qu’un vaisseau allié à portée 0–3 a défendu, si l’attaquant est dans votre arc de tir, le défenseur peut gagner 1 marqueur de contrainte pour verrouiller l’attaquant.",
              "effect_ENG": "After a friendly ship at range 0-3 defends, if the attacker is in your firing arc, the defender may gain 1 stress token to lock the attacker.",
              "faction": ["Clone_Army"],
@@ -4444,7 +4444,7 @@
              "add_Data": [0],
              "force": 1,
              "charge": [0],
-             "points":8,
+             "points":6,
              "effect_FRA": "<img class='chargeforceimg' src='img/forcestat.png'>Au début de la phase de dénouement, si vous êtes renforcé, vous pouvez choisir 1 vaisseau allié à portée 0 ou qui est situé dans votre #Larc# ou #Rarc# à portée 1. Ce vaisseau retire 1 marqueur d’épuisement ou de contrainte ou répare 1 carte de dégât face visible.",
              "effect_ENG": "<img class='chargeforceimg' src='img/forcestat.png'>At the start of the end phase, if you are reinforced, you may choose 1 friendly ship at range 0 or in your #Larc# or #Rarc# at range 1. That ship removes 1 deplete or strain token or repairs 1 faceup damage card.",
              "faction": ["Jedi_Order"]
@@ -4461,7 +4461,7 @@
              "add_Data": [0],
              "force": 2,
              "charge": [0],
-             "points":8,
+             "points":6,
              "effect_FRA": "<img class='chargeforceimg' src='img/forcestat.png'><img class='chargeforceimg' src='img/forcestat.png'>Après qu’un autre vaisseau allié à portée 0–2 a entièrement exécuté une manœuvre violette ou effectué une action violette, vous pouvez dépenser 1 <img class='chargeforceimg' src='img/fo.jpg'>. Dans ce cas, cet autre vaisseau allié récupère 1 <img class='chargeforceimg' src='img/fo.jpg'>.",
              "effect_ENG": "<img class='chargeforceimg' src='img/forcestat.png'><img class='chargeforceimg' src='img/forcestat.png'>After another friendly ship at range 0-2 has fully executed a purple maneuver or performed a purple action, you may spend 1 <img class='chargeforceimg' src='img/fo.jpg'>. If you do, that other friendly ship recovers 1 <img class='chargeforceimg' src='img/fo.jpg'>.",
              "faction": ["Jedi_Order"]
@@ -4477,7 +4477,7 @@
              "add_Data": [0],
              "force": 1,
              "charge": [0],
-             "points":8,
+             "points":7,
              "effect_FRA": "<img class='chargeforceimg' src='img/forcestat.png'> Après avoir exécuté une manœuvre, vous pouvez dépenser 1 <img class='chargeforceimg' src='img/fo.jpg'> et choisir un vaisseau allié dans votre arc de tir à portée 1-3. Dans ce cas, il peut effectuer une action <img class='chargeforceimg' src='img/eye.jpg'> rouge, même s’il est stressé.",
              "effect_ENG": "<img class='chargeforceimg' src='img/forcestat.png'> Après avoir exécuté une manœuvre, vous pouvez dépenser 1 <img class='chargeforceimg' src='img/fo.jpg'> et choisir un vaisseau allié dans votre arc de tir à portée 1-3. Dans ce cas, il peut effectuer une action <img class='chargeforceimg' src='img/eye.jpg'> rouge, même s’il est stressé.",
              "faction": ["Jedi_Order","New_Republic_Patrol","Phoenix_Cell"]
@@ -4510,7 +4510,7 @@
              "add_Data": [0],
              "force": 0,
              "charge": [0],
-             "points":2,
+             "points":1,
              "effect_FRA": "Après avoir entièrement exécuté une manœuvre rouge, s’il y a un vaisseau ennemi dans votre <img class='chargeforceimg' src='img/bulls.jpg'>, gagnez 1 marqueur de calcul.",
              "effect_ENG": "After you fully execute a red maneuver, if there is an enemy ship in your <img class='chargeforceimg' src='img/bulls.jpg'>, gain 1 calculate token.",
              "faction": ["Jedi_Order"]
@@ -4526,7 +4526,7 @@
              "add_Data": [0],
              "force": 0,
              "charge": [2,"0"],
-             "points":2,
+             "points":1,
              "effect_FRA": "Avant d’exécuter une manœuvre de base, vous pouvez dépenser 1 <img class='chargeforceimg' src='img/charge.png'>. Dans ce cas, tant que vous exécutez cette manœuvre, diminuez sa difficulté.",
              "effect_ENG": "Before you execute a basic maneuver, you may spend 1 <img class='chargeforceimg' src='img/charge.png'>. If you do, while you execute that maneuver, reduce its difficulty.",
              "faction": ["Jedi_Order"]
@@ -4593,7 +4593,7 @@
              "add_Data": ["add_action", [1,"Fo W","Co F"]],
              "force": 1,
              "charge": [0],
-             "points":8,
+             "points":7,
              "effect_FRA": "<img class='chargeforceimg' src='img/forcestat.png'>Tant qu’un vaisseau ennemi dans votre <img class='chargeforceimg' src='img/bulls.jpg'> effectue une attaque, si le défenseur est allié et à portée 0–2, ce dernier peut changer 1 résultat vierge en un résultat <img class='chargeforceimg' src='img/eye.jpg'>. Ajoute <img class='chargeforceimg' src='img/eye.jpg'> -> <img class='chargeforceimg' src='img/CO.jpg'> violet",
              "effect_ENG": "<img class='chargeforceimg' src='img/forcestat.png'>While an enemy ship in your <img class='chargeforceimg' src='img/bulls.jpg'> performs an attack, if the defender is an ally and at range 0-2, the defender may change 1 blank result to a <img class='chargeforceimg' src='img/eye.jpg'> result. Adds <img class='chargeforceimg' src='img/eye.jpg'> -> purple <img class='chargeforceimg' src='img/CO.jpg'>",
              "faction": ["Jedi_Order"]
@@ -4609,7 +4609,7 @@
              "add_Data": [0],
              "force": 0,
              "charge": [0],
-             "points": 2,
+             "points": 1,
              "effect_FRA": "Tant que vous vous déplacez et effectuez des attaques, vous ignorez les obstacles que vous verrouillez.",
              "effect_ENG": "While you move and perform attacks, you ignore obstacles you have locked.",
              "faction": ["Crime_Syndicates"]
@@ -4626,7 +4626,7 @@
              "add_Data": [0],
              "force": 0,
              "charge": [0],
-             "points": 3,
+             "points": 1,
              "effect_FRA": "Mise en Place : après avoir placé les forces, vous pouvez choisir 1 obstacle dans la zone de jeu. Dans ce cas, placez-le n’importe où dans la zone de jeu au-delà de la portée 2 de tout bord ou vaisseau et au-delà de la portée 1 de tout autre obstacle.",
              "effect_ENG": "Setup: After placing forces, you may choose 1 obstacle in the play area. If you do, place it anywhere in the play area beyond range 2 of any edge or ship and beyond range 1 of any other obstacle.",
              "faction": ["Crime_Syndicates"]
@@ -4643,7 +4643,7 @@
              "add_Data": [0],
              "force": 0,
              "charge": [0],
-             "points": 4,
+             "points": 3,
              "effect_FRA": "Lorsque vous défendez, si l'attaquant est stressé, vous pouvez retirer 1 jeton de stress de l'attaquant pour modifier 1 résultat vierge/oeil en résultat <img class='chargeforceimg' src='img/evd.jpg'>.",
              "effect_ENG": "While you defend, if the attacker is stressed, you may remove 1 stress from the attacker to change 1 of your blank/eye results to an <img class='chargeforceimg' src='img/evd.jpg'> result.",
              "faction": ["Crime_Syndicates"]
@@ -4677,7 +4677,7 @@
              "add_Data": [0],
              "force": 0,
              "charge": [0],
-             "points": 3,
+             "points": 2,
              "effect_FRA": "Avant d’exécuter une manœuvre, vous pouvez dépenser 1 bouclier. Dans ce cas, exécutez une manœuvre 0<img class='chargeforceimg' src='img/manOp2.jpg'> blanche à la place de celle que vous avez révélée, puis gagnez 1 marqueur de stress.",
              "effect_ENG": "Before you would execute a maneuver, you may spend 1 shield. If you do, execute a white 0<img class='chargeforceimg' src='img/manOp2.jpg'> instead of the maneuver you revealed, then gain 1 stress token.",
              "faction": ["Crime_Syndicates"]
@@ -4728,7 +4728,7 @@
              "add_Data": [0],
              "force": 0,
              "charge": [0],
-             "points": 5,
+             "points": 4,
              "effect_FRA": "A la fin de la phase d'activation, s'il y a un vaisseau ennemi à portée 0-1, recevez 1 jeton calcul. S'il n'y a pas de vaisseau ennemi à portée 0-2, recevez 1 jeton brouillage.",
              "effect_ENG": "At the end of activation phase, if there's an enemy ship at range 0-1, gain a calculate token. If there isn't any enemy ship at range 0-2, gain a jam token.",
              "faction": ["Black_Sun"]
@@ -4799,7 +4799,7 @@
              "add_Data": [0],
              "force": 0,
              "charge": [1,"0"],
-             "points": 4,
+             "points": 3,
              "effect_FRA": "Après avoir partiellement exécuté une manoeuvre, vous pouvez dépenser 1 <img class='chargeforceimg' src='img/charge.png'>. Dans ce cas, chaque autre vaisseau à portée 0 recoivent 1 carte de dégat face visible.",
              "effect_ENG": "After you partially execute a maneuver, you may spend 1 <img class='chargeforceimg' src='img/charge.png'>. If you do, every other ships at range 0 take 1 faceup damage card.",
              "faction": ["Black_Sun","Partisans"]
@@ -4854,7 +4854,7 @@
              "add_Data": [0],
              "force": 0,
              "charge": [2,"+"],
-             "points": 6,
+             "points": 5,
              "effect_FRA": "Au début de la phase de Fin, vous pouvez dépenser 2 <img class='chargeforceimg' src='img/charge.png'> pour choisir un vaisseau à portée 0-1 avec 1 ou plusieurs jetons ronds. Pendant la phase de fin, ces jetons ronds ne sont pas retirés.",
              "effect_ENG": "At the start of the End Phase, you may spend 2 <img class='chargeforceimg' src='img/charge.png'> to choose a ship at range 0-1 with 1 or more circular tokens. During the End Phase, circular tokens are not removed from that ship.",
              "faction": ["Hutt_Cartel"]
@@ -4888,7 +4888,7 @@
              "add_Data": [0],
              "force": 0,
              "charge": [0],
-             "points": 5,
+             "points": 4,
              "effect_FRA": "Au début de la phase d'engagement, vous pouvez choisir 1 vaisseau ennemi à portée 0-1. Dans ce cas, vous recevez 1 jeton calcul à moins que ce vaisseau ne choississe de recevoir 1 jeton stress.",
              "effect_ENG": "At the start of the Engagement Phase, you may choose 1 enemy ship at range 0-1. If you do, you gain 1 calculate token unless that ship chooses to gain 1 stress token.",
              "faction": ["Hutt_Cartel"]
@@ -4922,7 +4922,7 @@
              "add_Data": [0],
              "force": 0,
              "charge": [0],
-             "points": 3,
+             "points": 2,
              "effect_FRA": "Pendant la phase Système, vous pouvez effectuer une action sur l'une de vos cartes de dégat, même stressé. Après avoir réparé une carte de dégat face visible, vous pouvez lancer 1 dé d'attaque. Sur un résultat <img class='chargeforceimg' src='img/hit.jpg'>, réparez une autre carte de dégat face visible. Sur un résultat <img class='chargeforceimg' src='img/crit.jpg'>, exposez 1 carte de dégat.",
              "effect_ENG": "During the System Phase, you may perform an action on 1 of your damage cards, even while stressed. After you repair a faceup Ship damage card, you may roll 1 attack die. On a <img class='chargeforceimg' src='img/hit.jpg'> result, repair another faceup Ship damage card. On a <img class='chargeforceimg' src='img/crit.jpg'> result, expose 1 damage card.",
              "faction": ["Hutt_Cartel"]
@@ -5419,7 +5419,7 @@
              "add_Data": [0],
              "force": 0,
              "charge": [0],
-             "points": 3,
+             "points": 2,
              "effect_FRA": "Tant que vous effectuez une attaque, s’il n’y a aucun autre vaisseau dans l’arc d’attaque, vous pouvez changer 1 de vos résultats <img class='chargeforceimg' src='img/eye.jpg'> en un résultat <img class='chargeforceimg' src='img/hit.jpg'>.",
              "effect_ENG": "While you perform an attack, if there are no other ships in the attack arc, you may change 1 of your <img class='chargeforceimg' src='img/eye.jpg'> results to a <img class='chargeforceimg' src='img/hit.jpg'> result.",
              "faction": ["Agents_of_Chaos"]
@@ -5435,7 +5435,7 @@
              "slot": "Crew",
              "add_Data": ["add_action",[0,"Co P"]],
              "charge": [0],
-             "points": 9,
+             "points": 8,
              "effect_FRA": "Après avoir effectué une action <img class='chargeforceimg' src='img/CO.jpg'> violette, le vaisseau que vous avez coordonné gagne 1 marqueur de stress. Puis il gagne 1 marqueur de concentration ou récupère 1 <img class='chargeforceimg' src='img/fo.jpg'>. Ajoute l'action <img class='chargeforceimg' src='img/CO.jpg'> violette.",
              "effect_ENG": "After you perform a purple <img class='chargeforceimg' src='img/CO.jpg'> action, the ship you coordinated gains 1 stress token. Then it gains 1 focus token or recovers 1 <img class='chargeforceimg' src='img/fo.jpg'>. Adds the purple <img class='chargeforceimg' src='img/CO.jpg'> action.",
              "faction": ["Agents_of_Chaos"],
@@ -5451,7 +5451,7 @@
              "slot": "Crew",
              "add_Data": [0],
              "charge": [0],
-             "points": 5,
+             "points": 4,
              "effect_FRA": "Pendant la phase de système, vous pouvez dépenser 1 <img class='chargeforceimg' src='img/fo.jpg'>. Dans ce cas, chaque vaisseau ennemi dans votre <img class='chargeforceimg' src='img/attackF.jpg'> à portée 0-1 gagne 1 marqueur de contrainte sauf s'il choisit de gagner 1 marqueur de brouillage. ",
              "effect_ENG": "During the System Phase, you may spend 1 <img class='chargeforceimg' src='img/fo.jpg'>. If you do, each enemy ship in your <img class='chargeforceimg' src='img/attackF.jpg'> at range 0-1 gains 1 strain token unless it chooses to gain 1 jam token.",
              "faction": ["Agents_of_Chaos","Crime_Syndicates"],
@@ -5469,7 +5469,7 @@
              "add_Data": [0],
              "force": 0,
              "charge": [0],
-             "points": 2,
+             "points": 1,
              "effect_FRA": "Tant que vous défendez ou effectuez une attaque, vous pouvez dépenser votre verrouillage sur le vaisseau ennemi pour dégrader un de ses dés.",
              "effect_ENG": "While you defend or perform an attack, you may spend your lock on the enemy ship to downgrade one of its dice.",
              "faction": ["Agents_of_Chaos"]
@@ -5486,7 +5486,7 @@
              "add_Data": [0],
              "charge": [0],
              "force":1,
-             "points": 9,
+             "points": 8,
              "effect_FRA": "Durant une attaque, avant qu’un vaisseau à portée 0-2 ne lance des dés d’attaque ou de défense, si toutes vos <img class='chargeforceimg' src='img/fo.jpg'> sont actives, vous pouvez dépenser 1 <img class='chargeforceimg' src='img/fo.jpg'> et nommer un résultat. Si le lancer ne contient pas le résultat nommé, le vaisseau doit changer 1 dé pour ce résultat. ",
              "effect_ENG": "During an attack, before a ship at range 0-2 rolls attack or defense dice, if all your <img class='chargeforceimg' src='img/fo.jpg'> are active, you may spend 1 <img class='chargeforceimg' src='img/fo.jpg'> and name a result. If the roll does not contain the named result, the ship must change 1 die to that result.",
              "faction": ["Agents_of_Chaos"]
@@ -5504,7 +5504,7 @@
              "add_Data": [0],
              "force": 0,
              "charge": [0],
-             "points": 0,
+             "points": 3,
              "effect_FRA": "Après qu'un vaisseau allié dans votre à portée 1-2 a gagné un marqueur de stress ou de contrainte, vous pouvez dépenser 1 <img class='chargeforceimg' src='img/fo.jpg'>. Dans ce cas, ce vaisseau allié gagne 1 marqueur de concentration.",
              "effect_ENG": "After an allied ship at range 1-2 gains a stress or strain token, you may spend 1 <img class='chargeforceimg' src='img/fo.jpg'>. If you do, that allied ship gains 1 focus token.",
              "faction": ["Agents_of_Chaos"]
@@ -5704,7 +5704,7 @@
              "add_Data": [0],
              "force": 0,
              "charge": [0],
-             "points": 7,
+             "points": 6,
              "effect_FRA": "Lorsque un vaisseau ennemi dans votre arc de tir effectue une attaque, il ne peut pas relancer plus d'1 dé. Après que vous avez effectué une attaque, vous pouvez effectuer une attaque depuis un arc différent.",
              "effect_ENG": "When an enemy ship in your firing arc performs an attack, it cannot reroll more then 1 dice. After you perform an attack, you may perform an attack from a different arc.",
              "faction": ["Partisans"]
@@ -5861,7 +5861,7 @@
              "add_Data": [0],
              "force": 0,
              "charge": [0],
-             "points": 5,
+             "points": 4,
              "effect_FRA": "Lorsque vous gagnez un jeton bleu, s'il y a un vaisseau ennemi dans votre <img class='chargeforceimg' src='img/bulls.jpg'>, vous pouvez brouiller ce vaisseau.",
              "effect_ENG": "When you gain a blue token, if there's an enemy ship in your <img class='chargeforceimg' src='img/bulls.jpg'>, you may jam that ship.",
              "faction": ["ISB"]          
@@ -5936,7 +5936,7 @@
              "add_Data": [0],
              "force": 0,
              "charge": [2,"+"],
-             "points": 0,
+             "points": 3,
              "effect_FRA": "Pendant la phase de système, vous pouvez dépenser 2 <img class='chargeforceimg' src='img/charge.png'>. Dans ce cas, choisissez le gabarit 1<img class='chargeforceimg' src='img/manBl2.jpg'>, 1<img class='chargeforceimg' src='img/manSt2.jpg'> ou 1<img class='chargeforceimg' src='img/manBr2.jpg'>. Chaque vaisseau allié peut effectuer une action <img class='chargeforceimg' src='img/BO.png'> rouge en utilisant ce gabarit.",
              "effect_ENG": "During the System Phase, you may spend 2 <img class='chargeforceimg' src='img/charge.png'>. If you do, choose the 1<img class='chargeforceimg' src='img/manBl2.jpg'>, 1<img class='chargeforceimg' src='img/manSt2.jpg'> ou 1<img class='chargeforceimg' src='img/manBr2.jpg'> template. Each friendly ship may perform a red <img class='chargeforceimg' src='img/BO.png'> action using that template.",
              "faction": ["Imperial_Elite_Squadrons"]
@@ -5990,7 +5990,7 @@
              "add_Data": [0],
              "force":1,
              "charge": [0],
-             "points": 10,
+             "points": 8,
              "effect_FRA": "After a friendly ship reveals a non-0<img class='chargeforceimg' src='img/manOp2.jpg'> maneuver, you may spend 1 <img class='chargeforceimg' src='img/fo.jpg'>. If you do, the chosen ship reduces the difficulty of that maneuver.",
              "effect_ENG": "After a friendly ship reveals a non-0<img class='chargeforceimg' src='img/manOp2.jpg'> maneuver, you may spend 1 <img class='chargeforceimg' src='img/fo.jpg'>. If you do, the chosen ship reduces the difficulty of that maneuver.",
              "faction": ["Heroes_of_the_Resistance","New_Republic_Patrol"]
@@ -6009,8 +6009,8 @@
              "force": 0,
              "charge": [0],
              "points": 3,
-             "effect_FRA": "ACTION : Exécutez une maneuvre 5<img class='chargeforceimg' src='img/manSt2.jpg'> vers l'avant. Si votre position finale recouvre celle d'un autre vaisseau, ce vaisseau subit 1/2/3/4 dégats si vous êtes un vaisseau petit/moyen/grand/énorme. Puis votre vaisseau est détruit.",
-            "effect_ENG": "ACTION : Execute a 5<img class='chargeforceimg' src='img/manSt2.jpg'> forward maneuver. If your final position overlaps another ship, this ship suffers 1/2/3/4 damage if you are a small/medium/large/huge ship. Then your ship is destroyed.",
+             "effect_FRA": "ACTION : Exécutez une maneuvre 5<img class='chargeforceimg' src='img/manSt2.jpg'> vers l'avant. Si votre position finale recouvre celle d'un autre vaisseau, ce vaisseau subit 1/2/3/4 dégats si vous êtes un vaisseau petit/moyen/grand/énorme. Puis votre vaisseau est détruit. Si un vaisseau ennemi a été détruit de cette manière, gagnez 1 <img class='inline-img src='img/scenario_point.jpg'>",
+            "effect_ENG": "ACTION : Execute a 5<img class='chargeforceimg' src='img/manSt2.jpg'> forward maneuver. If your final position overlaps another ship, this ship suffers 1/2/3/4 damage if you are a small/medium/large/huge ship. Then your ship is destroyed. If an enemy ship is destroyed this way, receive 1 <img class='inline-img src='img/scenario_point.jpg'>",
              "faction": ["Heroes_of_the_Resistance"]
                                      
              
@@ -6046,7 +6046,7 @@
              "add_Data": [0],
              "force": 0,
              "charge": [0],
-             "points": 0,
+             "points": 4,
              "effect_FRA": "Mise en place : avant de placer les forces, assignez la condition 'Visions' à un vaisseau ennemi. En phase système, si le vaisseau avec 'Visions' est à portée 0-2, vous pouvez tenter de deviner sa manoeuvre.",
              "effect_ENG": "Setup: Before placing forces, assign the 'Visions' condition to an enemy ship. During System Phase, if the ship with 'Visions' is at range 0-2, you may attempt to guess its maneuver.",
              "faction": ["New_Republic_Patrol"],
@@ -6304,7 +6304,7 @@
              "add_Data": [0],
              "charge": [0],
              "force":3,
-             "points": 0,
+             "points": 7,
              "effect_FRA": "Vous ne pouvez pas récupérer de la force en fin de tour. Lorsqu'un vaisseau allié à portée 3 est détruit, vous pouvez dépenser 1<img class='chargeforceimg' src='img/fo.jpg'>. Dans ce cas, ne le retirez pas de la partie. En début de tour, vous pouvez dépenser 1<img class='chargeforceimg' src='img/fo.jpg'> pour qu'un vaisseau allié détruit ne soit pas retiré de la partie pour le reste de ce tour.",
              "effect_ENG": "??",
              "faction": ["Imperial_Remnants"],
@@ -6468,7 +6468,7 @@
               "available": false,
               "modify": true,
               "slot": "Missile",
-              "points": 8,
+              "points": 7,
               "attack": ["F",4],
               "range": [2,3],
               "add_Data": [0],
