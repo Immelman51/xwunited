@@ -6468,7 +6468,7 @@
               "available": false,
               "modify": true,
               "slot": "Missile",
-              "points": 7,
+              "points": 8,
               "attack": ["F",4],
               "range": [2,3],
               "add_Data": [0],
