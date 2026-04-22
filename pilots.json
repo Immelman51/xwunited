@@ -31,12 +31,12 @@
             "points": 14,
             "charge":[0],
             "force": 2,
-            "force_side": "light",
             "ability_FRA": "<div class='text'>Après être devenu le défenseur (avant que les dés ne soient lancés), vous pouvez récupérer 1 <img class='inline-img' src='img/fo.jpg'> .</div>",
             "ability_ENG": "<div class='text'>After being a defender (before dice are rolled), you may recover 1 <img class='inline-img' src='img/fo.jpg'>.</div>",
             "slots": [
                 "Talent-shooting",
-                "Force"               
+                "Force-Base",
+                "Force-Light"
             ]
         },
         
@@ -752,14 +752,13 @@
             "shipId": 5,
             "skill": 6,
             "points": 17,
-            "force_side": "dark",
             "charge":[0],
             "force": 3,
             "ability_FRA": "<div class='text'>Tant que vous effectuez une attaque, vous pouvez dépenser 1 <img class='inline-img' src='img/fo.jpg'> pour changer 1 résultat vierge en un résultat <img class='inline-img' src='img/hit.jpg'>.</div>",
             "ability_ENG": "<div class='text'>While you perform an attack, you may spend 1 <img class='inline-img' src='img/fo.jpg'> to change 1 blank result into a <img class='inline-img' src='img/hit.jpg'> result.</div>",
             "slots": [
-                "Force",
-                "Force",
+                "Force-Base",
+                "Force-Dark",
                 "Talent-elite"
             ]
         },
@@ -1600,7 +1599,7 @@
             "ability_ENG": "<div class='text'>While a friendly ship at range 0-2 suffers any damage, you may recover 1<img class='inline-img' src='img/fo.jpg'>", 
             "slots": [
                 "Title",
-                "Force",                
+                "Force-Base",
                 "Crew",
                 "Illicit"
             ],
@@ -2525,11 +2524,10 @@
             "charge":[0],
             "force": 1,
             "points": 8,
-            "force_side": "light",
             "ability_FRA": "<div class='text'>Lorsque vous ou un vaisseau dans votre <img class='inline-img' src='img/attackT.jpg'> défend, vous pouvez dépenser 1<img class='inline-img' src='img/fo.jpg'>. Dans ce cas, l’attaquant lance 1 dé d’attaque de moins.</div>",
             "ability_ENG": "<div class='text'>While you or a friendly ship in your <img class='inline-img' src='img/attackT.jpg'> defends, you may spend 1 <img class='inline-img' src='img/fo.jpg'>. If you do, the attacker roll 1 attack die less</div>",
             "slots": [
-                "Force"            
+                "Force-Base"
                 ]
         },
  {
@@ -3155,7 +3153,6 @@
             "charge":[0],
             "force": 1,
             "points": 17,
-            "force_side": "dark",
 		    "modify": true,
             "title": ["Slave 1"],
             "ability_FRA": "<div class='text'>Avant de vous engager, vous pouvez dépenser 1 <img class='inline-img' src='img/fo.jpg'> pour choisir 2 vaisseaux ennemis à portée 0-1. Transférez n'importe quel nombre de jetons orange et rouges entre ces 2 vaisseaux.</div>",
@@ -3163,7 +3160,7 @@
             "slots": [
                 "Title",
                 "Talent-elite",
-                "Force",
+                "Force-Base",
                 "Gunner",
                 "Cannon",
                 "Illicit"
@@ -3237,7 +3234,6 @@
             "skill": 3,
             "charge":[0],
             "force": 2,
-            "force_side": "light",
             "title": ["Ghost"],
             "points": 19,
             
@@ -3246,7 +3242,8 @@
             "slots": [
                 "Title",
                 "Talent-leadership",
-                "Force"
+                "Force-Base",
+                "Force-Light"
                                 
             ],
             "modifier_func": [
@@ -3386,7 +3383,8 @@
             "slots": [
                 "Title" ,
                 "Talent-leadership",
-                "Force"
+                "Force-Base",
+                "Force-Light"
                                
             ],
             "modifier_func": [
@@ -3490,7 +3488,6 @@
             "skill": 5,
             "charge":[0],
             "force": 2,
-            "force_side": "light",
             "modify": true,
             "title": ["Phantom 2"],
             "points": 9,
@@ -3499,7 +3496,8 @@
             "slots": [
                 "Title" ,
                 "Talent-elite",
-                "Force"
+                "Force-Base",
+                "Force-Light"
                                
             ],
             "modifier_func": [
@@ -3577,7 +3575,6 @@
             "skill": 3,
             "charge":[0],
             "force": 1,
-            "force_side": "light",
             "modify": true,
             "points": 8,
             "title": ["Sabine's Masterpiece"],
@@ -3586,7 +3583,7 @@
             "slots": [
                 "Title",
                 "Talent-leadership",
-                "Force",
+                "Force-Base",
                 "Illicit"
                                 
             ],
@@ -3666,7 +3663,6 @@
             "points": 16,
             "charge":[0],
             "force": 1,
-            "force_side": "light",
             "modify": true, 
             "title": ["Nightbrother"],
             "ability_FRA": "<div class='text'>Lorsque vous défendez ou attaquez, si vous êtes stressé, vous pouvez dépenser 1 <img class='inline-img' src='img/fo.jpg'> pour modifier jusqu'à 2 de vos résultats <img class='inline-img' src='img/eye.jpg'> en <img class='inline-img' src='img/hit.jpg'> ou <img class='inline-img' src='img/evd.jpg'>.</div>",
@@ -3674,7 +3670,7 @@
             "slots": [
                 "Title",
                 "Talent-leadership",
-                "Force",
+                "Force-Base",
                 "Crew"
                                 
             ],
@@ -3847,15 +3843,14 @@
             "skill": 5,
             "charge":[0],
             "force": 2,
-            "force_side": "light",
             "modify": false,
             "points": 12,
             "ability_FRA": "<div class='text'><img class='inline-img' src='img/forcestat.png'> <img class='inline-img' src='img/forcestat.png'> Après avoir entièrement effectué une manoeuvre, vous pouvez choisir un vaisseau allié à portée 1-2 et dépenser 2 <img class='inline-img' src='img/fo.jpg'>. Ce vaisseau peut effectuer une action, même stressé.</div>",
             "ability_ENG": "<div class='text'><img class='inline-img' src='img/forcestat.png'> <img class='inline-img' src='img/forcestat.png'> After you fully execute a maneuver, you may choose a friendly ship at range 1-2 and spend 2 <img class='inline-img' src='img/fo.jpg'> . That ship may perform an action, even while stressed.</div>",
             "slots": [
                 "Talent-elite",
-                "Force",
-                "Force"
+                "Force-Base",
+                "Force-Light"
             ]
         },
         {
@@ -4932,7 +4927,8 @@
             "ability_ENG": "<div class='text'>Before an enemy ship in your <img class='inline-img' src='img/bulls.jpg'> is dealt a facedown damage card, you may spend 1 <img class='inline-img' src='img/fo.jpg'>. If you do, that damage card is dealt face up instead.</div>",
             "slots": [
                 "Talent-elite",
-                "Force"
+                "Force-Base",
+                "Force-Dark"
             ]
         },
         {
@@ -5356,14 +5352,14 @@
 		    "modify": true,
             "skill": 5,
             "points": 19,
-            "force_side": "light",
             "title": ["Millenium Falcon"],
             "ability_FRA": "<div class='text'>Lorsque vous défendez ou attaquez, si le vaisseau ennemi est dans votre <img class='inline-img' src='img/attackF.jpg'>, vous pouvez dépenser 1 <img class='inline-img' src='img/fo.jpg'> pour modifier l'un de vos résultats vierge en <img class='inline-img' src='img/evd.jpg'> ou <img class='inline-img' src='img/hit.jpg'>.</div>",
             "ability_ENG": "<div class='text'>While you defend or perform an attack, if the enemy ship is in your <img class='inline-img' src='img/attackF.jpg'> , you may spend 1 <img class='inline-img' src='img/fo.jpg'> to change 1 of your blank results to an <img class='inline-img' src='img/evd.jpg'> or <img class='inline-img' src='img/hit.jpg'> result.</div>",
             "slots": [
                 "Title" ,
                 "Talent-piloting",
-                "Force",
+                "Force-Base",
+                "Force-Light",
                 "Crew"
                            
             ],
@@ -5934,13 +5930,13 @@
             "charge":[0],
             "force": 2,
             "points": 13,
-            "force_side": "dark",
             "ability_FRA": "<div class='text'>Lorsque vous attaquez, après l'étape 'Neutralisez les Résultats', si l'attaque touche, vous pouvez dépenser 2 <img class='inline-img' src='img/fo.jpg'>. Dans ce cas, modifiez tous vos résultats <img class='inline-img' src='img/hit.jpg'> en <img class='inline-img' src='img/crit.jpg'>.</div>",
             "ability_ENG": "<div class='text'>While you perform an attack, after the Neutralize Results step, if the attack hits, you may spend 2 <img class='inline-img' src='img/fo.jpg'>. If you do, change all of your <img class='inline-img' src='img/hit.jpg'> results to <img class='inline-img' src='img/crit.jpg'> results.</div>",
             "slots": [
                 "Talent-piloting",
                 "Talent-shooting",
-                "Force"            
+                "Force-Base",
+                "Force-Dark"
             ]
         },
         {
@@ -6123,12 +6119,12 @@
             "charge":[0],
             "force": 3,
             "points": 13,
-            "force_side": "dark",
             "ability_FRA": "<div class='text'>Lorsque vous défendez à portée 1, vous pouvez dépenser 1 <img class='inline-img' src='img/fo.jpg'> pour annuler le bonus de portée.<br>Lorsque vous attaquez à portée 2-3, vous pouvez dépenser 1 <img class='inline-img' src='img/fo.jpg'> pour appliquer le bonus de portée 1.</div>",
             "ability_ENG": "<div class='text'>While you defend at attack range 1, you may spend 1 <img class='inline-img' src='img/fo.jpg'> to prevent the range 1 bonus.<br>While you perform an attack against a defender at attack range 2-3, you may spend 1 <img class='inline-img' src='img/fo.jpg'> to apply the range 1 bonus.</div>",
             "slots": [
                 "Talent-elite",
-                "Force"            
+                "Force-Base",
+                "Force-Dark"
             ]
         },
         {
@@ -6145,11 +6141,11 @@
             "points": 11,
             "charge":[0],
             "force": 2,
-            "force_side": "dark",
             "ability_FRA": "<div class='text'>Lorsque vous attaquez, après l'étape 'Neutralisez les Résultats', si l'attaque touche, vous pouvez dépenser 2 <img class='inline-img' src='img/fo.jpg'> pour ajouter 1 résultat <img class='inline-img' src='img/crit.jpg'>.</div>",
             "ability_ENG": "<div class='text'>While you perform an attack, after the Neutralize Results step, if the attack hits, you may spend 2 <img class='inline-img' src='img/fo.jpg'> to add 1 <img class='inline-img' src='img/crit.jpg'> result.</div>",
             "slots": [
-                "Force"            
+                "Force-Base",
+                "Force-Dark"
             ]
         },
         {
@@ -6166,11 +6162,11 @@
             "points": 11,
             "charge":[0],
             "force": 2,
-            "force_side": "dark",
             "ability_FRA": "<div class='text'>Lorsque vous effectuez une attaque principale, avant l'étape 'Neutralisez les Résultats', vous pouvez dépenser 2 <img class='inline-img' src='img/fo.jpg'> pour annuler 1 résultat <img class='inline-img' src='img/evd.jpg'>.</div>",
             "ability_ENG": "<div class='text'>While you perform a primary attack, before the Neutralize Results step, you may spend 2 <img class='inline-img' src='img/fo.jpg'> to cancel 1 <img class='inline-img' src='img/evd.jpg'> result.</div>",
             "slots": [
-                "Force"            
+                "Force-Base",
+                "Force-Dark"
             ]
         },
         {
@@ -6205,7 +6201,6 @@
             "ship": "Delta-7 Aethersprite",
             "charge":[0],
             "force": 3,
-            "force_side": "light",
             "titleID": 0,
             "shipId": 53,
             "skill": 6,
@@ -6215,7 +6210,9 @@
             "slots": [
                 "Talent-elite",
                 "Talent-piloting",
-                "Force"
+                "Force-Base",
+                "Force-Light",
+                "Force-Dark"
             ]
         },
         {
@@ -6228,7 +6225,6 @@
             "ship": "Delta-7 Aethersprite",
             "charge":[0],
             "force": 3,
-            "force_side": "light",
             "titleID": 0,
             "shipId": 53,
             "skill": 5,
@@ -6237,7 +6233,8 @@
             "ability_ENG": "<div class='text'>After a friendly ship at range 0-2 spends a focus token, you may spend 1 <img class='inline-img' src='img/fo.jpg'>. If you do, that ship gains 1 focus token.</div>",
             "slots": [
                 "Talent-leadership",
-                "Force"
+                "Force-Base",
+                "Force-Light"
             ]
         },
         {
@@ -6250,7 +6247,6 @@
             "ship": "Delta-7 Aethersprite",
             "charge":[0],
             "force": 2,
-            "force_side": "light",
             "titleID": 0,
             "shipId": 53,
             "skill": 5,
@@ -6259,7 +6255,8 @@
             "ability_ENG": "<div class='text'>At the start of the Engagement Phase, you may spend 1 <img class='inline-img' src='img/fo.jpg'> and choose another friendly ship at range 0-2. If you do, you may transfer 1 green token to it or transfer one orange token from it to yourself.</div>",
             "slots": [
                 "Talent-piloting",
-                "Force"
+                "Force-Base",
+                "Force-Light"
             ]
         },
         {
@@ -6272,7 +6269,6 @@
             "ship": "Delta-7 Aethersprite",
             "charge":[0],
             "force": 1,
-            "force_side": "light",
             "titleID": 0,
             "shipId": 53,
             "skill": 3,
@@ -6281,7 +6277,7 @@
             "ability_ENG": "<div class='text'><img class='inline-img' src='img/forcestat.png'> After you fully execute a maneuver, you may choose a friendly ship at range 0-1 and spend 1 <img class='inline-img' src='img/fo.jpg'>. That ship may perform an action, even if it is stressed.</div>",
             "slots": [
                 "Talent-elite",
-                "Force"
+                "Force-Base"
             ]
         },
 
@@ -6295,7 +6291,6 @@
             "ship": "Delta-7b Aethersprite",
             "charge":[0],
             "force": 3,
-            "force_side": "light",
             "titleID": 0,
             "shipId": 54,
             "skill": 4,
@@ -6304,8 +6299,8 @@
             "ability_ENG": "<div class='text'>After you fully execute a red maneuver, recover 1 <img class='inline-img' src='img/fo.jpg'>.</div>",
             "slots": [
                 "Talent-leadership",
-                "Force",
-                "Force"
+                "Force-Base",
+                "Force-Light"
             ]
         },
         {
@@ -6318,7 +6313,6 @@
             "ship": "Delta-7b Aethersprite",
             "charge":[0],
             "force": 2,
-            "force_side": "light",
             "titleID": 0,
             "shipId": 54,
             "skill": 4,
@@ -6327,7 +6321,8 @@
             "ability_ENG": "<div class='text'>While a friendly ship at range 0-2 defends, if it is not in the attacker's <img class='inline-img' src='img/bulls.jpg'>, you may spend 1 <img class='inline-img' src='img/fo.jpg'>. If you do, downgrade an attack die</div>",
             "slots": [
                 "Talent-piloting",
-                "Force"
+                "Force-Base",
+                "Force-Light"
             ]
         },
         {
@@ -6340,7 +6335,6 @@
             "ship": "Delta-7b Aethersprite",
             "charge":[0],
             "force": 1,
-            "force_side": "light",
             "titleID": 0,
             "shipId": 54,
             "skill": 3,
@@ -6349,7 +6343,7 @@
             "ability_ENG": "<div class='text'>While a friendly ship at range 0-2 performs an attack, if the defender is in its <img class='inline-img' src='img/bulls.jpg'>, you may spend 1 <img class='inline-img' src='img/fo.jpg'>. If you do, upgrade an attack die.</div>",
             "slots": [
                 "Talent-shooting",
-                "Force"
+                "Force-Base"
             ]
         },
         {
@@ -6362,7 +6356,6 @@
             "ship": "Delta-7b Aethersprite",
             "charge":[0],
             "force": 2,
-            "force_side": "light",
             "titleID": 0,
             "shipId": 54,
             "skill": 5,
@@ -6371,7 +6364,8 @@
             "ability_ENG": "<div class='text'>While you defend at attack range 1, you may spend 1 <img class='inline-img' src='img/fo.jpg'>. If you do, the attacker cannot apply the range bonus.<br>While you perform an attack against a defender at attack range 3, you may spend 1 <img class='inline-img' src='img/fo.jpg'>, the defender cannot apply the range bonus.</div>",
             "slots": [
                 "Talent-shooting",
-                "Force"
+                "Force-Base",
+                "Force-Light"
             ]
         },
         {
@@ -6384,7 +6378,6 @@
             "ship": "Eta-2 Actis",
             "charge":[0],
             "force": 3,
-            "force_side": "light",
             "titleID": 0,
             "shipId": 72,
             "skill": 3,
@@ -6392,9 +6385,9 @@
             "ability_FRA": "<div class='text'>Après qu'un vaisseau allié à portée 0-3 a dépensé au moins 1 <img class='inline-img' src='img/fo.jpg'>, vous pouvez dépenser 1 <img class='inline-img' src='img/fo.jpg'>. Dans ce cas, ce vaisseau récupère 1 <img class='inline-img' src='img/fo.jpg'>.</div>",
             "ability_ENG": "<div class='text'>After another friendly ship at range 0-3 spends 1 or more <img class='inline-img' src='img/fo.jpg'>, you may spend 1 <img class='inline-img' src='img/fo.jpg'>. If you do, that ship recovers 1 <img class='inline-img' src='img/fo.jpg'>.</div>",
             "slots": [
-                "Force",
-                "Force",
-                "Force"
+                "Force-Base",
+                "Force-Light",
+                "Force-Light"
             ]
         },
         {
@@ -6407,7 +6400,6 @@
             "ship": "Eta-2 Actis",
             "charge":[0],
             "force": 2,
-            "force_side": "light",
             "titleID": 0,
             "shipId": 72,
             "skill": 5,
@@ -6417,7 +6409,8 @@
             "slots": [
                 "Talent-leadership",
                 "Talent-piloting",
-                "Force"
+                "Force-Base",
+                "Force-Light"
             ]
         },
         {
@@ -6430,7 +6423,6 @@
             "ship": "Eta-2 Actis",
             "charge":[0],
             "force": 2,
-            "force_side": "light",
             "titleID": 0,
             "shipId": 72,
             "skill": 4,
@@ -6575,7 +6567,6 @@
             "ship": "BTL-B Y-wing",
             "charge":[0],
             "force": 3,
-            "force_side": "light",
             "titleID": 0,
             "shipId": 63,
             "skill": 6,
@@ -6585,8 +6576,9 @@
             "slots": [
                 "Talent-elite",
                 "Talent-piloting",
-                "Force",
-                "Force"
+                "Force-Base",
+                "Force-Light",
+                "Force-Dark"
                 
             ]
         },
@@ -6687,8 +6679,8 @@
             "ability_ENG": "<div class='text'>After you fully execute a red maneuver, recover 1 <img class='inline-img' src='img/fo.jpg'>.</div>",
             "slots": [
                 "Talent-leadership",
-                "Force",
-                "Force"
+                "Force-Base",
+                "Force-Light"
             ]
         },
         {
@@ -6709,7 +6701,8 @@
             "ability_ENG": "<div class='text'>After you coordinate, you may spend 1 <img class='inline-img' src='img/fo.jpg'>. If you do, another ship at range 1-2 of you may perform the same action. Then receive 1 strain and 1 deplete token.</div>",
             "slots": [
                 "Talent-leadership",
-                "Force"
+                "Force-Base",
+                "Force-Light"
             ]
         },
         {
@@ -6730,7 +6723,8 @@
             "ability_ENG": "<div class='text'>During the System phase, you may spend 1 <img class='inline-img' src='img/fo.jpg'>. If you do, until the end of the round, when you attack, you roll 1 additional die, and when you defend, you roll 1 less die.</div>",
             "slots": [
                 "Talent-shooting",
-                "Force"
+                "Force-Base",
+                "Force-Light"
             ]
         },
         {
@@ -7256,7 +7250,7 @@
             "ability_FRA": "<div class='text'>Après avoir effectué une action, vous pouvez effectuer une action rouge <img class='inline-img' src='img/BR.png'>. Pendant la phase de fun, vous pouvez dépenser 1 jeton stress pour effectuer une attaque bonus principale contre un vaisseau ennemi à portée 0.</div>",
             "ability_ENG": "<div class='text'>After you perform an action, you may perform a red <img class='inline-img' src='img/BR.png'> action. At the end phase, you may spend a stress token to perform a bonus primary attack against an enemy ship at range 0.</div>",
             "slots": [
-                "Title:shooting"
+                "Title-shooting"
 
             ],
             "modifier_func":[
@@ -7361,7 +7355,7 @@
             "ability_ENG": "<div class='text'>Before you reveal your maneuver, you may spend 1 <img class='inline-img' src='img/fo.jpg'> to barrel roll (this is not an action).</div>",
             "slots": [
                 "Talent-piloting",
-                "Force"
+                "Force-Base"
            ]
         },
         {
@@ -7787,7 +7781,8 @@
                 "Special",
                 "Title",
                 "Talent-shooting",
-                "Force",
+                "Force-Base",
+                "Force-Dark",
                 "Sensor"
            ],
            "modifier_func":[
@@ -9753,7 +9748,6 @@
             "ship": "T-6 Shuttle",
             "charge":[0],
             "force": 3,
-            "force_side": "light",
             "titleID": 289,
             "shipId": 82,
             "skill": 5,
@@ -9762,8 +9756,9 @@
             "ability_ENG": "<div class='text'><img class='inline-img' src='img/forcestat.png'> <img class='inline-img' src='img/forcestat.png'> <img class='inline-img' src='img/forcestat.png'>??</div>",
             "slots": [
                 "Title",
-                "Force",
-                "Talent-elite"        
+                "Force-Base",
+                "Force-Light",
+                "Talent-elite"
            ],
            "modifier_func": [
             	["auto_equip","Condition","??"],
@@ -9822,7 +9817,8 @@
             "ability_ENG": "<div class='text'>??</div>",
             "slots": [     
             "Title",
-            "Force"    
+            "Force-Base",
+            "Force-Light"
                 
                        
            ],
@@ -9844,7 +9840,6 @@
             "ship": "T-6 Shuttle",
             "charge":[0],
             "force": 1,
-            "force_side": "light",
             "titleID": 289,
             "shipId": 82,
             "skill": 3,
@@ -9853,7 +9848,8 @@
             "ability_ENG": "<div class='text'>??</div>",
             "slots": [     
             "Title",
-            "Talent-piloting"    
+            "Talent-piloting",
+            "Force-Base"
                 
                        
            ],
@@ -9935,7 +9931,6 @@
             "ship": "VCX-100 Light Freighter",
             "charge":[0],
             "force": 1,
-            "force_side": "light",
             "titleID": 203,
             "shipId": 25,
             "skill": 1,
@@ -9945,7 +9940,7 @@
             "slots": [     
             "Title",
             "Condition",
-            "Talent-shooting"
+            "Force-Base"
                                  
            ],
            "modifier_func": [
@@ -9987,7 +9982,6 @@
             "ship": "RZ-2 A-wing",
             "charge":[0],
             "force": 1,
-            "force_side": "light",
             "titleID": 0,
             "shipId": 45,
             "skill": 3,
@@ -9996,7 +9990,7 @@
             "ability_ENG": "<div class='text'>After you reveal your maneuver, you may spend 1 <img class='inline-img' src='img/fo.jpg'> to execute it as a sideslip.</div>",
             "slots": [     
             "Talent-piloting",
-            "Force"
+            "Force-Base"
                                  
            ]
          
@@ -10693,8 +10687,8 @@
             "ability_ENG": "<div class='text'>After you perform an attack, you may spend 2 <img class='inline-img' src='img/fo.jpg'> to perform a bonus primary attack against a different target. If your attack missed, you may perform that bonus primary attack against the same target instead</div>",
             "slots": [     
             "Title",
-            "Force",
-            "Force"             
+            "Force-Base",
+            "Force-Dark"
         ],
         "modifier_func": [
                 ["auto_equip","Title",305]                       
@@ -10720,8 +10714,8 @@
             "ability_ENG": "<div class='text'>After you defend, if the attacker is in your firing arc, you may spend 1 <img class='inline-img' src='img/fo.jpg'> to remove 1 of your blue or red tokens.<br>After you perform an attack that hits, you may spend 1 <img class='inline-img' src='img/fo.jpg'> to perform an action.</div>",
             "slots": [     
             "Title",
-            "Force",
-            "Force"             
+            "Force-Base",
+            "Force-Dark"
         ],
         "modifier_func": [
                 ["auto_equip","Title",305]                       
@@ -11054,7 +11048,6 @@
             "ship": "Firespray-class Patrol Craft",
             "charge":[0],
             "force": 1,
-            "force_side": "dark",
             "titleID": 139,
             "shipId": 7,
             "skill": 3,
@@ -11064,7 +11057,7 @@
             "slots": [     
             "Title",
             "Talent-elite",
-            "Force",
+            "Force-Base",
             "Gunner",
             "Cannon",
             "Illicit"                   
@@ -11092,8 +11085,9 @@
             "ability_ENG": "<div class='text'>After you full execute a <img class='inline-img' src='img/Sl W.jpg'> maneuver, you may choose an enemy ship at range 1 and spend 1 <img class='inline-img' src='img/fo.jpg'>. If you do, this ship gains 1 stress token.</div>",
             "slots": [     
             "Talent-shooting",
-            "Force"                   
-        ]       
+            "Force-Base",
+            "Force-Dark"
+        ]
         },
         {
             "name_FRA": "Talia",
@@ -11114,8 +11108,8 @@
             "ability_ENG": "<div class='text'>When you engage, if you are not stressed, you may gain 1 stress or strain token to change your ship configuration.</div>",
             "slots": [     
             "Talent-piloting",
-            "Force"                   
-        ]       
+            "Force-Base"
+        ]
         },
         {
             "name_FRA": "Comte Dooku",
@@ -11136,9 +11130,9 @@
             "ability_ENG": "<div class='text'>After you defend, if the attacker is in your firing arc, you may spend 1 <img class='inline-img' src='img/fo.jpg'> to remove 1 of your blue or red tokens.<br>After you perform an attack that hits, you may spend 1 <img class='inline-img' src='img/fo.jpg'> to perform an action.</div>",
             "slots": [     
             "Talent-leadership",
-            "Force",
-            "Force"                   
-        ]       
+            "Force-Base",
+            "Force-Dark"
+        ]
         },
         {
             "name_FRA": "DFS-081",
@@ -11341,9 +11335,9 @@
             "ability_FRA": "<div class='text'>Avant qu'une carte de dégât face cachée ne soit attribuée à un vaisseau ennemi dans votre <img class='inline-img' src='img/bulls.jpg'> , vous pouvez dépenser 1 <img class='inline-img' src='img/fo.jpg'> . Dans ce cas, cette carte est attribuée face visible à la place.</div>",
             "ability_ENG": "<div class='text'>Before an enemy ship in your <img class='inline-img' src='img/bulls.jpg'> is dealt a facedown damage card, you may spend 1 <img class='inline-img' src='img/fo.jpg'>. If you do, that damage card is dealt face up instead.</div>",
             "slots": [     
-                "Force",
-                "Force",
-                "Talent-leadership"                 
+                "Force-Dark",
+                "Force-Light",
+                "Talent-leadership"
         ]       
         },
         {
@@ -11618,7 +11612,6 @@
             "ship": "Oubliette Class Transport",
             "charge":[1,"0"],
             "force": 1,
-            "force_side": "dark",
             "titleID": 318,
             "shipId": 94,
             "skill": 1,
@@ -11627,7 +11620,7 @@
             "ability_ENG": "<div class='text'>At the start of engagement phase, you may spend 1 <img class='inline-img' src='img/charge.png'>. If you do, you may choose 1 ship at range 0. That ship gains 1 tractor token.</div>",
             "slots": [     
             "Title",  
-            "Force"
+            "Force-Base"
         ],
             "modifier_func": [
             ["auto_equip", "Title",318]
@@ -11644,7 +11637,6 @@
             "ship": "Oubliette Class Transport",
             "charge":[1,"0"],
             "force": 1,
-            "force_side": "dark",
             "titleID": 318,
             "shipId": 94,
             "skill": 2,
@@ -11653,7 +11645,7 @@
             "ability_ENG": "<div class='text'>At the end of Neutralize Results Step, when you deal a <img class='inline-img' src='img/crit.jpg'> damage, you may spend 1 <img class='inline-img' src='img/charge.png'> to cancel that <img class='inline-img' src='img/crit.jpg'> to deal 1 ion token instead</div>",
             "slots": [     
             "Title",  
-            "Force"
+            "Force-Base"
         ],
             "modifier_func": [
             ["auto_equip", "Title",318]
@@ -11670,7 +11662,6 @@
             "ship": "Oubliette Class Transport",
             "charge":[1,"0"],
             "force": 1,
-            "force_side": "dark",
             "titleID": 318,
             "shipId": 94,
             "skill": 4,
@@ -11679,7 +11670,7 @@
             "ability_ENG": "<div class='text'>After an enemy ship executes a maneuver, if it is at range 1 in your <img class='inline-img' src='img/attackF.jpg'>, you may spend 1 <img class='inline-img' src='img/charge.png'>. If you do you may perform a bonus attack with 2 attack dice. If it hits, cancel all results, and deal 1 weapon disabled token to the defender instead.</div>",
             "slots": [     
             "Title",  
-            "Force"
+            "Force-Base"
         ],
             "modifier_func": [
             ["auto_equip", "Title",318]
@@ -11937,7 +11928,6 @@
             "ship": "ETA Class Shuttle",
             "charge":[0],
             "force": 2,
-            "force_side": "dark",
             "titleID": 0,
             "shipId": 98,
             "skill": 5,
@@ -11946,8 +11936,9 @@
             "ability_ENG": "<div class='text'>Before you activate, you may spend 1 <img class='inline-img' src='img/fo.jpg'>. If you do, your opponent has to guess your maneuver.<br>If his guess is right, you must change your maneuver's dial and lose 1 <img class='inline-img' src='img/fo.jpg'> .<br>If his guess is wrong, an enemy ship at range 0-2 gains 1 strain token and you recover 1 <img class='inline-img' src='img/fo.jpg'>.</div>",
             "slots": [   
                 "Talent-piloting",
-                "Force"    
-            ]   
+                "Force-Light",
+                "Force-Dark"
+            ]
         },
         {
             "name_FRA": "Jeela Brebtin",
@@ -12064,7 +12055,6 @@
             "ship": "RP82 Fighter",
             "charge":[0],
             "force": 2,
-            "force_side": "dark",
             "titleID": 0,
             "shipId": 96,
             "skill": 4,
@@ -12073,8 +12063,9 @@
             "ability_ENG": "<div class='text'>After you attack, you may perform a <img class='inline-img' src='img/BR.png'> or <img class='inline-img' src='img/BO.png'> action using your overdrive thrusters.</div>",
             "slots": [   
                 "Talent-leadership",
-                "Force"   
-            ]   
+                "Force-Base",
+                "Force-Dark"
+            ]
         },
         {
             "name_FRA": "Shin Hati",
@@ -12086,7 +12077,6 @@
             "ship": "RP82 Fighter",
             "charge":[0],
             "force": 1,
-            "force_side": "dark",
             "titleID": 0,
             "shipId": 96,
             "skill": 4,
@@ -12095,8 +12085,8 @@
             "ability_ENG": "<div class='text'>Before you activate, you may spend 1 force. If you do, you may look an enemy ship's dial at range 1-2.</div>",
             "slots": [   
                 "Talent-shooting",
-                "Force"   
-            ]   
+                "Force-Base"
+            ]
         },
         {
             "name_FRA": "Inquisiteur Marrok",
@@ -12108,7 +12098,6 @@
             "ship": "RP82 Fighter",
             "charge":[0],
             "force": 1,
-            "force_side": "dark",
             "titleID": 0,
             "shipId": 96,
             "skill": 3,
@@ -12117,8 +12106,8 @@
             "ability_ENG": "<div class='text'>While you use your overdrive thruster ability, you may spend 1 <img class='inline-img' src='img/fo.jpg'> to ignore obstacles. Then, if you completely or partially moved through an obstacle, gain 1 evade token.</div>",
             "slots": [   
                 "Talent-shooting",
-                "Force"   
-            ]   
+                "Force-Base"
+            ]
         },
         {
             "name_FRA": "Eclaireur d'Elsbeth",
@@ -12606,7 +12595,7 @@
             "ability_ENG": "<div class='text'>While you obstruct an attack, friendly ships can use your tokens to modify their defense or attack dice.</div>",
             "slots": [   
             "Title",
-            "Force",    
+            "Force-Base",
             "Talent-shooting"
             ],
             "modifier_func": [
@@ -12632,8 +12621,8 @@
             "ability_ENG": "<div class='text'>At the start of engagement phase, you may spend 1 <img class='inline-img' src='img/fo.jpg'>. If you do, you may choose a ship in your firing arc at range 1-2. That ship spends 1 green token or takes 1 strain token.</div>",
             "slots": [
                 "Title",   
-            "Force",    
-            "Talent-piloting"
+                "Force-Base",
+                "Talent-piloting"
             ],
             "modifier_func": [
             ["auto_equip", "Title",320]
@@ -12883,8 +12872,9 @@
             "ability_FRA": "<div class='text'></div>",
             "ability_ENG": "<div class='text'></div>",
             "slots": [ 
-                "Force",
-                "Force"    
+                "Force-Base",
+                "Force-Light",
+                "Force-Light"
             ]
         },
 	{
@@ -12904,8 +12894,8 @@
             "ability_FRA": "<div class='text'></div>",
             "ability_ENG": "<div class='text'></div>",
             "slots": [ 
-                "Force",
-                "Force"    
+                "Force-Base",
+                "Force-Light"
             ]
         },
 	{
@@ -12925,8 +12915,8 @@
             "ability_FRA": "<div class='text'></div>",
             "ability_ENG": "<div class='text'></div>",
             "slots": [ 
-                "Force",
-                "Force"    
+                "Force-Base",
+                "Force-Light"    
             ]
         },
 	{
