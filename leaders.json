@@ -118,7 +118,7 @@
      "numberOfFactions": 1,
      "leaderability_FRA": "<div class='text'>A la fin de la phase de fin, un vaisseau allié peut s'occulter en dépensant 1 <img class='inline-img' src='img/charge.png'>, OU vous pouvez récupérer 1 <img class='inline-img' src='img/charge.png'> et votre adversaire peut renforcer 1 de ses vaisseaux. En phase Système, vous pouvez dépenser 2 <img class='inline-img' src='img/charge.png'> pour gagner 2 <img class='inline-img' src='img/scenario_point.png'>.</div>",
      "leaderability_ENG": "<div class='text'>At the end of the end phase, an allied ship can cloak by spending 1 <img class='inline-img' src='img/charge.png'>, OR you can recover 1 <img class='inline-img' src='img/charge.png'> and your opponent can reinforce 1 of their ships. During the System phase, you can spend 2 <img class='inline-img' src='img/charge.png'> to gain 2 <img class='inline-img' src='img/scenario_point.png'>.</div>",
-     "charge": [0],
+     "charge": [2,"Yellow"],
      "logistic": 25
      },
      {
