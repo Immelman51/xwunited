@@ -1,10 +1,3 @@
-//
-//  pdfmake_HTMLparser.js
-//  
-//
-//  Created by Emmanuel Broto on 26/07/2026.
-//
-
 /**
  * Exemple de génération de liste d'escadron X-Wing avec pdfmake
  * ----------------------------------------------------------------
@@ -275,22 +268,13 @@ async function preloadImages(cheminsImages /* tableau de chemins, ex: ['img/lead
 function parseHtmlToPdfmakeText(html, iconWidthPt = cm(0.4)) {
   if (!html) return [{ text: '' }];
 
-  // 1. On repère les résidus de l'ancien système de balises #xxx# pour t'alerter
-  const residus = html.match(/#[a-zA-Z]+#/g);
-  if (residus && residus.length > 0) {
-    console.warn(
-      `[parseHtmlToPdfmakeText] Résidu(s) d'ancien système détecté(s) : ${residus.join(', ')} ` +
-      `dans le texte : "${html.slice(0, 80)}..."`
-    );
-  }
-
-  // 2. On retire les balises <div ...> / </div> (on garde leur contenu)
+  // 1. On retire les balises <div ...> / </div> (on garde leur contenu)
   let cleaned = html.replace(/<\/?div[^>]*>/g, '');
 
-  // 3. On transforme <br> / <br/> / <br /> en un marqueur de saut de ligne
+  // 2. On transforme <br> / <br/> / <br /> en un marqueur de saut de ligne
   cleaned = cleaned.replace(/<br\s*\/?>/g, '\n');
 
-  // 4. On découpe la chaîne en alternant texte / <img src="...">
+  // 3. On découpe la chaîne en alternant texte / <img src="...">
   const result = [];
   const imgRegex = /<img[^>]*src=['"]([^'"]+)['"][^>]*>/g;
   let lastIndex = 0;
@@ -309,14 +293,14 @@ function parseHtmlToPdfmakeText(html, iconWidthPt = cm(0.4)) {
     lastIndex = imgRegex.lastIndex;
   }
 
-  // 5. Le texte restant après la dernière image
+  // 4. Le texte restant après la dernière image
   const remaining = cleaned.slice(lastIndex);
   remaining.split('\n').forEach((segment, i) => {
     if (i > 0) result.push({ text: '\n' });
     if (segment) result.push({ text: segment });
   });
 
-  // 6. Filet de sécurité : on retire toute autre balise HTML oubliée (span, b, etc.)
+  // 5. Filet de sécurité : on retire toute autre balise HTML oubliée (span, b, etc.)
   return result.map((item) =>
     item.text ? { ...item, text: item.text.replace(/<[^>]+>/g, '') } : item
   );

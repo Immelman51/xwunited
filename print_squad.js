@@ -6,7 +6,79 @@ let elementsToPrintArray = [false,false,[[],[],[],[],[],[],[],[]],[]];
 let element = document.getElementById("content");
 let listValidity = true;
 let language = ""; // Initialize language variable
-let cheminsImages = []; //used for pdfmake to transform the images in base64 in print_squad_pdfmake.js. Every time I call an image, we have to store it into cheminsImages.
+
+let cheminsImagesLeader = []; //used for pdfmake to transform the images in base64 in print_squad_pdfmake.js. Every time I call an image, we have to store it into cheminsImages.
+//id O : factionimg1
+//id 1 : factionimg2
+//id 2 : factionimg3
+//id 3 : red leader charge img or yellow leader charge img
+
+let cheminsImagesActions = []; //used for pdfmake to transform the images in base64 in print_squad_pdfmake.js. Every time I call an image, we have to store it into cheminsImages.
+//all action images
+
+let cheminsImagesPilot = []://used for pdfmake to transform the images in base64 in print_squad_pdfmake.js. Every time I call an image, we have to store it into cheminsImages.
+//id0 : pilot0 background img ;
+//id1 : pilot0 factionimg ;
+//id2 : pilot1 background img ;
+//id3 : pilot1 factionimg ;
+//...
+
+let cheminsImagesStats = [
+                        "img/agility.jpg",
+                        "img/attack0.jpg",
+                        "img/attack180.jpg",
+                        "img/attackB.jpg",
+                        "img/attackBull.jpg",
+                        "img/attackDT.jpg",
+                        "img/attackF.jpg",
+                        "img/attackT.jpg",
+                        "img/forcestat.png",
+                        "img/hull.jpg",
+                        "img/shield.jpg"
+                        
+                        ]; //used for pdfmake to transform the images in base64 in print_squad_pdfmake.js. Every time I call an image, we have to store it into cheminsImages.
+//all stat imgs (attack, agility hull force charge)
+
+let cheminsImagesUpgrades = [
+                             "img/Astromech.png",
+                             "img/Calculator.png",
+                             "img/Cannon.png",
+                             "img/Crew.png",
+                             "img/Droid.png",
+                             "img/Force.png",
+                             "img/Gunner.png",
+                             "img/Illicit.png",
+                             "img/Missile.png",
+                             "img/Modification.png",
+                             "img/Payload.png",
+                             "img/Sensor.png",
+                             "img/Special.png",
+                             "img/Talent-elite.png",
+                             "img/Talent-leadership.png",
+                             "img/Talent-piloting.png",
+                             "img/Talent-shooting.png",
+                             "img/Talent-special.png",
+                             "img/Talent.png",
+                             "img/Tech.png",
+                             "img/Tie mod.png",
+                             "img/Title.png",
+                             "img/Torpedo.png",
+                             "img/Turret.png",
+                             "img/Hyperspace Ring.png"
+                             ];
+//used for pdfmake to transform the images in base64 in print_squad_pdfmake.js. Every time I call an image, we have to store it into cheminsImages.
+//all upgrades logos img
+
+let cheminsImagesGen = [
+                        "img/chargeminus.png",
+                        "img/chargeplus.png",
+                        "img/chargestat.png",
+                        "img/chargestatRed.png",
+                        "img/forcestat.png",
+                        "img/scenario_point.png"
+                        ];
+//used for pdfmake to transform the images in base64 in print_squad_pdfmake.js. Every time I call an image, we have to store it into cheminsImages.
+//All charges and forces img, and the scenario_point img.
 
 
 
@@ -138,7 +210,7 @@ for(i=0; i<3; i++){
     let factionimg = document.createElement('img');
     factionimg.setAttribute('class', 'factionimg');
     factionimg.setAttribute("src",'img/'+leaders[lID]['leaderfaction'][i]+'mini.jpg') ;
-    cheminsImages.push(`img/${leaders[lID]['leaderfaction'][i]}mini.jpg`);
+    cheminsImagesLeader.push(`img/${leaders[lID]['leaderfaction'][i]}mini.jpg`);
     faction.appendChild(factionimg);
     }
 }
@@ -147,25 +219,26 @@ leaderAbility.innerHTML = leaders[lID]['leaderability_'+language];
 const nbrOfLeaderCharges = leaders[lID]['charge'][0];
 console.log(nbrOfLeaderCharges);
 
-for(j=0; j<nbrOfLeaderCharges ;j++){ //We display as many charge logos as the number of charges the leader has
-        switch (leaders[lID]['charge'][1]) {
-        case "Red" :
-            newcharge = document.createElement('img');
-            newcharge.setAttribute("class","chargeforceimg");
-            newcharge.setAttribute("src","img/chargestatRed.png");
-            cheminsImages.push("img/chargestatRed.png");
-            leaderCharge.appendChild(newcharge);
-            break;
-        case "Yellow" :
-            newcharge = document.createElement('img');
-            newcharge.setAttribute("class","chargeforceimg");
-            newcharge.setAttribute("src","img/chargestat.png");
-            cheminsImages.push("img/chargestat.png");
-            leaderCharge.appendChild(newcharge);
-            break;
-        default :
-        console.log("This leader charge configuration has not been programmed in displayLeader() from print_squad.js. There also might be a mistake in leaders.json.")
-        break;
+    switch (leaders[lID]['charge'][1]) {
+    case "Red" : cheminsImagesLeader.push("img/chargestatRed.png");
+            for(j=0; j<nbrOfLeaderCharges ;j++){ //We display as many charge logos as the number of charges the leader has
+                newcharge = document.createElement('img');
+                newcharge.setAttribute("class","chargeforceimg");
+                newcharge.setAttribute("src","img/chargestatRed.png");
+                leaderCharge.appendChild(newcharge);
+            }
+    break;
+    case "Yellow" : cheminsImagesLeader.push("img/chargestat.png");
+            for(j=0; j<nbrOfLeaderCharges ;j++){ //We display as many charge logos as the number of charges the leader has
+                newcharge = document.createElement('img');
+                newcharge.setAttribute("class","chargeforceimg");
+                newcharge.setAttribute("src","img/chargestat.png");
+                leaderCharge.appendChild(newcharge);
+            }
+    break;
+    default :
+    console.log("This leader charge configuration has not been programmed in displayLeader() from print_squad.js. There also might be a mistake in leaders.json.")
+    break;
     }
 
 } 
@@ -210,7 +283,7 @@ function displayPilotActions(x){
             newaction = document.createElement('img');
             newaction.setAttribute('class','action '+x+''+actionsArray[g][1]);
             newaction.setAttribute('src', 'img/'+actionsArray[g][1]+'.jpg');
-            cheminsImages.push(`img/${actionsArray[g][1]}.jpg`);
+            cheminsImagesActions.push(`img/${actionsArray[g][1]}.jpg`);
             actionlist.appendChild(newaction);
             break;
             case 1 : //if 1 is the first value, then it is a linked action
@@ -219,17 +292,17 @@ function displayPilotActions(x){
             
             newaction1 = document.createElement('img');
             newaction1.setAttribute('src', 'img/'+actionsArray[g][1]+'.jpg');
-            cheminsImages.push(`img/${actionsArray[g][1]}.jpg`);
+            cheminsImagesActions.push(`img/${actionsArray[g][1]}.jpg`);
             newaction1.setAttribute('class','linked action '+x+''+actionsArray[g][1]);
             
             newlink = document.createElement('img');
             newlink.setAttribute('src', 'img/fleche.jpg');
-            cheminsImages.push(`img/fleche.jpg`);
+            cheminsImagesActions.push(`img/fleche.jpg`);
             newlink.setAttribute('class','linked action');
             
             newaction2 = document.createElement('img');
             newaction2.setAttribute('src', 'img/'+actionsArray[g][2]+'.jpg');
-            cheminsImages.push(`img/${actionsArray[g][2]}.jpg`);
+            cheminsImagesActions.push(`img/${actionsArray[g][2]}.jpg`);
             newaction2.setAttribute('class','linked action '+x+''+actionsArray[g][2]);
 
             newaction.appendChild(newaction1);
@@ -271,7 +344,7 @@ function displayPilot(x){
     newimage = document.createElement('div');
     newimage.setAttribute('class','pilotImg');
     newimage.setAttribute('style', "background-image: url('img/pilots/"+pid+".jpg');");
-    cheminsImages.push(`img/pilots/${pid}.jpg`);
+    cheminsImagesPilot[x].push(`img/pilots/${pid}.jpg`);
     //imgPilot.insertBefore(newimage, imgPilot.firstChild);
     imgPilot.appendChild(newimage);
 
@@ -281,7 +354,7 @@ function displayPilot(x){
     //we load the faction image
     let factionlogo = document.createElement('img');
     factionlogo.setAttribute("src",'img/'+pilots[pid]['faction']+'mini.jpg');
-    cheminsImages.push(`img/${pilots[pid]['faction']}mini.jpg`);
+    cheminsImagesPilot[x].push(`img/${pilots[pid]['faction']}mini.jpg`);
     factionlogo.setAttribute("class",'factionimg');
     pilotFaction.appendChild(factionlogo);
 
@@ -294,7 +367,7 @@ function displayPilot(x){
     
     //Attack 1 and Attack 2
     pilotstat.innerHTML = '<div><span class="attack">' +ships[sid]["attack"][0][1] + '</span> <img src="img/attack'+ships[sid]["attack"][0][0] +'.jpg" class="logo"/></div>' ;
-    cheminsImages.push(`img/attack${ships[sid]["attack"][0][0]}.jpg`);
+    cheminsImagesPilot[x].push(`img/attack${ships[sid]["attack"][0][0]}.jpg`);
     if(ships[sid]["attack"].length === 2){
     pilotstat.innerHTML = pilotstat.innerHTML + '<div><span class="attack">' + ships[sid]["attack"][1][1] + '</span> <img src="img/attack'+ships[sid]["attack"][1][0] +'.jpg" class="logo"/></div>' ;
     cheminsImages.push(`img/attack${ships[sid]["attack"][1][0]}.jpg`);
