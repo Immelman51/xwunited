@@ -279,16 +279,8 @@ function buildDocDefinition(leader, pilotes /* max 8 */) {
 // 5. Génération et téléchargement (côté navigateur)
 // ---------------------------------------------------------------------
 async function genererEtTelecharger(leaderData, pilotesData) {
-  // 1. Récupérer tous les chemins d'images utilisés dans tes données
-  const cheminsImages = [
-    leaderData.factionImg1,
-    leaderData.factionImg2,
-    leaderData.factionImg3,
-    ...pilotesData.flatMap((p) => [
-      p.factionImg,
-      ...(p.equipements || []).map((e) => e.logo),
-    ]),
-  ].filter(Boolean);
+  // 1. Récupérer tous les chemins d'images utilisés dans tes données (already done : cheminsImages is defined and filled in print_squad.js )
+
 
   // 2. Les convertir toutes en base64 en une fois
   const imagesBase64 = await preloadImages(cheminsImages);

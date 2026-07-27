@@ -4236,8 +4236,8 @@
              "charge": [0],
              "points": 0,
              "talent_points": 0,
-             "effect_FRA": "Tant qu’un autre vaisseau allié situé dans votre #Larc# ou #Rarc# à portée 0-2 défend, s’il est limité ou possède l’amélioration Dévoué et que vous n’êtes pas contraint, vous pouvez gagner 1 marqueur de contrainte. Dans ce cas, le défenseur relance 1 de ses résultats vierges.",
-             "effect_ENG": "While another friendly ship in your #Larc# or #Rarc# at range 0-2 defends, if it is limited or has the Dedicated upgrade and you are not strained, you may gain 1 strain token. If you do, the defender rerolls 1 of their blank results.",
+             "effect_FRA": "Tant qu’un autre vaisseau allié situé dans votre <img class='inline-img' src='img/Larc.jpg'> ou <img class='inline-img' src='img/Rarc.jpg'> à portée 0-2 défend, s’il est limité ou possède l’amélioration Dévoué et que vous n’êtes pas contraint, vous pouvez gagner 1 marqueur de contrainte. Dans ce cas, le défenseur relance 1 de ses résultats vierges.",
+             "effect_ENG": "While another friendly ship in your <img class='inline-img' src='img/Larc.jpg'> or <img class='inline-img' src='img/Rarc.jpg'> at range 0-2 defends, if it is limited or has the Dedicated upgrade and you are not strained, you may gain 1 strain token. If you do, the defender rerolls 1 of their blank results.",
              "faction": ["Clone_Army"] 
          },
          {
@@ -4438,8 +4438,8 @@
              "force": 1,
              "charge": [0],
              "points":6,
-             "effect_FRA": "<img class='chargeforceimg' src='img/forcestat.png'>Au début de la phase de dénouement, si vous êtes renforcé, vous pouvez choisir 1 vaisseau allié à portée 0 ou qui est situé dans votre #Larc# ou #Rarc# à portée 1. Ce vaisseau retire 1 marqueur d’épuisement ou de contrainte ou répare 1 carte de dégât face visible.",
-             "effect_ENG": "<img class='chargeforceimg' src='img/forcestat.png'>At the start of the end phase, if you are reinforced, you may choose 1 friendly ship at range 0 or in your #Larc# or #Rarc# at range 1. That ship removes 1 deplete or strain token or repairs 1 faceup damage card.",
+             "effect_FRA": "<img class='chargeforceimg' src='img/forcestat.png'>Au début de la phase de dénouement, si vous êtes renforcé, vous pouvez choisir 1 vaisseau allié à portée 0 ou qui est situé dans votre <img class='inline-img' src='img/Larc.jpg'> ou <img class='inline-img' src='img/Rarc.jpg'> à portée 1. Ce vaisseau retire 1 marqueur d’épuisement ou de contrainte ou répare 1 carte de dégât face visible.",
+             "effect_ENG": "<img class='chargeforceimg' src='img/forcestat.png'>At the start of the end phase, if you are reinforced, you may choose 1 friendly ship at range 0 or in your <img class='inline-img' src='img/Larc.jpg'> or <img class='inline-img' src='img/Rarc.jpg'> at range 1. That ship removes 1 deplete or strain token or repairs 1 faceup damage card.",
              "faction": ["Jedi_Order"]
            
          },

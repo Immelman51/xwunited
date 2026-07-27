@@ -1076,8 +1076,8 @@
             "skill": 5,
             "points": 8,
             
-            "ability_FRA": "<div class='text'>Tant que vous effectuez une attaque principale, si un allié Dark Vador ou 'Backstabber' est dans votre arc #Larc# ou #Rarc# à portée 0-1, lancez 1 dé d'attaque supplémentaire.</div>",
-            "ability_ENG": "<div class='text'>While you perform a primary attack, if a friendly Darth Vader or 'Backstabber' is in your #Larc# or #Rarc# at range 0-1, roll 1 additional 1 attack die.</div>",
+            "ability_FRA": "<div class='text'>Tant que vous effectuez une attaque principale, si un allié Dark Vador ou 'Backstabber' est dans votre arc <img class='inline-img' src='img/Larc.jpg'> ou <img class='inline-img' src='img/Rarc.jpg'> à portée 0-1, lancez 1 dé d'attaque supplémentaire.</div>",
+            "ability_ENG": "<div class='text'>While you perform a primary attack, if a friendly Darth Vader or 'Backstabber' is in your <img class='inline-img' src='img/Larc.jpg'> or <img class='inline-img' src='img/Rarc.jpg'> at range 0-1, roll 1 additional 1 attack die.</div>",
             "slots": [
                 "Talent-piloting"
             ]
@@ -1097,8 +1097,8 @@
             "skill": 5,
             "points": 8,
             
-            "ability_FRA": "<div class='text'>Tant que vous effectuez une attaque principale, si un allié Dark Vador ou 'Mauler' Mithel est dans votre arc #Larc# ou #Rarc# à portée 0-1, lancez 1 dé d'attaque supplémentaire.</div>",
-            "ability_ENG": "<div class='text'>While you perform a primary attack, if a friendly Darth Vader or 'Mauler' Mithel is in your #Larc# or #Rarc# at range 0-1, roll 1 additional 1 attack die.</div>",
+            "ability_FRA": "<div class='text'>Tant que vous effectuez une attaque principale, si un allié Dark Vador ou 'Mauler' Mithel est dans votre arc <img class='inline-img' src='img/Larc.jpg'> ou <img class='inline-img' src='img/Rarc.jpg'> à portée 0-1, lancez 1 dé d'attaque supplémentaire.</div>",
+            "ability_ENG": "<div class='text'>While you perform a primary attack, if a friendly Darth Vader or 'Mauler' Mithel is in your <img class='inline-img' src='img/Larc.jpg'> or <img class='inline-img' src='img/Rarc.jpg'> at range 0-1, roll 1 additional 1 attack die.</div>",
             "slots": [
                 "Talent-shooting"
             ]
@@ -1176,8 +1176,8 @@
             "shipId": 69,
             "points": 10,
             
-            "ability_FRA": "<div class='text'>Tant qu’un vaisseau allié à portée 0–2 effectue une attaque, si vous êtes dans le #Larc# ou #Rarc# du défenseur, l’attaquant peut relancer 1 dé d’attaque.</div>",
-            "ability_ENG": "<div class='text'>While a friendly ship at range 0-2 performs an attack, if you are in the #Larc# or #Rarc# of the defender, the attacker may reroll 1 attack die.", 
+            "ability_FRA": "<div class='text'>Tant qu’un vaisseau allié à portée 0–2 effectue une attaque, si vous êtes dans le <img class='inline-img' src='img/Larc.jpg'> ou <img class='inline-img' src='img/Rarc.jpg'> du défenseur, l’attaquant peut relancer 1 dé d’attaque.</div>",
+            "ability_ENG": "<div class='text'>While a friendly ship at range 0-2 performs an attack, if you are in the <img class='inline-img' src='img/Larc.jpg'> or <img class='inline-img' src='img/Rarc.jpg'> of the defender, the attacker may reroll 1 attack die.", 
             "slots": [
                 "Talent-piloting"
             ]
@@ -3869,7 +3869,7 @@
             "points": 8,
             
             "ability_FRA": "<div class='text'>Tant que vous défendez ou attaquez, si l'attaque est à portée 1 et que vous êtes dans le <img class='inline-img' src='img/attackF.jpg'> de l'ennemi, vous pouvez changer un de vos résultats <img class='inline-img' src='img/eye.jpg'> en <img class='inline-img' src='img/hit.jpg'> ou <img class='inline-img' src='img/evd.jpg'>.</div>",
-            "ability_ENG": "<div class='text'>While you defend or perform an attack, if the attack range is 1 and you are in the enemy's (Farc), you may change 1 of your <img class='inline-img' src='img/eye.jpg'> results to an <img class='inline-img' src='img/hit.jpg'> or <img class='inline-img' src='img/evd.jpg'> result.</div>",
+            "ability_ENG": "<div class='text'>While you defend or perform an attack, if the attack range is 1 and you are in the enemy's <img class='inline-img' src='img/Farc.jpg'>, you may change 1 of your <img class='inline-img' src='img/eye.jpg'> results to an <img class='inline-img' src='img/hit.jpg'> or <img class='inline-img' src='img/evd.jpg'> result.</div>",
             "slots": [
                 "Talent-piloting",
                 "Talent-shooting"
@@ -5689,8 +5689,8 @@
             "skill": 4,
             "points": 11,
             
-            "ability_FRA": "<div class='text'>Lorsqu'un vaisseau allié à portée 0-2 attaque, si le défenseur a un vaisseau allié (à vous) dans son #Larc# ET son #Rarc#, l'attaquant peut relancer 1 dé d'attaque.</div>",
-            "ability_ENG": "<div class='text'>While a friendly ship at range 0-2 performs an attack, if the defender has a ship friendly to the attacker in its #Larc# AND #Rarc#, the attacker may reroll 1 attack die.</div>",
+            "ability_FRA": "<div class='text'>Lorsqu'un vaisseau allié à portée 0-2 attaque, si le défenseur a un vaisseau allié (à vous) dans son <img class='inline-img' src='img/Larc.jpg'> ET son <img class='inline-img' src='img/Rarc.jpg'>, l'attaquant peut relancer 1 dé d'attaque.</div>",
+            "ability_ENG": "<div class='text'>While a friendly ship at range 0-2 performs an attack, if the defender has a ship friendly to the attacker in its <img class='inline-img' src='img/Larc.jpg'> AND <img class='inline-img' src='img/Rarc.jpg'>, the attacker may reroll 1 attack die.</div>",
             "slots": [
                 "Talent-leadership"            
             ]
@@ -6616,8 +6616,8 @@
             "shipId": 63,
             "skill": 3,
             "points": 9,
-            "ability_FRA": "<div class='text'>Lorsque vous effectuez une attaque <img class='inline-img' src='img/attackT.jpg'>, si votre indicateur <img class='inline-img' src='img/attackT.jpg'> se trouve dans votre #Larc# ou #Rarc#, vous pouvez changer 1 résultat vierge en <img class='inline-img' src='img/eye.jpg'>.</div>",
-            "ability_ENG": "<div class='text'>While you perform a <img class='inline-img' src='img/attackT.jpg'> attack, if your <img class='inline-img' src='img/attackT.jpg'> indicator is in your #Larc# or #Rarc#, you may change 1 blank result to a <img class='inline-img' src='img/eye.jpg'> result.</div>",
+            "ability_FRA": "<div class='text'>Lorsque vous effectuez une attaque <img class='inline-img' src='img/attackT.jpg'>, si votre indicateur <img class='inline-img' src='img/attackT.jpg'> se trouve dans votre <img class='inline-img' src='img/Larc.jpg'> ou <img class='inline-img' src='img/Rarc.jpg'>, vous pouvez changer 1 résultat vierge en <img class='inline-img' src='img/eye.jpg'>.</div>",
+            "ability_ENG": "<div class='text'>While you perform a <img class='inline-img' src='img/attackT.jpg'> attack, if your <img class='inline-img' src='img/attackT.jpg'> indicator is in your <img class='inline-img' src='img/Larc.jpg'> or <img class='inline-img' src='img/Rarc.jpg'>, you may change 1 blank result to a <img class='inline-img' src='img/eye.jpg'> result.</div>",
             "slots": [
                 "Talent-shooting"
             ]
@@ -6884,8 +6884,8 @@
             "shipId": 52,
             "skill": 3,
             "points": 9,
-            "ability_FRA": "<div class='text'>Lorsqu'un vaisseau allié dans votre #Larc# ou #Rarc# à portée 1-2 reçoit un jeton contrainte, vouus pouvez dépenser 1 <img class='inline-img' src='img/charge.png'>. Dans ce cas, le vaisseau contraint reçoit 1 jeton évasion.</div>",
-            "ability_ENG": "<div class='text'>When a friendly ship in your #Larc# or #Rarc# at range 1-2 receives a strain token, you may spend 1 <img class='inline-img' src='img/charge.png'>. If you do, the strained ship receives 1 evade token</div>",
+            "ability_FRA": "<div class='text'>Lorsqu'un vaisseau allié dans votre <img class='inline-img' src='img/Larc.jpg'> ou <img class='inline-img' src='img/Rarc.jpg'> à portée 1-2 reçoit un jeton contrainte, vouus pouvez dépenser 1 <img class='inline-img' src='img/charge.png'>. Dans ce cas, le vaisseau contraint reçoit 1 jeton évasion.</div>",
+            "ability_ENG": "<div class='text'>When a friendly ship in your <img class='inline-img' src='img/Larc.jpg'> or <img class='inline-img' src='img/Rarc.jpg'> at range 1-2 receives a strain token, you may spend 1 <img class='inline-img' src='img/charge.png'>. If you do, the strained ship receives 1 evade token</div>",
             "slots": [
                 "Talent-shooting"
             ]
@@ -7106,8 +7106,8 @@
             "shipId": 30,
             "skill": 3,
             "points": 12,
-            "ability_FRA": "<div class='text'>Lorsqu'un un vaisseau allié à portée 0-2 dans votre #Larc# ou #Rarc# effectue une attaque principale, il peut relancer 1 dé d'attaque.</div>",
-            "ability_ENG": "<div class='text'>While a friendly ship at range 1-2 in your #Larc# or #Rarc# performs a primary attack, it may reroll 1 attack die.</div>",
+            "ability_FRA": "<div class='text'>Lorsqu'un un vaisseau allié à portée 0-2 dans votre <img class='inline-img' src='img/Larc.jpg'> ou <img class='inline-img' src='img/Rarc.jpg'> effectue une attaque principale, il peut relancer 1 dé d'attaque.</div>",
+            "ability_ENG": "<div class='text'>While a friendly ship at range 1-2 in your <img class='inline-img' src='img/Larc.jpg'> or <img class='inline-img' src='img/Rarc.jpg'> performs a primary attack, it may reroll 1 attack die.</div>",
             "slots": [
                 "Talent-shooting"
 
@@ -7127,8 +7127,8 @@
             "shipId": 30,
             "skill": 3,
             "points": 11,
-            "ability_FRA": "<div class='text'>Après qu'un vaisseau allié à portée 1-2 dans cotre #Larc# ou #Rarc# a défendu, vous pouvez acquisitionner l'attaquant.</div>",
-            "ability_ENG": "<div class='text'>After a friendly ship at range 1-2 in your #Rarc# or #Larc# defends, you may acquire a lock on the attacker.</div>",
+            "ability_FRA": "<div class='text'>Après qu'un vaisseau allié à portée 1-2 dans cotre <img class='inline-img' src='img/Larc.jpg'> ou <img class='inline-img' src='img/Rarc.jpg'> a défendu, vous pouvez acquisitionner l'attaquant.</div>",
+            "ability_ENG": "<div class='text'>After a friendly ship at range 1-2 in your <img class='inline-img' src='img/Rarc.jpg'> or <img class='inline-img' src='img/Larc.jpg'> defends, you may acquire a lock on the attacker.</div>",
             "slots": [
                 "Talent-piloting"
 
@@ -9286,7 +9286,7 @@
             "skill": 3,
             "points": 7,
             "ability_FRA": "<div class='text'>Pendant la phase de Fin, avant qu'un vaisseau ennemi dans votre <img class='inline-img' src='img/attackT.jpg'> récupère 1 charge ou 1 force récurrente, vous pouvez dépenser 2<img class='inline-img' src='img/charge.png'>. Dans ce cas, ce vaisseau ne récupère pas cette charge ou cette force.</div>",
-            "ability_ENG": "<div class='text'>During the End Phase, before an enemy ship in your (tur) recovers 1 recurring charge or force, you may spend 2 charge. If you do, that ship does not recover that charge or force</div>",
+            "ability_ENG": "<div class='text'>During the End Phase, before an enemy ship in your turret arc recovers 1 recurring charge or force, you may spend 2 charge. If you do, that ship does not recover that charge or force</div>",
             "slots": [
                  "Talent-piloting"         
            ]

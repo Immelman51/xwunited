@@ -66,8 +66,8 @@
      }, 
      {
         
-        "leadername_FRA": "##Général Grievous",
-        "leadername_ENG": "##General Grievous",
+        "leadername_FRA": "!!Général Grievous",
+        "leadername_ENG": "!!General Grievous",
         "leaderfaction": ["Separatist_Government","",""],
         "leaderid": 6,
         "numberOfFactions": 1,
@@ -78,8 +78,8 @@
      }, 
      {
         
-        "leadername_FRA": "##Reine Amidala",
-        "leadername_ENG": "##Queen Amidala",
+        "leadername_FRA": "!!Reine Amidala",
+        "leadername_ENG": "!!Queen Amidala",
         "leaderfaction": ["Naboo_Defense_Force","",""],
         "leaderid": 7,
         "numberOfFactions": 1,
@@ -100,8 +100,8 @@
      "logistic": 18
      },
      {
-     "leadername_FRA": "##Saw Gerrera",
-     "leadername_ENG": "##Saw Gerrera",
+     "leadername_FRA": "!!Saw Gerrera",
+     "leadername_ENG": "!!Saw Gerrera",
      "leaderfaction": ["Partisans","",""],
      "leaderid": 9,
      "numberOfFactions": 1,
@@ -111,8 +111,8 @@
      "logistic": 15
      },
      {
-     "leadername_FRA": "##Moff Jerjerrod",
-     "leadername_ENG": "##Moff Jerjerrod",
+     "leadername_FRA": "!!Moff Jerjerrod",
+     "leadername_ENG": "!!Moff Jerjerrod",
      "leaderfaction": ["Imperial_Elite_Squadrons","",""],
      "leaderid": 10,
      "numberOfFactions": 1,
@@ -122,8 +122,8 @@
      "logistic": 25
      },
      {
-     "leadername_FRA": "##Amilyn Holdo",
-     "leadername_ENG": "##Amilyn Holdo",
+     "leadername_FRA": "!!Amilyn Holdo",
+     "leadername_ENG": "!!Amilyn Holdo",
      "leaderfaction": ["Heroes_of_the_Resistance","",""],
      "leaderid": 11,
      "numberOfFactions": 1,
@@ -144,8 +144,8 @@
      "logistic": 25
      },
      {
-     "leadername_FRA": "##Général Skywalker",
-       "leadername_ENG": "##General Skywalker",
+     "leadername_FRA": "!!Général Skywalker",
+       "leadername_ENG": "!!General Skywalker",
      "leaderfaction": ["Jedi_Order","",""],
      "leaderid": 13,
      "numberOfFactions": 1,
@@ -155,8 +155,8 @@
      "logistic": 20
      },
      {
-     "leadername_FRA": "##Bib Fortuna",
-     "leadername_ENG": "##Bib Fortuna",
+     "leadername_FRA": "!!Bib Fortuna",
+     "leadername_ENG": "!!Bib Fortuna",
      "leaderfaction": ["Hutt_Cartel","",""],
      "leaderid": 14,
      "numberOfFactions": 1,
@@ -166,8 +166,8 @@
      "logistic": 25
      },
      {
-     "leadername_FRA": "##Dark Tyranus",
-       "leadername_ENG": "##Darth Tyranus",
+     "leadername_FRA": "!!Dark Tyranus",
+       "leadername_ENG": "!!Darth Tyranus",
      "leaderfaction": ["Agents_of_Chaos","",""],
      "leaderid": 15,
      "numberOfFactions": 1,
@@ -177,8 +177,8 @@
      "logistic": 18
      },
      {
-     "leadername_FRA": "##Viceroi Nute Gunray",
-       "leadername_ENG": "##Viceroy Nute Gunray",
+     "leadername_FRA": "!!Viceroi Nute Gunray",
+       "leadername_ENG": "!!Viceroy Nute Gunray",
      "leaderfaction": ["Trade_Federation","",""],
      "leaderid": 16,
      "numberOfFactions": 1,
@@ -188,8 +188,8 @@
      "logistic": 25
      },
      {
-     "leadername_FRA": "##Commandant Clone Cody",
-         "leadername_ENG": "##Commander Clone Cody",
+     "leadername_FRA": "!!Commandant Clone Cody",
+         "leadername_ENG": "!!Commander Clone Cody",
      "leaderfaction": ["Clone_Army","",""],
      "leaderid": 17,
      "numberOfFactions": 1,
@@ -199,8 +199,8 @@
      "logistic": 25
      },
      {
-     "leadername_FRA": "##Générale Syndulla",
-         "leadername_ENG": "##General Syndulla",
+     "leadername_FRA": "!!Générale Syndulla",
+         "leadername_ENG": "!!General Syndulla",
      "leaderfaction": ["New_Republic_Patrol","",""],
      "leaderid": 18,
      "numberOfFactions": 1,
@@ -210,8 +210,8 @@
      "logistic": 20
      },
      {
-     "leadername_FRA": "##Capitaine Doza",
-     "leadername_ENG": "##Captain Doza",
+     "leadername_FRA": "!!Capitaine Doza",
+     "leadername_ENG": "!!Captain Doza",
      "leaderfaction": ["Colossus","",""],
      "leaderid": 19,
      "numberOfFactions": 1,
@@ -221,8 +221,8 @@
      "logistic": 18
      },
      {
-     "leadername_FRA": "##Général Pryde",
-      "leadername_ENG": "##General Pryde",
+     "leadername_FRA": "!!Général Pryde",
+      "leadername_ENG": "!!General Pryde",
      "leaderfaction": ["Shadow_Specialists","",""],
      "leaderid": 20,
      "numberOfFactions": 1,
@@ -232,8 +232,8 @@
      "logistic": 20
      },
      {
-     "leadername_FRA": "##Moff Gideon",
-       "leadername_ENG": "##Moff Gideon",
+     "leadername_FRA": "!!Moff Gideon",
+       "leadername_ENG": "!!Moff Gideon",
      "leaderfaction": ["Imperial_Remnants","",""],
      "leaderid": 21,
      "numberOfFactions": 1,
@@ -243,8 +243,8 @@
      "logistic": 18
      },
      {
-     "leadername_FRA": "##Qi'Ra (C.D.)",
-     "leadername_ENG": "##Qi'Ra (C.D.)",
+     "leadername_FRA": "!!Qi'Ra (C.D.)",
+     "leadername_ENG": "!!Qi'Ra (C.D.)",
      "leaderfaction": ["Crime_Syndicates","",""],
      "leaderid": 22,
      "numberOfFactions": 1,
@@ -254,8 +254,8 @@
      "logistic": 25
      },
      {
-     "leadername_FRA": "##Lom Pyke (P.S.)",
-       "leadername_ENG": "##Lom Pyke (P.S.)",
+     "leadername_FRA": "!!Lom Pyke (P.S.)",
+       "leadername_ENG": "!!Lom Pyke (P.S.)",
      "leaderfaction": ["Crime_Syndicates","",""],
      "leaderid": 23,
      "numberOfFactions": 1,
@@ -265,8 +265,8 @@
      "logistic": 25
      },
      {
-     "leadername_FRA": "##Prince Xizor",
-       "leadername_ENG": "##Prince Xizor",
+     "leadername_FRA": "!!Prince Xizor",
+       "leadername_ENG": "!!Prince Xizor",
      "leaderfaction": ["Black_Sun","",""],
      "leaderid": 24,
      "numberOfFactions": 1,
@@ -276,8 +276,8 @@
      "logistic": 25
      },
      {
-        "leadername_FRA": "##Colonel Yularen",
-        "leadername_ENG": "##Colonel Yularen",
+        "leadername_FRA": "!!Colonel Yularen",
+        "leadername_ENG": "!!Colonel Yularen",
         "leaderfaction": ["ISB","",""],
         "leaderid": 25,
         "numberOfFactions": 1,
@@ -311,8 +311,8 @@
      "logistic": 15
      },
      {
-        "leadername_FRA": "##Assaj Ventress",
-         "leadername_ENG": "##Asajj Ventress",
+        "leadername_FRA": "!!Assaj Ventress",
+         "leadername_ENG": "!!Asajj Ventress",
         "leaderfaction": ["Crime_Syndicates","Jedi_Order",""],
         "leaderfaction_mini": "SYN / JDI",
         "leaderid": 28,
@@ -323,8 +323,8 @@
         "logistic": 15
      },
      {
-        "leadername_FRA": "##Commandant Pyre",
-         "leadername_ENG": "##Commander Pyre",
+        "leadername_FRA": "!!Commandant Pyre",
+         "leadername_ENG": "!!Commander Pyre",
         "leaderfaction": ["Shadow_Specialists","Colossus",""],
         "leaderfaction_mini": "SPE / COL",
         "leaderid": 29,
@@ -335,8 +335,8 @@
         "logistic": 15
      },
      {
-        "leadername_FRA": "##Gar Saxon",
-         "leadername_ENG": "##Gar Saxon",
+        "leadername_FRA": "!!Gar Saxon",
+         "leadername_ENG": "!!Gar Saxon",
         "leaderfaction": ["Mandalorian_Clans","Agents_of_Chaos",""],
         "leaderfaction_mini": "MAN / CHS",
         "leaderid": 30,
@@ -347,8 +347,8 @@
         "logistic": 15
      },
       {
-        "leadername_FRA": "##'GENERAL' KALANI",
-         "leadername_ENG": "##'GENERAL' KALANI",
+        "leadername_FRA": "!!'GENERAL' KALANI",
+         "leadername_ENG": "!!'GENERAL' KALANI",
         "leaderfaction": ["Phoenix_Cell","Trade_Federation",""],
         "leaderfaction_mini": "PHX / FED",
         "leaderid": 31,
@@ -359,8 +359,8 @@
         "logistic": 15
      },
       {
-        "leadername_FRA": "##Grand Amiral Thrawn", 
-         "leadername_ENG": "##Grand Admiral Thrawn",
+        "leadername_FRA": "!!Grand Amiral Thrawn", 
+         "leadername_ENG": "!!Grand Admiral Thrawn",
         "leaderfaction": ["Imperial_Elite_Squadrons","Imperial_Remnants",""],
         "leaderfaction_mini": "SQU / REM",
         "leaderid": 32,
@@ -371,8 +371,8 @@
         "logistic": 15
      },
      {
-        "leadername_FRA": "##Reine Soruna",
-         "leadername_ENG": "##Queen Soruna",
+        "leadername_FRA": "!!Reine Soruna",
+         "leadername_ENG": "!!Queen Soruna",
         "leaderfaction": ["New_Republic_Patrol","Naboo_Defense_Force",""],
         "leaderfaction_mini": "PAT / NAB",
         "leaderid": 33,
@@ -383,8 +383,8 @@
         "logistic": 15
      },
       {
-        "leadername_FRA": "##Chancelier Suprême Palpatine",
-         "leadername_ENG": "##Supreme Chancellor Palpatine",
+        "leadername_FRA": "!!Chancelier Suprême Palpatine",
+         "leadername_ENG": "!!Supreme Chancellor Palpatine",
         "leaderfaction": ["Jedi_Order","Clone_Army","Naboo_Defense_Force"],
         "leaderfaction_mini": "JDI / CLN / NAB",
         "leaderid": 34,
@@ -395,8 +395,8 @@
         "logistic": 15
      },
       {
-        "leadername_FRA": "##Maul",
-         "leadername_ENG": "##Maul",
+        "leadername_FRA": "!!Maul",
+         "leadername_ENG": "!!Maul",
         "leaderfaction": ["Crime_Syndicates","Black_Sun","Mandalorian_Clans"],
         "leaderfaction_mini": "SYN / SUN / MAN",
         "leaderid": 35,
@@ -407,8 +407,8 @@
         "logistic": 15
      },
       {
-        "leadername_FRA": "##Jabba le Hutt",
-        "leadername_ENG": "##Jabba the Hutt",
+        "leadername_FRA": "!!Jabba le Hutt",
+        "leadername_ENG": "!!Jabba the Hutt",
         "leaderfaction": ["Hutt_Cartel","Pirates_and_Smugglers","Bounty_Hunters_Guild"],
         "leaderfaction_mini": "HUT / PIR / GUI",
         "leaderid": 36,
@@ -419,8 +419,8 @@
         "logistic": 15
      },
       {
-        "leadername_FRA": "##Générale Organa",
-        "leadername_ENG": "##General Organa",
+        "leadername_FRA": "!!Générale Organa",
+        "leadername_ENG": "!!General Organa",
         "leaderfaction": ["New_Republic_Patrol","Colossus","Heroes_of_the_Resistance"],
         "leaderfaction_mini": "PAT / COL / RES",
         "leaderid": 37,
@@ -431,8 +431,8 @@
         "logistic": 15
      },
       {
-        "leadername_FRA": "##Suprême Leader Snoke",
-        "leadername_ENG": "##Supreme Leader Snoke",
+        "leadername_FRA": "!!Suprême Leader Snoke",
+        "leadername_ENG": "!!Supreme Leader Snoke",
         "leaderfaction": ["First_Order_Vanguard","Shadow_Specialists","Imperial_Remnants"],
         "leaderfaction_mini": "FOR / SPE / REM",
         "leaderid": 38,
@@ -443,8 +443,8 @@
         "logistic": 15
      },
       {
-        "leadername_FRA": "##Empereur Palpatine",
-        "leadername_ENG": "##Emperor Palpatine",
+        "leadername_FRA": "!!Empereur Palpatine",
+        "leadername_ENG": "!!Emperor Palpatine",
         "leaderfaction": ["Imperial_Academy","ISB","Imperial_Elite_Squadrons"],
         "leaderfaction_mini": "ACA / ISB / SQU",
         "leaderid": 39,
@@ -455,8 +455,8 @@
         "logistic": 15
      },
       {
-        "leadername_FRA": "##Mon Mothma",
-        "leadername_ENG": "##Mon Mothma",
+        "leadername_FRA": "!!Mon Mothma",
+        "leadername_ENG": "!!Mon Mothma",
         "leaderfaction": ["Rebel_Alliance","Partisans","Phoenix_Cell"],
         "leaderfaction_mini": "REB / PAR / PHX",
         "leaderid": 40,
@@ -467,8 +467,8 @@
         "logistic": 15
      },
       {
-        "leadername_FRA": "##Comte Dooku",
-        "leadername_ENG": "##Count Dooku",
+        "leadername_FRA": "!!Comte Dooku",
+        "leadername_ENG": "!!Count Dooku",
         "leaderfaction": ["Trade_Federation","Separatist_Government","Agents_of_Chaos"],
         "leaderfaction_mini": "FED / SEP / CHS",
         "leaderid": 41,
@@ -479,8 +479,8 @@
         "logistic": 15
      },
       {
-        "leadername_FRA": "##Poe Dameron",
-        "leadername_ENG": "##Poe Dameron",
+        "leadername_FRA": "!!Poe Dameron",
+        "leadername_ENG": "!!Poe Dameron",
         "leaderfaction": ["Heroes_of_the_Resistance","Colossus",""],
         "leaderfaction_mini": "RES / COL",
         "leaderid": 42,
@@ -491,8 +491,8 @@
         "logistic": 15
      },
       {
-        "leadername_FRA": "##Luthen Rael",
-        "leadername_ENG": "##Luthen Rael",
+        "leadername_FRA": "!!Luthen Rael",
+        "leadername_ENG": "!!Luthen Rael",
         "leaderfaction": ["Rebel_Alliance","Partisans",""],
         "leaderfaction_mini": "REB / PAR",
         "leaderid": 43,
@@ -503,8 +503,8 @@
         "logistic": 15
      },
       {
-        "leadername_FRA": "##Kylo Ren",
-        "leadername_ENG": "##Kylo Ren",
+        "leadername_FRA": "!!Kylo Ren",
+        "leadername_ENG": "!!Kylo Ren",
         "leaderfaction": ["First_Order_Vanguard","Shadow_Specialists",""],
         "leaderfaction_mini": "SPE / FOR",
         "leaderid": 44,
@@ -515,8 +515,8 @@
         "logistic": 15
      },
       {
-        "leadername_FRA": "##Directeur Krennic",
-        "leadername_ENG": "##Director Krennic",
+        "leadername_FRA": "!!Directeur Krennic",
+        "leadername_ENG": "!!Director Krennic",
         "leaderfaction": ["ISB","Imperial_Elite_Squadrons",""],
         "leaderfaction_mini": "ISB / SQU",
         "leaderid": 45,
@@ -527,8 +527,8 @@
         "logistic": 15
      },
       {
-        "leadername_FRA": "##Daimyo Fett",
-        "leadername_ENG": "##Daimyo Fett",
+        "leadername_FRA": "!!Daimyo Fett",
+        "leadername_ENG": "!!Daimyo Fett",
         "leaderfaction": ["Hutt_Cartel","Bounty_Hunters_Guild",""],
         "leaderfaction_mini": "HUT / GUI",
         "leaderid": 46,
@@ -539,8 +539,8 @@
         "logistic": 15
      },
       {
-        "leadername_FRA": "##Ziton Moj",
-        "leadername_ENG": "##Ziton Moj",
+        "leadername_FRA": "!!Ziton Moj",
+        "leadername_ENG": "!!Ziton Moj",
         "leaderfaction": ["Black_Sun","Mandalorian_Clans",""],
         "leaderfaction_mini": "SUN / MAN",
         "leaderid": 47,
@@ -551,8 +551,8 @@
         "logistic": 15
      },
       {
-        "leadername_FRA": "##Mace Windu",
-        "leadername_ENG": "##Mace Windu",
+        "leadername_FRA": "!!Mace Windu",
+        "leadername_ENG": "!!Mace Windu",
         "leaderfaction": ["Jedi_Order","Clone_Army",""],
         "leaderfaction_mini": "JDI / CLN",
         "leaderid": 48,
@@ -563,8 +563,8 @@
         "logistic": 15
      },
       {
-        "leadername_FRA": "##TAxxx",
-        "leadername_ENG": "##TAxxx",
+        "leadername_FRA": "!!TAxxx",
+        "leadername_ENG": "!!TAxxx",
         "leaderfaction": ["Trade_Federation","Separatist_Government",""],
         "leaderfaction_mini": "FED / SEP",
         "leaderid": 49,
