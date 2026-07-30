@@ -6,7 +6,7 @@ let elementsToPrintArray = [false,false,[[],[],[],[],[],[],[],[]],[]];
 let element = document.getElementById("content");
 let listValidity = true;
 let language = ""; // Initialize language variable
-
+let lID = 0; //Leader ID
 let cheminsImagesLeader = []; //used for pdfmake to transform the images in base64 in print_squad_pdfmake.js. Every time I call an image, we have to store it into cheminsImages.
 //id O : factionimg1
 //id 1 : factionimg2
@@ -16,7 +16,7 @@ let cheminsImagesLeader = []; //used for pdfmake to transform the images in base
 let cheminsImagesActions = []; //used for pdfmake to transform the images in base64 in print_squad_pdfmake.js. Every time I call an image, we have to store it into cheminsImages.
 //all action images
 
-let cheminsImagesPilot = []://used for pdfmake to transform the images in base64 in print_squad_pdfmake.js. Every time I call an image, we have to store it into cheminsImages.
+let cheminsImagesPilot = [];//used for pdfmake to transform the images in base64 in print_squad_pdfmake.js. Every time I call an image, we have to store it into cheminsImages.
 //id0 : pilot0 background img ;
 //id1 : pilot0 factionimg ;
 //id2 : pilot1 background img ;
@@ -193,7 +193,7 @@ async function testListValidity() {
 
 
 async function displayLeader(){
-const lID = indexes[0];
+lID = indexes[0];
 testListValidity();
 
 const leaderName = document.getElementById('lname');
@@ -344,7 +344,7 @@ function displayPilot(x){
     newimage = document.createElement('div');
     newimage.setAttribute('class','pilotImg');
     newimage.setAttribute('style', "background-image: url('img/pilots/"+pid+".jpg');");
-    cheminsImagesPilot[x].push(`img/pilots/${pid}.jpg`);
+    cheminsImagesPilot.push(`img/pilots/${pid}.jpg`);
     //imgPilot.insertBefore(newimage, imgPilot.firstChild);
     imgPilot.appendChild(newimage);
 
@@ -354,7 +354,7 @@ function displayPilot(x){
     //we load the faction image
     let factionlogo = document.createElement('img');
     factionlogo.setAttribute("src",'img/'+pilots[pid]['faction']+'mini.jpg');
-    cheminsImagesPilot[x].push(`img/${pilots[pid]['faction']}mini.jpg`);
+    cheminsImagesPilot.push(`img/${pilots[pid]['faction']}mini.jpg`);
     factionlogo.setAttribute("class",'factionimg');
     pilotFaction.appendChild(factionlogo);
 
@@ -367,23 +367,23 @@ function displayPilot(x){
     
     //Attack 1 and Attack 2
     pilotstat.innerHTML = '<div><span class="attack">' +ships[sid]["attack"][0][1] + '</span> <img src="img/attack'+ships[sid]["attack"][0][0] +'.jpg" class="logo"/></div>' ;
-    cheminsImagesPilot[x].push(`img/attack${ships[sid]["attack"][0][0]}.jpg`);
+    cheminsImagesPilot.push(`img/attack${ships[sid]["attack"][0][0]}.jpg`);
     if(ships[sid]["attack"].length === 2){
     pilotstat.innerHTML = pilotstat.innerHTML + '<div><span class="attack">' + ships[sid]["attack"][1][1] + '</span> <img src="img/attack'+ships[sid]["attack"][1][0] +'.jpg" class="logo"/></div>' ;
-    cheminsImages.push(`img/attack${ships[sid]["attack"][1][0]}.jpg`);
+   
 
     }
     //Agility
     pilotstat.innerHTML = pilotstat.innerHTML + '<div><span class="agility">' + ships[sid]["agility"] + '</span> <img src="img/agility.jpg" class="logo"/></div>' ;
-    cheminsImages.push("img/agility.jpg");
+    
 
     //Hull
     pilotstat.innerHTML = pilotstat.innerHTML + '<div><span class="hull">' + ships[sid]["hull"] + '</span> <img src="img/hull.jpg" class="logo"/></div>' ;
-    cheminsImages.push("img/hull.jpg");
+   
 
     //shield
     pilotstat.innerHTML = pilotstat.innerHTML + '<div><span class="shield">' + ships[sid]["shields"] + '</span> <img src="img/shield.jpg" class="logo"/></div>' ;
-    cheminsImages.push(`img/shield.jpg`);
+    
 
     displayPilotActions(x);
     
@@ -401,7 +401,7 @@ function displayPilot(x){
                 newchargeEvolution = document.createElement('img'); // the index 1 of the charge tables indicates if it's recurring or not. We have to display it, and there's a jpg for every case.
                 newchargeEvolution.setAttribute("class","recurring");
                 newchargeEvolution.setAttribute("src","img/chargeplus.png");
-                cheminsImages.push("img/chargeplus.png");
+                
 
                 pilotAbility.appendChild(newchargeEvolution);
                 break;
@@ -409,7 +409,7 @@ function displayPilot(x){
                 newchargeEvolution = document.createElement('img'); // the index 1 of the charge tables indicates if it's recurring or not. We have to display it, and there's a jpg for every case.
                 newchargeEvolution.setAttribute("class","recurring");  
                 newchargeEvolution.setAttribute("src","img/chargeminus.png");
-                cheminsImages.push("img/chargeminus.png");
+            
 
                 pilotAbility.appendChild(newchargeEvolution);
                 break;
@@ -431,7 +431,7 @@ function displayPilot(x){
         let newforce = document.createElement('img');
         newforce.setAttribute("class","chargeforceimg");
         newforce.setAttribute("src","img/forcestat.png");
-        cheminsImages.push("img/forcestat.png");
+    
 
         pilotName.appendChild(newforce);
        
@@ -502,7 +502,7 @@ function displayPilot(x){
         mdivupg.appendChild(upglogo);
         mdivupg.textContent = upgrades[uid]['name'];*/
         mdivupg.innerHTML = '<img src="img/'+upgrades[uid]["slot"]+'.png" class="logo"/> '+'<span>'+upgrades[uid]["name_"+language]+'</span>'; 
-        cheminsImages.push(`img/${upgrades[uid]["slot"]}.png`);
+       
 
         
         switch (upgrades[uid]['add_Data'][0]) { //we are going to process the data in add_data entry. Those may add a small picture to remind the player some specific effect of the upgrade, or remove some HTML elements such as the millenium falcon that removes a chassis ability
@@ -522,12 +522,12 @@ function displayPilot(x){
                 let focusRActions = document.getElementsByClassName(x+'Fo R');
                 for (f=0 ; f<focusWActions.length ; f++){
                     focusWActions[f].setAttribute('src','img/Cc W.jpg');
-                    cheminsImages.push("img/Cc W.jpg");
+                    cheminsImagesActions.push("img/Cc W.jpg");
 
                 }
                 for (f=0 ; f<focusRActions.length ; f++){
                     focusRActions[f].setAttribute('src','img/Cc R.jpg');
-                    cheminsImages.push("img/Cc R.jpg");
+                    cheminsImagesActions.push("img/Cc R.jpg");
 
                 }
                 break;
@@ -541,7 +541,7 @@ function displayPilot(x){
                         newaction = document.createElement('img');
                         newaction.setAttribute('class','action '+x+''+actionToAdd[1]);
                         newaction.setAttribute('src', 'img/'+actionToAdd[1]+'.jpg');
-                        cheminsImages.push(`img/${actionToAdd[1]}.jpg`);
+                        cheminsImagesActions.push(`img/${actionToAdd[1]}.jpg`);
 
                         actionlist.appendChild(newaction);
                         break;
@@ -551,19 +551,19 @@ function displayPilot(x){
                         
                         newaction1 = document.createElement('img');
                         newaction1.setAttribute('src', 'img/'+actionToAdd[1]+'.jpg');
-                        cheminsImages.push(`img/${actionToAdd[1]}.jpg`);
+                        cheminsImagesActions.push(`img/${actionToAdd[1]}.jpg`);
 
                         newaction1.setAttribute('class','linked action '+x+''+actionToAdd[1]);
                         
                         newlink = document.createElement('img');
                         newlink.setAttribute('src', 'img/fleche.jpg');
-                        cheminsImages.push(`img/fleche.jpg`);
+                        cheminsImagesActions.push(`img/fleche.jpg`);
 
                         newlink.setAttribute('class','linked action');
                         
                         newaction2 = document.createElement('img');
                         newaction2.setAttribute('src', 'img/'+actionToAdd[2]+'.jpg');
-                        cheminsImages.push(`img/${actionToAdd[2]}.jpg`);
+                        cheminsImagesActions.push(`img/${actionToAdd[2]}.jpg`);
 
                         newaction2.setAttribute('class','linked action '+x+''+actionToAdd[2]);
 
@@ -588,8 +588,6 @@ function displayPilot(x){
             let newcharge = document.createElement('img');
             newcharge.setAttribute("class","chargeforceimg");
             newcharge.setAttribute("src","img/chargestat.png");
-            cheminsImages.push("img/chargestat.png");
-
             mdivupg.appendChild(newcharge);
         }
             switch (upgrades[uid]['charge'][1]) {
@@ -597,7 +595,6 @@ function displayPilot(x){
                     recurring = document.createElement('img');
                     recurring.setAttribute("class","recurring");
                     recurring.setAttribute("src","img/chargeplus.png");
-                    cheminsImages.push("img/chargeplus.png");
 
                     mdivupg.appendChild(recurring);
                     break;
@@ -605,7 +602,6 @@ function displayPilot(x){
                     recurring = document.createElement('img');
                     recurring.setAttribute("class","recurring");
                     recurring.setAttribute("src","img/chargeminus.png");
-                    cheminsImages.push("img/chargeminus.png");
 
                     mdivupg.appendChild(recurring);
                     break;
@@ -617,7 +613,6 @@ function displayPilot(x){
             let newforce = document.createElement('img');
             newforce.setAttribute("class","chargeforceimg");
             newforce.setAttribute("src","img/forcestat.png");
-            cheminsImages.push("img/forcestat.png");
 
             mdivupg.appendChild(newforce);
         }

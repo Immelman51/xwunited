@@ -45,19 +45,19 @@ function buildLeaderTable(leader) {
       body: [
         // Ligne 1 : icônes factions (1, 2, 3) + nom du leader (colSpan 2)
         [
-          { image: leader.factionImg1, width: cm(0.8), fit: [cm(0.8), cm(0.8)] },
-          { image: leader.factionImg2, width: cm(1.2), fit: [cm(1.2), cm(1.2)] },
-          { image: leader.factionImg3, width: cm(1.2), fit: [cm(1.2), cm(1.2)] },
-          { text: leader.nom, colSpan: 2, style: 'leaderName', alignment: 'center' },
+          { image: leaders[lID]['leaderfaction'][0], width: cm(0.8), fit: [cm(0.8), cm(0.8)] },
+          { image: leaders[lID]['leaderfaction'][1], width: cm(1.2), fit: [cm(1.2), cm(1.2)] },
+          { image: leaders[lID]['leaderfaction'][2], width: cm(1.2), fit: [cm(1.2), cm(1.2)] },
+          { text: leaders[lID]['leadername_FRA'], colSpan: 2, style: 'leaderName', alignment: 'center' },
           {}, // cellule fusionnée (colSpan 2 ci-dessus)
         ],
         // Ligne 2 : compétence (colSpan 4) + marqueurs de charge
         [
-          { text: parseHtmlToPdfmakeText(leader.competence), colSpan: 4, style: 'competenceText' },
+          { text: parseHtmlToPdfmakeText(leaders[lID]['leaderability_FRA']), colSpan: 4, style: 'competenceText' },
           {},
           {},
           {},
-          buildChargeMarkersCell(leader.nbMarqueursCharge),
+          buildChargeMarkersCell(leaders[lID]['charge']),
         ],
       ],
     },
@@ -80,35 +80,37 @@ function buildChargeMarkersCell(nb) {
 // ---------------------------------------------------------------------
 // 3. Table "pilote" : 8 colonnes, structure décrite dans le message
 // ---------------------------------------------------------------------
-function buildPilotTable(pilot) {
+function buildPilotTable(pilotnbr) {
   // Largeurs des 8 colonnes (en cm, telles que tu les as données)
   const widths = [
     cm(1), cm(0.5), cm(4.8), cm(2.6), cm(3.7), cm(3.8), cm(2), cm(0.6),
   ];
 
-  const equipements = pilot.equipements || []; // tableau jusqu'à 11 éléments
+  //const equipements = pilot.equipements || []; // tableau jusqu'à 11 éléments. Line retirée car tout est dans pilotdata
 
   const body = [];
 
   // --- Ligne 1 : faction / initiative / nom pilote (colSpan3) / nom vaisseau (colSpan2) / coût
+    const pID = pilotdata[pilotnbr][0]; //this is the Pilot key in the pilots json table.
   body.push([
-    { image: pilot.factionImg, fit: [cm(0.9), cm(0.9)] },
-    { text: String(pilot.initiative), alignment: 'center' },
-    { text: pilot.nom, colSpan: 3, style: 'pilotName' }, {}, {},
-    { text: pilot.vaisseau, colSpan: 2, style: 'shipName' }, {},
-    { text: String(pilot.cout), alignment: 'center' },
+    { image: pilots[pID]['faction'], fit: [cm(0.9), cm(0.9)] },
+    { text: String(pilots[pID]['skill']), alignment: 'center' },
+    { text: pilots[pID]]['name_FRA'], colSpan: 3, style: 'pilotName' }, {}, {},
+    { text: pilots[pID]['ship'], colSpan: 2, style: 'shipName' }, {},
+    { text: String(pilots[pID]['points']), alignment: 'center' },
   ]);
 
   // --- Ligne 2 : spacer 0,2 cm (pleine largeur)
   body.push(spacerRow(8));
 
   // --- Ligne 3 : stats (rowSpan 4, col1-2) / description compétence (colSpan4, col3-6) / actions (rowSpan4, col7-8)
+    const sID = pilots[pID]['shipId'];
   body.push([
-    { text: pilot.statsText || '', rowSpan: 4, style: 'statsBox' },
+    { text: ships[sID]['attack'] & ships[sID]['agility'] & ships[sID]['hull'] & ships[sID]['shield'], rowSpan: 4, style: 'statsBox' }, //cette ligne est à réécrire car la syntaxe n'est sans doute pas bonne. Il faut aussi introduire les images correspondant à chaque stat après chaque statistique et revenir à la ligne pour chacune d'entre elle.
     {},
-    { text: parseHtmlToPdfmakeText(pilot.descriptionCompetence), colSpan: 4, style: 'abilityDescription' },
+    { text: parseHtmlToPdfmakeText(pilots[pID]['ability_FRA']), colSpan: 4, style: 'abilityDescription' },
     {}, {}, {},
-    { text: pilot.actionsText || '', rowSpan: 4, style: 'actionsBox' },
+    { text: shipsactionsText || '', rowSpan: 4, style: 'actionsBox' },
     {},
   ]);
 
