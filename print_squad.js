@@ -243,9 +243,10 @@ console.log(nbrOfLeaderCharges);
 
 } 
 
-}
 
-function removeElementsByClass(classname) {//permet de supprimer tous les éléments qui possèdent la class "new". Utile lorsqu'on change de leader
+
+function removeElementsByClass(classname) {
+    //permet de supprimer tous les éléments qui possèdent la class "new". Utile lorsqu'on change de leader
     // Get all elements with the specified class name
     const elements = document.getElementsByClassName(classname);
 
