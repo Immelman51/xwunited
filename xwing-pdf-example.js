@@ -228,7 +228,7 @@ function loadImageAsBase64(cheminImage) {
       const mime = cheminImage.toLowerCase().endsWith('.png') ? 'image/png' : 'image/jpeg';
       resolve(canvas.toDataURL(mime));
     };
-    img.onerror = (err) => reject(err);
+    img.onerror = () => reject(new Error(`Impossible de charger l'image : "${cheminImage}" (chemin introuvable ou erreur réseau)`));
     img.src = cheminImage;
   });
 }
@@ -239,10 +239,23 @@ function loadImageAsBase64(cheminImage) {
  * les chemins dans tes données avant de construire le docDefinition.
  */
 async function preloadImages(cheminsImages /* tableau de chemins, ex: ['img/leaderfaction1.jpg', ...] */) {
-  const entrees = await Promise.all(
+  const resultats = await Promise.allSettled(
     cheminsImages.map(async (chemin) => [chemin, await loadImageAsBase64(chemin)])
   );
-  return Object.fromEntries(entrees);
+
+  const dictionnaire = {};
+  resultats.forEach((resultat, i) => {
+    if (resultat.status === 'fulfilled') {
+      const [chemin, base64] = resultat.value;
+      dictionnaire[chemin] = base64;
+    } else {
+      // On n'interrompt pas tout le PDF pour une seule image en échec :
+      // on log l'info et on continue. La clé manquante dans le dictionnaire
+      // signifie simplement que cette image n'apparaîtra pas dans le PDF.
+      console.warn(`[preloadImages] ${resultat.reason.message}`);
+    }
+  });
+  return dictionnaire;
 }
 
 // ---------------------------------------------------------------------
@@ -386,10 +399,4 @@ async function genererEtTelecharger(
 // déclarées ci-dessus (cm, buildDocDefinition, genererEtTelecharger,
 // parseHtmlToPdfmakeText, preloadImages, ...) sont déjà globales et
 // directement utilisables depuis print_squad_pdfmake.js et print_squad.js,
-// à condition que ce fichier soit chargé AVANT eux dans le HTML.//
-//  xwing-pdf-example.js
-//  
-//
-//  Created by Emmanuel Broto on 31/07/2026.
-//
-
+// à condition que ce fichier soit chargé AVANT eux dans le HTML.
