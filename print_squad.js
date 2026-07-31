@@ -45,7 +45,9 @@ let cheminsImagesUpgrades = [
                              "img/Cannon.png",
                              "img/Crew.png",
                              "img/Droid.png",
-                             "img/Force.png",
+                             "img/Force-Base.png",
+                             "img/Force-Dark.png",
+                             "img/Force-Light.png",
                              "img/Gunner.png",
                              "img/Illicit.png",
                              "img/Missile.png",
@@ -164,7 +166,9 @@ async function testListValidity() {
             case "Talent-elite":
             case "Talent-special":
             case "Talent-leadership":
-            case "Force":
+            case "Force-Base":
+            case "Force-Dark":
+            case "Force-Light":
                 talentTotalValue += upgrades[uid]["talent_points"];
                 break;
             default :                 
@@ -766,23 +770,9 @@ printBtn.addEventListener('click', () => {
         }
         pilotsID += pilotdata[j][0] + 'p';
     }
-          const opt = {
-            margin:       0.5,
-              filename:     leaders[indexes[0]]['leadername_'+language]+pilotsID+'.pdf',
-              image:        { type: 'jpeg', quality: 0.98 },
-            html2canvas:  { scale: 2 },
-            jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' }
-          };
-          html2pdf().set(opt).from(element).save();
-    /*html2pdf().set(opt).from(element).toPdf().get('pdf').then(pdf => {
-          try {
-            pdf.save(opt.filename);
-          } catch (e) {
-            const blob = pdf.output('blob');
-            const url = URL.createObjectURL(blob);
-            window.open(url); // ouvre le PDF si le téléchargement est bloqué
-          }
-        }).catch(console.error);*/
+          
+        genererPdfDepuisApp();
+   
 });
     
 function addHTMLandCSSforDialsAndBases() {
