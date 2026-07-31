@@ -100,24 +100,6 @@ async function fetchData(url) {
     return await response.json();
 }
 
-
-
-
-(async () => {
-    
-    try {
-        
-        ships = await fetchData(requestURLships);
-        chassis = await fetchData(requestURLchassis);
-        pilots = await fetchData(requestURLpilots);
-        upgrades = await fetchData(requestURLupgrades);
-        leaders = await fetchData(requestURLleaders);
-           
-////////////////////////////////////////////////////////////////////////////////////////////////////////////
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
 async function getIndexesFromHash() { // Function to get the indexes from the URL hash
     // Get the hash from the URL
     hash = window.location.hash.substring(1);
@@ -152,9 +134,9 @@ async function testListValidity() {
     for (k=1;k<indexes.length-1;k++){ //we don't take in account the leader (index 0) and the language (last index)
         let talentTotalValue = 0;
         let logisticTotalValue = 0;
-        getPilotData(k); 
+        getPilotData(k);
         //Test if the cost of all ships exceed 30, the limit for a squad
-        const pid = pilotdata[k][0]; 
+        const pid = pilotdata[k][0];
         totalcostvalue += pilots[pid]["points"];
         //Test if the number of upgrades equipped points exceed the logistic value of the leader
         //we are going to seperate (Talents and forces), and other upgrades.
@@ -171,7 +153,7 @@ async function testListValidity() {
             case "Force-Light":
                 talentTotalValue += upgrades[uid]["talent_points"];
                 break;
-            default :                 
+            default :
                 logisticTotalValue += upgrades[uid]["points"];
                 break;
         }
@@ -184,7 +166,7 @@ async function testListValidity() {
             listValidity=false;
             return;
         }
-    }   
+    }
     }
      if(totalcostvalue>50){
         listValidity=false;
@@ -245,7 +227,7 @@ console.log(nbrOfLeaderCharges);
     break;
     }
 
-} 
+}
 
 
 
@@ -262,7 +244,7 @@ function removeElementsByClass(classname) {
         element.parentNode.removeChild(element);
     });
     
-}   
+}
 
 function removeElementById(id) {
     const element = document.getElementById(id);
@@ -325,7 +307,7 @@ function displayPilotActions(x){
 }
 
 
-function displayPilot(x){ 
+function displayPilot(x){
     const imgPilot = document.getElementById('pilot'+(x)); //x because the pilots begins after indexes 2. Example indexes 2, we have pilot number 1 (in the html page)
     const pilotSkill = document.getElementById('pskill'+(x));
     const pilotFaction = document.getElementById('plogo'+(x));
@@ -364,7 +346,7 @@ function displayPilot(x){
     pilotFaction.appendChild(factionlogo);
 
     pilotName.textContent = pilots[pid]['name_'+language];
-    pilotAbility.innerHTML = pilots[pid]['ability_'+language]; 
+    pilotAbility.innerHTML = pilots[pid]['ability_'+language];
     pilotCost.innerHTML = "<span>"+pilots[pid]['points']+"<span>"; //allows to have a white background on the cost. Sometimes, the background image makes the number unreadable.
         
     const sid = pilots[pid]['shipId']; //We store the ship ID
@@ -394,7 +376,7 @@ function displayPilot(x){
     
     for(j=0; j<pilots[pid]['charge'][0];j++){ //Pilot Ability charges : We are going to display as many charge pictures as the charge value of the pilot ability
         
-        newcharge = document.createElement('img'); 
+        newcharge = document.createElement('img');
         newcharge.setAttribute("class","chargeforceimg");
         newcharge.setAttribute("src","img/chargestat.png");
         pilotAbility.appendChild(newcharge);
@@ -410,15 +392,15 @@ function displayPilot(x){
 
                 pilotAbility.appendChild(newchargeEvolution);
                 break;
-            case "-" : 
+            case "-" :
                 newchargeEvolution = document.createElement('img'); // the index 1 of the charge tables indicates if it's recurring or not. We have to display it, and there's a jpg for every case.
-                newchargeEvolution.setAttribute("class","recurring");  
+                newchargeEvolution.setAttribute("class","recurring");
                 newchargeEvolution.setAttribute("src","img/chargeminus.png");
             
 
                 pilotAbility.appendChild(newchargeEvolution);
                 break;
-            default :            
+            default :
             break;
         }
         
@@ -441,7 +423,7 @@ function displayPilot(x){
         pilotName.appendChild(newforce);
        
       
-    } 
+    }
 
      
     
@@ -470,7 +452,7 @@ function displayPilot(x){
             removeElementById("chassis"+(x)+"_1");
             }
             break;
-        case 2 : 
+        case 2 :
             if(chassis[cid[0]]["nbrOfEffects"]===2){ //rules to display several chassis on 1 ship. We have to take in account the case where we need more than 3 div to display thoses abilities. In that case, we display 2 chassis ability in chassis0
                 document.getElementById('chassis'+(x)+'_'+1).innerHTML = chassis[cid[1]]['effect1_'+language];
                 document.getElementById('chassis'+(x)+'_'+1).setAttribute('class','chassis C'+cid[1]+' chs1'); //We change the class of this chassis, so we can remove it with functions contained in title such as Millenium Falcon.
@@ -493,9 +475,9 @@ function displayPilot(x){
             break;
         }
 
-        //We now tackle upgrades equipped. 
+        //We now tackle upgrades equipped.
     
-    for(i=0; i< pilotdata[x].length-1 ; i++){ 
+    for(i=0; i< pilotdata[x].length-1 ; i++){
         
         let uid = pilotdata[x][i+1] //we start i+1 because at 0, there's the pilotID
         mdiv = document.getElementById('upgrade'+(x)+'_'+i);
@@ -506,7 +488,7 @@ function displayPilot(x){
         upglogo.setAttribute("src","img/"+upgrades[uid]['slot']+".png");
         mdivupg.appendChild(upglogo);
         mdivupg.textContent = upgrades[uid]['name'];*/
-        mdivupg.innerHTML = '<img src="img/'+upgrades[uid]["slot"]+'.png" class="logo"/> '+'<span>'+upgrades[uid]["name_"+language]+'</span>'; 
+        mdivupg.innerHTML = '<img src="img/'+upgrades[uid]["slot"]+'.png" class="logo"/> '+'<span>'+upgrades[uid]["name_"+language]+'</span>';
        
 
         
@@ -628,15 +610,12 @@ function displayPilot(x){
     }
 }
 
-     
-
-
 async function executeFunctions(){ //on crée une fonction asynchrone pour que tout se lance dans l'ordre
     console.log(ships);
     console.log(chassis);
     console.log(pilots);
     console.log(upgrades);
-    console.log(leaders);    
+    console.log(leaders);
     await getIndexesFromHash();
     //We get the language selected
     language = indexes[indexes.length - 1]; //the language is the last element of indexes array
@@ -651,8 +630,22 @@ async function executeFunctions(){ //on crée une fonction asynchrone pour que t
     
     }
 
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+(async () => {
+    
+    try {
+        
+        ships = await fetchData(requestURLships);
+        chassis = await fetchData(requestURLchassis);
+        pilots = await fetchData(requestURLpilots);
+        upgrades = await fetchData(requestURLupgrades);
+        leaders = await fetchData(requestURLleaders);
+           
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
     
