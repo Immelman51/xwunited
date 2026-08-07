@@ -1,4 +1,3 @@
-
 /**
  * print_squad_pdfmake.js
  * ----------------------------------------------------------------
@@ -55,13 +54,20 @@ function buildLeaderTable() {
   if (chargeImgPath) cheminsImagesLeader.push(chargeImgPath);
 
   const nomEtCharges = {
-    text: [
-      { text: leaderName + ' ', style: 'leaderName' },
+    stack: [
+      { text: leaderName, style: 'leaderName', alignment: 'center' },
       ...(chargeImgPath
-        ? Array.from({ length: nbrOfLeaderCharges }, () => ({ image: chargeImgPath, width: cm(0.8) }))
+        ? [
+            {
+              columns: Array.from({ length: nbrOfLeaderCharges }, () => ({
+                image: chargeImgPath,
+                width: cm(0.8),
+              })),
+              alignment: 'center',
+            },
+          ]
         : []),
     ],
-    alignment: 'center',
   };
 
   // 19 colonnes de 1cm chacune
@@ -288,9 +294,14 @@ function buildStatsCellContent(sid) {
  *          cellContent === null signifie "ne pas afficher de case" (ex: changeChassis)
  */
 function buildUpgradeCell(uid, x, context) {
-  const columnItems = [
-    { image: `img/${upgrades[uid]['slot']}.png`, width: cm(0.5) },
-    { text: upgrades[uid]['name_' + language], style: 'upgradeName', width: '*' },
+  const items = [
+    {
+      columns: [
+        { image: `img/${upgrades[uid]['slot']}.png`, width: cm(0.5) },
+        { text: upgrades[uid]['name_' + language], style: 'upgradeName' },
+      ],
+      columnGap: 3,
+    },
   ];
 
   let hideCell = false;
@@ -326,21 +337,21 @@ function buildUpgradeCell(uid, x, context) {
       break;
   }
 
-  // Charges / force / +/- de l'upgrade lui-même, sur la MÊME ligne, à la suite
+  // Charges / force / +/- de l'upgrade lui-même
   const nbrcharge = upgrades[uid]['charge'][0];
   for (let j = 0; j < nbrcharge; j++) {
-    columnItems.push({ image: 'img/chargestat.png', width: cm(0.4) });
+    items.push({ image: 'img/chargestat.png', width: cm(0.4) });
   }
   if (upgrades[uid]['charge'][1] === '+') {
-    columnItems.push({ image: 'img/chargeplus.png', width: cm(0.3) });
+    items.push({ image: 'img/chargeplus.png', width: cm(0.3) });
   } else if (upgrades[uid]['charge'][1] === '-') {
-    columnItems.push({ image: 'img/chargeminus.png', width: cm(0.3) });
+    items.push({ image: 'img/chargeminus.png', width: cm(0.3) });
   }
   for (let j = 0; j < upgrades[uid]['force']; j++) {
-    columnItems.push({ image: 'img/forcestat.png', width: cm(0.4) });
+    items.push({ image: 'img/forcestat.png', width: cm(0.4) });
   }
 
-  return hideCell ? null : { columns: columnItems, columnGap: 3, alignment: 'left' };
+  return hideCell ? null : { stack: items, alignment: 'center' };
 }
 
 // ---------------------------------------------------------------------
@@ -356,52 +367,23 @@ function buildUpgradeCell(uid, x, context) {
  * viennent ensuite. Si plus de 8 éléments au total, les surplus ne sont
  * pas affichés (à revoir si ton design de jeu autorise plus de 6 upgrades).
  */
-/**
- * Répartit les capacités de chassis et les upgrades dans les emplacements
- * fixes de la ligne 7-9 (2 emplacements larges) et des lignes 10-12/13-15
- * (3+3 emplacements plus étroits).
- *
- * Règle : si une seule capacité de chassis existe (chs1 seul), elle occupe
- * TOUTE la ligne 7-9 (les 2 emplacements réunis, colSpan 16). Si deux
- * capacités existent (chs2+chs3), elles occupent chacune un emplacement
- * (comme avant). Dans les deux cas, les upgrades commencent alors en
- * ligne 10-12 (6 emplacements disponibles pour elles).
- * Si aucune capacité de chassis, les 2 emplacements de la ligne 7-9
- * accueillent les 2 premières upgrades (8 emplacements disponibles au total).
- */
-function buildEquipmentLayout(chassisTexts, upgradeCells) {
-  const validUpgrades = upgradeCells.filter(Boolean);
-  const chassisItem = (texte) => ({
-    text: parseHtmlToPdfmakeText(texte),
-    style: 'chassisText',
-    alignment: 'center',
+function buildEquipmentSlots(chassisTexts, upgradeCells) {
+  const items = [];
+  ['chs1', 'chs2', 'chs3'].forEach((k) => {
+    if (chassisTexts[k]) {
+      items.push({ text: parseHtmlToPdfmakeText(chassisTexts[k]), style: 'chassisText', alignment: 'center' });
+    }
   });
-
-  let ligne7_9;
-  let upgradesRestantes;
-
-  if (chassisTexts.chs1) {
-    // 1 seule capacité : occupe les 2 emplacements réunis
-    ligne7_9 = { type: 'unique', content: chassisItem(chassisTexts.chs1) };
-    upgradesRestantes = validUpgrades.slice(0, 6);
-  } else if (chassisTexts.chs2 || chassisTexts.chs3) {
-    // 2 capacités : 1 par emplacement
-    ligne7_9 = {
-      type: 'paire',
-      a: chassisTexts.chs2 ? chassisItem(chassisTexts.chs2) : null,
-      b: chassisTexts.chs3 ? chassisItem(chassisTexts.chs3) : null,
-    };
-    upgradesRestantes = validUpgrades.slice(0, 6);
-  } else {
-    // Aucune capacité de chassis : les upgrades occupent aussi ces 2 emplacements
-    ligne7_9 = { type: 'paire', a: validUpgrades[0] || null, b: validUpgrades[1] || null };
-    upgradesRestantes = validUpgrades.slice(2, 8);
+  upgradeCells.forEach((cell) => {
+    if (cell) items.push(cell);
+  });
+  if (items.length > 8) {
+    console.warn(`[buildEquipmentSlots] ${items.length} éléments à afficher mais seulement 8 emplacements disponibles.`);
   }
-
-  return { ligne7_9, emplacementsBas: upgradesRestantes }; // jusqu'à 6 upgrades pour ligne10-12 + 13-15
+  return items; // longueur variable, 0 à 8 (au-delà : tronqué)
 }
 
-
+function buildPilotTable(x) {
   getPilotData(x);
   const pid = pilotdata[x][0];
   const sid = pilots[pid]['shipId'];
@@ -460,14 +442,14 @@ function buildEquipmentLayout(chassisTexts, upgradeCells) {
   };
 
   const nomEtVaisseau = {
-    text: [
-      { text: pilots[pid]['name_' + language] + '  ', style: 'pilotName' },
+    stack: [
+      { text: pilots[pid]['name_' + language], style: 'pilotName' },
       { text: ships[sid]['name'], style: 'shipName' },
     ],
   };
 
-  // -- Répartition chassis/upgrades dans les emplacements fixes
-  const { ligne7_9, emplacementsBas } = buildEquipmentLayout(chassisTexts, upgradeCells);
+  // -- Répartition chassis/upgrades dans les 8 emplacements fixes
+  const equipItems = buildEquipmentSlots(chassisTexts, upgradeCells);
   const emptyCell = () => ({ text: '' });
 
   // 19 colonnes de 1cm chacune
@@ -486,43 +468,41 @@ function buildEquipmentLayout(chassisTexts, upgradeCells) {
     {},
   ]);
 
-  // Bloc "ligne 3-6" (2cm) : barre stats (début rowSpan 2, col1) / compétence+marqueurs (col2-17, 16col) / suite actions (col18-19)
+  // Bloc "ligne 3-6" (2cm) : barre stats (début rowSpan 2, col1) / compétence+marqueurs (col2-16) / suite actions
   body.push([
     { ...buildStatsCellContent(sid), rowSpan: 2, style: 'statsBox' },
-    { ...abiliteEtMarqueurs, colSpan: 16, style: 'abilityDescription' },
-    ...Array(15).fill({}),
+    { ...abiliteEtMarqueurs, colSpan: 15, style: 'abilityDescription' },
+    ...Array(14).fill({}),
     {}, {},
   ]);
 
-  // Bloc "ligne 7-9" (1.5cm) : suite stats / chassis-ou-upgrades (16col au total) / suite (fin) actions
-  const cellule7_9 =
-    ligne7_9.type === 'unique'
-      ? [{ ...ligne7_9.content, colSpan: 16 }, ...Array(15).fill({})]
-      : [
-          ligne7_9.a ? { ...ligne7_9.a, colSpan: 8 } : { ...emptyCell(), colSpan: 8 },
-          ...Array(7).fill({}),
-          ligne7_9.b ? { ...ligne7_9.b, colSpan: 8 } : { ...emptyCell(), colSpan: 8 },
-          ...Array(7).fill({}),
-        ];
-  body.push([{}, ...cellule7_9, {}, {}]);
-
-  // Bloc "ligne 10-12" (1.5cm, ou 0 si vide) : emplacements 1/2/3 (6/6/7 col)
+  // Bloc "ligne 7-9" (1.5cm) : suite stats / 2 premiers emplacements (chassis ou upgrade) / suite (fin) actions
   body.push([
-    emplacementsBas[0] ? { ...emplacementsBas[0], colSpan: 6 } : { ...emptyCell(), colSpan: 6 },
+    {},
+    equipItems[0] ? { ...equipItems[0], colSpan: 8 } : { ...emptyCell(), colSpan: 8 },
+    ...Array(7).fill({}),
+    equipItems[1] ? { ...equipItems[1], colSpan: 8 } : { ...emptyCell(), colSpan: 8 },
+    ...Array(7).fill({}),
+    {}, {},
+  ]);
+
+  // Bloc "ligne 10-12" (1.5cm, ou 0 si aucun élément dans ces 3 emplacements) : emplacements 3/4/5 (6/6/7 col)
+  body.push([
+    equipItems[2] ? { ...equipItems[2], colSpan: 6 } : { ...emptyCell(), colSpan: 6 },
     ...Array(5).fill({}),
-    emplacementsBas[1] ? { ...emplacementsBas[1], colSpan: 6 } : { ...emptyCell(), colSpan: 6 },
+    equipItems[3] ? { ...equipItems[3], colSpan: 6 } : { ...emptyCell(), colSpan: 6 },
     ...Array(5).fill({}),
-    emplacementsBas[2] ? { ...emplacementsBas[2], colSpan: 7 } : { ...emptyCell(), colSpan: 7 },
+    equipItems[4] ? { ...equipItems[4], colSpan: 7 } : { ...emptyCell(), colSpan: 7 },
     ...Array(6).fill({}),
   ]);
 
-  // Bloc "ligne 13-15" (1.5cm, ou 0 si vide) : emplacements 4/5/6 (6/6/7 col)
+  // Bloc "ligne 13-15" (1.5cm, ou 0 si aucun élément dans ces 3 emplacements) : emplacements 6/7/8 (6/6/7 col)
   body.push([
-    emplacementsBas[3] ? { ...emplacementsBas[3], colSpan: 6 } : { ...emptyCell(), colSpan: 6 },
+    equipItems[5] ? { ...equipItems[5], colSpan: 6 } : { ...emptyCell(), colSpan: 6 },
     ...Array(5).fill({}),
-    emplacementsBas[4] ? { ...emplacementsBas[4], colSpan: 6 } : { ...emptyCell(), colSpan: 6 },
+    equipItems[6] ? { ...equipItems[6], colSpan: 6 } : { ...emptyCell(), colSpan: 6 },
     ...Array(5).fill({}),
-    emplacementsBas[5] ? { ...emplacementsBas[5], colSpan: 7 } : { ...emptyCell(), colSpan: 7 },
+    equipItems[7] ? { ...equipItems[7], colSpan: 7 } : { ...emptyCell(), colSpan: 7 },
     ...Array(6).fill({}),
   ]);
 
@@ -533,8 +513,8 @@ function buildEquipmentLayout(chassisTexts, upgradeCells) {
         cm(1), // ligne 1-2
         cm(2), // ligne 3-6
         cm(1.5), // ligne 7-9
-        emplacementsBas.length > 0 ? cm(1.5) : 0, // ligne 10-12
-        emplacementsBas.length > 3 ? cm(1.5) : 0, // ligne 13-15
+        equipItems.length > 2 ? cm(1.5) : 0, // ligne 10-12
+        equipItems.length > 5 ? cm(1.5) : 0, // ligne 13-15
       ],
       body,
     },
