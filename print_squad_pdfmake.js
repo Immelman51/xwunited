@@ -228,27 +228,45 @@ function applyChangeChassis(chassisTexts, chassisFrom, chassisIdVise, nouveauTex
 function buildStatsCellContent(sid) {
   const lignes = [];
 
-  const ligneStat = (valeur, cheminImage, style) => ({
-    stack: [
-      { image: cheminImage, width: cm(0.7), alignment: 'center' },
-      { text: String(valeur), style, alignment: 'center' },
+  lignes.push({
+    columns: [
+      { text: String(ships[sid]['attack'][0][1]), style: 'attackText' },
+      { image: `img/attack${ships[sid]['attack'][0][0]}.jpg`, width: cm(0.5) },
     ],
-    margin: [0, 2, 0, 2],
+    columnGap: 3,
   });
 
-  lignes.push(ligneStat(ships[sid]['attack'][0][1], `img/attack${ships[sid]['attack'][0][0]}.jpg`, 'attackText'));
-
   if (ships[sid]['attack'].length === 2) {
-    lignes.push(ligneStat(ships[sid]['attack'][1][1], `img/attack${ships[sid]['attack'][1][0]}.jpg`, 'attackText'));
+    lignes.push({
+      columns: [
+        { text: String(ships[sid]['attack'][1][1]), style: 'attackText' },
+        { image: `img/attack${ships[sid]['attack'][1][0]}.jpg`, width: cm(0.5) },
+      ],
+      columnGap: 3,
+    });
   }
 
-  lignes.push(ligneStat(ships[sid]['agility'], 'img/agility.jpg', 'agilityText'));
-  lignes.push(ligneStat(ships[sid]['hull'], 'img/hull.jpg', 'hullText'));
-  lignes.push(ligneStat(ships[sid]['shields'], 'img/shield.jpg', 'shieldText'));
-
-  // NB : img/attackX.jpg, agility.jpg, hull.jpg, shield.jpg font partie de
-  // cheminsImagesStats (liste fixe déjà préchargée) -> pas besoin de les
-  // repousser dans un tableau de chemins ici.
+  lignes.push({
+    columns: [
+      { text: String(ships[sid]['agility']), style: 'agilityText' },
+      { image: 'img/agility.jpg', width: cm(0.5) },
+    ],
+    columnGap: 3,
+  });
+  lignes.push({
+    columns: [
+      { text: String(ships[sid]['hull']), style: 'hullText' },
+      { image: 'img/hull.jpg', width: cm(0.5) },
+    ],
+    columnGap: 3,
+  });
+  lignes.push({
+    columns: [
+      { text: String(ships[sid]['shields']), style: 'shieldText' },
+      { image: 'img/shield.jpg', width: cm(0.5) },
+    ],
+    columnGap: 3,
+  });
 
   return { stack: lignes, alignment: 'center' };
 }
@@ -565,8 +583,12 @@ async function genererPdfDepuisApp() {
   // On remplace les chemins par leur base64 directement dans docDefinition
   const docDefinitionResolved = JSON.parse(
     JSON.stringify(docDefinition, (key, value) => {
-      if (key === 'image' && typeof value === 'string' && imagesBase64[value]) {
-        return imagesBase64[value];
+      if (key === 'image' && typeof value === 'string') {
+        if (imagesBase64[value]) return imagesBase64[value];
+        // Image introuvable : on retire la clé "image" (plutôt que de laisser
+        // un chemin brut invalide, qui corrompt le rendu du texte autour).
+        console.warn(`[genererPdfDepuisApp] Image manquante, retirée du PDF : "${value}"`);
+        return undefined;
       }
       return value;
     })
