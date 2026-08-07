@@ -548,7 +548,10 @@ async function buildFullDocDefinitionFromApp() {
 
   return {
     pageSize: 'A4',
-    pageMargins: [cm(1), cm(1), cm(1), cm(1)],
+    // Petite marge de sécurité (+0.15cm par côté) : caler exactement sur 19cm
+    // pour 19cm de zone disponible laisse une marge d'erreur nulle, ce qui
+    // peut suffire à faire déborder selon le moteur de rendu.
+    pageMargins: [cm(1.15), cm(1.35), cm(1.15), cm(1.35)],
     content,
     styles: {
       leaderName: { fontSize: 12, bold: true },
@@ -593,6 +596,25 @@ async function genererPdfDepuisApp() {
       return value;
     })
   );
+
+  // -- DIAGNOSTIC : on compare la largeur réelle de chaque tableau à la
+  // largeur de page disponible, pour repérer précisément un dépassement.
+  window.__lastDocDefinition = docDefinitionResolved; // consultable dans la console
+  const A4WidthPt = 595.28;
+  const contentWidthPt =
+    A4WidthPt - docDefinitionResolved.pageMargins[0] - docDefinitionResolved.pageMargins[2];
+  console.log(`[diagnostic] Largeur de contenu disponible : ${contentWidthPt.toFixed(2)}pt (${(contentWidthPt / 28.3465).toFixed(2)}cm)`);
+  docDefinitionResolved.content.forEach((item, i) => {
+    if (item.table && item.table.widths) {
+      const total = item.table.widths.reduce((a, b) => a + b, 0);
+      const depasse = total > contentWidthPt;
+      console.log(
+        `[diagnostic] Tableau #${i} : largeur totale = ${total.toFixed(2)}pt (${(total / 28.3465).toFixed(2)}cm)` +
+          (depasse ? `  ⚠️ DÉPASSE de ${(total - contentWidthPt).toFixed(2)}pt` : '')
+      );
+    }
+  });
+
   pdfMake.createPdf(docDefinitionResolved).download(
     leaders[lID]['leadername_' + language] + '.pdf'
   );
