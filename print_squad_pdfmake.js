@@ -19,7 +19,7 @@
  */
 
 // ---------------------------------------------------------------------
-// 1. LEADER
+// 1. LEADER — grille fixe 19 colonnes de 1cm, blocs de lignes de 0,5cm
 // ---------------------------------------------------------------------
 function buildLeaderTable() {
   const factionImgs = [];
@@ -30,6 +30,9 @@ function buildLeaderTable() {
       factionImgs.push(chemin);
     }
   }
+  // NB : on ne gère ici qu'une image de faction affichée (colonne 1, 1cm)
+  // comme décrit dans la nouvelle grille. Si plusieurs images de faction
+  // existent, on les empile verticalement dans cette même colonne.
 
   const leaderName =
     leaders[lID]['leadername_' + language] + (listValidity === false ? ' (NOT VALID)' : '');
@@ -50,43 +53,53 @@ function buildLeaderTable() {
   }
   if (chargeImgPath) cheminsImagesLeader.push(chargeImgPath);
 
-  const widths = [cm(1), cm(1.5), cm(1.5), cm(7.45), cm(7.45)];
+  const nomEtCharges = {
+    stack: [
+      { text: leaderName, style: 'leaderName', alignment: 'center' },
+      ...(chargeImgPath
+        ? [
+            {
+              columns: Array.from({ length: nbrOfLeaderCharges }, () => ({
+                image: chargeImgPath,
+                width: cm(0.8),
+              })),
+              alignment: 'center',
+            },
+          ]
+        : []),
+    ],
+  };
+
+  // 19 colonnes de 1cm chacune
+  const widths = Array(19).fill(cm(1));
 
   return {
     table: {
       widths,
-      heights: (rowIndex) => (rowIndex === 0 ? cm(1) : 'auto'),
+      heights: [cm(1.5), cm(1.5)], // ligne 1-3 (1,5cm) puis ligne 4-6 (1,5cm)
       body: [
+        // Ligne 1-3 : [faction (1 col)] [nom + charges (18 col)]
         [
-          factionImgs[0] ? { image: factionImgs[0], fit: [cm(0.9), cm(0.9)] } : {},
-          factionImgs[1] ? { image: factionImgs[1], fit: [cm(1.4), cm(1.4)] } : {},
-          factionImgs[2] ? { image: factionImgs[2], fit: [cm(1.4), cm(1.4)] } : {},
-          { text: leaderName, colSpan: 2, style: 'leaderName', alignment: 'center' },
-          {},
+          factionImgs[0]
+            ? { stack: factionImgs.map((c) => ({ image: c, width: cm(0.9) })) }
+            : {},
+          { ...nomEtCharges, colSpan: 18 },
+          ...Array(17).fill({}),
         ],
+        // Ligne 4-6 : compétence, pleine largeur (19 col)
         [
           {
             text: parseHtmlToPdfmakeText(leaders[lID]['leaderability_' + language]),
-            colSpan: 4,
+            colSpan: 19,
             style: 'competenceText',
+            alignment: 'center',
           },
-          {},
-          {},
-          {},
-          chargeImgPath
-            ? {
-                stack: Array.from({ length: nbrOfLeaderCharges }, () => ({
-                  image: chargeImgPath,
-                  width: cm(1.2),
-                })),
-                alignment: 'center',
-              }
-            : {},
+          ...Array(18).fill({}),
         ],
       ],
     },
     layout: 'noBorders',
-    margin: [0, 0, 0, cm(0.3)],
+    margin: [0, 0, 0, cm(1)], // 2 lignes vides (1cm) avant le 1er pilote
   };
 }
 
@@ -342,8 +355,34 @@ function buildUpgradeCell(uid, x, context) {
 }
 
 // ---------------------------------------------------------------------
-// 6. TABLEAU COMPLET D'UN PILOTE
+// 6. TABLEAU COMPLET D'UN PILOTE — grille fixe 19 colonnes x 1cm
 // ---------------------------------------------------------------------
+/**
+ * Slots chassis/upgrades : jusqu'à 2 textes de chassis (chs1 seul, ou chs2+chs3
+ * ensemble, jamais les 3), puis les upgrades équipées, dans 8 emplacements fixes :
+ *   - 2 emplacements en ligne 7-9   (larges, 8 colonnes chacun)
+ *   - 3 emplacements en ligne 10-12 (6/6/7 colonnes)
+ *   - 3 emplacements en ligne 13-15 (6/6/7 colonnes)
+ * Les textes de chassis sont toujours placés en premier ; les upgrades
+ * viennent ensuite. Si plus de 8 éléments au total, les surplus ne sont
+ * pas affichés (à revoir si ton design de jeu autorise plus de 6 upgrades).
+ */
+function buildEquipmentSlots(chassisTexts, upgradeCells) {
+  const items = [];
+  ['chs1', 'chs2', 'chs3'].forEach((k) => {
+    if (chassisTexts[k]) {
+      items.push({ text: parseHtmlToPdfmakeText(chassisTexts[k]), style: 'chassisText', alignment: 'center' });
+    }
+  });
+  upgradeCells.forEach((cell) => {
+    if (cell) items.push(cell);
+  });
+  if (items.length > 8) {
+    console.warn(`[buildEquipmentSlots] ${items.length} éléments à afficher mais seulement 8 emplacements disponibles.`);
+  }
+  return items; // longueur variable, 0 à 8 (au-delà : tronqué)
+}
+
 function buildPilotTable(x) {
   getPilotData(x);
   const pid = pilotdata[x][0];
@@ -371,7 +410,7 @@ function buildPilotTable(x) {
   actionsArray = applyDroidOverride(actionsArray, context.droidEquipped);
   const actionsCellContent = buildActionsCellContent(actionsArray);
 
-  // -- Charges/force du pilote lui-même, à ajouter au nom ou à l'ability selon ton HTML d'origine
+  // -- Charges/force du pilote, affichés à côté de sa compétence
   const pilotForceIcons = Array.from({ length: pilots[pid]['force'] }, () => ({
     image: 'img/forcestat.png',
     width: cm(0.4),
@@ -384,114 +423,103 @@ function buildPilotTable(x) {
   if (pilots[pid]['charge'][1] === '+') pilotChargeEvolutionIcon = { image: 'img/chargeplus.png', width: cm(0.3) };
   if (pilots[pid]['charge'][1] === '-') pilotChargeEvolutionIcon = { image: 'img/chargeminus.png', width: cm(0.3) };
 
-  const abilityContent = [
-    { text: parseHtmlToPdfmakeText(pilots[pid]['ability_' + language]) },
-    ...pilotChargeIcons,
-    ...(pilotChargeEvolutionIcon ? [pilotChargeEvolutionIcon] : []),
-  ];
+  const abiliteEtMarqueurs = {
+    stack: [
+      { text: parseHtmlToPdfmakeText(pilots[pid]['ability_' + language]) },
+      ...(pilotChargeIcons.length || pilotForceIcons.length || pilotChargeEvolutionIcon
+        ? [
+            {
+              columns: [
+                ...pilotChargeIcons,
+                ...(pilotChargeEvolutionIcon ? [pilotChargeEvolutionIcon] : []),
+                ...pilotForceIcons,
+              ],
+              alignment: 'center',
+            },
+          ]
+        : []),
+    ],
+  };
 
-  // -- Largeurs des 8 colonnes (identiques au CSS .squad)
-  const widths = [cm(1), cm(0.5), cm(4.8), cm(2.6), cm(3.7), cm(3.8), cm(2), cm(0.6)];
+  const nomEtVaisseau = {
+    stack: [
+      { text: pilots[pid]['name_' + language], style: 'pilotName' },
+      { text: ships[sid]['name'], style: 'shipName' },
+    ],
+  };
+
+  // -- Répartition chassis/upgrades dans les 8 emplacements fixes
+  const equipItems = buildEquipmentSlots(chassisTexts, upgradeCells);
+  const emptyCell = () => ({ text: '' });
+
+  // 19 colonnes de 1cm chacune
+  const widths = Array(19).fill(cm(1));
 
   const body = [];
 
-  // Row A (CSS row1)
+  // Bloc "ligne 1-2" (1cm) : faction / initiative / nom+vaisseau (14col) / cout / barre actions (début rowSpan 3)
   body.push([
     { image: factionChemin, fit: [cm(0.9), cm(0.9)] },
     { text: String(pilots[pid]['skill']), alignment: 'center', style: 'pskill' },
-    { text: pilots[pid]['name_' + language], colSpan: 3, style: 'pilotName' }, {}, {},
-    { text: ships[sid]['name'], colSpan: 2, style: 'shipName', alignment: 'center' }, {},
-    { text: '<span>' + pilots[pid]['points'] + '</span>'.replace(/<[^>]+>/g, ''), alignment: 'center', style: 'cost' },
-  ]);
-  // NB : pilotForceIcons n'a pas d'emplacement dédié dans ce CSS (le JS les
-  // ajoutait sur pilotName) -> on les ajoute à la suite du nom si besoin :
-  if (pilotForceIcons.length) {
-    body[0][2] = {
-      stack: [{ text: pilots[pid]['name_' + language] }, { columns: pilotForceIcons }],
-      style: 'pilotName',
-      colSpan: 3,
-    };
-  }
-
-  // Row B (CSS row2, spacer .2cm) : col1-2 & col7-8 = début du rowSpan stat/actions
-  body.push([
-    { rowSpan: 5, ...buildStatsCellContent(sid), style: 'statsBox' },
-    {},
-    { text: '', colSpan: 4 }, {}, {}, {},
-    { rowSpan: 5, ...actionsCellContent, style: 'actionsBox' },
+    { ...nomEtVaisseau, colSpan: 14 },
+    ...Array(13).fill({}),
+    { text: String(pilots[pid]['points']), alignment: 'center', style: 'cost' },
+    { ...actionsCellContent, rowSpan: 3, colSpan: 2 },
     {},
   ]);
 
-  // Row C (CSS row3) : ability
+  // Bloc "ligne 3-6" (2cm) : barre stats (début rowSpan 2, col1) / compétence+marqueurs (col2-16) / suite actions
   body.push([
-    {}, {},
-    { stack: abilityContent, colSpan: 4, style: 'abilityDescription' }, {}, {}, {},
-    {}, {},
-  ]);
-
-  // Row D (CSS row4, spacer .2cm)
-  body.push([
-    {}, {},
-    { text: '', colSpan: 4 }, {}, {}, {},
+    { ...buildStatsCellContent(sid), rowSpan: 2, style: 'statsBox' },
+    { ...abiliteEtMarqueurs, colSpan: 15, style: 'abilityDescription' },
+    ...Array(14).fill({}),
     {}, {},
   ]);
 
-  // Row E (CSS row5) : upg0 (col3-4) / upg1 (col5-6)
+  // Bloc "ligne 7-9" (1.5cm) : suite stats / 2 premiers emplacements (chassis ou upgrade) / suite (fin) actions
   body.push([
-    {}, {},
-    upgradeCells[0] ? { ...upgradeCells[0], colSpan: 2 } : { text: '', colSpan: 2 }, {},
-    upgradeCells[1] ? { ...upgradeCells[1], colSpan: 2 } : { text: '', colSpan: 2 }, {},
-    {}, {},
-  ]);
-
-  // Row F (CSS row6, dernière ligne du rowSpan) : upg2 / upg3
-  body.push([
-    {}, {},
-    upgradeCells[2] ? { ...upgradeCells[2], colSpan: 2 } : { text: '', colSpan: 2 }, {},
-    upgradeCells[3] ? { ...upgradeCells[3], colSpan: 2 } : { text: '', colSpan: 2 }, {},
+    {},
+    equipItems[0] ? { ...equipItems[0], colSpan: 8 } : { ...emptyCell(), colSpan: 8 },
+    ...Array(7).fill({}),
+    equipItems[1] ? { ...equipItems[1], colSpan: 8 } : { ...emptyCell(), colSpan: 8 },
+    ...Array(7).fill({}),
     {}, {},
   ]);
 
-  // Row G (CSS row7) : upg4 (col1-3) / upg5 (col4-5) / upg6 (col6-8) -- pleine largeur
+  // Bloc "ligne 10-12" (1.5cm, ou 0 si aucun élément dans ces 3 emplacements) : emplacements 3/4/5 (6/6/7 col)
   body.push([
-    upgradeCells[4] ? { ...upgradeCells[4], colSpan: 3 } : { text: '', colSpan: 3 }, {}, {},
-    upgradeCells[5] ? { ...upgradeCells[5], colSpan: 2 } : { text: '', colSpan: 2 }, {},
-    upgradeCells[6] ? { ...upgradeCells[6], colSpan: 3 } : { text: '', colSpan: 3 }, {}, {},
+    equipItems[2] ? { ...equipItems[2], colSpan: 6 } : { ...emptyCell(), colSpan: 6 },
+    ...Array(5).fill({}),
+    equipItems[3] ? { ...equipItems[3], colSpan: 6 } : { ...emptyCell(), colSpan: 6 },
+    ...Array(5).fill({}),
+    equipItems[4] ? { ...equipItems[4], colSpan: 7 } : { ...emptyCell(), colSpan: 7 },
+    ...Array(6).fill({}),
   ]);
 
-  // Row H (CSS row8) : upg7 / upg8 / upg9
+  // Bloc "ligne 13-15" (1.5cm, ou 0 si aucun élément dans ces 3 emplacements) : emplacements 6/7/8 (6/6/7 col)
   body.push([
-    upgradeCells[7] ? { ...upgradeCells[7], colSpan: 3 } : { text: '', colSpan: 3 }, {}, {},
-    upgradeCells[8] ? { ...upgradeCells[8], colSpan: 2 } : { text: '', colSpan: 2 }, {},
-    upgradeCells[9] ? { ...upgradeCells[9], colSpan: 3 } : { text: '', colSpan: 3 }, {}, {},
-  ]);
-
-  // Row I (CSS row11) : chs1, pleine largeur
-  body.push([
-    { text: parseHtmlToPdfmakeText(chassisTexts.chs1), colSpan: 8, alignment: 'center', style: 'chassisText' },
-    {}, {}, {}, {}, {}, {}, {},
-  ]);
-
-  // Row J (CSS row12) : chs2 (col1-4) / chs3 (col5-8)
-  body.push([
-    { text: parseHtmlToPdfmakeText(chassisTexts.chs2), colSpan: 4, style: 'chassisText' }, {}, {}, {},
-    { text: parseHtmlToPdfmakeText(chassisTexts.chs3), colSpan: 4, style: 'chassisText' }, {}, {}, {},
+    equipItems[5] ? { ...equipItems[5], colSpan: 6 } : { ...emptyCell(), colSpan: 6 },
+    ...Array(5).fill({}),
+    equipItems[6] ? { ...equipItems[6], colSpan: 6 } : { ...emptyCell(), colSpan: 6 },
+    ...Array(5).fill({}),
+    equipItems[7] ? { ...equipItems[7], colSpan: 7 } : { ...emptyCell(), colSpan: 7 },
+    ...Array(6).fill({}),
   ]);
 
   return {
     table: {
       widths,
-      heights: (rowIndex) => {
-        const fixed = { 1: cm(0.2), 3: cm(0.2), 4: cm(1.5), 5: cm(1.5), 6: cm(1.5), 7: cm(1.5) };
-        if (fixed[rowIndex] !== undefined) return fixed[rowIndex];
-        if (rowIndex === 8 && !chassisTexts.chs1) return 0;
-        if (rowIndex === 9 && !chassisTexts.chs2 && !chassisTexts.chs3) return 0;
-        return 'auto';
-      },
+      heights: [
+        cm(1), // ligne 1-2
+        cm(2), // ligne 3-6
+        cm(1.5), // ligne 7-9
+        equipItems.length > 2 ? cm(1.5) : 0, // ligne 10-12
+        equipItems.length > 5 ? cm(1.5) : 0, // ligne 13-15
+      ],
       body,
     },
     layout: 'noBorders',
-    margin: [0, 0, 0, cm(0.3)],
+    margin: [0, 0, 0, cm(1)], // 2 lignes vides (1cm) avant le pilote suivant
   };
 }
 
