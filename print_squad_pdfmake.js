@@ -1,4 +1,3 @@
-
 /**
  * print_squad_pdfmake.js
  * ----------------------------------------------------------------
@@ -347,16 +346,6 @@ function buildUpgradeCell(uid, x, context) {
 // 6. TABLEAU COMPLET D'UN PILOTE — grille fixe 19 colonnes x 1cm
 // ---------------------------------------------------------------------
 /**
- * Slots chassis/upgrades : jusqu'à 2 textes de chassis (chs1 seul, ou chs2+chs3
- * ensemble, jamais les 3), puis les upgrades équipées, dans 8 emplacements fixes :
- *   - 2 emplacements en ligne 7-9   (larges, 8 colonnes chacun)
- *   - 3 emplacements en ligne 10-12 (6/6/7 colonnes)
- *   - 3 emplacements en ligne 13-15 (6/6/7 colonnes)
- * Les textes de chassis sont toujours placés en premier ; les upgrades
- * viennent ensuite. Si plus de 8 éléments au total, les surplus ne sont
- * pas affichés (à revoir si ton design de jeu autorise plus de 6 upgrades).
- */
-/**
  * Répartit les capacités de chassis et les upgrades dans les emplacements
  * fixes de la ligne 7-9 (2 emplacements larges) et des lignes 10-12/13-15
  * (3+3 emplacements plus étroits).
@@ -401,7 +390,7 @@ function buildEquipmentLayout(chassisTexts, upgradeCells) {
   return { ligne7_9, emplacementsBas: upgradesRestantes }; // jusqu'à 6 upgrades pour ligne10-12 + 13-15
 }
 
-
+function buildPilotTable(x) {
   getPilotData(x);
   const pid = pilotdata[x][0];
   const sid = pilots[pid]['shipId'];
