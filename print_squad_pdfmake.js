@@ -228,45 +228,23 @@ function applyChangeChassis(chassisTexts, chassisFrom, chassisIdVise, nouveauTex
 function buildStatsCellContent(sid) {
   const lignes = [];
 
-  lignes.push({
-    columns: [
-      { text: String(ships[sid]['attack'][0][1]), style: 'attackText' },
-      { image: `img/attack${ships[sid]['attack'][0][0]}.jpg`, width: cm(0.5) },
+  const ligneStat = (valeur, cheminImage, style) => ({
+    stack: [
+      { image: cheminImage, width: cm(0.7), alignment: 'center' },
+      { text: String(valeur), style, alignment: 'center' },
     ],
-    columnGap: 3,
+    margin: [0, 2, 0, 2],
   });
+
+  lignes.push(ligneStat(ships[sid]['attack'][0][1], `img/attack${ships[sid]['attack'][0][0]}.jpg`, 'attackText'));
 
   if (ships[sid]['attack'].length === 2) {
-    lignes.push({
-      columns: [
-        { text: String(ships[sid]['attack'][1][1]), style: 'attackText' },
-        { image: `img/attack${ships[sid]['attack'][1][0]}.jpg`, width: cm(0.5) },
-      ],
-      columnGap: 3,
-    });
+    lignes.push(ligneStat(ships[sid]['attack'][1][1], `img/attack${ships[sid]['attack'][1][0]}.jpg`, 'attackText'));
   }
 
-  lignes.push({
-    columns: [
-      { text: String(ships[sid]['agility']), style: 'agilityText' },
-      { image: 'img/agility.jpg', width: cm(0.5) },
-    ],
-    columnGap: 3,
-  });
-  lignes.push({
-    columns: [
-      { text: String(ships[sid]['hull']), style: 'hullText' },
-      { image: 'img/hull.jpg', width: cm(0.5) },
-    ],
-    columnGap: 3,
-  });
-  lignes.push({
-    columns: [
-      { text: String(ships[sid]['shields']), style: 'shieldText' },
-      { image: 'img/shield.jpg', width: cm(0.5) },
-    ],
-    columnGap: 3,
-  });
+  lignes.push(ligneStat(ships[sid]['agility'], 'img/agility.jpg', 'agilityText'));
+  lignes.push(ligneStat(ships[sid]['hull'], 'img/hull.jpg', 'hullText'));
+  lignes.push(ligneStat(ships[sid]['shields'], 'img/shield.jpg', 'shieldText'));
 
   // NB : img/attackX.jpg, agility.jpg, hull.jpg, shield.jpg font partie de
   // cheminsImagesStats (liste fixe déjà préchargée) -> pas besoin de les
@@ -548,10 +526,7 @@ async function buildFullDocDefinitionFromApp() {
 
   return {
     pageSize: 'A4',
-    // Petite marge de sécurité (+0.15cm par côté) : caler exactement sur 19cm
-    // pour 19cm de zone disponible laisse une marge d'erreur nulle, ce qui
-    // peut suffire à faire déborder selon le moteur de rendu.
-    pageMargins: [cm(1.15), cm(1.35), cm(1.15), cm(1.35)],
+    pageMargins: [cm(1), cm(1.35), cm(1), cm(1.35)],
     content,
     styles: {
       leaderName: { fontSize: 12, bold: true },
