@@ -581,18 +581,36 @@ async function genererPdfDepuisApp() {
   ];
   const imagesBase64 = await preloadImages(cheminsUniques);
   // On remplace les chemins par leur base64 directement dans docDefinition
-  const docDefinitionResolved = JSON.parse(
-    JSON.stringify(docDefinition, (key, value) => {
-      if (key === 'image' && typeof value === 'string') {
-        if (imagesBase64[value]) return imagesBase64[value];
-        // Image introuvable : on retire la clé "image" (plutôt que de laisser
-        // un chemin brut invalide, qui corrompt le rendu du texte autour).
-        console.warn(`[genererPdfDepuisApp] Image manquante, retirée du PDF : "${value}"`);
-        return undefined;
+  /**
+   * Parcourt récursivement le docDefinition et remplace chaque chemin
+   * d'image par son équivalent base64. Si l'image est introuvable, on
+   * remplace l'OBJET ENTIER (pas juste la clé "image") par un élément
+   * neutre valide ({text:''}) : laisser un objet {width:...} sans image
+   * associée n'est pas une structure reconnue par pdfmake et fait planter
+   * le rendu (et corrompt potentiellement le texte autour).
+   */
+  function nettoyerImagesManquantes(node) {
+    if (Array.isArray(node)) {
+      return node.map(nettoyerImagesManquantes);
+    }
+    if (node && typeof node === 'object') {
+      if (typeof node.image === 'string') {
+        if (imagesBase64[node.image]) {
+          return { ...node, image: imagesBase64[node.image] };
+        }
+        console.warn(`[genererPdfDepuisApp] Image manquante, retirée du PDF : "${node.image}"`);
+        return { text: '' };
       }
-      return value;
-    })
-  );
+      const clone = {};
+      for (const cle of Object.keys(node)) {
+        clone[cle] = nettoyerImagesManquantes(node[cle]);
+      }
+      return clone;
+    }
+    return node;
+  }
+
+  const docDefinitionResolved = nettoyerImagesManquantes(docDefinition);
 
   // -- DIAGNOSTIC : on compare la largeur réelle de chaque tableau à la
   // largeur de page disponible, pour repérer précisément un dépassement.
