@@ -386,6 +386,23 @@ function buildEquipmentLayout(chassisTexts, upgradeCells) {
   return { ligne7_9, emplacementsBas: upgradesRestantes }; // jusqu'à 6 upgrades pour ligne10-12 + 13-15
 }
 
+/**
+ * Contournement d'un bug connu de pdfmake : dans une ligne de tableau qui
+ * mélange une cellule en rowSpan (notre barre stats/actions) et une autre
+ * en colSpan (notre texte de compétence/chassis), le calcul de la largeur
+ * disponible pour le retour à la ligne du texte colSpan peut être faux.
+ * On force la largeur exacte via un mini-tableau imbriqué à 1 colonne.
+ */
+function celluleLargeurFixe(contenu, largeurCm) {
+  return {
+    table: {
+      widths: [cm(largeurCm)],
+      body: [[contenu]],
+    },
+    layout: 'noBorders',
+  };
+}
+
 function buildPilotTable(x) {
   getPilotData(x);
   const pid = pilotdata[x][0];
@@ -474,7 +491,7 @@ function buildPilotTable(x) {
   // Bloc "ligne 3-6" (2cm) : barre stats (début rowSpan 2, col1) / compétence+marqueurs (col2-17, 16col) / suite actions (col18-19)
   body.push([
     { ...buildStatsCellContent(sid), rowSpan: 2, style: 'statsBox' },
-    { ...abiliteEtMarqueurs, colSpan: 16, style: 'abilityDescription' },
+    { ...celluleLargeurFixe(abiliteEtMarqueurs, 16), colSpan: 16, style: 'abilityDescription' },
     ...Array(15).fill({}),
     {}, {},
   ]);
@@ -482,11 +499,15 @@ function buildPilotTable(x) {
   // Bloc "ligne 7-9" (1.5cm) : suite stats / chassis-ou-upgrades (16col au total) / suite (fin) actions
   const cellule7_9 =
     ligne7_9.type === 'unique'
-      ? [{ ...ligne7_9.content, colSpan: 16 }, ...Array(15).fill({})]
+      ? [{ ...celluleLargeurFixe(ligne7_9.content, 16), colSpan: 16 }, ...Array(15).fill({})]
       : [
-          ligne7_9.a ? { ...ligne7_9.a, colSpan: 8 } : { ...emptyCell(), colSpan: 8 },
+          ligne7_9.a
+            ? { ...celluleLargeurFixe(ligne7_9.a, 8), colSpan: 8 }
+            : { ...emptyCell(), colSpan: 8 },
           ...Array(7).fill({}),
-          ligne7_9.b ? { ...ligne7_9.b, colSpan: 8 } : { ...emptyCell(), colSpan: 8 },
+          ligne7_9.b
+            ? { ...celluleLargeurFixe(ligne7_9.b, 8), colSpan: 8 }
+            : { ...emptyCell(), colSpan: 8 },
           ...Array(7).fill({}),
         ];
   body.push([{}, ...cellule7_9, {}, {}]);
