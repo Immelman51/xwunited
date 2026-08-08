@@ -76,16 +76,21 @@ function buildLeaderTable() {
           factionImgs[0]
             ? { stack: factionImgs.map((c) => ({ image: c, width: cm(0.9) })) }
             : {},
-          { ...nomEtCharges, colSpan: 18 },
+          { ...celluleLargeurFixe(nomEtCharges, 18), colSpan: 18 },
           ...Array(17).fill({}),
         ],
         // Ligne 4-6 : compétence, pleine largeur (19 col)
         [
           {
-            text: parseHtmlToPdfmakeText(leaders[lID]['leaderability_' + language]),
+            ...celluleLargeurFixe(
+              {
+                text: parseHtmlToPdfmakeText(leaders[lID]['leaderability_' + language]),
+                style: 'competenceText',
+                alignment: 'center',
+              },
+              19
+            ),
             colSpan: 19,
-            style: 'competenceText',
-            alignment: 'center',
           },
           ...Array(18).fill({}),
         ],
