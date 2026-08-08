@@ -145,7 +145,7 @@ function buildActionsCellContent(actionsArray) {
     if (a.type === 'simple') {
       const chemin = `img/${a.code}.jpg`;
       cheminsImagesActions.push(chemin);
-      return { image: chemin, width: cm(0.9), alignment: 'center' };
+      return { image: chemin, width: cm(0.8), alignment: 'center' };
     }
     // linked : image - flèche - image, sur une même ligne
     const chemin1 = `img/${a.code1}.jpg`;
@@ -153,11 +153,11 @@ function buildActionsCellContent(actionsArray) {
     cheminsImagesActions.push(chemin1, 'img/fleche.jpg', chemin2);
     return {
       columns: [
-        { image: chemin1, width: cm(0.7) },
-        { image: 'img/fleche.jpg', width: cm(0.5) },
-        { image: chemin2, width: cm(0.7) },
+        { image: chemin1, width: cm(0.32) },
+        { image: 'img/fleche.jpg', width: cm(0.24) },
+        { image: chemin2, width: cm(0.32) },
       ],
-      columnGap: 2,
+      columnGap: 1,
     };
   });
   return { stack: items, alignment: 'center' };
@@ -489,7 +489,7 @@ function buildPilotTable(x) {
     { ...nomEtVaisseau, colSpan: 14 },
     ...Array(13).fill({}),
     { text: String(pilots[pid]['points']), alignment: 'center', style: 'cost' },
-    { ...celluleLargeurFixe(actionsCellContent, 2), rowSpan: 3, colSpan: 2 },
+    { ...actionsCellContent, rowSpan: 3 },
     {},
   ]);
 
