@@ -489,7 +489,7 @@ function buildPilotTable(x) {
     { ...nomEtVaisseau, colSpan: 14 },
     ...Array(13).fill({}),
     { text: String(pilots[pid]['points']), alignment: 'center', style: 'cost' },
-    { ...actionsCellContent, rowSpan: 3, colSpan: 2 },
+    { ...celluleLargeurFixe(actionsCellContent, 2), rowSpan: 3, colSpan: 2 },
     {},
   ]);
 
