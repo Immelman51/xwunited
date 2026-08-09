@@ -393,6 +393,17 @@ function ligneLargeurFixe(cellules, largeursCm) {
 function celluleLargeurFixe(contenu, largeurCm) {
   return ligneLargeurFixe([contenu], [largeurCm]);
 }
+/** Empile plusieurs éléments verticalement (une ligne interne par élément), largeur fixe. */
+function celluleEmpileeLargeurFixe(items, largeurCm, hauteurUniteCm) {
+  return {
+    table: {
+      widths: [cm(largeurCm)],
+      heights: items.map(() => cm(hauteurUniteCm)),
+      body: items.map((it) => [it]),
+    },
+    layout: 'noBorders',
+  };
+}
 
 function buildPilotTable(x) {
   getPilotData(x);
@@ -481,41 +492,48 @@ function buildPilotTable(x) {
     { text: String(pilots[pid]['points']), alignment: 'center', style: 'cost' },
   ]);
 
-  // Lignes 2-4 (0,5cm chacune) : stat / compétence (colSpan16, rowSpan3) / action
+  // Bloc "lignes 2-4" (1.5cm, UNE SEULE ligne extérieure) : aucun rowSpan nulle part.
+  // stat/action = mini-tableaux empilés (3 lignes internes de 0,5cm) ; compétence = colSpan seul.
+  const statBlockHaut = celluleEmpileeLargeurFixe(
+    [buildSingleStatCell(statsList[0]), buildSingleStatCell(statsList[1]), buildSingleStatCell(statsList[2])],
+    1,
+    0.5
+  );
+  const actionBlockHaut = celluleEmpileeLargeurFixe(
+    [buildSingleActionCell(actionsArray[0]), buildSingleActionCell(actionsArray[1]), buildSingleActionCell(actionsArray[2])],
+    2,
+    0.5
+  );
   body.push([
-    buildSingleStatCell(statsList[0]),
-    { ...celluleLargeurFixe(abiliteEtMarqueurs, 16), colSpan: 16, rowSpan: 3, style: 'abilityDescription' },
+    statBlockHaut,
+    { ...celluleLargeurFixe(abiliteEtMarqueurs, 16), colSpan: 16, style: 'abilityDescription' },
     ...Array(15).fill({}),
-    buildSingleActionCell(actionsArray[0]),
+    actionBlockHaut,
   ]);
-  body.push([buildSingleStatCell(statsList[1]), ...Array(16).fill({}), buildSingleActionCell(actionsArray[1])]);
-  body.push([buildSingleStatCell(statsList[2]), ...Array(16).fill({}), buildSingleActionCell(actionsArray[2])]);
 
-  // Lignes 5-7 (0,5cm chacune) : stat / chassis-ou-upgrades (8+8col ou 16col, rowSpan3) / action
-  let ligneMilieu5;
-  if (ligne7_9.type === 'unique') {
-    ligneMilieu5 = [
-      { ...celluleLargeurFixe(ligne7_9.content, 16), colSpan: 16, rowSpan: 3 },
-      ...Array(15).fill({}),
-    ];
-  } else {
-    ligneMilieu5 = [
-      ligne7_9.a
-        ? { ...celluleLargeurFixe(ligne7_9.a, 8), colSpan: 8, rowSpan: 3 }
-        : { ...emptyCell(), colSpan: 8, rowSpan: 3 },
-      ...Array(7).fill({}),
-      ligne7_9.b
-        ? { ...celluleLargeurFixe(ligne7_9.b, 8), colSpan: 8, rowSpan: 3 }
-        : { ...emptyCell(), colSpan: 8, rowSpan: 3 },
-      ...Array(7).fill({}),
-    ];
-  }
-  body.push([buildSingleStatCell(statsList[3]), ...ligneMilieu5, buildSingleActionCell(actionsArray[3])]);
-  body.push([buildSingleStatCell(statsList[4]), ...Array(16).fill({}), buildSingleActionCell(actionsArray[4])]);
-  body.push([emptyCell(), ...Array(16).fill({}), buildSingleActionCell(actionsArray[5])]);
+  // Bloc "lignes 5-7" (1.5cm, UNE SEULE ligne extérieure) : stat/action empilés, chassis-ou-upgrades = colSpan seul.
+  const statBlockBas = celluleEmpileeLargeurFixe(
+    [buildSingleStatCell(statsList[3]), buildSingleStatCell(statsList[4]), emptyCell()],
+    1,
+    0.5
+  );
+  const actionBlockBas = celluleEmpileeLargeurFixe(
+    [buildSingleActionCell(actionsArray[3]), buildSingleActionCell(actionsArray[4]), buildSingleActionCell(actionsArray[5])],
+    2,
+    0.5
+  );
+  const ligneMilieu5 =
+    ligne7_9.type === 'unique'
+      ? [{ ...celluleLargeurFixe(ligne7_9.content, 16), colSpan: 16 }, ...Array(15).fill({})]
+      : [
+          ligne7_9.a ? { ...celluleLargeurFixe(ligne7_9.a, 8), colSpan: 8 } : { ...emptyCell(), colSpan: 8 },
+          ...Array(7).fill({}),
+          ligne7_9.b ? { ...celluleLargeurFixe(ligne7_9.b, 8), colSpan: 8 } : { ...emptyCell(), colSpan: 8 },
+          ...Array(7).fill({}),
+        ];
+  body.push([statBlockBas, ...ligneMilieu5, actionBlockBas]);
 
-  // Lignes 8-9 (1,5cm chacune, ou 0 si vide) : 3 emplacements upgrades (6/6/7col),
-  // via un mini-tableau imbriqué à largeur fixe couvrant toute la largeur (colSpan18)
+  // Lignes 8-9 (1,5cm chacune, ou 0 si vide) : 3 emplacements upgrades (6/6/7col)
   body.push([
     {
       ...ligneLargeurFixe(
@@ -542,8 +560,8 @@ function buildPilotTable(x) {
       widths,
       heights: [
         cm(1), // ligne 1
-        cm(0.5), cm(0.5), cm(0.5), // lignes 2-4
-        cm(0.5), cm(0.5), cm(0.5), // lignes 5-7
+        cm(1.5), // lignes 2-4 (bloc unique)
+        cm(1.5), // lignes 5-7 (bloc unique)
         emplacementsBas.length > 0 ? cm(1.5) : 0, // ligne 8
         emplacementsBas.length > 3 ? cm(1.5) : 0, // ligne 9
       ],
