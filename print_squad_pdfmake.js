@@ -145,7 +145,7 @@ function buildSingleActionCell(action) {
   if (action.type === 'simple') {
     const chemin = `img/${action.code}.jpg`;
     cheminsImagesActions.push(chemin);
-    return { image: chemin, width: cm(0.7), alignment: 'center' };
+    return { image: chemin, fit: [cm(0.45), cm(0.45)], alignment: 'center' };
   }
   // linked : image - flèche - image, sur une même ligne
   const chemin1 = `img/${action.code1}.jpg`;
@@ -153,9 +153,9 @@ function buildSingleActionCell(action) {
   cheminsImagesActions.push(chemin1, 'img/fleche.jpg', chemin2);
   return {
     columns: [
-      { image: chemin1, width: cm(0.32) },
-      { image: 'img/fleche.jpg', width: cm(0.22) },
-      { image: chemin2, width: cm(0.32) },
+      { image: chemin1, fit: [cm(0.28), cm(0.28)] },
+      { image: 'img/fleche.jpg', fit: [cm(0.2), cm(0.2)] },
+      { image: chemin2, fit: [cm(0.28), cm(0.28)] },
     ],
     columnGap: 1,
   };
@@ -253,7 +253,7 @@ function buildSingleStatCell(stat) {
   return {
     columns: [
       { text: String(stat.valeur), style: stat.style },
-      { image: stat.chemin, width: cm(0.4) },
+      { image: stat.chemin, fit: [cm(0.35), cm(0.35)] },
     ],
     columnGap: 2,
   };
