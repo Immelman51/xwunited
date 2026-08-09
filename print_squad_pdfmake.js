@@ -669,25 +669,10 @@ async function genererPdfDepuisApp() {
 
   const docDefinitionResolved = nettoyerImagesManquantes(docDefinition);
 
-  // -- DIAGNOSTIC : on compare la largeur réelle de chaque tableau à la
-  // largeur de page disponible, pour repérer précisément un dépassement.
-  window.__lastDocDefinition = docDefinitionResolved; // consultable dans la console
-  const A4WidthPt = 595.28;
-  const contentWidthPt =
-    A4WidthPt - docDefinitionResolved.pageMargins[0] - docDefinitionResolved.pageMargins[2];
-  console.log(`[diagnostic] Largeur de contenu disponible : ${contentWidthPt.toFixed(2)}pt (${(contentWidthPt / 28.3465).toFixed(2)}cm)`);
-  docDefinitionResolved.content.forEach((item, i) => {
-    if (item.table && item.table.widths) {
-      const total = item.table.widths.reduce((a, b) => a + b, 0);
-      const depasse = total > contentWidthPt;
-      console.log(
-        `[diagnostic] Tableau #${i} : largeur totale = ${total.toFixed(2)}pt (${(total / 28.3465).toFixed(2)}cm)` +
-          (depasse ? `  ⚠️ DÉPASSE de ${(total - contentWidthPt).toFixed(2)}pt` : '')
-      );
-    }
-  });
+  
+ 
 
   pdfMake.createPdf(docDefinitionResolved).download(
-    leaders[lID]['leadername_' + language] + '.pdf'
+    leaders[lID]['leadername_' + language + hash] + '.pdf'
   );
 }
