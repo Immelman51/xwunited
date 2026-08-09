@@ -96,7 +96,7 @@ function buildLeaderTable() {
         ],
       ],
     },
-    layout: 'noBorders',
+    layout: LAYOUT_SANS_PADDING,
     margin: [0, 0, 0, cm(1)], // 2 lignes vides (1cm) avant le 1er pilote
   };
 }
@@ -381,13 +381,23 @@ function buildEquipmentLayout(chassisTexts, upgradeCells) {
  * disponible pour le retour à la ligne du texte colSpan peut être faux.
  * On force la largeur exacte via un mini-tableau imbriqué à 1 colonne.
  */
+/** Layout sans bordure NI padding, pour un contrôle précis des hauteurs/largeurs sur nos tableaux imbriqués. */
+const LAYOUT_SANS_PADDING = {
+  hLineWidth: () => 0,
+  vLineWidth: () => 0,
+  paddingLeft: () => 0,
+  paddingRight: () => 0,
+  paddingTop: () => 0,
+  paddingBottom: () => 0,
+};
+
 function ligneLargeurFixe(cellules, largeursCm) {
   return {
     table: {
       widths: largeursCm.map(cm),
       body: [cellules],
     },
-    layout: 'noBorders',
+    layout: LAYOUT_SANS_PADDING,
   };
 }
 function celluleLargeurFixe(contenu, largeurCm) {
@@ -401,7 +411,7 @@ function celluleEmpileeLargeurFixe(items, largeurCm, hauteurUniteCm) {
       heights: items.map(() => cm(hauteurUniteCm)),
       body: items.map((it) => [it]),
     },
-    layout: 'noBorders',
+    layout: LAYOUT_SANS_PADDING,
   };
 }
 
@@ -430,6 +440,7 @@ function buildPilotTable(x) {
   }
   actionsArray = context.actionsArray; // peut avoir été complété par 'add_action'
   actionsArray = applyDroidOverride(actionsArray, context.droidEquipped);
+  console.log(`[diagnostic] Pilote index ${x} (pid=${pid}) : actionsArray =`, JSON.stringify(actionsArray));
   if (actionsArray.length > 6) {
     console.warn(
       `[buildPilotTable] pilote index ${x} : ${actionsArray.length} actions à afficher mais seulement 6 emplacements disponibles.`
@@ -567,7 +578,7 @@ function buildPilotTable(x) {
       ],
       body,
     },
-    layout: 'noBorders',
+    layout: LAYOUT_SANS_PADDING,
     margin: [0, 0, 0, cm(1)], // 2 lignes vides (1cm) avant le pilote suivant
   };
 }
