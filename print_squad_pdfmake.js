@@ -57,7 +57,7 @@ function buildLeaderTable() {
     text: [
       { text: leaderName + ' ', style: 'leaderName' },
       ...(chargeImgPath
-        ? Array.from({ length: nbrOfLeaderCharges }, () => ({ image: chargeImgPath, width: cm(0.8) }))
+        ? Array.from({ length: nbrOfLeaderCharges }, () => ({ image: chargeImgPath, width: cm(1.5) }))
         : []),
     ],
     alignment: 'center',
@@ -312,7 +312,7 @@ function buildUpgradeCell(uid, x, context) {
   // Charges / force / +/- de l'upgrade lui-même, sur la MÊME ligne, à la suite
   const nbrcharge = upgrades[uid]['charge'][0];
   for (let j = 0; j < nbrcharge; j++) {
-    columnItems.push({ image: 'img/chargestat.png', width: cm(0.4) });
+    columnItems.push({ image: 'img/chargestat.png', width: cm(1.5) });
   }
   if (upgrades[uid]['charge'][1] === '+') {
     columnItems.push({ image: 'img/chargeplus.png', width: cm(0.3) });
@@ -320,7 +320,7 @@ function buildUpgradeCell(uid, x, context) {
     columnItems.push({ image: 'img/chargeminus.png', width: cm(0.3) });
   }
   for (let j = 0; j < upgrades[uid]['force']; j++) {
-    columnItems.push({ image: 'img/forcestat.png', width: cm(0.4) });
+    columnItems.push({ image: 'img/forcestat.png', width: cm(1.5) });
   }
 
   return hideCell ? null : { columns: columnItems, columnGap: 3, alignment: 'left' };
