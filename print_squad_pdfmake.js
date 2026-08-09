@@ -86,7 +86,7 @@ function buildLeaderTable() {
               {
                 text: parseHtmlToPdfmakeText(leaders[lID]['leaderability_' + language]),
                 style: 'competenceText',
-                alignment: 'center',
+                alignment: 'left',
               },
               18
             ),
@@ -153,9 +153,9 @@ function buildSingleActionCell(action) {
   cheminsImagesActions.push(chemin1, 'img/fleche.jpg', chemin2);
   return {
     columns: [
-      { image: chemin1, fit: [cm(0.28), cm(0.28)] },
-      { image: 'img/fleche.jpg', fit: [cm(0.2), cm(0.2)] },
-      { image: chemin2, fit: [cm(0.28), cm(0.28)] },
+      { image: chemin1, fit: [cm(0.45), cm(0.45)] },
+      { image: 'img/fleche.jpg', fit: [cm(0.45), cm(0.45)] },
+      { image: chemin2, fit: [cm(0.45), cm(0.45)] },
     ],
     columnGap: 1,
   };
@@ -273,7 +273,7 @@ function buildSingleStatCell(stat) {
 function buildUpgradeCell(uid, x, context) {
   const columnItems = [
     { image: `img/${upgrades[uid]['slot']}.png`, width: cm(0.5) },
-    { text: upgrades[uid]['name_' + language], style: 'upgradeName', width: '*' },
+    { text: upgrades[uid]['name_' + language],  verticalAlignment: 'middle', style: 'upgradeName', width: '*' },
   ];
 
   let hideCell = false;
@@ -348,6 +348,7 @@ function buildEquipmentLayout(chassisTexts, upgradeCells) {
     text: parseHtmlToPdfmakeText(texte),
     style: 'chassisText',
     alignment: 'center',
+    verticalAlignment: 'middle',
   });
 
   let ligne7_9;
@@ -472,6 +473,7 @@ function buildPilotTable(x) {
                 ...pilotForceIcons,
               ],
               alignment: 'center',
+            verticalAlignment: 'middle',
             },
           ]
         : []),
@@ -480,8 +482,8 @@ function buildPilotTable(x) {
 
   const nomEtVaisseau = {
     text: [
-      { text: pilots[pid]['name_' + language] + '  ', style: 'pilotName' },
-      { text: ships[sid]['name'], style: 'shipName' },
+      { text: pilots[pid]['name_' + language] + '  ', style: 'pilotName', verticalAlignment: 'middle' },
+      { text: ships[sid]['name'], style: 'shipName', verticalAlignment: 'middle' },
     ],
   };
 
@@ -497,10 +499,10 @@ function buildPilotTable(x) {
   // Ligne 1 (1cm) : faction / skill / nom+vaisseau (15col) / cout
   body.push([
     { image: factionChemin, fit: [cm(0.9), cm(0.9)] },
-    { text: String(pilots[pid]['skill']), alignment: 'center', style: 'pskill' },
+    { text: String(pilots[pid]['skill']),  verticalAlignment: 'middle', alignment: 'center', style: 'pskill' },
     { ...nomEtVaisseau, colSpan: 15 },
     ...Array(14).fill({}),
-    { text: String(pilots[pid]['points']), alignment: 'center', style: 'cost' },
+    { text: String(pilots[pid]['points']),  verticalAlignment: 'middle', alignment: 'center', style: 'cost' },
   ]);
 
   // Bloc "lignes 2-4" (1.5cm, UNE SEULE ligne extérieure) : aucun rowSpan nulle part.
@@ -606,8 +608,8 @@ async function buildFullDocDefinitionFromApp() {
       competenceText: { fontSize: 8, italics: true },
       pilotName: { fontSize: 14, bold: true },
       shipName: { fontSize: 11 },
-      pskill: { fontSize: 15, bold: true },
-      cost: { fontSize: 15, bold: true },
+      pskill: { fontSize: 15, bold: true, color: 'orange' },
+      cost: { fontSize: 15, bold: true, color: 'red' },
       statsBox: { fontSize: 9, bold: true },
       actionsBox: { fontSize: 8 },
       abilityDescription: { fontSize: 8 },
