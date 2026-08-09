@@ -63,23 +63,23 @@ function buildLeaderTable() {
     alignment: 'center',
   };
 
-  // 19 colonnes de 1cm chacune
-  const widths = Array(19).fill(cm(1));
+  // 18 colonnes : 17 de 1cm + 1 de 2cm (= 19cm au total)
+  const widths = [...Array(17).fill(cm(1)), cm(2)];
 
   return {
     table: {
       widths,
       heights: [cm(1.5), cm(1.5)], // ligne 1-3 (1,5cm) puis ligne 4-6 (1,5cm)
       body: [
-        // Ligne 1-3 : [faction (1 col)] [nom + charges (18 col)]
+        // Ligne 1-3 : [faction (1 col)] [nom + charges (17 col)]
         [
           factionImgs[0]
             ? { stack: factionImgs.map((c) => ({ image: c, width: cm(0.9) })) }
             : {},
-          { ...celluleLargeurFixe(nomEtCharges, 18), colSpan: 18 },
-          ...Array(17).fill({}),
+          { ...celluleLargeurFixe(nomEtCharges, 17), colSpan: 17 },
+          ...Array(16).fill({}),
         ],
-        // Ligne 4-6 : compétence, pleine largeur (19 col)
+        // Ligne 4-6 : compétence, pleine largeur (18 col)
         [
           {
             ...celluleLargeurFixe(
@@ -88,11 +88,11 @@ function buildLeaderTable() {
                 style: 'competenceText',
                 alignment: 'center',
               },
-              19
+              18
             ),
-            colSpan: 19,
+            colSpan: 18,
           },
-          ...Array(18).fill({}),
+          ...Array(17).fill({}),
         ],
       ],
     },
@@ -137,30 +137,28 @@ function applyDroidOverride(actionsArray, droidEquipped) {
 }
 
 /**
- * Construit le contenu pdfmake (stack vertical) de la case "actions", en
- * poussant les images utilisées dans cheminsImagesActions.
+ * Construit le contenu pdfmake d'UNE seule action (occupe désormais 1 seule
+ * ligne/colonne dans la nouvelle grille, plus de stack ni de rowSpan).
  */
-function buildActionsCellContent(actionsArray) {
-  const items = actionsArray.map((a) => {
-    if (a.type === 'simple') {
-      const chemin = `img/${a.code}.jpg`;
-      cheminsImagesActions.push(chemin);
-      return { image: chemin, width: cm(0.8), alignment: 'center' };
-    }
-    // linked : image - flèche - image, sur une même ligne
-    const chemin1 = `img/${a.code1}.jpg`;
-    const chemin2 = `img/${a.code2}.jpg`;
-    cheminsImagesActions.push(chemin1, 'img/fleche.jpg', chemin2);
-    return {
-      columns: [
-        { image: chemin1, width: cm(0.32) },
-        { image: 'img/fleche.jpg', width: cm(0.24) },
-        { image: chemin2, width: cm(0.32) },
-      ],
-      columnGap: 1,
-    };
-  });
-  return { stack: items, alignment: 'center' };
+function buildSingleActionCell(action) {
+  if (!action) return { text: '' };
+  if (action.type === 'simple') {
+    const chemin = `img/${action.code}.jpg`;
+    cheminsImagesActions.push(chemin);
+    return { image: chemin, width: cm(0.7), alignment: 'center' };
+  }
+  // linked : image - flèche - image, sur une même ligne
+  const chemin1 = `img/${action.code1}.jpg`;
+  const chemin2 = `img/${action.code2}.jpg`;
+  cheminsImagesActions.push(chemin1, 'img/fleche.jpg', chemin2);
+  return {
+    columns: [
+      { image: chemin1, width: cm(0.32) },
+      { image: 'img/fleche.jpg', width: cm(0.22) },
+      { image: chemin2, width: cm(0.32) },
+    ],
+    columnGap: 1,
+  };
 }
 
 // ---------------------------------------------------------------------
@@ -228,52 +226,37 @@ function applyChangeChassis(chassisTexts, chassisFrom, chassisIdVise, nouveauTex
 }
 
 // ---------------------------------------------------------------------
-// 4. STATS DU VAISSEAU (attaque x1-2, agilité, coque, bouclier)
+// 4. STATS DU VAISSEAU (attaque x1-2, agilité, coque, bouclier) — une par ligne
 // ---------------------------------------------------------------------
-function buildStatsCellContent(sid) {
-  const lignes = [];
-
-  lignes.push({
-    columns: [
-      { text: String(ships[sid]['attack'][0][1]), style: 'attackText' },
-      { image: `img/attack${ships[sid]['attack'][0][0]}.jpg`, width: cm(0.5) },
-    ],
-    columnGap: 3,
+function buildStatsList(sid) {
+  const stats = [];
+  stats.push({
+    valeur: ships[sid]['attack'][0][1],
+    chemin: `img/attack${ships[sid]['attack'][0][0]}.jpg`,
+    style: 'attackText',
   });
-
   if (ships[sid]['attack'].length === 2) {
-    lignes.push({
-      columns: [
-        { text: String(ships[sid]['attack'][1][1]), style: 'attackText' },
-        { image: `img/attack${ships[sid]['attack'][1][0]}.jpg`, width: cm(0.5) },
-      ],
-      columnGap: 3,
+    stats.push({
+      valeur: ships[sid]['attack'][1][1],
+      chemin: `img/attack${ships[sid]['attack'][1][0]}.jpg`,
+      style: 'attackText',
     });
   }
+  stats.push({ valeur: ships[sid]['agility'], chemin: 'img/agility.jpg', style: 'agilityText' });
+  stats.push({ valeur: ships[sid]['hull'], chemin: 'img/hull.jpg', style: 'hullText' });
+  stats.push({ valeur: ships[sid]['shields'], chemin: 'img/shield.jpg', style: 'shieldText' });
+  return stats; // 4 ou 5 éléments selon si le vaisseau a 1 ou 2 valeurs d'attaque
+}
 
-  lignes.push({
+function buildSingleStatCell(stat) {
+  if (!stat) return { text: '' };
+  return {
     columns: [
-      { text: String(ships[sid]['agility']), style: 'agilityText' },
-      { image: 'img/agility.jpg', width: cm(0.5) },
+      { text: String(stat.valeur), style: stat.style },
+      { image: stat.chemin, width: cm(0.4) },
     ],
-    columnGap: 3,
-  });
-  lignes.push({
-    columns: [
-      { text: String(ships[sid]['hull']), style: 'hullText' },
-      { image: 'img/hull.jpg', width: cm(0.5) },
-    ],
-    columnGap: 3,
-  });
-  lignes.push({
-    columns: [
-      { text: String(ships[sid]['shields']), style: 'shieldText' },
-      { image: 'img/shield.jpg', width: cm(0.5) },
-    ],
-    columnGap: 3,
-  });
-
-  return { stack: lignes, alignment: 'center' };
+    columnGap: 2,
+  };
 }
 
 // ---------------------------------------------------------------------
@@ -398,14 +381,17 @@ function buildEquipmentLayout(chassisTexts, upgradeCells) {
  * disponible pour le retour à la ligne du texte colSpan peut être faux.
  * On force la largeur exacte via un mini-tableau imbriqué à 1 colonne.
  */
-function celluleLargeurFixe(contenu, largeurCm) {
+function ligneLargeurFixe(cellules, largeursCm) {
   return {
     table: {
-      widths: [cm(largeurCm)],
-      body: [[contenu]],
+      widths: largeursCm.map(cm),
+      body: [cellules],
     },
     layout: 'noBorders',
   };
+}
+function celluleLargeurFixe(contenu, largeurCm) {
+  return ligneLargeurFixe([contenu], [largeurCm]);
 }
 
 function buildPilotTable(x) {
@@ -433,7 +419,11 @@ function buildPilotTable(x) {
   }
   actionsArray = context.actionsArray; // peut avoir été complété par 'add_action'
   actionsArray = applyDroidOverride(actionsArray, context.droidEquipped);
-  const actionsCellContent = buildActionsCellContent(actionsArray);
+  if (actionsArray.length > 6) {
+    console.warn(
+      `[buildPilotTable] pilote index ${x} : ${actionsArray.length} actions à afficher mais seulement 6 emplacements disponibles.`
+    );
+  }
 
   // -- Charges/force du pilote, affichés à côté de sa compétence
   const pilotForceIcons = Array.from({ length: pilots[pid]['force'] }, () => ({
@@ -473,79 +463,89 @@ function buildPilotTable(x) {
     ],
   };
 
-  // -- Répartition chassis/upgrades dans les emplacements fixes
+  const statsList = buildStatsList(sid); // 4 ou 5 éléments
   const { ligne7_9, emplacementsBas } = buildEquipmentLayout(chassisTexts, upgradeCells);
   const emptyCell = () => ({ text: '' });
 
-  // 19 colonnes de 1cm chacune
-  const widths = Array(19).fill(cm(1));
+  // 18 colonnes : 17 de 1cm + 1 de 2cm
+  const widths = [...Array(17).fill(cm(1)), cm(2)];
 
   const body = [];
 
-  // Bloc "ligne 1-2" (1cm) : faction / initiative / nom+vaisseau (14col) / cout / barre actions (début rowSpan 3)
+  // Ligne 1 (1cm) : faction / skill / nom+vaisseau (15col) / cout
   body.push([
     { image: factionChemin, fit: [cm(0.9), cm(0.9)] },
     { text: String(pilots[pid]['skill']), alignment: 'center', style: 'pskill' },
-    { ...nomEtVaisseau, colSpan: 14 },
-    ...Array(13).fill({}),
+    { ...nomEtVaisseau, colSpan: 15 },
+    ...Array(14).fill({}),
     { text: String(pilots[pid]['points']), alignment: 'center', style: 'cost' },
-    { ...actionsCellContent, rowSpan: 3 },
-    {},
   ]);
 
-  // Bloc "ligne 3-6" (2cm) : barre stats (début rowSpan 2, col1) / compétence+marqueurs (col2-17, 16col) / suite actions (col18-19)
+  // Lignes 2-4 (0,5cm chacune) : stat / compétence (colSpan16, rowSpan3) / action
   body.push([
-    { ...buildStatsCellContent(sid), rowSpan: 2, style: 'statsBox' },
-    { ...celluleLargeurFixe(abiliteEtMarqueurs, 16), colSpan: 16, style: 'abilityDescription' },
+    buildSingleStatCell(statsList[0]),
+    { ...celluleLargeurFixe(abiliteEtMarqueurs, 16), colSpan: 16, rowSpan: 3, style: 'abilityDescription' },
     ...Array(15).fill({}),
-    {}, {},
+    buildSingleActionCell(actionsArray[0]),
   ]);
+  body.push([buildSingleStatCell(statsList[1]), ...Array(16).fill({}), buildSingleActionCell(actionsArray[1])]);
+  body.push([buildSingleStatCell(statsList[2]), ...Array(16).fill({}), buildSingleActionCell(actionsArray[2])]);
 
-  // Bloc "ligne 7-9" (1.5cm) : suite stats / chassis-ou-upgrades (16col au total) / suite (fin) actions
-  const cellule7_9 =
-    ligne7_9.type === 'unique'
-      ? [{ ...celluleLargeurFixe(ligne7_9.content, 16), colSpan: 16 }, ...Array(15).fill({})]
-      : [
-          ligne7_9.a
-            ? { ...celluleLargeurFixe(ligne7_9.a, 8), colSpan: 8 }
-            : { ...emptyCell(), colSpan: 8 },
-          ...Array(7).fill({}),
-          ligne7_9.b
-            ? { ...celluleLargeurFixe(ligne7_9.b, 8), colSpan: 8 }
-            : { ...emptyCell(), colSpan: 8 },
-          ...Array(7).fill({}),
-        ];
-  body.push([{}, ...cellule7_9, {}, {}]);
+  // Lignes 5-7 (0,5cm chacune) : stat / chassis-ou-upgrades (8+8col ou 16col, rowSpan3) / action
+  let ligneMilieu5;
+  if (ligne7_9.type === 'unique') {
+    ligneMilieu5 = [
+      { ...celluleLargeurFixe(ligne7_9.content, 16), colSpan: 16, rowSpan: 3 },
+      ...Array(15).fill({}),
+    ];
+  } else {
+    ligneMilieu5 = [
+      ligne7_9.a
+        ? { ...celluleLargeurFixe(ligne7_9.a, 8), colSpan: 8, rowSpan: 3 }
+        : { ...emptyCell(), colSpan: 8, rowSpan: 3 },
+      ...Array(7).fill({}),
+      ligne7_9.b
+        ? { ...celluleLargeurFixe(ligne7_9.b, 8), colSpan: 8, rowSpan: 3 }
+        : { ...emptyCell(), colSpan: 8, rowSpan: 3 },
+      ...Array(7).fill({}),
+    ];
+  }
+  body.push([buildSingleStatCell(statsList[3]), ...ligneMilieu5, buildSingleActionCell(actionsArray[3])]);
+  body.push([buildSingleStatCell(statsList[4]), ...Array(16).fill({}), buildSingleActionCell(actionsArray[4])]);
+  body.push([emptyCell(), ...Array(16).fill({}), buildSingleActionCell(actionsArray[5])]);
 
-  // Bloc "ligne 10-12" (1.5cm, ou 0 si vide) : emplacements 1/2/3 (6/6/7 col)
+  // Lignes 8-9 (1,5cm chacune, ou 0 si vide) : 3 emplacements upgrades (6/6/7col),
+  // via un mini-tableau imbriqué à largeur fixe couvrant toute la largeur (colSpan18)
   body.push([
-    emplacementsBas[0] ? { ...emplacementsBas[0], colSpan: 6 } : { ...emptyCell(), colSpan: 6 },
-    ...Array(5).fill({}),
-    emplacementsBas[1] ? { ...emplacementsBas[1], colSpan: 6 } : { ...emptyCell(), colSpan: 6 },
-    ...Array(5).fill({}),
-    emplacementsBas[2] ? { ...emplacementsBas[2], colSpan: 7 } : { ...emptyCell(), colSpan: 7 },
-    ...Array(6).fill({}),
+    {
+      ...ligneLargeurFixe(
+        [emplacementsBas[0] || emptyCell(), emplacementsBas[1] || emptyCell(), emplacementsBas[2] || emptyCell()],
+        [6, 6, 7]
+      ),
+      colSpan: 18,
+    },
+    ...Array(17).fill({}),
   ]);
-
-  // Bloc "ligne 13-15" (1.5cm, ou 0 si vide) : emplacements 4/5/6 (6/6/7 col)
   body.push([
-    emplacementsBas[3] ? { ...emplacementsBas[3], colSpan: 6 } : { ...emptyCell(), colSpan: 6 },
-    ...Array(5).fill({}),
-    emplacementsBas[4] ? { ...emplacementsBas[4], colSpan: 6 } : { ...emptyCell(), colSpan: 6 },
-    ...Array(5).fill({}),
-    emplacementsBas[5] ? { ...emplacementsBas[5], colSpan: 7 } : { ...emptyCell(), colSpan: 7 },
-    ...Array(6).fill({}),
+    {
+      ...ligneLargeurFixe(
+        [emplacementsBas[3] || emptyCell(), emplacementsBas[4] || emptyCell(), emplacementsBas[5] || emptyCell()],
+        [6, 6, 7]
+      ),
+      colSpan: 18,
+    },
+    ...Array(17).fill({}),
   ]);
 
   return {
     table: {
       widths,
       heights: [
-        cm(1), // ligne 1-2
-        cm(2), // ligne 3-6
-        cm(1.5), // ligne 7-9
-        emplacementsBas.length > 0 ? cm(1.5) : 0, // ligne 10-12
-        emplacementsBas.length > 3 ? cm(1.5) : 0, // ligne 13-15
+        cm(1), // ligne 1
+        cm(0.5), cm(0.5), cm(0.5), // lignes 2-4
+        cm(0.5), cm(0.5), cm(0.5), // lignes 5-7
+        emplacementsBas.length > 0 ? cm(1.5) : 0, // ligne 8
+        emplacementsBas.length > 3 ? cm(1.5) : 0, // ligne 9
       ],
       body,
     },
