@@ -5,15 +5,6 @@
  * (createElement/appendChild/innerHTML), ces fonctions construisent
  * des objets pdfmake (tables, cellules, stacks).
  *
- * Hypothèses / points à vérifier (je n'ai pas pilots.json/upgrades.json
- * sous les yeux) :
- *  - Pour 'removeclass' et 'changeChassis', add_Data[1] est supposé être
- *    une chaîne qui identifie le chassis concerné (ex: "C123", basé sur
- *    ton "C"+cid dans le code original). Si le format réel diffère,
- *    la fonction matchesChassisMarker() ci-dessous est à ajuster.
- *  - Le fond d'écran du pilote (.pilotImg) n'est PAS reproduit ici :
- *    à traiter séparément (voir discussion).
- *
  * Ce fichier suppose que xwing-pdf-example.js est chargé avant
  * (pour cm(), parseHtmlToPdfmakeText(), preloadImages(), etc.)
  */
@@ -61,6 +52,7 @@ function buildLeaderTable() {
         : []),
     ],
     alignment: 'center',
+    verticalAlignment: 'center',
   };
 
   // 18 colonnes : 17 de 1cm + 1 de 2cm (= 19cm au total)
@@ -87,6 +79,7 @@ function buildLeaderTable() {
                 text: parseHtmlToPdfmakeText(leaders[lID]['leaderability_' + language]),
                 style: 'competenceText',
                 alignment: 'left',
+                verticalAlignment: 'center',
               },
               18
             ),
@@ -145,7 +138,7 @@ function buildSingleActionCell(action) {
   if (action.type === 'simple') {
     const chemin = `img/${action.code}.jpg`;
     cheminsImagesActions.push(chemin);
-    return { image: chemin, fit: [cm(0.45), cm(0.45)], alignment: 'center' };
+    return { image: chemin, fit: [cm(0.45), cm(0.45)], alignment: 'center', verticalAlignment: 'center' };
   }
   // linked : image - flèche - image, sur une même ligne
   const chemin1 = `img/${action.code1}.jpg`;
@@ -153,11 +146,12 @@ function buildSingleActionCell(action) {
   cheminsImagesActions.push(chemin1, 'img/fleche.jpg', chemin2);
   return {
     columns: [
-      { image: chemin1, fit: [cm(0.45), cm(0.45)] },
-      { image: 'img/fleche.jpg', fit: [cm(0.45), cm(0.45)] },
-      { image: chemin2, fit: [cm(0.45), cm(0.45)] },
+      { image: chemin1, fit: [cm(0.28), cm(0.28)] },
+      { image: 'img/fleche.jpg', fit: [cm(0.2), cm(0.2)] },
+      { image: chemin2, fit: [cm(0.28), cm(0.28)] },
     ],
     columnGap: 1,
+    verticalAlignment: 'center',
   };
 }
 
@@ -165,7 +159,6 @@ function buildSingleActionCell(action) {
 // 3. CAPACITÉS DE CHASSIS (reproduit exactement le switch(cid.length) original)
 // ---------------------------------------------------------------------
 function computeChassisTexts(cid, language) {
-  // on retourne {chs1, chs2, chs3} + de quel cid chaque case provient (pour 'removeclass'/'changeChassis')
   const texts = { chs1: '', chs2: '', chs3: '' };
   const from = { chs1: null, chs2: null, chs3: null };
 
@@ -180,7 +173,6 @@ function computeChassisTexts(cid, language) {
       from.chs2 = cid[0];
       from.chs3 = cid[0];
     }
-    // nbrOfEffects === 0 : tout reste vide
   } else if (cid.length === 2) {
     const c0 = chassis[cid[0]];
     const c1 = chassis[cid[1]];
@@ -245,7 +237,7 @@ function buildStatsList(sid) {
   stats.push({ valeur: ships[sid]['agility'], chemin: 'img/agility.jpg', style: 'agilityText' });
   stats.push({ valeur: ships[sid]['hull'], chemin: 'img/hull.jpg', style: 'hullText' });
   stats.push({ valeur: ships[sid]['shields'], chemin: 'img/shield.jpg', style: 'shieldText' });
-  return stats; // 4 ou 5 éléments selon si le vaisseau a 1 ou 2 valeurs d'attaque
+  return stats;
 }
 
 function buildSingleStatCell(stat) {
@@ -256,43 +248,36 @@ function buildSingleStatCell(stat) {
       { image: stat.chemin, fit: [cm(0.35), cm(0.35)] },
     ],
     columnGap: 2,
+    verticalAlignment: 'center',
   };
 }
 
 // ---------------------------------------------------------------------
 // 5. UNE AMÉLIORATION (upgrade) ÉQUIPÉE
 // ---------------------------------------------------------------------
-/**
- * Construit le contenu d'une case upgrade (logo + nom + charges/force),
- * et retourne aussi les effets de bord (removeclass / changeChassis / add_action / droid)
- * à appliquer sur chassisTexts / actionsArray / droidEquipped.
- *
- * @returns { cellContent: object|null, sideEffects: {...} }
- *          cellContent === null signifie "ne pas afficher de case" (ex: changeChassis)
- */
 function buildUpgradeCell(uid, x, context) {
   const columnItems = [
     { image: `img/${upgrades[uid]['slot']}.png`, width: cm(0.5) },
-    { text: upgrades[uid]['name_' + language],  verticalAlignment: 'middle', style: 'upgradeName', width: '*' },
+    { text: upgrades[uid]['name_' + language], style: 'upgradeName', width: '*' },
   ];
 
   let hideCell = false;
 
   switch (upgrades[uid]['add_Data'][0]) {
-    case 'removeclass': // Millenium Falcon
+    case 'removeclass':
       applyRemoveClassToChassis(context.chassisTexts, context.chassisFrom, upgrades[uid]['add_Data'][1]);
       break;
-    case 'changeChassis': // Autopilot Drone
+    case 'changeChassis':
       applyChangeChassis(
         context.chassisTexts,
         context.chassisFrom,
         upgrades[uid]['add_Data'][1],
         upgrades[uid]['add_Data'][2]
       );
-      hideCell = true; // équivalent de mdiv.setAttribute('class','toDelete') + removeElementsByClass
+      hideCell = true;
       break;
-    case 'droid': // tous les pilotes droïdes
-      context.droidEquipped = true; // sera appliqué en post-traitement sur les actions
+    case 'droid':
+      context.droidEquipped = true;
       break;
     case 'add_action': {
       const actionToAdd = upgrades[uid]['add_Data'][1];
@@ -309,7 +294,6 @@ function buildUpgradeCell(uid, x, context) {
       break;
   }
 
-  // Charges / force / +/- de l'upgrade lui-même, sur la MÊME ligne, à la suite
   const nbrcharge = upgrades[uid]['charge'][0];
   for (let j = 0; j < nbrcharge; j++) {
     columnItems.push({ image: 'img/chargestat.png', width: cm(1.5) });
@@ -323,43 +307,28 @@ function buildUpgradeCell(uid, x, context) {
     columnItems.push({ image: 'img/forcestat.png', width: cm(1.5) });
   }
 
-  return hideCell ? null : { columns: columnItems, columnGap: 3, alignment: 'left' };
+  return hideCell ? null : { columns: columnItems, columnGap: 3, alignment: 'left', verticalAlignment: 'center' };
 }
 
 // ---------------------------------------------------------------------
-// 6. TABLEAU COMPLET D'UN PILOTE — grille fixe 19 colonnes x 1cm
+// 6. TABLEAU COMPLET D'UN PILOTE — grille fixe 18 colonnes
 // ---------------------------------------------------------------------
-/**
- * Répartit les capacités de chassis et les upgrades dans les emplacements
- * fixes de la ligne 7-9 (2 emplacements larges) et des lignes 10-12/13-15
- * (3+3 emplacements plus étroits).
- *
- * Règle : si une seule capacité de chassis existe (chs1 seul), elle occupe
- * TOUTE la ligne 7-9 (les 2 emplacements réunis, colSpan 16). Si deux
- * capacités existent (chs2+chs3), elles occupent chacune un emplacement
- * (comme avant). Dans les deux cas, les upgrades commencent alors en
- * ligne 10-12 (6 emplacements disponibles pour elles).
- * Si aucune capacité de chassis, les 2 emplacements de la ligne 7-9
- * accueillent les 2 premières upgrades (8 emplacements disponibles au total).
- */
 function buildEquipmentLayout(chassisTexts, upgradeCells) {
   const validUpgrades = upgradeCells.filter(Boolean);
   const chassisItem = (texte) => ({
     text: parseHtmlToPdfmakeText(texte),
     style: 'chassisText',
     alignment: 'center',
-    verticalAlignment: 'middle',
+    verticalAlignment: 'center',
   });
 
   let ligne7_9;
   let upgradesRestantes;
 
   if (chassisTexts.chs1) {
-    // 1 seule capacité : occupe les 2 emplacements réunis
     ligne7_9 = { type: 'unique', content: chassisItem(chassisTexts.chs1) };
     upgradesRestantes = validUpgrades.slice(0, 6);
   } else if (chassisTexts.chs2 || chassisTexts.chs3) {
-    // 2 capacités : 1 par emplacement
     ligne7_9 = {
       type: 'paire',
       a: chassisTexts.chs2 ? chassisItem(chassisTexts.chs2) : null,
@@ -367,21 +336,13 @@ function buildEquipmentLayout(chassisTexts, upgradeCells) {
     };
     upgradesRestantes = validUpgrades.slice(0, 6);
   } else {
-    // Aucune capacité de chassis : les upgrades occupent aussi ces 2 emplacements
     ligne7_9 = { type: 'paire', a: validUpgrades[0] || null, b: validUpgrades[1] || null };
     upgradesRestantes = validUpgrades.slice(2, 8);
   }
 
-  return { ligne7_9, emplacementsBas: upgradesRestantes }; // jusqu'à 6 upgrades pour ligne10-12 + 13-15
+  return { ligne7_9, emplacementsBas: upgradesRestantes };
 }
 
-/**
- * Contournement d'un bug connu de pdfmake : dans une ligne de tableau qui
- * mélange une cellule en rowSpan (notre barre stats/actions) et une autre
- * en colSpan (notre texte de compétence/chassis), le calcul de la largeur
- * disponible pour le retour à la ligne du texte colSpan peut être faux.
- * On force la largeur exacte via un mini-tableau imbriqué à 1 colonne.
- */
 /** Layout sans bordure NI padding, pour un contrôle précis des hauteurs/largeurs sur nos tableaux imbriqués. */
 const LAYOUT_SANS_PADDING = {
   hLineWidth: () => 0,
@@ -404,7 +365,6 @@ function ligneLargeurFixe(cellules, largeursCm) {
 function celluleLargeurFixe(contenu, largeurCm) {
   return ligneLargeurFixe([contenu], [largeurCm]);
 }
-/** Empile plusieurs éléments verticalement (une ligne interne par élément), largeur fixe. */
 function celluleEmpileeLargeurFixe(items, largeurCm, hauteurUniteCm) {
   return {
     table: {
@@ -422,24 +382,20 @@ function buildPilotTable(x) {
   const sid = pilots[pid]['shipId'];
   const cid = ships[sid]['chassis'];
 
-  // -- Faction du pilote
   const factionChemin = `img/${pilots[pid]['faction']}mini.jpg`;
   cheminsImagesPilot.push(factionChemin);
 
-  // -- Chassis (avant les upgrades, car les upgrades peuvent le modifier)
   const { texts: chassisTexts, from: chassisFrom } = computeChassisTexts(cid, language);
 
-  // -- Actions de base du vaisseau
   let actionsArray = buildPilotActionsArray(x);
 
-  // -- Upgrades équipées : on construit les cases ET on applique les effets de bord
   const context = { chassisTexts, chassisFrom, actionsArray, droidEquipped: false };
   const upgradeCells = [];
   for (let i = 0; i < pilotdata[x].length - 1; i++) {
     const uid = pilotdata[x][i + 1];
     upgradeCells.push(buildUpgradeCell(uid, x, context));
   }
-  actionsArray = context.actionsArray; // peut avoir été complété par 'add_action'
+  actionsArray = context.actionsArray;
   actionsArray = applyDroidOverride(actionsArray, context.droidEquipped);
   console.log(`[diagnostic] Pilote index ${x} (pid=${pid}) : actionsArray =`, JSON.stringify(actionsArray));
   if (actionsArray.length > 6) {
@@ -448,7 +404,6 @@ function buildPilotTable(x) {
     );
   }
 
-  // -- Charges/force du pilote, affichés à côté de sa compétence
   const pilotForceIcons = Array.from({ length: pilots[pid]['force'] }, () => ({
     image: 'img/forcestat.png',
     width: cm(0.4),
@@ -473,40 +428,37 @@ function buildPilotTable(x) {
                 ...pilotForceIcons,
               ],
               alignment: 'center',
-            verticalAlignment: 'middle',
             },
           ]
         : []),
     ],
+    verticalAlignment: 'center',
   };
 
   const nomEtVaisseau = {
     text: [
-      { text: pilots[pid]['name_' + language] + '  ', style: 'pilotName', verticalAlignment: 'middle' },
-      { text: ships[sid]['name'], style: 'shipName', verticalAlignment: 'middle' },
+      { text: pilots[pid]['name_' + language] + '  ', style: 'pilotName' },
+      { text: ships[sid]['name'], style: 'shipName' },
     ],
+    verticalAlignment: 'center',
   };
 
-  const statsList = buildStatsList(sid); // 4 ou 5 éléments
+  const statsList = buildStatsList(sid);
   const { ligne7_9, emplacementsBas } = buildEquipmentLayout(chassisTexts, upgradeCells);
   const emptyCell = () => ({ text: '' });
 
-  // 18 colonnes : 17 de 1cm + 1 de 2cm
   const widths = [...Array(17).fill(cm(1)), cm(2)];
 
   const body = [];
 
-  // Ligne 1 (1cm) : faction / skill / nom+vaisseau (15col) / cout
   body.push([
-    { image: factionChemin, fit: [cm(0.9), cm(0.9)] },
-    { text: String(pilots[pid]['skill']),  verticalAlignment: 'middle', alignment: 'center', style: 'pskill' },
+    { image: factionChemin, fit: [cm(0.9), cm(0.9)], alignment: 'center', verticalAlignment: 'center' },
+    { text: String(pilots[pid]['skill']), alignment: 'center', verticalAlignment: 'center', style: 'pskill' },
     { ...nomEtVaisseau, colSpan: 15 },
     ...Array(14).fill({}),
-    { text: String(pilots[pid]['points']),  verticalAlignment: 'middle', alignment: 'center', style: 'cost' },
+    { text: String(pilots[pid]['points']), alignment: 'center', verticalAlignment: 'center', style: 'cost' },
   ]);
 
-  // Bloc "lignes 2-4" (1.5cm, UNE SEULE ligne extérieure) : aucun rowSpan nulle part.
-  // stat/action = mini-tableaux empilés (3 lignes internes de 0,5cm) ; compétence = colSpan seul.
   const statBlockHaut = celluleEmpileeLargeurFixe(
     [buildSingleStatCell(statsList[0]), buildSingleStatCell(statsList[1]), buildSingleStatCell(statsList[2])],
     1,
@@ -518,13 +470,12 @@ function buildPilotTable(x) {
     0.5
   );
   body.push([
-    statBlockHaut,
-    { ...celluleLargeurFixe(abiliteEtMarqueurs, 16), colSpan: 16, style: 'abilityDescription' },
+    { ...statBlockHaut, verticalAlignment: 'center' },
+    { ...celluleLargeurFixe(abiliteEtMarqueurs, 16), colSpan: 16, style: 'abilityDescription', verticalAlignment: 'center' },
     ...Array(15).fill({}),
-    actionBlockHaut,
+    { ...actionBlockHaut, verticalAlignment: 'center' },
   ]);
 
-  // Bloc "lignes 5-7" (1.5cm, UNE SEULE ligne extérieure) : stat/action empilés, chassis-ou-upgrades = colSpan seul.
   const statBlockBas = celluleEmpileeLargeurFixe(
     [buildSingleStatCell(statsList[3]), buildSingleStatCell(statsList[4]), emptyCell()],
     1,
@@ -537,16 +488,22 @@ function buildPilotTable(x) {
   );
   const ligneMilieu5 =
     ligne7_9.type === 'unique'
-      ? [{ ...celluleLargeurFixe(ligne7_9.content, 16), colSpan: 16 }, ...Array(15).fill({})]
+      ? [
+          { ...celluleLargeurFixe(ligne7_9.content, 16), colSpan: 16, verticalAlignment: 'center' },
+          ...Array(15).fill({}),
+        ]
       : [
-          ligne7_9.a ? { ...celluleLargeurFixe(ligne7_9.a, 8), colSpan: 8 } : { ...emptyCell(), colSpan: 8 },
+          ligne7_9.a
+            ? { ...celluleLargeurFixe(ligne7_9.a, 8), colSpan: 8, verticalAlignment: 'center' }
+            : { ...emptyCell(), colSpan: 8 },
           ...Array(7).fill({}),
-          ligne7_9.b ? { ...celluleLargeurFixe(ligne7_9.b, 8), colSpan: 8 } : { ...emptyCell(), colSpan: 8 },
+          ligne7_9.b
+            ? { ...celluleLargeurFixe(ligne7_9.b, 8), colSpan: 8, verticalAlignment: 'center' }
+            : { ...emptyCell(), colSpan: 8 },
           ...Array(7).fill({}),
         ];
-  body.push([statBlockBas, ...ligneMilieu5, actionBlockBas]);
+  body.push([{ ...statBlockBas, verticalAlignment: 'center' }, ...ligneMilieu5, { ...actionBlockBas, verticalAlignment: 'center' }]);
 
-  // Lignes 8-9 (1,5cm chacune, ou 0 si vide) : 3 emplacements upgrades (6/6/7col)
   body.push([
     {
       ...ligneLargeurFixe(
@@ -554,6 +511,7 @@ function buildPilotTable(x) {
         [6, 6, 7]
       ),
       colSpan: 18,
+      verticalAlignment: 'center',
     },
     ...Array(17).fill({}),
   ]);
@@ -564,6 +522,7 @@ function buildPilotTable(x) {
         [6, 6, 7]
       ),
       colSpan: 18,
+      verticalAlignment: 'center',
     },
     ...Array(17).fill({}),
   ]);
@@ -572,21 +531,21 @@ function buildPilotTable(x) {
     table: {
       widths,
       heights: [
-        cm(1), // ligne 1
-        cm(1.5), // lignes 2-4 (bloc unique)
-        cm(1.5), // lignes 5-7 (bloc unique)
-        emplacementsBas.length > 0 ? cm(1.5) : 0, // ligne 8
-        emplacementsBas.length > 3 ? cm(1.5) : 0, // ligne 9
+        cm(1),
+        cm(1.5),
+        cm(1.5),
+        emplacementsBas.length > 0 ? cm(1.5) : 0,
+        emplacementsBas.length > 3 ? cm(1.5) : 0,
       ],
       body,
     },
     layout: LAYOUT_SANS_PADDING,
-    margin: [0, 0, 0, cm(1)], // 2 lignes vides (1cm) avant le pilote suivant
+    margin: [0, 0, 0, cm(1)],
   };
 }
 
 // ---------------------------------------------------------------------
-// 7. ORCHESTRATION : construit le document complet
+// 7. ORCHESTRATION
 // ---------------------------------------------------------------------
 async function buildFullDocDefinitionFromApp() {
   await getIndexesFromHash();
@@ -623,7 +582,6 @@ async function buildFullDocDefinitionFromApp() {
   };
 }
 
-/** À appeler depuis le bouton PRINT, à la place de html2pdf().set(opt).from(element).save(); */
 async function genererPdfDepuisApp() {
   const docDefinition = await buildFullDocDefinitionFromApp();
   const cheminsUniques = [
@@ -637,15 +595,7 @@ async function genererPdfDepuisApp() {
     ]),
   ];
   const imagesBase64 = await preloadImages(cheminsUniques);
-  // On remplace les chemins par leur base64 directement dans docDefinition
-  /**
-   * Parcourt récursivement le docDefinition et remplace chaque chemin
-   * d'image par son équivalent base64. Si l'image est introuvable, on
-   * remplace l'OBJET ENTIER (pas juste la clé "image") par un élément
-   * neutre valide ({text:''}) : laisser un objet {width:...} sans image
-   * associée n'est pas une structure reconnue par pdfmake et fait planter
-   * le rendu (et corrompt potentiellement le texte autour).
-   */
+
   function nettoyerImagesManquantes(node) {
     if (Array.isArray(node)) {
       return node.map(nettoyerImagesManquantes);
@@ -668,9 +618,6 @@ async function genererPdfDepuisApp() {
   }
 
   const docDefinitionResolved = nettoyerImagesManquantes(docDefinition);
-
-  
- 
 
   pdfMake.createPdf(docDefinitionResolved).download(
     leaders[lID]['leadername_' + language + hash] + '.pdf'

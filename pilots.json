@@ -13811,7 +13811,7 @@
             "titleID": 135,
             "shipId": 3,
             "skill": 6,
-            "points": 9,
+            "points": 19,
             
             "ability_FRA": "<div class='text'>Tant que vous attaquez ou défendez, si l’attaque est obstruée par un obstacle, vous pouvez lancer un dé supplémentaire.<br>Si vous défendez ou attaquez en étant à portée 0 d'un obstacle, vous pouvez lancer 1 dé supplémentaire</div>",
             "ability_ENG": "<div class='text'>While you defend or perform an attack, if the attack is obstructed by an obstacle, you may roll 1 additional die.<br>If you defend or perform an attack while being at range 0 of an obstacle, you may roll 1 additional die.</div>",
@@ -13846,7 +13846,7 @@
             "modify": true,
             "skill": 4,
             "charge": [1,"+"],
-            "points": 7,
+            "points": 16,
             
             "ability_FRA": "<div class='text'>Lorsque vous devriez recevoir une carte de dégât face visible, vous pouvez dépenser 1 <img class='inline-img' src='img/charge.png'> pour la recevoir face cachée à la place.</div>",
             "ability_ENG": "<div class='text'>When you would receive a face up damage card, you may spend 1 <img class='inline-img' src='img/charge.png'> to receive it facedown instead.</div>",
