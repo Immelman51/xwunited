@@ -68,7 +68,7 @@ function buildLeaderTable() {
           factionImgs[0]
             ? { stack: factionImgs.map((c) => ({ image: c, width: cm(0.9) })) }
             : {},
-          { ...celluleLargeurFixe(nomEtCharges, 17), colSpan: 17 },
+          { ...celluleLargeurFixe(nomEtCharges, 17, 1.5), colSpan: 17 },
           ...Array(16).fill({}),
         ],
         // Ligne 4-6 : compétence, pleine largeur (18 col)
@@ -81,7 +81,8 @@ function buildLeaderTable() {
                 alignment: 'left',
                 verticalAlignment: 'center',
               },
-              18
+              18,
+              1.5
             ),
             colSpan: 18,
           },
@@ -353,17 +354,18 @@ const LAYOUT_SANS_PADDING = {
   paddingBottom: () => 0,
 };
 
-function ligneLargeurFixe(cellules, largeursCm) {
+function ligneLargeurFixe(cellules, largeursCm, hauteurCm) {
   return {
     table: {
       widths: largeursCm.map(cm),
+      heights: hauteurCm !== undefined ? [cm(hauteurCm)] : undefined,
       body: [cellules],
     },
     layout: LAYOUT_SANS_PADDING,
   };
 }
-function celluleLargeurFixe(contenu, largeurCm) {
-  return ligneLargeurFixe([contenu], [largeurCm]);
+function celluleLargeurFixe(contenu, largeurCm, hauteurCm) {
+  return ligneLargeurFixe([contenu], [largeurCm], hauteurCm);
 }
 function celluleEmpileeLargeurFixe(items, largeurCm, hauteurUniteCm) {
   return {
@@ -471,7 +473,7 @@ function buildPilotTable(x) {
   );
   body.push([
     { ...statBlockHaut, verticalAlignment: 'center' },
-    { ...celluleLargeurFixe(abiliteEtMarqueurs, 16), colSpan: 16, style: 'abilityDescription', verticalAlignment: 'center' },
+    { ...celluleLargeurFixe(abiliteEtMarqueurs, 16, 1.5), colSpan: 16, style: 'abilityDescription', verticalAlignment: 'center' },
     ...Array(15).fill({}),
     { ...actionBlockHaut, verticalAlignment: 'center' },
   ]);
@@ -489,16 +491,16 @@ function buildPilotTable(x) {
   const ligneMilieu5 =
     ligne7_9.type === 'unique'
       ? [
-          { ...celluleLargeurFixe(ligne7_9.content, 16), colSpan: 16, verticalAlignment: 'center' },
+          { ...celluleLargeurFixe(ligne7_9.content, 16, 1.5), colSpan: 16, verticalAlignment: 'center' },
           ...Array(15).fill({}),
         ]
       : [
           ligne7_9.a
-            ? { ...celluleLargeurFixe(ligne7_9.a, 8), colSpan: 8, verticalAlignment: 'center' }
+            ? { ...celluleLargeurFixe(ligne7_9.a, 8, 1.5), colSpan: 8, verticalAlignment: 'center' }
             : { ...emptyCell(), colSpan: 8 },
           ...Array(7).fill({}),
           ligne7_9.b
-            ? { ...celluleLargeurFixe(ligne7_9.b, 8), colSpan: 8, verticalAlignment: 'center' }
+            ? { ...celluleLargeurFixe(ligne7_9.b, 8, 1.5), colSpan: 8, verticalAlignment: 'center' }
             : { ...emptyCell(), colSpan: 8 },
           ...Array(7).fill({}),
         ];
@@ -508,7 +510,8 @@ function buildPilotTable(x) {
     {
       ...ligneLargeurFixe(
         [emplacementsBas[0] || emptyCell(), emplacementsBas[1] || emptyCell(), emplacementsBas[2] || emptyCell()],
-        [6, 6, 7]
+        [6, 6, 7],
+        1.5
       ),
       colSpan: 18,
       verticalAlignment: 'center',
@@ -519,7 +522,8 @@ function buildPilotTable(x) {
     {
       ...ligneLargeurFixe(
         [emplacementsBas[3] || emptyCell(), emplacementsBas[4] || emptyCell(), emplacementsBas[5] || emptyCell()],
-        [6, 6, 7]
+        [6, 6, 7],
+        1.5
       ),
       colSpan: 18,
       verticalAlignment: 'center',
@@ -620,6 +624,6 @@ async function genererPdfDepuisApp() {
   const docDefinitionResolved = nettoyerImagesManquantes(docDefinition);
 
   pdfMake.createPdf(docDefinitionResolved).download(
-    leaders[lID]['leadername_' + language + hash] + '.pdf'
+    leaders[lID]['leadername_' + language] + hash + '.pdf'
   );
 }
