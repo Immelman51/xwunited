@@ -431,20 +431,15 @@ function buildPilotTable(x) {
   if (pilots[pid]['charge'][1] === '-') pilotChargeEvolutionIcon = { image: 'img/chargeminus.png', width: cm(0.3) };
 
   const abiliteEtMarqueurs = {
-    stack: [
+    text: [
       { text: parseHtmlToPdfmakeText(pilots[pid]['ability_' + language]) },
       
-              ],
-              alignment: 'center',
-            },
-          ]
-        : []),
     ],
     verticalAlignment: 'center',
   };
 
   const nomEtVaisseau = {
-    text: [
+    stack: [
       { text: pilots[pid]['name_' + language] + '  ', style: 'pilotName' },
       { text: ships[sid]['name'], style: 'shipName' },
       ...(pilotChargeIcons.length || pilotForceIcons.length || pilotChargeEvolutionIcon
@@ -454,6 +449,11 @@ function buildPilotTable(x) {
                 ...pilotChargeIcons,
                 ...(pilotChargeEvolutionIcon ? [pilotChargeEvolutionIcon] : []),
                 ...pilotForceIcons,
+              ],
+              alignment: 'center',
+            },
+          ]
+        : []),
     ],
     verticalAlignment: 'center',
   };
