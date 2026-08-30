@@ -420,11 +420,11 @@ function buildPilotTable(x) {
 
   const pilotForceIcons = Array.from({ length: pilots[pid]['force'] }, () => ({
     image: 'img/forcestat.png',
-    width: cm(0.4),
+    width: cm(1.5),
   }));
   const pilotChargeIcons = Array.from({ length: pilots[pid]['charge'][0] }, () => ({
     image: 'img/chargestat.png',
-    width: cm(0.4),
+    width: cm(1.5),
   }));
   let pilotChargeEvolutionIcon = null;
   if (pilots[pid]['charge'][1] === '+') pilotChargeEvolutionIcon = { image: 'img/chargeplus.png', width: cm(0.3) };
@@ -433,13 +433,7 @@ function buildPilotTable(x) {
   const abiliteEtMarqueurs = {
     stack: [
       { text: parseHtmlToPdfmakeText(pilots[pid]['ability_' + language]) },
-      ...(pilotChargeIcons.length || pilotForceIcons.length || pilotChargeEvolutionIcon
-        ? [
-            {
-              columns: [
-                ...pilotChargeIcons,
-                ...(pilotChargeEvolutionIcon ? [pilotChargeEvolutionIcon] : []),
-                ...pilotForceIcons,
+      
               ],
               alignment: 'center',
             },
@@ -453,6 +447,13 @@ function buildPilotTable(x) {
     text: [
       { text: pilots[pid]['name_' + language] + '  ', style: 'pilotName' },
       { text: ships[sid]['name'], style: 'shipName' },
+      ...(pilotChargeIcons.length || pilotForceIcons.length || pilotChargeEvolutionIcon
+        ? [
+            {
+              columns: [
+                ...pilotChargeIcons,
+                ...(pilotChargeEvolutionIcon ? [pilotChargeEvolutionIcon] : []),
+                ...pilotForceIcons,
     ],
     verticalAlignment: 'center',
   };
