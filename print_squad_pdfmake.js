@@ -147,9 +147,9 @@ function buildSingleActionCell(action) {
   cheminsImagesActions.push(chemin1, 'img/fleche.jpg', chemin2);
   return {
     columns: [
-      { image: chemin1, fit: [cm(0.28), cm(0.28)] },
-      { image: 'img/fleche.jpg', fit: [cm(0.2), cm(0.2)] },
-      { image: chemin2, fit: [cm(0.28), cm(0.28)] },
+      { image: chemin1, fit: [cm(0.45), cm(0.45)] },
+      { image: 'img/fleche.jpg', fit: [cm(0.3), cm(0.3)] },
+      { image: chemin2, fit: [cm(0.45), cm(0.45)] },
     ],
     columnGap: 1,
     verticalAlignment: 'center',
