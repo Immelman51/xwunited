@@ -90,7 +90,7 @@ function buildLeaderTable() {
         ],
       ],
     },
-    layout: LAYOUT_SANS_PADDING,
+    layout: LAYOUT_BORDURE_EXTERIEURE,
     margin: [0, 0, 0, cm(1)], // 2 lignes vides (1cm) avant le 1er pilote
   };
 }
@@ -308,7 +308,7 @@ function buildUpgradeCell(uid, x, context) {
     columnItems.push({ image: 'img/forcestat.png', width: cm(1.5) });
   }
 
-  return hideCell ? null : { columns: columnItems, columnGap: 3, alignment: 'left', verticalAlignment: 'center' };
+  return hideCell ? null : { columns: columnItems, columnGap: 3, alignment: 'left' };
 }
 
 // ---------------------------------------------------------------------
@@ -348,6 +348,18 @@ function buildEquipmentLayout(chassisTexts, upgradeCells) {
 const LAYOUT_SANS_PADDING = {
   hLineWidth: () => 0,
   vLineWidth: () => 0,
+  paddingLeft: () => 0,
+  paddingRight: () => 0,
+  paddingTop: () => 0,
+  paddingBottom: () => 0,
+};
+
+/** Layout avec bordure UNIQUEMENT sur le pourtour extérieur (pas de lignes internes), pour les tableaux leader/pilote. */
+const LAYOUT_BORDURE_EXTERIEURE = {
+  hLineWidth: (i, node) => (i === 0 || i === node.table.body.length ? 1 : 0),
+  vLineWidth: (i, node) => (i === 0 || i === node.table.widths.length ? 1 : 0),
+  hLineColor: () => 'black',
+  vLineColor: () => 'black',
   paddingLeft: () => 0,
   paddingRight: () => 0,
   paddingTop: () => 0,
@@ -543,7 +555,7 @@ function buildPilotTable(x) {
       ],
       body,
     },
-    layout: LAYOUT_SANS_PADDING,
+    layout: LAYOUT_BORDURE_EXTERIEURE,
     margin: [0, 0, 0, cm(1)],
   };
 }
