@@ -148,7 +148,7 @@ function buildSingleActionCell(action) {
   return {
     columns: [
       { image: chemin1, fit: [cm(0.45), cm(0.45)] },
-      { image: 'img/fleche.jpg', fit: [cm(0.3), cm(0.3)] },
+      { image: 'img/fleche.jpg', fit: [cm(0.45), cm(0.45)] },
       { image: chemin2, fit: [cm(0.45), cm(0.45)] },
     ],
     columnGap: 1,
@@ -518,41 +518,44 @@ function buildPilotTable(x) {
         ];
   body.push([{ ...statBlockBas, verticalAlignment: 'center' }, ...ligneMilieu5, { ...actionBlockBas, verticalAlignment: 'center' }]);
 
-  body.push([
-    {
-      ...ligneLargeurFixe(
-        [emplacementsBas[0] || emptyCell(), emplacementsBas[1] || emptyCell(), emplacementsBas[2] || emptyCell()],
-        [6, 6, 7],
-        1.5
-      ),
-      colSpan: 18,
-      verticalAlignment: 'center',
-    },
-    ...Array(17).fill({}),
-  ]);
-  body.push([
-    {
-      ...ligneLargeurFixe(
-        [emplacementsBas[3] || emptyCell(), emplacementsBas[4] || emptyCell(), emplacementsBas[5] || emptyCell()],
-        [6, 6, 7],
-        1.5
-      ),
-      colSpan: 18,
-      verticalAlignment: 'center',
-    },
-    ...Array(17).fill({}),
-  ]);
+  const heights = [cm(1), cm(1.5), cm(1.5)];
+
+  if (emplacementsBas.length > 0) {
+    body.push([
+      {
+        ...ligneLargeurFixe(
+          [emplacementsBas[0] || emptyCell(), emplacementsBas[1] || emptyCell(), emplacementsBas[2] || emptyCell()],
+          [6, 6, 7],
+          1.5
+        ),
+        colSpan: 18,
+        verticalAlignment: 'center',
+      },
+      ...Array(17).fill({}),
+    ]);
+    heights.push(cm(1.5));
+  }
+
+  if (emplacementsBas.length > 3) {
+    body.push([
+      {
+        ...ligneLargeurFixe(
+          [emplacementsBas[3] || emptyCell(), emplacementsBas[4] || emptyCell(), emplacementsBas[5] || emptyCell()],
+          [6, 6, 7],
+          1.5
+        ),
+        colSpan: 18,
+        verticalAlignment: 'center',
+      },
+      ...Array(17).fill({}),
+    ]);
+    heights.push(cm(1.5));
+  }
 
   return {
     table: {
       widths,
-      heights: [
-        cm(1),
-        cm(1.5),
-        cm(1.5),
-        emplacementsBas.length > 0 ? cm(1.5) : 0,
-        emplacementsBas.length > 3 ? cm(1.5) : 0,
-      ],
+      heights,
       body,
     },
     layout: LAYOUT_BORDURE_EXTERIEURE,
