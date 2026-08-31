@@ -806,7 +806,11 @@ function addHTMLandCSSforDialsAndBases() {
                         newpilot.appendChild(newupgrade);
                     }
                     
-                }
+            }else{
+                newpilot = document.createElement('div');
+                newpilot.setAttribute('class','pilot');
+                newpilot.innerHTML = "<font size='13'>"+pilots[pilotdata[j][0]]['name_'+language]+"</font><br>";
+            }
                 upgradeContainer.appendChild(newpilot);
             }
         }
