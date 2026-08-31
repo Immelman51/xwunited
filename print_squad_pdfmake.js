@@ -21,10 +21,6 @@ function buildLeaderTable() {
       factionImgs.push(chemin);
     }
   }
-  // NB : on ne gère ici qu'une image de faction affichée (colonne 1, 1cm)
-  // comme décrit dans la nouvelle grille. Si plusieurs images de faction
-  // existent, on les empile verticalement dans cette même colonne.
-
   const leaderName =
     leaders[lID]['leadername_' + language] + (listValidity === false ? ' (NOT VALID)' : '');
 
@@ -55,15 +51,13 @@ function buildLeaderTable() {
     verticalAlignment: 'center',
   };
 
-  // 18 colonnes : 17 de 1cm + 1 de 2cm (= 19cm au total)
   const widths = [...Array(17).fill(cm(1)), cm(2)];
 
   return {
     table: {
       widths,
-      heights: [cm(1.5), cm(1.5)], // ligne 1-3 (1,5cm) puis ligne 4-6 (1,5cm)
+      heights: [cm(1.5), cm(1.5)],
       body: [
-        // Ligne 1-3 : [faction (1 col)] [nom + charges (17 col)]
         [
           factionImgs[0]
             ? { stack: factionImgs.map((c) => ({ image: c, width: cm(0.9) })) }
@@ -71,7 +65,6 @@ function buildLeaderTable() {
           { ...celluleLargeurFixe(nomEtCharges, 17, 1.5), colSpan: 17 },
           ...Array(16).fill({}),
         ],
-        // Ligne 4-6 : compétence, pleine largeur (18 col)
         [
           {
             ...celluleLargeurFixe(
@@ -91,18 +84,18 @@ function buildLeaderTable() {
       ],
     },
     layout: LAYOUT_BORDURE_EXTERIEURE,
-    margin: [0, 0, 0, cm(1)], // 2 lignes vides (1cm) avant le 1er pilote
+    margin: [0, 0, 0, cm(1)],
   };
 }
 
 // ---------------------------------------------------------------------
-// 2. ACTIONS D'UN PILOTE (avec prise en compte du "droid" et "add_action")
+// 2. ACTIONS D'UN PILOTE
 // ---------------------------------------------------------------------
 function buildPilotActionsArray(x) {
   const pilotID = pilotdata[x][0];
   const shipID = pilots[pilotID]['shipId'];
   const actionsArray = ships[shipID]['actions'];
-  const result = []; // chaque élément : {type:'simple', code} ou {type:'linked', code1, code2}
+  const result = [];
 
   for (let g = 0; g < actionsArray.length; g++) {
     if (actionsArray[g][0] === 0) {
@@ -116,10 +109,6 @@ function buildPilotActionsArray(x) {
   return result;
 }
 
-/**
- * Applique la logique 'droid' (remplace les actions Fo W / Fo R par Cc W / Cc R)
- * en post-traitement, une fois qu'on sait si le pilote a un upgrade droid équipé.
- */
 function applyDroidOverride(actionsArray, droidEquipped) {
   if (!droidEquipped) return actionsArray;
   const swap = (code) => (code === 'Fo W' ? 'Cc W' : code === 'Fo R' ? 'Cc R' : code);
@@ -130,10 +119,6 @@ function applyDroidOverride(actionsArray, droidEquipped) {
   );
 }
 
-/**
- * Construit le contenu pdfmake d'UNE seule action (occupe désormais 1 seule
- * ligne/colonne dans la nouvelle grille, plus de stack ni de rowSpan).
- */
 function buildSingleActionCell(action) {
   if (!action) return { text: '' };
   if (action.type === 'simple') {
@@ -141,7 +126,6 @@ function buildSingleActionCell(action) {
     cheminsImagesActions.push(chemin);
     return { image: chemin, fit: [cm(0.45), cm(0.45)], alignment: 'center', verticalAlignment: 'center' };
   }
-  // linked : image - flèche - image, sur une même ligne
   const chemin1 = `img/${action.code1}.jpg`;
   const chemin2 = `img/${action.code2}.jpg`;
   cheminsImagesActions.push(chemin1, 'img/fleche.jpg', chemin2);
@@ -157,7 +141,7 @@ function buildSingleActionCell(action) {
 }
 
 // ---------------------------------------------------------------------
-// 3. CAPACITÉS DE CHASSIS (reproduit exactement le switch(cid.length) original)
+// 3. CAPACITÉS DE CHASSIS
 // ---------------------------------------------------------------------
 function computeChassisTexts(cid, language) {
   const texts = { chs1: '', chs2: '', chs3: '' };
@@ -204,14 +188,12 @@ function computeChassisTexts(cid, language) {
   return { texts, from };
 }
 
-/** Reproduit removeElementsByClass(className) : on vide la case chsX si elle vient du chassis visé */
 function applyRemoveClassToChassis(chassisTexts, chassisFrom, chassisIdVise) {
   ['chs1', 'chs2', 'chs3'].forEach((k) => {
     if (chassisFrom[k] === chassisIdVise) chassisTexts[k] = '';
   });
 }
 
-/** Reproduit changeChassis : remplace le texte de la case chsX visée par une nouvelle valeur */
 function applyChangeChassis(chassisTexts, chassisFrom, chassisIdVise, nouveauTexte) {
   ['chs1', 'chs2', 'chs3'].forEach((k) => {
     if (chassisFrom[k] === chassisIdVise) chassisTexts[k] = nouveauTexte;
@@ -219,7 +201,7 @@ function applyChangeChassis(chassisTexts, chassisFrom, chassisIdVise, nouveauTex
 }
 
 // ---------------------------------------------------------------------
-// 4. STATS DU VAISSEAU (attaque x1-2, agilité, coque, bouclier) — une par ligne
+// 4. STATS DU VAISSEAU
 // ---------------------------------------------------------------------
 function buildStatsList(sid) {
   const stats = [];
@@ -344,7 +326,6 @@ function buildEquipmentLayout(chassisTexts, upgradeCells) {
   return { ligne7_9, emplacementsBas: upgradesRestantes };
 }
 
-/** Layout sans bordure NI padding, pour un contrôle précis des hauteurs/largeurs sur nos tableaux imbriqués. */
 const LAYOUT_SANS_PADDING = {
   hLineWidth: () => 0,
   vLineWidth: () => 0,
@@ -354,7 +335,6 @@ const LAYOUT_SANS_PADDING = {
   paddingBottom: () => 0,
 };
 
-/** Layout avec bordure UNIQUEMENT sur le pourtour extérieur (pas de lignes internes), pour les tableaux leader/pilote. */
 const LAYOUT_BORDURE_EXTERIEURE = {
   hLineWidth: (i, node) => (i === 0 || i === node.table.body.length ? 1 : 0),
   vLineWidth: (i, node) => (i === 0 || i === node.table.widths.length ? 1 : 0),
@@ -418,6 +398,7 @@ function buildPilotTable(x) {
     );
   }
 
+  // -- Charges/force du pilote : maintenant placés APRES le nom du pilote / nom du vaisseau
   const pilotForceIcons = Array.from({ length: pilots[pid]['force'] }, () => ({
     image: 'img/forcestat.png',
     width: cm(1.5),
@@ -430,30 +411,22 @@ function buildPilotTable(x) {
   if (pilots[pid]['charge'][1] === '+') pilotChargeEvolutionIcon = { image: 'img/chargeplus.png', width: cm(0.3) };
   if (pilots[pid]['charge'][1] === '-') pilotChargeEvolutionIcon = { image: 'img/chargeminus.png', width: cm(0.3) };
 
+  // -- Compétence seule (les marqueurs de charge/force du pilote ne sont plus ici)
   const abiliteEtMarqueurs = {
-    text: [
-      { text: parseHtmlToPdfmakeText(pilots[pid]['ability_' + language]) },
-      
-    ],
+    text: [{ text: parseHtmlToPdfmakeText(pilots[pid]['ability_' + language]) }],
     verticalAlignment: 'center',
   };
 
+  // -- Nom + vaisseau + marqueurs de charge/force à la suite, EN LIGNE (pas de columns
+  // imbriqué : un tableau `text` n'accepte que des morceaux de texte ou des images
+  // isolées, pas un objet `columns` complet).
   const nomEtVaisseau = {
     text: [
       { text: pilots[pid]['name_' + language] + '  ', style: 'pilotName' },
-      { text: ships[sid]['name'], style: 'shipName' },
-      ...(pilotChargeIcons.length || pilotForceIcons.length || pilotChargeEvolutionIcon
-        ? [
-            {
-              columns: [
-                ...pilotChargeIcons,
-                ...(pilotChargeEvolutionIcon ? [pilotChargeEvolutionIcon] : []),
-                ...pilotForceIcons,
-              ],
-              alignment: 'center',
-            },
-          ]
-        : []),
+      { text: ships[sid]['name'] + '  ', style: 'shipName' },
+      ...pilotChargeIcons,
+      ...(pilotChargeEvolutionIcon ? [pilotChargeEvolutionIcon] : []),
+      ...pilotForceIcons,
     ],
     verticalAlignment: 'center',
   };
