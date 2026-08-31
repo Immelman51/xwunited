@@ -43,11 +43,11 @@ function buildLeaderTable() {
   const nomEtCharges = {
     columns: [
       { text: leaderName + ' ', style: 'leaderName', width: 'auto' },
+      { text: '', width: '*' },
       ...(chargeImgPath
         ? Array.from({ length: nbrOfLeaderCharges }, () => ({ image: chargeImgPath, width: cm(1.5) }))
         : []),
     ],
-    alignment: 'center',
     verticalAlignment: 'center',
   };
 
@@ -417,13 +417,19 @@ function buildPilotTable(x) {
     verticalAlignment: 'center',
   };
 
-  // -- Nom + vaisseau + marqueurs de charge/force à la suite, EN LIGNE via `columns`
-  // (un tableau `text` ne gère pas de façon fiable des images comme éléments isolés ;
-  // toutes nos autres icônes du fichier utilisent déjà `columns` pour cette raison).
+  // -- Nom + vaisseau ensemble dans un `text` inline (bon alignement sur la ligne
+  // de base malgré des tailles de police différentes), puis un espaceur `*` qui
+  // pousse les icônes de charge/force tout à droite de la colonne.
   const nomEtVaisseau = {
     columns: [
-      { text: pilots[pid]['name_' + language] + '  ', style: 'pilotName', width: 'auto' },
-      { text: ships[sid]['name'] + '  ', style: 'shipName', width: 'auto' },
+      {
+        text: [
+          { text: pilots[pid]['name_' + language] + '  ', style: 'pilotName' },
+          { text: ships[sid]['name'], style: 'shipName' },
+        ],
+        width: 'auto',
+      },
+      { text: '', width: '*' },
       ...pilotChargeIcons,
       ...(pilotChargeEvolutionIcon ? [pilotChargeEvolutionIcon] : []),
       ...pilotForceIcons,
