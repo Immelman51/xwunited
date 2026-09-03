@@ -35,7 +35,33 @@ async function chargerPoliceXWingIcons() {
   if (_policeXWingIconsChargee) return;
 
   const reponse = await fetch('XWingIcons.ttf');
+  if (!reponse.ok) {
+    throw new Error(
+      `[chargerPoliceXWingIcons] Impossible de récupérer XWingIcons.ttf (HTTP ${reponse.status}). ` +
+        `Vérifie le chemin utilisé dans le fetch() de cette fonction : le fichier doit être exactement à cet endroit sur ton serveur.`
+    );
+  }
   const buffer = await reponse.arrayBuffer();
+
+  // Vérifie que le contenu récupéré est bien un fichier TTF (et pas, par
+  // exemple, une page d'erreur HTML renvoyée par le serveur avec un code 200).
+  // Un TTF valide commence par l'un de ces 4 octets magiques.
+  const magiques = [
+    [0x00, 0x01, 0x00, 0x00], // TrueType classique
+    [0x4f, 0x54, 0x54, 0x4f], // "OTTO" (OpenType/CFF)
+    [0x74, 0x72, 0x75, 0x65], // "true"
+    [0x74, 0x74, 0x63, 0x66], // "ttcf" (collection)
+  ];
+  const premiers = new Uint8Array(buffer.slice(0, 4));
+  const estValide = magiques.some((sig) => sig.every((octet, i) => premiers[i] === octet));
+  if (!estValide) {
+    throw new Error(
+      `[chargerPoliceXWingIcons] Le fichier récupéré à l'URL "XWingIcons.ttf" n'est pas un fichier de police valide ` +
+        `(en-tête inattendu : ${Array.from(premiers).join(', ')}). Le fetch a probablement récupéré une page d'erreur ` +
+        `au lieu du vrai fichier — vérifie le chemin.`
+    );
+  }
+
   const base64 = arrayBufferToBase64(buffer);
 
   pdfMake.vfs['XWingIcons.ttf'] = base64;
