@@ -2748,7 +2748,7 @@
             "points": 4,
             "faction": ["Trade_Federation"],
             "effect_FRA": "A la fin de la partie, si votre vaisseau est toujours en jeu, gagnez 3 points de scénario.",
-            "effect_ENG": "At the end of the game, if your ship is still in the play area, win 3 scenario points."
+            "effect_ENG": "At the end of the game, if your ship is still in the play area, win 3 PO."
         },
         {
             "name_FRA": "Poggle le Bref",
@@ -4252,8 +4252,8 @@
              "force": 0,
              "charge": [0],
              "points":3,
-             "effect_FRA": "Début de la Mise en Place : Votre adversaire assigne la condition 'Mission Sauvetage d'Otage' à l'un de ses vaisseaux.<br>Mission Sauvetage d'Otage : A la fin du jeu, gagnez 3 points de scénario. Lorsque vous êtes détruit, larguez une 'Capsule de l'Otage' à portée 1 de vous et perdez la condition 'MSO'.<br>Capsule de l'Otage : (Satellite) Quand un vaisseau est à portée 0-1, il peut effectuer une action de sauvetage : (ACTION SCENARIO) : Assignez la condition 'MSO' à votre vaisseau, et remettez la capsule de l'otage en réserve.",
-             "effect_ENG": "Beginning of Setup : Your opponent assign the 'Hostage Rescue Mission' condition to one of his ships.<br>Hostage Rescue Mission : At the end of the game, gain 3 Scenario Points. When you are destroyed, drop a 'Hostage Capsule' at range 1 of you and lose the 'HRM' condition.<br>Hostage Capsule : (Remote) When a ship is at range 0-1, it can do a rescue action : (SCENARIO ACTION) : assign the 'HRM' condition to your ship, and put the Hostage Capsule into Reserve.",
+             "effect_FRA": "Début de la Mise en Place : Votre adversaire assigne la condition 'Mission Sauvetage d'Otage' à l'un de ses vaisseaux.<br>Mission Sauvetage d'Otage : A la fin du jeu, gagnez 3 PO. Lorsque vous êtes détruit, larguez une 'Capsule de l'Otage' à portée 1 de vous et perdez la condition 'MSO'.<br>Capsule de l'Otage : (Satellite) Quand un vaisseau est à portée 0-1, il peut effectuer une action de sauvetage : (ACTION SCENARIO) : Assignez la condition 'MSO' à votre vaisseau, et remettez la capsule de l'otage en réserve.",
+             "effect_ENG": "Beginning of Setup : Your opponent assign the 'Hostage Rescue Mission' condition to one of his ships.<br>Hostage Rescue Mission : At the end of the game, gain 3 PO. When you are destroyed, drop a 'Hostage Capsule' at range 1 of you and lose the 'HRM' condition.<br>Hostage Capsule : (Remote) When a ship is at range 0-1, it can do a rescue action : (SCENARIO ACTION) : assign the 'HRM' condition to your ship, and put the Hostage Capsule into Reserve.",
              "faction": ["Clone_Army"] ,
              "modifier_func":[
                  ["add_slot","Condition"],
@@ -4273,8 +4273,8 @@
              "force": 0,
              "charge": [0],
              "points":5,
-             "effect_FRA": "Fin de Partie : Si vous n'êtes pas détruit, gagnez 3 points de scenario.<br>ACTION : Choisissez un vaisseau ennemi à portée 1-2 dans votre arc de tir. Il gagne 2 jetons épuisement.",
-             "effect_ENG": "End Game : If you are not destroyed, gain 3 Scenario Points.<br>ACTION : Choose an enemy ship at range 1-2 in your firing arc. It gains 2 deplete tokens.",
+             "effect_FRA": "Fin de Partie : Si vous n'êtes pas détruit, gagnez 3 PO.<br>ACTION : Choisissez un vaisseau ennemi à portée 1-2 dans votre arc de tir. Il gagne 2 jetons épuisement.",
+             "effect_ENG": "End Game : If you are not destroyed, gain 3 PO.<br>ACTION : Choose an enemy ship at range 1-2 in your firing arc. It gains 2 deplete tokens.",
              "faction": ["Clone_Army"]
          },
          {
@@ -4353,9 +4353,9 @@
              "force": 0,
              "charge": [0],
              "points":4,
-             "effect_FRA": "ACTION : Ajoutez 1 <img class='chargeforceimg' src='img/charge.png'> à 'Message Prioritaire'. Si vous recevez votre 5ème <img class='chargeforceimg' src='img/charge.png'>, gagnez 2 <img class='chargeforceimg' src='img/scenario_point.png'>, et vous pouvez retirez votre vaisseau de la partie, sans que l'adversaire ne remporte de <img class='chargeforceimg' src='img/scenario_point.png'>.",
-             "effect_ENG": "ACTION: Add 1 <img class='chargeforceimg' src='img/charge.png'> to 'Priority Message'. If you receive your 5th <img class='chargeforceimg' src='img/charge.png'>, gain 2 <img class='chargeforceimg' src='img/scenario_point.png'>, and you may remove your ship from the game without the opponent gaining <img class='chargeforceimg' src='img/scenario_point.png'>.",
-             "faction": ["Clone_Army","Jedi_Order","Naboo_Defense_Force"] 
+             "effect_FRA": "ACTION : Ajoutez 1 <img class='chargeforceimg' src='img/charge.png'> à 'Message Prioritaire'. Si vous recevez votre 5ème <img class='chargeforceimg' src='img/charge.png'>, gagnez 2 PO, et vous pouvez retirez votre vaisseau de la partie, sans que l'adversaire ne remporte de PO.",
+             "effect_ENG": "ACTION: Add 1 <img class='chargeforceimg' src='img/charge.png'> to 'Priority Message'. If you receive your 5th <img class='chargeforceimg' src='img/charge.png'>, gain 2 PO, and you may remove your ship from the game without the opponent gaining PO.",
+             "faction": ["Clone_Army","Jedi_Order","Naboo_Defense_Force"]
          },
          {
             "name_FRA": "Console Synchronisée",
@@ -5797,8 +5797,8 @@
              "force": 0,
              "charge": [0],
              "points": 0,
-             "effect_FRA": "Lorsque vous êtes attaqué par un vaisseau avec l'amélioration 'Agent Kallus', il peut modifier un résultat <img class='chargeforceimg' src='img/eye.jpg'> en un résultat <img class='chargeforceimg' src='img/hit.jpg'>. Lorsque vous êtes détruit, votre adversaire gagne 1 point de scénario (cela déclenche aussi le gain de point Tactique).",
-             "effect_ENG": "When you are attacked by a ship with the Agent Kallus upgrade, it may modify an <img class='chargeforceimg' src='img/eye.jpg'> result to a <img class='chargeforceimg' src='img/hit.jpg'> result. When you are destroyed, your opponent gains 1 Scenario Point (it triggers also the gain of Tactic point)",
+             "effect_FRA": "Lorsque vous êtes attaqué par un vaisseau avec l'amélioration 'Agent Kallus', il peut modifier un résultat <img class='chargeforceimg' src='img/eye.jpg'> en un résultat <img class='chargeforceimg' src='img/hit.jpg'>. Lorsque vous êtes détruit, votre adversaire gagne 1 PO (cela déclenche aussi le gain de point Tactique).",
+             "effect_ENG": "When you are attacked by a ship with the Agent Kallus upgrade, it may modify an <img class='chargeforceimg' src='img/eye.jpg'> result to a <img class='chargeforceimg' src='img/hit.jpg'> result. When you are destroyed, your opponent gains 1 PO (it triggers also the gain of Tactic point)",
              "faction": ["ISB"]
                                      
              
@@ -6002,8 +6002,8 @@
              "force": 0,
              "charge": [0],
              "points": 3,
-             "effect_FRA": "ACTION : Exécutez une maneuvre 5<img class='chargeforceimg' src='img/manSt2.jpg'> vers l'avant. Si votre position finale recouvre celle d'un autre vaisseau, ce vaisseau subit 1/2/3/4 dégats si vous êtes un vaisseau petit/moyen/grand/énorme. Puis votre vaisseau est détruit. Si un vaisseau ennemi a été détruit de cette manière, gagnez 1 <img class='inline-img src='img/scenario_point.jpg'>",
-            "effect_ENG": "ACTION : Execute a 5<img class='chargeforceimg' src='img/manSt2.jpg'> forward maneuver. If your final position overlaps another ship, this ship suffers 1/2/3/4 damage if you are a small/medium/large/huge ship. Then your ship is destroyed. If an enemy ship is destroyed this way, receive 1 <img class='inline-img src='img/scenario_point.jpg'>",
+             "effect_FRA": "ACTION : Exécutez une maneuvre 5<img class='chargeforceimg' src='img/manSt2.jpg'> vers l'avant. Si votre position finale recouvre celle d'un autre vaisseau, ce vaisseau subit 1/2/3/4 dégats si vous êtes un vaisseau petit/moyen/grand/énorme. Puis votre vaisseau est détruit. Si un vaisseau ennemi a été détruit de cette manière, gagnez 1 PO",
+            "effect_ENG": "ACTION : Execute a 5<img class='chargeforceimg' src='img/manSt2.jpg'> forward maneuver. If your final position overlaps another ship, this ship suffers 1/2/3/4 damage if you are a small/medium/large/huge ship. Then your ship is destroyed. If an enemy ship is destroyed this way, receive 1 PO",
              "faction": ["Heroes_of_the_Resistance"]
                                      
              
