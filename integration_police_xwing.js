@@ -43,7 +43,21 @@ async function chargerPoliceXWingIcons() {
   // On mappe les 4 variantes (normal/bold/italics/bolditalics) vers le MÊME
   // fichier : la police n'a qu'une seule graisse, donc même un texte en gras
   // autour de l'icône affichera le même glyphe (pas de gras artificiel).
-  pdfMake.fonts = pdfMake.fonts || {};
+  // IMPORTANT : sur cette version de pdfmake, `pdfMake.fonts` n'est pas
+  // pré-rempli avec Roboto par défaut (Roboto est géré en interne tant qu'on
+  // ne touche pas à `pdfMake.fonts`). Si on se contente de faire
+  // `pdfMake.fonts = pdfMake.fonts || {}`, on crée un objet VIDE la première
+  // fois, et Roboto disparaît complètement du document -> erreur
+  // "Font 'Roboto' ... is not defined". On déclare donc les deux polices.
+  pdfMake.fonts = {
+    ...(pdfMake.fonts || {}),
+    Roboto: (pdfMake.fonts && pdfMake.fonts.Roboto) || {
+      normal: 'Roboto-Regular.ttf',
+      bold: 'Roboto-Medium.ttf',
+      italics: 'Roboto-Italic.ttf',
+      bolditalics: 'Roboto-MediumItalic.ttf',
+    },
+  };
   pdfMake.fonts.XWingIcons = {
     normal: 'XWingIcons.ttf',
     bold: 'XWingIcons.ttf',
