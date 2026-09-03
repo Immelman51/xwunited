@@ -259,25 +259,26 @@ async function preloadImages(cheminsImages /* tableau de chemins, ex: ['img/lead
 }
 
 // ---------------------------------------------------------------------
-// 3ter. Parseur HTML enrichi -> syntaxe pdfmake (texte + images inline)
+// 3ter. Parseur HTML enrichi -> syntaxe pdfmake (texte + caractères de la
+// police custom XWingIcons pour les icônes, au lieu d'images inline qui ne
+// fonctionnent pas de façon fiable dans un texte qui doit passer à la ligne)
 // ---------------------------------------------------------------------
 /**
  * Convertit une chaîne HTML du type :
  *   "<div class='text'>Texte <img src='img/charge.png'> suite du texte<br>ligne 2</div>"
  * en un tableau exploitable par pdfmake dans une propriété `text` :
- *   [ {text:'Texte '}, {image:'img/charge.png', width:...}, {text:' suite du texte'},
+ *   [ {text:'Texte '}, {text:'\uE01F', font:'XWingIcons'}, {text:' suite du texte'},
  *     {text:'\n'}, {text:'ligne 2'} ]
  *
- * IMPORTANT : les chemins d'images extraits ici (via les <img src="...">)
- * doivent être présents dans `cheminsImages` / `imagesBase64` -> assure-toi
- * de bien les rajouter à la main comme tu l'as indiqué, sinon l'image sera
- * simplement absente du PDF (pdfmake ignore une clé d'image manquante avec
- * une erreur silencieuse ou une exception selon la version).
+ * Nécessite que XWING_ICON_FONT_MAP (xwing_icon_font_map.js) et la police
+ * XWingIcons (voir integration_police_xwing.js) soient chargées avant usage.
+ * Si une icône référencée n'a pas de correspondance dans la police, elle est
+ * simplement omise (avec un avertissement en console) plutôt que de faire
+ * planter tout le texte.
  *
  * @param {string} html - le contenu brut du champ (ex: pilots[pid]['ability_FRA'])
- * @param {number} iconWidthPt - largeur en points des icônes inline (défaut ~0.4cm)
  */
-function parseHtmlToPdfmakeText(html, iconWidthPt = cm(0.4)) {
+function parseHtmlToPdfmakeText(html) {
   if (!html) return [{ text: '' }];
 
   // 1. On retire les balises <div ...> / </div> (on garde leur contenu)
@@ -292,29 +293,39 @@ function parseHtmlToPdfmakeText(html, iconWidthPt = cm(0.4)) {
   let lastIndex = 0;
   let match;
 
+  const pousserTexte = (texte) => {
+    // on découpe aussi sur les \n pour créer des sauts de ligne successifs
+    texte.split('\n').forEach((segment, i) => {
+      if (i > 0) result.push({ text: '\n' });
+      if (segment) result.push({ text: segment });
+    });
+  };
+
   while ((match = imgRegex.exec(cleaned)) !== null) {
     const textBefore = cleaned.slice(lastIndex, match.index);
-    if (textBefore) {
-      // on découpe aussi sur les \n pour créer des sauts de ligne successifs
-      textBefore.split('\n').forEach((segment, i) => {
-        if (i > 0) result.push({ text: '\n' });
-        if (segment) result.push({ text: segment });
-      });
+    if (textBefore) pousserTexte(textBefore);
+
+    // "img/charge.png" ou "img/Un W.jpg" -> "charge" ou "Un W"
+    const nomFichier = match[1].replace(/^img\//, '').replace(/\.[a-zA-Z0-9]+$/, '');
+    const caractere =
+      typeof XWING_ICON_FONT_MAP !== 'undefined' ? XWING_ICON_FONT_MAP[nomFichier] : undefined;
+
+    if (caractere) {
+      result.push({ text: caractere, font: 'XWingIcons' });
+    } else {
+      console.warn(`[parseHtmlToPdfmakeText] Icône absente de la police XWingIcons : "${nomFichier}"`);
     }
-    result.push({ image: match[1], width: iconWidthPt });
     lastIndex = imgRegex.lastIndex;
   }
 
   // 4. Le texte restant après la dernière image
-  const remaining = cleaned.slice(lastIndex);
-  remaining.split('\n').forEach((segment, i) => {
-    if (i > 0) result.push({ text: '\n' });
-    if (segment) result.push({ text: segment });
-  });
+  pousserTexte(cleaned.slice(lastIndex));
 
   // 5. Filet de sécurité : on retire toute autre balise HTML oubliée (span, b, etc.)
+  // -- sauf sur les entrées qui portent notre police, dont le texte est un
+  // caractère spécial à préserver tel quel.
   return result.map((item) =>
-    item.text ? { ...item, text: item.text.replace(/<[^>]+>/g, '') } : item
+    item.font ? item : { ...item, text: item.text.replace(/<[^>]+>/g, '') }
   );
 }
 
