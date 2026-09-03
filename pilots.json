@@ -4123,8 +4123,8 @@
             "skill": 2,
             "points": 9,
             
-            "ability_FRA": "<div class='text'>Lorsque vous êtes détruit, vous devez déployer la navette de secours de Nute Gunray depuis votre vaisseau (Coque 2 Agilité 2). Pendant la phase Système, déplacez vous vers l'avant avec un gabarit de vitesse 1, ou le gabarit 2 <img class='inline-img' src='img/manSt2.jpg'>. Vous pouvez être placé sous un vaisseau si vous les chevauchez. Lorsque vous défendez, vous pouvez modifier vos résultats <img class='inline-img' src='img/eye.jpg'> en <img class='inline-img' src='img/evd.jpg'>. Si vous deviez fuir du tapis de jeu, votre adversaire perd 2 points de Scénario.", 
-            "ability_ENG": "<div class='text'>When you would be destroyed, you must deploy Nute Gunray's escape pod from your ship (2 Hull 3 agility). During System phase, you move forward with any 1 speed template, or the 2 straight template. You may be placed under any ship if you overlap them. When you defend, you may change your <img class='inline-img' src='img/eye.jpg'> results into <img class='inline-img' src='img/evd.jpg'> results. If you would flee from the Battlefield, your opponent lose 2 Scenario points.</div>",
+            "ability_FRA": "<div class='text'>Lorsque vous êtes détruit, vous devez déployer la navette de secours de Nute Gunray depuis votre vaisseau (Coque 2 Agilité 2). Pendant la phase Système, déplacez vous vers l'avant avec un gabarit de vitesse 1, ou le gabarit 2 <img class='inline-img' src='img/manSt2.jpg'>. Vous pouvez être placé sous un vaisseau si vous les chevauchez. Lorsque vous défendez, vous pouvez modifier vos résultats <img class='inline-img' src='img/eye.jpg'> en <img class='inline-img' src='img/evd.jpg'>. Si vous deviez fuir du tapis de jeu, votre adversaire perd 2 PO.",
+            "ability_ENG": "<div class='text'>When you would be destroyed, you must deploy Nute Gunray's escape pod from your ship (2 Hull 3 agility). During System phase, you move forward with any 1 speed template, or the 2 straight template. You may be placed under any ship if you overlap them. When you defend, you may change your <img class='inline-img' src='img/eye.jpg'> results into <img class='inline-img' src='img/evd.jpg'> results. If you would flee from the Battlefield, your opponent lose 2 PO.</div>",
             "slots": [
                 "Talent-leadership"
             ]
@@ -7004,8 +7004,8 @@
             "shipId": 71,
             "skill": 3,
             "points": 9,
-            "ability_FRA": "<div class='text'>Fin de la Mise en Place : votre adversaire doit placer 1 'Cible à Eliminer'.<br>'Cible à Eliminer' : Satellite, 3 Coques 2 Agilité, peut se relocaliser. Il doit être attaqué à portée 1. Lorsque CàE est détruite, vous gagnez 2 points de scénario.</div>",
-            "ability_ENG": "<div class='text'>End of SETUP : your opponent has to place 1 'Target to eliminate'.<br>'Target to Eliminate' : Remote, 3hull 2 agility, may relocate. It must be attacked at range 1. When T2E is destroyed, you gain 2 scenario Points.</div>",
+            "ability_FRA": "<div class='text'>Fin de la Mise en Place : votre adversaire doit placer 1 'Cible à Eliminer'.<br>'Cible à Eliminer' : Satellite, 3 Coques 2 Agilité, peut se relocaliser. Il doit être attaqué à portée 1. Lorsque CàE est détruite, vous gagnez 2 PO.</div>",
+            "ability_ENG": "<div class='text'>End of SETUP : your opponent has to place 1 'Target to eliminate'.<br>'Target to Eliminate' : Remote, 3hull 2 agility, may relocate. It must be attacked at range 1. When T2E is destroyed, you gain 2 PO.</div>",
             "slots": [
                 "Talent-leadership"
             ]
@@ -9198,7 +9198,7 @@
             "skill": 4,
             "points": 16,
             "ability_FRA": "<div class='text'>Lorsqu'un vaisseau à portée 2 est détruit, vous pouvez dépenser 1 <img class='inline-img' src='img/charge.png'> et recevoir un jeton désarmement. Dans ce cas, gagnez 1 point de scénario.</div>",
-            "ability_ENG": "<div class='text'>When a ship at range 2 is destroyed, you may spend 1 charge and gain 1 disarm token. If you do, gain 1 scenario point.</div>",
+            "ability_ENG": "<div class='text'>When a ship at range 2 is destroyed, you may spend 1 charge and gain 1 disarm token. If you do, gain 1 PO.</div>",
             "slots": [
                 "Talent-shooting"           
            ]
@@ -12143,9 +12143,9 @@
             "shipId": 81,
             "skill": 1,
             "points": 5,
-            "ability_FRA": "<div class='text'>Lorsque vous devriez recevoir votre 2ème carte de dégat, recevez à la place un jeton désarmement. Si votre charge est active, votre adversaire reçoit les points de scenario comme si vous étiez détruit, puis retournez votre charge.</div>",
-            "ability_ENG": "<div class='text'>When you would take your second damage card, gain 1 disarm token instead. If your charge is active, your opponent gains scenario points as if you were destroyed, then flip your charge.</div>",
-            "slots": [   
+            "ability_FRA": "<div class='text'>Lorsque vous devriez recevoir votre 2ème carte de dégat, recevez à la place un jeton désarmement. Si votre charge est active, votre adversaire reçoit les PO comme si vous étiez détruit, puis retournez votre charge.</div>",
+            "ability_ENG": "<div class='text'>When you would take your second damage card, gain 1 disarm token instead. If your charge is active, your opponent gains PO as if you were destroyed, then flip your charge.</div>",
+            "slots": [
 
             ]   
         },

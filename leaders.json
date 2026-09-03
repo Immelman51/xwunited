@@ -14,8 +14,8 @@
      "leadername_ENG":  "Greef Carga",
      "leaderfaction": ["Bounty_Hunters_Guild","",""],
      "numberOfFactions": 1,
-     "leaderability_FRA": "Si vous avez au moins un capteur de positionnement, si la cible 'désignée pour mourir' est détruite, gagnez 4 <img class='inline-img' src='img/scenario_point.png'>",
-     "leaderability_ENG": "If you have at least one Tracking Fob, if the 'Marked for Elimination' target is destroyed, gain 4 <img class='inline-img' src='img/scenario_point.png'>",
+     "leaderability_FRA": "Si vous avez au moins un capteur de positionnement, si la cible 'désignée pour mourir' est détruite, gagnez 4 PO",
+     "leaderability_ENG": "If you have at least one Tracking Fob, if the 'Marked for Elimination' target is destroyed, gain 4 PO",
      "leaderid": 1,
      "charge": [0],
      "logistic": 20
@@ -27,8 +27,8 @@
      "leaderid": 2,
      "charge": [2,"Red"],
      "numberOfFactions": 1,
-     "leaderability_FRA": "<div class='text'>A chaque fois que vous effectuez une action de scénario, récupérez 1 <img class='inline-img' src='img/charge.png'>. En phase système, vous pouvez dépenser 2 <img class='inline-img' src='img/charge.png'> : gagnez 2 <img class='inline-img' src='img/scenario_point.png'></div>",
-     "leaderability_ENG": "<div class='text'>Each time you perform a scenario action, recover 1 <img class='inline-img' src='img/charge.png'>. During the system phase, you can spend 2 <img class='inline-img' src='img/charge.png'> to gain 2 <img class='inline-img' src='img/scenario_point.png'>.</div>",
+     "leaderability_FRA": "<div class='text'>A chaque fois que vous effectuez une action de scénario, récupérez 1 <img class='inline-img' src='img/charge.png'>. En phase système, vous pouvez dépenser 2 <img class='inline-img' src='img/charge.png'> : gagnez 2 PO</div>",
+     "leaderability_ENG": "<div class='text'>Each time you perform a scenario action, recover 1 <img class='inline-img' src='img/charge.png'>. During the system phase, you can spend 2 <img class='inline-img' src='img/charge.png'> to gain 2 PO.</div>",
      "logistic": 18
      },
     {
@@ -38,8 +38,8 @@
     "leaderid": 3,
     "charge": [3,"Red"],
     "numberOfFactions": 1,
-    "leaderability_FRA": "<div class='text'>A chaque fois qu'un de vos vaisseaux esquive parfaitement une attaque, récupérez 1 <img class='inline-img' src='img/charge.png'>. En phase système, vous pouvez dépenser 3 <img class='inline-img' src='img/charge.png'> : gagnez 3 <img class='inline-img' src='img/scenario_point.png'></div>",
-    "leaderability_ENG": "<div class='text'>Each time one of your ships perfectly evades an attack, recover 1 <img class='inline-img' src='img/charge.png'>. During the system phase, you can spend 3 <img class='inline-img' src='img/charge.png'> to gain 3 <img class='inline-img' src='img/scenario_point.png'>.</div>",
+    "leaderability_FRA": "<div class='text'>A chaque fois qu'un de vos vaisseaux esquive parfaitement une attaque, récupérez 1 <img class='inline-img' src='img/charge.png'>. En phase système, vous pouvez dépenser 3 <img class='inline-img' src='img/charge.png'> : gagnez 3 PO</div>",
+    "leaderability_ENG": "<div class='text'>Each time one of your ships perfectly evades an attack, recover 1 <img class='inline-img' src='img/charge.png'>. During the system phase, you can spend 3 <img class='inline-img' src='img/charge.png'> to gain 3 PO.</div>",
      "logistic": 20
      },
      {
@@ -49,8 +49,8 @@
      "leaderid": 4,
      "charge": [1,"Red"],
      "numberOfFactions": 1,
-     "leaderability_FRA": "<div class='text'>Au début de la phase de programmation, lancez 1 dé vert. 'vierge' : brouillez un de vos vaisseaux ; <img class='inline-img' src='img/eye.jpg'> : brouillez 1 vaisseau allié, assignez 1 calcul à un vaisseau. ; <img class='inline-img' src='img/evd.jpg'>: récupérez 1 <img class='inline-img' src='img/charge.png'>.<br>Lorsque vous détruisez un vaisseau adverse, vous pouvez dépenser 1 <img class='inline-img' src='img/charge.png'> pour gagner 2 <img class='inline-img' src='img/scenario_point.png'></div>",
-     "leaderability_ENG": "<div class='text'>At the start of the planning phase, roll 1 green die. 'blank': jam one of your ships; <img class='inline-img' src='img/eye.jpg'>: jam 1 allied ship, assign 1 calculate to a ship.; <img class='inline-img' src='img/evd.jpg'>: recover 1 <img class='inline-img' src='img/charge.png'>.<br>When you destroy an enemy ship, you can spend 1 <img class='inline-img' src='img/charge.png'> to gain 2 <img class='inline-img' src='img/scenario_point.png'></div>",
+     "leaderability_FRA": "<div class='text'>Au début de la phase de programmation, lancez 1 dé vert. 'vierge' : brouillez un de vos vaisseaux ; <img class='inline-img' src='img/eye.jpg'> : brouillez 1 vaisseau allié, assignez 1 calcul à un vaisseau. ; <img class='inline-img' src='img/evd.jpg'>: récupérez 1 <img class='inline-img' src='img/charge.png'>.<br>Lorsque vous détruisez un vaisseau adverse, vous pouvez dépenser 1 <img class='inline-img' src='img/charge.png'> pour gagner 2 PO</div>",
+     "leaderability_ENG": "<div class='text'>At the start of the planning phase, roll 1 green die. 'blank': jam one of your ships; <img class='inline-img' src='img/eye.jpg'>: jam 1 allied ship, assign 1 calculate to a ship.; <img class='inline-img' src='img/evd.jpg'>: recover 1 <img class='inline-img' src='img/charge.png'>.<br>When you destroy an enemy ship, you can spend 1 <img class='inline-img' src='img/charge.png'> to gain 2 PO</div>",
      "logistic": 25
      },
      {
@@ -60,8 +60,8 @@
      "leaderid": 5,
      "charge": [2,"Red"],
      "numberOfFactions": 1,
-     "leaderability_FRA": "<div class='text'>A chaque fois que vous utilisez l'effet du talent 'Impitoyable', récupérez 1 <img class='inline-img' src='img/charge.png'>. En phase Système, vous pouvez dépenser 2 <img class='inline-img' src='img/charge.png'> : Gagnez 2 <img class='inline-img' src='img/scenario_point.png'>.</div>",
-     "leaderability_ENG": "<div class='text'>Each time you use the effect of the 'Ruthless' talent, recover 1 <img class='inline-img' src='img/charge.png'>. During the System phase, you can spend 2 <img class='inline-img' src='img/charge.png'> to gain 2 <img class='inline-img' src='img/scenario_point.png'>.</div>",
+     "leaderability_FRA": "<div class='text'>A chaque fois que vous utilisez l'effet du talent 'Impitoyable', récupérez 1 <img class='inline-img' src='img/charge.png'>. En phase Système, vous pouvez dépenser 2 <img class='inline-img' src='img/charge.png'> : Gagnez 2 PO.</div>",
+     "leaderability_ENG": "<div class='text'>Each time you use the effect of the 'Ruthless' talent, recover 1 <img class='inline-img' src='img/charge.png'>. During the System phase, you can spend 2 <img class='inline-img' src='img/charge.png'> to gain 2 PO.</div>",
      "logistic": 25
      }, 
      {
@@ -83,8 +83,8 @@
         "leaderfaction": ["Naboo_Defense_Force","",""],
         "leaderid": 7,
         "numberOfFactions": 1,
-        "leaderability_FRA":"<div class='text'>En phase système, vous pouvez dépensez 1 <img class='inline-img' src='img/charge.png'>. Dans ce cas, tous les vaisseaux reçoivent un jeton désarmement. A la fin de la partie, si votre charge est active, gagnez 2 <img class='inline-img' src='img/scenario_point.png'>, sinon perdez 2 <img class='inline-img' src='img/scenario_point.png'>.</div>",
-        "leaderability_ENG":"<div class='text'>During the system phase, you can spend 1 <img class='inline-img' src='img/charge.png'>. In this case, all ships receive a disarm token. At the end of the game, if your charge is active, gain 2 <img class='inline-img' src='img/scenario_point.png'>, otherwise lose 2 <img class='inline-img' src='img/scenario_point.png'>.</div>",
+        "leaderability_FRA":"<div class='text'>En phase système, vous pouvez dépensez 1 <img class='inline-img' src='img/charge.png'>. Dans ce cas, tous les vaisseaux reçoivent un jeton désarmement. A la fin de la partie, si votre charge est active, gagnez 2 PO, sinon perdez 2 PO.</div>",
+        "leaderability_ENG":"<div class='text'>During the system phase, you can spend 1 <img class='inline-img' src='img/charge.png'>. In this case, all ships receive a disarm token. At the end of the game, if your charge is active, gain 2 PO, otherwise lose 2 PO.</div>",
         "charge": [1,"Yellow"],
         "logistic": 20
      },   
@@ -94,8 +94,8 @@
      "leaderfaction": ["Phoenix_Cell","",""],
      "leaderid": 8,
      "numberOfFactions": 1,
-     "leaderability_FRA": "<div class='text'>Après avoir défendu à portée 0-1, si vous n'avez pas subi de dégat, vous pouvez récupérer 1 <img class='inline-img' src='img/charge.png'>.<br>Après avoir attaqué à portée 0-1, si vous avez détruit un vaisseau, vous pouvez récupérer 1<img class='inline-img' src='img/charge.png'>.<br>En phase de fin, vous pouvez dépenser 2 <img class='inline-img' src='img/charge.png'> pour gagner 3 <img class='inline-img' src='img/scenario_point.png'>.</div>",
-     "leaderability_ENG": "<div class='text'>After defending at range 0-1, if you have not taken damage, you can recover 1 <img class='inline-img' src='img/charge.png'>.<br>After attacking at range 0-1, if you have destroyed a ship, you can recover 1 <img class='inline-img' src='img/charge.png'>.<br>During the end phase, you can spend 2 <img class='inline-img' src='img/charge.png'> to gain 3 <img class='inline-img' src='img/scenario_point.png'>.</div>",
+     "leaderability_FRA": "<div class='text'>Après avoir défendu à portée 0-1, si vous n'avez pas subi de dégat, vous pouvez récupérer 1 <img class='inline-img' src='img/charge.png'>.<br>Après avoir attaqué à portée 0-1, si vous avez détruit un vaisseau, vous pouvez récupérer 1<img class='inline-img' src='img/charge.png'>.<br>En phase de fin, vous pouvez dépenser 2 <img class='inline-img' src='img/charge.png'> pour gagner 3 PO.</div>",
+     "leaderability_ENG": "<div class='text'>After defending at range 0-1, if you have not taken damage, you can recover 1 <img class='inline-img' src='img/charge.png'>.<br>After attacking at range 0-1, if you have destroyed a ship, you can recover 1 <img class='inline-img' src='img/charge.png'>.<br>During the end phase, you can spend 2 <img class='inline-img' src='img/charge.png'> to gain 3 PO.</div>",
      "charge": [2,"Red"],
      "logistic": 18
      },
@@ -105,8 +105,8 @@
      "leaderfaction": ["Partisans","",""],
      "leaderid": 9,
      "numberOfFactions": 1,
-     "leaderability_ENG": "<div class='text'>Each time an allied ship is destroyed, recover 1 <img class='inline-img' src='img/charge.png'>. At any time, you can spend 1 <img class='inline-img' src='img/charge.png'>. In this case, choose 1:<br>- Gain 3 <img class='inline-img' src='img/scenario_point.png'> and expose or receive 1 face-down damage card on an allied ship.<br>- Expose up to 2 damage cards on enemy ships.</div>",
-     "leaderability_FRA": "<div class='text'>Chaque fois qu'un vaisseau allié est détruit, récupérez 1 <img class='inline-img' src='img/charge.png'>. A tout moment, vous pouvez dépenser 1 <img class='inline-img' src='img/charge.png'>. Dans ce cas, choisissez 1 :<br>- Gagnez 3 <img class='inline-img' src='img/scenario_point.png'> et exposez ou recevez 1 carte de dégat face cachée sur un vaisseau allié.<br>- Exposez jusqu'à 2 cartes de dégat sur des vaisseaux ennemis.</div>",
+     "leaderability_ENG": "<div class='text'>Each time an allied ship is destroyed, recover 1 <img class='inline-img' src='img/charge.png'>. At any time, you can spend 1 <img class='inline-img' src='img/charge.png'>. In this case, choose 1:<br>- Gain 3 PO and expose or receive 1 face-down damage card on an allied ship.<br>- Expose up to 2 damage cards on enemy ships.</div>",
+     "leaderability_FRA": "<div class='text'>Chaque fois qu'un vaisseau allié est détruit, récupérez 1 <img class='inline-img' src='img/charge.png'>. A tout moment, vous pouvez dépenser 1 <img class='inline-img' src='img/charge.png'>. Dans ce cas, choisissez 1 :<br>- Gagnez 3 PO et exposez ou recevez 1 carte de dégat face cachée sur un vaisseau allié.<br>- Exposez jusqu'à 2 cartes de dégat sur des vaisseaux ennemis.</div>",
      "charge": [1,"Red"],
      "logistic": 15
      },
@@ -116,8 +116,8 @@
      "leaderfaction": ["Imperial_Elite_Squadrons","",""],
      "leaderid": 10,
      "numberOfFactions": 1,
-     "leaderability_FRA": "<div class='text'>A la fin de la phase de fin, un vaisseau allié peut s'occulter en dépensant 1 <img class='inline-img' src='img/charge.png'>, OU vous pouvez récupérer 1 <img class='inline-img' src='img/charge.png'> et votre adversaire peut renforcer 1 de ses vaisseaux. En phase Système, vous pouvez dépenser 2 <img class='inline-img' src='img/charge.png'> pour gagner 2 <img class='inline-img' src='img/scenario_point.png'>.</div>",
-     "leaderability_ENG": "<div class='text'>At the end of the end phase, an allied ship can cloak by spending 1 <img class='inline-img' src='img/charge.png'>, OR you can recover 1 <img class='inline-img' src='img/charge.png'> and your opponent can reinforce 1 of their ships. During the System phase, you can spend 2 <img class='inline-img' src='img/charge.png'> to gain 2 <img class='inline-img' src='img/scenario_point.png'>.</div>",
+     "leaderability_FRA": "<div class='text'>A la fin de la phase de fin, un vaisseau allié peut s'occulter en dépensant 1 <img class='inline-img' src='img/charge.png'>, OU vous pouvez récupérer 1 <img class='inline-img' src='img/charge.png'> et votre adversaire peut renforcer 1 de ses vaisseaux. En phase Système, vous pouvez dépenser 2 <img class='inline-img' src='img/charge.png'> pour gagner 2 PO.</div>",
+     "leaderability_ENG": "<div class='text'>At the end of the end phase, an allied ship can cloak by spending 1 <img class='inline-img' src='img/charge.png'>, OR you can recover 1 <img class='inline-img' src='img/charge.png'> and your opponent can reinforce 1 of their ships. During the System phase, you can spend 2 <img class='inline-img' src='img/charge.png'> to gain 2 PO.</div>",
      "charge": [2,"Yellow"],
      "logistic": 25
      },
@@ -127,8 +127,8 @@
      "leaderfaction": ["Heroes_of_the_Resistance","",""],
      "leaderid": 11,
      "numberOfFactions": 1,
-     "leaderability_ENG": "<div class='text'>Each time an allied ship is destroyed, lose 1 <img class='inline-img' src='img/charge.png'>. At the end of the game, gain as many <img class='inline-img' src='img/scenario_point.png'> as double the remaining charges.</div>",
-     "leaderability_FRA": "<div class='text'>A chaque fois qu'un vaisseau allié est détruit, perdez 1 <img class='inline-img' src='img/charge.png'>. A la fin de partie, gagnez autant de <img class='inline-img' src='img/scenario_point.png'> que le double de charges restantes.</div>",
+     "leaderability_ENG": "<div class='text'>Each time an allied ship is destroyed, lose 1 <img class='inline-img' src='img/charge.png'>. At the end of the game, gain as many PO as double the remaining charges.</div>",
+     "leaderability_FRA": "<div class='text'>A chaque fois qu'un vaisseau allié est détruit, perdez 1 <img class='inline-img' src='img/charge.png'>. A la fin de partie, gagnez autant de PO que le double de charges restantes.</div>",
      "charge": [3,"Yellow"],
      "logistic": 18
      },
@@ -138,8 +138,8 @@
      "leaderfaction": ["First_Order_Vanguard","",""],
      "leaderid": 12,
      "numberOfFactions": 1,
-     "leaderability_ENG": "<div class='text'>When one of your ships is destroyed, you can spend 1 <img class='inline-img' src='img/charge.png'>. If you do, it may perform a 'revenge shot' even if it does not have the correct initiative. When you perform a 'revenge shot', you may upgrade 1 attack die. If you destroy a ship this way, gain 1 <img class='inline-img' src='img/scenario_point.png'>.</div>",
-     "leaderability_FRA": "<div class='text'>Lorsqu'un de vos vaisseaux est détruit, vous pouvez dépenser 1 <img class='inline-img' src='img/charge.png'>. Dans ce cas, il peut effectuer un 'tir revanche' même s'il n'a pas la bonne initiative. Lorsque vous effectuez un 'tir revanche', vous pouvez améliorer 1 dé d'attaque. Si vous détruisez un vaisseau ainsi, gagnez 1 <img class='inline-img' src='img/scenario_point.png'>.</div>",
+     "leaderability_ENG": "<div class='text'>When one of your ships is destroyed, you can spend 1 <img class='inline-img' src='img/charge.png'>. If you do, it may perform a 'revenge shot' even if it does not have the correct initiative. When you perform a 'revenge shot', you may upgrade 1 attack die. If you destroy a ship this way, gain 1 PO.</div>",
+     "leaderability_FRA": "<div class='text'>Lorsqu'un de vos vaisseaux est détruit, vous pouvez dépenser 1 <img class='inline-img' src='img/charge.png'>. Dans ce cas, il peut effectuer un 'tir revanche' même s'il n'a pas la bonne initiative. Lorsque vous effectuez un 'tir revanche', vous pouvez améliorer 1 dé d'attaque. Si vous détruisez un vaisseau ainsi, gagnez 1 PO.</div>",
      "charge": [3,"Yellow"],
      "logistic": 25
      },
@@ -149,8 +149,8 @@
      "leaderfaction": ["Jedi_Order","",""],
      "leaderid": 13,
      "numberOfFactions": 1,
-     "leaderability_ENG": "<div class='text'>During System Phase you may spend 1 <img class='inline-img' src='img/charge.png'> and choose an allied ship with force. If you do, this ship may spend 1 force to coordinate up to 2 allied ships. They must perform the same action. <br>During System Phase, you may spend 1 <img class='inline-img' src='img/charge.png'> and choose an allied ship with force that is in the <img class='inline-img' src='img/attackF.jpg'> of an enemy ship. It receives 2 strain tokens and you gain 2 <img class='inline-img' src='img/scenario_point.png'>.</div>",
-     "leaderability_FRA": "<div class='text'>Pendant la phase système, vous pouvez dépenser 1 <img class='inline-img' src='img/charge.png'> et choisir un vaisseau allié avec de la force. Dans ce cas, ce vaisseau peut dépenser 1 force et coordonner jusqu'à 2 vaisseaux alliés. Ils doivent effectuer la même action. <br>Pendant la phase système, vous pouvez dépenser 1 <img class='inline-img' src='img/charge.png'> et choisir un vaisseau allié avec de la force qui est dans le <img class='inline-img' src='img/attackF.jpg'> d'un vaisseau ennemi. Il reçoit 2 jetons contrainte et gagnez 2 <img class='inline-img' src='img/scenario_point.png'>.</div>",
+     "leaderability_ENG": "<div class='text'>During System Phase you may spend 1 <img class='inline-img' src='img/charge.png'> and choose an allied ship with force. If you do, this ship may spend 1 force to coordinate up to 2 allied ships. They must perform the same action. <br>During System Phase, you may spend 1 <img class='inline-img' src='img/charge.png'> and choose an allied ship with force that is in the <img class='inline-img' src='img/attackF.jpg'> of an enemy ship. It receives 2 strain tokens and you gain 2 PO.</div>",
+     "leaderability_FRA": "<div class='text'>Pendant la phase système, vous pouvez dépenser 1 <img class='inline-img' src='img/charge.png'> et choisir un vaisseau allié avec de la force. Dans ce cas, ce vaisseau peut dépenser 1 force et coordonner jusqu'à 2 vaisseaux alliés. Ils doivent effectuer la même action. <br>Pendant la phase système, vous pouvez dépenser 1 <img class='inline-img' src='img/charge.png'> et choisir un vaisseau allié avec de la force qui est dans le <img class='inline-img' src='img/attackF.jpg'> d'un vaisseau ennemi. Il reçoit 2 jetons contrainte et gagnez 2 PO.</div>",
      "charge": [2,"Yellow"],
      "logistic": 20
      },
@@ -160,8 +160,8 @@
      "leaderfaction": ["Hutt_Cartel","",""],
      "leaderid": 14,
      "numberOfFactions": 1,
-     "leaderability_ENG": "<div class='text'>At the end phase, you can spend 1 <img class='inline-img' src='img/charge.png'> to recover 1 <img class='inline-img' src='img/charge.png'> on one of your upgrades, OR you can spend 1 <img class='inline-img' src='img/charge.png'> on one of your upgrades to recover 1 <img class='inline-img' src='img/charge.png'>. During the System phase, you can spend 2 <img class='inline-img' src='img/charge.png'> to gain 3 <img class='inline-img' src='img/scenario_point.png'>.</div>",
-     "leaderability_FRA": "<div class='text'>En phase de fin, vous pouvez dépenser 1<img class='inline-img' src='img/charge.png'> pour récupérer 1 <img class='inline-img' src='img/charge.png'> sur une de vos améliorations, OU vous pouvez dépenser 1<img class='inline-img' src='img/charge.png'> sur 1 de vos améliorations pour récupérer 1 <img class='inline-img' src='img/charge.png'>. En phase Système, vous pouvez dépenser 2 <img class='inline-img' src='img/charge.png'> pour gagner 3 <img class='inline-img' src='img/scenario_point.png'>.</div>",
+     "leaderability_ENG": "<div class='text'>At the end phase, you can spend 1 <img class='inline-img' src='img/charge.png'> to recover 1 <img class='inline-img' src='img/charge.png'> on one of your upgrades, OR you can spend 1 <img class='inline-img' src='img/charge.png'> on one of your upgrades to recover 1 <img class='inline-img' src='img/charge.png'>. During the System phase, you can spend 2 <img class='inline-img' src='img/charge.png'> to gain 3 PO.</div>",
+     "leaderability_FRA": "<div class='text'>En phase de fin, vous pouvez dépenser 1<img class='inline-img' src='img/charge.png'> pour récupérer 1 <img class='inline-img' src='img/charge.png'> sur une de vos améliorations, OU vous pouvez dépenser 1<img class='inline-img' src='img/charge.png'> sur 1 de vos améliorations pour récupérer 1 <img class='inline-img' src='img/charge.png'>. En phase Système, vous pouvez dépenser 2 <img class='inline-img' src='img/charge.png'> pour gagner 3 PO.</div>",
      "charge": [2,"Red"],
      "logistic": 25
      },
@@ -171,8 +171,8 @@
      "leaderfaction": ["Agents_of_Chaos","",""],
      "leaderid": 15,
      "numberOfFactions": 1,
-     "leaderability_FRA": "<div class='text'>Durant la phase système, vous pouvez dépensez 1 <img class='inline-img' src='img/charge.png'>. Dans ce cas, vous pouvez choisir un vaisseau ennemi avec de la force. Il perd 1 point de force et un vaisseau allié en regagne 1.<br>Durant la phase système vous pouvez dépenser 1 <img class='inline-img' src='img/charge.png'> et choisissez un vaisseau ennemi sans force. Il gagne 1 point de force récurrent qu'il peut utiliser comme un calcul en defense. Gagnez 2 <img class='inline-img' src='img/scenario_point.png'>.</div>",
-     "leaderability_ENG": "<div class='text'>During System Phase, you may spend 1 <img class='inline-img' src='img/charge.png'>. If you do, choose an enemy ship with force. It loses 1 force point and an allied ship regains 1. <br>During System Phase, you may spend 1 <img class='inline-img' src='img/charge.png'> and choose an enemy ship without force. It gains 1 recurring force point that it can use as a calculate token in defense. Gain 2 <img class='inline-img' src='img/scenario_point.png'>.</div>",
+     "leaderability_FRA": "<div class='text'>Durant la phase système, vous pouvez dépensez 1 <img class='inline-img' src='img/charge.png'>. Dans ce cas, vous pouvez choisir un vaisseau ennemi avec de la force. Il perd 1 point de force et un vaisseau allié en regagne 1.<br>Durant la phase système vous pouvez dépenser 1 <img class='inline-img' src='img/charge.png'> et choisissez un vaisseau ennemi sans force. Il gagne 1 point de force récurrent qu'il peut utiliser comme un calcul en defense. Gagnez 2 PO.</div>",
+     "leaderability_ENG": "<div class='text'>During System Phase, you may spend 1 <img class='inline-img' src='img/charge.png'>. If you do, choose an enemy ship with force. It loses 1 force point and an allied ship regains 1. <br>During System Phase, you may spend 1 <img class='inline-img' src='img/charge.png'> and choose an enemy ship without force. It gains 1 recurring force point that it can use as a calculate token in defense. Gain 2 PO.</div>",
      "charge": [3,"Yellow"],
      "logistic": 18
      },
@@ -182,8 +182,8 @@
      "leaderfaction": ["Trade_Federation","",""],
      "leaderid": 16,
      "numberOfFactions": 1,
-     "leaderability_FRA": "<div class='text'>A la fin de la partie, si vous avez un vaisseau encore en jeu équipé d'une amélioration Droïde Tactique  <img class='inline-img' src='img/Crew.png'><img class='inline-img' src='img/Calculator.png'>, gagnez 4 <img class='inline-img' src='img/scenario_point.png'>.</div>",
-     "leaderability_ENG": "<div class='text'>At the end of the game, if you have a ship still in play equipped with a Tactical Droid upgrade  <img class='inline-img' src='img/Crew.png'><img class='inline-img' src='img/Calculator.png'>, gain 4 <img class='inline-img' src='img/scenario_point.png'>.</div>",
+     "leaderability_FRA": "<div class='text'>A la fin de la partie, si vous avez un vaisseau encore en jeu équipé d'une amélioration Droïde Tactique  <img class='inline-img' src='img/Crew.png'><img class='inline-img' src='img/Calculator.png'>, gagnez 4 PO.</div>",
+     "leaderability_ENG": "<div class='text'>At the end of the game, if you have a ship still in play equipped with a Tactical Droid upgrade  <img class='inline-img' src='img/Crew.png'><img class='inline-img' src='img/Calculator.png'>, gain 4 PO.</div>",
      "charge": [0],
      "logistic": 25
      },
@@ -193,7 +193,7 @@
      "leaderfaction": ["Clone_Army","",""],
      "leaderid": 17,
      "numberOfFactions": 1,
-     "leaderability_FRA": "<div class='text'>Au début de la phase de préparation, avant de déterminer le premier joueur, vous pouvez dépenser 1<img class='inline-img' src='img/charge.png'>. Dans ce cas, gagnez 6 points tactique. A la fin de la partie, si la charge est active, gagnez 4 <img class='inline-img' src='img/scenario_point.png'></div>",
+     "leaderability_FRA": "<div class='text'>Au début de la phase de préparation, avant de déterminer le premier joueur, vous pouvez dépenser 1<img class='inline-img' src='img/charge.png'>. Dans ce cas, gagnez 6 points tactique. A la fin de la partie, si la charge est active, gagnez 4 PO</div>",
        "leaderability_ENG": "<div class='text'></div>",
      "charge": [1,"Yellow"],
      "logistic": 25
@@ -204,8 +204,8 @@
      "leaderfaction": ["New_Republic_Patrol","",""],
      "leaderid": 18,
      "numberOfFactions": 1,
-     "leaderability_FRA": "<div class='text'>Lorsque vous détruisez 1 vaisseau ennemi avec une condition alliée, dépensez 1 <img class='inline-img' src='img/charge.png'>. Dans ce cas, gagnez 2 <img class='inline-img' src='img/scenario_point.png'> et déplacez la condition sur un autre vaisseau ennemi.</div>",
-     "leaderability_ENG": "<div class='text'>When you destroy 1 enemy ship with an allied condition, spend 1 <img class='inline-img' src='img/charge.png'>. In this case, gain 2 <img class='inline-img' src='img/scenario_point.png'> and move the condition to another enemy ship.</div>",
+     "leaderability_FRA": "<div class='text'>Lorsque vous détruisez 1 vaisseau ennemi avec une condition alliée, dépensez 1 <img class='inline-img' src='img/charge.png'>. Dans ce cas, gagnez 2 PO et déplacez la condition sur un autre vaisseau ennemi.</div>",
+     "leaderability_ENG": "<div class='text'>When you destroy 1 enemy ship with an allied condition, spend 1 <img class='inline-img' src='img/charge.png'>. In this case, gain 2 PO and move the condition to another enemy ship.</div>",
      "charge": [2,"Red"],
      "logistic": 20
      },
@@ -215,8 +215,8 @@
      "leaderfaction": ["Colossus","",""],
      "leaderid": 19,
      "numberOfFactions": 1,
-     "leaderability_FRA": "<div class='text'>A chaque fois qu'un vaisseau allié effectue une manoeuvre de vitesse 4 ou 5, récupérez 1<img class='inline-img' src='img/charge.png'>. En phase système, vous pouvez dépensez 5 <img class='inline-img' src='img/charge.png'> pour gagnez 1 <img class='inline-img' src='img/scenario_point.png'>.</div>",
-     "leaderability_ENG": "<div class='text'>Each time an allied ship performs a speed 4 or 5 maneuver, recover 1 <img class='inline-img' src='img/charge.png'>. During the System phase, you may spend 5 <img class='inline-img' src='img/charge.png'> to gain 1 <img class='inline-img' src='img/scenario_point.png'>.</div>",
+     "leaderability_FRA": "<div class='text'>A chaque fois qu'un vaisseau allié effectue une manoeuvre de vitesse 4 ou 5, récupérez 1<img class='inline-img' src='img/charge.png'>. En phase système, vous pouvez dépensez 5 <img class='inline-img' src='img/charge.png'> pour gagnez 1 PO.</div>",
+     "leaderability_ENG": "<div class='text'>Each time an allied ship performs a speed 4 or 5 maneuver, recover 1 <img class='inline-img' src='img/charge.png'>. During the System phase, you may spend 5 <img class='inline-img' src='img/charge.png'> to gain 1 PO.</div>",
      "charge": [5,"Red"],
      "logistic": 18
      },
@@ -226,8 +226,8 @@
      "leaderfaction": ["Shadow_Specialists","",""],
      "leaderid": 20,
      "numberOfFactions": 1,
-     "leaderability_FRA": "<div class='text'>En phase Système, un vaisseau allié peut coordonner un vaisseau ennemi (effectue une action même stressé) pour récupérer 1 <img class='inline-img' src='img/charge.png'>, OU un vaisseau allié peut brouiller un vaisseau ennemi en dépensant 1 <img class='inline-img' src='img/charge.png'>, OU vous pouvez dépenser 1 <img class='inline-img' src='img/charge.png'> pour gagner 1 <img class='inline-img' src='img/scenario_point.png'>.</div>",
-     "leaderability_ENG": "<div class='text'>During the System phase, an allied ship can coordinate an enemy ship (perform an action even if stressed) to recover 1 <img class='inline-img' src='img/charge.png'>, OR an allied ship can jam an enemy ship by spending 1 <img class='inline-img' src='img/charge.png'>, OR you can spend 1 <img class='inline-img' src='img/charge.png'> to gain 1 <img class='inline-img' src='img/scenario_point.png'>.</div>",
+     "leaderability_FRA": "<div class='text'>En phase Système, un vaisseau allié peut coordonner un vaisseau ennemi (effectue une action même stressé) pour récupérer 1 <img class='inline-img' src='img/charge.png'>, OU un vaisseau allié peut brouiller un vaisseau ennemi en dépensant 1 <img class='inline-img' src='img/charge.png'>, OU vous pouvez dépenser 1 <img class='inline-img' src='img/charge.png'> pour gagner 1 PO.</div>",
+     "leaderability_ENG": "<div class='text'>During the System phase, an allied ship can coordinate an enemy ship (perform an action even if stressed) to recover 1 <img class='inline-img' src='img/charge.png'>, OR an allied ship can jam an enemy ship by spending 1 <img class='inline-img' src='img/charge.png'>, OR you can spend 1 <img class='inline-img' src='img/charge.png'> to gain 1 PO.</div>",
      "charge": [2,"Red"],
      "logistic": 20
      },
@@ -237,8 +237,8 @@
      "leaderfaction": ["Imperial_Remnants","",""],
      "leaderid": 21,
      "numberOfFactions": 1,
-     "leaderability_FRA": "<div class='text'>Pendant la phase de planification, une fois que vous avez planifié toutes vos manoeuvres, si votre adversaire n'a pas fini, vous pouvez regagner 1 <img class='inline-img' src='img/charge.png'>. Dans ce cas, vous ne pouvez plus modifier vos manoeuvres ce tour ci.<br>En phase système, vous pouvez dépenser 4 <img class='inline-img' src='img/charge.png'> pour gagner 5 <img class='inline-img' src='img/scenario_point.png'></div>",
-     "leaderability_ENG": "<div class='text'>During planification phase, once you have planned all your maneuvers, if your opponent has not planned all his, you may gain 1 <img class='inline-img' src='img/charge.png'>. If you do, you cannot modify your maneuvers this turn.<br>During System Phase, you may spend 4 <img class='inline-img' src='img/charge.png'> to gain 5 <img class='inline-img' src='img/scenario_point.png'>.</div>",
+     "leaderability_FRA": "<div class='text'>Pendant la phase de planification, une fois que vous avez planifié toutes vos manoeuvres, si votre adversaire n'a pas fini, vous pouvez regagner 1 <img class='inline-img' src='img/charge.png'>. Dans ce cas, vous ne pouvez plus modifier vos manoeuvres ce tour ci.<br>En phase système, vous pouvez dépenser 4 <img class='inline-img' src='img/charge.png'> pour gagner 5 PO</div>",
+     "leaderability_ENG": "<div class='text'>During planification phase, once you have planned all your maneuvers, if your opponent has not planned all his, you may gain 1 <img class='inline-img' src='img/charge.png'>. If you do, you cannot modify your maneuvers this turn.<br>During System Phase, you may spend 4 <img class='inline-img' src='img/charge.png'> to gain 5 PO.</div>",
      "charge": [4,"Red"],
      "logistic": 18
      },
@@ -248,8 +248,8 @@
      "leaderfaction": ["Crime_Syndicates","",""],
      "leaderid": 22,
      "numberOfFactions": 1,
-    "leaderability_FRA": "<div class='text'>Lors de la phase de fin, si chacun de vos vaisseaux 'Aube Ecarlate' ont été attaqués ce tour ci, perdez 1 <img class='inline-img' src='img/charge.png'>. <br>Pendant la phase de fin, si un vaisseau 'Syndicat Pyke' a été détruit ce tour ci, récupérez 1 <img class='inline-img' src='img/charge.png'>. En fin de partie, si votre charge est active, gagnez 4 <img class='inline-img' src='img/scenario_point.png'>.</div>",
-     "leaderability_ENG": "<div class='text'>During End Phase, if each of all your 'Crimson Dawn' ships have been attacked this round, lose 1 <img class='inline-img' src='img/charge.png'>.<br>During End Phase, if a 'Pyke Syndicate' ship has been destroyed this round, recover 1 <img class='inline-img' src='img/charge.png'>. At the end of the game, if your charge is active, gain 4 <img class='inline-img' src='img/scenario_point.png'>.</div>",
+    "leaderability_FRA": "<div class='text'>Lors de la phase de fin, si chacun de vos vaisseaux 'Aube Ecarlate' ont été attaqués ce tour ci, perdez 1 <img class='inline-img' src='img/charge.png'>. <br>Pendant la phase de fin, si un vaisseau 'Syndicat Pyke' a été détruit ce tour ci, récupérez 1 <img class='inline-img' src='img/charge.png'>. En fin de partie, si votre charge est active, gagnez 4 PO.</div>",
+     "leaderability_ENG": "<div class='text'>During End Phase, if each of all your 'Crimson Dawn' ships have been attacked this round, lose 1 <img class='inline-img' src='img/charge.png'>.<br>During End Phase, if a 'Pyke Syndicate' ship has been destroyed this round, recover 1 <img class='inline-img' src='img/charge.png'>. At the end of the game, if your charge is active, gain 4 PO.</div>",
      "charge": [1,"Yellow"],
      "logistic": 25
      },
@@ -259,8 +259,8 @@
      "leaderfaction": ["Crime_Syndicates","",""],
      "leaderid": 23,
      "numberOfFactions": 1,
-     "leaderability_FRA": "<div class='text'>Lors de la phase de fin, si chacun de vos vaisseaux 'Syndicat Pyke' ont été attaqués ce tour ci, perdez 1 <img class='inline-img' src='img/charge.png'>. <br>Pendant la phase de fin, si un vaisseau 'Aube Ecarlate' a été détruit ce tour ci, récupérez 1 <img class='inline-img' src='img/charge.png'>. En fin de partie, si votre charge est active, gagnez 4 <img class='inline-img' src='img/scenario_point.png'>.</div>",
-      "leaderability_ENG": "<div class='text'>During End Phase, if each of all your 'Pyke Syndicate' ships have been attacked this round, lose 1 <img class='inline-img' src='img/charge.png'>.<br>During End Phase, if a 'Crimson Dawn' ship has been destroyed this round, recover 1 <img class='inline-img' src='img/charge.png'>. At the end of the game, if your charge is active, gain 4 <img class='inline-img' src='img/scenario_point.png'>.</div>",
+     "leaderability_FRA": "<div class='text'>Lors de la phase de fin, si chacun de vos vaisseaux 'Syndicat Pyke' ont été attaqués ce tour ci, perdez 1 <img class='inline-img' src='img/charge.png'>. <br>Pendant la phase de fin, si un vaisseau 'Aube Ecarlate' a été détruit ce tour ci, récupérez 1 <img class='inline-img' src='img/charge.png'>. En fin de partie, si votre charge est active, gagnez 4 PO.</div>",
+      "leaderability_ENG": "<div class='text'>During End Phase, if each of all your 'Pyke Syndicate' ships have been attacked this round, lose 1 <img class='inline-img' src='img/charge.png'>.<br>During End Phase, if a 'Crimson Dawn' ship has been destroyed this round, recover 1 <img class='inline-img' src='img/charge.png'>. At the end of the game, if your charge is active, gain 4 PO.</div>",
      "charge": [1,"Yellow"],
      "logistic": 25
      },
@@ -270,8 +270,8 @@
      "leaderfaction": ["Black_Sun","",""],
      "leaderid": 24,
      "numberOfFactions": 1,
-     "leaderability_FRA": "<div class='text'>Lors de la phase système, vous pouvez dépenser 1 <img class='inline-img' src='img/charge.png'>. Dans ce cas, choisissez 1 vaisseau ennemi. Ce tour ci, jouez le comme un vaisseau allié. En fin de partie, si votre charge est active, gagnez 2 <img class='inline-img' src='img/scenario_point.png'>, sinon perdez 2 <img class='inline-img' src='img/scenario_point.png'>.</div>",
-     "leaderability_ENG": "<div class='text'>During the System phase, you can spend 1 <img class='inline-img' src='img/charge.png'>. If you do, choose 1 enemy ship. This round, treat it as an allied ship. At the end of the game, if your charge is active, gain 2 <img class='inline-img' src='img/scenario_point.png'>, otherwise lose 2 <img class='inline-img' src='img/scenario_point.png'>.</div>",
+     "leaderability_FRA": "<div class='text'>Lors de la phase système, vous pouvez dépenser 1 <img class='inline-img' src='img/charge.png'>. Dans ce cas, choisissez 1 vaisseau ennemi. Ce tour ci, jouez le comme un vaisseau allié. En fin de partie, si votre charge est active, gagnez 2 PO, sinon perdez 2 PO.</div>",
+     "leaderability_ENG": "<div class='text'>During the System phase, you can spend 1 <img class='inline-img' src='img/charge.png'>. If you do, choose 1 enemy ship. This round, treat it as an allied ship. At the end of the game, if your charge is active, gain 2 PO, otherwise lose 2 PO.</div>",
      "charge": [1,"Yellow"],
      "logistic": 25
      },
@@ -281,8 +281,8 @@
         "leaderfaction": ["ISB","",""],
         "leaderid": 25,
         "numberOfFactions": 1,
-        "leaderability_FRA":"<div class='text'>A la phase de fin, récupérez 1 <img class='inline-img' src='img/charge.png'> pour chaque jeton brouillage retiré par des vaisseaux ennemis. En phase système, vous pouvez dépensez 2 <img class='inline-img' src='img/charge.png'> pour gagner 1 <img class='inline-img' src='img/scenario_point.png'>.</div>",
-        "leaderability_ENG":"<div class='text'>At the End Phase, recover 1 <img class='inline-img' src='img/charge.png'> for each jamming token removed by enemy ships. During the System phase, you can spend 2 <img class='inline-img' src='img/charge.png'> to gain 1 <img class='inline-img' src='img/scenario_point.png'>.</div>",
+        "leaderability_FRA":"<div class='text'>A la phase de fin, récupérez 1 <img class='inline-img' src='img/charge.png'> pour chaque jeton brouillage retiré par des vaisseaux ennemis. En phase système, vous pouvez dépensez 2 <img class='inline-img' src='img/charge.png'> pour gagner 1 PO.</div>",
+        "leaderability_ENG":"<div class='text'>At the End Phase, recover 1 <img class='inline-img' src='img/charge.png'> for each jamming token removed by enemy ships. During the System phase, you can spend 2 <img class='inline-img' src='img/charge.png'> to gain 1 PO.</div>",
         "charge": [2,"Red"],
         "logistic": 20
      },
