@@ -28,7 +28,7 @@ let cheminsImagesStats = [
                         "img/attack0.jpg",
                         "img/attack180.jpg",
                         "img/attackB.jpg",
-                        "img/attackBull.jpg",
+                        "img/attackBULL.jpg",
                         "img/attackDT.jpg",
                         "img/attackF.jpg",
                         "img/attackT.jpg",
