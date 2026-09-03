@@ -206,20 +206,20 @@ function applyChangeChassis(chassisTexts, chassisFrom, chassisIdVise, nouveauTex
 function buildStatsList(sid) {
   const stats = [];
   stats.push({
-    valeur: " "+ships[sid]['attack'][0][1],
+    valeur: ships[sid]['attack'][0][1],
     chemin: `img/attack${ships[sid]['attack'][0][0]}.jpg`,
     style: 'attackText',
   });
   if (ships[sid]['attack'].length === 2) {
     stats.push({
-      valeur: " "+ships[sid]['attack'][1][1],
+      valeur: ships[sid]['attack'][1][1],
       chemin: `img/attack${ships[sid]['attack'][1][0]}.jpg`,
       style: 'attackText',
     });
   }
-  stats.push({ valeur: " "+ships[sid]['agility'], chemin: 'img/agility.jpg', style: 'agilityText' });
-  stats.push({ valeur: " "+ships[sid]['hull'], chemin: 'img/hull.jpg', style: 'hullText' });
-  stats.push({ valeur: " "+ships[sid]['shields'], chemin: 'img/shield.jpg', style: 'shieldText' });
+  stats.push({ valeur: ships[sid]['agility'], chemin: 'img/agility.jpg', style: 'agilityText' });
+  stats.push({ valeur: ships[sid]['hull'], chemin: 'img/hull.jpg', style: 'hullText' });
+  stats.push({ valeur: ships[sid]['shields'], chemin: 'img/shield.jpg', style: 'shieldText' });
   return stats;
 }
 
@@ -227,6 +227,7 @@ function buildSingleStatCell(stat) {
   if (!stat) return { text: '' };
   return {
     columns: [
+        {width:"*", test:" "},
       { text: String(stat.valeur), style: stat.style },
       { image: stat.chemin, fit: [cm(0.35), cm(0.35)] },
     ],
