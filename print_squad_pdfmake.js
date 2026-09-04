@@ -227,7 +227,7 @@ function buildSingleStatCell(stat) {
   if (!stat) return { text: '' };
   return {
     columns: [
-      { text: ' '+String(stat.valeur), style: stat.style },
+      { text: String(stat.valeur), style: stat.style },
       { image: stat.chemin, fit: [cm(0.35), cm(0.35)] },
     ],
     columnGap: 2,
