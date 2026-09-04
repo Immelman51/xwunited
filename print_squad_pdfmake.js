@@ -227,10 +227,15 @@ function buildSingleStatCell(stat) {
   if (!stat) return { text: '' };
   return {
     columns: [
-      { text: String(stat.valeur), style: stat.style },
+      // Largeur fixe + alignement à droite : le chiffre se décale vers la
+      // droite (loin de la bordure gauche) SANS déplacer l'image, puisque
+      // la position de l'image dépend de la largeur totale de ce qui la
+      // précède (ici : largeur fixe du chiffre + columnGap), qui elle ne
+      // change pas. Augmente/réduis LARGEUR_CHIFFRE pour ajuster le décalage.
+      { text: String(stat.valeur), style: stat.style, width: cm(0.35), alignment: 'right' },
       { image: stat.chemin, fit: [cm(0.35), cm(0.35)] },
     ],
-    columnGap: 2,
+    columnGap: 0,
     verticalAlignment: 'center',
   };
 }
