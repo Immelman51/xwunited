@@ -578,10 +578,10 @@ async function buildFullDocDefinitionFromApp() {
       abilityDescription: { fontSize: 8 },
       upgradeName: { fontSize: 7 },
       chassisText: { fontSize: 8 },
-      attackText: { fontSize: 10, bold: true, color: '#d6291d' },
-      agilityText: { fontSize: 10, bold: true, color: '#357c15' },
-      hullText: { fontSize: 10, bold: true, color: '#d1b92e' },
-      shieldText: { fontSize: 10, bold: true, color: '#3f1dd6' },
+      attackText: { fontSize: 11, bold: true, color: '#d6291d' },
+      agilityText: { fontSize: 11, bold: true, color: '#357c15' },
+      hullText: { fontSize: 11, bold: true, color: '#d1b92e' },
+      shieldText: { fontSize: 11, bold: true, color: '#3f1dd6' },
     },
   };
 }
