@@ -549,6 +549,47 @@ function buildPilotTable(x) {
 }
 
 // ---------------------------------------------------------------------
+// 8. LISTE DES UPGRADES ET LEUR EFFET (page supplémentaire après l'escadron)
+// ---------------------------------------------------------------------
+/**
+ * Reproduit la partie "upgrades" de addHTMLandCSSforDialsAndBases() (les
+ * dials/bases sont traités séparément, pas encore implémentés ici).
+ * Pour chaque pilote de l'escadron : son nom, puis pour chaque upgrade
+ * équipée, son nom en gras + son slot entre parenthèses + son texte d'effet
+ * (avec les icônes de la police XWingIcons comme partout ailleurs).
+ */
+function buildUpgradeDescriptionsContent() {
+  const blocs = [];
+
+  for (let j = 1; j < indexes.length - 1; j++) {
+    const pid = pilotdata[j][0];
+    const lignesUpgrades = [];
+
+    if (pilotdata[j].length > 1) {
+      for (let k = 1; k < pilotdata[j].length; k++) {
+        const uid = pilotdata[j][k];
+        const upg = upgrades[uid];
+        lignesUpgrades.push({
+          text: [
+            { text: upg['name_' + language], bold: true },
+            { text: ` (${upg['slot']}) - ` },
+            ...parseHtmlToPdfmakeText(upg['effect_' + language]),
+          ],
+          style: 'upgradeDescLine',
+        });
+      }
+    }
+
+    blocs.push({
+      stack: [{ text: pilots[pid]['name_' + language], style: 'upgradeDescPilotName' }, ...lignesUpgrades],
+      margin: [0, 0, 0, cm(0.5)],
+    });
+  }
+
+  return blocs;
+}
+
+// ---------------------------------------------------------------------
 // 7. ORCHESTRATION
 // ---------------------------------------------------------------------
 async function buildFullDocDefinitionFromApp() {
@@ -560,6 +601,17 @@ async function buildFullDocDefinitionFromApp() {
   const content = [buildLeaderTable()];
   for (let k = 1; k < indexes.length - 1; k++) {
     content.push(buildPilotTable(k));
+  }
+
+  // Page(s) "liste des upgrades" : uniquement si la case correspondante est
+  // cochée dans la popup d'impression (elementsToPrintArray[1], variable
+  // globale définie dans print_squad.js).
+  if (typeof elementsToPrintArray !== 'undefined' && elementsToPrintArray[1] === true) {
+    const blocsUpgrades = buildUpgradeDescriptionsContent();
+    if (blocsUpgrades.length > 0) {
+      blocsUpgrades[0].pageBreak = 'before'; // saut de page avant cette section
+      content.push(...blocsUpgrades);
+    }
   }
 
   return {
@@ -582,6 +634,8 @@ async function buildFullDocDefinitionFromApp() {
       agilityText: { fontSize: 11, bold: true, color: '#357c15' },
       hullText: { fontSize: 11, bold: true, color: '#d1b92e' },
       shieldText: { fontSize: 11, bold: true, color: '#3f1dd6' },
+      upgradeDescPilotName: { fontSize: 13, bold: true, margin: [0, 0, 0, 3] },
+      upgradeDescLine: { fontSize: 10, margin: [0, 0, 0, 2] },
     },
   };
 }
