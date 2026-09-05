@@ -693,7 +693,7 @@ function addBaseAndDialsToPrint() {
     }
 
 
-    for (i=2 ; i<indexes.length-1 ; i++) {
+    for (i=1 ; i<indexes.length-1 ; i++) {
         let divInput = document.createElement('div');
         let dialInput = document.createElement('input');
         dialInput.setAttribute('id','dialInput'+i);
