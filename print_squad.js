@@ -677,7 +677,7 @@ const printform = document.getElementById('printform');
 function addBaseAndDialsToPrint() {
     
     console.log('function addBaseAndDialsToPrint');
-    for (i=2 ; i<indexes.length-1 ; i++) {
+    for (i=1 ; i<indexes.length-1 ; i++) {
         let divInput = document.createElement('div');
         let baseInput = document.createElement('input');
         baseInput.setAttribute('id','baseInput'+i);
