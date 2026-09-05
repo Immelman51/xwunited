@@ -593,7 +593,7 @@ function buildUpgradeDescriptionsContent() {
 // 9. DIALS (cadrans de manoeuvre) — page supplémentaire après les upgrades
 // ---------------------------------------------------------------------
 /** Hauteur d'impression des dials, en cm. Modifie cette valeur pour les agrandir/réduire. */
-let HAUTEUR_DIALS_CM = 5;
+let HAUTEUR_DIALS_CM = 4.3;
 
 /** Chemins des images de dials utilisées, à fusionner avec les autres cheminsImagesX avant preloadImages(). */
 let cheminsImagesDials = [];
@@ -601,9 +601,16 @@ let cheminsImagesDials = [];
 /**
  * Reproduit la partie "dials" de addHTMLandCSSforDialsAndBases() : une image
  * par vaisseau coché (elementsToPrintArray[3], rempli par print_squad.js),
- * chacune imprimée à la hauteur HAUTEUR_DIALS_CM (la largeur suit
- * proportionnellement, pdfmake conserve les proportions si on ne fixe que
- * la hauteur).
+ * chacune imprimée à la hauteur HAUTEUR_DIALS_CM.
+ *
+ * On utilise `fit` (et non `height` seul) pour préserver les proportions de
+ * l'image : `height` seul ne les conserve PAS dans pdfmake (la largeur est
+ * alors étirée pour remplir tout l'espace disponible, d'où la déformation).
+ * `fit: [largeurMax, hauteurMax]` redimensionne en gardant les proportions,
+ * en restant sous CES DEUX limites. Comme largeurMax est très généreuse
+ * (18cm, bien plus que nécessaire pour un dial), c'est HAUTEUR_DIALS_CM qui
+ * détermine en pratique la taille finale, tant que l'image n'est pas
+ * anormalement large par rapport à sa hauteur.
  */
 function buildDialsContent() {
   if (typeof elementsToPrintArray === 'undefined' || elementsToPrintArray[3].length === 0) return [];
@@ -611,7 +618,7 @@ function buildDialsContent() {
   return elementsToPrintArray[3].map((shipId) => {
     const chemin = `img/dial/${shipId}.png`;
     cheminsImagesDials.push(chemin);
-    return { image: chemin, height: cm(HAUTEUR_DIALS_CM), margin: [0, 0, 0, cm(0.3)] };
+    return { image: chemin, fit: [cm(18), cm(HAUTEUR_DIALS_CM)], margin: [0, 0, 0, cm(0.3)] };
   });
 }
 
@@ -640,13 +647,13 @@ async function buildFullDocDefinitionFromApp() {
     }
   }
 
-  // Dials : à la suite des upgrades, sur une nouvelle page également (comme
-  // pour les upgrades, indépendant de la case "upgrades" - un dial peut être
-  // imprimé même si la case upgrades n'est pas cochée).
+  // Dials : à la suite des upgrades, SANS saut de page (juste un espacement
+  // de paragraphe) - indépendant de la case "upgrades", un dial peut être
+  // imprimé même si la case upgrades n'est pas cochée.
   if (typeof elementsToPrintArray !== 'undefined' && elementsToPrintArray[3].length > 0) {
     const blocsDials = buildDialsContent();
     if (blocsDials.length > 0) {
-      blocsDials[0].pageBreak = 'before';
+      blocsDials[0].margin = [0, cm(0.5), 0, cm(0.3)]; // espace avant le 1er dial, comme un nouveau paragraphe
       content.push(...blocsDials);
     }
   }
