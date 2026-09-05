@@ -590,6 +590,32 @@ function buildUpgradeDescriptionsContent() {
 }
 
 // ---------------------------------------------------------------------
+// 9. DIALS (cadrans de manoeuvre) — page supplémentaire après les upgrades
+// ---------------------------------------------------------------------
+/** Hauteur d'impression des dials, en cm. Modifie cette valeur pour les agrandir/réduire. */
+let HAUTEUR_DIALS_CM = 5;
+
+/** Chemins des images de dials utilisées, à fusionner avec les autres cheminsImagesX avant preloadImages(). */
+let cheminsImagesDials = [];
+
+/**
+ * Reproduit la partie "dials" de addHTMLandCSSforDialsAndBases() : une image
+ * par vaisseau coché (elementsToPrintArray[3], rempli par print_squad.js),
+ * chacune imprimée à la hauteur HAUTEUR_DIALS_CM (la largeur suit
+ * proportionnellement, pdfmake conserve les proportions si on ne fixe que
+ * la hauteur).
+ */
+function buildDialsContent() {
+  if (typeof elementsToPrintArray === 'undefined' || elementsToPrintArray[3].length === 0) return [];
+
+  return elementsToPrintArray[3].map((shipId) => {
+    const chemin = `img/dial/${shipId}.png`;
+    cheminsImagesDials.push(chemin);
+    return { image: chemin, height: cm(HAUTEUR_DIALS_CM), margin: [0, 0, 0, cm(0.3)] };
+  });
+}
+
+// ---------------------------------------------------------------------
 // 7. ORCHESTRATION
 // ---------------------------------------------------------------------
 async function buildFullDocDefinitionFromApp() {
@@ -611,6 +637,17 @@ async function buildFullDocDefinitionFromApp() {
     if (blocsUpgrades.length > 0) {
       blocsUpgrades[0].pageBreak = 'before'; // saut de page avant cette section
       content.push(...blocsUpgrades);
+    }
+  }
+
+  // Dials : à la suite des upgrades, sur une nouvelle page également (comme
+  // pour les upgrades, indépendant de la case "upgrades" - un dial peut être
+  // imprimé même si la case upgrades n'est pas cochée).
+  if (typeof elementsToPrintArray !== 'undefined' && elementsToPrintArray[3].length > 0) {
+    const blocsDials = buildDialsContent();
+    if (blocsDials.length > 0) {
+      blocsDials[0].pageBreak = 'before';
+      content.push(...blocsDials);
     }
   }
 
@@ -651,6 +688,7 @@ async function genererPdfDepuisApp() {
       ...cheminsImagesStats,
       ...cheminsImagesUpgrades,
       ...cheminsImagesGen,
+      ...cheminsImagesDials,
     ]),
   ];
   const imagesBase64 = await preloadImages(cheminsUniques);
