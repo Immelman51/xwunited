@@ -27,7 +27,7 @@ const XWING_ICON_FONT_MAP = {
   'Sl W': '\uE017', // U+E017
   'Talent': '\uE018', // U+E018
   'Tech': '\uE019', // U+E019
-  'Tie_mod': '\uE01A', // U+E01A
+  'Tie mod': '\uE01A', // U+E01A
   'Torpedo': '\uE01B', // U+E01B
   'Turret': '\uE01C', // U+E01C
   'Un W': '\uE01D', // U+E01D
@@ -37,17 +37,18 @@ const XWING_ICON_FONT_MAP = {
   'crit': '\uE021', // U+E021
   'evd': '\uE022', // U+E022
   'eye': '\uE023', // U+E023
-  'fo': '\uE024', // U+E024
-  'hit': '\uE025', // U+E025
-  'manAl3': '\uE026', // U+E026
-  'manAr3': '\uE027', // U+E027
-  'manBl2': '\uE028', // U+E028
-  'manBr2': '\uE029', // U+E029
-  'manKo2': '\uE02A', // U+E02A
-  'manOp2': '\uE02B', // U+E02B
-  'manSl3': '\uE02C', // U+E02C
-  'manSr3': '\uE02D', // U+E02D
-  'manSt2': '\uE02E', // U+E02E
-  'manTl2': '\uE02F', // U+E02F
-  'manTr2': '\uE030', // U+E030
+  'fleche': '\uE024', // U+E024
+  'fo': '\uE025', // U+E025
+  'hit': '\uE026', // U+E026
+  'manAl3': '\uE027', // U+E027
+  'manAr3': '\uE028', // U+E028
+  'manBl2': '\uE029', // U+E029
+  'manBr2': '\uE02A', // U+E02A
+  'manKo2': '\uE02B', // U+E02B
+  'manOp2': '\uE02C', // U+E02C
+  'manSl3': '\uE02D', // U+E02D
+  'manSr3': '\uE02E', // U+E02E
+  'manSt2': '\uE02F', // U+E02F
+  'manTl2': '\uE030', // U+E030
+  'manTr2': '\uE031', // U+E031
 };
