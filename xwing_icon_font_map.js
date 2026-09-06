@@ -4,33 +4,33 @@ const XWING_ICON_FONT_MAP = {
   'Astromech': '\uE000', // U+E000
   'B180': '\uE001', // U+E001
   'Barc': '\uE002', // U+E002
-  'Bo_W': '\uE003', // U+E003
-  'Br_W': '\uE004', // U+E004
+  'Bo W': '\uE003', // U+E003
+  'Br W': '\uE004', // U+E004
   'CO': '\uE005', // U+E005
   'Cannon': '\uE006', // U+E006
-  'Cc_W': '\uE007', // U+E007
-  'Ck_W': '\uE008', // U+E008
+  'Cc W': '\uE007', // U+E007
+  'Ck W': '\uE008', // U+E008
   'Crew': '\uE009', // U+E009
   'F180': '\uE00A', // U+E00A
   'Farc': '\uE00B', // U+E00B
   'Illicit': '\uE00C', // U+E00C
-  'Ja_W': '\uE00D', // U+E00D
+  'Ja W': '\uE00D', // U+E00D
   'Larc': '\uE00E', // U+E00E
-  'Lo_W': '\uE00F', // U+E00F
+  'Lo W': '\uE00F', // U+E00F
   'Missile': '\uE010', // U+E010
   'Modification': '\uE011', // U+E011
   'Payload': '\uE012', // U+E012
-  'Ra_W': '\uE013', // U+E013
+  'Ra W': '\uE013', // U+E013
   'Rarc': '\uE014', // U+E014
-  'Re_W': '\uE015', // U+E015
+  'Re W': '\uE015', // U+E015
   'Sensor': '\uE016', // U+E016
-  'Sl_W': '\uE017', // U+E017
+  'Sl W': '\uE017', // U+E017
   'Talent': '\uE018', // U+E018
   'Tech': '\uE019', // U+E019
   'Tie_mod': '\uE01A', // U+E01A
   'Torpedo': '\uE01B', // U+E01B
   'Turret': '\uE01C', // U+E01C
-  'Un_W': '\uE01D', // U+E01D
+  'Un W': '\uE01D', // U+E01D
   'attackT': '\uE01E', // U+E01E
   'bulls': '\uE01F', // U+E01F
   'charge': '\uE020', // U+E020

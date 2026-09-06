@@ -178,7 +178,7 @@ function buildPilotTable(pilot) {
       body,
     },
     layout: 'noBorders',
-    margin: [0, 0, 0, cm(0.3)], // petit espace entre deux tableaux pilotes
+    margin: [0, 0, 0, cm(0)], // petit espace entre deux tableaux pilotes
   };
 }
 
