@@ -592,8 +592,19 @@ function buildUpgradeDescriptionsContent() {
 // ---------------------------------------------------------------------
 // 9. DIALS (cadrans de manoeuvre) — page supplémentaire après les upgrades
 // ---------------------------------------------------------------------
+/** Découpe un tableau en sous-tableaux de taille fixe (pour aligner des images par rangées). */
+function decouperEnLignes(tableau, tailleParLigne) {
+  const lignes = [];
+  for (let i = 0; i < tableau.length; i += tailleParLigne) {
+    lignes.push(tableau.slice(i, i + tailleParLigne));
+  }
+  return lignes;
+}
+
 /** Hauteur d'impression des dials, en cm. Modifie cette valeur pour les agrandir/réduire. */
 let HAUTEUR_DIALS_CM = 4.3;
+/** Nombre de dials affichés côte à côte avant de passer à la ligne suivante. */
+let DIALS_PAR_LIGNE = 4;
 
 /** Chemins des images de dials utilisées, à fusionner avec les autres cheminsImagesX avant preloadImages(). */
 let cheminsImagesDials = [];
@@ -601,7 +612,8 @@ let cheminsImagesDials = [];
 /**
  * Reproduit la partie "dials" de addHTMLandCSSforDialsAndBases() : une image
  * par vaisseau coché (elementsToPrintArray[3], rempli par print_squad.js),
- * chacune imprimée à la hauteur HAUTEUR_DIALS_CM.
+ * chacune imprimée à la hauteur HAUTEUR_DIALS_CM, alignées horizontalement
+ * par rangées de DIALS_PAR_LIGNE (retour à la ligne automatique au-delà).
  *
  * On utilise `fit` (et non `height` seul) pour préserver les proportions de
  * l'image : `height` seul ne les conserve PAS dans pdfmake (la largeur est
@@ -615,11 +627,60 @@ let cheminsImagesDials = [];
 function buildDialsContent() {
   if (typeof elementsToPrintArray === 'undefined' || elementsToPrintArray[3].length === 0) return [];
 
-  return elementsToPrintArray[3].map((shipId) => {
+  const images = elementsToPrintArray[3].map((shipId) => {
     const chemin = `img/dial/${shipId}.png`;
     cheminsImagesDials.push(chemin);
-    return { image: chemin, fit: [cm(18), cm(HAUTEUR_DIALS_CM)], margin: [0, 0, 0, cm(0.3)] };
+    return { image: chemin, fit: [cm(18), cm(HAUTEUR_DIALS_CM)], width: 'auto' };
   });
+
+  const lignes = decouperEnLignes(images, DIALS_PAR_LIGNE);
+  return lignes.map((ligne) => ({
+    columns: ligne,
+    columnGap: 10,
+    margin: [0, 0, 0, cm(0.3)],
+  }));
+}
+
+// ---------------------------------------------------------------------
+// 10. BASES (empreintes au sol) — à la suite des dials
+// ---------------------------------------------------------------------
+/** Largeur d'impression des bases selon leur taille de jeu (mêmes valeurs que l'ancien CSS .large/.medium/.small). */
+const LARGEURS_BASES_CM = { large: 7.2, medium: 5.4, small: 3.4 };
+/** Nombre de bases affichées côte à côte avant de passer à la ligne suivante.
+ * Valeur prudente : avec 2, même 2 bases "large" (7,2cm chacune = 14,4cm)
+ * tiennent toujours sur la largeur de page (~19cm). Avec 3, ça déborderait
+ * si les 3 étaient "large" (21,6cm) - à n'augmenter que si tu sais que tes
+ * combinaisons de tailles ne poseront pas ce cas. */
+let BASES_PAR_LIGNE = 2;
+
+/** Chemins des images de bases utilisées, à fusionner avec les autres cheminsImagesX avant preloadImages(). */
+let cheminsImagesBases = [];
+
+/**
+ * Reproduit la partie "bases" de addHTMLandCSSforDialsAndBases() : une image
+ * par vaisseau coché (elementsToPrintArray[2], rempli par print_squad.js -
+ * un tableau de 8 entrées, chacune [] si non cochée ou [shipId, taille] si
+ * cochée), alignées horizontalement par rangées de BASES_PAR_LIGNE.
+ */
+function buildBasesContent() {
+  if (typeof elementsToPrintArray === 'undefined') return [];
+
+  const basesChoisies = elementsToPrintArray[2].filter((entree) => entree.length > 0);
+  if (basesChoisies.length === 0) return [];
+
+  const images = basesChoisies.map(([shipId, taille]) => {
+    const chemin = `img/pilots/base/${shipId}.png`;
+    cheminsImagesBases.push(chemin);
+    const largeurCm = LARGEURS_BASES_CM[taille] || LARGEURS_BASES_CM.small;
+    return { image: chemin, width: cm(largeurCm) };
+  });
+
+  const lignes = decouperEnLignes(images, BASES_PAR_LIGNE);
+  return lignes.map((ligne) => ({
+    columns: ligne,
+    columnGap: 10,
+    margin: [0, 0, 0, cm(0.3)],
+  }));
 }
 
 // ---------------------------------------------------------------------
@@ -655,6 +716,15 @@ async function buildFullDocDefinitionFromApp() {
     if (blocsDials.length > 0) {
       blocsDials[0].margin = [0, cm(0.5), 0, cm(0.3)]; // espace avant le 1er dial, comme un nouveau paragraphe
       content.push(...blocsDials);
+    }
+  }
+
+  // Bases : à la suite des dials, indépendant des autres cases à cocher.
+  if (typeof elementsToPrintArray !== 'undefined' && elementsToPrintArray[2].some((e) => e.length > 0)) {
+    const blocsBases = buildBasesContent();
+    if (blocsBases.length > 0) {
+      blocsBases[0].margin = [0, cm(0.5), 0, cm(0.3)];
+      content.push(...blocsBases);
     }
   }
 
@@ -696,6 +766,7 @@ async function genererPdfDepuisApp() {
       ...cheminsImagesUpgrades,
       ...cheminsImagesGen,
       ...cheminsImagesDials,
+      ...cheminsImagesBases,
     ]),
   ];
   const imagesBase64 = await preloadImages(cheminsUniques);
