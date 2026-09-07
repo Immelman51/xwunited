@@ -2007,7 +2007,7 @@
                 "hull": 2,
                 "shields": 2,
                 "base": "small",
-                "chassis": [41],
+                "chassis": [0],
                 "actions": [
                     [0,"Fo W"],             
                     [0,"Lo W"],
@@ -2238,7 +2238,8 @@
                 "actions": [
                     [0,"Fo W"],               
                     [0,"Lo W"],
-                    [0,"Br R"]
+                    [0,"Br R"],
+                    [0,"Un R"]
                 ],
                 "maneuvers": [
                     [ 0, 0, 0, 0, 0, 0],
@@ -2247,7 +2248,7 @@
                     [ 2, 2, 1, 2, 2, 3],
                     [ 0, 0, 2, 0, 0, 3]
                 ],
-                "slots": ["Missile","Modification","Sensor"]
+                "slots": ["Torpedo","Modification","Sensor"]
     
             },
             {
