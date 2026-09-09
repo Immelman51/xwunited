@@ -1,3 +1,5 @@
+
+Print squad pdfmake · JS
 /**
  * print_squad_pdfmake.js
  * ----------------------------------------------------------------
@@ -8,7 +10,7 @@
  * Ce fichier suppose que xwing-pdf-example.js est chargé avant
  * (pour cm(), parseHtmlToPdfmakeText(), preloadImages(), etc.)
  */
-
+ 
 // ---------------------------------------------------------------------
 // 1. LEADER — grille fixe 19 colonnes de 1cm, blocs de lignes de 0,5cm
 // ---------------------------------------------------------------------
@@ -23,7 +25,7 @@ function buildLeaderTable() {
   }
   const leaderName =
     leaders[lID]['leadername_' + language] + (listValidity === false ? ' (NOT VALID)' : '');
-
+ 
   const nbrOfLeaderCharges = leaders[lID]['charge'][0];
   let chargeImgPath = null;
   switch (leaders[lID]['charge'][1]) {
@@ -39,7 +41,7 @@ function buildLeaderTable() {
       );
   }
   if (chargeImgPath) cheminsImagesLeader.push(chargeImgPath);
-
+ 
   const nomEtCharges = {
     columns: [
       { text: leaderName + ' ', style: 'leaderName', width: 'auto' },
@@ -50,9 +52,9 @@ function buildLeaderTable() {
     ],
     verticalAlignment: 'center',
   };
-
+ 
   const widths = [...Array(17).fill(cm(1)), cm(2)];
-
+ 
   return {
     table: {
       widths,
@@ -87,7 +89,7 @@ function buildLeaderTable() {
     margin: [0, 0, 0, cm(1)],
   };
 }
-
+ 
 // ---------------------------------------------------------------------
 // 2. ACTIONS D'UN PILOTE
 // ---------------------------------------------------------------------
@@ -96,7 +98,7 @@ function buildPilotActionsArray(x) {
   const shipID = pilots[pilotID]['shipId'];
   const actionsArray = ships[shipID]['actions'];
   const result = [];
-
+ 
   for (let g = 0; g < actionsArray.length; g++) {
     if (actionsArray[g][0] === 0) {
       result.push({ type: 'simple', code: actionsArray[g][1] });
@@ -108,7 +110,7 @@ function buildPilotActionsArray(x) {
   }
   return result;
 }
-
+ 
 function applyDroidOverride(actionsArray, droidEquipped) {
   if (!droidEquipped) return actionsArray;
   const swap = (code) => (code === 'Fo W' ? 'Cc W' : code === 'Fo R' ? 'Cc R' : code);
@@ -118,7 +120,7 @@ function applyDroidOverride(actionsArray, droidEquipped) {
       : { ...a, code1: swap(a.code1), code2: swap(a.code2) }
   );
 }
-
+ 
 function buildSingleActionCell(action) {
   if (!action) return { text: '' };
   if (action.type === 'simple') {
@@ -139,14 +141,14 @@ function buildSingleActionCell(action) {
     verticalAlignment: 'center',
   };
 }
-
+ 
 // ---------------------------------------------------------------------
 // 3. CAPACITÉS DE CHASSIS
 // ---------------------------------------------------------------------
 function computeChassisTexts(cid, language) {
   const texts = { chs1: '', chs2: '', chs3: '' };
   const from = { chs1: null, chs2: null, chs3: null };
-
+ 
   if (cid.length === 1) {
     const c0 = chassis[cid[0]];
     if (c0['nbrOfEffects'] === 1) {
@@ -184,22 +186,22 @@ function computeChassisTexts(cid, language) {
       from.chs3 = cid[1];
     }
   }
-
+ 
   return { texts, from };
 }
-
+ 
 function applyRemoveClassToChassis(chassisTexts, chassisFrom, chassisIdVise) {
   ['chs1', 'chs2', 'chs3'].forEach((k) => {
     if (chassisFrom[k] === chassisIdVise) chassisTexts[k] = '';
   });
 }
-
+ 
 function applyChangeChassis(chassisTexts, chassisFrom, chassisIdVise, nouveauTexte) {
   ['chs1', 'chs2', 'chs3'].forEach((k) => {
     if (chassisFrom[k] === chassisIdVise) chassisTexts[k] = nouveauTexte;
   });
 }
-
+ 
 // ---------------------------------------------------------------------
 // 4. STATS DU VAISSEAU
 // ---------------------------------------------------------------------
@@ -222,7 +224,7 @@ function buildStatsList(sid) {
   stats.push({ valeur: ships[sid]['shields'], chemin: 'img/shield.jpg', style: 'shieldText' });
   return stats;
 }
-
+ 
 function buildSingleStatCell(stat) {
   if (!stat) return { text: '' };
   return {
@@ -239,7 +241,7 @@ function buildSingleStatCell(stat) {
     verticalAlignment: 'center',
   };
 }
-
+ 
 // ---------------------------------------------------------------------
 // 5. UNE AMÉLIORATION (upgrade) ÉQUIPÉE
 // ---------------------------------------------------------------------
@@ -248,9 +250,9 @@ function buildUpgradeCell(uid, x, context) {
     { image: `img/${upgrades[uid]['slot']}.png`, width: cm(0.5) },
     { text: upgrades[uid]['name_' + language], style: 'upgradeName', width: '*' },
   ];
-
+ 
   let hideCell = false;
-
+ 
   switch (upgrades[uid]['add_Data'][0]) {
     case 'removeclass':
       applyRemoveClassToChassis(context.chassisTexts, context.chassisFrom, upgrades[uid]['add_Data'][1]);
@@ -281,7 +283,7 @@ function buildUpgradeCell(uid, x, context) {
     default:
       break;
   }
-
+ 
   const nbrcharge = upgrades[uid]['charge'][0];
   for (let j = 0; j < nbrcharge; j++) {
     columnItems.push({ image: 'img/chargestat.png', width: cm(1.5) });
@@ -294,10 +296,10 @@ function buildUpgradeCell(uid, x, context) {
   for (let j = 0; j < upgrades[uid]['force']; j++) {
     columnItems.push({ image: 'img/forcestat.png', width: cm(1.5) });
   }
-
+ 
   return hideCell ? null : { columns: columnItems, columnGap: 3, alignment: 'left' };
 }
-
+ 
 // ---------------------------------------------------------------------
 // 6. TABLEAU COMPLET D'UN PILOTE — grille fixe 18 colonnes
 // ---------------------------------------------------------------------
@@ -309,10 +311,10 @@ function buildEquipmentLayout(chassisTexts, upgradeCells) {
     alignment: 'center',
     verticalAlignment: 'center',
   });
-
+ 
   let ligne7_9;
   let upgradesRestantes;
-
+ 
   if (chassisTexts.chs1) {
     ligne7_9 = { type: 'unique', content: chassisItem(chassisTexts.chs1) };
     upgradesRestantes = validUpgrades.slice(0, 6);
@@ -327,10 +329,10 @@ function buildEquipmentLayout(chassisTexts, upgradeCells) {
     ligne7_9 = { type: 'paire', a: validUpgrades[0] || null, b: validUpgrades[1] || null };
     upgradesRestantes = validUpgrades.slice(2, 8);
   }
-
+ 
   return { ligne7_9, emplacementsBas: upgradesRestantes };
 }
-
+ 
 const LAYOUT_SANS_PADDING = {
   hLineWidth: () => 0,
   vLineWidth: () => 0,
@@ -339,7 +341,7 @@ const LAYOUT_SANS_PADDING = {
   paddingTop: () => 0,
   paddingBottom: () => 0,
 };
-
+ 
 const LAYOUT_BORDURE_EXTERIEURE = {
   hLineWidth: (i, node) => (i === 0 || i === node.table.body.length ? 1 : 0),
   vLineWidth: (i, node) => (i === 0 || i === node.table.widths.length ? 1 : 0),
@@ -350,7 +352,7 @@ const LAYOUT_BORDURE_EXTERIEURE = {
   paddingTop: () => 0,
   paddingBottom: () => 0,
 };
-
+ 
 function ligneLargeurFixe(cellules, largeursCm, hauteurCm) {
   return {
     table: {
@@ -371,23 +373,23 @@ function celluleEmpileeLargeurFixe(items, largeurCm, hauteurUniteCm) {
       heights: items.map(() => cm(hauteurUniteCm)),
       body: items.map((it) => [it]),
     },
-    layout: LAYOUT_SANS_PADDING,
+    layout: LAYOUT_BORDURE_EXTERIEURE,
   };
 }
-
+ 
 function buildPilotTable(x) {
   getPilotData(x);
   const pid = pilotdata[x][0];
   const sid = pilots[pid]['shipId'];
   const cid = ships[sid]['chassis'];
-
+ 
   const factionChemin = `img/${pilots[pid]['faction']}mini.jpg`;
   cheminsImagesPilot.push(factionChemin);
-
+ 
   const { texts: chassisTexts, from: chassisFrom } = computeChassisTexts(cid, language);
-
+ 
   let actionsArray = buildPilotActionsArray(x);
-
+ 
   const context = { chassisTexts, chassisFrom, actionsArray, droidEquipped: false };
   const upgradeCells = [];
   for (let i = 0; i < pilotdata[x].length - 1; i++) {
@@ -402,7 +404,7 @@ function buildPilotTable(x) {
       `[buildPilotTable] pilote index ${x} : ${actionsArray.length} actions à afficher mais seulement 6 emplacements disponibles.`
     );
   }
-
+ 
   // -- Charges/force du pilote : maintenant placés APRES le nom du pilote / nom du vaisseau
   const pilotForceIcons = Array.from({ length: pilots[pid]['force'] }, () => ({
     image: 'img/forcestat.png',
@@ -415,13 +417,13 @@ function buildPilotTable(x) {
   let pilotChargeEvolutionIcon = null;
   if (pilots[pid]['charge'][1] === '+') pilotChargeEvolutionIcon = { image: 'img/chargeplus.png', width: cm(0.3) };
   if (pilots[pid]['charge'][1] === '-') pilotChargeEvolutionIcon = { image: 'img/chargeminus.png', width: cm(0.3) };
-
+ 
   // -- Compétence seule (les marqueurs de charge/force du pilote ne sont plus ici)
   const abiliteEtMarqueurs = {
     text: [{ text: parseHtmlToPdfmakeText(pilots[pid]['ability_' + language]) }],
     verticalAlignment: 'center',
   };
-
+ 
   // -- Nom + vaisseau ensemble dans un `text` inline (bon alignement sur la ligne
   // de base malgré des tailles de police différentes), puis un espaceur `*` qui
   // pousse les icônes de charge/force tout à droite de la colonne.
@@ -441,15 +443,15 @@ function buildPilotTable(x) {
     ],
     verticalAlignment: 'center',
   };
-
+ 
   const statsList = buildStatsList(sid);
   const { ligne7_9, emplacementsBas } = buildEquipmentLayout(chassisTexts, upgradeCells);
   const emptyCell = () => ({ text: '' });
-
+ 
   const widths = [...Array(17).fill(cm(1)), cm(2)];
-
+ 
   const body = [];
-
+ 
   body.push([
     { image: factionChemin, fit: [cm(0.9), cm(0.9)], alignment: 'center', verticalAlignment: 'center' },
     { text: String(pilots[pid]['skill']), alignment: 'center', verticalAlignment: 'center', style: 'pskill' },
@@ -457,7 +459,7 @@ function buildPilotTable(x) {
     ...Array(14).fill({}),
     { text: String(pilots[pid]['points']), alignment: 'center', verticalAlignment: 'center', style: 'cost' },
   ]);
-
+ 
   const statBlockHaut = celluleEmpileeLargeurFixe(
     [buildSingleStatCell(statsList[0]), buildSingleStatCell(statsList[1]), buildSingleStatCell(statsList[2])],
     1,
@@ -474,7 +476,7 @@ function buildPilotTable(x) {
     ...Array(15).fill({}),
     { ...actionBlockHaut, verticalAlignment: 'center' },
   ]);
-
+ 
   const statBlockBas = celluleEmpileeLargeurFixe(
     [buildSingleStatCell(statsList[3]), buildSingleStatCell(statsList[4]), emptyCell()],
     1,
@@ -502,9 +504,9 @@ function buildPilotTable(x) {
           ...Array(7).fill({}),
         ];
   body.push([{ ...statBlockBas, verticalAlignment: 'center' }, ...ligneMilieu5, { ...actionBlockBas, verticalAlignment: 'center' }]);
-
+ 
   const heights = [cm(1), cm(1.5), cm(1.5)];
-
+ 
   if (emplacementsBas.length > 0) {
     body.push([
       {
@@ -520,7 +522,7 @@ function buildPilotTable(x) {
     ]);
     heights.push(cm(1.5));
   }
-
+ 
   if (emplacementsBas.length > 3) {
     body.push([
       {
@@ -536,7 +538,7 @@ function buildPilotTable(x) {
     ]);
     heights.push(cm(1.5));
   }
-
+ 
   return {
     table: {
       widths,
@@ -547,7 +549,7 @@ function buildPilotTable(x) {
     margin: [0, 0, 0, cm(1)],
   };
 }
-
+ 
 // ---------------------------------------------------------------------
 // 8. LISTE DES UPGRADES ET LEUR EFFET (page supplémentaire après l'escadron)
 // ---------------------------------------------------------------------
@@ -560,11 +562,11 @@ function buildPilotTable(x) {
  */
 function buildUpgradeDescriptionsContent() {
   const blocs = [];
-
+ 
   for (let j = 1; j < indexes.length - 1; j++) {
     const pid = pilotdata[j][0];
     const lignesUpgrades = [];
-
+ 
     if (pilotdata[j].length > 1) {
       for (let k = 1; k < pilotdata[j].length; k++) {
         const uid = pilotdata[j][k];
@@ -579,16 +581,16 @@ function buildUpgradeDescriptionsContent() {
         });
       }
     }
-
+ 
     blocs.push({
       stack: [{ text: pilots[pid]['name_' + language], style: 'upgradeDescPilotName' }, ...lignesUpgrades],
       margin: [0, 0, 0, cm(0.5)],
     });
   }
-
+ 
   return blocs;
 }
-
+ 
 // ---------------------------------------------------------------------
 // 9. DIALS (cadrans de manoeuvre) — page supplémentaire après les upgrades
 // ---------------------------------------------------------------------
@@ -600,15 +602,15 @@ function decouperEnLignes(tableau, tailleParLigne) {
   }
   return lignes;
 }
-
+ 
 /** Hauteur d'impression des dials, en cm. Modifie cette valeur pour les agrandir/réduire. */
 let HAUTEUR_DIALS_CM = 4.3;
 /** Nombre de dials affichés côte à côte avant de passer à la ligne suivante. */
 let DIALS_PAR_LIGNE = 4;
-
+ 
 /** Chemins des images de dials utilisées, à fusionner avec les autres cheminsImagesX avant preloadImages(). */
 let cheminsImagesDials = [];
-
+ 
 /**
  * Reproduit la partie "dials" de addHTMLandCSSforDialsAndBases() : une image
  * par vaisseau coché (elementsToPrintArray[3], rempli par print_squad.js),
@@ -626,13 +628,13 @@ let cheminsImagesDials = [];
  */
 function buildDialsContent() {
   if (typeof elementsToPrintArray === 'undefined' || elementsToPrintArray[3].length === 0) return [];
-
+ 
   const images = elementsToPrintArray[3].map((shipId) => {
     const chemin = `img/dial/${shipId}.png`;
     cheminsImagesDials.push(chemin);
     return { image: chemin, fit: [cm(18), cm(HAUTEUR_DIALS_CM)], width: 'auto' };
   });
-
+ 
   const lignes = decouperEnLignes(images, DIALS_PAR_LIGNE);
   return lignes.map((ligne) => ({
     columns: ligne,
@@ -640,7 +642,7 @@ function buildDialsContent() {
     margin: [0, 0, 0, cm(0.3)],
   }));
 }
-
+ 
 // ---------------------------------------------------------------------
 // 10. BASES (empreintes au sol) — à la suite des dials
 // ---------------------------------------------------------------------
@@ -652,10 +654,10 @@ const LARGEURS_BASES_CM = { large: 7.2, medium: 5.4, small: 3.4 };
  * si les 3 étaient "large" (21,6cm) - à n'augmenter que si tu sais que tes
  * combinaisons de tailles ne poseront pas ce cas. */
 let BASES_PAR_LIGNE = 2;
-
+ 
 /** Chemins des images de bases utilisées, à fusionner avec les autres cheminsImagesX avant preloadImages(). */
 let cheminsImagesBases = [];
-
+ 
 /**
  * Reproduit la partie "bases" de addHTMLandCSSforDialsAndBases() : une image
  * par vaisseau coché (elementsToPrintArray[2], rempli par print_squad.js -
@@ -664,17 +666,17 @@ let cheminsImagesBases = [];
  */
 function buildBasesContent() {
   if (typeof elementsToPrintArray === 'undefined') return [];
-
+ 
   const basesChoisies = elementsToPrintArray[2].filter((entree) => entree.length > 0);
   if (basesChoisies.length === 0) return [];
-
+ 
   const images = basesChoisies.map(([shipId, taille]) => {
     const chemin = `img/pilots/base/${shipId}.png`;
     cheminsImagesBases.push(chemin);
     const largeurCm = LARGEURS_BASES_CM[taille] || LARGEURS_BASES_CM.small;
     return { image: chemin, width: cm(largeurCm) };
   });
-
+ 
   const lignes = decouperEnLignes(images, BASES_PAR_LIGNE);
   return lignes.map((ligne) => ({
     columns: ligne,
@@ -682,7 +684,7 @@ function buildBasesContent() {
     margin: [0, 0, 0, cm(0.3)],
   }));
 }
-
+ 
 // ---------------------------------------------------------------------
 // 7. ORCHESTRATION
 // ---------------------------------------------------------------------
@@ -691,12 +693,12 @@ async function buildFullDocDefinitionFromApp() {
   language = indexes[indexes.length - 1];
   lID = indexes[0];
   testListValidity();
-
+ 
   const content = [buildLeaderTable()];
   for (let k = 1; k < indexes.length - 1; k++) {
     content.push(buildPilotTable(k));
   }
-
+ 
   // Page(s) "liste des upgrades" : uniquement si la case correspondante est
   // cochée dans la popup d'impression (elementsToPrintArray[1], variable
   // globale définie dans print_squad.js).
@@ -707,7 +709,7 @@ async function buildFullDocDefinitionFromApp() {
       content.push(...blocsUpgrades);
     }
   }
-
+ 
   // Dials : à la suite des upgrades, SANS saut de page (juste un espacement
   // de paragraphe) - indépendant de la case "upgrades", un dial peut être
   // imprimé même si la case upgrades n'est pas cochée.
@@ -718,7 +720,7 @@ async function buildFullDocDefinitionFromApp() {
       content.push(...blocsDials);
     }
   }
-
+ 
   // Bases : à la suite des dials, indépendant des autres cases à cocher.
   if (typeof elementsToPrintArray !== 'undefined' && elementsToPrintArray[2].some((e) => e.length > 0)) {
     const blocsBases = buildBasesContent();
@@ -727,7 +729,7 @@ async function buildFullDocDefinitionFromApp() {
       content.push(...blocsBases);
     }
   }
-
+ 
   return {
     pageSize: 'A4',
     pageMargins: [cm(1), cm(1.35), cm(1), cm(1.35)],
@@ -753,7 +755,7 @@ async function buildFullDocDefinitionFromApp() {
     },
   };
 }
-
+ 
 async function genererPdfDepuisApp() {
   await chargerPoliceXWingIcons();
   const docDefinition = await buildFullDocDefinitionFromApp();
@@ -770,7 +772,7 @@ async function genererPdfDepuisApp() {
     ]),
   ];
   const imagesBase64 = await preloadImages(cheminsUniques);
-
+ 
   function nettoyerImagesManquantes(node) {
     if (Array.isArray(node)) {
       return node.map(nettoyerImagesManquantes);
@@ -791,10 +793,41 @@ async function genererPdfDepuisApp() {
     }
     return node;
   }
-
+ 
   const docDefinitionResolved = nettoyerImagesManquantes(docDefinition);
-
+ 
   pdfMake.createPdf(docDefinitionResolved).download(
     leaders[lID]['leadername_' + language] + hash + '.pdf'
   );
 }
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
