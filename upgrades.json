@@ -4950,8 +4950,8 @@
              "force": 0,
              "charge": [0],
              "points": 0,
-             "effect_FRA": "??",
-             "effect_ENG": "??",
+             "effect_FRA": "Si vous vérouillez une cible, recevez 1 marqueur de stress. Si vous recevez 1 marqueur de stress, alors recevez 1 marqueur d'épuisement.",
+             "effect_ENG": "When you acquire a lock, gain 1 stress token. If you receive a stress token, then receive 1 deplete token.",
              "faction": ["New_Republic_Patrol"]
             
          },
@@ -6062,9 +6062,9 @@
              "add_Data": [0],
              "force": 0,
              "charge": [0],
-             "points": 0,
-             "effect_FRA": "??",
-             "effect_ENG": "??",
+             "points": 2,
+             "effect_FRA": "Après avoir effectué une attaque <img class='inline-img' src='img/attackT.jpg> ou <img class='inline-img' src='img/attackB.jpg>, la cible de l'attaque perd 1 <img class='inline-img' src='img/fo.jpg> ou expose 1 carte de dégat.",
+             "effect_ENG": "After you perform a <img class='inline-img' src='img/attackT.jpg> or <img class='inline-img' src='img/attackB.jpg> attack, the target loses 1 <img class='inline-img' src='img/fo.jpg> or expose 1 facedown damage card.",
              "faction": ["New_Republic_Patrol"]
                                      
              
@@ -6075,15 +6075,21 @@
              "id":346,
              "max_per_squad":1,
              "available":true,
-             "modify":false,
+             "modify":true,
              "slot": "Crew",
              "add_Data": [0],
              "force": 0,
              "charge": [0],
-             "points": 0,
-             "effect_FRA": "??",
-             "effect_ENG": "??",
-             "faction": ["New_Republic_Patrol"]
+             "points": 4,
+             "effect_FRA": "Ajoute un emplacement 'Force-Base'. Vous pouvez dépenser des jetons calcul à la place de jetons force. Ajoute l'action <img class='action' src='img/Cc W.jpg>",
+             "effect_ENG": "Add a 'Force-Base' slot. You may spend calculate tokens instead of force tokens. Add the <img class='action' src='img/Cc W.jpg> action.",
+             "faction": ["New_Republic_Patrol"],
+             "modifier_func": [
+                 [0, "add_action", [0,"Cc W"]],
+                 ["add_slots","Force-Base"],
+                 ["may_remove_slots","Force-Base"]
+             ]
+             
                                      
              
          },
@@ -6093,15 +6099,20 @@
              "id":347,
              "max_per_squad":1,
              "available":true,
-             "modify":false,
+             "modify":true,
              "slot": "Crew",
              "add_Data": [0],
              "force": 0,
              "charge": [0],
-             "points": 0,
-             "effect_FRA": "??",
-             "effect_ENG": "??",
-             "faction": ["New_Republic_Patrol"]
+             "points": 3,
+             "effect_FRA": "Assigner la condition 'Justiciable' à un vaisseau ennemi.",
+             "effect_ENG": "Assign the 'Answerable to the law' to an enemy ship.",
+             "faction": ["New_Republic_Patrol"],
+             "modifier_func": [
+                 ["add_slots","Condition"],
+                 ["auto_equip","Condition",376]
+                 ["may_remove_slots","Condition"]
+             ]
                                      
              
          },
@@ -6603,6 +6614,22 @@
             "effect_FRA": "Lorsque vous encaissez des dégats, vous pouvez récupérer 1 <img class='chargeforceimg' src='img/fo.jpg'>",
             "effect_ENG": "When you suffer damages, you may recover 1 <img class='chargeforceimg' src='img/fo.jpg'>",
             "faction": ""
+        },
+        {
+            "name_FRA": "Justiciable",
+            "name_ENG": "Answerable to the law",
+            "id": 376,
+            "max_per_squad": 1,
+            "available": true,
+            "modify": false,
+            "slot": "Condition",
+            "add_Data": [0],
+            "force": 0,
+            "charge": [0],
+            "points": 0,
+            "effect_FRA": "Après avoir défendu, si vous n'avez pas reçu de dégat, recevez 1 marqueur d'épuisement.",
+            "effect_ENG": "After defending, if you have not suffered any damage, then receive 1 deplete token.",
+            "faction": ["New_Republic_Patrol"]
         }
 
 
