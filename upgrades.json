@@ -6110,7 +6110,7 @@
              "faction": ["New_Republic_Patrol"],
              "modifier_func": [
                  ["add_slots","Condition"],
-                 ["auto_equip","Condition",376]
+                 ["auto_equip","Condition",376],
                  ["may_remove_slots","Condition"]
              ]
                                      
