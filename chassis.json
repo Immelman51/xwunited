@@ -36,10 +36,10 @@
         "nbrOfEffects": 2,
         "effect1_FRA": "(Servomoteurs S-Foils) Avant votre activation, vous pouvez changer de configuration :",
         "effect2_FRA": "<img class='chargeforceimg' src='img/chargestatRed.png'> (Déplié)",
-        "effect3_FRA": "<img class='chargeforceimg' src='img/chargestat.png'> (Réplié) Tant que vous effectuez une attaque principale, lancez 1 dé en moins. Ajoute <img class='action' src='img/Br W.jpg'/> , <img class='action' src='img/Fo W.jpg'/><img class='action' src='img/fleche.jpg'/><img class='action' src='img/Br W.jpg'/>Rouge",
+        "effect3_FRA": "<img class='chargeforceimg' src='img/chargestat.png'> (Réplié) Tant que vous effectuez une attaque principale, lancez 1 dé en moins. Ajoute <img class='action' src='img/Br W.jpg'/> , <img class='action' src='img/eye.jpg'/><img class='action' src='img/fleche.jpg'/><img class='action' src='img/Br W.jpg'/>Rouge",
         "effect1_ENG": "(Servomotor S-Foils) :",
         "effect2_ENG": "<img class='chargeforceimg' src='img/chargestatRed.png'> (Open) ",
-        "effect3_ENG": "<img class='chargeforceimg' src='img/chargestat.png'> (Closed) While you perform a primary attack, roll 1 fewer die. Add <img class='action' src='img/Br W.jpg'/> , <img class='action' src='img/Fo W.jpg'/><img class='action' src='img/fleche.jpg'/>Red<img class='action' src='img/Br W.jpg'/>"
+        "effect3_ENG": "<img class='chargeforceimg' src='img/chargestat.png'> (Closed) While you perform a primary attack, roll 1 fewer die. Add <img class='action' src='img/Br W.jpg'/> , <img class='action' src='img/eye.jpg'/><img class='action' src='img/fleche.jpg'/>Red<img class='action' src='img/Br W.jpg'/>"
     },
     {
         "name": "Pivot Wing",
@@ -69,10 +69,10 @@
         "nbrOfEffects": 2,
         "effect1_FRA": "(S-Foils Stabilisés) Avant votre activation, vous pouvez changer de configuration:",
         "effect2_FRA": "<img class='action' src='img/chargestat.png'> (Dépliés) Après avoir effectué une attaque principale, vous pouvez dépenser votre verrouillage sur le défenseur pour effectuer une attaque secondaire bonus contre ce vaisseau.",
-        "effect3_FRA": "<img class='action' src='img/chargestatRed.png'> (Repliés) Lorsque vous attaquez, si la cible n'est pas dans votre <img class='inline-img' src='img/bulls.jpg'>, lancez 1 dé de moins. Ajoute <img class='action' src='img/Ev W.jpg'> , <img class='action' src='img/Br W.jpg'><img class='action' src='img/fleche.jpg'><img class='action' src='img/Ev W.jpg'>Rouge",
+        "effect3_FRA": "<img class='action' src='img/chargestatRed.png'> (Repliés) Lorsque vous attaquez, si la cible n'est pas dans votre <img class='inline-img' src='img/bulls.jpg'>, lancez 1 dé de moins. Ajoute <img class='action' src='img/evd.jpg'> , <img class='action' src='img/Br W.jpg'><img class='action' src='img/fleche.jpg'><img class='action' src='img/evd.jpg'>Rouge",
         "effect1_ENG": "(Stabilized S-Foils) :",
         "effect2_ENG": "<img class='action' src='img/chargestat.png'> (Opened) After you perform a primary attack, you may spend your lock on the defender to perform a bonus secondary attack against that ship.",
-        "effect3_ENG": "<img class='action' src='img/chargestatRed.png'> (Closed) When you attack, if the target is not in your <img class='inline-img' src='img/bulls.jpg'>, roll 1 fewer die. Add <img class='action' src='img/Ev W.jpg'> , <img class='action' src='img/Br W.jpg'><img class='action' src='img/fleche.jpg'>Red<img class='action' src='img/Ev W.jpg'>"
+        "effect3_ENG": "<img class='action' src='img/chargestatRed.png'> (Closed) When you attack, if the target is not in your <img class='inline-img' src='img/bulls.jpg'>, roll 1 fewer die. Add <img class='action' src='img/evd.jpg'> , <img class='action' src='img/Br W.jpg'><img class='action' src='img/fleche.jpg'>Red<img class='action' src='img/evd.jpg'>"
     },
     {
         "name": "Advanced Targetting Computer",
@@ -310,10 +310,10 @@
     "id":28,
     "nbrOfEffects": 2,
     "effect1_FRA":"(S-Foils Intégrés) Avant votre activation, vous pouvez changer de configuration : ",
-    "effect2_FRA": "<img class='action' src='img/chargestatRed.png'>(Repliés) Tant que vous effectuez une attaque principale, si le défenseur n’est pas dans votre <img class='inline-img' src='img/bulls.jpg'>, lancez 1 dé d’attaque en moins. Ajoute <img class='action' src='img/Br W.jpg'> , <img class='action' src='img/Fo W.jpg'><img class='action' src='img/fleche.jpg'><img class='action' src='img/Br W.jpg'>Rouge",
+    "effect2_FRA": "<img class='action' src='img/chargestatRed.png'>(Repliés) Tant que vous effectuez une attaque principale, si le défenseur n’est pas dans votre <img class='inline-img' src='img/bulls.jpg'>, lancez 1 dé d’attaque en moins. Ajoute <img class='action' src='img/Br W.jpg'> , <img class='action' src='img/eye.jpg'><img class='action' src='img/fleche.jpg'><img class='action' src='img/Br W.jpg'>Rouge",
     "effect3_FRA": "<img class='action' src='img/chargestat.png'>(Dépliés)" ,
     "effect1_ENG":"(Integrated S-Foils) : ",
-    "effect2_ENG": "<img class='action' src='img/chargestatRed.png'>(Closed) While you perform a primary attack, if the defender is not in your <img class='inline-img' src='img/bulls.jpg'>, roll 1 fewer attack die.Add <img class='action' src='img/Br W.jpg'> , <img class='action' src='img/Fo W.jpg'><img class='action' src='img/fleche.jpg'>Red<img class='action' src='img/Br W.jpg'>",
+    "effect2_ENG": "<img class='action' src='img/chargestatRed.png'>(Closed) While you perform a primary attack, if the defender is not in your <img class='inline-img' src='img/bulls.jpg'>, roll 1 fewer attack die.Add <img class='action' src='img/Br W.jpg'> , <img class='action' src='img/eye.jpg'><img class='action' src='img/fleche.jpg'>Red<img class='action' src='img/Br W.jpg'>",
     "effect3_ENG": "<img class='action' src='img/chargestat.png'>(Opened)"
 
 },
