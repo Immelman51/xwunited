@@ -1,5 +1,4 @@
 
-Print squad pdfmake · JS
 /**
  * print_squad_pdfmake.js
  * ----------------------------------------------------------------
