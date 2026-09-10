@@ -6127,9 +6127,9 @@
              "add_Data": [0],
              "force": 0,
              "charge": [0],
-             "points": 0,
-             "effect_FRA": "??",
-             "effect_ENG": "??",
+             "points": 4,
+             "effect_FRA": "Lorsque vous effectuez une attaque contre un vaisseau ennemi avec une condition, vous pouvez améliorer un dé d'attaque.",
+             "effect_ENG": "When you perform an attack against an enemy ship with a condition, you may upgrade an attack die.",
              "faction": ["New_Republic_Patrol"]
                                      
              
@@ -6145,9 +6145,9 @@
              "add_Data": [0],
              "force": 0,
              "charge": [0],
-             "points": 0,
-             "effect_FRA": "??",
-             "effect_ENG": "??",
+             "points": 4,
+             "effect_FRA": "Lorsque vous vous défendez contre un vaisseau ennemi avec une condition, vous pouvez améliorer un résultat d'un dé de défense.",
+             "effect_ENG": "When you defend against an enenmy ship with a condition, you may upgrade a defense die.",
              "faction": ["New_Republic_Patrol"]
                                      
              
@@ -6163,10 +6163,10 @@
              "add_Data": [0],
              "force": 0,
              "charge": [0],
-             "points": 0,
-             "effect_FRA": "??",
-             "effect_ENG": "??",
-             "faction": ["Colossus"]      
+             "points": 2,
+             "effect_FRA": "Lorsque vous attaquez un vaisseau que vous avez verrouillé, vous pouvez dépenser votre verrouillage pour modifier autant de résultats que souhaités en résultats <img class='inline-img' src='img/hit.jpg'>",
+             "effect_ENG": "When you perform an attack against a ship you have locked, you may spend your lock to modify as many results as you wish into <img class='inline-img' src='img/hit.jpg'> results.",
+             "faction": ["Colossus"]
              
          },
          {
@@ -6200,9 +6200,9 @@
              "add_Data": [0],
              "force": 0,
              "charge": [0],
-             "points": 0,
-             "effect_FRA": "??",
-             "effect_ENG": "??",
+             "points": 7,
+             "effect_FRA": "Durant la mise en place, placez 3 jetons calcul sur cette amélioration.<br>Pendant la phase système, vous pouvez transférer 1 de ces jetons calculs vers 1 vaisseau à portée 0-3.<br>Lorsqu'il n'y a plus de jetons calculs, pendant la phase de système, lancez 1 dé d’attaque. Sur un résultat <img class='inline-img' src='img/hit.jpg'> ou <img class='inline-img' src='img/crit.jpg'> gagnez 1 marqueur de calcul. Sinon, gagnez 1 marqueur de brouillage.<br>ACTION : Transférez 1 jeton calcul ou de brouillage depuis votre vaisseau avec un autre vaisseau à portée 1-3.",
+             "effect_ENG": "During SETUP, place 3 calculate tokens onto this upgrade.<br>During System Phase, you may transfer 1 of these tokens to a ship at range 0-3.<br>When there is no more calcultate tokens on this upgrade, during System Phase, roll an attack die. On a <img class='inline-img' src='img/hit.jpg'> or <img class='inline-img' src='img/crit.jpg'>, gain 1 calculate token. Else gain 1 jam token.<br>ACTION : Transfer 1 calculate or jam token from you to another ship at range 1-3.",
              "faction": ["Shadow_Specialists"]
                                      
              
@@ -6218,9 +6218,9 @@
              "add_Data": [0],
              "force": 0,
              "charge": [0],
-             "points": 0,
-             "effect_FRA": "??",
-             "effect_ENG": "??",
+             "points": 2,
+             "effect_FRA": "Lorsqu'un vaisseau allié à portée 0-1 avec une initiative inférieure effectue une attaque, il peut relancer un résultat vierge'. Dans ce cas, et si cette attaque ne touche pas, il reçoit un jeton stress.",
+             "effect_ENG": "When a friendly ship at range 0-1 with a lower initiative performs an attack, he may reroll a blank result. In this case, and if this attack doesn't hit, he receives a stress token.",
              "faction": ["Shadow_Specialists"]
                                      
              
@@ -6236,9 +6236,9 @@
              "add_Data": [0],
              "force": 0,
              "charge": [0],
-             "points": 0,
-             "effect_FRA": "??",
-             "effect_ENG": "??",
+             "points": 2,
+             "effect_FRA": "Lorsque vous attaquez ou défendez contre un vaisseau brouillé, vous pouvez recevoir 1 jeton contrainte pour lancer un dé supplémentaire.",
+             "effect_ENG": "When you attack or defend against a jammed ship, you may receive 1 strain token to roll 1 additional die.",
              "faction": ["Shadow_Specialists"]
                                      
              
@@ -6253,11 +6253,11 @@
              "slot": "Gunner",
              "add_Data": [0],
              "charge": [0],
-             "points": 0,
+             "points": 3,
              "force":1,
-             "effect_FRA": "??",
-             "effect_ENG": "??",
-             "faction": ["Shadow_Specialists"]             
+             "effect_FRA": "Lorsque vous attaquez un vaisseau avec un jeton orange, vous pouvez dépenser 1 <img class='inline-img' src='img/fo.jpg'> pour dégrader 1 dé de défense du défenseur.",
+             "effect_ENG": "When you perform an attack againt a ship with an orange token, you may spend 1 <img class='inline-img' src='img/fo.jpg'> to downgrade 1 defense die from the defender.",
+             "faction": ["Shadow_Specialists"]
                                      
              
          },
@@ -6267,15 +6267,19 @@
              "id":356,
              "max_per_squad":1,
              "available":true,
-             "modify":false,
+             "modify":true,
              "slot": "Crew",
              "add_Data": [0],
              "charge": [0],
              "points": 0,
              "force":1,
-             "effect_FRA": "??",
-             "effect_ENG": "??",
-             "faction": ["Shadow_Specialists"]
+             "effect_FRA": "Ajoute 1 emplacement de type 'Force-Dark'.",
+             "effect_ENG": "Add 1 'Force-Dark' slot.",
+             "faction": ["Shadow_Specialists"],
+             "modifier_func": [
+                 ["add_slots","Force-Dark"],
+                 ["may_remove_slots","Force-Dark"]
+             ]
                                
              
          },
@@ -6290,9 +6294,9 @@
              "add_Data": [0],
              "force": 0,
              "charge": [0],
-             "points": 0,
-             "effect_FRA": "??",
-             "effect_ENG": "??",
+             "points": 3,
+             "effect_FRA": "Après qu'un vaisseau ennemi à portée 0-2 a détruit un vaisseau allié, il reçoit 1 marqueur de stress.",
+             "effect_ENG": "When an enemy ship at range 0-2 destroys a friendly ship, he receives 1 stress token.",
              "faction": ["Imperial_Remnants"]
                                      
              
@@ -6309,8 +6313,8 @@
              "charge": [0],
              "force":3,
              "points": 7,
-             "effect_FRA": "Vous ne pouvez pas récupérer de la force en fin de tour. Lorsqu'un vaisseau allié à portée 3 est détruit, vous pouvez dépenser 1<img class='chargeforceimg' src='img/fo.jpg'>. Dans ce cas, ne le retirez pas de la partie. En début de tour, vous pouvez dépenser 1<img class='chargeforceimg' src='img/fo.jpg'> pour qu'un vaisseau allié détruit ne soit pas retiré de la partie pour le reste de ce tour.",
-             "effect_ENG": "??",
+             "effect_FRA": "Vous ne pouvez pas récupérer de la force en phase de fin. Lorsqu'un vaisseau allié à portée 3 est détruit, vous pouvez dépenser 1<img class='inline-img' src='img/fo.jpg'>. Dans ce cas, ne le retirez pas de la partie pendant ce tour. Pendant la phase système, vous pouvez dépenser 1 <img class='inline-img' src='img/fo.jpg'> pour qu'un vaisseau allié détruit ne soit pas retiré de la partie pour le reste de ce tour.",
+             "effect_ENG": "You cannot recover force tokens during End Phase. When a friendly ship at range 3 is destroyed, you may spend 1 <img class='inline-img' src='img/fo.jpg'>. If you do, don't remove it from the game. During System Phase, you may spend 1 <img class='inline-img' src='img/fo.jpg'> so that a targeted destroyed friendly ship is not removed from the game this turn.",
              "faction": ["Imperial_Remnants"],
              "restrictions":[2,"upgrade","Crew",""],
              "modifier_func":[
@@ -6329,9 +6333,9 @@
              "add_Data": [0],
              "force": 0,
              "charge": [0],
-             "points": 0,
-             "effect_FRA": "??",
-             "effect_ENG": "??",
+             "points": 4,
+             "effect_FRA": "Lorsque vous coordonnez un vaisseau, vous pouvez revoir un dégat <img class='inline-img' src='img/crit.jpg'> ou exposer une carte de dégat. Dans ce cas, tous les vaisseaux alliés à portée 0-1 du vaisseau coordonné peuvent effectuer l'action choisie par le vaisseau coordonné, sous condition d'être capable de l'effectuer, et avec le niveau de difficulté adéquat.",
+             "effect_ENG": "When you coordinate a ship, you may suffer a <img class='inline-img' src='img/crit.jpg'> damage or expose a damage card. If you do, each friendly ships at range 0-1 of the coordinated ship may perform this ship's chosen action, under the condition that they are able to perform it, with the accordingly difficulty.",
              "faction": ["Imperial_Remnants"]
                                      
              

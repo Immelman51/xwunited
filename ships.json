@@ -2752,7 +2752,7 @@
                     [ 0, 0, 2, 0, 0, 0, 0, 0]
                     
                 ],
-                "slots": ["Crew","Sensor","Modification","Calculator"]
+                "slots": ["Crew", "Crew", "Sensor","Modification","Calculator"]
             },
             {
             	"name": "J-Type Star Skiff",
