@@ -364,14 +364,41 @@ function ligneLargeurFixe(cellules, largeursCm, hauteurCm) {
 function celluleLargeurFixe(contenu, largeurCm, hauteurCm) {
   return ligneLargeurFixe([contenu], [largeurCm], hauteurCm);
 }
-function celluleEmpileeLargeurFixe(items, largeurCm, hauteurUniteCm) {
+/**
+ * Layout à bordures "à la carte" : permet de dessiner uniquement certains
+ * côtés (haut/bas/gauche/droite), utile quand deux mini-tableaux empilés ou
+ * juxtaposés ne doivent PAS chacun redessiner une bordure sur le côté qui
+ * les sépare (ce qui créerait une ligne parasite / un doublon).
+ */
+function creerLayoutBordurePartielle({ haut = true, bas = true, gauche = true, droite = true } = {}) {
+  return {
+    hLineWidth: (i, node) => {
+      if (i === 0) return haut ? 1 : 0;
+      if (i === node.table.body.length) return bas ? 1 : 0;
+      return 0;
+    },
+    vLineWidth: (i, node) => {
+      if (i === 0) return gauche ? 1 : 0;
+      if (i === node.table.widths.length) return droite ? 1 : 0;
+      return 0;
+    },
+    hLineColor: () => 'black',
+    vLineColor: () => 'black',
+    paddingLeft: () => 0,
+    paddingRight: () => 0,
+    paddingTop: () => 0,
+    paddingBottom: () => 0,
+  };
+}
+
+function celluleEmpileeLargeurFixe(items, largeurCm, hauteurUniteCm, bordures) {
   return {
     table: {
       widths: [cm(largeurCm)],
       heights: items.map(() => cm(hauteurUniteCm)),
       body: items.map((it) => [it]),
     },
-    layout: LAYOUT_BORDURE_EXTERIEURE,
+    layout: bordures ? creerLayoutBordurePartielle(bordures) : LAYOUT_BORDURE_EXTERIEURE,
   };
 }
 
@@ -461,16 +488,24 @@ function buildPilotTable(x) {
   const statBlockHaut = celluleEmpileeLargeurFixe(
     [buildSingleStatCell(statsList[0]), buildSingleStatCell(statsList[1]), buildSingleStatCell(statsList[2])],
     1,
-    0.5
+    0.5,
+    { haut: true, bas: false, gauche: false, droite: true } // gauche = bordure du tableau principal, pas de doublon
   );
   const actionBlockHaut = celluleEmpileeLargeurFixe(
     [buildSingleActionCell(actionsArray[0]), buildSingleActionCell(actionsArray[1]), buildSingleActionCell(actionsArray[2])],
     2,
-    0.5
+    0.5,
+    { haut: true, bas: false, gauche: true, droite: false } // droite = bordure du tableau principal, pas de doublon
   );
   body.push([
     { ...statBlockHaut, verticalAlignment: 'center' },
-    { ...celluleLargeurFixe(abiliteEtMarqueurs, 16, 1.5), colSpan: 16, style: 'abilityDescription', verticalAlignment: 'center' },
+    {
+      ...celluleLargeurFixe(abiliteEtMarqueurs, 16, 1.5),
+      colSpan: 16,
+      style: 'abilityDescription',
+      verticalAlignment: 'center',
+      margin: [cm(0.1), 0, 0, 0], // évite que le texte touche la bordure droite du bloc stats
+    },
     ...Array(15).fill({}),
     { ...actionBlockHaut, verticalAlignment: 'center' },
   ]);
@@ -478,12 +513,14 @@ function buildPilotTable(x) {
   const statBlockBas = celluleEmpileeLargeurFixe(
     [buildSingleStatCell(statsList[3]), buildSingleStatCell(statsList[4]), emptyCell()],
     1,
-    0.5
+    0.5,
+    { haut: false, bas: true, gauche: false, droite: true }
   );
   const actionBlockBas = celluleEmpileeLargeurFixe(
     [buildSingleActionCell(actionsArray[3]), buildSingleActionCell(actionsArray[4]), buildSingleActionCell(actionsArray[5])],
     2,
-    0.5
+    0.5,
+    { haut: false, bas: true, gauche: true, droite: false }
   );
   const ligneMilieu5 =
     ligne7_9.type === 'unique'
