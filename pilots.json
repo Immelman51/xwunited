@@ -1934,14 +1934,12 @@
                 "Title",
                 "Talent-elite",
                 "Talent-piloting",
-                "Talent-shooting",
-                "Crew"
+                "Talent-shooting"
                                          
                 
             ],
             "modifier_func": [
             	["auto_equip","Title",135],
-                ["remove","Calculator"],
                 ["change_chassis",0,0]            
                
 
@@ -1989,15 +1987,13 @@
             "ability_ENG": "<div class='text'>When you would receive a face up damage card, you may spend 1 <img class='inline-img' src='img/charge.png'> to receive it facedown instead.", 
             "slots": [
                 "Title",
-                "Talent-shooting",
-                "Crew"
+                "Talent-shooting"
                 
                 
             ],
             "modifier_func": [
             	["auto_equip","Title",135],
-                ["remove","Calculator"]
-               
+                ["change_chassis",0,0]
                 
             ]
         },
@@ -5327,13 +5323,11 @@
                 "Title",
                 "Talent-elite",
                 "Talent-piloting",
-                "Talent-shooting",
-                "Crew"
+                "Talent-shooting"
                             
             ],
             "modifier_func": [
             	["auto_equip","Title",135],
-                ["remove","Calculator"],
                 ["change_chassis",0,0]
         
                     ]
@@ -5359,13 +5353,11 @@
                 "Title" ,
                 "Talent-piloting",
                 "Force-Base",
-                "Force-Light",
-                "Crew"
+                "Force-Light"
                            
             ],
             "modifier_func": [
             	["auto_equip","Title",135],
-                ["remove","Calculator"],
                 ["change_chassis",0,0]
 
                     ]            
@@ -5390,13 +5382,11 @@
         	"title": ["Millenium Falcon"],
             "slots": [
                 "Title",
-                "Talent-shooting",
-                "Crew"
+                "Talent-shooting"
                             
             ],
             "modifier_func": [
             	["auto_equip","Title",135],
-                ["remove","Calculator"],
                 ["change_chassis",0,0]
 
 
@@ -5423,13 +5413,11 @@
             "slots": [
                 "Title",
                 "Talent-elite",
-                "Talent-leadership",
-                "Crew"
+                "Talent-leadership"
                             
             ],
             "modifier_func": [
             	["auto_equip","Title",135],
-                ["remove","Calculator"],                                
                 ["change_chassis",0,0]
 
                     ]            
@@ -13819,14 +13807,12 @@
                 "Title",
                 "Talent-elite",
                 "Talent-piloting",
-                "Talent-shooting",
-                "Crew"
+                "Talent-shooting"
                                          
                 
             ],
             "modifier_func": [
                 ["auto_equip","Title",135],
-                ["remove","Calculator"],
                 ["change_chassis",0,0]
                
 
@@ -13852,14 +13838,13 @@
             "ability_ENG": "<div class='text'>When you would receive a face up damage card, you may spend 1 <img class='inline-img' src='img/charge.png'> to receive it facedown instead.</div>",
             "slots": [
                 "Title",
-                "Talent-shooting",
-                "Crew"
+                "Talent-shooting"
                 
                 
             ],
             "modifier_func": [
                 ["auto_equip","Title",135],
-                ["remove","Calculator"]
+                ["change_chassis",0,0]
                
                 
             ]

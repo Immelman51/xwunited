@@ -2301,28 +2301,26 @@
         },
 
 
-{
-            "name_FRA": "Compartiment de Contrebande",
-            "name_ENG": "Smuggling Compartment",
-            "id": 133,
-            "max_per_squad": 8,
-            "available":false,
-            "modify":true,
-            "slot": "Modification",
-            "add_Data": [0],
-            "force": 0,
-            "charge": [0],
-            "points": 0,
-            "effect_ENG": "Add an other <img class='chargeforceimg' src='img/Illicit.png'>  slot.",
-            "faction": ["Pirates_and_Smugglers"],
-            "effect_FRA": "Gagnez 1 autre emplacement <img class='chargeforceimg' src='img/Illicit.png'>",
-            "restrictions": [1,"base", "medium", "large"],
-            "modifier_func": [
-                ["add_slots","Illicit"],
-                ["may_remove_slots","Illicit"]
-            ]
-            
-        },
+    {
+        "name_FRA": "Compartiment de Contrebande",
+        "name_ENG": "Smuggling Compartment",
+        "id": 133,
+        "max_per_squad": 1,
+        "available": true,
+        "modify": true,
+        "slot": "Modification",
+        "add_Data": [0],
+        "force": 0,
+        "charge": [0],
+        "points": 1,
+        "effect_FRA": "Ajoute un emplacement 'Illicit'",
+        "effect_ENG": "Add an 'Illicit' slot",
+        "faction": ["Hutt_Cartel","Shadow_Specialists","Black_Sun","Pirates_and_Smugglers","Phoenix_Cell","Crime_Syndicates","Partisans"],
+        "modifier_func":[
+            ["add_slots","Illicit"],
+            ["may_remove_slots","Illicit"]
+        ]
+    },
         {
             "name_FRA": "*Roublard",
             "name_ENG": "*Cunning",
@@ -2352,10 +2350,10 @@
             "charge": [0],
             "points": 0,
             "max_per_squad": 1,
-            "effect_ENG": "Remove a <img class='chargeforceimg' src='img/Calculator.png'> slot and the 'Docking Ship' chassis ability. Add a <img class='chargeforceimg' src='img/Sensor.png'> slot.",
+            "effect_ENG": "Remove the 'Docking Ship' chassis ability.",
             "faction": ["Pirates_and_Smugglers","Rebel_Alliance","Heroes_of_the_Resistance"],
             "ship": "YT-1300 Light Freighter",
-            "effect_FRA": "Retire un emplacement <img class='chargeforceimg' src='img/Calculator.png'> et la capacité 'Vaisseau-Mère'. Ajoute <img class='chargeforceimg' src='img/Sensor.png'>."
+            "effect_FRA": "Retire la capacité 'Vaisseau-Mère'."
           
            
         },
@@ -6614,7 +6612,7 @@
             "add_Data": [0],
             "force": 0,
             "charge": [0],
-            "points": 0,
+            "points": 1,
             "effect_FRA": "Lorsque vous encaissez des dégats, vous pouvez récupérer 1 <img class='chargeforceimg' src='img/fo.jpg'>",
             "effect_ENG": "When you suffer damages, you may recover 1 <img class='chargeforceimg' src='img/fo.jpg'>",
             "faction": ""
@@ -6635,6 +6633,7 @@
             "effect_ENG": "After defending, if you have not suffered any damage, then receive 1 deplete token.",
             "faction": ["New_Republic_Patrol"]
         }
+        
 
 
 

@@ -52,7 +52,7 @@
                 ],
                 "nbrmaneuvers": 15,
                 "base": "small",
-                "slots": ["Torpedo","Torpedo", "Turret", "Payload", "Astromech", "Modification","Illicit"]
+                "slots": ["Torpedo", "Turret", "Payload", "Astromech", "Modification"]
             },
             {
             
@@ -81,7 +81,7 @@
                 ],
                 "nbrmaneuvers": 17,
                 "base": "small",
-                "slots": ["Missile", "Modification"]
+                "slots": ["Missile"]
             },
             {
             
@@ -108,7 +108,7 @@
                 ],
                 "nbrmaneuvers": 17,
                 "base": "large",
-                "slots": ["Missile", "Crew", "Gunner", "Modification","Illicit","Calculator"]
+                "slots": ["Crew", "Gunner", "Modification","Modification","Calculator"]
             },
             {
             
@@ -205,7 +205,7 @@
                     [0,"Lo W"],
                     [0,"Bo W"],
                     [0,"Re R"],
-                    [0,"Un R"]
+                    [0,"Un W"]
                 ],
                 "maneuvers": [
                     [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
@@ -267,7 +267,7 @@
                     [ 0, 3, 2, 3, 0]
                 ],
                 "base": "large",
-                "slots": ["Sensor", "Crew", "Gunner", "Cannon", "Modification", "Modification"]
+                "slots": ["Sensor", "Crew", "Gunner", "Cannon", "Modification"]
     
             },
             {
@@ -294,7 +294,7 @@
                     [ 0, 0, 3, 0, 0, 0, 0, 0, 0, 0]
                 ],
                 "base": "small",
-                "slots": ["Sensor", "Cannon", "Missile", "Gunner", "Modification"]
+                "slots": ["Sensor", "Cannon", "Missile", "Gunner"]
             },
             {
                 
@@ -379,7 +379,7 @@
                     [ 0, 0, 1, 0, 0, 2],
                     [ 0, 0, 1, 0, 0, 0]
                 ],
-                "slots": ["Tech","Cannon","Tie mod","Sensor"]
+                "slots": ["Tech","Tech","Tie mod"]
             },
             {
          
@@ -409,7 +409,7 @@
                     [ 0, 0, 1, 0, 0, 3, 0, 0 ],
                     [ 0, 0, 2, 0, 0, 0, 0, 0 ]
                 ],
-                "slots": ["Tech","Missile","Modification","Astromech","Sensor","Sensor"]
+                "slots": ["Tech","Missile","Astromech","Sensor"]
     
             },
             {
@@ -523,7 +523,7 @@
                     [ 0, 2, 1, 2, 0, 0, 3, 3],
                     [ 0, 0, 2, 0, 0, 0, 0, 0]
                 ],
-                "slots": ["Tech","Missile","Modification"]
+                "slots": ["Tech","Missile"]
     
             },
             {
@@ -554,7 +554,7 @@
                     [ 0, 0, 2, 0, 0, 3 ]
                 ],
                 "base": "small",
-                "slots": ["Modification","Weapon Hardpoint"]
+                "slots": ["Weapon Hardpoint"]
             },
             {
         
@@ -582,7 +582,7 @@
                     [ 0, 1, 1, 1, 0, 0, 3, 3 ],
                     [ 0, 0, 2, 0, 0, 3, 0, 0 ]
                 ],
-                "slots": ["Sensor", "Cannon", "Cannon", "Modification"]
+                "slots": ["Sensor", "Cannon", "Cannon"]
             },
             {
         
@@ -608,7 +608,7 @@
                     [ 2, 2, 1, 2, 2],
                     [ 0, 0, 2, 0, 0]
                 ],
-                "slots": ["Crew", "Crew", "Cannon", "Gunner", "Illicit", "Illicit", "Modification"]
+                "slots": ["Crew", "Crew", "Cannon", "Gunner", "Illicit", "Modification"]
             },
             {
         
@@ -635,7 +635,7 @@
                     [ 0, 0, 2, 0, 0, 3, 0, 0, 0, 0 ]
                 ],
                 "base": "small",
-                "slots": ["Missile","Missile","Illicit", "Modification"]
+                "slots": ["Missile","Missile","Illicit"]
             },
             {
       
@@ -662,7 +662,7 @@
                     [ 2, 2, 1, 2, 2],
                     [ 0, 2, 2, 2, 0]
                 ],
-                "slots": ["Gunner","Gunner","Missile","Missile","Payload","Payload","Torpedo","Torpedo","Modification"]
+                "slots": ["Gunner","Gunner","Payload","Payload","Torpedo","Torpedo"]
     
             },
             {
@@ -691,7 +691,7 @@
                     [ 3, 2, 2, 2, 3, 0 ],
                     [ 0, 0, 0, 0, 0, 3 ]
                 ],
-                "slots": ["Tech","Gunner","Missile","Torpedo","Torpedo","Payload","Tie mod"]
+                "slots": ["Tech","Gunner","Torpedo","Torpedo","Payload","Tie mod"]
     
             },
             {
@@ -720,7 +720,7 @@
                     [ 3, 2, 2, 2, 3, 0 ],
                     [ 0, 0, 2, 0, 0, 3 ]
                 ],
-                "slots": ["Crew","Crew","Gunner","Torpedo","Turret","Modification","Sensor"]
+                "slots": ["Crew","Crew","Gunner","Turret","Modification","Sensor"]
             },
             {
          
@@ -747,7 +747,7 @@
                     [ 3, 2, 2, 2, 3, 0 ],
                     [ 0, 0, 2, 0, 0, 3 ]
                 ],
-                "slots": ["Crew","Turret","Modification"]
+                "slots": ["Gunner","Turret"]
             },
             {
       
@@ -805,7 +805,7 @@
                     [ 0, 3, 2, 3, 0, 0 ],
                     [ 0, 0, 3, 0, 0, 3 ]
                 ],
-                "slots": ["Sensor", "Sensor", "Crew", "Illicit", "Modification", "Calculator"]
+                "slots": ["Sensor", "Sensor", "Crew", "Illicit","Calculator"]
             },
             {
         
@@ -857,7 +857,7 @@
                     [ 3, 2, 2, 2, 3, 0 ],
                     [ 0, 0, 3, 0, 0, 3 ]
                 ],
-                "slots": ["Crew", "Gunner", "Missile","Missile", "Astromech", "Modification"]
+                "slots": ["Crew", "Gunner", "Missile","Missile", "Astromech"]
             },
             {
        
@@ -887,7 +887,7 @@
                     [ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0 ]
                 ],
                 "base": "small",
-                "slots": ["Torpedo", "Modification", "Modification"]
+                "slots": ["Torpedo", "Modification"]
             },
             {
         
@@ -942,7 +942,7 @@
                     [ 2, 1, 1, 1, 2, 0, 3, 3, 0, 0, 0, 3, 0 ],
                     [ 0, 2, 1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
                 ],
-                "slots": ["Crew","Tech","Payload","Modification"]
+                "slots": ["Crew","Payload","Modification"]
     
             },
             {
@@ -970,7 +970,7 @@
                     [ 0, 2, 2, 2, 0 ],
                     [ 0, 0, 2, 0, 0 ]
                 ],
-                "slots": ["Sensor", "Crew", "Crew", "Modification"]
+                "slots": ["Sensor", "Crew", "Modification"]
             },
             {
                
@@ -1052,7 +1052,7 @@
                     [ 3, 2, 2, 2, 3, 0, 0, 0, 3, 3 ],
                     [ 0, 0, 3, 0, 0, 0, 0, 0, 0, 0 ]
                 ],
-                "slots": ["Turret", "Crew", "Gunner", "Payload", "Payload", "Modification"]
+                "slots": ["Turret", "Gunner", "Payload", "Payload", "Modification"]
             },
             {
       
@@ -1079,7 +1079,7 @@
                     [ 2, 2, 1, 2, 2, 0],
                     [ 0, 0, 2, 0, 0, 3]
                 ],
-                "slots": ["Gunner","Missile","Turret","Tie mod","Calculator"]
+                "slots": ["Missile","Turret","Tie mod","Calculator"]
     
             },
             {
@@ -1108,7 +1108,7 @@
                     [ 2, 2, 2, 2, 2],
                     [ 0, 0, 3, 0, 0]
                 ],
-                "slots": ["Missile","Missile","Torpedo","Torpedo","Modification","Sensor"]
+                "slots": ["Missile","Missile","Torpedo","Torpedo"]
     
             },
             {
@@ -1136,7 +1136,7 @@
                     [ 2, 2, 1, 2, 2, 0],
                     [ 0, 0, 0, 0, 0, 3]
                 ],
-                "slots": ["Missile","Torpedo","Illicit","Modification","Astromech"]
+                "slots": ["Missile","Torpedo","Illicit","Astromech"]
     
             },
             {
@@ -1162,7 +1162,7 @@
                     [ 3, 2, 1, 2, 3, 3, 0, 0, 0, 0, 0, 0],
                     [ 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0]
                 ],
-                "slots": ["Crew","Modification","Astromech","Calculator"]
+                "slots": ["Crew","Astromech","Calculator"]
             },
             {
         
@@ -1215,7 +1215,7 @@
                     [ 3, 2, 1, 2, 3, 0],
                     [ 0, 2, 2, 2, 0, 3]
                 ],
-                "slots": ["Crew", "Illicit"]
+                "slots": ["Crew"]
             },
             {
       
@@ -1272,7 +1272,7 @@
                     [ 0, 0, 1, 0, 0, 0, 0, 0],
                     [ 0, 0, 1, 0, 0, 3, 0, 0]
                 ],
-                "slots": ["Tech","Missile","Modification"]
+                "slots": ["Tech","Missile"]
             },
             {
           
@@ -1315,7 +1315,7 @@
                 "shields": 2,
                 "base": "small",
                 "chassis": [10],
-                "slots": ["Tech","Missile","Tie mod","Sensor"],
+                "slots": ["Tech","Tie mod","Sensor"],
                 "actions": [
                     [0,"Fo W"],
                     [0,"Lo W"],
@@ -1371,7 +1371,7 @@
                 "hull": 6,
                 "shields": 6,
                 "chassis": [0],
-                "slots": ["Crew","Crew","Modification","Modification","Sensor","Calculator","Calculator"],
+                "slots": ["Crew","Crew","Modification","Sensor","Calculator","Calculator"],
                 "actions": [
                     [0,"Fo W"],
                     [0,"Lo W"],
@@ -1417,7 +1417,7 @@
                     [ 0, 0, 0, 0, 0]
                 ],
                 "base": "large",
-                "slots": ["Crew","Gunner","Tech","Tech","Payload","Payload","Payload","Modification"]
+                "slots": ["Gunner","Tech","Tech","Payload","Payload","Payload"]
             },
             {
           
@@ -1463,7 +1463,7 @@
                 "actions": [
                     [0,"Fo W"],
                     [0,"Lo W"],                
-                    [0,"Ev W"],
+                    [0,"Un R"],
                     [1,"Br W", "Ev R"],
                     [1,"Br W", "Un R"]
                    
@@ -1476,7 +1476,7 @@
                     [ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0],
                     [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
                 ],
-                "slots": ["Missile","Torpedo","Modification"]
+                "slots": ["Missile","Torpedo"]
     
             },
             {
@@ -1505,7 +1505,7 @@
                     [ 0, 0, 2, 0, 0, 3, 0, 0],
                     [ 0, 0, 2, 0, 0, 3, 0, 0]
                 ],
-                "slots": ["Astromech","Modification","Hyperspace Ring"]
+                "slots": ["Astromech","Hyperspace Ring"]
     
                
             },
@@ -1536,7 +1536,7 @@
                     [ 0, 0, 2, 0, 0, 3, 0, 0],
                     [ 0, 0, 2, 0, 0, 3, 0, 0]
                 ],
-                "slots": ["Astromech","Modification","Hyperspace Ring"]
+                "slots": ["Astromech","Hyperspace Ring"]
     
             },
             {
@@ -1607,7 +1607,7 @@
                 "hull": 3,
                 "shields": 2,
                 "base": "small",
-                "slots": ["Modification","Modification","Calculator"],
+                "slots": ["Modification","Calculator"],
                 "actions": [
                     [0,"Fo W"],
                     [0,"Lo W"],                
@@ -1640,7 +1640,8 @@
                     [0,"Fo W"],
                     [0,"Lo W"],                
                     [0,"Br W"],
-                    [0,"Bo W"]
+                    [0,"Bo W"],
+                    [0,"Un R"]
                     
                 ],
                 "maneuvers": [
@@ -1651,7 +1652,7 @@
                     [ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0],
                     [ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0]
                 ],
-                "slots": ["Missile","Missile","Astromech", "Sensor"]
+                "slots": ["Torpedo","Astromech","Sensor"]
             },
             {
     
@@ -1664,7 +1665,7 @@
                 "shields": 0,
                 "base": "small",
                 "chassis": [17,34],
-                "slots": ["Missile","Missile","Payload","Modification","Sensor"],
+                "slots": ["Missile","Missile","Payload"],
                 "actions": [
                     [0,"Cc W"],
                     [0,"Lo W"],                
@@ -1706,7 +1707,7 @@
                     [ 0, 3, 2, 3, 0, 3],
                     [ 0, 0, 3, 0, 0, 0]
                 ],
-                "slots": ["Crew","Tech","Modification"]
+                "slots": ["Tech"]
             },
             {
          
@@ -1734,7 +1735,7 @@
                     [ 0, 3, 2, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0 ],
                     [ 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
                 ],
-                "slots": ["Crew","Crew","Tech","Cannon","Modification","Astromech"]
+                "slots": ["Crew","Tech","Cannon","Astromech"]
             },
             {
         
@@ -1790,7 +1791,7 @@
                     [ 0, 0, 3, 0, 0, 3],
                     [ 0, 0, 0, 0, 0, 0]
                 ],
-                "slots": ["Gunner","Torpedo","Payload","Payload","Turret","Astromech","Modification"]
+                "slots": ["Gunner","Payload","Turret","Astromech","Modification"]
     
             },
             {
@@ -1819,7 +1820,7 @@
                     [ 0, 0, 3, 0, 0, 0, 0, 0, 0, 0 ],
                     [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
                 ],
-                "slots": ["Missile","Illicit","Modification","Modification","Astromech"]
+                "slots": ["Missile","Illicit","Modification","Astromech"]
     
             },
             {
@@ -1849,7 +1850,7 @@
                     [ 0, 0, 1, 0, 0, 0, 0, 0],
                     [ 0, 0, 2, 0, 0, 3, 0, 0]
                 ],
-                "slots": ["Tech","Missile","Tie mod","Tie mod"]
+                "slots": ["Tech","Tie mod","Tie mod"]
     
             },
             {
@@ -1878,7 +1879,7 @@
                     [ 0, 0, 2, 0, 0]
                   
                 ],
-                "slots": ["Crew","Crew","Tech","Modification","Modification","Calculator"]
+                "slots": ["Crew","Tech","Modification","Calculator"]
     
             },
             {
@@ -1892,7 +1893,7 @@
                 "shields": 3,
                 "base": "small",
                 "chassis": [39],
-                "slots": ["Crew","Missile","Payload","Modification","Calculator"],
+                "slots": ["Crew","Missile","Payload"],
                 "actions": [
                     [0,"Cc W"],
                     [0,"Lo W"],                
@@ -1935,7 +1936,7 @@
                     [ 0, 0, 3, 0, 0]
                     
                 ],
-                "slots": ["Crew","Crew","Gunner","Gunner","Missile","Modification"]
+                "slots": ["Crew","Gunner","Gunner","Missile","Modification"]
     
             },
             {
@@ -1978,7 +1979,7 @@
                 "shields": 0,
                 "base": "small",
                 "chassis": [17],
-                "slots": ["Modification","Sensor","Calculator","Calculator"],
+                "slots": ["Calculator","Calculator"],
                 "actions": [
                     [0,"Cc W"],
                     [0,"Ev W"],                
@@ -2023,7 +2024,7 @@
                     [ 0, 0, 2, 0, 0, 3],
                     [ 0, 0, 2, 0, 0, 0]
                 ],
-                "slots": ["Payload","Astromech","Tie mod","Modification","Hyperspace Ring"]
+                "slots": ["Payload","Astromech","Tie mod","Hyperspace Ring"]
     
             },
             {
@@ -2053,7 +2054,7 @@
                     [ 0, 0, 1, 0, 0, 3, 0, 0, 0, 0 ],
                     [ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0 ]
                 ],
-                "slots": ["Cannon","Astromech","Hyperspace Ring"]
+                "slots": ["Astromech","Cannon","Hyperspace Ring"]
     
             },
             {
@@ -2104,7 +2105,7 @@
                     [ 0, 0, 3, 0, 0, 0],
                     [ 0, 0, 0, 0, 0, 3]
                 ],
-                "slots": ["Tech","Missile","Torpedo","Turret","Astromech","Modification","Modification"]
+                "slots": ["Tech","Torpedo","Turret","Astromech","Modification"]
             },
             {
          
@@ -2148,7 +2149,7 @@
                 "shields": 2,
                 "base": "small",
                 "chassis": [45],
-                "slots": ["Gunner","Missile","Payload","Payload","Tie mod"],
+                "slots": ["Missile","Payload","Payload","Tie mod"],
                 "actions": [
                     [0,"Fo W"],               
                     [0,"Lo W"],
@@ -2222,7 +2223,7 @@
                     [ 0, 0, 1, 0, 0, 0, 0, 0, 0, 0 ],
                     [ 0, 0, 0, 0, 0, 3, 0, 0, 0, 0 ]
                 ],
-                "slots": ["Crew", "Tech", "Illicit", "Illicit", "Modification", "Modification"]
+                "slots": ["Crew", "Tech", "Illicit", "Illicit", "Modification"]
             },
             {
       
@@ -2248,7 +2249,7 @@
                     [ 2, 2, 1, 2, 2, 3],
                     [ 0, 0, 2, 0, 0, 3]
                 ],
-                "slots": ["Torpedo","Modification","Sensor"]
+                "slots": ["Torpedo","Sensor"]
     
             },
             {
@@ -2277,7 +2278,7 @@
                     [ 0, 0, 1, 0, 0, 0, 0, 0, 0, 0 ],
                     [ 0, 0, 2, 0, 0, 3, 0, 0, 0, 0 ]
                 ],
-                "slots": ["Cannon", "Cannon", "Illicit", "Illicit", "Modification"]
+                "slots": ["Cannon", "Cannon", "Illicit", "Illicit"]
             },
             {
     
@@ -2355,7 +2356,7 @@
                     [ 0, 0, 2, 0, 0, 3]
                 ],
                 "nbrmaneuvers": 14,
-                "slots": ["Torpedo","Torpedo","Modification","Modification"]
+                "slots": ["Torpedo","Torpedo","Modification"]
             },
             {
             	"name": "Crimson Starfighter",
@@ -2384,7 +2385,7 @@
                     [ 0, 0, 1, 0, 0, 3, 0, 0]
                 ],
                 "nbrmaneuvers": 19,
-                "slots": ["Illicit","Modification"]
+                "slots": ["Illicit","Tech"]
             },
             {
             	"name": "Sarissa-Class Gunship",
@@ -2412,7 +2413,7 @@
                     [ 0, 0, 0, 0, 0, 0, 0, 0]
                 ],
                 "nbrmaneuvers": 18,
-                "slots": ["Gunner","Cannon","Modification","Sensor"]
+                "slots": ["Gunner","Cannon","Sensor"]
             },
             {
             	"name": "Rihkxyrk Attack Ship",
@@ -2439,7 +2440,7 @@
     
                 ],
                 "nbrmaneuvers": 15,
-                "slots": ["Tech","Missile","Missile","Torpedo","Torpedo","Payload","Payload","Modification"]
+                "slots": ["Tech","Missile","Missile","Torpedo","Torpedo","Payload","Payload"]
             },
             {
             	"name": "Blue Ace",
@@ -2622,7 +2623,7 @@
                     [ 0, 2, 2, 2, 0, 0],
                     [ 0, 0, 2, 0, 0, 3]
                 ],
-                "slots": ["Crew","Gunner","Turret","Sensor","Tie mod"]
+                "slots": ["Gunner","Turret","Sensor","Tie mod"]
             },
             {
             	"name": "Oubliette Class Transport",
@@ -2726,7 +2727,7 @@
                     [ 0, 0, 2, 0, 0, 0],
                     [ 0, 0, 0, 0, 0, 3]
                 ],
-                "slots": ["Gunner","Turret","Modification"]
+                "slots": ["Crew","Gunner","Turret"]
             },
             {
             	"name": "ETA Class Shuttle",
@@ -2752,7 +2753,7 @@
                     [ 0, 0, 2, 0, 0, 0, 0, 0]
                     
                 ],
-                "slots": ["Crew", "Crew", "Sensor","Modification","Calculator"]
+                "slots": ["Crew", "Crew", "Sensor","Calculator"]
             },
             {
             	"name": "J-Type Star Skiff",
@@ -2828,7 +2829,7 @@
                     [ 0, 0, 2, 0, 0, 3]
                    
                 ],
-                "slots": ["Astromech","Illicit","Missile","Modification","Modification"]
+                "slots": ["Astromech","Illicit","Missile"]
             },
             {
             	"name": "Scarab-Class Droid Fighter",
@@ -2852,7 +2853,7 @@
                     [ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0]
                     
                 ],
-                "slots": ["Modification","Calculator"]
+                "slots": ["Calculator"]
             },
             {
             	"name": "Zenuas 33 Umbaran Starfighter",
@@ -2906,7 +2907,7 @@
                     [ 0, 0, 3, 0, 0, 0, 0, 0, 0, 0]
                     
                 ],
-                "slots": ["Sensor","Modification"]
+                "slots": ["Sensor"]
             },
             {
             	"name": "Mankvim-814 Light Interceptor",
@@ -2920,8 +2921,8 @@
                 "shields": 1,
                 "chassis": [62,63],
                 "actions": [
-                    [0,"Fo W"],  
-                    [1,"Ev W", "Br R"],  
+                    [1,"Fo W", "Ev R"],
+                    [1,"Ev W", "Br R"],
                     [1,"Ev W", "Bo R"], 
                     [1,"Br W", "Fo R"], 
                     [1,"Bo W", "Fo R"] 
@@ -2934,7 +2935,7 @@
                     [ 0, 0, 1, 0, 0, 0, 0, 0],
                     [ 0, 0, 1, 0, 0, 3, 0, 0]
                 ],
-                "slots": ["Modification"]
+                "slots": []
             },
              {
             	"name": "HH-87 Starhopper",
@@ -2960,7 +2961,7 @@
                     [ 0, 0, 1, 0, 0, 0],
                     [ 0, 0, 3, 0, 0, 0]
                 ],
-                "slots": ["Illicit","Modification","Calculator"]
+                "slots": ["Illicit","Calculator"]
             },
              {
           
@@ -2989,7 +2990,7 @@
                      [ 0, 0, 3, 0, 0, 0],
                      [ 0, 0, 0, 0, 0, 3]
                  ],
-                 "slots": ["Tech","Missile","Torpedo","Missile","Astromech","Modification","Modification"]
+                 "slots": ["Tech","Torpedo","Missile","Astromech","Modification"]
              },
               {
           
