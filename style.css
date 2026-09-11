@@ -578,7 +578,7 @@ select {
 
 }
 
-.inline-img {
+.inline-img, .action {
   display: inline;
   vertical-align: middle;
   width: 15px;
