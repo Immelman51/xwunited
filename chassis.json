@@ -36,7 +36,7 @@
         "nbrOfEffects": 2,
         "effect1_FRA": "(Servomoteurs S-Foils) Avant votre activation, vous pouvez changer de configuration :",
         "effect2_FRA": "<img class='chargeforceimg' src='img/chargestatRed.png'> (Déplié)",
-        "effect3_FRA": "<img class='chargeforceimg' src='img/chargestat.png'> (Réplié) Tant que vous effectuez une attaque principale, lancez 1 dé en moins. Ajoute <img class='action' src='img/Br W.jpg'/> , <img class='action' src='img/eye.jpg'/><img class='action' src='img/fleche.jpg'/><img class='action' src='img/Br W.jpg'/>Rouge",
+        "effect3_FRA": "<img class='chargeforceimg' src='img/chargestat.png'> (Réplié) Tant que vous effectuez une attaque principale, lancez 1 dé en moins. Ajoute <img class='action' src='img/Br W.jpg'/> <br> <img class='action' src='img/eye.jpg'/><img class='action' src='img/fleche.jpg'/>Red<img class='action' src='img/Br W.jpg'/>",
         "effect1_ENG": "(Servomotor S-Foils) :",
         "effect2_ENG": "<img class='chargeforceimg' src='img/chargestatRed.png'> (Open) ",
         "effect3_ENG": "<img class='chargeforceimg' src='img/chargestat.png'> (Closed) While you perform a primary attack, roll 1 fewer die. Add <img class='action' src='img/Br W.jpg'/> , <img class='action' src='img/eye.jpg'/><img class='action' src='img/fleche.jpg'/>Red<img class='action' src='img/Br W.jpg'/>"

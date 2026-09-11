@@ -453,6 +453,14 @@ img {
     resize: both;
 }
 
+.inline-img{
+    display: inline;
+      height: 1em;
+      width: auto;
+   /*   vertical-align: middle;
+*/      margin: 0 2px;
+}
+/*
 .inline-img {
   display: inline;
   vertical-align: middle;
@@ -463,3 +471,4 @@ img {
   margin-right: 2px;
   
 }
+*/
