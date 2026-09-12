@@ -36,10 +36,10 @@
         "nbrOfEffects": 2,
         "effect1_FRA": "(Servomoteurs S-Foils) Avant votre activation, vous pouvez changer de configuration :",
         "effect2_FRA": "<img class='chargeforceimg' src='img/chargestatRed.png'> (Déplié)",
-        "effect3_FRA": "<img class='chargeforceimg' src='img/chargestat.png'> <div>(Réplié) Tant que vous effectuez une attaque principale, lancez 1 dé en moins. Ajoute  : <img class='action' src='img/Br W.jpg'/> <br> <img class='action' src='img/eye.jpg'/> <img class='action' src='img/fleche.jpg'/> Red <img class='action' src='img/Br W.jpg'/></div>",
+        "effect3_FRA": "<img class='chargeforceimg' src='img/chargestat.png'> <div>(Réplié) Tant que vous effectuez une attaque principale, lancez 1 dé en moins. Ajoute  : <img class='inline-img' src='img/Br W.jpg'/> <br> <img class='inline-img' src='img/eye.jpg'/> <img class='inline-img' src='img/fleche.jpg'/> Red <img class='inline-img' src='img/Br W.jpg'/></div>",
         "effect1_ENG": "(Servomotor S-Foils) :",
         "effect2_ENG": "<img class='chargeforceimg' src='img/chargestatRed.png'> (Open) ",
-        "effect3_ENG": "<img class='chargeforceimg' src='img/chargestat.png'> <div>(Closed) While you perform a primary attack, roll 1 fewer die. Add <img class='action' src='img/Br W.jpg'/> , <img class='action' src='img/eye.jpg'/><img class='action' src='img/fleche.jpg'/>Red<img class='action' src='img/Br W.jpg'/></div>"
+        "effect3_ENG": "<img class='chargeforceimg' src='img/chargestat.png'> <div>(Closed) While you perform a primary attack, roll 1 fewer die. Add <img class='inline-img' src='img/Br W.jpg'/> , <img class='inline-img' src='img/eye.jpg'/><img class='inline-img' src='img/fleche.jpg'/>Red<img class='inline-img' src='img/Br W.jpg'/></div>"
     },
     {
         "name": "Pivot Wing",
@@ -68,11 +68,11 @@
         "id": 6,
         "nbrOfEffects": 2,
         "effect1_FRA": "(S-Foils Stabilisés) Avant votre activation, vous pouvez changer de configuration:",
-        "effect2_FRA": "<img class='action' src='img/chargestat.png'>(Dépliés) Après avoir effectué une attaque principale, vous pouvez dépenser votre verrouillage sur le défenseur pour effectuer une attaque secondaire bonus contre ce vaisseau.",
-        "effect3_FRA": "<img class='action' src='img/chargestatRed.png'><div>(Repliés) Lorsque vous attaquez, si la cible n'est pas dans votre <img class='inline-img' src='img/bulls.jpg'>, lancez 1 dé de moins. Ajoute <img class='action' src='img/evd.jpg'> , <img class='action' src='img/Br W.jpg'><img class='action' src='img/fleche.jpg'><img class='action' src='img/evd.jpg'>Rouge</div>",
+        "effect2_FRA": "<img class='inline-img' src='img/chargestat.png'>(Dépliés) Après avoir effectué une attaque principale, vous pouvez dépenser votre verrouillage sur le défenseur pour effectuer une attaque secondaire bonus contre ce vaisseau.",
+        "effect3_FRA": "<img class='inline-img' src='img/chargestatRed.png'><div>(Repliés) Lorsque vous attaquez, si la cible n'est pas dans votre <img class='inline-img' src='img/bulls.jpg'>, lancez 1 dé de moins. Ajoute <img class='inline-img' src='img/evd.jpg'> , <img class='inline-img' src='img/Br W.jpg'><img class='inline-img' src='img/fleche.jpg'><img class='inline-img' src='img/evd.jpg'>Rouge</div>",
         "effect1_ENG": "(Stabilized S-Foils) :",
-        "effect2_ENG": "<img class='action' src='img/chargestat.png'>(Opened) After you perform a primary attack, you may spend your lock on the defender to perform a bonus secondary attack against that ship.",
-        "effect3_ENG": "<img class='action' src='img/chargestatRed.png'><div>(Closed) When you attack, if the target is not in your <img class='inline-img' src='img/bulls.jpg'>, roll 1 fewer die. Add <img class='action' src='img/evd.jpg'> , <img class='action' src='img/Br W.jpg'><img class='action' src='img/fleche.jpg'>Red<img class='action' src='img/evd.jpg'></div>"
+        "effect2_ENG": "<img class='inline-img' src='img/chargestat.png'>(Opened) After you perform a primary attack, you may spend your lock on the defender to perform a bonus secondary attack against that ship.",
+        "effect3_ENG": "<img class='inline-img' src='img/chargestatRed.png'><div>(Closed) When you attack, if the target is not in your <img class='inline-img' src='img/bulls.jpg'>, roll 1 fewer die. Add <img class='inline-img' src='img/evd.jpg'> , <img class='inline-img' src='img/Br W.jpg'><img class='inline-img' src='img/fleche.jpg'>Red<img class='inline-img' src='img/evd.jpg'></div>"
     },
     {
         "name": "Advanced Targetting Computer",
@@ -310,18 +310,18 @@
     "id":28,
     "nbrOfEffects": 2,
     "effect1_FRA":"(S-Foils Intégrés) Avant votre activation, vous pouvez changer de configuration : ",
-    "effect2_FRA": "<img class='action' src='img/chargestatRed.png'><div>(Repliés) Tant que vous effectuez une attaque principale, si le défenseur n’est pas dans votre <img class='inline-img' src='img/bulls.jpg'>, lancez 1 dé d’attaque en moins. Ajoute <img class='action' src='img/Br W.jpg'> , <img class='action' src='img/eye.jpg'> <img class='action' src='img/fleche.jpg'> <img class='action' src='img/Br W.jpg'>Rouge</div>",
-    "effect3_FRA": "<img class='action' src='img/chargestat.png'>(Dépliés)" ,
+    "effect2_FRA": "<img class='inline-img' src='img/chargestatRed.png'><div>(Repliés) Tant que vous effectuez une attaque principale, si le défenseur n’est pas dans votre <img class='inline-img' src='img/bulls.jpg'>, lancez 1 dé d’attaque en moins. Ajoute <img class='inline-img' src='img/Br W.jpg'> , <img class='inline-img' src='img/eye.jpg'> <img class='inline-img' src='img/fleche.jpg'> <img class='inline-img' src='img/Br W.jpg'>Rouge</div>",
+    "effect3_FRA": "<img class='inline-img' src='img/chargestat.png'>(Dépliés)" ,
     "effect1_ENG":"(Integrated S-Foils) : ",
-    "effect2_ENG": "<img class='action' src='img/chargestatRed.png'><div>(Closed) While you perform a primary attack, if the defender is not in your <img class='inline-img' src='img/bulls.jpg'>, roll 1 fewer attack die.Add <img class='action' src='img/Br W.jpg'> , <img class='action' src='img/eye.jpg'><img class='action' src='img/fleche.jpg'>Red<img class='action' src='img/Br W.jpg'></div>",
-    "effect3_ENG": "<img class='action' src='img/chargestat.png'>(Opened)"
+    "effect2_ENG": "<img class='inline-img' src='img/chargestatRed.png'><div>(Closed) While you perform a primary attack, if the defender is not in your <img class='inline-img' src='img/bulls.jpg'>, roll 1 fewer attack die.Add <img class='inline-img' src='img/Br W.jpg'> , <img class='inline-img' src='img/eye.jpg'><img class='inline-img' src='img/fleche.jpg'>Red<img class='inline-img' src='img/Br W.jpg'></div>",
+    "effect3_ENG": "<img class='inline-img' src='img/chargestat.png'>(Opened)"
 
 },
 {
     "name": "Refined Gyrostabilizers",
     "id":29,
     "nbrOfEffects": 1,
-    "effect1ENG":"<div>(Refined Gyrostabilizers) : You can rotate your Turret Arc indicator only to your Front Arc or Rear Arc. After you perform an action, you may perform a red <img class='action' src='img/Bo W.jpg'> action or red <img class='action' src='img/Ra W.jpg'> action.</div>",
+    "effect1ENG":"<div>(Refined Gyrostabilizers) : You can rotate your Turret Arc indicator only to your Front Arc or Rear Arc. After you perform an action, you may perform a red <img class='inline-img' src='img/Bo W.jpg'> action or red <img class='inline-img' src='img/Ra W.jpg'> action.</div>",
     "effect1_FRA": "<div>(Gyrostabilisateurs Perfectionnés) : vous pouvez pivoter votre <img class='inline-img' src='img/AttackT.jpg'> uniquement vers votre <img class='inline-img' src='img/Farc.jpg'> ou <img class='inline-img' src='img/Barc.jpg'>. Après avoir effectué une action, vous pouvez effectuer une action rouge <img class='inline-img' src='img/Bo W.jpg'> ou <img class='inline-img' src='img/Ra W.jpg'> rouge.</div>",
     "effect2_FRA": "",
     "effect3_FRA": "",
@@ -377,11 +377,11 @@
     "id":34,
     "nbrOfEffects": 2,
     "effect1_FRA":"(Support d'Ancrage) : ",
-    "effect2_FRA": "<img class='action' src='img/chargestatRed.png'><div>(Replié) Après un mouvement, si vous chevauchez un astéroïde/débris, ignorez ses effets et changez de configuration.</div>",
-    "effect3_FRA": "<img class='action' src='img/chargestat.png'><div>(Déplié) Ignorez l'astéroïde/débris que vous chevauchez. Si vous révélez un virage, tournez de 90° dans la direction sélectionnée et ignorez la manoeuvre. Si vous révélez une manoeuvre <img class='inline-img' src='img/manSt2.jpg'>2, executez là puis changez de configuration. Si vous révélez toute autre manoeuvre, ne vous déplacez pas et ignorez la manoeuvre.</div>" ,
+    "effect2_FRA": "<img class='inline-img' src='img/chargestatRed.png'><div>(Replié) Après un mouvement, si vous chevauchez un astéroïde/débris, ignorez ses effets et changez de configuration.</div>",
+    "effect3_FRA": "<img class='inline-img' src='img/chargestat.png'><div>(Déplié) Ignorez l'astéroïde/débris que vous chevauchez. Si vous révélez un virage, tournez de 90° dans la direction sélectionnée et ignorez la manoeuvre. Si vous révélez une manoeuvre <img class='inline-img' src='img/manSt2.jpg'>2, executez là puis changez de configuration. Si vous révélez toute autre manoeuvre, ne vous déplacez pas et ignorez la manoeuvre.</div>" ,
     "effect1_ENG":"(Grappling Struts) : ",
-    "effect2_ENG": "<img class='action' src='img/chargestatRed.png'><div>(Folded) After a move, if you overlap an asteroid/debris, ignore its effects and change configuration.</div>",
-    "effect3_ENG": "<img class='action' src='img/chargestat.png'><div>(Unfolded) Ignore the asteroid/debris you overlap. If you reveal a turn, rotate 90° in the chosen direction and ignore the maneuver. If you reveal a <img class='inline-img' src='img/manSt2.jpg'>2 maneuver, execute it then change configuration. If you reveal any other maneuver, do not move and ignore the maneuver.</div>"
+    "effect2_ENG": "<img class='inline-img' src='img/chargestatRed.png'><div>(Folded) After a move, if you overlap an asteroid/debris, ignore its effects and change configuration.</div>",
+    "effect3_ENG": "<img class='inline-img' src='img/chargestat.png'><div>(Unfolded) Ignore the asteroid/debris you overlap. If you reveal a turn, rotate 90° in the chosen direction and ignore the maneuver. If you reveal a <img class='inline-img' src='img/manSt2.jpg'>2 maneuver, execute it then change configuration. If you reveal any other maneuver, do not move and ignore the maneuver.</div>"
 },
 {
     "name":"Pinpoint Tractor Array",
@@ -432,11 +432,11 @@
     "id":39,
     "nbrOfEffects": 2,
     "effect1_FRA":"(Stabilisateurs de Répulseurs) Avant votre activation, vous pouvez changer de configuration : ",
-    "effect2_FRA": "<img class='action' src='img/chargestatRed.png'><div>(Inactifs) Reduisez la difficulté de vos manoeuvres <img class='inline-img' src='img/manSt2.jpg'>.</div>",
-    "effect3_FRA": "<img class='action' src='img/chargestat.png'><div>(Actifs) Après avoir révélé une manoeuvre <img class='inline-img' src='img/manTl2.jpg'> / <img class='inline-img' src='img/manBl2.jpg'> / <img class='inline-img' src='img/manBr2.jpg'> / <img class='inline-img' src='img/manTl2.jpg'>, vous devez effectuer cette manoeuvre comme un dérapage, en augmentant sa difficulté./<div>",
+    "effect2_FRA": "<img class='inline-img' src='img/chargestatRed.png'><div>(Inactifs) Reduisez la difficulté de vos manoeuvres <img class='inline-img' src='img/manSt2.jpg'>.</div>",
+    "effect3_FRA": "<img class='inline-img' src='img/chargestat.png'><div>(Actifs) Après avoir révélé une manoeuvre <img class='inline-img' src='img/manTl2.jpg'> / <img class='inline-img' src='img/manBl2.jpg'> / <img class='inline-img' src='img/manBr2.jpg'> / <img class='inline-img' src='img/manTl2.jpg'>, vous devez effectuer cette manoeuvre comme un dérapage, en augmentant sa difficulté./<div>",
     "effect1_ENG":"(Repulsorlift Stabilizers) : ",
-    "effect2_ENG": "<img class='action' src='img/chargestatRed.png'><div>(Inactive) Reduce the difficulty of your <img class='inline-img' src='img/manSt2.jpg'> maneuvers.</div>",
-    "effect3_ENG": "<img class='action' src='img/chargestat.png'><div>(Active) After you reveal a <img class='inline-img' src='img/manTl2.jpg'> / <img class='inline-img' src='img/manBl2.jpg'> / <img class='inline-img' src='img/manBr2.jpg'> / <img class='inline-img' src='img/manTl2.jpg'> maneuver, you must perform that maneuver as a sideslip, increasing its difficulty.</div>"
+    "effect2_ENG": "<img class='inline-img' src='img/chargestatRed.png'><div>(Inactive) Reduce the difficulty of your <img class='inline-img' src='img/manSt2.jpg'> maneuvers.</div>",
+    "effect3_ENG": "<img class='inline-img' src='img/chargestat.png'><div>(Active) After you reveal a <img class='inline-img' src='img/manTl2.jpg'> / <img class='inline-img' src='img/manBl2.jpg'> / <img class='inline-img' src='img/manBr2.jpg'> / <img class='inline-img' src='img/manTl2.jpg'> maneuver, you must perform that maneuver as a sideslip, increasing its difficulty.</div>"
 
 },
 {
@@ -531,10 +531,10 @@
     "name":"Versatile Frame",
     "id":48,
     "nbrOfEffects": 1,
-    "effect1_FRA":"<div>(Chassis Polyvalent) : Lors que vous vous engagez, si vous avez un verrouillage sur le défenseur, vous pouvez attaquez avec vos <img class='inline-img' src='img/Torpedo.png'> comme une attaque secondaire. Tant que votre manoeuvre révélée est bleue, ajoutez l'action <img class='action' src='img/Bo W.jpg'> à votre barre d'action.</div>",
+    "effect1_FRA":"<div>(Chassis Polyvalent) : Lors que vous vous engagez, si vous avez un verrouillage sur le défenseur, vous pouvez attaquez avec vos <img class='inline-img' src='img/Torpedo.png'> comme une attaque secondaire. Tant que votre manoeuvre révélée est bleue, ajoutez l'action <img class='inline-img' src='img/Bo W.jpg'> à votre barre d'action.</div>",
     "effect2_FRA": "",
     "effect3_FRA": "",
-    "effect1_ENG":"<div>(Versatile Frame) : When you engage, if you have a lock on the defender, you may attack with your <img class='inline-img' src='img/Torpedo.png'> as a secondary attack. When your revealed maneuver is blue, add the <img class='action' src='img/Bo W.jpg'> to your action bar.</div>",
+    "effect1_ENG":"<div>(Versatile Frame) : When you engage, if you have a lock on the defender, you may attack with your <img class='inline-img' src='img/Torpedo.png'> as a secondary attack. When your revealed maneuver is blue, add the <img class='inline-img' src='img/Bo W.jpg'> to your action bar.</div>",
     "effect2_ENG": "",
     "effect3_ENG": "" 
 },
@@ -621,11 +621,11 @@
     "id":56,
     "nbrOfEffects": 2,
     "effect1_FRA":"(Ailes Repliantes) Avant votre activation, vous pouvez changer de configuration : ",
-    "effect2_FRA": "<img class='action' src='img/chargestatRed.png'><div>(Pliées) Vous pouvez attaquer uniquement dans votre <img class='inline-img' src='img/bulls.jpg'>.<br>Lorsque vous défendez, lancez 1 dé de défense en plus.</div>",
-    "effect3_FRA": "<img class='action' src='img/chargestat.png'><div>(Dépliées) Considérez vos attaques <img class='inline-img' src='img/Farc.jpg'> comme des attaques <img class='inline-img' src='img/bulls.jpg'>.<br>En phase de fin, récupérez 1 <img class='inline-img' src='img/charge.jpg'> sur vos 'Turbo-Propulseurs'.</div>" ,
+    "effect2_FRA": "<img class='inline-img' src='img/chargestatRed.png'><div>(Pliées) Vous pouvez attaquer uniquement dans votre <img class='inline-img' src='img/bulls.jpg'>.<br>Lorsque vous défendez, lancez 1 dé de défense en plus.</div>",
+    "effect3_FRA": "<img class='inline-img' src='img/chargestat.png'><div>(Dépliées) Considérez vos attaques <img class='inline-img' src='img/Farc.jpg'> comme des attaques <img class='inline-img' src='img/bulls.jpg'>.<br>En phase de fin, récupérez 1 <img class='inline-img' src='img/charge.jpg'> sur vos 'Turbo-Propulseurs'.</div>" ,
     "effect1_ENG":"(Folding Wings) : ",
-    "effect2_ENG": "<img class='action' src='img/chargestatRed.png'><div>(Folded) You can only attack in your <img class='inline-img' src='img/bulls.jpg'>.<br>When you defend, roll 1 additional defense die.</div>",
-    "effect3_ENG": "<img class='action' src='img/chargestat.png'><div>(Unfolded) Treat your <img class='inline-img' src='img/Farc.jpg'> attacks as <img class='inline-img' src='img/bulls.jpg'> attacks.<br>During the end phase, recover 1 <img class='inline-img' src='img/charge.jpg'> on your 'Turbo Thrusters'.</div>"
+    "effect2_ENG": "<img class='inline-img' src='img/chargestatRed.png'><div>(Folded) You can only attack in your <img class='inline-img' src='img/bulls.jpg'>.<br>When you defend, roll 1 additional defense die.</div>",
+    "effect3_ENG": "<img class='inline-img' src='img/chargestat.png'><div>(Unfolded) Treat your <img class='inline-img' src='img/Farc.jpg'> attacks as <img class='inline-img' src='img/bulls.jpg'> attacks.<br>During the end phase, recover 1 <img class='inline-img' src='img/charge.jpg'> on your 'Turbo Thrusters'.</div>"
 },
 {
     "name":"Night Buzzard",
@@ -653,10 +653,10 @@
  "name":"Intercept Booster",
  "id":59,
  "nbrOfEffects":1,
- "effect1_FRA":"<img class='chargeforceimg' src='img/chargestat.png'><img class='chargeforceimg' src='img/chargestat.png'><img class='chargeforceimg' src='img/chargeminus.png'><div>(Propulseur d'Interception) : Tant que vous avez une charge active, vous pouvez effectuer les actions : <img class='action' src='Sl W.jpg><img class='action' src='fleche.jpg><img class='action' src='Lo W.jpg>Rouge</div>",
+ "effect1_FRA":"<img class='chargeforceimg' src='img/chargestat.png'><img class='chargeforceimg' src='img/chargestat.png'><img class='chargeforceimg' src='img/chargeminus.png'><div>(Propulseur d'Interception) : Tant que vous avez une charge active, vous pouvez effectuer les actions : <img class='inline-img' src='Sl W.jpg><img class='inline-img' src='fleche.jpg><img class='inline-img' src='Lo W.jpg>Rouge</div>",
  "effect2_FRA": "",
  "effect3_FRA": "",
-    "effect1_ENG":"<img class='chargeforceimg' src='img/chargestat.png'><img class='chargeforceimg' src='img/chargestat.png'><img class='chargeforceimg' src='img/chargeminus.png'><div>(Intercept Booster) : While you have an active charge, you may perform the actions: <img class='action' src='Sl W.jpg><img class='action' src='fleche.jpg>Red<img class='action' src='Lo W.jpg></div>",
+    "effect1_ENG":"<img class='chargeforceimg' src='img/chargestat.png'><img class='chargeforceimg' src='img/chargestat.png'><img class='chargeforceimg' src='img/chargeminus.png'><div>(Intercept Booster) : While you have an active charge, you may perform the actions: <img class='inline-img' src='Sl W.jpg><img class='inline-img' src='fleche.jpg>Red<img class='inline-img' src='Lo W.jpg></div>",
     "effect2_ENG": "",
     "effect3_ENG": ""
 },
@@ -676,11 +676,11 @@
  "id":61,
  "nbrOfEffects":2,
  "effect1_FRA":"(Boucliers Rétractables) En phase système, vous pouvez changer de configuration: ",
- "effect2_FRA": "<img class='action' src='img/chargestatRed.png'><div>(Repliés) Lorsque vous défendez, considérez que vous êtes renforcé. Vous ne pouvez plus faire de <img class='inline-img' src='img/Br W.jpg'>.</div>",
- "effect3_FRA": "<img class='action' src='img/chargestat.png'><div>(Dépliés) Lorsque vous attaquez, lancez 2 dés supplémentaires.<div>",
+ "effect2_FRA": "<img class='inline-img' src='img/chargestatRed.png'><div>(Repliés) Lorsque vous défendez, considérez que vous êtes renforcé. Vous ne pouvez plus faire de <img class='inline-img' src='img/Br W.jpg'>.</div>",
+ "effect3_FRA": "<img class='inline-img' src='img/chargestat.png'><div>(Dépliés) Lorsque vous attaquez, lancez 2 dés supplémentaires.<div>",
  "effect1_ENG":"(Shield Struts) : ",
- "effect2_ENG":  "<img class='action' src='img/chargestatRed.png'><div>(Retracted) When you defend, consider yourself as reinforced. You cannot perform <img class='inline-img' src='img/Br W.jpg'>.</div>",
- "effect3_ENG": "<img class='action' src='img/chargestat.png'> (Deployed) When you attack, roll 2 additional dice."
+ "effect2_ENG":  "<img class='inline-img' src='img/chargestatRed.png'><div>(Retracted) When you defend, consider yourself as reinforced. You cannot perform <img class='inline-img' src='img/Br W.jpg'>.</div>",
+ "effect3_ENG": "<img class='inline-img' src='img/chargestat.png'> (Deployed) When you attack, roll 2 additional dice."
 
 },
 {
