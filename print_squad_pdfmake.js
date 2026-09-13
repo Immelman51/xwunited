@@ -236,7 +236,10 @@ function buildSingleStatCell(stat) {
       { image: stat.chemin, fit: [cm(0.35), cm(0.35)] },
     ],
     columnGap: 0,
-    verticalAlignment: 'center',
+    // verticalAlignment ne fonctionne pas de façon fiable sur du contenu
+    // columns (déjà rencontré pour les upgrades) -> on pousse manuellement
+    // vers le bas via une marge. Augmente/réduis cette valeur pour ajuster.
+    margin: [0, cm(0.1), 0, 0],
   };
 }
 
