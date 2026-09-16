@@ -4247,9 +4247,9 @@
              "add_Data": [0],
              "force": 0,
              "charge": [0],
-             "points":3,
-             "effect_FRA": "Début de la Mise en Place : Votre adversaire assigne la condition 'Mission Sauvetage d'Otage' à l'un de ses vaisseaux.<br>Mission Sauvetage d'Otage : A la fin du jeu, gagnez 3 PO. Lorsque vous êtes détruit, larguez une 'Capsule de l'Otage' à portée 1 de vous et perdez la condition 'MSO'.<br>Capsule de l'Otage : (Satellite) Quand un vaisseau est à portée 0-1, il peut effectuer une action de sauvetage : (ACTION SCENARIO) : Assignez la condition 'MSO' à votre vaisseau, et remettez la capsule de l'otage en réserve.",
-             "effect_ENG": "Beginning of Setup : Your opponent assign the 'Hostage Rescue Mission' condition to one of his ships.<br>Hostage Rescue Mission : At the end of the game, gain 3 PO. When you are destroyed, drop a 'Hostage Capsule' at range 1 of you and lose the 'HRM' condition.<br>Hostage Capsule : (Remote) When a ship is at range 0-1, it can do a rescue action : (SCENARIO ACTION) : assign the 'HRM' condition to your ship, and put the Hostage Capsule into Reserve.",
+             "points":2,
+             "effect_FRA": "Début de la Mise en Place : Votre adversaire assigne la condition 'Mission Sauvetage d'Otage' à l'un de ses vaisseaux.",
+             "effect_ENG": "Beginning of Setup : Your opponent assign the 'Hostage Rescue Mission' condition to one of his ships.",
              "faction": ["Clone_Army"] ,
              "modifier_func":[
                  ["add_slot","Condition"],
@@ -6244,7 +6244,7 @@
              "slot": "Gunner",
              "add_Data": [0],
              "charge": [0],
-             "points": 3,
+             "points": 5,
              "force":1,
              "effect_FRA": "Lorsque vous attaquez un vaisseau avec un jeton orange, vous pouvez dépenser 1 <img class='inline-img' src='img/fo.jpg'> pour dégrader 1 dé de défense du défenseur.",
              "effect_ENG": "When you perform an attack againt a ship with an orange token, you may spend 1 <img class='inline-img' src='img/fo.jpg'> to downgrade 1 defense die from the defender.",
@@ -6262,10 +6262,10 @@
              "slot": "Crew",
              "add_Data": [0],
              "charge": [0],
-             "points": 0,
+             "points": 5,
              "force":1,
-             "effect_FRA": "Ajoute 1 emplacement de type 'Force-Dark'.",
-             "effect_ENG": "Add 1 'Force-Dark' slot.",
+             "effect_FRA": "Ajoute 1 emplacement de type 'Force-Dark'. Lorsque vous récupérez un point de force, vous pouvez retirer un marqueur de contrainte ou d'épuisement.",
+             "effect_ENG": "Add 1 'Force-Dark' slot. When you recover 1 force point, you may remove 1 strain or deplete token.",
              "faction": ["Shadow_Specialists"],
              "modifier_func": [
                  ["add_slots","Force-Dark"],
@@ -6337,15 +6337,19 @@
              "id":360,
              "max_per_squad":1,
              "available":true,
-             "modify":false,
+             "modify":true,
              "slot": "Crew",
              "add_Data": [0],
              "force":1,
              "charge": [0],
-             "points": 0,
-             "effect_FRA": "??",
-             "effect_ENG": "??",
-             "faction": ["Imperial_Remnants"]
+             "points": 5,
+             "effect_FRA": "Ajoute un emplacement 'Force-Dark'. Lorsque vous dépensez 1 ou plusieurs points de force, vous pouvez choisir un vaisseau ennemi à portée 0-2. Dans ce cas, ce vaisseau doit immédiatement planifier sa prochaine manoeuvre et ne peut plus la modifier tant qu'elle n'a pas été révélée.",
+             "effect_ENG": "Add a 'Force-Dark' slot. When you spend 1 or several force points, you may choose an enemy ship at range 0-2. If you do, this ship must select its next maneuver, and he cannot modify its dial until it is revealed.",
+             "faction": ["Imperial_Remnants"],
+             "modifier_func": [
+                 ["add_slots","Force-Dark"],
+                 ["may_remove_slots","Force-Dark"]
+             ]
                                  
              
          },
@@ -6359,10 +6363,10 @@
              "slot": "Crew",
              "add_Data": [0],
              "force": 0,
-             "charge": [0],
-             "points": 0,
-             "effect_FRA": "??",
-             "effect_ENG": "??",
+             "charge": [1,"0"],
+             "points": 2,
+             "effect_FRA": "Lorsqu'un vaisseau ennemi à portée 0-3 utilise un point de force, vous pouvez récupérez votre <img class='chargeforceimg' src='img/charge.png'>. En phase système, vous pouvez dépensez 1 <img class='chargeforceimg' src='img/charge.png'> pour aquérir une cible à portée 0-3.",
+             "effect_ENG": "When an enemy ship at range 0-3 spends a force point, you may recover a <img class='chargeforceimg' src='img/charge.png'>. During System Phase, you may spend 1 <img class='chargeforceimg' src='img/charge.png'> to gain a lock on a target at range 0-3.",
              "faction": ["Imperial_Remnants"]
                                      
              
@@ -6378,9 +6382,9 @@
              "add_Data": [0],
              "force": 0,
              "charge": [0],
-             "points": 0,
-             "effect_FRA": "??",
-             "effect_ENG": "??",
+             "points": 5,
+             "effect_FRA": "Lorsque vous vous engagez, lorsque vous déclarez la cible de votre attaque, celle ci choisit si elle reçoit un marqueur de stress, contrainte ou épuisement.",
+             "effect_ENG": "When you engage, when you declare your attack target, it chooses to receive a stress or strain or deplete token.",
              "faction": ["Imperial_Remnants"],
              "restrictions":[1,"upgrade","Gunner",""],
              "modifier_func":[
@@ -6590,8 +6594,8 @@
             "force": 0,
             "charge": [0],
             "points": 0,
-            "effect_FRA": "",
-            "effect_ENG": "",
+            "effect_FRA": "Mission Sauvetage d'Otage : A la fin du jeu, gagnez 3 PO. Lorsque vous êtes détruit, larguez une 'Capsule de l'Otage' à portée 1 de vous et perdez la condition 'MSO'.<br>Capsule de l'Otage : (Satellite) Quand un vaisseau est à portée 0-1, il peut effectuer une action de sauvetage : (ACTION SCENARIO) : Assignez la condition 'MSO' à votre vaisseau, et remettez la capsule de l'otage en réserve.",
+            "effect_ENG": "<br>Hostage Rescue Mission : At the end of the game, gain 3 PO. When you are destroyed, drop a 'Hostage Capsule' at range 1 of you and lose the 'HRM' condition.<br>Hostage Capsule : (Remote) When a ship is at range 0-1, it can do a rescue action : (SCENARIO ACTION) : assign the 'HRM' condition to your ship, and put the Hostage Capsule into Reserve.",
             "faction": ""
         },
         {
