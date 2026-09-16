@@ -132,7 +132,7 @@ function buildSingleActionCell(action) {
   return {
     columns: [
       { image: chemin1, fit: [cm(0.45), cm(0.45)] },
-      { image: 'img/fleche.jpg', fit: [cm(0.2), cm(0.45)] },
+      { image: 'img/fleche.jpg', fit: [cm(0.2), cm(0.45)], alignment: 'center' },
       { image: chemin2, fit: [cm(0.45), cm(0.45)] },
     ],
     columnGap: 1,
@@ -354,6 +354,29 @@ const LAYOUT_BORDURE_EXTERIEURE = {
   paddingBottom: () => 0,
 };
 
+/**
+ * Layout du tableau pilote : pourtour extérieur + lignes internes de la case
+ * stats/actions, dessinées en UNE SEULE FOIS par ce tableau (et non par les
+ * mini-tableaux stat/action empilés eux-mêmes). Avant, chaque mini-tableau
+ * ("Haut"/"Bas") dessinait sa propre bordure partielle, et la "couture"
+ * entre les deux (ou avec le pourtour du tableau pilote) pouvait laisser un
+ * petit trou / décalage. En centralisant tout ici, il n'y a plus qu'une
+ * seule entité responsable de chaque ligne -> plus de couture possible.
+ *  - lignes horizontales i=1 et i=3 : haut et bas de la case stats/actions
+ *    (ligne1 = index0, bloc"2-4"=index1, bloc"5-7"=index2, upgrades=index3+)
+ *  - lignes verticales i=1 et i=17 : droite des stats, gauche des actions
+ */
+const LAYOUT_BORDURE_PILOTE = {
+  hLineWidth: (i, node) => (i === 0 || i === 1 || i === 3 || i === node.table.body.length ? 1 : 0),
+  vLineWidth: (i, node) => (i === 0 || i === 1 || i === 17 || i === node.table.widths.length ? 1 : 0),
+  hLineColor: () => 'black',
+  vLineColor: () => 'black',
+  paddingLeft: () => 0,
+  paddingRight: () => 0,
+  paddingTop: () => 0,
+  paddingBottom: () => 0,
+};
+
 function ligneLargeurFixe(cellules, largeursCm, hauteurCm) {
   return {
     table: {
@@ -492,13 +515,13 @@ function buildPilotTable(x) {
     [buildSingleStatCell(statsList[0]), buildSingleStatCell(statsList[1]), buildSingleStatCell(statsList[2])],
     1,
     0.5,
-    { haut: true, bas: false, gauche: false, droite: true } // gauche = bordure du tableau principal, pas de doublon
+    { haut: false, bas: false, gauche: false, droite: false } // bordures désormais dessinées par LAYOUT_BORDURE_PILOTE
   );
   const actionBlockHaut = celluleEmpileeLargeurFixe(
     [buildSingleActionCell(actionsArray[0]), buildSingleActionCell(actionsArray[1]), buildSingleActionCell(actionsArray[2])],
     2,
     0.5,
-    { haut: true, bas: false, gauche: true, droite: false } // droite = bordure du tableau principal, pas de doublon
+    { haut: false, bas: false, gauche: false, droite: false }
   );
   body.push([
     { ...statBlockHaut, verticalAlignment: 'center' },
@@ -517,13 +540,13 @@ function buildPilotTable(x) {
     [buildSingleStatCell(statsList[3]), buildSingleStatCell(statsList[4]), emptyCell()],
     1,
     0.5,
-    { haut: false, bas: true, gauche: false, droite: true }
+    { haut: false, bas: false, gauche: false, droite: false }
   );
   const actionBlockBas = celluleEmpileeLargeurFixe(
     [buildSingleActionCell(actionsArray[3]), buildSingleActionCell(actionsArray[4]), buildSingleActionCell(actionsArray[5])],
     2,
     0.5,
-    { haut: false, bas: true, gauche: true, droite: false }
+    { haut: false, bas: false, gauche: false, droite: false }
   );
   const ligneMilieu5 =
     ligne7_9.type === 'unique'
@@ -583,7 +606,7 @@ function buildPilotTable(x) {
       heights,
       body,
     },
-    layout: LAYOUT_BORDURE_EXTERIEURE,
+    layout: LAYOUT_BORDURE_PILOTE,
     margin: [0, 0, 0, cm(1)],
   };
 }
