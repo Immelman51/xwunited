@@ -23,10 +23,10 @@
         "name": "Customized Weapons",
         "id": 2,
         "nbrOfEffects": 1,
-        "effect1_FRA": "<div>(Armes Personnalisées) : Les <img class='inline-img' src='img/Turret.png'> et <img class='inline-img' src='img/Cannon.png'> que vous équippez sont considérées comme votre arme principale, et sont toujours considérées comme des armes secondaires. Lorsque vous attaquez avec, vous choisissez si vous les utilisez comme arme principale (bonus de portée actif) ou secondaire.</div>",
+        "effect1_FRA": "<div>(Armes Personnalisées) : Les <img class='inline-img' src='img/Turret.png'> et <img class='inline-img' src='img/Cannon.png'> que vous équippez sont considérées comme votre arme principale, et sont toujours considérées comme des armes spéciales. Lorsque vous attaquez avec, vous choisissez si vous les utilisez comme arme principale (bonus de portée actif) ou spéciale.</div>",
         "effect2_FRA": "",
         "effect3_FRA": "",
-        "effect1_ENG": "<div>(Customized Weapons) : The <img class='inline-img' src='img/Turret.png'> and <img class='inline-img' src='img/Cannon.png'> you equip are treated as your primary weapon, and are always treated as secondary weapons. When you attack with them, you choose whether to use them as a primary weapon (with primary weapon range bonus active) or as a secondary weapon.</div>" ,
+        "effect1_ENG": "<div>(Customized Weapons) : The <img class='inline-img' src='img/Turret.png'> and <img class='inline-img' src='img/Cannon.png'> you equip are treated as your primary weapon, and are always treated as special weapons. When you attack with them, you choose whether to use them as a primary weapon (with primary weapon range bonus active) or as a special weapon.</div>" ,
         "effect2_ENG": "",
         "effect3_ENG": "" 
     },
@@ -68,10 +68,10 @@
         "id": 6,
         "nbrOfEffects": 2,
         "effect1_FRA": "(S-Foils Stabilisés) Avant votre activation, vous pouvez changer de configuration:",
-        "effect2_FRA": "<img class='inline-img' src='img/chargestat.png'>(Dépliés) Après avoir effectué une attaque principale, vous pouvez dépenser votre verrouillage sur le défenseur pour effectuer une attaque secondaire bonus contre ce vaisseau.",
+        "effect2_FRA": "<img class='inline-img' src='img/chargestat.png'>(Dépliés) Après avoir effectué une attaque principale, vous pouvez dépenser votre verrouillage sur le défenseur pour effectuer une attaque spéciale bonus contre ce vaisseau.",
         "effect3_FRA": "<img class='inline-img' src='img/chargestatRed.png'><div>(Repliés) Lorsque vous attaquez, si la cible n'est pas dans votre <img class='inline-img' src='img/bulls.jpg'>, lancez 1 dé de moins. Ajoute <img class='inline-img' src='img/evd.jpg'> , <img class='inline-img' src='img/Br W.jpg'><img class='inline-img' src='img/fleche.jpg'><img class='inline-img' src='img/evd.jpg'>Rouge</div>",
         "effect1_ENG": "(Stabilized S-Foils) :",
-        "effect2_ENG": "<img class='inline-img' src='img/chargestat.png'>(Opened) After you perform a primary attack, you may spend your lock on the defender to perform a bonus secondary attack against that ship.",
+        "effect2_ENG": "<img class='inline-img' src='img/chargestat.png'>(Opened) After you perform a primary attack, you may spend your lock on the defender to perform a bonus special attack against that ship.",
         "effect3_ENG": "<img class='inline-img' src='img/chargestatRed.png'><div>(Closed) When you attack, if the target is not in your <img class='inline-img' src='img/bulls.jpg'>, roll 1 fewer die. Add <img class='inline-img' src='img/evd.jpg'> , <img class='inline-img' src='img/Br W.jpg'><img class='inline-img' src='img/fleche.jpg'>Red<img class='inline-img' src='img/evd.jpg'></div>"
     },
     {
@@ -531,10 +531,10 @@
     "name":"Versatile Frame",
     "id":48,
     "nbrOfEffects": 1,
-    "effect1_FRA":"<div>(Chassis Polyvalent) : Lors que vous vous engagez, si vous avez un verrouillage sur le défenseur, vous pouvez attaquez avec vos <img class='inline-img' src='img/Torpedo.png'> comme une attaque secondaire. Tant que votre manoeuvre révélée est bleue, ajoutez l'action <img class='inline-img' src='img/Bo W.jpg'> à votre barre d'action.</div>",
+    "effect1_FRA":"<div>(Chassis Polyvalent) : Lors que vous vous engagez, si vous avez un verrouillage sur le défenseur, vous pouvez attaquez avec vos <img class='inline-img' src='img/Torpedo.png'> comme une attaque spéciale. Tant que votre manoeuvre révélée est bleue, ajoutez l'action <img class='inline-img' src='img/Bo W.jpg'> à votre barre d'action.</div>",
     "effect2_FRA": "",
     "effect3_FRA": "",
-    "effect1_ENG":"<div>(Versatile Frame) : When you engage, if you have a lock on the defender, you may attack with your <img class='inline-img' src='img/Torpedo.png'> as a secondary attack. When your revealed maneuver is blue, add the <img class='inline-img' src='img/Bo W.jpg'> to your action bar.</div>",
+    "effect1_ENG":"<div>(Versatile Frame) : When you engage, if you have a lock on the defender, you may attack with your <img class='inline-img' src='img/Torpedo.png'> as a special attack. When your revealed maneuver is blue, add the <img class='inline-img' src='img/Bo W.jpg'> to your action bar.</div>",
     "effect2_ENG": "",
     "effect3_ENG": "" 
 },
