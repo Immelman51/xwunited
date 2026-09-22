@@ -3571,7 +3571,7 @@
     "name_FRA": "Calculs en Réseau",
     "name_ENG": "Networked Calculations",
     "id": 205,
-    "available":false,
+    "available":true,
     "modify":false,
     "slot": "Calculator",
     "add_Data": [0],
