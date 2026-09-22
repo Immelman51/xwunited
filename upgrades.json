@@ -2819,23 +2819,26 @@
             "name_ENG": "Independant Calculation",
             "id": 163,
             "max_per_squad": 8,
-            "available": true, 
+            "available": false,
             "modify": false,
-            "slot": "Modification",
+            "slot": "Calculator",
             "add_Data": [0],
             "force": 0,
             "charge": [0],
             "points": 1,
-            "faction": ["Trade_Federation","Agents_of_Chaos","Separatist_Government"],
-            "effect_FRA": "Remplacez votre capacité de vaisseau Calculs en Réseau par la suivante : tant que vous effectuez une action blanche <img class='chargeforceimg' src='img/calc.jpg'>, vous pouvez la considérer comme rouge pour gagner 1 marqueur de calcul supplémentaire. Les autres vaisseaux ne peuvent pas dépenser vos marqueurs de calcul en utilisant la capacité de vaisseau Calculs en Réseau.",
-            "effect_ENG": "Replace yout ship ability 'Networked Calculations' by this : while you perform a white <img class='chargeforceimg' src='img/calc.jpg'> action, you may consider it as red to gain 1 additional calculate token. Other ships cannot spend your calculate tokens using their ship ability 'Networked Calculations'.",
-            "restrictions": [1,"chassis","Networked Calculations",""]
+            "faction": ["Trade_Federation","Separatist_Government"],
+            "effect_FRA": "Tant que vous effectuez une action blanche <img class='chargeforceimg' src='img/calc.jpg'>, vous pouvez la considérer comme rouge pour gagner 1 marqueur de calcul supplémentaire. Les autres vaisseaux ne peuvent pas dépenser vos marqueurs de calcul en utilisant l'amélioration Calculs en Réseau.",
+            "effect_ENG": "While you perform a white <img class='chargeforceimg' src='img/calc.jpg'> action, you may consider it as red to gain 1 additional calculate token. Other ships cannot spend your calculate tokens using their upgrade 'Networked Calculations'.",
+            "restrictions": [1,"upgrade","Calculator",""],
+            "modifier_func": [
+            ["also_Occupies","Calculator"]
+            ]
         },
         {
             "name_FRA": "Kalani",
             "name_ENG": "Kalani",
             "id": 164,
-            "available": true, 
+            "available": false,
             "modify":true,
             "slot": "Crew",
             "max_per_squad": 1,
@@ -2847,8 +2850,7 @@
             "effect_FRA": "Après qu’un vaisseau ennemi a exécuté une manœuvre, s’il est dans le <img class='chargeforceimg' src='img/bulls.jpg'> d’un vaisseau allié à portée 0–3, vous pouvez dépenser 1 <img class='chargeforceimg' src='img/charge.png'>. Dans ce cas, ce vaisseau allié verrouille ce vaisseau ennemi, puis gagne 1 marqueur de stress.",
             "effect_ENG": "After an enemy ship executes a maneuver, if it is in the <img class='chargeforceimg' src='img/bulls.jpg'> of a friendly ship at range 0-3, you may spend 1 <img class='chargeforceimg' src='img/charge.png'>. If you do, this friendly ship locks this enemy ship, then receive 1 stress token.",
             "modifier_func": [
-            ["also_Occupies","Calculator"],
-            [0,"add_action",[0,"Cc W"]]
+            ["also_Occupies","Calculator"]
             ],
             "restrictions": [1,"upgrade","Calculator",""]
         },
@@ -2907,12 +2909,10 @@
             "charge": [0],
             "points": 5,
             "faction": ["Trade_Federation","Separatist_Government"],
-            "effect_FRA": "Vous gagnez la capacité 'Calculs en Réseau'. Après qu'un vaisseau allié à portée 0-3 avec <img class='chargeforceimg' src='img/calc.jpg'> dans sa barre d'action a été détruit, chaque vaisseau allié à portée 0-3 avec <img class='chargeforceimg' src='img/calc.jpg'> dans sa barre d'action gagne 1 marqueur de calcul.",
-            "effect_ENG": "You gain the 'Networked Calculation' ship ability. After a friendly ship at range 0-3 with <img class='chargeforceimg' src='img/calc.jpg'> in its action bar has been destroyed, each friendly ship at range 0-3 with <img class='chargeforceimg' src='img/calc.jpg'> in its action bar receives 1 calculate token.",
+            "effect_FRA": "Après qu'un vaisseau allié à portée 0-3 avec <img class='chargeforceimg' src='img/calc.jpg'> dans sa barre d'action a été détruit, chaque vaisseau allié à portée 0-3 avec <img class='chargeforceimg' src='img/calc.jpg'> dans sa barre d'action gagne 1 marqueur de calcul.",
+            "effect_ENG": "After a friendly ship at range 0-3 with <img class='chargeforceimg' src='img/calc.jpg'> in its action bar has been destroyed, each friendly ship at range 0-3 with <img class='chargeforceimg' src='img/calc.jpg'> in its action bar receives 1 calculate token.",
             "modifier_func": [
-                ["also_Occupies","Calculator"],
-                [0,"add_action",[0,"Cc W"]],
-                [0,"change_chassis",17]
+                ["also_Occupies","Calculator"]
             ],
             "restrictions": [1,"upgrade","Calculator",""]
         },
@@ -3580,7 +3580,6 @@
     "points": 0,
     "max_per_squad":8,
     "faction":["Trade_Federation","Separatist_Government"],
-    "ship": "YT-1300 Light Freighter",
     "effect_FRA": "Lorsque vous défendez ou attaquez, you pouvez dépenser 1 jeton calcul d'un vaisseau allié à portée 0-1 pour modifier 1 résultat <img class='inline-img' src='img/eye.jpg'> en résultat <img class='inline-img' src='img/hit.jpg'> ou <img class='inline-img' src='img/evd.jpg'>.",
     "effect_ENG": "When you defend or attack, you may spend 1 calculate token from an allied ship at range 0-1 to change 1 <img class='inline-img' src='img/eye.jpg'> result to a <img class='inline-img' src='img/hit.jpg'> or <img class='inline-img' src='img/evd.jpg'> result."
 },
