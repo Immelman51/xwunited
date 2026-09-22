@@ -3568,25 +3568,21 @@
 "effect_FRA": "Ajoute 1 emplacement <img class='chargeforceimg' src='img/Sensor.jpg'>."    
 },
 {
-    "name_FRA": "Système d'arrimage (pas utilisé)",
-    "name_ENG": "Docking System (not used)",
+    "name_FRA": "Calculs en Réseau",
+    "name_ENG": "Networked Calculations",
     "id": 205,
     "available":false,
-    "modify":true,
-    "slot": "Special",
+    "modify":false,
+    "slot": "Calculator",
     "add_Data": [0],
     "force": 0,
     "charge": [0],
-    "points": 1,
+    "points": 0,
     "max_per_squad":8,
-    "faction":["Pirates_and_Smugglers"],
+    "faction":["Trade_Federation","Separatist_Government"],
     "ship": "YT-1300 Light Freighter",
-    "effect_FRA": "Ajoute la capacité de chassis 'Vaisseau-Mère'. Vous pouvez arrimer une Navette de Secours à votre vaisseau.",
-    "effect_ENG": "This upgrade is not implemented. Add the 'Docking Ship' chassis ability. You may dock an Escape Craft to your ship",
-    "restrictions":[1,"ship","YT-1300 Light Freighter",""],
-    "modifier_func": [
-        [0,"changeChassis", 16]
-    ]
+    "effect_FRA": "Lorsque vous défendez ou attaquez, you pouvez dépenser 1 jeton calcul d'un vaisseau allié à portée 0-1 pour modifier 1 résultat <img class='inline-img' src='img/eye.jpg'> en résultat <img class='inline-img' src='img/hit.jpg'> ou <img class='inline-img' src='img/evd.jpg'>.",
+    "effect_ENG": "When you defend or attack, you may spend 1 calculate token from an allied ship at range 0-1 to change 1 <img class='inline-img' src='img/eye.jpg'> result to a <img class='inline-img' src='img/hit.jpg'> or <img class='inline-img' src='img/evd.jpg'> result."
 },
 {
     "name_FRA": "Missile Ionique",

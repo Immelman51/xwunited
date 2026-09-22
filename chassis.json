@@ -44,13 +44,13 @@
     {
         "name": "Pivot Wing",
         "id": 4,
-        "nbrOfEffects": 2,
-        "effect1_FRA": "(Aile Pivot) Avant votre activation, vous pouvez changer de configuration :",
-        "effect2_FRA": "<img class='chargeforceimg' src='img/chargestatRed.png'><div>(Relevée) : Après avoir executé une manoeuvre 0<img class='inline-img' src='img/manOp2.jpg'>, vous pouvez pivoter votre vaisseau de 90° ou 180°. Tant que vous défendez, lancez 1 dé de défense en moins.</div>",
-        "effect3_FRA": "<img class='chargeforceimg' src='img/chargestat.png'>(Baissée)",
-        "effect1_ENG": "(Pivot Wing) :",
-        "effect2_ENG": "<img class='chargeforceimg' src='img/chargestatRed.png'><div>(Raised) : After you execute a 0<img class='inline-img' src='img/manOp2.jpg'> maneuver, you may rotate your ship 90° or 180°. While you defend, roll 1 fewer die.</div>",
-        "effect3_ENG": "<img class='chargeforceimg' src='img/chargestat.png'>(Lowered)"
+        "nbrOfEffects": 1,
+        "effect1_FRA": "(Aile Pivot) : Après avoir exécuté une manoeuvre 0<img class='inline-img' src='img/manOp2.jpg'>, vous pouvez gagner 2 jetons contrainte. Dans ce cas, vous pouvez pivoter votre vaisseau de 90° ou 180°",
+        "effect2_FRA": "",
+        "effect3_FRA": "",
+        "effect1_ENG": "(Pivot Wing) : After you perform a 0<img class='inline-img' src='img/manOp2.jpg'>, maneuver, you may receive 2 strain tokens. If you do, you may rotate your ship 90° or 180°.",
+        "effect2_ENG": "",
+        "effect3_ENG": ""
     },
     {
         "name": "Vectored Thrusters",
@@ -185,7 +185,7 @@
         "effect3_ENG": "" 
     },
 {
-    "name": "Networked Calculations",
+    "name": "Networked Calculations (not used, became a calculator upgrade for trade federation)",
     "id":17,
     "nbrOfEffects": 1,
     "effect1_FRA":"<div>(Calculs en Réseau) :  Lorsque vous défendez ou attaquez, you pouvez dépenser 1 jeton calcul d'un vaisseau allié à portée 0-1 pour modifier 1 résultat <img class='inline-img' src='img/eye.jpg'> en résultat <img class='inline-img' src='img/hit.jpg'> ou <img class='inline-img' src='img/evd.jpg'>.</div>",
@@ -229,7 +229,7 @@
     "effect3_ENG": "" 
 },
 {
-    "name": "Weapon Hardpoint",
+    "name": "Weapon Hardpoint (not used, upgrade slot weapon hardpoint is enough",
     "id":21,
     "nbrOfEffects": 1,
     "effect1_FRA":"<div>(Emplacement d’Arme) : Vous pouvez vous équiper de 1 amélioration <img class='inline-img' src='img/Cannon.png'>, <img class='inline-img' src='img/Torpedo.png'>, ou <img class='inline-img' src='img/Missile.png'>.</div>",
@@ -430,13 +430,13 @@
 {
     "name":"Repulsorlift Stabilizers",
     "id":39,
-    "nbrOfEffects": 2,
-    "effect1_FRA":"(Stabilisateurs de Répulseurs) Avant votre activation, vous pouvez changer de configuration : ",
-    "effect2_FRA": "<img class='inline-img' src='img/chargestatRed.png'><div>(Inactifs) Reduisez la difficulté de vos manoeuvres <img class='inline-img' src='img/manSt2.jpg'>.</div>",
-    "effect3_FRA": "<img class='inline-img' src='img/chargestat.png'><div>(Actifs) Après avoir révélé une manoeuvre <img class='inline-img' src='img/manTl2.jpg'> / <img class='inline-img' src='img/manBl2.jpg'> / <img class='inline-img' src='img/manBr2.jpg'> / <img class='inline-img' src='img/manTl2.jpg'>, vous devez effectuer cette manoeuvre comme un dérapage, en augmentant sa difficulté./<div>",
-    "effect1_ENG":"(Repulsorlift Stabilizers) : ",
-    "effect2_ENG": "<img class='inline-img' src='img/chargestatRed.png'><div>(Inactive) Reduce the difficulty of your <img class='inline-img' src='img/manSt2.jpg'> maneuvers.</div>",
-    "effect3_ENG": "<img class='inline-img' src='img/chargestat.png'><div>(Active) After you reveal a <img class='inline-img' src='img/manTl2.jpg'> / <img class='inline-img' src='img/manBl2.jpg'> / <img class='inline-img' src='img/manBr2.jpg'> / <img class='inline-img' src='img/manTl2.jpg'> maneuver, you must perform that maneuver as a sideslip, increasing its difficulty.</div>"
+    "nbrOfEffects": 1,
+    "effect1_FRA":"(Stabilisateurs de Répulseurs) Après avoir révélé une manoeuvre <img class='inline-img' src='img/manTl2.jpg'> / <img class='inline-img' src='img/manBl2.jpg'> / <img class='inline-img' src='img/manBr2.jpg'> / <img class='inline-img' src='img/manTl2.jpg'>, vous pouvez effectuer cette manoeuvre comme un dérapage, en augmentant sa difficulté. Dans ce cas, recevez 1 jeton contrainte.<div>",
+    "effect2_FRA": "",
+    "effect3_FRA": "",
+    "effect1_ENG":"(Repulsorlift Stabilizers) : After you reveal a <img class='inline-img' src='img/manTl2.jpg'> / <img class='inline-img' src='img/manBl2.jpg'> / <img class='inline-img' src='img/manBr2.jpg'> / <img class='inline-img' src='img/manTl2.jpg'> maneuver, you may perform that maneuver as a sideslip, increasing its difficulty. If you do, receive 1 strain token.</div>",
+    "effect2_ENG": "",
+    "effect3_ENG": ""
 
 },
 {
@@ -606,7 +606,7 @@
     "effect3_ENG": "" 
 },
 {
-    "name":"Turbo Thrusters",
+    "name":"Turbo Thrusters (not used, fusionned with 56 Folding Wings)",
     "id":55,
     "nbrOfEffects": 1,
     "effect1_FRA":"<img class='chargeforceimg' src='img/chargestat.png'><div>(Turbo-Propulseurs) : Après avoir exécuté une action <img class='inline-img' src='img/Sl W.jpg'>, vous pouvez dépenser 1 <img class='inline-img' src='img/charge.jpg'> ou exposer une carte de dégat pour retirer un marqueur de désarmement.</div>",
@@ -621,11 +621,11 @@
     "id":56,
     "nbrOfEffects": 2,
     "effect1_FRA":"(Ailes Repliantes) Avant votre activation, vous pouvez changer de configuration : ",
-    "effect2_FRA": "<img class='inline-img' src='img/chargestatRed.png'><div>(Pliées) Vous pouvez attaquer uniquement dans votre <img class='inline-img' src='img/bulls.jpg'>.<br>Lorsque vous défendez, lancez 1 dé de défense en plus.</div>",
-    "effect3_FRA": "<img class='inline-img' src='img/chargestat.png'><div>(Dépliées) Considérez vos attaques <img class='inline-img' src='img/Farc.jpg'> comme des attaques <img class='inline-img' src='img/bulls.jpg'>.<br>En phase de fin, récupérez 1 <img class='inline-img' src='img/charge.jpg'> sur vos 'Turbo-Propulseurs'.</div>" ,
+    "effect2_FRA": "<img class='inline-img' src='img/chargestatRed.png'><div>(*Ailes Pliées) Vous pouvez attaquer uniquement dans votre <img class='inline-img' src='img/bulls.jpg'>.<br>Lorsque vous défendez, lancez 1 dé de défense en plus.</div>",
+    "effect3_FRA": "<img class='inline-img' src='img/chargestat.png'><div>(**Ailes Dépliées) Après avoir exécuté une action <img class='inline-img' src='img/Sl W.jpg'>, vous pouvez retourner votre <img class='inline-img' src='img/charge.jpg'> ou exposer une carte de dégat pour retirer un marqueur de désarmement.</div>" ,
     "effect1_ENG":"(Folding Wings) : ",
-    "effect2_ENG": "<img class='inline-img' src='img/chargestatRed.png'><div>(Folded) You can only attack in your <img class='inline-img' src='img/bulls.jpg'>.<br>When you defend, roll 1 additional defense die.</div>",
-    "effect3_ENG": "<img class='inline-img' src='img/chargestat.png'><div>(Unfolded) Treat your <img class='inline-img' src='img/Farc.jpg'> attacks as <img class='inline-img' src='img/bulls.jpg'> attacks.<br>During the end phase, recover 1 <img class='inline-img' src='img/charge.jpg'> on your 'Turbo Thrusters'.</div>"
+    "effect2_ENG": "<img class='inline-img' src='img/chargestatRed.png'><div>(*Folded Wings) You can only attack in your <img class='inline-img' src='img/bulls.jpg'>.<br>When you defend, roll 1 additional defense die.</div>",
+    "effect3_ENG": "<img class='inline-img' src='img/chargestat.png'><div>(**Unfolded Wings) After you perform a <img class='inline-img' src='img/Sl W.jpg'> action, you may flip your <img class='inline-img' src='img/charge.jpg'> or expose a damage card to remove a disarm token.</div>"
 },
 {
     "name":"Night Buzzard",

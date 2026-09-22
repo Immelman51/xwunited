@@ -1228,7 +1228,7 @@
                 "hull": 4,
                 "shields": 3,
                 "base": "small",
-                "chassis": [28,21],
+                "chassis": [28],
                 "actions": [
                     [0,"Fo W"],
                     [0,"Lo W"],
@@ -1242,7 +1242,7 @@
                     [ 2, 2, 1, 2, 2, 0, 0, 0, 3, 3],
                     [ 0, 0, 2, 0, 0, 3, 0, 0, 0, 0]
                 ],
-                "slots": ["Tech","Modification","Astromech","Weapon Hardpoint"]
+                "slots": ["Tech","Modification","Astromech","Weapon"]
             },
             {
                
@@ -1580,8 +1580,8 @@
                 "hull": 3,
                 "shields": 0,
                 "base": "small",
-                "chassis": [17,34],
-                "slots": ["Missile"],
+                "chassis": [34],
+                "slots": ["Missile","Calculator"],
                 "actions": [
                     [0,"Cc W"],
                     [0,"Lo W"],                
@@ -1664,8 +1664,8 @@
                 "hull": 5,
                 "shields": 0,
                 "base": "small",
-                "chassis": [17,34],
-                "slots": ["Missile","Missile","Payload"],
+                "chassis": [34],
+                "slots": ["Missile","Missile","Payload","Calculator"],
                 "actions": [
                     [0,"Cc W"],
                     [0,"Lo W"],                
@@ -1893,7 +1893,7 @@
                 "shields": 3,
                 "base": "small",
                 "chassis": [39],
-                "slots": ["Crew","Missile","Payload"],
+                "slots": ["Crew","Torpedo","Payload","Calculator"],
                 "actions": [
                     [0,"Cc W"],
                     [0,"Lo W"],                
@@ -1978,7 +1978,7 @@
                 "hull": 3,
                 "shields": 0,
                 "base": "small",
-                "chassis": [17],
+                "chassis": [0],
                 "slots": ["Calculator","Calculator"],
                 "actions": [
                     [0,"Cc W"],
@@ -2396,7 +2396,7 @@
                 "base": "medium",
                 "hull": 5,
                 "shields": 2,
-                "chassis": [0],
+                "chassis": [52],
                 "actions": [
                     [0,"Fo W"],               
                     [0,"Lo W"],
@@ -2581,12 +2581,12 @@
             	"name": "Ginivex-class Fanblade Starfighter",
                 "factions": [ "Agents_of_Chaos" ],
                 "id": 92,
-                "attack": [["BULL",3]],
+                "attack": [["F",3]],
                 "agility": 3,
                 "base": "small",
                 "hull": 2,
                 "shields": 2,
-                "chassis": [55,56],
+                "chassis": [56],
                 "actions": [
                     
                 ],
@@ -2841,7 +2841,7 @@
                 "base": "small",
                 "hull": 1,
                 "shields": 2,
-                "chassis": [17,61],
+                "chassis": [61],
                 "actions": [
                     
                 ],
@@ -2853,7 +2853,7 @@
                     [ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0]
                     
                 ],
-                "slots": ["Calculator"]
+                "slots": ["Torpedo","Calculator"]
             },
             {
             	"name": "Zenuas 33 Umbaran Starfighter",
