@@ -378,7 +378,16 @@ function displayPilot(x){
         
         newcharge = document.createElement('img');
         newcharge.setAttribute("class","chargeforceimg");
-        newcharge.setAttribute("src","img/chargestat.png");
+        switch (pilots[pid]['charge'][1]) {
+            case "yellow" :
+                newcharge.setAttribute("src","img/chargestat.png");
+                break;
+            case "red" :
+                newcharge.setAttribute("src","img/chargestatRed.png");
+                break;
+            default :
+                break;
+        }
         pilotAbility.appendChild(newcharge);
       }
         
