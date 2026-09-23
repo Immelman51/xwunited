@@ -574,10 +574,22 @@ function displayPilot(x){
         for(j=0; j<nbrcharge;j++){ //is going to display as many charge logos as the number of charges the upgrade has
             let newcharge = document.createElement('img');
             newcharge.setAttribute("class","chargeforceimg");
-            newcharge.setAttribute("src","img/chargestat.png");
+            switch (upgrades[uid]['charge'][1]) {
+                case "yellow" :
+                    newcharge.setAttribute("src","img/chargestat.png");
+                    break;
+                case "red" :
+                    newcharge.setAttribute("src","img/chargestatRed.png");
+                    break;
+                case "AddCalcAction" :
+                    newcharge.setAttribute("src","img/AddCalcAction.png");
+                    break;
+                default :
+                    break;
+            }
             mdivupg.appendChild(newcharge);
         }
-            switch (upgrades[uid]['charge'][1]) {
+            switch (upgrades[uid]['charge'][2]) {
                 case "+" :
                     recurring = document.createElement('img');
                     recurring.setAttribute("class","recurring");

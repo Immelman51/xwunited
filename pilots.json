@@ -4140,7 +4140,7 @@
             "skill": 2,
             "points": 9,
             
-            "ability_FRA": "<div class='text'>Les améliorations que vous équipez perdent la restriction 'Solitary'.</div>",
+            "ability_FRA": "<div class='text'>Les améliorations que vous équipez perdent la restriction 'Solitaire'.</div>",
             "ability_ENG": "<div class='text'>The upgrades you equip lose the 'Solitary' restriction.</div>",
             "slots": [
                 "Talent-leadership"                

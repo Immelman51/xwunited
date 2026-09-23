@@ -585,9 +585,12 @@ function checkPilotModifier() { //va checker s'il existe des fonctions dans modi
                 case "may_remove_slots" :
                     may_remove_slots(pilot_list[y]['modifier_func'][m][1]);
                  
-                    break;   
+                    break;
+                case "solitary" : //Function for tactical droid 'Crew+Calculator'. They must remain unique in a squad
+                    solitary();
+                    break;
                 default :
-                    alert("There's a bug that should be reported");
+                    alert(pilot_list[y]['modifier_func'][m][0]+" is not coded in scriptship.");
                     break;
                    
             }
@@ -1021,6 +1024,22 @@ function may_remove_slots(slot){ //Action n°10 : permet de retirer des slots
         fillUpgradesSelected(y); 
         updateUpgradeCount(y);
         
+}
+
+function solitary() { //When a tactical droid with solitary is equipped, this function writes 'Solitary' in the beginning of the pilot's restricted_List. When it is removed, it has to be cleared. I choose the 9th table, the one with the pilot's name that stays in the 9th position, because the other ones may move when you delete a pilot.
+    restricted_List[8].unshift("Solitary");
+    
+    const solitary_Listen_Function = function (){
+        restricted_List[8].shift();
+        solitary_field.removeEventListener('input',solitary_Listen_Function);
+    }
+    
+    const solitary_field = document.getElementById('slot'+y+'_'+x);
+    
+    solitary_field.addEventListener('input', solitary_Listen_Function);
+
+    })
+    
 }
  
 function upgradeListGet(yy) { //va chercher les options pour populate les menus de slots crées avec displaylots(), et remplit la var upgrades_Objects
