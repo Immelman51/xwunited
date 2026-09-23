@@ -1038,7 +1038,7 @@ function solitary() { //When a tactical droid with solitary is equipped, this fu
     
     solitary_field.addEventListener('input', solitary_Listen_Function);
 
-    })
+    }
     
 }
  
