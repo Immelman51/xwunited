@@ -1040,7 +1040,6 @@ function solitary() { //When a tactical droid with solitary is equipped, this fu
 
     }
     
-}
  
 function upgradeListGet(yy) { //va chercher les options pour populate les menus de slots crées avec displaylots(), et remplit la var upgrades_Objects
   
