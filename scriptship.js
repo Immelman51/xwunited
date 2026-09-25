@@ -67,7 +67,7 @@ let shipquantity = -1; //compteur qui ne sert pas à compter mais à numéroter 
  let z= "0"; //valeur qui indique l'index dans le menu de l'élément sélectionné
 let x= "0"; //valeur qui indique l'index du menu d'amélioration sélectionné (sloty_x)
  let restrict = false;
-let restricted_List = [[0],[1],[2],[3],[4],[5],[6],[7],[8]]; //va contenir les noms des upgrades (8 premiers sous tableaux) et pilotes uniques (9eme sous tableau)
+let restricted_List = [[0],[1],[2],[3],[4],[5],[6],[7],[8],[9]]; //va contenir les noms des upgrades (8 premiers sous tableaux) et pilotes uniques (9eme sous tableau), la 10 ème table contiendra des éléments soumis à certaines fonctions comme solitary.
 let chassis_selected = [[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0]]; //va contenir les chassis du pilote (2 chassis max)
 let shipObject_available = []; //comme ship_available, mais contient les objets au lieu des noms
 let hash = "";
@@ -1026,11 +1026,19 @@ function may_remove_slots(slot){ //Action n°10 : permet de retirer des slots
         
 }
 
-function solitary() { //When a tactical droid with solitary is equipped, this function writes 'Solitary' in the beginning of the pilot's restricted_List. When it is removed, it has to be cleared. I choose the 9th table, the one with the pilot's name that stays in the 9th position, because the other ones may move when you delete a pilot.
-    restricted_List[8].unshift("Solitary");
+function solitary() { //When a tactical droid with solitary is equipped, this function writes 'Solitary' in the beginning of the restricted_List table n°10. When it is removed, it has to be cleared. I choose the 10th table,because the other ones may move be rewritten when you delete a pilot.
+    
+    if (restricted_List[9][0] ==="Solitary"){ //there's already a Solitary upgrade equipped
+        alert('There is already a Solitary upgrade in your squad !');
+            upgradesSelected_Objects[y][x] = -1;
+            fillUpgradesSelected(y);
+            update_restricted_List(y);
+            return
+    }
+    restricted_List[9].unshift("Solitary");
     
     const solitary_Listen_Function = function (){
-        restricted_List[8].shift();
+        restricted_List[9].shift();
         solitary_field.removeEventListener('input',solitary_Listen_Function);
     }
     
