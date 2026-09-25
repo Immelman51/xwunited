@@ -1027,7 +1027,7 @@ function may_remove_slots(slot){ //Action n°10 : permet de retirer des slots
 }
 
 function solitary() { //When a tactical droid with solitary is equipped, this function writes 'Solitary' in the beginning of the restricted_List table n°10. When it is removed, it has to be cleared. I choose the 10th table,because the other ones may move be rewritten when you delete a pilot.
-    
+    console.log("Solitary function on");
     if (restricted_List[9][0] ==="Solitary"){ //there's already a Solitary upgrade equipped
         alert('There is already a Solitary upgrade in your squad !');
             upgradesSelected_Objects[y][x] = -1;
@@ -1046,6 +1046,7 @@ function solitary() { //When a tactical droid with solitary is equipped, this fu
     
     solitary_field.addEventListener('input', solitary_Listen_Function);
 
+    console.log(restricted_List);
     }
     
  
