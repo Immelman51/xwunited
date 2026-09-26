@@ -303,7 +303,7 @@ function testListValidity() {
     listValidity=true
 }
 
-function fillUpgradesSelected(yy){ //fills the array UpgradesSelected and upgradesSelected_Objects (used when an input of upgrade is made)
+function fillUpgradesSelected(yy){ //fills the array upgradesSelected_Objects (used when an input of upgrade is made)
     //upgradesSelected[yy] = [];
     upgradesSelected_Objects[yy] = [];
     
@@ -1061,7 +1061,8 @@ function solitary() {
     if (restricted_List[9][0] === "Solitary") {
         alert('There is already a Solitary upgrade in your squad !');
         upgradesSelected_Objects[y][x] = -1;
-        fillUpgradesSelected(y);
+        document.getElementById('slot'+y+'_'+x).selectedIndex = 0;
+        document.getElementById('slot'+y+'_'+x+1).removeAttribute('disabled'); //I placed the calculator slot just after the crew, that explains the x+1
         update_restricted_List(y);
         return;
     }
@@ -1072,11 +1073,8 @@ function solitary() {
 
     solitary_Listen_Function = function () {
         console.log("Solitary removed");
-
         restricted_List[9].shift();
-
         solitary_field?.removeEventListener('input',solitary_Listen_Function);
-
         solitary_field = null;
         solitary_Listen_Function = null;
     };

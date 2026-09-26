@@ -1162,7 +1162,7 @@
                     [ 3, 2, 1, 2, 3, 3, 0, 0, 0, 0, 0, 0],
                     [ 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0]
                 ],
-                "slots": ["Crew","Astromech","Calculator"]
+                "slots": ["Astromech","Crew","Calculator"]
             },
             {
         
@@ -1893,7 +1893,7 @@
                 "shields": 3,
                 "base": "small",
                 "chassis": [39],
-                "slots": ["Crew","Torpedo","Payload","Calculator"],
+                "slots": ["Torpedo","Payload","Crew","Calculator"],
                 "actions": [
                     [0,"Cc W"],
                     [0,"Lo W"],                
