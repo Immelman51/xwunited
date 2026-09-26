@@ -666,8 +666,11 @@ function checkUpgradeModifier() { //va checker s'il existe une fonction modify l
             case "may_remove_slots" :
                 may_remove_slots(upgrades[upgradeID]['modifier_func'][m][1]);
                 break;
+            case "solitary" :
+                solitary()
+                break;
             default :
-                alert("There's a bug that should be reported");
+                alert("There's a bug that should be reported (checkUpgradeModifier)");
                 break;
                 }
             }
