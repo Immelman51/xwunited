@@ -536,7 +536,7 @@
                 "agility": 3,
                 "hull": 3,
                 "shields": 1,
-                "chassis": [21],
+                "chassis": [0],
                 "actions": [
                     [0,"Fo W"],
                     [0,"Lo W"],
@@ -554,7 +554,7 @@
                     [ 0, 0, 2, 0, 0, 3 ]
                 ],
                 "base": "small",
-                "slots": ["Weapon Hardpoint"]
+                "slots": ["Weapon"]
             },
             {
         
