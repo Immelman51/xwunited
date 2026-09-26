@@ -2843,7 +2843,9 @@
                 "shields": 2,
                 "chassis": [61],
                 "actions": [
-                    
+                    [0,"Cc W"],
+                    [0,"Lo W"],
+                    [0,"Un W"],
                 ],
                 "maneuvers": [
                     [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
