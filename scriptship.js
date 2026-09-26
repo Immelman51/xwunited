@@ -74,6 +74,9 @@ let hash = "";
 let faction_hash = "";
 const logisticCounter = document.getElementById("logisticCounter");
 
+let solitary_field = null; //useful for listening upgrades with the solitary restriction (cf solitary())
+let solitary_Listen_Function = null;
+
 
 function populateMenu(menuId, options) {//fonction qui permet de remplir un menu avec un tableau d'options
     const menu = document.getElementById(menuId);
@@ -1026,7 +1029,7 @@ function may_remove_slots(slot){ //Action n°10 : permet de retirer des slots
         
 }
 
-function solitary() { //When a tactical droid with solitary is equipped, this function writes 'Solitary' in the beginning of the restricted_List table n°10. When it is removed, it has to be cleared. I choose the 10th table,because the other ones may move be rewritten when you delete a pilot.
+/*function solitary() { //When a tactical droid with solitary is equipped, this function writes 'Solitary' in the beginning of the restricted_List table n°10. When it is removed, it has to be cleared. I choose the 10th table,because the other ones may move be rewritten when you delete a pilot.
     console.log("Solitary function on");
     if (restricted_List[9][0] ==="Solitary"){ //there's already a Solitary upgrade equipped
         alert('There is already a Solitary upgrade in your squad !');
@@ -1048,8 +1051,52 @@ function solitary() { //When a tactical droid with solitary is equipped, this fu
 
     console.log(restricted_List);
     }
-    
+ */
+function solitary() {
+    console.log("Solitary function on");
+
+    if (restricted_List[9][0] === "Solitary") {
+        alert('There is already a Solitary upgrade in your squad !');
+        upgradesSelected_Objects[y][x] = -1;
+        fillUpgradesSelected(y);
+        update_restricted_List(y);
+        return;
+    }
+
+    restricted_List[9].unshift("Solitary");
+
+    solitary_field = document.getElementById('slot' + y + '_' + x);
+
+    solitary_Listen_Function = function () {
+        console.log("Solitary removed");
+
+        restricted_List[9].shift();
+
+        solitary_field?.removeEventListener('input',solitary_Listen_Function);
+
+        solitary_field = null;
+        solitary_Listen_Function = null;
+    };
+
+    solitary_field.addEventListener('input',solitary_Listen_Function);
+}
  
+const solitaryObserver = new MutationObserver(() => { //useful when the pilot with the solitary restriction is removed, because in this case, we still have to execute the solitary_Listen_Function to remove 'Solitary' from the restricted_List
+
+    if (solitary_field && !document.contains(solitary_field)) {
+
+        console.log("Le champ Solitary a été supprimé");
+
+        solitary_Listen_Function();
+    }
+});
+
+solitaryObserver.observe(document.body, {
+    childList: true,
+    subtree: true
+});
+
+
 function upgradeListGet(yy) { //va chercher les options pour populate les menus de slots crées avec displaylots(), et remplit la var upgrades_Objects
   
     let index = 0; 
@@ -1120,7 +1167,7 @@ function leaderSelection(){
     upgrades_Objects_Val= [[],[],[],[],[],[],[],[]];
     upgradesSelected_Objects = [[],[],[],[],[],[],[],[]];
     pilot_objects = [[],[],[],[],[],[],[],[]];
-    restricted_List = [[0],[1],[2],[3],[4],[5],[6],[7],[8]];
+    restricted_List = [[0],[1],[2],[3],[4],[5],[6],[7],[8],[9]];
     logisticEquipped = [0,0,0,0,0,0,0,0];
     pilot_list = [{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0},{name:"",points:0}];
     chassis_selected = [[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0]];
@@ -1380,7 +1427,7 @@ function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'acti
     )
 }
 
-function remove_ship(n) { //fonction qui permet de retirer le dernier vaisseau. S'active via le bouton Removeship
+function remove_ship(n) { //fonction qui permet de retirer un vaisseau. S'active via le bouton DEL
    
     removeElementsByClass("new "+n); //retire la balise <p> qui contient tous les éléments
     
