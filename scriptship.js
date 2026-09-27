@@ -931,7 +931,7 @@ function  add_slots (targetSlot){ //Action n°2 : A utiliser si une upgrade rajo
 }
 
 function also_Occupies(targetSlot){ //Action n°3 : A utiliser lorsqu'une upgrade utilise un slot de plus. On va en plus écouter le menu qui a été rempli pour inverser l'opération si l'upg est retirée.
-   
+    console.log("also occupies");
     fillUpgradesSelected(y);
     let field = null;
     for (let i = 0; i < upgradesSelected_Objects[y].length; i++) {
@@ -941,6 +941,8 @@ function also_Occupies(targetSlot){ //Action n°3 : A utiliser lorsqu'une upgrad
             if(field.value === '<' + targetSlot + '>'){
                 field.setAttribute('disabled', '');
                 break;
+            }else{
+                field = null;
             }
                 
         }
@@ -966,7 +968,8 @@ function also_Occupies(targetSlot){ //Action n°3 : A utiliser lorsqu'une upgrad
 
     if (upgslot) {
     upgslot.addEventListener('input', listenfunction);
-    } 
+    }
+    cosonsole.log("also occupies end");
 }
 
 function change_chassis(chassisID1,chassisID2) { //Action n°4 : permet de changer le chassis du pilote
@@ -1062,7 +1065,8 @@ function solitary() {
         alert('There is already a Solitary upgrade in your squad !');
         upgradesSelected_Objects[y][x] = -1;
         document.getElementById('slot'+y+'_'+x).selectedIndex = 0;
-        document.getElementById('slot'+y+'_'+x+1).removeAttribute('disabled'); //I placed the calculator slot just after the crew, that explains the x+1
+        document.getElementById('slot'+y+'_'+(x+1)).removeAttribute('disabled'); //I placed the calculator slot just after the crew, that explains the x+1
+        console.log((x+1)+ "removing disabled attribute");
         update_restricted_List(y);
         return;
     }
