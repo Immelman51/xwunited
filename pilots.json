@@ -4302,7 +4302,7 @@
             "max_per_squad": 3,
             "faction": "Trade_Federation",
             "ship": "Droid Tri-fighter",
-			"modify": false,
+			"modify": true,
             "charge":[0],
             "force": 0,
             "titleID": 0,
@@ -4310,11 +4310,14 @@
             "skill": 3,
             "points": 10,
             
-            "ability_FRA": "<div class='text'>Mise en place: Après avoir placé les forces, assignez la condition 'Proie Apeurée' à un vaisseau ennemi.</div>",
+            "ability_FRA": "<div class='text'>Mise en place: Après avoir placé les forces, assignez la condition 'Proie Effrayée' à un vaisseau ennemi.</div>",
             "ability_ENG": "<div class='text'>Setup: After placing forces, assign the 'Fearful Prey' condition to 1 enemy ship.</div>",
             "slots": [
                 "Condition",
                 "Talent-shooting"
+            ],
+            "modifier_func": [
+                ["auto_equip","Condition",377]
             ]
         },
   		{

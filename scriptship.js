@@ -589,9 +589,6 @@ function checkPilotModifier() { //va checker s'il existe des fonctions dans modi
                     may_remove_slots(pilot_list[y]['modifier_func'][m][1]);
                  
                     break;
-                case "solitary" : //Function for tactical droid 'Crew+Calculator'. They must remain unique in a squad
-                    solitary();
-                    break;
                 default :
                     alert(pilot_list[y]['modifier_func'][m][0]+" is not coded in scriptship.");
                     break;
@@ -1036,6 +1033,9 @@ function may_remove_slots(slot){ //Action n°10 : permet de retirer des slots
 
 function solitary() {
 
+    if (restricted_List[8][y] === "Riff Tamson"){
+        return;
+    }
     if (restricted_List[9][0] === "Solitary") {
         alert('There is already a Solitary upgrade in your squad !');
         upgradesSelected_Objects[y][x] = -1;
@@ -1071,6 +1071,7 @@ solitaryObserver.observe(document.body, {
     childList: true,
     subtree: true
 });
+
 
 
 function upgradeListGet(yy) { //va chercher les options pour populate les menus de slots crées avec displaylots(), et remplit la var upgrades_Objects

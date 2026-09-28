@@ -2827,8 +2827,8 @@
             "charge": [0],
             "points": 1,
             "faction": ["Trade_Federation","Separatist_Government"],
-            "effect_FRA": "Tant que vous effectuez une action blanche <img class='inline-img' src='img/Cc W.jpg'>, vous pouvez la considérer comme rouge pour gagner 1 marqueur de calcul supplémentaire. Les autres vaisseaux ne peuvent pas dépenser vos marqueurs de calcul en utilisant l'amélioration Calculs en Réseau.",
-            "effect_ENG": "While you perform a white <img class='inline-img' src='img/Cc W.jpg'> action, you may consider it as red to gain 1 additional calculate token. Other ships cannot spend your calculate tokens using their upgrade 'Networked Calculations'.",
+            "effect_FRA": "Tant que vous effectuez une action rouge <img class='inline-img' src='img/Cc W.jpg'>, gagnez 1 marqueur de calcul supplémentaire. Lorsque vous effectuez une action <img class='inline-img' src='img/Cc W.jpg'>, vous pouvez faire une action <img class='inline-img' src='img/Cc W.jpg'> rouge à la place. Les autres vaisseaux ne peuvent pas dépenser vos marqueurs de calcul.",
+            "effect_ENG": "While you perform a red <img class='inline-img' src='img/Cc W.jpg'> action, gain 1 additional calculate token. When you perform a <img class='inline-img' src='img/Cc W.jpg'> action, you may perform a red <img class='inline-img' src='img/Cc W.jpg'> action instead. Other ships cannot spend your calculate tokens.",
             "restrictions": [2,"upgrade","Calculator",""],
             "modifier_func": [
             ["also_Occupies","Calculator"]
@@ -6629,6 +6629,22 @@
             "effect_FRA": "Après avoir défendu, si vous n'avez pas reçu de dégat, recevez 1 marqueur d'épuisement.",
             "effect_ENG": "After defending, if you have not suffered any damage, then receive 1 deplete token.",
             "faction": ["New_Republic_Patrol"]
+        },
+        {
+            "name_FRA": "Proie Effrayée",
+            "name_ENG": "Fearful Prey",
+            "id": 377,
+            "max_per_squad": 1,
+            "available": true,
+            "modify": false,
+            "slot": "Condition",
+            "add_Data": [0],
+            "force": 0,
+            "charge": [0],
+            "points": 0,
+            "effect_FRA": "Après avoir défendu contre un ennemi Prédateur Effrayant, si vous n'avez pas dépensé au moins 1 marqueur vert durant l'attaque, gagnez 1 marqueur de contrainte.",
+            "effect_ENG": "After you defend against an enemy Fearsome Predator, if you did not spend at least 1 green token during the attack, gain 1 strain token.",
+            "faction": ["Trade_Federation"]
         }
         
 
