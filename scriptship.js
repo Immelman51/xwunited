@@ -651,7 +651,7 @@ function checkUpgradeModifier() { //va checker s'il existe une fonction modify l
         if (upgrades[upgradeID]["modify"] === true){
             for(m = 0; m<upgrades[upgradeID]["modifier_func"].length; m++){
                 console.log("check upgrade modifier"+upgrades[upgradeID]['modifier_func'][m][0]);
-                switch (upgrades[upgradeID]['modifier_func'][m][0]) { //on va vérifier le numéro à l'index 0 de chaque table dans modifier_func. Ce numéro indique une fonction à exectuer
+            switch (upgrades[upgradeID]['modifier_func'][m][0]) { //on va vérifier le numéro à l'index 0 de chaque table dans modifier_func. Ce numéro indique une fonction à exectuer
             case 0 :
                 break;
             case "auto_equip":
@@ -1044,6 +1044,9 @@ function solitary() {
         alert('There is already a Solitary upgrade in your squad !');
         upgradesSelected_Objects[y][x] = -1;
         document.getElementById('slot'+y+'_'+x).selectedIndex = 0;
+        console.log("solitary, crew index 0, x="+x+" , x+1="+(x+1));
+        const disabledAttribute = document.getElementById('slot'+y+'_'+(x+1)).hasAttibute("disabled");
+        console.log("disabled? "+disabledAttribute);
         document.getElementById('slot'+y+'_'+(x+1)).removeAttribute('disabled'); //I placed the calculator slot just after the crew, that explains the x+1
         console.log((x+1)+ "removing disabled attribute");
         update_restricted_List(y);
