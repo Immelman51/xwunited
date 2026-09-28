@@ -645,11 +645,12 @@ pointszone.textContent = pilot_list[y]['points'];
 
 function checkUpgradeModifier() { //va checker s'il existe une fonction modify liée à l'upgrade, et va lancer les modifs éventuelles type add_slots ou change_stat
    fillUpgradesSelected(y);
-    
+
    let upgradeID = upgradesSelected_Objects[y][x]["id"];
    if (upgradeID>-1){
         if (upgrades[upgradeID]["modify"] === true){
             for(m = 0; m<upgrades[upgradeID]["modifier_func"].length; m++){
+                console.log("check upgrade modifier"+upgrades[upgradeID]['modifier_func'][m][0]);
                 switch (upgrades[upgradeID]['modifier_func'][m][0]) { //on va vérifier le numéro à l'index 0 de chaque table dans modifier_func. Ce numéro indique une fonction à exectuer
             case 0 :
                 break;
