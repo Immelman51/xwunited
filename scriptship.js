@@ -969,7 +969,7 @@ function also_Occupies(targetSlot){ //Action n°3 : A utiliser lorsqu'une upgrad
     if (upgslot) {
     upgslot.addEventListener('input', listenfunction);
     }
-    cosonsole.log("also occupies end");
+    console.log("also occupies end");
 }
 
 function change_chassis(chassisID1,chassisID2) { //Action n°4 : permet de changer le chassis du pilote
