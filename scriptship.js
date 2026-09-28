@@ -650,7 +650,6 @@ function checkUpgradeModifier() { //va checker s'il existe une fonction modify l
    if (upgradeID>-1){
         if (upgrades[upgradeID]["modify"] === true){
             for(m = 0; m<upgrades[upgradeID]["modifier_func"].length; m++){
-                console.log("check upgrade modifier"+upgrades[upgradeID]['modifier_func'][m][0]);
             switch (upgrades[upgradeID]['modifier_func'][m][0]) { //on va vérifier le numéro à l'index 0 de chaque table dans modifier_func. Ce numéro indique une fonction à exectuer
             case 0 :
                 break;
@@ -932,7 +931,6 @@ function  add_slots (targetSlot){ //Action n°2 : A utiliser si une upgrade rajo
 }
 
 function also_Occupies(targetSlot){ //Action n°3 : A utiliser lorsqu'une upgrade utilise un slot de plus. On va en plus écouter le menu qui a été rempli pour inverser l'opération si l'upg est retirée.
-    console.log("also occupies");
     fillUpgradesSelected(y);
     let field = null;
     for (let i = 0; i < upgradesSelected_Objects[y].length; i++) {
@@ -970,7 +968,6 @@ function also_Occupies(targetSlot){ //Action n°3 : A utiliser lorsqu'une upgrad
     if (upgslot) {
     upgslot.addEventListener('input', listenfunction);
     }
-    console.log("also occupies end");
 }
 
 function change_chassis(chassisID1,chassisID2) { //Action n°4 : permet de changer le chassis du pilote
@@ -1038,15 +1035,12 @@ function may_remove_slots(slot){ //Action n°10 : permet de retirer des slots
 
 
 function solitary() {
-    console.log("Solitary function on");
 
     if (restricted_List[9][0] === "Solitary") {
         alert('There is already a Solitary upgrade in your squad !');
         upgradesSelected_Objects[y][x] = -1;
         document.getElementById('slot'+y+'_'+x).selectedIndex = 0;
-        console.log("solitary, crew index 0, x="+x+" , x+1="+(Number(x)+Number(1)));
         document.getElementById('slot'+y+'_'+(Number(x)+Number(1))).removeAttribute('disabled'); //I placed the calculator slot just after the crew, that explains the x+1
-        console.log((Number(x)+Number(1))+ "removing disabled attribute");
         update_restricted_List(y);
         return;
     }
@@ -1056,7 +1050,6 @@ function solitary() {
     solitary_field = document.getElementById('slot' + y + '_' + x);
 
     solitary_Listen_Function = function () {
-        console.log("Solitary removed");
         restricted_List[9].shift();
         solitary_field?.removeEventListener('input',solitary_Listen_Function);
         solitary_field = null;
@@ -1069,8 +1062,6 @@ function solitary() {
 const solitaryObserver = new MutationObserver(() => { //useful when the pilot with the solitary restriction is removed, because in this case, we still have to execute the solitary_Listen_Function to remove 'Solitary' from the restricted_List
 
     if (solitary_field && !document.contains(solitary_field)) {
-
-        console.log("Le champ Solitary a été supprimé");
 
         solitary_Listen_Function();
     }
