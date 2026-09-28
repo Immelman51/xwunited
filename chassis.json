@@ -676,11 +676,11 @@
  "id":61,
  "nbrOfEffects":2,
  "effect1_FRA":"(Boucliers Rétractables) En phase système, vous pouvez changer de configuration: ",
- "effect2_FRA": "<img class='inline-img' src='img/chargestatRed.png'><div>(Repliés) Lorsque vous défendez, considérez que vous êtes renforcé. Vous ne pouvez plus faire de <img class='inline-img' src='img/Br W.jpg'>.</div>",
- "effect3_FRA": "<img class='inline-img' src='img/chargestat.png'><div>(Dépliés) Lorsque vous attaquez, lancez 2 dés supplémentaires.<div>",
+ "effect2_FRA": "<img class='inline-img' src='img/charge.jpg'><div>(Active) Lorsque vous défendez, considérez que vous êtes renforcé.</div>",
+ "effect3_FRA": "<img class='inline-img' src='img/charge.jpg'><div>(Inactive) Lorsque vous attaquez, lancez 2 dés supplémentaires.<div>",
  "effect1_ENG":"(Shield Struts) : ",
- "effect2_ENG":  "<img class='inline-img' src='img/chargestatRed.png'><div>(Retracted) When you defend, consider yourself as reinforced. You cannot perform <img class='inline-img' src='img/Br W.jpg'>.</div>",
- "effect3_ENG": "<img class='inline-img' src='img/chargestat.png'> (Deployed) When you attack, roll 2 additional dice."
+ "effect2_ENG":  "<img class='inline-img' src='img/charge.jpg'><div>(Active) When you defend, consider yourself as reinforced.</div>",
+ "effect3_ENG": "<img class='inline-img' src='img/charge.jpg'> (Inactive) When you attack, roll 2 additional dice."
 
 },
 {
