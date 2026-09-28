@@ -1045,8 +1045,6 @@ function solitary() {
         upgradesSelected_Objects[y][x] = -1;
         document.getElementById('slot'+y+'_'+x).selectedIndex = 0;
         console.log("solitary, crew index 0, x="+x+" , x+1="+(Number(x)+Number(1)));
-        const disabledAttribute = document.getElementById('slot'+y+'_'+(Number(x)+Number(1))).hasAttibute("disabled");
-        console.log("disabled? "+disabledAttribute);
         document.getElementById('slot'+y+'_'+(Number(x)+Number(1))).removeAttribute('disabled'); //I placed the calculator slot just after the crew, that explains the x+1
         console.log((Number(x)+Number(1))+ "removing disabled attribute");
         update_restricted_List(y);
