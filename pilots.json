@@ -4079,7 +4079,8 @@
                                 
             ],
 		"modifier_func": [
-			["auto_equip","Droid",237]
+			["auto_equip","Droid",237],
+            ["change_chassis",0,0]
             
 			]
         },
@@ -4090,7 +4091,7 @@
             "max_per_squad": 1,
             "faction": "Trade_Federation",
             "ship": "Sheathipede-Class Shuttle",
-	        "modify": false,
+	        "modify": true,
             "charge":[0],
             "force": 0,
             "titleID": 0,
@@ -4102,6 +4103,10 @@
             "ability_ENG": "<div class='text'>While you perform a <img class='inline-img' src='img/attackB.jpg'> attack, before the Neutralize results step, you may receive a stress token to cancel 1 <img class='inline-img' src='img/evd.jpg'> result.</div>",
             "slots": [
                 "Talent-shooting"                
+            ],
+            "modifier_func": [
+                ["change_chassis",0,0]
+
             ]
         },
         {
@@ -4115,7 +4120,7 @@
             "force": 0,
             "titleID": 0,
             "shipId": 41,
-		    "modify": false,
+		    "modify": true,
             "skill": 2,
             "points": 9,
             
@@ -4123,6 +4128,10 @@
             "ability_ENG": "<div class='text'>When you would be destroyed, you must deploy Nute Gunray's escape pod from your ship (2 Hull 3 agility). During System phase, you move forward with any 1 speed template, or the 2 straight template. You may be placed under any ship if you overlap them. When you defend, you may change your <img class='inline-img' src='img/eye.jpg'> results into <img class='inline-img' src='img/evd.jpg'> results. If you would flee from the Battlefield, your opponent lose 2 PO.</div>",
             "slots": [
                 "Talent-leadership"
+            ],
+            "modifier_func": [
+                ["change_chassis",0,0]
+
             ]
         },
 		{
@@ -4136,7 +4145,7 @@
             "force": 0,
             "titleID": 0,
             "shipId": 41,
-			"modify": false,
+			"modify": true,
             "skill": 2,
             "points": 9,
             
@@ -4144,6 +4153,10 @@
             "ability_ENG": "<div class='text'>The upgrades you equip lose the 'Solitary' restriction.</div>",
             "slots": [
                 "Talent-leadership"                
+            ],
+            "modifier_func": [
+                ["change_chassis",0,0]
+
             ]
         },
     	{
@@ -4166,7 +4179,8 @@
                 "Droid"             
             ],
             "modifier_func": [
-                ["auto_equip", "Droid",237]
+                ["auto_equip", "Droid",237],
+                ["change_chassis",0,0]
                 ]
         },
   
@@ -13244,7 +13258,7 @@
             "force": 0,
             "titleID": 0,
             "shipId": 41,
-		    "modify": false,
+		    "modify": true,
             "skill": 5,
             "charge": [0],
             "points": 10,
@@ -13252,6 +13266,10 @@
             "ability_ENG": "<div class='text'></div>",
             "slots": [      
                 
+            ],
+            "modifier_func": [
+                ["change_chassis",0,0]
+
             ]
         },
         {
@@ -13265,7 +13283,7 @@
             "force": 0,
             "titleID": 0,
             "shipId": 41,
-		    "modify": false,
+		    "modify": true,
             "skill": 3,
             "charge": [0],
             "points": 9,
@@ -13273,6 +13291,10 @@
             "ability_ENG": "<div class='text'></div>",
             "slots": [      
                 
+            ],
+            "modifier_func": [
+                ["change_chassis",0,0]
+
             ]
         },
         {
@@ -13286,7 +13308,7 @@
             "force": 0,
             "titleID": 0,
             "shipId": 41,
-            "modify": false,
+            "modify": true,
             "skill": 4,
             "charge": [0],
             "points": 8,
@@ -13294,6 +13316,10 @@
             "ability_ENG": "<div class='text'></div>",
             "slots": [
                 
+            ],
+            "modifier_func": [
+                ["change_chassis",0,0]
+
             ]
         },
         {
@@ -13307,7 +13333,7 @@
             "force": 0,
             "titleID": 0,
             "shipId": 41,
-            "modify": false,
+            "modify": true,
             "skill": 1,
             "charge": [0],
             "points": 7,
@@ -13315,6 +13341,10 @@
             "ability_ENG": "<div class='text'></div>",
             "slots": [
                 
+            ],
+            "modifier_func": [
+                ["change_chassis",0,0]
+
             ]
         },
         {
@@ -13328,7 +13358,7 @@
             "force": 0,
             "titleID": 0,
             "shipId": 41,
-            "modify": false,
+            "modify": true,
             "skill": 4,
             "charge": [0],
             "points": 8,
@@ -13336,6 +13366,10 @@
             "ability_ENG": "<div class='text'></div>",
             "slots": [
                 
+            ],
+            "modifier_func": [
+                ["change_chassis",0,0]
+
             ]
         },
         {

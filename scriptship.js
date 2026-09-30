@@ -1518,15 +1518,35 @@ function displayDescriptionShip(event){ //displays ship stats (and actions and m
 function displayDescriptionUpgrade(event){ //permet d'afficher l'effet de l'amélioration sélectionée
     description_upg_pil_Field=document.getElementById("descript_upg");
     description_upg_pil_Field.innerHTML="";
-    
-    for (k=0; k<upgrades.length; k++){
-        if (event.target.value.slice(0, -4) === upgrades[k]["name_"+language]) { //il faut pas oublier de virer les (x) dans les menus
-            description_upg_pil_Field.innerHTML = upgrades[k]["effect_"+language];
-                  
-            return
-        }
+           
+     
+        if (upgradesSelected_Objects[y][x]["charge"][0] > 0) {
+            for (k=0;k<upgradesSelected_Objects[y][x]["charge"][0];k++){
+                switch (upgradesSelected_Objects[y][x]["charge"][1]) {
+                    case 'yellow':
+                        description_upg_pil_Field.innerHTML += description_upg_pil_Field.innerHTML + '<img class="inline-img" src="img/chargestat.png">';
+                        break;
+                    case 'red':
+                        description_upg_pil_Field.innerHTML = description_upg_pil_Field.innerHTML + '<img class="inline-img" src="img/chargestatRed.png">';
+                    default :
+                        break;
+                }
+            }
+            switch (upgradesSelected_Objects[y][x]["charge"][2]){
+                case '+':
+                    description_upg_pil_Field.innerHTML = description_upg_pil_Field.innerHTML + '<img class="inline-img" src="img/chargeplus.png">';
+                    break;
+                case '-':
+                    description_upg_pil_Field.innerHTML = description_upg_pil_Field.innerHTML + '<img class="inline-img" src="img/chargeminus.png">';
+                    break;
+                default:
+                    break;
+            }
+
+            }
+        description_upg_pil_Field.innerHTML = description_upg_pil_Field.innerHTML + upgradesSelected_Objects[y][x]["effect_"+language];
     }
-}
+
 
 function display_chassis_title_window(event) { //allows to display the chassis window when the user clicks on the chassis name
     chassistarget = event.target.id;

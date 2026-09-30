@@ -177,8 +177,8 @@
      "logistic": 18
      },
      {
-     "leadername_FRA": "!!Viceroi Nute Gunray",
-       "leadername_ENG": "!!Viceroy Nute Gunray",
+     "leadername_FRA": "Viceroi Nute Gunray",
+       "leadername_ENG": "Viceroy Nute Gunray",
      "leaderfaction": ["Trade_Federation","",""],
      "leaderid": 16,
      "numberOfFactions": 1,
