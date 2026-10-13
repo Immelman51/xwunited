@@ -3487,8 +3487,8 @@
             "modify": true,
             "title": ["Phantom 2"],
             "points": 9,
-            "ability_FRA": "<div class='text'><img class='inline-img' src='img/forcestat.png'> <img class='inline-img' src='img/forcestat.png'> Après avoir entièrement effectué une manoeuvre, vous pouvez choisir un vaisseau allié à portée 1-2 et dépenser 2 <img class='inline-img' src='img/fo.jpg'>. Ce vaisseau peut effectuer une action, même stressé.</div>",
-            "ability_ENG": "<div class='text'><img class='inline-img' src='img/forcestat.png'> <img class='inline-img' src='img/forcestat.png'> After you fully execute a maneuver, you may choose a friendly ship at range 1-2 and spend 2 <img class='inline-img' src='img/fo.jpg'> . That ship may perform an action, even while stressed.</div>",
+            "ability_FRA": "<div class='text'>Après avoir entièrement effectué une manoeuvre, vous pouvez choisir un vaisseau allié à portée 1-2 et dépenser 2 <img class='inline-img' src='img/fo.jpg'>. Ce vaisseau peut effectuer une action, même stressé.</div>",
+            "ability_ENG": "<div class='text'>After you fully execute a maneuver, you may choose a friendly ship at range 1-2 and spend 2 <img class='inline-img' src='img/fo.jpg'> . That ship may perform an action, even while stressed.</div>",
             "slots": [
                 "Title" ,
                 "Talent-elite",
@@ -9718,7 +9718,7 @@
                 "Talent-piloting"                
            ],
            "modifier_func": [
-            	["auto_equip","Condition","??"]                              
+            	["auto_equip","Condition",285]
             ]
            
         },
@@ -9757,8 +9757,8 @@
             "shipId": 82,
             "skill": 5,
             "points": 15,
-            "ability_FRA": "<div class='text'><img class='inline-img' src='img/forcestat.png'> <img class='inline-img' src='img/forcestat.png'> <img class='inline-img' src='img/forcestat.png'>??</div>",
-            "ability_ENG": "<div class='text'><img class='inline-img' src='img/forcestat.png'> <img class='inline-img' src='img/forcestat.png'> <img class='inline-img' src='img/forcestat.png'>??</div>",
+            "ability_FRA": "<div class='text'>Après avoir entièrement effectué une manoeuvre, vous pouvez choisir un vaisseau allié à portée 1-2 et dépenser 2 <img class='inline-img' src='img/fo.jpg'>. Ce vaisseau peut effectuer une action, même stressé.</div>",
+            "ability_ENG": "<div class='text'>After you fully execute a maneuver, you may choose a friendly ship at range 1-2 and spend 2 <img class='inline-img' src='img/fo.jpg'> . That ship may perform an action, even while stressed.</div>",
             "slots": [
                 "Title",
                 "Force-Base",
@@ -9766,7 +9766,6 @@
                 "Talent-elite"
            ],
            "modifier_func": [
-            	["auto_equip","Condition","??"],
                 ["auto_equip","Title",289]
                                             
             ]
@@ -9787,16 +9786,16 @@
             "shipId": 82,
             "skill": 1,
             "points": 15,
-            "ability_FRA": "<div class='text'>Fin de la Mise en Place : Assignez la condition 'Connaissance Jedi' à 1 vaisseau avec au moins 1 jeton force.</div>",
-            "ability_ENG": "<div class='text'>End of Setup : Assign the 'Jedi Knowledge' to a ship with at least 1 force token.</div>",
+            "ability_FRA": "<div class='text'>Fin de la Mise en Place : Vous pouvez assigner la condition 'Connaissance Jedi' à 1 vaisseau avec au moins 1 jeton force.</div>",
+            "ability_ENG": "<div class='text'>End of Setup : You may assign the 'Jedi Knowledge' to a ship with at least 1 force token.</div>",
             "slots": [     
             "Title",    
             "Droid",
-                "Condition"
+            "Condition"
                        
            ],
            "modifier_func": [
-            	["auto_equip","Condition","??"],
+            	["auto_equip","Condition",290],
                 ["auto_equip","Title",289],
                 ["auto_equip","Droid",237]                              
             ]
@@ -9818,15 +9817,13 @@
             "shipId": 82,
             "skill": 3,
             "points": 14,
-            "ability_FRA": "<div class='text'>??</div>",
-            "ability_ENG": "<div class='text'>??</div>",
-            "slots": [     
+            "ability_FRA": "<div class='text'>Lorsque vous défendez ou attaquez, si vous êtes stressé, vous pouvez dépenser 1 <img class='inline-img' src='img/fo.jpg'> pour modifier jusqu'à 2 de vos résultats <img class='inline-img' src='img/eye.jpg'> en <img class='inline-img' src='img/hit.jpg'> ou <img class='inline-img' src='img/evd.jpg'>.</div>",
+            "ability_ENG": "<div class='text'>While you defend or perform an attack, if you are stressed, you may spend 1 <img class='inline-img' src='img/fo.jpg'> to change up to 2 of your <img class='inline-img' src='img/eye.jpg'> results to <img class='inline-img' src='img/hit.jpg'> or <img class='inline-img' src='img/evd.jpg'> results.</div>",
+            "slots": [
             "Title",
             "Force-Base",
             "Force-Light"
-                
-                       
-           ],
+            ],
            "modifier_func": [
             	
                 ["auto_equip","Title",289]
@@ -9849,9 +9846,9 @@
             "shipId": 82,
             "skill": 3,
             "points": 14,
-            "ability_FRA": "<div class='text'>??</div>",
-            "ability_ENG": "<div class='text'>??</div>",
-            "slots": [     
+            "ability_FRA": "<div class='text'>Avant de vous activer, vous pouvez effectuer une action <img class='inline-img' src='img/BR.png'> ou <img class='inline-img' src='img/BO.png'>.",
+            "ability_ENG": "<div class='text'>Before you activate, you may perform a <img class='inline-img' src='img/BR.png'> or <img class='inline-img' src='img/BO.png'> action.</div>",
+            "slots": [
             "Title",
             "Talent-piloting",
             "Force-Base"
@@ -9890,7 +9887,7 @@
             "Talent-piloting"
            ],
            "modifier_func": [
-                ["auto_equip","Title",203],
+                ["auto_equip","Title",328],
                 ["auto_equip","Condition",286]                       
             ]
          
@@ -9910,18 +9907,17 @@
             "shipId": 25,
             "skill": 2,
             "points": 16,
-            "ability_FRA": "<div class='text'>??</div>",
-            "ability_ENG": "<div class='text'>??</div>",
-            "slots": [     
+            "ability_FRA": "<div class='text'>Au début de la phase d'engagement, chaque vaisseau ennemi à portée 0 reçoit 2 jetons brouillage.</div>",
+            "ability_ENG": "<div class='text'>At the start of the Engagement Phase, each enemy ship at range 0 gains 2 jam tokens.</div>",
+            "slots": [
             "Title",
             "Condition",
             "Talent-piloting"
                                  
            ],
            "modifier_func": [
-                ["auto_equip","Title",203],
-                ["auto_equip","Droid",237],
-                ["auto_equip","Condition","??"]                       
+                ["auto_equip","Title",328],
+                ["auto_equip","Droid",237]
             ]
          
         },
@@ -10082,7 +10078,7 @@
             "skill": 5,
             "points": 15,
             "ability_FRA": "<div class='text'>Fin de la Mise en Place : Assignez la condition 'Maillon Faible' à un vaisseau ennemi</div>",
-            "ability_ENG": "<div class='text'>End of SETUP : assign a 'Weakest Link' condition to an enemy ship.</div>",
+            "ability_ENG": "<div class='text'>End of SETUP : assign the 'Weakest Link' condition to an enemy ship.</div>",
             "slots": [     
             "Condition",
             "Talent-elite",

@@ -244,9 +244,9 @@
             "id": 14,
             "max_per_squad": 8,
             "available": true,
-            "modify":true,
+            "modify":false,
             "slot": "Talent-piloting",
-            "add_Data": [0],
+            "add_Data": ["add_action", [0,"Ev R"]],
             "force": 0,
             "charge": [0],
             "points": 0,
@@ -255,7 +255,7 @@
             "effect_ENG": "Add the red <img class='inline-img' src='img/evd.jpg'> action. While you perform a red <img class='inline-img' src='img/evd.jpg'> action, if there's an obstacle at range 0-1, consider it white instead. When you overlap or move through an obstacle, you may perform an <img class='inline-img' src='img/evd.jpg'> action.",
             "faction": "",
             "modifier_func": [
-                [0, "add_action", [0,"Ev R"]]
+               
             ]
         },
         {
@@ -286,7 +286,7 @@
             "id": 16,
             "max_per_squad": 8,
             "available":false,
-            "modify":true,
+            "modify":false,
             "slot": "Crew",
             "add_Data": ["add_action",[0,"Co W"]],
             "force": 0,
@@ -297,7 +297,7 @@
             "restrictions": [1,"action", [0,"Co", "R"],""],
             "faction": "",
             "modifier_func": [
-                [0,"add_action",[0,"Co W"]]
+               
             ]
         },
  {
@@ -900,7 +900,7 @@
             "id": 51,
             "max_per_squad": 8,
             "available": true,
-            "modify":true,
+            "modify":false,
             "slot": "Turret",
             "add_Data": ["add_action",[0,"Ra W"]],
             "force": 0,
@@ -912,7 +912,7 @@
             "effect_ENG": "3<img class='inline-img' src='img/attackF.jpg'> range 1-2, Attack : If this attack hits, spend 1 <img class='inline-img' src='img/hit.jpg'> or <img class='inline-img' src='img/crit.jpg'> result to inflict 1 <img class='inline-img' src='img/hit.jpg'> damage to the defender. All <img class='inline-img' src='img/hit.jpg'>/<img class='inline-img' src='img/crit.jpg'> remaining results inflict ion tokens instead of damage.",
             "faction": "",
             "modifier_func": [
-                [0,"add_action",[0,"Ra W"]]
+                
             ]
                
         },
@@ -922,7 +922,7 @@
             "id": 52,
             "max_per_squad": 8,
             "available": true,
-            "modify":true,
+            "modify":false,
             "slot": "Turret",
             "add_Data": ["add_action",[0,"Ra W"]],
             "force": 0,
@@ -934,7 +934,7 @@
             "effect_ENG": "2<img class='inline-img' src='img/attackT.jpg'> range 1-2, Attack",
             "faction": "",
             "modifier_func": [
-                [0,"add_action",[0,"Ra W"]]
+              
             ]
         },
  {
@@ -942,7 +942,7 @@
             "name_ENG": "Autoblasters",
             "id": 53,
             "available": true,
-            "modify":true,
+            "modify":false,
             "max_per_squad": 8,
             "slot": "Turret",
             "add_Data": ["add_action",[0,"Ra W"]],
@@ -955,7 +955,7 @@
             "effect_ENG": "2<img class='inline-img' src='img/attackT.jpg'> range 0-1, Attack : upgrade 2 attack dice.",
             "faction": "",
             "modifier_func": [
-                [0,"add_action",[0,"Ra W"]]
+                
             ]
         },
         {
@@ -964,9 +964,9 @@
             "id": 54,
             "max_per_squad": 8,
             "available": true,
-            "modify":true,
+            "modify":false,
             "slot": "Turret",
-            "add_Data": [0],
+            "add_Data": ["add_action",[0,"Ra W"]],
             "force": 0,
             "charge": [0],
             "points": 4,
@@ -976,7 +976,7 @@
             "effect_ENG": "3<img class='inline-img' src='img/attackT.jpg'> range 2-3, Attack : downgrade 3 attack dice<br>Then Attack : downgrade 2 attack dice.",
             "faction": "",
             "modifier_func": [
-                [0,"add_action",[0,"Ra W"]]
+                
             ]
         },
          {
@@ -985,7 +985,7 @@
             "id": 55,
             "max_per_squad": 8,
             "available": true,
-            "modify":true,
+            "modify":false,
             "slot": "Turret",
             "add_Data": ["add_action",[0,"Ra W"]],
             "force": 0,
@@ -995,7 +995,7 @@
             "effect_ENG": "Choose an equipped <img class='inline-img' src='img/Cannon.png'> upgrade and place a cannon turret token on it. The <img class='inline-img' src='img/attackF.jpg'> restriction of your <img class='inline-img' src='img/Cannon.png'> becomes a <img class='inline-img' src='img/attackT.jpg'> restriction. You may rotate the arc of your <img class='inline-img' src='img/Cannon.png'> with the <img class='inline-img' src='img/Ra W.jpg'> action.",
             "faction": "",
             "modifier_func": [
-                [0,"add_action",[0,"Ra W"]]
+               
             ]
         },
          {
@@ -1131,7 +1131,7 @@
             "faction": "",
             "restrictions":[1,"action", [0,"Bo R"], ""],
             "modifier_func": [
-                [0, "add_action", [0,"Bo W"]]
+    
             ]
         },
         {
@@ -1239,9 +1239,9 @@
             "id": 70,
             "max_per_squad": 8,
             "available": true,
-            "modify":true,
+            "modify":false,
             "slot": "Modification",
-            "add_Data": [0],
+            "add_Data": ["add_action",[0,"Lo W"]],
             "force": 0,
             "charge": [0],
             "points": 1,
@@ -1249,7 +1249,6 @@
             "effect_ENG": "Gain the <img class='inline-img' src='img/Lo W.jpg'> action. You may check all ranges around you before choosing the target to lock.",
             "faction": "",
             "modifier_func": [
-                [0,"add_action",[0,"Lo W"]]
             ]
         },
 {
@@ -1540,9 +1539,9 @@
             "name_ENG": "C-3PO",
             "id": 88,
             "available": true,
-            "modify":true,
+            "modify":false,
             "slot": "Crew",
-            "add_Data": [0],
+            "add_Data": ["add_action",[0,"Cc W"]],
             "force": 0,
             "charge": [0],
             "points": 5,
@@ -1551,7 +1550,7 @@
             "effect_ENG": "Before rolling defense dice, you may spend 1 calculate token to guess aloud a number 1 or higher. If you do and you roll exactly that many <img class='inline-img' src='img/evd.jpg'> results, add 1 <img class='inline-img' src='img/evd.jpg'> result.<br>After you perform the <img class='inline-img' src='img/Cc W.jpg'> action, gain 1 calculate token.",
             "faction": ["Rebel_Alliance","New_Republic_Patrol","Heroes_of_the_Resistance"],
             "modifier_func": [
-                [0,"add_action",[0,"Cc W"]]
+              
             ]
         },
          {
@@ -1657,19 +1656,18 @@
             "name_ENG": "K-2SO",
             "id": 95,
             "available": true,
-            "modify":true,
+            "modify":false,
             "slot": "Crew",
             "faction": ["Rebel_Alliance"],
-            "effect_FRA": "Pendant la phase de système, vous pouvez choisir un vaisseau allié à portée 0–3. Ce vaisseau gagne 1 marqueur de calcul et 1 marqueur de stress.<br>Ajoute les actions <img class='inline-img' src='img/Cc W.jpg'> et <img class='inline-img' src='img/Ja W.jpg'>",
-            "effect_ENG": "During System Phase, you may choose a friendly ship at range 0-3. This ship receives 1 calculate token and 1 stress token.<br>Adds the <img class='inline-img' src='img/Cc W.jpg'> action and <img class='inline-img' src='img/Ja W.jpg'> action.",
+            "effect_FRA": "Pendant la phase de système, vous pouvez choisir un vaisseau allié à portée 0–3. Ce vaisseau gagne 1 marqueur de calcul et 1 marqueur de stress.<br>Ajoute les actions <img class='inline-img' src='img/Cc W.jpg'>-><img class='inline-img' src='img/Ja W.jpg'>",
+            "effect_ENG": "During System Phase, you may choose a friendly ship at range 0-3. This ship receives 1 calculate token and 1 stress token.<br>Adds the <img class='inline-img' src='img/Cc W.jpg'>-><img class='inline-img' src='img/Ja W.jpg'> actions.",
             "max_per_squad": 1,
-            "add_Data": [0],
+            "add_Data": [["add_action",[1,"Cc W","Ja R"]]],
             "force": 0,
             "charge": [0],
             "points": 6,
             "modifier_func": [
-                [0,"add_action",[0,"Cc W"]],
-                [0,"add_action",[0,"Ja W"]]
+                
             ]
         },
 
@@ -1859,9 +1857,9 @@
             "name_ENG": "IG-88D",
             "id": 107,
             "available": true,
-            "modify":true,
+            "modify":false,
             "slot": "Crew",
-            "add_Data": [0],
+            "add_Data": ["add_action", [0,"Cc W"]],
             "force": 0,
             "charge": [1,"AddCalcAction",""],
             "points": 3,
@@ -1870,7 +1868,7 @@
             "effect_ENG": "You gain the ability of each other friendly ship with the title IG-2000.<br>After you perform a <img class='inline-img' src='img/Cc W.jpg'> action, gain 1 calculate token.",
             "faction": ["Bounty_Hunters_Guild"],
             "modifier_func": [
-                [0,"add_action", [0,"Cc W"]]
+                
             ]
 
         },
@@ -2085,10 +2083,10 @@
             "name_ENG": "Pre Vizsla",
             "id": 120,
             "available": true,
-            "modify":true,
+            "modify":false,
             "add_Data": [0],
             "force": 0,
-            "charge": [0],
+            "charge": ["add_action", [0,"Co W"]],
             "points": 5,
             "slot": "Crew",
             "effect_ENG": "ACTION : deploy a Super Commando docked with you.<br>ACTION : choose a Super Commando at range 0-3. He may perform a boost, even partially.",
@@ -2096,7 +2094,7 @@
             "effect_FRA": "ACTION : Déployez un Super Commando qui est arrimé avec vous.<br>ACTION : Choisissez un Super Commando à portée 0-3. Il peut alors accélérer, même partiellement.",
             "max_per_squad": 1,
             "modifier_func": [
-                [0, "add_action", [0,"Co W"]]
+
             ]
         },
 {
@@ -3170,9 +3168,9 @@
             "id": 183,
             "max_per_squad": 8,
             "available": true, 
-            "modify": true,
+            "modify": false,
             "slot": "Gunner",
-            "add_Data": [0],
+            "add_Data": ["add_action",[1,"Lo W","Un W"]],
             "force": 0,
             "charge": [0],
             "points": 2,
@@ -3180,7 +3178,7 @@
             "effect_FRA": "ajoute <img class='inline-img' src='img/Lo W.jpg'> -> <img class='inline-img' src='img/UN W.jpg'>",
             "effect_ENG": "Adds <img class='inline-img' src='img/Lo W.jpg'> -> <img class='inline-img' src='img/UN W.jpg'>",
             "modifier_func": [
-                [0,"add_action",[1,"Lo W","Un W"]]
+                
             ]
         },
         {
@@ -3549,7 +3547,7 @@
 "points": 0,
 "max_per_squad": 1,
 "effect_ENG": "A ship with the 'Phantom 1' or 'Phantom 2' title may dock with you.",
-"faction": ["Phoenix_Cell","New_Republic_Patrol"],
+"faction": ["Phoenix_Cell"],
 "ship": "VCX-100 Light Freighter",
 "effect_FRA": "Un vaisseau avec le titre 'Phantom 1' ou 'Phantom 2' peut s'arrimer avec vous."
 
@@ -3882,19 +3880,19 @@
     "name_ENG": "Squad Leader",
     "id": 222,
     "available": true,
-    "modify":true,
+    "modify":false,
     "slot": "Talent-leadership",
-    "add_Data": [0],
+    "add_Data": ["add_action", [0,"Co R"]],
     "force": 0,
     "charge": [0],
     "points": 0,
     "talent_points": 2,
     "max_per_squad": 1,
-    "effect_FRA": "Tant que vous coordonnez, le vaisseau que vous avez choisi peut effectuer une action seulement si celle-ci est également dans votre barre d’action.<br>Ajoute l'action <img class='inline-img' src='img/CO.jpg'>",
-    "effect_ENG": "While you coordinate, the ship you chose may perform an action only if it is also on your action bar.<br>Add the <img class='inline-img' src='img/CO.jpg'> action.",
+    "effect_FRA": "Tant que vous coordonnez, le vaisseau que vous avez choisi peut effectuer une action seulement si celle-ci est également dans votre barre d’action.<br>Ajoute l'action rouge <img class='inline-img' src='img/CO.jpg'>",
+    "effect_ENG": "While you coordinate, the ship you chose may perform an action only if it is also on your action bar.<br>Add the red <img class='inline-img' src='img/CO.jpg'> action.",
     "faction": "",
     "modifier_func": [
-        [0, "add_action", [0,"Co R"]]
+        
     ]
 },
 {
@@ -3939,18 +3937,18 @@
     "id": 225,
     "max_per_squad": 8,
     "available": true,
-    "modify":true,
+    "modify":false,
     "slot": "Talent-piloting",
-    "add_Data": [0],
+    "add_Data": ["add_action", [0,"Br W"]],
     "force": 0,
     "charge": [0],
     "points": 0,
     "talent_points": 4,
-    "effect_FRA": "Ajoute l'action <img class='inline-img' src='img/BR.png'> rouge. Si vous la possédiez déjà, elle devient blanche, et vous pouvez la lier avec une actions <img class='inline-img' src='img/eye.jpg'> rouge. Si vous effectuez une action <img class='inline-img' src='img/BR.png'> rouge, recevez 1 jeton contrainte, et si vous êtes un socle large, exposez en plus une carte de dégat.",
-    "effect_ENG": "Add the red <img class='inline-img' src='img/BR.png'> action. If you already had it, it becomes white, and you can link it with a red <img class='inline-img' src='img/eye.jpg'> action.<br>When you perform a red <img class='inline-img' src='img/BR.png'> action, receive a strain token, and if you are a large base ship, in addition to that, expose a damage card.",
+    "effect_FRA": "Ajoute l'action <img class='inline-img' src='img/BR.png'>. Si vous la possédiez déjà, et vous pouvez la lier avec une action <img class='inline-img' src='img/eye.jpg'> rouge. Si vous effectuez une action <img class='inline-img' src='img/BR.png'>, si vous ne la possédiez pas, recevez 1 jeton contrainte, et si vous êtes un socle large, exposez en plus une carte de dégat.",
+    "effect_ENG": "Add the <img class='inline-img' src='img/BR.png'> action. If you already had it, you can link it with a red <img class='inline-img' src='img/eye.jpg'> action.<br>When you perform a <img class='inline-img' src='img/BR.png'> action, if you didn't have it initially, receive a strain token, and if you are a large base ship, in addition to that, expose a damage card.",
     "faction": "",
     "modifier_func": [
-        [0, "add_action", [0,"Br R"]]
+       
     ]
 },
 {
@@ -4467,8 +4465,8 @@
              "force": 1,
              "charge": [0],
              "points":7,
-             "effect_FRA": "<img class='inline-img' src='img/forcestat.png'> Après avoir exécuté une manœuvre, vous pouvez dépenser 1 <img class='inline-img' src='img/fo.jpg'> et choisir un vaisseau allié dans votre arc de tir à portée 1-3. Dans ce cas, il peut effectuer une action <img class='inline-img' src='img/eye.jpg'> rouge, même s’il est stressé.",
-             "effect_ENG": "<img class='inline-img' src='img/forcestat.png'> Après avoir exécuté une manœuvre, vous pouvez dépenser 1 <img class='inline-img' src='img/fo.jpg'> et choisir un vaisseau allié dans votre arc de tir à portée 1-3. Dans ce cas, il peut effectuer une action <img class='inline-img' src='img/eye.jpg'> rouge, même s’il est stressé.",
+             "effect_FRA": "Après avoir exécuté une manœuvre, vous pouvez dépenser 1 <img class='inline-img' src='img/fo.jpg'> et choisir un vaisseau allié dans votre arc de tir à portée 1-3. Dans ce cas, il peut effectuer une action <img class='inline-img' src='img/eye.jpg'> rouge, même s’il est stressé.",
+             "effect_ENG": "Après avoir exécuté une manœuvre, vous pouvez dépenser 1 <img class='inline-img' src='img/fo.jpg'> et choisir un vaisseau allié dans votre arc de tir à portée 1-3. Dans ce cas, il peut effectuer une action <img class='inline-img' src='img/eye.jpg'> rouge, même s’il est stressé.",
              "faction": ["Jedi_Order","New_Republic_Patrol","Phoenix_Cell"]
              
          },
@@ -5082,8 +5080,8 @@
              "force": 0,
              "charge": [0],
              "points": 0,
-             "effect_FRA": "",
-             "effect_ENG": "",
+             "effect_FRA": "Lorsque vous défendez, si Lieutenant Callahan est aussi dans l'arc de tir, vous pouvez dégrader un dé d'attaque.",
+             "effect_ENG": "When you defend, if Lieutenant Callahan is also in the firing arc, you may downgrade 1 attack die.",
              "faction": ["New_Republic_Patrol"]
              
          },
@@ -5716,20 +5714,20 @@
              
          },
          {
-            "name_FRA": "",
-             "name_ENG": "",
+            "name_FRA": "Ghost",
+             "name_ENG": "Ghost",
              "id":328,
              "max_per_squad":1,
              "available":true,
              "modify": false,
-             "slot": "",
+             "slot": "Title",
              "add_Data": [0],
              "force": 0,
              "charge": [0],
              "points": 0,
              "effect_FRA": "",
              "effect_ENG": "",
-	     "faction": [""]
+	     "faction": ["New_Republic_Patrol"]
              
                          
              
@@ -5740,9 +5738,9 @@
              "id":329,
              "max_per_squad":1,
              "available":true,
-             "modify":true,
+             "modify":false,
              "slot": "Crew",
-             "add_Data": [0],
+             "add_Data": ["add_action", [1,"Ja W","Co R"]],
              "force": 0,
              "charge": [0],
              "points": 6,
@@ -5750,7 +5748,7 @@
              "effect_ENG": "Add action <img class='inline-img' src='img/Ja W.jpg'> -> Red <img class='inline-img' src='img/CO.jpg'>",
              "faction": ["Partisans"],
              "modifier_func":[
-                [0, "add_action", [1,"Ja W","Co R"]]
+                
              ]
                          
              
@@ -6055,8 +6053,8 @@
              "force": 0,
              "charge": [0],
              "points": 2,
-             "effect_FRA": "Après avoir effectué une attaque <img class='inline-img' src='img/attackT.jpg> ou <img class='inline-img' src='img/attackB.jpg>, la cible de l'attaque perd 1 <img class='inline-img' src='img/fo.jpg> ou expose 1 carte de dégat.",
-             "effect_ENG": "After you perform a <img class='inline-img' src='img/attackT.jpg> or <img class='inline-img' src='img/attackB.jpg> attack, the target loses 1 <img class='inline-img' src='img/fo.jpg> or expose 1 facedown damage card.",
+             "effect_FRA": "Après avoir effectué une attaque <img class='inline-img' src='img/attackT.jpg> ou <img class='inline-img' src='img/attackB.jpg>, la cible de l'attaque perd 1 jeton <img class='inline-img' src='img/fo.jpg> ou expose 1 carte de dégat.",
+             "effect_ENG": "After you perform a <img class='inline-img' src='img/attackT.jpg> or <img class='inline-img' src='img/attackB.jpg> attack, the target loses 1 <img class='inline-img' src='img/fo.jpg> token or expose 1 facedown damage card.",
              "faction": ["New_Republic_Patrol"]
                                      
              
@@ -6069,7 +6067,7 @@
              "available":true,
              "modify":true,
              "slot": "Crew",
-             "add_Data": [0],
+             "add_Data": ["add_action",[0,"CC W"]],
              "force": 0,
              "charge": [0],
              "points": 4,
@@ -6077,7 +6075,6 @@
              "effect_ENG": "Add a 'Force-Base' slot. You may spend calculate tokens instead of force tokens. Add the <img class='action' src='img/Cc W.jpg> action.",
              "faction": ["New_Republic_Patrol"],
              "modifier_func": [
-                 [0, "add_action", [0,"Cc W"]],
                  ["add_slots","Force-Base"],
                  ["may_remove_slots","Force-Base"]
              ]
