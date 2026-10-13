@@ -1120,7 +1120,7 @@
             "name_ENG": "Engine Upgrade",
             "id": 63,
             "available":false,
-            "modify":true,
+            "modify":false,
             "slot": "Modification",
             "add_Data": ["add_action",[0,"Bo W"]],
             "force": 0,
