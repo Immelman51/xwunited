@@ -1433,8 +1433,6 @@ function displayDescriptionPilot(i) { //permet d'afficher la capacité du pilote
     if (pilot_list[y]["name"]===''){
         description_upg_pil_Field.innerHTML = "";
     }else{
-        
-     
         if (pilot_list[i]["charge"][0] > 0) {
             switch(pilot_list[i]["charge"][1]){
                     case "yellow":
@@ -1462,11 +1460,10 @@ function displayDescriptionPilot(i) { //permet d'afficher la capacité du pilote
             }
         }
     }
-    }
-            
     description_upg_pil_Field.innerHTML = description_upg_pil_Field.innerHTML + pilot_list[i]["ability_"+language];
 
 }
+
   
 
 function displayDescriptionShip(event){ //displays ship stats (and actions and maneuvers ?)
