@@ -1767,7 +1767,7 @@
         
       
                 "name": "BTL-B Y-wing",
-                "factions": ["Jedi_Order","Clone_Army"],
+                "factions": ["Jedi_Order"],
                 "id": 63,
                 "attack": [["F",2]],
                 "agility": 1,

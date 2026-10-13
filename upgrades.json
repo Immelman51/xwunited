@@ -579,8 +579,8 @@
             "add_Data": [0],
             "force": 0,
             "charge": [3,"yellow","0"],
-            "effect_FRA": "   Attaque (<img class='inline-img' src='img/eye.jpg'>): 3<img class='inline-img' src='img/attackF.jpg'> Portée 2-3 : Dépensez 1 <img class='inline-img' src='img/charge.png'>. Si le défenseur est dans votre <img class='inline-img' src='img/bulls.jpg'>, vous pouvez dépenser 1 ou plusieurs <img class='inline-img' src='img/charge.png'> pour relancer autant de dés d’attaque.",
-            "effect_ENG": "img class='inline-img' src='img/chargestat.png'>   Attack (<img class='inline-img' src='img/eye.jpg'>): 3<img class='inline-img' src='img/attackF.jpg'> range 2-3 : Spend 1 <img class='inline-img' src='img/charge.png'>. If the defender is in your <img class='inline-img' src='img/bulls.jpg'>, you may spend 1 or several <img class='inline-img' src='img/charge.png'> to reroll as many attack dice.",
+            "effect_FRA": "Attaque (<img class='inline-img' src='img/eye.jpg'>): 3<img class='inline-img' src='img/attackF.jpg'> Portée 2-3 : Dépensez 1 <img class='inline-img' src='img/charge.png'>. Si le défenseur est dans votre <img class='inline-img' src='img/bulls.jpg'>, vous pouvez dépenser 1 ou plusieurs <img class='inline-img' src='img/charge.png'> pour relancer autant de dés d’attaque.",
+            "effect_ENG": "Attack (<img class='inline-img' src='img/eye.jpg'>): 3<img class='inline-img' src='img/attackF.jpg'> range 2-3 : Spend 1 <img class='inline-img' src='img/charge.png'>. If the defender is in your <img class='inline-img' src='img/bulls.jpg'>, you may spend 1 or several <img class='inline-img' src='img/charge.png'> to reroll as many attack dice.",
             "restrictions": [1,"upgrade", "Torpedo",""],
             "faction": "",
             "modifier_func": [

@@ -1436,16 +1436,38 @@ function displayDescriptionPilot(i) { //permet d'afficher la capacité du pilote
         
      
         if (pilot_list[i]["charge"][0] > 0) {
-            for (k=0;k<pilot_list[i]["charge"][0];k++){
-                description_upg_pil_Field.innerHTML = description_upg_pil_Field.innerHTML + '<img class="inline-img" src="img/chargestat.png">';
+            switch(pilot_list[i]["charge"][1]){
+                    case "yellow":
+                    for (k=0;k<pilot_list[i]["charge"][0];k++){
+                        description_upg_pil_Field.innerHTML = description_upg_pil_Field.innerHTML + '<img class="inline-img" src="img/chargestat.png">';
+                    }
+                        break;
+                    case "red":
+                    for (k=0;k<pilot_list[i]["charge"][0];k++){
+                        description_upg_pil_Field.innerHTML = description_upg_pil_Field.innerHTML + '<img class="inline-img" src="img/chargestatRed.png">';
+                    }
+                        break;
+                     default:
+                    break;
             }
-            if (pilot_list[i]["charge"][1]==="+"){
-                description_upg_pil_Field.innerHTML =description_upg_pil_Field.innerHTML + '<img class="inline-img" src="img/chargeplus.png">';
+            switch (pilot_list[i]["charge"][2]){
+                    case "+" :
+                    description_upg_pil_Field.innerHTML =description_upg_pil_Field.innerHTML + '<img class="inline-img" src="img/chargeplus.png">';
+                    break;
+                    case "-" :
+                    description_upg_pil_Field.innerHTML =description_upg_pil_Field.innerHTML + '<img class="inline-img" src="img/chargeminus.png">';
+                    break;
+                    default :
+                    break;
             }
         }
-        description_upg_pil_Field.innerHTML = description_upg_pil_Field.innerHTML + pilot_list[i]["ability_"+language];
     }
+    }
+            
+    description_upg_pil_Field.innerHTML = description_upg_pil_Field.innerHTML + pilot_list[i]["ability_"+language];
+
 }
+  
 
 function displayDescriptionShip(event){ //displays ship stats (and actions and maneuvers ?)
     description_upg_pil_Field=document.getElementById("descript_upg");
