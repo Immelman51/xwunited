@@ -6642,6 +6642,22 @@
             "effect_FRA": "Après avoir défendu contre un ennemi Prédateur Effrayant, si vous n'avez pas dépensé au moins 1 marqueur vert durant l'attaque, gagnez 1 marqueur de contrainte.",
             "effect_ENG": "After you defend against an enemy Fearsome Predator, if you did not spend at least 1 green token during the attack, gain 1 strain token.",
             "faction": ["Trade_Federation"]
+        },
+        {
+            "name_FRA": "Manoeuvre Malaisante",
+            "name_ENG": "Sickening Maneuver",
+            "id": 378,
+            "max_per_squad": 1,
+            "available": true,
+            "modify": false,
+            "slot": "Condition",
+            "add_Data": [0],
+            "force": 0,
+            "charge": [0],
+            "points": 0,
+            "effect_FRA": "Vous pouvez exécuter des manœuvres rouges, même si vous êtes stressé. Après avoir révélé une manœuvre de virage sur l'aile <img class='inline-img' src='img/manTl2.jpg'> ou <img class='inline-img' src='img/manTr2.jpg'>  ou de virage <img class='inline-img' src='img/manBl2.jpg'> ou <img class='inline-img' src='img/manBr2.jpg'>, vous devez gagner 1 marqueur de contrainte et exécuter cette manœuvre comme un dérapage. Après avoir révélé une manœuvre en ligne droite <img class='inline-img' src='img/manSt2.jpg'> , vous devez exécuter cette manœuvre comme un virage Koiogran <img class='inline-img' src='img/manKo2.jpg'>  rouge. Après avoir exécuté une manœuvre, retirez cet état.",
+            "effect_ENG": "You can execute red maneuvers even while stressed. After you reveal a bank <img class='inline-img' src='img/manBl2.jpg'> or <img class='inline-img' src='img/manBr2.jpg'>  or turn <img class='inline-img' src='img/manTl2.jpg'> or <img class='inline-img' src='img/manTr2.jpg'> maneuver, you must gain 1 strain and execute the maneuver as a sideslip. After you reveal a straight <img class='inline-img' src='img/manSt2.jpg'>  maneuver, you must execute that maneuver as a red koiogran turn <img class='inline-img' src='img/manKo2.jpg'> . After you execute a maneuver, remove this condition.",
+            "faction": ["Trade_Federation"]
         }
         
 

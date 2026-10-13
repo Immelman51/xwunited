@@ -6815,7 +6815,7 @@
             "name_ENG": "Sicko",
             "id": 294,
             "max_per_squad": 1,
-            "modify": false,
+            "modify": true,
 		    "faction": "Clone_Army",
             "ship": "LAAT/i Gunship",
             "charge":[0],
@@ -6829,6 +6829,9 @@
             "slots": [
                 "Condition",
                 "Talent-piloting"
+            ],
+            "modifier_func": [
+                ["auto_equip","Condition",378]
             ]
         },
         {
