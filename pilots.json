@@ -8136,7 +8136,7 @@
             "modify": true,
 		    "faction": "Crime_Syndicates",
             "ship": "Supa Starfighter",
-            "charge": [1,"yellow","+"],
+            "charge": [1,"yellow",0],
             "force": 0,
             "titleID": 0,
             "shipId": 83,
@@ -8499,8 +8499,8 @@
             "shipId": 18,
             "skill": 3,
             "points": 13,
-            "ability_FRA": "<div class='text'>??</div>",
-            "ability_ENG": "<div class='text'>??</div>",
+            "ability_FRA": "<div class='text'>Lorsque vous effectuez un tonneau, vous devez utiliser un gabarit <img class='inline-img' src='img/manBr2.jpg'> ou <img class='inline-img' src='img/manBl2.jpg'> de vitesse 2.</div>",
+            "ability_ENG": "<div class='text'>While you perform a barrel roll, you must use a speed 2 <img class='inline-img' src='img/manBr2.jpg'> or <img class='inline-img' src='img/manBl2.jpg'> template.</div>",
             "slots": [
                 "Talent-leadership",
                 "Talent-piloting"
@@ -8683,8 +8683,8 @@
             "shipId": 12,
             "skill": 5,
             "points": 8,
-            "ability_FRA": "<div class='text'></div>",
-            "ability_ENG": "<div class='text'></div>",
+            "ability_FRA": "<div class='text'>Tant que vous défendez ou effectuez une attaque, les dés du vaisseau ennemi ne peuvent pas être modifiés s'il est stressé.</div>",
+            "ability_ENG": "<div class='text'>While you defend or attack, the enemy ship dice cannot be modified if this ship is stressed.</div>",
             "slots": [
                 "Talent-shooting",
                 "Talent-shooting"
