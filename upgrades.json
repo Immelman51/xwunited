@@ -93,7 +93,7 @@
             "charge": [0],
             "points": 0,
             "talent_points": 2,
-            "effect_FRA": "Après avoir exécuté entièrement une manœuvre, vous pouvez choisir un vaisseau ennemi à portée 1 in your <img class='inline-img' src='img/attackF.jpg'>. Dans ce cas, recevez un jeton contrainte pour donner un jeton contrainte à ce vaisseau.",
+            "effect_FRA": "Après avoir exécuté entièrement une manœuvre, vous pouvez choisir un vaisseau ennemi à portée 1 dans votre <img class='inline-img' src='img/attackF.jpg'>. Dans ce cas, recevez un jeton contrainte pour donner un jeton contrainte à ce vaisseau.",
             "effect_ENG": "After fully performing a maneuver, you may choose an enemy ship at range 1 in your <img class='inline-img' src='img/attackF.jpg'>. If you do, receive a strain token to deal a strain token to this ship.",
             "faction": ""
         },   
@@ -2709,8 +2709,8 @@
             "charge": [0],
             "points": 4,
             "faction": ["Phoenix_Cell","New_Republic_Patrol"],
-            "effect_FRA": "Lorsque vous effectuez une attaque <img class='inline-img' src='img/attackT.jpg'>, si l'attaque touche, chaque vaisseau allié à portée 0-2 du défenseur retire 1 jeton rouge ou orange.",
-            "effect_ENG": "When you perform a <img class='inline-img' src='img/attackT.jpg'> attack, if the attack hits, each ally ship at range 0-2 of the defender loses 1 red or orange Token."
+            "effect_FRA": "Lorsque vous effectuez une attaque <img class='inline-img' src='img/attackT.jpg'> ou <img class='inline-img' src='img/Barc.jpg'>, si l'attaque touche, chaque vaisseau allié à portée 0-2 du défenseur retire 1 jeton rouge ou orange.",
+            "effect_ENG": "When you perform a <img class='inline-img' src='img/attackT.jpg'> or <img class='inline-img' src='img/Barc.jpg'> attack, if the attack hits, each ally ship at range 0-2 of the defender loses 1 red or orange Token."
         },
 
         {
@@ -6012,7 +6012,7 @@
              "charge": [0],
              "points": 0,
              "talent_points": 0,
-             "effect_FRA": "Après qu'un autre vaisseau allié à portée 0-3 a été détruit, si ce vaisseau était limité ou qu'il avait l'amélioration Optimiste, vous pouvez effectuer une action <img class='inline-img' src='img/fo.jpg'> ou <img class='inline-img' src='img/BO.png'>.",
+             "effect_FRA": "Après qu'un autre vaisseau allié à portée 0-3 a été détruit, si ce vaisseau était limité ou qu'il avait l'amélioration Optimiste, vous pouvez effectuer une action <img class='inline-img' src='img/eye.jpg'> ou <img class='inline-img' src='img/BO.png'>.",
              "effect_ENG": "After another friendly ship at range 0-3 is destroyed, if that ship is limited or has the Hopeful upgrade, you may perform a <img class='inline-img' src='img/fo.jpg'> or <img class='inline-img' src='img/BO.png'> action.",
              "faction": ["New_Republic_Patrol"]
                                      
@@ -6042,20 +6042,20 @@
              
          },
          {
-            "name_FRA": "Sabine Wren",
-             "name_ENG": "Sabine Wren",
+            "name_FRA": "",
+             "name_ENG": "",
              "id":345,
              "max_per_squad":1,
              "available":true,
              "modify":false,
-             "slot": "Gunner",
+             "slot": "Special",
              "add_Data": [0],
              "force": 0,
              "charge": [0],
              "points": 2,
-             "effect_FRA": "Après avoir effectué une attaque <img class='inline-img' src='img/attackT.jpg> ou <img class='inline-img' src='img/attackB.jpg>, la cible de l'attaque perd 1 jeton <img class='inline-img' src='img/fo.jpg> ou expose 1 carte de dégat.",
-             "effect_ENG": "After you perform a <img class='inline-img' src='img/attackT.jpg> or <img class='inline-img' src='img/attackB.jpg> attack, the target loses 1 <img class='inline-img' src='img/fo.jpg> token or expose 1 facedown damage card.",
-             "faction": ["New_Republic_Patrol"]
+             "effect_FRA": "",
+             "effect_ENG": "",
+             "faction": [""]
                                      
              
          },

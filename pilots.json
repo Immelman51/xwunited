@@ -1939,9 +1939,7 @@
                 
             ],
             "modifier_func": [
-            	["auto_equip","Title",135],
-                ["change_chassis",0,0]            
-               
+            	["auto_equip","Title",135]
 
             ]
         },
@@ -1992,8 +1990,7 @@
                 
             ],
             "modifier_func": [
-            	["auto_equip","Title",135],
-                ["change_chassis",0,0]
+            	["auto_equip","Title",135]
                 
             ]
         },
@@ -9863,8 +9860,8 @@
          
         },
         {
-            "name_FRA": "Hera Syndulla",
-            "name_ENG": "Hera Syndulla",
+            "name_FRA": "Générale Hera Syndulla",
+            "name_ENG": "General Hera Syndulla",
             "id": 430,
             "max_per_squad": 1,
             "modify": true,
@@ -9888,7 +9885,8 @@
            ],
            "modifier_func": [
                 ["auto_equip","Title",328],
-                ["auto_equip","Condition",286]                       
+                ["auto_equip","Condition",286],
+                ["change_chassis",0,0]
             ]
          
         },
@@ -9917,7 +9915,8 @@
            ],
            "modifier_func": [
                 ["auto_equip","Title",328],
-                ["auto_equip","Droid",237]
+                ["auto_equip","Droid",237],
+                ["change_chassis",0,0]
             ]
          
         },
@@ -9946,7 +9945,8 @@
            ],
            "modifier_func": [
                 ["auto_equip","Title",203],
-                ["auto_equip","Condition",287]                       
+                ["auto_equip","Condition",287],
+                ["change_chassis",0,0]
             ]
          
         },

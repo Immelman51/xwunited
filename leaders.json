@@ -199,14 +199,14 @@
      "logistic": 25
      },
      {
-     "leadername_FRA": "!!Générale Syndulla",
-         "leadername_ENG": "!!General Syndulla",
+     "leadername_FRA": "Générale Syndulla",
+         "leadername_ENG": "General Syndulla",
      "leaderfaction": ["New_Republic_Patrol","",""],
      "leaderid": 18,
      "numberOfFactions": 1,
      "leaderability_FRA": "<div class='text'>Lorsque vous détruisez 1 vaisseau ennemi avec une condition alliée, dépensez 1 <img class='inline-img' src='img/charge.png'>. Dans ce cas, gagnez 2 PO et déplacez la condition sur un autre vaisseau ennemi.</div>",
      "leaderability_ENG": "<div class='text'>When you destroy 1 enemy ship with an allied condition, spend 1 <img class='inline-img' src='img/charge.png'>. In this case, gain 2 PO and move the condition to another enemy ship.</div>",
-     "charge": [2,"Red"],
+     "charge": [2,"Yellow"],
      "logistic": 20
      },
      {
