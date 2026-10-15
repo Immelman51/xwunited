@@ -6,7 +6,7 @@ const XWING_ICON_FONT_MAP = {
   'Barc': '\uE002', // U+E002
   'Bo W': '\uE003', // U+E003
   'Br W': '\uE004', // U+E004
-  'CO': '\uE005', // U+E005
+  'Co W': '\uE005', // U+E005
   'Cannon': '\uE006', // U+E006
   'Cc W': '\uE007', // U+E007
   'Ck W': '\uE008', // U+E008
@@ -35,8 +35,8 @@ const XWING_ICON_FONT_MAP = {
   'bulls': '\uE01F', // U+E01F
   'charge': '\uE020', // U+E020
   'crit': '\uE021', // U+E021
-  'evd': '\uE022', // U+E022
-  'eye': '\uE023', // U+E023
+  'Ev W': '\uE022', // U+E022
+  'Fo W': '\uE023', // U+E023
   'fleche': '\uE024', // U+E024
   'fo': '\uE025', // U+E025
   'hit': '\uE026', // U+E026

@@ -36,10 +36,10 @@
         "nbrOfEffects": 2,
         "effect1_FRA": "(Servomoteurs S-Foils) Avant votre activation, vous pouvez changer de configuration :",
         "effect2_FRA": "<img class='chargeforceimg' src='img/chargestatRed.png'> (Déplié)",
-        "effect3_FRA": "<img class='chargeforceimg' src='img/chargestat.png'> <div>(Réplié) Tant que vous effectuez une attaque principale, lancez 1 dé en moins. Ajoute  : <img class='inline-img' src='img/Br W.jpg'/> <br> <img class='inline-img' src='img/eye.jpg'/> <img class='inline-img' src='img/fleche.jpg'/> Red <img class='inline-img' src='img/Br W.jpg'/></div>",
+        "effect3_FRA": "<img class='chargeforceimg' src='img/chargestat.png'> <div>(Réplié) Tant que vous effectuez une attaque principale, lancez 1 dé en moins. Ajoute  : <img class='inline-img' src='img/Br W.jpg'/> <br> <img class='inline-img' src='img/Fo W.jpg'/> <img class='inline-img' src='img/fleche.jpg'/> Red <img class='inline-img' src='img/Br W.jpg'/></div>",
         "effect1_ENG": "(Servomotor S-Foils) :",
         "effect2_ENG": "<img class='chargeforceimg' src='img/chargestatRed.png'> (Open) ",
-        "effect3_ENG": "<img class='chargeforceimg' src='img/chargestat.png'> <div>(Closed) While you perform a primary attack, roll 1 fewer die. Add <img class='inline-img' src='img/Br W.jpg'/> , <img class='inline-img' src='img/eye.jpg'/><img class='inline-img' src='img/fleche.jpg'/>Red<img class='inline-img' src='img/Br W.jpg'/></div>"
+        "effect3_ENG": "<img class='chargeforceimg' src='img/chargestat.png'> <div>(Closed) While you perform a primary attack, roll 1 fewer die. Add <img class='inline-img' src='img/Br W.jpg'/> , <img class='inline-img' src='img/Fo W.jpg'/><img class='inline-img' src='img/fleche.jpg'/>Red<img class='inline-img' src='img/Br W.jpg'/></div>"
     },
     {
         "name": "Pivot Wing",
@@ -69,10 +69,10 @@
         "nbrOfEffects": 2,
         "effect1_FRA": "(S-Foils Stabilisés) Avant votre activation, vous pouvez changer de configuration:",
         "effect2_FRA": "<img class='inline-img' src='img/chargestat.png'>(Dépliés) Après avoir effectué une attaque principale, vous pouvez dépenser votre verrouillage sur le défenseur pour effectuer une attaque spéciale bonus contre ce vaisseau.",
-        "effect3_FRA": "<img class='inline-img' src='img/chargestatRed.png'><div>(Repliés) Lorsque vous attaquez, si la cible n'est pas dans votre <img class='inline-img' src='img/bulls.jpg'>, lancez 1 dé de moins. Ajoute <img class='inline-img' src='img/evd.jpg'> , <img class='inline-img' src='img/Br W.jpg'><img class='inline-img' src='img/fleche.jpg'><img class='inline-img' src='img/evd.jpg'>Rouge</div>",
+        "effect3_FRA": "<img class='inline-img' src='img/chargestatRed.png'><div>(Repliés) Lorsque vous attaquez, si la cible n'est pas dans votre <img class='inline-img' src='img/bulls.jpg'>, lancez 1 dé de moins. Ajoute <img class='inline-img' src='img/Ev W.jpg'> , <img class='inline-img' src='img/Br W.jpg'><img class='inline-img' src='img/fleche.jpg'><img class='inline-img' src='img/Ev W.jpg'>Rouge</div>",
         "effect1_ENG": "(Stabilized S-Foils) :",
         "effect2_ENG": "<img class='inline-img' src='img/chargestat.png'>(Opened) After you perform a primary attack, you may spend your lock on the defender to perform a bonus special attack against that ship.",
-        "effect3_ENG": "<img class='inline-img' src='img/chargestatRed.png'><div>(Closed) When you attack, if the target is not in your <img class='inline-img' src='img/bulls.jpg'>, roll 1 fewer die. Add <img class='inline-img' src='img/evd.jpg'> , <img class='inline-img' src='img/Br W.jpg'><img class='inline-img' src='img/fleche.jpg'>Red<img class='inline-img' src='img/evd.jpg'></div>"
+        "effect3_ENG": "<img class='inline-img' src='img/chargestatRed.png'><div>(Closed) When you attack, if the target is not in your <img class='inline-img' src='img/bulls.jpg'>, roll 1 fewer die. Add <img class='inline-img' src='img/Ev W.jpg'> , <img class='inline-img' src='img/Br W.jpg'><img class='inline-img' src='img/fleche.jpg'>Red<img class='inline-img' src='img/Ev W.jpg'></div>"
     },
     {
         "name": "Advanced Targetting Computer",
@@ -166,10 +166,10 @@
         "name": "Rigged Energy Cells",
         "id": 15,
         "nbrOfEffects": 1,
-        "effect1_FRA": "<img class='chargeforceimg' src='img/chargestat.png'><img class='chargeforceimg' src='img/chargestat.png'><img class='chargeforceimg' src='img/chargestat.png'><div>(Cellules Énergétiques Bidouillées) : À la fin de la phase d’activation, si vous n'êtes pas arrimé perdez 1 <img class='inline-img' src='img/charge.jpg'>. Vous êtes détruit si vous avez 0 <img class='inline-img' src='img/charge.jpg'>. Avant de retirer votre figurine, chaque vaisseau à porté 0–1 subit 1 dégât <img class='inline-img' src='img/crit.jpg'> </div>",
+        "effect1_FRA": "<img class='chargeforceimg' src='img/chargestat.png'><img class='chargeforceimg' src='img/chargestat.png'><img class='chargeforceimg' src='img/chargestat.png'><div>(Cellules Énergétiques Bidouillées) : À la fin de la phase d’activation, si vous n'êtes pas arrimé perdez 1 <img class='inline-img' src='img/charge.png'>. Vous êtes détruit si vous avez 0 <img class='inline-img' src='img/charge.png'>. Avant de retirer votre figurine, chaque vaisseau à porté 0–1 subit 1 dégât <img class='inline-img' src='img/crit.jpg'> </div>",
         "effect2_FRA": "",
         "effect3_FRA": "",
-        "effect1_ENG": "<img class='chargeforceimg' src='img/chargestat.png'><img class='chargeforceimg' src='img/chargestat.png'><img class='chargeforceimg' src='img/chargestat.png'><div>(Rigged Energy Cells) : At the end of the activation phase, if you are not docked, lose 1 <img class='inline-img' src='img/charge.jpg'>. You are destroyed if you have 0 <img class='inline-img' src='img/charge.jpg'>. Before removing your ship, each ship at range 0-1 suffers 1 <img class='inline-img' src='img/crit.jpg'> damage </div>",
+        "effect1_ENG": "<img class='chargeforceimg' src='img/chargestat.png'><img class='chargeforceimg' src='img/chargestat.png'><img class='chargeforceimg' src='img/chargestat.png'><div>(Rigged Energy Cells) : At the end of the activation phase, if you are not docked, lose 1 <img class='inline-img' src='img/charge.png'>. You are destroyed if you have 0 <img class='inline-img' src='img/charge.png'>. Before removing your ship, each ship at range 0-1 suffers 1 <img class='inline-img' src='img/crit.jpg'> damage </div>",
         "effect2_ENG": "",
         "effect3_ENG": "" 
     },
@@ -188,10 +188,10 @@
     "name": "Networked Calculations (not used, became a calculator upgrade for trade federation)",
     "id":17,
     "nbrOfEffects": 1,
-    "effect1_FRA":"<div>(Calculs en Réseau) :  Lorsque vous défendez ou attaquez, you pouvez dépenser 1 jeton calcul d'un vaisseau allié à portée 0-1 pour modifier 1 résultat <img class='inline-img' src='img/eye.jpg'> en résultat <img class='inline-img' src='img/hit.jpg'> ou <img class='inline-img' src='img/evd.jpg'>.</div>",
+    "effect1_FRA":"<div>(Calculs en Réseau) :  Lorsque vous défendez ou attaquez, you pouvez dépenser 1 jeton calcul d'un vaisseau allié à portée 0-1 pour modifier 1 résultat <img class='inline-img' src='img/Fo W.jpg'> en résultat <img class='inline-img' src='img/hit.jpg'> ou <img class='inline-img' src='img/Ev W.jpg'>.</div>",
     "effect2_FRA": "",
     "effect3_FRA": "",
-    "effect1_ENG": "<div>(Networked Calculations) : When you defend or attack, you may spend 1 calculate token from an allied ship at range 0-1 to change 1 <img class='inline-img' src='img/eye.jpg'> result to a <img class='inline-img' src='img/hit.jpg'> or <img class='inline-img' src='img/evd.jpg'> result.</div>",
+    "effect1_ENG": "<div>(Networked Calculations) : When you defend or attack, you may spend 1 calculate token from an allied ship at range 0-1 to change 1 <img class='inline-img' src='img/Fo W.jpg'> result to a <img class='inline-img' src='img/hit.jpg'> or <img class='inline-img' src='img/Ev W.jpg'> result.</div>",
     "effect2_ENG": "",
     "effect3_ENG": "" 
 },
@@ -265,10 +265,10 @@
     "name":"Concordia Faceoff",
     "id":24,
     "nbrOfEffects": 1,
-    "effect1_FRA":"<div>(Opposition Concordia) : Tant que vous défendez, si la portée d’attaque est 1 et que vous êtes dans le <img class='inline-img' src='img/Farc.jpg'> de l’attaquant, changez 1 résultat en un résultat <img class='inline-img' src='img/evd.jpg'>.</div>",
+    "effect1_FRA":"<div>(Opposition Concordia) : Tant que vous défendez, si la portée d’attaque est 1 et que vous êtes dans le <img class='inline-img' src='img/Farc.jpg'> de l’attaquant, changez 1 résultat en un résultat <img class='inline-img' src='img/Ev W.jpg'>.</div>",
     "effect2_FRA": "",
     "effect3_FRA": "",
-    "effect1_ENG":"<div>(Concordia Faceoff) : While you defend, if the attack range is 1 and you are in the attacker's <img class='inline-img' src='img/Farc.jpg'>, change 1 result to a <img class='inline-img' src='img/evd.jpg'> result.</div>",
+    "effect1_ENG":"<div>(Concordia Faceoff) : While you defend, if the attack range is 1 and you are in the attacker's <img class='inline-img' src='img/Farc.jpg'>, change 1 result to a <img class='inline-img' src='img/Ev W.jpg'> result.</div>",
     "effect2_ENG": "",
     "effect3_ENG": "" 
 },
@@ -298,10 +298,10 @@
     "name":"Comms Shuttle",
     "id":27,
     "nbrOfEffects": 1,
-    "effect1_FRA":"<div>(Navette de Communication) : Tant que vous êtes arrimé, votre vaisseau porteur gagne <img class='inline-img' src='img/CO.jpg'>. Avant que votre vaisseau porteur ne s’active, il peut effectuer une action <img class='inline-img' src='img/CO.jpg'>.</div>",
+    "effect1_FRA":"<div>(Navette de Communication) : Tant que vous êtes arrimé, votre vaisseau porteur gagne <img class='inline-img' src='img/Co W.jpg'>. Avant que votre vaisseau porteur ne s’active, il peut effectuer une action <img class='inline-img' src='img/Co W.jpg'>.</div>",
     "effect2_FRA": "",
     "effect3_FRA": "",
-    "effect1_ENG":"<div>(Comms Shuttle) : While you are docked, your Docking Ship gains <img class='inline-img' src='img/CO.jpg'>. Before your Docking Ship activates, it may perform a <img class='inline-img' src='img/CO.jpg'> action.</div>",
+    "effect1_ENG":"<div>(Comms Shuttle) : While you are docked, your Docking Ship gains <img class='inline-img' src='img/Co W.jpg'>. Before your Docking Ship activates, it may perform a <img class='inline-img' src='img/Co W.jpg'> action.</div>",
     "effect2_ENG": "",
     "effect3_ENG": "" 
 },
@@ -310,10 +310,10 @@
     "id":28,
     "nbrOfEffects": 2,
     "effect1_FRA":"(S-Foils Intégrés) Avant votre activation, vous pouvez changer de configuration : ",
-    "effect2_FRA": "<img class='inline-img' src='img/chargestatRed.png'><div>(Repliés) Tant que vous effectuez une attaque principale, si le défenseur n’est pas dans votre <img class='inline-img' src='img/bulls.jpg'>, lancez 1 dé d’attaque en moins. Ajoute <img class='inline-img' src='img/Br W.jpg'> , <img class='inline-img' src='img/eye.jpg'> <img class='inline-img' src='img/fleche.jpg'> <img class='inline-img' src='img/Br W.jpg'>Rouge</div>",
+    "effect2_FRA": "<img class='inline-img' src='img/chargestatRed.png'><div>(Repliés) Tant que vous effectuez une attaque principale, si le défenseur n’est pas dans votre <img class='inline-img' src='img/bulls.jpg'>, lancez 1 dé d’attaque en moins. Ajoute <img class='inline-img' src='img/Br W.jpg'> , <img class='inline-img' src='img/Fo W.jpg'> <img class='inline-img' src='img/fleche.jpg'> <img class='inline-img' src='img/Br W.jpg'>Rouge</div>",
     "effect3_FRA": "<img class='inline-img' src='img/chargestat.png'>(Dépliés)" ,
     "effect1_ENG":"(Integrated S-Foils) : ",
-    "effect2_ENG": "<img class='inline-img' src='img/chargestatRed.png'><div>(Closed) While you perform a primary attack, if the defender is not in your <img class='inline-img' src='img/bulls.jpg'>, roll 1 fewer attack die.Add <img class='inline-img' src='img/Br W.jpg'> , <img class='inline-img' src='img/eye.jpg'><img class='inline-img' src='img/fleche.jpg'>Red<img class='inline-img' src='img/Br W.jpg'></div>",
+    "effect2_ENG": "<img class='inline-img' src='img/chargestatRed.png'><div>(Closed) While you perform a primary attack, if the defender is not in your <img class='inline-img' src='img/bulls.jpg'>, roll 1 fewer attack die.Add <img class='inline-img' src='img/Br W.jpg'> , <img class='inline-img' src='img/Fo W.jpg'><img class='inline-img' src='img/fleche.jpg'>Red<img class='inline-img' src='img/Br W.jpg'></div>",
     "effect3_ENG": "<img class='inline-img' src='img/chargestat.png'>(Opened)"
 
 },
@@ -365,10 +365,10 @@
     "name":"Calibrated Laser Targeting",
     "id":33,
     "nbrOfEffects": 1,
-    "effect1_FRA":"<div>(Visée Laser Calibrée) : Tant que vous effectuez une attaque principale, si le défenseur est dans votre <img class='inline-img' src='img/bulls.jpg'>, ajoutez 1 résultat <img class='inline-img' src='img/eye.jpg'>.</div>",
+    "effect1_FRA":"<div>(Visée Laser Calibrée) : Tant que vous effectuez une attaque principale, si le défenseur est dans votre <img class='inline-img' src='img/bulls.jpg'>, ajoutez 1 résultat <img class='inline-img' src='img/Fo W.jpg'>.</div>",
     "effect2_FRA": "",
     "effect3_FRA": "",
-    "effect1_ENG":"<div>(Calibrated Laser Targeting) : While you perform a primary attack, if the defender is in your <img class='inline-img' src='img/bulls.jpg'>, add 1 <img class='inline-img' src='img/eye.jpg'> result.</div>",
+    "effect1_ENG":"<div>(Calibrated Laser Targeting) : While you perform a primary attack, if the defender is in your <img class='inline-img' src='img/bulls.jpg'>, add 1 <img class='inline-img' src='img/Fo W.jpg'> result.</div>",
     "effect2_ENG": "",
     "effect3_ENG": "" 
 },
@@ -443,10 +443,10 @@
     "name":"Fire Convergence",
     "id":40,
     "nbrOfEffects": 1,
-    "effect1_FRA":"<img class='chargeforceimg' src='img/chargestat.png'><img class='chargeforceimg' src='img/chargestat.png'><div>(Convergence Des Tirs) : Tant qu’un vaisseau allié effectue une attaque non-<img class='inline-img' src='img/AttackT.jpg'>, si le défenseur est dans votre <img class='inline-img' src='img/AttackT.jpg'>, vous pouvez dépenser 1 <img class='inline-img' src='img/charge.jpg'>. Dans ce cas, l’attaquant relance jusqu’à 2 dés d’attaque.</div>",
+    "effect1_FRA":"<img class='chargeforceimg' src='img/chargestat.png'><img class='chargeforceimg' src='img/chargestat.png'><div>(Convergence Des Tirs) : Tant qu’un vaisseau allié effectue une attaque non-<img class='inline-img' src='img/AttackT.jpg'>, si le défenseur est dans votre <img class='inline-img' src='img/AttackT.jpg'>, vous pouvez dépenser 1 <img class='inline-img' src='img/charge.png'>. Dans ce cas, l’attaquant relance jusqu’à 2 dés d’attaque.</div>",
     "effect2_FRA": "",
     "effect3_FRA": "",
-    "effect1_ENG":"<img class='chargeforceimg' src='img/chargestat.png'><img class='chargeforceimg' src='img/chargestat.png'><div>(Fire Convergence) : While an allied ship performs a non-<img class='inline-img' src='img/AttackT.jpg'> attack, if the defender is in your <img class='inline-img' src='img/AttackT.jpg'>, you may spend 1 <img class='inline-img' src='img/charge.jpg'>. If you do, the attacker rerolls up to 2 attack dice.</div>",
+    "effect1_ENG":"<img class='chargeforceimg' src='img/chargestat.png'><img class='chargeforceimg' src='img/chargestat.png'><div>(Fire Convergence) : While an allied ship performs a non-<img class='inline-img' src='img/AttackT.jpg'> attack, if the defender is in your <img class='inline-img' src='img/AttackT.jpg'>, you may spend 1 <img class='inline-img' src='img/charge.png'>. If you do, the attacker rerolls up to 2 attack dice.</div>",
     "effect2_ENG": "",
     "effect3_ENG": ""
 },
@@ -586,10 +586,10 @@
     "name":"Optimized Launching Tubes",
     "id":53,
     "nbrOfEffects": 1,
-    "effect1_FRA":"<div>(Tubes de lancement optimisés) : Vous pouvez lancer des engins au lieu de les larguer, en utilisant le même gabarit. Lorsque vous effectuez une action <img class='inline-img' src='img/Un W.jpg'>, vous pouvez subir un dégat <img class='inline-img' src='img/crit.jpg'> ou exposer une carte de dégat pour récupérer la <img class='inline-img' src='img/charge.jpg'> que vous venez d'utiliser</div>",
+    "effect1_FRA":"<div>(Tubes de lancement optimisés) : Vous pouvez lancer des engins au lieu de les larguer, en utilisant le même gabarit. Lorsque vous effectuez une action <img class='inline-img' src='img/Un W.jpg'>, vous pouvez subir un dégat <img class='inline-img' src='img/crit.jpg'> ou exposer une carte de dégat pour récupérer la <img class='inline-img' src='img/charge.png'> que vous venez d'utiliser</div>",
     "effect2_FRA": "",
     "effect3_FRA": "",
-    "effect1_ENG":"<div>(Optimized Launching Tubes) : You may launch devices instead of dropping them, using the same template. When you perform an <img class='inline-img' src='img/Un W.jpg'> action, you may suffer 1 <img class='inline-img' src='img/crit.jpg'> damage or expose a damage card to recover the <img class='inline-img' src='img/charge.jpg'> you've just spent.</div>",
+    "effect1_ENG":"<div>(Optimized Launching Tubes) : You may launch devices instead of dropping them, using the same template. When you perform an <img class='inline-img' src='img/Un W.jpg'> action, you may suffer 1 <img class='inline-img' src='img/crit.jpg'> damage or expose a damage card to recover the <img class='inline-img' src='img/charge.png'> you've just spent.</div>",
     "effect2_ENG": "",
     "effect3_ENG": "" 
 },
@@ -609,10 +609,10 @@
     "name":"Turbo Thrusters (not used, fusionned with 56 Folding Wings)",
     "id":55,
     "nbrOfEffects": 1,
-    "effect1_FRA":"<img class='chargeforceimg' src='img/chargestat.png'><div>(Turbo-Propulseurs) : Après avoir exécuté une action <img class='inline-img' src='img/Sl W.jpg'>, vous pouvez dépenser 1 <img class='inline-img' src='img/charge.jpg'> ou exposer une carte de dégat pour retirer un marqueur de désarmement.</div>",
+    "effect1_FRA":"<img class='chargeforceimg' src='img/chargestat.png'><div>(Turbo-Propulseurs) : Après avoir exécuté une action <img class='inline-img' src='img/Sl W.jpg'>, vous pouvez dépenser 1 <img class='inline-img' src='img/charge.png'> ou exposer une carte de dégat pour retirer un marqueur de désarmement.</div>",
     "effect2_FRA": "",
     "effect3_FRA": "",
-    "effect1_ENG":"<img class='chargeforceimg' src='img/chargestat.png'><div>(Turbo Thrusters) : After you execute a <img class='inline-img' src='img/Sl W.jpg'> action, you can spend 1 <img class='inline-img' src='img/charge.jpg'> or expose a damage card to remove a disable token.</div>",
+    "effect1_ENG":"<img class='chargeforceimg' src='img/chargestat.png'><div>(Turbo Thrusters) : After you execute a <img class='inline-img' src='img/Sl W.jpg'> action, you can spend 1 <img class='inline-img' src='img/charge.png'> or expose a damage card to remove a disable token.</div>",
     "effect2_ENG": "",
     "effect3_ENG": "" 
 },
@@ -622,19 +622,19 @@
     "nbrOfEffects": 2,
     "effect1_FRA":"(Ailes Repliantes) Avant votre activation, vous pouvez changer de configuration : ",
     "effect2_FRA": "<img class='inline-img' src='img/chargestatRed.png'><div>(*Ailes Pliées) Vous pouvez attaquer uniquement dans votre <img class='inline-img' src='img/bulls.jpg'>.<br>Lorsque vous défendez, lancez 1 dé de défense en plus.</div>",
-    "effect3_FRA": "<img class='inline-img' src='img/chargestat.png'><div>(**Ailes Dépliées) Après avoir exécuté une action <img class='inline-img' src='img/Sl W.jpg'>, vous pouvez retourner votre <img class='inline-img' src='img/charge.jpg'> ou exposer une carte de dégat pour retirer un marqueur de désarmement.</div>" ,
+    "effect3_FRA": "<img class='inline-img' src='img/chargestat.png'><div>(**Ailes Dépliées) Après avoir exécuté une action <img class='inline-img' src='img/Sl W.jpg'>, vous pouvez retourner votre <img class='inline-img' src='img/charge.png'> ou exposer une carte de dégat pour retirer un marqueur de désarmement.</div>" ,
     "effect1_ENG":"(Folding Wings) : ",
     "effect2_ENG": "<img class='inline-img' src='img/chargestatRed.png'><div>(*Folded Wings) You can only attack in your <img class='inline-img' src='img/bulls.jpg'>.<br>When you defend, roll 1 additional defense die.</div>",
-    "effect3_ENG": "<img class='inline-img' src='img/chargestat.png'><div>(**Unfolded Wings) After you perform a <img class='inline-img' src='img/Sl W.jpg'> action, you may flip your <img class='inline-img' src='img/charge.jpg'> or expose a damage card to remove a disarm token.</div>"
+    "effect3_ENG": "<img class='inline-img' src='img/chargestat.png'><div>(**Unfolded Wings) After you perform a <img class='inline-img' src='img/Sl W.jpg'> action, you may flip your <img class='inline-img' src='img/charge.png'> or expose a damage card to remove a disarm token.</div>"
 },
 {
     "name":"Night Buzzard",
     "id":57,
     "nbrOfEffects": 1,
-    "effect1_FRA":"<div>(Night Buzzard) : Lorsque vous effectuez une manoeuvre, vous pouvez augmenter sa difficulté. Dans ce cas, vous pouvez récupérer 1 <img class='inline-img' src='img/charge.jpg'> de votre capacité de pilote.</div>",
+    "effect1_FRA":"<div>(Night Buzzard) : Lorsque vous effectuez une manoeuvre, vous pouvez augmenter sa difficulté. Dans ce cas, vous pouvez récupérer 1 <img class='inline-img' src='img/charge.png'> de votre capacité de pilote.</div>",
     "effect2_FRA": "",
     "effect3_FRA": "",
-    "effect1_ENG":"<div>(Night Buzzard) : When you perform a maneuver, you may increase its difficulty. If you do, you may recover 1 <img class='inline-img' src='img/charge.jpg'> from your pilot ability.</div>",
+    "effect1_ENG":"<div>(Night Buzzard) : When you perform a maneuver, you may increase its difficulty. If you do, you may recover 1 <img class='inline-img' src='img/charge.png'> from your pilot ability.</div>",
     "effect2_ENG": "",
     "effect3_ENG": "" 
 },
@@ -676,11 +676,11 @@
  "id":61,
  "nbrOfEffects":2,
  "effect1_FRA":"(Boucliers Rétractables) En phase système, vous pouvez changer de configuration: ",
- "effect2_FRA": "<img class='inline-img' src='img/charge.jpg'><div>(Active) Lorsque vous défendez, considérez que vous êtes renforcé.</div>",
- "effect3_FRA": "<img class='inline-img' src='img/charge.jpg'><div>(Inactive) Lorsque vous attaquez, lancez 2 dés supplémentaires.<div>",
+ "effect2_FRA": "<img class='inline-img' src='img/charge.png'><div>(Active) Lorsque vous défendez, considérez que vous êtes renforcé.</div>",
+ "effect3_FRA": "<img class='inline-img' src='img/charge.png'><div>(Inactive) Lorsque vous attaquez, lancez 2 dés supplémentaires.<div>",
  "effect1_ENG":"(Shield Struts) : ",
- "effect2_ENG":  "<img class='inline-img' src='img/charge.jpg'><div>(Active) When you defend, consider yourself as reinforced.</div>",
- "effect3_ENG": "<img class='inline-img' src='img/charge.jpg'> (Inactive) When you attack, roll 2 additional dice."
+ "effect2_ENG":  "<img class='inline-img' src='img/charge.png'><div>(Active) When you defend, consider yourself as reinforced.</div>",
+ "effect3_ENG": "<img class='inline-img' src='img/charge.png'> (Inactive) When you attack, roll 2 additional dice."
 
 },
 {
@@ -709,10 +709,10 @@
  "name":"Cannons Cooldown",
  "id":64,
  "nbrOfEffects":1,
- "effect1_FRA":"<img class='chargeforceimg' src='img/chargestat.png'><img class='chargeforceimg' src='img/chargestat.png'><img class='chargeforceimg' src='img/chargeplus.png'><div>(Refroidissement des Canons) :  Lorsque vous vous engagez, si vous voulez effectuez une attaque principale, vous devez dépenser 2 <img class='inline-img' src='img/charge.jpg'>.</div>",
+ "effect1_FRA":"<img class='chargeforceimg' src='img/chargestat.png'><img class='chargeforceimg' src='img/chargestat.png'><img class='chargeforceimg' src='img/chargeplus.png'><div>(Refroidissement des Canons) :  Lorsque vous vous engagez, si vous voulez effectuez une attaque principale, vous devez dépenser 2 <img class='inline-img' src='img/charge.png'>.</div>",
  "effect2_FRA": "",
  "effect3_FRA": "",
-    "effect1_ENG":"<img class='chargeforceimg' src='img/chargestat.png'><img class='chargeforceimg' src='img/chargestat.png'><img class='chargeforceimg' src='img/chargeplus.png'><div>(Cannons Cooldown) : When you engage, if you want to perform a primary attack, you must spend 2 <img class='inline-img' src='img/charge.jpg'>.</div>",
+    "effect1_ENG":"<img class='chargeforceimg' src='img/chargestat.png'><img class='chargeforceimg' src='img/chargestat.png'><img class='chargeforceimg' src='img/chargeplus.png'><div>(Cannons Cooldown) : When you engage, if you want to perform a primary attack, you must spend 2 <img class='inline-img' src='img/charge.png'>.</div>",
     "effect2_ENG": "",
     "effect3_ENG": ""
 },
@@ -731,10 +731,10 @@
  "name":"Devastating Barrage",
  "id":66,
  "nbrOfEffects":1,
- "effect1_FRA":"<div>(Tir de Barrage Dévastateur) : tant que vous effectuez une attaque <img class='inline-img' src='img/Torpedo.png'> ou <img class='inline-img' src='img/Missile.png'>, si le défenseur est dans votre <img class='inline-img' src='img/bulls.jpg'>, vos résultats <img class='inline-img' src='img/crit.jpg'> ne peuvent pas être annulés par des résultats <img class='inline-img' src='img/evd.jpg'>.</div>",
+ "effect1_FRA":"<div>(Tir de Barrage Dévastateur) : tant que vous effectuez une attaque <img class='inline-img' src='img/Torpedo.png'> ou <img class='inline-img' src='img/Missile.png'>, si le défenseur est dans votre <img class='inline-img' src='img/bulls.jpg'>, vos résultats <img class='inline-img' src='img/crit.jpg'> ne peuvent pas être annulés par des résultats <img class='inline-img' src='img/Ev W.jpg'>.</div>",
  "effect2_FRA": "",
  "effect3_FRA": "",
- "effect1_ENG": "<div>(Devastating Barrage) : while you perform a <img class='inline-img' src='img/Torpedo.png'> and <img class='inline-img' src='img/Missile.png'> attack, if the defender is in your <img class='inline-img' src='img/bulls.jpg'>, your <img class='inline-img' src='img/crit.jpg'> results cannot be canceled by <img class='inline-img' src='img/evd.jpg'> results.</div>",
+ "effect1_ENG": "<div>(Devastating Barrage) : while you perform a <img class='inline-img' src='img/Torpedo.png'> and <img class='inline-img' src='img/Missile.png'> attack, if the defender is in your <img class='inline-img' src='img/bulls.jpg'>, your <img class='inline-img' src='img/crit.jpg'> results cannot be canceled by <img class='inline-img' src='img/Ev W.jpg'> results.</div>",
     "effect2_ENG": "",
     "effect3_ENG": ""
 },
