@@ -8841,11 +8841,11 @@
             "shipId": 86,
             "skill": 5,
             "points": 13,
-            "ability_FRA": "<div class='text'></div>",
-            "ability_ENG": "<div class='text'></div>",
+            "ability_FRA": "<div class='text'>Lorsqu'un vaisseau vérouillé par vous attaque, vous pouvez choisir 1 dé d'attaque. Dans ce cas, l'attaquant relance ce dé.</div>",
+            "ability_ENG": "<div class='text'>While a ship you are locking performs an attack, you may choose 1 attack die. If you do, the attacker rerolls that die.</div>",
             "slots": [
                 "Talent-shooting",
-                "Talent-shooting"
+                "Talent-leadership"
                                               
            ]
         },
@@ -8885,8 +8885,8 @@
             "shipId": 86,
             "skill": 3,
             "points": 13,
-            "ability_FRA": "<div class='text'></div>",
-            "ability_ENG": "<div class='text'></div>",
+            "ability_FRA": "<div class='text'>Pendant la Phase Système, si il n'y a pas de vaisseaux ennemis à portée 1-2, vous pouvez récupérer 1 <img class='inline-img' src='img/charge.jpg'> sur n'importe quelle amélioration.</div>",
+            "ability_ENG": "<div class='text'>During the System Phase, if there are no enemy ships at range 1-2, you may recover 1 <img class='inline-img' src='img/charge.jpg'> on any upgrade.</div>",
             "slots": [
                 "Talent-shooting"
                                               
@@ -8906,8 +8906,8 @@
             "shipId": 83,
             "skill": 5,
             "points": 13,
-            "ability_FRA": "<div class='text'></div>",
-            "ability_ENG": "<div class='text'></div>",
+            "ability_FRA": "<div class='text'>Après avoir effecuté une manoeuvre rouge, vous pouvez verrouiller un vaisseau ennemi dans votre <img class='inline-img' src='img/attackF.jpg'> at range 0-1.</div>",
+            "ability_ENG": "<div class='text'>After you execute a red maneuver, you may acquire a lock on an enemy ship in your <img class='inline-img' src='img/attackF.jpg'> at range 0-1.</div>",
             "slots": [
                 "Talent-leadership",
                 "Talent-shooting"
@@ -8928,8 +8928,8 @@
             "shipId": 83,
             "skill": 3,
             "points": 12,
-            "ability_FRA": "<div class='text'></div>",
-            "ability_ENG": "<div class='text'></div>",
+            "ability_FRA": "<div class='text'>Pendant la Phase Système, vous pouvez choisir un objet que vous avez verrouillé à portée 1-3. Un autre vaisseau allié à portée 1-3 peut verrouiller cet objet.</div>",
+            "ability_ENG": "<div class='text'>During the System Phase, you may choose an object that you have locked at range 1-3. Another friendly ships at range 1-3 may acquire a lock on that object.</div>",
             "slots": [
                 "Talent-piloting"
                                               
@@ -8949,8 +8949,8 @@
             "shipId": 83,
             "skill": 4,
             "points": 12,
-            "ability_FRA": "<div class='text'></div>",
-            "ability_ENG": "<div class='text'></div>",
+            "ability_FRA": "<div class='text'>Lorsque vous recevez un jeton orange, vous pouvez recevoir à la place un autre jeton orange de votre choix.</div>",
+            "ability_ENG": "<div class='text'>When you receive an orange token, you may receive instead an other orange token of your choice.</div>",
             "slots": [
                 "Talent-shooting"
                                               
@@ -9027,14 +9027,14 @@
             "modify": false,
 		    "faction": "Hutt_Cartel",
             "ship": "M12-L Kimogila Fighter",
-            "charge":[0],
+            "charge":[2,"yellow",0],
             "force": 0,
             "titleID": 0,
             "shipId": 40,
             "skill": 3,
             "points": 12,
-            "ability_FRA": "<div class='text'>??</div>",
-            "ability_ENG": "<div class='text'>??</div>",
+            "ability_FRA": "<div class='text'>Après avoir entièrement exécuté une manoeuvre de vitesse 3-5, you pouvez dépenser 1 <img class='inline-img' src='img/charge.jpg'> pour effectuer une action <img class='inline-img' src='img/Sl W.jpg'>.</div>",
+            "ability_ENG": "<div class='text'>After you fully execute a speed 3-5 maneuver, you may spend 1 <img class='inline-img' src='img/charge.jpg'> to perform a <img class='inline-img' src='img/Sl W.jpg'> action.</div>",
             "slots": [
                 "Talent-piloting"
                                               
