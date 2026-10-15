@@ -1539,7 +1539,7 @@ function displayDescriptionUpgrade(event){ //permet d'afficher l'effet de l'amé
     description_upg_pil_Field.innerHTML="";
            
     if (typeof upgradesSelected_Objects[y][x]==="number"){ //if nothing is selected in a menu (y,x), then upgradesSelected_Objects is equal to -1 (a number), and is not an object.
-        break;
+        return;
     }
     if (upgradesSelected_Objects[y][x]["charge"][0] > 0) {
             for (k=0;k<upgradesSelected_Objects[y][x]["charge"][0];k++){

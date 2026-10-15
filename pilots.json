@@ -8572,8 +8572,8 @@
             "shipId": 22,
             "skill": 4,
             "points": 11,
-            "ability_FRA": "<div class='text'>??</div>",
-            "ability_ENG": "<div class='text'>??</div>",
+            "ability_FRA": "<div class='text'>Lorsque vous effectuez une attaque, vous pouvez dépenser 1 <img class='inline-img' src='img/charge.jpg'> d'une amélioration équipée. Dans ce cas, le défenseur lance 1 dé en moins.</div>",
+            "ability_ENG": "<div class='text'>While you perform an attack, you may spend 1 <img class='inline-img' src='img/charge.jpg'> from an equipped  upgrade. If you do, the defender rolls 1 fewer defense die.</div>",
             "slots": [
                 "Title",
                 "Talent-piloting",
