@@ -8542,7 +8542,7 @@
             "titleID": 275,
             "shipId": 22,
             "skill": 5,
-            "points": 12,
+            "points": 13,
             "ability_FRA": "<div class='text'>Tant que vous défendez à portée d’attaque 3 ou effectuez une attaque à portée d’attaque 1, lancez 1 dé supplémentaire.</div>",
             "ability_ENG": "<div class='text'>While you defend at attack range 3 or perform an attack at attack range 1, roll 1 additional die.</div>",
             "slots": [
@@ -8571,7 +8571,7 @@
             "titleID": 275,
             "shipId": 22,
             "skill": 4,
-            "points": 11,
+            "points": 12,
             "ability_FRA": "<div class='text'>Lorsque vous effectuez une attaque, vous pouvez dépenser 1 <img class='inline-img' src='img/charge.jpg'> d'une amélioration équipée. Dans ce cas, le défenseur lance 1 dé en moins.</div>",
             "ability_ENG": "<div class='text'>While you perform an attack, you may spend 1 <img class='inline-img' src='img/charge.jpg'> from an equipped  upgrade. If you do, the defender rolls 1 fewer defense die.</div>",
             "slots": [
@@ -8595,14 +8595,14 @@
             "title": ["Vaksai (**)"],
 		    "faction": "Black_Sun",
             "ship": "Kihraxz Fighter",
-            "charge":[0],
+            "charge":[2,"yellow",0],
             "force": 0,
             "titleID": 275,
             "shipId": 22,
             "skill": 4,
             "points": 11,
-            "ability_FRA": "<div class='text'></div>",
-            "ability_ENG": "<div class='text'></div>",
+            "ability_FRA": "<div class='text'>Après avoir effectué une action <img class='inline-img' src='img/Br W.jpg'>, vous pouvez dépenser 1 <img class='inline-img' src='img/charge.jpg'> pour effectuer une action <img class='inline-img' src='img/Bo W.jpg'>.</div>",
+            "ability_ENG": "<div class='text'>After you perform a <img class='inline-img' src='img/Br W.jpg'> action, you may spend 1 <img class='inline-img' src='img/charge.jpg'> to perform a <img class='inline-img' src='img/Bo W.jpg'> action.</div>",
             "slots": [
                 "Title",
                 "Talent-shooting",
@@ -8628,10 +8628,10 @@
             "force": 0,
             "titleID": 275,
             "shipId": 22,
-            "skill": 2,
+            "skill": 3,
             "points": 11,
-            "ability_FRA": "<div class='text'></div>",
-            "ability_ENG": "<div class='text'></div>",
+            "ability_FRA": "<div class='text'>Lorsque que vous effectuez une attaque, si l'initiative du défenseur est plus grade que la votre, vous pouvez modifier un résultat vierge en résultat <img class='inline-img' src='img/eye.jpg'>.</div>",
+            "ability_ENG": "<div class='text'>While you perform an attack, if the defender's initiative is higher than yours, you may change 1 blank result to a <img class='inline-img' src='img/eye.jpg'> result.</div>",
             "slots": [
                 "Title",
                 "Talent-piloting",
@@ -8702,14 +8702,14 @@
             "modify": false,
 		    "faction": "Black_Sun",
             "ship": "Z-95-AF4 Headhunter",
-            "charge":[0],
+            "charge":[2,"yellow",0],
             "force": 0,
             "titleID": 0,
             "shipId": 12,
             "skill": 2,
             "points": 7,
-            "ability_FRA": "<div class='text'></div>",
-            "ability_ENG": "<div class='text'></div>",
+            "ability_FRA": "<div class='text'>Au début de la phase d'engagement, si vous n'avez pas de jeton vert, vous pouvez dépenser 1 <img class='inline-img' src='img/charge.jpg'> pour recevoir 1 jeton évasion.</div>",
+            "ability_ENG": "<div class='text'>At the start of the engagement phase, if you have no green tokens, you may spend 1 <img class='inline-img' src='img/charge.jpg'> to gain 1 evade token.</div>",
             "slots": [
                 "Talent-piloting"
                 
@@ -8779,8 +8779,8 @@
             "shipId": 32,
             "skill": 4,
             "points": 15,
-            "ability_FRA": "<div class='text'></div>",
-            "ability_ENG": "<div class='text'></div>",
+            "ability_FRA": "<div class='text'>Lorsque vous défendez, si l'attaquant est dans votre <img class='inline-img' src='img/attackT.jpg'> à portée 0-2, vous pouvez ajouter 1 résultat <img class='inline-img' src='img/eye.jpg'> à vos résultats.</div>",
+            "ability_ENG": "<div class='text'>While you defend, if the attacker is in your <img class='inline-img' src='img/attackT.jpg'> at range 0-2, you may add 1 <img class='inline-img' src='img/eye.jpg'> result to your dice result.</div>",
             "slots": [
                 "Talent-piloting"
                                
@@ -8798,10 +8798,10 @@
             "force": 0,
             "titleID": 0,
             "shipId": 32,
-            "skill": 3,
+            "skill": 1,
             "points": 15,
-            "ability_FRA": "<div class='text'></div>",
-            "ability_ENG": "<div class='text'></div>",
+            "ability_FRA": "<div class='text'>Après être désigné défenseur, si l'attaquant n'est pas dans votre <img class='inline-img' src='img/attackT.jpg'> , vous devez tournez votre indicateur <img class='inline-img' src='img/attackT.jpg'> vers un arc de tir dans lequel se trouve l'attaquant.</div>",
+            "ability_ENG": "<div class='text'>After you become the defender, if the attacker is not in your <img class='inline-img' src='img/attackT.jpg'> , you must rotate your <img class='inline-img' src='img/attackT.jpg'> indicator to a standard arc the attacker is in.</div>",
             "slots": [
                 "Talent-shooting"
                                
