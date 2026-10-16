@@ -5,6 +5,20 @@ let requestURLpilots = "https://raw.githubusercontent.com/Immelman51/xwunited/ma
 let requestURLupgrades = "https://raw.githubusercontent.com/Immelman51/xwunited/main/upgrades.json";
 let requestURLleaders = "https://raw.githubusercontent.com/Immelman51/xwunited/main/leaders.json";
 let ships, chassis, pilots, upgrades, leaders;
+let array2export = [];
+let arrayObject = { //this is just a model. This object won't be used.
+    type:'',
+    name:'',
+    cost:0,
+    maxPerSquad:1,
+    typeShipUpgrade:'',
+    faction:'',
+    description:'',
+    charge:0,
+    optionalSlots:[],
+    title:'',
+
+}
 
 async function fetchData(url) {
     let response = await fetch(url);
@@ -50,6 +64,7 @@ async function loadAllData() {
 if(window.location.hash) {
     // Mettez le hash dans une variable et supprimer le caractère #
     factionSelected = window.location.hash.substring(1);
+    array2export.push(factionSelected);
     
 } else {
     // Aucun hash n'est trouvé
@@ -81,19 +96,43 @@ for (let i = 0; i<leaders.length; i++){
     if (leaders[i]["leaderfaction"].includes(factionSelected)){
         let newleader = document.createElement('p');
         newleader.setAttribute("class", "leader");
+        let newObject = {
+    type:'leader',
+    name:'',
+    cost:0,
+    maxPerSquad:'',
+    typeShipUpgrade:'',
+    faction:'',
+    skill:0,
+    description:'',
+    charge:0,
+    optionalSlots:[],
+    title:'',
+
+}
         
 
         let newleadername = document.createElement('div');
         newleadername.setAttribute("class", "leader name");
         newleadername.innerHTML = leaders[i]["leadername_"+language];
         newleader.appendChild(newleadername);
+        newObject.name=leaders[i]["leadername_"+language];
 
 
 
         let newleadercharge = document.createElement('div');
         newleadercharge.setAttribute("class", "leader charge");
-        newleadercharge.innerHTML = leaders[i]["charge"];
+        const charge_color = leaders[i]["charge"][1];
+        if (charge_color==="Red") {
+        newleadercharge.innerHTML = "<span style='color:red;'>"+leaders[i]["charge"][0]+"</span>";
+        }
+        if (charge_color==="Yellow") {
+        newleadercharge.innerHTML = "<span style='color:yellow;'>"+leaders[i]["charge"][0]+"</span>";
+
+        }
         newleader.appendChild(newleadercharge);
+        newObject.charge=leaders[i]["charge"];
+
 
         for (let j=0; j<3 ; j++){
             let factions = leaders[i]["leaderfaction"][j];
@@ -108,6 +147,9 @@ for (let i = 0; i<leaders.length; i++){
         newleader.appendChild(newleaderability);
 
         element.appendChild(newleader);
+        newObject.name=leaders[i]["leaderability_"+language];
+
+        array2export.push(newObject);
 
     
         
@@ -124,6 +166,19 @@ function displayShipsandPilots() { //on va d'abord faire afficher les ships et l
 
 for (let i=0 ; i<ships.length; i++){ //on va afficher d'abord le vaisseau/chassis.... puis après les pilotes associés
     if (ships[i]["factions"].includes(factionSelected)){
+        let newShipObject = { 
+    type:'ship',
+    name:'',
+    cost:0,
+    maxPerSquad:8,
+    typeShipUpgrade:'',
+    faction:'',
+    description:'',
+    charge:0,
+    optionalSlots:[],
+    title:'',
+
+}
         let newship = document.createElement('p');
         newship.setAttribute("class","ship");
         newship.setAttribute("id","ship"+i);
@@ -132,6 +187,7 @@ for (let i=0 ; i<ships.length; i++){ //on va afficher d'abord le vaisseau/chassi
         newshipname.setAttribute("class", "ship name");
         newshipname.innerHTML = ships[i]["name"];        
         newship.appendChild(newshipname);
+        newShipObject.name=ships[i]["name"]; 
 
         let shipsizecontainer = document.createElement('div');
         shipsizecontainer.setAttribute("class", "size");
@@ -140,15 +196,19 @@ for (let i=0 ; i<ships.length; i++){ //on va afficher d'abord le vaisseau/chassi
         switch(ships[i]['base'][0]){
             case 'Small' :
                 shipsizetext.innerHTML = "Sml ";
+                newShipObject.typeShipUpgrade="Small"
                 break;
             case 'Medium' :
                 shipsizetext.innerHTML = "Med " ;
+                newShipObject.typeShipUpgrade="Medium"
                 break;
             case 'Large' :
                 shipsizetext.innerHTML = "Lrg ";
+                newShipObject.typeShipUpgrade="Large"
                 break;
             case 'Huge' :
                 shipsizetext.innerHTML = "Hug ";
+                newShipObject.typeShipUpgrade="Huge"
                 break;
             default : 
                 console.log("error ship size logo " + i) ;   
@@ -265,6 +325,7 @@ newship.appendChild(actionlist);
             newshipslots.setAttribute("class", "slot");
             newshipslots.setAttribute("src", 'img/'+ships[i]["slots"][m]+'.png');
             shipSlots.appendChild(newshipslots);
+            newShipObject.optionalSlots.push(ships[i]["slots"][m]);
         } 
 newship.appendChild(shipSlots);
 
@@ -378,13 +439,30 @@ newship.appendChild(chassisShip);
    
 element.appendChild(newship);
 
+array2export.push(newShipObject);
+
 // On a fini de décrire le ship   
 // Maintenant on va afficher les pilotes !! Grosse boucle for ! et en voilà une autre qui l'est tout autant
 // on est toujours dans la boucle if qui teste que le vaisseau appartient à la faction
     for (let j = 0; j<pilots.length; j++){
         
         if ((pilots[j]['shipId']===ships[i]['id']) && pilots[j]['faction']===factionSelected){ //si le pilote a le bon ship Id et qu'il appartient à la faction sélectionnée, alors...
-            
+            let pilotObject = {
+            type:'pilot',
+            name:'',
+            cost:0,
+            maxPerSquad:8,
+            typeShipUpgrade:'',
+            skill:0,
+            faction:'',
+            description:'',
+            charge:0,
+            force:0,
+            optionalSlots:[],
+            title:'',
+            }
+            pilotObject.typeShipUpgrade=ships[i]["name"];
+
             let newpilot = document.createElement('p');
             newpilot.setAttribute("class","pilot");
             
@@ -392,12 +470,16 @@ element.appendChild(newship);
             switch(pilots[j]['max_per_squad']){
                 case 1 : 
                 limitNumber = "*";
+                pilotObject.maxPerSquad=1;
                 break;
                 case 2 :
                 limitNumber = "**";
+                pilotObject.maxPerSquad=2;
+
                 break; 
                 case 3 :
                 limitNumber = "***";
+                pilotObject.maxPerSquad=3;
                 break; 
                 default : 
                 break;  
@@ -408,19 +490,25 @@ element.appendChild(newship);
             newpilotname.setAttribute("class", "pilot name");
             newpilotname.innerHTML = limitNumber+" "+pilots[j]["name_"+language]+ " ("+pilots[j]["skill"]+")";   // on écrit le limitNumber = Max_per_Squad avant le nom du pilote  , puis le skill entre parenthèses
             newpilot.appendChild(newpilotname);
+            pilotObject.name=pilots[j]["name_"+language];
+            pilotObject.skill=pilots[j]["skill"];
+
 
             
          
             if (pilots[j]["force"]>0){
+                pilotObject.force=pilots[j]["force"];
                 for(k=0 ; k<pilots[j]["force"] ; k++){
                     let newpilotForce = document.createElement('img')
                     newpilotForce.setAttribute("class", "chargeforceimg");
                     newpilotForce.setAttribute("src", 'img/forcestat.png');
                     newpilotname.appendChild(newpilotForce);
+                    
                 }
             }
             
             if (pilots[j]["charge"][0]>0){
+                pilotObject.charge=pilots[j]["charge"];
                 for(k=0 ; k<pilots[j]["charge"][0] ; k++){
                     let newpilotCharge = document.createElement('img');
                     newpilotCharge.setAttribute("class", "chargeforceimg");
@@ -435,10 +523,12 @@ element.appendChild(newship);
                         case "+":
                         newpilotChargeLogo.setAttribute("class","chargeforceimg");
                         newpilotChargeLogo.setAttribute('src', 'img/chargeplus.png');
+                        
                         break;
                         case "-":
                         newpilotChargeLogo.setAttribute("class","chargeforceimg");
                         newpilotChargeLogo.setAttribute('src', 'img/chargeminus.png');
+                       
                         break;
                         default:
                         break;
@@ -451,6 +541,8 @@ element.appendChild(newship);
             newpilotvalue.setAttribute("class", "pilot points");
             newpilotvalue.innerHTML = pilots[j]["points"];
             newpilot.appendChild(newpilotvalue);
+            pilotObject.cost=pilots[j]["points"];
+
 
             
             if (typeof pilots[j]["title"] !== 'undefined'){ //certains pilotes n'ont pas de title
@@ -458,6 +550,7 @@ element.appendChild(newship);
                 newpilottitle.setAttribute("class", "pilot title");
                 newpilot.appendChild(newpilottitle);
                 newpilottitle.innerHTML = pilots[j]["title"];
+                pilotObject.title=pilots[j]["title"];
             
             }
             let newpilotslots = document.createElement('div');
@@ -466,6 +559,7 @@ element.appendChild(newship);
                 newpilotslotslogo = document.createElement('img');                            
                 newpilotslotslogo.setAttribute("src", 'img/'+pilots[j]["slots"][k]+'.png');
                 newpilotslots.appendChild(newpilotslotslogo);
+                pilotObject.optionalSlots.push(pilots[j]["slots"][k]);
                 
             } 
             
@@ -476,9 +570,12 @@ element.appendChild(newship);
             newpilotability.setAttribute("class", "pilot ability");
             newpilotability.innerHTML = pilots[j]["ability_"+language];
             newpilot.appendChild(newpilotability);
+            pilotObject.description=pilots[j]["ability_"+language];
             
 
             element.appendChild(newpilot);
+
+            array2export.push(pilotObject);
             
 
         }
@@ -496,8 +593,23 @@ function displayUpgrades() {
     pUpgradesfaction.setAttribute("id", "upgradesfaction");
     element.appendChild(pUpgradesfaction);
 
+
     for (let i = 0; i<upgrades.length; i++){
         if (upgrades[i]["faction"].includes(factionSelected)){
+            let upgradeObject = {
+            type:'upgrade',
+            name:'',
+            cost:0,
+            maxPerSquad:8,
+            typeShipUpgrade:'',
+            skill:0,
+            faction:'',
+            description:'',
+            charge:0,
+            force:0,
+            optionalSlots:[],
+            title:'',
+            }
             let newupgrade = document.createElement('p');
             newupgrade.setAttribute("class", "upgrade faction");
         
@@ -506,12 +618,16 @@ function displayUpgrades() {
             switch(upgrades[i]['max_per_squad']){
                 case 1 : 
                 limitNumber = "*";
+                upgradeObject.maxPerSquad=1;
                 break;
                 case 2 :
                 limitNumber = "**";
+                upgradeObject.maxPerSquad=2;
+
                 break; 
                 case 3 :
                 limitNumber = "***";
+                upgradeObject.maxPerSquad=3;
                 break; 
                 default : 
                 break;  
@@ -521,6 +637,7 @@ function displayUpgrades() {
         newupgradename.setAttribute("class", "upgrade name");
         newupgradename.innerHTML = limitNumber+" "+upgrades[i]["name_"+language];
         newupgrade.appendChild(newupgradename);
+        upgradeObject.name=upgrades[i]["name_"+language];
 
         
         let newupgradetype = document.createElement('div');
@@ -530,19 +647,25 @@ function displayUpgrades() {
         newupgradetypelogo.setAttribute('src',  'img/'+upgrades[i]["slot"]+'.png')       
         newupgrade.appendChild(newupgradetype);
         newupgrade.appendChild(newupgradetypelogo);
+        upgradeObject.typeShipUpgrade=upgrades[i]["slot"];
 
         let newupgradepoints = document.createElement('div');
         newupgradepoints.setAttribute("class", "upgrade points");
         newupgradepoints.innerHTML = upgrades[i]["points"];        
         newupgrade.appendChild(newupgradepoints);
+        upgradeObject.cost=upgrades[i]["points"];
 
         let newupgradeeffect = document.createElement('div');
         newupgradeeffect.setAttribute("class", "upgrade ability");
         newupgradeeffect.innerHTML = upgrades[i]["effect_"+language];
         newupgrade.appendChild(newupgradeeffect);
+        upgradeObject.description=upgrades[i]["effect_"+language];
 
         element.appendChild(newupgrade);
 
+        upgradeObject.force=upgrades[i]["force"];
+        upgradeObject.charge=upgrades[i]["charge"][0]+" "+upgrades[i]["charge"][2];
+        array2export.push(upgradeObject);
 
 
         
@@ -551,6 +674,32 @@ function displayUpgrades() {
   
 }
 
+function createArray() {
+    const table = document.createElement("table");
+    const cles = ["type","name","cost","maxQuantity","typeShipUpgrade","skill","charge","force","slots","title"]
+    
+    
+    // En-tête
+  const thead = table.createTHead();
+  const ligneEntete = thead.insertRow();
+  for (const cle of cles) {
+    const th = document.createElement("th");
+    th.textContent = cle;
+    ligneEntete.appendChild(th);
+  }
+
+  // Corps
+  const tbody = table.createTBody(); 
+  for (i=1,i<array2export.length,i++){
+    const ligne = tbody.insertRow();
+    for (const cle of cles) {
+      const cellule = ligne.insertCell();
+      cellule.textContent = array2export[cle] ?? "";
+    }
+  }
+
+  return table;
+}
 
 
 
@@ -573,4 +722,36 @@ function displayUpgrades() {
           };
           html2pdf().set(opt).from(element).save();
         });
+
+function ouvrirTableauDansOnglet() {
+  const table = creerTableau();
+
+  const page = `<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>`+ array2export[0] + `</title>
+  <style>
+    body { font-family: sans-serif; margin: 2rem; }
+    table { border-collapse: collapse; }
+    th, td { border: 1px solid #ccc; padding: 0.5rem 1rem; text-align: left; }
+    th { background: #f0f0f0; }
+  </style>
+</head>
+<body>
+  ${table.outerHTML}
+</body>
+</html>`;
+
+  const blob = new Blob([page], { type: "text/html;charset=utf-8" });
+  const url = URL.createObjectURL(blob);
+  window.open(url, "_blank");
+
+  // Libère la mémoire un peu plus tard, une fois la page chargée
+  setTimeout(() => URL.revokeObjectURL(url), 10000);
+}
+
+document.getElementById("tableau").addEventListener("click", () => {
+  ouvrirTableauDansOnglet();
+});
 

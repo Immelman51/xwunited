@@ -7255,7 +7255,7 @@
             "ability_FRA": "<div class='text'>Après avoir effectué une action, vous pouvez effectuer une action rouge <img class='inline-img' src='img/Br W.jpg'>. Pendant la phase de fun, vous pouvez dépenser 1 jeton stress pour effectuer une attaque bonus principale contre un vaisseau ennemi à portée 0.</div>",
             "ability_ENG": "<div class='text'>After you perform an action, you may perform a red <img class='inline-img' src='img/Br W.jpg'> action. At the end phase, you may spend a stress token to perform a bonus primary attack against an enemy ship at range 0.</div>",
             "slots": [
-                "Title-shooting"
+                "Talent-shooting"
 
             ],
             "modifier_func":[
