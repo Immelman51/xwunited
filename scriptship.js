@@ -1539,8 +1539,9 @@ function displayDescriptionUpgrade(event){ //permet d'afficher l'effet de l'amé
     description_upg_pil_Field.innerHTML="";
            
     if (typeof upgradesSelected_Objects[y][x]==="number"){ //if nothing is selected in a menu (y,x), then upgradesSelected_Objects is equal to -1 (a number), and is not an object.
+        console.log(x+","+y+" type is number, should return");
         return;
-    }
+    }else{
     if (upgradesSelected_Objects[y][x]["charge"][0] > 0) {
             for (k=0;k<upgradesSelected_Objects[y][x]["charge"][0];k++){
                 switch (upgradesSelected_Objects[y][x]["charge"][1]) {
@@ -1567,6 +1568,7 @@ function displayDescriptionUpgrade(event){ //permet d'afficher l'effet de l'amé
             }
         description_upg_pil_Field.innerHTML = description_upg_pil_Field.innerHTML + upgradesSelected_Objects[y][x]["effect_"+language];
     }
+}
 
 
 function display_chassis_title_window(event) { //allows to display the chassis window when the user clicks on the chassis name
