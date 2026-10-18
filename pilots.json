@@ -8841,7 +8841,7 @@
             "shipId": 86,
             "skill": 5,
             "points": 13,
-            "ability_FRA": "<div class='text'>Lorsqu'un vaisseau vérouillé par vous attaque, vous pouvez choisir 1 dé d'attaque. Dans ce cas, l'attaquant relance ce dé.</div>",
+            "ability_FRA": "<div class='text'>Lorsqu'un vaisseau verrouillé par vous attaque, vous pouvez choisir 1 dé d'attaque. Dans ce cas, l'attaquant relance ce dé.</div>",
             "ability_ENG": "<div class='text'>While a ship you are locking performs an attack, you may choose 1 attack die. If you do, the attacker rerolls that die.</div>",
             "slots": [
                 "Talent-shooting",
@@ -8863,8 +8863,8 @@
             "shipId": 86,
             "skill": 5,
             "points": 13,
-            "ability_FRA": "<div class='text'></div>",
-            "ability_ENG": "<div class='text'></div>",
+            "ability_FRA": "<div class='text'>Vous ne subissez pas l'effet d'une bombe alliée ou d'un engin verrouillé. Lorsqu'un engin verrouillé explose, vous pouvez verrouiller un objet à portée 0-1 de cet engin.</div>",
+            "ability_ENG": "<div class='text'>You don't suffer effects from  allied bombs or locked payloads. When a locked payload detonates, you may acquire a lock on an boject at range 0-1 from that payload.</div>",
             "slots": [
                 "Talent-piloting",
                 "Talent-piloting"
@@ -10261,9 +10261,9 @@
             "shipId": 44,
             "skill": 5,
             "points": 13,
-            "ability_FRA": "<div class='text'>Tant que vous effectuez une attaque <img class='inline-img' src='img/Torpedo.png'> ou <img class='inline-img' src='img/Missile.png'>, vous pouvez considérer le prérequis <img class='inline-img' src='img/attackF.jpg'> comme étant <img class='inline-img' src='img/attackB.jpg'> pour cette attaque. Dans ce cas, considérez le prérequis de portée comme étant 1-2.</div>",
-            "ability_ENG": "<div class='text'>While you perform a <img class='inline-img' src='img/Torpedo.png'> or <img class='inline-img' src='img/Missile.png'> attack, you may treat the <img class='inline-img' src='img/attackF.jpg'> requirement as <img class='inline-img' src='img/attackB.jpg'> for that attack. If you do, treat the range requirement as 1-2.</div>",
-            "slots": [     
+            "ability_FRA": "<div class='text'>Tant que vous effectuez une attaque <img class='inline-img' src='img/Torpedo.png'> ou <img class='inline-img' src='img/Missile.png'>, vous pouvez considérer le prérequis <img class='inline-img' src='img/attackF.jpg'> comme étant <img class='inline-img' src='img/attackB.jpg'> pour cette attaque.</div>",
+            "ability_ENG": "<div class='text'>While you perform a <img class='inline-img' src='img/Torpedo.png'> or <img class='inline-img' src='img/Missile.png'> attack, you may treat the <img class='inline-img' src='img/attackF.jpg'> requirement as <img class='inline-img' src='img/attackB.jpg'> for that attack.</div>",
+            "slots": [
             "Talent-piloting",
             "Talent-leadership"
         ]
@@ -10282,9 +10282,9 @@
             "shipId": 44,
             "skill": 3,
             "points": 12,
-            "ability_FRA": "<div class='text'></div>",
-            "ability_ENG": "<div class='text'></div>",
-            "slots": [     
+            "ability_FRA": "<div class='text'>Après avoir entièrement exécuté une manœuvre bleue, vous pouvez choisir un vaisseau allié à portée 0-1. Dans ce cas, ce vaisseau allié retire 1 marqueur de stress.</div>",
+            "ability_ENG": "<div class='text'>After you fully execute a blue maneuver, you may choose a friendly ship at range 0-1. If you do, that ship removes 1 stress token.</div>",
+            "slots": [
             "Talent-shooting"
            
         ]
@@ -10324,10 +10324,10 @@
             "shipId": 44,
             "skill": 3,
             "points": 11,
-            "ability_FRA": "<div class='text'>??</div>",
-            "ability_ENG": "<div class='text'>??</div>",
-            "slots": [     
-            "Talent-piloting"           
+            "ability_FRA": "<div class='text'>Après avoir perdu 1 bouclier, gagnez 1 marqueur d’évasion.</div>",
+            "ability_ENG": "<div class='text'>After you lose 1 shield, gain 1 evade token.</div>",
+            "slots": [
+            "Talent-piloting"          
         ]
         },
         {
@@ -10345,9 +10345,9 @@
             "shipId": 95,
             "skill": 1,
             "points": 11,
-            "ability_FRA": "<div class='text'>??</div>",
-            "ability_ENG": "<div class='text'>??</div>",
-            "slots": [     
+            "ability_FRA": "<div class='text'>Vous pouvez attaquer à portée 0 et considérer une telle attaque comme étant à portée 2.</div>",
+            "ability_ENG": "<div class='text'>You may perform attacks at range 0 and consider them like attacks at range 2.</div>",
+            "slots": [
             "Title",
             "Talent-shooting"           
         ],
@@ -10370,8 +10370,8 @@
             "shipId": 95,
             "skill": 4,
             "points": 12,
-            "ability_FRA": "<div class='text'>??</div>",
-            "ability_ENG": "<div class='text'>??</div>",
+            "ability_FRA": "<div class='text'>Lorsque vous effectuez partiellement une manoeuvre, le ou les vaisseaux à portée 0 reçoivent un marqueur de contrainte.</div>",
+            "ability_ENG": "<div class='text'>When you partially execute a maneuver, ships at range 0 receive 1 strain token.</div>",
             "slots": [     
             "Title",
             "Talent-shooting",
@@ -10396,9 +10396,9 @@
             "shipId": 95,
             "skill": 2,
             "points": 11,
-            "ability_FRA": "<div class='text'>??</div>",
-            "ability_ENG": "<div class='text'>??</div>",
-            "slots": [     
+            "ability_FRA": "<div class='text'>Lorsqu'un autre vaisseau à portée 0 s'engage, vous le verrouiller.</div>",
+            "ability_ENG": "<div class='text'>When another ship at range 0 engages, you may acquire a lock on him</div>",
+            "slots": [
             "Title",
             "Talent-shooting"                  
         ],
@@ -10527,7 +10527,7 @@
             "shipId": 89,
             "skill": 5,
             "points": 10,
-            "ability_FRA": "<div class='text'>Après avoir effectué un <img class='inline-img' src='img/Br W.jpg'>, s'il y a un vaisseau ennemi dans votre <img class='inline-img' src='img/bulls.jpg'>, vous pouvez vérouiller ce vaisseau.</div>",
+            "ability_FRA": "<div class='text'>Après avoir effectué un <img class='inline-img' src='img/Br W.jpg'>, s'il y a un vaisseau ennemi dans votre <img class='inline-img' src='img/bulls.jpg'>, vous pouvez verrouiller ce vaisseau.</div>",
             "ability_ENG": "<div class='text'>After you perform a <img class='inline-img' src='img/Br W.jpg'>, if there is an enemy ship in your <img class='inline-img' src='img/bulls.jpg'>, you may acquire a lock on that ship.</div>",
             "slots": [     
             "Title",

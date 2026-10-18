@@ -690,7 +690,7 @@ function createArray() {
 
   // Corps
   const tbody = table.createTBody(); 
-  for (i=1,i<array2export.length,i++){
+  for (i=1;i<array2export.length;i++){
     const ligne = tbody.insertRow();
     for (const cle of cles) {
       const cellule = ligne.insertCell();
