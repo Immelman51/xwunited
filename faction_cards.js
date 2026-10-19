@@ -724,7 +724,7 @@ function createArray() {
         });
 
 function ouvrirTableauDansOnglet() {
-  const table = creerTableau();
+  const table = createArray();
 
   const page = `<!DOCTYPE html>
 <html lang="fr">
