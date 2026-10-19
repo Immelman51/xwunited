@@ -694,7 +694,7 @@ function createArray() {
     const ligne = tbody.insertRow();
     for (const cle of cles) {
       const cellule = ligne.insertCell();
-      cellule.textContent = array2export[cle] ?? "";
+      cellule.textContent = array2export[i][cle] ?? "";
     }
   }
 
@@ -739,6 +739,7 @@ function ouvrirTableauDansOnglet() {
   </style>
 </head>
 <body>
+<h1>`+array2export[0] + `</h1>
   ${table.outerHTML}
 </body>
 </html>`;
