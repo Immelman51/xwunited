@@ -12951,15 +12951,15 @@
             "modify": false,
             "faction": "Naboo_Defense_Force",
             "ship": "NB-1S Royal Bomber",
-            "charge":[0],
+            "charge":[1,'yellow','+'],
             "force": 0,
             "titleID": 0,
             "shipId": 100,
             "skill": 5,
             "points": 12,
-            "ability_FRA": "<div class='text'></div>",
-            "ability_ENG": "<div class='text'></div>",
-            "slots": [ 
+            "ability_FRA": "<div class='text'>Lorsqu'un engin à portée 0-2 explose, vous pouvez dépenser 1 <img class='inline-img' src='img/charge.png'> et choisir un vaisseau à portée 0-1 de cet engin. Dans ce cas, ce vaisseau reçoit 1 jeton contrainte.</div>",
+            "ability_ENG": "<div class='text'>When a payload detonates at range 0-2, you may spend 1 <img class='inline-img' src='img/charge.png'> and choose a ship at range 0-1 of this payload. If you do, this ship receive 1 strain token.</div>",
+            "slots": [
                 "Talent-piloting"   
             ]
         },
@@ -12977,9 +12977,9 @@
             "shipId": 100,
             "skill": 4,
             "points": 11,
-            "ability_FRA": "<div class='text'></div>",
-            "ability_ENG": "<div class='text'></div>",
-            "slots": [ 
+            "ability_FRA": "<div class='text'>Lorsqu'un engin à portée 0-1 explose, vous pouvez effectuer une action <img class='inline-img' src='img/Br W.png'> ou <img class='inline-img' src='img/Bo W.png'>. Si vous deviez subir les effets de cet engin, vous pouvez recevoir 2 jetons stress pour les ignorer à la place.</div>",
+            "ability_ENG": "<div class='text'>When a payload at range 0-1 detonates, you may perform a <img class='inline-img' src='img/Br W.png'> or <img class='inline-img' src='img/Bo W.png'> action. If you had to suffer the effects of this payload, you may gain 2 stress tokens to ignore those effects instead.</div>",
+            "slots": [
                 "Talent-piloting"   
             ]
         },
@@ -12997,9 +12997,9 @@
             "shipId": 100,
             "skill": 3,
             "points": 10,
-            "ability_FRA": "<div class='text'></div>",
-            "ability_ENG": "<div class='text'></div>",
-            "slots": [ 
+            "ability_FRA": "<div class='text'>Lorsque vous déchargez un engin, vous pouvez accélérer. Puis, vous pouvez recevoir un jeton contrainte. Dans ce cas, tournez votre vaisseau de 180°.</div>",
+            "ability_ENG": "<div class='text'>When you unload a payload, you may boost. Then, you may receive 1 strain token. If you do, rotate your ship 180°.</div>",
+            "slots": [
                 "Talent-shooting"   
             ]
         },
@@ -13017,9 +13017,9 @@
             "shipId": 100,
             "skill": 4,
             "points": 10,
-            "ability_FRA": "<div class='text'></div>",
-            "ability_ENG": "<div class='text'></div>",
-            "slots": [ 
+            "ability_FRA": "<div class='text'>Vous pouvez décharger les engins en les lançant avec le gabarit de vitesse 1 <img class='inline-img' src='img/manSt2.png'>.</div>",
+            "ability_ENG": "<div class='text'>You may unload payloads by launching them with the speed 1 <img class='inline-img' src='img/manSt2.png'> template.</div>",
+            "slots": [
                 "Talent-shooting"   
             ]
         },
