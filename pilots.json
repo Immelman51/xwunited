@@ -7282,8 +7282,8 @@
            ]
         },
         {
-            "name_FRA": "Ric Ollié",
-            "name_ENG": "Ric Ollié",
+            "name_FRA": "Ric Olié",
+            "name_ENG": "Ric Olié",
             "id": 316,
             "max_per_squad": 1,
             "modify": false,
@@ -11620,7 +11620,7 @@
             "shipId": 94,
             "skill": 1,
             "points": 16,
-            "ability_FRA": "<div class='text'>Au début de la pahse d'engagement, vous pouvez dépenser 1 <img class='inline-img' src='img/charge.png'>. Dans ce cas, vous pouvez choisir 1 vaisseau à portée 0. Ce vaisseau reçoit un jeton tractage.</div>",
+            "ability_FRA": "<div class='text'>Au début de la phase d'engagement, vous pouvez dépenser 1 <img class='inline-img' src='img/charge.png'>. Dans ce cas, vous pouvez choisir 1 vaisseau à portée 0. Ce vaisseau reçoit un jeton tractage.</div>",
             "ability_ENG": "<div class='text'>At the start of engagement phase, you may spend 1 <img class='inline-img' src='img/charge.png'>. If you do, you may choose 1 ship at range 0. That ship gains 1 tractor token.</div>",
             "slots": [     
             "Title",  
@@ -12764,8 +12764,8 @@
             ] 
         },
         {
-            "name_FRA": "Ric Ollié",
-            "name_ENG": "Ric Ollié",
+            "name_FRA": "Ric Olié",
+            "name_ENG": "Ric Olié",
             "id": 557,
             "max_per_squad":1,
             "modify": true,
@@ -12777,9 +12777,9 @@
             "shipId": 99,
             "skill": 5,
             "points": 17,
-            "ability_FRA": "<div class='text'></div>",
-            "ability_ENG": "<div class='text'></div>",
-            "slots": [ 
+            "ability_FRA": "<div class='text'>Lorsque vous défendez ou effectuez une attaque principale, si la vitesse de votre manoeuvre révélée est plus grande que celle de l'ennemi, lancez 1 dé supplémentaire.</div>",
+            "ability_ENG": "<div class='text'>While you defend or perform a primary attack, if the speed of your revealed maneuver is higher than the enemy ship's, roll 1 additional die.</div>",
+            "slots": [
                 "Talent-elite",
                 "Talent-piloting"    
             ],
@@ -12801,9 +12801,9 @@
             "shipId": 99,
             "skill": 3,
             "points": 16,
-            "ability_FRA": "<div class='text'></div>",
-            "ability_ENG": "<div class='text'></div>",
-            "slots": [ 
+            "ability_FRA": "<div class='text'>Lorsqu'un vaisseau à portée 1 attaque ou défend, vous pouvez recevoir 1 jeton épuisement. Dans ce cas,  vous pouvez un choisir un dé vierge obtenu par ce vaisseau et le relancer.</div>",
+            "ability_ENG": "<div class='text'>When a ship at range 1 defends or performs an attack, you may receive 1 deplete token. If you do, you may choose 1 blank die rolled by this ship and reroll it.</div>",
+            "slots": [
                 "Talent-piloting"  
             ],
             "modifier_func": [
@@ -12824,9 +12824,9 @@
             "shipId": 99,
             "skill": 1,
             "points": 15,
-            "ability_FRA": "<div class='text'></div>",
-            "ability_ENG": "<div class='text'></div>",
-            "slots": [ 
+            "ability_FRA": "<div class='text'>Pour chaque amélioration <img class='inline-img' src='img/crew.png> que vous avez équipé, placez autant de jetons calculs sur votre liste. Vous pouvez utiliser ces jetons à tout moment pour modifier vos dés. Pendant la phase 'Executez une action', vous pouvez dépenser 1 de ces jetons calculs pour effectuer une action <img class='inline-img' src='img/Co W.png>. Dans ce cas, n'effectuez plus d'action lors de cette phase et recevez 1 jeton calcul.</div>",
+            "ability_ENG": "<div class='text'>For each <img class='inline-img' src='img/crew.png> equipped upgrade, place as many calculate tokens on your list. You may spend those tokens whenever you need to modify your dice results. During 'perform an action' phase, you may spend 1 of those calculate tokens to perform a <img class='inline-img' src='img/Co W.png> action. If you do, you can't perform any action during this phase and gain 1 calculate token.</div>",
+            "slots": [
                 "Droid",
                 "Talent-piloting"  
             ],
@@ -12850,9 +12850,9 @@
             "shipId": 99,
             "skill": 4,
             "points": 17,
-            "ability_FRA": "<div class='text'></div>",
-            "ability_ENG": "<div class='text'></div>",
-            "slots": [ 
+            "ability_FRA": "<div class='text'>Tant qu’un vaisseau ennemi dans votre <img class='inline-img' src='img/Farc.png'> défend ou effectue une attaque, ce vaisseau ennemi ne peut modifier que 1 seul résultat <img class='inline-img' src='img/Fo W.png> (les autres résultats peuvent toujours être modifiés).</div>",
+            "ability_ENG": "<div class='text'>While an enemy ship in your <img class='inline-img' src='img/Farc.png'> defends or performs an attack, that ship can modify only 1 <img class='inline-img' src='img/Fo W.png> result (other results can still be modified).</div>",
+            "slots": [
                 "Talent-leadership"  
             ],
             "modifier_func": [
@@ -12873,9 +12873,9 @@
             "shipId": 98,
             "skill": 3,
             "points": 14,
-            "ability_FRA": "<div class='text'></div>",
-            "ability_ENG": "<div class='text'></div>",
-            "slots": [ 
+            "ability_FRA": "<div class='text'>Lorsqu'un vaisseau allié à portée 0-1 devrait recevoir un jeton stress, vous pouvez dépenser 1 <img class='inline-img' src='img/fo.png>. Dans ce cas, ce jeton stress est défaussé.</div>",
+            "ability_ENG": "<div class='text'>When a friendly ship at range 0-1 would receive a stress token, you may spend 1 <img class='inline-img' src='img/fo.png>. If you do, this stress token is discarded.</div>",
+            "slots": [
                 "Force-Base",
                 "Force-Light",
                 "Force-Light"
@@ -12893,18 +12893,18 @@
             "force": 3,
             "titleID": 0,
             "shipId": 98,
-            "skill": 6,
+            "skill": 4,
             "points": 13,
-            "ability_FRA": "<div class='text'></div>",
-            "ability_ENG": "<div class='text'></div>",
-            "slots": [ 
+            "ability_FRA": "<div class='text'>Avant de révéler votre manoeuvre, vous pouvez dépenser 1 <img class='inline-img' src='img/fo.jpg'> pour faire un tonneau (ce n'est pas une action).</div>",
+            "ability_ENG": "<div class='text'>Before you reveal your maneuver, you may spend 1 <img class='inline-img' src='img/fo.jpg'> to barrel roll (this is not an action).</div>",
+            "slots": [
                 "Force-Base",
                 "Force-Light"
             ]
         },
 	{
-            "name_FRA": "Obiwan Kenobi",
-            "name_ENG": "Obiwan Kenobi",
+            "name_FRA": "Obi-Wan Kenobi",
+            "name_ENG": "Obi-Wan Kenobi",
             "id": 563,
             "max_per_squad":1,
             "modify": false,
@@ -12916,9 +12916,9 @@
             "shipId": 98,
             "skill": 5,
             "points": 13,
-            "ability_FRA": "<div class='text'></div>",
-            "ability_ENG": "<div class='text'></div>",
-            "slots": [ 
+            "ability_FRA": "<div class='text'>Après qu'un vaisseau allié à portée 0-2 a dépensé un jeton de concentration, vous pouvez 1<img class='inline-img' src='img/fo.jpg'>. Dans ce cas, ce vaisseau reçoit 1 jeton de concentration.</div>",
+            "ability_ENG": "<div class='text'>After a friendly ship at range 0-2 spends a focus token, you may spend 1 <img class='inline-img' src='img/fo.jpg'>. If you do, that ship gains 1 focus token.</div>"
+            "slots": [
                 "Force-Base",
                 "Force-Light"    
             ]
@@ -12937,9 +12937,9 @@
             "shipId": 98,
             "skill": 1,
             "points": 10,
-            "ability_FRA": "<div class='text'></div>",
-            "ability_ENG": "<div class='text'></div>",
-            "slots": [ 
+            "ability_FRA": "<div class='text'>Lorsque vous lancez des dés (au moins 2 lors du lancer), si tous vos résultats sont vierges, transformez les tous en résultats <img class='inline-img' src='img/crit.png'> / <img class='inline-img' src='img/Ev W.png'>.</div>",
+            "ability_ENG": "<div class='text'>When you roll dice (at least 2 during the roll), if all your results are blank, modify all of them into <img class='inline-img' src='img/crit.png'> / <img class='inline-img' src='img/Ev W.png'> results.</div>",
+            "slots": [
                 "Talent-shooting"   
             ]
         },
