@@ -5205,7 +5205,7 @@
              
          },
          {
-            "name_FRA": "*Flashy",
+            "name_FRA": "*Tapageur",
              "name_ENG": "*Flashy",
              "id":299,
              "max_per_squad":8,
@@ -5214,11 +5214,11 @@
              "slot": "Talent-special",
              "add_Data": [0],
              "force": 0,
-             "charge": [1,"yellow","0"],
-             "points": 0,
+             "charge": [2,"yellow","0"],
+             "points": 1,
              "talent_points": 0,
-             "effect_FRA": "",
-             "effect_ENG": "",
+             "effect_FRA": "Après avoir entièrement exécuté une manoeuvre <img class='inline-img' src='img/Sl W.png'>, si il y a un vaisseau ennemi dans votre <img class='inline-img' src='img/Farc.png'> à portée 1, vous pouvez dépenser 1 <img class='inline-img' src='img/charge.png'>. Dans ce cas, retirez l'un de vos jetons rouge, et l'assigner à ce vaisseau.",
+             "effect_ENG": "After you fully execute a maneuver <img class='inline-img' src='img/Sl W.png'>, if there is an enemy ship in your <img class='inline-img' src='img/Farc.png'> at range 1, you may spend 1 <img class='inline-img' src='img/charge.png'>. If you do, remove 1 of your red tokens and assign it to this ship.",
              "faction": ["Colossus"]
              
          },

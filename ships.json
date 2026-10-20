@@ -1803,7 +1803,7 @@
                 "hull": 6,
                 "shields": 0,
                 "base": "small",
-                "chassis": [37],
+                "chassis": [37,70],
                 "actions": [
                     [0,"Fo W"],
                     [0,"Ev W"],                
@@ -2450,11 +2450,12 @@
                 "base": "small",
                 "hull": 4,
                 "shields": 0,
-                "chassis": [11,54],
+                "chassis": [11,70],
                 "actions": [
                     [0,"Fo W"],               
                     [0,"Br W"],
-                    [0,"Bo W"]
+                    [0,"Bo W"],
+                    [0,"Sl W"]
                     
                 ],
                 "maneuvers": [
@@ -2478,11 +2479,12 @@
                 "base": "small",
                 "hull": 5,
                 "shields": 0,
-                "chassis": [33,38],
+                "chassis": [38,70],
                 "actions": [
                     [0,"Fo W"],               
                     [0,"Br W"],
-                    [0,"Bo W"]
+                    [0,"Bo W"],
+                    [0,"Sl W"]
                 ],
                 "maneuvers": [
                     [ 0, 0, 0, 0, 0, 0, 0, 0],
@@ -2505,11 +2507,12 @@
                 "base": "small",
                 "hull": 5,
                 "shields": 0,
-                "chassis": [20,35],
+                "chassis": [35,70],
                 "actions": [
                     [0,"Fo W"],               
                     [0,"Br W"],
-                    [0,"Bo W"]
+                    [0,"Bo W"],
+                    [0,"Sl W"]
                 ],
                 "maneuvers": [
                     [ 0, 0, 0, 0, 0, 0, 0, 0 ],
@@ -2532,11 +2535,12 @@
                 "base": "small",
                 "hull": 4,
                 "shields": 0,
-                "chassis": [10,43],
+                "chassis": [10,70],
                 "actions": [
                     [0,"Fo W"],               
                     [0,"Br W"],
-                    [0,"Bo W"]
+                    [0,"Bo W"],
+                    [0,"Sl W"]
                 ],
                 "maneuvers": [
                     [ 0, 0, 0, 0, 0, 0, 0, 0],
@@ -2559,11 +2563,12 @@
                 "base": "small",
                 "hull": 4,
                 "shields": 0,
-                "chassis": [12,45],
+                "chassis": [45,70],
                 "actions": [
                     [0,"Fo W"],               
                     [0,"Br W"],
-                    [0,"Bo W"]
+                    [0,"Bo W"],
+                    [0,"Sl W"]
                 ],
                 "maneuvers": [
                     [ 0, 0, 0, 0, 0, 0, 0, 0],
@@ -3020,6 +3025,28 @@
                      [ 0, 0, 2, 0, 0, 3]
                  ],
                  "slots": ["Calculator","Crew","Crew","Modification"]
+             },
+              {
+          
+                 "name": "Logistic Supply",
+                 "factions": ["Rebel_Alliance","Partisans","Phoenix_Cell","Imperial_Academy","ISB","Imperial_Elite_Squadrons","Pirates_and_Smugglers","Bounty_Hunters_Guild","Hutt_Cartel","Jedi_Council","Clone_Army","Naboo_Defense_Forces","Trade_Federation","Separatist_Government","Agents_of_Chaos","First_Order_Vanguard","Shadow_Specialists","Imperial_Remnants","New_Republic_Patrol","Colossus","Heroes_of_the_Resistance","Mandalorian_Clans","Crime_Syndicates","Black_Sun"],
+                 "id": 109,
+                 "attack": [0],
+                 "agility": 0,
+                 "hull": 1,
+                 "shields": 0,
+                 "base": "small",
+                 "chassis": [69],
+                 "actions": [
+                      ],
+                 "maneuvers": [
+                     [ 0, 0, 0, 0, 0, 0],
+                     [ 0, 0, 0, 0, 0, 0],
+                     [ 0, 0, 0, 0, 0, 0],
+                     [ 0, 0, 0, 0, 0, 0]
+                     
+                 ],
+                 "slots": []
              }
           
             

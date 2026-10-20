@@ -409,10 +409,10 @@
     "name":"Explosion with Wings",
     "id":37,
     "nbrOfEffects": 1,
-    "effect1_FRA":"<div>(Explosion en Vol) : Mise en Place : 1 carte de dégât face cachée vous est attribuée. Après avoir effectué une action <img class='inline-img' src='img/Sl W.jpg'>, vous pouvez exposer 1 carte de dégât pour retirer 1 marqueur de désarmement.</div>",
+    "effect1_FRA":"<div>(Explosion en Vol) : Mise en Place : Choisissez une carte vaisseau du paquet de dégat et assignez vous la face cachée. Après avoir effectué une action <img class='inline-img' src='img/Sl W.jpg'>, vous pouvez exposer 1 carte de dégât pour retirer 1 jeton orange ou rouge.</div>",
     "effect2_FRA": "",
     "effect3_FRA": "",
-    "effect1_ENG":"<div>(Explosion with Wings) : Setup: 1 facedown damage card is dealt to you. After you perform a <img class='inline-img' src='img/Sl W.jpg'> action, you may expose 1 damage card to remove 1 disarm token.</div>",
+    "effect1_ENG":"<div>(Explosion with Wings) : Setup: Choose 1 ship damage card and receive it facedown. After you perform a <img class='inline-img' src='img/Sl W.jpg'> action, you may expose 1 damage card to remove 1 orange or red token.</div>",
     "effect2_ENG": "",
     "effect3_ENG": ""
 },
@@ -757,6 +757,28 @@
 "effect2_FRA": "",
 "effect3_FRA": "",
 "effect1_ENG": "(Xg-1 Assault Configuration) : While you have exactly 1 disarm token, you can still perform special attacks. While you perform a special attack while disarmed, roll a maximum of 3 attack dice.",
+   "effect2_ENG": "",
+   "effect3_ENG": ""
+   },
+{
+"name":"Logistic Supply",
+"id":69,
+"nbrOfEffects":1,
+"effect1_FRA":"(Ravitaillement) : Vous êtes un engin distant. Vous ne pouvez pas être relocalisé sauf si le contraire est spécifié. En phase de mise en place, vous pouvez être placé sur toute la carte sans aucune restriction. Vous ne pouvez être la cible d'une attaque que si vous défendez à portée 1, ou si défendez à portée 2 et que l'attaquant possède un verrouillage sur vous.",
+"effect2_FRA": "",
+"effect3_FRA": "",
+"effect1_ENG": "(Supply) : You are a remote. You can't be relocated except if the contrary is specified. During setup, you may be placed anywhere on the field without restrictions. You can only be targeted by range 1 attacks, or range 2 attacks if the attacker has a lock on you.",
+   "effect2_ENG": "",
+   "effect3_ENG": ""
+   },
+{
+"name":"Racing Ship",
+"id":70,
+"nbrOfEffects":1,
+"effect1_FRA":"(Vaisseau de Course) : Après avoir effectué une action, vous pouvez effectuer une action <img class='inline-img' src='img/Sl W.png'> puis recevez un jeton contrainte ou épuisement. Après avoir effectué une action <img class='inline-img' src='img/Sl W.png'> vous pouvez recevoir un jeton contrainte ou épuisement pour retirer le jeton désarmement.",
+"effect2_FRA": "",
+"effect3_FRA": "",
+"effect1_ENG": "(Racing Ship) : After you perform an action, you may perform a <img class='inline-img' src='img/Sl W.png'> action, then receive a strain or deplete token. After you perform a <img class='inline-img' src='img/Sl W.png'> action, you may receive a strain or deplete token to remove the disarm token.",
    "effect2_ENG": "",
    "effect3_ENG": ""
    }

@@ -587,7 +587,9 @@ function checkPilotModifier() { //va checker s'il existe des fonctions dans modi
                     break;
                 case "may_remove_slots" :
                     may_remove_slots(pilot_list[y]['modifier_func'][m][1]);
-                 
+                    break;
+                case "add_logistic_points" :
+                    add_logistic_points(pilot_list[y]['modifier_func'][m][1]);
                     break;
                 default :
                     alert(pilot_list[y]['modifier_func'][m][0]+" is not coded in scriptship.");
@@ -1028,6 +1030,10 @@ function may_remove_slots(slot){ //Action n°10 : permet de retirer des slots
         fillUpgradesSelected(y); 
         updateUpgradeCount(y);
         
+}
+
+function add_logistic_points(val){ //When you select a logistic_supply, logisticEquipped should be updated immediately, and I don't think it should change anymore
+    logisticEquipped[y]=-val;
 }
 
 

@@ -13969,7 +13969,576 @@
             "slots": [
                 "Talent-piloting"
             ]
-        }
+        },
+        {
+            "name_FRA": "Cache Rebelle",
+            "name_ENG": "Rebel Cache",
+            "id": 610,
+            "max_per_squad": 8,
+            "faction": "Rebel_Alliance",
+            "ship": "Logistic Supply",
+            "modify": true,
+            "charge":[1,"yellow",0],
+            "force": 0,
+            "titleID": 0,
+            "shipId": 109,
+            "skill": 0,
+            "points": 1,
+            
+            "ability_FRA": "<div class='text'>Lorsque vous êtes touché par une attaque, vous devez dépenser votre charge si elle est active. Dans ce cas, annulez l'attaque.</div>",
+            "ability_ENG": "<div class='text'>When you are hit by an attack, you must spend your charge if active. If you do, cancel the attack.</div>",
+            "slots": [
+            ],
+            "modifier_func": [
+                ["add_logistic_points",4]
+            ]
+        },
+        {
+            "name_FRA": "Cache Rebelle",
+            "name_ENG": "Rebel Cache",
+            "id": 611,
+            "max_per_squad": 8,
+            "faction": "Partisans",
+            "ship": "Logistic Supply",
+            "modify": true,
+            "charge":[1,"yellow",0],
+            "force": 0,
+            "titleID": 0,
+            "shipId": 109,
+            "skill": 0,
+            "points": 1,
+            
+            "ability_FRA": "<div class='text'>Lorsque vous êtes touché par une attaque, vous devez dépenser votre charge si elle est active. Dans ce cas, annulez l'attaque.</div>",
+            "ability_ENG": "<div class='text'>When you are hit by an attack, you must spend your charge if active. If you do, cancel the attack.</div>",
+            "slots": [
+            ],
+            "modifier_func": [
+                ["add_logistic_points",4]
+            ]
+        },
+        {
+            "name_FRA": "Cache Rebelle",
+            "name_ENG": "Rebel Cache",
+            "id": 612,
+            "max_per_squad": 8,
+            "faction": "Phoenix_Cell",
+            "ship": "Logistic Supply",
+            "modify": true,
+            "charge":[1,"yellow",0],
+            "force": 0,
+            "titleID": 0,
+            "shipId": 109,
+            "skill": 0,
+            "points": 1,
+            
+            "ability_FRA": "<div class='text'>Lorsque vous êtes touché par une attaque, vous devez dépenser votre charge si elle est active. Dans ce cas, annulez l'attaque.</div>",
+            "ability_ENG": "<div class='text'>When you are hit by an attack, you must spend your charge if active. If you do, cancel the attack.</div>",
+            "slots": [
+            ],
+            "modifier_func": [
+                ["add_logistic_points",4]
+            ]
+        },
+        {
+            "name_FRA": "Sonde Impériale",
+            "name_ENG": "Imperial Probe",
+            "id": 613,
+            "max_per_squad": 8,
+            "faction": "Imperial_Academy",
+            "ship": "Logistic Supply",
+            "modify": true,
+            "charge":[0],
+            "force": 0,
+            "titleID": 0,
+            "shipId": 109,
+            "skill": 3,
+            "points": 1,
+            "ability_FRA": "<div class='text'>Pendant la phase système, vous pouvez regarder le cadran d'un vaisseau à portée 0-3.</div>",
+            "ability_ENG": "<div class='text'>During System Phase, you may look at the maneuver from a ship at range 0-3.</div>",
+            "slots": [
+            ],
+            "modifier_func": [
+                ["add_logistic_points",4]
+            ]
+        },
+        {
+            "name_FRA": "Sonde Impériale",
+            "name_ENG": "Imperial Probe",
+            "id": 614,
+            "max_per_squad": 8,
+            "faction": "ISB",
+            "ship": "Logistic Supply",
+            "modify": true,
+            "charge":[0],
+            "force": 0,
+            "titleID": 0,
+            "shipId": 109,
+            "skill": 3,
+            "points": 1,
+            "ability_FRA": "<div class='text'>Pendant la phase système, vous pouvez regarder le cadran d'un vaisseau à portée 0-3.</div>",
+            "ability_ENG": "<div class='text'>During System Phase, you may look at the maneuver from a ship at range 0-3.</div>",
+            "slots": [
+            ],
+            "modifier_func": [
+                ["add_logistic_points",4]
+            ]
+        },
+        {
+            "name_FRA": "Sonde Impériale",
+            "name_ENG": "Imperial Probe",
+            "id": 615,
+            "max_per_squad": 8,
+            "faction": "Imperial_Elite_Squadrons",
+            "ship": "Logistic Supply",
+            "modify": true,
+            "charge":[0],
+            "force": 0,
+            "titleID": 0,
+            "shipId": 109,
+            "skill": 3,
+            "points": 1,
+            "ability_FRA": "<div class='text'>Pendant la phase système, vous pouvez regarder le cadran d'un vaisseau à portée 0-3.</div>",
+            "ability_ENG": "<div class='text'>During System Phase, you may look at the maneuver from a ship at range 0-3.</div>",
+            "slots": [
+            ],
+            "modifier_func": [
+                ["add_logistic_points",4]
+            ]
+        },
+        {
+            "name_FRA": "Butin Dérobé",
+            "name_ENG": "Stolen Cargo",
+            "id": 616,
+            "max_per_squad": 8,
+            "faction": "Pirates_and_Smugglers",
+            "ship": "Logistic Supply",
+            "modify": true,
+            "charge":[1,"yellow",0],
+            "force": 0,
+            "titleID": 0,
+            "shipId": 109,
+            "skill": 1,
+            "points": 1,
+            "ability_FRA": "<div class='text'>Après qu'un vaisseau qui a entièrement exécuté une manoeuvre se retrouve à portée 0-1 de vous, vous pouvez dépenser 1 charge. Dans ce cas, le vaisseau récupère une charge sur une de ses améliorations.</div>",
+            "ability_ENG": "<div class='text'>After a ship which fully executed a maneuver becomes at range 0-1 of you, you may spend a charge. If you do, the ship recovers a charge on 1 of its upgrades.</div>",
+            "slots": [
+            ],
+            "modifier_func": [
+                ["add_logistic_points",4]
+            ]
+        },
+        {
+            "name_FRA": "Butin Dérobé",
+            "name_ENG": "Stolen Cargo",
+            "id": 617,
+            "max_per_squad": 8,
+            "faction": "Bounty_Hunters_Guild",
+            "ship": "Logistic Supply",
+            "modify": true,
+            "charge":[1,"yellow",0],
+            "force": 0,
+            "titleID": 0,
+            "shipId": 109,
+            "skill": 1,
+            "points": 1,
+            "ability_FRA": "<div class='text'>Après qu'un vaisseau qui a entièrement exécuté une manoeuvre se retrouve à portée 0-1 de vous, vous pouvez dépenser 1 charge. Dans ce cas, le vaisseau récupère une charge sur une de ses améliorations.</div>",
+            "ability_ENG": "<div class='text'>After a ship which fully executed a maneuver becomes at range 0-1 of you, you may spend a charge. If you do, the ship recovers a charge on 1 of its upgrades.</div>",
+            "slots": [
+            ],
+            "modifier_func": [
+                ["add_logistic_points",4]
+            ]
+        },
+        {
+            "name_FRA": "Butin Dérobé",
+            "name_ENG": "Stolen Cargo",
+            "id": 618,
+            "max_per_squad": 8,
+            "faction": "Hutt_Cartel",
+            "ship": "Logistic Supply",
+            "modify": true,
+            "charge":[1,"yellow",0],
+            "force": 0,
+            "titleID": 0,
+            "shipId": 109,
+            "skill": 1,
+            "points": 1,
+            "ability_FRA": "<div class='text'>Après qu'un vaisseau qui a entièrement exécuté une manoeuvre se retrouve à portée 0-1 de vous, vous pouvez dépenser 1 charge. Dans ce cas, le vaisseau récupère une charge sur une de ses améliorations.</div>",
+            "ability_ENG": "<div class='text'>After a ship which fully executed a maneuver becomes at range 0-1 of you, you may spend a charge. If you do, the ship recovers a charge on 1 of its upgrades.</div>",
+            "slots": [
+            ],
+            "modifier_func": [
+                ["add_logistic_points",4]
+            ]
+        },
+        {
+            "name_FRA": "Balise de détection",
+            "name_ENG": "Sensor Buoy Suite",
+            "id": 619,
+            "max_per_squad": 8,
+            "faction": "First_Order_Vanguard",
+            "ship": "Logistic Supply",
+            "modify": true,
+            "charge":[0],
+            "force": 0,
+            "titleID": 0,
+            "shipId": 109,
+            "skill": 7,
+            "points": 1,
+            "ability_FRA": "<div class='text'>Pendant la phase système, vous pouvez verrouiller un vaisseau à portée 0-2. Lorsqu'un vaisseau allié attaque un vaisseau que vous avez verrouillé, il peut relancer 1 dé d'attaque.</div>",
+            "ability_ENG": "<div class='text'>During system phase, you may acquire a lock on a ship at range 0-2. When a friedly ship performs an attack against a ship you have a lock on, it can reroll an attack die.</div>",
+            "slots": [
+            ],
+            "modifier_func": [
+                ["add_logistic_points",4]
+            ]
+        },
+        {
+            "name_FRA": "Balise de détection",
+            "name_ENG": "Sensor Buoy Suite",
+            "id": 620,
+            "max_per_squad": 8,
+            "faction": "Shadow_Specialists",
+            "ship": "Logistic Supply",
+            "modify": true,
+            "charge":[0],
+            "force": 0,
+            "titleID": 0,
+            "shipId": 109,
+            "skill": 7,
+            "points": 1,
+            "ability_FRA": "<div class='text'>Pendant la phase système, vous pouvez verrouiller un vaisseau à portée 0-2. Lorsqu'un vaisseau allié attaque un vaisseau que vous avez verrouillé, il peut relancer 1 dé d'attaque.</div>",
+            "ability_ENG": "<div class='text'>During system phase, you may acquire a lock on a ship at range 0-2. When a friedly ship performs an attack against a ship you have a lock on, it can reroll an attack die.</div>",
+            "slots": [
+            ],
+            "modifier_func": [
+                ["add_logistic_points",4]
+            ]
+        },
+        {
+            "name_FRA": "Balise de détection",
+            "name_ENG": "Sensor Buoy Suite",
+            "id": 621,
+            "max_per_squad": 8,
+            "faction": "Imperial_Remnants",
+            "ship": "Logistic Supply",
+            "modify": true,
+            "charge":[0],
+            "force": 0,
+            "titleID": 0,
+            "shipId": 109,
+            "skill": 7,
+            "points": 1,
+            "ability_FRA": "<div class='text'>Pendant la phase système, vous pouvez verrouiller un vaisseau à portée 0-2. Lorsqu'un vaisseau allié attaque un vaisseau que vous avez verrouillé, il peut relancer 1 dé d'attaque.</div>",
+            "ability_ENG": "<div class='text'>During system phase, you may acquire a lock on a ship at range 0-2. When a friedly ship performs an attack against a ship you have a lock on, it can reroll an attack die.</div>",
+            "slots": [
+            ],
+            "modifier_func": [
+                ["add_logistic_points",4]
+            ]
+        },
+        {
+            "name_FRA": "Relais de communication",
+            "name_ENG": "Comms Relay",
+            "id": 622,
+            "max_per_squad": 8,
+            "faction": "Jedi_Council",
+            "ship": "Logistic Supply",
+            "modify": true,
+            "charge":[0],
+            "force": 0,
+            "titleID": 0,
+            "shipId": 109,
+            "skill": 1,
+            "points": 1,
+            "ability_FRA": "<div class='text'>Lorsqu'un vaisseau allié à portée 0-2 coordonne, il peut cibler un vaisseau à portée 0-2 de vous.</div>",
+            "ability_ENG": "<div class='text'>When a friendly ship at range 0-2 coordinates, it can target a ship at range 0-2 of you.</div>",
+            "slots": [
+            ],
+            "modifier_func": [
+                ["add_logistic_points",4]
+            ]
+        },
+        {
+            "name_FRA": "Relais de communication",
+            "name_ENG": "Comms Relay",
+            "id": 623,
+            "max_per_squad": 8,
+            "faction": "Clone_Army",
+            "ship": "Logistic Supply",
+            "modify": true,
+            "charge":[0],
+            "force": 0,
+            "titleID": 0,
+            "shipId": 109,
+            "skill": 1,
+            "points": 1,
+            "ability_FRA": "<div class='text'>Lorsqu'un vaisseau allié à portée 0-2 coordonne, il peut cibler un vaisseau à portée 0-2 de vous.</div>",
+            "ability_ENG": "<div class='text'>When a friendly ship at range 0-2 coordinates, it can target a ship at range 0-2 of you.</div>",
+            "slots": [
+            ],
+            "modifier_func": [
+                ["add_logistic_points",4]
+            ]
+        },
+        {
+            "name_FRA": "Relais de communication",
+            "name_ENG": "Comms Relay",
+            "id": 624,
+            "max_per_squad": 8,
+            "faction": "Naboo_Defense_Forces",
+            "ship": "Logistic Supply",
+            "modify": true,
+            "charge":[0],
+            "force": 0,
+            "titleID": 0,
+            "shipId": 109,
+            "skill": 1,
+            "points": 1,
+            "ability_FRA": "<div class='text'>Lorsqu'un vaisseau allié à portée 0-2 coordonne, il peut cibler un vaisseau à portée 0-2 de vous.</div>",
+            "ability_ENG": "<div class='text'>When a friendly ship at range 0-2 coordinates, it can target a ship at range 0-2 of you.</div>",
+            "slots": [
+            ],
+            "modifier_func": [
+                ["add_logistic_points",4]
+            ]
+        },
+        {
+            "name_FRA": "Leurre",
+            "name_ENG": "Decoy",
+            "id": 625,
+            "max_per_squad": 8,
+            "faction": "New_Republic_Patrol",
+            "ship": "Logistic Supply",
+            "modify": true,
+            "charge":[0],
+            "force": 0,
+            "titleID": 0,
+            "shipId": 109,
+            "skill": 4,
+            "points": 1,
+            "ability_FRA": "<div class='text'>Lorsqu'un vaisseau allié à portée 0-1 est la cible d'un verrouillage, vous êtes verrouillé à la place.</div>",
+            "ability_ENG": "<div class='text'>When a friendly ship at range 0-1 is targeted for a lock acquisition, you are locked in its place instead.</div>",
+            "slots": [
+            ],
+            "modifier_func": [
+                ["add_logistic_points",4]
+            ]
+        },
+        {
+            "name_FRA": "Leurre",
+            "name_ENG": "Decoy",
+            "id": 626,
+            "max_per_squad": 8,
+            "faction": "Colossus",
+            "ship": "Logistic Supply",
+            "modify": true,
+            "charge":[0],
+            "force": 0,
+            "titleID": 0,
+            "shipId": 109,
+            "skill": 4,
+            "points": 1,
+            "ability_FRA": "<div class='text'>Lorsqu'un vaisseau allié à portée 0-1 est la cible d'un verrouillage, vous êtes verrouillé à la place.</div>",
+            "ability_ENG": "<div class='text'>When a friendly ship at range 0-1 is targeted for a lock acquisition, you are locked in its place instead.</div>",
+            "slots": [
+            ],
+            "modifier_func": [
+                ["add_logistic_points",4]
+            ]
+        },
+        {
+            "name_FRA": "Leurre",
+            "name_ENG": "Decoy",
+            "id": 627,
+            "max_per_squad": 8,
+            "faction": "Heroes_of the Resistance",
+            "ship": "Logistic Supply",
+            "modify": true,
+            "charge":[0],
+            "force": 0,
+            "titleID": 0,
+            "shipId": 109,
+            "skill": 4,
+            "points": 1,
+            "ability_FRA": "<div class='text'>Lorsqu'un vaisseau allié à portée 0-1 est la cible d'un verrouillage, vous êtes verrouillé à la place.</div>",
+            "ability_ENG": "<div class='text'>When a friendly ship at range 0-1 is targeted for a lock acquisition, you are locked in its place instead.</div>",
+            "slots": [
+            ],
+            "modifier_func": [
+                ["add_logistic_points",4]
+            ]
+        },
+        {
+            "name_FRA": "Cellule énergétique",
+            "name_ENG": "Energy Cell",
+            "id": 628,
+            "max_per_squad": 8,
+            "faction": "Trade_Federation",
+            "ship": "Logistic Supply",
+            "modify": true,
+            "charge":[1,"yellow",0],
+            "force": 0,
+            "titleID": 0,
+            "shipId": 109,
+            "skill": 6,
+            "points": 1,
+            "ability_FRA": "<div class='text'>Après qu'un vaisseau qui a entièrement exécuté une manoeuvre se retrouve à portée 0-1 de vous, vous pouvez dépenser 1 charge. Dans ce cas, le vaisseau répare une de ses cartes de dégats face ouverte ou effectue une action <img class='inline-img' src='img/Sl W.png'>.</div>",
+            "ability_ENG": "<div class='text'>After a ship which fully executed a maneuver becomes at range 0-1 of you, you may spend a charge. If you do, the ship repairs 1 of its faceup damage card or performs a <img class='inline-img' src='img/Sl W.png'> action.</div>",
+            "slots": [
+            ],
+            "modifier_func": [
+                ["add_logistic_points",4]
+            ]
+        },
+        {
+            "name_FRA": "Cellule énergétique",
+            "name_ENG": "Energy Cell",
+            "id": 629,
+            "max_per_squad": 8,
+            "faction": "Separatist_Government",
+            "ship": "Logistic Supply",
+            "modify": true,
+            "charge":[1,"yellow",0],
+            "force": 0,
+            "titleID": 0,
+            "shipId": 109,
+            "skill": 6,
+            "points": 1,
+            "ability_FRA": "<div class='text'>Après qu'un vaisseau qui a entièrement exécuté une manoeuvre se retrouve à portée 0-1 de vous, vous pouvez dépenser 1 charge. Dans ce cas, le vaisseau répare une de ses cartes de dégats face ouverte ou effectue une action <img class='inline-img' src='img/Sl W.png'>.</div>",
+            "ability_ENG": "<div class='text'>After a ship which fully executed a maneuver becomes at range 0-1 of you, you may spend a charge. If you do, the ship repairs 1 of its faceup damage card or performs a <img class='inline-img' src='img/Sl W.png'> action.</div>",
+            "slots": [
+            ],
+            "modifier_func": [
+                ["add_logistic_points",4]
+            ]
+        },
+        {
+            "name_FRA": "Cellule énergétique",
+            "name_ENG": "Energy Cell",
+            "id": 630,
+            "max_per_squad": 8,
+            "faction": "Agents_of_Chaos",
+            "ship": "Logistic Supply",
+            "modify": true,
+            "charge":[2,"yellow",0],
+            "force": 0,
+            "titleID": 0,
+            "shipId": 109,
+            "skill": 6,
+            "points": 1,
+            "ability_FRA": "<div class='text'>Après qu'un vaisseau qui a entièrement exécuté une manoeuvre se retrouve à portée 0-1 de vous, vous pouvez dépenser 1 charge. Dans ce cas, le vaisseau répare une de ses cartes de dégats face ouverte ou effectue une action <img class='inline-img' src='img/Sl W.png'>.</div>",
+            "ability_ENG": "<div class='text'>After a ship which fully executed a maneuver becomes at range 0-1 of you, you may spend a charge. If you do, the ship repairs 1 of its faceup damage card or performs a <img class='inline-img' src='img/Sl W.png'> action.</div>",
+            "slots": [
+            ],
+            "modifier_func": [
+                ["add_logistic_points",4]
+            ]
+        },
+        {
+            "name_FRA": "Réserve de Beskar",
+            "name_ENG": "Beskar Supply",
+            "id": 631,
+            "max_per_squad": 8,
+            "faction": "Mandalorian_Clans",
+            "ship": "Logistic Supply",
+            "modify": true,
+            "charge":[0],
+            "force": 0,
+            "titleID": 0,
+            "shipId": 109,
+            "skill": 5,
+            "points": 1,
+            "ability_FRA": "<div class='text'></div>",
+            "ability_ENG": "<div class='text'></div>",
+            "slots": [
+            ],
+            "modifier_func": [
+                ["add_logistic_points",4]
+            ]
+        },
+        {
+            "name_FRA": "Cargaison d'épices",
+            "name_ENG": "Spice Cargo",
+            "id": 632,
+            "max_per_squad": 8,
+            "faction": "Crime_Syndicates",
+            "ship": "Logistic Supply",
+            "modify": true,
+            "charge":[0],
+            "force": 0,
+            "titleID": 0,
+            "shipId": 109,
+            "skill": 5,
+            "points": 1,
+            "ability_FRA": "<div class='text'></div>",
+            "ability_ENG": "<div class='text'></div>",
+            "slots": [
+                "Special"
+            ],
+            "modifier_func": [
+                ["add_logistic_points",4],
+                ["auto_equip","Special",363]
+            ]
+        },
+        {
+            "name_FRA": "Cargaison d'armes",
+            "name_ENG": "Weapon Cargo",
+            "id": 633,
+            "max_per_squad": 8,
+            "faction": "Crime_Syndicates",
+            "ship": "Logistic Supply",
+            "modify": true,
+            "charge":[0],
+            "force": 0,
+            "titleID": 0,
+            "shipId": 109,
+            "skill": 5,
+            "points": 1,
+            "ability_FRA": "<div class='text'></div>",
+            "ability_ENG": "<div class='text'></div>",
+            "slots": [
+                "Special"
+            ],
+            "modifier_func": [
+                ["add_logistic_points",4],
+                ["auto_equip","Special",364]
+            ]
+        },
+        {
+            "name_FRA": "Coffre de crédits",
+            "name_ENG": "Credits Safe",
+            "id": 634,
+            "max_per_squad": 8,
+            "faction": "Black_Sun",
+            "ship": "Logistic Supply",
+            "modify": true,
+            "charge":[0],
+            "force": 0,
+            "titleID": 0,
+            "shipId": 109,
+            "skill": 5,
+            "points": 1,
+            "ability_FRA": "<div class='text'></div>",
+            "ability_ENG": "<div class='text'></div>",
+            "slots": [
+            ],
+            "modifier_func": [
+                ["add_logistic_points",5]
+            ]
+        },
+        
+        
+        
+        
+
+
+
+
+
+
+
+
 
    
     ]
