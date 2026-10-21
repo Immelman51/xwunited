@@ -12917,7 +12917,7 @@
             "skill": 5,
             "points": 13,
             "ability_FRA": "<div class='text'>Après qu'un vaisseau allié à portée 0-2 a dépensé un jeton de concentration, vous pouvez 1<img class='inline-img' src='img/fo.jpg'>. Dans ce cas, ce vaisseau reçoit 1 jeton de concentration.</div>",
-            "ability_ENG": "<div class='text'>After a friendly ship at range 0-2 spends a focus token, you may spend 1 <img class='inline-img' src='img/fo.jpg'>. If you do, that ship gains 1 focus token.</div>"
+            "ability_ENG": "<div class='text'>After a friendly ship at range 0-2 spends a focus token, you may spend 1 <img class='inline-img' src='img/fo.jpg'>. If you do, that ship gains 1 focus token.</div>",
             "slots": [
                 "Force-Base",
                 "Force-Light"    
@@ -12951,7 +12951,7 @@
             "modify": false,
             "faction": "Naboo_Defense_Force",
             "ship": "NB-1S Royal Bomber",
-            "charge":[1,'yellow','+'],
+            "charge":[1,"yellow","+"],
             "force": 0,
             "titleID": 0,
             "shipId": 100,
