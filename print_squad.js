@@ -24,17 +24,17 @@ let cheminsImagesPilot = [];//used for pdfmake to transform the images in base64
 //...
 
 let cheminsImagesStats = [
-                        "img/agility.jpg",
-                        "img/attack0.jpg",
-                        "img/attack180.jpg",
-                        "img/attackB.jpg",
-                        "img/attackBULL.jpg",
-                        "img/attackDT.jpg",
-                        "img/attackF.jpg",
-                        "img/attackT.jpg",
+                        "img/agility.png",
+                        "img/attack0.png",
+                        "img/attack180.png",
+                        "img/attackB.png",
+                        "img/attackBULL.png",
+                        "img/attackDT.png",
+                        "img/attackF.png",
+                        "img/attackT.png",
                         "img/forcestat.png",
-                        "img/hull.jpg",
-                        "img/shield.jpg"
+                        "img/hull.png",
+                        "img/shield.png"
                         
                         ]; //used for pdfmake to transform the images in base64 in print_squad_pdfmake.js. Every time I call an image, we have to store it into cheminsImages.
 //all stat imgs (attack, agility hull force charge)
@@ -195,8 +195,8 @@ for(i=0; i<3; i++){
     if(leaders[lID]['leaderfaction'][i] !== ""){
     let factionimg = document.createElement('img');
     factionimg.setAttribute('class', 'factionimg');
-    factionimg.setAttribute("src",'img/'+leaders[lID]['leaderfaction'][i]+'mini.jpg') ;
-    cheminsImagesLeader.push(`img/${leaders[lID]['leaderfaction'][i]}mini.jpg`);
+    factionimg.setAttribute("src",'img/'+leaders[lID]['leaderfaction'][i]+'mini.png') ;
+    cheminsImagesLeader.push(`img/${leaders[lID]['leaderfaction'][i]}mini.png`);
     faction.appendChild(factionimg);
     }
 }
@@ -269,8 +269,8 @@ function displayPilotActions(x){
             case 0 : //if 0 is the first value, it is a simple action
             newaction = document.createElement('img');
             newaction.setAttribute('class','action '+x+''+actionsArray[g][1]);
-            newaction.setAttribute('src', 'img/'+actionsArray[g][1]+'.jpg');
-            cheminsImagesActions.push(`img/${actionsArray[g][1]}.jpg`);
+            newaction.setAttribute('src', 'img/'+actionsArray[g][1]+'.png');
+            cheminsImagesActions.push(`img/${actionsArray[g][1]}.png`);
             actionlist.appendChild(newaction);
             break;
             case 1 : //if 1 is the first value, then it is a linked action
@@ -278,18 +278,18 @@ function displayPilotActions(x){
             newaction.setAttribute('class','action');
             
             newaction1 = document.createElement('img');
-            newaction1.setAttribute('src', 'img/'+actionsArray[g][1]+'.jpg');
-            cheminsImagesActions.push(`img/${actionsArray[g][1]}.jpg`);
+            newaction1.setAttribute('src', 'img/'+actionsArray[g][1]+'.png');
+            cheminsImagesActions.push(`img/${actionsArray[g][1]}.png`);
             newaction1.setAttribute('class','linked action '+x+''+actionsArray[g][1]);
             
             newlink = document.createElement('img');
-            newlink.setAttribute('src', 'img/fleche.jpg');
-            cheminsImagesActions.push(`img/fleche.jpg`);
+            newlink.setAttribute('src', 'img/fleche.png');
+            cheminsImagesActions.push(`img/fleche.png`);
             newlink.setAttribute('class','linked action');
             
             newaction2 = document.createElement('img');
-            newaction2.setAttribute('src', 'img/'+actionsArray[g][2]+'.jpg');
-            cheminsImagesActions.push(`img/${actionsArray[g][2]}.jpg`);
+            newaction2.setAttribute('src', 'img/'+actionsArray[g][2]+'.png');
+            cheminsImagesActions.push(`img/${actionsArray[g][2]}.png`);
             newaction2.setAttribute('class','linked action '+x+''+actionsArray[g][2]);
 
             newaction.appendChild(newaction1);
@@ -327,11 +327,11 @@ function displayPilot(x){
     getPilotData(x);
     const pid = pilotdata[x][0] //We store the PilotID we got from indexes and stored into pilotdata thanks with pilotdata()
 
-    //let's display the pilot jpg
+    //let's display the pilot png
     newimage = document.createElement('div');
     newimage.setAttribute('class','pilotImg');
-    newimage.setAttribute('style', "background-image: url('img/pilots/"+pid+".jpg');");
-    cheminsImagesPilot.push(`img/pilots/${pid}.jpg`);
+    newimage.setAttribute('style', "background-image: url('img/pilots/"+pid+".png');");
+    cheminsImagesPilot.push(`img/pilots/${pid}.png`);
     //imgPilot.insertBefore(newimage, imgPilot.firstChild);
     imgPilot.appendChild(newimage);
 
@@ -340,8 +340,8 @@ function displayPilot(x){
     
     //we load the faction image
     let factionlogo = document.createElement('img');
-    factionlogo.setAttribute("src",'img/'+pilots[pid]['faction']+'mini.jpg');
-    cheminsImagesPilot.push(`img/${pilots[pid]['faction']}mini.jpg`);
+    factionlogo.setAttribute("src",'img/'+pilots[pid]['faction']+'mini.png');
+    cheminsImagesPilot.push(`img/${pilots[pid]['faction']}mini.png`);
     factionlogo.setAttribute("class",'factionimg');
     pilotFaction.appendChild(factionlogo);
 
@@ -353,23 +353,23 @@ function displayPilot(x){
     pilotShip.textContent = ships[sid]['name'];
     
     //Attack 1 and Attack 2
-    pilotstat.innerHTML = '<div><span class="attack">' +ships[sid]["attack"][0][1] + '</span> <img src="img/attack'+ships[sid]["attack"][0][0] +'.jpg" class="logo"/></div>' ;
-    cheminsImagesPilot.push(`img/attack${ships[sid]["attack"][0][0]}.jpg`);
+    pilotstat.innerHTML = '<div><span class="attack">' +ships[sid]["attack"][0][1] + '</span> <img src="img/attack'+ships[sid]["attack"][0][0] +'.png" class="logo"/></div>' ;
+    cheminsImagesPilot.push(`img/attack${ships[sid]["attack"][0][0]}.png`);
     if(ships[sid]["attack"].length === 2){
-    pilotstat.innerHTML = pilotstat.innerHTML + '<div><span class="attack">' + ships[sid]["attack"][1][1] + '</span> <img src="img/attack'+ships[sid]["attack"][1][0] +'.jpg" class="logo"/></div>' ;
+    pilotstat.innerHTML = pilotstat.innerHTML + '<div><span class="attack">' + ships[sid]["attack"][1][1] + '</span> <img src="img/attack'+ships[sid]["attack"][1][0] +'.png" class="logo"/></div>' ;
    
 
     }
     //Agility
-    pilotstat.innerHTML = pilotstat.innerHTML + '<div><span class="agility">' + ships[sid]["agility"] + '</span> <img src="img/agility.jpg" class="logo"/></div>' ;
+    pilotstat.innerHTML = pilotstat.innerHTML + '<div><span class="agility">' + ships[sid]["agility"] + '</span> <img src="img/agility.png" class="logo"/></div>' ;
     
 
     //Hull
-    pilotstat.innerHTML = pilotstat.innerHTML + '<div><span class="hull">' + ships[sid]["hull"] + '</span> <img src="img/hull.jpg" class="logo"/></div>' ;
+    pilotstat.innerHTML = pilotstat.innerHTML + '<div><span class="hull">' + ships[sid]["hull"] + '</span> <img src="img/hull.png" class="logo"/></div>' ;
    
 
     //shield
-    pilotstat.innerHTML = pilotstat.innerHTML + '<div><span class="shield">' + ships[sid]["shields"] + '</span> <img src="img/shield.jpg" class="logo"/></div>' ;
+    pilotstat.innerHTML = pilotstat.innerHTML + '<div><span class="shield">' + ships[sid]["shields"] + '</span> <img src="img/shield.png" class="logo"/></div>' ;
     
 
     displayPilotActions(x);
@@ -394,7 +394,7 @@ function displayPilot(x){
        
         switch(pilots[pid]['charge'][1]){
             case "+" :
-                newchargeEvolution = document.createElement('img'); // the index 1 of the charge tables indicates if it's recurring or not. We have to display it, and there's a jpg for every case.
+                newchargeEvolution = document.createElement('img'); // the index 1 of the charge tables indicates if it's recurring or not. We have to display it, and there's a png for every case.
                 newchargeEvolution.setAttribute("class","recurring");
                 newchargeEvolution.setAttribute("src","img/chargeplus.png");
                 
@@ -402,7 +402,7 @@ function displayPilot(x){
                 pilotAbility.appendChild(newchargeEvolution);
                 break;
             case "-" :
-                newchargeEvolution = document.createElement('img'); // the index 1 of the charge tables indicates if it's recurring or not. We have to display it, and there's a jpg for every case.
+                newchargeEvolution = document.createElement('img'); // the index 1 of the charge tables indicates if it's recurring or not. We have to display it, and there's a png for every case.
                 newchargeEvolution.setAttribute("class","recurring");
                 newchargeEvolution.setAttribute("src","img/chargeminus.png");
             
@@ -517,13 +517,13 @@ function displayPilot(x){
                 console.log(focusWActions);
                 let focusRActions = document.getElementsByClassName(x+'Fo R');
                 for (f=0 ; f<focusWActions.length ; f++){
-                    focusWActions[f].setAttribute('src','img/Cc W.jpg');
-                    cheminsImagesActions.push("img/Cc W.jpg");
+                    focusWActions[f].setAttribute('src','img/Cc W.png');
+                    cheminsImagesActions.push("img/Cc W.png");
 
                 }
                 for (f=0 ; f<focusRActions.length ; f++){
-                    focusRActions[f].setAttribute('src','img/Cc R.jpg');
-                    cheminsImagesActions.push("img/Cc R.jpg");
+                    focusRActions[f].setAttribute('src','img/Cc R.png');
+                    cheminsImagesActions.push("img/Cc R.png");
 
                 }
                 break;
@@ -536,8 +536,8 @@ function displayPilot(x){
                         case 0 : //if 0 is the first value, it is a simple action
                         newaction = document.createElement('img');
                         newaction.setAttribute('class','action '+x+''+actionToAdd[1]);
-                        newaction.setAttribute('src', 'img/'+actionToAdd[1]+'.jpg');
-                        cheminsImagesActions.push(`img/${actionToAdd[1]}.jpg`);
+                        newaction.setAttribute('src', 'img/'+actionToAdd[1]+'.png');
+                        cheminsImagesActions.push(`img/${actionToAdd[1]}.png`);
 
                         actionlist.appendChild(newaction);
                         break;
@@ -546,20 +546,20 @@ function displayPilot(x){
                         newaction.setAttribute('class','action');
                         
                         newaction1 = document.createElement('img');
-                        newaction1.setAttribute('src', 'img/'+actionToAdd[1]+'.jpg');
-                        cheminsImagesActions.push(`img/${actionToAdd[1]}.jpg`);
+                        newaction1.setAttribute('src', 'img/'+actionToAdd[1]+'.png');
+                        cheminsImagesActions.push(`img/${actionToAdd[1]}.png`);
 
                         newaction1.setAttribute('class','linked action '+x+''+actionToAdd[1]);
                         
                         newlink = document.createElement('img');
-                        newlink.setAttribute('src', 'img/fleche.jpg');
-                        cheminsImagesActions.push(`img/fleche.jpg`);
+                        newlink.setAttribute('src', 'img/fleche.png');
+                        cheminsImagesActions.push(`img/fleche.png`);
 
                         newlink.setAttribute('class','linked action');
                         
                         newaction2 = document.createElement('img');
-                        newaction2.setAttribute('src', 'img/'+actionToAdd[2]+'.jpg');
-                        cheminsImagesActions.push(`img/${actionToAdd[2]}.jpg`);
+                        newaction2.setAttribute('src', 'img/'+actionToAdd[2]+'.png');
+                        cheminsImagesActions.push(`img/${actionToAdd[2]}.png`);
 
                         newaction2.setAttribute('class','linked action '+x+''+actionToAdd[2]);
 
@@ -821,7 +821,7 @@ function addHTMLandCSSforDialsAndBases() {
                         case 'Missile' :
                         case 'Weapon Hardpoint' :
                             newupgrade.innerHTML +=  'Portée : ' + upg['range'][0]+'/'+upg['range'][1] + ' - ';
-                            newupgrade.innerHTML += '<img src="img/attack'+ upg['attack'][0] +'.jpg" class="logo"/> ' + upg['attack'][1] + '<br>';
+                            newupgrade.innerHTML += '<img src="img/attack'+ upg['attack'][0] +'.png" class="logo"/> ' + upg['attack'][1] + '<br>';
                         default :*/
                         newupgrade.innerHTML += upg['effect_'+language];
                         newpilot.appendChild(newupgrade);

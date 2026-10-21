@@ -16,7 +16,7 @@ function buildLeaderTable() {
   const factionImgs = [];
   for (let i = 0; i < 3; i++) {
     if (leaders[lID]['leaderfaction'][i] !== '') {
-      const chemin = `img/${leaders[lID]['leaderfaction'][i]}mini.jpg`;
+      const chemin = `img/${leaders[lID]['leaderfaction'][i]}mini.png`;
       cheminsImagesLeader.push(chemin);
       factionImgs.push(chemin);
     }
@@ -122,17 +122,17 @@ function applyDroidOverride(actionsArray, droidEquipped) {
 function buildSingleActionCell(action) {
   if (!action) return { text: '' };
   if (action.type === 'simple') {
-    const chemin = `img/${action.code}.jpg`;
+    const chemin = `img/${action.code}.png`;
     cheminsImagesActions.push(chemin);
     return { image: chemin, fit: [cm(0.45), cm(0.45)], alignment: 'center', verticalAlignment: 'center' };
   }
-  const chemin1 = `img/${action.code1}.jpg`;
-  const chemin2 = `img/${action.code2}.jpg`;
-  cheminsImagesActions.push(chemin1, 'img/fleche.jpg', chemin2);
+  const chemin1 = `img/${action.code1}.png`;
+  const chemin2 = `img/${action.code2}.png`;
+  cheminsImagesActions.push(chemin1, 'img/fleche.png', chemin2);
   return {
     columns: [
       { image: chemin1, fit: [cm(0.45), cm(0.45)] },
-      { image: 'img/fleche.jpg', fit: [cm(0.2), cm(0.45)], alignment: 'center' },
+      { image: 'img/fleche.png', fit: [cm(0.2), cm(0.45)], alignment: 'center' },
       { image: chemin2, fit: [cm(0.45), cm(0.45)] },
     ],
     columnGap: 1,
@@ -207,19 +207,19 @@ function buildStatsList(sid) {
   const stats = [];
   stats.push({
     valeur: ships[sid]['attack'][0][1],
-    chemin: `img/attack${ships[sid]['attack'][0][0]}.jpg`,
+    chemin: `img/attack${ships[sid]['attack'][0][0]}.png`,
     style: 'attackText',
   });
   if (ships[sid]['attack'].length === 2) {
     stats.push({
       valeur: ships[sid]['attack'][1][1],
-      chemin: `img/attack${ships[sid]['attack'][1][0]}.jpg`,
+      chemin: `img/attack${ships[sid]['attack'][1][0]}.png`,
       style: 'attackText',
     });
   }
-  stats.push({ valeur: ships[sid]['agility'], chemin: 'img/agility.jpg', style: 'agilityText' });
-  stats.push({ valeur: ships[sid]['hull'], chemin: 'img/hull.jpg', style: 'hullText' });
-  stats.push({ valeur: ships[sid]['shields'], chemin: 'img/shield.jpg', style: 'shieldText' });
+  stats.push({ valeur: ships[sid]['agility'], chemin: 'img/agility.png', style: 'agilityText' });
+  stats.push({ valeur: ships[sid]['hull'], chemin: 'img/hull.png', style: 'hullText' });
+  stats.push({ valeur: ships[sid]['shields'], chemin: 'img/shield.png', style: 'shieldText' });
   return stats;
 }
 
@@ -434,7 +434,7 @@ function buildPilotTable(x) {
   const sid = pilots[pid]['shipId'];
   const cid = ships[sid]['chassis'];
 
-  const factionChemin = `img/${pilots[pid]['faction']}mini.jpg`;
+  const factionChemin = `img/${pilots[pid]['faction']}mini.png`;
   cheminsImagesPilot.push(factionChemin);
 
   const { texts: chassisTexts, from: chassisFrom } = computeChassisTexts(cid, language);

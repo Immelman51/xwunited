@@ -138,7 +138,7 @@ for (let i = 0; i<leaders.length; i++){
             let factions = leaders[i]["leaderfaction"][j];
             let factionlogo = document.createElement("div");
             factionlogo.setAttribute("class", "leader faction");
-            factionlogo.setAttribute("src",'img/'+factions+'mini.jpg');
+            factionlogo.setAttribute("src",'img/'+factions+'mini.png');
             newleader.appendChild(factionlogo);
         }
         let newleaderability = document.createElement("div");
@@ -222,9 +222,9 @@ for (let i=0 ; i<ships.length; i++){ //on va afficher d'abord le vaisseau/chassi
         let shipattackContainer = document.createElement('div');
         shipattackContainer.setAttribute("class","attack container");
         console.log("i="+i);
-        shipattackContainer.innerHTML = '<span style="color: black" class="attack value">' +ships[i]["attack"][0][1] + '</span> <img src="img/attack'+ships[i]["attack"][0][0] +'.jpg" class="attack logo"/>' ;
+        shipattackContainer.innerHTML = '<span style="color: black" class="attack value">' +ships[i]["attack"][0][1] + '</span> <img src="img/attack'+ships[i]["attack"][0][0] +'.png" class="attack logo"/>' ;
     if(ships[i]["attack"].length === 2){
-        shipattackContainer.innerHTML +=  "<img class='attack logo' src='img/attack"+ships[i]["attack"][1][0] +".jpg'/><span style='color: black' class='attack value'>" + ships[i]["attack"][1][1] + "</span>"  ;
+        shipattackContainer.innerHTML +=  "<img class='attack logo' src='img/attack"+ships[i]["attack"][1][0] +".png'/><span style='color: black' class='attack value'>" + ships[i]["attack"][1][1] + "</span>"  ;
     } 
     newship.appendChild(shipattackContainer);
 
@@ -233,7 +233,7 @@ let shipagilityContainer = document.createElement('div');
 let shipagilitylogo = document.createElement('img');
 let shipagility = document.createElement('div');
 shipagility.setAttribute("class", "agility value");
-shipagilitylogo.setAttribute("src", 'img/agility.jpg');
+shipagilitylogo.setAttribute("src", 'img/agility.png');
 shipagilitylogo.setAttribute("class", "agility logo");
 shipagility.innerHTML = ships[i]["agility"];
 shipagilityContainer.setAttribute("class", "ship agility container");
@@ -246,7 +246,7 @@ let shiphullContainer = document.createElement('div');
 let shiphulllogo = document.createElement('img');
 let shiphull = document.createElement('div');
 shiphull.setAttribute('class','hull value');
-shiphulllogo.setAttribute("src", 'img/hull.jpg');
+shiphulllogo.setAttribute("src", 'img/hull.png');
 shiphulllogo.setAttribute("class", "hull logo");
 shiphull.innerHTML = ships[i]["hull"];
 shiphullContainer.setAttribute("class", "ship hull container");
@@ -259,7 +259,7 @@ let shipshieldContainer = document.createElement('div');
 let shipshield = document.createElement('div');
 let shipshieldlogo = document.createElement('img');
 shipshield.setAttribute("class", "shield value");
-shipshieldlogo.setAttribute("src", 'img/shield.jpg');
+shipshieldlogo.setAttribute("src", 'img/shield.png');
 shipshieldlogo.setAttribute("class", "shield logo");
 shipshield.innerHTML = ships[i]["shields"];   
 shipshieldContainer.setAttribute("class", "ship shield container");
@@ -278,7 +278,7 @@ const actionsArray = ships[i]['actions'];
             case 0 : //if 0 is the first value, it is a simple action
             newaction = document.createElement('img');
             newaction.setAttribute('class','actionlogo '+i+''+actionsArray[g][1]);
-            newaction.setAttribute('src', 'img/'+actionsArray[g][1]+'.jpg');
+            newaction.setAttribute('src', 'img/'+actionsArray[g][1]+'.png');
             actionlist.appendChild(newaction);
             break;
             case 1 : //if 1 is the first value, then it is a linked action
@@ -286,15 +286,15 @@ const actionsArray = ships[i]['actions'];
             newaction.setAttribute('class','linkedcontainer');
             
             newaction1 = document.createElement('img');
-            newaction1.setAttribute('src', 'img/'+actionsArray[g][1]+'.jpg');
+            newaction1.setAttribute('src', 'img/'+actionsArray[g][1]+'.png');
             newaction1.setAttribute('class','linkedimg '+i+''+actionsArray[g][1]);
             
             newlink = document.createElement('img');
-            newlink.setAttribute('src', 'img/fleche.jpg');
+            newlink.setAttribute('src', 'img/fleche.png');
             newlink.setAttribute('class','linkedimgarrow');
             
             newaction2 = document.createElement('img');
-            newaction2.setAttribute('src', 'img/'+actionsArray[g][2]+'.jpg');
+            newaction2.setAttribute('src', 'img/'+actionsArray[g][2]+'.png');
             newaction2.setAttribute('class','linkedimg '+i+''+actionsArray[g][2]);
 
             newaction.appendChild(newaction1);
@@ -348,7 +348,7 @@ for(g=0; g<shipManeuvers.length; g++){
     manspeed.setAttribute('class','man'+g+'sp');
     
     manspeedimg = document.createElement('img');
-    manspeedimg.setAttribute('src','img/man'+g+'.jpg');
+    manspeedimg.setAttribute('src','img/man'+g+'.png');
     manspeedimg.setAttribute('class','manlogo');
     manspeed.appendChild(manspeedimg);
     maneuversDiv.appendChild(manspeed);
@@ -411,7 +411,7 @@ for(g=0; g<shipManeuvers.length; g++){
             man.setAttribute('class','man'+g+h);
             manimg = document.createElement('img');
             manimg.setAttribute('class','manlogo');
-            manimg.setAttribute('src','img/man'+mantype+shipManeuvers[g][h]+'.jpg');
+            manimg.setAttribute('src','img/man'+mantype+shipManeuvers[g][h]+'.png');
             man.appendChild(manimg);
             maneuversDiv.appendChild(man);
         }

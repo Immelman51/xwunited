@@ -209,7 +209,7 @@ function fullWidthRow(texte, nbColonnes, alignment) {
 // 3bis. Conversion d'une image (chemin ou URL) en base64, côté navigateur
 // ---------------------------------------------------------------------
 /**
- * Charge une image depuis une URL/chemin relatif (ex: "img/leaderfaction1.jpg")
+ * Charge une image depuis une URL/chemin relatif (ex: "img/leaderfaction1.png")
  * et retourne une Promise qui résout avec la chaîne base64 au format
  * "data:image/jpeg;base64,...." exploitable directement par pdfmake.
  */
@@ -223,7 +223,7 @@ function loadImageAsBase64(cheminImage) {
       canvas.height = img.naturalHeight;
       const ctx = canvas.getContext('2d');
       ctx.drawImage(img, 0, 0);
-      // 'image/png' fonctionne aussi pour des sources jpg, mais le plus fidèle
+      // 'image/png' fonctionne aussi pour des sources png, mais le plus fidèle
       // est de garder le même format que le fichier d'origine :
       const mime = cheminImage.toLowerCase().endsWith('.png') ? 'image/png' : 'image/jpeg';
       resolve(canvas.toDataURL(mime));
@@ -238,7 +238,7 @@ function loadImageAsBase64(cheminImage) {
  * un objet { cheminOriginal: base64 } pour pouvoir remplacer facilement
  * les chemins dans tes données avant de construire le docDefinition.
  */
-async function preloadImages(cheminsImages /* tableau de chemins, ex: ['img/leaderfaction1.jpg', ...] */) {
+async function preloadImages(cheminsImages /* tableau de chemins, ex: ['img/leaderfaction1.png', ...] */) {
   const resultats = await Promise.allSettled(
     cheminsImages.map(async (chemin) => [chemin, await loadImageAsBase64(chemin)])
   );
@@ -305,7 +305,7 @@ function parseHtmlToPdfmakeText(html) {
     const textBefore = cleaned.slice(lastIndex, match.index);
     if (textBefore) pousserTexte(textBefore);
 
-    // "img/charge.png" ou "img/Un W.jpg" -> "charge" ou "Un W"
+    // "img/charge.png" ou "img/Un W.png" -> "charge" ou "Un W"
     const nomFichier = match[1].replace(/^img\//, '').replace(/\.[a-zA-Z0-9]+$/, '');
     const caractere =
       typeof XWING_ICON_FONT_MAP !== 'undefined' ? XWING_ICON_FONT_MAP[nomFichier] : undefined;

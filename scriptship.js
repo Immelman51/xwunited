@@ -1478,9 +1478,9 @@ function displayDescriptionShip(event){ //displays ship stats (and actions and m
     
     for (k=0; k<ships.length; k++){
         if (event.target.value === ships[k]["name"]) { //il faut pas oublier de virer les (x) dans les menus
-            description_upg_pil_Field.innerHTML = '<span style="color: red">' +ships[k]["attack"][0][1] + '</span> <img src="img/attack'+ships[k]["attack"][0][0] +'.jpg" class="logo"/>';
+            description_upg_pil_Field.innerHTML = '<span style="color: red">' +ships[k]["attack"][0][1] + '</span> <img src="img/attack'+ships[k]["attack"][0][0] +'.png" class="logo"/>';
             if (ships[k]['attack'].length>1){
-                description_upg_pil_Field.innerHTML =  description_upg_pil_Field.innerHTML+'<span style="color: red">' +ships[k]["attack"][1][1] + '</span> <img src="img/attack'+ships[k]["attack"][1][0] +'.jpg" class="logo"/>';     
+                description_upg_pil_Field.innerHTML =  description_upg_pil_Field.innerHTML+'<span style="color: red">' +ships[k]["attack"][1][1] + '</span> <img src="img/attack'+ships[k]["attack"][1][0] +'.png" class="logo"/>';     
             }
             description_upg_pil_Field.innerHTML =  description_upg_pil_Field.innerHTML+'<span style="color: green">' +ships[k]["agility"] + '<span class="logo"/>';
             description_upg_pil_Field.innerHTML =  description_upg_pil_Field.innerHTML+'<span style="color: orange">' +ships[k]["hull"] + '<span class="logo"/>';
@@ -1499,7 +1499,7 @@ function displayDescriptionShip(event){ //displays ship stats (and actions and m
                         newaction.setAttribute('class','linkedcontainer');
                         newaction1 = document.createElement('img');
                         newaction1.setAttribute('class','logo '+k+''+actionsArray[g][1]);
-                        newaction1.setAttribute('src', 'img/'+actionsArray[g][1]+'.jpg');
+                        newaction1.setAttribute('src', 'img/'+actionsArray[g][1]+'.png');
                         newaction.appendChild(newaction1);
                         actionlist.appendChild(newaction);
                         break;
@@ -1508,15 +1508,15 @@ function displayDescriptionShip(event){ //displays ship stats (and actions and m
                         newaction.setAttribute('class','linkedcontainer');
                         
                         newaction1 = document.createElement('img');
-                        newaction1.setAttribute('src', 'img/'+actionsArray[g][1]+'.jpg');
+                        newaction1.setAttribute('src', 'img/'+actionsArray[g][1]+'.png');
                         newaction1.setAttribute('class','linkedimg '+k+''+actionsArray[g][1]);
                         
                         newlink = document.createElement('img');
-                        newlink.setAttribute('src', 'img/fleche.jpg');
+                        newlink.setAttribute('src', 'img/fleche.png');
                         newlink.setAttribute('class','linkedimgarrow');
                         
                         newaction2 = document.createElement('img');
-                        newaction2.setAttribute('src', 'img/'+actionsArray[g][2]+'.jpg');
+                        newaction2.setAttribute('src', 'img/'+actionsArray[g][2]+'.png');
                         newaction2.setAttribute('class','linkedimg '+k+''+actionsArray[g][2]);
 
                         newaction.appendChild(newaction1);
@@ -1698,11 +1698,11 @@ function loadSquadwithCode(e) {
     let factionval2 = leaders[leaderSelected_id]["leaderfaction"][1];
     let factionval3 = leaders[leaderSelected_id]["leaderfaction"][2];
     document.querySelector(".faction1").textContent = factionval1;
-    document.getElementById("faction1logo").setAttribute("src",'img/'+factionval1+'mini.jpg') ;
+    document.getElementById("faction1logo").setAttribute("src",'img/'+factionval1+'mini.png') ;
     document.querySelector(".faction2").textContent = factionval2;
-    document.getElementById("faction2logo").setAttribute("src",'img/'+factionval2+'mini.jpg') ;
+    document.getElementById("faction2logo").setAttribute("src",'img/'+factionval2+'mini.png') ;
     document.querySelector(".faction3").textContent = factionval3;
-    document.getElementById("faction3logo").setAttribute("src",'img/'+factionval3+'mini.jpg') ;
+    document.getElementById("faction3logo").setAttribute("src",'img/'+factionval3+'mini.png') ;
 
 
     leaderSelection();

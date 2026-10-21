@@ -31,7 +31,7 @@ const XWING_ICON_FONT_MAP = {
   'Torpedo': '\uE01B', // U+E01B
   'Turret': '\uE01C', // U+E01C
   'Un W': '\uE01D', // U+E01D
-  'attackT': '\uE01E', // U+E01E
+  'Tarc': '\uE01E', // U+E01E
   'bulls': '\uE01F', // U+E01F
   'charge': '\uE020', // U+E020
   'crit': '\uE021', // U+E021

@@ -49,8 +49,8 @@
      "leaderid": 4,
      "charge": [1,"Red"],
      "numberOfFactions": 1,
-     "leaderability_FRA": "<div class='text'>Au début de la phase de programmation, lancez 1 dé vert. 'vierge' : brouillez un de vos vaisseaux ; <img class='inline-img' src='img/Fo W.jpg'> : brouillez 1 vaisseau allié, assignez 1 calcul à un vaisseau. ; <img class='inline-img' src='img/Ev W.jpg'>: récupérez 1 <img class='inline-img' src='img/charge.png'>.<br>Lorsque vous détruisez un vaisseau adverse, vous pouvez dépenser 1 <img class='inline-img' src='img/charge.png'> pour gagner 2 PO</div>",
-     "leaderability_ENG": "<div class='text'>At the start of the planning phase, roll 1 green die. 'blank': jam one of your ships; <img class='inline-img' src='img/Fo W.jpg'>: jam 1 allied ship, assign 1 calculate to a ship.; <img class='inline-img' src='img/Ev W.jpg'>: recover 1 <img class='inline-img' src='img/charge.png'>.<br>When you destroy an enemy ship, you can spend 1 <img class='inline-img' src='img/charge.png'> to gain 2 PO</div>",
+     "leaderability_FRA": "<div class='text'>Au début de la phase de programmation, lancez 1 dé vert. 'vierge' : brouillez un de vos vaisseaux ; <img class='inline-img' src='img/Fo W.png'> : brouillez 1 vaisseau allié, assignez 1 calcul à un vaisseau. ; <img class='inline-img' src='img/Ev W.png'>: récupérez 1 <img class='inline-img' src='img/charge.png'>.<br>Lorsque vous détruisez un vaisseau adverse, vous pouvez dépenser 1 <img class='inline-img' src='img/charge.png'> pour gagner 2 PO</div>",
+     "leaderability_ENG": "<div class='text'>At the start of the planning phase, roll 1 green die. 'blank': jam one of your ships; <img class='inline-img' src='img/Fo W.png'>: jam 1 allied ship, assign 1 calculate to a ship.; <img class='inline-img' src='img/Ev W.png'>: recover 1 <img class='inline-img' src='img/charge.png'>.<br>When you destroy an enemy ship, you can spend 1 <img class='inline-img' src='img/charge.png'> to gain 2 PO</div>",
      "logistic": 25
      },
      {
@@ -149,8 +149,8 @@
      "leaderfaction": ["Jedi_Order","",""],
      "leaderid": 13,
      "numberOfFactions": 1,
-     "leaderability_ENG": "<div class='text'>During System Phase you may spend 1 <img class='inline-img' src='img/charge.png'> and choose an allied ship with force. If you do, this ship may spend 1 force to coordinate up to 2 allied ships. They must perform the same action. <br>During System Phase, you may spend 1 <img class='inline-img' src='img/charge.png'> and choose an allied ship with force that is in the <img class='inline-img' src='img/attackF.jpg'> of an enemy ship. It receives 2 strain tokens and you gain 2 PO.</div>",
-     "leaderability_FRA": "<div class='text'>Pendant la phase système, vous pouvez dépenser 1 <img class='inline-img' src='img/charge.png'> et choisir un vaisseau allié avec de la force. Dans ce cas, ce vaisseau peut dépenser 1 force et coordonner jusqu'à 2 vaisseaux alliés. Ils doivent effectuer la même action. <br>Pendant la phase système, vous pouvez dépenser 1 <img class='inline-img' src='img/charge.png'> et choisir un vaisseau allié avec de la force qui est dans le <img class='inline-img' src='img/attackF.jpg'> d'un vaisseau ennemi. Il reçoit 2 jetons contrainte et gagnez 2 PO.</div>",
+     "leaderability_ENG": "<div class='text'>During System Phase you may spend 1 <img class='inline-img' src='img/charge.png'> and choose an allied ship with force. If you do, this ship may spend 1 force to coordinate up to 2 allied ships. They must perform the same action. <br>During System Phase, you may spend 1 <img class='inline-img' src='img/charge.png'> and choose an allied ship with force that is in the <img class='inline-img' src='img/attackF.png'> of an enemy ship. It receives 2 strain tokens and you gain 2 PO.</div>",
+     "leaderability_FRA": "<div class='text'>Pendant la phase système, vous pouvez dépenser 1 <img class='inline-img' src='img/charge.png'> et choisir un vaisseau allié avec de la force. Dans ce cas, ce vaisseau peut dépenser 1 force et coordonner jusqu'à 2 vaisseaux alliés. Ils doivent effectuer la même action. <br>Pendant la phase système, vous pouvez dépenser 1 <img class='inline-img' src='img/charge.png'> et choisir un vaisseau allié avec de la force qui est dans le <img class='inline-img' src='img/attackF.png'> d'un vaisseau ennemi. Il reçoit 2 jetons contrainte et gagnez 2 PO.</div>",
      "charge": [2,"Yellow"],
      "logistic": 20
      },
@@ -377,8 +377,8 @@
         "leaderfaction_mini": "PAT / NAB",
         "leaderid": 33,
         "numberOfFactions": 2,
-        "leaderability_FRA":"<div class='text'>Lorsqu'un de vos vaisseaux détruit un vaisseau adverse, vous pouvez dépenser 1 <img class='inline-img' src='img/charge.png'>. Dans ce cas, ce vaisseau gagne l'un de ces bonus jusqu'à la fin de la partie : <Initiative +1>, <Action <img class='inline-img' src='img/Co W.jpg'>, <Début phase Activation : vous pouvez choisir un vaisseau allié à portée 1. Dans ce cas, il gagne votre initiative jusqu'à la fin du tour></div>",
-        "leaderability_ENG":"<div class='text'>When one of your ships destroys an enemy ship, you can spend 1 <img class='inline-img' src='img/charge.png'>. If you do, that ship gains one of these bonuses until the end of the game: <Initiative +1>, <Action <img class='inline-img' src='img/Co W.jpg'>, <Start of Activation phase: you can choose an allied ship at range 1. If you do, it gains your initiative until the end of the turn></div>",
+        "leaderability_FRA":"<div class='text'>Lorsqu'un de vos vaisseaux détruit un vaisseau adverse, vous pouvez dépenser 1 <img class='inline-img' src='img/charge.png'>. Dans ce cas, ce vaisseau gagne l'un de ces bonus jusqu'à la fin de la partie : <Initiative +1>, <Action <img class='inline-img' src='img/Co W.png'>, <Début phase Activation : vous pouvez choisir un vaisseau allié à portée 1. Dans ce cas, il gagne votre initiative jusqu'à la fin du tour></div>",
+        "leaderability_ENG":"<div class='text'>When one of your ships destroys an enemy ship, you can spend 1 <img class='inline-img' src='img/charge.png'>. If you do, that ship gains one of these bonuses until the end of the game: <Initiative +1>, <Action <img class='inline-img' src='img/Co W.png'>, <Start of Activation phase: you can choose an allied ship at range 1. If you do, it gains your initiative until the end of the turn></div>",
         "charge": [3,"Yellow"],
         "logistic": 15
      },
