@@ -13985,8 +13985,8 @@
             "skill": 0,
             "points": 1,
             
-            "ability_FRA": "<div class='text'>Lorsque vous êtes touché par une attaque, vous devez dépenser votre charge si elle est active. Dans ce cas, annulez l'attaque.</div>",
-            "ability_ENG": "<div class='text'>When you are hit by an attack, you must spend your charge if active. If you do, cancel the attack.</div>",
+            "ability_FRA": "<div class='text'>+4 Logistic. Lorsque vous êtes touché par une attaque, vous devez dépenser votre charge si elle est active. Dans ce cas, annulez l'attaque.</div>",
+            "ability_ENG": "<div class='text'>+4 Logistic. When you are hit by an attack, you must spend your charge if active. If you do, cancel the attack.</div>",
             "slots": [
             ],
             "modifier_func": [
@@ -14008,8 +14008,8 @@
             "skill": 0,
             "points": 1,
             
-            "ability_FRA": "<div class='text'>Lorsque vous êtes touché par une attaque, vous devez dépenser votre charge si elle est active. Dans ce cas, annulez l'attaque.</div>",
-            "ability_ENG": "<div class='text'>When you are hit by an attack, you must spend your charge if active. If you do, cancel the attack.</div>",
+            "ability_FRA": "<div class='text'>+4 Logistic. Lorsque vous êtes touché par une attaque, vous devez dépenser votre charge si elle est active. Dans ce cas, annulez l'attaque.</div>",
+            "ability_ENG": "<div class='text'>+4 Logistic. When you are hit by an attack, you must spend your charge if active. If you do, cancel the attack.</div>",
             "slots": [
             ],
             "modifier_func": [
@@ -14031,8 +14031,8 @@
             "skill": 0,
             "points": 1,
             
-            "ability_FRA": "<div class='text'>Lorsque vous êtes touché par une attaque, vous devez dépenser votre charge si elle est active. Dans ce cas, annulez l'attaque.</div>",
-            "ability_ENG": "<div class='text'>When you are hit by an attack, you must spend your charge if active. If you do, cancel the attack.</div>",
+            "ability_FRA": "<div class='text'>+4 Logistic. Lorsque vous êtes touché par une attaque, vous devez dépenser votre charge si elle est active. Dans ce cas, annulez l'attaque.</div>",
+            "ability_ENG": "<div class='text'>+4 Logistic. When you are hit by an attack, you must spend your charge if active. If you do, cancel the attack.</div>",
             "slots": [
             ],
             "modifier_func": [
@@ -14053,8 +14053,8 @@
             "shipId": 109,
             "skill": 3,
             "points": 1,
-            "ability_FRA": "<div class='text'>Pendant la phase système, vous pouvez regarder le cadran d'un vaisseau à portée 0-3.</div>",
-            "ability_ENG": "<div class='text'>During System Phase, you may look at the maneuver from a ship at range 0-3.</div>",
+            "ability_FRA": "<div class='text'>+4 Logistic. Pendant la phase système, vous pouvez regarder le cadran d'un vaisseau à portée 0-3.</div>",
+            "ability_ENG": "<div class='text'>+4 Logistic. During System Phase, you may look at the maneuver from a ship at range 0-3.</div>",
             "slots": [
             ],
             "modifier_func": [
@@ -14075,8 +14075,8 @@
             "shipId": 109,
             "skill": 3,
             "points": 1,
-            "ability_FRA": "<div class='text'>Pendant la phase système, vous pouvez regarder le cadran d'un vaisseau à portée 0-3.</div>",
-            "ability_ENG": "<div class='text'>During System Phase, you may look at the maneuver from a ship at range 0-3.</div>",
+            "ability_FRA": "<div class='text'>+4 Logistic. Pendant la phase système, vous pouvez regarder le cadran d'un vaisseau à portée 0-3.</div>",
+            "ability_ENG": "<div class='text'>+4 Logistic. During System Phase, you may look at the maneuver from a ship at range 0-3.</div>",
             "slots": [
             ],
             "modifier_func": [
@@ -14097,8 +14097,8 @@
             "shipId": 109,
             "skill": 3,
             "points": 1,
-            "ability_FRA": "<div class='text'>Pendant la phase système, vous pouvez regarder le cadran d'un vaisseau à portée 0-3.</div>",
-            "ability_ENG": "<div class='text'>During System Phase, you may look at the maneuver from a ship at range 0-3.</div>",
+            "ability_FRA": "<div class='text'>+4 Logistic. Pendant la phase système, vous pouvez regarder le cadran d'un vaisseau à portée 0-3.</div>",
+            "ability_ENG": "<div class='text'>+4 Logistic. During System Phase, you may look at the maneuver from a ship at range 0-3.</div>",
             "slots": [
             ],
             "modifier_func": [
@@ -14119,8 +14119,8 @@
             "shipId": 109,
             "skill": 1,
             "points": 1,
-            "ability_FRA": "<div class='text'>Après qu'un vaisseau qui a entièrement exécuté une manoeuvre se retrouve à portée 0-1 de vous, vous pouvez dépenser 1 charge. Dans ce cas, le vaisseau récupère une charge sur une de ses améliorations.</div>",
-            "ability_ENG": "<div class='text'>After a ship which fully executed a maneuver becomes at range 0-1 of you, you may spend a charge. If you do, the ship recovers a charge on 1 of its upgrades.</div>",
+            "ability_FRA": "<div class='text'>+4 Logistic. Après qu'un vaisseau qui a entièrement exécuté une manoeuvre se retrouve à portée 0-1 de vous, vous pouvez dépenser 1 charge. Dans ce cas, le vaisseau récupère une charge sur une de ses améliorations.</div>",
+            "ability_ENG": "<div class='text'>+4 Logistic. After a ship which fully executed a maneuver becomes at range 0-1 of you, you may spend a charge. If you do, the ship recovers a charge on 1 of its upgrades.</div>",
             "slots": [
             ],
             "modifier_func": [
@@ -14141,8 +14141,8 @@
             "shipId": 109,
             "skill": 1,
             "points": 1,
-            "ability_FRA": "<div class='text'>Après qu'un vaisseau qui a entièrement exécuté une manoeuvre se retrouve à portée 0-1 de vous, vous pouvez dépenser 1 charge. Dans ce cas, le vaisseau récupère une charge sur une de ses améliorations.</div>",
-            "ability_ENG": "<div class='text'>After a ship which fully executed a maneuver becomes at range 0-1 of you, you may spend a charge. If you do, the ship recovers a charge on 1 of its upgrades.</div>",
+            "ability_FRA": "<div class='text'>+4 Logistic. Après qu'un vaisseau qui a entièrement exécuté une manoeuvre se retrouve à portée 0-1 de vous, vous pouvez dépenser 1 charge. Dans ce cas, le vaisseau récupère une charge sur une de ses améliorations.</div>",
+            "ability_ENG": "<div class='text'>+4 Logistic. After a ship which fully executed a maneuver becomes at range 0-1 of you, you may spend a charge. If you do, the ship recovers a charge on 1 of its upgrades.</div>",
             "slots": [
             ],
             "modifier_func": [
@@ -14163,8 +14163,8 @@
             "shipId": 109,
             "skill": 1,
             "points": 1,
-            "ability_FRA": "<div class='text'>Après qu'un vaisseau qui a entièrement exécuté une manoeuvre se retrouve à portée 0-1 de vous, vous pouvez dépenser 1 charge. Dans ce cas, le vaisseau récupère une charge sur une de ses améliorations.</div>",
-            "ability_ENG": "<div class='text'>After a ship which fully executed a maneuver becomes at range 0-1 of you, you may spend a charge. If you do, the ship recovers a charge on 1 of its upgrades.</div>",
+            "ability_FRA": "<div class='text'>+4 Logistic. Après qu'un vaisseau qui a entièrement exécuté une manoeuvre se retrouve à portée 0-1 de vous, vous pouvez dépenser 1 charge. Dans ce cas, le vaisseau récupère une charge sur une de ses améliorations.</div>",
+            "ability_ENG": "<div class='text'>+4 Logistic. After a ship which fully executed a maneuver becomes at range 0-1 of you, you may spend a charge. If you do, the ship recovers a charge on 1 of its upgrades.</div>",
             "slots": [
             ],
             "modifier_func": [
@@ -14185,8 +14185,8 @@
             "shipId": 109,
             "skill": 7,
             "points": 1,
-            "ability_FRA": "<div class='text'>Pendant la phase système, vous pouvez verrouiller un vaisseau à portée 0-2. Lorsqu'un vaisseau allié attaque un vaisseau que vous avez verrouillé, il peut relancer 1 dé d'attaque.</div>",
-            "ability_ENG": "<div class='text'>During system phase, you may acquire a lock on a ship at range 0-2. When a friedly ship performs an attack against a ship you have a lock on, it can reroll an attack die.</div>",
+            "ability_FRA": "<div class='text'>+4 Logistic. Pendant la phase système, vous pouvez verrouiller un vaisseau à portée 0-2. Lorsqu'un vaisseau allié attaque un vaisseau que vous avez verrouillé, il peut relancer 1 dé d'attaque.</div>",
+            "ability_ENG": "<div class='text'>+4 Logistic. During system phase, you may acquire a lock on a ship at range 0-2. When a friedly ship performs an attack against a ship you have a lock on, it can reroll an attack die.</div>",
             "slots": [
             ],
             "modifier_func": [
@@ -14207,8 +14207,8 @@
             "shipId": 109,
             "skill": 7,
             "points": 1,
-            "ability_FRA": "<div class='text'>Pendant la phase système, vous pouvez verrouiller un vaisseau à portée 0-2. Lorsqu'un vaisseau allié attaque un vaisseau que vous avez verrouillé, il peut relancer 1 dé d'attaque.</div>",
-            "ability_ENG": "<div class='text'>During system phase, you may acquire a lock on a ship at range 0-2. When a friedly ship performs an attack against a ship you have a lock on, it can reroll an attack die.</div>",
+            "ability_FRA": "<div class='text'>+4 Logistic. Pendant la phase système, vous pouvez verrouiller un vaisseau à portée 0-2. Lorsqu'un vaisseau allié attaque un vaisseau que vous avez verrouillé, il peut relancer 1 dé d'attaque.</div>",
+            "ability_ENG": "<div class='text'>+4 Logistic. During system phase, you may acquire a lock on a ship at range 0-2. When a friedly ship performs an attack against a ship you have a lock on, it can reroll an attack die.</div>",
             "slots": [
             ],
             "modifier_func": [
@@ -14229,8 +14229,8 @@
             "shipId": 109,
             "skill": 7,
             "points": 1,
-            "ability_FRA": "<div class='text'>Pendant la phase système, vous pouvez verrouiller un vaisseau à portée 0-2. Lorsqu'un vaisseau allié attaque un vaisseau que vous avez verrouillé, il peut relancer 1 dé d'attaque.</div>",
-            "ability_ENG": "<div class='text'>During system phase, you may acquire a lock on a ship at range 0-2. When a friedly ship performs an attack against a ship you have a lock on, it can reroll an attack die.</div>",
+            "ability_FRA": "<div class='text'>+4 Logistic. Pendant la phase système, vous pouvez verrouiller un vaisseau à portée 0-2. Lorsqu'un vaisseau allié attaque un vaisseau que vous avez verrouillé, il peut relancer 1 dé d'attaque.</div>",
+            "ability_ENG": "<div class='text'>+4 Logistic. During system phase, you may acquire a lock on a ship at range 0-2. When a friedly ship performs an attack against a ship you have a lock on, it can reroll an attack die.</div>",
             "slots": [
             ],
             "modifier_func": [
@@ -14251,8 +14251,8 @@
             "shipId": 109,
             "skill": 1,
             "points": 1,
-            "ability_FRA": "<div class='text'>Lorsqu'un vaisseau allié à portée 0-2 coordonne, il peut cibler un vaisseau à portée 0-2 de vous.</div>",
-            "ability_ENG": "<div class='text'>When a friendly ship at range 0-2 coordinates, it can target a ship at range 0-2 of you.</div>",
+            "ability_FRA": "<div class='text'>+4 Logistic. Lorsqu'un vaisseau allié à portée 0-2 coordonne, il peut cibler un vaisseau à portée 0-2 de vous.</div>",
+            "ability_ENG": "<div class='text'>+4 Logistic. When a friendly ship at range 0-2 coordinates, it can target a ship at range 0-2 of you.</div>",
             "slots": [
             ],
             "modifier_func": [
@@ -14273,8 +14273,8 @@
             "shipId": 109,
             "skill": 1,
             "points": 1,
-            "ability_FRA": "<div class='text'>Lorsqu'un vaisseau allié à portée 0-2 coordonne, il peut cibler un vaisseau à portée 0-2 de vous.</div>",
-            "ability_ENG": "<div class='text'>When a friendly ship at range 0-2 coordinates, it can target a ship at range 0-2 of you.</div>",
+            "ability_FRA": "<div class='text'>+4 Logistic. Lorsqu'un vaisseau allié à portée 0-2 coordonne, il peut cibler un vaisseau à portée 0-2 de vous.</div>",
+            "ability_ENG": "<div class='text'>+4 Logistic. When a friendly ship at range 0-2 coordinates, it can target a ship at range 0-2 of you.</div>",
             "slots": [
             ],
             "modifier_func": [
@@ -14295,8 +14295,8 @@
             "shipId": 109,
             "skill": 1,
             "points": 1,
-            "ability_FRA": "<div class='text'>Lorsqu'un vaisseau allié à portée 0-2 coordonne, il peut cibler un vaisseau à portée 0-2 de vous.</div>",
-            "ability_ENG": "<div class='text'>When a friendly ship at range 0-2 coordinates, it can target a ship at range 0-2 of you.</div>",
+            "ability_FRA": "<div class='text'>+4 Logistic. Lorsqu'un vaisseau allié à portée 0-2 coordonne, il peut cibler un vaisseau à portée 0-2 de vous.</div>",
+            "ability_ENG": "<div class='text'>+4 Logistic. When a friendly ship at range 0-2 coordinates, it can target a ship at range 0-2 of you.</div>",
             "slots": [
             ],
             "modifier_func": [
@@ -14317,8 +14317,8 @@
             "shipId": 109,
             "skill": 4,
             "points": 1,
-            "ability_FRA": "<div class='text'>Lorsqu'un vaisseau allié à portée 0-1 est la cible d'un verrouillage, vous êtes verrouillé à la place.</div>",
-            "ability_ENG": "<div class='text'>When a friendly ship at range 0-1 is targeted for a lock acquisition, you are locked in its place instead.</div>",
+            "ability_FRA": "<div class='text'>+4 Logistic. Lorsqu'un vaisseau allié à portée 0-1 est la cible d'un verrouillage, vous êtes verrouillé à la place.</div>",
+            "ability_ENG": "<div class='text'>+4 Logistic. When a friendly ship at range 0-1 is targeted for a lock acquisition, you are locked in its place instead.</div>",
             "slots": [
             ],
             "modifier_func": [
@@ -14339,8 +14339,8 @@
             "shipId": 109,
             "skill": 4,
             "points": 1,
-            "ability_FRA": "<div class='text'>Lorsqu'un vaisseau allié à portée 0-1 est la cible d'un verrouillage, vous êtes verrouillé à la place.</div>",
-            "ability_ENG": "<div class='text'>When a friendly ship at range 0-1 is targeted for a lock acquisition, you are locked in its place instead.</div>",
+            "ability_FRA": "<div class='text'>+4 Logistic. Lorsqu'un vaisseau allié à portée 0-1 est la cible d'un verrouillage, vous êtes verrouillé à la place.</div>",
+            "ability_ENG": "<div class='text'>+4 Logistic. When a friendly ship at range 0-1 is targeted for a lock acquisition, you are locked in its place instead.</div>",
             "slots": [
             ],
             "modifier_func": [
@@ -14361,8 +14361,8 @@
             "shipId": 109,
             "skill": 4,
             "points": 1,
-            "ability_FRA": "<div class='text'>Lorsqu'un vaisseau allié à portée 0-1 est la cible d'un verrouillage, vous êtes verrouillé à la place.</div>",
-            "ability_ENG": "<div class='text'>When a friendly ship at range 0-1 is targeted for a lock acquisition, you are locked in its place instead.</div>",
+            "ability_FRA": "<div class='text'>+4 Logistic. Lorsqu'un vaisseau allié à portée 0-1 est la cible d'un verrouillage, vous êtes verrouillé à la place.</div>",
+            "ability_ENG": "<div class='text'>+4 Logistic. When a friendly ship at range 0-1 is targeted for a lock acquisition, you are locked in its place instead.</div>",
             "slots": [
             ],
             "modifier_func": [
@@ -14383,8 +14383,8 @@
             "shipId": 109,
             "skill": 6,
             "points": 1,
-            "ability_FRA": "<div class='text'>Après qu'un vaisseau qui a entièrement exécuté une manoeuvre se retrouve à portée 0-1 de vous, vous pouvez dépenser 1 charge. Dans ce cas, le vaisseau répare une de ses cartes de dégats face ouverte ou effectue une action <img class='inline-img' src='img/Sl W.png'>.</div>",
-            "ability_ENG": "<div class='text'>After a ship which fully executed a maneuver becomes at range 0-1 of you, you may spend a charge. If you do, the ship repairs 1 of its faceup damage card or performs a <img class='inline-img' src='img/Sl W.png'> action.</div>",
+            "ability_FRA": "<div class='text'>+4 Logistic. Après qu'un vaisseau qui a entièrement exécuté une manoeuvre se retrouve à portée 0-1 de vous, vous pouvez dépenser 1 charge. Dans ce cas, le vaisseau répare une de ses cartes de dégats face ouverte ou effectue une action <img class='inline-img' src='img/Sl W.png'>.</div>",
+            "ability_ENG": "<div class='text'>+4 Logistic. After a ship which fully executed a maneuver becomes at range 0-1 of you, you may spend a charge. If you do, the ship repairs 1 of its faceup damage card or performs a <img class='inline-img' src='img/Sl W.png'> action.</div>",
             "slots": [
             ],
             "modifier_func": [
@@ -14405,8 +14405,8 @@
             "shipId": 109,
             "skill": 6,
             "points": 1,
-            "ability_FRA": "<div class='text'>Après qu'un vaisseau qui a entièrement exécuté une manoeuvre se retrouve à portée 0-1 de vous, vous pouvez dépenser 1 charge. Dans ce cas, le vaisseau répare une de ses cartes de dégats face ouverte ou effectue une action <img class='inline-img' src='img/Sl W.png'>.</div>",
-            "ability_ENG": "<div class='text'>After a ship which fully executed a maneuver becomes at range 0-1 of you, you may spend a charge. If you do, the ship repairs 1 of its faceup damage card or performs a <img class='inline-img' src='img/Sl W.png'> action.</div>",
+            "ability_FRA": "<div class='text'>+4 Logistic. Après qu'un vaisseau qui a entièrement exécuté une manoeuvre se retrouve à portée 0-1 de vous, vous pouvez dépenser 1 charge. Dans ce cas, le vaisseau répare une de ses cartes de dégats face ouverte ou effectue une action <img class='inline-img' src='img/Sl W.png'>.</div>",
+            "ability_ENG": "<div class='text'>+4 Logistic. After a ship which fully executed a maneuver becomes at range 0-1 of you, you may spend a charge. If you do, the ship repairs 1 of its faceup damage card or performs a <img class='inline-img' src='img/Sl W.png'> action.</div>",
             "slots": [
             ],
             "modifier_func": [
@@ -14427,8 +14427,8 @@
             "shipId": 109,
             "skill": 6,
             "points": 1,
-            "ability_FRA": "<div class='text'>Après qu'un vaisseau qui a entièrement exécuté une manoeuvre se retrouve à portée 0-1 de vous, vous pouvez dépenser 1 charge. Dans ce cas, le vaisseau répare une de ses cartes de dégats face ouverte ou effectue une action <img class='inline-img' src='img/Sl W.png'>.</div>",
-            "ability_ENG": "<div class='text'>After a ship which fully executed a maneuver becomes at range 0-1 of you, you may spend a charge. If you do, the ship repairs 1 of its faceup damage card or performs a <img class='inline-img' src='img/Sl W.png'> action.</div>",
+            "ability_FRA": "<div class='text'>+4 Logistic. Après qu'un vaisseau qui a entièrement exécuté une manoeuvre se retrouve à portée 0-1 de vous, vous pouvez dépenser 1 charge. Dans ce cas, le vaisseau répare une de ses cartes de dégats face ouverte ou effectue une action <img class='inline-img' src='img/Sl W.png'>.</div>",
+            "ability_ENG": "<div class='text'>+4 Logistic. After a ship which fully executed a maneuver becomes at range 0-1 of you, you may spend a charge. If you do, the ship repairs 1 of its faceup damage card or performs a <img class='inline-img' src='img/Sl W.png'> action.</div>",
             "slots": [
             ],
             "modifier_func": [
@@ -14449,8 +14449,8 @@
             "shipId": 109,
             "skill": 5,
             "points": 1,
-            "ability_FRA": "<div class='text'>Lorsqu'un vaisseau allié à portée 0-1 défend, il peut modifier un résultat <img class='inline-img' src='img/crit.png'> en résultat <img class='inline-img' src='img/hit.png'>.</div>",
-            "ability_ENG": "<div class='text'>When a friendly ship at range 0-1 defends, it can modifiy a <img class='inline-img' src='img/crit.png'> result into a <img class='inline-img' src='img/hit.png'> result.</div>",
+            "ability_FRA": "<div class='text'>+4 Logistic. Lorsqu'un vaisseau allié à portée 0-1 défend, il peut modifier un résultat <img class='inline-img' src='img/crit.png'> en résultat <img class='inline-img' src='img/hit.png'>.</div>",
+            "ability_ENG": "<div class='text'>+4 Logistic. When a friendly ship at range 0-1 defends, it can modifiy a <img class='inline-img' src='img/crit.png'> result into a <img class='inline-img' src='img/hit.png'> result.</div>",
             "slots": [
             ],
             "modifier_func": [
@@ -14471,8 +14471,8 @@
             "shipId": 109,
             "skill": 5,
             "points": 1,
-            "ability_FRA": "<div class='text'>Lorsqu'un vaisseau allié à portée 0-2 utilise une charge d'une amélioration <img class='inline-img' src='img/Illicit.png'>, vous pouvez dépenser votre <img class='inline-img' src='img/charge.png'> pour récupérer la charge sur l'amélioration <img class='inline-img' src='img/Illicit.png'>.</div>",
-            "ability_ENG": "<div class='text'>When a friendly ship at range 0-2 spends a charge on a <img class='inline-img' src='img/Illicit.png'> upgrade, you may spend your <img class='inline-img' src='img/charge.png'> to recover the charge on your <img class='inline-img' src='img/Illicit.png'> upgrade.</div>",
+            "ability_FRA": "<div class='text'>+4 Logistic. Lorsqu'un vaisseau allié à portée 0-2 utilise une charge d'une amélioration <img class='inline-img' src='img/Illicit.png'>, vous pouvez dépenser votre <img class='inline-img' src='img/charge.png'> pour récupérer la charge sur l'amélioration <img class='inline-img' src='img/Illicit.png'>.</div>",
+            "ability_ENG": "<div class='text'>+4 Logistic. When a friendly ship at range 0-2 spends a charge on a <img class='inline-img' src='img/Illicit.png'> upgrade, you may spend your <img class='inline-img' src='img/charge.png'> to recover the charge on your <img class='inline-img' src='img/Illicit.png'> upgrade.</div>",
             "slots": [
                 "Special"
             ],
@@ -14495,8 +14495,8 @@
             "shipId": 109,
             "skill": 5,
             "points": 1,
-            "ability_FRA": "<div class='text'>Lorsqu'un vaisseau allié à portée 0-1 attaque, vous dépensez 1 charge. Dans ce cas, ce vaisseau peut modifier un résultat <img class='inline-img' src='img/hit.png'> en résultat <img class='inline-img' src='img/crit.png'>.</div>",
-            "ability_ENG": "<div class='text'>When a friendly ship at range 0-1 performs an attack, you may spend 1 charge. If you do, this ship may modify a <img class='inline-img' src='img/hit.png'> result into a <img class='inline-img' src='img/crit.png'> result.</div>",
+            "ability_FRA": "<div class='text'>+4 Logistic. Lorsqu'un vaisseau allié à portée 0-1 attaque, vous dépensez 1 charge. Dans ce cas, ce vaisseau peut modifier un résultat <img class='inline-img' src='img/hit.png'> en résultat <img class='inline-img' src='img/crit.png'>.</div>",
+            "ability_ENG": "<div class='text'>+4 Logistic. When a friendly ship at range 0-1 performs an attack, you may spend 1 charge. If you do, this ship may modify a <img class='inline-img' src='img/hit.png'> result into a <img class='inline-img' src='img/crit.png'> result.</div>",
             "slots": [
                 "Special"
             ],
@@ -14519,8 +14519,8 @@
             "shipId": 109,
             "skill": 5,
             "points": 1,
-            "ability_FRA": "<div class='text'></div>",
-            "ability_ENG": "<div class='text'></div>",
+            "ability_FRA": "<div class='text'>+5 Logistic. </div>",
+            "ability_ENG": "<div class='text'>+5 Logistic. </div>",
             "slots": [
             ],
             "modifier_func": [
