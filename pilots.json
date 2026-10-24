@@ -13037,9 +13037,9 @@
             "shipId": 101,
             "skill": 5,
             "points": 11,
-            "ability_FRA": "<div class='text'></div>",
-            "ability_ENG": "<div class='text'></div>",
-            "slots": [ 
+            "ability_FRA": "<div class='text'>Après avoir entièrement effectué une manoeuvre avancée, vous pouvez recevoir un jeton de concentration.</div>",
+            "ability_ENG": "<div class='text'>After you fully execute an advanced maneuver, you may gain 1 focus token.</div>",
+            "slots": [
                 "Talent-elite"   
             ]
         }, 
@@ -13057,9 +13057,9 @@
             "shipId": 101,
             "skill": 2,
             "points": 9,
-            "ability_FRA": "<div class='text'></div>",
-            "ability_ENG": "<div class='text'></div>",
-            "slots": [ 
+            "ability_FRA": "<div class='text'>Après avoir subi un dégat <img class='inline-img' src='img/crit.png'>, vous pouvez effectuer une action, même si vous êtes stressé.</div>",
+            "ability_ENG": "<div class='text'>After you suffer a <img class='inline-img' src='img/charge.png'> damage, you may perform an action, even when stressed.</div>",
+            "slots": [
                 "Talent-shooting"   
             ]
         }, 
@@ -13077,9 +13077,9 @@
             "shipId": 101,
             "skill": 2,
             "points": 9,
-            "ability_FRA": "<div class='text'></div>",
-            "ability_ENG": "<div class='text'></div>",
-            "slots": [ 
+            "ability_FRA": "<div class='text'>Après avoir exécuté partiellement une manoeuvre avancée, vous pouvez repositionner votre vaisseau en le plaçant à portée 0 du vaisseau qui a gêné la manoeuvre, vers n'importe quelle direction.</div>",
+            "ability_ENG": "<div class='text'>After you partially execute an advanced maneuver, you may reposition your ship by placing it at range 0 from the ship that blocked your maneuver, facing any direction.</div>",
+            "slots": [
                 "Talent-piloting"   
             ]
         }, 
@@ -13097,9 +13097,9 @@
             "shipId": 101,
             "skill": 3,
             "points": 9,
-            "ability_FRA": "<div class='text'></div>",
-            "ability_ENG": "<div class='text'></div>",
-            "slots": [ 
+            "ability_FRA": "<div class='text'>Lorsque vous effectuez une attaque <img class='inline-img' src='img/Missile.png'>, après la phase 'annuler les résultats', si l'attaque touche, vous pouvez ajouter 1 résultat <img class='inline-img' src='img/crit.png'>.</div>",
+            "ability_ENG": "<div class='text'>When you perform a <img class='inline-img' src='img/Missile.png'> attack, after the 'Cancel results' phase, if the attack hits, you may add 1 <img class='inline-img' src='img/crit.png'> result.</div>",
+            "slots": [
                 "Talent-shooting"   
             ]
         },
@@ -13261,7 +13261,7 @@
             "skill": 5,
             "charge": [0],
             "points": 10,
-            "ability_FRA": "<div class='text'></div>",
+            "ability_FRA": "<div class='text'>Lorsque vous coordonnez un vaisseau</div>",
             "ability_ENG": "<div class='text'></div>",
             "slots": [      
                 
