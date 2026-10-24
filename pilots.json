@@ -13261,10 +13261,11 @@
             "skill": 5,
             "charge": [0],
             "points": 10,
-            "ability_FRA": "<div class='text'>Lorsque vous coordonnez un vaisseau</div>",
-            "ability_ENG": "<div class='text'></div>",
+            "ability_FRA": "<div class='text'>Lorsque vous faites une action de coordination ou que vous êtes coordonné, si cela échoue, vous pouvez effectuer un tonneau et réessayer la même coordination sans changer les cibles.</div>",
+            "ability_ENG": "<div class='text'>When you perform a coordination action or you are being coordinated, if it fails, you may perform a barrel roll and try again the same coordination without changing the targets.</div>",
             "slots": [      
-                
+               "Talent-leadership",
+               "Talent-elite" 
             ],
             "modifier_func": [
                 ["change_chassis",0,0]
@@ -13286,10 +13287,10 @@
             "skill": 3,
             "charge": [0],
             "points": 9,
-            "ability_FRA": "<div class='text'></div>",
-            "ability_ENG": "<div class='text'></div>",
+            "ability_FRA": "<div class='text'>Lorsqu'un vaisseau allié à portée 0-2 dans votre arc de tir attaque ou défend, vous pouvez choisir un autre vaisseau calculateur dans votre arc de tir opposé. Dans ce cas, le premier vaisseau peut utiliser un jeton calcul du deuxième vaisseau comme si c'était le sien.</div>",
+            "ability_ENG": "<div class='text'>When a friendly ship in your firing arc at range 0-2 performs an attack or defends, you may choose another calculating ship in your opposite firing arc. If you do, the first ship may use a calculate token from the second ship as its own.</div>",
             "slots": [      
-                
+                "Talent-leadership"
             ],
             "modifier_func": [
                 ["change_chassis",0,0]
@@ -13311,10 +13312,10 @@
             "skill": 4,
             "charge": [0],
             "points": 8,
-            "ability_FRA": "<div class='text'></div>",
-            "ability_ENG": "<div class='text'></div>",
+            "ability_FRA": "<div class='text'>Lorsque vous effectuez une attaque qui touche, vous pouvez effectuer une action de coordination.</div>",
+            "ability_ENG": "<div class='text'>When you perform an attack that hits, you may perform a coordination action.</div>",
             "slots": [
-                
+                "Talent-shooting"
             ],
             "modifier_func": [
                 ["change_chassis",0,0]
@@ -13467,13 +13468,13 @@
             "titleID": 0,
             "shipId": 104,
             "modify": false,
-            "skill": 0,
+            "skill": 4,
             "charge": [0],
             "points": 0,
             "ability_FRA": "<div class='text'></div>",
             "ability_ENG": "<div class='text'></div>",
             "slots": [
-                
+                "Talent-leadership"
             ]
         },
         {
@@ -13487,14 +13488,18 @@
             "force": 0,
             "titleID": 0,
             "shipId": 104,
-            "modify": false,
+            "modify": true,
             "skill": 0,
             "charge": [0],
             "points": 0,
             "ability_FRA": "<div class='text'></div>",
             "ability_ENG": "<div class='text'></div>",
             "slots": [
-                
+                "Droid",
+                "Talent-piloting"
+            ],
+            "modifier_func":[
+                ["auto_equip", "Droid",237]
             ]
         },
         {
@@ -13508,14 +13513,18 @@
             "force": 0,
             "titleID": 0,
             "shipId": 104,
-            "modify": false,
+            "modify": true,
             "skill": 0,
             "charge": [0],
             "points": 0,
             "ability_FRA": "<div class='text'></div>",
             "ability_ENG": "<div class='text'></div>",
-            "slots": [
-                
+             "slots": [
+                "Droid",
+                "Talent-shooting"
+            ],
+            "modifier_func":[
+                ["auto_equip", "Droid",237]
             ]
         },
         {
