@@ -13362,10 +13362,10 @@
             "skill": 4,
             "charge": [0],
             "points": 8,
-            "ability_FRA": "<div class='text'></div>",
-            "ability_ENG": "<div class='text'></div>",
+            "ability_FRA": "<div class='text'>Quand un vaisseau allié à portée 0-3 est détruit, vous pouvez récupérer 1 bouclier (1 max) et tout ou partie des jetons appartenant au vaisseau détruit.</div>",
+            "ability_ENG": "<div class='text'>When a friendly ship at range 0-3 is destroyed, you may recover 1 shield (max 1) and all or several tokens owned by the destroyed ship.</div>",
             "slots": [
-                
+                "Talent-elite"
             ],
             "modifier_func": [
                 ["change_chassis",0,0]
