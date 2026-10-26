@@ -13561,7 +13561,7 @@
             "title": "",
             "force": 0,
             "titleID": 0,
-            "shipId": 105,
+            "shipId": 111,
             "modify": false,
             "skill": 3,
             "charge": [0],
@@ -13582,7 +13582,7 @@
             "title": "",
             "force": 0,
             "titleID": 0,
-            "shipId": 105,
+            "shipId": 111,
             "modify": false,
             "skill": 5,
             "charge": [0],
@@ -13603,7 +13603,7 @@
             "title": "",
             "force": 0,
             "titleID": 0,
-            "shipId": 105,
+            "shipId": 111,
             "modify": false,
             "skill": 3,
             "charge": [0],
@@ -13624,7 +13624,7 @@
             "title": "",
             "force": 0,
             "titleID": 0,
-            "shipId": 105,
+            "shipId": 111,
             "modify": true,
             "skill": 3,
             "charge": [0],
@@ -13639,8 +13639,8 @@
                     ]
         },
         {
-            "name_FRA": "--",
-            "name_ENG": "--",
+            "name_FRA": "Slego",
+            "name_ENG": "Slego",
             "id": 596,
             "max_per_squad": 1,
             "faction": "Agents_of_Chaos",
@@ -13663,14 +13663,14 @@
                     ]
         },
         {
-            "name_FRA": "--",
-            "name_ENG": "--",
+            "name_FRA": "Braxus Lyn",
+            "name_ENG": "Braxus Lyn",
             "id": 597,
             "max_per_squad": 1,
             "faction": "Agents_of_Chaos",
             "ship": "HH-87 Starhopper",
             "title": "",
-            "force": 0,
+            "force": 1,
             "titleID": 0,
             "shipId": 106,
             "modify": false,
@@ -13687,8 +13687,8 @@
                     ]
         },
         {
-            "name_FRA": "--",
-            "name_ENG": "--",
+            "name_FRA": "Omus Krill",
+            "name_ENG": "Omus Krill",
             "id": 598,
             "max_per_squad": 1,
             "faction": "Agents_of_Chaos",
@@ -13711,8 +13711,8 @@
                     ]
         },
         {
-            "name_FRA": "--",
-            "name_ENG": "--",
+            "name_FRA": "Patrouilleur Zyggerien",
+            "name_ENG": "Zyggerian Patroller",
             "id": 599,
             "max_per_squad": 8,
             "faction": "Agents_of_Chaos",
@@ -13735,8 +13735,8 @@
                     ]
         },
         {
-            "name_FRA": "--",
-            "name_ENG": "--",
+            "name_FRA": "Gev Hessan",
+            "name_ENG": "Gev Hessan",
             "id": 600,
             "max_per_squad": 1,
             "faction": "Hutt_Cartel",
@@ -13807,8 +13807,8 @@
                     ]
         },
         {
-            "name_FRA": "--",
-            "name_ENG": "--",
+            "name_FRA": "Patrouilleur de Nal Hutta",
+            "name_ENG": "Nal Hutta Patroller",
             "id": 603,
             "max_per_squad": 8,
             "faction": "Hutt_Cartel",
@@ -14534,6 +14534,174 @@
             ],
             "modifier_func": [
                 ["add_logistic_points",5]
+            ]
+        },
+        {
+            "name_FRA": "KRONOS-327",
+            "name_ENG": "KRONOS-327",
+            "id": 635,
+            "max_per_squad": 1,
+            "faction": "Agents_of_Chaos",
+            "ship": "G9 Rigger Freighter",
+            "modify": false,
+            "charge":[0],
+            "force": 0,
+            "titleID": 0,
+            "shipId": 105,
+            "skill": 2,
+            "points": 10,
+            
+            "ability_FRA": "<div class='text'></div>",
+            "ability_ENG": "<div class='text'></div>",
+            "slots": [
+               
+            ]
+        },
+        {
+            "name_FRA": "Ziro Desilijic Tiure",
+            "name_ENG": "Ziro Desilijic Tiure",
+            "id": 636,
+            "max_per_squad": 1,
+            "faction": "Agents_of_Chaos",
+            "ship": "G9 Rigger Freighter",
+            "modify": false,
+            "charge":[0],
+            "force": 0,
+            "titleID": 0,
+            "shipId": 105,
+            "skill": 2,
+            "points": 10,
+            
+            "ability_FRA": "<div class='text'></div>",
+            "ability_ENG": "<div class='text'></div>",
+            "slots": [
+               
+            ]
+        },
+        {
+            "name_FRA": "4-A7",
+            "name_ENG": "4-A7",
+            "id": 637,
+            "max_per_squad": 1,
+            "faction": "Agents_of_Chaos",
+            "ship": "G9 Rigger Freighter",
+            "modify": false,
+            "charge":[0],
+            "force": 0,
+            "titleID": 0,
+            "shipId": 105,
+            "skill": 2,
+            "points": 10,
+            
+            "ability_FRA": "<div class='text'></div>",
+            "ability_ENG": "<div class='text'></div>",
+            "slots": [
+               
+            ]
+        },
+        {
+            "name_FRA": "Darts D'Nar",
+            "name_ENG": "Darts D'Nar",
+            "id": 638,
+            "max_per_squad": 1,
+            "faction": "Agents_of_Chaos",
+            "ship": "YV-865 Aurore-Class Freighter",
+            "modify": false,
+            "charge":[0],
+            "force": 0,
+            "titleID": 0,
+            "shipId": 110,
+            "skill": 2,
+            "points": 10,
+            
+            "ability_FRA": "<div class='text'></div>",
+            "ability_ENG": "<div class='text'></div>",
+            "slots": [
+               
+            ]
+        },
+        {
+            "name_FRA": "Agruss",
+            "name_ENG": "Agruss",
+            "id": 639,
+            "max_per_squad": 1,
+            "faction": "Agents_of_Chaos",
+            "ship": "YV-865 Aurore-Class Freighter",
+            "modify": false,
+            "charge":[0],
+            "force": 0,
+            "titleID": 0,
+            "shipId": 110,
+            "skill": 2,
+            "points": 10,
+            
+            "ability_FRA": "<div class='text'></div>",
+            "ability_ENG": "<div class='text'></div>",
+            "slots": [
+               
+            ]
+        },
+        {
+            "name_FRA": "Savage Opress",
+            "name_ENG": "Savage Opress",
+            "id": 640,
+            "max_per_squad": 1,
+            "faction": "Agents_of_Chaos",
+            "ship": "YV-865 Aurore-Class Freighter",
+            "modify": false,
+            "charge":[0],
+            "force": 2,
+            "titleID": 0,
+            "shipId": 110,
+            "skill": 2,
+            "points": 10,
+            
+            "ability_FRA": "<div class='text'></div>",
+            "ability_ENG": "<div class='text'></div>",
+            "slots": [
+               
+            ]
+        },
+         {
+            "name_FRA": "Raney",
+            "name_ENG": "Raney",
+            "id": 641,
+            "max_per_squad": 1,
+            "faction": "Agents_of_Chaos",
+            "ship": "YV-865 Aurore-Class Freighter",
+            "modify": false,
+            "charge":[0],
+            "force": 0,
+            "titleID": 0,
+            "shipId": 110,
+            "skill": 2,
+            "points": 10,
+            
+            "ability_FRA": "<div class='text'></div>",
+            "ability_ENG": "<div class='text'></div>",
+            "slots": [
+               
+            ]
+        },
+         {
+            "name_FRA": "Esclavagiste Zyggerien",
+            "name_ENG": "Zyggerian Slaver",
+            "id": 641,
+            "max_per_squad": 8,
+            "faction": "Agents_of_Chaos",
+            "ship": "YV-865 Aurore-Class Freighter",
+            "modify": false,
+            "charge":[0],
+            "force": 0,
+            "titleID": 0,
+            "shipId": 110,
+            "skill": 2,
+            "points": 10,
+            
+            "ability_FRA": "<div class='text'></div>",
+            "ability_ENG": "<div class='text'></div>",
+            "slots": [
+               
             ]
         }
         

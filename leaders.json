@@ -71,9 +71,9 @@
         "leaderfaction": ["Separatist_Government","",""],
         "leaderid": 6,
         "numberOfFactions": 1,
-        "leaderability_FRA":"",
-        "leaderability_ENG":"",
-        "charge": [0],
+        "leaderability_FRA":"<div class='text'>Lorsqu'un de vos vaisseaux attaque, si le défenseur ne voit pas l'attaquant dans son arc de tir, alors récupérez 1 <img class='inline-img' src='img/charge.png'>. Pendant la phase de fin, vous pouvez dépenser 3 <img class='inline-img' src='img/charge.png'> pour gagner 3 PO.</div>",
+        "leaderability_ENG":"<div class='text'>When one of your ships performs an attack, if it is not in the defender's firing arc, then recover 1 <img class='inline-img' src='img/charge.png'>. During End Phase, you may spend 3 <img class='inline-img' src='img/charge.png'> to gain 3 PO.</div>",
+        "charge": [3,"Red"],
         "logistic": 20
      }, 
      {
