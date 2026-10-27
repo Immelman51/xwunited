@@ -2862,7 +2862,7 @@
                 "slots": ["Torpedo","Calculator"]
             },
             {
-            	"name": "Zenuas 33 Umbaran Starfighter",
+            	"name": "//Zenuas 33 Umbaran Starfighter",
                 "name_ENG": "Zenuas 33 Umbaran Starfighter",
                 "factions": [ "Separatist_Government" ],
                 "id": 103,
@@ -2889,7 +2889,7 @@
                 "slots": ["Missile","Missile","Tech"]
             },
             {
-            	"name": "Droch-class Boarding Ship",
+            	"name": "//Droch-class Boarding Ship",
                 "name_ENG": "Droch-class Boarding Ship",
                 "factions": [ "Separatist_Government" ],
                 "id": 104,
@@ -2917,8 +2917,8 @@
             },
             {
           
-                 "name": "G9 Rigger Freighter",
-                 "factions": ["Agents_of_Chaos"],
+                 "name": "//G9 Rigger Freighter",
+                 "factions": ["Agents_of_Chaos","Jedi_Order"],
                  "id": 105,
                  "attack": [["F",2],["T",1]],
                  "agility": 1,
@@ -2943,7 +2943,7 @@
              },
             
              {
-            	"name": "HH-87 Starhopper",
+            	"name": "//HH-87 Starhopper",
                 "name_ENG": "HH_87 Starhopper",
                 "factions": [ "Hutt_Cartel","Agents_of_Chaos" ],
                 "id": 106,
@@ -2963,7 +2963,7 @@
                     [ 0, 2, 1, 2, 0, 0],
                     [ 2, 1, 1, 1, 2, 0],
                     [ 2, 2, 1, 2, 2, 3],
-                    [ 0, 0, 1, 0, 0, 0],
+                    [ 0, 0, 1, 0, 0, 3],
                     [ 0, 0, 3, 0, 0, 0]
                 ],
                 "slots": ["Illicit","Calculator"]
@@ -3028,7 +3028,7 @@
               {
           
                  "name": "Logistic Supply",
-                 "factions": ["Rebel_Alliance","Partisans","Phoenix_Cell","Imperial_Academy","ISB","Imperial_Elite_Squadrons","Pirates_and_Smugglers","Bounty_Hunters_Guild","Hutt_Cartel","Jedi_Council","Clone_Army","Naboo_Defense_Force","Trade_Federation","Separatist_Government","Agents_of_Chaos","First_Order_Vanguard","Shadow_Specialists","Imperial_Remnants","New_Republic_Patrol","Colossus","Heroes_of_the_Resistance","Mandalorian_Clans","Crime_Syndicates","Black_Sun"],
+                 "factions": ["Rebel_Alliance","Partisans","Phoenix_Cell","Imperial_Academy","ISB","Imperial_Elite_Squadrons","Pirates_and_Smugglers","Bounty_Hunters_Guild","Hutt_Cartel","Jedi_Order","Clone_Army","Naboo_Defense_Force","Trade_Federation","Separatist_Government","Agents_of_Chaos","First_Order_Vanguard","Shadow_Specialists","Imperial_Remnants","New_Republic_Patrol","Colossus","Heroes_of_the_Resistance","Mandalorian_Clans","Crime_Syndicates","Black_Sun"],
                  "id": 109,
                  "attack": [0],
                  "agility": 0,
@@ -3049,7 +3049,7 @@
              },
            {
           
-                 "name": "YV-865 Aurore-Class Freighter",
+                 "name": "//YV-865 Aurore-Class Freighter",
                  "factions": ["Partisans","Agents_of_Chaos"],
                  "id": 110,
                  "attack": [["F",2]],
@@ -3074,7 +3074,7 @@
                  "slots": ["Cannon","Crew","Gunner","Sensor","Modification"]
              },
              {
-            	"name": "Mankvim-814 Light Interceptor",
+            	"name": "//Mankvim-814 Light Interceptor",
                 "name_ENG": "Mankvim-814 Light Interceptor",
                 "factions": [ "Separatist_Government" ],
                 "id": 111,

@@ -8023,7 +8023,7 @@
             "force": 0,
             "titleID": 0,
             "shipId": 84,
-            "skill": 1,
+            "skill": 4,
             "points": 8,
             "ability_FRA": "<div class='text'>Lorsqu'un vaisseau allié défend, si vous êtes dans l'arc d'attaque, ce vaisseau peut dépenser l'un de vos jetons d'évasion pour ajouter 1 résultat <img class='inline-img' src='img/Ev W.png'>.</div>",
             "ability_ENG": "<div class='text'>While a friendly ship defends, if you are in the attack arc, this ship may spend 1 of your evade token to add 1 <img class='inline-img' src='img/Ev W.png'> result.</div>",
@@ -8077,10 +8077,13 @@
             "ability_ENG": "<div class='text'>When you engage, if you are cloaked, you may spend 1 <img class='inline-img' src='img/fo.png'> to perform an attack.</div>",
             "slots": [
                 "Special",
+                "Droid",
                 "Talent-shooting"
            ],
            "modifier_func":[
-                ["auto_equip","Special",364]
+                ["auto_equip","Special",364],
+                ["auto_equip", "Droid",237]
+
            ]
         },
         {
@@ -9020,8 +9023,8 @@
            ]
         },
         {
-            "name_FRA": "Deva Lompop",
-            "name_ENG": "Deva Lompop",
+            "name_FRA": "L'Effroyable Krittel",
+            "name_ENG": "The Terror Kreetle",
             "id": 393,
             "max_per_squad": 1,
             "modify": false,
@@ -9033,8 +9036,8 @@
             "shipId": 40,
             "skill": 3,
             "points": 12,
-            "ability_FRA": "<div class='text'>Après avoir entièrement exécuté une manoeuvre de vitesse 3-5, you pouvez dépenser 1 <img class='inline-img' src='img/charge.png'> pour effectuer une action <img class='inline-img' src='img/Sl W.png'>.</div>",
-            "ability_ENG": "<div class='text'>After you fully execute a speed 3-5 maneuver, you may spend 1 <img class='inline-img' src='img/charge.png'> to perform a <img class='inline-img' src='img/Sl W.png'> action.</div>",
+            "ability_FRA": "<div class='text'>Lorsque vous déclarez une attaque contre un vaisseau dans votre <img class='inline-img' src='img/bulls.png>, vous pouvez dépenser 1 <img class='inline-img' src='img/charge.png>. Dans ce cas, ce vaisseau reçoit un jeton contrainte et un jeton épuisement.</div>",
+            "ability_ENG": "<div class='text'>When you declare an attack against a ship in your </div>",
             "slots": [
                 "Talent-piloting"
                                               
@@ -12764,8 +12767,8 @@
             ] 
         },
         {
-            "name_FRA": "Ric Olié",
-            "name_ENG": "Ric Olié",
+            "name_FRA": "Sabé",
+            "name_ENG": "Sabé",
             "id": 557,
             "max_per_squad":1,
             "modify": true,
@@ -12775,10 +12778,10 @@
             "force": 0,
             "titleID": 0,
             "shipId": 99,
-            "skill": 5,
+            "skill": 4,
             "points": 17,
-            "ability_FRA": "<div class='text'>Lorsque vous défendez ou effectuez une attaque principale, si la vitesse de votre manoeuvre révélée est plus grande que celle de l'ennemi, lancez 1 dé supplémentaire.</div>",
-            "ability_ENG": "<div class='text'>While you defend or perform a primary attack, if the speed of your revealed maneuver is higher than the enemy ship's, roll 1 additional die.</div>",
+            "ability_FRA": "<div class='text'>Lorsqu'un vaisseau allié défend, si vous êtes dans l'arc d'attaque, ce vaisseau peut dépenser l'un de vos jetons d'évasion pour ajouter 1 résultat <img class='inline-img' src='img/Ev W.png'>.</div>",
+            "ability_ENG": "<div class='text'>While a friendly ship defends, if you are in the attack arc, this ship may spend 1 of your evade token to add 1 <img class='inline-img' src='img/Ev W.png'> result.</div>",
             "slots": [
                 "Talent-elite",
                 "Talent-piloting"    
@@ -12811,8 +12814,8 @@
             ]
         },
 	{
-            "name_FRA": "C-3PO",
-            "name_ENG": "C-3PO",
+            "name_FRA": "Daneska Varbaros",
+            "name_ENG": "Daneska Varbaros",
             "id": 559,
             "max_per_squad":1,
             "modify": true,
@@ -12822,16 +12825,14 @@
             "force": 0,
             "titleID": 0,
             "shipId": 99,
-            "skill": 1,
+            "skill": 4,
             "points": 15,
             "ability_FRA": "<div class='text'>Pour chaque amélioration <img class='inline-img' src='img/crew.png> que vous avez équipé, placez autant de jetons calculs sur votre liste. Vous pouvez utiliser ces jetons à tout moment pour modifier vos dés. Pendant la phase 'Executez une action', vous pouvez dépenser 1 de ces jetons calculs pour effectuer une action <img class='inline-img' src='img/Co W.png>. Dans ce cas, n'effectuez plus d'action lors de cette phase et recevez 1 jeton calcul.</div>",
             "ability_ENG": "<div class='text'>For each <img class='inline-img' src='img/crew.png> equipped upgrade, place as many calculate tokens on your list. You may spend those tokens whenever you need to modify your dice results. During 'perform an action' phase, you may spend 1 of those calculate tokens to perform a <img class='inline-img' src='img/Co W.png> action. If you do, you can't perform any action during this phase and gain 1 calculate token.</div>",
             "slots": [
-                "Droid",
                 "Talent-piloting"  
             ],
             "modifier_func": [
-                ["auto_equip", "Droid",237],
                 ["reduce_logistic_cost","Crew"]
 
             ]
@@ -12848,7 +12849,7 @@
             "force": 0,
             "titleID": 0,
             "shipId": 99,
-            "skill": 4,
+            "skill": 2,
             "points": 17,
             "ability_FRA": "<div class='text'>Tant qu’un vaisseau ennemi dans votre <img class='inline-img' src='img/Farc.png'> défend ou effectue une attaque, ce vaisseau ennemi ne peut modifier que 1 seul résultat <img class='inline-img' src='img/Fo W.png> (les autres résultats peuvent toujours être modifiés).</div>",
             "ability_ENG": "<div class='text'>While an enemy ship in your <img class='inline-img' src='img/Farc.png'> defends or performs an attack, that ship can modify only 1 <img class='inline-img' src='img/Fo W.png> result (other results can still be modified).</div>",
@@ -13211,7 +13212,6 @@
             "max_per_squad": 2,
             "faction": "Trade_Federation",
             "ship": "Scarab-Class Droid Fighter",
-            "title": "",
             "force": 0,
             "titleID": 0,
             "shipId": 102,
@@ -13232,7 +13232,6 @@
             "max_per_squad": 8,
             "faction": "Trade_Federation",
             "ship": "Scarab-Class Droid Fighter",
-            "title": "",
             "force": 0,
             "titleID": 0,
             "shipId": 102,
@@ -13253,7 +13252,6 @@
             "max_per_squad": 1,
             "faction": "Separatist_Government",
             "ship": "Sheathipede-Class Shuttle",
-            "title": "",
             "force": 0,
             "titleID": 0,
             "shipId": 41,
@@ -13279,7 +13277,6 @@
             "max_per_squad": 1,
             "faction": "Separatist_Government",
             "ship": "Sheathipede-Class Shuttle",
-            "title": "",
             "force": 0,
             "titleID": 0,
             "shipId": 41,
@@ -13304,7 +13301,6 @@
             "max_per_squad": 1,
             "faction": "Separatist_Government",
             "ship": "Sheathipede-Class Shuttle",
-            "title": "",
             "force": 0,
             "titleID": 0,
             "shipId": 41,
@@ -13329,7 +13325,6 @@
             "max_per_squad": 8,
             "faction": "Separatist_Government",
             "ship": "Sheathipede-Class Shuttle",
-            "title": "",
             "force": 0,
             "titleID": 0,
             "shipId": 41,
@@ -13354,7 +13349,6 @@
             "max_per_squad": 1,
             "faction": "Separatist_Government",
             "ship": "Sheathipede-Class Shuttle",
-            "title": "",
             "force": 0,
             "titleID": 0,
             "shipId": 41,
@@ -13379,7 +13373,6 @@
             "max_per_squad": 1,
             "faction": "Separatist_Government",
             "ship": "Zenuas 33 Umbaran Starfighter",
-            "title": "",
             "force": 0,
             "titleID": 0,
             "shipId": 103,
@@ -13400,7 +13393,6 @@
             "max_per_squad": 1,
             "faction": "Separatist_Government",
             "ship": "Zenuas 33 Umbaran Starfighter",
-            "title": "",
             "force": 0,
             "titleID": 0,
             "shipId": 103,
@@ -13421,7 +13413,6 @@
             "max_per_squad": 1,
             "faction": "Separatist_Government",
             "ship": "Zenuas 33 Umbaran Starfighter",
-            "title": "",
             "force": 0,
             "titleID": 0,
             "shipId": 103,
@@ -13442,7 +13433,6 @@
             "max_per_squad": 8,
             "faction": "Separatist_Government",
             "ship": "Zenuas 33 Umbaran Starfighter",
-            "title": "",
             "force": 0,
             "titleID": 0,
             "shipId": 103,
@@ -13463,7 +13453,6 @@
             "max_per_squad": 1,
             "faction": "Separatist_Government",
             "ship": "Droch-class Boarding Ship",
-            "title": "",
             "force": 0,
             "titleID": 0,
             "shipId": 104,
@@ -13484,7 +13473,6 @@
             "max_per_squad": 1,
             "faction": "Separatist_Government",
             "ship": "Droch-class Boarding Ship",
-            "title": "",
             "force": 0,
             "titleID": 0,
             "shipId": 104,
@@ -13509,7 +13497,6 @@
             "max_per_squad": 1,
             "faction": "Separatist_Government",
             "ship": "Droch-class Boarding Ship",
-            "title": "",
             "force": 0,
             "titleID": 0,
             "shipId": 104,
@@ -13534,7 +13521,6 @@
             "max_per_squad": 8,
             "faction": "Separatist_Government",
             "ship": "Droch-class Boarding Ship",
-            "title": "",
             "force": 0,
             "titleID": 0,
             "shipId": 104,
@@ -13558,7 +13544,6 @@
             "max_per_squad": 1,
             "faction": "Agents_of_Chaos",
             "ship": "Mankvim-814 Light Interceptor",
-            "title": "",
             "force": 0,
             "titleID": 0,
             "shipId": 111,
@@ -13579,7 +13564,6 @@
             "max_per_squad": 1,
             "faction": "Agents_of_Chaos",
             "ship": "Mankvim-814 Light Interceptor",
-            "title": "",
             "force": 0,
             "titleID": 0,
             "shipId": 111,
@@ -13600,7 +13584,6 @@
             "max_per_squad": 1,
             "faction": "Agents_of_Chaos",
             "ship": "Mankvim-814 Light Interceptor",
-            "title": "",
             "force": 0,
             "titleID": 0,
             "shipId": 111,
@@ -13621,7 +13604,6 @@
             "max_per_squad": 8,
             "faction": "Agents_of_Chaos",
             "ship": "Mankvim-814 Light Interceptor",
-            "title": "",
             "force": 0,
             "titleID": 0,
             "shipId": 111,
@@ -13645,7 +13627,6 @@
             "max_per_squad": 1,
             "faction": "Agents_of_Chaos",
             "ship": "HH-87 Starhopper",
-            "title": "",
             "force": 0,
             "titleID": 0,
             "shipId": 106,
@@ -13669,7 +13650,6 @@
             "max_per_squad": 1,
             "faction": "Agents_of_Chaos",
             "ship": "HH-87 Starhopper",
-            "title": "",
             "force": 1,
             "titleID": 0,
             "shipId": 106,
@@ -13693,7 +13673,6 @@
             "max_per_squad": 1,
             "faction": "Agents_of_Chaos",
             "ship": "HH-87 Starhopper",
-            "title": "",
             "force": 0,
             "titleID": 0,
             "shipId": 106,
@@ -13717,7 +13696,6 @@
             "max_per_squad": 8,
             "faction": "Agents_of_Chaos",
             "ship": "HH-87 Starhopper",
-            "title": "",
             "force": 0,
             "titleID": 0,
             "shipId": 106,
@@ -13741,7 +13719,6 @@
             "max_per_squad": 1,
             "faction": "Hutt_Cartel",
             "ship": "HH-87 Starhopper",
-            "title": "",
             "force": 0,
             "titleID": 0,
             "shipId": 106,
@@ -13758,38 +13735,34 @@
                 
                     ]
         },
-        {
-            "name_FRA": "--",
-            "name_ENG": "--",
+         {
+            "name_FRA": "Deva Lompop",
+            "name_ENG": "Deva Lompop",
             "id": 601,
             "max_per_squad": 1,
-            "faction": "Hutt_Cartel",
+            "modify": false,
+		    "faction": "Hutt_Cartel",
             "ship": "HH-87 Starhopper",
-            "title": "",
+            "charge":[2,"yellow",0],
             "force": 0,
             "titleID": 0,
             "shipId": 106,
-            "modify": false,
-            "skill": 0,
-            "charge": [0],
-            "points": 0,
-            "ability_FRA": "<div class='text'></div>",
-            "ability_ENG": "<div class='text'></div>",
+            "skill": 3,
+            "points": 12,
+            "ability_FRA": "<div class='text'>Après avoir entièrement exécuté une manoeuvre de vitesse 3-5, you pouvez dépenser 1 <img class='inline-img' src='img/charge.png'> pour effectuer une action <img class='inline-img' src='img/Sl W.png'>.</div>",
+            "ability_ENG": "<div class='text'>After you fully execute a speed 3-5 maneuver, you may spend 1 <img class='inline-img' src='img/charge.png'> to perform a <img class='inline-img' src='img/Sl W.png'> action.</div>",
             "slots": [
-                
-            ],
-            "modifier_func": [
-                
-                    ]
+                "Talent-piloting"
+                                              
+           ]
         },
         {
-            "name_FRA": "--",
-            "name_ENG": "--",
+            "name_FRA": "Rel Keteris",
+            "name_ENG": "Rel Keteris",
             "id": 602,
             "max_per_squad": 1,
             "faction": "Hutt_Cartel",
             "ship": "HH-87 Starhopper",
-            "title": "",
             "force": 0,
             "titleID": 0,
             "shipId": 106,
@@ -13813,7 +13786,6 @@
             "max_per_squad": 8,
             "faction": "Hutt_Cartel",
             "ship": "HH-87 Starhopper",
-            "title": "",
             "force": 0,
             "titleID": 0,
             "shipId": 106,
@@ -14251,7 +14223,7 @@
             "name_ENG": "Comms Relay",
             "id": 622,
             "max_per_squad": 8,
-            "faction": "Jedi_Council",
+            "faction": "Jedi_Order",
             "ship": "Logistic Supply",
             "modify": true,
             "charge":[0],
@@ -14543,10 +14515,11 @@
             "max_per_squad": 1,
             "faction": "Agents_of_Chaos",
             "ship": "G9 Rigger Freighter",
+            "title": ["Twilight"],
             "modify": false,
             "charge":[0],
             "force": 0,
-            "titleID": 0,
+            "titleID": 380,
             "shipId": 105,
             "skill": 2,
             "points": 10,
@@ -14564,10 +14537,11 @@
             "max_per_squad": 1,
             "faction": "Agents_of_Chaos",
             "ship": "G9 Rigger Freighter",
+            "title": ["Twilight"],
             "modify": false,
             "charge":[0],
             "force": 0,
-            "titleID": 0,
+            "titleID": 380,
             "shipId": 105,
             "skill": 2,
             "points": 10,
@@ -14585,10 +14559,11 @@
             "max_per_squad": 1,
             "faction": "Agents_of_Chaos",
             "ship": "G9 Rigger Freighter",
+            "title": ["Twilight"],
             "modify": false,
             "charge":[0],
             "force": 0,
-            "titleID": 0,
+            "titleID": 380,
             "shipId": 105,
             "skill": 2,
             "points": 10,
@@ -14686,7 +14661,7 @@
          {
             "name_FRA": "Esclavagiste Zyggerien",
             "name_ENG": "Zyggerian Slaver",
-            "id": 641,
+            "id": 642,
             "max_per_squad": 8,
             "faction": "Agents_of_Chaos",
             "ship": "YV-865 Aurore-Class Freighter",
@@ -14703,7 +14678,93 @@
             "slots": [
                
             ]
-        }
+        },
+        {
+            "name_FRA": "Anakin Skywalker",
+            "name_ENG": "Anakin Skywalker",
+            "id": 643,
+            "max_per_squad": 1,
+            "faction": "Jedi_Order",
+            "ship": "G9 Rigger Freighter",
+            "title": ["Twilight"],
+            "modify": false,
+            "charge":[0],
+            "force": 3,
+            "titleID": 380,
+            "shipId": 105,
+            "skill": 6,
+            "points": 10,
+            
+            "ability_FRA": "<div class='text'></div>",
+            "ability_ENG": "<div class='text'></div>",
+            "slots": [
+               
+            ]
+        },
+        {
+            "name_FRA": "Ahsoka Tano",
+            "name_ENG": "Ahsoka Tano",
+            "id": 644,
+            "max_per_squad": 1,
+            "faction": "Jedi_Order",
+            "ship": "G9 Rigger Freighter",
+            "title": ["Twilight"],
+            "modify": false,
+            "charge":[0],
+            "force": 1,
+            "titleID": 380,
+            "shipId": 105,
+            "skill": 3,
+            "points": 10,
+            
+            "ability_FRA": "<div class='text'></div>",
+            "ability_ENG": "<div class='text'></div>",
+            "slots": [
+               
+            ]
+        },
+        {
+            "name_FRA": "Beezer Fortuna",
+            "name_ENG": "Beezer Fortuna",
+            "id": 645,
+            "max_per_squad": 8,
+            "faction": "Partisans",
+            "ship": "YV-865 Aurore-Class Freighter",
+            "modify": false,
+            "charge":[0],
+            "force": 0,
+            "titleID": 0,
+            "shipId": 110,
+            "skill": 4,
+            "points": 10,
+            
+            "ability_FRA": "<div class='text'></div>",
+            "ability_ENG": "<div class='text'></div>",
+            "slots": [
+               
+            ]
+        },
+        {
+            "name_FRA": "Arane Oreida",
+            "name_ENG": "Arane Oreida",
+            "id": 646,
+            "max_per_squad": 8,
+            "faction": "Partisans",
+            "ship": "YV-865 Aurore-Class Freighter",
+            "modify": false,
+            "charge":[0],
+            "force": 0,
+            "titleID": 0,
+            "shipId": 110,
+            "skill": 2,
+            "points": 10,
+            
+            "ability_FRA": "<div class='text'></div>",
+            "ability_ENG": "<div class='text'></div>",
+            "slots": [
+               
+            ]
+        },
         
         
         

@@ -6674,6 +6674,22 @@
             "effect_FRA": "",
             "effect_ENG": "",
             "faction": ["Separatist_Government"]
+        },
+        {
+            "name_FRA": "Twilight",
+            "name_ENG": "Twilight",
+            "id": 380,
+            "max_per_squad": 1,
+            "available": true,
+            "modify": false,
+            "slot": "Title",
+            "add_Data": [0],
+            "force": 0,
+            "charge": [0],
+            "points": 0,
+            "effect_FRA": "",
+            "effect_ENG": "",
+            "faction": ["Agents_of_Chaos","Jedi_Order"]
         }
         
 
