@@ -11080,7 +11080,7 @@
             "max_per_squad": 1,
             "modify": false,
             "faction": "Agents_of_Chaos",
-            "ship": "Fanblade Starfighter",
+            "ship": "Ginivex-class Fanblade Starfighter",
             "charge":[0],
             "force": 2,
             "force_side": "dark",
@@ -11103,7 +11103,7 @@
             "max_per_squad": 1,
             "modify": false,
             "faction": "Agents_of_Chaos",
-            "ship": "Fanblade Starfighter",
+            "ship": "Ginivex-class Fanblade Starfighter",
             "charge":[0],
             "force": 1,
             "force_side": "dark",
@@ -11125,7 +11125,7 @@
             "max_per_squad": 1,
             "modify": false,
             "faction": "Agents_of_Chaos",
-            "ship": "Fanblade Starfighter",
+            "ship": "Ginivex-class Fanblade Starfighter",
             "charge":[0],
             "force": 3,
             "force_side": "dark",
@@ -14764,7 +14764,85 @@
             "slots": [
                
             ]
+        },
+        {
+            "name_FRA": "--",
+            "name_ENG": "--",
+            "id": 647,
+            "max_per_squad":1,
+            "modify": false,
+            "faction": "Jedi_Order",
+            "ship": "ETA Class Shuttle",
+            "charge":[0],
+            "force": 0,
+            "titleID": 0,
+            "shipId": 98,
+            "skill": 1,
+            "points": 10,
+            "ability_FRA": "",
+            "ability_ENG": "",
+            "slots": [
+                "Talent-shooting"   
+            ]
+        },{
+            "name_FRA": "--",
+            "name_ENG": "--",
+            "id": 648,
+            "max_per_squad":1,
+            "modify": false,
+            "faction": "Jedi_Order",
+            "ship": "ETA Class Shuttle",
+            "charge":[0],
+            "force": 0,
+            "titleID": 0,
+            "shipId": 98,
+            "skill": 1,
+            "points": 10,
+            "ability_FRA": "",
+            "ability_ENG": "",
+            "slots": [
+                "Talent-shooting"   
+            ]
+        },{
+            "name_FRA": "--",
+            "name_ENG": "--",
+            "id": 649,
+            "max_per_squad":1,
+            "modify": false,
+            "faction": "Jedi_Order",
+            "ship": "ETA Class Shuttle",
+            "charge":[0],
+            "force": 0,
+            "titleID": 0,
+            "shipId": 98,
+            "skill": 1,
+            "points": 10,
+            "ability_FRA": "",
+            "ability_ENG": "",
+            "slots": [
+                "Talent-shooting"   
+            ]
+        },{
+            "name_FRA": "--",
+            "name_ENG": "--",
+            "id": 650,
+            "max_per_squad":1,
+            "modify": false,
+            "faction": "Jedi_Order",
+            "ship": "ETA Class Shuttle",
+            "charge":[0],
+            "force": 0,
+            "titleID": 0,
+            "shipId": 98,
+            "skill": 1,
+            "points": 10,
+            "ability_FRA": "",
+            "ability_ENG": "",
+            "slots": [
+                "Talent-shooting"   
+            ]
         }
+
         
         
         

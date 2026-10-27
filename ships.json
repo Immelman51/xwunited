@@ -2735,7 +2735,7 @@
             },
             {
             	"name": "ETA Class Shuttle",
-                "factions": [ "Imperial_Remnants", "Jedi_Order", "Naboo_Defense_Force" ],
+                "factions": [ "Imperial_Remnants", "Jedi_Order","Naboo_Defense_Force" ],
                 "id": 98,
                 "attack": [["F",2]],
                 "agility": 2,
