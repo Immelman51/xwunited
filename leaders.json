@@ -223,7 +223,7 @@
      {
      "leadername_FRA": "!!Général Pryde",
       "leadername_ENG": "!!General Pryde",
-     "leaderfaction": ["Shadow_Specialists","",""],
+     "leaderfaction": ["First_Order_Specialists","",""],
      "leaderid": 20,
      "numberOfFactions": 1,
      "leaderability_FRA": "<div class='text'>En phase Système, un vaisseau allié peut coordonner un vaisseau ennemi (effectue une action même stressé) pour récupérer 1 <img class='inline-img' src='img/charge.png'>, OU un vaisseau allié peut brouiller un vaisseau ennemi en dépensant 1 <img class='inline-img' src='img/charge.png'>, OU vous pouvez dépenser 1 <img class='inline-img' src='img/charge.png'> pour gagner 1 PO.</div>",
@@ -325,7 +325,7 @@
      {
         "leadername_FRA": "!!Commandant Pyre",
          "leadername_ENG": "!!Commander Pyre",
-        "leaderfaction": ["Shadow_Specialists","Colossus",""],
+        "leaderfaction": ["First_Order_Specialists","Colossus",""],
         "leaderfaction_mini": "SPE / COL",
         "leaderid": 29,
         "numberOfFactions": 2,
@@ -433,7 +433,7 @@
       {
         "leadername_FRA": "!!Suprême Leader Snoke",
         "leadername_ENG": "!!Supreme Leader Snoke",
-        "leaderfaction": ["First_Order_Vanguard","Shadow_Specialists","Imperial_Remnants"],
+        "leaderfaction": ["First_Order_Vanguard","First_Order_Specialists","Imperial_Remnants"],
         "leaderfaction_mini": "FOR / SPE / REM",
         "leaderid": 38,
         "numberOfFactions": 3,
@@ -505,7 +505,7 @@
       {
         "leadername_FRA": "!!Kylo Ren",
         "leadername_ENG": "!!Kylo Ren",
-        "leaderfaction": ["First_Order_Vanguard","Shadow_Specialists",""],
+        "leaderfaction": ["First_Order_Vanguard","First_Order_Specialists",""],
         "leaderfaction_mini": "SPE / FOR",
         "leaderid": 44,
         "numberOfFactions": 2,
