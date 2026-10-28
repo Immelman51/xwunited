@@ -1977,7 +1977,7 @@
                 "hull": 3,
                 "shields": 0,
                 "base": "small",
-                "chassis": [0],
+                "chassis": [59],
                 "slots": ["Calculator","Calculator"],
                 "actions": [
                     [0,"Cc W"],
@@ -2740,7 +2740,7 @@
                 "attack": [["F",2]],
                 "agility": 2,
                 "base": "small",
-                "hull": 6,
+                "hull": 4,
                 "shields": 2,
                 "chassis": [0],
                 "actions": [
@@ -2862,7 +2862,7 @@
                 "slots": ["Torpedo","Calculator"]
             },
             {
-            	"name": "//Zenuas 33 Umbaran Starfighter",
+            	"name": "Zenuas 33 Umbaran Starfighter",
                 "name_ENG": "Zenuas 33 Umbaran Starfighter",
                 "factions": [ "Separatist_Government" ],
                 "id": 103,

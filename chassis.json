@@ -606,7 +606,7 @@
     "effect3_ENG": "" 
 },
 {
-    "name":"Turbo Thrusters (not used, fusionned with 56 Folding Wings)",
+    "name":"Turbo Thrusters (not used, merged with 56 Folding Wings)",
     "id":55,
     "nbrOfEffects": 1,
     "effect1_FRA":"<img class='chargeforceimg' src='img/chargestat.png'><div>(Turbo-Propulseurs) : Après avoir exécuté une action <img class='inline-img' src='img/Sl W.png'>, vous pouvez dépenser 1 <img class='inline-img' src='img/charge.png'> ou exposer une carte de dégat pour retirer un marqueur de désarmement.</div>",

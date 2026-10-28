@@ -13379,11 +13379,12 @@
             "modify": false,
             "skill": 5,
             "charge": [0],
-            "points": 0,
-            "ability_FRA": "<div class='text'></div>",
-            "ability_ENG": "<div class='text'></div>",
+            "points": 13,
+            "ability_FRA": "<div class='text'>Vous pouvez effectuer d'autres actions que l'action de concentration lorsque vous êtes ionisé.</div>",
+            "ability_ENG": "<div class='text'>You may perform other actions than the focus action when you are ionised.</div>",
             "slots": [
-                
+                "Talent-elite",
+                "Talent-shooting"
             ]
         },
         {
@@ -13399,11 +13400,11 @@
             "modify": false,
             "skill": 2,
             "charge": [0],
-            "points": 0,
-            "ability_FRA": "<div class='text'></div>",
-            "ability_ENG": "<div class='text'></div>",
+            "points": 11,
+            "ability_FRA": "<div class='text'>Lorsque vous êtes détruit, vous pouvez transférer tous vos jetons oranges vers un vaisseau ennemi à portée 0-1.</div>",
+            "ability_ENG": "<div class='text'>When you are destroyed, you may transfer all your orange tokens to an enemy ship at range 0-1.</div>",
             "slots": [
-                
+                "Talent-shooting"
             ]
         },
         {
@@ -13419,11 +13420,12 @@
             "modify": false,
             "skill": 5,
             "charge": [0],
-            "points": 0,
-            "ability_FRA": "<div class='text'></div>",
-            "ability_ENG": "<div class='text'></div>",
+            "points": 12,
+            "ability_FRA": "<div class='text'>Lorsque vous êtes ionisé et que vous devez planifier votre manoeuvre, vous pouvez choisir n'importe quelle manoeuvre de vitesse 1. Losque vous la révélez, exécutez la à la place de la manoeuvre ionique.</div>",
+            "ability_ENG": "<div class='text'>When you are ionised and you have to select your maneuver, you may choose any speed 1 maneuver. When you reveal this maneuver, execute this maneuver instead of the ionised maneuver. </div>",
             "slots": [
-                
+                "Talent-elite",
+                "Talent-piloting"
             ]
         },
         {
@@ -13437,9 +13439,9 @@
             "titleID": 0,
             "shipId": 103,
             "modify": false,
-            "skill": 4,
+            "skill": 2,
             "charge": [0],
-            "points": 0,
+            "points": 10,
             "ability_FRA": "<div class='text'></div>",
             "ability_ENG": "<div class='text'></div>",
             "slots": [
@@ -13477,7 +13479,7 @@
             "titleID": 0,
             "shipId": 104,
             "modify": true,
-            "skill": 0,
+            "skill": 1,
             "charge": [0],
             "points": 0,
             "ability_FRA": "<div class='text'></div>",
@@ -13501,7 +13503,7 @@
             "titleID": 0,
             "shipId": 104,
             "modify": true,
-            "skill": 0,
+            "skill": 1,
             "charge": [0],
             "points": 0,
             "ability_FRA": "<div class='text'></div>",
@@ -13525,7 +13527,7 @@
             "titleID": 0,
             "shipId": 104,
             "modify": true,
-            "skill": 0,
+            "skill": 1,
             "charge": [0],
             "points": 0,
             "ability_FRA": "<div class='text'></div>",
