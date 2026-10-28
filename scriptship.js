@@ -225,7 +225,7 @@ function displayslots(yy) { //crée les menus de slot et contient l'écoute des 
             })
 
     slotmenu.addEventListener("mouseover", function(event){
-        
+        identifyElement(event);
         displayDescriptionUpgrade(event);
     })    
         index++;  
@@ -255,6 +255,7 @@ function displayslots(yy) { //crée les menus de slot et contient l'écoute des 
 	    
         });
         slotmenu.addEventListener("mouseover", function(event){
+            identifyElement(event);
             displayDescriptionUpgrade(event)
         })
        
@@ -1288,7 +1289,8 @@ function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'acti
         
     })
     newpilot.addEventListener("mouseover", function(event){
-        y = event.target.id.slice(11,12); //y = numéro du pilote modifié
+        //y = event.target.id.slice(11,12); //y = numéro du pilote modifié
+        identifyElement(event);
         displayDescriptionPilot(numero);
     })
     
