@@ -325,24 +325,26 @@ function identifyElement(event){ //sloty_x & index z de l'élément sélectionn�
     let slotMe = event.target.id;
     if (slotMe.indexOf("pilot")>0){ //si l'id contient la chaine "pilot"
         z = event.target.selectedIndex;
-        y = slotMe.slice(-1);
+        y = Number(slotMe.slice(-1));
         x = -1;
     }else if (slotMe.indexOf("menu_ship")===0){ //si l'id contient la chaine "menu_ship"
         z = event.target.selectedIndex;
-        y = slotMe.slice(-1);
+        y = Number(slotMe.slice(-1));
         x = -2;
     }else if (slotMe.indexOf("slot")===0){ //si l'id contient la chaine "slot"
         z = event.target.selectedIndex;
-        y = slotMe.substring(4,5);
-        x = slotMe.slice(-1);
+         // Récupération des coordonnées dans l'id "slotY_X"
+        let coordinates = slotMe.substring(4).split("_");
+        y = Number(coordinates[0]);
+        x = Number(coordinates[1]);
     }else if (slotMe.indexOf("chassis")===0){ //if the id contains the string "chassis"
         z = 0;
-        y = slotMe.slice(-1);
+        y = Number(slotMe.slice(-1));
         x = -3;
         
     }else if (slotMe.indexOf("title")===0){ //if the id contains the string "title"
         z = 0;
-        y = slotMe.slice(-1);
+        y = Number(slotMe.slice(-1));
         x = -4;
     }
    
