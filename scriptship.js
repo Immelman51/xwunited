@@ -913,6 +913,7 @@ function  add_slots (targetSlot){ //Action n°2 : A utiliser si une upgrade rajo
     upgradesSelected_Objects[y].push(-1);
 
         slotmenu.addEventListener("mouseover", function(event){
+            identifyElement(event);
             displayDescriptionUpgrade(event);
         })
 

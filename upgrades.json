@@ -1938,8 +1938,8 @@
             "effect_FRA": "Tant que vous attaquez, vous pouvez dépenser 1<img class='inline-img' src='img/charge.png'> pour modifier un résultat <img class='inline-img' src='img/hit.png'> en <img class='inline-img' src='img/crit.png'>.<br>Tant que vous défendez, si la charge est active, l'attaquant peut modifier un résultat <img class='inline-img' src='img/hit.png'> en <img class='inline-img' src='img/crit.png'>."
         },
  {
-            "name_FRA": "Capteur de Positionnement",
-            "name_ENG": "Tracking Fob",
+            "name_FRA": "***Capteur de Positionnement",
+            "name_ENG": "***Tracking Fob",
             "id": 112,
             "available": true,
             "modify":true,
