@@ -1,0 +1,413 @@
+{
+	// Place your xwunited workspace snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+	//
+	// You can also restrict snippets to specific files using include/exclude patterns:
+	// "Test snippet": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "test",
+	// 	"body": "test('$1', () => {\n\t$0\n});",
+	// 	"include": ["**/*.test.ts", "*.spec.ts"],
+	// 	"exclude": ["**/temp/*.ts"],
+	// 	"description": "Insert test block"
+	// }
+	"Focus Action":{
+		"scope": "",
+		"prefix": "<Fo",
+		"body": [
+			"<img class='inline-img' src='img/Fo W.png'>"
+		],
+		"description": "insert Fo W.png block"
+	},
+	"Lock Action":{
+		"scope": "",
+		"prefix": "<Lo",
+		"body": [
+			"<img class='inline-img' src='img/Lo W.png'>"
+		],
+		"description": "insert Lo W.png block"
+	},
+	"Barrel Action":{
+		"scope": "",
+		"prefix": "<Br",
+		"body": [
+			"<img class='inline-img' src='img/Br W.png'>"
+		],
+		"description": "insert Br W.png block"
+	},
+	"Boost Action":{
+		"scope": "",
+		"prefix": "<Bo",
+		"body": [
+			"<img class='inline-img' src='img/Bo W.png'>"
+		],
+		"description": "insert Bo W.png block"
+	},
+	"Rotate Arc Action":{
+		"scope": "",
+		"prefix": "<Ra",
+		"body": [
+			"<img class='inline-img' src='img/Ra W.png'>"
+		],
+		"description": "insert Ra W.png block"
+	},
+	"Jam Action":{
+		"scope": "",
+		"prefix": "<Ja",
+		"body": [
+			"<img class='inline-img' src='img/Ja W.png'>"
+		],
+		"description": "insert Ja W.png block"
+	},
+	"Coordinate Action":{
+		"scope": "",
+		"prefix": "<Co",
+		"body": [
+			"<img class='inline-img' src='img/Co W.png'>"
+		],
+		"description": "insert Co W.png block"
+	},
+	"Reinforce Action":{
+		"scope": "",
+		"prefix": "<Re",
+		"body": [
+			"<img class='inline-img' src='img/Re W.png'>"
+		],
+		"description": "insert Re W.png block"
+	},
+	"Cloak Action":{
+		"scope": "",
+		"prefix": "<Ck",
+		"body": [
+			"<img class='inline-img' src='img/Ck W.png'>"
+		],
+		"description": "insert Ck W.png block"
+	},
+	"Calculate Action":{
+		"scope": "",
+		"prefix": "<Cc",
+		"body": [
+			"<img class='inline-img' src='img/Cc W.png'>"
+		],
+		"description": "insert Cc W.png block"
+	},
+	"Unload Action":{
+		"scope": "",
+		"prefix": "<Un",
+		"body": [
+			"<img class='inline-img' src='img/Un W.png'>"
+		],
+		"description": "insert Un W.png block"
+	},
+	"Slam Action":{
+		"scope": "",
+		"prefix": "<Sl",
+		"body": [
+			"<img class='inline-img' src='img/Sl W.png'>"
+		],
+		"description": "insert Sl W.png block"
+	},
+	"Talent Slot":{
+		"scope": "",
+		"prefix": "<Talent",
+		"body": [
+			"<img class='inline-img' src='img/Talent.png'>"
+		],
+		"description": "insert Talent.png block"
+	},
+	"Crew Slot":{
+		"scope": "",
+		"prefix": "<Crew",
+		"body": [
+			"<img class='inline-img' src='img/Crew.png'>"
+		],
+		"description": "insert Crew.png block"
+	},
+	"Astromech Slot":{
+		"scope": "",
+		"prefix": "<Astromech",
+		"body": [
+			"<img class='inline-img' src='img/Astromech.png'>"
+		],
+		"description": "insert Astromech.png block"
+	},
+	"Illicit Slot":{
+		"scope": "",
+		"prefix": "<Illicit",
+		"body": [
+			"<img class='inline-img' src='img/Illicit.png'>"
+		],
+		"description": "insert Illicit.png block"
+	},
+	"Calculator Slot":{
+		"scope": "",
+		"prefix": "<Calculator",
+		"body": [
+			"<img class='inline-img' src='img/Calculator.png'>"
+		],
+		"description": "insert Lo W.png block"
+	},
+	"Torpedo":{
+		"scope": "",
+		"prefix": "<Torpedo",
+		"body": [
+			"<img class='inline-img' src='img/Torpedo.png'>"
+		],
+		"description": ""
+	},
+	"Missile":{
+		"scope": "",
+		"prefix": "<Missile",
+		"body": [
+			"<img class='inline-img' src='img/Missile.png'>"
+		],
+		"description": "insert Lo W.png block"
+	},
+	"Cannon":{
+		"scope": "",
+		"prefix": "<Cannon",
+		"body": [
+			"<img class='inline-img' src='img/Cannon.png'>"
+		],
+		"description": ""
+	},
+	"Turret":{
+		"scope": "",
+		"prefix": "<Turret",
+		"body": [
+			"<img class='inline-img' src='img/Turret.png'>"
+		],
+		"description": ""
+	},
+	"Gunner":{
+		"scope": "",
+		"prefix": "<Gunner",
+		"body": [
+			"<img class='inline-img' src='img/Gunner.png'>"
+		],
+		"description": ""
+	},
+	"Payload":{
+		"scope": "",
+		"prefix": "<Pay",
+		"body": [
+			"<img class='inline-img' src='img/Payload.png'>"
+		],
+		"description": ""
+	},
+	"Modification":{
+		"scope": "",
+		"prefix": "<Mod",
+		"body": [
+			"<img class='inline-img' src='img/Modification.png'>"
+		],
+		"description": ""
+	},
+	"Front Arc":{
+		"scope": "",
+		"prefix": "<Farc",
+		"body": [
+			"<img class='inline-img' src='img/Farc.png'>"
+		],
+		"description": ""
+	},
+	"Rear Arc":{
+		"scope": "",
+		"prefix": "<Barc",
+		"body": [
+			"<img class='inline-img' src='img/Barc.png'>"
+		],
+		"description": ""
+	},
+	"Left Arc":{
+		"scope": "",
+		"prefix": "<Larc",
+		"body": [
+			"<img class='inline-img' src='img/Gunner.png'>"
+		],
+		"description": ""
+	},
+	"Right Arc":{
+		"scope": "",
+		"prefix": "<Rarc",
+		"body": [
+			"<img class='inline-img' src='img/Rarc.png'>"
+		],
+		"description": ""
+	},
+	"180 Front Arc":{
+		"scope": "",
+		"prefix": "<F180",
+		"body": [
+			"<img class='inline-img' src='img/F180.png'>"
+		],
+		"description": ""
+	},
+	"180 Back Arc":{
+		"scope": "",
+		"prefix": "<B180",
+		"body": [
+			"<img class='inline-img' src='img/B180.png'>"
+		],
+		"description": ""
+	},
+	"Charge":{
+		"scope": "",
+		"prefix": "<charge",
+		"body": [
+			"<img class='inline-img' src='img/charge.png'>"
+		],
+		"description": ""
+	},
+	"Force":{
+		"scope": "",
+		"prefix": "<force",
+		"body": [
+			"<img class='inline-img' src='img/fo.png'>"
+		],
+		"description": ""
+	},
+	"hit":{
+		"scope": "",
+		"prefix": "<hit",
+		"body": [
+			"<img class='inline-img' src='img/hit.png'>"
+		],
+		"description": ""
+	},
+	"crit":{
+		"scope": "",
+		"prefix": "<crit",
+		"body": [
+			"<img class='inline-img' src='img/crit.png'>"
+		],
+		"description": ""
+	},
+	"evade action":{
+		"scope": "",
+		"prefix": "<Ev",
+		"body": [
+			"<img class='inline-img' src='img/Ev W.png'>"
+		],
+		"description": ""
+	},
+"Turret Arc":{
+		"scope": "",
+		"prefix": "<Tarc",
+		"body": [
+			"<img class='inline-img' src='img/Tarc.png'>"
+		],
+		"description": ""
+	},
+	"bullseye":{
+		"scope": "",
+		"prefix": "<bulls",
+		"body": [
+			"<img class='inline-img' src='img/bulls.png'>"
+		],
+		"description": ""
+	},
+	"straight man":{
+		"scope": "",
+		"prefix": "<st",
+		"body": [
+			"<img class='inline-img' src='img/manSt2.png'>"
+		],
+		"description": ""
+	},
+	"bank left man":{
+		"scope": "",
+		"prefix": "<bl",
+		"body": [
+			"<img class='inline-img' src='img/manBl2.png'>"
+		],
+		"description": ""
+	},
+	"bank right man":{
+		"scope": "",
+		"prefix": "<br",
+		"body": [
+			"<img class='inline-img' src='img/manBr2.png'>"
+		],
+		"description": ""
+	},
+	"turn left man":{
+		"scope": "",
+		"prefix": "<tl",
+		"body": [
+			"<img class='inline-img' src='img/manTl2.png'>"
+		],
+		"description": ""
+	},
+	"turn right man":{
+		"scope": "",
+		"prefix": "<tr",
+		"body": [
+			"<img class='inline-img' src='img/manTr2.png'>"
+		],
+		"description": ""
+	},
+	"0 man":{
+		"scope": "",
+		"prefix": "<stop",
+		"body": [
+			"<img class='inline-img' src='img/manOp2.png'>"
+		],
+		"description": ""
+	},
+	"segnor left man":{
+		"scope": "",
+		"prefix": "<sl",
+		"body": [
+			"<img class='inline-img' src='img/manSl2.png'>"
+		],
+		"description": ""
+	},
+	"segnor right man":{
+		"scope": "",
+		"prefix": "<sr",
+		"body": [
+			"<img class='inline-img' src='img/manSr2.png'>"
+		],
+		"description": ""
+	},
+	"koyogran man":{
+		"scope": "",
+		"prefix": "<ko",
+		"body": [
+			"<img class='inline-img' src='img/manKo2.png'>"
+		],
+		"description": ""
+	},
+	"talon left man":{
+		"scope": "",
+		"prefix": "<talonl",
+		"body": [
+			"<img class='inline-img' src='img/manAl2.png'>"
+		],
+		"description": ""
+	},
+	"talon right man":{
+		"scope": "",
+		"prefix": "<talonr",
+		"body": [
+			"<img class='inline-img' src='img/manAr2.png'>"
+		],
+		"description": ""
+	}
+
+}

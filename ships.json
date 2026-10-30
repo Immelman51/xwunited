@@ -2889,7 +2889,7 @@
                 "slots": ["Missile","Missile","Tech"]
             },
             {
-            	"name": "//Droch-class Boarding Ship",
+            	"name": "Droch-class Boarding Ship",
                 "name_ENG": "Droch-class Boarding Ship",
                 "factions": [ "Separatist_Government" ],
                 "id": 104,

@@ -13461,9 +13461,9 @@
             "modify": false,
             "skill": 4,
             "charge": [0],
-            "points": 0,
-            "ability_FRA": "<div class='text'></div>",
-            "ability_ENG": "<div class='text'></div>",
+            "points": 9,
+            "ability_FRA": "<div class='text'>Lorsqu'un vaisseau ennemi termine sa manoeuvre dans votre <img class='inline-img' src='img/Tarc.png'> à portée 1, vous pouvez effectuer une attaque principale bonus. Vos dés d'attaque ne peuvent pas être modifiés lors de cette attaque.</div>",
+            "ability_ENG": "<div class='text'>When an enemy ship finishes its maneuver in your <img class='inline-img' src='img/Tarc.png'> at range 1, you may perform a bonus primary attack. Your attack dice cannot be modified during this attack.</div>",
             "slots": [
                 "Talent-leadership"
             ]
@@ -13481,9 +13481,9 @@
             "modify": true,
             "skill": 1,
             "charge": [0],
-            "points": 0,
-            "ability_FRA": "<div class='text'></div>",
-            "ability_ENG": "<div class='text'></div>",
+            "points": 8,
+            "ability_FRA": "<div class='text'>Après avoir effectué un dérapage, s'il a été entièrement effectué, vous pouvez effectuer une action <img class='inline-img' src='img/Ra W.png'>. Sinon, le vaisseau qui a empêché votre mouvement reçoit un jeton contrainte.</div>",
+            "ability_ENG": "<div class='text'>After executing a sideslip, if it was fully executed, you may perform a <img class='inline-img' src='img/charge.png'> action. Else, the ship that blocked your move gains a strain token.</div>",
             "slots": [
                 "Droid",
                 "Talent-piloting"
@@ -13505,9 +13505,9 @@
             "modify": true,
             "skill": 1,
             "charge": [0],
-            "points": 0,
-            "ability_FRA": "<div class='text'></div>",
-            "ability_ENG": "<div class='text'></div>",
+            "points": 8,
+            "ability_FRA": "<div class='text'>Lorsque vous effectuez une attaque à portée 0, avant de lancer les dés d'attaque, vous pouvez effectuer une action <img class='inline-img' src='img/Lo W.png'>.</div>",
+            "ability_ENG": "<div class='text'>When you perform an attack at range 0, before rolling dice, you may perform a <img class='inline-img' src='img/Lo W.png'> action.</div>",
              "slots": [
                 "Droid",
                 "Talent-shooting"
@@ -13529,7 +13529,7 @@
             "modify": true,
             "skill": 1,
             "charge": [0],
-            "points": 0,
+            "points": 7,
             "ability_FRA": "<div class='text'></div>",
             "ability_ENG": "<div class='text'></div>",
             "slots": [
