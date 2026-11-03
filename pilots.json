@@ -1576,7 +1576,8 @@
             "modifier_func": [
             	["auto_equip","Title",145],
                 ["remove","Astromech"],
-                ["remove","Torpedo"]
+                ["remove","Torpedo"],
+                ["change_chassis",11,47]
                     ]
         },
         {
@@ -1606,7 +1607,8 @@
             "modifier_func": [
             	["auto_equip","Title",145],
                 ["remove","Astromech"],
-                ["remove","Torpedo"]
+                ["remove","Torpedo"],
+                ["change_chassis",11,47]
                     ]
         },
         {
@@ -1659,7 +1661,8 @@
             	["auto_equip","Title",145],
                 ["remove","Astromech"],
                 ["remove","Torpedo"],
-                ["auto_equip", "Droid",237]
+                ["auto_equip", "Droid",237],
+                ["change_chassis",11,47]
                     ]
         },
         {
@@ -13544,7 +13547,7 @@
             "name_ENG": "Kul Teska",
             "id": 592,
             "max_per_squad": 1,
-            "faction": "Agents_of_Chaos",
+            "faction": "Separatist_Government",
             "ship": "Mankvim-814 Light Interceptor",
             "force": 0,
             "titleID": 0,
@@ -13553,10 +13556,11 @@
             "skill": 3,
             "charge": [0],
             "points": 0,
-            "ability_FRA": "<div class='text'></div>",
-            "ability_ENG": "<div class='text'></div>",
+            "ability_FRA": "<div class='text'>Lorsque vous devriez recevoir un jeton épuisement, recevez un jeton concentration à la place.</div>",
+            "ability_ENG": "<div class='text'>When you would receive a deplete token, receive a focus token instead.</div>",
             "slots": [
-                
+                "Talent-piloting",
+                "Talent-leadership"
             ]
         },
         {
@@ -13564,7 +13568,7 @@
             "name_ENG": "Tendir Blue",
             "id": 593,
             "max_per_squad": 1,
-            "faction": "Agents_of_Chaos",
+            "faction": "Separatist_Government",
             "ship": "Mankvim-814 Light Interceptor",
             "force": 0,
             "titleID": 0,
@@ -13573,10 +13577,11 @@
             "skill": 5,
             "charge": [0],
             "points": 0,
-            "ability_FRA": "<div class='text'></div>",
-            "ability_ENG": "<div class='text'></div>",
+            "ability_FRA": "<div class='text'>Lorsque vous défendez ou attaquez, si votre manoeuvre révélée est bleue, alors vous pouvez relancer 1 dé.</div>",
+            "ability_ENG": "<div class='text'>When you defend or perform an attack, if your revealed maneuver is blue, then you may reroll 1 die.</div>",
             "slots": [
-                
+                "Talent-shooting",
+                "Talent-elite"
             ]
         },
         {
@@ -13584,19 +13589,20 @@
             "name_ENG": "Bunt Dantor",
             "id": 594,
             "max_per_squad": 1,
-            "faction": "Agents_of_Chaos",
+            "faction": "Separatist_Government",
             "ship": "Mankvim-814 Light Interceptor",
             "force": 0,
             "titleID": 0,
             "shipId": 111,
             "modify": false,
             "skill": 3,
-            "charge": [0],
+            "charge": [1,"Red","-"],
             "points": 0,
-            "ability_FRA": "<div class='text'></div>",
-            "ability_ENG": "<div class='text'></div>",
+            "ability_FRA": "<div class='text'>Lorsque vous détruisez 1 vaisseau, récupérez 1 <img class='inline-img' src='img/charge.png'>. A initiative 0, si votre charge est active, vous pouvez vous ré-engager.</div>",
+            "ability_ENG": "<div class='text'>When you destroy a ship, recover 1 <img class='inline-img' src='img/charge.png'>. At initiative 0, if your charge is active, you may engage again.</div>",
             "slots": [
-                
+                "Talent-piloting",
+                "Talent-shooting"
             ]
         },
         {
@@ -13604,7 +13610,7 @@
             "name_ENG": "Hunter Droid",
             "id": 595,
             "max_per_squad": 8,
-            "faction": "Agents_of_Chaos",
+            "faction": "Separatist_Government",
             "ship": "Mankvim-814 Light Interceptor",
             "force": 0,
             "titleID": 0,
