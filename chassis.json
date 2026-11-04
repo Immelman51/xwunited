@@ -476,10 +476,10 @@
     "name":"Intuitive Interface",
     "id":43,
     "nbrOfEffects": 1,
-    "effect1_FRA":"<div>(Interface Intuitive) : Après avoir effectué une action ajoutée à votre barre d'action par une amélioration, vous pouvez effectuer une action <img class='inline-img' src='img/Cc W.png'></div>",
+    "effect1_FRA":"<div>(Interface Intuitive) : Après avoir effectué une action ajoutée par une amélioration, recevez un jeton <img class='inline-img' src='img/Cc W.png'></div>",
     "effect2_FRA": "",
     "effect3_FRA": "",
-    "effect1_ENG":"<div>(Intuitive Interface) : After you perform an action added to your action bar by an upgrade, you may perform a <img class='inline-img' src='img/Cc W.png'> action.</div>",
+    "effect1_ENG":"<div>(Intuitive Interface) : After you perform an action added by an upgrade, gain 1 <img class='inline-img' src='img/Cc W.png'> token.</div>",
     "effect2_ENG": "",
     "effect3_ENG": "" 
 },

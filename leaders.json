@@ -166,8 +166,8 @@
      "logistic": 25
      },
      {
-     "leadername_FRA": "!!Dark Tyranus",
-       "leadername_ENG": "!!Darth Tyranus",
+     "leadername_FRA": "Dark Tyranus",
+       "leadername_ENG": "Darth Tyranus",
      "leaderfaction": ["Agents_of_Chaos","",""],
      "leaderid": 15,
      "numberOfFactions": 1,

@@ -2460,7 +2460,7 @@
             "shipId": 12,
 		    "modify": false,
             "skill": 4,
-            "points": 8,
+            "points": 7,
             
             "ability_FRA": "<div class='text'>Lorsque vous effectuez une attaque principale, s’il n’y a pas d’autres vaisseaux alliés à portée 0-2, lancez 1 dé d’attaque supplémentaire.</div>",
             "ability_ENG": "<div class='text'>While you perform a primary attack, if there is no other friendly ships at range 0-2, roll 1 additional attack die.", 
@@ -2481,7 +2481,7 @@
             "shipId": 12,
 		    "modify": false,
             "skill": 3,
-            "points": 7,
+            "points": 6,
             
             "ability_FRA": "<div class='text'>Au début de la phase d’engagement, vous pouvez choisir 1 vaisseau allié à portée 0-2. Dans ce cas, transférez 1 jeton concentration ou évasion de ce vaisseau vers vous.</div>",
             "ability_ENG": "<div class='text'>At the beginning of Engagement Phase, you may choose 1 friendly ship at range 0-2. If you do, transfer 1 focus or evade token from this ship to yourself.</div>",
@@ -2501,7 +2501,7 @@
             "shipId": 12,
 	        "modify": false,
             "skill": 1,
-            "points": 6,
+            "points": 5,
              "ability_FRA": "<div class='text'></div>",
             "ability_ENG": "<div class='text'></div>",
             "slots": []
@@ -3024,7 +3024,7 @@
             "titleID": 0,
             "shipId": 12,
 	        "modify": false,
-            "points": 8,
+            "points": 7,
             
             "ability_FRA": "<div class='text'>Tant que vous effectuez une attaque principale, après l’étape « Neutraliser les résultats », vous pouvez dépenser 1 résultat <img class='inline-img' src='img/crit.png'> pour ajouter 2 résultats <img class='inline-img' src='img/hit.png'> .</div>",
             "ability_ENG": "<div class='text'>While you perform a primary attack, after the 'Neutralize Results' stem, you may spend 1 <img class='inline-img' src='img/crit.png'> result to add 2 <img class='inline-img' src='img/hit.png'> results.</div>",
@@ -8691,7 +8691,7 @@
             "titleID": 0,
             "shipId": 12,
             "skill": 5,
-            "points": 8,
+            "points": 7,
             "ability_FRA": "<div class='text'>Tant que vous défendez ou effectuez une attaque, les dés du vaisseau ennemi ne peuvent pas être modifiés s'il est stressé.</div>",
             "ability_ENG": "<div class='text'>While you defend or attack, the enemy ship dice cannot be modified if this ship is stressed.</div>",
             "slots": [
@@ -8734,7 +8734,7 @@
             "titleID": 0,
             "shipId": 12,
             "skill": 2,
-            "points": 6,
+            "points": 5,
             "ability_FRA": "<div class='text'></div>",
             "ability_ENG": "<div class='text'></div>",
             "slots": [
@@ -12393,7 +12393,7 @@
             "titleID": 0,
             "shipId": 12,
             "skill": 3,
-            "points": 8,
+            "points": 7,
             "ability_FRA": "<div class='text'>Lorsque vous effectuez une attaque principale, s'il y a au moins un autre vaisseau allié à portée 0-1 du défenseur, vous pouvez lancer 1 dé d'attaque supplémentaire</div>",
             "ability_ENG": "<div class='text'>While you perform a primary attack, if there is at least 1 other friendly ship at range 0-1 of the defender, you may roll 1 additional attack die.</div>",
             "slots": [   
@@ -12413,7 +12413,7 @@
             "titleID": 0,
             "shipId": 12,
             "skill": 3,
-            "points": 7,
+            "points": 6,
             "ability_FRA": "<div class='text'>Lorsque vous effectuez une attaque principale, vous pouvez subir un dégat <img class='inline-img' src='img/hit.png'>. Dans ce cas, vous pouvez améliorer jusqu'à 2 dés d'attaque.</div>",
             "ability_ENG": "<div class='text'>While you perform a primary attack, you may suffer a <img class='inline-img' src='img/hit.png'> damage. If you do, you may upgrade up to 2 attack dice.</div>",
             "slots": [
@@ -13639,13 +13639,14 @@
             "titleID": 0,
             "shipId": 106,
             "modify": false,
-            "skill": 0,
+            "skill": 5,
             "charge": [0],
-            "points": 0,
-            "ability_FRA": "<div class='text'></div>",
-            "ability_ENG": "<div class='text'></div>",
+            "points": 8,
+            "ability_FRA": "<div class='text'>Augmentez de 1 la portée des actions de scénario. Lorsque vous effectuez une action de scénario, recevez 1 jeton <img class='inline-img' src='img/Cc W.png'>.</div>",
+            "ability_ENG": "<div class='text'>Increase the range of scenario actions by 1. When you perform a scenario action, gain 1 <img class='inline-img' src='img/Cc W.png'> token.</div>",
             "slots": [
-                
+                "Talent-elite",
+                "Talent-leadership"
             ],
             "modifier_func": [
                 
@@ -13662,13 +13663,14 @@
             "titleID": 0,
             "shipId": 106,
             "modify": false,
-            "skill": 0,
+            "skill": 4,
             "charge": [0],
             "points": 0,
-            "ability_FRA": "<div class='text'></div>",
-            "ability_ENG": "<div class='text'></div>",
+            "ability_FRA": "<div class='text'>Pendant la phase système, vous pouvez dépenser 1 <img class='inline-img' src='img/fo.png'>. Dans ce cas, vous effectuez une action autre que concentration.</div>",
+            "ability_ENG": "<div class='text'>During System Phase, you may spend 1 <img class='inline-img' src='img/fo.png'>. If you do, perform an action other than focus.</div>",
             "slots": [
-                
+                "Force-Base",
+                "Talent-piloting"
             ],
             "modifier_func": [
                 
@@ -13685,13 +13687,13 @@
             "titleID": 0,
             "shipId": 106,
             "modify": false,
-            "skill": 0,
+            "skill": 2,
             "charge": [0],
-            "points": 0,
-            "ability_FRA": "<div class='text'></div>",
-            "ability_ENG": "<div class='text'></div>",
+            "points": 7,
+            "ability_FRA": "<div class='text'>Après qu'un vaisseau allié dans votre <img class='inline-img' src='img/bulls.png'> a défendu, vous pouvez effectuer une attaque bonus.</div>",
+            "ability_ENG": "<div class='text'>After a friendly ship in you <img class='inline-img' src='img/bulls.png'> has defended, you may perform a bonus attack.</div>",
             "slots": [
-                
+                "Talent-shooting"
             ],
             "modifier_func": [
                 
@@ -13708,9 +13710,9 @@
             "titleID": 0,
             "shipId": 106,
             "modify": false,
-            "skill": 0,
+            "skill": 1,
             "charge": [0],
-            "points": 0,
+            "points": 6,
             "ability_FRA": "<div class='text'></div>",
             "ability_ENG": "<div class='text'></div>",
             "slots": [

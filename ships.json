@@ -2943,7 +2943,7 @@
              },
             
              {
-            	"name": "//HH-87 Starhopper",
+            	"name": "HH-87 Starhopper",
                 "name_ENG": "HH_87 Starhopper",
                 "factions": [ "Hutt_Cartel","Agents_of_Chaos" ],
                 "id": 106,
@@ -2966,7 +2966,7 @@
                     [ 0, 0, 1, 0, 0, 3],
                     [ 0, 0, 3, 0, 0, 0]
                 ],
-                "slots": ["Illicit","Calculator"]
+                "slots": ["Illicit","Calculator","Crew"]
             },
              {
           
@@ -3074,7 +3074,7 @@
                  "slots": ["Cannon","Crew","Gunner","Sensor","Modification"]
              },
              {
-            	"name": "//Mankvim-814 Light Interceptor",
+            	"name": "Mankvim-814 Light Interceptor",
                 "name_ENG": "Mankvim-814 Light Interceptor",
                 "factions": [ "Separatist_Government" ],
                 "id": 111,
