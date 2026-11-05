@@ -14585,8 +14585,8 @@
             "skill": 3,
             "points": 7,
             
-            "ability_FRA": "<div class='text'></div>",
-            "ability_ENG": "<div class='text'></div>",
+            "ability_FRA": "<div class='text'>Au début de la phase d'engagement, vous pouvez dépenser un jeton calcul. Dans ce cas, effectuez une action d'occultation.</div>",
+            "ability_ENG": "<div class='text'>At the beginning of Engagement Phase, you may spend 1 calculate token. If you do, perform a cloak action.</div>",
             "slots": [
                "Droid",
                "Talent-piloting"
@@ -14607,13 +14607,13 @@
             "force": 0,
             "titleID": 0,
             "shipId": 110,
-            "skill": 2,
-            "points": 10,
+            "skill": 5,
+            "points": 14,
             
-            "ability_FRA": "<div class='text'></div>",
-            "ability_ENG": "<div class='text'></div>",
+            "ability_FRA": "<div class='text'>Lorsque vous transférez un de vos jetons tractage à un vaisseau à portée 1, vous pouvez lui assigner 2 jetons tractage supplémentaires.</div>",
+            "ability_ENG": "<div class='text'>When you transfer 1 of your tractor tokens to a ship at range 1, you may assign it 2 additionnal tractor tokens.</div>",
             "slots": [
-               
+               "Talent-leadership"
             ]
         },
         {
@@ -14628,13 +14628,13 @@
             "force": 0,
             "titleID": 0,
             "shipId": 110,
-            "skill": 2,
-            "points": 10,
+            "skill": 3,
+            "points": 12,
             
-            "ability_FRA": "<div class='text'></div>",
-            "ability_ENG": "<div class='text'></div>",
+            "ability_FRA": "<div class='text'>Lorsque vous vous renforcez, vous pouvez aussi choisir de vous renforcer à gauche ou à droite.</div>",
+            "ability_ENG": "<div class='text'>When you reinforce, you may also choose to reinforce the left and the right.</div>",
             "slots": [
-               
+               "Talent-piloting"
             ]
         },
         {
@@ -14649,13 +14649,14 @@
             "force": 2,
             "titleID": 0,
             "shipId": 110,
-            "skill": 2,
-            "points": 10,
+            "skill": 4,
+            "points": 13,
             
-            "ability_FRA": "<div class='text'></div>",
-            "ability_ENG": "<div class='text'></div>",
+            "ability_FRA": "<div class='text'>Lorsque vous effectuez une attaque dans votre <img class='inline-img' src='img/Tarc.png'>, vous pouvez dépenser 1 <img class='inline-img' src='img/fo.png'>. Dans ce cas, ajoutez 1 résultat <img class='inline-img' src='img/Fo W.png'>.</div>",
+            "ability_ENG": "<div class='text'>When you perform an attack in your <img class='inline-img' src='img/Tarc.png'>, you may spend 1 <img class='inline-img' src='img/fo.png'>. If you do, add 1 <img class='inline-img' src='img/Fo W.png'> result.</div>",
             "slots": [
-               
+               "Force-Dark",
+               "Talent-shooting"
             ]
         },
          {
@@ -14670,13 +14671,13 @@
             "force": 0,
             "titleID": 0,
             "shipId": 110,
-            "skill": 2,
-            "points": 10,
+            "skill": 3,
+            "points": 12,
             
-            "ability_FRA": "<div class='text'></div>",
-            "ability_ENG": "<div class='text'></div>",
+            "ability_FRA": "<div class='text'>Lorsque vous utilisez votre capacité 'Dispositif Tracteur De Précision', vous pouvez orienter votre <img class='inline-img' src='img/Tarc.png'> vers l'arrière ou ne pas le déplacer. Dans ce cas, recevez 1 jeton stress.</div>",
+            "ability_ENG": "<div class='text'>When you use your 'Pinpoint Tractor Array' ability, you may move your <img class='inline-img' src='img/Tarc.png'> torwards the rear or not moving it at all. If you do, receive 1 stress token.</div>",
             "slots": [
-               
+               "Talent-piloting"
             ]
         },
          {
@@ -14691,8 +14692,8 @@
             "force": 0,
             "titleID": 0,
             "shipId": 110,
-            "skill": 2,
-            "points": 10,
+            "skill": 3,
+            "points": 11,
             
             "ability_FRA": "<div class='text'></div>",
             "ability_ENG": "<div class='text'></div>",
@@ -14768,7 +14769,8 @@
             "ability_FRA": "<div class='text'></div>",
             "ability_ENG": "<div class='text'></div>",
             "slots": [
-               
+               "Talent-elite",
+               "Talent-leadership"
             ]
         },
         {
@@ -14789,7 +14791,7 @@
             "ability_FRA": "<div class='text'></div>",
             "ability_ENG": "<div class='text'></div>",
             "slots": [
-               
+               "Talent-piloting"
             ]
         },
         {
@@ -14801,7 +14803,7 @@
             "faction": "Jedi_Order",
             "ship": "ETA Class Shuttle",
             "charge":[0],
-            "force": 0,
+            "force": 2,
             "titleID": 0,
             "shipId": 98,
             "skill": 3,
@@ -14820,7 +14822,7 @@
             "faction": "Jedi_Order",
             "ship": "ETA Class Shuttle",
             "charge":[0],
-            "force": 0,
+            "force": 2,
             "titleID": 0,
             "shipId": 98,
             "skill": 3,
@@ -14839,7 +14841,7 @@
             "faction": "Jedi_Order",
             "ship": "ETA Class Shuttle",
             "charge":[0],
-            "force": 0,
+            "force": 2,
             "titleID": 0,
             "shipId": 98,
             "skill": 4,
@@ -14858,7 +14860,7 @@
             "faction": "Jedi_Order",
             "ship": "ETA Class Shuttle",
             "charge":[0],
-            "force": 0,
+            "force": 1,
             "titleID": 0,
             "shipId": 98,
             "skill": 5,
