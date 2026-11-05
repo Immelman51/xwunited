@@ -5154,8 +5154,8 @@
              
          },
          {
-            "name_FRA": "Yellow Ace",
-             "name_ENG": "Yellow Ace",
+            "name_FRA": "yellow Ace",
+             "name_ENG": "yellow Ace",
              "id":296,
              "max_per_squad":1,
              "available":true,

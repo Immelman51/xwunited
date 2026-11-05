@@ -206,7 +206,7 @@ const nbrOfLeaderCharges = leaders[lID]['charge'][0];
 console.log(nbrOfLeaderCharges);
 
     switch (leaders[lID]['charge'][1]) {
-    case "Red" : cheminsImagesLeader.push("img/chargestatRed.png");
+    case "red" : cheminsImagesLeader.push("img/chargestatRed.png");
             for(j=0; j<nbrOfLeaderCharges ;j++){ //We display as many charge logos as the number of charges the leader has
                 newcharge = document.createElement('img');
                 newcharge.setAttribute("class","chargeforceimg");
@@ -214,7 +214,7 @@ console.log(nbrOfLeaderCharges);
                 leaderCharge.appendChild(newcharge);
             }
     break;
-    case "Yellow" : cheminsImagesLeader.push("img/chargestat.png");
+    case "yellow" : cheminsImagesLeader.push("img/chargestat.png");
             for(j=0; j<nbrOfLeaderCharges ;j++){ //We display as many charge logos as the number of charges the leader has
                 newcharge = document.createElement('img');
                 newcharge.setAttribute("class","chargeforceimg");

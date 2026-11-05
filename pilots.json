@@ -1942,7 +1942,8 @@
                 
             ],
             "modifier_func": [
-            	["auto_equip","Title",135]
+            	["auto_equip","Title",135],
+                ["change_chassis",0,0]
 
             ]
         },
@@ -1993,7 +1994,8 @@
                 
             ],
             "modifier_func": [
-            	["auto_equip","Title",135]
+            	["auto_equip","Title",135],
+                ["change_chassis",0,0]
                 
             ]
         },
@@ -13596,7 +13598,7 @@
             "shipId": 111,
             "modify": false,
             "skill": 3,
-            "charge": [1,"Red","-"],
+            "charge": [1,"red","-"],
             "points": 0,
             "ability_FRA": "<div class='text'>Lorsque vous détruisez 1 vaisseau, récupérez 1 <img class='inline-img' src='img/charge.png'>. A initiative 0, si votre charge est active, vous pouvez vous ré-engager.</div>",
             "ability_ENG": "<div class='text'>When you destroy a ship, recover 1 <img class='inline-img' src='img/charge.png'>. At initiative 0, if your charge is active, you may engage again.</div>",
@@ -13687,7 +13689,7 @@
             "titleID": 0,
             "shipId": 106,
             "modify": false,
-            "skill": 2,
+            "skill": 3,
             "charge": [0],
             "points": 7,
             "ability_FRA": "<div class='text'>Après qu'un vaisseau allié dans votre <img class='inline-img' src='img/bulls.png'> a défendu, vous pouvez effectuer une attaque bonus.</div>",
@@ -13710,7 +13712,7 @@
             "titleID": 0,
             "shipId": 106,
             "modify": false,
-            "skill": 1,
+            "skill": 3,
             "charge": [0],
             "points": 6,
             "ability_FRA": "<div class='text'></div>",
@@ -13733,13 +13735,13 @@
             "titleID": 0,
             "shipId": 106,
             "modify": false,
-            "skill": 0,
-            "charge": [0],
-            "points": 0,
-            "ability_FRA": "<div class='text'></div>",
-            "ability_ENG": "<div class='text'></div>",
+            "skill": 4,
+            "charge": [1,"red",0],
+            "points": 8,
+            "ability_FRA": "<div class='text'>Au début de la phase d'engagement, vous pouvez choisir un vaisseau à portée 0. Dans ce cas, choisissez une <img class='inline-img' src='img/charge.png'> parmi les améliorations de ce vaisseau et épuisez la. Récupérez 1 <img class='inline-img' src='img/charge.png'> de votre pilote.<br>ACTION : Larguez un 'Largage de Cagaison' (considéré comme un débris) avec le gabari 1<img class='inline-img' src='img/manSt2.png'>.</div>",
+            "ability_ENG": "<div class='text'>At the beginning of Engagment Phase, you may choose a ship at range 0. If you do, choose 1 <img class='inline-img' src='img/charge.png'> among this ship's upgrades and spend it. Recover 1 <img class='inline-img' src='img/charge.png'> from your pilot.<br>ACTION : Drop 1 'Rigged Cargo Chute' (considered as a debris) with the 1<img class='inline-img' src='img/manSt2.png'> template.</div>",
             "slots": [
-                
+                "Talent-piloting"
             ],
             "modifier_func": [
                 
@@ -13753,16 +13755,16 @@
             "modify": false,
 		    "faction": "Hutt_Cartel",
             "ship": "HH-87 Starhopper",
-            "charge":[2,"yellow",0],
+            "charge":[2,"red",0],
             "force": 0,
             "titleID": 0,
             "shipId": 106,
             "skill": 3,
-            "points": 12,
-            "ability_FRA": "<div class='text'>Après avoir entièrement exécuté une manoeuvre de vitesse 3-5, you pouvez dépenser 1 <img class='inline-img' src='img/charge.png'> pour effectuer une action <img class='inline-img' src='img/Sl W.png'>.</div>",
-            "ability_ENG": "<div class='text'>After you fully execute a speed 3-5 maneuver, you may spend 1 <img class='inline-img' src='img/charge.png'> to perform a <img class='inline-img' src='img/Sl W.png'> action.</div>",
+            "points": 8,
+            "ability_FRA": "<div class='text'>Lorsqu'un vaisseau ennemi est détruit, récupérez 1 <img class='inline-img' src='img/charge.png'> de votre pilote. Lorsque vos 2 charges sont actives, lancez 1 dé de plus à chaque fois que vous lancez des dés.</div>",
+            "ability_ENG": "<div class='text'>When an enemy ship is destroyed, recover 1 <img class='inline-img' src='img/charge.png'> from your pilot. When your 2 charges are active, roll 1 additional die each time you roll any dice.</div>",
             "slots": [
-                "Talent-piloting"
+                "Talent-shooting"
                                               
            ]
         },
@@ -13777,13 +13779,13 @@
             "titleID": 0,
             "shipId": 106,
             "modify": false,
-            "skill": 0,
-            "charge": [0],
-            "points": 0,
-            "ability_FRA": "<div class='text'></div>",
-            "ability_ENG": "<div class='text'></div>",
+            "skill": 3,
+            "charge": [2,"yellow",0],
+            "points": 7,
+            "ability_FRA": "<div class='text'>Après avoir entièrement exécuté une manoeuvre de vitesse 3-5, you pouvez dépenser 1 <img class='inline-img' src='img/charge.png'> pour effectuer une action <img class='inline-img' src='img/Sl W.png'>.</div>",
+            "ability_ENG": "<div class='text'>After you fully execute a speed 3-5 maneuver, you may spend 1 <img class='inline-img' src='img/charge.png'> to perform a <img class='inline-img' src='img/Sl W.png'> action.</div>",
             "slots": [
-                
+                "Talent-piloting"
             ],
             "modifier_func": [
                 
@@ -13800,9 +13802,9 @@
             "titleID": 0,
             "shipId": 106,
             "modify": false,
-            "skill": 0,
+            "skill": 1,
             "charge": [0],
-            "points": 0,
+            "points": 6,
             "ability_FRA": "<div class='text'></div>",
             "ability_ENG": "<div class='text'></div>",
             "slots": [
