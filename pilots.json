@@ -14528,18 +14528,23 @@
             "faction": "Agents_of_Chaos",
             "ship": "G9 Rigger Freighter",
             "title": ["Twilight"],
-            "modify": false,
+            "modify": true,
             "charge":[0],
             "force": 0,
             "titleID": 380,
             "shipId": 105,
-            "skill": 2,
-            "points": 10,
+            "skill": 4,
+            "points": 7,
             
             "ability_FRA": "<div class='text'></div>",
             "ability_ENG": "<div class='text'></div>",
             "slots": [
+               "Droid",
+                "Talent-shooting"
                
+            ],
+            "modifier_func": [
+                ["auto_equip","Droid",237]
             ]
         },
         {
@@ -14555,13 +14560,13 @@
             "force": 0,
             "titleID": 380,
             "shipId": 105,
-            "skill": 2,
-            "points": 10,
+            "skill": 3,
+            "points": 8,
             
-            "ability_FRA": "<div class='text'></div>",
-            "ability_ENG": "<div class='text'></div>",
+            "ability_FRA": "<div class='text'>Lorsque vous êtes déclaré comme étant la cible d'une attaque, le vaisseau attaquant reçoit un jeton épuisement et un jeton contrainte.</div>",
+            "ability_ENG": "<div class='text'>When you are declared as the target of an attack, the attacking ship gains 1 deplete and 1 strain tokens.</div>",
             "slots": [
-               
+               "Talent-leadership"
             ]
         },
         {
@@ -14577,13 +14582,17 @@
             "force": 0,
             "titleID": 380,
             "shipId": 105,
-            "skill": 2,
-            "points": 10,
+            "skill": 3,
+            "points": 7,
             
             "ability_FRA": "<div class='text'></div>",
             "ability_ENG": "<div class='text'></div>",
             "slots": [
-               
+               "Droid",
+               "Talent-piloting"
+            ],
+            "modifier_func": [
+                ["auto_equip","Droid",237]
             ]
         },
         {
@@ -14705,12 +14714,17 @@
             "titleID": 380,
             "shipId": 105,
             "skill": 6,
-            "points": 10,
+            "points": 9,
             
-            "ability_FRA": "<div class='text'></div>",
-            "ability_ENG": "<div class='text'></div>",
+            "ability_FRA": "<div class='text'>Après avoir entièrement exécuté une manœuvre, si il y a un vaisseau ennemi dans votre <img class='inline-img' src='img/attackF.png'> à portée 0-1 ou dans votre <img class='inline-img' src='img/bulls.png'>, vous pouvez dépenser 1<img class='inline-img' src='img/fo.png'> pour retirer un marqueur de stress.</div>",
+            "ability_ENG": "<div class='text'>After you fully execute a maneuver, if there is an enemy ship in your <img class='inline-img' src='img/attackF.png'> at range 0-1 or in your <img class='inline-img' src='img/bulls.png'>, you may spend 1 <img class='inline-img' src='img/fo.png'> to remove 1 stress token.</div>",
             "slots": [
-               
+                "Talent-elite",
+                "Talent-piloting",
+                "Force-Base",
+                "Force-Light",
+                "Force-Dark"
+                
             ]
         },
         {
@@ -14727,12 +14741,13 @@
             "titleID": 380,
             "shipId": 105,
             "skill": 3,
-            "points": 10,
+            "points": 8,
             
-            "ability_FRA": "<div class='text'></div>",
-            "ability_ENG": "<div class='text'></div>",
+            "ability_FRA": "<div class='text'><img class='inline-img' src='img/forcestat.png'> Après avoir entièrement exécuté une manoeuvre, vous pouvez choisir un vaisseau allié à portée 0-1 et dépenser 1 <img class='inline-img' src='img/fo.png'>. Ce vaisseau peut effectuer une action, même s'il est stressé.</div>",
+            "ability_ENG": "<div class='text'><img class='inline-img' src='img/forcestat.png'> After you fully execute a maneuver, you may choose a friendly ship at range 0-1 and spend 1 <img class='inline-img' src='img/fo.png'>. That ship may perform an action, even if it is stressed.</div>",
             "slots": [
-               
+                "Talent-elite",
+                "Force-Base"
             ]
         },
         {
