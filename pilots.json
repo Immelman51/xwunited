@@ -14766,8 +14766,8 @@
             "skill": 4,
             "points": 11,
             
-            "ability_FRA": "<div class='text'>Lorsqu'un vaisseau allié est détruit (retiré de la partie) suite à une attaque, si l'attaquant se trouve dans votre #Tarc#, les vaisseaux alliés à portée 0-2 de l'attaquant peuvent le vérouiller. </div>",
-            "ability_ENG": "<div class='text'>When a friendly ship is destroyed (removed frome the game) after an attack, if the attacking ship is in your #Tarc#, then friendly ships at range 0-2 of the attacker may acquire locks on him.</div>",
+            "ability_FRA": "<div class='text'>Lorsqu'un vaisseau allié est détruit (retiré de la partie) suite à une attaque, si l'attaquant se trouve dans votre <img class='inline-img' src='img/Tarc.png'>, les vaisseaux alliés à portée 0-2 de l'attaquant peuvent le vérouiller. </div>",
+            "ability_ENG": "<div class='text'>When a friendly ship is destroyed (removed frome the game) after an attack, if the attacking ship is in your <img class='inline-img' src='img/Tarc.png'>, then friendly ships at range 0-2 of the attacker may acquire locks on him.</div>",
             "slots": [
                "Talent-elite",
                "Talent-leadership"
@@ -14788,8 +14788,8 @@
             "skill": 2,
             "points": 10,
             
-            "ability_FRA": "<div class='text'>Lorsque vous exécutez partiellement une manoeuvre, si vous êtes renforcé vers l'avant, vous pouvez choisir un vaisseau dans votre #Farc# à portée 0 et subir un dégat #hit#. Dans ce cas, ce vaisseau subit 1 dégat #hit#.</div>",
-            "ability_ENG": "<div class='text'>When you partially execute a maneuver, if you are reinforced to the front, you may choose a ship in your #Farc# at range 0 and suffer 1 #hit# damage. If you do, this ship suffers 1 #hit# damage.</div>",
+            "ability_FRA": "<div class='text'>Lorsque vous exécutez partiellement une manoeuvre, si vous êtes renforcé vers l'avant, vous pouvez choisir un vaisseau dans votre <img class='inline-img' src='img/Farc.png'> à portée 0 et subir un dégat <img class='inline-img' src='img/hit.png'>. Dans ce cas, ce vaisseau subit 1 dégat <img class='inline-img' src='img/hit.png'>.</div>",
+            "ability_ENG": "<div class='text'>When you partially execute a maneuver, if you are reinforced to the front, you may choose a ship in your <img class='inline-img' src='img/Farc.png'> at range 0 and suffer 1 <img class='inline-img' src='img/hit.png'> damage. If you do, this ship suffers 1 <img class='inline-img' src='img/hit.png'> damage.</div>",
             "slots": [
                "Talent-piloting"
             ]
@@ -14808,12 +14808,12 @@
             "shipId": 98,
             "skill": 3,
             "points": 11,
-            "ability_FRA": "",
-            "ability_ENG": "",
+            "ability_FRA": "<div class='text'>Lorsque vous effectuez une action <img class='inline-img' src='img/Co W.png'> rouge, vous pouvez la considérer comme violette à la place.</div>",
+            "ability_ENG": "<div class='text'>When you perform a red <img class='inline-img' src='img/Co W.png'> action, you may consider it as purple instead.</div>",
             "slots": [
                 "Force-light",
                 "Force-Base",
-                "Talent-shooting"   
+                "Talent-leadership"   
             ]
         },{
             "name_FRA": "Depa Billaba",
@@ -14829,12 +14829,12 @@
             "shipId": 98,
             "skill": 3,
             "points": 11,
-            "ability_FRA": "",
-            "ability_ENG": "",
+            "ability_FRA": "<div class='text'>Lorsqu'un vaisseau ennemi dans votre <img class='inline-img' src='img/Farc.png'> attaque, vous pouvez dépenser 1 <img class='inline-img' src='img/fo.png'>. Dans ce cas, il reçoit 1 jetons épuisement.</div>",
+            "ability_ENG": "<div class='text'>When an enemy ship in your <img class='inline-img' src='img/Farc.png'> performs an attack, you may spend 1 <img class='inline-img' src='img/fo.png'>. If you do, it gains 1 deplete token.</div>",
             "slots": [
                 "Force-light",
                 "Force-base",
-                "Talent-piloting"   
+                "Talent-shooting"   
             ]
         },{
             "name_FRA": "Saesee Tiin",
@@ -14850,12 +14850,12 @@
             "shipId": 98,
             "skill": 4,
             "points": 11,
-            "ability_FRA": "Après qu’un vaisseau allié à portée 0-2 a révélé son cadran, vous pouvez dépenser 1 #fo#. Dans ce cas, réglez son cadran sur une autre manœuvre de même vitesse et de même difficulté.",
-            "ability_ENG": "After a friendly ship at range 0-2 reveals its dial, you may spend 1 #fo#. If you do, set its dial to another maneuver of the same speed and difficulty.",
+            "ability_FRA": "<div class='text'>Après qu’un vaisseau allié à portée 0-2 a révélé son cadran, vous pouvez dépenser 1 <img class='inline-img' src='img/fo.png'>. Dans ce cas, réglez son cadran sur une autre manœuvre de même vitesse et de même difficulté.</div>",
+            "ability_ENG": "<div class='text'>After a friendly ship at range 0-2 reveals its dial, you may spend 1 <img class='inline-img' src='img/fo.png'>. If you do, set its dial to another maneuver of the same speed and difficulty.</div>",
             "slots": [
                 "Force-light",
                 "Force-base",
-                "Talent-leadership"   
+                "Talent-piloting"   
             ]
         },{
             "name_FRA": "Rana",
@@ -14865,14 +14865,14 @@
             "modify": false,
             "faction": "Jedi_Order",
             "ship": "ETA Class Shuttle",
-            "charge":[0],
+            "charge":[2,"yellow","0"],
             "force": 1,
             "titleID": 0,
             "shipId": 98,
             "skill": 5,
             "points": 12,
-            "ability_FRA": "",
-            "ability_ENG": "",
+            "ability_FRA": "<div class='text'>Avant de lancer vos dés de défense, vous devez si possible dépenser 1 <img class='inline-img' src='img/charge.png'>. Dans ce cas, ne lancez pas les dés, et ajoutez 2 résultats <img class='inline-img' src='img/Ev W.png'>.</div>",
+            "ability_ENG": "<div class='text'>Before rolling defense dice, you must spend, if able, 1 <img class='inline-img' src='img/charge.png'>. If you do, don't roll any dice, and add 1 <img class='inline-img' src='img/Ev W.png'> results.</div>",
             "slots": [
                 "Force-base",
                 "Force-light",
