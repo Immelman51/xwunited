@@ -14536,8 +14536,8 @@
             "skill": 4,
             "points": 7,
             
-            "ability_FRA": "<div class='text'></div>",
-            "ability_ENG": "<div class='text'></div>",
+            "ability_FRA": "<div class='text'>Au début de la phase d'engagement, vous pouvez dépenser 1 jeton calcul. Dans ce cas, choississez un vaisseau à portée 1 dans votre arc de tir. Ce vaisseau reçoit un jeton contrainte ou épuisement de votre choix.</div>",
+            "ability_ENG": "<div class='text'>At the begining of Engagement Phase, you may spend 1 calculate token. If you do, choose a ship in your firing arc at range 1. This ship receives 1 strain ou deplete token of your choice.</div>",
             "slots": [
                "Droid",
                 "Talent-shooting"
