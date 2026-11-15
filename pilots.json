@@ -10703,7 +10703,7 @@
             "Force-Dark"
         ],
         "modifier_func": [
-                ["auto_equip","Title",305]                       
+                ["auto_equip","Title",307]                       
             ]
         },
         {
@@ -10730,7 +10730,7 @@
             "Force-Dark"
         ],
         "modifier_func": [
-                ["auto_equip","Title",305]                       
+                ["auto_equip","Title",307]                       
             ]
         },
         {
@@ -10755,7 +10755,7 @@
             "Talent-piloting"             
         ],
         "modifier_func": [
-                ["auto_equip","Title",305]                       
+                ["auto_equip","Title",307]                       
             ]
         },
         {
