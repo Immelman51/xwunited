@@ -2859,7 +2859,7 @@
                     [ 0, 0, 2, 0, 0, 0, 0, 0, 0, 0]
                     
                 ],
-                "slots": ["Torpedo","Calculator"]
+                "slots": ["Torpedo","Calculator","Modification"]
             },
             {
             	"name": "Zenuas 33 Umbaran Starfighter",

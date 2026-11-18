@@ -5553,7 +5553,7 @@
             "id": 235,
             "max_per_squad": 1,
             "faction": "Heroes_of_the_Resistance",
-            "ship": "Resistance Transport Pod",
+            "ship": "Resistance Transport u",
             "charge":[0],
             "force": 0,
             "titleID": 0,
@@ -7278,7 +7278,7 @@
             "charge":[0],
             "force": 0,
             "titleID": 0,
-            "shipId": 58,
+            "shipId": 52,
             "skill": 1,
             "points": 8,
             "ability_FRA": "<div class='text'></div>",
@@ -7297,7 +7297,7 @@
             "charge":[0],
             "force": 0,
             "titleID": 0,
-            "shipId": 58,
+            "shipId": 52,
             "skill": 5,
             "points": 10,
             "ability_FRA": "<div class='text'>Lorsque vous défendez ou effectuez une attaque principale, si la vitesse de votre manoeuvre révélée est plus grande que celle de l'ennemi, lancez 1 dé supplémentaire.</div>",
@@ -7318,7 +7318,7 @@
             "charge":[0],
             "force": 0,
             "titleID": 0,
-            "shipId": 58,
+            "shipId": 52,
             "skill": 3,
             "points": 9,
             "ability_FRA": "<div class='text'>Lorsque vous défendez ou attaquez, si la vitesse de votre manoeuvre révélée est plus grande que celle de l'ennemi, vous pouvez relancer vos résultats vierges.</div>",
@@ -7338,7 +7338,7 @@
             "charge":[0],
             "force": 0,
             "titleID": 0,
-            "shipId": 58,
+            "shipId": 52,
             "skill": 3,
             "points": 10,
             "ability_FRA": "<div class='text'>Lorsque vous défendez ou attaquez, si la vitesse de votre manoeuvre révélée est la même que celle de l'ennemi, les dés de ce vaisseau ne peuvent pas être modifiés.</div>",
@@ -7358,7 +7358,7 @@
             "charge":[0],
             "force": 1,
             "titleID": 0,
-            "shipId": 58,
+            "shipId": 52,
             "skill": 4,
             "points": 9,
             "ability_FRA": "<div class='text'>Avant de révéler votre manoeuvre, vous pouvez dépenser 1 <img class='inline-img' src='img/fo.png'> pour faire un tonneau (ce n'est pas une action).</div>",
@@ -10703,7 +10703,7 @@
             "Force-Dark"
         ],
         "modifier_func": [
-                ["auto_equip","Title",307]                       
+                ["auto_equip","Title",305]                       
             ]
         },
         {
@@ -10730,7 +10730,7 @@
             "Force-Dark"
         ],
         "modifier_func": [
-                ["auto_equip","Title",307]                       
+                ["auto_equip","Title",305]                       
             ]
         },
         {
@@ -10755,7 +10755,7 @@
             "Talent-piloting"             
         ],
         "modifier_func": [
-                ["auto_equip","Title",307]                       
+                ["auto_equip","Title",305]                       
             ]
         },
         {
@@ -11779,7 +11779,7 @@
             "charge": [2,"yellow","+"],
             "force": 0,
             "titleID": 319,
-            "shipId": 4,
+            "shipId": 1,
             "skill": 4,
             "points": 9,
             "ability_FRA": "<div class='text'>Tant qu'un vaisseau ennemi à portée 1-3 défend, avant de lancer les dés d'attaque vous pouvez dépenser 1 <img class='inline-img' src='img/charge.png'> et choisir un vaisseau allié à portée 0-1 du défenseur. Dans ce cas, les dés de défense ne peuvent pas être modifiés lors de cette attaque et le vaisseau allié choisi gagne 1 marqueur de contrainte.</div>",
@@ -11805,7 +11805,7 @@
             "charge":[0],
             "force": 0,
             "titleID": 319,
-            "shipId": 4,
+            "shipId": 1,
             "skill": 4,
             "points": 8,
             "ability_FRA": "<div class='text'>Avant de vous engager, vous pouvez choisir 1 vaisseau ennemi dans votre <img class='inline-img' src='img/attackF.png'> à portée 0-1. Dans ce cas, il gagne 1 marqueur d'épuisement ou de contrainte (vous choisissez) à moins qu'il ne choisisse de retirer 1 marqueur vert.</div>",
@@ -11831,7 +11831,7 @@
             "charge":[0],
             "force": 0,
             "titleID": 319,
-            "shipId": 4,
+            "shipId": 1,
             "skill": 3,
             "points": 7,
             "ability_FRA": "<div class='text'>Après avoir entièrement exécuté une manœuvre, vous pouvez verrouiller un vaisseau ennemi situé dans votre <img class='inline-img' src='img/bulls.png'>.</div>",
@@ -11857,7 +11857,7 @@
             "charge":[0],
             "force": 0,
             "titleID": 319,
-            "shipId": 4,
+            "shipId": 1,
             "skill": 3,
             "points": 8,
             "ability_FRA": "<div class='text'>Tant que vous avez 2 jetons stress ou moins, vous pouvez effectuer des actions blanches.<br>Après avoir reçu un jeton stress, vous pouvez effectuer une action blanche, si possible.</div>",
@@ -11882,7 +11882,7 @@
             "charge":[0],
             "force": 0,
             "titleID": 0,
-            "shipId": 4,
+            "shipId": 1,
             "skill": 3,
             "points": 5,
             "ability_FRA": "<div class='text'></div>",
@@ -13557,7 +13557,7 @@
             "modify": false,
             "skill": 3,
             "charge": [0],
-            "points": 0,
+            "points": 10,
             "ability_FRA": "<div class='text'>Lorsque vous devriez recevoir un jeton épuisement, recevez un jeton concentration à la place.</div>",
             "ability_ENG": "<div class='text'>When you would receive a deplete token, receive a focus token instead.</div>",
             "slots": [
@@ -13578,7 +13578,7 @@
             "modify": false,
             "skill": 5,
             "charge": [0],
-            "points": 0,
+            "points": 11,
             "ability_FRA": "<div class='text'>Lorsque vous défendez ou attaquez, si votre manoeuvre révélée est bleue, alors vous pouvez relancer 1 dé.</div>",
             "ability_ENG": "<div class='text'>When you defend or perform an attack, if your revealed maneuver is blue, then you may reroll 1 die.</div>",
             "slots": [
@@ -13599,7 +13599,7 @@
             "modify": false,
             "skill": 3,
             "charge": [1,"red","-"],
-            "points": 0,
+            "points": 9,
             "ability_FRA": "<div class='text'>Lorsque vous détruisez 1 vaisseau, récupérez 1 <img class='inline-img' src='img/charge.png'>. A initiative 0, si votre charge est active, vous pouvez vous ré-engager.</div>",
             "ability_ENG": "<div class='text'>When you destroy a ship, recover 1 <img class='inline-img' src='img/charge.png'>. At initiative 0, if your charge is active, you may engage again.</div>",
             "slots": [
@@ -13620,7 +13620,7 @@
             "modify": true,
             "skill": 3,
             "charge": [0],
-            "points": 0,
+            "points": 8,
             "ability_FRA": "<div class='text'></div>",
             "ability_ENG": "<div class='text'></div>",
             "slots": [
@@ -13667,7 +13667,7 @@
             "modify": false,
             "skill": 4,
             "charge": [0],
-            "points": 0,
+            "points": 9,
             "ability_FRA": "<div class='text'>Pendant la phase système, vous pouvez dépenser 1 <img class='inline-img' src='img/fo.png'>. Dans ce cas, vous effectuez une action autre que concentration.</div>",
             "ability_ENG": "<div class='text'>During System Phase, you may spend 1 <img class='inline-img' src='img/fo.png'>. If you do, perform an action other than focus.</div>",
             "slots": [
@@ -14766,8 +14766,8 @@
             "skill": 4,
             "points": 11,
             
-            "ability_FRA": "<div class='text'>Lorsqu'un vaisseau allié est détruit (retiré de la partie) suite à une attaque, si l'attaquant se trouve dans votre <img class='inline-img' src='img/Tarc.png'>, les vaisseaux alliés à portée 0-2 de l'attaquant peuvent le vérouiller. </div>",
-            "ability_ENG": "<div class='text'>When a friendly ship is destroyed (removed frome the game) after an attack, if the attacking ship is in your <img class='inline-img' src='img/Tarc.png'>, then friendly ships at range 0-2 of the attacker may acquire locks on him.</div>",
+            "ability_FRA": "<div class='text'>Lorsqu'un vaisseau allié est détruit (retiré de la partie) suite à une attaque, si l'attaquant se trouve dans votre #Tarc#, les vaisseaux alliés à portée 0-2 de l'attaquant peuvent le vérouiller. </div>",
+            "ability_ENG": "<div class='text'>When a friendly ship is destroyed (removed frome the game) after an attack, if the attacking ship is in your #Tarc#, then friendly ships at range 0-2 of the attacker may acquire locks on him.</div>",
             "slots": [
                "Talent-elite",
                "Talent-leadership"
@@ -14788,8 +14788,8 @@
             "skill": 2,
             "points": 10,
             
-            "ability_FRA": "<div class='text'>Lorsque vous exécutez partiellement une manoeuvre, si vous êtes renforcé vers l'avant, vous pouvez choisir un vaisseau dans votre <img class='inline-img' src='img/Farc.png'> à portée 0 et subir un dégat <img class='inline-img' src='img/hit.png'>. Dans ce cas, ce vaisseau subit 1 dégat <img class='inline-img' src='img/hit.png'>.</div>",
-            "ability_ENG": "<div class='text'>When you partially execute a maneuver, if you are reinforced to the front, you may choose a ship in your <img class='inline-img' src='img/Farc.png'> at range 0 and suffer 1 <img class='inline-img' src='img/hit.png'> damage. If you do, this ship suffers 1 <img class='inline-img' src='img/hit.png'> damage.</div>",
+            "ability_FRA": "<div class='text'>Lorsque vous exécutez partiellement une manoeuvre, si vous êtes renforcé vers l'avant, vous pouvez choisir un vaisseau dans votre #Farc# à portée 0 et subir un dégat #hit#. Dans ce cas, ce vaisseau subit 1 dégat #hit#.</div>",
+            "ability_ENG": "<div class='text'>When you partially execute a maneuver, if you are reinforced to the front, you may choose a ship in your #Farc# at range 0 and suffer 1 #hit# damage. If you do, this ship suffers 1 #hit# damage.</div>",
             "slots": [
                "Talent-piloting"
             ]
@@ -14808,12 +14808,12 @@
             "shipId": 98,
             "skill": 3,
             "points": 11,
-            "ability_FRA": "<div class='text'>Lorsque vous effectuez une action <img class='inline-img' src='img/Co W.png'> rouge, vous pouvez la considérer comme violette à la place.</div>",
-            "ability_ENG": "<div class='text'>When you perform a red <img class='inline-img' src='img/Co W.png'> action, you may consider it as purple instead.</div>",
+            "ability_FRA": "",
+            "ability_ENG": "",
             "slots": [
                 "Force-light",
                 "Force-Base",
-                "Talent-leadership"   
+                "Talent-shooting"   
             ]
         },{
             "name_FRA": "Depa Billaba",
@@ -14829,12 +14829,12 @@
             "shipId": 98,
             "skill": 3,
             "points": 11,
-            "ability_FRA": "<div class='text'>Lorsqu'un vaisseau ennemi dans votre <img class='inline-img' src='img/Farc.png'> attaque, vous pouvez dépenser 1 <img class='inline-img' src='img/fo.png'>. Dans ce cas, il reçoit 1 jetons épuisement.</div>",
-            "ability_ENG": "<div class='text'>When an enemy ship in your <img class='inline-img' src='img/Farc.png'> performs an attack, you may spend 1 <img class='inline-img' src='img/fo.png'>. If you do, it gains 1 deplete token.</div>",
+            "ability_FRA": "",
+            "ability_ENG": "",
             "slots": [
                 "Force-light",
                 "Force-base",
-                "Talent-shooting"   
+                "Talent-piloting"   
             ]
         },{
             "name_FRA": "Saesee Tiin",
@@ -14850,12 +14850,12 @@
             "shipId": 98,
             "skill": 4,
             "points": 11,
-            "ability_FRA": "<div class='text'>Après qu’un vaisseau allié à portée 0-2 a révélé son cadran, vous pouvez dépenser 1 <img class='inline-img' src='img/fo.png'>. Dans ce cas, réglez son cadran sur une autre manœuvre de même vitesse et de même difficulté.</div>",
-            "ability_ENG": "<div class='text'>After a friendly ship at range 0-2 reveals its dial, you may spend 1 <img class='inline-img' src='img/fo.png'>. If you do, set its dial to another maneuver of the same speed and difficulty.</div>",
+            "ability_FRA": "Après qu’un vaisseau allié à portée 0-2 a révélé son cadran, vous pouvez dépenser 1 #fo#. Dans ce cas, réglez son cadran sur une autre manœuvre de même vitesse et de même difficulté.",
+            "ability_ENG": "After a friendly ship at range 0-2 reveals its dial, you may spend 1 #fo#. If you do, set its dial to another maneuver of the same speed and difficulty.",
             "slots": [
                 "Force-light",
                 "Force-base",
-                "Talent-piloting"   
+                "Talent-leadership"   
             ]
         },{
             "name_FRA": "Rana",
@@ -14865,14 +14865,14 @@
             "modify": false,
             "faction": "Jedi_Order",
             "ship": "ETA Class Shuttle",
-            "charge":[2,"yellow","0"],
+            "charge":[0],
             "force": 1,
             "titleID": 0,
             "shipId": 98,
             "skill": 5,
             "points": 12,
-            "ability_FRA": "<div class='text'>Avant de lancer vos dés de défense, vous devez si possible dépenser 1 <img class='inline-img' src='img/charge.png'>. Dans ce cas, ne lancez pas les dés, et ajoutez 2 résultats <img class='inline-img' src='img/Ev W.png'>.</div>",
-            "ability_ENG": "<div class='text'>Before rolling defense dice, you must spend, if able, 1 <img class='inline-img' src='img/charge.png'>. If you do, don't roll any dice, and add 1 <img class='inline-img' src='img/Ev W.png'> results.</div>",
+            "ability_FRA": "",
+            "ability_ENG": "",
             "slots": [
                 "Force-base",
                 "Force-light",
