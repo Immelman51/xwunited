@@ -653,10 +653,10 @@
  "name":"Intercept Booster",
  "id":59,
  "nbrOfEffects":1,
- "effect1_FRA":"<img class='chargeforceimg' src='img/chargestat.png'><img class='chargeforceimg' src='img/chargestat.png'><img class='chargeforceimg' src='img/chargeminus.png'><div>(Propulseur d'Interception) : Tant que vous avez une charge active, vous pouvez effectuer les actions : <img class='inline-img' src='Sl W.png><img class='inline-img' src='fleche.png><img class='inline-img' src='Lo W.png>Rouge</div>",
+ "effect1_FRA":"<img class='chargeforceimg' src='img/chargestat.png'><img class='chargeforceimg' src='img/chargestat.png'><img class='chargeforceimg' src='img/chargeminus.png'><div>(Propulseur d'Interception) : Tant que vous avez une charge active, vous pouvez effectuer les actions : <img class='inline-img' src='Sl W.png'><img class='inline-img' src='fleche.png'><img class='inline-img' src='Lo W.png'>Rouge</div>",
  "effect2_FRA": "",
  "effect3_FRA": "",
-    "effect1_ENG":"<img class='chargeforceimg' src='img/chargestat.png'><img class='chargeforceimg' src='img/chargestat.png'><img class='chargeforceimg' src='img/chargeminus.png'><div>(Intercept Booster) : While you have an active charge, you may perform the actions: <img class='inline-img' src='Sl W.png><img class='inline-img' src='fleche.png>Red<img class='inline-img' src='Lo W.png></div>",
+    "effect1_ENG":"<img class='chargeforceimg' src='img/chargestat.png'><img class='chargeforceimg' src='img/chargestat.png'><img class='chargeforceimg' src='img/chargeminus.png'><div>(Intercept Booster) : While you have an active charge, you may perform the actions: <img class='inline-img' src='Sl W.png'><img class='inline-img' src='fleche.png'>Red<img class='inline-img' src='Lo W.png'></div>",
     "effect2_ENG": "",
     "effect3_ENG": ""
 },
