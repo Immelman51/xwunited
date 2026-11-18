@@ -674,13 +674,13 @@
 {
  "name":"Shield Struts",
  "id":61,
- "nbrOfEffects":2,
- "effect1_FRA":"(Boucliers Rétractables) En phase système, vous pouvez changer de configuration: ",
- "effect2_FRA": "<img class='inline-img' src='img/charge.png'><div>(Active) Lorsque vous défendez, considérez que vous êtes renforcé.</div>",
- "effect3_FRA": "<img class='inline-img' src='img/charge.png'><div>(Inactive) Lorsque vous attaquez, lancez 2 dés supplémentaires.<div>",
- "effect1_ENG":"(Shield Struts) : ",
- "effect2_ENG":  "<img class='inline-img' src='img/charge.png'><div>(Active) When you defend, consider yourself as reinforced.</div>",
- "effect3_ENG": "<img class='inline-img' src='img/charge.png'> (Inactive) When you attack, roll 2 additional dice."
+ "nbrOfEffects":1,
+ "effect1_FRA":"(Boucliers Rétractables) Lorsque votre manoeuvre révélée est bleue, considérez que vous êtes renforcé.<br>Lorsque votre manoeuvre révélée est rouge, vous lancez 2 dés d'attaque supplémentaires lorsque vous attaquez.",
+ "effect2_FRA": "",
+ "effect3_FRA": "",
+ "effect1_ENG":"(Shield Struts) : When your revealed maneuver is blue, consider yourself as reinforced.<br>When your revealed maneuver is red, roll 2 additional attack dice when you attack.",
+ "effect2_ENG":  "",
+ "effect3_ENG": ""
 
 },
 {
