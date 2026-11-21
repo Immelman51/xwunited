@@ -241,7 +241,7 @@
                     [ 0, 0, 2, 0, 0]
                 ],
                 "base": "small",
-                "slots": ["Crew", "Payload", "Turret", "Modification", "Calculator"]
+                "slots": ["Crew", "Turret", "Illicit"]
             },
             {
             
@@ -322,7 +322,7 @@
                     [ 0, 0, 2, 0, 0, 0],
                     [ 0, 0, 0, 0, 0, 3]
                 ],
-                "slots": ["Torpedo", "Missile", "Payload", "Gunner", "Tie mod"]
+                "slots": ["Torpedo","Payload", "Gunner", "Tie mod"]
             },
             {
           
