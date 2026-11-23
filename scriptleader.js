@@ -42,10 +42,10 @@ async function initializeData() {
         console.log(leaders);
         for (let i = 0; i < leaders.length; i++) {
             if(leaders[i]["leaderfaction"][1] === ""){
-                menuLeader.push(leaders[i]["leadername_"+language]+'['+leaders[i]["leaderfaction"][0]+"]");
+                menuLeader.push(leaders[i]["leadername_"+language]+' ['+leaders[i]["leaderfaction"][0]+"]");
             }
             if(leaders[i]["leaderfaction"][1] !== ""){
-                menuLeader.push(leaders[i]["leadername_"+language]+'['+leaders[i]["leaderfaction_mini"]+"]");
+                menuLeader.push(leaders[i]["leadername_"+language]+' ['+leaders[i]["leaderfaction_mini"]+"]");
             }
             
         }
