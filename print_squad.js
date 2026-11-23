@@ -590,10 +590,13 @@ function displayPilot(x){
                 case "red" :
                     newcharge.setAttribute("src","img/chargestatRed.png");
                     break;
-                case "AddCalcAction" :
-                    newcharge.setAttribute("src","img/AddCalcAction.png");
+                case "0" : //no charges to display
                     break;
-                default :
+               // case "AddCalcAction" :
+               //     newcharge.setAttribute("src","img/AddCalcAction.png");
+               //     break;
+                default : //allows to display addxxxAction.png icons when an action is added by the upgrade
+                    newcharge.setAttribute("src","img/"+upgrades[uid]['charge'][1]+".png");
                     break;
             }
             mdivupg.appendChild(newcharge);
@@ -613,8 +616,12 @@ function displayPilot(x){
 
                     mdivupg.appendChild(recurring);
                     break;
-                default :
-                break;
+                case "" :
+                    break;    
+                default : //allows to display linkxxxAction.png when a linked action is added by the upgrade
+                    recurring.setAttribute("class","chargeforceimg");
+                    recurring.setAttribute("src","img/"+upgrades[uid]['charge'][2]+".png");
+                    break;
             
         }
         for(j=0; j<nbrforce; j++){

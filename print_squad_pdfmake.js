@@ -287,13 +287,36 @@ function buildUpgradeCell(uid, x, context) {
 
   const nbrcharge = upgrades[uid]['charge'][0];
   for (let j = 0; j < nbrcharge; j++) {
-    columnItems.push({ image: 'img/chargestat.png', width: cm(1.5) });
+    switch (upgrades[uid]['charge'][1]){
+      case "yellow":
+        columnItems.push({ image: 'img/chargestat.png', width: cm(1.5) });
+        break;
+      case "red" : 
+        columnItems.push({ image: 'img/chargestatRed.png', width: cm(1.5) });
+        break;
+      case "" :
+        break;
+      default : 
+        columnItems.push({ image: 'img/'+upgrades[uid]['charge'][1]+'.png', width: cm(1.5) }); 
+        break;
+    }  
   }
-  if (upgrades[uid]['charge'][1] === '+') {
-    columnItems.push({ image: 'img/chargeplus.png', width: cm(0.3) });
-  } else if (upgrades[uid]['charge'][1] === '-') {
-    columnItems.push({ image: 'img/chargeminus.png', width: cm(0.3) });
+
+  switch (upgrades[uid]['charge'][1]) {
+    case '+':
+      columnItems.push({ image: 'img/chargeplus.png', width: cm(0.3) });
+      break;
+    case '-':
+      columnItems.push({ image: 'img/chargeminus.png', width: cm(0.3) });
+      break;
+    case '':
+      break;
+    default:
+       columnItems.push({ image: 'img/'+upgrades[uid]['charge'][2]+'.png', width: cm(1.5) }); 
+       break;
   }
+
+  
   for (let j = 0; j < upgrades[uid]['force']; j++) {
     columnItems.push({ image: 'img/forcestat.png', width: cm(1.5) });
   }
