@@ -431,10 +431,10 @@
     "name":"Repulsorlift Stabilizers",
     "id":39,
     "nbrOfEffects": 1,
-    "effect1_FRA":"(Stabilisateurs de Répulseurs) Après avoir révélé une manoeuvre <img class='inline-img' src='img/manTl2.png'> / <img class='inline-img' src='img/manBl2.png'> / <img class='inline-img' src='img/manBr2.png'> / <img class='inline-img' src='img/manTl2.png'>, vous pouvez effectuer cette manoeuvre comme un dérapage, en augmentant sa difficulté. Dans ce cas, recevez 1 jeton contrainte.<div>",
+    "effect1_FRA":"(Stabilisateurs de Répulseurs) Après avoir révélé une manoeuvre <img class='inline-img' src='img/manTl2.png'> / <img class='inline-img' src='img/manBl2.png'> / <img class='inline-img' src='img/manBr2.png'> / <img class='inline-img' src='img/manTr2.png'>, vous pouvez effectuer cette manoeuvre comme un dérapage, en augmentant sa difficulté. Dans ce cas, recevez 1 jeton contrainte.<div>",
     "effect2_FRA": "",
     "effect3_FRA": "",
-    "effect1_ENG":"(Repulsorlift Stabilizers) : After you reveal a <img class='inline-img' src='img/manTl2.png'> / <img class='inline-img' src='img/manBl2.png'> / <img class='inline-img' src='img/manBr2.png'> / <img class='inline-img' src='img/manTl2.png'> maneuver, you may perform that maneuver as a sideslip, increasing its difficulty. If you do, receive 1 strain token.</div>",
+    "effect1_ENG":"(Repulsorlift Stabilizers) : After you reveal a <img class='inline-img' src='img/manTl2.png'> / <img class='inline-img' src='img/manBl2.png'> / <img class='inline-img' src='img/manBr2.png'> / <img class='inline-img' src='img/manTr2.png'> maneuver, you may perform that maneuver as a sideslip, increasing its difficulty. If you do, receive 1 strain token.</div>",
     "effect2_ENG": "",
     "effect3_ENG": ""
 
