@@ -3030,11 +3030,11 @@
                  "name": "Logistic Supply",
                  "factions": ["Rebel_Alliance","Partisans","Phoenix_Cell","Imperial_Academy","ISB","Imperial_Elite_Squadrons","Pirates_and_Smugglers","Bounty_Hunters_Guild","Hutt_Cartel","Jedi_Order","Clone_Army","Naboo_Defense_Force","Trade_Federation","Separatist_Government","Agents_of_Chaos","First_Order_Vanguard","First_Order_Specialists","Imperial_Remnants","New_Republic_Patrol","Colossus","Heroes_of_the_Resistance","Mandalorian_Clans","Crime_Syndicates","Black_Sun"],
                  "id": 109,
-                 "attack": [0],
+                 "attack": [["0",0]],
                  "agility": 0,
                  "hull": 1,
                  "shields": 0,
-                 "base": "small",
+                 "base": "remote",
                  "chassis": [69],
                  "actions": [
                       ],

@@ -196,20 +196,23 @@ for (let i=0 ; i<ships.length; i++){ //on va afficher d'abord le vaisseau/chassi
         switch(ships[i]['base'][0]){
             case 'Small' :
                 shipsizetext.innerHTML = "Sml ";
-                newShipObject.typeShipUpgrade="Small"
+                newShipObject.typeShipUpgrade="Small";
                 break;
             case 'Medium' :
                 shipsizetext.innerHTML = "Med " ;
-                newShipObject.typeShipUpgrade="Medium"
+                newShipObject.typeShipUpgrade="Medium";
                 break;
             case 'Large' :
                 shipsizetext.innerHTML = "Lrg ";
-                newShipObject.typeShipUpgrade="Large"
+                newShipObject.typeShipUpgrade="Large";
                 break;
             case 'Huge' :
                 shipsizetext.innerHTML = "Hug ";
-                newShipObject.typeShipUpgrade="Huge"
+                newShipObject.typeShipUpgrade="Huge";
                 break;
+            case 'remote': //for logistic supply
+                 shipsizetext.innerHTML = "rem ";
+                newShipObject.typeShipUpgrade="remote";
             default : 
                 console.log("error ship size logo " + i) ;   
                 break;

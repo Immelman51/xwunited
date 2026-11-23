@@ -731,7 +731,7 @@ function buildDialsContent() {
 // 10. BASES (empreintes au sol) — à la suite des dials
 // ---------------------------------------------------------------------
 /** Largeur d'impression des bases selon leur taille de jeu (mêmes valeurs que l'ancien CSS .large/.medium/.small). */
-const LARGEURS_BASES_CM = { large: 7.2, medium: 5.4, small: 3.4 };
+const LARGEURS_BASES_CM = { large: 7.2, medium: 5.4, small: 3.4, remote : 3.4 };
 /** Nombre de bases affichées côte à côte avant de passer à la ligne suivante.
  * Valeur prudente : avec 2, même 2 bases "large" (7,2cm chacune = 14,4cm)
  * tiennent toujours sur la largeur de page (~19cm). Avec 3, ça déborderait
