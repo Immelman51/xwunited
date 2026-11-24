@@ -86,7 +86,7 @@ function buildLeaderTable() {
       ],
     },
     layout: LAYOUT_BORDURE_EXTERIEURE,
-    margin: [0, 0, 0, cm(1)],
+    margin: [0, 0, 0, cm(0.5)],
   };
 }
 
