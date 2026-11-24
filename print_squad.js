@@ -528,7 +528,7 @@ function displayPilot(x){
                 }
                 break;
             
-            case 'add_action' :
+            case 'add_action' : //removed in favour of new actions displayed next to the upgrade
                 console.log("add_action");
                 const actionlist = document.getElementById('actions'+(x));
                 const actionToAdd = upgrades[uid]['add_Data'][1];
