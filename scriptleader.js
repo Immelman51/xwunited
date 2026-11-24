@@ -89,7 +89,7 @@ window.addEventListener("DOMContentLoaded", function() {
 
 //This function is going to find the id of the leader selected based on the index of the select menu.
 function getLeaderObject(){
-    let leaderIndex = leaderselect.index;
+    let leaderIndex = leaderselect.selectedIndex;
    leaderObjectSelected = leaders[leaderIndex];
 
 }
