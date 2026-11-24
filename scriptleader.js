@@ -2,8 +2,7 @@ let requestURLleaders = "https://raw.githubusercontent.com/Immelman51/xwunited/m
 
 let leaders =[];
 let menuLeader = [];
-let leaderSelected_id = 0;
-
+let leaderObjectSelected = [];
 /*on écoute les saisies dans les menus pour délcencher les fonctions*/
 leaderselect = document.getElementById("menu_leader");
 //factionselect = document.getElementById("menu_faction");
@@ -22,7 +21,7 @@ language = languageMenu.value;
         menuLeader.push(leaders[i]["leadername_"+language]);
     }
 populateMenu("menu_leader",menuLeader);
-leaderselect.selectedIndex = leaderSelected_id;
+leaderselect.selectedIndex = leaderObjectsSelected['leaderid'];
 selection_leader();
 description_leader();
 
@@ -88,25 +87,20 @@ window.addEventListener("DOMContentLoaded", function() {
 
 
 
-//This function is going to find the id of the leader selected based on the value of the select menu.
+//This function is going to find the id of the leader selected based on the index of the select menu.
 function getLeaderObject(){
-    let leaderSelected = leaderselect.value;
-    for(j=0 ; j<leaders.length ; j++){
-        if(leaderSelected.includes(leaders[j]['leadername_'+language])){
-            leaderSelected_id = j;
-            return;
-        }
-        
-    }
+    let leaderIndex = leaderselect.index;
+   leaderObjectSelected = leaders[leaderIndex];
+
 }
 
 /*fonction qui permet de modifier les noms et logos des faction appartenant au leader sélectionné*/
 function selection_leader () {
 
     
-    let factionval1 = leaders[leaderSelected_id]["leaderfaction"][0];
-    let factionval2 = leaders[leaderSelected_id]["leaderfaction"][1];
-    let factionval3 = leaders[leaderSelected_id]["leaderfaction"][2];
+    let factionval1 = leaders[leaderObjectsSelected['leaderid']]["leaderfaction"][0];
+    let factionval2 = leaders[leaderObjectsSelected['leaderid']]["leaderfaction"][1];
+    let factionval3 = leaders[leaderObjectsSelected['leaderid']]["leaderfaction"][2];
 
     
     factionIndex = 0; /*on remet à 0 le deuxième menu car il est inutile*/
@@ -150,15 +144,15 @@ function description_leader() {
     descriptionLeaderField = document.querySelector(".abilityLeader"); //description est le nom de la classe où se trouve le champ description leader
     //We are going to create a variable that will containe the charge logos
     descriptionLeaderField.innerHTML = ""; // Clear previous content
-    for(let i=0; i<leaders[leaderSelected_id]["charge"][0]; i++){
+    for(let i=0; i<leaders[leaderObjectsSelected['leaderid']]["charge"][0]; i++){
         
-        if(leaders[leaderSelected_id]["charge"][1] === "Yellow"){
+        if(leaders[leaderObjectsSelected['leaderid']]["charge"][1] === "Yellow"){
             descriptionLeaderField.innerHTML += "<img class='chargeforceimg' src='img/chargestat.png'>";
-        } else if (leaders[leaderSelected_id]["charge"][1] === "Red"){
+        } else if (leaders[leaderObjectsSelected['leaderid']]["charge"][1] === "Red"){
             descriptionLeaderField.innerHTML += "<img class='chargeforceimg' src='img/chargestatRed.png'>";
         }
     }
-    descriptionLeaderField.innerHTML += leaders[leaderSelected_id]["leaderability_"+language];
+    descriptionLeaderField.innerHTML += leaders[leaderObjectsSelected['leaderid']]["leaderability_"+language];
     
 }
 
@@ -170,7 +164,7 @@ leaderselect.addEventListener("input", function() {
     selection_leader();
     description_leader()
     let logisticvalue = document.getElementById("logisticCounter");
-    logisticvalue.innerHTML = leaders[leaderSelected_id]['logistic'];
+    logisticvalue.innerHTML = leaders[leaderObjectsSelected['leaderid']]['logistic'];
 });
 
 

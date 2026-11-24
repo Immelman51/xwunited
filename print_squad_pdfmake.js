@@ -126,16 +126,16 @@ function buildSingleActionCell(action) {
   if (action.type === 'simple') {
     const chemin = `img/${action.code}.png`;
     cheminsImagesActions.push(chemin);
-    return { image: chemin, fit: [cm(0.45), cm(0.45)], alignment: 'center', verticalAlignment: 'center' };
+    return { image: chemin, fit: [cm(0.60), cm(0.60)], alignment: 'center', verticalAlignment: 'center' };
   }
   const chemin1 = `img/${action.code1}.png`;
   const chemin2 = `img/${action.code2}.png`;
   cheminsImagesActions.push(chemin1, 'img/fleche.png', chemin2);
   return {
     columns: [
-      { image: chemin1, fit: [cm(0.45), cm(0.45)] },
-      { image: 'img/fleche.png', fit: [cm(0.2), cm(0.45)], alignment: 'center' },
-      { image: chemin2, fit: [cm(0.45), cm(0.45)] },
+      { image: chemin1, fit: [cm(0.60), cm(0.60)] },
+      { image: 'img/fleche.png', fit: [cm(0.3), cm(0.60)], alignment: 'center' },
+      { image: chemin2, fit: [cm(0.60), cm(0.60)] },
     ],
     columnGap: 1,
     verticalAlignment: 'center',
