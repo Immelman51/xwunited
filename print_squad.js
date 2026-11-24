@@ -619,6 +619,7 @@ function displayPilot(x){
                 case "" :
                     break;    
                 default : //allows to display linkxxxAction.png when a linked action is added by the upgrade
+                    recurring = document.createElement('img');    
                     recurring.setAttribute("class","chargeforceimg");
                     recurring.setAttribute("src","img/"+upgrades[uid]['charge'][2]+".png");
                     break;
