@@ -33,6 +33,8 @@ function buildLeaderTable() {
     case 'Yellow':
       chargeImgPath = 'img/chargestat.png';
       break;
+    case '0':
+      break;  
     default:
       console.log(
         'This leader charge configuration has not been programmed in buildLeaderTable(). There might be a mistake in leaders.json.'
@@ -270,7 +272,7 @@ function buildUpgradeCell(uid, x, context) {
     case 'droid':
       context.droidEquipped = true;
       break;
-    case 'add_action': {
+    case 'add_action': { //is not used anymore
       const actionToAdd = upgrades[uid]['add_Data'][1];
       if (actionToAdd[0] === 0) {
         context.actionsArray.push({ type: 'simple', code: actionToAdd[1] });
@@ -286,6 +288,7 @@ function buildUpgradeCell(uid, x, context) {
   }
 
   const nbrcharge = upgrades[uid]['charge'][0];
+  console.log(upgrades[uid]['name']);
   for (let j = 0; j < nbrcharge; j++) {
     switch (upgrades[uid]['charge'][1]){
       case "yellow":
@@ -297,6 +300,7 @@ function buildUpgradeCell(uid, x, context) {
       case "" :
         break;
       default : 
+        console.log(upgrades[uid]['charge'][1]);
         columnItems.push({ image: 'img/'+upgrades[uid]['charge'][1]+'.png', width: cm(1.5) }); 
         break;
     }  
@@ -312,6 +316,7 @@ function buildUpgradeCell(uid, x, context) {
     case '':
       break;
     default:
+        console.log(upgrades[uid]['charge'][2]);
        columnItems.push({ image: 'img/'+upgrades[uid]['charge'][2]+'.png', width: cm(1.5) }); 
        break;
   }
@@ -482,11 +487,11 @@ function buildPilotTable(x) {
   // -- Charges/force du pilote : maintenant placés APRES le nom du pilote / nom du vaisseau
   const pilotForceIcons = Array.from({ length: pilots[pid]['force'] }, () => ({
     image: 'img/forcestat.png',
-    width: cm(1.5),
+    width: cm(0.75),
   }));
   const pilotChargeIcons = Array.from({ length: pilots[pid]['charge'][0] }, () => ({
     image: 'img/chargestat.png',
-    width: cm(1.5),
+    width: cm(0.75),
   }));
   let pilotChargeEvolutionIcon = null;
   if (pilots[pid]['charge'][1] === '+') pilotChargeEvolutionIcon = { image: 'img/chargeplus.png', width: cm(0.3) };
