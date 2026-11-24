@@ -1650,7 +1650,7 @@ function hasher(){ //on inscrit dans hash le nombre de vaisseaux (shipquantity+1
     
     
     
-    for(i = 0; i<shipquantity+1; i++) {
+    for(i = 0; i<shipquantity; i++) { //plop shipquantity+1
         
         let string_pilot_ID = String(pilot_list[i]['id']);
         hash = hash + string_pilot_ID +"u"; // 

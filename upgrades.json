@@ -190,7 +190,7 @@
             "id": 11,
             "max_per_squad": 8,
             "available": true,
-            "modify":true,
+            "modify":false,
             "slot": "Talent-shooting",
             "points": 0,
             "talent_points": 2,
