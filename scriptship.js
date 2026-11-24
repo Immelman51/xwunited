@@ -291,7 +291,7 @@ function testListValidity() {
         }
     }
    //Test if the number of upgrades equipped points exceed the logistic value of the leader
-    if(sumLogisticEquipped>leaders[leaderObjectsSelected['leaderid']]["logistic"]){
+    if(sumLogisticEquipped>leaders[leaderObjectSelected['leaderid']]["logistic"]){
         listValidity=false;
         return;
     }
@@ -424,7 +424,7 @@ function updateUpgradeCount(yy) { //update the table logistic_Equipped and talen
                     break;
         }
     }
-    let logisticLeaderValue = leaders[leaderObjectsSelected['leaderid']]["logistic"];
+    let logisticLeaderValue = leaders[leaderObjectSelected['leaderid']]["logistic"];
     logisticCounter.innerHTML = 'LOG<br>'+(logisticLeaderValue-sumLogisticEquipped);
     //We test the list Validity, and if it's not valid, we paint the logistic in red
    
@@ -1646,7 +1646,7 @@ addMenuButton.addEventListener('click', add_ship);
 
 
 function hasher(){ //on inscrit dans hash le nombre de vaisseaux (shipquantity+1) on va transformer tous les ids du ship pilote et upgrades séparés par la lettre "z", chaque info différente (pilot, upgrades, modifiers) est séparée par des x, puis chaque vaisseaux différents séparés par ",".
-    hash = String(leaderObjectsSelected['leaderid']) + ',';
+    hash = String(leaderObjectSelected['leaderid']) + ',';
     
     
     
@@ -1695,12 +1695,12 @@ function loadSquadwithCode(e) {
     //we select the leader in the menu, then we add the first ship
     leaderselect = document.getElementById("menu_leader");
     leaderselect.selectedIndex = indexes[0] ;
-    leaderObjectsSelected['leaderid'] = indexes[0];
+    leaderObjectSelected['leaderid'] = indexes[0];
     
     //we have to select the faction manually because, the function to do this is in scriptleader.js
-    let factionval1 = leaders[leaderObjectsSelected['leaderid']]["leaderfaction"][0];
-    let factionval2 = leaders[leaderObjectsSelected['leaderid']]["leaderfaction"][1];
-    let factionval3 = leaders[leaderObjectsSelected['leaderid']]["leaderfaction"][2];
+    let factionval1 = leaders[leaderObjectSelected['leaderid']]["leaderfaction"][0];
+    let factionval2 = leaders[leaderObjectSelected['leaderid']]["leaderfaction"][1];
+    let factionval3 = leaders[leaderObjectSelected['leaderid']]["leaderfaction"][2];
     document.querySelector(".faction1").textContent = factionval1;
     document.getElementById("faction1logo").setAttribute("src",'img/'+factionval1+'mini.png') ;
     document.querySelector(".faction2").textContent = factionval2;

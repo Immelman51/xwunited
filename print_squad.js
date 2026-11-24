@@ -76,8 +76,8 @@ let cheminsImagesGen = [
                         "img/chargeplus.png",
                         "img/chargestat.png",
                         "img/chargestatRed.png",
-                        "img/forcestat.png",
-                        "img/scenario_point.png"
+                        "img/forcestat.png"
+                        
                         ];
 //used for pdfmake to transform the images in base64 in print_squad_pdfmake.js. Every time I call an image, we have to store it into cheminsImages.
 //All charges and forces img, and the scenario_point img.

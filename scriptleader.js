@@ -21,7 +21,7 @@ language = languageMenu.value;
         menuLeader.push(leaders[i]["leadername_"+language]);
     }
 populateMenu("menu_leader",menuLeader);
-leaderselect.selectedIndex = leaderObjectsSelected['leaderid'];
+leaderselect.selectedIndex = leaderObjectSelected['leaderid'];
 selection_leader();
 description_leader();
 
@@ -98,9 +98,9 @@ function getLeaderObject(){
 function selection_leader () {
 
     
-    let factionval1 = leaders[leaderObjectsSelected['leaderid']]["leaderfaction"][0];
-    let factionval2 = leaders[leaderObjectsSelected['leaderid']]["leaderfaction"][1];
-    let factionval3 = leaders[leaderObjectsSelected['leaderid']]["leaderfaction"][2];
+    let factionval1 = leaders[leaderObjectSelected['leaderid']]["leaderfaction"][0];
+    let factionval2 = leaders[leaderObjectSelected['leaderid']]["leaderfaction"][1];
+    let factionval3 = leaders[leaderObjectSelected['leaderid']]["leaderfaction"][2];
 
     
     factionIndex = 0; /*on remet à 0 le deuxième menu car il est inutile*/
@@ -144,15 +144,15 @@ function description_leader() {
     descriptionLeaderField = document.querySelector(".abilityLeader"); //description est le nom de la classe où se trouve le champ description leader
     //We are going to create a variable that will containe the charge logos
     descriptionLeaderField.innerHTML = ""; // Clear previous content
-    for(let i=0; i<leaders[leaderObjectsSelected['leaderid']]["charge"][0]; i++){
+    for(let i=0; i<leaders[leaderObjectSelected['leaderid']]["charge"][0]; i++){
         
-        if(leaders[leaderObjectsSelected['leaderid']]["charge"][1] === "Yellow"){
+        if(leaders[leaderObjectSelected['leaderid']]["charge"][1] === "Yellow"){
             descriptionLeaderField.innerHTML += "<img class='chargeforceimg' src='img/chargestat.png'>";
-        } else if (leaders[leaderObjectsSelected['leaderid']]["charge"][1] === "Red"){
+        } else if (leaders[leaderObjectSelected['leaderid']]["charge"][1] === "Red"){
             descriptionLeaderField.innerHTML += "<img class='chargeforceimg' src='img/chargestatRed.png'>";
         }
     }
-    descriptionLeaderField.innerHTML += leaders[leaderObjectsSelected['leaderid']]["leaderability_"+language];
+    descriptionLeaderField.innerHTML += leaders[leaderObjectSelected['leaderid']]["leaderability_"+language];
     
 }
 
@@ -164,7 +164,7 @@ leaderselect.addEventListener("input", function() {
     selection_leader();
     description_leader()
     let logisticvalue = document.getElementById("logisticCounter");
-    logisticvalue.innerHTML = leaders[leaderObjectsSelected['leaderid']]['logistic'];
+    logisticvalue.innerHTML = leaders[leaderObjectSelected['leaderid']]['logistic'];
 });
 
 
