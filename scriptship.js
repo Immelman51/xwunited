@@ -284,7 +284,7 @@ function displayslots(yy) { //crée les menus de slot et contient l'écoute des 
 
 function testListValidity() {
     //Test if the pilots talent slots exceed the skill of the pilot (TAL)
-    for (k=0;k<shipquantity;k++){ //plop shipquantity+1 
+    for (k=0;k<shipquantity+1;k++){ 
         if(talentEquipped[k]>pilot_list[k]['skill']){
             listValidity=false;
             return;
@@ -1404,7 +1404,7 @@ function add_ship() {//fonction qui permet d'ajouter un nouveau vaisseau. S'acti
         logisticEquipped[sQ] = 0;
         talentEquipped[sQ]= 0;
         //We update logisticequipped, the logistic total and the total cost
-        for (h=0 ; h<shipquantity ; h++){ //plop shipquantity+1
+        for (h=0 ; h<shipquantity+1 ; h++){ 
             updateUpgradeCount(h);
             
         }
@@ -1650,7 +1650,7 @@ function hasher(){ //on inscrit dans hash le nombre de vaisseaux (shipquantity+1
     
     
     
-    for(i = 0; i<shipquantity; i++) { //plop shipquantity+1
+    for(i = 0; i<shipquantity+1; i++) { 
         
         let string_pilot_ID = String(pilot_list[i]['id']);
         hash = hash + string_pilot_ID +"u"; // 
