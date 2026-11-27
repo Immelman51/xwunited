@@ -2739,7 +2739,7 @@
                 "id": 98,
                 "attack": [["F",2]],
                 "agility": 2,
-                "base": "small",
+                "base": "large",
                 "hull": 4,
                 "shields": 2,
                 "chassis": [0],
@@ -2765,7 +2765,7 @@
                 "id": 99,
                 "attack": [["F",3]],
                 "agility": 1,
-                "base": "large",
+                "base": "medium",
                 "hull": 6,
                 "shields": 7,
                 "chassis": [60],
@@ -2785,7 +2785,7 @@
                 "slots": ["Crew","Crew","Crew","Sensor","Modification"]
             },
             {
-            	"name": "NB-1S Royal Bomber",
+            	"name": "NB-1H Royal Bomber",
                 "factions": [ "Naboo_Defense_Force" ],
                 "id": 100,
                 "attack": [["F",2]],
